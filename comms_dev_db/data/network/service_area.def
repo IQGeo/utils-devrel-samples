@@ -1,0 +1,35 @@
+{
+   "datasource": "myworld", 
+   "name": "service_area", 
+   "external_name": "Service Area", 
+   "title": "{display_name}: [name]", 
+   "short_description": null, 
+   "track_changes": true, 
+   "editable": {
+      "insert_from_gui": true, 
+      "delete_from_gui": true, 
+      "update_from_gui": true
+   }, 
+   "fields": [
+      {
+         "name": "name", 
+         "external_name": "Name", 
+         "type": "string(64)", 
+         "key": true 
+      }, 
+      {
+         "name": "boundary", 
+         "external_name": "Boundary", 
+         "type": "polygon"
+      }
+   ], 
+   "groups": [], 
+   "searches": [], 
+   "queries": [
+      {
+         "value": "service area", 
+         "description": "Service Area"
+      }
+   ], 
+   "filters": []
+}

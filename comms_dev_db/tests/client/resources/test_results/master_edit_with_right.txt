@@ -1,0 +1,63 @@
+TEST: AFTER CLICK EDIT
+    input: WH-M-58
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    select: Manhole: WH-M-58
+    label: Spec*
+    label: feature-edit-input
+    input (disabled): FPM-CCANN-MCX
+    label: Length*
+    label: feature-edit-input
+    input (disabled): 33 in
+    label: Width*
+    label: feature-edit-input
+    input (disabled): 51 in
+    label: Depth*
+    label: feature-edit-input
+    input (disabled): 35 in
+    label: Lockable*
+    label: feature-edit-input
+    input: false
+    label: Powered*
+    label: feature-edit-input
+    input: false
+    label: Installed*
+    label: feature-edit-input
+    input: 08/09/2014
+    label: Labor Costs*
+    label: feature-edit-input
+    input (disabled): hole_dig
+  header: Location
+    button: Cancel
+    button: Delete
+    button: Save
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    label: [Comms] admin
+    label: Built by
+
+

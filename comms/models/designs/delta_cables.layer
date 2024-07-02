@@ -1,0 +1,30 @@
+{
+   "name": "delta_cables", 
+   "display_name": "{:delta_cables_layer_display_name}", 
+   "category": "overlay", 
+   "description": "{:delta_cables_layer_display_desc}", 
+   "datasource": "myworld",
+   "code": "dltc",
+   "spec": {
+      "isStatic": false, 
+      "extraOptions": {
+         "schema": "delta"
+      }, 
+      "nativeAppVector": null, 
+      "nativeAppMode": "switchable", 
+      "rendering": "vector", 
+      "jsClass": ""
+   }, 
+   "transparency": 0, 
+   "min_scale": 14, 
+   "max_scale": 22, 
+   "feature_types": [
+      {
+         "name": "fiber_cable", 
+         "field_name": "path", 
+            "min_select": 0,
+            "max_select": 0,
+         "line_style": "#ffa500:2:solid:none:none"
+      }
+   ]
+}

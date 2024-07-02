@@ -1,0 +1,75 @@
+{
+    "datasource": "myworld",
+    "name": "splice_closure",
+    "external_name": "{:splice_closure_feature_external_name}",
+    "title": "{display_name}: [name]",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "equipment",
+            "type": "reference_set",
+            "external_name": "{:splice_closure_feature_equipment_name}",
+            "value": "select()",
+            "read_only": true
+        },
+        {
+            "name": "fiber_splices",
+            "type": "reference_set",
+            "external_name": "{:splice_closure_feature_fiber_splices_name}",
+            "value": "select(mywcom_fiber_connection.housing)",
+            "read_only": true
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "specification",
+            "external_name": "{:splice_closure_feature_specification_name}",
+            "type": "foreign_key(splice_closure_spec)"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point"
+        },
+        {
+            "name": "circuits",
+            "external_name": "{:circuits_field_name}",
+            "type": "reference_set",
+            "read_only": true
+        }
+    ]
+}

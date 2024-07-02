@@ -1,0 +1,27 @@
+{
+   "name": "streets_osm",
+   "display_name": "Streets (OSM)",
+   "category": "overlay",
+   "code": "st",
+   "datasource": "myworld",
+   "spec": {
+      "rendering": "vector",
+      "tileType": "raster",
+      "isStatic": false,
+      "nativeAppMode": "switchable",
+      "render_order_point_offset": 0,
+      "jsClass": null,
+      "extraOptions": null
+   },
+   "transparency": 0,
+   "min_scale": 0,
+   "max_scale": 20,
+   "render_order": 0,
+   "feature_types": [
+      {
+         "name": "streets_osm",
+         "field_name": "the_geom",
+         "line_style": "green:2:solid"
+      }
+   ]
+}

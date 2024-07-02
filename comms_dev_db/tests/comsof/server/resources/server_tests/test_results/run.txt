@@ -1,0 +1,27 @@
+Request: POST:/modules/comsof/workspace/1/execute?delta=comsof_design/arbury&log_level=1
+Response: 200 (200 OK)
+{
+   "preprocess": {
+      "errors": [],
+      "log": [
+         "[<time>] Initialising connection",
+         "[<time>] Building zip: <workspaces>/1/workspace.zip",
+         "[<time>] Uploading <workspaces>/1/workspace.zip",
+         "[<time>] Running calculation on workspace <workspace_no> : /streetDoubler /createTransitions",
+         "[<time>] Waiting for calculation <calc_no> to complete",
+         "[<time>] Downloading result of calculation <calc_no> as <workspaces>/1/workspace.download.zip",
+         "[<time>] Replacing <workspaces>/1/workspace",
+         "[<time>] ***Warning*** The following Demand Points have a connection to their Drop Point that exceeds the cut-off distance (150 m): 137 138",
+         "[<time>] ***Warning*** The following clusters are very small compared to the maximum size for the number of Fibers (24): 7"
+      ],
+      "warnings": [
+         "The following Demand Points have a connection to their Drop Point that exceeds the cut-off distance (150 m): 137 138",
+         "The following clusters are very small compared to the maximum size for the number of Fibers (24): 7"
+      ]
+   }
+}
+
+
+DATABASE CHANGES: AFTER RUN
+   update data.comsof_workspace(1) fields=(busy,op_stats,state)
+

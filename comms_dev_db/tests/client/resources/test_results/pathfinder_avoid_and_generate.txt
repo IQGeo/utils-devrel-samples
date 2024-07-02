@@ -1,0 +1,71 @@
+TEST: Pathfinder
+    button: ant-modal-close
+    button: ant-btn css-dev-only-do-not-override-6j9yrn ant-btn-text
+    input: 
+    button: Set
+    input: 
+    button: Set
+    button: include-and-avoid__button hover-cursor
+    button: include-and-avoid__button hover-cursor
+    label: Shortest distance
+    input: on
+    label: Least new connections
+    input: on
+    label: Least amount of existing connections
+    input: on
+    input: 
+    input: 
+    label: ft
+    input: true
+    button (disabled): Generate
+    button (disabled): Cancel
+    select (disabled): 
+    button (disabled): Create
+
+
+TEST: After generate
+    button: ant-modal-close
+    button: ant-btn css-dev-only-do-not-override-6j9yrn ant-btn-text
+    input: Fiber Shelf: SP-S-018 out:1
+    button: Set
+    input: Cabinet: SP-C-46
+    button: Set
+    button: include-and-avoid__button hover-cursor
+    button: include-and-avoid__button hover-cursor
+    list item: Manhole: SP-M-165
+    button: include-and-avoid__list-item-button hover-cursor
+    label: Shortest distance
+    input: on
+    label: Least new connections
+    input: on
+    label: Least amount of existing connections
+    input: on
+    input: 
+    input: 
+    label: ft
+    input: true
+    button: Generate
+    button (disabled): Cancel
+    label: Path 1InfoDistance: 4435.66 ftExisting connections: 2New connections: 2Loss: 0.88ResultsFiber Shelf: SP-S-018Fiber Cable: BB-FCB-024 (24)* Manhole: SP-M-184Fiber Cable: BB-FCB-028 (24)* Manhole: SP-M-159Fiber Cable: BB-FCB-027 (24)Fiber Shelf: SP-S-019
+    label: Path 1
+    label: InfoDistance: 4435.66 ftExisting connections: 2New connections: 2Loss: 0.88
+    label: Distance: 4435.66 ftExisting connections: 2New connections: 2Loss: 0.88
+    label: ResultsFiber Shelf: SP-S-018Fiber Cable: BB-FCB-024 (24)* Manhole: SP-M-184Fiber Cable: BB-FCB-028 (24)* Manhole: SP-M-159Fiber Cable: BB-FCB-027 (24)Fiber Shelf: SP-S-019
+    label: Fiber Shelf: SP-S-018
+    input: false
+    label: Fiber Cable: BB-FCB-024 (24)
+    input: false
+    label: * Manhole: SP-M-184
+    input: false
+    label: Fiber Cable: BB-FCB-028 (24)
+    input: false
+    label: * Manhole: SP-M-159
+    input: false
+    label: Fiber Cable: BB-FCB-027 (24)
+    input: false
+    label: Fiber Shelf: SP-S-019
+    input: false
+    select (disabled): 
+    button (disabled): Create
+
+

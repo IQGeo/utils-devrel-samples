@@ -1,0 +1,202 @@
+
+*** NULL UPDATE
+Set delta to: design/NB217
+DATABASE CHANGES: NULL UPDATE
+    insert delta.ug_route(design/NB217,318,update)
+
+VALIDATION ERRORS: NULL UPDATE
+
+
+*** MOVE ROUTE
+Set delta to: design/NB217
+DATABASE CHANGES: MOVE ROUTE
+    insert delta.conduit(design/NB217,71,update)
+    insert delta.conduit(design/NB217,72,update)
+    insert delta.conduit(design/NB217,73,update)
+    insert delta.conduit(design/NB217,74,update)
+    insert delta.fiber_cable(design/NB217,3,update)
+    insert delta.fiber_cable(design/NB217,4,update)
+    insert delta.fiber_cable(design/NB217,6,update)
+    insert delta.ftth_circuit(design/NB217,1,update)
+    insert delta.ftth_circuit(design/NB217,10,update)
+    insert delta.ftth_circuit(design/NB217,14,update)
+    insert delta.ftth_circuit(design/NB217,2,update)
+    insert delta.ftth_circuit(design/NB217,20,update)
+    insert delta.ftth_circuit(design/NB217,21,update)
+    insert delta.ftth_circuit(design/NB217,22,update)
+    insert delta.ftth_circuit(design/NB217,23,update)
+    insert delta.ftth_circuit(design/NB217,24,update)
+    insert delta.ftth_circuit(design/NB217,26,update)
+    insert delta.ftth_circuit(design/NB217,27,update)
+    insert delta.ftth_circuit(design/NB217,28,update)
+    insert delta.ftth_circuit(design/NB217,29,update)
+    insert delta.ftth_circuit(design/NB217,3,update)
+    insert delta.ftth_circuit(design/NB217,4,update)
+    insert delta.ftth_circuit(design/NB217,5,update)
+    insert delta.ftth_circuit(design/NB217,6,update)
+    insert delta.ftth_circuit(design/NB217,7,update)
+    insert delta.ftth_circuit(design/NB217,8,update)
+    insert delta.mywcom_fiber_segment(design/NB217,36,update)
+    insert delta.mywcom_fiber_segment(design/NB217,45,update)
+    insert delta.mywcom_fiber_segment(design/NB217,59,update)
+    insert delta.mywcom_line_of_count(design/NB217,2,update)
+    insert delta.mywcom_line_of_count(design/NB217,4,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,50,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,51,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,53,update)
+    insert delta.ug_route(design/NB217,8,update)
+
+VALIDATION ERRORS: MOVE ROUTE
+
+
+*** MOVE ROUTE IN DELTA
+Set delta to: design/NB217
+DATABASE CHANGES: MOVE ROUTE IN DELTA
+    insert delta.bb_circuit(design/NB217,1,update)
+    insert delta.bb_circuit(design/NB217,2,update)
+    insert delta.bb_circuit(design/NB217,3,update)
+    insert delta.bb_circuit(design/NB217,4,update)
+    insert delta.conduit(design/NB217,77,update)
+    insert delta.conduit(design/NB217,78,update)
+    insert delta.fiber_cable(design/NB217,167,update)
+    insert delta.fiber_cable(design/NB217,5,update)
+    insert delta.mywcom_fiber_segment(design/NB217,386,update)
+    insert delta.mywcom_fiber_segment(design/NB217,54,update)
+    insert delta.ug_route(design/NB217,2,update)
+
+VALIDATION ERRORS: MOVE ROUTE IN DELTA
+
+
+*** MODIFY ROUTE PATH
+Set delta to: design/NB217
+DATABASE CHANGES: MODIFY ROUTE PATH
+    insert delta.blown_fiber_bundle(design/NB217,23,update)
+    insert delta.blown_fiber_bundle(design/NB217,27,update)
+    insert delta.blown_fiber_bundle(design/NB217,9,update)
+    insert delta.blown_fiber_tube(design/NB217,103,update)
+    insert delta.blown_fiber_tube(design/NB217,111,update)
+    insert delta.blown_fiber_tube(design/NB217,119,update)
+    insert delta.blown_fiber_tube(design/NB217,127,update)
+    insert delta.blown_fiber_tube(design/NB217,135,update)
+    insert delta.blown_fiber_tube(design/NB217,143,update)
+    insert delta.blown_fiber_tube(design/NB217,151,update)
+    insert delta.blown_fiber_tube(design/NB217,159,update)
+    insert delta.blown_fiber_tube(design/NB217,177,update)
+    insert delta.blown_fiber_tube(design/NB217,182,update)
+    insert delta.blown_fiber_tube(design/NB217,187,update)
+    insert delta.blown_fiber_tube(design/NB217,192,update)
+    insert delta.blown_fiber_tube(design/NB217,44,update)
+    insert delta.blown_fiber_tube(design/NB217,49,update)
+    insert delta.blown_fiber_tube(design/NB217,54,update)
+    insert delta.blown_fiber_tube(design/NB217,59,update)
+    insert delta.blown_fiber_tube(design/NB217,64,update)
+    insert delta.blown_fiber_tube(design/NB217,69,update)
+    insert delta.fiber_cable(design/NB217,11,update)
+    insert delta.fiber_cable(design/NB217,178,update)
+    insert delta.fiber_cable(design/NB217,179,update)
+    insert delta.fiber_cable(design/NB217,180,update)
+    insert delta.fiber_cable(design/NB217,182,update)
+    insert delta.fiber_cable(design/NB217,9,update)
+    insert delta.mywcom_conduit_run(design/NB217,10,update)
+    insert delta.mywcom_conduit_run(design/NB217,12,update)
+    insert delta.mywcom_conduit_run(design/NB217,13,update)
+    insert delta.mywcom_conduit_run(design/NB217,14,update)
+    insert delta.mywcom_conduit_run(design/NB217,22,update)
+    insert delta.mywcom_conduit_run(design/NB217,24,update)
+    insert delta.mywcom_conduit_run(design/NB217,25,update)
+    insert delta.mywcom_conduit_run(design/NB217,26,update)
+    insert delta.mywcom_conduit_run(design/NB217,27,update)
+    insert delta.mywcom_conduit_run(design/NB217,28,update)
+    insert delta.mywcom_conduit_run(design/NB217,29,update)
+    insert delta.mywcom_conduit_run(design/NB217,30,update)
+    insert delta.mywcom_conduit_run(design/NB217,51,update)
+    insert delta.mywcom_conduit_run(design/NB217,56,update)
+    insert delta.mywcom_conduit_run(design/NB217,65,update)
+    insert delta.mywcom_conduit_run(design/NB217,66,update)
+    insert delta.mywcom_conduit_run(design/NB217,67,update)
+    insert delta.mywcom_conduit_run(design/NB217,68,update)
+    insert delta.mywcom_conduit_run(design/NB217,69,update)
+    insert delta.mywcom_conduit_run(design/NB217,8,update)
+    insert delta.mywcom_conduit_run(design/NB217,9,update)
+    insert delta.mywcom_fiber_segment(design/NB217,415,update)
+    insert delta.mywcom_fiber_segment(design/NB217,420,update)
+    insert delta.mywcom_fiber_segment(design/NB217,424,update)
+    insert delta.mywcom_fiber_segment(design/NB217,433,update)
+    insert delta.mywcom_fiber_segment(design/NB217,82,update)
+    insert delta.mywcom_fiber_segment(design/NB217,97,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,145,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,166,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,167,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,168,update)
+    insert delta.ug_route(design/NB217,366,update)
+    update delta.ftth_circuit(design/NB217,10,update) fields=(path)
+    update delta.ftth_circuit(design/NB217,14,update) fields=(path)
+    update delta.ftth_circuit(design/NB217,26,update) fields=(path)
+    update delta.ftth_circuit(design/NB217,27,update) fields=(path)
+    update delta.ftth_circuit(design/NB217,28,update) fields=(path)
+    update delta.ftth_circuit(design/NB217,29,update) fields=(path)
+    update delta.mywcom_line_of_count(design/NB217,4,update) fields=(route)
+
+VALIDATION ERRORS: MODIFY ROUTE PATH
+
+
+*** MODIFY ROUTE PATH WITH LOC
+Set delta to: design/NB217
+DATABASE CHANGES: MODIFY ROUTE PATH WITH LOC
+    insert delta.conduit(design/NB217,63,update)
+    insert delta.copper_cable(design/NB217,3,update)
+    insert delta.mywcom_copper_segment(design/NB217,10,update)
+    insert delta.mywcom_line_of_count(design/NB217,1,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,27,update)
+    insert delta.ug_route(design/NB217,22,update)
+
+VALIDATION ERRORS: MODIFY ROUTE PATH WITH LOC
+
+
+*** CONNECT CABLE END TO NEW STRUCTURE
+Set delta to: design/NB217
+DATABASE CHANGES: CONNECT CABLE END TO NEW STRUCTURE
+    insert delta.blown_fiber_tube(design/NB217,195,update)
+    insert delta.conduit(design/NB217,70,update)
+    insert delta.fiber_cable(design/NB217,8,update)
+    insert delta.mywcom_conduit_run(design/NB217,70,update)
+    insert delta.mywcom_fiber_segment(design/NB217,75,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,87,update)
+    insert delta.ug_route(design/NB217,58,update)
+    update delta.mywcom_line_of_count(design/NB217,2,update) fields=(route)
+
+VALIDATION ERRORS: CONNECT CABLE END TO NEW STRUCTURE
+
+
+*** DISCONNECT CABLE CONNECTIONS
+Set delta to: design/NB217
+Error: route_has_cable
+
+DATABASE CHANGES: DISCONNECT CABLE CONNECTIONS
+
+VALIDATION ERRORS: DISCONNECT CABLE CONNECTIONS
+
+
+*** DISCONNECT CABLE FROM STRUCTURE
+Set delta to: design/NB217
+Error: route_has_cable
+
+DATABASE CHANGES: DISCONNECT CABLE FROM STRUCTURE
+
+VALIDATION ERRORS: DISCONNECT CABLE FROM STRUCTURE
+
+Error: route_has_cable
+
+DATABASE CHANGES: DISCONNECT CABLE FROM STRUCTURE
+
+VALIDATION ERRORS: DISCONNECT CABLE FROM STRUCTURE
+
+
+*** DISCONNECT FROM STRUCTURE
+Set delta to: design/NB217
+Error: route_has_cable
+
+DATABASE CHANGES: DISCONNECT FROM STRUCTURE
+
+VALIDATION ERRORS: DISCONNECT FROM STRUCTURE
+

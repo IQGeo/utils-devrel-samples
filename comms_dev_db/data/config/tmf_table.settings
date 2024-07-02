@@ -1,0 +1,17 @@
+{
+    "mywcom.tmf_tables": {
+        "cable": "fiber_cable",
+        "backboneCircuit": "bb_circuit",
+        "fiberToTheHomeCircuit": "ftth_circuit",
+        "multiplexer": "fiber_mux",
+        "opticalLineTerminal": "fiber_olt",
+        "opticalNetworkTerminal": "fiber_ont",
+        "patchPanel": "fiber_patch_panel",
+        "shelf": "fiber_shelf",
+        "spliceTray": "fiber_splice_tray",
+        "splitter": "fiber_splitter",
+        "tap": "fiber_tap",
+        "undergroundRoute": "ug_route",
+        "overheadRoute": "oh_route"
+    }
+}

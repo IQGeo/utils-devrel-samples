@@ -1,0 +1,62 @@
+COMMAND: comms_db <database> import <resource_dir>/test_data/workspaces/chesterfield.geopackage.v23.2.zip --format=comsof --delta=comsof_design/chesterfield
+Opening database <conn_spec> ...
+Opening /tmp/<tmp_dir>/workspace/output/OUT_FullDesign.cdif.zip
+Import engine: comsof_ws_cdif
+Loading data
+  Feature type: blown_fiber_bundle
+    Loaded 282 records
+  Feature type: blown_fiber_tube
+    Loaded 2850 records
+  Feature type: drop_point
+    Loaded 101 records
+  Feature type: fiber_cable
+    Loaded 207 records
+  Feature type: fiber_splitter
+    Loaded 4 records
+  Feature type: mywcom_conduit_run
+    Loaded 1433 records
+  Feature type: mywcom_fiber_connection
+    Loaded 214 records
+  Feature type: mywcom_fiber_segment
+    Loaded 1644 records
+  Feature type: mywcom_route_junction
+    Loaded 8 records
+  Feature type: oh_route
+    Loaded 2 records
+  Feature type: splice_closure
+    Loaded 103 records
+  Feature type: ug_route
+    Loaded 214 records
+  Feature type: wall_box
+    Loaded 105 records
+Mapping references
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+Snapping geometries
+
+Opening database <conn_spec> ...
+delta                    : comsof_design/chesterfield
+count                    : 7176
+inserts                  : 7176
+updates                  : 0
+deletes                  : 0
+blown_fiber_bundle       : 282:0:0
+blown_fiber_tube         : 2850:0:0
+conduit                  : 9:0:0
+drop_point               : 101:0:0
+fiber_cable              : 207:0:0
+fiber_splitter           : 4:0:0
+mywcom_conduit_run       : 1433:0:0
+mywcom_fiber_connection  : 214:0:0
+mywcom_fiber_segment     : 1644:0:0
+mywcom_route_junction    : 8:0:0
+oh_route                 : 2:0:0
+splice_closure           : 103:0:0
+ug_route                 : 214:0:0
+wall_box                 : 105:0:0
+
+

@@ -1,0 +1,19 @@
+{
+    "name": "mywcom_copper_cables",
+    "display_name": "{:copper_cables_layer_display_name}",
+    "category": "overlay",
+    "code": "mywcom_cuc",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": ""
+    },
+    "transparency": 0,
+    "min_scale": 14,
+    "max_scale": 22,
+    "feature_types": []
+}

@@ -1,0 +1,29 @@
+{
+    "name": "mywcom_equipment",
+    "display_name": "{:equipment_layer_display_name}",
+    "category": "overlay",
+    "code": "mywcom_eq",
+    "description": "{:mywcom_equipment_layer_desc}",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": ""
+    },
+    "transparency": 0,
+    "min_scale": 16,
+    "max_scale": 22,
+    "control_item_class": "myw.MyWorldLegendLayerControlWidget",
+    "feature_types": [
+        {
+            "name": "mywcom_fiber_slack",
+            "field_name": "location",
+            "min_select": 0,
+            "max_select": 0,
+            "point_style": "modules/comms/images/features/fiber_slack.svg:12:0:"
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/backboneCircuit/1
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/backboneCircuit/1
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/fiberToTheHomeCircuit/1
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/fiberToTheHomeCircuit/1
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/multiplexer/1
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/multiplexer/1
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/opticalLineTerminal/1
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/opticalLineTerminal/1
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/manhole/1
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/manhole/1
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/cable/8
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/cable/8
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/opticalNetworkTerminal/6
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/opticalNetworkTerminal/6
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/patchPanel/3
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/patchPanel/3
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/shelf/2
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/shelf/2
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/spliceTray/3
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/spliceTray/3
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/splitter/5
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/splitter/5
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/undergroundRoute/100
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/undergroundRoute/100
+Response: 404 (404 Not Found)
+
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/conduit/100
+Response: 200 (200 OK)
+
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/conduit/100
+Response: 404 (404 Not Found)
+
+
+
+SUB TEST : Errors
+    Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/cable/1
+    Response: 502 (502 Bad Gateway)
+    
+    

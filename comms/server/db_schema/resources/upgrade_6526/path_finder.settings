@@ -1,0 +1,20 @@
+{
+    "mywcom.path_finder": {
+        "max_nodes": 1000,
+        "show_partial": false,
+        "max_route_paths": 10,
+        "max_route_nodes": 1000,
+        "exclude_similar": false,
+        "similarity_threshold": 90,
+        "route_paths_only": false,
+        "cable_paths_only": false,
+        "bidirectional": false,
+        "num_back_steps": 20,
+        "max_paths_default": 5,
+        "max_dist_default": 5000,
+        "connection_cost_metres": 10,
+        "splice_closure_type": "",
+        "splice_closure_properties": {},
+        "include_as_via": true
+    }
+}

@@ -1,0 +1,320 @@
+COMMAND: comsof_ws <database> <resource_dir>/test_data/test_workspace list metadata
+Opening database <conn_spec> ...
+file                   prop          val
+---------------------  ------------  -----
+input.gpkg             coord_system  32631
+CalculationInput.gpkg  coord_system  32631
+ProcessedArea.gpkg     coord_system  32631
+output.gpkg            coord_system  32631
+
+
+COMMAND: comsof_ws <database> <resource_dir>/test_data/test_workspace list table_metadata *stru*
+Opening database <conn_spec> ...
+file  table_name  srs_id  min_x  min_y  max_x  max_y
+----  ----------  ------  -----  -----  -----  -----
+
+
+COMMAND: comsof_ws <database> <resource_dir>/test_data/test_workspace list cs_catalogue 3* --layout=records
+Opening database <conn_spec> ...
+file                     : input.gpkg
+srs_name                 : WGS 84 / UTM zone 31N
+srs_id                   : 32631
+definition               : PROJCRS["WGS 84 / UTM zone 31N",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 31N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - N hemisphere - 0°E to 6°E - by country"],BBOX[0,0,84,6]],ID["EPSG",32631]]
+
+file                     : CalculationInput.gpkg
+srs_name                 : WGS 84 / UTM zone 31N
+srs_id                   : 32631
+definition               : PROJCRS["WGS 84 / UTM zone 31N",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 31N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - N hemisphere - 0°E to 6°E - by country"],BBOX[0,0,84,6]],ID["EPSG",32631]]
+
+file                     : ProcessedArea.gpkg
+srs_name                 : WGS 84 / UTM zone 31N
+srs_id                   : 32631
+definition               : PROJCRS["WGS 84 / UTM zone 31N",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 31N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - N hemisphere - 0°E to 6°E - by country"],BBOX[0,0,84,6]],ID["EPSG",32631]]
+
+file                     : output.gpkg
+srs_name                 : WGS 84 / UTM zone 31N
+srs_id                   : 32631
+definition               : PROJCRS["WGS 84 / UTM zone 31N",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 31N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",3,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - N hemisphere - 0°E to 6°E - by country"],BBOX[0,0,84,6]],ID["EPSG",32631]]
+
+
+
+COMMAND: comsof_ws <database> <resource_dir>/test_data/test_workspace list features
+Opening database <conn_spec> ...
+table                                   geom_type   n_fields
+--------------------------------------  ----------  --------
+IN_AccessStructures                     point              5
+IN_AerialConnections                    linestring         7
+IN_AerialDropConnections                linestring         6
+IN_BOM_SubAreas                         polygon            3
+IN_Boundaries                           linestring         6
+IN_Buildings                            polygon            9
+IN_CentralOffice                        point              4
+IN_Crossings                            linestring         9
+IN_DemandPoints                         point             12
+IN_DropTrenches                         linestring         8
+IN_ExistingCables                       linestring         7
+IN_ExistingPipes                        linestring         5
+IN_FacadeDropLines                      linestring         4
+IN_FacadeLines                          linestring         6
+IN_ForcedBackBoneCableClusters          polygon            3
+IN_ForcedBackBoneCables                 linestring         5
+IN_ForcedBackBoneClusters               polygon            6
+IN_ForcedBackBonePoints                 point              9
+IN_ForcedBackBoneRoutes                 linestring         5
+IN_ForcedDistributionCableClusters      polygon            4
+IN_ForcedDistributionCables             linestring         5
+IN_ForcedDistributionClusters           polygon            8
+IN_ForcedDistributionPoints             point             14
+IN_ForcedDistributionRoutes             linestring         5
+IN_ForcedDropClusters                   polygon            8
+IN_ForcedDropPoints                     point             16
+IN_ForcedDropRoutes                     linestring         5
+IN_ForcedEquipment                      point              5
+IN_ForcedFeederCableClusters            polygon            4
+IN_ForcedFeederCables                   linestring         5
+IN_ForcedFeederClusters                 polygon            7
+IN_ForcedFeederPoints                   point             13
+IN_ForcedFeederRoutes                   linestring         5
+IN_ForcedNonFiberClusters               polygon            6
+IN_ForcedPrimDistributionCableClusters  polygon            3
+IN_ForcedPrimDistributionCables         linestring         5
+IN_ForcedPrimDistributionClusters       polygon            8
+IN_ForcedPrimDistributionPoints         point              9
+IN_ForcedPrimDistributionRoutes         linestring         5
+IN_HomePoints                           point              5
+IN_NonFiberCables                       linestring         5
+IN_NonFiberEquipment                    point              8
+IN_Poles                                point              5
+IN_PolygonBoundaries                    polygon            3
+IN_PossibleTrenches                     linestring        12
+IN_RollOutPhases                        polygon            3
+IN_RulesPolygons                        polygon            3
+IN_StreetCenterLines                    linestring         7
+IN_Transitions                          linestring         8
+OUT_AccessStructures                    point             19
+OUT_BackBoneCableClusters               polygon            6
+OUT_BackBoneCables                      linestring        10
+OUT_BackBoneClusters                    polygon            6
+OUT_BackBoneDuct                        linestring         7
+OUT_BackBonePoints                      point              9
+OUT_BackBoneRoutes                      linestring         5
+OUT_Closures                            point             17
+OUT_CoaxEquipment                       point             11
+OUT_DemandPoints                        point             25
+OUT_DistributionCableClusters           polygon            4
+OUT_DistributionCableEntries            linestring        12
+OUT_DistributionCablePieces             linestring         7
+OUT_DistributionCableSlack              point              7
+OUT_DistributionCables                  linestring        14
+OUT_DistributionCablesDetail            linestring         7
+OUT_DistributionClusters                polygon            8
+OUT_DistributionDuct                    linestring        11
+OUT_DistributionDuctPieces              linestring         8
+OUT_DistributionPoints                  point             14
+OUT_DistributionRoutes                  linestring         5
+OUT_DropCableEntries                    linestring        12
+OUT_DropCablePieces                     linestring         7
+OUT_DropCableSlack                      point              7
+OUT_DropCables                          linestring        14
+OUT_DropCablesDetail                    linestring         7
+OUT_DropClusters                        polygon            8
+OUT_DropDuct                            linestring        11
+OUT_DropDuctPieces                      linestring         8
+OUT_DropPoints                          point             16
+OUT_DropRoutes                          linestring         5
+OUT_Edges                               linestring        12
+OUT_FeederCableClusters                 polygon            4
+OUT_FeederCableEntries                  linestring        12
+OUT_FeederCablePieces                   linestring         7
+OUT_FeederCableSlack                    point              7
+OUT_FeederCables                        linestring        14
+OUT_FeederCablesDetail                  linestring         7
+OUT_FeederClusters                      polygon            7
+OUT_FeederDuct                          linestring        11
+OUT_FeederDuctPieces                    linestring         8
+OUT_FeederPoints                        point             13
+OUT_FeederRoutes                        linestring         5
+OUT_Fibers                              linestring        14
+OUT_ForcedEquipment                     point              5
+OUT_MicroDuctConnectors                 point             14
+OUT_Nodes                               point              5
+OUT_PrimDistributionCableClusters       polygon            3
+OUT_PrimDistributionCablePieces         linestring         5
+OUT_PrimDistributionCables              linestring         6
+OUT_PrimDistributionCablesDetail        linestring         5
+OUT_PrimDistributionClusters            polygon            5
+OUT_PrimDistributionDuct                linestring         5
+OUT_PrimDistributionDuctPieces          linestring         7
+OUT_PrimDistributionPoints              point              9
+OUT_PrimDistributionRoutes              linestring         5
+OUT_ProtectionPipes                     linestring         8
+OUT_Splices                             point              9
+OUT_Splitters                           point             18
+OUT_UsedSegments                        linestring        16
+processed_BuildingsNotConnected         point             18
+processed_CentralOffice                 point              3
+processed_DemandPoints                  point             18
+processed_Edges                         linestring        14
+processed_EdgesNotConnected             linestring         2
+processed_ExistingEquipment             point              6
+processed_Nodes                         point              6
+processed_NodesNotConnected             point              4
+processed_Poles                         point              4
+
+
+COMMAND: comsof_ws <database> <resource_dir>/test_data/test_workspace list fields *.avoid*
+Opening database <conn_spec> ...
+table                     field  type
+------------------------  -----  ------
+IN_AerialConnections      avoid  string
+IN_AerialDropConnections  avoid  string
+IN_Boundaries             avoid  string
+IN_Crossings              avoid  string
+IN_DropTrenches           avoid  string
+IN_ExistingCables         avoid  string
+IN_FacadeLines            avoid  string
+IN_PossibleTrenches       avoid  string
+IN_Transitions            avoid  string
+OUT_Edges                 avoid  string
+OUT_UsedSegments          avoid  string
+processed_Edges           avoid  string
+
+
+COMMAND: comsof_ws <database> <resource_dir>/test_data/test_workspace list fields OUT_Dist*.loc* --layout=csv --raw
+Opening database <conn_spec> ...
+table,field,type
+
+
+COMMAND: comsof_ws <database> <resource_dir>/test_data/test_workspace list data --layout=keys
+Opening database <conn_spec> ...
+  IN_AccessStructures  n_recs=0
+  IN_AerialConnections  n_recs=0
+  IN_AerialDropConnections  n_recs=0
+  IN_BOM_SubAreas  n_recs=0
+  IN_Boundaries  n_recs=0
+  IN_Buildings  n_recs=0
+  IN_CentralOffice  n_recs=1
+  IN_Crossings  n_recs=57
+  IN_DemandPoints  n_recs=61
+  IN_DropTrenches  n_recs=62
+  IN_ExistingCables  n_recs=0
+  IN_ExistingPipes  n_recs=0
+  IN_FacadeDropLines  n_recs=0
+  IN_FacadeLines  n_recs=0
+  IN_ForcedBackBoneCableClusters  n_recs=0
+  IN_ForcedBackBoneCables  n_recs=0
+  IN_ForcedBackBoneClusters  n_recs=0
+  IN_ForcedBackBonePoints  n_recs=0
+  IN_ForcedBackBoneRoutes  n_recs=0
+  IN_ForcedDistributionCableClusters  n_recs=0
+  IN_ForcedDistributionCables  n_recs=0
+  IN_ForcedDistributionClusters  n_recs=1
+  IN_ForcedDistributionPoints  n_recs=1
+  IN_ForcedDistributionRoutes  n_recs=49
+  IN_ForcedDropClusters  n_recs=4
+  IN_ForcedDropPoints  n_recs=4
+  IN_ForcedDropRoutes  n_recs=209
+  IN_ForcedEquipment  n_recs=0
+  IN_ForcedFeederCableClusters  n_recs=1
+  IN_ForcedFeederCables  n_recs=0
+  IN_ForcedFeederClusters  n_recs=1
+  IN_ForcedFeederPoints  n_recs=1
+  IN_ForcedFeederRoutes  n_recs=7
+  IN_ForcedNonFiberClusters  n_recs=0
+  IN_ForcedPrimDistributionCableClusters  n_recs=0
+  IN_ForcedPrimDistributionCables  n_recs=0
+  IN_ForcedPrimDistributionClusters  n_recs=0
+  IN_ForcedPrimDistributionPoints  n_recs=0
+  IN_ForcedPrimDistributionRoutes  n_recs=0
+  IN_HomePoints  n_recs=0
+  IN_NonFiberCables  n_recs=0
+  IN_NonFiberEquipment  n_recs=0
+  IN_Poles  n_recs=0
+  IN_PolygonBoundaries  n_recs=0
+  IN_PossibleTrenches  n_recs=79
+  IN_RollOutPhases  n_recs=0
+  IN_RulesPolygons  n_recs=0
+  IN_StreetCenterLines  n_recs=24
+  IN_Transitions  n_recs=0
+  OUT_AccessStructures  n_recs=156
+  OUT_BackBoneCableClusters  n_recs=0
+  OUT_BackBoneCables  n_recs=0
+  OUT_BackBoneClusters  n_recs=0
+  OUT_BackBoneDuct  n_recs=0
+  OUT_BackBonePoints  n_recs=0
+  OUT_BackBoneRoutes  n_recs=0
+  OUT_Closures  n_recs=67
+  OUT_CoaxEquipment  n_recs=0
+  OUT_DemandPoints  n_recs=61
+  OUT_DistributionCableClusters  n_recs=0
+  OUT_DistributionCableEntries  n_recs=61
+  OUT_DistributionCablePieces  n_recs=4
+  OUT_DistributionCableSlack  n_recs=0
+  OUT_DistributionCables  n_recs=4
+  OUT_DistributionCablesDetail  n_recs=7
+  OUT_DistributionClusters  n_recs=1
+  OUT_DistributionDuct  n_recs=3
+  OUT_DistributionDuctPieces  n_recs=5
+  OUT_DistributionPoints  n_recs=1
+  OUT_DistributionRoutes  n_recs=49
+  OUT_DropCableEntries  n_recs=61
+  OUT_DropCablePieces  n_recs=61
+  OUT_DropCableSlack  n_recs=0
+  OUT_DropCables  n_recs=61
+  OUT_DropCablesDetail  n_recs=115
+  OUT_DropClusters  n_recs=4
+  OUT_DropDuct  n_recs=61
+  OUT_DropDuctPieces  n_recs=88
+  OUT_DropPoints  n_recs=4
+  OUT_DropRoutes  n_recs=209
+  OUT_Edges  n_recs=450
+  OUT_FeederCableClusters  n_recs=1
+  OUT_FeederCableEntries  n_recs=2
+  OUT_FeederCablePieces  n_recs=1
+  OUT_FeederCableSlack  n_recs=0
+  OUT_FeederCables  n_recs=1
+  OUT_FeederCablesDetail  n_recs=1
+  OUT_FeederClusters  n_recs=1
+  OUT_FeederDuct  n_recs=1
+  OUT_FeederDuctPieces  n_recs=1
+  OUT_FeederPoints  n_recs=1
+  OUT_FeederRoutes  n_recs=7
+  OUT_Fibers  n_recs=190
+  OUT_ForcedEquipment  n_recs=0
+  OUT_MicroDuctConnectors  n_recs=28
+  OUT_Nodes  n_recs=393
+  OUT_PrimDistributionCableClusters  n_recs=0
+  OUT_PrimDistributionCablePieces  n_recs=0
+  OUT_PrimDistributionCables  n_recs=0
+  OUT_PrimDistributionCablesDetail  n_recs=0
+  OUT_PrimDistributionClusters  n_recs=0
+  OUT_PrimDistributionDuct  n_recs=0
+  OUT_PrimDistributionDuctPieces  n_recs=0
+  OUT_PrimDistributionPoints  n_recs=0
+  OUT_PrimDistributionRoutes  n_recs=0
+  OUT_ProtectionPipes  n_recs=0
+  OUT_Splices  n_recs=187
+  OUT_Splitters  n_recs=2
+  OUT_UsedSegments  n_recs=214
+  processed_BuildingsNotConnected  n_recs=0
+  processed_CentralOffice  n_recs=1
+  processed_DemandPoints  n_recs=61
+  processed_Edges  n_recs=450
+  processed_EdgesNotConnected  n_recs=0
+  processed_ExistingEquipment  n_recs=0
+  processed_Nodes  n_recs=393
+  processed_NodesNotConnected  n_recs=0
+  processed_Poles  n_recs=0
+
+
+COMMAND: comsof_ws <database> <resource_dir>/test_data/test_workspace list records *Acc* --limit=5
+Opening database <conn_spec> ...
+table                 fid_1  geometry                                      eq_id  linked_agg  type             identifier  existing  virtual  layer   label  id   dct_pieces  enc_eqp_id  pipe_ids  has_demand  gistool_id  phase  deployment  fid
+--------------------  -----  --------------------------------------------  -----  ----------  ---------------  ----------  --------  -------  ------  -----  ---  ----------  ----------  --------  ----------  ----------  -----  ----------  -------------------
+OUT_AccessStructures      1  POINT (304497.85890475614 5790582.334714187)    257          35  Building         -                  0        1  Demand  -      488  -                   -1  -                  0           -      1           1  IN_DemandPoints.923
+OUT_AccessStructures      2  POINT (304503.29691880656 5790499.424681555)    290          43  Building         -                  0        1  Demand  -      482  -                   -1  -                  0           -      1           1  IN_DemandPoints.917
+OUT_AccessStructures      3  POINT (304590.8066628924 5790565.788093998)     389          -1  AccessStructure  -                  0        1  Drop    -      655  8;84;87             -1  -                  0           -      1           1  -
+OUT_AccessStructures      4  POINT (304514.0898989206 5790614.347362825)     373          50  AccessStructure  -                  0        1  Demand  -      494  89                  -1  -                  0           -      1           1  IN_DemandPoints.929
+OUT_AccessStructures      5  POINT (304472.2953984497 5790558.222455361)     306          11  Building         -                  0        1  Demand  -      492  -                   -1  -                  0           -      1           1  IN_DemandPoints.927
+
+

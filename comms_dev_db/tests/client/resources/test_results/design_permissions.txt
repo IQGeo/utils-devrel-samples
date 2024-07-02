@@ -1,0 +1,160 @@
+TEST: AFTER SAVE
+    input: NB046
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Design: NB046
+    label: Network Build (Designing)
+    label: State
+    label: Designing
+    label: Group
+    label: Admin Group
+    label: Admin Group
+    list item: Open
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Publish
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: More...
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Publish
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] admin
+    label: Built by
+
+
+TEST: AFTER CLICK EDIT - WITHOUT PERMISSION
+    input: NB046
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Design: NB046
+    label: Network Build (Designing)
+    label: State
+    label: Designing
+    label: Group
+    label: Admin Group
+    label: Admin Group
+    list item: Open
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: AFTER CLICK EDIT - WITH PERMISSION
+    input: NB335
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    label: Network Build (Designing)
+    label: Details*
+    label: feature-edit-input
+    input: 
+    label: State*
+    label: Designing
+    label: Designing
+    label: Group*
+    label: feature-edit-input
+    label: Type*
+    label: Network Build
+    label: Network Build
+    label: Work Order*
+    label: feature-edit-input
+    input: 
+  header: Boundary
+    button: Cancel
+    button: Delete
+    button: Save
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    label: [Comms] designer
+    label: Built by
+
+

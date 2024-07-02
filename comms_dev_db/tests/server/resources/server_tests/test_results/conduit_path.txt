@@ -1,0 +1,61 @@
+
+SUB TEST : FIND PATH
+    Request: POST: /modules/comms/conduit/path?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "count": 9,
+       "features": [
+          "ug_route(10)    Route (Underground): 10",
+          "ug_route(11)    Route (Underground): 11",
+          "ug_route(12)    Route (Underground): 12",
+          "ug_route(394)    Route (Underground): 394",
+          "ug_route(395)    Route (Underground): 395",
+          "ug_route(396)    Route (Underground): 396",
+          "ug_route(397)    Route (Underground): 397",
+          "ug_route(4002)    Route (Underground): 4002",
+          "ug_route(9)    Route (Underground): 9"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: FIND PATH
+    
+    VALIDATION ERRORS: FIND PATH
+    DATABASE CHANGES: ROUTE SINGLE PATH
+    
+    VALIDATION ERRORS: ROUTE SINGLE PATH
+
+SUB TEST : BLOWN FIBER FIND PATH
+    Request: POST: /modules/comms/conduit/path?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "count": 9,
+       "features": [
+          "ug_route(10)    Route (Underground): 10",
+          "ug_route(11)    Route (Underground): 11",
+          "ug_route(12)    Route (Underground): 12",
+          "ug_route(394)    Route (Underground): 394",
+          "ug_route(395)    Route (Underground): 395",
+          "ug_route(396)    Route (Underground): 396",
+          "ug_route(397)    Route (Underground): 397",
+          "ug_route(4002)    Route (Underground): 4002",
+          "ug_route(9)    Route (Underground): 9"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: BLOWN FIBER FIND PATH
+    
+    VALIDATION ERRORS: BLOWN FIBER FIND PATH

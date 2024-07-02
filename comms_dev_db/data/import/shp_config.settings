@@ -1,0 +1,8 @@
+{
+    "mywcom.import_file_types": {
+        "gpkg": "gpkg_feature_package",
+        "sqlite": "sqlite_feature_package",
+        "zip": "file_feature_package",
+        "shp": "ogr_feature_package"
+    }
+}

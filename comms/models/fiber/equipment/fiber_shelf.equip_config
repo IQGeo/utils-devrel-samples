@@ -1,0 +1,13 @@
+{
+    "image": "modules/comms/images/features/shelf.svg",
+    "housings": ["rack"],
+    "function": "enclosure",
+    "palette": true,
+    "tech": "mixed",
+    "layer": {
+        "min_vis": 0,
+        "max_vis": 0,
+        "min_select": 0,
+        "max_select": 0
+    }
+}

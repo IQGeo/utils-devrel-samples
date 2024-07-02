@@ -1,0 +1,10 @@
+{
+    "mywcom.fiberLoss": {
+		"cable": 0.5,
+		"splice": 0.1,
+		"mux": 4.83,
+		"connector": 0.3,
+		"terminal": 0.3,
+		"splitter": 4.83
+	}
+}

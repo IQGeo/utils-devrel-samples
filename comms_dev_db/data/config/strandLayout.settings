@@ -1,0 +1,39 @@
+{
+   "mywcom.strandLayout": {
+      "defaultLengthUnit": "ft",
+      "enabled": true,
+      "overhead": {
+         "structures": {
+            "pole": {
+               "fields": [
+                  "height",
+                  "type"
+               ]
+            },
+            "building": {
+               "fields": [
+                  "owner",
+                  "access_code"
+               ]
+            }
+         },
+         "routes": [
+            "oh_route"
+         ]
+      },
+      "underground": {
+         "structures": {
+            "manhole": {
+               "fields": [
+                  "size_x",
+                  "size_y",
+                  "size_z"
+               ]
+            }
+         },
+         "routes": [
+            "ug_route"
+         ]
+      }
+   }
+}

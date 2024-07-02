@@ -1,0 +1,153 @@
+
+*** ADD MULTIPLE
+Set delta to: design/NB217
+VALIDATE LOC CFG PASS
+{
+	"config": [
+		{
+			"high": 10,
+			"low": 1,
+			"name": "",
+			"origin": "mywcom_fiber_segment/184",
+			"ref": "",
+			"status": ""
+		},
+		{
+			"high": 20,
+			"low": 11,
+			"name": "",
+			"origin": "mywcom_fiber_segment/184",
+			"ref": "",
+			"status": "Dead"
+		},
+		{
+			"high": 90,
+			"low": 1,
+			"name": "WH-3",
+			"origin": "mywcom_fiber_segment/184",
+			"ref": "",
+			"status": "Active"
+		},
+		{
+			"high": 100,
+			"low": 50,
+			"name": "WH-4",
+			"origin": "mywcom_fiber_segment/184",
+			"ref": "",
+			"status": "Active"
+		},
+		{
+			"high": 200,
+			"low": 162,
+			"name": "",
+			"origin": "mywcom_fiber_segment/184",
+			"ref": "",
+			"status": "Spare"
+		},
+		{
+			"high": 210,
+			"low": 201,
+			"name": "",
+			"origin": "mywcom_fiber_segment/184",
+			"ref": "",
+			"status": ""
+		},
+		{
+			"high": 220,
+			"low": 211,
+			"name": "",
+			"origin": "mywcom_fiber_segment/184",
+			"ref": "",
+			"status": "Dead"
+		},
+		{
+			"high": 230,
+			"low": 221,
+			"name": "",
+			"origin": "mywcom_fiber_segment/184",
+			"ref": "",
+			"status": ""
+		}
+	],
+	"valid": true
+}
+VALIDATE LOC CFG FAIL
+{
+	"args": {
+		"high": 100,
+		"low": 50,
+		"name": "WH-3",
+		"status": "Active"
+	},
+	"msg": "overlapping_ranges",
+	"valid": false
+}
+UPDATE LOC CFG
+FETCH BACK LOC CFG
+{
+	"mywcom_fiber_segment/184": {
+		"": [
+			{
+				"high": 20,
+				"low": 11,
+				"name": "",
+				"origin": "mywcom_fiber_segment/184",
+				"physical": false,
+				"physical_low": 11,
+				"status": "Dead"
+			},
+			{
+				"high": 90,
+				"low": 1,
+				"name": "WH-3",
+				"origin": "mywcom_fiber_segment/184",
+				"physical": false,
+				"physical_low": 21,
+				"status": "Active"
+			},
+			{
+				"high": 100,
+				"low": 50,
+				"name": "WH-4",
+				"origin": "mywcom_fiber_segment/184",
+				"physical": false,
+				"physical_low": 111,
+				"status": "Active"
+			},
+			{
+				"high": 200,
+				"low": 162,
+				"name": "",
+				"origin": "mywcom_fiber_segment/184",
+				"physical": false,
+				"physical_low": 162,
+				"status": "Spare"
+			},
+			{
+				"high": 220,
+				"low": 211,
+				"name": "",
+				"origin": "mywcom_fiber_segment/184",
+				"physical": false,
+				"physical_low": 211,
+				"status": "Dead"
+			}
+		]
+	}
+}
+CHECK EDITABLE
+true
+FORMATTED LOC
+ [11 - 20] Dead"<br>WH-3 [1 - 90] Active"<br>WH-4 [50 - 100] Active"<br> [162 - 200] Spare"<br> [211 - 220] Dead"
+DATABASE CHANGES: ADD MULTIPLE
+    insert delta.mywcom_line_of_count(design/NB217,100000,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100001,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100002,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100003,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100004,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100000,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100001,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100002,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100003,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100004,insert)
+

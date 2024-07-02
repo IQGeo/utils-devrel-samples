@@ -1,0 +1,15 @@
+
+SUB TEST : SPLIT SLACK
+    Request: POST: /modules/comms/slack/mywcom_fiber_slack/split/1?length=15&delta=design/NB217
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER SPLIT SLACK
+       insert delta.mywcom_fiber_segment(design/NB217,3,update)
+       insert delta.mywcom_fiber_segment(design/NB217,581,update)
+       insert delta.mywcom_fiber_segment(design/NB217,100000,insert)
+       insert delta.mywcom_fiber_slack(design/NB217,1,update)
+       insert delta.mywcom_fiber_slack(design/NB217,100000,insert)
+       insert delta.mywcom_line_of_count(design/NB217,2,update)
+       insert delta.mywcom_line_of_count_section(design/NB217,100000,insert)
+    

@@ -1,0 +1,157 @@
+COMMAND: comms_db comsof_test_tiny import <resource_dir>/test_data/workspaces/tiny.geopackage.v22.1.zip --format=comsof
+Opening database postgresql://***:***@postgis:5432/comsof_test_tiny ...
+Opening /tmp/<tmp_dir>/workspace/output/output.gpkg
+Coordinate system: 32631 unit_size=1.0
+Import engine: comsof
+Loading data
+  Feature type: building
+    Loaded 1 records
+  Feature type: cabinet
+    Loaded 1 records
+  Feature type: drop_point
+    Loaded 5 records
+  Feature type: fiber_cable
+    Loaded 11 records
+  Feature type: fiber_splitter
+    Loaded 1 records
+  Feature type: manhole
+    Loaded 0 records
+  Feature type: oh_route
+    Loaded 0 records
+  Feature type: pole
+    Loaded 0 records
+  Feature type: rack
+    Loaded 0 records
+  Feature type: splice_closure
+    Loaded 12 records
+  Feature type: ug_route
+    Loaded 37 records
+  Feature type: wall_box
+    Loaded 9 records
+Mapping references
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+Building route network
+  Reading nodes
+    Read 93 node records
+  Finding structures
+  Ordering coincident structures
+  Connecting routes
+  Adding riser routes
+Adding conduits
+  Reading duct pieces
+    Read 15 duct piece records
+  Created 49 conduits
+Adding cable segments
+  Reading cable details
+    Read 19 cable detail records
+  Reading cable pieces
+    Read 11 cable piece records
+  Reading slacks
+    Read 0 slack records
+  Building segment chains
+  Routed 11 cables
+Connecting fibers
+  Reading fibers
+    Read 52 fiber records
+  Building connection infos
+    Found connections in 12 locations
+  Adding connection records
+Pruning unused objects
+  Pruning unused conduits
+    conduit : Pruned 0 records
+    blown_fiber_bundle : Pruned 0 records
+    blown_fiber_tube : Pruned 0 records
+  Pruning unused routes
+    oh_route : Pruned 0 records
+    ug_route : Pruned 0 records
+  Pruning unused equipment
+    Equipment: Pruned 0 records
+  Pruning unused structures
+    mywcom_route_junction : Pruned 0 records
+    building : Pruned 0 records
+    cabinet : Pruned 0 records
+    drop_point : Pruned 0 records
+    manhole : Pruned 0 records
+    mdu : Pruned 0 records
+    pole : Pruned 0 records
+    wall_box : Pruned 0 records
+Snapping geometries
+
+Opening database postgresql://***:***@postgis:5432/comsof_test_tiny ...
+table                         count
+----------------------------  -----
+blown_fiber_bundle                0
+blown_fiber_tube                  0
+building                          1
+cabinet                           1
+cabinet_spec                      0
+conduit                          49
+conduit_spec                      0
+drop_point                        5
+fiber_cable                      11
+fiber_cable_spec                  0
+fiber_mux                         0
+fiber_mux_spec                    0
+fiber_olt                         0
+fiber_ont                         0
+fiber_ont_spec                    0
+fiber_patch_panel                 0
+fiber_patch_panel_spec            0
+fiber_shelf                       0
+fiber_splice_tray                 0
+fiber_splitter                    1
+fiber_splitter_spec               0
+fiber_tap                         0
+fiber_tap_spec                    0
+floor                             0
+ftth_circuit                      0
+iqgapp_markup_line                0
+iqgapp_markup_photo               0
+iqgapp_markup_photo_item          0
+iqgapp_markup_point               0
+iqgapp_markup_polygon             0
+iqgapp_markup_text                0
+iqgapp_task_queue                 0
+manhole                           0
+manhole_spec                      0
+mdu                               0
+mywcom_change_detail              0
+mywcom_coax_connection            0
+mywcom_coax_segment               0
+mywcom_coax_slack                 0
+mywcom_conduit_run                0
+mywcom_copper_connection          0
+mywcom_copper_segment             0
+mywcom_copper_slack               0
+mywcom_data_block                 0
+mywcom_fiber_connection          19
+mywcom_fiber_segment             68
+mywcom_fiber_slack                0
+mywcom_labor_cost                 0
+mywcom_line_of_count              0
+mywcom_line_of_count_section      0
+mywcom_route_junction            24
+note                              0
+oh_route                          0
+pole                              0
+pole_spec                         0
+rack                              0
+room                              0
+slot                              0
+splice_closure                   12
+splice_closure_spec               0
+ug_route                         39
+wall_box                          9
+wall_box_spec                     0
+

@@ -1,0 +1,3 @@
+id,name,n_fiber_out_ports,root_housing,housing,location,device_id,installation_date,job_id
+fiber_olt/8000,XX-OLT-6000,8,building/8000,fiber_shelf/8000,0101000020E6100000184B2264B8CEC03F801A0C83521C4A40,,,
+fiber_olt/8001,XX-OLT-6001,8,building/8000,fiber_shelf/8000,0101000020E6100000184B2264B8CEC03F801A0C83521C4A40,,,

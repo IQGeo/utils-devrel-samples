@@ -1,0 +1,16 @@
+DATABASE CHANGES: AFTER CONNECT PORT -> FIBRE DOWNSTREAM
+   insert data.mywcom_change_detail(5)
+   insert delta.mywcom_fiber_connection(design/NB046,100000,insert)
+
+DATABASE CHANGES: AFTER CONNECT PORT -> FIBRE UPSTREAM
+   insert data.mywcom_change_detail(6)
+   insert delta.mywcom_fiber_connection(design/NB046,100001,insert)
+
+DATABASE CHANGES: AFTER DISCONNECT PORT -> FIBRE DOWNSTREAM
+   insert data.mywcom_change_detail(7)
+   insert delta.mywcom_fiber_connection(design/NB046,78,delete)
+
+DATABASE CHANGES: AFTER CONNECT PORT -> PORT
+   insert data.mywcom_change_detail(8)
+   insert delta.mywcom_fiber_connection(design/NB046,100002,insert)
+

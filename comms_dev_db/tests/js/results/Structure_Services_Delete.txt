@@ -1,0 +1,78 @@
+
+*** DELETE MANHOLE WITH SPLICES
+Set delta to: design/NB217
+DATABASE CHANGES: DELETE MANHOLE WITH SPLICES
+    insert delta.manhole(design/NB217,23,delete)
+    insert delta.mywcom_fiber_segment(design/NB217,60,update)
+    insert delta.mywcom_fiber_segment(design/NB217,61,update)
+    insert delta.mywcom_route_junction(design/NB217,100000,insert)
+    insert delta.splice_closure(design/NB217,10,delete)
+    insert delta.ug_route(design/NB217,10,update)
+    insert delta.ug_route(design/NB217,9,update)
+
+VALIDATION ERRORS: DELETE MANHOLE WITH SPLICES
+
+
+*** DELETE CABINET WITH SLACK
+Set delta to: design/NB217
+DATABASE CHANGES: DELETE CABINET WITH SLACK
+    insert delta.cabinet(design/NB217,3,delete)
+    insert delta.conduit(design/NB217,38,update)
+    insert delta.conduit(design/NB217,39,update)
+    insert delta.mywcom_fiber_segment(design/NB217,38,update)
+    insert delta.mywcom_fiber_segment(design/NB217,39,update)
+    insert delta.mywcom_fiber_segment(design/NB217,585,update)
+    insert delta.mywcom_fiber_slack(design/NB217,5,update)
+    insert delta.mywcom_route_junction(design/NB217,100001,insert)
+    insert delta.ug_route(design/NB217,265,update)
+
+VALIDATION ERRORS: DELETE CABINET WITH SLACK
+
+
+*** ATTEMPT DELETE HUB WITH CIRCUITS
+Set delta to: design/NB217
+Error: structure_has_circuit
+
+DATABASE CHANGES: ATTEMPT DELETE HUB WITH CIRCUITS
+
+VALIDATION ERRORS: ATTEMPT DELETE HUB WITH CIRCUITS
+
+
+*** DELETE WALL BOX WITH PROPOSED CIRCUIT
+Set delta to: *** master ***
+DATABASE CHANGES: DELETE WALL BOX WITH PROPOSED CIRCUIT
+    delete data.fiber_ont(147)
+    delete data.wall_box(147)
+    insert data.mywcom_route_junction(100002)
+    update data.blown_fiber_tube(170) fields=(in_structure)
+    update data.mywcom_fiber_segment(431) fields=(out_structure)
+    update data.ug_route(319) fields=(in_structure)
+
+ERROR: NEED DELTA TO RUN VALIDATION
+
+*** ATTEMPT DELETE MANHOLE WITH WITH CIRCUITS
+Set delta to: design/NB217
+Error: structure_has_circuit
+
+DATABASE CHANGES: ATTEMPT DELETE MANHOLE WITH WITH CIRCUITS
+
+VALIDATION ERRORS: ATTEMPT DELETE MANHOLE WITH WITH CIRCUITS
+
+
+*** DELETE MDU WITH INTERNAL CABLE
+Set delta to: design/NB217
+DATABASE CHANGES: DELETE MDU WITH INTERNAL CABLE
+    insert delta.fiber_cable(design/NB217,221,delete)
+    insert delta.fiber_ont(design/NB217,141,delete)
+    insert delta.fiber_patch_panel(design/NB217,14,delete)
+    insert delta.mdu(design/NB217,5,delete)
+    insert delta.mywcom_fiber_connection(design/NB217,314,delete)
+    insert delta.mywcom_fiber_connection(design/NB217,315,delete)
+    insert delta.mywcom_fiber_connection(design/NB217,316,delete)
+    insert delta.mywcom_fiber_segment(design/NB217,453,update)
+    insert delta.mywcom_fiber_segment(design/NB217,579,delete)
+    insert delta.mywcom_route_junction(design/NB217,100003,insert)
+    insert delta.ug_route(design/NB217,312,update)
+
+VALIDATION ERRORS: DELETE MDU WITH INTERNAL CABLE
+

@@ -1,0 +1,26 @@
+Set delta to: *** master ***
+STRUCTURE CONDUITS WITHOUT PROPOSED OBJECTS
+[
+
+]
+STRUCTURE CONDUITS WITH PROPOSED OBJECTS
+[
+	{
+		"conduit": "blown_fiber_tube/5202: BF Tube: WH-BF-5202 design/NB335 Design: NB335",
+		"conduit_run": "mywcom_conduit_run/5200: Conduit Run: 5200 design/NB335 Design: NB335",
+		"connected_conduit": "blown_fiber_tube/5207: BF Tube: WH-BF-5207 design/NB335 Design: NB335",
+		"structure_housing": "mywcom_route_junction/51: Route Junction: 51"
+	},
+	{
+		"conduit": "blown_fiber_tube/5203: BF Tube: WH-BF-5203 design/NB335 Design: NB335",
+		"conduit_run": "mywcom_conduit_run/5203: Conduit Run: 5203 design/NB335 Design: NB335",
+		"connected_conduit": undefined,
+		"structure_housing": "mywcom_route_junction/51: Route Junction: 51"
+	},
+	{
+		"conduit": "blown_fiber_tube/5207: BF Tube: WH-BF-5207 design/NB335 Design: NB335",
+		"conduit_run": "mywcom_conduit_run/5200: Conduit Run: 5200 design/NB335 Design: NB335",
+		"connected_conduit": "blown_fiber_tube/5202: BF Tube: WH-BF-5202 design/NB335 Design: NB335",
+		"structure_housing": "mywcom_route_junction/51: Route Junction: 51"
+	}
+]

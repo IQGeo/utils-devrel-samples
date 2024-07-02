@@ -1,0 +1,10 @@
+#!/bin/bash
+# Bash wrapper to client tests command 
+
+HERE=$(dirname $0)
+
+# Set import paths
+source $HERE/../../../../../../../Tools/myw_env
+
+# Run command
+python $0.py "$@"

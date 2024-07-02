@@ -1,0 +1,6758 @@
+
+*** systest/conflicts1
+Set delta to: systest/conflicts1
+
+VALIDATION REPORT: csv : 
+ValidationReport.type
+Systest: conflicts1
+ValidationReport.date: 6/10/2020
+
+ValidationReport.conflict_table
+
+ValidationReport.feature,ValidationReport.master_change,ValidationReport.delta_change,ValidationReport.conflicting_field,ValidationReport.base_field_value,ValidationReport.master_field_value,ValidationReport.delta_field_value
+ONT: WH-ONT-147,ValidationReport.update,ValidationReport.update,Location,Point(1),Point(1),
+,,,Housing,wall_box/147,,ug_route/89
+Fiber Cable: WH-FCB-009 (96),ValidationReport.update,ValidationReport.update,Path,LineString(38),LineString(38),
+,,,Distribution,BooleanFieldViewer.true,,ReportManagerPlugin.null
+Cable Segment: 85 (fiber_cable/9),ValidationReport.update,ValidationReport.update,Path,LineString(4),LineString(4),
+,,,Distribution,BooleanFieldViewer.true,,ReportManagerPlugin.null
+Cable Segment: 86 (fiber_cable/9),ValidationReport.update,ValidationReport.update,Path,LineString(4),LineString(4),
+,,,Distribution,BooleanFieldViewer.true,,ReportManagerPlugin.null
+
+ValidationReport.integrity_error_table
+
+ValidationReport.feature,ValidationReport.field,ValidationReport.problem,ValidationReport.details
+Route (Underground): 89,Path,IntegrityError.geom_mismatch_at
+,Route (Underground): 89: LineString(11)
+,,,Manhole: WH-M-48: Point(1)
+ONT: WH-ONT-147,Structure,IntegrityError.derived_value_mismatch
+,IntegrityError.value: wall_box/147
+,,,IntegrityError.expected: ug_route/89
+,Location,IntegrityError.geom_mismatch_at
+,ONT: WH-ONT-147: Point(1)
+,,,Route (Underground): 89: LineString(11)
+BF Tube: WH-BF-73 : 1,Path,IntegrityError.geom_mismatch_at
+,BF Tube: WH-BF-73 : 1: LineString(2)
+,,,BF Bundle: (6): LineString(2)
+,In BF Tube,IntegrityError.broken_chain
+,IntegrityError.at: Cabinet: WH-C-11
+,Out BF Tube,IntegrityError.broken_chain
+,IntegrityError.at: Manhole: WH-M-39
+Fiber Cable: WH-FCB-009 (96),Distribution,IntegrityError.not_set
+,
+Cable Segment: 83 (fiber_cable/9),In Structure,IntegrityError.duplicate_connection
+,IntegrityError.side: in
+,,,IntegrityError.conn1: WH-FCB-009#out:13 -> DROP-146#in:1
+,,,IntegrityError.conn2: WH-FCB-009#out:13 -> DROP-148#in:1
+,,,IntegrityError.clash_pins: out:13
+,,,IntegrityError.housing: Splice Closure: WH-SC-039
+,,,IntegrityError.struct: Cabinet: WH-C-11
+Fiber Splice: 190,Out High,IntegrityError.bad_pin_range
+,IntegrityError.side: out
+,,,IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+,,,IntegrityError.range: in:35:6
+,,,IntegrityError.housing: Splice Closure: WH-SC-039
+,,,IntegrityError.struct: Cabinet: WH-C-11
+,In Low,IntegrityError.bad_pin_range
+,IntegrityError.side: in
+,,,IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+,,,IntegrityError.range: out:80:6
+,,,IntegrityError.housing: Splice Closure: WH-SC-039
+,,,IntegrityError.struct: Cabinet: WH-C-11
+,In High,IntegrityError.bad_pin_range
+,IntegrityError.side: in
+,,,IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+,,,IntegrityError.range: out:80:6
+,,,IntegrityError.housing: Splice Closure: WH-SC-039
+,,,IntegrityError.struct: Cabinet: WH-C-11
+,Out Low,IntegrityError.bad_pin_range
+,IntegrityError.side: out
+,,,IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+,,,IntegrityError.range: in:35:6
+,,,IntegrityError.housing: Splice Closure: WH-SC-039
+,,,IntegrityError.struct: Cabinet: WH-C-11
+Conduit Run: 57,Path,IntegrityError.geom_mismatch
+,Conduit Run: 57: LineString(2)
+Cable Segment: 87 (fiber_cable/9),Path,IntegrityError.geom_mismatch_at
+,Cable Segment: 87 (fiber_cable/9): LineString(11)
+,,,Route (Underground): 89: LineString(11)
+Cable Segment: 86 (fiber_cable/9),Path,IntegrityError.geom_mismatch_at
+,Cable Segment: 86 (fiber_cable/9): LineString(4)
+,,,Route (Underground): 400: LineString(4)
+Cable Segment: 85 (fiber_cable/9),Path,IntegrityError.geom_mismatch_at
+,Cable Segment: 85 (fiber_cable/9): LineString(4)
+,,,Route (Underground): 79: LineString(4)
+Cable Segment: 76 (fiber_cable/9),In Segment,IntegrityError.broken_chain
+,IntegrityError.back_ref: 77
+,Path,IntegrityError.geom_mismatch_at
+,Cable Segment: 76 (fiber_cable/9): LineString(7)
+,,,Cable Segment: 76 (fiber_cable/9): LineString(7)
+,In Tick,IntegrityError.tick_mark_invalid
+,IntegrityError.invalid_tick: 0
+,,,IntegrityError.overlap_seg: Cable Segment: 77 (fiber_cable/9)
+
+
+VALIDATION REPORT: html : 
+<h3>
+ValidationReport.type</h3>
+<h1>
+Systest: conflicts1</h1>
+ValidationReport.date: 6&#x2F;10&#x2F;2020<br>
+<br>
+<h2>
+ValidationReport.conflict_table</h2>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.feature</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.master_change</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.delta_change</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.conflicting_field</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.base_field_value</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.master_field_value</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.delta_field_value</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ONT: WH-ONT-147</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Location</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Point(1)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Point(1)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Housing</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Wall Box</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Fiber Cable: WH-FCB-009 (96)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(38)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(38)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Distribution</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BooleanFieldViewer.true</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ReportManagerPlugin.null</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 85 (fiber_cable&#x2F;9)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(4)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(4)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Distribution</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BooleanFieldViewer.true</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ReportManagerPlugin.null</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 86 (fiber_cable&#x2F;9)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(4)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(4)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Distribution</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BooleanFieldViewer.true</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ReportManagerPlugin.null</td>
+</tr>
+</table>
+<br>
+<h2>
+ValidationReport.integrity_error_table</h2>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.feature</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.field</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.problem</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.details</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 89</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.geom_mismatch_at
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 89: LineString(11)</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-48: Point(1)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ONT: WH-ONT-147</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Structure</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.derived_value_mismatch
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.value: wall_box&#x2F;147</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.expected: ug_route&#x2F;89</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Location</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.geom_mismatch_at
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ONT: WH-ONT-147: Point(1)</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 89: LineString(11)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BF Tube: WH-BF-73 : 1</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.geom_mismatch_at
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BF Tube: WH-BF-73 : 1: LineString(2)</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BF Bundle: (6): LineString(2)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+In BF Tube</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.broken_chain
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.at: Cabinet: WH-C-11</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Out BF Tube</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.broken_chain
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.at: Manhole: WH-M-39</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Fiber Cable: WH-FCB-009 (96)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Distribution</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.not_set
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 83 (fiber_cable&#x2F;9)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+In Structure</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.duplicate_connection
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.side: in</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.conn1: WH-FCB-009#out:13 -&gt; DROP-146#in:1</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.conn2: WH-FCB-009#out:13 -&gt; DROP-148#in:1</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.clash_pins: out:13</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.housing: Splice Closure: WH-SC-039</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.struct: Cabinet: WH-C-11</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Fiber Splice: 190</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Out High</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.bad_pin_range
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.side: out</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.connection: WH-FCB-009#out:80:6 -&gt; DROP-144#in:35:6</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.range: in:35:6</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.housing: Splice Closure: WH-SC-039</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.struct: Cabinet: WH-C-11</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+In Low</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.bad_pin_range
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.side: in</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.connection: WH-FCB-009#out:80:6 -&gt; DROP-144#in:35:6</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.range: out:80:6</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.housing: Splice Closure: WH-SC-039</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.struct: Cabinet: WH-C-11</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+In High</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.bad_pin_range
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.side: in</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.connection: WH-FCB-009#out:80:6 -&gt; DROP-144#in:35:6</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.range: out:80:6</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.housing: Splice Closure: WH-SC-039</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.struct: Cabinet: WH-C-11</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Out Low</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.bad_pin_range
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.side: out</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.connection: WH-FCB-009#out:80:6 -&gt; DROP-144#in:35:6</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.range: in:35:6</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.housing: Splice Closure: WH-SC-039</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.struct: Cabinet: WH-C-11</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Conduit Run: 57</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.geom_mismatch
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Conduit Run: 57: LineString(2)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 87 (fiber_cable&#x2F;9)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.geom_mismatch_at
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 87 (fiber_cable&#x2F;9): LineString(11)</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 89: LineString(11)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 86 (fiber_cable&#x2F;9)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.geom_mismatch_at
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 86 (fiber_cable&#x2F;9): LineString(4)</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 400: LineString(4)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 85 (fiber_cable&#x2F;9)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.geom_mismatch_at
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 85 (fiber_cable&#x2F;9): LineString(4)</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 79: LineString(4)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 76 (fiber_cable&#x2F;9)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+In Segment</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.broken_chain
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.back_ref: 77</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.geom_mismatch_at
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 76 (fiber_cable&#x2F;9): LineString(7)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 76 (fiber_cable&#x2F;9): LineString(7)</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+In Tick</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.tick_mark_invalid
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.invalid_tick: 0</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+IntegrityError.overlap_seg: Cable Segment: 77 (fiber_cable&#x2F;9)</td>
+</tr>
+</table>
+
+
+VALIDATION REPORT: pdf : Systest: conflicts1
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 22840
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+45. 780.8899999999999864 Td
+(ValidationReport.type) Tj
+ET
+BT
+/F1 15 Tf
+17.25 TL
+0 g
+45. 761.4900000000000091 Td
+(Systest: conflicts1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+45. 746.4900000000000091 Td
+(ValidationReport.date) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+130.8600000000000136 746.4900000000000091 Td
+(: ) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+135.9000000000000057 746.4900000000000091 Td
+(6/10/2020) Tj
+ET
+BT
+/F1 13 Tf
+14.9499999999999993 TL
+0 g
+45. 721.7899999999999636 Td
+(ValidationReport.conflict_table) Tj
+ET
+0.95 G
+44.5 716.0900000000000318 m
+551.7799999999999727 716.0900000000000318 l
+S
+44.5 642.4987936246221807 m
+551.7799999999999727 642.4987936246221807 l
+S
+44.5 716.0900000000000318 m
+44.5 642.4987936246221807 l
+S
+551.7799999999999727 716.0900000000000318 m
+551.7799999999999727 642.4987936246221807 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 715.5900000000000318 506.2800000000000296 -10.1824310708069952 re
+f
+0. g
+0.95 g
+45. 697.3079078501419872 505.2800000000000296 -8.0996610790510175 re
+f
+0. g
+0.95 g
+45. 681.1085856920399237 505.2800000000000296 -8.0996610790510175 re
+f
+0. g
+0.95 g
+45. 664.9092635339378603 505.2800000000000296 -8.0996610790510175 re
+f
+0. g
+0.95 g
+45. 648.7099413758357969 505.2800000000000296 -8.0996610790510175 re
+f
+0. g
+BT
+/F2 4.628377759457725 Tf
+5.3226344233763827 TL
+1. g
+46.8513511037830881 708.4903389209489433 Td
+(ValidationReport.feature) Tj
+ET
+BT
+/F2 4.628377759457725 Tf
+5.3226344233763827 TL
+1. g
+120.535125034350088 708.4903389209489433 Td
+(ValidationReport.master_change) Tj
+ET
+BT
+/F2 4.628377759457725 Tf
+5.3226344233763827 TL
+1. g
+191.1178858660804281 708.4903389209489433 Td
+(ValidationReport.delta_change) Tj
+ET
+BT
+/F2 4.628377759457725 Tf
+5.3226344233763827 TL
+1. g
+257.5813904918933872 708.4903389209489433 Td
+(ValidationReport.conflicting_field) Tj
+ET
+BT
+/F2 4.628377759457725 Tf
+5.3226344233763827 TL
+1. g
+327.9327324356508484 708.4903389209489433 Td
+(ValidationReport.base_field_value) Tj
+ET
+BT
+/F2 4.628377759457725 Tf
+5.3226344233763827 TL
+1. g
+401.2925199230558064 708.4903389209489433 Td
+(ValidationReport.master_field_value) Tj
+ET
+BT
+/F2 4.628377759457725 Tf
+5.3226344233763827 TL
+1. g
+478.7715636163781596 708.4903389209489433 Td
+(ValidationReport.delta_field_value) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+46.8513511037830881 700.3906778418979684 Td
+(ONT: WH-ONT-147) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+120.535125034350088 700.3906778418979684 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+191.1178858660804281 700.3906778418979684 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+257.5813904918933872 700.3906778418979684 Td
+(Location) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+327.9327324356508484 700.3906778418979684 Td
+(Point\(1\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+401.2925199230558064 700.3906778418979684 Td
+(Point\(1\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+257.5813904918933872 692.2910167628468798 Td
+(Housing) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+327.9327324356508484 692.2910167628468798 Td
+(Wall Box) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+478.7715636163781596 692.2910167628468798 Td
+(Route \(Underground\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+46.8513511037830881 684.191355683795905 Td
+(Fiber Cable: WH-FCB-009 \(96\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+120.535125034350088 684.191355683795905 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+191.1178858660804281 684.191355683795905 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+257.5813904918933872 684.191355683795905 Td
+(Path) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+327.9327324356508484 684.191355683795905 Td
+(LineString\(38\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+401.2925199230558064 684.191355683795905 Td
+(LineString\(38\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+257.5813904918933872 676.0916946047448164 Td
+(Distribution) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+327.9327324356508484 676.0916946047448164 Td
+(BooleanFieldViewer.true) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+478.7715636163781596 676.0916946047448164 Td
+(ReportManagerPlugin.null) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+46.8513511037830881 667.9920335256938415 Td
+(Cable Segment: 85 \(fiber_cable/9\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+120.535125034350088 667.9920335256938415 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+191.1178858660804281 667.9920335256938415 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+257.5813904918933872 667.9920335256938415 Td
+(Path) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+327.9327324356508484 667.9920335256938415 Td
+(LineString\(4\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+401.2925199230558064 667.9920335256938415 Td
+(LineString\(4\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+257.5813904918933872 659.8923724466427529 Td
+(Distribution) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+327.9327324356508484 659.8923724466427529 Td
+(BooleanFieldViewer.true) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+478.7715636163781596 659.8923724466427529 Td
+(ReportManagerPlugin.null) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+46.8513511037830881 651.7927113675917781 Td
+(Cable Segment: 86 \(fiber_cable/9\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+120.535125034350088 651.7927113675917781 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+191.1178858660804281 651.7927113675917781 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+257.5813904918933872 651.7927113675917781 Td
+(Path) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+327.9327324356508484 651.7927113675917781 Td
+(LineString\(4\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+401.2925199230558064 651.7927113675917781 Td
+(LineString\(4\)) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+257.5813904918933872 643.6930502885406895 Td
+(Distribution) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+327.9327324356508484 643.6930502885406895 Td
+(BooleanFieldViewer.true) Tj
+ET
+BT
+/F1 4.628377759457725 Tf
+5.3226344233763827 TL
+0. g
+478.7715636163781596 643.6930502885406895 Td
+(ReportManagerPlugin.null) Tj
+ET
+BT
+/F1 13 Tf
+14.9499999999999993 TL
+0. g
+45. 618.2602802967846856 Td
+(ValidationReport.integrity_error_table) Tj
+ET
+0.95 G
+44.5 612.5602802967847538 m
+551.7799999999999727 612.5602802967847538 l
+S
+44.5 50. m
+551.7799999999999727 50. l
+S
+44.5 612.5602802967847538 m
+44.5 50. l
+S
+551.7799999999999727 612.5602802967847538 m
+551.7799999999999727 50. l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 612.0602802967847538 506.2799999999999727 -14.5081701905507643 re
+f
+0. g
+0.95 g
+45. 586.0115201819322692 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 562.9303403333287861 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 539.8491604847251892 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 516.7679806361218198 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 493.6868007875182798 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 470.6056209389147966 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 447.5244410903113135 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 424.4432612417078303 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 401.3620813931043472 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 378.280901544500864 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 355.1997216958973809 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 332.1185418472938977 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 309.0373619986903577 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 285.9561821500867609 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 262.875002301483164 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 239.7938224528795672 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 216.7126426042759704 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 193.6314627556723735 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 170.5502829070687767 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 147.4691030584651799 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 124.387923209861583 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 101.3067433612579862 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+0.95 g
+45. 78.2255635126543893 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+BT
+/F2 6.594622813886711 Tf
+7.5838162359697172 TL
+1. g
+47.6378491255546876 601.5196903724829554 Td
+(ValidationReport.feature) Tj
+ET
+BT
+/F2 6.594622813886711 Tf
+7.5838162359697172 TL
+1. g
+152.6242443226311423 601.5196903724829554 Td
+(ValidationReport.field) Tj
+ET
+BT
+/F2 6.594622813886711 Tf
+7.5838162359697172 TL
+1. g
+220.0872357086922193 601.5196903724829554 Td
+(ValidationReport.problem) Tj
+ET
+BT
+/F2 6.594622813886711 Tf
+7.5838162359697172 TL
+1. g
+340.966671887235691 601.5196903724829554 Td
+(ValidationReport.details) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 589.9791004481812706 Td
+(Route \(Underground\): 89) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 589.9791004481812706 Td
+(Path) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 589.9791004481812706 Td
+(IntegrityError.geom_mismatch_at) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 589.9791004481812706 Td
+(Route \(Underground\): 89: LineString\(11\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 578.4385105238795859 Td
+(Manhole: WH-M-48: Point\(1\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 566.8979205995776738 Td
+(ONT: WH-ONT-147) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 566.8979205995776738 Td
+(Structure) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 566.8979205995776738 Td
+(IntegrityError.derived_value_mismatch) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 566.8979205995776738 Td
+(IntegrityError.value: wall_box/147) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 555.3573306752759891 Td
+(IntegrityError.expected: ug_route/89) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 543.8167407509740769 Td
+(Location) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 543.8167407509740769 Td
+(IntegrityError.geom_mismatch_at) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 543.8167407509740769 Td
+(ONT: WH-ONT-147: Point\(1\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 532.2761508266723922 Td
+(Route \(Underground\): 89: LineString\(11\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 520.7355609023704801 Td
+(BF Tube: WH-BF-73 : 1) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 520.7355609023704801 Td
+(Path) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 520.7355609023704801 Td
+(IntegrityError.geom_mismatch_at) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 520.7355609023704801 Td
+(BF Tube: WH-BF-73 : 1: LineString\(2\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 509.1949709780687385 Td
+(BF Bundle: \(6\): LineString\(2\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 497.6543810537669401 Td
+(In BF Tube) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 497.6543810537669401 Td
+(IntegrityError.broken_chain) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 497.6543810537669401 Td
+(IntegrityError.at: Cabinet: WH-C-11) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 486.1137911294651417 Td
+(Out BF Tube) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 486.1137911294651417 Td
+(IntegrityError.broken_chain) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 486.1137911294651417 Td
+(IntegrityError.at: Manhole: WH-M-39) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 474.5732012051633433 Td
+(Fiber Cable: WH-FCB-009 \(96\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 474.5732012051633433 Td
+(Distribution) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 474.5732012051633433 Td
+(IntegrityError.not_set) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 463.0326112808615449 Td
+(Cable Segment: 83 \(fiber_cable/9\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 463.0326112808615449 Td
+(In Structure) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 463.0326112808615449 Td
+(IntegrityError.duplicate_connection) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 463.0326112808615449 Td
+(IntegrityError.side: in) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 451.4920213565597464 Td
+(IntegrityError.conn1: WH-FCB-009#out:13 -> DROP-146#in:1) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 439.951431432257948 Td
+(IntegrityError.conn2: WH-FCB-009#out:13 -> DROP-148#in:1) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 428.4108415079561496 Td
+(IntegrityError.clash_pins: out:13) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 416.8702515836543512 Td
+(IntegrityError.housing: Splice Closure: WH-SC-039) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 405.3296616593525528 Td
+(IntegrityError.struct: Cabinet: WH-C-11) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 393.7890717350507543 Td
+(Fiber Splice: 190) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 393.7890717350507543 Td
+(Out High) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 393.7890717350507543 Td
+(IntegrityError.bad_pin_range) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 393.7890717350507543 Td
+(IntegrityError.side: out) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 382.2484818107489559 Td
+(IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 370.7078918864471575 Td
+(IntegrityError.range: in:35:6) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 359.1673019621453591 Td
+(IntegrityError.housing: Splice Closure: WH-SC-039) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 347.6267120378435607 Td
+(IntegrityError.struct: Cabinet: WH-C-11) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 336.0861221135417622 Td
+(In Low) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 336.0861221135417622 Td
+(IntegrityError.bad_pin_range) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 336.0861221135417622 Td
+(IntegrityError.side: in) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 324.545532189239907 Td
+(IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 313.0049422649381086 Td
+(IntegrityError.range: out:80:6) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 301.4643523406363101 Td
+(IntegrityError.housing: Splice Closure: WH-SC-039) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 289.9237624163345117 Td
+(IntegrityError.struct: Cabinet: WH-C-11) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 278.3831724920327133 Td
+(In High) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 278.3831724920327133 Td
+(IntegrityError.bad_pin_range) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 278.3831724920327133 Td
+(IntegrityError.side: in) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 266.8425825677309149 Td
+(IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 255.3019926434291165 Td
+(IntegrityError.range: out:80:6) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 243.7614027191273181 Td
+(IntegrityError.housing: Splice Closure: WH-SC-039) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 232.2208127948255196 Td
+(IntegrityError.struct: Cabinet: WH-C-11) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 220.6802228705237212 Td
+(Out Low) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 220.6802228705237212 Td
+(IntegrityError.bad_pin_range) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 220.6802228705237212 Td
+(IntegrityError.side: out) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 209.1396329462219228 Td
+(IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 197.5990430219201244 Td
+(IntegrityError.range: in:35:6) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 186.058453097618326 Td
+(IntegrityError.housing: Splice Closure: WH-SC-039) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 174.5178631733165275 Td
+(IntegrityError.struct: Cabinet: WH-C-11) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 162.9772732490147291 Td
+(Conduit Run: 57) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 162.9772732490147291 Td
+(Path) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 162.9772732490147291 Td
+(IntegrityError.geom_mismatch) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 162.9772732490147291 Td
+(Conduit Run: 57: LineString\(2\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 151.4366833247129307 Td
+(Cable Segment: 87 \(fiber_cable/9\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 151.4366833247129307 Td
+(Path) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 151.4366833247129307 Td
+(IntegrityError.geom_mismatch_at) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 151.4366833247129307 Td
+(Cable Segment: 87 \(fiber_cable/9\): LineString\(11\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 139.8960934004111323 Td
+(Route \(Underground\): 89: LineString\(11\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 128.3555034761093339 Td
+(Cable Segment: 86 \(fiber_cable/9\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 128.3555034761093339 Td
+(Path) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 128.3555034761093339 Td
+(IntegrityError.geom_mismatch_at) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 128.3555034761093339 Td
+(Cable Segment: 86 \(fiber_cable/9\): LineString\(4\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 116.8149135518075354 Td
+(Route \(Underground\): 400: LineString\(4\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 105.274323627505737 Td
+(Cable Segment: 85 \(fiber_cable/9\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 105.274323627505737 Td
+(Path) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 105.274323627505737 Td
+(IntegrityError.geom_mismatch_at) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 105.274323627505737 Td
+(Cable Segment: 85 \(fiber_cable/9\): LineString\(4\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 93.7337337032039386 Td
+(Route \(Underground\): 79: LineString\(4\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+47.6378491255546876 82.1931437789021402 Td
+(Cable Segment: 76 \(fiber_cable/9\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 82.1931437789021402 Td
+(In Segment) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 82.1931437789021402 Td
+(IntegrityError.broken_chain) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 82.1931437789021402 Td
+(IntegrityError.back_ref: 77) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 70.6525538546003418 Td
+(Path) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 70.6525538546003418 Td
+(IntegrityError.geom_mismatch_at) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 70.6525538546003418 Td
+(Cable Segment: 76 \(fiber_cable/9\): LineString\(7\)) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 59.1119639302985433 Td
+(Cable Segment: 76 \(fiber_cable/9\): LineString\(7\)) Tj
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 1595
+>>
+stream
+0.200025 w
+0.95 G
+44.5 791.8899999999999864 m
+551.7799999999999727 791.8899999999999864 l
+S
+44.5 732.9070800879618446 m
+551.7799999999999727 732.9070800879618446 l
+S
+44.5 791.8899999999999864 m
+44.5 732.9070800879618446 l
+S
+551.7799999999999727 791.8899999999999864 m
+551.7799999999999727 732.9070800879618446 l
+S
+0.01 0.51 0.74 rg
+45. 791.8899999999999864 506.2799999999999727 -14.5081701905507643 re
+f
+0. g
+0.95 g
+45. 765.8412398851475018 505.2799999999999727 -11.5405899243017434 re
+f
+0. g
+BT
+/F2 6.594622813886711 Tf
+7.5838162359697172 TL
+1. g
+47.6378491255546876 780.3494100756981879 Td
+(ValidationReport.feature) Tj
+ET
+BT
+/F2 6.594622813886711 Tf
+7.5838162359697172 TL
+1. g
+152.6242443226311423 780.3494100756981879 Td
+(ValidationReport.field) Tj
+ET
+BT
+/F2 6.594622813886711 Tf
+7.5838162359697172 TL
+1. g
+220.0872357086922193 780.3494100756981879 Td
+(ValidationReport.problem) Tj
+ET
+BT
+/F2 6.594622813886711 Tf
+7.5838162359697172 TL
+1. g
+340.966671887235691 780.3494100756981879 Td
+(ValidationReport.details) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+152.6242443226311423 768.8088201513965032 Td
+(In Tick) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+220.0872357086922193 768.8088201513965032 Td
+(IntegrityError.tick_mark_invalid) Tj
+T* () Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 768.8088201513965032 Td
+(IntegrityError.invalid_tick: 0) Tj
+ET
+BT
+/F1 6.594622813886711 Tf
+7.5838162359697172 TL
+0. g
+340.966671887235691 757.2682302270947048 Td
+(IntegrityError.overlap_seg: Cable Segment: 77 \(fiber_cable/9\)) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R ]
+/Count 2
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+/F6 12 0 R
+/F7 13 0 R
+/F8 14 0 R
+/F9 15 0 R
+/F10 16 0 R
+/F11 17 0 R
+/F12 18 0 R
+/F13 19 0 R
+/F14 20 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+21 0 obj
+<<
+/Producer (jsPDF 2.3.1)
+/CreationDate <date>
+>>
+endobj
+22 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 23
+0000000000 65535 f 
+0000024829 00000 n 
+0000026654 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000023045 00000 n 
+0000023182 00000 n 
+0000024892 00000 n 
+0000025017 00000 n 
+0000025147 00000 n 
+0000025280 00000 n 
+0000025418 00000 n 
+0000025542 00000 n 
+0000025671 00000 n 
+0000025803 00000 n 
+0000025939 00000 n 
+0000026067 00000 n 
+0000026194 00000 n 
+0000026323 00000 n 
+0000026456 00000 n 
+0000026558 00000 n 
+0000026904 00000 n 
+0000026990 00000 n 
+trailer
+<<
+/Size 23
+/Root 22 0 R
+/Info 21 0 R
+/ID <id>
+>>
+startxref
+27094
+%%EOF
+
+*** NB335
+Set delta to: design/NB335
+
+VALIDATION REPORT: csv : Design: NB335
+ValidationReport.type
+Design: NB335
+ValidationReport.date: 6/10/2020
+
+ValidationReport.conflict_table
+
+ValidationReport.feature,ValidationReport.master_change,ValidationReport.delta_change,ValidationReport.conflicting_field,ValidationReport.base_field_value,ValidationReport.master_field_value,ValidationReport.delta_field_value
+Manhole: WH-M-38,ValidationReport.delete,ValidationReport.delete,,,,
+Manhole: WH-M-54,ValidationReport.update,ValidationReport.update,Labor Costs,level_ground,"tree_trim,hole_dig,survey","hole_dig,level_ground"
+,,,Location,Point(1),Point(1),Point(1)
+,,,Length,17 in,33 in,24 in
+,,,Width,36 in,51 in,47 in
+,,,Depth,31 in,35 in,35 in
+,,,Spec,FPM-CCANN-J4,FPM-CCANN-MCX,FPM-CCANN-C2
+,,,Installed,1/1/2006,1/3/2006,1/3/2006
+,,,Lockable,ReportManagerPlugin.null,,BooleanFieldViewer.true
+Manhole: WH-M-55,ValidationReport.update,ValidationReport.delete,Spec,FPM-CCANN-MCX,FPM-CCANN-J4,
+,,,Labor Costs,hole_dig,tree_trim,
+,,,Length,33 in,17 in,
+,,,Width,51 in,36 in,
+,,,Depth,35 in,31 in,
+,,,Installed,9/23/1998,1/3/2006,
+Route (Underground): 66,ValidationReport.update,ValidationReport.update,Start Structure,manhole/38,mywcom_route_junction/50001,mywcom_route_junction/5200
+Route (Underground): 67,ValidationReport.update,ValidationReport.delete,Cover,Mixed,Brick,
+Route (Underground): 68,ValidationReport.update,ValidationReport.update,Path,LineString(3),LineString(3),LineString(3)
+Route (Underground): 399,ValidationReport.update,ValidationReport.update,End Structure,manhole/38,mywcom_route_junction/50001,mywcom_route_junction/5200
+Fiber Cable: WH-FCB-012 (48),ValidationReport.update,ValidationReport.update,Path,LineString(15),LineString(12),LineString(12)
+,,,Placement Path,LineString(15),LineString(12),LineString(12)
+Fiber Cable: WH-FCB-013 (48),ValidationReport.update,ValidationReport.update,Path,LineString(9),LineString(9),LineString(9)
+Fiber Cable: WH-FCB-185 (24),ValidationReport.update,ValidationReport.update,Path,LineString(6),LineString(6),LineString(6)
+Cable Segment: 106 (fiber_cable/12),ValidationReport.update,ValidationReport.update,Out Structure,manhole/38,mywcom_route_junction/50001,mywcom_route_junction/5200
+,,,Out Segment,107,ReportManagerPlugin.null,ReportManagerPlugin.null
+Cable Segment: 107 (fiber_cable/12),ValidationReport.delete,ValidationReport.delete,,,,
+Cable Segment: 110 (fiber_cable/13),ValidationReport.update,ValidationReport.update,Path,LineString(3),LineString(3),LineString(3)
+Cable Segment: 116 (fiber_cable/14),ValidationReport.update,ValidationReport.update,Out Structure,manhole/38,mywcom_route_junction/50001,mywcom_route_junction/5200
+Cable Segment: 117 (fiber_cable/14),ValidationReport.update,ValidationReport.update,In Structure,manhole/38,mywcom_route_junction/50001,mywcom_route_junction/5200
+Cable Segment: 450 (fiber_cable/185),ValidationReport.update,ValidationReport.update,Path,LineString(3),LineString(3),LineString(3)
+
+
+
+VALIDATION REPORT: html : Design: NB335
+<h3>
+ValidationReport.type</h3>
+<h1>
+Design: NB335</h1>
+ValidationReport.date: 6&#x2F;10&#x2F;2020<br>
+<br>
+<h2>
+ValidationReport.conflict_table</h2>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.feature</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.master_change</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.delta_change</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.conflicting_field</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.base_field_value</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.master_field_value</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+ValidationReport.delta_field_value</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-38</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.delete</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.delete</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-54</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Labor Costs</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+level_ground</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+tree_trim,hole_dig,survey</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+hole_dig,level_ground</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Location</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Point(1)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Point(1)</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Point(1)</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Length</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+17 in</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+33 in</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+24 in</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Width</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+36 in</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+51 in</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+47 in</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Depth</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+31 in</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+35 in</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+35 in</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Spec</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole Spec</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Manhole Spec</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Manhole Spec</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Installed</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+1&#x2F;1&#x2F;2006</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+1&#x2F;3&#x2F;2006</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+1&#x2F;3&#x2F;2006</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Lockable</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ReportManagerPlugin.null</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BooleanFieldViewer.true</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-55</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.delete</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Spec</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole Spec</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole Spec</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Labor Costs</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+hole_dig</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+tree_trim</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Length</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+33 in</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+17 in</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Width</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+51 in</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+36 in</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Depth</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+35 in</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+31 in</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Installed</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+9&#x2F;23&#x2F;1998</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+1&#x2F;3&#x2F;2006</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 66</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Start Structure</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 67</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.delete</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cover</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Mixed</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Brick</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 68</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Path</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(3)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(3)</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(3)</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 399</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+End Structure</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Fiber Cable: WH-FCB-012 (48)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(15)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(12)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(12)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Placement Path</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(15)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(12)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(12)</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Fiber Cable: WH-FCB-013 (48)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Path</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(9)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(9)</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(9)</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Fiber Cable: WH-FCB-185 (24)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Path</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(6)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(6)</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(6)</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 106 (fiber_cable&#x2F;12)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Out Structure</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Out Segment</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ReportManagerPlugin.null</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ReportManagerPlugin.null</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 107 (fiber_cable&#x2F;12)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.delete</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.delete</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 110 (fiber_cable&#x2F;13)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Path</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(3)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(3)</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(3)</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 116 (fiber_cable&#x2F;14)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Out Structure</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 117 (fiber_cable&#x2F;14)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+In Structure</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Route Junction</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Cable Segment: 450 (fiber_cable&#x2F;185)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+ValidationReport.update</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+Path</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+LineString(3)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(3)</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#FF0000">
+LineString(3)</span>
+</td>
+</tr>
+</table>
+<br>
+
+
+VALIDATION REPORT: pdf : Design: NB335
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 22398
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+45. 780.8899999999999864 Td
+(ValidationReport.type) Tj
+ET
+BT
+/F1 15 Tf
+17.25 TL
+0 g
+45. 761.4900000000000091 Td
+(Design: NB335) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+45. 746.4900000000000091 Td
+(ValidationReport.date) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+130.8600000000000136 746.4900000000000091 Td
+(: ) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+135.9000000000000057 746.4900000000000091 Td
+(6/10/2020) Tj
+ET
+BT
+/F1 13 Tf
+14.9499999999999993 TL
+0 g
+45. 721.7899999999999636 Td
+(ValidationReport.conflict_table) Tj
+ET
+0.95 G
+44.5 716.0900000000000318 m
+551.7799999999999727 716.0900000000000318 l
+S
+44.5 468.0550604584009875 m
+551.7799999999999727 468.0550604584009875 l
+S
+44.5 716.0900000000000318 m
+44.5 468.0550604584009875 l
+S
+551.7799999999999727 716.0900000000000318 m
+551.7799999999999727 468.0550604584009875 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 715.5900000000000318 506.2799999999999159 -10.0308247608734824 re
+f
+0. g
+0.95 g
+45. 697.5801100884316384 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 681.6219797870420507 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 665.663849485652463 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 649.7057191842627617 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 633.7475888828730604 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 617.7894585814834727 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 601.831328280093885 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 585.8731979787041837 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 569.915067677314596 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 553.9569373759250084 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 537.9988070745354207 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 522.0406767731458331 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 506.0825464717562454 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 490.1244161703666578 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+0.95 g
+45. 474.1662858689770701 505.2799999999999159 -7.979065150694816 re
+f
+0. g
+BT
+/F2 4.559465800397038 Tf
+5.2433856704565933 TL
+1. g
+46.8237863201588169 708.6109348493051812 Td
+(ValidationReport.feature) Tj
+ET
+BT
+/F2 4.559465800397038 Tf
+5.2433856704565933 TL
+1. g
+126.9336004331347851 708.6109348493051812 Td
+(ValidationReport.master_change) Tj
+ET
+BT
+/F2 4.559465800397038 Tf
+5.2433856704565933 TL
+1. g
+196.4654538891896038 708.6109348493051812 Td
+(ValidationReport.delta_change) Tj
+ET
+BT
+/F2 4.559465800397038 Tf
+5.2433856704565933 TL
+1. g
+261.9393827828911299 708.6109348493051812 Td
+(ValidationReport.conflicting_field) Tj
+ET
+BT
+/F2 4.559465800397038 Tf
+5.2433856704565933 TL
+1. g
+331.2432629489261444 708.6109348493051812 Td
+(ValidationReport.base_field_value) Tj
+ET
+BT
+/F2 4.559465800397038 Tf
+5.2433856704565933 TL
+1. g
+403.5107958852192382 708.6109348493051812 Td
+(ValidationReport.master_field_value) Tj
+ET
+BT
+/F2 4.559465800397038 Tf
+5.2433856704565933 TL
+1. g
+479.8362533838656532 708.6109348493051812 Td
+(ValidationReport.delta_field_value) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 700.6318696986103305 Td
+(Manhole: WH-M-38) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 700.6318696986103305 Td
+(ValidationReport.delete) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 700.6318696986103305 Td
+(ValidationReport.delete) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 692.6528045479155935 Td
+(Manhole: WH-M-54) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 692.6528045479155935 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 692.6528045479155935 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 692.6528045479155935 Td
+(Labor Costs) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 692.6528045479155935 Td
+(level_ground) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 692.6528045479155935 Td
+(tree_trim,hole_dig,survey) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 692.6528045479155935 Td
+(hole_dig,level_ground) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 684.6737393972207428 Td
+(Location) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 684.6737393972207428 Td
+(Point\(1\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 684.6737393972207428 Td
+(Point\(1\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 684.6737393972207428 Td
+(Point\(1\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 676.6946742465258922 Td
+(Length) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 676.6946742465258922 Td
+(17 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 676.6946742465258922 Td
+(33 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 676.6946742465258922 Td
+(24 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 668.7156090958310415 Td
+(Width) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 668.7156090958310415 Td
+(36 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 668.7156090958310415 Td
+(51 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 668.7156090958310415 Td
+(47 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 660.7365439451361908 Td
+(Depth) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 660.7365439451361908 Td
+(31 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 660.7365439451361908 Td
+(35 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 660.7365439451361908 Td
+(35 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 652.7574787944414538 Td
+(Spec) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 652.7574787944414538 Td
+(Manhole Spec) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 652.7574787944414538 Td
+(Manhole Spec) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 652.7574787944414538 Td
+(Manhole Spec) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 644.7784136437466032 Td
+(Installed) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 644.7784136437466032 Td
+(1/1/2006) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 644.7784136437466032 Td
+(1/3/2006) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+479.8362533838656532 644.7784136437466032 Td
+(1/3/2006) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 636.7993484930517525 Td
+(Lockable) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 636.7993484930517525 Td
+(ReportManagerPlugin.null) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+479.8362533838656532 636.7993484930517525 Td
+(BooleanFieldViewer.true) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 628.8202833423570155 Td
+(Manhole: WH-M-55) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 628.8202833423570155 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 628.8202833423570155 Td
+(ValidationReport.delete) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 628.8202833423570155 Td
+(Spec) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 628.8202833423570155 Td
+(Manhole Spec) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 628.8202833423570155 Td
+(Manhole Spec) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 620.8412181916621648 Td
+(Labor Costs) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 620.8412181916621648 Td
+(hole_dig) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 620.8412181916621648 Td
+(tree_trim) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 612.8621530409673142 Td
+(Length) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 612.8621530409673142 Td
+(33 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 612.8621530409673142 Td
+(17 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 604.8830878902724635 Td
+(Width) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 604.8830878902724635 Td
+(51 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 604.8830878902724635 Td
+(36 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 596.9040227395776128 Td
+(Depth) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 596.9040227395776128 Td
+(35 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 596.9040227395776128 Td
+(31 in) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 588.9249575888828758 Td
+(Installed) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 588.9249575888828758 Td
+(9/23/1998) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 588.9249575888828758 Td
+(1/3/2006) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 580.9458924381881388 Td
+(Route \(Underground\): 66) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 580.9458924381881388 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 580.9458924381881388 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 580.9458924381881388 Td
+(Start Structure) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 580.9458924381881388 Td
+(Manhole) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 580.9458924381881388 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 580.9458924381881388 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 572.9668272874932882 Td
+(Route \(Underground\): 67) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 572.9668272874932882 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 572.9668272874932882 Td
+(ValidationReport.delete) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 572.9668272874932882 Td
+(Cover) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 572.9668272874932882 Td
+(Mixed) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 572.9668272874932882 Td
+(Brick) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 564.9877621367984375 Td
+(Route \(Underground\): 68) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 564.9877621367984375 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 564.9877621367984375 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 564.9877621367984375 Td
+(Path) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 564.9877621367984375 Td
+(LineString\(3\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 564.9877621367984375 Td
+(LineString\(3\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 564.9877621367984375 Td
+(LineString\(3\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 557.0086969861037005 Td
+(Route \(Underground\): 399) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 557.0086969861037005 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 557.0086969861037005 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 557.0086969861037005 Td
+(End Structure) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 557.0086969861037005 Td
+(Manhole) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 557.0086969861037005 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 557.0086969861037005 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 549.0296318354089635 Td
+(Fiber Cable: WH-FCB-012 \(48\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 549.0296318354089635 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 549.0296318354089635 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 549.0296318354089635 Td
+(Path) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 549.0296318354089635 Td
+(LineString\(15\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 549.0296318354089635 Td
+(LineString\(12\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+479.8362533838656532 549.0296318354089635 Td
+(LineString\(12\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 541.0505666847141129 Td
+(Placement Path) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 541.0505666847141129 Td
+(LineString\(15\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 541.0505666847141129 Td
+(LineString\(12\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+479.8362533838656532 541.0505666847141129 Td
+(LineString\(12\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 533.0715015340192622 Td
+(Fiber Cable: WH-FCB-013 \(48\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 533.0715015340192622 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 533.0715015340192622 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 533.0715015340192622 Td
+(Path) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 533.0715015340192622 Td
+(LineString\(9\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 533.0715015340192622 Td
+(LineString\(9\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 533.0715015340192622 Td
+(LineString\(9\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 525.0924363833245252 Td
+(Fiber Cable: WH-FCB-185 \(24\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 525.0924363833245252 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 525.0924363833245252 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 525.0924363833245252 Td
+(Path) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 525.0924363833245252 Td
+(LineString\(6\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 525.0924363833245252 Td
+(LineString\(6\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 525.0924363833245252 Td
+(LineString\(6\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 517.1133712326297882 Td
+(Cable Segment: 106 \(fiber_cable/12\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 517.1133712326297882 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 517.1133712326297882 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 517.1133712326297882 Td
+(Out Structure) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 517.1133712326297882 Td
+(Manhole) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 517.1133712326297882 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 517.1133712326297882 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+261.9393827828911299 509.1343060819349375 Td
+(Out Segment) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 509.1343060819349375 Td
+(Cable Segment) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+403.5107958852192382 509.1343060819349375 Td
+(ReportManagerPlugin.null) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+479.8362533838656532 509.1343060819349375 Td
+(ReportManagerPlugin.null) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 501.1552409312401437 Td
+(Cable Segment: 107 \(fiber_cable/12\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 501.1552409312401437 Td
+(ValidationReport.delete) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 501.1552409312401437 Td
+(ValidationReport.delete) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 493.1761757805453499 Td
+(Cable Segment: 110 \(fiber_cable/13\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 493.1761757805453499 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 493.1761757805453499 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 493.1761757805453499 Td
+(Path) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 493.1761757805453499 Td
+(LineString\(3\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 493.1761757805453499 Td
+(LineString\(3\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 493.1761757805453499 Td
+(LineString\(3\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 485.1971106298505561 Td
+(Cable Segment: 116 \(fiber_cable/14\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 485.1971106298505561 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 485.1971106298505561 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 485.1971106298505561 Td
+(Out Structure) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 485.1971106298505561 Td
+(Manhole) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 485.1971106298505561 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 485.1971106298505561 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 477.2180454791557622 Td
+(Cable Segment: 117 \(fiber_cable/14\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 477.2180454791557622 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 477.2180454791557622 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 477.2180454791557622 Td
+(In Structure) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 477.2180454791557622 Td
+(Manhole) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 477.2180454791557622 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 477.2180454791557622 Td
+(Route Junction) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+46.8237863201588169 469.2389803284609684 Td
+(Cable Segment: 450 \(fiber_cable/185\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+126.9336004331347851 469.2389803284609684 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+196.4654538891896038 469.2389803284609684 Td
+(ValidationReport.update) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+261.9393827828911299 469.2389803284609684 Td
+(Path) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+0. g
+331.2432629489261444 469.2389803284609684 Td
+(LineString\(3\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+403.5107958852192382 469.2389803284609684 Td
+(LineString\(3\)) Tj
+ET
+BT
+/F1 4.559465800397038 Tf
+5.2433856704565933 TL
+1. 0. 0. rg
+479.8362533838656532 469.2389803284609684 Td
+(LineString\(3\)) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 2.3.1)
+/CreationDate <date>
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000022603 00000 n 
+0000024420 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000022660 00000 n 
+0000022785 00000 n 
+0000022915 00000 n 
+0000023048 00000 n 
+0000023185 00000 n 
+0000023308 00000 n 
+0000023437 00000 n 
+0000023569 00000 n 
+0000023705 00000 n 
+0000023833 00000 n 
+0000023960 00000 n 
+0000024089 00000 n 
+0000024222 00000 n 
+0000024324 00000 n 
+0000024668 00000 n 
+0000024754 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID <id>
+>>
+startxref
+24858
+%%EOF
+
+VALIDATION REPORT: xlsx : Design: NB335
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 13
+			},
+			"text": "ValidationReport.type"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 17
+			},
+			"text": "Design: NB335"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.date"
+		},
+		{
+			"font": {
+
+			},
+			"text": ": "
+		},
+		{
+			"font": {
+
+			},
+			"text": "6/10/2020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "ValidationReport.conflict_table"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "ValidationReport.feature"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "ValidationReport.master_change"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "ValidationReport.delta_change"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "ValidationReport.conflicting_field"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "ValidationReport.base_field_value"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "ValidationReport.master_field_value"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "ValidationReport.delta_field_value"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-38"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.delete"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.delete"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-54"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Labor Costs"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "level_ground"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "tree_trim,hole_dig,survey"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "hole_dig,level_ground"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Location"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Point(1)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Point(1)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Point(1)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Length"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "17 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "33 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "24 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Width"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "36 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "51 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "47 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Depth"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "31 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "35 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "35 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Spec"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole Spec"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Manhole Spec"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Manhole Spec"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Installed"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "1/1/2006"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "1/3/2006"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "1/3/2006"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Lockable"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ReportManagerPlugin.null"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BooleanFieldViewer.true"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-55"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.delete"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Spec"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole Spec"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole Spec"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Labor Costs"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "hole_dig"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "tree_trim"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Length"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "33 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "17 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Width"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "51 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "36 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Depth"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "35 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "31 in"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Installed"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "9/23/1998"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "1/3/2006"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Route (Underground): 66"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Start Structure"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Route (Underground): 67"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.delete"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cover"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Mixed"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Brick"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Route (Underground): 68"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Path"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(3)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(3)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(3)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Route (Underground): 399"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "End Structure"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Fiber Cable: WH-FCB-012 (48)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Path"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(15)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(12)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(12)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Placement Path"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(15)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(12)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(12)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Fiber Cable: WH-FCB-013 (48)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Path"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(9)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(9)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(9)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Fiber Cable: WH-FCB-185 (24)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Path"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(6)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(6)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(6)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cable Segment: 106 (fiber_cable/12)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Out Structure"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Out Segment"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cable Segment"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ReportManagerPlugin.null"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ReportManagerPlugin.null"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cable Segment: 107 (fiber_cable/12)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.delete"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.delete"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cable Segment: 110 (fiber_cable/13)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Path"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(3)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(3)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(3)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cable Segment: 116 (fiber_cable/14)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Out Structure"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cable Segment: 117 (fiber_cable/14)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "In Structure"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Route Junction"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cable Segment: 450 (fiber_cable/185)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ValidationReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "Path"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "LineString(3)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(3)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "LineString(3)"
+		}
+	]
+}

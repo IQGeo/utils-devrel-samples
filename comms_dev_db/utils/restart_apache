@@ -1,0 +1,9 @@
+#!/bin/bash
+# Restart Apache and clear logs
+myw_password=myworld
+logfile=$1 
+
+if [ "$logfile" = "" ]; then
+   logfile='/tmp/restart.log'
+fi
+apache2ctl -k restart 2>&1 | tee -a $logfile | grep -v "Could not reliably determine the server's fully qualified domain name"

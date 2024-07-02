@@ -1,0 +1,86 @@
+
+*** FIND PATH
+Set delta to: *** master ***
+[
+	{
+		"direction": false,
+		"route": "ug_route/3: Route (Underground): 3"
+	},
+	{
+		"direction": false,
+		"route": "ug_route/2: Route (Underground): 2"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/8: Route (Underground): 8"
+	},
+	{
+		"direction": false,
+		"route": "ug_route/8: Route (Underground): 8"
+	},
+	{
+		"direction": false,
+		"route": "ug_route/52: Route (Underground): 52"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/16: Route (Underground): 16"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/379: Route (Underground): 379"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/17: Route (Underground): 17"
+	},
+	{
+		"direction": false,
+		"route": "ug_route/278: Route (Underground): 278"
+	}
+]
+
+*** FIND PATH (DELTA)
+Set delta to: design/NB120
+[
+	{
+		"direction": true,
+		"route": "ug_route/4200: Route (Underground): 4200 design/NB120"
+	},
+	{
+		"direction": false,
+		"route": "ug_route/7: Route (Underground): 7 design/NB120"
+	},
+	{
+		"direction": false,
+		"route": "ug_route/6: Route (Underground): 6"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/1: Route (Underground): 1"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/273: Route (Underground): 273"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/267: Route (Underground): 267"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/52: Route (Underground): 52"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/2: Route (Underground): 2"
+	},
+	{
+		"direction": true,
+		"route": "ug_route/3: Route (Underground): 3 design/NB120"
+	},
+	{
+		"direction": false,
+		"route": "ug_route/4202: Route (Underground): 4202 design/NB120"
+	}
+]

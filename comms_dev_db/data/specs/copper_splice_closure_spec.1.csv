@@ -1,0 +1,21 @@
+retired,manufacturer,name,type,size,resistance
+false,Corning,3832,Shielded,3000,0.000
+false,Corning,3M-2,Unshielded,900,0.000
+false,Belden,3M-3,Unshielded,2700,0.000
+false,Corning,3M-4,Shielded,3000,0.000
+false,Belden,8006137,Unshielded,3000,0.000
+false,Belden,8981,Shielded,3000,0.000
+false,3M,8982,Shielded,3000,0.000
+false,Belden,8983,Shielded,3000,0.000
+false,Corning,8984,Unshielded,3000,0.000
+false,Hubbell Power Systems,8985,Shielded,3000,0.000
+false,Belden,BB2x24SW,Shielded,3000,0.000
+false,Corning,BB3x24,Shielded,3000,0.000
+false,Belden,BB4x24,Shielded,3000,0.000
+false,Belden,BB5x26,Unshielded,3000,0.000
+false,Corning,BB6x26,Unshielded,3000,0.000
+false,TE Connectivity,BB7x26,Unshielded,3000,0.000
+false,TE Connectivity,Generic Splice,Shielded,3000,0.000
+false,TE Connectivity,MB-100,Shielded,600,0.000
+false,TE Connectivity,MB-200,Unshielded,900,0.000
+false,TE Connectivity,Virtual Splice,Shielded,3000,0.000

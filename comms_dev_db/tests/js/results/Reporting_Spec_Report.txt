@@ -1,0 +1,308 @@
+
+*** fiber_cable_specs
+
+SPEC REPORT: csv
+SpecReport.type
+Fiber Cable Spec
+SpecReport.date: 6/10/2020
+
+Fiber Cable Spec (x16)
+
+SpecReport.feature,Model,Type,Description,Manufacturer,Fiber Count,Item Length,Item Length Unit,Item Cost,Currency,Labor Costs,Tick Mark Spacing,Cable Structure
+D-072-LA-8W-F12NS,D-072-LA-8W-F12NS,Internal,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,72,1100,ft,2500,$,fiber_pull,1.0 ft,6 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+D-096-LA-8W-F12NS,D-096-LA-8W-F12NS,Internal,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,96,500,ft,2300,$,fiber_engineer,1.0 ft,8 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+D-144-LA-5K-F12NS,D-144-LA-5K-F12NS,Internal,"LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,144,550,ft,2255,$,site_manager,1.0 ft,12 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+D-144-LA-5L-F12NS,D-144-LA-5L-F12NS,External,"LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,144,600,ft,1535,$,"site_manager,fiber_pull",1.0 ft,
+D-144-LA-8W-F12NS,D-144-LA-8W-F12NS,External,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,144,825,ft,1470,$,"fiber_engineer,site_manager",1.0 ft,12 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+D-288-LA-8W-F12NS,D-288-LA-8W-F12NS,External,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,288,840,ft,2235,$,fiber_pull,1.0 ft,24 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+NETCONNECT 6 Count OM4,NETCONNECT 6 Count OM4,Riser,"Outside Plant Fiber Optic Cable, 6-fiber, OM4, HDPE, loose tube, gel-filled, 1000 m, black",CommScope,6,75,ft,3281,$,site_manager,1.0 ft,6 SimpleBundleDialog.fibers
+NETCONNECT 6 Count OS2,NETCONNECT 6 Count OS2,Riser,"Outside Plant Fiber Optic Cable, 6-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black",CommScope,6,425,ft,3281,$,"site_manager,fiber_pull",1.0 ft,6 SimpleBundleDialog.fibers
+NETCONNECT 12 Count OM4,NETCONNECT 12 Count OM4,Internal,"Outside Plant Fiber Optic Cable, HDPE, 12-fiber, MM, OM4, loose tube, gel-filled, 1000 m",CommScope,12,1250,ft,2775,$,fiber_engineer,1.0 ft,1 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+NETCONNECT 12 Count OS2,NETCONNECT 12 Count OS2,Internal,"Outside Plant Fiber Optic Cable, 12-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black",CommScope,12,1450,ft,3281,$,site_manager,1.0 ft,1 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+NETCONNECT 24 Count OM4,NETCONNECT 24 Count OM4,External,"Outside Plant Fiber Optic Cable, HDPE, 24-fiber, MM, OM4, loose tube, gel-filled, 1000 m",CommScope,24,1500,ft,1595,$,"site_manager,fiber_pull",1.0 ft,24 SimpleBundleDialog.fibers
+NETCONNECT 24 Count OS2,NETCONNECT 24 Count OS2,External,"Outside Plant Fiber Optic Cable, 24-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black",CommScope,24,2000,ft,3281,$,fiber_engineer,1.0 ft,24 SimpleBundleDialog.fibers
+O-002-CA-8W-F04NS,O-002-CA-8W-F04NS,Drop,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable",CommScope,2,550,ft,175,$,"fiber_engineer,site_manager",1.0 ft,12 SimpleBundleDialog.fibers
+O-004-CA-8W-F04NS,O-004-CA-8W-F04NS,Drop,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable",CommScope,4,1000,ft,195,$,fiber_pull,1.0 ft,12 SimpleBundleDialog.fibers
+O-008-CA-8W-F04NS,O-008-CA-8W-F04NS,Drop,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable",CommScope,8,650,ft,225,$,,1.0 ft,12 SimpleBundleDialog.fibers
+O-048-CN-5L-F12NS,O-048-CN-5L-F12NS,External,"LazrSPEEDÂ® Single Jacket All-Dielectric, Gel-Filled, Outdoor Central Tube Cable",CommScope,48,900,ft,200,£,,16.4 ft,4 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+
+
+
+*** conduit_specs
+
+SPEC REPORT: csv
+SpecReport.type
+Conduit Spec
+SpecReport.date: 6/10/2020
+
+Conduit Spec (x4)
+
+SpecReport.feature,Model,Description,Manufacturer,Diameter,Item Length,Item Length Unit,Item Cost,Currency,Labor Costs,Material
+JDP-26.5MM-Grey,26.5MM-Grey,26.5mm grey solid wall ducting for telecommunications cabling use,JDP,26.5 mm,45,ft,6,$,sidewalk_re-lay,PVC (Smooth)
+JDP-54MM-Grey,54MM-Grey,54mm grey solid wall ducting for telecommunications cabling use. Can be used on the national BT network,JDP,54 mm,50,ft,12,$,trench_dig,PVC (Smooth)
+JDP-63MM-Green,63MM-Green,"50/63mm (ID/OD) green ducting coil used for CCTV, fibre optics and cable utilities and manufactured from polyethylene. With a smooth internal bore and a corrugated external profile.",JDP,63 mm,50,ft,8,$,"trench_dig,sidewalk_re-lay",PE (Corrugated)
+JDP-110MM-Green,100MM-Green,"94/110mm (ID/OD) green ducting coil used for CCTV, fibre optics and cable utilities and manufactured from polyethylene. With a smooth internal bore and a corrugated external profile.",JDP,110 mm,94,ft,12,$,,PE (Corrugated)
+
+
+
+*** all specs
+
+SPEC REPORT: csv
+SpecReport.type
+SpecReport.all_specs_title
+SpecReport.date: 6/10/2020
+
+Cabinet Spec (x5)
+
+SpecReport.feature,Description,Manufacturer,Model,Cost,Currency,Type,Powered
+CS-A-100324,"Mini G Cabinet, Sealed to outside environment, Double wall construction",CommScope,A-100324,105,$,Micro Cell Site Enclosure,BooleanFieldViewer.true
+CS-A-100451,"Hercules Cabinet, Sealed to outside environment, Double wall construction",CommScope,A-100451,45,$,Macro Cell Site Enclosure,BooleanFieldViewer.true
+CS-A-100455,"Single Phase Meter Cabinet,  Sealed to outside environment, Double wall construction",CommScope,A-100455,125,$,Power Supply Enclosure,BooleanFieldViewer.true
+CS-A-100468,"Three Phase Meter Cabinet,  Sealed to outside environment, Double wall construction",CommScope,A-100468,85,$,Power Supply Enclosure,BooleanFieldViewer.true
+CS-A-100586,"Komodo Cabinet,  Sealed to outside environment, Double wall construction",CommScope,A-100586,60,$,Micro Cell Site Enclosure,BooleanFieldViewer.true
+
+Coaxial Amplifier Spec (x6)
+
+SpecReport.feature,Id,Manufacturer,Model,Class,Max AC Bypass,Minimum Voltage,Interstage Tilt,Splitter Type,Out Port Type,Custom Cascade,In Ports,Out Ports
+Amp-FMBEGPJ,4,C-Cor,FMBEGPJ,,15000,45,14.5,Balanced,Quad,BooleanFieldViewer.true,1,5
+Amp-ATX HGD AGC 1.2GHz Dual,1,ATX,ATX HGD AGC 1.2GHz,AGC,15000,42,15.5,Balanced,Dual,,1,4
+Amp-ATX HGT AGC 1.2GHz Triple,2,ATX,ATX HGT AGC 1.2GHz,AGC,15000,42,15.5,Balanced,Triple,,1,4
+Amp-FMTED5J,5,C-Cor,FMTED5J,,15000,45,14.5,Balanced,Quin,BooleanFieldViewer.true,1,6
+Amp-FNB85CDJ,6,C-Cor,FNB85CDJ,,15000,45,14.5,Balanced,Quad,BooleanFieldViewer.true,1,5
+LE-ATX LE AGC 1.2GHz,3,ATX,ATX LE AGC 1.2GHz,AGC,15000,42,15.5,Balanced,Single Line Extender,,1,2
+
+Coaxial Cable Spec (x4)
+
+SpecReport.feature,Structure,Manufacturer,Model,Resistance,Jacket Type,Size,Route
+Connect,,Unknown,Connect,,Un-Jacketed,0.5,Unknown
+FLEX FEEDER,,Unknown,FLEX FEEDER,5.77,Un-Jacketed,0.5,Indoor
+P3-500,,Unknown,P3-500,1.72,Un-Jacketed,0.5,Aerial
+P3-500 CAR,,Unknown,P3-500 CAR,1.72,Jacket,0.5,Any
+
+Coaxial Tap Spec (x5)
+
+SpecReport.feature,Id,Manufacturer,Model,Type,Value,Max AC Current Bypass,Output Port Type,Ports
+1-unset,1,Unknown,Two Way,passive,99,15000,2 Port,3
+2-10,4,Unknown,Two Way,passive,10,15000,2 Port,3
+2-11,5,Unknown,Two Way,passive,11,15000,2 Port,3
+10-unset,2,Unknown,Max Twelve Way,passive,99,15000,12 Port,3
+12-unset,3,Unknown,Twelve Way,passive,99,15000,12 Port,3
+
+Conduit Spec (x4)
+
+SpecReport.feature,Model,Description,Manufacturer,Diameter,Item Length,Item Length Unit,Item Cost,Currency,Labor Costs,Material
+JDP-26.5MM-Grey,26.5MM-Grey,26.5mm grey solid wall ducting for telecommunications cabling use,JDP,26.5 mm,45,ft,6,$,sidewalk_re-lay,PVC (Smooth)
+JDP-54MM-Grey,54MM-Grey,54mm grey solid wall ducting for telecommunications cabling use. Can be used on the national BT network,JDP,54 mm,50,ft,12,$,trench_dig,PVC (Smooth)
+JDP-63MM-Green,63MM-Green,"50/63mm (ID/OD) green ducting coil used for CCTV, fibre optics and cable utilities and manufactured from polyethylene. With a smooth internal bore and a corrugated external profile.",JDP,63 mm,50,ft,8,$,"trench_dig,sidewalk_re-lay",PE (Corrugated)
+JDP-110MM-Green,100MM-Green,"94/110mm (ID/OD) green ducting coil used for CCTV, fibre optics and cable utilities and manufactured from polyethylene. With a smooth internal bore and a corrugated external profile.",JDP,110 mm,94,ft,12,$,,PE (Corrugated)
+
+Bridge Tap Spec (x1)
+
+SpecReport.feature,Id,In Ports,Out Ports
+Bridge Tap Spec: BT-10,1,10,20
+
+Build Out Spec (x5)
+
+SpecReport.feature,Id,Manufacturer,Ports
+Build Out Spec: 50,5,Sterling Cooper,50
+Build Out Spec: 100,1,Omolon Dynamics,100
+Build Out Spec: 150,2,Lau Technologies,150
+Build Out Spec: 200,3,MetaCortex,200
+Build Out Spec: 250,4,Initech,250
+
+Copper Cable Spec (x13)
+
+SpecReport.feature,Id,Type,Manufacturer,Pair Count,Diameter,Cable Structure,Gauge
+1-14-C-W,1,C-W,TSCables,1,0.28 in,,14
+1-19-BJ,2,BJ,Insight,1,0.27 in,,19
+1-19-BJF,3,BJF,Insight,1,0.27 in,,19
+1-19-DW,4,DW,Eaton,1,1.00 in,,19
+1-19-FIG8,5,FIG8,Eaton,1,0.40 in,,19
+1-19-SEA,6,SEA,Eaton,1,0.27 in,,19
+1-19-SEB,7,SEB,TSCables,1,0.27 in,,19
+1-22-BJ,8,BJ,Eaton,1,0.25 in,,22
+1-22-FIG8,9,FIG8,TSCables,1,0.30 in,,22
+1-22-SEB,10,SEB,VIVO,1,0.25 in,,22
+100-19-ASPICF,11,ASPICF,TSCables,100,1.50 in,4 SimpleBundleDialog.tube x 5 SimpleBundleDialog.tube x 5 SimpleBundleDialog.fibers,19
+100-19-BFC,12,BFC,VIVO,100,1.87 in,,19
+100-19-C,13,C,VIVO,100,1.87 in,,19
+
+Load Coil Spec (x19)
+
+SpecReport.feature,Id,Manufacturer,Ports,Type,Model
+Load Coil Spec: 1pr Load Coil,6,Campbell,1,Underground,1pr Load Coil
+Load Coil Spec: 6pr Load Coil,17,Huurdeman,6,Otherground,6pr Load Coil
+Load Coil Spec: 12pr Load Coil,2,Campbell,12,Overground,12pr Load Coil
+Load Coil Spec: 15pr Load Coil,4,Campbell,15,Overground,15pr Load Coil
+Load Coil Spec: 18pr Load Coil,5,Campbell,18,Overground,18pr Load Coil
+Load Coil Spec: 25pr Load Coil,9,Heaviside,25,Underground,25pr Load Coil
+Load Coil Spec: 32pr Load Coil,11,Heaviside,32,Underground,32pr Load Coil
+Load Coil Spec: 50pr Load Coil,15,Hyrbid,50,Otherground,50pr Load Coil
+Load Coil Spec: 75pr Load Coil,18,Huurdeman,75,Otherground,75pr Load Coil
+Load Coil Spec: 100pr Load Coil,1,Campbell,100,Overground,100pr Load Coil
+Load Coil Spec: 150pr Load Coil,3,Campbell,150,Overground,150pr Load Coil
+Load Coil Spec: 200pr Load Coil,7,Heaviside,200,Underground,200pr Load Coil
+Load Coil Spec: 250pr Load Coil,8,Heaviside,250,Underground,250pr Load Coil
+Load Coil Spec: 300pr Load Coil,10,Heaviside,300,Underground,300pr Load Coil
+Load Coil Spec: 350pr Load Coil,12,Hyrbid,350,Underground,350pr Load Coil
+Load Coil Spec: 400pr Load Coil,13,Hyrbid,400,Otherground,400pr Load Coil
+Load Coil Spec: 500pr Load Coil,14,Hyrbid,500,Otherground,500pr Load Coil
+Load Coil Spec: 600pr Load Coil,16,Hyrbid,600,Otherground,600pr Load Coil
+Load Coil Spec: 900pr Load Coil,19,Huurdeman,900,Overground,900pr Load Coil
+
+Repeater Spec (x12)
+
+SpecReport.feature,Id,Type,Manufacturer,Ports,Model
+Repeater Spec: Default Repeater,12,Unknown,Erghth,99,Default
+Repeater Spec: 1pr Repeater,3,Known,Altex,1,1pr Repeater
+Repeater Spec: 2pr Repeater,6,Known,StarTech,2,2pr Repeater
+Repeater Spec: 4pr Repeater,7,Unknown,StarTech,4,4pr Repeater
+Repeater Spec: 6pr Repeater,10,Known,StarTech,6,6pr Repeater
+Repeater Spec: 12pr Repeater,2,Unknown,Altex,12,12pr Repeater
+Repeater Spec: 24pr Repeater,4,Unknown,Altex,24,24pr Repeater
+Repeater Spec: 25pr Repeater,5,Known,Altex,25,25pr Repeater
+Repeater Spec: 50pr Repeater,8,Known,StarTech,50,50pr Repeater
+Repeater Spec: 65pr Repeater,9,Unknown,StarTech,65,65pr Repeater
+Repeater Spec: 72pr Repeater,11,Unknown,StarTech,72,72pr Repeater
+Repeater Spec: 100pr Repeater,1,Known,Altex,100,100pr Repeater
+
+Copper Splice Closure Spec (x20)
+
+SpecReport.feature,Id,Type,Manufacturer,Size
+Copper Splice Closure Spec: 3M-2,2,Unshielded,Corning,900
+Copper Splice Closure Spec: 3M-3,3,Unshielded,Belden,2700
+Copper Splice Closure Spec: 3M-4,4,Shielded,Corning,3000
+Copper Splice Closure Spec: 3832,1,Shielded,Corning,3000
+Copper Splice Closure Spec: 8981,6,Shielded,Belden,3000
+Copper Splice Closure Spec: 8982,7,Shielded,3M,3000
+Copper Splice Closure Spec: 8983,8,Shielded,Belden,3000
+Copper Splice Closure Spec: 8984,9,Unshielded,Corning,3000
+Copper Splice Closure Spec: 8985,10,Shielded,Hubbell Power Systems,3000
+Copper Splice Closure Spec: 8006137,5,Unshielded,Belden,3000
+Copper Splice Closure Spec: BB2x24SW,11,Shielded,Belden,3000
+Copper Splice Closure Spec: BB3x24,12,Shielded,Corning,3000
+Copper Splice Closure Spec: BB4x24,13,Shielded,Belden,3000
+Copper Splice Closure Spec: BB5x26,14,Unshielded,Belden,3000
+Copper Splice Closure Spec: BB6x26,15,Unshielded,Corning,3000
+Copper Splice Closure Spec: BB7x26,16,Unshielded,TE Connectivity,3000
+Copper Splice Closure Spec: Generic Splice,17,Shielded,TE Connectivity,3000
+Copper Splice Closure Spec: MB-100,18,Shielded,TE Connectivity,600
+Copper Splice Closure Spec: MB-200,19,Unshielded,TE Connectivity,900
+Copper Splice Closure Spec: Virtual Splice,20,Shielded,TE Connectivity,3000
+
+Copper Terminal Spec (x25)
+
+SpecReport.feature,Id,Type,Manufacturer,In Ports,Model
+Copper Terminal Spec: Migration Terminal,25,Drop,Altex,10,Migration Terminal
+Copper Terminal Spec: 1pr Terminal,8,Mounted,Rapink,1,1pr Terminal
+Copper Terminal Spec: 2pr Terminal,13,Passthrough,Siemon,2,2pr Terminal
+Copper Terminal Spec: 3pr Terminal,16,Delaminated,Siemon,3,3pr Terminal
+Copper Terminal Spec: 4pr Terminal,18,Delaminated,Altex,4,4pr Terminal
+Copper Terminal Spec: 5pr Terminal,21,Drop,Altex,5,5pr Terminal
+Copper Terminal Spec: 6pr Terminal,23,Drop,Altex,6,6pr Terminal
+Copper Terminal Spec: 10pr Terminal,2,Mounted,Rapink,10,10pr Terminal
+Copper Terminal Spec: 12pr Terminal,3,Rapink,Rapink,12,12pr Terminal
+Copper Terminal Spec: 13pr Terminal,4,Mounted,Rapink,13,13pr Terminal
+Copper Terminal Spec: 16pr Terminal,6,Mounted,Rapink,16,16pr Terminal
+Copper Terminal Spec: 18pr Terminal,7,Mounted,Rapink,18,18pr Terminal
+Copper Terminal Spec: 20pr Terminal,10,Passthrough,Rapink,20,20pr Terminal
+Copper Terminal Spec: 24pr Terminal,11,Passthrough,Rapink,24,24pr Terminal
+Copper Terminal Spec: 25pr Terminal,12,Passthrough,Siemon,25,25pr Terminal
+Copper Terminal Spec: 37pr Terminal,15,Passthrough,Siemon,37,37pr Terminal
+Copper Terminal Spec: 50pr Terminal,19,Drop,Altex,50,50pr Terminal
+Copper Terminal Spec: 75pr Terminal,24,Drop,Altex,75,75pr Terminal
+Copper Terminal Spec: 100pr Terminal,1,Mounted,Rapink,100,100pr Terminal
+Copper Terminal Spec: 150pr Terminal,5,Mounted,Rapink,150,150pr Terminal
+Copper Terminal Spec: 200pr Terminal,9,Mounted,Rapink,200,200pr Terminal
+Copper Terminal Spec: 300pr Terminal,14,Passthrough,Siemon,300,300pr Terminal
+Copper Terminal Spec: 400pr Terminal,17,Delaminated,Siemon,400,400pr Terminal
+Copper Terminal Spec: 550pr Terminal,20,Drop,Altex,550,550pr Terminal
+Copper Terminal Spec: 600pr Terminal,22,Laminated,Altex,600,600pr Terminal
+
+Fiber Cable Spec (x16)
+
+SpecReport.feature,Model,Type,Description,Manufacturer,Fiber Count,Item Length,Item Length Unit,Item Cost,Currency,Labor Costs,Tick Mark Spacing,Cable Structure
+D-072-LA-8W-F12NS,D-072-LA-8W-F12NS,Internal,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,72,1100,ft,2500,$,fiber_pull,1.0 ft,6 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+D-096-LA-8W-F12NS,D-096-LA-8W-F12NS,Internal,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,96,500,ft,2300,$,fiber_engineer,1.0 ft,8 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+D-144-LA-5K-F12NS,D-144-LA-5K-F12NS,Internal,"LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,144,550,ft,2255,$,site_manager,1.0 ft,12 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+D-144-LA-5L-F12NS,D-144-LA-5L-F12NS,External,"LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,144,600,ft,1535,$,"site_manager,fiber_pull",1.0 ft,
+D-144-LA-8W-F12NS,D-144-LA-8W-F12NS,External,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,144,825,ft,1470,$,"fiber_engineer,site_manager",1.0 ft,12 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+D-288-LA-8W-F12NS,D-288-LA-8W-F12NS,External,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable",CommScope,288,840,ft,2235,$,fiber_pull,1.0 ft,24 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+NETCONNECT 6 Count OM4,NETCONNECT 6 Count OM4,Riser,"Outside Plant Fiber Optic Cable, 6-fiber, OM4, HDPE, loose tube, gel-filled, 1000 m, black",CommScope,6,75,ft,3281,$,site_manager,1.0 ft,6 SimpleBundleDialog.fibers
+NETCONNECT 6 Count OS2,NETCONNECT 6 Count OS2,Riser,"Outside Plant Fiber Optic Cable, 6-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black",CommScope,6,425,ft,3281,$,"site_manager,fiber_pull",1.0 ft,6 SimpleBundleDialog.fibers
+NETCONNECT 12 Count OM4,NETCONNECT 12 Count OM4,Internal,"Outside Plant Fiber Optic Cable, HDPE, 12-fiber, MM, OM4, loose tube, gel-filled, 1000 m",CommScope,12,1250,ft,2775,$,fiber_engineer,1.0 ft,1 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+NETCONNECT 12 Count OS2,NETCONNECT 12 Count OS2,Internal,"Outside Plant Fiber Optic Cable, 12-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black",CommScope,12,1450,ft,3281,$,site_manager,1.0 ft,1 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+NETCONNECT 24 Count OM4,NETCONNECT 24 Count OM4,External,"Outside Plant Fiber Optic Cable, HDPE, 24-fiber, MM, OM4, loose tube, gel-filled, 1000 m",CommScope,24,1500,ft,1595,$,"site_manager,fiber_pull",1.0 ft,24 SimpleBundleDialog.fibers
+NETCONNECT 24 Count OS2,NETCONNECT 24 Count OS2,External,"Outside Plant Fiber Optic Cable, 24-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black",CommScope,24,2000,ft,3281,$,fiber_engineer,1.0 ft,24 SimpleBundleDialog.fibers
+O-002-CA-8W-F04NS,O-002-CA-8W-F04NS,Drop,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable",CommScope,2,550,ft,175,$,"fiber_engineer,site_manager",1.0 ft,12 SimpleBundleDialog.fibers
+O-004-CA-8W-F04NS,O-004-CA-8W-F04NS,Drop,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable",CommScope,4,1000,ft,195,$,fiber_pull,1.0 ft,12 SimpleBundleDialog.fibers
+O-008-CA-8W-F04NS,O-008-CA-8W-F04NS,Drop,"TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable",CommScope,8,650,ft,225,$,,1.0 ft,12 SimpleBundleDialog.fibers
+O-048-CN-5L-F12NS,O-048-CN-5L-F12NS,External,"LazrSPEEDÂ® Single Jacket All-Dielectric, Gel-Filled, Outdoor Central Tube Cable",CommScope,48,900,ft,200,£,,16.4 ft,4 SimpleBundleDialog.tube x 12 SimpleBundleDialog.fibers
+
+Fiber ONT Spec (x1)
+
+SpecReport.feature,Manufacturer,Model,Cost,Currency,Ports
+FPM-CCANN-ONT1,FPMCCANN,COMMS-ONT1,47,$,4
+
+Fiber Splitter Spec (x4)
+
+SpecReport.feature,Model,Description,Manufacturer,Out Ports,Cost,Currency
+CS-CZ9490-000,CZ9490-000,"OCFPS Fiber Optic Splitter Panel, one 1x64, symmetrical, planar, singlemode, SC/APC 9°, 1U, 19 in, gray",CommScope,64,105,$
+CS-EF3421-000,EF3421-000,"OCFPS Fiber Optic Splitter Panel, one 1x8, symmetrical, planar, singlemode, SC/APC 9°, 1U, 19 in, gray",CommScope,8,145,$
+CS-EG4886-000,EG4886-000 ,"OCFPS Fiber Optic Splitter Panel, two 1x4, symmetrical, planar, singlemode, LC/UPC, 1U, 19 in, gray",CommScope,4,135,$
+CS-FPS-FMTSP-AJJ01,FPS-FMTSP-AJJ01,"FMT Fiber Optic Splitter Patch Panel, 1U, 19 in, 1x32 splitter, SC/APC splitter and output connect., 1 splitter",CommScope,32,125,$
+
+Inline Equalizer Spec (x3)
+
+SpecReport.feature,Id,Manufacturer,Model,Design Frequency,Max AC Current Bypass,Ports
+1-FEQ870,1,Unknown,FEQ870,"870, forward",15000,2
+1-LEQ1GHz,2,Unknown,LEQ1GHz,"1G, forward",15000,2
+1-LEQ550,3,Unknown,LEQ550,"550, forward",15000,2
+
+Manhole Spec (x3)
+
+SpecReport.feature,Description,Manufacturer,Model,Cost,Currency,Labor Costs,Length,Width,Depth
+FPM-CCANN-C2,,FPMCCANN,COMMS-C2,43,$,"hole_dig,level_ground",24 in,47 in,35 in
+FPM-CCANN-J4,"A major innovation, Comms J4 is a unique one piece unit manufactured with reinforcements, overcoming the self-assembly problem that is associated with other manufactured units.",FPMCCANN,COMMS-J4,65,$,tree_trim,17 in,36 in,31 in
+FPM-CCANN-MCX,,FPMCCANN,COMMS-MCX,76,$,"tree_trim,hole_dig,survey",33 in,51 in,35 in
+
+Optical Node Spec (x4)
+
+SpecReport.feature,Id,Manufacturer
+AURORA-2X2,3,Aurora
+AURORA-2X2 - v2,4,Aurora
+Aurora NC4000-1X1,1,Aurora
+Aurora NC4191,2,Aurora
+
+Pole Spec (x6)
+
+SpecReport.feature,Description,Manufacturer,Cost,Currency,Labor Costs,Height,Type
+BL Pole 35 ft Cedar,35 foot Wood,BL Pole,500,$,survey,35.0 ft,Wood
+BL Pole 40 ft Cedar,40 ft Wood,BL Pole,450,$,,40.0 ft,Wood
+StressCrete 35 ft,35 ft Concrete,StressCrete,1450,$,,35.0 ft,Concrete
+StressCrete 40 ft,40 ft Concrete,StressCrete,1650,$,,40.0 ft,Concrete
+Valmont 35 ft, 35 ft Steel, Valmont Utility,2500,$,,35.0 ft,Steel
+Valmont 40 ft, 40 ft Steel, Valmont Utility,2500,$,,40.0 ft,Steel
+
+Power Inserter Spec (x2)
+
+SpecReport.feature,Id,Manufacturer,Model,Type,In Current Bypass,RF Out Bypass,RF In Bypass,Ports
+Channel Rig,1,Unknown,unset,Standard,,,,3
+Power Inserter,2,Unknown,unset,Standard,15,15,15,3
+
+Power Supply Spec (x3)
+
+SpecReport.feature,Id,Manufacturer,Model,Type,Max Current,Output Voltage,Ports
+ALP3BATSM/NS,1,Unknown,ALP3BATSM,Single,15000,60,1
+ALP3BATSM/S,2,Unknown,ALP3BATSM,Single with ESM,15000,60,2
+ALP6BATSM/NS,3,Unknown,ALP6BATSM,Single,15000,60,1
+
+Splice Closure Spec (x4)
+
+SpecReport.feature,Model,Description,Manufacturer,Cost,Currency
+CS- FOSC-100-DM-144,FOSC-100-DM-144,"FOSC™100 DM Fiber Optic Splice Closure, Five round ports, Heat Shrink Cable sealing, two pre-installed 72-splice tray and with test valve",CommScope,55,$
+CS-FOSC400-A4-16-1-BNV,FOSC400-A4-16-1-BNV,"FOSC™400 A4 Fiber Optic Splice Closure, Heat Shrink Cable sealing, one pre-installed 16-splice tray, cable blocking, with test valve",CommScope,35,$
+CS-FOSC450-D6-6-36-1-N0V,FOSC450-D6-6-36-1-N0V,"FOSC™450 D6 Fiber Optic Splice Closure, Gel Cable sealing, one pre-installed 36-splice tray, 6 cable attach., valve",CommScope,62,$
+CS-FOSC-400B4-S24-4-NNN,FOSC-400B4-S24-4-NNN,"FOSC™400 B4 Fiber Optic Splice Closure, Heat Shrink Cable sealing, four pre-installed 24-splice trays",CommScope,22,$
+
+

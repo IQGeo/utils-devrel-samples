@@ -1,0 +1,13 @@
+
+*** CREATE COAX AMPLIFIER
+Set delta to: design/NB217
+{
+	"ids": [
+		100000
+	]
+}
+DATABASE CHANGES: CREATE COAX AMPLIFIER
+    insert delta.coax_amplifier(design/NB217,100000,insert)
+
+VALIDATION ERRORS: CREATE COAX AMPLIFIER
+

@@ -1,0 +1,12 @@
+{
+   "name": "comsof_version",
+   "description": "Permitted values for product version in Comsof requests",
+   "values": [
+      {"value": "23.2.1.60",  "display_value": "23.2.1.60"},
+      {"value": "23.2.0.2",   "display_value": "23.2.0.2"},
+      {"value": "23.1.1.49",  "display_value": "23.1.1"},
+      {"value": "22.2.3.46",  "display_value": "22.2.3"},
+      {"value": "22.2.2.43",  "display_value": "22.2.2"},
+      {"value": "22.2.3.246", "display_value": "22.2.3.246 (Custom)"}
+    ]
+}

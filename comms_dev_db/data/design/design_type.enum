@@ -1,0 +1,10 @@
+[
+    {
+        "name": "design_type",
+        "values": [
+            "Customer Connection",
+            "Network Build",
+            "Network Upgrade"
+        ]
+    }
+]

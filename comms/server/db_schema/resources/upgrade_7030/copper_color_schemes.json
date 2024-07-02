@@ -1,0 +1,42 @@
+{
+    "Copper Tip Colors": {
+        "colors": [
+            {
+                "color": "white"
+            },
+            {
+                "color": "red"
+            },
+            {
+                "color": "black"
+            },
+            {
+                "color": "yellow"
+            },
+            {
+                "color": "violet"
+            }
+        ],
+        "description": "Copper Tip Colors"
+    },
+    "Copper Ring Colors": {
+        "colors": [
+            {
+                "color": "blue"
+            },
+            {
+                "color": "orange"
+            },
+            {
+                "color": "green"
+            },
+            {
+                "color": "brown"
+            },
+            {
+                "color": "slate"
+            }
+        ],
+        "description": "Copper Ring Colors"
+    }
+}

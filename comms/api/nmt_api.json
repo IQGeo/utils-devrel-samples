@@ -1,0 +1,954 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "IQGeo Network Manager Telecom API",
+        "version": "1.0.0",
+        "description": "APIs to support network provisioning and assurance. These include TMF style APIs for feature query, insert and update, as well as a network trace API. Further detail is provided in product documentation. This file can be imported into Postman, viewed using Swagger UI or a VSCode OpenAPI extension."
+    },
+    "servers": [
+        {
+            "url": "http://localhost:82/modules/comms/api/v1",
+            "description": "Local development server"
+        }
+    ],
+    "tags": [
+        {
+            "name": "General",
+            "description": "General APIs for querying and maintaining network data. These are modelled on the TMF resource inventory APIs and include additional parameters for accessing data in designs and authorisation against an application. On the server, a set of API triggers can be written to do additional processing for API calls."
+        },
+        {
+            "name": "Network Assurance",
+            "description": "APIs to support network assurance."
+        }
+    ],
+    "paths": {
+        "/resourceInventoryManagement/resource/{featureType}/{id}": {
+            "get": {
+                "summary": "Get feature by id",
+                "description": "Return feature with given id. Fields returned can be limited using the 'fields' parameter. Data from a specific design can be obtained using the 'delta' parameter. The returned feature data will be formatted as per the schema for the feature type.",
+                "tags": ["General"],
+                "parameters": [
+                    {
+                        "name": "featureType",
+                        "in": "path",
+                        "description": "Type of feature.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "fiber_cable"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Identifier of feature.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "1"
+                    },
+                    {
+                        "name": "application",
+                        "in": "query",
+                        "description": "Application context for request.",
+                        "example": "mywcom",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "delta",
+                        "in": "query",
+                        "required": false,
+                        "description": "Database delta for request",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "design/CC4970"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "required": false,
+                        "description": "Comma separated list of fields names. Only these fields will be included in the results",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "name,specification"
+                    },
+                    {
+                        "name": "includeLobs",
+                        "in": "query",
+                        "required": false,
+                        "description": "Controls whether the response includes the contents of 'large object' fields such as image and file fields",
+                        "schema": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "example": true
+                    },
+                    {
+                        "name": "includeCalculatedReferenceSets",
+                        "in": "query",
+                        "required": false,
+                        "description": "Controls whether the response includes calculated reference sets, eg circuits attached to an address",
+                        "schema": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "example": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Resource"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not allowed",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "summary": "Update feature",
+                "description": "Update feature the feature with provided id. Only the fields to be updated should be provided in the request body. The response will include the complete feature updated.",
+                "tags": ["General"],
+                "parameters": [
+                    {
+                        "name": "featureType",
+                        "in": "path",
+                        "description": "Type of feature.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "fiber_cable"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Identifier of feature.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "1"
+                    },
+                    {
+                        "name": "application",
+                        "in": "query",
+                        "description": "Application context for request.",
+                        "example": "mywcom",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "delta",
+                        "in": "query",
+                        "required": false,
+                        "description": "Database delta for request",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "design/CC4970"
+                    }
+                ],
+                "requestBody": {
+                    "description": "Feature to update",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Resource"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Updated",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Resource"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not allowed",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete feature",
+                "description": "Delete the feature with id.",
+                "tags": ["General"],
+                "parameters": [
+                    {
+                        "name": "featureType",
+                        "in": "path",
+                        "description": "Type of feature.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "fiber_cable"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Identifier of feature.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "1"
+                    },
+                    {
+                        "name": "application",
+                        "in": "query",
+                        "description": "Application context for request.",
+                        "example": "mywcom",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "delta",
+                        "in": "query",
+                        "required": false,
+                        "description": "Database delta for request",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "design/CC4970"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Deleted"
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not allowed",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/resourceInventoryManagement/resource/{featureType}": {
+            "post": {
+                "summary": "Create feature",
+                "description": "Create feature. The request body must contain the complete JSON for the feature and comply with the schema for the feature. Note that additional information can be provided and this can be used by the API triggers for additional processing.",
+                "tags": ["General"],
+                "parameters": [
+                    {
+                        "name": "featureType",
+                        "in": "path",
+                        "description": "Type of feature.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "fiber_cable"
+                    },
+                    {
+                        "name": "application",
+                        "in": "query",
+                        "description": "Application context for request.",
+                        "example": "mywcom",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "delta",
+                        "in": "query",
+                        "required": false,
+                        "description": "Database delta for request",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "design/CC4970"
+                    }
+                ],
+                "requestBody": {
+                    "description": "Feature to create",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Resource"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Resource"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not allowed",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "Get features",
+                "description": "Return features of specified type satisfying criteria including a filter. Additional parameters of the form fieldName=fieldValue are interpreted as a conjunction of simple filters on the named fields. For example 'name=WH-FTTH-051' will return features with name 'WH-FTTH-05'.",
+                "tags": ["General"],
+                "parameters": [
+                    {
+                        "name": "featureType",
+                        "in": "path",
+                        "description": "Type of feature.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "fiber_cable"
+                    },
+                    {
+                        "name": "application",
+                        "in": "query",
+                        "description": "Application context for request.",
+                        "example": "mywcom",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "delta",
+                        "in": "query",
+                        "required": false,
+                        "description": "Database delta for request",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "design/CC4970"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "example": 500,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "required": false,
+                        "example": 0,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "required": false,
+                        "description": "Comma separated list of fields names. Only these fields will be included in the results",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "name,specification"
+                    },
+                    {
+                        "name": "includeLobs",
+                        "in": "query",
+                        "required": false,
+                        "description": "Controls whether the response includes the contents of 'large object' fields such as image and file fields",
+                        "schema": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "example": true
+                    },
+                    {
+                        "name": "includeCalculatedReferenceSets",
+                        "in": "query",
+                        "required": false,
+                        "description": "Controls whether the response includes calculated reference sets, eg circuits attached to an address",
+                        "schema": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "example": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Resource"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not allowed",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "409": {
+                        "description": "Conflict",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/networkTrace": {
+            "get": {
+                "summary": "Perform network trace.",
+                "description": "Perform network trace from a feature up to the end of the connected path or specified distance. The latter can be used for finding geographic location from OTDR trace data.",
+                "tags": ["Network Assurance"],
+                "parameters": [
+                    {
+                        "name": "network",
+                        "in": "query",
+                        "description": "Name of configured network to trace.",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "example": "mywcom_fiber"
+                        }
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "required": true,
+                        "description": "Start node of trace. Can be URN specifying range of ports on equipment, range of strands on a cable segment.",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "examples": {
+                            "equipment_port": {
+                                "summary": "Equipment port",
+                                "value": "fiber_patch_panel/1?pins=out:1"
+                            },
+                            "cable_strand": {
+                                "summary": "Cable strand",
+                                "value": "mywcom_fiber_segment/1?pins=out:1"
+                            },
+                            "circuit": {
+                                "summary": "Circuit",
+                                "value": "ftth_circuit/1?pins=out:1"
+                            }
+                        }
+                    },
+                    {
+                        "name": "direction",
+                        "in": "query",
+                        "description": "Direction of trace.",
+                        "schema": {
+                            "type": "string",
+                            "default": "downstream",
+                            "enum": ["upstream", "downstream", "both"]
+                        },
+                        "example": "downstream"
+                    },
+                    {
+                        "name": "maxDistance",
+                        "in": "query",
+                        "description": "Maximum distance to trace in metres. Trace will stop at this distance or end of connected path whichever is first.",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "example": "1000"
+                    },
+                    {
+                        "name": "maxNodes",
+                        "in": "query",
+                        "description": "Maximum number of nodes to visit. If this number is exceeded then an error is returned.",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "example": 500
+                    },
+                    {
+                        "name": "application",
+                        "in": "query",
+                        "description": "Application context for request.",
+                        "example": "mywcom",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "delta",
+                        "in": "query",
+                        "required": false,
+                        "description": "Database delta for request",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "design/CC4970"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfull trace. Returns network trace tree.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/networkTrace"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request. Invalid parameters provided. For example, invalid URN.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized. Invalid authentication token provided or role."
+                    },
+                    "500": {
+                        "description": "Internal server error. Report to system administrator."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Error": {
+                "description": "Additional information for errors",
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "Application relevant detail, defined in the API or a common list",
+                        "type": "integer"
+                    },
+                    "reason": {
+                        "description": "Explanation of the reason for the error which can be shown to a client user",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "More details and corrective actions related to the error which can be shown to a client user",
+                        "type": "string"
+                    }
+                }
+            },
+            "qurn": {
+                "description": "Qualified URN. Format is \\<datasource\\>\\/\\<featureType\\>\\/\\<id\\>?\\<qualifiers\\>. Datasource and qualifiers are optional.",
+                "type": "string"
+            },
+            "networkTrace": {
+                "description": "Trace tree.",
+                "type": "object",
+                "properties": {
+                    "ends": {
+                        "description": "Index of nodes that form the end of the trace.",
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "nodes": {
+                        "description": "List of nodes in trace. These can form a tree.",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "description": "A node in the trace tree. These map to linear features or point features. For example, fiber cables, connections or ports on equipment",
+                            "properties": {
+                                "parent": {
+                                    "description": "Parent node of this node. Index into nodes list. 0 indicates root node.",
+                                    "type": "integer"
+                                },
+                                "resource": {
+                                    "description": "Resource (feature) associated with this node (URN)",
+                                    "type": "string"
+                                },
+                                "direction": {
+                                    "description": "Direction of trace",
+                                    "type": "string",
+                                    "enum": ["upstream", "downstream", "both"]
+                                },
+                                "distance": {
+                                    "description": "Total distance along the trace at this node (m). For linear features this is the distance before it moves to next node.",
+                                    "type": "number"
+                                },
+                                "length": {
+                                    "description": "Distance between start and stop coordinates (m)",
+                                    "type": "string"
+                                },
+                                "fibers": {
+                                    "description": "Fiber strands the trace passes through. Either a single number or a range 'low:high'",
+                                    "type": "string"
+                                },
+                                "ports": {
+                                    "description": "Ports the trace passes through. Format is: 'side:range' where side is 'in' or 'out' and range is a single number or 'low:high'.",
+                                    "type": "string"
+                                },
+                                "startCoordinate": {
+                                    "description": "Start coordinate of node",
+                                    "type": "array",
+                                    "items": {
+                                        "type": "number"
+                                    }
+                                },
+                                "stopCoordinate": {
+                                    "description": "Stop coordinate of node (which might be part way along a linear feature).",
+                                    "type": "array",
+                                    "items": {
+                                        "type": "number"
+                                    }
+                                },
+                                "individualLoss": {
+                                    "description": "Individual loss for the port or strand (dB).",
+                                    "type": "number"
+                                },
+                                "cumulativeLoss": {
+                                    "description": "Cumulative loss for trace up to this node (dB).",
+                                    "type": "number"
+                                },
+                                "lineOfCount": {
+                                    "description": "Line of count assignment for the port or strand",
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "resources": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Resource"
+                        }
+                    }
+                }
+            },
+            "Resource": {
+                "description": "Resource inventory schema. See schema in api/schema directory.",
+                "type": "object"
+            }
+        }
+    }
+}

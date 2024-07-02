@@ -1,0 +1,97 @@
+Request: POST: /modules/comms/slack/mywcom_fiber_slack/add?delta=design/NB217
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER ADD SLACK ON IN SIDE OF STRUCT, BEFORE CONNECTIONS
+   insert delta.mywcom_fiber_connection(design/NB217,191,update)
+   insert delta.mywcom_fiber_connection(design/NB217,193,update)
+   insert delta.mywcom_fiber_connection(design/NB217,195,update)
+   insert delta.mywcom_fiber_segment(design/NB217,63,update)
+   insert delta.mywcom_fiber_segment(design/NB217,64,update)
+   insert delta.mywcom_fiber_segment(design/NB217,100000,insert)
+   insert delta.mywcom_fiber_slack(design/NB217,100000,insert)
+   insert delta.mywcom_line_of_count(design/NB217,4,update)
+   insert delta.mywcom_line_of_count_section(design/NB217,100000,insert)
+
+VALIDATION ERRORS: AFTER ADD SLACK ON IN SIDE OF STRUCT, BEFORE CONNECTIONS
+Request: POST: /modules/comms/slack/mywcom_fiber_slack/add?delta=design/NB217
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER ADD SLACK ON OUT SIDE OF STRUCT, AFTER CONNECTIONS
+   update delta.mywcom_fiber_segment(design/NB217,64,update) fields=(in_segment)
+   update delta.mywcom_fiber_segment(design/NB217,100000,insert) fields=(out_segment)
+   insert delta.mywcom_fiber_segment(design/NB217,100001,insert)
+   insert delta.mywcom_fiber_slack(design/NB217,100001,insert)
+   update delta.mywcom_line_of_count(design/NB217,4,update) fields=(route)
+   insert delta.mywcom_line_of_count_section(design/NB217,100001,insert)
+
+VALIDATION ERRORS: AFTER ADD SLACK ON OUT SIDE OF STRUCT, AFTER CONNECTIONS
+Request: POST: /modules/comms/slack/mywcom_fiber_slack/add?delta=design/NB217
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER ADD SLACK AT START
+   insert delta.mywcom_fiber_segment(design/NB217,336,update)
+   insert delta.mywcom_fiber_segment(design/NB217,100002,insert)
+   insert delta.mywcom_fiber_slack(design/NB217,100002,insert)
+
+VALIDATION ERRORS: AFTER ADD SLACK AT START
+Request: POST: /modules/comms/slack/mywcom_fiber_slack/add?delta=design/NB217
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER ADD SLACK AT PASSTHROUGH
+   insert delta.mywcom_fiber_segment(design/NB217,41,update)
+   insert delta.mywcom_fiber_segment(design/NB217,42,update)
+   insert delta.mywcom_fiber_segment(design/NB217,100003,insert)
+   insert delta.mywcom_fiber_slack(design/NB217,100003,insert)
+   insert delta.mywcom_line_of_count(design/NB217,2,update)
+   insert delta.mywcom_line_of_count_section(design/NB217,100002,insert)
+
+VALIDATION ERRORS: AFTER ADD SLACK AT PASSTHROUGH
+Request: POST: /modules/comms/slack/mywcom_fiber_slack/add?delta=design/NB217
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER ADD SLACK AT END
+   insert delta.mywcom_fiber_connection(design/NB217,9,update)
+   insert delta.mywcom_fiber_connection(design/NB217,10,update)
+   insert delta.mywcom_fiber_connection(design/NB217,11,update)
+   insert delta.mywcom_fiber_connection(design/NB217,12,update)
+   insert delta.mywcom_fiber_connection(design/NB217,13,update)
+   insert delta.mywcom_fiber_connection(design/NB217,14,update)
+   insert delta.mywcom_fiber_connection(design/NB217,15,update)
+   insert delta.mywcom_fiber_connection(design/NB217,16,update)
+   insert delta.mywcom_fiber_connection(design/NB217,336,update)
+   insert delta.mywcom_fiber_segment(design/NB217,73,update)
+   insert delta.mywcom_fiber_segment(design/NB217,100004,insert)
+   insert delta.mywcom_fiber_slack(design/NB217,100004,insert)
+
+VALIDATION ERRORS: AFTER ADD SLACK AT END
+Request: POST: /modules/comms/slack/mywcom_fiber_slack/add?delta=design/NB217
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER ADD SLACK ON IN SIDE OF INTERNAL SEG
+   insert delta.mywcom_fiber_connection(design/NB217,280,update)
+   insert delta.mywcom_fiber_segment(design/NB217,562,update)
+   insert delta.mywcom_fiber_segment(design/NB217,100005,insert)
+   insert delta.mywcom_fiber_slack(design/NB217,100005,insert)
+   update delta.mywcom_line_of_count(design/NB217,4,update) fields=(route)
+   insert delta.mywcom_line_of_count_section(design/NB217,100003,insert)
+
+VALIDATION ERRORS: AFTER ADD SLACK ON IN SIDE INTERNAL SEG
+Request: POST: /modules/comms/slack/mywcom_fiber_slack/add?delta=design/NB217
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER ADD SLACK ON OUT SIDE INTERNAL SEG
+   insert delta.mywcom_fiber_connection(design/NB217,273,update)
+   insert delta.mywcom_fiber_segment(design/NB217,563,update)
+   insert delta.mywcom_fiber_segment(design/NB217,100006,insert)
+   insert delta.mywcom_fiber_slack(design/NB217,100006,insert)
+   update delta.mywcom_line_of_count(design/NB217,4,update) fields=(route)
+   insert delta.mywcom_line_of_count_section(design/NB217,100004,insert)
+
+VALIDATION ERRORS: AFTER ADD SLACK ON OUT SIDE INTERNAL SEG

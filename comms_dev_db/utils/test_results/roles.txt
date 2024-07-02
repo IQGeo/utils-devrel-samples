@@ -1,0 +1,9 @@
+Opening database <database> ...
+name           description
+-------------  -------------------------------------------------
+Administrator  Configure application, create users, load data...
+Data Editor    Edit data, create bookmarks...
+Data Viewer    View data
+Designer       Example Network Manager designer role
+Reviewer       Example Network Manager reviewer role
+

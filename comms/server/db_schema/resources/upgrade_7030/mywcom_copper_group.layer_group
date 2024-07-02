@@ -1,0 +1,11 @@
+{
+	"name": "mywcom_copper_group",
+	"display_name": "{:mywcom_copper_group_layer_display_name}",
+	"description": "",
+	"thumbnail": "",
+	"exclusive": false,
+	"layers": [
+		"mywcom_copper_cables",
+        "mywcom_copper_equipment"
+	]
+}

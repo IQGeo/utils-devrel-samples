@@ -1,0 +1,29 @@
+.feature-plugins-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-plugins-header-options {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.control-setting {
+    list-style: none;
+    background-image: url('#{$path-to-img}actions/setting.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    @include size(20px);
+    opacity: 0.9;
+}
+.context-menu-item.context-menu-icon-checkmark {
+    background-image: url('#{$path-to-core-img}/activeContextMenuItem.png');
+    background-repeat: no-repeat;
+    background-position: 9px center;
+    background-size: 16px;
+}

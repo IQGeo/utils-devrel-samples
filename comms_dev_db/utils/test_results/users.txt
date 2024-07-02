@@ -1,0 +1,15 @@
+Opening database <database> ...
+username  email  roles  bookmarks  locked_out
+--------  -----  -----  ---------  ----------
+admin                1          0       False
+default              2          1       False
+designer             1          0       False
+reviewer             1          0       False
+viewer               1          0       False
+
+Opening database <database> ...
+owner  name            description              size  members
+-----  --------------  -----------------------  ----  ----------------------
+admin  Admin Group     Comms Dev DB Test Group     2  admin:default
+admin  Designer Group  Comms Dev DB Test Group     3  admin:default:designer
+

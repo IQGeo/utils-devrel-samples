@@ -1,0 +1,8 @@
+{
+   "name": "comsof_product",
+   "description": "Permitted values for product in Comsof requests",
+   "values": [
+      {"value": "SA_DESIGNER",      "display_value": "Fiber Designer"          },
+      {"value": "SA_DESIGNER_APF",  "display_value": "Fiber Designer (Custom)" }
+   ]
+}

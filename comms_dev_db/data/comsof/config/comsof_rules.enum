@@ -1,0 +1,8 @@
+{
+   "name": "comsof_rules",
+   "description": "Permitted values for 'rules' in a Comsof workspace",
+   "values": [
+       {"value": "hybrid.rules", "display_value": "Hybrid"},
+       {"value": "hybrid_cabinet_area.rules", "display_value": "Hybrid (Cabinet Area)"}
+   ]
+}

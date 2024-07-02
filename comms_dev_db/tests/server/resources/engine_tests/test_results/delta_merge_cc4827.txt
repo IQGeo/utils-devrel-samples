@@ -1,0 +1,27 @@
+MERGE REPORT design/CC4827
+   FeatureChange(fiber_ont(147,design/CC4827),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(431,design/CC4827),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(430,design/CC4827),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(mywcom_fiber_connection(4601,design/CC4827),update) fields=location
+      root_housing moved
+   FeatureChange(ftth_circuit(4600,design/CC4827),update) fields=path
+      segment_paths_changed
+
+DATABASE CHANGES: AFTER MERGE
+   update base.fiber_ont(design/CC4827,147) fields=(location)
+   update base.mywcom_fiber_segment(design/CC4827,430) fields=(path)
+   update base.mywcom_fiber_segment(design/CC4827,431) fields=(path)
+   update delta.fiber_ont(design/CC4827,147,update) fields=(location)
+   update delta.ftth_circuit(design/CC4827,4600,insert) fields=(path)
+   update delta.mywcom_fiber_connection(design/CC4827,4601,insert) fields=(location)
+   update delta.mywcom_fiber_segment(design/CC4827,430,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/CC4827,431,update) fields=(path)
+
+CONFLICTS AFTER MERGE
+

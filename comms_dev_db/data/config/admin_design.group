@@ -1,0 +1,9 @@
+{
+   "owner":"admin", 
+   "name":"Admin Group", 
+   "description":"Comms Dev DB Test Group",
+   "members":{
+       "admin":false,
+       "default":false
+   }
+}

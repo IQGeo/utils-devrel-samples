@@ -1,0 +1,36 @@
+.fiberColorSymbol {
+    min-width: 14px;
+    padding: 0 4px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+}
+.fiber-colors {
+    display: inline-block;
+    &.to {
+        margin-left: 6px;
+    }
+    &.from {
+        margin-right: 6px;
+    }
+}
+.color-scheme-config-dialog {
+    @include flex-row-centered;
+    height: 50px;
+    .input-small {
+        width: 40px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+    .ui-select {
+        margin-right: 10px;
+    }
+    .ui-label {
+    }
+    .ui-label-bold {
+        font-weight: bold;
+    }
+}

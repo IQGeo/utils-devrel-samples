@@ -1,0 +1,19 @@
+{
+    "name": "mywcom_circuits",
+    "display_name": "{:circuits_display_name}",
+    "category": "overlay",
+    "code": "mywcom_cir",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": ""
+    },
+    "transparency": 0,
+    "min_scale": 1,
+    "max_scale": 22,
+    "feature_types": []
+}

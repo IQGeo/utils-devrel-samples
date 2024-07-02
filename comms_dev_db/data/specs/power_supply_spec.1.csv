@@ -1,0 +1,4 @@
+retired,manufacturer,name,model,type,max_current_rating,output_voltage,ports
+false,Unknown,ALP3BATSM/NS,ALP3BATSM,Single,15000.000,60.000,1
+false,Unknown,ALP3BATSM/S,ALP3BATSM,Single with ESM,15000.000,60.000,2
+false,Unknown,ALP6BATSM/NS,ALP6BATSM,Single,15000.000,60.000,1

@@ -1,0 +1,137 @@
+{
+    "datasource": "myworld",
+    "name": "optical_node_closure",
+    "external_name": "{:coax_optical_node_closure_field_name}",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "labor_cost",
+            "external_name": "{:copper_labor_cost_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "routes",
+            "external_name": "{:wall_box_feature_routes_name}",
+            "type": "reference_set",
+            "value": "select()"
+        },
+        {
+            "name": "equipment",
+            "external_name": "{:wall_box_feature_equipment_name}",
+            "type": "reference_set",
+            "value": "select(slot.housing,splice_closure.housing,fiber_mux.housing,fiber_olt.housing,fiber_splitter.housing)"
+        },
+        {
+            "name": "cables",
+            "external_name": "{:ug_route_feature_cables_name}",
+            "type": "reference_set",
+            "value": "select()"
+        },
+        {
+            "name": "fiber_splices",
+            "external_name": "{:cabinet_feature_fiber_splices_name}",
+            "type": "reference_set",
+            "value": "select()"
+        },
+        {
+            "name": "coax_ports",
+            "external_name": "{:coax_coaxial_ports_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "frequency",
+            "external_name": "{:coax_design_frequency_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "related_power_supply",
+            "external_name": "{:coax_related_power_supply_field_name}",
+            "type": "reference"
+        },
+        {
+            "name": "status",
+            "external_name": "{:coax_construction_status_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "install_technician",
+            "external_name": "{:coax_install_technician_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "install_date",
+            "external_name": "{:coax_install_date_field_name}",
+            "type": "date"
+        },
+        {
+            "name": "type",
+            "external_name": "{:fiber_cable_spec_type_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "specification",
+            "external_name": "{:wall_box_feature_specification_name}",
+            "type": "foreign_key(optical_node_closure_spec)"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "circuits",
+            "external_name": "{:circuits_field_name}",
+            "type": "reference_set",
+            "read_only": true
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point",
+            "mandatory": "true"
+        },
+        {
+            "name": "offset_geom",
+            "external_name": "{:offset_field_name}",
+            "type": "point"
+        },
+        {
+            "name": "myw_orientation_offset_geom",
+            "type": "double"
+        }
+    ]
+}

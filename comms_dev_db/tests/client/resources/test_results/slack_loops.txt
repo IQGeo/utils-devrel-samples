@@ -1,0 +1,315 @@
+
+SUB TEST : ADD SLACK LOOP AFTER
+    TEST: AFTER ADD SLACK LOOP AFTER - CABLE TREE
+        input: WH-M-01
+        list item: Previous view
+        list item: Next view
+        list item: Go to home bookmark
+        list item: Add and manage bookmarks
+        list item: Share map
+        list item: Add object
+        list item: Measurement tool
+        list item: Show current location
+        list item: Print map
+        list item: Network trace tool
+        list item: Schematic view
+        list item: Tools palette
+        list item: Structure palette
+        list item: Equipment palette
+        list item: Markup palette
+        list item: Details
+        list item: Layers
+        list item: Help
+        list item: Go back
+        list item: Go forward
+        list item: Clear selections
+        list item: Current results
+        list item: Edit
+        list item: Get directions to object
+        list item: Zoom to object
+      header: Fiber Slack (3280.8 ft)
+        label: Length
+        label: 3280.8 ft
+        label: Type
+        label: Snowshoe
+        label: Housing
+        label: Manhole: WH-M-01
+        label: Manhole: WH-M-01
+        label: Structure
+        label: Manhole: WH-M-01
+        label: Manhole: WH-M-01
+        label: Cable
+        label: Fiber Cable: WH-FCB-003 (144)
+        label: Fiber Cable: WH-FCB-003 (144)
+      header: Equipment
+      header: feature-plugins-header-options
+        input: 
+      header: Cables
+      header: feature-plugins-header-options
+        input: 
+        button: +
+        button: –
+        button: ol-zoomslider-thumb ol-unselectable
+        list item: System User
+        list item: Check design
+        list item: Fix conflicts
+        list item: Generate BOM report
+        list item: Redraw Bounds
+        list item: Import data
+        list item: Close
+        button: toolbar-expand-button
+        label: [Comms] designer
+        label: Built by
+    
+    
+    DATABASE CHANGES: AFTER ADD SLACK LOOP AFTER
+       insert data.mywcom_change_detail(5)
+       insert delta.mywcom_fiber_segment(design/NB046,100000,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,41,update)
+       insert delta.mywcom_fiber_segment(design/NB046,42,update)
+       insert delta.mywcom_fiber_slack(design/NB046,100000,insert)
+    
+
+SUB TEST : ADD SLACK LOOP BEFORE
+    TEST: AFTER ADD SLACK LOOP BEFORE - CABLE TREE
+        input: WH-M-01
+        list item: Previous view
+        list item: Next view
+        list item: Go to home bookmark
+        list item: Add and manage bookmarks
+        list item: Share map
+        list item: Add object
+        list item: Measurement tool
+        list item: Show current location
+        list item: Print map
+        list item: Network trace tool
+        list item: Schematic view
+        list item: Tools palette
+        list item: Structure palette
+        list item: Equipment palette
+        list item: Markup palette
+        list item: Details
+        list item: Layers
+        list item: Help
+        list item: Go back
+        list item: Go forward
+        list item: Clear selections
+        list item: Current results
+        list item: Edit
+        list item: Get directions to object
+        list item: Zoom to object
+      header: Fiber Slack (6561.7 ft)
+        label: Length
+        label: 6561.7 ft
+        label: Type
+        label: Snowshoe
+        label: Housing
+        label: Manhole: WH-M-01
+        label: Manhole: WH-M-01
+        label: Structure
+        label: Manhole: WH-M-01
+        label: Manhole: WH-M-01
+        label: Cable
+        label: Fiber Cable: WH-FCB-003 (144)
+        label: Fiber Cable: WH-FCB-003 (144)
+      header: Equipment
+      header: feature-plugins-header-options
+        input: 
+      header: Cables
+      header: feature-plugins-header-options
+        input: 
+        button: +
+        button: –
+        button: ol-zoomslider-thumb ol-unselectable
+        list item: System User
+        list item: Check design
+        list item: Fix conflicts
+        list item: Generate BOM report
+        list item: Redraw Bounds
+        list item: Import data
+        list item: Close
+        button: toolbar-expand-button
+        label: [Comms] designer
+        label: Built by
+    
+    
+    DATABASE CHANGES: AFTER ADD SLACK LOOP BEFORE
+       insert data.mywcom_change_detail(6)
+       insert delta.mywcom_fiber_segment(design/NB046,100001,insert)
+       insert delta.mywcom_fiber_slack(design/NB046,100001,insert)
+       update delta.mywcom_fiber_segment(design/NB046,100000,insert) fields=(out_segment)
+       update delta.mywcom_fiber_segment(design/NB046,42,update) fields=(in_segment)
+    
+
+SUB TEST : CHECK SLACK LOOP
+    TEST: AFTER CHECK SLACK LOOP - CURRENT FEATURE
+        input: WH-M-01
+        list item: Previous view
+        list item: Next view
+        list item: Go to home bookmark
+        list item: Add and manage bookmarks
+        list item: Share map
+        list item: Add object
+        list item: Measurement tool
+        list item: Show current location
+        list item: Print map
+        list item: Network trace tool
+        list item: Schematic view
+        list item: Tools palette
+        list item: Structure palette
+        list item: Equipment palette
+        list item: Markup palette
+        list item: Details
+        list item: Layers
+        list item: Help
+        list item: Go back
+        list item: Go forward
+        list item: Clear selections
+        list item: Current results
+        list item: Edit
+        list item: Get directions to object
+        list item: Zoom to object
+      header: Fiber Slack (3280.8 ft)
+        label: Length
+        label: 3280.8 ft
+        label: Type
+        label: Snowshoe
+        label: Housing
+        label: Manhole: WH-M-01
+        label: Manhole: WH-M-01
+        label: Structure
+        label: Manhole: WH-M-01
+        label: Manhole: WH-M-01
+        label: Cable
+        label: Fiber Cable: WH-FCB-003 (144)
+        label: Fiber Cable: WH-FCB-003 (144)
+      header: Equipment
+      header: feature-plugins-header-options
+        input: 
+        label: Manhole: WH-M-01
+      header: Cables
+      header: feature-plugins-header-options
+        input: 
+        label: Fiber Cable: WH-FCB-003 (144) 9842.5 ft IN (0/144) @491 Slack 3280.8 ft Slack 6561.7 ft OUT (0/144) @491
+        label: IN (0/144) @491
+        label: Slack 3280.8 ft
+        label: Slack 6561.7 ft
+        label: OUT (0/144) @491
+        button: +
+        button: –
+        button: ol-zoomslider-thumb ol-unselectable
+        list item: System User
+        list item: Check design
+        list item: Fix conflicts
+        list item: Generate BOM report
+        list item: Redraw Bounds
+        list item: Import data
+        list item: Close
+        button: toolbar-expand-button
+        label: [Comms] designer
+        label: Built by
+    
+    
+
+SUB TEST : UPDATE SLACK LOOP
+    DATABASE CHANGES: AFTER UPDATE SLACK LOOP
+       update data.mywcom_change_detail(5) fields=(change_time,change_type,feature_title,fields,orig_feature)
+       update delta.mywcom_fiber_segment(design/NB046,100000,insert) fields=(length)
+       update delta.mywcom_fiber_slack(design/NB046,100000,insert) fields=(length)
+    
+
+SUB TEST : SPLIT SLACK LOOP
+    TEST: AFTER SPLIT SLACK LOOP
+        input: WH-M-01
+        list item: Previous view
+        list item: Next view
+        list item: Go to home bookmark
+        list item: Add and manage bookmarks
+        list item: Share map
+        list item: Add object
+        list item: Measurement tool
+        list item: Show current location
+        list item: Print map
+        list item: Network trace tool
+        list item: Schematic view
+        list item: Tools palette
+        list item: Structure palette
+        list item: Equipment palette
+        list item: Markup palette
+        list item: Details
+        list item: Layers
+        list item: Help
+        list item: Go back
+        list item: Go forward
+        list item: Clear selections
+        list item: Current results
+        list item: Edit
+        list item: Get directions to object
+        list item: Zoom to object
+      header: Manhole: WH-M-01
+        label: Name
+        label: WH-M-01
+        label: Spec
+        label: FPM-CCANN-C2
+        label: FPM-CCANN-C2
+        label: Length
+        label: 24 in
+        label: Width
+        label: 47 in
+        label: Depth
+        label: 35 in
+        label: Installed
+        label: 23/09/2010
+        label: Routes
+        label: Items
+        label: Items
+        label: Shortest to Hub
+        label: Items
+        label: Items
+        label: Labor Costs
+        label: Items
+        label: Items
+      header: Equipment
+      header: feature-plugins-header-options
+        input: 
+        label: Manhole: WH-M-01
+      header: Cables
+      header: feature-plugins-header-options
+        input: 
+        label: Fiber Cable: WH-FCB-003 (144) 8202.1 ft IN (0/144) @491 Slack 1640.4 ft Slack 300.0 ft Slack 6261.7 ft OUT (0/144) @491
+        label: IN (0/144) @491
+        label: Slack 1640.4 ft
+        label: Slack 300.0 ft
+        label: Slack 6261.7 ft
+        label: OUT (0/144) @491
+        button: +
+        button: –
+        button: ol-zoomslider-thumb ol-unselectable
+        list item: System User
+        list item: Check design
+        list item: Fix conflicts
+        list item: Generate BOM report
+        list item: Redraw Bounds
+        list item: Import data
+        list item: Close
+        button: toolbar-expand-button
+        label: [Comms] designer
+        label: Built by
+    
+    
+    DATABASE CHANGES: AFTER SPLIT SLACK LOOP
+       insert delta.mywcom_fiber_segment(design/NB046,100002,insert)
+       insert delta.mywcom_fiber_slack(design/NB046,100002,insert)
+       update delta.mywcom_fiber_segment(design/NB046,100001,insert) fields=(length,out_segment)
+       update delta.mywcom_fiber_segment(design/NB046,42,update) fields=(in_segment)
+       update delta.mywcom_fiber_slack(design/NB046,100001,insert) fields=(length)
+    
+
+SUB TEST : DELETE SLACK LOOP
+    DATABASE CHANGES: AFTER DELETE SLACK
+       insert data.mywcom_change_detail(7)
+       insert delta.mywcom_fiber_segment(design/NB046,38,update)
+       insert delta.mywcom_fiber_segment(design/NB046,39,update)
+       insert delta.mywcom_fiber_segment(design/NB046,585,delete)
+       insert delta.mywcom_fiber_slack(design/NB046,5,delete)
+    

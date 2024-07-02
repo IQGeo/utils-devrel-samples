@@ -1,0 +1,99 @@
+{
+    "datasource": "myworld",
+    "name": "node_boundary",
+    "external_name": "{:coax_node_boundary_field_name}",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "area",
+            "external_name": "{:path_field_name}",
+            "type": "polygon",
+            "mandatory": "true"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "in_feature",
+            "external_name": "{:coax_in_feature_field_name}",
+            "type": "reference"
+        },
+        {
+            "name": "out_feature",
+            "external_name": "{:coax_out_feature_field_name}",
+            "type": "reference"
+        },
+        {
+            "name": "out_pins",
+            "external_name": "{:coax_pins_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "related_optical_node_name",
+            "external_name": "{:coax_related_optical_node_name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "services_available",
+            "external_name": "{:coax_services_available_field_name}",
+            "type": "boolean"
+        },
+        {
+            "name": "residential_count",
+            "external_name": "{:coax_residential_count_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "commercial_count",
+            "external_name": "{:coax_commercial_count_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "mdu_count",
+            "external_name": "{:coax_mdu_count_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "potential_residential_count",
+            "external_name": "{:coax_potential_residential_count_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "potential_commercial_count",
+            "external_name": "{:coax_potential_commercial_count_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "potential_mdu_count",
+            "external_name": "{:coax_potential_mdu_count_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "status",
+            "external_name": "{:coax_construction_status_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "frequency",
+            "external_name": "{:coax_design_frequency_field_name}",
+            "type": "double"
+        }
+    ]
+}

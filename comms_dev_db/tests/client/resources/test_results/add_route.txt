@@ -1,0 +1,45 @@
+
+SUB TEST : ADD ROUTE BETWEEN STRUCTURES
+    DATABASE CHANGES: AFTER ADD ROUTE BETWEEN STRUCTURES
+       insert data.mywcom_change_detail(5)
+       insert delta.ug_route(design/NB046,100000,insert)
+    
+
+SUB TEST : SPLIT ROUTE WITH ROUTE
+    DATABASE CHANGES: AFTER SPLIT ROUTE WITH ROUTE
+       insert data.mywcom_change_detail(6)
+       insert delta.conduit(design/NB046,100000,insert)
+       insert delta.conduit(design/NB046,100001,insert)
+       insert delta.conduit(design/NB046,100002,insert)
+       insert delta.conduit(design/NB046,100003,insert)
+       insert delta.conduit(design/NB046,152,update)
+       insert delta.conduit(design/NB046,153,update)
+       insert delta.conduit(design/NB046,40,update)
+       insert delta.conduit(design/NB046,41,update)
+       insert delta.fiber_cable(design/NB046,3,update)
+       insert delta.fiber_cable(design/NB046,4,update)
+       insert delta.mywcom_fiber_segment(design/NB046,100000,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,100001,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,37,update)
+       insert delta.mywcom_fiber_segment(design/NB046,38,update)
+       insert delta.mywcom_fiber_segment(design/NB046,46,update)
+       insert delta.mywcom_fiber_segment(design/NB046,47,update)
+       insert delta.mywcom_line_of_count(design/NB046,2,update)
+       insert delta.mywcom_line_of_count_section(design/NB046,100000,insert)
+       insert delta.mywcom_line_of_count_section(design/NB046,100001,insert)
+       insert delta.mywcom_line_of_count_section(design/NB046,54,update)
+       insert delta.mywcom_line_of_count_section(design/NB046,61,update)
+       insert delta.mywcom_route_junction(design/NB046,100000,insert)
+       insert delta.ug_route(design/NB046,100001,insert)
+       insert delta.ug_route(design/NB046,100002,insert)
+       insert delta.ug_route(design/NB046,20,update)
+    
+
+SUB TEST : JOIN ROUTES AT ENDS
+    DATABASE CHANGES: AFTER JOIN ROUTES
+       insert data.mywcom_change_detail(7)
+       insert data.mywcom_change_detail(8)
+       insert delta.mywcom_route_junction(design/NB046,100001,insert)
+       insert delta.ug_route(design/NB046,100003,insert)
+       insert delta.ug_route(design/NB046,100004,insert)
+    

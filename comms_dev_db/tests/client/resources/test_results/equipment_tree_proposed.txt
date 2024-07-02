@@ -1,0 +1,30 @@
+TEST: SHOW PROPOSED SPLICE CLOSURE
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Manhole: WH-M-07 Splice Closure [Design: NB301] Copper Splice Closure: WH-CS-03 Splice: WH-CC-002 -> WH-CC-004 (96) Copper Terminal: WH-T-3 (4)
+    label: Splice Closure [Design: NB301]
+    label: Splice Closure
+    label: [Design: NB301]
+    label: Copper Splice Closure: WH-CS-03 Splice: WH-CC-002 -> WH-CC-004 (96)
+    label: Splice: WH-CC-002 -> WH-CC-004 (96)
+    label: Copper Terminal: WH-T-3 (4)
+
+
+TEST: SHOW PROPOSED SPLICE
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Cabinet: WH-C-11 Splice Closure: WH-SC-039 Splice: WH-FCB-009 -> DROP-147 (2) [Design: CC4827] Splice: WH-FCB-009 -> DROP-5462 (4) [Design: CC5462] Splice: WH-FCB-009 -> DROP-144 (6) Splice: WH-FCB-009 -> DROP-146 (1) Splice: WH-FCB-009 -> DROP-148 (1)
+    label: Splice Closure: WH-SC-039 Splice: WH-FCB-009 -> DROP-147 (2) [Design: CC4827] Splice: WH-FCB-009 -> DROP-5462 (4) [Design: CC5462] Splice: WH-FCB-009 -> DROP-144 (6) Splice: WH-FCB-009 -> DROP-146 (1) Splice: WH-FCB-009 -> DROP-148 (1)
+    label: Splice: WH-FCB-009 -> DROP-147 (2) [Design: CC4827]
+    label: Splice: WH-FCB-009 -> DROP-147 (2)
+    label: [Design: CC4827]
+    label: Splice: WH-FCB-009 -> DROP-5462 (4) [Design: CC5462]
+    label: Splice: WH-FCB-009 -> DROP-5462 (4)
+    label: [Design: CC5462]
+    label: Splice: WH-FCB-009 -> DROP-144 (6)
+    label: Splice: WH-FCB-009 -> DROP-146 (1)
+    label: Splice: WH-FCB-009 -> DROP-148 (1)
+
+

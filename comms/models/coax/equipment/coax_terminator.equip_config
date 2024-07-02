@@ -1,0 +1,21 @@
+{
+    "image": "modules/comms/images/features/coax_terminator.svg",
+    "housings": [
+        "manhole",
+        "cabinet",
+        "pole"
+    ],
+    "function": "terminal",
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/coax_terminator.svg:24:12"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/coax_terminator.svg:12:12:1.5m",
+        "geometry": "offset_geom"
+    },
+    "offset": true
+}

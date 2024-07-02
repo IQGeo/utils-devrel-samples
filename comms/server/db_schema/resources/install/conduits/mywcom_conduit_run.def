@@ -1,0 +1,34 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_conduit_run",
+    "external_name": "{:mywcom_conduit_run_feature_external_name}",
+    "title": "{display_name}: [id]",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": false,
+        "delete_from_gui": false,
+        "update_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring"
+        },
+        {
+            "name": "conduits",
+            "external_name": "{:mywcom_conduit_run_feature_conduits_name}",
+            "type": "reference_set",
+            "value": "select()"
+        }
+    ],
+    "searches": []
+}

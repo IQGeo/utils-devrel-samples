@@ -1,0 +1,36 @@
+{
+    "name": "Administrator",
+    "permissions": {
+        "config": [
+            "manageUsers",
+            "manageRoles",
+            "manageApplications",
+            "manageNetworks",
+            "manageLayers",
+            "manageFeatures",
+            "manageFeatureConfig",
+            "manageDatasources",
+            "managePickLists",
+            "manageSettings",
+            "manageNotifications",
+            "manageReplicas",
+            "manageUpload",
+            "manageUsage"
+        ],
+        "mywcom": [
+            "createSharedBookmark",
+            "editFeatures",
+            "modifyLayerList",
+            "addPrivateLayers",
+            "editGroups",
+            "persistState",
+            "bulkEditFeatures",
+            "mywcom.manageSpecifications",
+            "mywcom.manageLaborCosts",
+            "mywcom.editMaster",
+            "mywcom.checkMaster",
+            "mywcom.publishDesign",
+            "mywcom.bulkMoveFeatures"
+        ]
+    }
+}

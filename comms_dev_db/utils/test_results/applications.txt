@@ -1,0 +1,7 @@
+Opening database <database> ...
+name      external_name  layers  description                                  javascript_file                               image_url                        online  native
+--------  -------------  ------  -------------------------------------------  --------------------------------------------  -------------------------------  ------  ------
+config    Configuration       0  Configure settings, add users, load data...  main.config.js                                images/application_config.png      True   False
+mywcom    Comms              52  Communications network system-of-record      modules/comms_dev_db/js/main.mywcom_devdb.js  images/application_standard.png    True    True
+standard  Standard            2  Access all myWorld functionality             main.standard.js                              images/application_standard.png    True    True
+

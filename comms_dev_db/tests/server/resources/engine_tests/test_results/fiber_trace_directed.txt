@@ -1,0 +1,300 @@
+
+SUB TEST : TRACE OUT : mywcom_fiber from fiber_patch_panel/WH-ODF-01 downstream
+    PortTraceNode( 0.000m,fiber_patch_panel/1-out:2,ports=out:2,direction=downstream,1 )   Patch Panel: WH-ODF-01
+    SegmentTraceNode( 15.380m,mywcom_fiber_segment/184-in:2,fibers=2,length=15.38,direction=downstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1366840302944, 52.2241248844409),1 )   Fiber Cable: WH-FCB-022 (288)
+    ConnectionTraceNode( 15.380m,mywcom_fiber_connection/1-2,from_=2,to_=146,direction=downstream,1 )   Fiber Connection: 1
+    SegmentTraceNode( 150.830m,mywcom_fiber_segment/73-in:146,fibers=146,length=135.45,direction=downstream,loc=,start_coord=(0.1366840302944, 52.2241248844409),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: WH-FCB-007 (288)
+    ConnectionTraceNode( 150.830m,mywcom_fiber_connection/9-146,from_=146,to_=2,direction=downstream,1 )   Fiber Connection: 9
+    SegmentTraceNode( 251.640m,mywcom_fiber_segment/153-in:2,fibers=2,length=100.81,direction=downstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.1390426978469, 52.2238950619052),1 )   Fiber Cable: WH-FCB-021 (144)
+    ConnectionTraceNode( 251.640m,mywcom_fiber_connection/24-2,from_=2,to_=2,direction=downstream,1 )   Fiber Connection: 24
+    SegmentTraceNode( 254.760m,mywcom_fiber_segment/191-in:2,fibers=2,length=3.12,direction=downstream,loc=,start_coord=(0.1390426978469, 52.2238950619052),stop_coord=(0.1390732079744, 52.2238911596356),1 )   Fiber Cable: RISER-001 (4)
+    PortTraceNode( 254.760m,fiber_splitter/4-in:1,ports=in:1,direction=downstream,7 )   Fiber Splitter: WH-SPL-004 (8 way)
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:1,ports=out:1,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 289.190m,mywcom_fiber_segment/211-in:1,fibers=1,length=34.43,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.139217376709, 52.2236097845561),1 )   Fiber Cable: DROP-009 (4)
+       PortTraceNode( 289.190m,fiber_ont/9-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-009
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:2,ports=out:2,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 286.780m,mywcom_fiber_segment/212-in:1,fibers=1,length=32.02,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1393514871597, 52.2236763288964),1 )   Fiber Cable: DROP-010 (4)
+       PortTraceNode( 286.780m,fiber_ont/10-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-010
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:3,ports=out:3,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 287.420m,mywcom_fiber_segment/213-in:1,fibers=1,length=32.66,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1394212245941, 52.2237100117961),1 )   Fiber Cable: DROP-011 (4)
+       PortTraceNode( 287.420m,fiber_ont/11-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-011
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:4,ports=out:4,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 292.180m,mywcom_fiber_segment/214-in:1,fibers=1,length=37.42,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1395633816719, 52.223779020584),1 )   Fiber Cable: DROP-012 (4)
+       PortTraceNode( 292.180m,fiber_ont/12-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-012
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:5,ports=out:5,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 295.980m,mywcom_fiber_segment/215-in:1,fibers=1,length=41.22,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1396358013153, 52.2238143464696),1 )   Fiber Cable: DROP-013 (4)
+       PortTraceNode( 295.980m,fiber_ont/13-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-013
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:6,ports=out:6,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 306.220m,mywcom_fiber_segment/216-in:1,fibers=1,length=51.46,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1397927105427, 52.2238899273398),1 )   Fiber Cable: DROP-014 (4)
+       PortTraceNode( 306.220m,fiber_ont/14-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-014
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:7,ports=out:7,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 311.770m,mywcom_fiber_segment/217-in:1,fibers=1,length=57.01,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1398678123951, 52.2239293607863),1 )   Fiber Cable: DROP-015 (4)
+       PortTraceNode( 311.770m,fiber_ont/15-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-015
+    
+
+SUB TEST : TRACE UPSTREAM : mywcom_fiber from fiber_ont/WH-ONT-001 upstream
+    PortTraceNode( 0.000m,fiber_ont/1-in:1,ports=in:1,direction=upstream,1 )   ONT: WH-ONT-001
+    SegmentTraceNode( 25.760m,mywcom_fiber_segment/203-out:1,fibers=1,length=25.76,direction=upstream,loc=,start_coord=(0.1387131214142, 52.2238964995833),stop_coord=(0.1390732079744, 52.2238911596356),1 )   Fiber Cable: DROP-001 (4)
+    PortTraceNode( 25.760m,fiber_splitter/1-out:1,ports=out:1,direction=upstream,1 )   Fiber Splitter: WH-SPL-001 (8 way)
+    PortTraceNode( 25.760m,fiber_splitter/1-in:1,ports=in:1,direction=upstream,1 )   Fiber Splitter: WH-SPL-001 (8 way)
+    SegmentTraceNode( 28.880m,mywcom_fiber_segment/192-out:1,fibers=1,length=3.12,direction=upstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1390426978469, 52.2238950619052),1 )   Fiber Cable: RISER-001 (4)
+    ConnectionTraceNode( 28.880m,mywcom_fiber_connection/24-1,from_=1,to_=1,direction=upstream,1 )   Fiber Connection: 24
+    SegmentTraceNode( 129.690m,mywcom_fiber_segment/154-out:1,fibers=1,length=100.81,direction=upstream,loc=,start_coord=(0.1390426978469, 52.2238950619052),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: WH-FCB-021 (144)
+    ConnectionTraceNode( 129.690m,mywcom_fiber_connection/9-145,from_=1,to_=145,direction=upstream,1 )   Fiber Connection: 9
+    SegmentTraceNode( 265.140m,mywcom_fiber_segment/73-out:145,fibers=145,length=135.45,direction=upstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.1366840302944, 52.2241248844409),1 )   Fiber Cable: WH-FCB-007 (288)
+    ConnectionTraceNode( 265.140m,mywcom_fiber_connection/1-1,from_=145,to_=1,direction=upstream,1 )   Fiber Connection: 1
+    SegmentTraceNode( 280.520m,mywcom_fiber_segment/184-out:1,fibers=1,length=15.38,direction=upstream,loc=,start_coord=(0.1366840302944, 52.2241248844409),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-FCB-022 (288)
+    PortTraceNode( 280.520m,fiber_patch_panel/1-out:1,ports=out:1,direction=upstream,1 )   Patch Panel: WH-ODF-01
+    PortTraceNode( 280.520m,fiber_patch_panel/1-in:1,ports=in:1,direction=upstream,1 )   Patch Panel: WH-ODF-01
+    PortTraceNode( 280.520m,fiber_patch_panel/4-out:1,ports=out:1,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+    PortTraceNode( 280.520m,fiber_patch_panel/4-in:1,ports=in:1,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+    SegmentTraceNode( 280.520m,mywcom_fiber_segment/557-out:1,fibers=1,direction=upstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-INT-01 (48)
+    PortTraceNode( 280.520m,fiber_olt/10-out:1,ports=out:1,direction=upstream,0 )   OLT: WH-OLT-010
+    
+
+SUB TEST : TRACE BOTH : mywcom_fiber from fiber_splitter/WH-SPL-003 both
+    PortTraceNode( 0.000m,fiber_splitter/3-out:1,ports=out:1,direction=both,2 )   Fiber Splitter: WH-SPL-003 (8 way)
+    Path:
+       ConnectionTraceNode( 0.000m,mywcom_fiber_connection/90-1,from_=Ports: out:1,to_=Fibers: 1,direction=downstream,1 )   Fiber Connection: 90
+       SegmentTraceNode( 36.580m,mywcom_fiber_segment/226-in:1,fibers=1,length=36.58,direction=downstream,loc=,start_coord=(0.1400046050549, 52.2243947549617),stop_coord=(0.1404565572739, 52.2242481131926),1 )   Fiber Cable: DROP-024 (4)
+       PortTraceNode( 36.580m,fiber_ont/24-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-024
+    Path:
+       PortTraceNode( 0.000m,fiber_splitter/3-in:1,ports=in:1,direction=upstream,1 )   Fiber Splitter: WH-SPL-003 (8 way)
+       SegmentTraceNode( 1.600m,mywcom_fiber_segment/193-out:2,fibers=2,length=1.60,direction=upstream,loc=,start_coord=(0.1400046050549, 52.2243947549617),stop_coord=(0.1399828121066, 52.2243978356659),1 )   Fiber Cable: RISER-002 (4)
+       ConnectionTraceNode( 1.600m,mywcom_fiber_connection/27-4,from_=2,to_=4,direction=upstream,1 )   Fiber Connection: 27
+       SegmentTraceNode( 191.670m,mywcom_fiber_segment/156-out:4,fibers=4,length=190.07,direction=upstream,loc=,start_coord=(0.1399828121066, 52.2243978356659),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: WH-FCB-021 (144)
+       ConnectionTraceNode( 191.670m,mywcom_fiber_connection/9-148,from_=4,to_=148,direction=upstream,1 )   Fiber Connection: 9
+       SegmentTraceNode( 327.120m,mywcom_fiber_segment/73-out:148,fibers=148,length=135.45,direction=upstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.1366840302944, 52.2241248844409),1 )   Fiber Cable: WH-FCB-007 (288)
+       ConnectionTraceNode( 327.120m,mywcom_fiber_connection/1-4,from_=148,to_=4,direction=upstream,1 )   Fiber Connection: 1
+       SegmentTraceNode( 342.500m,mywcom_fiber_segment/184-out:4,fibers=4,length=15.38,direction=upstream,loc=,start_coord=(0.1366840302944, 52.2241248844409),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-FCB-022 (288)
+       PortTraceNode( 342.500m,fiber_patch_panel/1-out:4,ports=out:4,direction=upstream,1 )   Patch Panel: WH-ODF-01
+       PortTraceNode( 342.500m,fiber_patch_panel/1-in:4,ports=in:4,direction=upstream,1 )   Patch Panel: WH-ODF-01
+       PortTraceNode( 342.500m,fiber_patch_panel/4-out:4,ports=out:4,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+       PortTraceNode( 342.500m,fiber_patch_panel/4-in:4,ports=in:4,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+       SegmentTraceNode( 342.500m,mywcom_fiber_segment/557-out:4,fibers=4,direction=upstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-INT-01 (48)
+       PortTraceNode( 342.500m,fiber_olt/10-out:4,ports=out:4,direction=upstream,0 )   OLT: WH-OLT-010
+    
+
+SUB TEST : TRACE UPSTREAM TO DEAD : mywcom_fiber from fiber_splitter/WH-SPL-005 upstream
+    PortTraceNode( 0.000m,fiber_splitter/5-in:1,ports=in:1,direction=upstream,1 )   Fiber Splitter: WH-SPL-005 (8 way)
+    SegmentTraceNode( 1.600m,mywcom_fiber_segment/193-out:3,fibers=3,length=1.60,direction=upstream,loc=,start_coord=(0.1400046050549, 52.2243947549617),stop_coord=(0.1399828121066, 52.2243978356659),1 )   Fiber Cable: RISER-002 (4)
+    ConnectionTraceNode( 1.600m,mywcom_fiber_connection/28-2,from_=3,to_=2,direction=upstream,1 )   Fiber Connection: 28
+    SegmentTraceNode( 90.860m,mywcom_fiber_segment/156-out:2,fibers=2,length=89.26,direction=upstream,loc=,start_coord=(0.1399828121066, 52.2243978356659),stop_coord=(0.1390426978469, 52.2238950619052),0 )   Fiber Cable: WH-FCB-021 (144)
+    
+
+SUB TEST : TRACE UPSTREAM FROM SEG IN : mywcom_fiber from mywcom_fiber_segment/154 upstream
+    SegmentTraceNode( 13.440m,mywcom_fiber_segment/154-in:2,fibers=2,length=13.44,direction=upstream,loc=,start_coord=(0.1390426978469, 52.2238950619052),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: WH-FCB-021 (144)
+    ConnectionTraceNode( 13.440m,mywcom_fiber_connection/9-146,from_=2,to_=146,direction=upstream,1 )   Fiber Connection: 9
+    SegmentTraceNode( 148.890m,mywcom_fiber_segment/73-out:146,fibers=146,length=135.45,direction=upstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.1366840302944, 52.2241248844409),1 )   Fiber Cable: WH-FCB-007 (288)
+    ConnectionTraceNode( 148.890m,mywcom_fiber_connection/1-2,from_=146,to_=2,direction=upstream,1 )   Fiber Connection: 1
+    SegmentTraceNode( 164.270m,mywcom_fiber_segment/184-out:2,fibers=2,length=15.38,direction=upstream,loc=,start_coord=(0.1366840302944, 52.2241248844409),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-FCB-022 (288)
+    PortTraceNode( 164.270m,fiber_patch_panel/1-out:2,ports=out:2,direction=upstream,1 )   Patch Panel: WH-ODF-01
+    PortTraceNode( 164.270m,fiber_patch_panel/1-in:2,ports=in:2,direction=upstream,1 )   Patch Panel: WH-ODF-01
+    PortTraceNode( 164.270m,fiber_patch_panel/4-out:2,ports=out:2,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+    PortTraceNode( 164.270m,fiber_patch_panel/4-in:2,ports=in:2,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+    SegmentTraceNode( 164.270m,mywcom_fiber_segment/557-out:2,fibers=2,direction=upstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-INT-01 (48)
+    PortTraceNode( 164.270m,fiber_olt/10-out:2,ports=out:2,direction=upstream,0 )   OLT: WH-OLT-010
+    
+
+SUB TEST : TRACE UPSTREAM FROM SEG OUT : mywcom_fiber from mywcom_fiber_segment/154 upstream
+    SegmentTraceNode( 100.810m,mywcom_fiber_segment/154-out:2,fibers=2,length=100.81,direction=upstream,loc=,start_coord=(0.1390426978469, 52.2238950619052),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: WH-FCB-021 (144)
+    ConnectionTraceNode( 100.810m,mywcom_fiber_connection/9-146,from_=2,to_=146,direction=upstream,1 )   Fiber Connection: 9
+    SegmentTraceNode( 236.260m,mywcom_fiber_segment/73-out:146,fibers=146,length=135.45,direction=upstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.1366840302944, 52.2241248844409),1 )   Fiber Cable: WH-FCB-007 (288)
+    ConnectionTraceNode( 236.260m,mywcom_fiber_connection/1-2,from_=146,to_=2,direction=upstream,1 )   Fiber Connection: 1
+    SegmentTraceNode( 251.640m,mywcom_fiber_segment/184-out:2,fibers=2,length=15.38,direction=upstream,loc=,start_coord=(0.1366840302944, 52.2241248844409),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-FCB-022 (288)
+    PortTraceNode( 251.640m,fiber_patch_panel/1-out:2,ports=out:2,direction=upstream,1 )   Patch Panel: WH-ODF-01
+    PortTraceNode( 251.640m,fiber_patch_panel/1-in:2,ports=in:2,direction=upstream,1 )   Patch Panel: WH-ODF-01
+    PortTraceNode( 251.640m,fiber_patch_panel/4-out:2,ports=out:2,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+    PortTraceNode( 251.640m,fiber_patch_panel/4-in:2,ports=in:2,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+    SegmentTraceNode( 251.640m,mywcom_fiber_segment/557-out:2,fibers=2,direction=upstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-INT-01 (48)
+    PortTraceNode( 251.640m,fiber_olt/10-out:2,ports=out:2,direction=upstream,0 )   OLT: WH-OLT-010
+    
+
+SUB TEST : TRACE DOWNSTREAM FROM SEG IN : mywcom_fiber from mywcom_fiber_segment/154 downstream
+    SegmentTraceNode( 87.370m,mywcom_fiber_segment/154-in:2,fibers=2,length=87.37,direction=downstream,loc=,start_coord=(0.138112438657, 52.2234101509367),stop_coord=(0.1390426978469, 52.2238950619052),1 )   Fiber Cable: WH-FCB-021 (144)
+    ConnectionTraceNode( 87.370m,mywcom_fiber_connection/24-2,from_=2,to_=2,direction=downstream,1 )   Fiber Connection: 24
+    SegmentTraceNode( 90.490m,mywcom_fiber_segment/191-in:2,fibers=2,length=3.12,direction=downstream,loc=,start_coord=(0.1390426978469, 52.2238950619052),stop_coord=(0.1390732079744, 52.2238911596356),1 )   Fiber Cable: RISER-001 (4)
+    PortTraceNode( 90.490m,fiber_splitter/4-in:1,ports=in:1,direction=downstream,7 )   Fiber Splitter: WH-SPL-004 (8 way)
+    Path:
+       PortTraceNode( 90.490m,fiber_splitter/4-out:1,ports=out:1,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 124.920m,mywcom_fiber_segment/211-in:1,fibers=1,length=34.43,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.139217376709, 52.2236097845561),1 )   Fiber Cable: DROP-009 (4)
+       PortTraceNode( 124.920m,fiber_ont/9-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-009
+    Path:
+       PortTraceNode( 90.490m,fiber_splitter/4-out:2,ports=out:2,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 122.510m,mywcom_fiber_segment/212-in:1,fibers=1,length=32.02,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1393514871597, 52.2236763288964),1 )   Fiber Cable: DROP-010 (4)
+       PortTraceNode( 122.510m,fiber_ont/10-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-010
+    Path:
+       PortTraceNode( 90.490m,fiber_splitter/4-out:3,ports=out:3,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 123.150m,mywcom_fiber_segment/213-in:1,fibers=1,length=32.66,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1394212245941, 52.2237100117961),1 )   Fiber Cable: DROP-011 (4)
+       PortTraceNode( 123.150m,fiber_ont/11-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-011
+    Path:
+       PortTraceNode( 90.490m,fiber_splitter/4-out:4,ports=out:4,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 127.910m,mywcom_fiber_segment/214-in:1,fibers=1,length=37.42,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1395633816719, 52.223779020584),1 )   Fiber Cable: DROP-012 (4)
+       PortTraceNode( 127.910m,fiber_ont/12-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-012
+    Path:
+       PortTraceNode( 90.490m,fiber_splitter/4-out:5,ports=out:5,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 131.710m,mywcom_fiber_segment/215-in:1,fibers=1,length=41.22,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1396358013153, 52.2238143464696),1 )   Fiber Cable: DROP-013 (4)
+       PortTraceNode( 131.710m,fiber_ont/13-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-013
+    Path:
+       PortTraceNode( 90.490m,fiber_splitter/4-out:6,ports=out:6,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 141.950m,mywcom_fiber_segment/216-in:1,fibers=1,length=51.46,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1397927105427, 52.2238899273398),1 )   Fiber Cable: DROP-014 (4)
+       PortTraceNode( 141.950m,fiber_ont/14-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-014
+    Path:
+       PortTraceNode( 90.490m,fiber_splitter/4-out:7,ports=out:7,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 147.500m,mywcom_fiber_segment/217-in:1,fibers=1,length=57.01,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1398678123951, 52.2239293607863),1 )   Fiber Cable: DROP-015 (4)
+       PortTraceNode( 147.500m,fiber_ont/15-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-015
+    
+
+SUB TEST : TRACE DOWNSTREAM FROM SEG OUT : mywcom_fiber from mywcom_fiber_segment/154 downstream
+    SegmentTraceNode( 0.000m,mywcom_fiber_segment/154-out:2,fibers=2,direction=downstream,loc=,start_coord=(0.138112438657, 52.2234101509367),stop_coord=(0.138112438657, 52.2234101509367),1 )   Fiber Cable: WH-FCB-021 (144)
+    ConnectionTraceNode( 0.000m,mywcom_fiber_connection/24-2,from_=2,to_=2,direction=downstream,1 )   Fiber Connection: 24
+    SegmentTraceNode( 3.120m,mywcom_fiber_segment/191-in:2,fibers=2,length=3.12,direction=downstream,loc=,start_coord=(0.1390426978469, 52.2238950619052),stop_coord=(0.1390732079744, 52.2238911596356),1 )   Fiber Cable: RISER-001 (4)
+    PortTraceNode( 3.120m,fiber_splitter/4-in:1,ports=in:1,direction=downstream,7 )   Fiber Splitter: WH-SPL-004 (8 way)
+    Path:
+       PortTraceNode( 3.120m,fiber_splitter/4-out:1,ports=out:1,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 37.550m,mywcom_fiber_segment/211-in:1,fibers=1,length=34.43,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.139217376709, 52.2236097845561),1 )   Fiber Cable: DROP-009 (4)
+       PortTraceNode( 37.550m,fiber_ont/9-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-009
+    Path:
+       PortTraceNode( 3.120m,fiber_splitter/4-out:2,ports=out:2,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 35.140m,mywcom_fiber_segment/212-in:1,fibers=1,length=32.02,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1393514871597, 52.2236763288964),1 )   Fiber Cable: DROP-010 (4)
+       PortTraceNode( 35.140m,fiber_ont/10-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-010
+    Path:
+       PortTraceNode( 3.120m,fiber_splitter/4-out:3,ports=out:3,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 35.780m,mywcom_fiber_segment/213-in:1,fibers=1,length=32.66,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1394212245941, 52.2237100117961),1 )   Fiber Cable: DROP-011 (4)
+       PortTraceNode( 35.780m,fiber_ont/11-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-011
+    Path:
+       PortTraceNode( 3.120m,fiber_splitter/4-out:4,ports=out:4,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 40.540m,mywcom_fiber_segment/214-in:1,fibers=1,length=37.42,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1395633816719, 52.223779020584),1 )   Fiber Cable: DROP-012 (4)
+       PortTraceNode( 40.540m,fiber_ont/12-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-012
+    Path:
+       PortTraceNode( 3.120m,fiber_splitter/4-out:5,ports=out:5,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 44.340m,mywcom_fiber_segment/215-in:1,fibers=1,length=41.22,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1396358013153, 52.2238143464696),1 )   Fiber Cable: DROP-013 (4)
+       PortTraceNode( 44.340m,fiber_ont/13-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-013
+    Path:
+       PortTraceNode( 3.120m,fiber_splitter/4-out:6,ports=out:6,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 54.580m,mywcom_fiber_segment/216-in:1,fibers=1,length=51.46,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1397927105427, 52.2238899273398),1 )   Fiber Cable: DROP-014 (4)
+       PortTraceNode( 54.580m,fiber_ont/14-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-014
+    Path:
+       PortTraceNode( 3.120m,fiber_splitter/4-out:7,ports=out:7,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 60.130m,mywcom_fiber_segment/217-in:1,fibers=1,length=57.01,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1398678123951, 52.2239293607863),1 )   Fiber Cable: DROP-015 (4)
+       PortTraceNode( 60.130m,fiber_ont/15-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-015
+    
+
+SUB TEST : TRACE BOTH FROM SEG IN : mywcom_fiber from mywcom_fiber_segment/154 both
+    SegmentTraceNode( 0.000m,mywcom_fiber_segment/154-in:2,fibers=2,direction=both,loc=,start_coord=(0.138112438657, 52.2234101509367),stop_coord=(0.138112438657, 52.2234101509367),2 )   Fiber Cable: WH-FCB-021 (144)
+    Path:
+       SegmentTraceNode( 13.440m,mywcom_fiber_segment/153-out:2,fibers=2,length=13.44,direction=upstream,loc=,start_coord=(0.138112438657, 52.2234101509367),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: WH-FCB-021 (144)
+       ConnectionTraceNode( 13.440m,mywcom_fiber_connection/9-146,from_=2,to_=146,direction=upstream,1 )   Fiber Connection: 9
+       SegmentTraceNode( 148.890m,mywcom_fiber_segment/73-out:146,fibers=146,length=135.45,direction=upstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.1366840302944, 52.2241248844409),1 )   Fiber Cable: WH-FCB-007 (288)
+       ConnectionTraceNode( 148.890m,mywcom_fiber_connection/1-2,from_=146,to_=2,direction=upstream,1 )   Fiber Connection: 1
+       SegmentTraceNode( 164.270m,mywcom_fiber_segment/184-out:2,fibers=2,length=15.38,direction=upstream,loc=,start_coord=(0.1366840302944, 52.2241248844409),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-FCB-022 (288)
+       PortTraceNode( 164.270m,fiber_patch_panel/1-out:2,ports=out:2,direction=upstream,1 )   Patch Panel: WH-ODF-01
+       PortTraceNode( 164.270m,fiber_patch_panel/1-in:2,ports=in:2,direction=upstream,1 )   Patch Panel: WH-ODF-01
+       PortTraceNode( 164.270m,fiber_patch_panel/4-out:2,ports=out:2,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+       PortTraceNode( 164.270m,fiber_patch_panel/4-in:2,ports=in:2,direction=upstream,1 )   Patch Panel: WH-ODF-01E
+       SegmentTraceNode( 164.270m,mywcom_fiber_segment/557-out:2,fibers=2,direction=upstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1366049051285, 52.2240164428564),1 )   Fiber Cable: WH-INT-01 (48)
+       PortTraceNode( 164.270m,fiber_olt/10-out:2,ports=out:2,direction=upstream,0 )   OLT: WH-OLT-010
+    Path:
+       SegmentTraceNode( 87.370m,mywcom_fiber_segment/154-out:2,fibers=2,length=87.37,direction=downstream,loc=,start_coord=(0.138112438657, 52.2234101509367),stop_coord=(0.1390426978469, 52.2238950619052),1 )   Fiber Cable: WH-FCB-021 (144)
+       ConnectionTraceNode( 87.370m,mywcom_fiber_connection/24-2,from_=2,to_=2,direction=downstream,1 )   Fiber Connection: 24
+       SegmentTraceNode( 90.490m,mywcom_fiber_segment/191-in:2,fibers=2,length=3.12,direction=downstream,loc=,start_coord=(0.1390426978469, 52.2238950619052),stop_coord=(0.1390732079744, 52.2238911596356),1 )   Fiber Cable: RISER-001 (4)
+       PortTraceNode( 90.490m,fiber_splitter/4-in:1,ports=in:1,direction=downstream,7 )   Fiber Splitter: WH-SPL-004 (8 way)
+       Path:
+          PortTraceNode( 90.490m,fiber_splitter/4-out:1,ports=out:1,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+          SegmentTraceNode( 124.920m,mywcom_fiber_segment/211-in:1,fibers=1,length=34.43,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.139217376709, 52.2236097845561),1 )   Fiber Cable: DROP-009 (4)
+          PortTraceNode( 124.920m,fiber_ont/9-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-009
+       Path:
+          PortTraceNode( 90.490m,fiber_splitter/4-out:2,ports=out:2,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+          SegmentTraceNode( 122.510m,mywcom_fiber_segment/212-in:1,fibers=1,length=32.02,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1393514871597, 52.2236763288964),1 )   Fiber Cable: DROP-010 (4)
+          PortTraceNode( 122.510m,fiber_ont/10-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-010
+       Path:
+          PortTraceNode( 90.490m,fiber_splitter/4-out:3,ports=out:3,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+          SegmentTraceNode( 123.150m,mywcom_fiber_segment/213-in:1,fibers=1,length=32.66,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1394212245941, 52.2237100117961),1 )   Fiber Cable: DROP-011 (4)
+          PortTraceNode( 123.150m,fiber_ont/11-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-011
+       Path:
+          PortTraceNode( 90.490m,fiber_splitter/4-out:4,ports=out:4,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+          SegmentTraceNode( 127.910m,mywcom_fiber_segment/214-in:1,fibers=1,length=37.42,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1395633816719, 52.223779020584),1 )   Fiber Cable: DROP-012 (4)
+          PortTraceNode( 127.910m,fiber_ont/12-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-012
+       Path:
+          PortTraceNode( 90.490m,fiber_splitter/4-out:5,ports=out:5,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+          SegmentTraceNode( 131.710m,mywcom_fiber_segment/215-in:1,fibers=1,length=41.22,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1396358013153, 52.2238143464696),1 )   Fiber Cable: DROP-013 (4)
+          PortTraceNode( 131.710m,fiber_ont/13-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-013
+       Path:
+          PortTraceNode( 90.490m,fiber_splitter/4-out:6,ports=out:6,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+          SegmentTraceNode( 141.950m,mywcom_fiber_segment/216-in:1,fibers=1,length=51.46,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1397927105427, 52.2238899273398),1 )   Fiber Cable: DROP-014 (4)
+          PortTraceNode( 141.950m,fiber_ont/14-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-014
+       Path:
+          PortTraceNode( 90.490m,fiber_splitter/4-out:7,ports=out:7,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+          SegmentTraceNode( 147.500m,mywcom_fiber_segment/217-in:1,fibers=1,length=57.01,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1398678123951, 52.2239293607863),1 )   Fiber Cable: DROP-015 (4)
+          PortTraceNode( 147.500m,fiber_ont/15-in:1,ports=in:1,direction=downstream,0 )   ONT: WH-ONT-015
+    
+
+SUB TEST : TRACE TO DIST SIMPLE : mywcom_fiber from fiber_patch_panel/WH-ODF-01 downstream to distance 80m
+    PortTraceNode( 0.000m,fiber_patch_panel/1-out:2,ports=out:2,direction=downstream,1 )   Patch Panel: WH-ODF-01
+    SegmentTraceNode( 15.380m,mywcom_fiber_segment/184-in:2,fibers=2,length=15.38,direction=downstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1366840302944, 52.2241248844409),1 )   Fiber Cable: WH-FCB-022 (288)
+    ConnectionTraceNode( 15.380m,mywcom_fiber_connection/1-2,from_=2,to_=146,direction=downstream,1 )   Fiber Connection: 1
+    SegmentTraceNode( 80.000m,mywcom_fiber_segment/73-in:146,fibers=146,length=64.62,direction=downstream,loc=,start_coord=(0.1366840302944, 52.2241248844409),stop_coord=(0.13738067366622067, 52.223824220614624),0 )   Fiber Cable: WH-FCB-007 (288)
+    
+
+SUB TEST : TRACE TO DIST MULTISEG : mywcom_fiber from fiber_patch_panel/WH-ODF-01 downstream to distance 200m
+    PortTraceNode( 0.000m,fiber_patch_panel/1-out:2,ports=out:2,direction=downstream,1 )   Patch Panel: WH-ODF-01
+    SegmentTraceNode( 15.380m,mywcom_fiber_segment/184-in:2,fibers=2,length=15.38,direction=downstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1366840302944, 52.2241248844409),1 )   Fiber Cable: WH-FCB-022 (288)
+    ConnectionTraceNode( 15.380m,mywcom_fiber_connection/1-2,from_=2,to_=146,direction=downstream,1 )   Fiber Connection: 1
+    SegmentTraceNode( 150.830m,mywcom_fiber_segment/73-in:146,fibers=146,length=135.45,direction=downstream,loc=,start_coord=(0.1366840302944, 52.2241248844409),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: WH-FCB-007 (288)
+    ConnectionTraceNode( 150.830m,mywcom_fiber_connection/9-146,from_=146,to_=2,direction=downstream,1 )   Fiber Connection: 9
+    SegmentTraceNode( 200.000m,mywcom_fiber_segment/153-in:2,fibers=2,length=49.17,direction=downstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.13856951001175036, 52.223644258033964),0 )   Fiber Cable: WH-FCB-021 (144)
+    
+
+SUB TEST : TRACE TO DIST BRANCHING : mywcom_fiber from fiber_patch_panel/WH-ODF-01 downstream to distance 255m
+    PortTraceNode( 0.000m,fiber_patch_panel/1-out:2,ports=out:2,direction=downstream,1 )   Patch Panel: WH-ODF-01
+    SegmentTraceNode( 15.380m,mywcom_fiber_segment/184-in:2,fibers=2,length=15.38,direction=downstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1366840302944, 52.2241248844409),1 )   Fiber Cable: WH-FCB-022 (288)
+    ConnectionTraceNode( 15.380m,mywcom_fiber_connection/1-2,from_=2,to_=146,direction=downstream,1 )   Fiber Connection: 1
+    SegmentTraceNode( 150.830m,mywcom_fiber_segment/73-in:146,fibers=146,length=135.45,direction=downstream,loc=,start_coord=(0.1366840302944, 52.2241248844409),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: WH-FCB-007 (288)
+    ConnectionTraceNode( 150.830m,mywcom_fiber_connection/9-146,from_=146,to_=2,direction=downstream,1 )   Fiber Connection: 9
+    SegmentTraceNode( 251.640m,mywcom_fiber_segment/153-in:2,fibers=2,length=100.81,direction=downstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.1390426978469, 52.2238950619052),1 )   Fiber Cable: WH-FCB-021 (144)
+    ConnectionTraceNode( 251.640m,mywcom_fiber_connection/24-2,from_=2,to_=2,direction=downstream,1 )   Fiber Connection: 24
+    SegmentTraceNode( 254.760m,mywcom_fiber_segment/191-in:2,fibers=2,length=3.12,direction=downstream,loc=,start_coord=(0.1390426978469, 52.2238950619052),stop_coord=(0.1390732079744, 52.2238911596356),1 )   Fiber Cable: RISER-001 (4)
+    PortTraceNode( 254.760m,fiber_splitter/4-in:1,ports=in:1,direction=downstream,7 )   Fiber Splitter: WH-SPL-004 (8 way)
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:1,ports=out:1,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 255.000m,mywcom_fiber_segment/211-in:1,fibers=1,length=0.24,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.13907421292636934, 52.223889198264146),0 )   Fiber Cable: DROP-009 (4)
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:2,ports=out:2,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 255.000m,mywcom_fiber_segment/212-in:1,fibers=1,length=0.24,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.13907529376467084, 52.223889549411446),0 )   Fiber Cable: DROP-010 (4)
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:3,ports=out:3,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 255.000m,mywcom_fiber_segment/213-in:1,fibers=1,length=0.24,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.13907576535311184, 52.22388982848185),0 )   Fiber Cable: DROP-011 (4)
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:4,ports=out:4,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 255.000m,mywcom_fiber_segment/214-in:1,fibers=1,length=0.24,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.13907635179287675, 52.223890440411324),0 )   Fiber Cable: DROP-012 (4)
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:5,ports=out:5,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 255.000m,mywcom_fiber_segment/215-in:1,fibers=1,length=0.24,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1390764836270399, 52.22389071239737),0 )   Fiber Cable: DROP-013 (4)
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:6,ports=out:6,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 255.000m,mywcom_fiber_segment/216-in:1,fibers=1,length=0.24,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.1390765636023905, 52.223891153888395),0 )   Fiber Cable: DROP-014 (4)
+    Path:
+       PortTraceNode( 254.760m,fiber_splitter/4-out:7,ports=out:7,direction=downstream,1 )   Fiber Splitter: WH-SPL-004 (8 way)
+       SegmentTraceNode( 255.000m,mywcom_fiber_segment/217-in:1,fibers=1,length=0.24,direction=downstream,loc=,start_coord=(0.1390732079744, 52.2238911596356),stop_coord=(0.13907655309036157, 52.223891320454335),0 )   Fiber Cable: DROP-015 (4)
+    
+
+SUB TEST : TRACE TO DIST REVERSED : mywcom_fiber from fiber_patch_panel/WH-ODF-02 downstream to distance 412m
+    PortTraceNode( 0.000m,fiber_patch_panel/2-out:1,ports=out:1,direction=downstream,1 )   Patch Panel: WH-ODF-02
+    SegmentTraceNode( 11.440m,mywcom_fiber_segment/185-in:1,fibers=1,length=11.44,direction=downstream,loc=WH-2 [1-1] Active,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1364935934544, 52.224057930009),1 )   Fiber Cable: WH-FCB-023 (144)
+    ConnectionTraceNode( 11.440m,mywcom_fiber_connection/17-1,from_=1,to_=1,direction=downstream,1 )   Fiber Connection: 17
+    SegmentTraceNode( 412.000m,mywcom_fiber_segment/1-in:1,fibers=1,length=400.56,direction=downstream,loc=WH-2 [1-1] Active,start_coord=(0.1364935934544, 52.224057930009),stop_coord=(0.1328243623524538, 52.224164201410105),0 )   Fiber Cable: WH-FCB-001 (144)
+    
+
+SUB TEST : TRACE TO DIST SLACK : mywcom_fiber from fiber_patch_panel/WH-ODF-02 downstream to distance 120m
+    PortTraceNode( 0.000m,fiber_patch_panel/2-out:1,ports=out:1,direction=downstream,1 )   Patch Panel: WH-ODF-02
+    SegmentTraceNode( 11.440m,mywcom_fiber_segment/185-in:1,fibers=1,length=11.44,direction=downstream,loc=WH-2 [1-1] Active,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1364935934544, 52.224057930009),1 )   Fiber Cable: WH-FCB-023 (144)
+    ConnectionTraceNode( 11.440m,mywcom_fiber_connection/17-1,from_=1,to_=1,direction=downstream,1 )   Fiber Connection: 17
+    SegmentTraceNode( 120.000m,mywcom_fiber_segment/1-in:1,fibers=1,length=108.56,direction=downstream,loc=WH-2 [1-1] Active,start_coord=(0.1364935934544, 52.224057930009),stop_coord=(0.13535175417251555, 52.22346717755518),0 )   Fiber Cable: WH-FCB-001 (144)
+    

@@ -1,0 +1,14 @@
+Request: GET: /modules/comsof/workspace/1/file_status?filename=input/input.gpkg
+Response: 200 (200 OK)
+{
+   "exists": true
+}
+
+
+Request: GET: /modules/comsof/workspace/1/file_status?filename=no_file
+Response: 200 (200 OK)
+{
+   "exists": false
+}
+
+

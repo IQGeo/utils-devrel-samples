@@ -1,0 +1,291 @@
+
+SUB TEST : NETWORKS
+    Request: GET: /feature/fiber_splitter/1/networks
+    Response: 200 (200 OK)
+    {
+       "mywcom_fiber": {
+          "directed": true,
+          "external_name": "Fiber",
+          "sub_paths": {
+             "fiber_splitter/1?pins=in:1": "IN#1",
+             "fiber_splitter/1?pins=out:1": "OUT#1",
+             "fiber_splitter/1?pins=out:2": "OUT#2",
+             "fiber_splitter/1?pins=out:3": "OUT#3",
+             "fiber_splitter/1?pins=out:4": "OUT#4",
+             "fiber_splitter/1?pins=out:5": "OUT#5",
+             "fiber_splitter/1?pins=out:6": "OUT#6",
+             "fiber_splitter/1?pins=out:7": "OUT#7",
+             "fiber_splitter/1?pins=out:8": "OUT#8"
+          },
+          "topology": "tree"
+       },
+       "mywcom_fiber_path": {
+          "directed": true,
+          "external_name": "Fiber Path",
+          "sub_paths": {
+             "fiber_splitter/1?pins=in:1": "IN#1",
+             "fiber_splitter/1?pins=out:1": "OUT#1",
+             "fiber_splitter/1?pins=out:2": "OUT#2",
+             "fiber_splitter/1?pins=out:3": "OUT#3",
+             "fiber_splitter/1?pins=out:4": "OUT#4",
+             "fiber_splitter/1?pins=out:5": "OUT#5",
+             "fiber_splitter/1?pins=out:6": "OUT#6",
+             "fiber_splitter/1?pins=out:7": "OUT#7",
+             "fiber_splitter/1?pins=out:8": "OUT#8"
+          },
+          "topology": "tree"
+       }
+    }
+    
+    
+    Request: GET: /feature/pole/6/networks
+    Response: 200 (200 OK)
+    {
+       "mywcom_cable_segments": {
+          "directed": false,
+          "external_name": "Cable Network",
+          "sub_paths": null,
+          "topology": "mesh"
+       },
+       "mywcom_routes": {
+          "directed": false,
+          "external_name": "Routes",
+          "sub_paths": null,
+          "topology": "mesh"
+       }
+    }
+    
+    
+
+SUB TEST : PINS
+    Request: GET: /modules/comms/fiber/connections/fiber_splitter/1/in
+    Response: 200 (200 OK)
+    {
+       "conns": [
+          {
+             "forward": false,
+             "from_feature": "fiber_splitter/1",
+             "from_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "in"
+             },
+             "to_cable": "fiber_cable/26",
+             "to_cable_side": "in",
+             "to_feature": "mywcom_fiber_segment/192",
+             "to_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "out"
+             },
+             "urn": "mywcom_fiber_connection/25"
+          }
+       ]
+    }
+    
+    
+    Request: GET: /modules/comms/fiber/connections/fiber_splitter/1/out
+    Response: 200 (200 OK)
+    {
+       "conns": [
+          {
+             "forward": true,
+             "from_feature": "fiber_splitter/1",
+             "from_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "out"
+             },
+             "to_cable": "fiber_cable/33",
+             "to_cable_side": "out",
+             "to_feature": "mywcom_fiber_segment/203",
+             "to_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "in"
+             },
+             "urn": "mywcom_fiber_connection/44"
+          },
+          {
+             "forward": true,
+             "from_feature": "fiber_splitter/1",
+             "from_pins": {
+                "high": 2,
+                "low": 2,
+                "side": "out"
+             },
+             "to_cable": "fiber_cable/34",
+             "to_cable_side": "out",
+             "to_feature": "mywcom_fiber_segment/204",
+             "to_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "in"
+             },
+             "urn": "mywcom_fiber_connection/46"
+          },
+          {
+             "forward": true,
+             "from_feature": "fiber_splitter/1",
+             "from_pins": {
+                "high": 3,
+                "low": 3,
+                "side": "out"
+             },
+             "to_cable": "fiber_cable/35",
+             "to_cable_side": "out",
+             "to_feature": "mywcom_fiber_segment/205",
+             "to_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "in"
+             },
+             "urn": "mywcom_fiber_connection/48"
+          },
+          {
+             "forward": true,
+             "from_feature": "fiber_splitter/1",
+             "from_pins": {
+                "high": 4,
+                "low": 4,
+                "side": "out"
+             },
+             "to_cable": "fiber_cable/36",
+             "to_cable_side": "out",
+             "to_feature": "mywcom_fiber_segment/206",
+             "to_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "in"
+             },
+             "urn": "mywcom_fiber_connection/50"
+          },
+          {
+             "forward": true,
+             "from_feature": "fiber_splitter/1",
+             "from_pins": {
+                "high": 5,
+                "low": 5,
+                "side": "out"
+             },
+             "to_cable": "fiber_cable/37",
+             "to_cable_side": "out",
+             "to_feature": "mywcom_fiber_segment/207",
+             "to_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "in"
+             },
+             "urn": "mywcom_fiber_connection/52"
+          },
+          {
+             "forward": true,
+             "from_feature": "fiber_splitter/1",
+             "from_pins": {
+                "high": 6,
+                "low": 6,
+                "side": "out"
+             },
+             "to_cable": "fiber_cable/38",
+             "to_cable_side": "out",
+             "to_feature": "mywcom_fiber_segment/208",
+             "to_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "in"
+             },
+             "urn": "mywcom_fiber_connection/54"
+          },
+          {
+             "forward": true,
+             "from_feature": "fiber_splitter/1",
+             "from_pins": {
+                "high": 7,
+                "low": 7,
+                "side": "out"
+             },
+             "to_cable": "fiber_cable/39",
+             "to_cable_side": "out",
+             "to_feature": "mywcom_fiber_segment/209",
+             "to_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "in"
+             },
+             "urn": "mywcom_fiber_connection/56"
+          },
+          {
+             "forward": true,
+             "from_feature": "fiber_splitter/1",
+             "from_pins": {
+                "high": 8,
+                "low": 8,
+                "side": "out"
+             },
+             "to_cable": "fiber_cable/40",
+             "to_cable_side": "out",
+             "to_feature": "mywcom_fiber_segment/210",
+             "to_pins": {
+                "high": 1,
+                "low": 1,
+                "side": "in"
+             },
+             "urn": "mywcom_fiber_connection/58"
+          }
+       ]
+    }
+    
+    
+
+SUB TEST : CABLES
+    Request: GET: /modules/comms/cable/fiber_cable/166/highest_connected
+    Response: 200 (200 OK)
+    {
+       "high": 30
+    }
+    
+    
+
+SUB TEST : CABLE CALC FIELDS
+    Request: GET: /modules/comms/cable/fiber_cable/166/connections?sort=true
+    Response: 200 (200 OK)
+    {
+       "count": 8,
+       "features": [
+          "mywcom_fiber_connection(211)    Fiber Connection: 211",
+          "mywcom_fiber_connection(212)    Fiber Connection: 212",
+          "mywcom_fiber_connection(213)    Fiber Connection: 213",
+          "mywcom_fiber_connection(214)    Fiber Connection: 214",
+          "mywcom_fiber_connection(215)    Fiber Connection: 215",
+          "mywcom_fiber_connection(216)    Fiber Connection: 216",
+          "mywcom_fiber_connection(221)    Fiber Connection: 221",
+          "mywcom_fiber_connection(222)    Fiber Connection: 222"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    Request: GET: /modules/comms/cable/fiber_cable/166/connections?sort=true&splice=true
+    Response: 200 (200 OK)
+    {
+       "count": 4,
+       "features": [
+          "mywcom_fiber_connection(215)    Fiber Connection: 215",
+          "mywcom_fiber_connection(216)    Fiber Connection: 216",
+          "mywcom_fiber_connection(221)    Fiber Connection: 221",
+          "mywcom_fiber_connection(222)    Fiber Connection: 222"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    

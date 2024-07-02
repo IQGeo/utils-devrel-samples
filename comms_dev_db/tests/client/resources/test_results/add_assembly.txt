@@ -1,0 +1,35 @@
+TEST: AFTER ADD TO PALETTE
+  header: Building: Woodhead Hub
+    label: Name
+    label: Woodhead Hub
+    label: Owner
+    label: Acme Co
+    label: Access Code
+    label: A7B-792
+    label: Routes
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+  header: Cables
+  header: feature-plugins-header-options
+    label: Patch Panel
+    label: Rack
+    label: Assembly
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+
+
+DATABASE CHANGES: AFTER ADD RACK ASSEMBLY
+   insert data.mywcom_change_detail(5)
+   insert delta.rack(design/NB046,100000,insert)
+

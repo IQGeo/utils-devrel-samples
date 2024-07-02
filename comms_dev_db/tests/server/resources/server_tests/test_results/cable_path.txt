@@ -1,0 +1,885 @@
+
+SUB TEST : FIND PATH
+    Request: POST: /modules/comms/cable/path
+    Response: 200 (200 OK)
+    {
+       "routes": [
+          [
+             {
+                "bbox": [
+                   0.1366508379579039,
+                   52.223911903275294,
+                   0.1374105736613241,
+                   52.2241992324954
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1366508379579039,
+                         52.22415671856789
+                      ],
+                      [
+                         0.1366940885782,
+                         52.2241782836086
+                      ],
+                      [
+                         0.136796683073,
+                         52.2241975894458
+                      ],
+                      [
+                         0.1368496567011,
+                         52.2241992324954
+                      ],
+                      [
+                         0.1369147002697,
+                         52.2241561024237
+                      ],
+                      [
+                         0.1370407640934,
+                         52.2241117400205
+                      ],
+                      [
+                         0.1371963322163,
+                         52.2240554654268
+                      ],
+                      [
+                         0.1372814923525,
+                         52.2240000122902
+                      ],
+                      [
+                         0.1373431831598,
+                         52.2239581143189
+                      ],
+                      [
+                         0.1374105736613241,
+                         52.223911903275294
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 3,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 3"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 3,
+                   "in_structure": "manhole/33",
+                   "labor_costs": "trench_dig",
+                   "length": 68.34,
+                   "out_structure": "manhole/27"
+                },
+                "type": "Feature"
+             },
+             false
+          ],
+          [
+             {
+                "bbox": [
+                   0.1365757361054,
+                   52.2241189283759,
+                   0.1366508379579039,
+                   52.22415671856789
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1365757361054,
+                         52.2241189283759
+                      ],
+                      [
+                         0.1366508379579039,
+                         52.22415671856789
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 2,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 2"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 2,
+                   "in_structure": "manhole/34",
+                   "labor_costs": "cherry_picker",
+                   "length": 6.95,
+                   "out_structure": "manhole/33"
+                },
+                "type": "Feature"
+             },
+             false
+          ],
+          [
+             {
+                "bbox": [
+                   0.136455707252,
+                   52.2241189283759,
+                   0.1365757361054,
+                   52.2241862934783
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1365757361054,
+                         52.2241189283759
+                      ],
+                      [
+                         0.136455707252,
+                         52.2241862934783
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 8,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 8"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 8,
+                   "in_structure": "manhole/34",
+                   "labor_costs": "cherry_picker,trench_dig",
+                   "length": 11.64,
+                   "out_structure": "manhole/35"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.136455707252,
+                   52.2241189283759,
+                   0.1365757361054,
+                   52.2241862934783
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1365757361054,
+                         52.2241189283759
+                      ],
+                      [
+                         0.136455707252,
+                         52.2241862934783
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 8,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 8"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 8,
+                   "in_structure": "manhole/34",
+                   "labor_costs": "cherry_picker,trench_dig",
+                   "length": 11.64,
+                   "out_structure": "manhole/35"
+                },
+                "type": "Feature"
+             },
+             false
+          ],
+          [
+             {
+                "bbox": [
+                   0.1365425789235,
+                   52.224099619123,
+                   0.1365757361054,
+                   52.2241189283759
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1365425789235,
+                         52.224099619123
+                      ],
+                      [
+                         0.1365757361054,
+                         52.2241189283759
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 52,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 52"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 52,
+                   "in_structure": "mywcom_route_junction/2",
+                   "labor_costs": "cherry_picker,trench_dig",
+                   "length": 3.27,
+                   "out_structure": "manhole/34"
+                },
+                "type": "Feature"
+             },
+             false
+          ],
+          [
+             {
+                "bbox": [
+                   0.136479887788,
+                   52.2240683620607,
+                   0.1365425789235,
+                   52.224099619123
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1365425789235,
+                         52.224099619123
+                      ],
+                      [
+                         0.136479887788,
+                         52.2240683620607
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 16,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 16"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 16,
+                   "in_structure": "mywcom_route_junction/2",
+                   "labor_costs": "cherry_picker,trench_dig",
+                   "length": 5.78,
+                   "out_structure": "mywcom_route_junction/32"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.1353345438838,
+                   52.2234612917333,
+                   0.136479887788,
+                   52.2240683620607
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.136479887788,
+                         52.2240683620607
+                      ],
+                      [
+                         0.1364486664534,
+                         52.2240527954625
+                      ],
+                      [
+                         0.1364158093929,
+                         52.2240369810556
+                      ],
+                      [
+                         0.1363956928253,
+                         52.2240246581372
+                      ],
+                      [
+                         0.1361422240734,
+                         52.2238882842788
+                      ],
+                      [
+                         0.1359082013369,
+                         52.2237605360978
+                      ],
+                      [
+                         0.1355078816414,
+                         52.2235444724214
+                      ],
+                      [
+                         0.1353891938925,
+                         52.2234799817287
+                      ],
+                      [
+                         0.1353345438838,
+                         52.2234612917333
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 379,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 379"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 379,
+                   "in_structure": "mywcom_route_junction/32",
+                   "labor_costs": "cherry_picker",
+                   "length": 108.43,
+                   "out_structure": "manhole/12"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.1352216786448,
+                   52.2234222939998,
+                   0.1353345438838,
+                   52.2234612917333
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1353345438838,
+                         52.2234612917333
+                      ],
+                      [
+                         0.1352216786448,
+                         52.2234222939998
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 17,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 17"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": null,
+                   "id": 17,
+                   "in_structure": "manhole/12",
+                   "labor_costs": "pavement_re-surface,site_manager",
+                   "length": 9.27,
+                   "out_structure": "mywcom_route_junction/40"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.1352216786448,
+                   52.2234101509367,
+                   0.1352356374264,
+                   52.2234222939998
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1352356374264,
+                         52.2234101509367
+                      ],
+                      [
+                         0.1352216786448,
+                         52.2234222939998
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 278,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 278"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 278,
+                   "in_structure": "cabinet/7",
+                   "labor_costs": "cherry_picker",
+                   "length": 1.73,
+                   "out_structure": "mywcom_route_junction/40"
+                },
+                "type": "Feature"
+             },
+             false
+          ]
+       ]
+    }
+    
+    
+
+SUB TEST : FIND PATH (DELTA)
+    Request: POST: /modules/comms/cable/path?delta=design/NB120
+    Response: 200 (200 OK)
+    {
+       "routes": [
+          [
+             {
+                "bbox": [
+                   0.1370005309581757,
+                   52.22373547933747,
+                   0.13732071,
+                   52.223868
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1370005309581757,
+                         52.22373547933747
+                      ],
+                      [
+                         0.13732071,
+                         52.223868
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 4200,
+                "myw": {
+                   "change_type": "insert",
+                   "delta": "design/NB120",
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 4200"
+                },
+                "properties": {
+                   "comsof_auto": null,
+                   "cover_type": "Brick",
+                   "id": 4200,
+                   "in_structure": "manhole/4200",
+                   "labor_costs": "sidewalk_re-lay",
+                   "length": null,
+                   "out_structure": "mywcom_route_junction/4200"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.1366840302944,
+                   52.223868,
+                   0.13732071,
+                   52.2241388503833
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1366840302944,
+                         52.2241248844409
+                      ],
+                      [
+                         0.1367323100567,
+                         52.2241388503833
+                      ],
+                      [
+                         0.1369066536427,
+                         52.2240566977179
+                      ],
+                      [
+                         0.136976391077,
+                         52.2240361595278
+                      ],
+                      [
+                         0.1370474696159,
+                         52.2240361595278
+                      ],
+                      [
+                         0.1371252536774,
+                         52.2239991907618
+                      ],
+                      [
+                         0.13732071,
+                         52.223868
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 7,
+                "myw": {
+                   "change_type": "update",
+                   "delta": "design/NB120",
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 7"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Tarmac",
+                   "id": 7,
+                   "in_structure": "manhole/32",
+                   "labor_costs": "cherry_picker",
+                   "length": 57.945482034319056,
+                   "out_structure": "mywcom_route_junction/4200"
+                },
+                "type": "Feature"
+             },
+             false
+          ],
+          [
+             {
+                "bbox": [
+                   0.1366049051285,
+                   52.2240164428564,
+                   0.1366840302944,
+                   52.2241248844409
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1366049051285,
+                         52.2240164428564
+                      ],
+                      [
+                         0.1366531848907,
+                         52.2240509470256
+                      ],
+                      [
+                         0.1366344385557,
+                         52.2240861254892
+                      ],
+                      [
+                         0.1366840302944,
+                         52.2241248844409
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 6,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 6"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 6,
+                   "in_structure": "building/1",
+                   "labor_costs": "trench_dig",
+                   "length": 15.38,
+                   "out_structure": "manhole/32"
+                },
+                "type": "Feature"
+             },
+             false
+          ],
+          [
+             {
+                "bbox": [
+                   0.1365579664707,
+                   52.2240164428564,
+                   0.1366049051285,
+                   52.2240476609155
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1366049051285,
+                         52.2240164428564
+                      ],
+                      [
+                         0.1365579664707,
+                         52.2240476609155
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 1,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 1"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 1,
+                   "in_structure": "building/1",
+                   "labor_costs": "pavement_re-surface,site_manager",
+                   "length": 4.96,
+                   "out_structure": "mywcom_route_junction/37"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.1365579664707,
+                   52.2240476609155,
+                   0.1365921646357,
+                   52.2240903803291
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1365579664707,
+                         52.2240476609155
+                      ],
+                      [
+                         0.1365921646357,
+                         52.2240661452822
+                      ],
+                      [
+                         0.1365589722991,
+                         52.2240903803291
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 273,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 273"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Tarmac",
+                   "id": 273,
+                   "in_structure": "mywcom_route_junction/37",
+                   "labor_costs": "trench_dig",
+                   "length": 6.96,
+                   "out_structure": "cabinet/2"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.1365425789235,
+                   52.2240903803291,
+                   0.1365589722991,
+                   52.224099619123
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1365589722991,
+                         52.2240903803291
+                      ],
+                      [
+                         0.1365425789235,
+                         52.224099619123
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 267,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 267"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 267,
+                   "in_structure": "cabinet/2",
+                   "labor_costs": "trench_dig",
+                   "length": 1.59,
+                   "out_structure": "mywcom_route_junction/2"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.1365425789235,
+                   52.224099619123,
+                   0.1365757361054,
+                   52.2241189283759
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1365425789235,
+                         52.224099619123
+                      ],
+                      [
+                         0.1365757361054,
+                         52.2241189283759
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 52,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 52"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 52,
+                   "in_structure": "mywcom_route_junction/2",
+                   "labor_costs": "cherry_picker,trench_dig",
+                   "length": 3.27,
+                   "out_structure": "manhole/34"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.1365757361054,
+                   52.2241189283759,
+                   0.1366508379579039,
+                   52.22415671856789
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1365757361054,
+                         52.2241189283759
+                      ],
+                      [
+                         0.1366508379579039,
+                         52.22415671856789
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 2,
+                "myw": {
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 2"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 2,
+                   "in_structure": "manhole/34",
+                   "labor_costs": "cherry_picker",
+                   "length": 6.95,
+                   "out_structure": "manhole/33"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.1366508379579039,
+                   52.2239459,
+                   0.13736092,
+                   52.2241992324954
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1366508379579039,
+                         52.22415671856789
+                      ],
+                      [
+                         0.1366940885782,
+                         52.2241782836086
+                      ],
+                      [
+                         0.136796683073,
+                         52.2241975894458
+                      ],
+                      [
+                         0.1368496567011,
+                         52.2241992324954
+                      ],
+                      [
+                         0.1369147002697,
+                         52.2241561024237
+                      ],
+                      [
+                         0.1371963322163,
+                         52.2240554654268
+                      ],
+                      [
+                         0.1372814923525,
+                         52.2240000122902
+                      ],
+                      [
+                         0.13736092,
+                         52.2239459
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 3,
+                "myw": {
+                   "change_type": "update",
+                   "delta": "design/NB120",
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 3"
+                },
+                "properties": {
+                   "comsof_auto": false,
+                   "cover_type": "Mixed",
+                   "id": 3,
+                   "in_structure": "manhole/33",
+                   "labor_costs": "trench_dig",
+                   "length": 63.01937756977893,
+                   "out_structure": "mywcom_route_junction/4201"
+                },
+                "type": "Feature"
+             },
+             true
+          ],
+          [
+             {
+                "bbox": [
+                   0.13736092,
+                   52.2239459,
+                   0.1377072930335999,
+                   52.22412981359751
+                ],
+                "geometry": {
+                   "coordinates": [
+                      [
+                         0.1377072930335999,
+                         52.22412981359751
+                      ],
+                      [
+                         0.13736092,
+                         52.2239459
+                      ]
+                   ],
+                   "type": "LineString"
+                },
+                "id": 4202,
+                "myw": {
+                   "change_type": "insert",
+                   "delta": "design/NB120",
+                   "feature_type": "ug_route",
+                   "title": "Route (Underground): 4202"
+                },
+                "properties": {
+                   "comsof_auto": null,
+                   "cover_type": null,
+                   "id": 4202,
+                   "in_structure": "manhole/4201",
+                   "labor_costs": "sidewalk_re-lay",
+                   "length": null,
+                   "out_structure": "mywcom_route_junction/4201"
+                },
+                "type": "Feature"
+             },
+             false
+          ]
+       ]
+    }
+    
+    

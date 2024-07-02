@@ -1,0 +1,131 @@
+{
+    "datasource": "myworld",
+    "name": "blown_fiber_tube",
+    "external_name": "{:blown_fiber_tube_feature_external_name}",
+    "title": "{:blown_fiber_tube_feature_title}",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "delete_from_gui": true,
+        "update_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "diameter",
+            "external_name": "{:blown_fiber_tube_feature_diameter_name}",
+            "type": "double",
+            "unit": "mm",
+            "display_unit": "mm",
+            "unit_scale": "length"
+        },
+        {
+            "name": "length",
+            "external_name": "{:blown_fiber_tube_feature_length_name}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length",
+            "display_format": "1"
+        },
+        {
+            "name": "bundle_size",
+            "external_name": "{:blown_fiber_tube_feature_bundle_size_name}",
+            "type": "integer",
+            "default": 1
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring"
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_route_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "in_structure",
+            "type": "reference",
+            "external_name": "{:in_structure_field_name}",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "out_structure",
+            "type": "reference",
+            "external_name": "{:out_structure_field_name}",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "in_conduit",
+            "type": "reference",
+            "external_name": "{:blown_fiber_tube_feature_in_conduit_name}",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "out_conduit",
+            "type": "reference",
+            "external_name": "{:blown_fiber_tube_feature_out_conduit_name}",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "cable_segments",
+            "external_name": "{:blown_fiber_tube_feature_cable_segments_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_fiber_segment.housing,mywcom_copper_segment.housing,mywcom_coax_segment.housing)",
+            "read_only": true
+        },
+        {
+            "name": "cables",
+            "external_name": "{:blown_fiber_tube_feature_cables_name}",
+            "type": "reference_set",
+            "value": "method(cables)",
+            "read_only": true
+        },
+        {
+            "name": "continuous_conduits",
+            "external_name": "{:blown_fiber_tube_feature_continuous_conduits_name}",
+            "type": "reference_set",
+            "value": "method(continuousConduits)",
+            "read_only": true
+        },
+        {
+            "name": "conduit_run",
+            "type": "reference",
+            "external_name": "{:blown_fiber_tube_feature_conduit_run_name}",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        }
+    ],
+    "searches": []
+}

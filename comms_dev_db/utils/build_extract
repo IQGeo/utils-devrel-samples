@@ -1,0 +1,37 @@
+#!/bin/bash
+# usage: build_extract "description"
+#
+HERE=$(dirname $0)
+source ${HERE}/../../../../../Tools/myw_env
+db=${MYW_COMMS_DEV_DB}
+extract="myw_dev"
+download_dir=${MYW_COMMS_NATIVE_ROOT}/databases
+target_dir=${MYW_COMMS_NATIVE_ROOT}/databases/${extract}
+sync_url=${MYW_COMMS_BASE_URL}
+desc=$1
+
+if [ -z "${desc}" ]
+then
+    echo 'No description set'
+    exit 1
+else
+echo "Creating code_package"
+
+myw_product build code_package --debug
+
+echo "Creating extract for: ${db}"
+
+echo "Initialising DB .."
+myw_db ${db} initialise ${target_dir} ${sync_url} --download_dir ${download_dir}
+
+# add to sync_url setting
+myw_db ${db} run ${HERE}/set_sync_urls.py --commit
+
+echo "Extracting .."
+myw_db ${db} extract ${target_dir}/${extract}.db "${desc}" full full ${extract} --include_deltas --zipped --overwrite
+
+echo "Configuring extract"
+myw_db ${db} configure_extract ${extract} 'Administrator'
+myw_db ${db} configure_extract ${extract} 'Designer'
+myw_db ${db} configure_extract ${extract} --writable_by_default
+fi

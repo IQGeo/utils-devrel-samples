@@ -1,0 +1,559 @@
+Request: GET: /modules/comms/import/config
+Response: 200 (200 OK)
+{
+   "cdif": {
+      "description": "IQGeo Comms Data Interchange Format (no mappings)",
+      "engine": "cdif",
+      "file_specs": [
+         "*.csv"
+      ],
+      "mappings": [],
+      "name": "CDIF",
+      "options": {}
+   },
+   "comsof": {
+      "description": "All layers of workspace via CDIF file",
+      "engine": "comsof_ws_cdif",
+      "file_specs": [
+         "*.csv"
+      ],
+      "mappings": [
+         {
+            "feature_type": "building",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "structures_centraloffice"
+         },
+         {
+            "feature_type": "cabinet",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "structures_cabinet"
+         },
+         {
+            "feature_type": "manhole",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "structures_manhole"
+         },
+         {
+            "feature_type": "manhole",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "structures_handhole"
+         },
+         {
+            "feature_type": "drop_point",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "structures_dropbox"
+         },
+         {
+            "feature_type": "wall_box",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "structures_building"
+         },
+         {
+            "feature_type": "mywcom_route_junction",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "structures_accessstructure"
+         },
+         {
+            "feature_type": "splice_closure",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "equipment_closure"
+         },
+         {
+            "feature_type": "fiber_splitter",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "equipment_splitter"
+         },
+         {
+            "feature_type": "pole",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "structures_pole"
+         },
+         {
+            "feature_type": "fiber_ont",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "equipment_ont"
+         },
+         {
+            "feature_type": "fiber_splice_tray",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "equipment_splice_tray_cabinet"
+         },
+         {
+            "feature_type": "fiber_patch_panel",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "equipment_patch_panel_co"
+         },
+         {
+            "feature_type": "oh_route",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "routes_aerial"
+         },
+         {
+            "feature_type": "oh_route",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "routes_facade"
+         },
+         {
+            "feature_type": "ug_route",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "routes_existing_cable"
+         },
+         {
+            "feature_type": "ug_route",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "routes_existing_pipe"
+         },
+         {
+            "feature_type": "ug_route",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "routes_underground"
+         },
+         {
+            "feature_type": "mywcom_route_junction",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "structures_route_junction"
+         },
+         {
+            "feature_type": "conduit",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "conduits_conventional_ducts"
+         },
+         {
+            "feature_type": "mywcom_conduit_run",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "microduct_bundles_*"
+         },
+         {
+            "feature_type": "mywcom_conduit_run",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "microducts_*"
+         },
+         {
+            "feature_type": "blown_fiber_bundle",
+            "field_mappings": {
+               "name": "[conduit_run]"
+            },
+            "src_feature_type": "microduct_bundle_segments_*"
+         },
+         {
+            "feature_type": "blown_fiber_tube",
+            "field_mappings": {
+               "name": "[conduit_run]"
+            },
+            "src_feature_type": "microduct_segments_*"
+         },
+         {
+            "feature_type": "fiber_cable",
+            "field_mappings": {
+               "name": "[id]"
+            },
+            "src_feature_type": "cables_*"
+         },
+         {
+            "feature_type": "mywcom_fiber_segment",
+            "field_mappings": {},
+            "src_feature_type": "cable_segments_*"
+         },
+         {
+            "feature_type": "mywcom_fiber_connection",
+            "field_mappings": {},
+            "src_feature_type": "connections_splice"
+         }
+      ],
+      "name": "All Layers",
+      "options": {
+         "cdif_file": "OUT_FullDesign.cdif.zip"
+      }
+   },
+   "comsof_feeder": {
+      "description": "Import Comsof feeder network and cabinet areas",
+      "engine": "comsof",
+      "file_specs": [
+         "*.shp"
+      ],
+      "mappings": [
+         {
+            "feature_type": "building",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='CentralOffice' & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "cabinet",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "cabinet_area": "agg_area/[linked_agg]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='Cabinet' & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "manhole",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type] in ('ManHole','HandHole') & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "pole",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]"
+            },
+            "filter": "[type] in ('Pole','Pole_Usage') & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "drop_point",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type] in ('DropBox','Aerial_DropBox') & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "drop_point",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='AccessStructure' & [linked_agg]=-1 & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "drop_point",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='AccessStructure' & [linked_agg]<>-1 & not ([layer] in ('Demand','Not Used')) & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "wall_box",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='Building' & [linked_agg]<>-1 & [layer]='Demand' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "splice_closure",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "housing": "equip/[enc_eqp_id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[layer]<>'Not Used'",
+            "src_feature_type": "OUT_Closures"
+         },
+         {
+            "feature_type": "rack",
+            "field_mappings": {
+               "_node_id": "id",
+               "housing": "equip/[enc_eqp_id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": " [layer]<>'Not Used'  & [enc_eqp_id] <> -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "fiber_splitter",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "housing": "equip/[enc_eqp_id]",
+               "id": "splitter/[split_id]",
+               "location": "[geometry]",
+               "n_fiber_in_ports": "[cap_out]",
+               "n_fiber_out_ports": "[cap_in]",
+               "name": "[eq_id]"
+            },
+            "filter": "[layer]<>'Not Used'",
+            "src_feature_type": "OUT_Splitters"
+         },
+         {
+            "feature_type": "ug_route",
+            "field_mappings": {
+               "id": "used_seg/[id]",
+               "path": "[geometry]",
+               "route_type": "[type]"
+            },
+            "filter": "not([type] in ('AERIAL','AERIALDROP'))",
+            "src_feature_type": "OUT_UsedSegments"
+         },
+         {
+            "feature_type": "oh_route",
+            "field_mappings": {
+               "id": "used_seg/[id]",
+               "path": "[geometry]",
+               "route_type": "[type]"
+            },
+            "filter": "[type] in ('AERIAL','AERIALDROP')",
+            "src_feature_type": "OUT_UsedSegments"
+         },
+         {
+            "feature_type": "fiber_cable",
+            "field_mappings": {
+               "directed": "false",
+               "fiber_count": "[cablegran]",
+               "id": "fiber_cable/[cable_id]",
+               "name": "[cable_id]",
+               "path": "[geometry]"
+            },
+            "src_feature_type": "OUT_FeederCables"
+         },
+         {
+            "feature_type": "cabinet_area",
+            "field_mappings": {
+               "boundary": "[geometry]",
+               "id": "agg_area/[agg_id]"
+            },
+            "src_feature_type": "OUT_DistributionClusters"
+         }
+      ],
+      "name": "Feeder Network",
+      "options": {
+         "full": false
+      }
+   },
+   "comsof_raw": {
+      "description": "All layers of workspace via geopackage or shapefile",
+      "engine": "comsof",
+      "file_specs": [
+         "*.shp"
+      ],
+      "mappings": [
+         {
+            "feature_type": "building",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='CentralOffice' & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "cabinet",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='Cabinet' & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "manhole",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type] in ('ManHole','HandHole') & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "pole",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]"
+            },
+            "filter": "[type] in ('Pole','Pole_Usage') & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "drop_point",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type] in ('DropBox','Aerial_DropBox') & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "drop_point",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='AccessStructure' & [linked_agg]=-1 & [layer]<>'Not Used' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "drop_point",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='AccessStructure' & [linked_agg]<>-1 & not ([layer] in ('Demand','Not Used')) & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "wall_box",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[type]='Building' & [linked_agg]<>-1 & [layer]='Demand' & [enc_eqp_id] = -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "rack",
+            "field_mappings": {
+               "_node_id": "id",
+               "housing": "equip/[enc_eqp_id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": " [layer]<>'Not Used' & [enc_eqp_id] <> -1",
+            "src_feature_type": "OUT_AccessStructures"
+         },
+         {
+            "feature_type": "splice_closure",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "housing": "equip/[enc_eqp_id]",
+               "id": "equip/[eq_id]",
+               "location": "[geometry]",
+               "name": "[eq_id]"
+            },
+            "filter": "[layer]<>'Not Used'",
+            "src_feature_type": "OUT_Closures"
+         },
+         {
+            "feature_type": "fiber_splitter",
+            "field_mappings": {
+               "_node_id": "[id]",
+               "housing": "equip/[enc_eqp_id]",
+               "id": "splitter/[split_id]",
+               "location": "[geometry]",
+               "n_fiber_in_ports": "[cap_out]",
+               "n_fiber_out_ports": "[cap_in]",
+               "name": "[eq_id]"
+            },
+            "filter": "[layer]<>'Not Used'",
+            "src_feature_type": "OUT_Splitters"
+         },
+         {
+            "feature_type": "fiber_cable",
+            "field_mappings": {
+               "directed": "false",
+               "fiber_count": "[cablegran]",
+               "id": "fiber_cable/[cable_id]",
+               "name": "[cable_id]",
+               "path": "[geometry]"
+            },
+            "src_feature_type": "OUT_*Cables"
+         },
+         {
+            "feature_type": "ug_route",
+            "field_mappings": {
+               "id": "used_seg/[id]",
+               "path": "[geometry]",
+               "route_type": "[type]"
+            },
+            "filter": "not([type] in ('AERIAL','AERIALDROP'))",
+            "src_feature_type": "OUT_UsedSegments"
+         },
+         {
+            "feature_type": "oh_route",
+            "field_mappings": {
+               "id": "used_seg/[id]",
+               "path": "[geometry]",
+               "route_type": "[type]"
+            },
+            "filter": "[type] in ('AERIAL','AERIALDROP')",
+            "src_feature_type": "OUT_UsedSegments"
+         }
+      ],
+      "name": "All layers (raw)",
+      "options": {}
+   }
+}
+
+

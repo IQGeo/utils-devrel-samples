@@ -1,0 +1,29 @@
+.ant-modal-wrap {
+    &.mywis-draggable-modal {
+        z-index: 100;
+        pointer-events: none !important;
+        overflow: hidden;
+        .ant-modal-header {
+            padding: 8px 15px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 0px !important;
+            .draggable-title {
+                margin: 0.5px 0;
+                color: #666;
+                font-weight: bold;
+                font-size: 15px;
+                .ant-btn {
+                    height: 20px;
+                    padding: 1px 11px;
+                }
+            }
+        }
+        .ant-modal-footer {
+            border-top: 1px solid #ddd;
+        }
+        .ant-modal-close {
+            position: absolute;
+            top: 10px;
+        }   
+    }
+}

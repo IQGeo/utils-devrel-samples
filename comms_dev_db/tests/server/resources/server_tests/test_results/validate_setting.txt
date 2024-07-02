@@ -1,0 +1,210 @@
+
+SUB TEST : VALIDATE MYWCOM.STRUCTURES
+    Request: POST:/modules/comms/config/validate/structures
+    Response: 200 (200 OK)
+    {
+       "errors": {
+          "mywcom.structures": {
+             "errors": [
+                "image_does_not_exist,{/"feature_type/": /"manhole/", /"img_path_config/": /"/modules/comms/images/features/building.svg/"}"
+             ],
+             "warnings": [
+                "missing_optional_calculated_field,{/"feature_type/": /"building/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"drop_point/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"drop_point/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"manhole/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"mdu/", /"field_name/": /"fiber_splices/"}",
+                "missing_field_so_will_not_support,{/"feature_type/": /"wall_box/", /"field_name/": /"out_fiber_segments/", /"direction/": /"outgoing/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"wall_box/", /"field_name/": /"fiber_splices/"}"
+             ]
+          }
+       }
+    }
+    
+    
+
+SUB TEST : VALIDATE MYWCOM.ROUTES
+    Request: POST:/modules/comms/config/validate/routes
+    Response: 200 (200 OK)
+    {
+       "errors": {}
+    }
+    
+    
+
+SUB TEST : VALIDATE MYWCOM.EQUIPMENT
+    Request: POST:/modules/comms/config/validate/equipment
+    Response: 200 (200 OK)
+    {
+       "errors": {
+          "mywcom.equipment": {
+             "errors": [
+                "feature_missing_tech_field,{/"feature_type/": /"fiber_patch_panel/"}"
+             ],
+             "warnings": [
+                "missing_optional_calculated_field,{/"feature_type/": /"floor/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"rack/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"room/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"slot/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"fiber_mux/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"fiber_mux/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"fiber_olt/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"fiber_olt/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"fiber_ont/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"fiber_ont/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"fiber_shelf/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"fiber_tap/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"fiber_tap/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_bridge_tap/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_bridge_tap/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_build_out/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_build_out/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_capacitor/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_capacitor/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_dslam/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_load_coil/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_load_coil/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_pair_gain/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_pair_gain/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_repeater/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_repeater/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_shelf/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_splice_closure/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_terminal/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"copper_terminal/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"coax_amplifier/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"coax_amplifier/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"coax_tap/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"coax_tap/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"coax_terminator/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"directional_coupler/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"directional_coupler/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"inline_equalizer/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"internal_directional_coupler/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"internal_splitter/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"optical_node/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"power_block/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"power_inserter/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"power_supply/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"three_way_splitter/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"two_way_splitter/", /"field_name/": /"fiber_splices/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"wifi_unit/", /"field_name/": /"equipment/"}",
+                "missing_optional_calculated_field,{/"feature_type/": /"wifi_unit/", /"field_name/": /"fiber_splices/"}"
+             ]
+          }
+       }
+    }
+    
+    
+
+SUB TEST : VALIDATE MYWCOM.CONDUITS
+    Request: POST:/modules/comms/config/validate/conduits
+    Response: 200 (200 OK)
+    {
+       "errors": {
+          "mywcom.conduits": {
+             "errors": [
+                "field_conduits_running,{/"feature_type/": /"conduit/"}"
+             ]
+          }
+       }
+    }
+    
+    
+    Request: POST:/modules/comms/config/validate/conduits
+    Response: 200 (200 OK)
+    {
+       "errors": {
+          "mywcom.conduits": {
+             "errors": [
+                "field_conduits_running,{/"feature_type/": /"manhole/"}",
+                "housing_field_does_not_list,{/"ref_field/": /"conduits/", /"feature_type/": /"manhole/", /"housing_feature_type/": /"ug_route/"}",
+                "missing_expected_stored_field,{/"field_name/": /"root_housing/", /"feature_type/": /"manhole/"}",
+                "missing_expected_stored_field,{/"field_name/": /"housing/", /"feature_type/": /"manhole/"}",
+                "missing_expected_stored_field,{/"field_name/": /"in_structure/", /"feature_type/": /"manhole/"}",
+                "missing_expected_stored_field,{/"field_name/": /"out_structure/", /"feature_type/": /"manhole/"}",
+                "missing_calculated_field,{/"feature_type/": /"manhole/", /"field_name/": /"cable_segments/"}",
+                "bad_geometry_for_feature,{/"feature_type/": /"manhole/", /"expected_geometry/": /"linestring/", /"configured_geometry/": /"point/"}"
+             ],
+             "warnings": [
+                "missing_calculated_field,{/"feature_type/": /"blown_fiber_tube/", /"field_name/": /"conduits/"}",
+                "missing_calculated_field,{/"feature_type/": /"manhole/", /"field_name/": /"conduits/"}"
+             ]
+          }
+       }
+    }
+    
+    
+
+SUB TEST : VALIDATE MYWCOM.CABLES
+    Request: POST:/modules/comms/config/validate/cables
+    Response: 200 (200 OK)
+    {
+       "errors": {
+          "mywcom.cables": {
+             "errors": [
+                "feature_missing_tech_field,{/"feature_type/": /"conduit/"}",
+                "feature_type_not_in_any_layer,{/"feature_type/": /"conduit/"}"
+             ]
+          }
+       }
+    }
+    
+    
+
+SUB TEST : VALIDATE MYWCOM.CIRCUITS
+    Request: POST:/modules/comms/config/validate/circuits
+    Response: 200 (200 OK)
+    {
+       "errors": {}
+    }
+    
+    
+
+SUB TEST : VALIDATE MYWCOM.SPECS
+    Request: POST:/modules/comms/config/validate/specs
+    Response: 200 (200 OK)
+    {
+       "errors": {
+          "mywcom.specs": {
+             "errors": [
+                "no_such_field,{/"feature_type/": /"bb_circuit/", /"field_name/": /"specification/"}",
+                "no_such_feature_type,{/"feature_type/": /"not_a_real_feature/"}"
+             ]
+          }
+       }
+    }
+    
+    
+
+SUB TEST : VALIDATE MYWCOM.laborCosts
+    Request: POST:/modules/comms/config/validate/laborCosts
+    Response: 200 (200 OK)
+    {
+       "errors": {
+          "mywcom.laborCosts": {
+             "errors": [
+                "no_such_field,{/"feature_type/": /"bb_circuit/", /"field_name/": /"labor_costs/"}",
+                "no_such_feature_type,{/"feature_type/": /"not_a_real_feature/"}"
+             ]
+          }
+       }
+    }
+    
+    
+
+SUB TEST : VALIDATE MYWCOM.IMPORT_CONFIG
+    Request: POST:/modules/comms/config/validate/import_config
+    Response: 200 (200 OK)
+    {
+       "errors": {
+          "mywcom.import_config": {
+             "errors": [
+                "no_such_feature_type,{/"feature_type/": /"test_wrong_feature/"}",
+                "error_found_in_row,{/"engine/": /"comsof_ws_cdif/", /"row/": 28}"
+             ]
+          }
+       }
+    }
+    
+    

@@ -1,0 +1,231 @@
+Request: POST: /modules/comms/loc/update
+Response: 200 (200 OK)
+b'{"copper_shelf/1": {"in": [], "out": [{"name": "WH-1", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/1", "loc_ref": "mywcom_line_of_count/1", "low": 1, "high": 50, "origin": "copper_shelf/1?side=out", "forward": true, "physical": false}, {"name": "WH-2", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100000", "loc_ref": "mywcom_line_of_count/100000", "low": 1, "high": 50, "origin": "copper_shelf/1?side=out", "forward": true, "physical": false}]}}'
+
+
+"{/"copper_shelf/1/": {/"in/": [], /"out/": [{/"name/": /"WH-1/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/1/", /"loc_ref/": /"mywcom_line_of_count/1/", /"low/": 1, /"high/": 50, /"origin/": /"copper_shelf/1?side=out/", /"forward/": true, /"physical/": false}, {/"name/": /"WH-2/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100000/", /"loc_ref/": /"mywcom_line_of_count/100000/", /"low/": 1, /"high/": 50, /"origin/": /"copper_shelf/1?side=out/", /"forward/": true, /"physical/": false}]}}"
+Request: POST: /modules/comms/loc/copper_shelf/1/ripple_trace_update
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/loc/update
+Response: 200 (200 OK)
+b'{"copper_shelf/1": {"in": [], "out": [{"name": "WH-42", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/1", "loc_ref": "mywcom_line_of_count/1", "low": 1, "high": 100, "origin": "copper_shelf/1?side=out", "forward": true, "physical": false}]}}'
+
+
+"{/"copper_shelf/1/": {/"in/": [], /"out/": [{/"name/": /"WH-42/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/1/", /"loc_ref/": /"mywcom_line_of_count/1/", /"low/": 1, /"high/": 100, /"origin/": /"copper_shelf/1?side=out/", /"forward/": true, /"physical/": false}]}}"
+Request: POST: /modules/comms/loc/copper_shelf/1/ripple_trace_update
+Response: 200 (200 OK)
+
+
+CONFLICTS AFTER SPLIT IN DESIGN AND UPDATE IN MASTER
+Request: GET: /modules/comms/delta/design/NB217/conflicts
+Response: 200 (200 OK)
+{
+   "conflicts": {
+      "mywcom_line_of_count": {
+         "1": {
+            "delta": {
+               "type": "Feature",
+               "myw": {
+                  "feature_type": "mywcom_line_of_count",
+                  "title": "Line of Count: WH-1 Active",
+                  "short_description": "1 -  50 : WH-1 ( 1 - 50 )  Active",
+                  "delta": "design/NB217",
+                  "change_type": "update"
+               },
+               "bbox": [
+                  0.1327934861183,
+                  52.2228256218243,
+                  0.1366049051285,
+                  52.2244567797659
+               ],
+               "id": 1,
+               "geometry": "<skipped>",
+               "properties": {
+                  "id": 1,
+                  "label": "WH-1 [1-100] Active",
+                  "name": "WH-1",
+                  "low_logical": 1,
+                  "high_logical": 50,
+                  "low_physical": 1,
+                  "high_physical": 50,
+                  "origin": [
+                     "copper_shelf/1?side=out"
+                  ],
+                  "status": "Active",
+                  "deleted": false,
+                  "stale": null,
+                  "physical": false
+               }
+            },
+            "base": {
+               "type": "Feature",
+               "myw": {
+                  "feature_type": "mywcom_line_of_count",
+                  "title": "Line of Count: WH-1 Active",
+                  "short_description": "1 -  100 : WH-1 ( 1 - 100 )  Active",
+                  "delta": "design/NB217"
+               },
+               "bbox": [
+                  0.1327934861183,
+                  52.2228256218243,
+                  0.1366049051285,
+                  52.2244567797659
+               ],
+               "id": 1,
+               "geometry": "<skipped>",
+               "properties": {
+                  "id": 1,
+                  "label": "WH-1 [1-100] Active",
+                  "name": "WH-1",
+                  "low_logical": 1,
+                  "high_logical": 100,
+                  "low_physical": 1,
+                  "high_physical": 100,
+                  "origin": [
+                     "copper_shelf/1?side=out"
+                  ],
+                  "status": "Active",
+                  "deleted": false,
+                  "stale": null,
+                  "physical": null
+               }
+            },
+            "master": {
+               "type": "Feature",
+               "myw": {
+                  "feature_type": "mywcom_line_of_count",
+                  "title": "Line of Count: WH-42 Active",
+                  "short_description": "1 -  100 : WH-42 ( 1 - 100 )  Active"
+               },
+               "bbox": [
+                  0.1327934861183,
+                  52.2228256218243,
+                  0.1366049051285,
+                  52.2244567797659
+               ],
+               "id": 1,
+               "geometry": "<skipped>",
+               "properties": {
+                  "id": 1,
+                  "label": "WH-1 [1-100] Active",
+                  "name": "WH-42",
+                  "low_logical": 1,
+                  "high_logical": 100,
+                  "low_physical": 1,
+                  "high_physical": 100,
+                  "origin": [
+                     "copper_shelf/1?side=out"
+                  ],
+                  "status": "Active",
+                  "deleted": false,
+                  "stale": null,
+                  "physical": false
+               }
+            },
+            "master_change": "update",
+            "master_fields": [
+               "name",
+               "physical"
+            ],
+            "delta_fields": [
+               "high_logical",
+               "high_physical",
+               "physical"
+            ],
+            "conflict_fields": []
+         }
+      }
+   }
+}
+
+
+Request: POST: /modules/comms/delta/design/NB217/merge?application=mywcom&lang=en-GB
+Response: 200 (200 OK)
+{
+   "changes": [
+      {
+         "change_type": "update",
+         "feature": {
+            "type": "Feature",
+            "myw": {
+               "feature_type": "mywcom_line_of_count",
+               "title": "Line of Count: WH-42 Active",
+               "short_description": "1 -  50 : WH-42 ( 1 - 50 )  Active",
+               "delta": "design/NB217",
+               "change_type": "update"
+            },
+            "bbox": [
+               0.1327934861183,
+               52.2228256218243,
+               0.1366049051285,
+               52.2244567797659
+            ],
+            "id": 1,
+            "geometry": "<skipped>",
+            "properties": {
+               "id": 1,
+               "label": "WH-1 [1-100] Active",
+               "name": "WH-42",
+               "low_logical": 1,
+               "high_logical": 50,
+               "low_physical": 1,
+               "high_physical": 50,
+               "origin": [
+                  "copper_shelf/1?side=out"
+               ],
+               "status": "Active",
+               "deleted": false,
+               "stale": null,
+               "physical": false
+            }
+         },
+         "orig_feature": {
+            "type": "Feature",
+            "myw": {
+               "feature_type": "mywcom_line_of_count",
+               "title": "Line of Count: WH-1 Active",
+               "short_description": "1 -  50 : WH-1 ( 1 - 50 )  Active"
+            },
+            "bbox": [
+               0.1327934861183,
+               52.2228256218243,
+               0.1366049051285,
+               52.2244567797659
+            ],
+            "id": 1,
+            "geometry": "<skipped>",
+            "properties": {
+               "id": 1,
+               "label": "WH-1 [1-100] Active",
+               "name": "WH-1",
+               "low_logical": 1,
+               "high_logical": 50,
+               "low_physical": 1,
+               "high_physical": 50,
+               "origin": [
+                  "copper_shelf/1?side=out"
+               ],
+               "status": "Active",
+               "deleted": false,
+               "stale": null,
+               "physical": false
+            }
+         },
+         "fields": [
+            "name"
+         ]
+      }
+   ]
+}
+
+
+CONFLICTS MERGE
+Request: GET: /modules/comms/delta/design/NB217/conflicts
+Response: 200 (200 OK)
+{
+   "conflicts": {}
+}
+
+

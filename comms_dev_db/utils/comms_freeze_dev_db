@@ -1,0 +1,11 @@
+# Save current DevDB to pre-releases dir
+
+version=$1
+
+if [ "${version}" == "" ]
+then
+    echo 'Usage: comms_freeze_dev_db <version>'
+    exit 1
+fi
+
+myw_db ${MYW_COMMS_DEV_DB} backup ${MYW_COMMS_PRE_RELEASE_DIR}/${version}/comms_dev_db_v${version}.backup

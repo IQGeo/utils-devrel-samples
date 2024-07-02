@@ -1,0 +1,407 @@
+Request: POST:/modules/comms/api/v1/resourceInventoryManagement/resource/fiberToTheHomeCircuit
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER CREATE FTTH CIRCUIT
+   update data.fiber_olt(25) fields=(circuits)
+   update data.fiber_ont(132) fields=(circuits)
+   update data.fiber_patch_panel(2) fields=(circuits)
+   update data.fiber_patch_panel(5) fields=(circuits)
+   insert data.ftth_circuit(100000)
+   update data.mywcom_fiber_segment(57) fields=(circuits)
+   update data.mywcom_fiber_segment(58) fields=(circuits)
+   update data.mywcom_fiber_segment(59) fields=(circuits)
+   update data.mywcom_fiber_segment(60) fields=(circuits)
+   update data.mywcom_fiber_segment(61) fields=(circuits)
+   update data.mywcom_fiber_segment(62) fields=(circuits)
+   update data.mywcom_fiber_segment(63) fields=(circuits)
+   update data.mywcom_fiber_segment(189) fields=(circuits)
+   update data.mywcom_fiber_segment(190) fields=(circuits)
+   update data.mywcom_fiber_segment(390) fields=(circuits)
+   update data.mywcom_fiber_segment(391) fields=(circuits)
+   update data.mywcom_fiber_segment(560) fields=(circuits)
+
+Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/ftth_circuit/100000?name=WH-FTTH-9999&inFeature=fiber_olt%2F25&inPins=out%3A1&outFeature=fiber_ont%2F132&outPins=in%3A1&inputData=%7B%22orderId%22%3A+%221234%22%2C+%22technology%22%3A+%22XGS-PON%22%7D
+Response: 200 (200 OK)
+{
+   "@baseType": "Feature",
+   "@type": "Circuit",
+   "characteristic": [
+      {
+         "name": "status",
+         "value": null
+      },
+      {
+         "name": "customer",
+         "value": null
+      },
+      {
+         "name": "address",
+         "value": null
+      },
+      {
+         "name": "serviceType",
+         "value": "Direct"
+      },
+      {
+         "name": "date",
+         "value": null
+      }
+   ],
+   "circuitRoute": [
+      {
+         "feature": "fiber_olt/25",
+         "pins": "out:1",
+         "type": "port"
+      },
+      {
+         "feature": "mywcom_fiber_connection/251",
+         "pins": "in:1",
+         "type": "connection"
+      },
+      {
+         "feature": "mywcom_fiber_segment/560",
+         "pins": "in:1",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/560",
+         "pins": "out:1",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_connection/257",
+         "pins": "in:1",
+         "type": "connection"
+      },
+      {
+         "feature": "fiber_patch_panel/5",
+         "pins": "in:1",
+         "type": "port"
+      },
+      {
+         "feature": "fiber_patch_panel/5",
+         "pins": "out:1",
+         "type": "port"
+      },
+      {
+         "feature": "mywcom_fiber_connection/258",
+         "pins": "in:101",
+         "type": "connection"
+      },
+      {
+         "feature": "fiber_patch_panel/2",
+         "pins": "in:101",
+         "type": "port"
+      },
+      {
+         "feature": "fiber_patch_panel/2",
+         "pins": "out:101",
+         "type": "port"
+      },
+      {
+         "feature": "mywcom_fiber_connection/269",
+         "pins": "in:101",
+         "type": "connection"
+      },
+      {
+         "feature": "mywcom_fiber_segment/189",
+         "pins": "in:101",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/189",
+         "pins": "out:101",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/190",
+         "pins": "in:101",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/190",
+         "pins": "out:101",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_connection/186",
+         "pins": "in:25",
+         "type": "connection"
+      },
+      {
+         "feature": "mywcom_fiber_segment/57",
+         "pins": "in:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/57",
+         "pins": "out:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/58",
+         "pins": "in:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/58",
+         "pins": "out:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/59",
+         "pins": "in:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/59",
+         "pins": "out:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/60",
+         "pins": "in:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/60",
+         "pins": "out:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/61",
+         "pins": "in:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/61",
+         "pins": "out:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/62",
+         "pins": "in:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/62",
+         "pins": "out:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/63",
+         "pins": "in:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/63",
+         "pins": "out:25",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_connection/191",
+         "pins": "in:1",
+         "type": "connection"
+      },
+      {
+         "feature": "mywcom_fiber_segment/390",
+         "pins": "in:1",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/390",
+         "pins": "out:1",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/391",
+         "pins": "in:1",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_segment/391",
+         "pins": "out:1",
+         "type": "segment"
+      },
+      {
+         "feature": "mywcom_fiber_connection/192",
+         "pins": "in:1",
+         "type": "connection"
+      },
+      {
+         "feature": "fiber_ont/132",
+         "pins": "in:1",
+         "type": "port"
+      }
+   ],
+   "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/ftth_circuit/100000",
+   "id": "ftth_circuit/100000",
+   "inFeature": "fiber_olt/25",
+   "inPins": "out:1",
+   "name": "WH-FTTH-9999",
+   "outFeature": "fiber_ont/132",
+   "outPins": "in:1",
+   "path": {
+      "coordinates": [
+         [
+            0.1366049051285,
+            52.2240164428564
+         ],
+         [
+            0.1365579664707,
+            52.2240476609155
+         ],
+         [
+            0.1365921646357,
+            52.2240661452822
+         ],
+         [
+            0.1365589722991,
+            52.2240903803291
+         ],
+         [
+            0.1365425789235,
+            52.224099619123
+         ],
+         [
+            0.1365757361054,
+            52.2241189283759
+         ],
+         [
+            0.136455707252,
+            52.2241862934783
+         ],
+         [
+            0.1364996284246,
+            52.224211144603
+         ],
+         [
+            0.1365707069635,
+            52.224245648621
+         ],
+         [
+            0.1366786658764,
+            52.2242953507902
+         ],
+         [
+            0.1367524266243,
+            52.2243429990985
+         ],
+         [
+            0.1368154585361,
+            52.2243738061672
+         ],
+         [
+            0.1369670033455,
+            52.2244641734453
+         ],
+         [
+            0.1370203122497,
+            52.2244953911896
+         ],
+         [
+            0.13706356287,
+            52.2245040171414
+         ],
+         [
+            0.1372070610523,
+            52.2245771322844
+         ],
+         [
+            0.1373439448174852,
+            52.22464956656571
+         ],
+         [
+            0.1373498886824,
+            52.2246527118563
+         ],
+         [
+            0.137401828405328,
+            52.22468048787741
+         ],
+         [
+            0.1374236494303,
+            52.2246921446253
+         ],
+         [
+            0.1374568417668,
+            52.2247063157682
+         ],
+         [
+            0.1374236494303,
+            52.2246921446253
+         ],
+         [
+            0.137401828405328,
+            52.22468048787741
+         ],
+         [
+            0.137350894510746,
+            52.22471145023905
+         ]
+      ],
+      "type": "LineString"
+   }
+}
+
+
+Request: POST:/modules/comms/api/v1/resourceInventoryManagement/resource/fiberToTheHomeCircuit
+Response: 400 (400 Bad Request)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/ftth_circuit/100000
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER UPDATE
+   update data.fiber_olt(25) fields=(circuits)
+   update data.fiber_ont(132) fields=(circuits)
+   update data.fiber_ont(149) fields=(circuits)
+   update data.fiber_patch_panel(2) fields=(circuits)
+   update data.fiber_patch_panel(5) fields=(circuits)
+   update data.ftth_circuit(100000) fields=(in_pins,out_feature,path)
+   update data.mywcom_fiber_segment(57) fields=(circuits)
+   update data.mywcom_fiber_segment(58) fields=(circuits)
+   update data.mywcom_fiber_segment(59) fields=(circuits)
+   update data.mywcom_fiber_segment(60) fields=(circuits)
+   update data.mywcom_fiber_segment(61) fields=(circuits)
+   update data.mywcom_fiber_segment(62) fields=(circuits)
+   update data.mywcom_fiber_segment(63) fields=(circuits)
+   update data.mywcom_fiber_segment(64) fields=(circuits)
+   update data.mywcom_fiber_segment(65) fields=(circuits)
+   update data.mywcom_fiber_segment(189) fields=(circuits)
+   update data.mywcom_fiber_segment(190) fields=(circuits)
+   update data.mywcom_fiber_segment(390) fields=(circuits)
+   update data.mywcom_fiber_segment(391) fields=(circuits)
+   update data.mywcom_fiber_segment(397) fields=(circuits)
+   update data.mywcom_fiber_segment(398) fields=(circuits)
+   update data.mywcom_fiber_segment(560) fields=(circuits)
+   update data.mywcom_fiber_segment(592) fields=(circuits)
+
+Request: DELETE:/modules/comms/api/v1/resourceInventoryManagement/resource/ftth_circuit/100000
+Response: 200 (200 OK)
+
+
+DATABASE CHANGES: AFTER DELETE
+   update data.fiber_olt(25) fields=(circuits)
+   update data.fiber_ont(149) fields=(circuits)
+   update data.fiber_patch_panel(2) fields=(circuits)
+   update data.fiber_patch_panel(5) fields=(circuits)
+   delete data.ftth_circuit(100000)
+   update data.mywcom_fiber_segment(57) fields=(circuits)
+   update data.mywcom_fiber_segment(58) fields=(circuits)
+   update data.mywcom_fiber_segment(59) fields=(circuits)
+   update data.mywcom_fiber_segment(60) fields=(circuits)
+   update data.mywcom_fiber_segment(61) fields=(circuits)
+   update data.mywcom_fiber_segment(62) fields=(circuits)
+   update data.mywcom_fiber_segment(63) fields=(circuits)
+   update data.mywcom_fiber_segment(64) fields=(circuits)
+   update data.mywcom_fiber_segment(65) fields=(circuits)
+   update data.mywcom_fiber_segment(189) fields=(circuits)
+   update data.mywcom_fiber_segment(190) fields=(circuits)
+   update data.mywcom_fiber_segment(397) fields=(circuits)
+   update data.mywcom_fiber_segment(398) fields=(circuits)
+   update data.mywcom_fiber_segment(560) fields=(circuits)
+   update data.mywcom_fiber_segment(592) fields=(circuits)
+

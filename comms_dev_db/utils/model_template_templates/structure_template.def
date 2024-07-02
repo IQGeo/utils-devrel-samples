@@ -1,0 +1,75 @@
+{
+    "datasource": "myworld",
+    "name": "structure_template",
+    "external_name": "Structure Template",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "Id",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "location",
+            "external_name": "Location",
+            "type": "point",
+            "mandatory": "true"
+        },
+        {
+            "name": "name",
+            "external_name": "Name",
+            "type": "string(64)"
+        },
+        {
+            "name": "labor_cost",
+            "external_name": "Labor Cost",
+            "type": "string()"
+        },
+        {
+            "name": "routes",
+            "external_name": "Routes",
+            "type": "reference_set()",
+            "value": "select(*)"
+        },
+        {
+            "name": "equipment",
+            "external_name": "Equipment",
+            "type": "reference_set()",
+            "value": "select(shelf.housing,slot.housing,splice_closure.housing,fiber_mux.housing,fiber_olt.housing,fiber_splitter.housing)"
+        },
+        {
+            "name": "cables",
+            "external_name": "Cables",
+            "type": "reference_set()",
+            "value": "select(*)"
+        },
+        {
+            "name": "in_fiber_segments",
+            "external_name": "In Fibers",
+            "type": "reference_set()",
+            "value": "select(*)"
+        },
+        {
+            "name": "out_fiber_segments",
+            "external_name": "Out Fibers",
+            "type": "reference_set()",
+            "value": "select(*)"
+        },
+        {
+            "name": "fiber_splices",
+            "external_name": "Splices",
+            "type": "reference_set()",
+            "value": "select(*)"
+        }
+    ]
+}

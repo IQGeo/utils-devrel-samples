@@ -1,0 +1,49 @@
+{
+    "name": "comms",
+    "version": "1.0.0",
+    "description": "Network Manager Comms",
+    "main": "index.js",
+    "scripts": {
+        "eslint": "eslint ../comms/native ../comms/public/js ../comms/config ../comms_dev_db/public/ --config ../../../myworldapp/.eslintrc.json ",
+        "prettier-check": "prettier --check ../comms/native ../comms/public/js ../comms/config ../comms_dev_db/public/ --config ../../../myworldapp/package.json",
+        "prettier-fix": "prettier --write ../comms/native ../comms/public/js ../comms/config ../comms_dev_db/public/ --config ../../../myworldapp/package.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/IQGeo/myworld-product-gemini-comms.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/IQGeo/myworld-product-gemini-comms/issues"
+    },
+    "homepage": "https://github.com/IQGeo/myworld-product-gemini-comms#readme",
+    "dependencies": {
+        "jquery-csv": "^1.0.8",
+        "jstree": "^3.3.12",
+        "jspdf": "^2.3.1",
+        "exceljs": "^4.2.1",
+        "papaparse": "^5.3.1",
+        "react-collapsible": "^2.10.0",
+        "react-draggable": "^4.4.5",
+        "@svgdotjs/svg.js": "^3.0.16",
+        "d3-dispatch": "^1.0.2",
+        "d3-drag": "^1.2.3",
+        "d3-selection": "^1.4.0",
+        "d3-shape": "^1.0.4",
+        "d3-svg-annotation": "^2.5.1",
+        "dom-to-image": "^2.6.0",
+        "jszip": "^3.1.5",
+        "nipplejs": "^0.8.5",
+        "spectrum-colorpicker": "^1.8.1",
+        "buffer": "^6.0.3",
+        "@dnd-kit/modifiers": "6.0.1",
+        "@dnd-kit/sortable": "7.0.2",
+        "@dnd-kit/core": "^6.1.0",
+        "dompurify": "^2.2.0"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.16.11",
+        "babel-plugin-module-resolver": "^4.1.0"
+    }
+}

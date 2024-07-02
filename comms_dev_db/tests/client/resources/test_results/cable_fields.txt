@@ -1,0 +1,19 @@
+TEST: AFTER CLICK SPLICES
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: list-export
+    list item: Zoom to all
+    list item: More...
+    label: Fiber Splice: 221
+    label: Fiber Splice: 221
+    label: Fiber Splice: 222
+    label: Fiber Splice: 222
+    label: Fiber Splice: 215
+    label: Fiber Splice: 215
+    label: Fiber Splice: 216
+    label: Fiber Splice: 216
+
+

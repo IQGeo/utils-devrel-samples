@@ -1,0 +1,164 @@
+
+SUB TEST : MOVE TO HOUSING
+    Request: POST: /modules/comms/conduit/conduit/79/move_to/conduit/80?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "ok": true
+    }
+    
+    
+    DATABASE CHANGES: MOVE TO HOUSING
+       insert delta.conduit(design/NB046,79,update)
+    
+    VALIDATION ERRORS: MOVE TO HOUSING
+
+SUB TEST : CABLE INTO TUBE NOT IN CONDUIT
+    Request: POST: /modules/comms/conduit/mywcom_fiber_segment/395/move_to/blown_fiber_tube/100?delta=design/NB046
+    Response: 502 (502 Bad Gateway)
+    b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "cable_not_in_conduit", "params": {}}/n/n'
+    
+    
+    DATABASE CHANGES: CABLE INTO TUBE NOT IN CONDUIT
+    
+    VALIDATION ERRORS: CABLE INTO TUBE NOT IN CONDUIT
+
+SUB TEST : CABLE INTO CONTINUOUS CONDUIT
+    Request: POST: /modules/comms/conduit/mywcom_fiber_segment/417/move_to/blown_fiber_tube/149?delta=design/NB046
+    Response: 502 (502 Bad Gateway)
+    b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "conduit_path_not_suitable", "params": {}}/n/n'
+    
+    
+    DATABASE CHANGES: CABLE INTO CONTINUOUS CONDUIT
+    
+    VALIDATION ERRORS: CABLE INTO CONTINUOUS CONDUIT
+
+SUB TEST : CABLE INTO PROPOSED CONDUIT
+    Request: POST: /modules/comms/conduit/fiber_cable/12/move_to/blown_fiber_tube/5204
+    Response: 404 (404 Not Found)
+    
+    
+    DATABASE CHANGES: CABLE INTO PROPOSED CONDUIT
+    
+
+SUB TEST : CABLE WITH SLACK INTO TUBE
+    Request: POST: /modules/comms/conduit/mywcom_fiber_segment/79/move_to/blown_fiber_tube/100?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "ok": true
+    }
+    
+    
+    DATABASE CHANGES: CABLE WITH SLACK INTO TUBE
+       insert delta.mywcom_fiber_segment(design/NB046,79,update)
+    
+    VALIDATION ERRORS: CABLE WITH SLACK INTO TUBE
+
+SUB TEST : CABLE INTO TUBE SUCCESS
+    Request: POST: /modules/comms/conduit/mywcom_fiber_segment/98/move_to/blown_fiber_tube/45?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "ok": true
+    }
+    
+    
+    DATABASE CHANGES: CABLE INTO TUBE SUCCESS
+       insert delta.mywcom_fiber_segment(design/NB046,98,update)
+       insert delta.mywcom_fiber_segment(design/NB046,99,update)
+       insert delta.mywcom_fiber_segment(design/NB046,100,update)
+       insert delta.mywcom_fiber_segment(design/NB046,50000,update)
+    
+    VALIDATION ERRORS: CABLE INTO TUBE SUCCESS
+
+SUB TEST : CONDUIT OUT OF BUNDLE
+    Request: POST: /modules/comms/conduit/blown_fiber_tube/186/move_to/ug_route/365?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "ok": true
+    }
+    
+    
+    DATABASE CHANGES: CONDUIT OUT OF BUNDLE
+       insert delta.blown_fiber_tube(design/NB046,185,update)
+       insert delta.blown_fiber_tube(design/NB046,186,update)
+       insert delta.blown_fiber_tube(design/NB046,187,update)
+       insert delta.blown_fiber_tube(design/NB046,188,update)
+       insert delta.blown_fiber_tube(design/NB046,189,update)
+    
+    VALIDATION ERRORS: CONDUIT OUT OF BUNDLE
+
+SUB TEST : CONDUIT INTO BUNDLE
+    Request: POST: /modules/comms/conduit/blown_fiber_tube/184/move_to/blown_fiber_bundle/50000?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "ok": true
+    }
+    
+    
+    DATABASE CHANGES: CONDUIT INTO BUNDLE
+       insert delta.blown_fiber_tube(design/NB046,180,update)
+       insert delta.blown_fiber_tube(design/NB046,181,update)
+       insert delta.blown_fiber_tube(design/NB046,182,update)
+       insert delta.blown_fiber_tube(design/NB046,183,update)
+       insert delta.blown_fiber_tube(design/NB046,184,update)
+    
+    VALIDATION ERRORS: CONDUIT INTO BUNDLE
+
+SUB TEST : BACKFEED CABLE INTO CONDUIT
+    Request: POST: /modules/comms/conduit/mywcom_fiber_segment/85/move_to/blown_fiber_tube/78?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "ok": true
+    }
+    
+    
+    DATABASE CHANGES: BACKFEED CABLE INTO CONDUIT
+       insert delta.mywcom_fiber_segment(design/NB046,84,update)
+       insert delta.mywcom_fiber_segment(design/NB046,85,update)
+       insert delta.mywcom_fiber_segment(design/NB046,86,update)
+       insert delta.mywcom_fiber_segment(design/NB046,87,update)
+    
+    VALIDATION ERRORS: BACKFEED CABLE INTO CONDUIT
+
+SUB TEST : BACKFEED CABLE INTO CONDUIT REVERSED GEOM
+    Request: POST: /modules/comms/conduit/mywcom_fiber_segment/83/move_to/blown_fiber_tube/73?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "ok": true
+    }
+    
+    
+    DATABASE CHANGES: BACKFEED CABLE INTO CONDUIT REVERSED GEOM
+       insert delta.mywcom_fiber_segment(design/NB046,83,update)
+    
+    VALIDATION ERRORS: BACKFEED CABLE INTO CONDUIT REVERSED GEOM
+
+SUB TEST : CONTINUOUS CONDUIT INTO CONDUIT
+    Request: POST: /modules/comms/conduit/blown_fiber_tube/195/move_to/conduit/70?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "ok": true
+    }
+    
+    
+    DATABASE CHANGES: CONTINUOUS CONDUIT INTO CONDUIT
+       insert delta.blown_fiber_tube(design/NB046,195,update)
+    
+    VALIDATION ERRORS: CONTINUOUS CONDUIT INTO CONDUIT
+
+SUB TEST : CABLE OUT OF CONTINUOUS CONDUIT
+    Request: POST: /modules/comms/conduit/mywcom_fiber_segment/435/move_to/ug_route/353?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "ok": true
+    }
+    
+    
+    DATABASE CHANGES: CABLE OUT OF CONTINUOUS CONDUIT
+       insert delta.mywcom_fiber_segment(design/NB046,432,update)
+       insert delta.mywcom_fiber_segment(design/NB046,433,update)
+       insert delta.mywcom_fiber_segment(design/NB046,434,update)
+       insert delta.mywcom_fiber_segment(design/NB046,435,update)
+       insert delta.mywcom_fiber_segment(design/NB046,436,update)
+       insert delta.mywcom_fiber_segment(design/NB046,437,update)
+    
+    VALIDATION ERRORS: CABLE OUT OF CONTINUOUS CONDUIT

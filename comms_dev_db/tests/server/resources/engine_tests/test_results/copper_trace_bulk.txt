@@ -1,0 +1,33 @@
+
+SUB TEST : TRACE DOWNSTREAM FROM PORTS : mywcom_copper from copper_shelf/S-1 downstream
+    PortTraceNode( 0.000m,copper_shelf/1-out:25:30,ports=out:25:30,direction=downstream,1 )   Copper Shelf: S-1 (0/100)
+    SegmentTraceNode( 121.430m,mywcom_copper_segment/1-in:25:30,fibers=25:30,length=121.43,direction=downstream,loc=WH-1 [25-30] Active,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1353345438838, 52.2234612917333),1 )   Copper Cable: WH-CC-001 (100)
+    ConnectionTraceNode( 121.430m,mywcom_copper_connection/1-25:30,from_=25:30,to_=25:30,direction=downstream,1 )   Copper Connection: 1
+    SegmentTraceNode( 175.890m,mywcom_copper_segment/5-in:25:30,fibers=25:30,length=54.46,direction=downstream,loc=WH-1 [25-30] Active,start_coord=(0.1353345438838, 52.2234612917333),stop_coord=(0.1346167176962, 52.2233292292345),2 )   Copper Cable: WH-CC-002 (100)
+    Path:
+       ConnectionTraceNode( 175.890m,mywcom_copper_connection/2-25,from_=25,to_=25,direction=downstream,1 )   Copper Connection: 2
+       SegmentTraceNode( 235.790m,mywcom_copper_segment/9-in:25,fibers=25,length=59.90,direction=downstream,loc=WH-1 [25-25] Active,start_coord=(0.1346167176962, 52.2233292292345),stop_coord=(0.1343880593777, 52.2228490359985),1 )   Copper Cable: WH-CC-003 (100)
+       PortTraceNode( 235.790m,copper_load_coil/2-in:25,ports=in:25,direction=downstream,1 )   Load Coil: WH-LC-2 (25)
+       PortTraceNode( 235.790m,copper_load_coil/2-out:25,ports=out:25,direction=downstream,1 )   Load Coil: WH-LC-2 (25)
+       SegmentTraceNode( 242.820m,mywcom_copper_segment/10-in:25,fibers=25,length=7.03,direction=downstream,loc=WH-1 [25-25] Active,start_coord=(0.1343880593777, 52.2228490359985),stop_coord=(0.1342975348234, 52.2228256218243),0 )   Copper Cable: WH-CC-003 (100)
+    Path:
+       SegmentTraceNode( 184.850m,mywcom_copper_segment/7-in:26:30,fibers=26:30,length=8.96,direction=downstream,loc=WH-1 [26-30] Active,start_coord=(0.1346167176962, 52.2233292292345),stop_coord=(0.1344953477383, 52.2233481246706),2 )   Copper Cable: WH-CC-002 (100)
+       Path:
+          ConnectionTraceNode( 184.850m,mywcom_copper_connection/8-26:29,from_=Fibers: 26:29,to_=Ports: in:1:4,direction=downstream,1 )   Copper Connection: 8
+          PortTraceNode( 184.850m,copper_terminal/2-in:1:4,ports=in:1:4,direction=downstream,0 )   Copper Terminal: WH-T-2 (4)
+       Path:
+          SegmentTraceNode( 260.010m,mywcom_copper_segment/8-in:30,fibers=30,length=75.16,direction=downstream,loc=WH-1 [30-30] Active,start_coord=(0.1344953477383, 52.2233481246706),stop_coord=(0.1336176, 52.2236381),1 )   Copper Cable: WH-CC-002 (100)
+          PortTraceNode( 260.010m,copper_terminal/3-in:1,ports=in:1,direction=downstream,0 )   Copper Terminal: WH-T-3 (4)
+    
+
+SUB TEST : TRACE MESH DOWNSTREAM FROM SEGMENT : mywcom_copper from mywcom_copper_segment/4 downstream
+    SegmentTraceNode( 108.430m,mywcom_copper_segment/4-in:1:2,fibers=1:2,length=108.43,direction=downstream,loc=WH-1 [1-2] Active,start_coord=(0.136479887788, 52.2240683620607),stop_coord=(0.1353345438838, 52.2234612917333),1 )   Copper Cable: WH-CC-001 (100)
+    ConnectionTraceNode( 108.430m,mywcom_copper_connection/1-1:2,from_=1:2,to_=1:2,direction=downstream,1 )   Copper Connection: 1
+    SegmentTraceNode( 162.890m,mywcom_copper_segment/5-in:1:2,fibers=1:2,length=54.46,direction=downstream,loc=WH-1 [1-2] Active,start_coord=(0.1353345438838, 52.2234612917333),stop_coord=(0.1346167176962, 52.2233292292345),1 )   Copper Cable: WH-CC-002 (100)
+    ConnectionTraceNode( 162.890m,mywcom_copper_connection/2-1:2,from_=1:2,to_=1:2,direction=downstream,1 )   Copper Connection: 2
+    SegmentTraceNode( 222.790m,mywcom_copper_segment/9-in:1:2,fibers=1:2,length=59.90,direction=downstream,loc=WH-1 [1-2] Active,start_coord=(0.1346167176962, 52.2233292292345),stop_coord=(0.1343880593777, 52.2228490359985),1 )   Copper Cable: WH-CC-003 (100)
+    PortTraceNode( 222.790m,copper_load_coil/2-in:1:2,ports=in:1:2,direction=downstream,1 )   Load Coil: WH-LC-2 (25)
+    PortTraceNode( 222.790m,copper_load_coil/2-out:1:2,ports=out:1:2,direction=downstream,1 )   Load Coil: WH-LC-2 (25)
+    SegmentTraceNode( 229.820m,mywcom_copper_segment/10-in:1:2,fibers=1:2,length=7.03,direction=downstream,loc=WH-1 [1-2] Active,start_coord=(0.1343880593777, 52.2228490359985),stop_coord=(0.1342975348234, 52.2228256218243),1 )   Copper Cable: WH-CC-003 (100)
+    PortTraceNode( 229.820m,copper_terminal/1-in:1:2,ports=in:1:2,direction=downstream,0 )   Copper Terminal: WH-T-1 (4)
+    

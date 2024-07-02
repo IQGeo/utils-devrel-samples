@@ -1,0 +1,65 @@
+Request: POST:/modules/comms/feature?delta=design/NB217
+Response: 200 (200 OK)
+{
+   "ids": [
+      100000
+   ]
+}
+
+
+Request: POST: /modules/comms/cable/copper_cable/100000/route?delta=design/NB217
+Response: 200 (200 OK)
+{
+   "cable": {
+      "geometry": null,
+      "id": 100000,
+      "myw": {
+         "change_type": "insert",
+         "delta": "design/NB217",
+         "feature_type": "copper_cable",
+         "short_description": "100-19-ASPICF",
+         "title": "Copper Cable: WH-CC-100000 (100)"
+      },
+      "properties": {
+         "comsof_auto": null,
+         "copper_count": 100,
+         "diameter": 6.0,
+         "directed": true,
+         "gauge": 19.0,
+         "id": 100000,
+         "installation_date": null,
+         "labor_costs": null,
+         "measured_length": null,
+         "name": "WH-CC-100000",
+         "owner": null,
+         "pressureized": null,
+         "specification": "100-19-ASPICF",
+         "status": null
+      },
+      "secondary_geometries": {
+         "placement_path": {
+            "coordinates": [
+               [
+                  0.140361184284,
+                  52.2246284771163
+               ],
+               [
+                  0.140361184284,
+                  52.2246284771163
+               ]
+            ],
+            "type": "LineString"
+         }
+      },
+      "type": "Feature"
+   }
+}
+
+
+DATABASE CHANGES: COPPER CABLE INSERT TRANSACTION
+   insert delta.copper_cable(design/NB217,100000,insert)
+   insert delta.mywcom_copper_segment(design/NB217,100000,insert)
+   insert delta.mywcom_copper_segment(design/NB217,100001,insert)
+   insert delta.mywcom_copper_segment(design/NB217,100002,insert)
+   insert delta.mywcom_copper_segment(design/NB217,100003,insert)
+

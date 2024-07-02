@@ -1,0 +1,12 @@
+{
+    "image": "modules/comms/images/features/copper/copper_repeater.svg",
+    "housings": ["rack", "copper_shelf", "slot", "manhole", "cabinet", "copper_splice_closure"],
+    "function": "connector",
+    "palette": true,
+    "tech": "copper",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/copper/copper_repeater.svg:12:24"
+    }
+}

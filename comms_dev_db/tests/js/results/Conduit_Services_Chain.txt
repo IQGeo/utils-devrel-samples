@@ -1,0 +1,406 @@
+
+*** SHOW TUBE PATH
+Set delta to: design/NB046
+id: 100
+type: blown_fiber_tube
+myw: {
+	"title": "BF Tube: WH-BF-97 : 1"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137418787692,
+			52.2254396546
+		],
+		[
+			0.137298256159,
+			52.2255050269
+		],
+		[
+			0.137150734663,
+			52.2255855339
+		],
+		[
+			0.137086617252,
+			52.2256221465
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 1,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/52",
+	"diameter": 17,
+	"housing": "blown_fiber_bundle/20",
+	"id": 100,
+	"in_conduit": null,
+	"in_structure": "drop_point/2",
+	"labor_costs": null,
+	"length": null,
+	"name": "WH-BF-97 : 1",
+	"out_conduit": null,
+	"out_structure": "drop_point/3",
+	"root_housing": "ug_route/352"
+}
+displayValues: {
+
+}
+
+
+*** SHOW BUNDLE PATH
+Set delta to: design/NB046
+id: 17
+type: blown_fiber_bundle
+myw: {
+	"title": "BF Bundle: (8)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.138016417623,
+			52.2250326616
+		],
+		[
+			0.138023793697,
+			52.225073737
+		],
+		[
+			0.137991607189,
+			52.2251172769
+		],
+		[
+			0.137958079576,
+			52.2251369931
+		],
+		[
+			0.137864202261,
+			52.2251862835
+		],
+		[
+			0.137720704079,
+			52.2252667911
+		],
+		[
+			0.13769287972,
+			52.2252827831
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 8,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/22",
+	"housing": "ug_route/14",
+	"id": 17,
+	"in_conduit": null,
+	"in_structure": "manhole/36",
+	"labor_costs": null,
+	"name": "WH-BF-97",
+	"out_conduit": "blown_fiber_bundle/18",
+	"out_structure": "drop_point/1",
+	"root_housing": "ug_route/14"
+}
+displayValues: {
+
+}
+
+id: 18
+type: blown_fiber_bundle
+myw: {
+	"title": "BF Bundle: (8)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13769287972,
+			52.2252827831
+		],
+		[
+			0.137628575515,
+			52.2253197416
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 8,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/22",
+	"housing": "ug_route/351",
+	"id": 18,
+	"in_conduit": "blown_fiber_bundle/17",
+	"in_structure": "drop_point/1",
+	"labor_costs": null,
+	"name": "WH-BF-98",
+	"out_conduit": "blown_fiber_bundle/19",
+	"out_structure": "manhole/253",
+	"root_housing": "ug_route/351"
+}
+displayValues: {
+
+}
+
+id: 19
+type: blown_fiber_bundle
+myw: {
+	"title": "BF Bundle: (8)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137628575515,
+			52.2253197416
+		],
+		[
+			0.137612074614,
+			52.2253292254
+		],
+		[
+			0.137427002192,
+			52.2254351993
+		],
+		[
+			0.137418787692,
+			52.2254396546
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 8,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/22",
+	"housing": "ug_route/349",
+	"id": 19,
+	"in_conduit": "blown_fiber_bundle/18",
+	"in_structure": "manhole/253",
+	"labor_costs": null,
+	"name": "WH-BF-99",
+	"out_conduit": "blown_fiber_bundle/20",
+	"out_structure": "drop_point/2",
+	"root_housing": "ug_route/349"
+}
+displayValues: {
+
+}
+
+id: 20
+type: blown_fiber_bundle
+myw: {
+	"title": "BF Bundle: (8)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137418787692,
+			52.2254396546
+		],
+		[
+			0.137298256159,
+			52.2255050269
+		],
+		[
+			0.137150734663,
+			52.2255855339
+		],
+		[
+			0.137086617252,
+			52.2256221465
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 8,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/22",
+	"housing": "ug_route/352",
+	"id": 20,
+	"in_conduit": "blown_fiber_bundle/19",
+	"in_structure": "drop_point/2",
+	"labor_costs": null,
+	"name": "WH-BF-100",
+	"out_conduit": "blown_fiber_bundle/21",
+	"out_structure": "drop_point/3",
+	"root_housing": "ug_route/352"
+}
+displayValues: {
+
+}
+
+id: 21
+type: blown_fiber_bundle
+myw: {
+	"title": "BF Bundle: (8)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137086617252,
+			52.2256221465
+		],
+		[
+			0.137071609497,
+			52.2256307163
+		],
+		[
+			0.137023329735,
+			52.2256578258
+		],
+		[
+			0.136975457137,
+			52.2256824205
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 8,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/22",
+	"housing": "ug_route/353",
+	"id": 21,
+	"in_conduit": "blown_fiber_bundle/20",
+	"in_structure": "drop_point/3",
+	"labor_costs": null,
+	"name": "WH-BF-101",
+	"out_conduit": "blown_fiber_bundle/22",
+	"out_structure": "mywcom_route_junction/12",
+	"root_housing": "ug_route/353"
+}
+displayValues: {
+
+}
+
+id: 22
+type: blown_fiber_bundle
+myw: {
+	"title": "BF Bundle: (8)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136975457137,
+			52.2256824205
+		],
+		[
+			0.136910721195,
+			52.2257156789
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 8,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/22",
+	"housing": "ug_route/365",
+	"id": 22,
+	"in_conduit": "blown_fiber_bundle/21",
+	"in_structure": "mywcom_route_junction/12",
+	"labor_costs": null,
+	"name": "WH-BF-102",
+	"out_conduit": "blown_fiber_bundle/23",
+	"out_structure": "mywcom_route_junction/13",
+	"root_housing": "ug_route/365"
+}
+displayValues: {
+
+}
+
+id: 23
+type: blown_fiber_bundle
+myw: {
+	"title": "BF Bundle: (8)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136910721195,
+			52.2257156789
+		],
+		[
+			0.136857032776,
+			52.2257432615
+		],
+		[
+			0.136796012521,
+			52.225778175
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 8,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/22",
+	"housing": "ug_route/366",
+	"id": 23,
+	"in_conduit": "blown_fiber_bundle/22",
+	"in_structure": "mywcom_route_junction/13",
+	"labor_costs": null,
+	"name": "WH-BF-103",
+	"out_conduit": "blown_fiber_bundle/24",
+	"out_structure": "manhole/39",
+	"root_housing": "ug_route/366"
+}
+displayValues: {
+
+}
+
+id: 24
+type: blown_fiber_bundle
+myw: {
+	"title": "BF Bundle: (8)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136764496565,
+			52.2257637989
+		],
+		[
+			0.136796012521,
+			52.225778175
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 8,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/22",
+	"housing": "ug_route/276",
+	"id": 24,
+	"in_conduit": null,
+	"in_structure": "cabinet/11",
+	"labor_costs": null,
+	"name": "WH-BF-104",
+	"out_conduit": "blown_fiber_bundle/23",
+	"out_structure": "manhole/39",
+	"root_housing": "ug_route/276"
+}
+displayValues: {
+
+}
+

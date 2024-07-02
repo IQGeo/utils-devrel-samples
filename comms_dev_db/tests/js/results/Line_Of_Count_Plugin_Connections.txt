@@ -1,0 +1,92 @@
+
+*** DISCONNECT AND CONNECT
+Set delta to: design/NB217
+DATABASE CHANGES: DISCONNECT
+    insert delta.mywcom_copper_connection(design/NB217,100000,insert)
+    insert delta.mywcom_copper_connection(design/NB217,2,delete)
+    insert delta.mywcom_line_of_count(design/NB217,1,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,1,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,10,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,11,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,12,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,13,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,14,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,15,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,16,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,17,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,18,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,19,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,20,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,22,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,23,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,24,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,25,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,26,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,27,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,28,delete)
+    insert delta.mywcom_line_of_count_section(design/NB217,8,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,9,update)
+
+LOC ON WH-C-003 AFTER DISCONNECT
+{
+	"mywcom_copper_segment/9": {
+		"": [
+			{
+				"high": 25,
+				"low": 5,
+				"name": "WH-1",
+				"origin": "copper_shelf/1?side=out",
+				"physical": null,
+				"physical_low": 5,
+				"status": "Active"
+			}
+		]
+	}
+}
+WH-1 [5 - 25] Active"
+DATABASE CHANGES: RECONNECT
+    insert delta.mywcom_copper_connection(design/NB217,100001,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100000,insert)
+    update delta.mywcom_line_of_count(design/NB217,1,update) fields=(route)
+    update delta.mywcom_line_of_count_section(design/NB217,10,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,11,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,12,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,13,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,14,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,15,update) fields=(mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,16,update) fields=(mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,17,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,18,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,24,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,25,update) fields=(mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,26,update) fields=(mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,27,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,8,update) fields=(label,mapping)
+    update delta.mywcom_line_of_count_section(design/NB217,9,update) fields=(label,mapping)
+
+LOC ON WH-C-003 AFTER RECONNECT
+{
+	"mywcom_copper_segment/9": {
+		"": [
+			{
+				"high": 2,
+				"low": 1,
+				"name": "WH-1",
+				"origin": "copper_shelf/1?side=out",
+				"physical": null,
+				"physical_low": 3,
+				"status": "Active"
+			},
+			{
+				"high": 25,
+				"low": 5,
+				"name": "WH-1",
+				"origin": "copper_shelf/1?side=out",
+				"physical": null,
+				"physical_low": 5,
+				"status": "Active"
+			}
+		]
+	}
+}
+WH-1 [1 - 2] Active"<br>WH-1 [5 - 25] Active"

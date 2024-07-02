@@ -1,0 +1,106 @@
+.loading_results {
+    padding-top: 50px;
+}
+
+#spec-grid tbody > tr:hover,
+.tbl-results tr:hover,
+.grid-row-selected,
+.tbl-result-selected {
+    color: #246bd4;
+    background: #f6f6f6 50% 50% repeat-x !important;
+}
+#spec-grid {
+    .dataTables_scrollBody {
+        overflow-y: hidden !important;
+        width: 100% !important;
+    }
+    th,
+    td {
+        @include text-overflow-ellipsis;
+    }
+    th {
+        border-right: 1px solid #eee;
+        padding: 5px 18px 5px 10px;
+        text-align: left;
+    }
+}
+.dataTable {
+    td:last-child,
+    th:last-child {
+        width: 99%;
+    }
+}
+#spec-grid-table_wrapper,
+#spec-grid-table,
+.dataTables_scrollHeadInner > .dataTable {
+    width: 100% !important;
+}
+#grid-filter-container {
+    margin: 5px;
+
+    label {
+        font-weight: bold;
+    }
+    input[type='search'] {
+        width: 150px;
+        box-sizing: border-box;
+        height: 25px;
+    }
+}
+
+.gridActionsLeft {
+    padding: 0 0 0 20px;
+    float: left;
+
+    > div {
+        float: left;
+        margin-bottom: 0;
+    }
+    button {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+    .filter-tag {
+        margin: 5px 5px 5px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 2px 7px;
+        .close-tag {
+            @include background-with-image('#{$path-to-core-img}x.svg', no-repeat);
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-size: 8px;
+            background-position: 0px;
+            margin-left: 6px;
+        }
+    }
+}
+
+.spec-filter-desc {
+    @extend .gridActionsLeft;
+}
+
+.spec-grid-report-container {
+    position: absolute;
+    color: #646464;
+    padding-top: 10px;
+}
+#spec-grid-warning {
+    bottom: 0;
+    left: 0;
+    margin: auto !important;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+#spec-grid-result-report {
+    padding-left: 10px;
+}
+.limited-width {
+    width: 200px;
+}
+.spec-filter-desc {
+    padding-bottom: 6px;
+}

@@ -1,0 +1,20 @@
+retired,manufacturer,name,model,n_copper_ports,type
+false,Campbell,100pr Load Coil,100pr Load Coil,100,Overground
+false,Campbell,12pr Load Coil,12pr Load Coil,12,Overground
+false,Campbell,150pr Load Coil,150pr Load Coil,150,Overground
+false,Campbell,15pr Load Coil,15pr Load Coil,15,Overground
+false,Campbell,18pr Load Coil,18pr Load Coil,18,Overground
+false,Campbell,1pr Load Coil,1pr Load Coil,1,Underground
+false,Heaviside,200pr Load Coil,200pr Load Coil,200,Underground
+false,Heaviside,250pr Load Coil,250pr Load Coil,250,Underground
+false,Heaviside,25pr Load Coil,25pr Load Coil,25,Underground
+false,Heaviside,300pr Load Coil,300pr Load Coil,300,Underground
+false,Heaviside,32pr Load Coil,32pr Load Coil,32,Underground
+false,Hyrbid,350pr Load Coil,350pr Load Coil,350,Underground
+false,Hyrbid,400pr Load Coil,400pr Load Coil,400,Otherground
+false,Hyrbid,500pr Load Coil,500pr Load Coil,500,Otherground
+false,Hyrbid,50pr Load Coil,50pr Load Coil,50,Otherground
+false,Hyrbid,600pr Load Coil,600pr Load Coil,600,Otherground
+false,Huurdeman,6pr Load Coil,6pr Load Coil,6,Otherground
+false,Huurdeman,75pr Load Coil,75pr Load Coil,75,Otherground
+false,Huurdeman,900pr Load Coil,900pr Load Coil,900,Overground

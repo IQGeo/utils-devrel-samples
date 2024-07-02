@@ -1,0 +1,628 @@
+COMMAND: comms_db comms_scratch list <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/milton.zip metadata
+Opening database <conn_spec> ...
+name          value
+------------  ----------------------------------------------------------------------
+format        cdif
+coord_system  4326
+boundary      0103000020E61000000100000028000000EFCF4FF63FE3C03FEA6EA449141C4A407...
+
+COMMAND: comms_db comms_scratch list <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/milton.zip features
+Opening database <conn_spec> ...
+name                          geom_type
+----------------------------  ---------
+blown_fiber_bundle                    -
+blown_fiber_tube                      -
+building                              -
+cabinet                               -
+conduit                               -
+fiber_cable                           -
+fiber_olt                             -
+fiber_patch_panel                     -
+fiber_shelf                           -
+fiber_splitter                        -
+manhole                               -
+mywcom_conduit_run                    -
+mywcom_fiber_connection               -
+mywcom_fiber_segment                  -
+mywcom_fiber_slack                    -
+mywcom_line_of_count                  -
+mywcom_line_of_count_section          -
+mywcom_route_junction                 -
+rack                                  -
+splice_closure                        -
+ug_route                              -
+
+COMMAND: comms_db comms_scratch list <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/milton.zip fields
+Opening database <conn_spec> ...
+name                                        type
+------------------------------------------  ------------
+blown_fiber_bundle.id                       string(100)
+blown_fiber_bundle.name                     string(100)
+blown_fiber_bundle.bundle_size              string(100)
+blown_fiber_bundle.path                     string(218)
+blown_fiber_bundle.housing                  string(100)
+blown_fiber_bundle.root_housing             string(100)
+blown_fiber_bundle.in_structure             string(100)
+blown_fiber_bundle.out_structure            string(100)
+blown_fiber_bundle.in_conduit               string(100)
+blown_fiber_bundle.out_conduit              string(100)
+blown_fiber_bundle.conduit_run              string(100)
+blown_fiber_bundle.labor_costs              string(100)
+blown_fiber_bundle.comsof_auto              string(100)
+blown_fiber_tube.id                         string(100)
+blown_fiber_tube.name                       string(100)
+blown_fiber_tube.diameter                   string(100)
+blown_fiber_tube.length                     string(100)
+blown_fiber_tube.bundle_size                string(100)
+blown_fiber_tube.path                       string(218)
+blown_fiber_tube.housing                    string(100)
+blown_fiber_tube.root_housing               string(100)
+blown_fiber_tube.in_structure               string(100)
+blown_fiber_tube.out_structure              string(100)
+blown_fiber_tube.in_conduit                 string(100)
+blown_fiber_tube.out_conduit                string(100)
+blown_fiber_tube.conduit_run                string(100)
+blown_fiber_tube.labor_costs                string(100)
+blown_fiber_tube.comsof_auto                string(100)
+building.id                                 string(100)
+building.name                               string(100)
+building.labor_costs                        string(100)
+building.location                           string(100)
+building.owner                              string(100)
+building.access_code                        string(100)
+building.comsof_auto                        string(100)
+cabinet.id                                  string(100)
+cabinet.name                                string(100)
+cabinet.specification                       string(100)
+cabinet.labor_costs                         string(100)
+cabinet.location                            string(100)
+cabinet.myw_orientation_location            string(100)
+cabinet.type                                string(100)
+cabinet.powered                             string(100)
+cabinet.photo                               string(100)
+cabinet.installation_date                   string(100)
+cabinet.stop_ripple                         string(100)
+cabinet.comsof_auto                         string(100)
+conduit.id                                  string(100)
+conduit.name                                string(100)
+conduit.diameter                            string(100)
+conduit.length                              string(100)
+conduit.path                                string(186)
+conduit.housing                             string(100)
+conduit.root_housing                        string(100)
+conduit.in_structure                        string(100)
+conduit.out_structure                       string(100)
+conduit.specification                       string(100)
+conduit.labor_costs                         string(100)
+conduit.material                            string(100)
+conduit.owner                               string(100)
+conduit.installation_date                   string(100)
+conduit.comsof_auto                         string(100)
+fiber_cable.id                              string(100)
+fiber_cable.name                            string(100)
+fiber_cable.specification                   string(100)
+fiber_cable.type                            string(100)
+fiber_cable.fiber_count                     string(100)
+fiber_cable.directed                        string(100)
+fiber_cable.path                            string(442)
+fiber_cable.placement_path                  string(100)
+fiber_cable.tick_mark_spacing               string(100)
+fiber_cable.labor_costs                     string(100)
+fiber_cable.owner                           string(100)
+fiber_cable.job_id                          string(100)
+fiber_cable.installation_date               string(100)
+fiber_cable.diameter                        string(100)
+fiber_cable.comsof_auto                     string(100)
+fiber_olt.id                                string(100)
+fiber_olt.name                              string(100)
+fiber_olt.n_fiber_out_ports                 string(100)
+fiber_olt.root_housing                      string(100)
+fiber_olt.housing                           string(100)
+fiber_olt.location                          string(100)
+fiber_olt.labor_costs                       string(100)
+fiber_olt.circuits                          string(100)
+fiber_olt.device_id                         string(100)
+fiber_olt.installation_date                 string(100)
+fiber_olt.job_id                            string(100)
+fiber_olt.comsof_auto                       string(100)
+fiber_patch_panel.id                        string(100)
+fiber_patch_panel.name                      string(100)
+fiber_patch_panel.specification             string(100)
+fiber_patch_panel.labor_costs               string(100)
+fiber_patch_panel.n_fiber_ports             string(100)
+fiber_patch_panel.root_housing              string(100)
+fiber_patch_panel.housing                   string(100)
+fiber_patch_panel.location                  string(100)
+fiber_patch_panel.circuits                  string(100)
+fiber_patch_panel.comsof_auto               string(100)
+fiber_shelf.id                              string(100)
+fiber_shelf.name                            string(100)
+fiber_shelf.root_housing                    string(100)
+fiber_shelf.housing                         string(100)
+fiber_shelf.labor_costs                     string(100)
+fiber_shelf.n_fiber_in_ports                string(100)
+fiber_shelf.n_fiber_out_ports               string(100)
+fiber_shelf.location                        string(100)
+fiber_shelf.circuits                        string(100)
+fiber_shelf.installation_date               string(100)
+fiber_shelf.job_id                          string(100)
+fiber_shelf.comsof_auto                     string(100)
+fiber_splitter.id                           string(100)
+fiber_splitter.name                         string(100)
+fiber_splitter.n_fiber_in_ports             string(100)
+fiber_splitter.n_fiber_out_ports            string(100)
+fiber_splitter.root_housing                 string(100)
+fiber_splitter.housing                      string(100)
+fiber_splitter.specification                string(100)
+fiber_splitter.labor_costs                  string(100)
+fiber_splitter.location                     string(100)
+fiber_splitter.circuits                     string(100)
+fiber_splitter.device_id                    string(100)
+fiber_splitter.installation_date            string(100)
+fiber_splitter.job_id                       string(100)
+fiber_splitter.stop_ripple                  string(100)
+fiber_splitter.comsof_auto                  string(100)
+manhole.id                                  string(100)
+manhole.name                                string(100)
+manhole.specification                       string(100)
+manhole.labor_costs                         string(100)
+manhole.location                            string(100)
+manhole.myw_orientation_location            string(100)
+manhole.size_x                              string(100)
+manhole.size_y                              string(100)
+manhole.size_z                              string(100)
+manhole.lockable                            string(100)
+manhole.powered                             string(100)
+manhole.installation_date                   string(100)
+manhole.comsof_auto                         string(100)
+mywcom_conduit_run.id                       string(100)
+mywcom_conduit_run.path                     string(282)
+mywcom_conduit_run.comsof_auto              string(100)
+mywcom_fiber_connection.id                  string(100)
+mywcom_fiber_connection.in_object           string(100)
+mywcom_fiber_connection.out_object          string(100)
+mywcom_fiber_connection.in_side             string(100)
+mywcom_fiber_connection.in_low              string(100)
+mywcom_fiber_connection.in_high             string(100)
+mywcom_fiber_connection.out_side            string(100)
+mywcom_fiber_connection.out_low             string(100)
+mywcom_fiber_connection.out_high            string(100)
+mywcom_fiber_connection.splice              string(100)
+mywcom_fiber_connection.root_housing        string(100)
+mywcom_fiber_connection.housing             string(100)
+mywcom_fiber_connection.location            string(100)
+mywcom_fiber_connection.comsof_auto         string(100)
+mywcom_fiber_segment.id                     string(100)
+mywcom_fiber_segment.length                 string(100)
+mywcom_fiber_segment.cable                  string(100)
+mywcom_fiber_segment.housing                string(100)
+mywcom_fiber_segment.root_housing           string(100)
+mywcom_fiber_segment.directed               string(100)
+mywcom_fiber_segment.forward                string(100)
+mywcom_fiber_segment.in_structure           string(100)
+mywcom_fiber_segment.out_structure          string(100)
+mywcom_fiber_segment.in_segment             string(100)
+mywcom_fiber_segment.out_segment            string(100)
+mywcom_fiber_segment.path                   string(282)
+mywcom_fiber_segment.in_tick                string(100)
+mywcom_fiber_segment.out_tick               string(100)
+mywcom_fiber_segment.circuits               string(100)
+mywcom_fiber_segment.in_equipment           string(100)
+mywcom_fiber_segment.out_equipment          string(100)
+mywcom_fiber_segment.comsof_auto            string(100)
+mywcom_fiber_slack.id                       string(100)
+mywcom_fiber_slack.length                   string(100)
+mywcom_fiber_slack.root_housing             string(100)
+mywcom_fiber_slack.housing                  string(100)
+mywcom_fiber_slack.cable                    string(100)
+mywcom_fiber_slack.location                 string(100)
+mywcom_fiber_slack.circuits                 string(100)
+mywcom_fiber_slack.storage                  string(100)
+mywcom_fiber_slack.job_id                   string(100)
+mywcom_fiber_slack.comsof_auto              string(100)
+mywcom_line_of_count.id                     string(100)
+mywcom_line_of_count.label                  string(100)
+mywcom_line_of_count.route                  string(1316)
+mywcom_line_of_count.name                   string(100)
+mywcom_line_of_count.low_logical            string(100)
+mywcom_line_of_count.high_logical           string(100)
+mywcom_line_of_count.low_physical           string(100)
+mywcom_line_of_count.high_physical          string(100)
+mywcom_line_of_count.origin                 string(100)
+mywcom_line_of_count.status                 string(100)
+mywcom_line_of_count.deleted                string(100)
+mywcom_line_of_count.stale                  string(100)
+mywcom_line_of_count.physical               string(100)
+mywcom_line_of_count_section.id             string(100)
+mywcom_line_of_count_section.label          string(100)
+mywcom_line_of_count_section.route          string(282)
+mywcom_line_of_count_section.line_of_count  string(100)
+mywcom_line_of_count_section.container      string(100)
+mywcom_line_of_count_section.mapping        string(298)
+mywcom_line_of_count_section.forward        string(100)
+mywcom_route_junction.id                    string(100)
+mywcom_route_junction.location              string(100)
+mywcom_route_junction.comsof_auto           string(100)
+rack.id                                     string(100)
+rack.name                                   string(100)
+rack.root_housing                           string(100)
+rack.housing                                string(100)
+rack.labor_costs                            string(100)
+rack.location                               string(100)
+rack.circuits                               string(100)
+rack.installation_date                      string(100)
+rack.job_id                                 string(100)
+rack.comsof_auto                            string(100)
+splice_closure.id                           string(100)
+splice_closure.name                         string(100)
+splice_closure.root_housing                 string(100)
+splice_closure.housing                      string(100)
+splice_closure.specification                string(100)
+splice_closure.labor_costs                  string(100)
+splice_closure.location                     string(100)
+splice_closure.circuits                     string(100)
+splice_closure.installation_date            string(100)
+splice_closure.job_id                       string(100)
+splice_closure.comsof_auto                  string(100)
+ug_route.id                                 string(100)
+ug_route.length                             string(100)
+ug_route.in_structure                       string(100)
+ug_route.out_structure                      string(100)
+ug_route.path                               string(282)
+ug_route.labor_costs                        string(100)
+ug_route.cover_type                         string(100)
+ug_route.comsof_auto                        string(100)
+
+COMMAND: comms_db comms_scratch list <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/milton.zip
+Opening database <conn_spec> ...
+feature_type                  n_recs
+----------------------------  ------
+blown_fiber_bundle                 3
+blown_fiber_tube                  18
+building                           1
+cabinet                            2
+conduit                            4
+fiber_cable                        4
+fiber_olt                          2
+fiber_patch_panel                  1
+fiber_shelf                        1
+fiber_splitter                     4
+manhole                            5
+mywcom_conduit_run                 7
+mywcom_fiber_connection           10
+mywcom_fiber_segment              18
+mywcom_fiber_slack                 3
+mywcom_line_of_count               3
+mywcom_line_of_count_section      25
+mywcom_route_junction              4
+rack                               1
+splice_closure                     1
+ug_route                          11
+
+COMMAND: comms_db comms_scratch list <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/milton.zip records
+Opening database <conn_spec> ...
+feature_type                  id
+----------------------------  -----------------------------------
+blown_fiber_bundle            blown_fiber_bundle/100000
+blown_fiber_bundle            blown_fiber_bundle/100001
+blown_fiber_bundle            blown_fiber_bundle/100002
+blown_fiber_tube              blown_fiber_tube/100000
+blown_fiber_tube              blown_fiber_tube/100001
+blown_fiber_tube              blown_fiber_tube/100002
+blown_fiber_tube              blown_fiber_tube/100003
+blown_fiber_tube              blown_fiber_tube/100004
+blown_fiber_tube              blown_fiber_tube/100005
+blown_fiber_tube              blown_fiber_tube/100006
+blown_fiber_tube              blown_fiber_tube/100007
+blown_fiber_tube              blown_fiber_tube/100008
+blown_fiber_tube              blown_fiber_tube/100009
+blown_fiber_tube              blown_fiber_tube/100010
+blown_fiber_tube              blown_fiber_tube/100011
+blown_fiber_tube              blown_fiber_tube/100012
+blown_fiber_tube              blown_fiber_tube/100013
+blown_fiber_tube              blown_fiber_tube/100014
+blown_fiber_tube              blown_fiber_tube/100015
+blown_fiber_tube              blown_fiber_tube/100016
+blown_fiber_tube              blown_fiber_tube/100017
+building                      building/100000
+cabinet                       cabinet/100003
+cabinet                       cabinet/100004
+conduit                       conduit/100000
+conduit                       conduit/100001
+conduit                       conduit/100002
+conduit                       conduit/100003
+fiber_cable                   fiber_cable/100003
+fiber_cable                   fiber_cable/100004
+fiber_cable                   fiber_cable/100005
+fiber_cable                   fiber_cable/100006
+fiber_olt                     fiber_olt/100000
+fiber_olt                     fiber_olt/100001
+fiber_patch_panel             fiber_patch_panel/100000
+fiber_shelf                   fiber_shelf/100000
+fiber_splitter                fiber_splitter/100003
+fiber_splitter                fiber_splitter/100004
+fiber_splitter                fiber_splitter/100005
+fiber_splitter                fiber_splitter/100006
+manhole                       manhole/100006
+manhole                       manhole/100007
+manhole                       manhole/100008
+manhole                       manhole/100009
+manhole                       manhole/100010
+mywcom_conduit_run            mywcom_conduit_run/100000
+mywcom_conduit_run            mywcom_conduit_run/100001
+mywcom_conduit_run            mywcom_conduit_run/100002
+mywcom_conduit_run            mywcom_conduit_run/100003
+mywcom_conduit_run            mywcom_conduit_run/100004
+mywcom_conduit_run            mywcom_conduit_run/100005
+mywcom_conduit_run            mywcom_conduit_run/100006
+mywcom_fiber_connection       mywcom_fiber_connection/100003
+mywcom_fiber_connection       mywcom_fiber_connection/100004
+mywcom_fiber_connection       mywcom_fiber_connection/100005
+mywcom_fiber_connection       mywcom_fiber_connection/100006
+mywcom_fiber_connection       mywcom_fiber_connection/100007
+mywcom_fiber_connection       mywcom_fiber_connection/100008
+mywcom_fiber_connection       mywcom_fiber_connection/100009
+mywcom_fiber_connection       mywcom_fiber_connection/100010
+mywcom_fiber_connection       mywcom_fiber_connection/100011
+mywcom_fiber_connection       mywcom_fiber_connection/100012
+mywcom_fiber_segment          mywcom_fiber_segment/100006
+mywcom_fiber_segment          mywcom_fiber_segment/100007
+mywcom_fiber_segment          mywcom_fiber_segment/100008
+mywcom_fiber_segment          mywcom_fiber_segment/100009
+mywcom_fiber_segment          mywcom_fiber_segment/100010
+mywcom_fiber_segment          mywcom_fiber_segment/100011
+mywcom_fiber_segment          mywcom_fiber_segment/100012
+mywcom_fiber_segment          mywcom_fiber_segment/100013
+mywcom_fiber_segment          mywcom_fiber_segment/100014
+mywcom_fiber_segment          mywcom_fiber_segment/100015
+mywcom_fiber_segment          mywcom_fiber_segment/100016
+mywcom_fiber_segment          mywcom_fiber_segment/100017
+mywcom_fiber_segment          mywcom_fiber_segment/100018
+mywcom_fiber_segment          mywcom_fiber_segment/100019
+mywcom_fiber_segment          mywcom_fiber_segment/100020
+mywcom_fiber_segment          mywcom_fiber_segment/100021
+mywcom_fiber_segment          mywcom_fiber_segment/100022
+mywcom_fiber_segment          mywcom_fiber_segment/100023
+mywcom_fiber_slack            mywcom_fiber_slack/100000
+mywcom_fiber_slack            mywcom_fiber_slack/100001
+mywcom_fiber_slack            mywcom_fiber_slack/100002
+mywcom_line_of_count          mywcom_line_of_count/100003
+mywcom_line_of_count          mywcom_line_of_count/100004
+mywcom_line_of_count          mywcom_line_of_count/100005
+mywcom_line_of_count_section  mywcom_line_of_count_section/100009
+mywcom_line_of_count_section  mywcom_line_of_count_section/100014
+mywcom_line_of_count_section  mywcom_line_of_count_section/100015
+mywcom_line_of_count_section  mywcom_line_of_count_section/100016
+mywcom_line_of_count_section  mywcom_line_of_count_section/100028
+mywcom_line_of_count_section  mywcom_line_of_count_section/100017
+mywcom_line_of_count_section  mywcom_line_of_count_section/100018
+mywcom_line_of_count_section  mywcom_line_of_count_section/100019
+mywcom_line_of_count_section  mywcom_line_of_count_section/100020
+mywcom_line_of_count_section  mywcom_line_of_count_section/100029
+mywcom_line_of_count_section  mywcom_line_of_count_section/100021
+mywcom_line_of_count_section  mywcom_line_of_count_section/100022
+mywcom_line_of_count_section  mywcom_line_of_count_section/100023
+mywcom_line_of_count_section  mywcom_line_of_count_section/100030
+mywcom_line_of_count_section  mywcom_line_of_count_section/100024
+mywcom_line_of_count_section  mywcom_line_of_count_section/100025
+mywcom_line_of_count_section  mywcom_line_of_count_section/100026
+mywcom_line_of_count_section  mywcom_line_of_count_section/100027
+mywcom_line_of_count_section  mywcom_line_of_count_section/100031
+mywcom_line_of_count_section  mywcom_line_of_count_section/100032
+mywcom_line_of_count_section  mywcom_line_of_count_section/100033
+mywcom_line_of_count_section  mywcom_line_of_count_section/100034
+mywcom_line_of_count_section  mywcom_line_of_count_section/100035
+mywcom_line_of_count_section  mywcom_line_of_count_section/100036
+mywcom_line_of_count_section  mywcom_line_of_count_section/100037
+mywcom_route_junction         mywcom_route_junction/100000
+mywcom_route_junction         mywcom_route_junction/100001
+mywcom_route_junction         mywcom_route_junction/100002
+mywcom_route_junction         mywcom_route_junction/100003
+rack                          rack/100000
+splice_closure                splice_closure/100000
+ug_route                      ug_route/100006
+ug_route                      ug_route/100007
+ug_route                      ug_route/100008
+ug_route                      ug_route/100009
+ug_route                      ug_route/100010
+ug_route                      ug_route/100011
+ug_route                      ug_route/100012
+ug_route                      ug_route/100013
+ug_route                      ug_route/100014
+ug_route                      ug_route/100015
+ug_route                      ug_route/100016
+
+COMMAND: comms_db comms_scratch list <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/milton.zip records --full
+Opening database <conn_spec> ...
+feature_type        id                         name        bundle_size  path                                                                    housing          root_housing     in_structure                  out_structure                 in_conduit                 out_conduit                conduit_run                labor_costs  comsof_auto
+------------------  -------------------------  ----------  -----------  ----------------------------------------------------------------------  ---------------  ---------------  ----------------------------  ----------------------------  -------------------------  -------------------------  -------------------------  -----------  -----------
+blown_fiber_bundle  blown_fiber_bundle/100000  XX-BF-6000  6            0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...  ug_route/100006  ug_route/100006  mywcom_route_junction/100000  building/100000               blown_fiber_bundle/100001  -                          mywcom_conduit_run/100000            -  False
+blown_fiber_bundle  blown_fiber_bundle/100001  XX-BF-6001  6            0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40174B2264D...  ug_route/100014  ug_route/100014  mywcom_route_junction/100002  mywcom_route_junction/100000  blown_fiber_bundle/100002  blown_fiber_bundle/100000  mywcom_conduit_run/100000            -  False
+blown_fiber_bundle  blown_fiber_bundle/100002  XX-BF-6002  6            0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...  ug_route/100009  ug_route/100009  mywcom_route_junction/100002  cabinet/100003                blown_fiber_bundle/100001  -                          mywcom_conduit_run/100000            -  False
+
+feature_type      id                       name            diameter  length  bundle_size  path                                                                    housing                    root_housing     in_structure                  out_structure                 in_conduit               out_conduit              conduit_run                labor_costs  comsof_auto
+----------------  -----------------------  --------------  --------  ------  -----------  ----------------------------------------------------------------------  -------------------------  ---------------  ----------------------------  ----------------------------  -----------------------  -----------------------  -------------------------  -----------  -----------
+blown_fiber_tube  blown_fiber_tube/100000  XX-BF-6000 : 1         -       -  6            0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...  blown_fiber_bundle/100000  ug_route/100006  mywcom_route_junction/100000  building/100000               blown_fiber_tube/100001  -                        mywcom_conduit_run/100001            -  False
+blown_fiber_tube  blown_fiber_tube/100001  XX-BF-6000 : 1         -       -  6            0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40174B2264D...  blown_fiber_bundle/100001  ug_route/100014  mywcom_route_junction/100002  mywcom_route_junction/100000  blown_fiber_tube/100002  blown_fiber_tube/100000  mywcom_conduit_run/100001            -  False
+blown_fiber_tube  blown_fiber_tube/100002  XX-BF-6000 : 1         -       -  6            0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...  blown_fiber_bundle/100002  ug_route/100009  mywcom_route_junction/100002  cabinet/100003                blown_fiber_tube/100001  -                        mywcom_conduit_run/100001            -  False
+blown_fiber_tube  blown_fiber_tube/100003  XX-BF-6003 : 2         -       -  6            0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...  blown_fiber_bundle/100000  ug_route/100006  mywcom_route_junction/100000  building/100000               blown_fiber_tube/100004  -                        mywcom_conduit_run/100002            -  False
+blown_fiber_tube  blown_fiber_tube/100004  XX-BF-6003 : 2         -       -  6            0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40174B2264D...  blown_fiber_bundle/100001  ug_route/100014  mywcom_route_junction/100002  mywcom_route_junction/100000  blown_fiber_tube/100005  blown_fiber_tube/100003  mywcom_conduit_run/100002            -  False
+blown_fiber_tube  blown_fiber_tube/100005  XX-BF-6003 : 2         -       -  6            0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...  blown_fiber_bundle/100002  ug_route/100009  mywcom_route_junction/100002  cabinet/100003                blown_fiber_tube/100004  -                        mywcom_conduit_run/100002            -  False
+blown_fiber_tube  blown_fiber_tube/100006  XX-BF-6006 : 3         -       -  6            0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...  blown_fiber_bundle/100000  ug_route/100006  mywcom_route_junction/100000  building/100000               blown_fiber_tube/100007  -                        mywcom_conduit_run/100003            -  False
+blown_fiber_tube  blown_fiber_tube/100007  XX-BF-6006 : 3         -       -  6            0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40174B2264D...  blown_fiber_bundle/100001  ug_route/100014  mywcom_route_junction/100002  mywcom_route_junction/100000  blown_fiber_tube/100008  blown_fiber_tube/100006  mywcom_conduit_run/100003            -  False
+blown_fiber_tube  blown_fiber_tube/100008  XX-BF-6006 : 3         -       -  6            0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...  blown_fiber_bundle/100002  ug_route/100009  mywcom_route_junction/100002  cabinet/100003                blown_fiber_tube/100007  -                        mywcom_conduit_run/100003            -  False
+blown_fiber_tube  blown_fiber_tube/100009  XX-BF-6009 : 4         -       -  6            0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...  blown_fiber_bundle/100000  ug_route/100006  mywcom_route_junction/100000  building/100000               blown_fiber_tube/100010  -                        mywcom_conduit_run/100004            -  False
+blown_fiber_tube  blown_fiber_tube/100010  XX-BF-6009 : 4         -       -  6            0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40174B2264D...  blown_fiber_bundle/100001  ug_route/100014  mywcom_route_junction/100002  mywcom_route_junction/100000  blown_fiber_tube/100011  blown_fiber_tube/100009  mywcom_conduit_run/100004            -  False
+blown_fiber_tube  blown_fiber_tube/100011  XX-BF-6009 : 4         -       -  6            0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...  blown_fiber_bundle/100002  ug_route/100009  mywcom_route_junction/100002  cabinet/100003                blown_fiber_tube/100010  -                        mywcom_conduit_run/100004            -  False
+blown_fiber_tube  blown_fiber_tube/100012  XX-BF-6012 : 5         -       -  6            0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...  blown_fiber_bundle/100000  ug_route/100006  mywcom_route_junction/100000  building/100000               blown_fiber_tube/100013  -                        mywcom_conduit_run/100005            -  False
+blown_fiber_tube  blown_fiber_tube/100013  XX-BF-6012 : 5         -       -  6            0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40174B2264D...  blown_fiber_bundle/100001  ug_route/100014  mywcom_route_junction/100002  mywcom_route_junction/100000  blown_fiber_tube/100014  blown_fiber_tube/100012  mywcom_conduit_run/100005            -  False
+blown_fiber_tube  blown_fiber_tube/100014  XX-BF-6012 : 5         -       -  6            0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...  blown_fiber_bundle/100002  ug_route/100009  mywcom_route_junction/100002  cabinet/100003                blown_fiber_tube/100013  -                        mywcom_conduit_run/100005            -  False
+blown_fiber_tube  blown_fiber_tube/100015  XX-BF-6015 : 6         -       -  6            0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...  blown_fiber_bundle/100000  ug_route/100006  mywcom_route_junction/100000  building/100000               blown_fiber_tube/100016  -                        mywcom_conduit_run/100006            -  False
+blown_fiber_tube  blown_fiber_tube/100016  XX-BF-6015 : 6         -       -  6            0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40174B2264D...  blown_fiber_bundle/100001  ug_route/100014  mywcom_route_junction/100002  mywcom_route_junction/100000  blown_fiber_tube/100017  blown_fiber_tube/100015  mywcom_conduit_run/100006            -  False
+blown_fiber_tube  blown_fiber_tube/100017  XX-BF-6015 : 6         -       -  6            0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...  blown_fiber_bundle/100002  ug_route/100009  mywcom_route_junction/100002  cabinet/100003                blown_fiber_tube/100016  -                        mywcom_conduit_run/100006            -  False
+
+feature_type  id               name        labor_costs  location                                            owner  access_code  comsof_auto
+------------  ---------------  ----------  -----------  --------------------------------------------------  -----  -----------  -----------
+building      building/100000  Milton Hub            -  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40  Acme   1242         False
+
+feature_type  id              name       specification             labor_costs  location                                            myw_orientation_location  type                    powered  photo  installation_date  stop_ripple  comsof_auto
+------------  --------------  ---------  ------------------------  -----------  --------------------------------------------------  ------------------------  ----------------------  -------  -----  -----------------  -----------  -----------
+cabinet       cabinet/100003  XX-C-6000  cabinet_spec/CS-A-100455            -  0101000020E61000006735A3858FEDC03F6C323257541C4A40  48.759152618420046        Power Supply Enclosure  True         -                  -  False        False
+cabinet       cabinet/100004  XX-C-6001  -                                   -  0101000020E61000009EA7C387B1FCC03F803D3D98431C4A40  322.4829211667028         -                       -            -                  -  False        False
+
+feature_type  id              name         diameter  length  path                                                                    housing          root_housing     in_structure                  out_structure                 specification                 labor_costs  material      owner  installation_date  comsof_auto
+------------  --------------  -----------  --------  ------  ----------------------------------------------------------------------  ---------------  ---------------  ----------------------------  ----------------------------  ----------------------------  -----------  ------------  -----  -----------------  -----------
+conduit       conduit/100000  XX-CND-6000  26.5           -  0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...  ug_route/100006  ug_route/100006  mywcom_route_junction/100000  building/100000               conduit_spec/JDP-26.5MM-Grey            -  PVC (Smooth)      -                  -  False
+conduit       conduit/100001  XX-CND-6001  26.5           -  0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40174B2264D...  ug_route/100014  ug_route/100014  mywcom_route_junction/100002  mywcom_route_junction/100000  conduit_spec/JDP-26.5MM-Grey            -  PVC (Smooth)      -                  -  False
+conduit       conduit/100002  XX-CND-6002  26.5           -  0102000020E610000002000000194B2264F3CFC03F589B64B24C1C4A40E315B657A...  ug_route/100010  ug_route/100010  mywcom_route_junction/100001  mywcom_route_junction/100002  conduit_spec/JDP-26.5MM-Grey            -  PVC (Smooth)      -                  -  False
+conduit       conduit/100003  XX-CND-6003  26.5           -  0102000020E6100000050000009EA7C387B1FCC03F803D3D98431C4A409EA7C3472...  ug_route/100015  ug_route/100015  cabinet/100004                mywcom_route_junction/100001  conduit_spec/JDP-26.5MM-Grey            -  PVC (Smooth)      -                  -  False
+
+feature_type  id                  name         specification                             type      fiber_count  directed  path                                                                    placement_path                                                          tick_mark_spacing  labor_costs  owner  job_id  installation_date  diameter  comsof_auto
+------------  ------------------  -----------  ----------------------------------------  --------  -----------  --------  ----------------------------------------------------------------------  ----------------------------------------------------------------------  -----------------  -----------  -----  ------  -----------------  --------  -----------
+fiber_cable   fiber_cable/100003  XX-FCB-6000  fiber_cable_spec/O-048-CN-5L-F12NS        External  48           True      0102000020E610000008000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  0102000020E610000002000000184B2264B8CEC03F801A0C83521C4A409EA7C387B...                  -            -      -       -                  -  12.1      False
+fiber_cable   fiber_cable/100004  XX-FCB-6001  -                                         External  4            True      0102000020E610000008000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  0102000020E610000002000000184B2264B8CEC03F801A0C83521C4A406735A3858...                  -            -      -       -                  -  -         False
+fiber_cable   fiber_cable/100005  BB-FCB-6004  fiber_cable_spec/NETCONNECT 24 Count OS2  External  24           False     0102000020E6100000060000001E8DC93F6FAEC03F74952C8A5D1C4A40194B2264B...  0102000020E6100000020000001E8DC93F6FAEC03F74952C8A5D1C4A40184B2264B...                  -            -      -       -                  -  10.4      False
+fiber_cable   fiber_cable/100006  BB-FCB-6006  fiber_cable_spec/NETCONNECT 24 Count OM4  External  24           False     0102000020E61000000D0000001939C153CBDEC03FBC92FA5F151C4A40FA0C9E464...  0102000020E6100000020000001939C153CBDEC03FBC92FA5F151C4A401839C153D...                  -            -      -       -                  -  10.4      False
+
+feature_type  id                name         n_fiber_out_ports  root_housing     housing             location                                            labor_costs  circuits  device_id  installation_date  job_id  comsof_auto
+------------  ----------------  -----------  -----------------  ---------------  ------------------  --------------------------------------------------  -----------  --------  ---------  -----------------  ------  -----------
+fiber_olt     fiber_olt/100000  XX-OLT-6000  8                  building/100000  fiber_shelf/100000  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40            -         -          -                  -       -  False
+fiber_olt     fiber_olt/100001  XX-OLT-6001  8                  building/100000  fiber_shelf/100000  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40            -         -          -                  -       -  False
+
+feature_type       id                        name         specification  labor_costs  n_fiber_ports  root_housing     housing          location                                            circuits  comsof_auto
+-----------------  ------------------------  -----------  -------------  -----------  -------------  ---------------  ---------------  --------------------------------------------------  --------  -----------
+fiber_patch_panel  fiber_patch_panel/100000  XX-ODF-6000              -            -  144            building/100000  building/100000  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40         -  False
+
+feature_type  id                  name       root_housing     housing      labor_costs  n_fiber_in_ports  n_fiber_out_ports  location                                            circuits  installation_date  job_id  comsof_auto
+------------  ------------------  ---------  ---------------  -----------  -----------  ----------------  -----------------  --------------------------------------------------  --------  -----------------  ------  -----------
+fiber_shelf   fiber_shelf/100000  XX-S-6000  building/100000  rack/100000            -                 -                  -  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40         -                  -       -  False
+
+feature_type    id                     name         n_fiber_in_ports  n_fiber_out_ports  root_housing    housing         specification                      labor_costs  location                                            circuits  device_id  installation_date  job_id  stop_ripple  comsof_auto
+--------------  ---------------------  -----------  ----------------  -----------------  --------------  --------------  ---------------------------------  -----------  --------------------------------------------------  --------  ---------  -----------------  ------  -----------  -----------
+fiber_splitter  fiber_splitter/100003  XX-SPL-6000  1                 4                  cabinet/100003  cabinet/100003  fiber_splitter_spec/CS-EG4886-000            -  0101000020E61000006735A3858FEDC03F6C323257541C4A40         -  252366     2021-06-09              -  False        False
+fiber_splitter  fiber_splitter/100004  XX-SPL-6001  1                 4                  cabinet/100003  cabinet/100003  fiber_splitter_spec/CS-EG4886-000            -  0101000020E61000006735A3858FEDC03F6C323257541C4A40         -  252366     2021-06-09              -  False        False
+fiber_splitter  fiber_splitter/100005  XX-SPL-6002  1                 4                  cabinet/100003  cabinet/100003  fiber_splitter_spec/CS-EG4886-000            -  0101000020E61000006735A3858FEDC03F6C323257541C4A40         -  252366     2021-06-09              -  False        False
+fiber_splitter  fiber_splitter/100006  XX-SPL-6003  1                 4                  cabinet/100003  cabinet/100003  fiber_splitter_spec/CS-EG4886-000            -  0101000020E61000006735A3858FEDC03F6C323257541C4A40         -  252366     2021-06-09              -  False        False
+
+feature_type  id              name       specification              labor_costs  location                                            myw_orientation_location  size_x  size_y  size_z  lockable  powered  installation_date  comsof_auto
+------------  --------------  ---------  -------------------------  -----------  --------------------------------------------------  ------------------------  ------  ------  ------  --------  -------  -----------------  -----------
+manhole       manhole/100006  XX-M-6000  manhole_spec/FPM-CCANN-C2            -  0101000020E61000001939C153CBDEC03FBC92FA5F151C4A40                         -  800.0   1200.0  895.0          -        -                  -  False
+manhole       manhole/100007  XX-M-6001  manhole_spec/FPM-CCANN-C2            -  0101000020E6100000FA0C9E464AC2C03FD85BD08C2A1C4A40                         -  800.0   1200.0  895.0          -        -                  -  False
+manhole       manhole/100008  XX-M-6002  manhole_spec/FPM-CCANN-C2            -  0101000020E6100000A642D14C8CA6C03FF9CEA7283F1C4A40                         -  800.0   1200.0  895.0          -        -                  -  False
+manhole       manhole/100009  XX-M-6003  manhole_spec/FPM-CCANN-C2            -  0101000020E61000001E8DC93F6FAEC03F74952C8A5D1C4A40                         -  800.0   1200.0  895.0          -        -                  -  False
+manhole       manhole/100010  XX-M-6004  manhole_spec/FPM-CCANN-C2            -  0101000020E61000001839C153D3E5C03FC42CA1DC7C1C4A40                         -  800.0   1200.0  895.0          -        -                  -  False
+
+feature_type        id                         path                                                                    comsof_auto
+------------------  -------------------------  ----------------------------------------------------------------------  -----------
+mywcom_conduit_run  mywcom_conduit_run/100000  0102000020E610000008000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  False
+mywcom_conduit_run  mywcom_conduit_run/100001  0102000020E610000008000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  False
+mywcom_conduit_run  mywcom_conduit_run/100002  0102000020E610000008000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  False
+mywcom_conduit_run  mywcom_conduit_run/100003  0102000020E610000008000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  False
+mywcom_conduit_run  mywcom_conduit_run/100004  0102000020E610000008000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  False
+mywcom_conduit_run  mywcom_conduit_run/100005  0102000020E610000008000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  False
+mywcom_conduit_run  mywcom_conduit_run/100006  0102000020E610000008000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  False
+
+feature_type             id                              in_object                    out_object                   in_side  in_low  in_high  out_side  out_low  out_high  splice  root_housing     housing                   location                                            comsof_auto
+-----------------------  ------------------------------  ---------------------------  ---------------------------  -------  ------  -------  --------  -------  --------  ------  ---------------  ------------------------  --------------------------------------------------  -----------
+mywcom_fiber_connection  mywcom_fiber_connection/100003  mywcom_fiber_segment/100023  mywcom_fiber_segment/100022  in       1       12       out       1        12        True    manhole/100009   splice_closure/100000     0101000020E61000001E8DC93F6FAEC03F74952C8A5D1C4A40  False
+mywcom_fiber_connection  mywcom_fiber_connection/100004  mywcom_fiber_segment/100023  mywcom_fiber_segment/100019  in       13      24       in        1        12        True    manhole/100009   splice_closure/100000     0101000020E61000001E8DC93F6FAEC03F74952C8A5D1C4A40  False
+mywcom_fiber_connection  mywcom_fiber_connection/100005  fiber_olt/100000             mywcom_fiber_segment/100015  out      1       8        out       1        8         False   building/100000  fiber_olt/100000          0101000020E6100000184B2264B8CEC03F801A0C83521C4A40  False
+mywcom_fiber_connection  mywcom_fiber_connection/100006  fiber_olt/100001             mywcom_fiber_segment/100015  out      1       8        out       13       20        False   building/100000  fiber_olt/100001          0101000020E6100000184B2264B8CEC03F801A0C83521C4A40  False
+mywcom_fiber_connection  mywcom_fiber_connection/100007  fiber_patch_panel/100000     mywcom_fiber_segment/100010  out      1       4        in        1        4         False   building/100000  fiber_patch_panel/100000  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40  False
+mywcom_fiber_connection  mywcom_fiber_connection/100008  fiber_patch_panel/100000     mywcom_fiber_segment/100006  out      5       30       in        1        26        False   building/100000  fiber_patch_panel/100000  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40  False
+mywcom_fiber_connection  mywcom_fiber_connection/100009  fiber_splitter/100003        mywcom_fiber_segment/100021  in       1       1        out       1        1         False   cabinet/100003   fiber_splitter/100003     0101000020E61000006735A3858FEDC03F6C323257541C4A40  False
+mywcom_fiber_connection  mywcom_fiber_connection/100010  fiber_splitter/100004        mywcom_fiber_segment/100021  in       1       1        out       2        2         False   cabinet/100003   fiber_splitter/100004     0101000020E61000006735A3858FEDC03F6C323257541C4A40  False
+mywcom_fiber_connection  mywcom_fiber_connection/100011  fiber_splitter/100005        mywcom_fiber_segment/100021  in       1       1        out       3        3         False   cabinet/100003   fiber_splitter/100005     0101000020E61000006735A3858FEDC03F6C323257541C4A40  False
+mywcom_fiber_connection  mywcom_fiber_connection/100012  fiber_splitter/100006        mywcom_fiber_segment/100021  in       1       1        out       4        4         False   cabinet/100003   fiber_splitter/100006     0101000020E61000006735A3858FEDC03F6C323257541C4A40  False
+
+feature_type          id                           length  cable               housing                    root_housing     directed  forward  in_structure                  out_structure                 in_segment                   out_segment                  path                                                                    in_tick  out_tick  circuits  in_equipment  out_equipment  comsof_auto
+--------------------  ---------------------------  ------  ------------------  -------------------------  ---------------  --------  -------  ----------------------------  ----------------------------  ---------------------------  ---------------------------  ----------------------------------------------------------------------  -------  --------  --------  ------------  -------------  -----------
+mywcom_fiber_segment  mywcom_fiber_segment/100006  -       fiber_cable/100003  conduit/100000             ug_route/100006  True      False    building/100000               mywcom_route_junction/100000  -                            mywcom_fiber_segment/100007  0102000020E610000002000000184B2264B8CEC03F801A0C83521C4A40174B2264D...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100007  -       fiber_cable/100003  conduit/100001             ug_route/100014  True      False    mywcom_route_junction/100000  mywcom_route_junction/100002  mywcom_fiber_segment/100006  mywcom_fiber_segment/100008  0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40E315B657A...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100008  -       fiber_cable/100003  conduit/100002             ug_route/100010  True      False    mywcom_route_junction/100002  mywcom_route_junction/100001  mywcom_fiber_segment/100007  mywcom_fiber_segment/100009  0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40194B2264F...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100009  -       fiber_cable/100003  conduit/100003             ug_route/100015  True      False    mywcom_route_junction/100001  cabinet/100004                mywcom_fiber_segment/100008  -                            0102000020E610000005000000194B2264F3CFC03F589B64B24C1C4A40A0A7C3479...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100010  -       fiber_cable/100004  blown_fiber_tube/100000    ug_route/100006  True      False    building/100000               mywcom_route_junction/100000  -                            mywcom_fiber_segment/100011  0102000020E610000002000000184B2264B8CEC03F801A0C83521C4A40174B2264D...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100011  -       fiber_cable/100004  blown_fiber_tube/100001    ug_route/100014  True      False    mywcom_route_junction/100000  mywcom_route_junction/100002  mywcom_fiber_segment/100010  mywcom_fiber_segment/100012  0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40E315B657A...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100012  -       fiber_cable/100004  blown_fiber_tube/100002    ug_route/100009  True      True     mywcom_route_junction/100002  cabinet/100003                mywcom_fiber_segment/100011  mywcom_fiber_segment/100021  0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100013  -       fiber_cable/100005  ug_route/100016            ug_route/100016  False     False    manhole/100009                mywcom_route_junction/100003  mywcom_fiber_segment/100023  mywcom_fiber_segment/100014  0102000020E6100000030000001E8DC93F6FAEC03F74952C8A5D1C4A40194B2264B...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100014  -       fiber_cable/100005  ug_route/100007            ug_route/100007  False     False    mywcom_route_junction/100003  mywcom_route_junction/100000  mywcom_fiber_segment/100013  mywcom_fiber_segment/100015  0102000020E610000003000000A10036E7F9B4C03FCCE90334611C4A4028A97C95D...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100015  -       fiber_cable/100005  ug_route/100006            ug_route/100006  False     True     mywcom_route_junction/100000  building/100000               mywcom_fiber_segment/100014  -                            0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100016  -       fiber_cable/100006  ug_route/100011            ug_route/100011  False     False    manhole/100006                manhole/100007                -                            mywcom_fiber_segment/100017  0102000020E6100000020000001939C153CBDEC03FBC92FA5F151C4A40FA0C9E464...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100017  -       fiber_cable/100006  ug_route/100012            ug_route/100012  False     False    manhole/100007                manhole/100008                mywcom_fiber_segment/100016  mywcom_fiber_segment/100018  0102000020E610000002000000FA0C9E464AC2C03FD85BD08C2A1C4A40A642D14C8...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100018  -       fiber_cable/100006  ug_route/100013            ug_route/100013  False     False    manhole/100008                manhole/100009                mywcom_fiber_segment/100017  mywcom_fiber_segment/100022  0102000020E610000008000000A642D14C8CA6C03FF9CEA7283F1C4A401739C153D...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100019  -       fiber_cable/100006  ug_route/100016            ug_route/100016  False     False    manhole/100009                mywcom_route_junction/100003  mywcom_fiber_segment/100022  mywcom_fiber_segment/100020  0102000020E6100000030000001E8DC93F6FAEC03F74952C8A5D1C4A40194B2264B...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100020  -       fiber_cable/100006  ug_route/100008            ug_route/100008  False     False    mywcom_route_junction/100003  manhole/100010                mywcom_fiber_segment/100019  -                            0102000020E610000002000000A10036E7F9B4C03FCCE90334611C4A401839C153D...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100021  10.0    fiber_cable/100004  mywcom_fiber_slack/100000  cabinet/100003   True      -        cabinet/100003                cabinet/100003                mywcom_fiber_segment/100012  -                            0102000020E6100000020000006735A3858FEDC03F6C323257541C4A406735A3858...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100022  15.0    fiber_cable/100006  mywcom_fiber_slack/100001  manhole/100009   False     -        manhole/100009                manhole/100009                mywcom_fiber_segment/100018  mywcom_fiber_segment/100019  0102000020E6100000020000001E8DC93F6FAEC03F74952C8A5D1C4A401E8DC93F6...        -         -         -             -              -  False
+mywcom_fiber_segment  mywcom_fiber_segment/100023  5.0     fiber_cable/100005  mywcom_fiber_slack/100002  manhole/100009   False     -        manhole/100009                manhole/100009                -                            mywcom_fiber_segment/100013  0102000020E6100000020000001E8DC93F6FAEC03F74952C8A5D1C4A401E8DC93F6...        -         -         -             -              -  False
+
+feature_type        id                         length  root_housing    housing         cable               location                                            circuits  storage  job_id  comsof_auto
+------------------  -------------------------  ------  --------------  --------------  ------------------  --------------------------------------------------  --------  -------  ------  -----------
+mywcom_fiber_slack  mywcom_fiber_slack/100000  10.0    cabinet/100003  cabinet/100003  fiber_cable/100004  0101000020E61000006735A3858FEDC03F6C323257541C4A40         -  Rack     1245    False
+mywcom_fiber_slack  mywcom_fiber_slack/100001  15.0    manhole/100009  manhole/100009  fiber_cable/100006  0101000020E61000001E8DC93F6FAEC03F74952C8A5D1C4A40         -  -        -       False
+mywcom_fiber_slack  mywcom_fiber_slack/100002  5.0     manhole/100009  manhole/100009  fiber_cable/100005  0101000020E61000001E8DC93F6FAEC03F74952C8A5D1C4A40         -  -        -       False
+
+feature_type          id                           label  route                                                                   name   low_logical  high_logical  low_physical  high_physical  origin                             status  deleted  stale  physical
+--------------------  ---------------------------  -----  ----------------------------------------------------------------------  -----  -----------  ------------  ------------  -------------  ---------------------------------  ------  -------  -----  --------
+mywcom_line_of_count  mywcom_line_of_count/100003      -  -                                                                       MIL-1  1            8             1             8              fiber_olt/100000?side=out          Active  False    False  False
+mywcom_line_of_count  mywcom_line_of_count/100004      -  -                                                                       MIL-1  9            16            1             8              fiber_olt/100001?side=out          Active  False    False  False
+mywcom_line_of_count  mywcom_line_of_count/100005      -  0105000020E61000000D000000010200000002000000184B2264B8CEC03F801A0C8...  MIL-2  11           40            1             30             fiber_patch_panel/100000?side=out  Active  False    False  False
+
+feature_type                  id                                   label  route                                                                   line_of_count                container                          mapping                                                                 forward
+----------------------------  -----------------------------------  -----  ----------------------------------------------------------------------  ---------------------------  ---------------------------------  ----------------------------------------------------------------------  -------
+mywcom_line_of_count_section  mywcom_line_of_count_section/100009      -  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40                      mywcom_line_of_count/100003  fiber_olt/100000?side=out          -                                                                       True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100014      -  0102000020E6100000020000001E8DC93F6FAEC03F74952C8A5D1C4A401E8DC93F6...  mywcom_line_of_count/100003  mywcom_fiber_segment/100022        {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100015      -  0102000020E610000008000000A642D14C8CA6C03FF9CEA7283F1C4A401739C153D...  mywcom_line_of_count/100003  mywcom_fiber_segment/100018        {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100016      -  0102000020E610000002000000FA0C9E464AC2C03FD85BD08C2A1C4A40A642D14C8...  mywcom_line_of_count/100003  mywcom_fiber_segment/100017        {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100028      -  0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40E315B657A...  mywcom_line_of_count/100005  mywcom_fiber_segment/100011        {"1": [1], "2": [2], "3": [3], "4": [4]}                                True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100017      -  0102000020E6100000020000001939C153CBDEC03FBC92FA5F151C4A40FA0C9E464...  mywcom_line_of_count/100003  mywcom_fiber_segment/100016        {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100018      -  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40                      mywcom_line_of_count/100004  fiber_olt/100001?side=out          -                                                                       True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100019      -  0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...  mywcom_line_of_count/100004  mywcom_fiber_segment/100015        {"1": [13], "2": [14], "3": [15], "4": [16], "5": [17], "6": [18], ...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100020      -  0102000020E610000003000000A10036E7F9B4C03FCCE90334611C4A4028A97C95D...  mywcom_line_of_count/100004  mywcom_fiber_segment/100014        {"1": [13], "2": [14], "3": [15], "4": [16], "5": [17], "6": [18], ...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100029      -  0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40E315B657A...  mywcom_line_of_count/100005  mywcom_fiber_segment/100007        {"5": [1], "6": [2], "7": [3], "8": [4], "9": [5], "10": [6], "11":...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100021      -  0102000020E6100000030000001E8DC93F6FAEC03F74952C8A5D1C4A40194B2264B...  mywcom_line_of_count/100004  mywcom_fiber_segment/100013        {"1": [13], "2": [14], "3": [15], "4": [16], "5": [17], "6": [18], ...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100022      -  0102000020E6100000020000001E8DC93F6FAEC03F74952C8A5D1C4A401E8DC93F6...  mywcom_line_of_count/100004  mywcom_fiber_segment/100023        {"1": [13], "2": [14], "3": [15], "4": [16], "5": [17], "6": [18], ...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100023      -  0102000020E6100000030000001E8DC93F6FAEC03F74952C8A5D1C4A40194B2264B...  mywcom_line_of_count/100004  mywcom_fiber_segment/100019        {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100030      -  0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...  mywcom_line_of_count/100005  mywcom_fiber_segment/100012        {"1": [1], "2": [2], "3": [3], "4": [4]}                                True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100024      -  0102000020E610000002000000A10036E7F9B4C03FCCE90334611C4A401839C153D...  mywcom_line_of_count/100004  mywcom_fiber_segment/100020        {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100025      -  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40                      mywcom_line_of_count/100005  fiber_patch_panel/100000?side=out  -                                                                       True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100026      -  0102000020E610000002000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  mywcom_line_of_count/100005  mywcom_fiber_segment/100010        {"1": [1], "2": [2], "3": [3], "4": [4]}                                True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100027      -  0102000020E610000002000000184B2264B8CEC03F801A0C83521C4A40174B2264D...  mywcom_line_of_count/100005  mywcom_fiber_segment/100006        {"5": [1], "6": [2], "7": [3], "8": [4], "9": [5], "10": [6], "11":...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100031      -  0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40194B2264F...  mywcom_line_of_count/100005  mywcom_fiber_segment/100008        {"5": [1], "6": [2], "7": [3], "8": [4], "9": [5], "10": [6], "11":...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100032      -  0102000020E6100000020000006735A3858FEDC03F6C323257541C4A406735A3858...  mywcom_line_of_count/100005  mywcom_fiber_segment/100021        {"1": [1], "2": [2], "3": [3], "4": [4]}                                True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100033      -  0102000020E610000005000000194B2264F3CFC03F589B64B24C1C4A40A0A7C3479...  mywcom_line_of_count/100005  mywcom_fiber_segment/100009        {"5": [1], "6": [2], "7": [3], "8": [4], "9": [5], "10": [6], "11":...  True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100034      -  0101000020E61000006735A3858FEDC03F6C323257541C4A40                      mywcom_line_of_count/100005  fiber_splitter/100003?side=in      {"1": [1]}                                                              True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100035      -  0101000020E61000006735A3858FEDC03F6C323257541C4A40                      mywcom_line_of_count/100005  fiber_splitter/100004?side=in      {"2": [1]}                                                              True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100036      -  0101000020E61000006735A3858FEDC03F6C323257541C4A40                      mywcom_line_of_count/100005  fiber_splitter/100005?side=in      {"3": [1]}                                                              True
+mywcom_line_of_count_section  mywcom_line_of_count_section/100037      -  0101000020E61000006735A3858FEDC03F6C323257541C4A40                      mywcom_line_of_count/100005  fiber_splitter/100006?side=in      {"4": [1]}                                                              True
+
+feature_type           id                            location                                            comsof_auto
+---------------------  ----------------------------  --------------------------------------------------  -----------
+mywcom_route_junction  mywcom_route_junction/100000  0101000020E6100000174B2264DACAC03FFC13F7C9501C4A40  False
+mywcom_route_junction  mywcom_route_junction/100001  0101000020E6100000194B2264F3CFC03F589B64B24C1C4A40  False
+mywcom_route_junction  mywcom_route_junction/100002  0101000020E6100000E315B657A0CFC03FC4290FF54C1C4A40  False
+mywcom_route_junction  mywcom_route_junction/100003  0101000020E6100000A10036E7F9B4C03FCCE90334611C4A40  False
+
+feature_type  id           name   root_housing     housing          labor_costs  location                                            circuits  installation_date  job_id  comsof_auto
+------------  -----------  -----  ---------------  ---------------  -----------  --------------------------------------------------  --------  -----------------  ------  -----------
+rack          rack/100000  Rack1  building/100000  building/100000            -  0101000020E6100000184B2264B8CEC03F801A0C83521C4A40         -                  -       -  False
+
+feature_type    id                     name        root_housing    housing         specification                                labor_costs  location                                            circuits  installation_date  job_id  comsof_auto
+--------------  ---------------------  ----------  --------------  --------------  -------------------------------------------  -----------  --------------------------------------------------  --------  -----------------  ------  -----------
+splice_closure  splice_closure/100000  XX-SC-6000  manhole/100009  manhole/100009  splice_closure_spec/CS-FOSC-400B4-S24-4-NNN            -  0101000020E61000001E8DC93F6FAEC03F74952C8A5D1C4A40         -                  -       -  False
+
+feature_type  id               length  in_structure                  out_structure                 path                                                                    labor_costs  cover_type  comsof_auto
+------------  ---------------  ------  ----------------------------  ----------------------------  ----------------------------------------------------------------------  -----------  ----------  -----------
+ug_route      ug_route/100006       -  mywcom_route_junction/100000  building/100000               0102000020E610000002000000174B2264DACAC03FFC13F7C9501C4A40184B2264B...            -  -           False
+ug_route      ug_route/100007       -  mywcom_route_junction/100000  mywcom_route_junction/100003  0102000020E610000003000000174B2264DACAC03FFC13F7C9501C4A4028A97C95D...            -  -           False
+ug_route      ug_route/100008       -  manhole/100010                mywcom_route_junction/100003  0102000020E6100000020000001839C153D3E5C03FC42CA1DC7C1C4A40A10036E7F...            -  Paving      False
+ug_route      ug_route/100009       -  mywcom_route_junction/100002  cabinet/100003                0102000020E610000006000000E315B657A0CFC03FC4290FF54C1C4A40CDA13A46F...            -  -           False
+ug_route      ug_route/100010       -  mywcom_route_junction/100001  mywcom_route_junction/100002  0102000020E610000002000000194B2264F3CFC03F589B64B24C1C4A40E315B657A...            -  -           False
+ug_route      ug_route/100011       -  manhole/100007                manhole/100006                0102000020E610000002000000FA0C9E464AC2C03FD85BD08C2A1C4A401939C153C...            -  Paving      False
+ug_route      ug_route/100012       -  manhole/100008                manhole/100007                0102000020E610000002000000A642D14C8CA6C03FF9CEA7283F1C4A40FA0C9E464...            -  Paving      False
+ug_route      ug_route/100013       -  manhole/100009                manhole/100008                0102000020E6100000080000001E8DC93F6FAEC03F74952C8A5D1C4A401739C1538...            -  Paving      False
+ug_route      ug_route/100014       -  mywcom_route_junction/100002  mywcom_route_junction/100000  0102000020E610000002000000E315B657A0CFC03FC4290FF54C1C4A40174B2264D...            -  -           False
+ug_route      ug_route/100015       -  cabinet/100004                mywcom_route_junction/100001  0102000020E6100000050000009EA7C387B1FCC03F803D3D98431C4A409EA7C3472...            -  -           False
+ug_route      ug_route/100016       -  mywcom_route_junction/100003  manhole/100009                0102000020E610000003000000A10036E7F9B4C03FCCE90334611C4A40194B2264B...            -  Paving      False
+
+

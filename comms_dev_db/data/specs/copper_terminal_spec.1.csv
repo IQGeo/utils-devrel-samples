@@ -1,0 +1,26 @@
+retired,manufacturer,name,model,n_copper_in_ports,type
+false,Rapink,100pr Terminal,100pr Terminal,100,Mounted
+false,Rapink,10pr Terminal,10pr Terminal,10,Mounted
+false,Rapink,12pr Terminal,12pr Terminal,12,Rapink
+false,Rapink,13pr Terminal,13pr Terminal,13,Mounted
+false,Rapink,150pr Terminal,150pr Terminal,150,Mounted
+false,Rapink,16pr Terminal,16pr Terminal,16,Mounted
+false,Rapink,18pr Terminal,18pr Terminal,18,Mounted
+false,Rapink,1pr Terminal,1pr Terminal,1,Mounted
+false,Rapink,200pr Terminal,200pr Terminal,200,Mounted
+false,Rapink,20pr Terminal,20pr Terminal,20,Passthrough
+false,Rapink,24pr Terminal,24pr Terminal,24,Passthrough
+false,Siemon,25pr Terminal,25pr Terminal,25,Passthrough
+false,Siemon,2pr Terminal,2pr Terminal,2,Passthrough
+false,Siemon,300pr Terminal,300pr Terminal,300,Passthrough
+false,Siemon,37pr Terminal,37pr Terminal,37,Passthrough
+false,Siemon,3pr Terminal,3pr Terminal,3,Delaminated
+false,Siemon,400pr Terminal,400pr Terminal,400,Delaminated
+false,Altex,4pr Terminal,4pr Terminal,4,Delaminated
+false,Altex,50pr Terminal,50pr Terminal,50,Drop
+false,Altex,550pr Terminal,550pr Terminal,550,Drop
+false,Altex,5pr Terminal,5pr Terminal,5,Drop
+false,Altex,600pr Terminal,600pr Terminal,600,Laminated
+false,Altex,6pr Terminal,6pr Terminal,6,Drop
+false,Altex,75pr Terminal,75pr Terminal,75,Drop
+false,Altex,Migration Terminal,Migration Terminal,10,Drop

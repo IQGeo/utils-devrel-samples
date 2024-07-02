@@ -1,0 +1,41 @@
+Request: POST:/modules/comms/api/v1/resourceInventoryManagement/resource/cable
+Response: 201 (201 Created)
+
+
+Request: POST:/modules/comms/api/v1/resourceInventoryManagement/resource/manhole
+Response: 201 (201 Created)
+
+
+DATABASE CHANGES: AFTER CREATE STRUCTURE AND CABLE
+   update data.conduit(32) fields=(length,out_structure,path)
+   update data.conduit(33) fields=(length,out_structure,path)
+   update data.conduit(156) fields=(length,out_structure,path)
+   update data.conduit(157) fields=(length,out_structure,path)
+   insert data.conduit(100000)
+   insert data.conduit(100001)
+   insert data.conduit(100002)
+   insert data.conduit(100003)
+   update data.fiber_cable(3) fields=(path)
+   insert data.fiber_cable(100000)
+   insert data.manhole(100000)
+   update data.mywcom_fiber_segment(41) fields=(out_segment,out_structure,out_tick,path)
+   update data.mywcom_fiber_segment(42) fields=(in_segment)
+   insert data.mywcom_fiber_segment(100000)
+   insert data.mywcom_fiber_segment(100001)
+   insert data.mywcom_fiber_segment(100002)
+   update data.mywcom_line_of_count(2) fields=(route)
+   update data.mywcom_line_of_count_section(90) fields=(route)
+   insert data.mywcom_line_of_count_section(100000)
+   update data.ug_route(380) fields=(length,out_structure,path)
+   insert data.ug_route(100000)
+
+
+SUB TEST : Errors
+    Request: POST:/modules/comms/api/v1/resourceInventoryManagement/resource/ABCD
+    Response: 404 (404 Not Found)
+    
+    
+    Request: POST:/modules/comms/api/v1/resourceInventoryManagement/resource/cable
+    Response: 400 (400 Bad Request)
+    
+    

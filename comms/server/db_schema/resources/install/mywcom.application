@@ -1,0 +1,56 @@
+{
+    "name": "mywcom",
+    "external_name": "{:mywcom_app_name}",
+    "description": "{:mywcom_app_desc}",
+    "javascript_file": "modules/comms/js/main.mywcom.js",
+    "image_url": "images/application_standard.png",
+    "for_online_app": true,
+    "for_native_app": true,
+    "layers": [
+        {
+            "name": "Google",
+            "snap": false
+        },
+        {
+            "name": "Google Hybrid",
+            "snap": false
+        },
+        {
+            "name": "Google Sat",
+            "snap": false
+        },
+        {
+            "name": "None",
+            "snap": false
+        },
+        {
+            "name": "mywcom_structures",
+            "snap": true
+        },
+        {
+            "name": "mywcom_cable_segments",
+            "snap": false
+        },
+        {
+            "name": "mywcom_circuit_segments",
+            "snap": false
+        },
+        {
+            "name": "mywcom_conduit_runs",
+            "snap": false
+        },
+        {
+            "name": "mywcom_equipment",
+            "snap": false
+        },
+        {   "name": "mywcom_conduits",
+            "snap": false
+        },
+        {   "name": "mywcom_cables", 
+            "snap": false
+        },
+        {   "name": "Notes",
+            "snap": false
+        }
+    ]
+}

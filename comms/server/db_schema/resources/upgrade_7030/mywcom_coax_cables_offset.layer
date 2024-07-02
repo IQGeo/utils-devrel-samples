@@ -1,0 +1,19 @@
+{
+    "name": "mywcom_coax_cables_offset",
+    "display_name": "{:coaxial_cables_offset_layer_display_name}",
+    "category": "overlay",
+    "code": "mywcom_cxco",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": ""
+    },
+    "transparency": 0,
+    "min_scale": 14,
+    "max_scale": 22,
+    "feature_types": []
+}

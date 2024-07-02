@@ -1,0 +1,758 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Client in Chrome",
+            "url": "http://localhost:${env:APP_PORT}",
+            "webRoot": "${workspaceFolder}",
+            "sourceMapRenames": true,
+            "sourceMapPathOverrides": {
+                "file:///myWorldClient/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "file:///myWorldApps/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",,
+                "file:///myWorldClientTests/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "file:///myWorldClientNativeServices/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "webpack:///./~/*": "/opt/iqgeo/platform/WebApps/myworldapp/node_modules/*",
+                "webpack:////*": "/*",
+                "webpack://?:*/*": "${workspaceFolder}/*",
+                "webpack:///([a-z]):/(.+)": "$1:/$2"
+            }
+        },
+        {
+            "name": "Python: attach to Apache",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "/opt/iqgeo/platform/WebApps/myworldapp",
+                    "remoteRoot": "/opt/iqgeo/platform/WebApps/myworldapp"
+                }
+            ]
+        },
+        // This allows you to run a script from the command line and debug it.
+        // Run the python script with:
+        //    python -m debugpy --wait-for-client --listen 5679 <python script> <args to script>
+        // and then run this task.
+        {
+            "name": "Python: attach to script",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5679
+            }
+        },
+        {
+            "name": "Database Upgrade",
+            "type": "python",
+            "request": "launch",
+            "program": "/opt/iqgeo/platform/Tools/myw_db.py",
+            "console": "integratedTerminal",
+            "args": ["${env:MYW_COMMS_DEV_DB}", "upgrade", "comms", "7131"],
+            "args": ["${env:MYW_COMMS_DEV_DB}", "upgrade", "comms", "7131"],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../",
+                "MYW_PYTHON_SITE_DIRS": "${workspaceFolder}/../../../Externals/lib/python3.10/site-packages/"
+            }
+        },
+        {
+            "name": "Build Database Task",
+            "type": "python",
+            "request": "launch",
+            "program": "/opt/iqgeo/platform/Tools/myw_db.py",
+            "console": "integratedTerminal",
+            "args": [
+                "${env:MYW_COMMS_DEV_DB}",
+                "run",
+                "./comms_dev_db/utils/connect_coax_cables.py"
+            ],
+            "env": {
+                "PATH": "/opt/iqgeo/platform/WebApps/myworldapp/modules/dev_tools/tools:$PATH",
+                "MYW_PRODUCT_ROOT_DIR": "/opt/iqgeo/platform/WebApps",
+                "MYW_PYTHON_SITE_DIRS": "/opt/iqgeo/platform/Externals/lib/python3.10/site-packages"
+            }
+        },
+        {
+            "name": "Python: Debug myw_db",
+            "type": "python",
+            "request": "launch",
+            "program": "/opt/iqgeo/platform/Tools/myw_db.py",
+            // To run a specific operation change the line below. You can put breakpoints into test.py in VS code editor
+            "args": [
+                "iqg_comms_dev",
+                "run",
+                "/opt/iqgeo/platform/WebApps/myworldapp/modules/comms_dev_db/utils/build_circuits.py"
+            ],
+            "env": {
+                "PATH": "/opt/iqgeo/platform/WebApps/myworldapp/modules/dev_tools/tools:$PATH",
+                "MYW_PRODUCT_ROOT_DIR": "/opt/iqgeo/platform/WebApps",
+                "MYW_PYTHON_SITE_DIRS": "/opt/iqgeo/platform/Externals/lib/python3.10/site-packages"
+            }
+        },
+        {
+            "name": "Tests: Comms DevDB Validation Tests",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms_dev_db/utils/comms_validation_tests.py",
+            "console": "integratedTerminal",
+            "args": ["${input:testAction}", "${input:validationTest}", "cdiff"],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../"
+            }
+        },
+        {
+            "name": "Tests: Client In Selenium",
+            "type": "python",
+            "request": "launch",
+            "program": "comms_dev_db/tests/client/comms_client_tests.py",
+            "console": "integratedTerminal",
+            "args": [
+                "${input:testAction}",
+                "${input:clientTest}",
+                // "cdiff",
+                "--delay",
+                "2"
+            ],
+            "env": {
+                "MYW_PYTHON_SITE_DIRS": "/opt/iqgeo/platform/Externals/lib/python3.10/site-packages"
+            }
+        },
+        {
+            "name": "Tests: Comms Server Tests",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms_dev_db/tests/server/comms_server_tests.py",
+            "console": "integratedTerminal",
+            "args": ["${input:testAction}", "${input:serverTest}"],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../",
+                "MYW_PYTHON_SITE_DIRS": "${workspaceFolder}/../../../Externals/lib/python3.10/site-packages/"
+            }
+        },
+        {
+            "name": "Tests: Comms Engine Tests",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms_dev_db/tests/server/comms_engine_tests.py",
+            "console": "integratedTerminal",
+            "args": ["${input:testAction}", "${input:engineTest}"],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../",
+                "MYW_PYTHON_SITE_DIRS": "${workspaceFolder}/../../../Externals/lib/python3.10/site-packages/"
+            }
+        },
+        {
+            "name": "Tests: Comms JS API Tests",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms_dev_db/tests/js/comms_js_api_tests.py",
+            "console": "integratedTerminal",
+            "args": ["comms_dev_db", "${input:testAction}", "${input:jsApiTests}", "cdiff"],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../",
+                "MYW_PYTHON_SITE_DIRS": "${workspaceFolder}/../../../Externals/lib/python3.10/site-packages/"
+            }
+        },
+        {
+            "name": "Tests: Comms JS API Native",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms_dev_db/tests/js/comms_js_api_tests_native.py",
+            "console": "integratedTerminal",
+            "args": ["comms_dev_db", "${input:testAction}", "${input:jsApiTests}"],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../"
+            }
+        },
+        {
+            "name": "Tests: Comms JS API Native (Debug)",
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "modules/dev_tools/tests/js/js_tests_native.js",
+            "args": ["comms_dev_db", "http://iqgeo", "run", "${input:jsApiTests}"],
+            "localRoot": "/opt/iqgeo/platform/WebApps/myworldapp",
+            "remoteRoot": "/opt/iqgeo/platform/WebApps/myworldapp",
+            "sourceMapRenames": true,
+            "sourceMapPathOverrides": {
+                "file:///myWorldClient/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "file:///myWorldApps/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "file:///myWorldClientTests/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "file:///myWorldNativeServices/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "webpack:///./~/*": "/opt/iqgeo/platform/WebApps/myworldapp/node_modules/*",
+                "webpack:////*": "/*",
+                "webpack://?:*/*": "${workspaceFolder}/../../../*",
+                "webpack:///([a-z]):/(.+)": "$1:/$2"
+            },
+            "skipFiles": ["<node_internals>/**"],
+            "presentation": {
+                "group": "tests",
+                "order": 4
+            }
+        },
+        {
+            "name": "Tests: Comms JS API (Debug)",
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "modules/dev_tools/tests/js/js_tests.js",
+            "args": ["comms_dev_db", "http://iqgeo", "run", "${input:jsApiTests}"],
+            "localRoot": "/opt/iqgeo/platform/WebApps/myworldapp",
+            "remoteRoot": "/opt/iqgeo/platform/WebApps/myworldapp",
+            "sourceMapRenames": true,
+            "sourceMapPathOverrides": {
+                "file:///myWorldClient/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "file:///myWorldApps/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "file:///myWorldClientTests/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "file:///myWorldNativeServices/*": "/opt/iqgeo/platform/WebApps/myworldapp/*",
+                "webpack:///./~/*": "/opt/iqgeo/platform/WebApps/myworldapp/node_modules/*",
+                "webpack:////*": "/*",
+                "webpack://?:*/*": "${workspaceFolder}/../../../*",
+                "webpack:///([a-z]):/(.+)": "$1:/$2"
+            },
+            "skipFiles": ["<node_internals>/**"],
+            "presentation": {
+                "group": "tests",
+                "order": 4
+            }
+        },
+        {
+            "name": "Tests: Comms Tools Tests",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms_dev_db/tests/tools/comms_tools_tests.py",
+            "console": "integratedTerminal",
+            "args": ["${input:testAction}", "${input:ToolsTests}", "cdiff"],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../",
+                "MYW_PYTHON_SITE_DIRS": "${workspaceFolder}/../../../Externals/lib/python3.10/site-packages/"
+            }
+        },
+        {
+            "name": "Tests: Comsof Server Tests",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms_dev_db/tests/comsof/server/comsof_server_tests.py",
+            "console": "integratedTerminal",
+            "args": ["${input:testAction}", "${input:comsofServerTest}"],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../",
+                "MYW_PYTHON_SITE_DIRS": "${workspaceFolder}/../../../Externals/lib/python3.10/site-packages/"
+            }
+        },
+        {
+            "name": "Tests: Comsof Engine Tests",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms_dev_db/tests/comsof/engine/comsof_engine_tests.py",
+            "console": "integratedTerminal",
+            "args": ["${input:testAction}", "${input:comsofEngineTest}"],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../",
+                "MYW_PYTHON_SITE_DIRS": "${workspaceFolder}/../../../Externals/lib/python3.10/site-packages/"
+            }
+        },
+        {
+            "name": "Comms DB tool (install)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms/tools/comms_db.py",
+            "console": "integratedTerminal",
+            "args": [
+                "${env:MYW_COMMS_DEV_DB}",
+                "install",
+                "${input:commsDBModel}"
+            ],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../",
+                "MYW_PYTHON_SITE_DIRS": "${workspaceFolder}/../../../Externals/lib/python3.10/site-packages/"
+            }
+        },
+        {
+            "name": "Comms DB tool (validate)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms/tools/comms_db.py",
+            "console": "integratedTerminal",
+            "args": [
+                "${env:MYW_COMMS_DEV_DB}",
+                "validate",
+                "${input:commsDBValidateWhat}",
+                "${input:commsDBCategory}"
+            ],
+            "env": {
+                "MYW_APP_ROOT": "${workspaceFolder}/../../",
+                "MYW_PYTHON_SITE_DIRS": "${workspaceFolder}/../../../Externals/lib/python3.10/site-packages/"
+            }
+        },
+        {
+            "name": "Utils: Compare Prep",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/comms_dev_db/utils/compare_prep.py",
+            "console": "integratedTerminal",
+            "args": ["/tmp/structure_contents/actual.txt"]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "testAction",
+            "description": "Test Comand",
+            "type": "pickString",
+            "options": ["reset", "run", "check", "accept", "list"],
+            "default": "run"
+        },
+        {
+            "id": "validationTest",
+            "description": "Test Name",
+            "type": "pickString",
+            "options": [
+                "modules",
+                "patches",
+                "enums",
+                "dd",
+                "datasources",
+                "layers",
+                "networks",
+                "applications",
+                "roles",
+                "users",
+                "settings",
+                "rights",
+                "data",
+                "deltas",
+                "sequences",
+                "structures",
+                "routes",
+                "conduits",
+                "enclosures",
+                "equipment",
+                "cables",
+                "circuits",
+                "specs",
+                "config",
+                "data_integrity",
+                "designs"
+            ]
+        },
+        {
+            "id": "clientTest",
+            "description": "Test Name",
+            "type": "pickString",
+            "options": [
+                "",
+                "add_assembly",
+                "add_cable",
+                "add_conduits",
+                "add_equipment_from_tree",
+                "add_marker",
+                "add_route",
+                "add_structure",
+                "cable_fields",
+                "cable_tree",
+                "change_tracking",
+                "color_scheme_config", //ENH: This test needs to be fixed. It's commented out so it doesn't run.
+                "config_settings",
+                "connect_cables",
+                "connect_port",
+                "copy_equipment",
+                "copper_network",
+                "customer_address",
+                "cut_cable",
+                "data_validation",
+                "delete_cable",
+                "delete_conduits",
+                "delete_route",
+                "delete_structure",
+                "design_markup",
+                "design_mode",
+                "design_permissions",
+                "design_rules",
+                "design_toolbar",
+                "design_toolbar_changes",
+                "equipment_palette",
+                "equipment_tree_circuits",
+                "equipment_tree_options",
+                "equipment_tree_otdr",
+                "equipment_tree_proposed",
+                "equipment_tree_terminations",
+                "equipment_tree_terminations_copper",
+                "fiber_color_schemes",
+                "import_data",
+                "labor_costs_chooser",
+                "labor_costs_manager",
+                "loop_makeup_report",
+                "layout_strand",
+                "layout_strand_split",
+                "loc_edit",
+                "master_edit_with_right",
+                "master_edit_no_right",
+                "move_equipment",
+                "report_preview_dialog",
+                "route_circuit",
+                "schematics",
+                "set_tick_mark",
+                "slack_loops",
+                "spec_chooser",
+                "spec_manager",
+                "split_route",
+                "structure_palette",
+                "structure_replace",
+                "tools_connect",
+                "tools_layout",
+                "tools_palette",
+                "tools_vw",
+                "update_cable",
+                "update_conduits",
+                "update_route",
+                "user_groups_manager",                
+            ],
+            "default": ""
+        },
+        {
+            "id": "engineTest",
+            "description": "Test Name",
+            "type": "pickString",
+            "options": [
+                "",
+                "cable_split",
+                "circuit_conflicts",
+                "circuit_path_update",
+                "custom_mgr_class",
+                "data_import",
+                "data_preview",
+                "delta_connections",
+                "delta_merge_cc4827",
+                "delta_merge_cc5462",
+                "delta_merge_conflicts1",
+                "delta_merge_nb120",
+                "delta_merge_nb301",
+                "delta_merge_nb335",
+                "delta_merge_nu23",
+                "delta_validate",
+                "delta_conflicts",
+                "fiber_paths",
+                "fiber_trace_bulk",
+                "fiber_trace_directed",
+                "fiber_trace_undirected",
+                "coax_trace_directed",
+                "copper_trace_directed",
+                "copper_trace_bulk",
+                "route_network"
+            ],
+            "default": ""
+        },
+        {
+            "id": "serverTest",
+            "description": "Test Name",
+            "type": "pickString",
+            "options": [
+                "",              
+                "blown_fiber",
+                "cable_delete",
+                "cable_path",
+                "cable_rerouting",
+                "cable_routing",
+                "cable_split",
+                "cable_offset",
+                "cable_offset_update",
+                "circuit_routing",
+                "circuit_unrouting",
+                "circuit_chain",
+                "copper_network",
+                "conduit_connect",
+                "conduit_delete",
+                "conduit_disconnect_at",
+                "conduit_move",
+                "conduit_path",
+                "conduit_routing",
+                "conduit_update",
+                "data_import_configs",
+                "data_import",
+                "data_preview",
+                "delta_changes",
+                "delta_conflicts",
+                "delta_merge_feature",
+                "delta_merge",
+                "delta_revert",
+                "deleta_validation",
+                "delta_bounds",
+                "equipment_assemblies",
+                "equipment_cables",
+                "equipment_delete",
+                "feature_transaction",
+                "fiber_connect",
+                "fiber_disconnect",
+                "fiber_network",
+                "fiber_paths",
+                "fiber_path_finder",
+                "fiber_path_finder_circuit",
+                "fiber_path_finder_async",
+                "fiber_path_finder_multipaths",
+                "fiber_trace",
+                "loc_get",
+                "loc_ripple",
+                "loc_update",
+                "loc_conflicts",
+                "loc_maintain",              
+                "loc_overlap_designs",
+                "loc_disconnect_rename_design",
+                "loc_disconnect_split_design",
+                "route_contents",
+                "route_delete",
+                "route_split",
+                "route_update",
+                "slack_add",
+                "slack_delete",
+                "slack_update",
+                "struct_conduits",
+                "structure_add",
+                "structure_contents",
+                "structure_delete",
+                "structure_update",
+                "structure_replace",
+                "update_setting",
+                "validate_setting",
+                "validation_area",
+                "task_manager",
+                "tmf_network_trace",
+                "tmf_get",
+                "tmf_get_many",
+                "tmf_delete",
+                "tmf_create",
+                "tmf_update",
+                "tmf_metadata",
+                "tmf_circuit"
+            ],
+            "default": ""
+        },
+        {
+            "id": "comsofEngineTest",
+            "description": "Test Name",
+            "type": "pickString",
+            "options": [
+                "",
+                "import_tiny",
+                "import_small",
+                "import_maryland",
+                "import_gilbert_extract",
+                "import_alpha_poc",
+                "import_feeder",
+                "import_cdif",
+                "ws_tool_list",
+                "ws_tool_initialise",
+                "ws_tool_populate",
+                "ws_tool_run_cloud",
+                "ws_tool_acquire_licence",
+                "ws_tool_import",
+                "ws_tool_import_broken",
+                "ws_tool_clear",
+                "ws_tool_accept",
+                "ws_tool_rec",
+                "ws_tool_execute"
+            ],
+            "default": ""
+        },
+        {
+            "id": "comsofServerTest",
+            "description": "Test Name",
+            "type": "pickString",
+            "options": [
+                "",
+                "initialise",
+                "populate",
+                "run",
+                "acquire_licence",
+                "import",
+                "execute",
+                "clear",
+                "accept",
+                "features",
+                "transaction",
+                "view_rules",
+                "file_status",
+                "file_download",
+                "workspace_download"
+            ],
+            "default": ""
+        },
+        {
+            "id": "jsApiTests",
+            "type": "pickString",
+            "description": "Test Name",
+            "options": [
+                "Structure_Services_Contents",
+                "Structure_Services_Add",
+                "Structure_Services_Update",
+                "Structure_Services_Delete",
+                "Structure_Services_Replace",
+                "Route_Services_Contents",
+                "Route_Services_Update",
+                "Route_Services_Delete",
+                "Route_Services_Split",
+                "Conduit_Services_Update",
+                "Conduit_Services_Delete",
+                "Conduit_Services_Path",
+                "Conduit_Services_Routing",
+                "Conduit_Services_Move_To",
+                "Conduit_Services_Chain",
+                "Conduit_Services_Connect",
+                "Conduit_Services_Disconnect",
+                "Conduit_Manager_Plugin_Route_Nested_Conduits",
+                "Coax_Services_Trace_Directed",
+                "Coax_Offset_Services_Create",
+                "Copper_Services_Trace_Directed",
+                "Copper_Services_Trace_Bulk",
+                "Equipment_Services_Cables",
+                "Equipment_Services_Delete",
+                "Equipment_Services_Assemblies",
+                "Equipment_Services_Coax",
+                "Slack_Services_Add",
+                "Slack_Services_Delete",
+                "Slack_Services_Update",
+                "Cable_Services_Path",
+                "Cable_Services_Routing",
+                "Cable_Services_Rerouting",
+                "Cable_Services_Delete",
+                "Cable_Services_Cutting",
+                "Fiber_Services_Network",
+                "Fiber_Services_Trace",
+                "Fiber_Services_Trace_Directed",
+                "Fiber_Services_Trace_Undirected",
+                "Fiber_Services_Trace_Bulk",
+                "Fiber_Services_Paths",
+                "Fiber_Services_Connect",
+                "Fiber_Services_Disconnect",
+                "Circuit_Services_Routing",
+                "Circuit_Services_Unrouting",
+                "Delta_Services_Validation",
+                "Delta_Services_Changes",
+                "Delta_Services_Revert",
+                "Delta_Services_Conflicts",
+                "Delta_Services_Bounds",
+                "Validation_Services_Area",
+                "Validation_Services_Delta_Validate",
+                "Feature_Services_Transaction",
+                "Feature_Services_Insert",
+                "Feature_Services_Bulk_Move",
+                "Cable_Manager_Plugin_Modify_Slack",
+                "Cable_Manager_Plugin_Set_Tick_Mark",
+                "Cable_Manager_Plugin_Connect_Coax_Offset",
+                "Design_Rules_Plugin_Validation",
+                "Structure_Plugin_Route_Tree",
+                "Structure_Plugin_Struct_Cable_Tree",
+                "Structure_Plugin_Struct_Conduit_Tree",
+                "Structure_Plugin_Struct_Cable_Pins",
+                "Structure_Plugin_Equipment_Tree",
+                "Structure_Plugin_Struct_Conduits",
+                "Structure_Plugin_Trace_Trees",
+                "Delta_Online_Services_Merge",
+                "Delta_Online_Services_Merge_Feature",
+                "Validation_Plugin_Set_to_base",
+                "Validation_Plugin_Set_to_master",
+                "Validation_Plugin_Conflict_Display",
+                "Reporting_html_stream",
+                "Reporting_csv_stream",
+                "Reporting_pdf_stream",
+                "Reporting_xlsx_stream",
+                "Reporting_Connectivity_Report",
+                "Reporting_Equipment_Report",
+                "Reporting_Validation_Report",
+                "Reporting_Feature_Change_Report",
+                "Reporting_Feature_Set_Report",
+                "Reporting_Trace_Report",
+                "Reporting_Fiber_Trace_Report",
+                "Reporting_Bill_of_Materials_Report",
+                "Reporting_Fiber_Report",
+                "Reporting_Circuit_Report",
+                "Reporting_Equip_Circuit_Report",
+                "Reporting_Spec_Report",
+                "Reporting_Labor_Costs_Report",
+                "Path_Finder_Services_Path",
+                "Line_Of_Count_Plugin_Get",
+                "Line_Of_Count_Plugin_Edit",
+                "Line_Of_Count_Plugin_Ripple",
+                "Line_Of_Count_Plugin_Connections",
+                "Line_Of_Count_Plugin_Maintain",
+                "Line_Of_Count_Plugin_Conflicts",
+                "Line_Of_Count_Services_Get",
+                "Line_Of_Count_Services_Edit",
+                "Line_Of_Count_Services_Ripple",
+                "Line_Of_Count_Services_Connections"
+            ]
+        },
+        {
+            "id": "ToolsTests",
+            "description": "Test Name:",
+            "type": "pickString",
+            "options": [
+                "upgrade_devdb_5211",
+                "upgrade_devdb_6120",
+                "db_validate",
+                "db_list",
+                "db_import",
+                "db_export"
+            ]
+        },
+        {
+            "id": "commsDBOperation",
+            "description": "Operation Name",
+            "type": "pickString",
+            "options": ["validate", "install", "validate", "list", "import", "export"],
+            "default": ""
+        },
+        {
+            "id": "commsDBValidateWhat",
+            "description": "Operation Name",
+            "type": "pickString",
+            "options": ["data", "data", "config"],
+            "default": ""
+        },
+        {
+            "id": "commsDBValidateCategory",
+            "description": "Category",
+            "type": "pickString",
+            "options": [
+                "structures",
+                "routes",
+                "equipment",
+                "conduits",
+                "conduit_runs",
+                "cables",
+                "segments",
+                "connections",
+                "circuits",
+                "designs",
+                "specs",
+                "fiberColors",
+                "fiberColorSchemes",
+                "line_of_count",
+                "*",
+            ],
+            "default": ""
+        },
+        {
+            "id": "commsDBModel",
+            "description": "Category",
+            "type": "pickString",
+            "options": [
+                "coax",
+                "conduits",
+                "copper",
+                "designs",
+                "fiber",
+                "ftth",
+                "internals",
+                "routes",
+                "structures"
+            ],
+            "default": ""
+        }
+    ]
+}

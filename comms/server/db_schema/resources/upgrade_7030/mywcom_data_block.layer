@@ -1,0 +1,25 @@
+{
+    "name": "mywcom_data_block",
+    "display_name": "{:mywcom_data_block_external_name}",
+    "category": "overlay",
+    "code": "mywcom_cxdb",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": ""
+    },
+    "transparency": 0,
+    "min_scale": 17,
+    "max_scale": 22,
+    "feature_types": [
+        {
+            "name": "mywcom_data_block",
+            "field_name": "location",
+            "point_style": "x:#ff0000:16:#ff0000"
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+name,id,type,manufacturer,n_copper_in_ports,n_copper_out_ports,cost_currency,labor_costs,cost,retired
+BT-10,1,,,10,20,,,,false

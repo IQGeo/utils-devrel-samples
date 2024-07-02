@@ -1,0 +1,2867 @@
+
+SUB TEST : Get
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/cable/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Cable",
+       "characteristic": [
+          {
+             "name": "type",
+             "value": "External"
+          },
+          {
+             "name": "tickMarkSpacing",
+             "value": null
+          },
+          {
+             "name": "owner",
+             "value": "Acme Co"
+          },
+          {
+             "name": "jobId",
+             "value": "19347"
+          },
+          {
+             "name": "installationDate",
+             "value": "2010-09-23"
+          },
+          {
+             "name": "diameter",
+             "value": 9.9
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          },
+          {
+             "name": "secondaryGeometries",
+             "value": {
+                "placement_path": {
+                   "coordinates": [
+                      [
+                         0.1364935934544,
+                         52.224057930009
+                      ],
+                      [
+                         0.1352356374264,
+                         52.2234101509367
+                      ],
+                      [
+                         0.1346167176962,
+                         52.2233292292345
+                      ],
+                      [
+                         0.1328236609697,
+                         52.2241680145429
+                      ],
+                      [
+                         0.1335887610912,
+                         52.2241630853905
+                      ],
+                      [
+                         0.1337604224682,
+                         52.2245989025004
+                      ],
+                      [
+                         0.1346877962351,
+                         52.2238718536652
+                      ]
+                   ],
+                   "type": "LineString"
+                }
+             }
+          }
+       ],
+       "count": 144,
+       "directed": true,
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/cable/1",
+       "id": "fiber_cable/1",
+       "laborCosts": "",
+       "name": "WH-FCB-001",
+       "path": {
+          "coordinates": [
+             [
+                0.1364935934544,
+                52.224057930009
+             ],
+             [
+                0.136479887788,
+                52.2240683620607
+             ],
+             [
+                0.1364486664534,
+                52.2240527954625
+             ],
+             [
+                0.1364158093929,
+                52.2240369810556
+             ],
+             [
+                0.1363956928253,
+                52.2240246581372
+             ],
+             [
+                0.1361422240734,
+                52.2238882842788
+             ],
+             [
+                0.1359082013369,
+                52.2237605360978
+             ],
+             [
+                0.1355078816414,
+                52.2235444724214
+             ],
+             [
+                0.1353891938925,
+                52.2234799817287
+             ],
+             [
+                0.1353345438838,
+                52.2234612917333
+             ],
+             [
+                0.1352216786448,
+                52.2234222939998
+             ],
+             [
+                0.1352356374264,
+                52.2234101509367
+             ],
+             [
+                0.1352216786448,
+                52.2234222939998
+             ],
+             [
+                0.1351853460073,
+                52.223409740167
+             ],
+             [
+                0.1350861042738,
+                52.2233846832088
+             ],
+             [
+                0.1348728686571,
+                52.223356340075
+             ],
+             [
+                0.1346670091152,
+                52.2233468923598
+             ],
+             [
+                0.1346495747566,
+                52.2233423738866
+             ],
+             [
+                0.1346167176962,
+                52.2233292292345
+             ],
+             [
+                0.1344953477383,
+                52.2233481246706
+             ],
+             [
+                0.1344623218615,
+                52.223369073949
+             ],
+             [
+                0.1343604630461,
+                52.2233928986065
+             ],
+             [
+                0.1342371602695,
+                52.2234216524865
+             ],
+             [
+                0.1340937537793,
+                52.2234701232706
+             ],
+             [
+                0.1339811729833,
+                52.223505449402
+             ],
+             [
+                0.1339315838231,
+                52.2235210586138
+             ],
+             [
+                0.1338216835222,
+                52.223543240116
+             ],
+             [
+                0.1337452894107,
+                52.223568707753
+             ],
+             [
+                0.1337087899446,
+                52.2235781554211
+             ],
+             [
+                0.1336819678545,
+                52.2235818523341
+             ],
+             [
+                0.1336511224508,
+                52.223598693823
+             ],
+             [
+                0.1336229592562,
+                52.2236323767816
+             ],
+             [
+                0.1336176,
+                52.2236381
+             ],
+             [
+                0.1335847377777,
+                52.2237379439375
+             ],
+             [
+                0.1335015892982,
+                52.2238431000767
+             ],
+             [
+                0.1334050297737,
+                52.2239351114943
+             ],
+             [
+                0.1332548260689,
+                52.2240156213283
+             ],
+             [
+                0.1331448554993,
+                52.2240451963326
+             ],
+             [
+                0.1330643892288,
+                52.2240599838274
+             ],
+             [
+                0.1329664885998,
+                52.2240813435335
+             ],
+             [
+                0.1329014450312,
+                52.224080111243
+             ],
+             [
+                0.1328457891941,
+                52.2241084539148
+             ],
+             [
+                0.1328290253878,
+                52.2241388503833
+             ],
+             [
+                0.1328236609697,
+                52.2241680145429
+             ],
+             [
+                0.1328142732382,
+                52.2241914280093
+             ],
+             [
+                0.1327934861183,
+                52.2242119661276
+             ],
+             [
+                0.1328082382679,
+                52.2242329149984
+             ],
+             [
+                0.1328317075968,
+                52.224244827097
+             ],
+             [
+                0.1328659057617,
+                52.2242497562404
+             ],
+             [
+                0.132908821106,
+                52.2242263428047
+             ],
+             [
+                0.1330127567053,
+                52.2241614423396
+             ],
+             [
+                0.1331455260515,
+                52.2241187229943
+             ],
+             [
+                0.1332333683968,
+                52.2240994171229
+             ],
+             [
+                0.1332568377256,
+                52.2240858619315
+             ],
+             [
+                0.1333480328321,
+                52.224057930009
+             ],
+             [
+                0.1333788549664,
+                52.2240450025607
+             ],
+             [
+                0.1334529742599,
+                52.2240605999729
+             ],
+             [
+                0.133508965373,
+                52.2240961310163
+             ],
+             [
+                0.1335367932916,
+                52.2241166691786
+             ],
+             [
+                0.1335498690605,
+                52.2241472710228
+             ],
+             [
+                0.1335887610912,
+                52.2241630853905
+             ],
+             [
+                0.1336812973022,
+                52.2242160737501
+             ],
+             [
+                0.1337134838104,
+                52.2242300396638
+             ],
+             [
+                0.133730918169,
+                52.224221824421
+             ],
+             [
+                0.1337738335133,
+                52.2242497562404
+             ],
+             [
+                0.1337845623493,
+                52.2242686512847
+             ],
+             [
+                0.1337711513042,
+                52.2242859032747
+             ],
+             [
+                0.1337175071239,
+                52.2243286224591
+             ],
+             [
+                0.1336759328842,
+                52.2243573757332
+             ],
+             [
+                0.1336531341076,
+                52.2243770922532
+             ],
+             [
+                0.1336391446824,
+                52.2243968087645
+             ],
+             [
+                0.1335994899273,
+                52.2244140607047
+             ],
+             [
+                0.1335619390011,
+                52.2244387063219
+             ],
+             [
+                0.1335391402245,
+                52.2244534936857
+             ],
+             [
+                0.1335069537163,
+                52.2244567797659
+             ],
+             [
+                0.1334747672081,
+                52.224444456964
+             ],
+             [
+                0.1334144175053,
+                52.2244124176631
+             ],
+             [
+                0.1333862543106,
+                52.2243984518067
+             ],
+             [
+                0.1333165168762,
+                52.2244551367258
+             ],
+             [
+                0.1337108016014,
+                52.2246449074499
+             ],
+             [
+                0.1337456703186,
+                52.2246301201499
+             ],
+             [
+                0.1337604224682,
+                52.2245989025004
+             ],
+             [
+                0.1337067782879,
+                52.2245611126847
+             ],
+             [
+                0.1336880028248,
+                52.2245479683935
+             ],
+             [
+                0.1336786150932,
+                52.2245352348576
+             ],
+             [
+                0.1336732506752,
+                52.2245266089119
+             ],
+             [
+                0.1336584985256,
+                52.2245110000535
+             ],
+             [
+                0.1336531341076,
+                52.2244962127089
+             ],
+             [
+                0.1336611807346,
+                52.2244806038398
+             ],
+             [
+                0.1336866617203,
+                52.2244641734453
+             ],
+             [
+                0.1338019967079,
+                52.2243828429033
+             ],
+             [
+                0.1339401304722,
+                52.224272758902
+             ],
+             [
+                0.1340018212795,
+                52.224224288994
+             ],
+             [
+                0.1340403780341,
+                52.2241801320402
+             ],
+             [
+                0.1341104507446,
+                52.2241339212276
+             ],
+             [
+                0.134174823761,
+                52.2240870942218
+             ],
+             [
+                0.1342539489269,
+                52.2240534116081
+             ],
+             [
+                0.134359896183,
+                52.2240246581372
+             ],
+             [
+                0.1344282925129,
+                52.224003298404
+             ],
+             [
+                0.1344873011112,
+                52.2239901539476
+             ],
+             [
+                0.134513117373,
+                52.2239759825762
+             ],
+             [
+                0.1345624029636,
+                52.2239614004357
+             ],
+             [
+                0.1346012949944,
+                52.2239466129081
+             ],
+             [
+                0.1346334815025,
+                52.2239211454878
+             ],
+             [
+                0.1346670091152,
+                52.2238940349921
+             ],
+             [
+                0.1346877962351,
+                52.2238718536652
+             ]
+          ],
+          "type": "LineString"
+       },
+       "specification": "D-144-LA-8W-F12NS",
+       "technology": "fiber"
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/backboneCircuit/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Circuit",
+       "characteristic": [
+          {
+             "name": "status",
+             "value": "In Service"
+          }
+       ],
+       "circuitRoute": [
+          {
+             "feature": "fiber_shelf/14",
+             "pins": "out:1",
+             "type": "port"
+          },
+          {
+             "feature": "mywcom_fiber_connection/218",
+             "pins": "in:19",
+             "type": "connection"
+          },
+          {
+             "feature": "mywcom_fiber_segment/382",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/382",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/383",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/383",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/384",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/384",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/385",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/385",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/386",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/386",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/598",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/598",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/387",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/387",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/595",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/595",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/388",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/388",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/587",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/587",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_connection/215",
+             "pins": "in:19",
+             "type": "connection"
+          },
+          {
+             "feature": "mywcom_fiber_segment/338",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/338",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/339",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/339",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/340",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/340",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/341",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/341",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/342",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/342",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/343",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/343",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/344",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/344",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/345",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/345",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/346",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/346",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/347",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/347",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/348",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/348",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/349",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/349",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/350",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/350",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/351",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/351",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/352",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/352",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/353",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/353",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/354",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/354",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/355",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/355",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/356",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/356",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/357",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/357",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/358",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/358",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/359",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/359",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/360",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/360",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/361",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/361",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/362",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/362",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/363",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/363",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/364",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/364",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/365",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/365",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/366",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/366",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/367",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/367",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/368",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/368",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/369",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/369",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/370",
+             "pins": "in:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/370",
+             "pins": "out:19",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_connection/213",
+             "pins": "in:12",
+             "type": "connection"
+          },
+          {
+             "feature": "fiber_shelf/15",
+             "pins": "in:12",
+             "type": "port"
+          }
+       ],
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/backboneCircuit/1",
+       "id": "bb_circuit/1",
+       "inFeature": "fiber_shelf/14",
+       "inPins": "out:1",
+       "name": "BB-0001",
+       "outFeature": "fiber_shelf/15",
+       "outPins": "in:12",
+       "path": {
+          "coordinates": [
+             [
+                0.1366049051285,
+                52.2240164428564
+             ],
+             [
+                0.1365579664707,
+                52.2240476609155
+             ],
+             [
+                0.1365921646357,
+                52.2240661452822
+             ],
+             [
+                0.1365589722991,
+                52.2240903803291
+             ],
+             [
+                0.1365425789235,
+                52.224099619123
+             ],
+             [
+                0.1365757361054,
+                52.2241189283759
+             ],
+             [
+                0.1366508379579039,
+                52.22415671856789
+             ],
+             [
+                0.1366940885782,
+                52.2241782836086
+             ],
+             [
+                0.136796683073,
+                52.2241975894458
+             ],
+             [
+                0.1368496567011,
+                52.2241992324954
+             ],
+             [
+                0.1369147002697,
+                52.2241561024237
+             ],
+             [
+                0.1370407640934,
+                52.2241117400205
+             ],
+             [
+                0.1371963322163,
+                52.2240554654268
+             ],
+             [
+                0.1372814923525,
+                52.2240000122902
+             ],
+             [
+                0.1373431831598,
+                52.2239581143189
+             ],
+             [
+                0.1374105736613241,
+                52.223911903275294
+             ],
+             [
+                0.1376603543758,
+                52.2237190486673
+             ],
+             [
+                0.1378870010376,
+                52.2235407755052
+             ],
+             [
+                0.1380278170109,
+                52.2234265817212
+             ],
+             [
+                0.1380774378777,
+                52.2234085078579
+             ],
+             [
+                0.138112438657,
+                52.2234101509367
+             ],
+             [
+                0.1385401189327,
+                52.2236286798727
+             ],
+             [
+                0.1390426978469,
+                52.2238950619052
+             ],
+             [
+                0.1390565925754,
+                52.223902610934
+             ],
+             [
+                0.139362886548,
+                52.2240690206274
+             ],
+             [
+                0.1395171135664,
+                52.2241474764043
+             ],
+             [
+                0.1399828121066,
+                52.2243978356659
+             ],
+             [
+                0.1401353627443,
+                52.2244896405541
+             ],
+             [
+                0.1401615142822,
+                52.2245245551151
+             ],
+             [
+                0.140361184284,
+                52.2246284771163
+             ],
+             [
+                0.1410054042935,
+                52.2249597525442
+             ],
+             [
+                0.1410225395384,
+                52.2249702070345
+             ],
+             [
+                0.1415370742242,
+                52.2252841318289
+             ],
+             [
+                0.1420536115824,
+                52.2255671879208
+             ],
+             [
+                0.1421575494254,
+                52.2256241443569
+             ],
+             [
+                0.1428027828266,
+                52.2259946900004
+             ],
+             [
+                0.1429260717199,
+                52.2260654921863
+             ],
+             [
+                0.1433406025171,
+                52.226283802683
+             ],
+             [
+                0.1433643994437,
+                52.2263050233211
+             ],
+             [
+                0.1435075700283,
+                52.2263856668562
+             ],
+             [
+                0.1437582051599,
+                52.2265381619457
+             ],
+             [
+                0.1438370086014,
+                52.2265861085789
+             ],
+             [
+                0.1442492008209,
+                52.2268202299372
+             ],
+             [
+                0.1445156857915,
+                52.2269833291865
+             ],
+             [
+                0.1446625962853,
+                52.2270732439119
+             ],
+             [
+                0.1446906329367,
+                52.2270899692989
+             ],
+             [
+                0.1448553800583,
+                52.2271882497874
+             ],
+             [
+                0.145021006465,
+                52.2272839508782
+             ],
+             [
+                0.1450873911381,
+                52.2273172203078
+             ],
+             [
+                0.1452192099119,
+                52.2273966175078
+             ],
+             [
+                0.1453287899494,
+                52.2274626197445
+             ],
+             [
+                0.1454788343841,
+                52.2275634353845
+             ],
+             [
+                0.1455916464329,
+                52.227639234239
+             ],
+             [
+                0.145697593689,
+                52.2277258983038
+             ],
+             [
+                0.1457512378693,
+                52.2277550601075
+             ],
+             [
+                0.1457934826612,
+                52.2277743643895
+             ],
+             [
+                0.1458249981315,
+                52.2278012946256
+             ],
+             [
+                0.1458477973938,
+                52.227820776778
+             ],
+             [
+                0.145882666111,
+                52.2278487063334
+             ],
+             [
+                0.1459577679634,
+                52.227884850438
+             ],
+             [
+                0.14623939991,
+                52.2280754279572
+             ],
+             [
+                0.1463225483894,
+                52.2281444299607
+             ],
+             [
+                0.1464071362685,
+                52.228222460963
+             ],
+             [
+                0.1464844867587,
+                52.2282756566893
+             ],
+             [
+                0.1467302441597,
+                52.2284237226889
+             ],
+             [
+                0.1468697190285,
+                52.2285354392882
+             ],
+             [
+                0.1469327509403,
+                52.2285855473775
+             ],
+             [
+                0.1470226049423,
+                52.2286537271458
+             ],
+             [
+                0.1471030712128,
+                52.2287194424861
+             ],
+             [
+                0.1471805250799,
+                52.2287802266599
+             ],
+             [
+                0.1472747325897,
+                52.2288541586296
+             ],
+             [
+                0.1473739743233,
+                52.2289264451722
+             ],
+             [
+                0.1474571228027,
+                52.2289970887251
+             ],
+             [
+                0.147513449192,
+                52.2290324104594
+             ],
+             [
+                0.1476663351059,
+                52.2291490541266
+             ],
+             [
+                0.1478044688702,
+                52.2292500902948
+             ],
+             [
+                0.1479265093803,
+                52.2293289476322
+             ],
+             [
+                0.148044526577,
+                52.2294045191158
+             ],
+             [
+                0.1481102406979,
+                52.2294685904902
+             ],
+             [
+                0.1481384038925,
+                52.2295014475694
+             ],
+             [
+                0.1481531560421,
+                52.2295416974583
+             ],
+             [
+                0.1481491327286,
+                52.229565518804
+             ],
+             [
+                0.1481451094151,
+                52.2295893401368
+             ],
+             [
+                0.1482765376568,
+                52.229735553555
+             ],
+             [
+                0.1483516395092,
+                52.2297248750633
+             ],
+             [
+                0.1484227180481,
+                52.2297281607533
+             ],
+             [
+                0.1484951376915,
+                52.2297454106221
+             ],
+             [
+                0.1485393941402,
+                52.2297601962185
+             ],
+             [
+                0.148578286171,
+                52.229782374604
+             ],
+             [
+                0.148416814189,
+                52.2298513739546
+             ]
+          ],
+          "type": "LineString"
+       }
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/fiberToTheHomeCircuit/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Circuit",
+       "characteristic": [
+          {
+             "name": "status",
+             "value": "In Service"
+          },
+          {
+             "name": "customer",
+             "value": "Bourgh,AD"
+          },
+          {
+             "name": "address",
+             "value": "2604"
+          },
+          {
+             "name": "serviceType",
+             "value": "Direct"
+          },
+          {
+             "name": "date",
+             "value": null
+          }
+       ],
+       "circuitRoute": [
+          {
+             "feature": "fiber_olt/25",
+             "pins": "out:1",
+             "type": "port"
+          },
+          {
+             "feature": "mywcom_fiber_connection/251",
+             "pins": "in:1",
+             "type": "connection"
+          },
+          {
+             "feature": "mywcom_fiber_segment/560",
+             "pins": "in:1",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/560",
+             "pins": "out:1",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_connection/257",
+             "pins": "in:1",
+             "type": "connection"
+          },
+          {
+             "feature": "fiber_patch_panel/5",
+             "pins": "in:1",
+             "type": "port"
+          },
+          {
+             "feature": "fiber_patch_panel/5",
+             "pins": "out:1",
+             "type": "port"
+          },
+          {
+             "feature": "mywcom_fiber_connection/258",
+             "pins": "in:101",
+             "type": "connection"
+          },
+          {
+             "feature": "fiber_patch_panel/2",
+             "pins": "in:101",
+             "type": "port"
+          },
+          {
+             "feature": "fiber_patch_panel/2",
+             "pins": "out:101",
+             "type": "port"
+          },
+          {
+             "feature": "mywcom_fiber_connection/269",
+             "pins": "in:101",
+             "type": "connection"
+          },
+          {
+             "feature": "mywcom_fiber_segment/189",
+             "pins": "in:101",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/189",
+             "pins": "out:101",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/190",
+             "pins": "in:101",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/190",
+             "pins": "out:101",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_connection/186",
+             "pins": "in:25",
+             "type": "connection"
+          },
+          {
+             "feature": "mywcom_fiber_segment/57",
+             "pins": "in:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/57",
+             "pins": "out:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/58",
+             "pins": "in:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/58",
+             "pins": "out:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/59",
+             "pins": "in:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/59",
+             "pins": "out:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/60",
+             "pins": "in:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/60",
+             "pins": "out:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/61",
+             "pins": "in:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/61",
+             "pins": "out:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/62",
+             "pins": "in:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/62",
+             "pins": "out:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/63",
+             "pins": "in:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/63",
+             "pins": "out:25",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_connection/191",
+             "pins": "in:1",
+             "type": "connection"
+          },
+          {
+             "feature": "mywcom_fiber_segment/390",
+             "pins": "in:1",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/390",
+             "pins": "out:1",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/391",
+             "pins": "in:1",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_segment/391",
+             "pins": "out:1",
+             "type": "segment"
+          },
+          {
+             "feature": "mywcom_fiber_connection/192",
+             "pins": "in:1",
+             "type": "connection"
+          },
+          {
+             "feature": "fiber_ont/132",
+             "pins": "in:1",
+             "type": "port"
+          }
+       ],
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/fiberToTheHomeCircuit/1",
+       "id": "ftth_circuit/1",
+       "inFeature": "fiber_olt/25",
+       "inPins": "out:1",
+       "name": "WH-FTTH-001",
+       "outFeature": "fiber_ont/132",
+       "outPins": "in:1",
+       "path": {
+          "coordinates": [
+             [
+                0.1366049051285,
+                52.2240164428564
+             ],
+             [
+                0.1365579664707,
+                52.2240476609155
+             ],
+             [
+                0.1365921646357,
+                52.2240661452822
+             ],
+             [
+                0.1365589722991,
+                52.2240903803291
+             ],
+             [
+                0.1365425789235,
+                52.224099619123
+             ],
+             [
+                0.1365757361054,
+                52.2241189283759
+             ],
+             [
+                0.136455707252,
+                52.2241862934783
+             ],
+             [
+                0.1364996284246,
+                52.224211144603
+             ],
+             [
+                0.1365707069635,
+                52.224245648621
+             ],
+             [
+                0.1366786658764,
+                52.2242953507902
+             ],
+             [
+                0.1367524266243,
+                52.2243429990985
+             ],
+             [
+                0.1368154585361,
+                52.2243738061672
+             ],
+             [
+                0.1369670033455,
+                52.2244641734453
+             ],
+             [
+                0.1370203122497,
+                52.2244953911896
+             ],
+             [
+                0.13706356287,
+                52.2245040171414
+             ],
+             [
+                0.1372070610523,
+                52.2245771322844
+             ],
+             [
+                0.1373439448174852,
+                52.22464956656571
+             ],
+             [
+                0.1373498886824,
+                52.2246527118563
+             ],
+             [
+                0.137401828405328,
+                52.22468048787741
+             ],
+             [
+                0.1374236494303,
+                52.2246921446253
+             ],
+             [
+                0.1374568417668,
+                52.2247063157682
+             ],
+             [
+                0.1374236494303,
+                52.2246921446253
+             ],
+             [
+                0.137401828405328,
+                52.22468048787741
+             ],
+             [
+                0.137350894510746,
+                52.22471145023905
+             ]
+          ],
+          "type": "LineString"
+       }
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/multiplexer/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Equipment",
+       "characteristic": [
+          {
+             "name": "nFiberInPorts",
+             "value": 24
+          },
+          {
+             "name": "nFiberOutPorts",
+             "value": 1
+          },
+          {
+             "name": "deviceId",
+             "value": "1C4B-2501-09DB-012E28"
+          },
+          {
+             "name": "installationDate",
+             "value": "2010-09-23"
+          },
+          {
+             "name": "jobId",
+             "value": "19347"
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "circuits": [],
+       "housing": "splice_closure/1",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/multiplexer/1",
+       "id": "fiber_mux/1",
+       "laborCosts": "",
+       "location": {
+          "coordinates": [
+             0.136455707252,
+             52.2241862934783
+          ],
+          "type": "Point"
+       },
+       "name": "WH-MUX-001",
+       "rootHousing": "manhole/35",
+       "specification": ""
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/opticalLineTerminal/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Equipment",
+       "characteristic": [
+          {
+             "name": "nFiberOutPorts",
+             "value": 8
+          },
+          {
+             "name": "deviceId",
+             "value": "1C4B-2501-09DB-012E28"
+          },
+          {
+             "name": "installationDate",
+             "value": "2010-09-23"
+          },
+          {
+             "name": "jobId",
+             "value": "19347"
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "circuits": [],
+       "housing": "slot/10",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/opticalLineTerminal/1",
+       "id": "fiber_olt/1",
+       "laborCosts": "",
+       "location": {
+          "coordinates": [
+             0.1366049051285,
+             52.2240164428564
+          ],
+          "type": "Point"
+       },
+       "name": "WH-OLT-001",
+       "rootHousing": "building/1",
+       "specification": ""
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/opticalNetworkTerminal/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Equipment",
+       "characteristic": [
+          {
+             "name": "nFiberInPorts",
+             "value": 4
+          },
+          {
+             "name": "installationDate",
+             "value": "2010-09-23"
+          },
+          {
+             "name": "jobId",
+             "value": "19347"
+          },
+          {
+             "name": "serviceStatus",
+             "value": "Built"
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "circuits": [
+          "ftth_circuit/30?in=1:1"
+       ],
+       "housing": "wall_box/1",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/opticalNetworkTerminal/1",
+       "id": "fiber_ont/1",
+       "laborCosts": "",
+       "location": {
+          "coordinates": [
+             0.1387131214142,
+             52.2238964995833
+          ],
+          "type": "Point"
+       },
+       "name": "WH-ONT-001",
+       "rootHousing": "wall_box/1",
+       "specification": ""
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/patchPanel/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Equipment",
+       "characteristic": [
+          {
+             "name": "nFiberPorts",
+             "value": 144
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "circuits": [
+          "ftth_circuit/30?in=1:1&out=1:1",
+          "ftth_circuit/31?in=1:1&out=1:1",
+          "ftth_circuit/32?in=1:1&out=1:1",
+          "ftth_circuit/33?in=1:1&out=1:1",
+          "ftth_circuit/34?in=1:1&out=1:1",
+          "ftth_circuit/35?in=1:1&out=1:1",
+          "ftth_circuit/36?in=1:1&out=1:1",
+          "ftth_circuit/37?in=2:2&out=2:2",
+          "ftth_circuit/38?in=2:2&out=2:2",
+          "ftth_circuit/39?in=2:2&out=2:2",
+          "ftth_circuit/40?in=2:2&out=2:2",
+          "ftth_circuit/41?in=2:2&out=2:2",
+          "ftth_circuit/42?in=3:3&out=3:3",
+          "ftth_circuit/43?in=3:3&out=3:3",
+          "ftth_circuit/44?in=3:3&out=3:3",
+          "ftth_circuit/45?in=3:3&out=3:3",
+          "ftth_circuit/46?in=3:3&out=3:3",
+          "ftth_circuit/47?in=4:4&out=4:4",
+          "ftth_circuit/48?in=4:4&out=4:4",
+          "ftth_circuit/49?in=4:4&out=4:4",
+          "ftth_circuit/50?in=7:7&out=7:7",
+          "ftth_circuit/51?in=5:5&out=5:5",
+          "ftth_circuit/52?in=5:5&out=5:5",
+          "ftth_circuit/53?in=7:7&out=7:7",
+          "ftth_circuit/54?in=5:5&out=5:5",
+          "ftth_circuit/55?in=5:5&out=5:5",
+          "ftth_circuit/56?in=5:5&out=5:5",
+          "ftth_circuit/57?in=6:6&out=6:6",
+          "ftth_circuit/5801?in=11:11&out=11:11",
+          "ftth_circuit/58?in=6:6&out=6:6",
+          "ftth_circuit/59?in=6:6&out=6:6"
+       ],
+       "housing": "building/1",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/patchPanel/1",
+       "id": "fiber_patch_panel/1",
+       "laborCosts": "",
+       "location": {
+          "coordinates": [
+             0.1366049051285,
+             52.2240164428564
+          ],
+          "type": "Point"
+       },
+       "name": "WH-ODF-01",
+       "rootHousing": "building/1",
+       "specification": ""
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/shelf/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Equipment",
+       "characteristic": [
+          {
+             "name": "nFiberInPorts",
+             "value": null
+          },
+          {
+             "name": "nFiberOutPorts",
+             "value": null
+          },
+          {
+             "name": "installationDate",
+             "value": "2010-09-23"
+          },
+          {
+             "name": "jobId",
+             "value": "19347"
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "circuits": [],
+       "housing": "rack/1",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/shelf/1",
+       "id": "fiber_shelf/1",
+       "laborCosts": "",
+       "location": {
+          "coordinates": [
+             0.1366049051285,
+             52.2240164428564
+          ],
+          "type": "Point"
+       },
+       "name": "WH-S-001",
+       "rootHousing": "building/1",
+       "specification": ""
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/spliceTray/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Equipment",
+       "characteristic": [
+          {
+             "name": "slots",
+             "value": 12
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "circuits": [],
+       "housing": "splice_closure/24",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/spliceTray/1",
+       "id": "fiber_splice_tray/1",
+       "laborCosts": "",
+       "location": {
+          "coordinates": [
+             0.138112438657,
+             52.2234101509367
+          ],
+          "type": "Point"
+       },
+       "name": "Tray-1",
+       "rootHousing": "manhole/28",
+       "specification": ""
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/splitter/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Equipment",
+       "characteristic": [
+          {
+             "name": "nFiberInPorts",
+             "value": 1
+          },
+          {
+             "name": "nFiberOutPorts",
+             "value": 8
+          },
+          {
+             "name": "deviceId",
+             "value": "1C4B-2501-09DB-012E28"
+          },
+          {
+             "name": "installationDate",
+             "value": "2010-09-23"
+          },
+          {
+             "name": "jobId",
+             "value": "19347"
+          },
+          {
+             "name": "serviceStatus",
+             "value": "Built"
+          },
+          {
+             "name": "stopRipple",
+             "value": null
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "circuits": [
+          "ftth_circuit/30?in=1:1&out=1:1",
+          "ftth_circuit/31?in=1:1&out=2:2",
+          "ftth_circuit/32?in=1:1&out=3:3",
+          "ftth_circuit/33?in=1:1&out=4:4",
+          "ftth_circuit/34?in=1:1&out=5:5",
+          "ftth_circuit/35?in=1:1&out=7:7",
+          "ftth_circuit/36?in=1:1&out=8:8"
+       ],
+       "housing": "splice_closure/12",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/splitter/1",
+       "id": "fiber_splitter/1",
+       "laborCosts": "",
+       "location": {
+          "coordinates": [
+             0.1390732079744,
+             52.2238911596356
+          ],
+          "type": "Point"
+       },
+       "name": "WH-SPL-001",
+       "rootHousing": "pole/6",
+       "specification": "CS-EF3421-000"
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/undergroundRoute/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Route",
+       "characteristic": [
+          {
+             "name": "coverType",
+             "value": "Mixed"
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/undergroundRoute/1",
+       "id": "ug_route/1",
+       "inStructure": "building/1",
+       "laborCosts": "pavement_re-surface,site_manager",
+       "length": 4.96,
+       "outStructure": "mywcom_route_junction/37",
+       "path": {
+          "coordinates": [
+             [
+                0.1366049051285,
+                52.2240164428564
+             ],
+             [
+                0.1365579664707,
+                52.2240476609155
+             ]
+          ],
+          "type": "LineString"
+       }
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/overheadRoute/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Route",
+       "characteristic": [
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/overheadRoute/1",
+       "id": "oh_route/1",
+       "inStructure": "wall_box/1",
+       "laborCosts": "",
+       "length": 25.76,
+       "outStructure": "pole/6",
+       "path": {
+          "coordinates": [
+             [
+                0.1387131214142,
+                52.2238964995833
+             ],
+             [
+                0.1390732079744,
+                52.2238911596356
+             ]
+          ],
+          "type": "LineString"
+       }
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/conduit/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Conduit",
+       "characteristic": [
+          {
+             "name": "diameter",
+             "value": 110.0
+          },
+          {
+             "name": "length",
+             "value": 6.96
+          },
+          {
+             "name": "material",
+             "value": "PE (Corrugated)"
+          },
+          {
+             "name": "owner",
+             "value": "Acme Co"
+          },
+          {
+             "name": "installationDate",
+             "value": "2010-09-23"
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "conduitRun": "",
+       "housing": "ug_route/273",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/conduit/1",
+       "id": "conduit/1",
+       "inConduit": "",
+       "inStructure": "mywcom_route_junction/37",
+       "laborCosts": "",
+       "name": "WH-CND-001",
+       "outConduit": "",
+       "outStructure": "cabinet/2",
+       "path": {
+          "coordinates": [
+             [
+                0.1365579664707,
+                52.2240476609155
+             ],
+             [
+                0.1365921646357,
+                52.2240661452822
+             ],
+             [
+                0.1365589722991,
+                52.2240903803291
+             ]
+          ],
+          "type": "LineString"
+       },
+       "rootHousing": "ug_route/273",
+       "specification": "JDP-110MM-Green"
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/manhole/1
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Structure",
+       "characteristic": [
+          {
+             "name": "mywOrientationLocation",
+             "value": 59.3813815475527
+          },
+          {
+             "name": "sizeX",
+             "value": 600.0
+          },
+          {
+             "name": "sizeY",
+             "value": 1200.0
+          },
+          {
+             "name": "sizeZ",
+             "value": 895.0
+          },
+          {
+             "name": "lockable",
+             "value": null
+          },
+          {
+             "name": "powered",
+             "value": null
+          },
+          {
+             "name": "installationDate",
+             "value": "2010-09-23"
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          }
+       ],
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/manhole/1",
+       "id": "manhole/1",
+       "laborCosts": "survey",
+       "location": {
+          "coordinates": [
+             0.1353556662798,
+             52.2235609031561
+          ],
+          "type": "Point"
+       },
+       "name": "WH-M-01",
+       "specification": "FPM-CCANN-C2"
+    }
+    
+    
+
+SUB TEST : Partial Representation
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/cable/1?fields=none
+    Response: 200 (200 OK)
+    {
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/cable/1",
+       "id": "fiber_cable/1"
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/cable/1?fields=specification,name,technology
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Cable",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/cable/1",
+       "id": "fiber_cable/1",
+       "name": "WH-FCB-001",
+       "specification": "D-144-LA-8W-F12NS",
+       "technology": "fiber"
+    }
+    
+    
+
+SUB TEST : Errors
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/ABCD/1
+    Response: 404 (404 Not Found)
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/Cable/1
+    Response: 404 (404 Not Found)
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/cables/12345678
+    Response: 404 (404 Not Found)
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/tap/1
+    Response: 404 (404 Not Found)
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/address/561?includeCalculatedReferenceSets=True
+    Response: 200 (200 OK)
+    {
+       "@baseType": "",
+       "@type": "Address",
+       "characteristic": [
+          {
+             "name": "name",
+             "value": null
+          },
+          {
+             "name": "building",
+             "value": "osm_building/128504294"
+          },
+          {
+             "name": "serviceStatus",
+             "value": null
+          },
+          {
+             "name": "servingEquipment",
+             "value": "fiber_splitter/1"
+          },
+          {
+             "name": "servingStructure",
+             "value": "pole/6"
+          },
+          {
+             "name": "circuits",
+             "value": [
+                "ftth_circuit/33"
+             ]
+          },
+          {
+             "name": "geometry",
+             "value": {
+                "coordinates": [
+                   0.1391151899332964,
+                   52.224097463205894
+                ],
+                "type": "Point"
+             }
+          }
+       ],
+       "city": "Cambridge",
+       "country": "",
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/address/561",
+       "id": "address/561",
+       "locality": "",
+       "location": "",
+       "postcode": "CB4 1XQ",
+       "stateOrProvince": "",
+       "streetName": "Milton Road",
+       "streetNr": "233",
+       "streetNrLast": "",
+       "streetNrLastSuffix": "",
+       "streetNrSuffix": "",
+       "streetSuffix": "",
+       "streetType": ""
+    }
+    
+    
+    Request: GET: /modules/comms/api/v1/resourceInventoryManagement/resource/cable/1?includeCalculatedReferenceSets=True
+    Response: 200 (200 OK)
+    {
+       "@baseType": "Feature",
+       "@type": "Cable",
+       "characteristic": [
+          {
+             "name": "type",
+             "value": "External"
+          },
+          {
+             "name": "tickMarkSpacing",
+             "value": null
+          },
+          {
+             "name": "owner",
+             "value": "Acme Co"
+          },
+          {
+             "name": "jobId",
+             "value": "19347"
+          },
+          {
+             "name": "installationDate",
+             "value": "2010-09-23"
+          },
+          {
+             "name": "diameter",
+             "value": 9.9
+          },
+          {
+             "name": "comsofAuto",
+             "value": false
+          },
+          {
+             "name": "cableSegments",
+             "value": [
+                "mywcom_fiber_segment/1",
+                "mywcom_fiber_segment/10",
+                "mywcom_fiber_segment/11",
+                "mywcom_fiber_segment/12",
+                "mywcom_fiber_segment/13",
+                "mywcom_fiber_segment/14",
+                "mywcom_fiber_segment/15",
+                "mywcom_fiber_segment/16",
+                "mywcom_fiber_segment/17",
+                "mywcom_fiber_segment/18",
+                "mywcom_fiber_segment/19",
+                "mywcom_fiber_segment/2",
+                "mywcom_fiber_segment/3",
+                "mywcom_fiber_segment/4",
+                "mywcom_fiber_segment/5",
+                "mywcom_fiber_segment/581",
+                "mywcom_fiber_segment/582",
+                "mywcom_fiber_segment/6",
+                "mywcom_fiber_segment/7",
+                "mywcom_fiber_segment/8",
+                "mywcom_fiber_segment/9"
+             ]
+          },
+          {
+             "name": "cableSlacks",
+             "value": [
+                "mywcom_fiber_slack/1",
+                "mywcom_fiber_slack/2"
+             ]
+          },
+          {
+             "name": "secondaryGeometries",
+             "value": {
+                "placement_path": {
+                   "coordinates": [
+                      [
+                         0.1364935934544,
+                         52.224057930009
+                      ],
+                      [
+                         0.1352356374264,
+                         52.2234101509367
+                      ],
+                      [
+                         0.1346167176962,
+                         52.2233292292345
+                      ],
+                      [
+                         0.1328236609697,
+                         52.2241680145429
+                      ],
+                      [
+                         0.1335887610912,
+                         52.2241630853905
+                      ],
+                      [
+                         0.1337604224682,
+                         52.2245989025004
+                      ],
+                      [
+                         0.1346877962351,
+                         52.2238718536652
+                      ]
+                   ],
+                   "type": "LineString"
+                }
+             }
+          }
+       ],
+       "count": 144,
+       "directed": true,
+       "href": "http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/cable/1",
+       "id": "fiber_cable/1",
+       "laborCosts": "",
+       "name": "WH-FCB-001",
+       "path": {
+          "coordinates": [
+             [
+                0.1364935934544,
+                52.224057930009
+             ],
+             [
+                0.136479887788,
+                52.2240683620607
+             ],
+             [
+                0.1364486664534,
+                52.2240527954625
+             ],
+             [
+                0.1364158093929,
+                52.2240369810556
+             ],
+             [
+                0.1363956928253,
+                52.2240246581372
+             ],
+             [
+                0.1361422240734,
+                52.2238882842788
+             ],
+             [
+                0.1359082013369,
+                52.2237605360978
+             ],
+             [
+                0.1355078816414,
+                52.2235444724214
+             ],
+             [
+                0.1353891938925,
+                52.2234799817287
+             ],
+             [
+                0.1353345438838,
+                52.2234612917333
+             ],
+             [
+                0.1352216786448,
+                52.2234222939998
+             ],
+             [
+                0.1352356374264,
+                52.2234101509367
+             ],
+             [
+                0.1352216786448,
+                52.2234222939998
+             ],
+             [
+                0.1351853460073,
+                52.223409740167
+             ],
+             [
+                0.1350861042738,
+                52.2233846832088
+             ],
+             [
+                0.1348728686571,
+                52.223356340075
+             ],
+             [
+                0.1346670091152,
+                52.2233468923598
+             ],
+             [
+                0.1346495747566,
+                52.2233423738866
+             ],
+             [
+                0.1346167176962,
+                52.2233292292345
+             ],
+             [
+                0.1344953477383,
+                52.2233481246706
+             ],
+             [
+                0.1344623218615,
+                52.223369073949
+             ],
+             [
+                0.1343604630461,
+                52.2233928986065
+             ],
+             [
+                0.1342371602695,
+                52.2234216524865
+             ],
+             [
+                0.1340937537793,
+                52.2234701232706
+             ],
+             [
+                0.1339811729833,
+                52.223505449402
+             ],
+             [
+                0.1339315838231,
+                52.2235210586138
+             ],
+             [
+                0.1338216835222,
+                52.223543240116
+             ],
+             [
+                0.1337452894107,
+                52.223568707753
+             ],
+             [
+                0.1337087899446,
+                52.2235781554211
+             ],
+             [
+                0.1336819678545,
+                52.2235818523341
+             ],
+             [
+                0.1336511224508,
+                52.223598693823
+             ],
+             [
+                0.1336229592562,
+                52.2236323767816
+             ],
+             [
+                0.1336176,
+                52.2236381
+             ],
+             [
+                0.1335847377777,
+                52.2237379439375
+             ],
+             [
+                0.1335015892982,
+                52.2238431000767
+             ],
+             [
+                0.1334050297737,
+                52.2239351114943
+             ],
+             [
+                0.1332548260689,
+                52.2240156213283
+             ],
+             [
+                0.1331448554993,
+                52.2240451963326
+             ],
+             [
+                0.1330643892288,
+                52.2240599838274
+             ],
+             [
+                0.1329664885998,
+                52.2240813435335
+             ],
+             [
+                0.1329014450312,
+                52.224080111243
+             ],
+             [
+                0.1328457891941,
+                52.2241084539148
+             ],
+             [
+                0.1328290253878,
+                52.2241388503833
+             ],
+             [
+                0.1328236609697,
+                52.2241680145429
+             ],
+             [
+                0.1328142732382,
+                52.2241914280093
+             ],
+             [
+                0.1327934861183,
+                52.2242119661276
+             ],
+             [
+                0.1328082382679,
+                52.2242329149984
+             ],
+             [
+                0.1328317075968,
+                52.224244827097
+             ],
+             [
+                0.1328659057617,
+                52.2242497562404
+             ],
+             [
+                0.132908821106,
+                52.2242263428047
+             ],
+             [
+                0.1330127567053,
+                52.2241614423396
+             ],
+             [
+                0.1331455260515,
+                52.2241187229943
+             ],
+             [
+                0.1332333683968,
+                52.2240994171229
+             ],
+             [
+                0.1332568377256,
+                52.2240858619315
+             ],
+             [
+                0.1333480328321,
+                52.224057930009
+             ],
+             [
+                0.1333788549664,
+                52.2240450025607
+             ],
+             [
+                0.1334529742599,
+                52.2240605999729
+             ],
+             [
+                0.133508965373,
+                52.2240961310163
+             ],
+             [
+                0.1335367932916,
+                52.2241166691786
+             ],
+             [
+                0.1335498690605,
+                52.2241472710228
+             ],
+             [
+                0.1335887610912,
+                52.2241630853905
+             ],
+             [
+                0.1336812973022,
+                52.2242160737501
+             ],
+             [
+                0.1337134838104,
+                52.2242300396638
+             ],
+             [
+                0.133730918169,
+                52.224221824421
+             ],
+             [
+                0.1337738335133,
+                52.2242497562404
+             ],
+             [
+                0.1337845623493,
+                52.2242686512847
+             ],
+             [
+                0.1337711513042,
+                52.2242859032747
+             ],
+             [
+                0.1337175071239,
+                52.2243286224591
+             ],
+             [
+                0.1336759328842,
+                52.2243573757332
+             ],
+             [
+                0.1336531341076,
+                52.2243770922532
+             ],
+             [
+                0.1336391446824,
+                52.2243968087645
+             ],
+             [
+                0.1335994899273,
+                52.2244140607047
+             ],
+             [
+                0.1335619390011,
+                52.2244387063219
+             ],
+             [
+                0.1335391402245,
+                52.2244534936857
+             ],
+             [
+                0.1335069537163,
+                52.2244567797659
+             ],
+             [
+                0.1334747672081,
+                52.224444456964
+             ],
+             [
+                0.1334144175053,
+                52.2244124176631
+             ],
+             [
+                0.1333862543106,
+                52.2243984518067
+             ],
+             [
+                0.1333165168762,
+                52.2244551367258
+             ],
+             [
+                0.1337108016014,
+                52.2246449074499
+             ],
+             [
+                0.1337456703186,
+                52.2246301201499
+             ],
+             [
+                0.1337604224682,
+                52.2245989025004
+             ],
+             [
+                0.1337067782879,
+                52.2245611126847
+             ],
+             [
+                0.1336880028248,
+                52.2245479683935
+             ],
+             [
+                0.1336786150932,
+                52.2245352348576
+             ],
+             [
+                0.1336732506752,
+                52.2245266089119
+             ],
+             [
+                0.1336584985256,
+                52.2245110000535
+             ],
+             [
+                0.1336531341076,
+                52.2244962127089
+             ],
+             [
+                0.1336611807346,
+                52.2244806038398
+             ],
+             [
+                0.1336866617203,
+                52.2244641734453
+             ],
+             [
+                0.1338019967079,
+                52.2243828429033
+             ],
+             [
+                0.1339401304722,
+                52.224272758902
+             ],
+             [
+                0.1340018212795,
+                52.224224288994
+             ],
+             [
+                0.1340403780341,
+                52.2241801320402
+             ],
+             [
+                0.1341104507446,
+                52.2241339212276
+             ],
+             [
+                0.134174823761,
+                52.2240870942218
+             ],
+             [
+                0.1342539489269,
+                52.2240534116081
+             ],
+             [
+                0.134359896183,
+                52.2240246581372
+             ],
+             [
+                0.1344282925129,
+                52.224003298404
+             ],
+             [
+                0.1344873011112,
+                52.2239901539476
+             ],
+             [
+                0.134513117373,
+                52.2239759825762
+             ],
+             [
+                0.1345624029636,
+                52.2239614004357
+             ],
+             [
+                0.1346012949944,
+                52.2239466129081
+             ],
+             [
+                0.1346334815025,
+                52.2239211454878
+             ],
+             [
+                0.1346670091152,
+                52.2238940349921
+             ],
+             [
+                0.1346877962351,
+                52.2238718536652
+             ]
+          ],
+          "type": "LineString"
+       },
+       "specification": "D-144-LA-8W-F12NS",
+       "technology": "fiber"
+    }
+    
+    

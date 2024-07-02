@@ -1,0 +1,37 @@
+
+*** CUT TUBE
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: CUT TUBE
+    insert delta.blown_fiber_tube(design/NB046,114,update)
+    insert delta.blown_fiber_tube(design/NB046,115,update)
+    insert delta.blown_fiber_tube(design/NB046,116,update)
+    insert delta.blown_fiber_tube(design/NB046,117,update)
+    insert delta.blown_fiber_tube(design/NB046,118,update)
+    insert delta.blown_fiber_tube(design/NB046,119,update)
+    insert delta.blown_fiber_tube(design/NB046,120,update)
+    insert delta.mywcom_conduit_run(design/NB046,100000,insert)
+    insert delta.mywcom_conduit_run(design/NB046,25,update)
+
+VALIDATION ERRORS: CUT TUBE
+
+
+*** CUT TUBE CONTAINING CABLE
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: CUT TUBE CONTAINING CABLE
+    insert delta.blown_fiber_tube(design/NB046,107,update)
+    insert delta.blown_fiber_tube(design/NB046,108,update)
+    insert delta.blown_fiber_tube(design/NB046,109,update)
+    insert delta.blown_fiber_tube(design/NB046,110,update)
+    insert delta.blown_fiber_tube(design/NB046,111,update)
+    insert delta.blown_fiber_tube(design/NB046,112,update)
+    insert delta.mywcom_conduit_run(design/NB046,100001,insert)
+    insert delta.mywcom_conduit_run(design/NB046,24,update)
+
+VALIDATION ERRORS: CUT TUBE CONTAINING CABLE
+

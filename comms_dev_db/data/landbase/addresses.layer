@@ -1,0 +1,29 @@
+{
+   "name": "Addresses",
+   "display_name": "Addresses",
+   "category": "overlay",
+   "code": "a",
+   "description": "Customer locations (from OSM building centroids)",
+   "datasource": "myworld",
+   "spec": {
+      "isStatic": true,
+      "extraOptions": {},
+      "nativeAppVector": null,
+      "nativeAppMode": "switchable",
+      "rendering": "vector",
+      "jsClass": "",
+      "useImageCanvas": true,
+      "render_order_point_offset": 0
+   },
+   "transparency": 0,
+   "min_scale": 16,
+   "max_scale": 22,
+   "feature_types": [
+      {
+         "name": "address",
+         "field_name": "location",
+         "point_style": "building:#008000:1m:#000000",
+         "text_style": "street_number:#000000:2m:top+1:center:::19:22::point"
+      }
+   ]
+}

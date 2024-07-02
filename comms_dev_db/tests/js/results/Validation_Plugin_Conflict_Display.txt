@@ -1,0 +1,430 @@
+
+*** check design/CC5462
+Set delta to: design/CC5462
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     In BF Bundle: blown_fiber_bundle/50000
+Conflict.delta Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: drop_point/4400
+     Out BF Bundle: blown_fiber_bundle/4400
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: mywcom_route_junction/50000
+     Out BF Bundle: blown_fiber_bundle/50000
+Conflict.delta Change: FeatureChange.update
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     In BF Tube: blown_fiber_tube/50000
+Conflict.delta Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: drop_point/4400
+     Out BF Tube: blown_fiber_tube/4400
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: mywcom_route_junction/50000
+     Out BF Tube: blown_fiber_tube/50000
+Conflict.delta Change: FeatureChange.update
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     In BF Tube: blown_fiber_tube/50001
+Conflict.delta Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: drop_point/4400
+     Out BF Tube: blown_fiber_tube/4401
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: mywcom_route_junction/50000
+     Out BF Tube: blown_fiber_tube/50001
+Conflict.delta Change: FeatureChange.update
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     In BF Tube: blown_fiber_tube/50002
+Conflict.delta Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: drop_point/4400
+     Out BF Tube: blown_fiber_tube/4402
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: mywcom_route_junction/50000
+     Out BF Tube: blown_fiber_tube/50002
+Conflict.delta Change: FeatureChange.update
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     In BF Tube: blown_fiber_tube/50005
+Conflict.delta Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: drop_point/4400
+     Out BF Tube: FeatureChange.null
+     Conduit Run: mywcom_conduit_run/4401
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Path: LineString(3)
+     End Structure: mywcom_route_junction/50000
+     Out BF Tube: blown_fiber_tube/50005
+Conflict.delta Change: FeatureChange.update
+     Conduit Run: mywcom_conduit_run/4401
+
+
+
+Short description:  O-048-CN-5L-F12NS
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(19)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(20)
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(19)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(12)
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(16)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(17)
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(11)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(12)
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(18)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(19)
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(19)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(20)
+
+
+
+Short description:  
+Hover text:  IntegrityError.duplicate_connection
+    IntegrityError.side: in
+    IntegrityError.conn1: WH-FCB-009#out:10:13 -> DROP-5462#in:1:4
+    IntegrityError.conn2: WH-FCB-009#out:13 -> DROP-148#in:1
+    IntegrityError.clash_pins: out:13
+    IntegrityError.housing: Splice Closure: WH-SC-039
+    IntegrityError.struct: Cabinet: WH-C-11
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Out Segment: 50000
+Conflict.delta Change: FeatureChange.update
+     In Structure: drop_point/4400
+     In Segment: 4400
+     Path: LineString(3)
+     In Tick: FeatureChange.null
+
+
+
+Short description:  101-201 : WH-2 [101-201] Active
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Route: MultiLineString(367)
+Conflict.delta Change: FeatureChange.update
+   * Route: MultiLineString(371)
+
+
+
+
+*** check design/NB335
+Set delta to: design/NB335
+Short description:  O-048-CN-5L-F12NS
+Hover text:  Conflict.master Change: FeatureChange.update
+     Path: LineString(12)
+     Placement Path: LineString(2)
+Conflict.delta Change: FeatureChange.update
+     Path: LineString(12)
+     Placement Path: LineString(2)
+
+
+
+Short description:  O-048-CN-5L-F12NS
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(9)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(9)
+
+
+
+Short description:  NETCONNECT 24 Count OS2
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(6)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(6)
+
+
+
+Short description:  
+Hover text:  Conflict.master Conflict.change: Conflict.delete
+Conflict.delta Change: FeatureChange.delete
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Spec: FPM-CCANN-MCX
+   * Labor Costs: tree_trim,hole_dig,survey
+   * Location: Point(1)
+   * Length: 33 in
+   * Width: 51 in
+   * Depth: 35 in
+     Installed: 2006-01-03
+Conflict.delta Change: FeatureChange.update
+   * Spec: FPM-CCANN-C2
+   * Labor Costs: hole_dig,level_ground
+   * Location: Point(1)
+   * Length: 24 in
+   * Width: 47 in
+   * Depth: 35 in
+     Lockable: true
+     Installed: 2006-01-03
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Spec: FPM-CCANN-J4
+     Labor Costs: tree_trim
+     Length: 17 in
+     Width: 36 in
+     Depth: 31 in
+     Installed: 2006-01-03
+Conflict.delta Change: FeatureChange.delete
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Out Structure: mywcom_route_junction/50001
+     Out Segment: FeatureChange.null
+Conflict.delta Change: FeatureChange.update
+   * Out Structure: mywcom_route_junction/5200
+     Out Segment: FeatureChange.null
+
+
+
+Short description:  
+Hover text:  Conflict.master Conflict.change: Conflict.delete
+Conflict.delta Change: FeatureChange.delete
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(3)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(3)
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Out Structure: mywcom_route_junction/50001
+Conflict.delta Change: FeatureChange.update
+   * Out Structure: mywcom_route_junction/5200
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * In Structure: mywcom_route_junction/50001
+Conflict.delta Change: FeatureChange.update
+   * In Structure: mywcom_route_junction/5200
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(3)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(3)
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * End Structure: mywcom_route_junction/50001
+Conflict.delta Change: FeatureChange.update
+   * End Structure: mywcom_route_junction/5200
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Start Structure: mywcom_route_junction/50001
+Conflict.delta Change: FeatureChange.update
+   * Start Structure: mywcom_route_junction/5200
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Cover: Brick
+Conflict.delta Change: FeatureChange.delete
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+   * Path: LineString(3)
+Conflict.delta Change: FeatureChange.update
+   * Path: LineString(3)
+
+
+
+
+*** check systest/conflicts1
+Set delta to: systest/conflicts1
+Short description:  
+Hover text:  IntegrityError.geom_mismatch_at
+    BF Tube: WH-BF-73 : 1: LineString(2)
+    BF Bundle: (6): LineString(2)
+IntegrityError.broken_chain
+    IntegrityError.at: Cabinet: WH-C-11
+IntegrityError.broken_chain
+    IntegrityError.at: Manhole: WH-M-39
+
+
+
+Short description:  D-096-LA-8W-F12NS
+Hover text:  Conflict.master Change: FeatureChange.update
+     Path: LineString(38)
+Conflict.delta Change: FeatureChange.update
+     Distribution: FeatureChange.null
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Location: Point(1)
+Conflict.delta Change: FeatureChange.update
+     Housing: ug_route/89
+
+
+
+Short description:  
+Hover text:  IntegrityError.geom_mismatch
+    Conduit Run: 57: LineString(2)
+
+
+
+Short description:  
+Hover text:  IntegrityError.bad_pin_range
+    IntegrityError.side: out
+    IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+    IntegrityError.range: in:35:6
+    IntegrityError.housing: Splice Closure: WH-SC-039
+    IntegrityError.struct: Cabinet: WH-C-11
+IntegrityError.bad_pin_range
+    IntegrityError.side: in
+    IntegrityError.connection: WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+    IntegrityError.range: out:80:6
+    IntegrityError.housing: Splice Closure: WH-SC-039
+    IntegrityError.struct: Cabinet: WH-C-11
+
+
+
+Short description:  
+Hover text:  IntegrityError.broken_chain
+    IntegrityError.back_ref: 77
+IntegrityError.geom_mismatch_at
+    Cable Segment: 76 (fiber_cable/9): LineString(7)
+    Cable Segment: 76 (fiber_cable/9): LineString(7)
+IntegrityError.tick_mark_invalid
+    IntegrityError.invalid_tick: 0
+    IntegrityError.overlap_seg: Cable Segment: 77 (fiber_cable/9)
+
+
+
+Short description:  
+Hover text:  IntegrityError.duplicate_connection
+    IntegrityError.side: in
+    IntegrityError.conn1: WH-FCB-009#out:13 -> DROP-146#in:1
+    IntegrityError.conn2: WH-FCB-009#out:13 -> DROP-148#in:1
+    IntegrityError.clash_pins: out:13
+    IntegrityError.housing: Splice Closure: WH-SC-039
+    IntegrityError.struct: Cabinet: WH-C-11
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Path: LineString(4)
+Conflict.delta Change: FeatureChange.update
+     Distribution: FeatureChange.null
+
+
+
+Short description:  
+Hover text:  Conflict.master Change: FeatureChange.update
+     Path: LineString(4)
+Conflict.delta Change: FeatureChange.update
+     Distribution: FeatureChange.null
+
+
+
+Short description:  
+Hover text:  IntegrityError.geom_mismatch_at
+    Cable Segment: 87 (fiber_cable/9): LineString(11)
+    Route (Underground): 89: LineString(11)
+
+
+
+Short description:  
+Hover text:  IntegrityError.geom_mismatch_at
+    Route (Underground): 89: LineString(11)
+    Manhole: WH-M-48: Point(1)
+
+
+

@@ -1,0 +1,421 @@
+TEST: AFTER ENTER STRUCTURE MODE
+    label: Manhole
+    label: Cabinet
+    label: Pole (Wood)
+    label: Pole (Steel)
+    label: Wall Box
+    label: Overhead Route
+    label: Underground Route
+    label: Conduit
+    label: BF Tube (12)
+
+
+TEST: AFTER CLICK PALETTE ENTRY: MANHOLE
+    input: 
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    label: Spec*
+    label: feature-edit-input
+    input: 
+    label: Length*
+    label: feature-edit-input
+    input: 
+    label: Width*
+    label: feature-edit-input
+    input: 
+    label: Depth*
+    label: feature-edit-input
+    input: 
+    label: Lockable*
+    label: feature-edit-input
+    input: false
+    label: Powered*
+    label: feature-edit-input
+    input: false
+    label: Installed*
+    label: feature-edit-input
+    input: 
+    label: Labor Costs*
+    label: feature-edit-input
+    input: 
+  header: Location
+    button: Cancel
+    button: Save
+    label: ManholeManhole
+    label: Cabinet
+    label: Pole (Wood)
+    label: Pole (Steel)
+    label: Wall Box
+    label: Overhead Route
+    label: Underground Route
+    label: Conduit
+    label: BF Tube (12)
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: AFTER ADDING A POLE TO THE PALETTE
+    input: 
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    label: Spec*
+    label: feature-edit-input
+    input: 
+    label: Length*
+    label: feature-edit-input
+    input: 
+    label: Width*
+    label: feature-edit-input
+    input: 
+    label: Depth*
+    label: feature-edit-input
+    input: 
+    label: Lockable*
+    label: feature-edit-input
+    input: false
+    label: Powered*
+    label: feature-edit-input
+    input: false
+    label: Installed*
+    label: feature-edit-input
+    input: 
+    label: Labor Costs*
+    label: feature-edit-input
+    input: 
+  header: Location
+    button: Cancel
+    button: Save
+    label: Manhole
+    label: Cabinet
+    label: Pole (Wood)
+    label: Pole (Steel)
+    label: Wall Box
+    label: Overhead Route
+    label: Underground Route
+    label: Conduit
+    label: BF Tube (12)
+    label: Manhole-1
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: AFTER RENAMING A BUTTON
+    input: 
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    label: Spec*
+    label: feature-edit-input
+    input: 
+    label: Length*
+    label: feature-edit-input
+    input: 
+    label: Width*
+    label: feature-edit-input
+    input: 
+    label: Depth*
+    label: feature-edit-input
+    input: 
+    label: Lockable*
+    label: feature-edit-input
+    input: false
+    label: Powered*
+    label: feature-edit-input
+    input: false
+    label: Installed*
+    label: feature-edit-input
+    input: 
+    label: Labor Costs*
+    label: feature-edit-input
+    input: 
+  header: Location
+    button: Cancel
+    button: Save
+    label: Manhole
+    label: Cabinet
+    label: Pole (Wood)
+    label: Pole (Steel)
+    label: Wall Box
+    label: Overhead Route
+    label: Underground Route
+    label: Conduit
+    label: BF Tube (12)
+    label: Manhole (MCX)
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+    list item: Rename
+    label: Rename
+    list item: Remove
+    label: Remove
+    list item: context-menu-item context-menu-separator context-menu-not-selectable
+    list item: Add object
+    label: Add object
+    list item: Add assembly
+    label: Add assembly
+    list item: context-menu-item context-menu-separator context-menu-not-selectable
+    list item: Reset to default
+    label: Reset to default
+
+
+TEST: AFTER REMOVING A BUTTON
+    input: 
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    label: Spec*
+    label: feature-edit-input
+    input: 
+    label: Length*
+    label: feature-edit-input
+    input: 
+    label: Width*
+    label: feature-edit-input
+    input: 
+    label: Depth*
+    label: feature-edit-input
+    input: 
+    label: Lockable*
+    label: feature-edit-input
+    input: false
+    label: Powered*
+    label: feature-edit-input
+    input: false
+    label: Installed*
+    label: feature-edit-input
+    input: 
+    label: Labor Costs*
+    label: feature-edit-input
+    input: 
+  header: Location
+    button: Cancel
+    button: Save
+    label: Manhole
+    label: Cabinet
+    label: Pole (Steel)
+    label: Wall Box
+    label: Overhead Route
+    label: Underground Route
+    label: Conduit
+    label: BF Tube (12)
+    label: Manhole (MCX)
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: AFTER RESETTING TO DEFAULT
+    input: 
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    label: Spec*
+    label: feature-edit-input
+    input: 
+    label: Length*
+    label: feature-edit-input
+    input: 
+    label: Width*
+    label: feature-edit-input
+    input: 
+    label: Depth*
+    label: feature-edit-input
+    input: 
+    label: Lockable*
+    label: feature-edit-input
+    input: false
+    label: Powered*
+    label: feature-edit-input
+    input: false
+    label: Installed*
+    label: feature-edit-input
+    input: 
+    label: Labor Costs*
+    label: feature-edit-input
+    input: 
+  header: Location
+    button: Cancel
+    button: Save
+    label: Manhole
+    label: Cabinet
+    label: Pole (Wood)
+    label: Pole (Steel)
+    label: Wall Box
+    label: Overhead Route
+    label: Underground Route
+    label: Conduit
+    label: BF Tube (12)
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+

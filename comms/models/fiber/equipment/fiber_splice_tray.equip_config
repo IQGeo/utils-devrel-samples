@@ -1,0 +1,13 @@
+{
+    "image": "modules/comms/images/features/fiber_splice_tray.svg",
+    "housings": ["splice_closure", "cabinet"],
+    "function": "enclosure",
+    "palette": true,
+    "tech": "fiber",
+    "layer": {
+        "min_vis": 0,
+        "max_vis": 0,
+        "min_select": 0,
+        "max_select": 0
+    }   
+}

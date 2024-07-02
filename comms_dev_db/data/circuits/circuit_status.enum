@@ -1,0 +1,9 @@
+{
+    "name": "circuit_status",
+    "description": "States in circuit lifecycle",
+    "values": [
+        "New",
+        "Planned",
+        "In Service"
+    ]
+}

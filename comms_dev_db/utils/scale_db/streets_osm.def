@@ -1,0 +1,80 @@
+{
+   "datasource": "myworld",
+   "name": "streets_osm",
+   "external_name": "Streets (OSM)",
+   "title": "{display_name}: [name]",
+   "short_description": null,
+   "track_changes": true,
+   "versioned": false,
+   "geom_indexed": true,
+   "editable": false,
+   "fields": [
+      {
+         "name": "osm_id",
+         "external_name": "Osm Id",
+         "type": "string(100)"
+      },
+      {
+         "name": "name",
+         "external_name": "Name",
+         "type": "string(100)"
+      },
+      {
+         "name": "waterway",
+         "external_name": "Waterway",
+         "type": "string(100)"
+      },
+      {
+         "name": "z_order",
+         "external_name": "Z Order",
+         "type": "integer"
+      },
+      {
+         "name": "other_tags",
+         "external_name": "Other Tags",
+         "type": "string(609)"
+      },
+      {
+         "name": "the_geom",
+         "external_name": "Route",
+         "type": "linestring"
+      },
+      {
+         "name": "railway",
+         "external_name": "Railway",
+         "type": "string(100)"
+      },
+      {
+         "name": "highway",
+         "external_name": "Highway",
+         "type": "string(100)"
+      },
+      {
+         "name": "barrier",
+         "external_name": "Barrier",
+         "type": "string(100)"
+      },
+      {
+         "name": "man_made",
+         "external_name": "Man Made",
+         "type": "string(100)"
+      },
+      {
+         "name": "id",
+         "external_name": "Id",
+         "type": "integer",
+         "key": true,
+         "generator": "sequence"
+      }
+   ],
+   "groups": [],
+   "searches": [],
+   "queries": [
+      {
+         "value": "streets_osm",
+         "description": "Streets (OSM)",
+         "lang": "en"
+      }
+   ],
+   "filters": []
+}

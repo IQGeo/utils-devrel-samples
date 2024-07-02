@@ -1,0 +1,18 @@
+.item {
+    text-transform: capitalize;
+}
+
+.list {
+    padding-left: 25px;
+    justify-self: start;
+}
+
+.dialog-body {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(10px, min-content));
+    gap: 10px;
+    p {
+        margin: 0 !important;
+        justify-self: start;
+    }
+}

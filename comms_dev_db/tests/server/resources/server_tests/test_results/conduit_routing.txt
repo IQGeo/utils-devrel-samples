@@ -1,0 +1,490 @@
+
+SUB TEST : ROUTE SINGLE PATH
+    Request: POST: /modules/comms/conduit/conduit/route?delta=design/NB046&num_paths=1
+    Response: 200 (200 OK)
+    {
+       "count": 9,
+       "features": [
+          "conduit(100000)    Conduit: WH-CND-100000",
+          "conduit(100001)    Conduit: WH-CND-100001",
+          "conduit(100002)    Conduit: WH-CND-100002",
+          "conduit(100003)    Conduit: WH-CND-100003",
+          "conduit(100004)    Conduit: WH-CND-100004",
+          "conduit(100005)    Conduit: WH-CND-100005",
+          "conduit(100006)    Conduit: WH-CND-100006",
+          "conduit(100007)    Conduit: WH-CND-100007",
+          "conduit(100008)    Conduit: WH-CND-100008"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: ROUTE SINGLE PATH
+       insert delta.conduit(design/NB046,100000,insert)
+       insert delta.conduit(design/NB046,100001,insert)
+       insert delta.conduit(design/NB046,100002,insert)
+       insert delta.conduit(design/NB046,100003,insert)
+       insert delta.conduit(design/NB046,100004,insert)
+       insert delta.conduit(design/NB046,100005,insert)
+       insert delta.conduit(design/NB046,100006,insert)
+       insert delta.conduit(design/NB046,100007,insert)
+       insert delta.conduit(design/NB046,100008,insert)
+    
+    VALIDATION ERRORS: ROUTE SINGLE PATH
+
+SUB TEST : ROUTE MULTIPLE PATHS
+    Request: POST: /modules/comms/conduit/conduit/route?delta=design/NB046&num_paths=6
+    Response: 200 (200 OK)
+    {
+       "count": 54,
+       "features": [
+          "conduit(100009)    Conduit: WH-CND-100009",
+          "conduit(100010)    Conduit: WH-CND-100010",
+          "conduit(100011)    Conduit: WH-CND-100011",
+          "conduit(100012)    Conduit: WH-CND-100012",
+          "conduit(100013)    Conduit: WH-CND-100013",
+          "conduit(100014)    Conduit: WH-CND-100014",
+          "conduit(100015)    Conduit: WH-CND-100015",
+          "conduit(100016)    Conduit: WH-CND-100016",
+          "conduit(100017)    Conduit: WH-CND-100017",
+          "conduit(100018)    Conduit: WH-CND-100018",
+          "conduit(100019)    Conduit: WH-CND-100019",
+          "conduit(100020)    Conduit: WH-CND-100020",
+          "conduit(100021)    Conduit: WH-CND-100021",
+          "conduit(100022)    Conduit: WH-CND-100022",
+          "conduit(100023)    Conduit: WH-CND-100023",
+          "conduit(100024)    Conduit: WH-CND-100024",
+          "conduit(100025)    Conduit: WH-CND-100025",
+          "conduit(100026)    Conduit: WH-CND-100026",
+          "conduit(100027)    Conduit: WH-CND-100027",
+          "conduit(100028)    Conduit: WH-CND-100028",
+          "conduit(100029)    Conduit: WH-CND-100029",
+          "conduit(100030)    Conduit: WH-CND-100030",
+          "conduit(100031)    Conduit: WH-CND-100031",
+          "conduit(100032)    Conduit: WH-CND-100032",
+          "conduit(100033)    Conduit: WH-CND-100033",
+          "conduit(100034)    Conduit: WH-CND-100034",
+          "conduit(100035)    Conduit: WH-CND-100035",
+          "conduit(100036)    Conduit: WH-CND-100036",
+          "conduit(100037)    Conduit: WH-CND-100037",
+          "conduit(100038)    Conduit: WH-CND-100038",
+          "conduit(100039)    Conduit: WH-CND-100039",
+          "conduit(100040)    Conduit: WH-CND-100040",
+          "conduit(100041)    Conduit: WH-CND-100041",
+          "conduit(100042)    Conduit: WH-CND-100042",
+          "conduit(100043)    Conduit: WH-CND-100043",
+          "conduit(100044)    Conduit: WH-CND-100044",
+          "conduit(100045)    Conduit: WH-CND-100045",
+          "conduit(100046)    Conduit: WH-CND-100046",
+          "conduit(100047)    Conduit: WH-CND-100047",
+          "conduit(100048)    Conduit: WH-CND-100048",
+          "conduit(100049)    Conduit: WH-CND-100049",
+          "conduit(100050)    Conduit: WH-CND-100050",
+          "conduit(100051)    Conduit: WH-CND-100051",
+          "conduit(100052)    Conduit: WH-CND-100052",
+          "conduit(100053)    Conduit: WH-CND-100053",
+          "conduit(100054)    Conduit: WH-CND-100054",
+          "conduit(100055)    Conduit: WH-CND-100055",
+          "conduit(100056)    Conduit: WH-CND-100056",
+          "conduit(100057)    Conduit: WH-CND-100057",
+          "conduit(100058)    Conduit: WH-CND-100058",
+          "conduit(100059)    Conduit: WH-CND-100059",
+          "conduit(100060)    Conduit: WH-CND-100060",
+          "conduit(100061)    Conduit: WH-CND-100061",
+          "conduit(100062)    Conduit: WH-CND-100062"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: ROUTE MULTIPLE PATHS
+       insert delta.conduit(design/NB046,100009,insert)
+       insert delta.conduit(design/NB046,100010,insert)
+       insert delta.conduit(design/NB046,100011,insert)
+       insert delta.conduit(design/NB046,100012,insert)
+       insert delta.conduit(design/NB046,100013,insert)
+       insert delta.conduit(design/NB046,100014,insert)
+       insert delta.conduit(design/NB046,100015,insert)
+       insert delta.conduit(design/NB046,100016,insert)
+       insert delta.conduit(design/NB046,100017,insert)
+       insert delta.conduit(design/NB046,100018,insert)
+       insert delta.conduit(design/NB046,100019,insert)
+       insert delta.conduit(design/NB046,100020,insert)
+       insert delta.conduit(design/NB046,100021,insert)
+       insert delta.conduit(design/NB046,100022,insert)
+       insert delta.conduit(design/NB046,100023,insert)
+       insert delta.conduit(design/NB046,100024,insert)
+       insert delta.conduit(design/NB046,100025,insert)
+       insert delta.conduit(design/NB046,100026,insert)
+       insert delta.conduit(design/NB046,100027,insert)
+       insert delta.conduit(design/NB046,100028,insert)
+       insert delta.conduit(design/NB046,100029,insert)
+       insert delta.conduit(design/NB046,100030,insert)
+       insert delta.conduit(design/NB046,100031,insert)
+       insert delta.conduit(design/NB046,100032,insert)
+       insert delta.conduit(design/NB046,100033,insert)
+       insert delta.conduit(design/NB046,100034,insert)
+       insert delta.conduit(design/NB046,100035,insert)
+       insert delta.conduit(design/NB046,100036,insert)
+       insert delta.conduit(design/NB046,100037,insert)
+       insert delta.conduit(design/NB046,100038,insert)
+       insert delta.conduit(design/NB046,100039,insert)
+       insert delta.conduit(design/NB046,100040,insert)
+       insert delta.conduit(design/NB046,100041,insert)
+       insert delta.conduit(design/NB046,100042,insert)
+       insert delta.conduit(design/NB046,100043,insert)
+       insert delta.conduit(design/NB046,100044,insert)
+       insert delta.conduit(design/NB046,100045,insert)
+       insert delta.conduit(design/NB046,100046,insert)
+       insert delta.conduit(design/NB046,100047,insert)
+       insert delta.conduit(design/NB046,100048,insert)
+       insert delta.conduit(design/NB046,100049,insert)
+       insert delta.conduit(design/NB046,100050,insert)
+       insert delta.conduit(design/NB046,100051,insert)
+       insert delta.conduit(design/NB046,100052,insert)
+       insert delta.conduit(design/NB046,100053,insert)
+       insert delta.conduit(design/NB046,100054,insert)
+       insert delta.conduit(design/NB046,100055,insert)
+       insert delta.conduit(design/NB046,100056,insert)
+       insert delta.conduit(design/NB046,100057,insert)
+       insert delta.conduit(design/NB046,100058,insert)
+       insert delta.conduit(design/NB046,100059,insert)
+       insert delta.conduit(design/NB046,100060,insert)
+       insert delta.conduit(design/NB046,100061,insert)
+       insert delta.conduit(design/NB046,100062,insert)
+    
+    VALIDATION ERRORS: ROUTE MULTIPLE PATHS
+
+SUB TEST : ROUTE SINGLE TUBE
+    Request: POST: /modules/comms/conduit/blown_fiber_tube/route?delta=design/NB046&num_paths=1
+    Response: 200 (200 OK)
+    {
+       "count": 9,
+       "features": [
+          "blown_fiber_tube(100000)    BF Tube: WH-BF-100000",
+          "blown_fiber_tube(100001)    BF Tube: WH-BF-100000",
+          "blown_fiber_tube(100002)    BF Tube: WH-BF-100000",
+          "blown_fiber_tube(100003)    BF Tube: WH-BF-100000",
+          "blown_fiber_tube(100004)    BF Tube: WH-BF-100000",
+          "blown_fiber_tube(100005)    BF Tube: WH-BF-100000",
+          "blown_fiber_tube(100006)    BF Tube: WH-BF-100000",
+          "blown_fiber_tube(100007)    BF Tube: WH-BF-100000",
+          "blown_fiber_tube(100008)    BF Tube: WH-BF-100000"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: ROUTE SINGLE TUBE
+       insert delta.blown_fiber_tube(design/NB046,100000,insert)
+       insert delta.blown_fiber_tube(design/NB046,100001,insert)
+       insert delta.blown_fiber_tube(design/NB046,100002,insert)
+       insert delta.blown_fiber_tube(design/NB046,100003,insert)
+       insert delta.blown_fiber_tube(design/NB046,100004,insert)
+       insert delta.blown_fiber_tube(design/NB046,100005,insert)
+       insert delta.blown_fiber_tube(design/NB046,100006,insert)
+       insert delta.blown_fiber_tube(design/NB046,100007,insert)
+       insert delta.blown_fiber_tube(design/NB046,100008,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100000,insert)
+    
+    VALIDATION ERRORS: ROUTE SINGLE TUBE
+
+SUB TEST : ROUTE MULTIPLE TUBES
+    Request: POST: /modules/comms/conduit/blown_fiber_tube/route?delta=design/NB046&num_paths=12
+    Response: 200 (200 OK)
+    {
+       "count": 108,
+       "features": [
+          "blown_fiber_tube(100009)    BF Tube: WH-BF-100009 : 1",
+          "blown_fiber_tube(100010)    BF Tube: WH-BF-100009 : 1",
+          "blown_fiber_tube(100011)    BF Tube: WH-BF-100009 : 1",
+          "blown_fiber_tube(100012)    BF Tube: WH-BF-100009 : 1",
+          "blown_fiber_tube(100013)    BF Tube: WH-BF-100009 : 1",
+          "blown_fiber_tube(100014)    BF Tube: WH-BF-100009 : 1",
+          "blown_fiber_tube(100015)    BF Tube: WH-BF-100009 : 1",
+          "blown_fiber_tube(100016)    BF Tube: WH-BF-100009 : 1",
+          "blown_fiber_tube(100017)    BF Tube: WH-BF-100009 : 1",
+          "blown_fiber_tube(100018)    BF Tube: WH-BF-100018 : 2",
+          "blown_fiber_tube(100019)    BF Tube: WH-BF-100018 : 2",
+          "blown_fiber_tube(100020)    BF Tube: WH-BF-100018 : 2",
+          "blown_fiber_tube(100021)    BF Tube: WH-BF-100018 : 2",
+          "blown_fiber_tube(100022)    BF Tube: WH-BF-100018 : 2",
+          "blown_fiber_tube(100023)    BF Tube: WH-BF-100018 : 2",
+          "blown_fiber_tube(100024)    BF Tube: WH-BF-100018 : 2",
+          "blown_fiber_tube(100025)    BF Tube: WH-BF-100018 : 2",
+          "blown_fiber_tube(100026)    BF Tube: WH-BF-100018 : 2",
+          "blown_fiber_tube(100027)    BF Tube: WH-BF-100027 : 3",
+          "blown_fiber_tube(100028)    BF Tube: WH-BF-100027 : 3",
+          "blown_fiber_tube(100029)    BF Tube: WH-BF-100027 : 3",
+          "blown_fiber_tube(100030)    BF Tube: WH-BF-100027 : 3",
+          "blown_fiber_tube(100031)    BF Tube: WH-BF-100027 : 3",
+          "blown_fiber_tube(100032)    BF Tube: WH-BF-100027 : 3",
+          "blown_fiber_tube(100033)    BF Tube: WH-BF-100027 : 3",
+          "blown_fiber_tube(100034)    BF Tube: WH-BF-100027 : 3",
+          "blown_fiber_tube(100035)    BF Tube: WH-BF-100027 : 3",
+          "blown_fiber_tube(100036)    BF Tube: WH-BF-100036 : 4",
+          "blown_fiber_tube(100037)    BF Tube: WH-BF-100036 : 4",
+          "blown_fiber_tube(100038)    BF Tube: WH-BF-100036 : 4",
+          "blown_fiber_tube(100039)    BF Tube: WH-BF-100036 : 4",
+          "blown_fiber_tube(100040)    BF Tube: WH-BF-100036 : 4",
+          "blown_fiber_tube(100041)    BF Tube: WH-BF-100036 : 4",
+          "blown_fiber_tube(100042)    BF Tube: WH-BF-100036 : 4",
+          "blown_fiber_tube(100043)    BF Tube: WH-BF-100036 : 4",
+          "blown_fiber_tube(100044)    BF Tube: WH-BF-100036 : 4",
+          "blown_fiber_tube(100045)    BF Tube: WH-BF-100045 : 5",
+          "blown_fiber_tube(100046)    BF Tube: WH-BF-100045 : 5",
+          "blown_fiber_tube(100047)    BF Tube: WH-BF-100045 : 5",
+          "blown_fiber_tube(100048)    BF Tube: WH-BF-100045 : 5",
+          "blown_fiber_tube(100049)    BF Tube: WH-BF-100045 : 5",
+          "blown_fiber_tube(100050)    BF Tube: WH-BF-100045 : 5",
+          "blown_fiber_tube(100051)    BF Tube: WH-BF-100045 : 5",
+          "blown_fiber_tube(100052)    BF Tube: WH-BF-100045 : 5",
+          "blown_fiber_tube(100053)    BF Tube: WH-BF-100045 : 5",
+          "blown_fiber_tube(100054)    BF Tube: WH-BF-100054 : 6",
+          "blown_fiber_tube(100055)    BF Tube: WH-BF-100054 : 6",
+          "blown_fiber_tube(100056)    BF Tube: WH-BF-100054 : 6",
+          "blown_fiber_tube(100057)    BF Tube: WH-BF-100054 : 6",
+          "blown_fiber_tube(100058)    BF Tube: WH-BF-100054 : 6",
+          "blown_fiber_tube(100059)    BF Tube: WH-BF-100054 : 6",
+          "blown_fiber_tube(100060)    BF Tube: WH-BF-100054 : 6",
+          "blown_fiber_tube(100061)    BF Tube: WH-BF-100054 : 6",
+          "blown_fiber_tube(100062)    BF Tube: WH-BF-100054 : 6",
+          "blown_fiber_tube(100063)    BF Tube: WH-BF-100063 : 7",
+          "blown_fiber_tube(100064)    BF Tube: WH-BF-100063 : 7",
+          "blown_fiber_tube(100065)    BF Tube: WH-BF-100063 : 7",
+          "blown_fiber_tube(100066)    BF Tube: WH-BF-100063 : 7",
+          "blown_fiber_tube(100067)    BF Tube: WH-BF-100063 : 7",
+          "blown_fiber_tube(100068)    BF Tube: WH-BF-100063 : 7",
+          "blown_fiber_tube(100069)    BF Tube: WH-BF-100063 : 7",
+          "blown_fiber_tube(100070)    BF Tube: WH-BF-100063 : 7",
+          "blown_fiber_tube(100071)    BF Tube: WH-BF-100063 : 7",
+          "blown_fiber_tube(100072)    BF Tube: WH-BF-100072 : 8",
+          "blown_fiber_tube(100073)    BF Tube: WH-BF-100072 : 8",
+          "blown_fiber_tube(100074)    BF Tube: WH-BF-100072 : 8",
+          "blown_fiber_tube(100075)    BF Tube: WH-BF-100072 : 8",
+          "blown_fiber_tube(100076)    BF Tube: WH-BF-100072 : 8",
+          "blown_fiber_tube(100077)    BF Tube: WH-BF-100072 : 8",
+          "blown_fiber_tube(100078)    BF Tube: WH-BF-100072 : 8",
+          "blown_fiber_tube(100079)    BF Tube: WH-BF-100072 : 8",
+          "blown_fiber_tube(100080)    BF Tube: WH-BF-100072 : 8",
+          "blown_fiber_tube(100081)    BF Tube: WH-BF-100081 : 9",
+          "blown_fiber_tube(100082)    BF Tube: WH-BF-100081 : 9",
+          "blown_fiber_tube(100083)    BF Tube: WH-BF-100081 : 9",
+          "blown_fiber_tube(100084)    BF Tube: WH-BF-100081 : 9",
+          "blown_fiber_tube(100085)    BF Tube: WH-BF-100081 : 9",
+          "blown_fiber_tube(100086)    BF Tube: WH-BF-100081 : 9",
+          "blown_fiber_tube(100087)    BF Tube: WH-BF-100081 : 9",
+          "blown_fiber_tube(100088)    BF Tube: WH-BF-100081 : 9",
+          "blown_fiber_tube(100089)    BF Tube: WH-BF-100081 : 9",
+          "blown_fiber_tube(100090)    BF Tube: WH-BF-100090 : 10",
+          "blown_fiber_tube(100091)    BF Tube: WH-BF-100090 : 10",
+          "blown_fiber_tube(100092)    BF Tube: WH-BF-100090 : 10",
+          "blown_fiber_tube(100093)    BF Tube: WH-BF-100090 : 10",
+          "blown_fiber_tube(100094)    BF Tube: WH-BF-100090 : 10",
+          "blown_fiber_tube(100095)    BF Tube: WH-BF-100090 : 10",
+          "blown_fiber_tube(100096)    BF Tube: WH-BF-100090 : 10",
+          "blown_fiber_tube(100097)    BF Tube: WH-BF-100090 : 10",
+          "blown_fiber_tube(100098)    BF Tube: WH-BF-100090 : 10",
+          "blown_fiber_tube(100099)    BF Tube: WH-BF-100099 : 11",
+          "blown_fiber_tube(100100)    BF Tube: WH-BF-100099 : 11",
+          "blown_fiber_tube(100101)    BF Tube: WH-BF-100099 : 11",
+          "blown_fiber_tube(100102)    BF Tube: WH-BF-100099 : 11",
+          "blown_fiber_tube(100103)    BF Tube: WH-BF-100099 : 11",
+          "blown_fiber_tube(100104)    BF Tube: WH-BF-100099 : 11",
+          "blown_fiber_tube(100105)    BF Tube: WH-BF-100099 : 11",
+          "blown_fiber_tube(100106)    BF Tube: WH-BF-100099 : 11",
+          "blown_fiber_tube(100107)    BF Tube: WH-BF-100099 : 11",
+          "blown_fiber_tube(100108)    BF Tube: WH-BF-100108 : 12",
+          "blown_fiber_tube(100109)    BF Tube: WH-BF-100108 : 12",
+          "blown_fiber_tube(100110)    BF Tube: WH-BF-100108 : 12",
+          "blown_fiber_tube(100111)    BF Tube: WH-BF-100108 : 12",
+          "blown_fiber_tube(100112)    BF Tube: WH-BF-100108 : 12",
+          "blown_fiber_tube(100113)    BF Tube: WH-BF-100108 : 12",
+          "blown_fiber_tube(100114)    BF Tube: WH-BF-100108 : 12",
+          "blown_fiber_tube(100115)    BF Tube: WH-BF-100108 : 12",
+          "blown_fiber_tube(100116)    BF Tube: WH-BF-100108 : 12"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: ROUTE MULTIPLE TUBES
+       insert delta.blown_fiber_bundle(design/NB046,100000,insert)
+       insert delta.blown_fiber_bundle(design/NB046,100001,insert)
+       insert delta.blown_fiber_bundle(design/NB046,100002,insert)
+       insert delta.blown_fiber_bundle(design/NB046,100003,insert)
+       insert delta.blown_fiber_bundle(design/NB046,100004,insert)
+       insert delta.blown_fiber_bundle(design/NB046,100005,insert)
+       insert delta.blown_fiber_bundle(design/NB046,100006,insert)
+       insert delta.blown_fiber_bundle(design/NB046,100007,insert)
+       insert delta.blown_fiber_bundle(design/NB046,100008,insert)
+       insert delta.blown_fiber_tube(design/NB046,100009,insert)
+       insert delta.blown_fiber_tube(design/NB046,100010,insert)
+       insert delta.blown_fiber_tube(design/NB046,100011,insert)
+       insert delta.blown_fiber_tube(design/NB046,100012,insert)
+       insert delta.blown_fiber_tube(design/NB046,100013,insert)
+       insert delta.blown_fiber_tube(design/NB046,100014,insert)
+       insert delta.blown_fiber_tube(design/NB046,100015,insert)
+       insert delta.blown_fiber_tube(design/NB046,100016,insert)
+       insert delta.blown_fiber_tube(design/NB046,100017,insert)
+       insert delta.blown_fiber_tube(design/NB046,100018,insert)
+       insert delta.blown_fiber_tube(design/NB046,100019,insert)
+       insert delta.blown_fiber_tube(design/NB046,100020,insert)
+       insert delta.blown_fiber_tube(design/NB046,100021,insert)
+       insert delta.blown_fiber_tube(design/NB046,100022,insert)
+       insert delta.blown_fiber_tube(design/NB046,100023,insert)
+       insert delta.blown_fiber_tube(design/NB046,100024,insert)
+       insert delta.blown_fiber_tube(design/NB046,100025,insert)
+       insert delta.blown_fiber_tube(design/NB046,100026,insert)
+       insert delta.blown_fiber_tube(design/NB046,100027,insert)
+       insert delta.blown_fiber_tube(design/NB046,100028,insert)
+       insert delta.blown_fiber_tube(design/NB046,100029,insert)
+       insert delta.blown_fiber_tube(design/NB046,100030,insert)
+       insert delta.blown_fiber_tube(design/NB046,100031,insert)
+       insert delta.blown_fiber_tube(design/NB046,100032,insert)
+       insert delta.blown_fiber_tube(design/NB046,100033,insert)
+       insert delta.blown_fiber_tube(design/NB046,100034,insert)
+       insert delta.blown_fiber_tube(design/NB046,100035,insert)
+       insert delta.blown_fiber_tube(design/NB046,100036,insert)
+       insert delta.blown_fiber_tube(design/NB046,100037,insert)
+       insert delta.blown_fiber_tube(design/NB046,100038,insert)
+       insert delta.blown_fiber_tube(design/NB046,100039,insert)
+       insert delta.blown_fiber_tube(design/NB046,100040,insert)
+       insert delta.blown_fiber_tube(design/NB046,100041,insert)
+       insert delta.blown_fiber_tube(design/NB046,100042,insert)
+       insert delta.blown_fiber_tube(design/NB046,100043,insert)
+       insert delta.blown_fiber_tube(design/NB046,100044,insert)
+       insert delta.blown_fiber_tube(design/NB046,100045,insert)
+       insert delta.blown_fiber_tube(design/NB046,100046,insert)
+       insert delta.blown_fiber_tube(design/NB046,100047,insert)
+       insert delta.blown_fiber_tube(design/NB046,100048,insert)
+       insert delta.blown_fiber_tube(design/NB046,100049,insert)
+       insert delta.blown_fiber_tube(design/NB046,100050,insert)
+       insert delta.blown_fiber_tube(design/NB046,100051,insert)
+       insert delta.blown_fiber_tube(design/NB046,100052,insert)
+       insert delta.blown_fiber_tube(design/NB046,100053,insert)
+       insert delta.blown_fiber_tube(design/NB046,100054,insert)
+       insert delta.blown_fiber_tube(design/NB046,100055,insert)
+       insert delta.blown_fiber_tube(design/NB046,100056,insert)
+       insert delta.blown_fiber_tube(design/NB046,100057,insert)
+       insert delta.blown_fiber_tube(design/NB046,100058,insert)
+       insert delta.blown_fiber_tube(design/NB046,100059,insert)
+       insert delta.blown_fiber_tube(design/NB046,100060,insert)
+       insert delta.blown_fiber_tube(design/NB046,100061,insert)
+       insert delta.blown_fiber_tube(design/NB046,100062,insert)
+       insert delta.blown_fiber_tube(design/NB046,100063,insert)
+       insert delta.blown_fiber_tube(design/NB046,100064,insert)
+       insert delta.blown_fiber_tube(design/NB046,100065,insert)
+       insert delta.blown_fiber_tube(design/NB046,100066,insert)
+       insert delta.blown_fiber_tube(design/NB046,100067,insert)
+       insert delta.blown_fiber_tube(design/NB046,100068,insert)
+       insert delta.blown_fiber_tube(design/NB046,100069,insert)
+       insert delta.blown_fiber_tube(design/NB046,100070,insert)
+       insert delta.blown_fiber_tube(design/NB046,100071,insert)
+       insert delta.blown_fiber_tube(design/NB046,100072,insert)
+       insert delta.blown_fiber_tube(design/NB046,100073,insert)
+       insert delta.blown_fiber_tube(design/NB046,100074,insert)
+       insert delta.blown_fiber_tube(design/NB046,100075,insert)
+       insert delta.blown_fiber_tube(design/NB046,100076,insert)
+       insert delta.blown_fiber_tube(design/NB046,100077,insert)
+       insert delta.blown_fiber_tube(design/NB046,100078,insert)
+       insert delta.blown_fiber_tube(design/NB046,100079,insert)
+       insert delta.blown_fiber_tube(design/NB046,100080,insert)
+       insert delta.blown_fiber_tube(design/NB046,100081,insert)
+       insert delta.blown_fiber_tube(design/NB046,100082,insert)
+       insert delta.blown_fiber_tube(design/NB046,100083,insert)
+       insert delta.blown_fiber_tube(design/NB046,100084,insert)
+       insert delta.blown_fiber_tube(design/NB046,100085,insert)
+       insert delta.blown_fiber_tube(design/NB046,100086,insert)
+       insert delta.blown_fiber_tube(design/NB046,100087,insert)
+       insert delta.blown_fiber_tube(design/NB046,100088,insert)
+       insert delta.blown_fiber_tube(design/NB046,100089,insert)
+       insert delta.blown_fiber_tube(design/NB046,100090,insert)
+       insert delta.blown_fiber_tube(design/NB046,100091,insert)
+       insert delta.blown_fiber_tube(design/NB046,100092,insert)
+       insert delta.blown_fiber_tube(design/NB046,100093,insert)
+       insert delta.blown_fiber_tube(design/NB046,100094,insert)
+       insert delta.blown_fiber_tube(design/NB046,100095,insert)
+       insert delta.blown_fiber_tube(design/NB046,100096,insert)
+       insert delta.blown_fiber_tube(design/NB046,100097,insert)
+       insert delta.blown_fiber_tube(design/NB046,100098,insert)
+       insert delta.blown_fiber_tube(design/NB046,100099,insert)
+       insert delta.blown_fiber_tube(design/NB046,100100,insert)
+       insert delta.blown_fiber_tube(design/NB046,100101,insert)
+       insert delta.blown_fiber_tube(design/NB046,100102,insert)
+       insert delta.blown_fiber_tube(design/NB046,100103,insert)
+       insert delta.blown_fiber_tube(design/NB046,100104,insert)
+       insert delta.blown_fiber_tube(design/NB046,100105,insert)
+       insert delta.blown_fiber_tube(design/NB046,100106,insert)
+       insert delta.blown_fiber_tube(design/NB046,100107,insert)
+       insert delta.blown_fiber_tube(design/NB046,100108,insert)
+       insert delta.blown_fiber_tube(design/NB046,100109,insert)
+       insert delta.blown_fiber_tube(design/NB046,100110,insert)
+       insert delta.blown_fiber_tube(design/NB046,100111,insert)
+       insert delta.blown_fiber_tube(design/NB046,100112,insert)
+       insert delta.blown_fiber_tube(design/NB046,100113,insert)
+       insert delta.blown_fiber_tube(design/NB046,100114,insert)
+       insert delta.blown_fiber_tube(design/NB046,100115,insert)
+       insert delta.blown_fiber_tube(design/NB046,100116,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100001,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100002,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100003,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100004,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100005,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100006,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100007,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100008,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100009,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100010,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100011,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100012,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100013,insert)
+    
+    VALIDATION ERRORS: ROUTE MULTIPLE TUBES
+
+SUB TEST : ROUTE WALLBOX TUBE
+    Request: POST: /modules/comms/conduit/blown_fiber_tube/route?delta=design/NB046&num_paths=1
+    Response: 200 (200 OK)
+    {
+       "count": 3,
+       "features": [
+          "blown_fiber_tube(100117)    BF Tube: WB BF",
+          "blown_fiber_tube(100118)    BF Tube: WB BF",
+          "blown_fiber_tube(100119)    BF Tube: WB BF"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: ROUTE WALLBOX TUBE
+       insert delta.blown_fiber_tube(design/NB046,100117,insert)
+       insert delta.blown_fiber_tube(design/NB046,100118,insert)
+       insert delta.blown_fiber_tube(design/NB046,100119,insert)
+       insert delta.mywcom_conduit_run(design/NB046,100014,insert)
+    
+    VALIDATION ERRORS: ROUTE WALLBOX TUBE

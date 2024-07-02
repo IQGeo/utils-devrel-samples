@@ -1,0 +1,29 @@
+MGR CLASS structure <class 'myworldapp.modules.comms.server.api.structure_manager.StructureManager'>
+MGR CLASS conduit <class 'myworldapp.modules.comms.server.api.conduit_manager.ConduitManager'>
+MGR CLASS cable <class 'myworldapp.modules.comms.server.api.cable_manager.CableManager'>
+MGR CLASS equipment <class 'myworldapp.modules.comms.server.api.equipment_manager.EquipmentManager'>
+MGR CLASS circuit <class 'myworldapp.modules.comms_dev_db.server.api.dev_db_circuit_manager.DevDbCircuitManager'>
+MGR CLASS connection <class 'myworldapp.modules.comms.server.api.connection_manager.ConnectionManager'>
+MGR CLASS line_of_count <class 'myworldapp.modules.comms.server.api.loc_manager.LOCManager'>
+TRIGGERS struct_pos_insert [[<class 'myworldapp.modules.comms_dev_db.server.dev_db_name_manager.DevDbNameManager'>, 'setNameFor'], [<class 'myworldapp.modules.comms.server.api.structure_manager.StructureManager'>, 'structPosInsertTrigger']]
+TRIGGERS cable_pos_insert [[<class 'myworldapp.modules.comms_dev_db.server.dev_db_name_manager.DevDbNameManager'>, 'setNameFor'], [<class 'myworldapp.modules.comms.server.api.cable_manager.CableManager'>, 'posInsertTrigger']]
+TRIGGERS equip_pos_insert [[<class 'myworldapp.modules.comms_dev_db.server.dev_db_name_manager.DevDbNameManager'>, 'setNameFor'], [<class 'myworldapp.modules.comms.server.api.equipment_manager.EquipmentManager'>, 'posInsertTrigger']]
+TRIGGERS conduit_pos_insert [[<class 'myworldapp.modules.comms_dev_db.server.dev_db_name_manager.DevDbNameManager'>, 'setNameFor']]
+TRIGGERS struct_pos_update [[<class 'myworldapp.modules.comms_dev_db.server.dev_db_name_manager.DevDbNameManager'>, 'setNameFor'], [<class 'myworldapp.modules.comms.server.api.structure_manager.StructureManager'>, 'structPosUpdateTrigger']]
+TRIGGERS cable_pos_update [[<class 'myworldapp.modules.comms_dev_db.server.dev_db_name_manager.DevDbNameManager'>, 'setNameFor'], [<class 'myworldapp.modules.comms.server.api.cable_manager.CableManager'>, 'posUpdateTrigger']]
+TRIGGERS equip_pos_update [[<class 'myworldapp.modules.comms_dev_db.server.dev_db_name_manager.DevDbNameManager'>, 'setNameFor'], [<class 'myworldapp.modules.comms.server.api.equipment_manager.EquipmentManager'>, 'posUpdateTrigger']]
+TRIGGERS conduit_pos_update [[<class 'myworldapp.modules.comms_dev_db.server.dev_db_name_manager.DevDbNameManager'>, 'setNameFor']]
+TRIGGERS struct_pre_delete [[<class 'myworldapp.modules.comms.server.api.structure_manager.StructureManager'>, 'structPreDeleteTrigger']]
+TRIGGERS route_pos_insert [[<class 'myworldapp.modules.comms.server.api.structure_manager.StructureManager'>, 'routePosInsertTrigger']]
+TRIGGERS route_pos_update [[<class 'myworldapp.modules.comms.server.api.structure_manager.StructureManager'>, 'routePosUpdateTrigger']]
+TRIGGERS route_pre_delete [[<class 'myworldapp.modules.comms.server.api.structure_manager.StructureManager'>, 'routePreDeleteTrigger']]
+TRIGGERS conduit_pre_delete [[<class 'myworldapp.modules.comms.server.api.conduit_manager.ConduitManager'>, 'preDeleteTrigger']]
+TRIGGERS cable_pre_delete [[<class 'myworldapp.modules.comms.server.api.cable_manager.CableManager'>, 'preDeleteTrigger']]
+TRIGGERS cable_pos_get_api [[<class 'myworldapp.modules.comms.server.api.cable_manager.CableManager'>, 'posGetTriggerApi']]
+TRIGGERS cable_pos_insert_api [[<class 'myworldapp.modules.comms.server.api.cable_manager.CableManager'>, 'posInsertTriggerApi']]
+TRIGGERS equip_pre_delete [[<class 'myworldapp.modules.comms.server.api.equipment_manager.EquipmentManager'>, 'preDeleteTrigger']]
+TRIGGERS circuit_pos_insert_api [[<class 'myworldapp.modules.comms_dev_db.server.api.dev_db_circuit_manager.DevDbCircuitManager'>, 'routeCircuitTriggerAPI']]
+TRIGGERS circuit_pos_update_api [[<class 'myworldapp.modules.comms_dev_db.server.api.dev_db_circuit_manager.DevDbCircuitManager'>, 'updateRouteCircuitTriggerAPI']]
+TRIGGERS circuit_pre_delete_api [[<class 'myworldapp.modules.comms_dev_db.server.api.dev_db_circuit_manager.DevDbCircuitManager'>, 'unrouteCircuitTriggerAPI']]
+TRIGGERS circuit_pos_insert [[<class 'myworldapp.modules.comms_dev_db.server.api.dev_db_circuit_manager.DevDbCircuitManager'>, 'exampleInsertTrigger']]
+TRIGGERS circuit_pos_get_api [[<class 'myworldapp.modules.comms_dev_db.server.api.dev_db_circuit_manager.DevDbCircuitManager'>, 'addCircuitRoute']]

@@ -1,0 +1,109 @@
+{
+    "datasource": "myworld",
+    "name": "coax_cable_spec",
+    "external_name": "{:coax_cable_spec_field_name}",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": false,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)",
+            "key": true
+        },
+        {
+            "name": "item_length",
+            "external_name": "{:ug_route_feature_length_name}",
+            "type": "double"
+        },
+        {
+            "name": "item_length_unit",
+            "external_name": "{:coax_length_unit_field_name}",
+            "type": "string(3)"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "cost_currency",
+            "external_name": "{:spec_currency_field_name}",
+            "type": "string(3)"
+        },
+        {
+            "name": "retired",
+            "external_name": "{:spec_retired_field_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": false
+        },
+        {
+            "name": "cable_structure",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "tick_mark_spacing",
+            "external_name": "{:fiber_cable_spec_tick_mark_spacing_name}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length",
+            "display_format": "1"
+        },
+        {
+            "name": "manufacturer",
+            "external_name": "{:spec_manufacturer_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "model",
+            "external_name": "{:spec_model_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "part_number",
+            "external_name": "{:coax_part_number_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "frequency",
+            "external_name": "{:coax_design_frequency_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "cost",
+            "external_name": "{:spec_cost_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "resistance",
+            "external_name": "{:copper_resistance_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "jacket_type",
+            "external_name": "{:copper_jacket_type_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "size_type",
+            "external_name": "{:copper_size_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "route_type",
+            "external_name": "{:housing_route_field_name}",
+            "type": "string(64)"
+        }
+    ],
+    "queries": []
+}

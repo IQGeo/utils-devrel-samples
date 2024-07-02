@@ -1,0 +1,41 @@
+TEST: Editor after failing design rules
+    label: Route (Underground): 88
+    label: Route (Underground): 4801
+    label: Route (Underground): 4800
+    label: Splice Closure: WH-SC-D301:1
+    label: Fiber Slack (42.7 ft)
+    label: Cable Segment: 4800 (fiber_cable/4800)
+    label: Fiber Cable: WH-FCB-NB301:2 (4)
+    label: Fiber Cable: WH-FCB-NB301:1 (12)
+    label: Fiber Cable: WH-FCB-NB301:1 (12)
+
+
+TEST: ERRORS
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: Route (Underground): 88 Conflict: Update / Update
+    label: Route (Underground): 88
+    label: Route (Underground): 4801 Integrity: Path does not match Manhole: WH-M-75
+    label: Route (Underground): 4801
+    label: Route (Underground): 4800 Integrity: Path does not match Manhole: WH-M-75
+    label: Route (Underground): 4800
+    label: Splice Closure: WH-SC-D301:1 Integrity: Location does not match Manhole: WH-M-07
+    label: Splice Closure: WH-SC-D301:1
+    label: Fiber Slack (42.7 ft) Integrity: Location does not match Manhole: WH-M-75
+    label: Fiber Slack (42.7 ft)
+    label: Cable Segment: 4800 (fiber_cable/4800) Integrity: Path does not match Conduit: WH-CND-060
+    label: Cable Segment: 4800 (fiber_cable/4800)
+    label: Fiber Cable: WH-FCB-NB301:2 (4) Spec not set
+    label: Fiber Cable: WH-FCB-NB301:2 (4)
+    label: Fiber Cable: WH-FCB-NB301:1 (12) Spec not set
+    label: Fiber Cable: WH-FCB-NB301:1 (12)
+    label: Fiber Cable: WH-FCB-NB301:1 (12) Diameter not set
+    label: Fiber Cable: WH-FCB-NB301:1 (12)
+
+

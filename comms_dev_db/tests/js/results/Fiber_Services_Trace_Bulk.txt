@@ -1,0 +1,1688 @@
+
+*** TRACE DOWNSTREAM FROM PORTS
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0.3,
+			"dist": 0,
+			"feature": "fiber_patch_panel/1: Patch Panel: WH-ODF-01",
+			"individualLoss": 0.3,
+			"ports": "out:2:6"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.30769,
+			"dist": 15.38,
+			"feature": "fiber_cable/22: Fiber Cable: WH-FCB-022 (288)",
+			"fibers": "2:6",
+			"individualLoss": 0.00769,
+			"length": "15.38",
+			"parent": "fiber_patch_panel/1: Patch Panel: WH-ODF-01",
+			"start_coord": [
+				0.13660491,
+				52.224016
+			],
+			"stop_coord": [
+				0.13668403,
+				52.224125
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.40769,
+			"dist": 15.38,
+			"feature": "mywcom_fiber_connection/1: Fiber Connection: 1",
+			"from_": "2:6",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/22: Fiber Cable: WH-FCB-022 (288)",
+			"to_": "146:150"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.475415,
+			"dist": 150.83,
+			"feature": "fiber_cable/7: Fiber Cable: WH-FCB-007 (288)",
+			"fibers": "146:150",
+			"individualLoss": 0.067725,
+			"length": "135.45",
+			"parent": "mywcom_fiber_connection/1: Fiber Connection: 1",
+			"start_coord": [
+				0.13668403,
+				52.224125
+			],
+			"stop_coord": [
+				0.13796532,
+				52.223338
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.575415,
+			"dist": 150.83,
+			"feature": "mywcom_fiber_connection/9: Fiber Connection: 9",
+			"from_": "146:150",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/7: Fiber Cable: WH-FCB-007 (288)",
+			"to_": "2:6"
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0.62582,
+			"dist": 251.64,
+			"feature": "fiber_cable/21: Fiber Cable: WH-FCB-021 (144)",
+			"fibers": "2:6",
+			"individualLoss": 0.050405,
+			"length": "100.81",
+			"parent": "mywcom_fiber_connection/9: Fiber Connection: 9",
+			"start_coord": [
+				0.13796532,
+				52.223338
+			],
+			"stop_coord": [
+				0.1390427,
+				52.223895
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.72582,
+			"dist": 251.64,
+			"feature": "mywcom_fiber_connection/24: Fiber Connection: 24",
+			"from_": "2",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/21: Fiber Cable: WH-FCB-021 (144)",
+			"to_": "2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.72738,
+			"dist": 254.76,
+			"feature": "fiber_cable/26: Fiber Cable: RISER-001 (4)",
+			"fibers": "2",
+			"individualLoss": 0.00156,
+			"length": "3.12",
+			"parent": "mywcom_fiber_connection/24: Fiber Connection: 24",
+			"start_coord": [
+				0.1390427,
+				52.223895
+			],
+			"stop_coord": [
+				0.13907321,
+				52.223891
+			]
+		},
+		{
+			"children": 7,
+			"cumulativeLoss": 5.55738,
+			"dist": 254.76,
+			"feature": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_cable/26: Fiber Cable: RISER-001 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55738,
+			"dist": 254.76,
+			"feature": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.574595,
+			"dist": 289.19,
+			"feature": "fiber_cable/41: Fiber Cable: DROP-009 (4)",
+			"fibers": "1",
+			"individualLoss": 0.017215,
+			"length": "34.43",
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"start_coord": [
+				0.13907321,
+				52.223891
+			],
+			"stop_coord": [
+				0.13921738,
+				52.22361
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.874595,
+			"dist": 289.19,
+			"feature": "fiber_ont/9: ONT: WH-ONT-009",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/41: Fiber Cable: DROP-009 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55738,
+			"dist": 254.76,
+			"feature": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57339,
+			"dist": 286.78,
+			"feature": "fiber_cable/42: Fiber Cable: DROP-010 (4)",
+			"fibers": "1",
+			"individualLoss": 0.01601,
+			"length": "32.02",
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"start_coord": [
+				0.13907321,
+				52.223891
+			],
+			"stop_coord": [
+				0.13935149,
+				52.223676
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87339,
+			"dist": 286.78,
+			"feature": "fiber_ont/10: ONT: WH-ONT-010",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/42: Fiber Cable: DROP-010 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55738,
+			"dist": 254.76,
+			"feature": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"ports": "out:3"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57371,
+			"dist": 287.42,
+			"feature": "fiber_cable/43: Fiber Cable: DROP-011 (4)",
+			"fibers": "1",
+			"individualLoss": 0.01633,
+			"length": "32.66",
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"start_coord": [
+				0.13907321,
+				52.223891
+			],
+			"stop_coord": [
+				0.13942122,
+				52.22371
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87371,
+			"dist": 287.42,
+			"feature": "fiber_ont/11: ONT: WH-ONT-011",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/43: Fiber Cable: DROP-011 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55738,
+			"dist": 254.76,
+			"feature": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"ports": "out:4"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57609,
+			"dist": 292.18,
+			"feature": "fiber_cable/44: Fiber Cable: DROP-012 (4)",
+			"fibers": "1",
+			"individualLoss": 0.01871,
+			"length": "37.42",
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"start_coord": [
+				0.13907321,
+				52.223891
+			],
+			"stop_coord": [
+				0.13956338,
+				52.223779
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87609,
+			"dist": 292.18,
+			"feature": "fiber_ont/12: ONT: WH-ONT-012",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/44: Fiber Cable: DROP-012 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55738,
+			"dist": 254.76,
+			"feature": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"ports": "out:5"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57799,
+			"dist": 295.98,
+			"feature": "fiber_cable/45: Fiber Cable: DROP-013 (4)",
+			"fibers": "1",
+			"individualLoss": 0.02061,
+			"length": "41.22",
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"start_coord": [
+				0.13907321,
+				52.223891
+			],
+			"stop_coord": [
+				0.1396358,
+				52.223814
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87799,
+			"dist": 295.98,
+			"feature": "fiber_ont/13: ONT: WH-ONT-013",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/45: Fiber Cable: DROP-013 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55738,
+			"dist": 254.76,
+			"feature": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"ports": "out:6"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.58311,
+			"dist": 306.22,
+			"feature": "fiber_cable/46: Fiber Cable: DROP-014 (4)",
+			"fibers": "1",
+			"individualLoss": 0.02573,
+			"length": "51.46",
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"start_coord": [
+				0.13907321,
+				52.223891
+			],
+			"stop_coord": [
+				0.13979271,
+				52.22389
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.88311,
+			"dist": 306.22,
+			"feature": "fiber_ont/14: ONT: WH-ONT-014",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/46: Fiber Cable: DROP-014 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55738,
+			"dist": 254.76,
+			"feature": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"ports": "out:7"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.585885,
+			"dist": 311.77,
+			"feature": "fiber_cable/47: Fiber Cable: DROP-015 (4)",
+			"fibers": "1",
+			"individualLoss": 0.028505,
+			"length": "57.01",
+			"parent": "fiber_splitter/4: Fiber Splitter: WH-SPL-004 (8 way)",
+			"start_coord": [
+				0.13907321,
+				52.223891
+			],
+			"stop_coord": [
+				0.13986781,
+				52.223929
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.885885,
+			"dist": 311.77,
+			"feature": "fiber_ont/15: ONT: WH-ONT-015",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/47: Fiber Cable: DROP-015 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0.62582,
+			"dist": 340.9,
+			"feature": "fiber_cable/21: Fiber Cable: WH-FCB-021 (144)",
+			"fibers": "3:6",
+			"individualLoss": 0.04463,
+			"length": "89.26",
+			"parent": "fiber_cable/21: Fiber Cable: WH-FCB-021 (144)",
+			"start_coord": [
+				0.1390427,
+				52.223895
+			],
+			"stop_coord": [
+				0.13998281,
+				52.224398
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.72582,
+			"dist": 340.9,
+			"feature": "mywcom_fiber_connection/27: Fiber Connection: 27",
+			"from_": "3:4",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/21: Fiber Cable: WH-FCB-021 (144)",
+			"to_": "1:2"
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0.72662,
+			"dist": 342.5,
+			"feature": "fiber_cable/27: Fiber Cable: RISER-002 (4)",
+			"fibers": "1:2",
+			"individualLoss": 0.0008,
+			"length": "1.60",
+			"parent": "mywcom_fiber_connection/27: Fiber Connection: 27",
+			"start_coord": [
+				0.13998281,
+				52.224398
+			],
+			"stop_coord": [
+				0.14000461,
+				52.224395
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.72662,
+			"dist": 342.5,
+			"feature": "mywcom_fiber_connection/29: Fiber Connection: 29",
+			"from_": "Fibers: 1",
+			"individualLoss": 0,
+			"parent": "fiber_cable/27: Fiber Cable: RISER-002 (4)",
+			"to_": "Ports: in:1"
+		},
+		{
+			"children": 8,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "mywcom_fiber_connection/29: Fiber Connection: 29",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57621,
+			"dist": 381.68,
+			"feature": "fiber_cable/48: Fiber Cable: DROP-016 (4)",
+			"fibers": "1",
+			"individualLoss": 0.01959,
+			"length": "39.18",
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.13947755,
+				52.224303
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87621,
+			"dist": 381.68,
+			"feature": "fiber_ont/16: ONT: WH-ONT-016",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/48: Fiber Cable: DROP-016 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57088,
+			"dist": 371.02,
+			"feature": "fiber_cable/49: Fiber Cable: DROP-017 (4)",
+			"fibers": "1",
+			"individualLoss": 0.01426,
+			"length": "28.52",
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.13960764,
+				52.224418
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87088,
+			"dist": 371.02,
+			"feature": "fiber_ont/17: ONT: WH-ONT-017",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/49: Fiber Cable: DROP-017 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"ports": "out:3"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.56689,
+			"dist": 363.04,
+			"feature": "fiber_cable/50: Fiber Cable: DROP-018 (4)",
+			"fibers": "1",
+			"individualLoss": 0.01027,
+			"length": "20.54",
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.13977796,
+				52.224503
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.86689,
+			"dist": 363.04,
+			"feature": "fiber_ont/18: ONT: WH-ONT-018",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/50: Fiber Cable: DROP-018 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"ports": "out:4"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.580245,
+			"dist": 389.75,
+			"feature": "fiber_cable/51: Fiber Cable: DROP-019 (4)",
+			"fibers": "1",
+			"individualLoss": 0.023625,
+			"length": "47.25",
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.13999119,
+				52.22399
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.880245,
+			"dist": 389.75,
+			"feature": "fiber_ont/19: ONT: WH-ONT-019",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/51: Fiber Cable: DROP-019 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"ports": "out:5"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.578005,
+			"dist": 385.27,
+			"feature": "fiber_cable/52: Fiber Cable: DROP-020 (4)",
+			"fibers": "1",
+			"individualLoss": 0.021385,
+			"length": "42.77",
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.1400663,
+				52.22403
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.878005,
+			"dist": 385.27,
+			"feature": "fiber_ont/20: ONT: WH-ONT-020",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/52: Fiber Cable: DROP-020 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"ports": "out:6"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.574805,
+			"dist": 378.87,
+			"feature": "fiber_cable/53: Fiber Cable: DROP-021 (4)",
+			"fibers": "1",
+			"individualLoss": 0.018185,
+			"length": "36.37",
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.14018163,
+				52.224103
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.874805,
+			"dist": 378.87,
+			"feature": "fiber_ont/21: ONT: WH-ONT-021",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/53: Fiber Cable: DROP-021 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"ports": "out:7"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57399,
+			"dist": 377.24,
+			"feature": "fiber_cable/54: Fiber Cable: DROP-022 (4)",
+			"fibers": "1",
+			"individualLoss": 0.01737,
+			"length": "34.74",
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.14038146,
+				52.224207
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87399,
+			"dist": 377.24,
+			"feature": "fiber_ont/22: ONT: WH-ONT-022",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/54: Fiber Cable: DROP-022 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"ports": "out:8"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.573815,
+			"dist": 376.89,
+			"feature": "fiber_cable/55: Fiber Cable: DROP-023 (4)",
+			"fibers": "1",
+			"individualLoss": 0.017195,
+			"length": "34.39",
+			"parent": "fiber_splitter/2: Fiber Splitter: WH-SPL-002 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.14025405,
+				52.224143
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.873815,
+			"dist": 376.89,
+			"feature": "fiber_ont/23: ONT: WH-ONT-023",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/55: Fiber Cable: DROP-023 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.72662,
+			"dist": 342.5,
+			"feature": "mywcom_fiber_connection/30: Fiber Connection: 30",
+			"from_": "Fibers: 2",
+			"individualLoss": 0,
+			"parent": "fiber_cable/27: Fiber Cable: RISER-002 (4)",
+			"to_": "Ports: in:1"
+		},
+		{
+			"children": 5,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "mywcom_fiber_connection/30: Fiber Connection: 30",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57491,
+			"dist": 379.08,
+			"feature": "fiber_cable/56: Fiber Cable: DROP-024 (4)",
+			"fibers": "1",
+			"individualLoss": 0.01829,
+			"length": "36.58",
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.14045656,
+				52.224248
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87491,
+			"dist": 379.08,
+			"feature": "fiber_ont/24: ONT: WH-ONT-024",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/56: Fiber Cable: DROP-024 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57726,
+			"dist": 383.78,
+			"feature": "fiber_cable/57: Fiber Cable: DROP-025 (4)",
+			"fibers": "1",
+			"individualLoss": 0.02064,
+			"length": "41.28",
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.14056653,
+				52.224314
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87726,
+			"dist": 383.78,
+			"feature": "fiber_ont/25: ONT: WH-ONT-025",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/57: Fiber Cable: DROP-025 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"ports": "out:3"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57956,
+			"dist": 388.38,
+			"feature": "fiber_cable/58: Fiber Cable: DROP-026 (4)",
+			"fibers": "1",
+			"individualLoss": 0.02294,
+			"length": "45.88",
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.14064297,
+				52.224356
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87956,
+			"dist": 388.38,
+			"feature": "fiber_ont/26: ONT: WH-ONT-026",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/58: Fiber Cable: DROP-026 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"ports": "out:4"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.580475,
+			"dist": 390.21,
+			"feature": "fiber_cable/59: Fiber Cable: DROP-027 (4)",
+			"fibers": "1",
+			"individualLoss": 0.023855,
+			"length": "47.71",
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.14026344,
+				52.224771
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.880475,
+			"dist": 390.21,
+			"feature": "fiber_ont/27: ONT: WH-ONT-027",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/59: Fiber Cable: DROP-027 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.55662,
+			"dist": 342.5,
+			"feature": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"ports": "out:5"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.570365,
+			"dist": 369.99,
+			"feature": "fiber_cable/60: Fiber Cable: DROP-028 (4)",
+			"fibers": "1",
+			"individualLoss": 0.013745,
+			"length": "27.49",
+			"parent": "fiber_splitter/3: Fiber Splitter: WH-SPL-003 (8 way)",
+			"start_coord": [
+				0.14000461,
+				52.224395
+			],
+			"stop_coord": [
+				0.14001667,
+				52.22463
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.870365,
+			"dist": 369.99,
+			"feature": "fiber_ont/28: ONT: WH-ONT-028",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/60: Fiber Cable: DROP-028 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.62582,
+			"dist": 479.58,
+			"feature": "fiber_cable/21: Fiber Cable: WH-FCB-021 (144)",
+			"fibers": "5:6",
+			"individualLoss": 0.06934,
+			"length": "138.68",
+			"parent": "fiber_cable/21: Fiber Cable: WH-FCB-021 (144)",
+			"start_coord": [
+				0.13998281,
+				52.224398
+			],
+			"stop_coord": [
+				0.1410054,
+				52.22496
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.72582,
+			"dist": 479.58,
+			"feature": "mywcom_fiber_connection/32: Fiber Connection: 32",
+			"from_": "5:6",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/21: Fiber Cable: WH-FCB-021 (144)",
+			"to_": "1:2"
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0.727465,
+			"dist": 482.87,
+			"feature": "fiber_cable/28: Fiber Cable: RISER-003 (4)",
+			"fibers": "1:2",
+			"individualLoss": 0.001645,
+			"length": "3.29",
+			"parent": "mywcom_fiber_connection/32: Fiber Connection: 32",
+			"start_coord": [
+				0.1410054,
+				52.22496
+			],
+			"stop_coord": [
+				0.1410386,
+				52.224961
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.727465,
+			"dist": 482.87,
+			"feature": "mywcom_fiber_connection/33: Fiber Connection: 33",
+			"from_": "Fibers: 1",
+			"individualLoss": 0,
+			"parent": "fiber_cable/28: Fiber Cable: RISER-003 (4)",
+			"to_": "Ports: in:1"
+		},
+		{
+			"children": 8,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "mywcom_fiber_connection/33: Fiber Connection: 33",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.583975,
+			"dist": 535.89,
+			"feature": "fiber_cable/67: Fiber Cable: DROP-035 (4)",
+			"fibers": "1",
+			"individualLoss": 0.02651,
+			"length": "53.02",
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14137119,
+				52.225367
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.883975,
+			"dist": 535.89,
+			"feature": "fiber_ont/34: ONT: WH-ONT-034",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/67: Fiber Cable: DROP-035 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57715,
+			"dist": 522.24,
+			"feature": "fiber_cable/68: Fiber Cable: DROP-036 (4)",
+			"fibers": "1",
+			"individualLoss": 0.019685,
+			"length": "39.37",
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14121428,
+				52.225281
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87715,
+			"dist": 522.24,
+			"feature": "fiber_ont/35: ONT: WH-ONT-035",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/68: Fiber Cable: DROP-036 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"ports": "out:3"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.56995,
+			"dist": 507.84,
+			"feature": "fiber_cable/69: Fiber Cable: DROP-037 (4)",
+			"fibers": "1",
+			"individualLoss": 0.012485,
+			"length": "24.97",
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14105737,
+				52.225175
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.86995,
+			"dist": 507.84,
+			"feature": "fiber_ont/36: ONT: WH-ONT-036",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/69: Fiber Cable: DROP-037 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"ports": "out:4"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.567105,
+			"dist": 502.15,
+			"feature": "fiber_cable/70: Fiber Cable: DROP-038 (4)",
+			"fibers": "1",
+			"individualLoss": 0.00964,
+			"length": "19.28",
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14087364,
+				52.225092
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.867105,
+			"dist": 502.15,
+			"feature": "fiber_ont/37: ONT: WH-ONT-037",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/70: Fiber Cable: DROP-038 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"ports": "out:5"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57502,
+			"dist": 517.98,
+			"feature": "fiber_cable/71: Fiber Cable: DROP-039 (4)",
+			"fibers": "1",
+			"individualLoss": 0.017555,
+			"length": "35.11",
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14056385,
+				52.225038
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87502,
+			"dist": 517.98,
+			"feature": "fiber_ont/38: ONT: WH-ONT-038",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/71: Fiber Cable: DROP-039 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"ports": "out:6"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.58311,
+			"dist": 534.16,
+			"feature": "fiber_cable/72: Fiber Cable: DROP-040 (4)",
+			"fibers": "1",
+			"individualLoss": 0.025645,
+			"length": "51.29",
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14175475,
+				52.224985
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.88311,
+			"dist": 534.16,
+			"feature": "fiber_ont/39: ONT: WH-ONT-039",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/72: Fiber Cable: DROP-040 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"ports": "out:7"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57679,
+			"dist": 521.52,
+			"feature": "fiber_cable/73: Fiber Cable: DROP-041 (4)",
+			"fibers": "1",
+			"individualLoss": 0.019325,
+			"length": "38.65",
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14156029,
+				52.224875
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87679,
+			"dist": 521.52,
+			"feature": "fiber_ont/40: ONT: WH-ONT-040",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/73: Fiber Cable: DROP-041 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"ports": "out:8"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57338,
+			"dist": 514.7,
+			"feature": "fiber_cable/74: Fiber Cable: DROP-042 (4)",
+			"fibers": "1",
+			"individualLoss": 0.015915,
+			"length": "31.83",
+			"parent": "fiber_splitter/11: Fiber Splitter: WH-SPL-011 (8 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14136583,
+				52.224776
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87338,
+			"dist": 514.7,
+			"feature": "fiber_ont/41: ONT: WH-ONT-041",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/74: Fiber Cable: DROP-042 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.727465,
+			"dist": 482.87,
+			"feature": "mywcom_fiber_connection/34: Fiber Connection: 34",
+			"from_": "Fibers: 2",
+			"individualLoss": 0,
+			"parent": "fiber_cable/28: Fiber Cable: RISER-003 (4)",
+			"to_": "Ports: in:1"
+		},
+		{
+			"children": 3,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"individualLoss": 4.83,
+			"parent": "mywcom_fiber_connection/34: Fiber Connection: 34",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.57508,
+			"dist": 518.1,
+			"feature": "fiber_cable/75: Fiber Cable: DROP-043 (4)",
+			"fibers": "1",
+			"individualLoss": 0.017615,
+			"length": "35.23",
+			"parent": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14117941,
+				52.224672
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.87508,
+			"dist": 518.1,
+			"feature": "fiber_ont/42: ONT: WH-ONT-042",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/75: Fiber Cable: DROP-043 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.58119,
+			"dist": 530.32,
+			"feature": "fiber_cable/76: Fiber Cable: DROP-044 (4)",
+			"fibers": "1",
+			"individualLoss": 0.023725,
+			"length": "47.45",
+			"parent": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14098361,
+				52.224556
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.88119,
+			"dist": 530.32,
+			"feature": "fiber_ont/43: ONT: WH-ONT-043",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/76: Fiber Cable: DROP-044 (4)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.557465,
+			"dist": 482.87,
+			"feature": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"individualLoss": 4.83,
+			"parent": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"ports": "out:3"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 5.581415,
+			"dist": 530.77,
+			"feature": "fiber_cable/77: Fiber Cable: DROP-045 (4)",
+			"fibers": "1",
+			"individualLoss": 0.02395,
+			"length": "47.90",
+			"parent": "fiber_splitter/12: Fiber Splitter: WH-SPL-012 (4 way)",
+			"start_coord": [
+				0.1410386,
+				52.224961
+			],
+			"stop_coord": [
+				0.14038682,
+				52.224867
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 5.881415,
+			"dist": 530.77,
+			"feature": "fiber_ont/44: ONT: WH-ONT-044",
+			"individualLoss": 0.3,
+			"parent": "fiber_cable/77: Fiber Cable: DROP-045 (4)",
+			"ports": "in:1"
+		}
+	]
+}
+
+*** TRACE MESH UPSTREAM FROM PORTS
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "fiber_shelf/15: Fiber Shelf: SP-S-015",
+			"individualLoss": 0,
+			"ports": "in:10:16"
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0.540465,
+			"dist": 1080.93,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "17:22",
+			"individualLoss": 0.540465,
+			"length": "1080.93",
+			"parent": "fiber_shelf/15: Fiber Shelf: SP-S-015",
+			"start_coord": [
+				0.14841681,
+				52.229851
+			],
+			"stop_coord": [
+				0.13811244,
+				52.22341
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.640465,
+			"dist": 1080.93,
+			"feature": "mywcom_fiber_connection/215: Fiber Connection: 215",
+			"from_": "17:19",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"to_": "17:19"
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0.775735,
+			"dist": 1351.47,
+			"feature": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"fibers": "17:19",
+			"individualLoss": 0.13527,
+			"length": "270.54",
+			"parent": "mywcom_fiber_connection/215: Fiber Connection: 215",
+			"start_coord": [
+				0.13811244,
+				52.22341
+			],
+			"stop_coord": [
+				0.13660491,
+				52.224016
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.775735,
+			"dist": 1351.47,
+			"feature": "mywcom_fiber_connection/218: Fiber Connection: 218",
+			"from_": "Fibers: 19",
+			"individualLoss": 0,
+			"parent": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"to_": "Ports: out:1"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.775735,
+			"dist": 1351.47,
+			"feature": "fiber_shelf/14: Fiber Shelf: WH-S-014",
+			"individualLoss": 0,
+			"parent": "mywcom_fiber_connection/218: Fiber Connection: 218",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.775735,
+			"dist": 1512.3,
+			"feature": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"fibers": "17:18",
+			"individualLoss": 0.080415,
+			"length": "160.83",
+			"parent": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"start_coord": [
+				0.13660491,
+				52.224016
+			],
+			"stop_coord": [
+				0.13796532,
+				52.223338
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.875735,
+			"dist": 1512.3,
+			"feature": "mywcom_fiber_connection/222: Fiber Connection: 222",
+			"from_": "17:18",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"to_": "27:28"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 1.040035,
+			"dist": 1840.9,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "27:28",
+			"individualLoss": 0.1643,
+			"length": "328.60",
+			"parent": "mywcom_fiber_connection/222: Fiber Connection: 222",
+			"start_coord": [
+				0.13796532,
+				52.223338
+			],
+			"stop_coord": [
+				0.13498521,
+				52.221376
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.640465,
+			"dist": 1080.93,
+			"feature": "mywcom_fiber_connection/216: Fiber Connection: 216",
+			"from_": "20:22",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"to_": "20:22"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.775735,
+			"dist": 1351.47,
+			"feature": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"fibers": "20:22",
+			"individualLoss": 0.13527,
+			"length": "270.54",
+			"parent": "mywcom_fiber_connection/216: Fiber Connection: 216",
+			"start_coord": [
+				0.13811244,
+				52.22341
+			],
+			"stop_coord": [
+				0.13660491,
+				52.224016
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.775735,
+			"dist": 1351.47,
+			"feature": "fiber_shelf/14: Fiber Shelf: WH-S-014",
+			"individualLoss": 0,
+			"parent": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"ports": "out:2:4"
+		}
+	]
+}
+
+*** TRACE MESH DOWNSTREAM FROM SEGMENT
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 3,
+			"cumulativeLoss": 0.496115,
+			"dist": 992.23,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "1:16",
+			"individualLoss": 0.496115,
+			"length": "992.23",
+			"start_coord": [
+				0.13905659,
+				52.223903
+			],
+			"stop_coord": [
+				0.14841681,
+				52.229851
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.496115,
+			"dist": 992.23,
+			"feature": "mywcom_fiber_connection/214: Fiber Connection: 214",
+			"from_": "Fibers: 9:14",
+			"individualLoss": 0,
+			"parent": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"to_": "Ports: out:10:15"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.496115,
+			"dist": 992.23,
+			"feature": "fiber_shelf/15: Fiber Shelf: SP-S-015",
+			"individualLoss": 0,
+			"parent": "mywcom_fiber_connection/214: Fiber Connection: 214",
+			"ports": "out:10:15"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.496115,
+			"dist": 1253.2,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "1:8",
+			"individualLoss": 0.130485,
+			"length": "260.97",
+			"parent": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"start_coord": [
+				0.14841681,
+				52.229851
+			],
+			"stop_coord": [
+				0.15102848,
+				52.229727
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.496115,
+			"dist": 1253.2,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "15:16",
+			"individualLoss": 0.130485,
+			"length": "260.97",
+			"parent": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"start_coord": [
+				0.14841681,
+				52.229851
+			],
+			"stop_coord": [
+				0.15102848,
+				52.229727
+			]
+		}
+	]
+}

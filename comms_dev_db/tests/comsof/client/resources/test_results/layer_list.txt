@@ -1,0 +1,129 @@
+TEST: LAYER LIST
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Organize layers
+    list item: Update render order
+    list item: Add layers
+    list item: Save application state
+    label: Structures BuildingCabinetDrop PointMDUManholePoleRoute (Overhead)Route (Underground)Route JunctionWall Box
+    label: Structures
+    label: Structures and routes
+    input: true
+    label: Fiber Network Fiber Cables Fiber Equipment Fiber SlackFiber SplitterFiber TapMultiplexerOLTONTPatch Panel
+    label: Fiber Network
+    input: true
+    label: Copper Network Copper Cables Copper Equipment Bridge TapBuild OutCapacitorCopper SlackCopper Splice ClosureCopper TerminalLoad CoilPair GainRepeater
+    label: Copper Network
+    input: true
+    label: Coax Network Coaxial Cables Coax Equipment Coaxial AmplifierCoaxial SlackCoaxial TapCoaxial TerminatorDirectional CouplerInline EqualizerInternal Directional CouplerInternal SplitterPower BlockPower InserterPower SupplyThree Way SplitterTwo Way SplitterWiFi Unit
+    label: Coax Network
+    input: false
+    label: Coax Offset Group Coaxial Cables Offset Coax Equipment Offset Coaxial AmplifierCoaxial TapCoaxial TerminatorDirectional CouplerInline EqualizerInternal Directional CouplerInternal SplitterOptical NodePower BlockPower InserterPower SupplyThree Way SplitterTwo Way SplitterWiFi Unit
+    label: Coax Offset Group
+    input: false
+    label: Conduits
+    label: Conduits
+    input: false
+    label: Blown Fiber Tubes
+    label: Blown Fiber Tubes
+    input: false
+    label (disabled): Service Areas
+    label: Service Areas
+    input: true
+    label: Addresses
+    label: Addresses
+    label: Customer locations (from OSM building centroids)
+    input: false
+    label: Designs Boundaries Structures BuildingCabinetMDUManholePoleRoute (Overhead)Route (Underground)Route JunctionWall Box Cables
+    label: Designs
+    label: Design boundaries and data
+    input: false
+    label: Design Markup
+    label: Design Markup
+    input: true
+    label: Workspace IN Demands IN BuildingIN Demand Point Structures IN Access Structure - CabinetIN Access Structure - Hand HoleIN Access Structure - Drop BoxIN Access Structure - BuildingIN Access Structure - OtherIN Central OfficeIN Pole Conduits IN Existing Conduit Cables IN Existing Cable Streets IN Street Centerline Potential Routes (Underground) IN CrossingIN Drop TrenchIN Possible TrenchIN Transition Potential Routes (Overhead) IN Aerial ConnectionIN Aerial Drop Connection Forced Routes IN Backbone Route - LockedIN Distribution Route - LockedIN Drop Route - LockedIN Feeder Route - Locked
+    label: Workspace IN
+    label: Workspace input tables
+    input: true
+    label: Demands IN BuildingIN Demand Point
+    input: true
+    label: Demands
+    label: (Workspace)
+    label: Structures IN Access Structure - CabinetIN Access Structure - Hand HoleIN Access Structure - Drop BoxIN Access Structure - BuildingIN Access Structure - OtherIN Central OfficeIN Pole
+    input: true
+    label: Structures
+    label: (Workspace)
+    label: Conduits IN Existing Conduit
+    input: true
+    label: Conduits
+    label: (Workspace)
+    label: Cables IN Existing Cable
+    input: true
+    label: Cables
+    label: (Workspace)
+    label: Streets IN Street Centerline
+    input: true
+    label: Streets
+    label: (Workspace)
+    label: Potential Routes (Underground) IN CrossingIN Drop TrenchIN Possible TrenchIN Transition
+    input: true
+    label: Potential Routes (Underground)
+    label: (Workspace)
+    label: Potential Routes (Overhead) IN Aerial ConnectionIN Aerial Drop Connection
+    input: true
+    label: Potential Routes (Overhead)
+    label: (Workspace)
+    label: Forced Routes IN Backbone Route - LockedIN Distribution Route - LockedIN Drop Route - LockedIN Feeder Route - Locked
+    input: true
+    label: Forced Routes
+    label: (Workspace)
+    label: Workspace OUT Demands Structures OUT Access Structure - Central OfficeOUT Access Structure - CabinetOUT Access Structure - Hand HoleOUT Access Structure - Drop BoxOUT Access Structure - BuildingOUT Access Structure - Other Equipment OUT Splice ClosureOUT Splitter Cables (Backbone) Cables (Feeder) Cables (Distribution) Cables (Drop) Warnings WARNING Unconnected Demand PointWARNING Unconnected EdgeWARNING Unconnected Node
+    label: Workspace OUT
+    label: Workspace output tables
+    input: true
+    label: Demands
+    input: true
+    label: Demands
+    label: (Workspace)
+    label: Structures OUT Access Structure - Central OfficeOUT Access Structure - CabinetOUT Access Structure - Hand HoleOUT Access Structure - Drop BoxOUT Access Structure - BuildingOUT Access Structure - Other
+    input: true
+    label: Structures
+    label: (Workspace)
+    label: Equipment OUT Splice ClosureOUT Splitter
+    input: true
+    label: Equipment
+    label: (Workspace)
+    label: Cables (Backbone)
+    input: true
+    label: Cables (Backbone)
+    label: (Workspace)
+    label: Cables (Feeder)
+    input: true
+    label: Cables (Feeder)
+    label: (Workspace)
+    label: Cables (Distribution)
+    input: true
+    label: Cables (Distribution)
+    label: (Workspace)
+    label: Cables (Drop)
+    input: true
+    label: Cables (Drop)
+    label: (Workspace)
+    label: Warnings WARNING Unconnected Demand PointWARNING Unconnected EdgeWARNING Unconnected Node
+    input: true
+    label: Warnings
+    label: (Workspace)
+    label: Workspace Clusters Distribution Clusters Drop Clusters
+    label: Workspace Clusters
+    input: true
+    label: Distribution Clusters
+    input: true
+    label: Distribution Clusters
+    label: (Workspace)
+    label: Drop Clusters
+    input: true
+    label: Drop Clusters
+    label: (Workspace)
+
+

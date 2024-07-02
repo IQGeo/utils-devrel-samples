@@ -1,0 +1,544 @@
+Opening database <database> ...
+
+  building(1)  name=Woodhead Hub  location=point  owner=Acme Co  access_code=A7B-792  comsof_auto=False
+  building(2)  name=Science Park Hub  location=point  owner=SFB Comms  access_code=A7B-584  comsof_auto=False
+
+Opening database <database> ...
+
+  mdu(1)  name=Blackthorn  location=point  comsof_auto=False
+  mdu(2)  name=Alice Bell  location=point  comsof_auto=False
+  mdu(3)  name=Gladeside  location=point  comsof_auto=False
+  mdu(4)  name=Laburnum  location=point  comsof_auto=False
+  mdu(5)  name=Gladeside Park  location=point  comsof_auto=False
+
+Opening database <database> ...
+
+  manhole(1)  name=WH-M-01  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=59.3813815475527  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-23  comsof_auto=False
+  manhole(2)  name=WH-M-02  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=227.726322582537  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-05-18  comsof_auto=False
+  manhole(3)  name=WH-M-03  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=300.25645626294  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(4)  name=WH-M-04  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=128.659800503994  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-09-08  comsof_auto=False
+  manhole(5)  name=WH-M-05  specification=FPM-CCANN-C2  labor_costs=survey  location=point  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-05-03  comsof_auto=False
+  manhole(6)  name=WH-M-06  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-25  comsof_auto=False
+  manhole(7)  name=WH-M-07  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=337.490184094651  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-20  comsof_auto=False
+  manhole(8)  name=WH-M-08  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=243.434961510127  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-05-15  comsof_auto=False
+  manhole(9)  name=WH-M-09  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=61.8583874871725  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-10  comsof_auto=False
+  manhole(10)  name=WH-M-10  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=166.239211793042  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-09-05  comsof_auto=False
+  manhole(11)  name=WH-M-11  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=188.972629027917  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-27  comsof_auto=False
+  manhole(12)  name=WH-M-12  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=239.444046831743  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-22  comsof_auto=False
+  manhole(13)  name=WH-M-13  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=143.569133749312  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-17  comsof_auto=False
+  manhole(14)  name=WH-M-14  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=232.373779030821  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-05-12  comsof_auto=False
+  manhole(15)  name=WH-M-15  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=51.9112173039022  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-07  comsof_auto=False
+  manhole(16)  name=WH-M-16  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=138.772272347092  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-02  comsof_auto=False
+  manhole(17)  name=WH-M-17  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=143.130092052178  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-05-24  comsof_auto=False
+  manhole(18)  name=WH-M-18  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=115.057594971028  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-19  comsof_auto=False
+  manhole(19)  name=WH-M-19  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=124.354326340242  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-09-14  comsof_auto=False
+  manhole(20)  name=WH-M-20  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=133.237600116376  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-05-09  comsof_auto=False
+  manhole(21)  name=WH-M-21  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=143.569133697716  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(22)  name=WH-M-22  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=54.3349871460152  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-26  comsof_auto=False
+  manhole(23)  name=WH-M-23  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=234.881418211284  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-05-21  comsof_auto=False
+  manhole(24)  name=WH-M-24  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=232.288965067315  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-16  comsof_auto=False
+  manhole(25)  name=WH-M-25  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=52.2669433250721  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-09-11  comsof_auto=False
+  manhole(26)  name=WH-M-26  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=48.0127768354091  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-06  comsof_auto=False
+  manhole(27)  name=WH-M-27  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=142.460556369668  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-01  comsof_auto=False
+  manhole(28)  name=WH-M-28  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=56.6788771929485  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-23  comsof_auto=False
+  manhole(29)  name=WH-M-29  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=142.275662328302  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-05-18  comsof_auto=False
+  manhole(30)  name=WH-M-30  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=315.458372820764  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-13  comsof_auto=False
+  manhole(31)  name=WH-M-31  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=219.559677993621  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-09-08  comsof_auto=False
+  manhole(32)  name=WH-M-32  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=59.3493178190724  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-05-03  comsof_auto=False
+  manhole(33)  name=WH-M-33  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=53.2191955019016  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-25  comsof_auto=False
+  manhole(34)  name=WH-M-34  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=52.3263963094905  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-09-20  comsof_auto=False
+  manhole(35)  name=WH-M-35  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=51.2710641988634  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-05-15  comsof_auto=False
+  manhole(36)  name=WH-M-36  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=45.7848148509531  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-10  comsof_auto=False
+  manhole(37)  name=WH-M-37  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=203.81989361454  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-09-05  comsof_auto=False
+  manhole(39)  name=WH-M-39  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=134.999986450252  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(40)  name=WH-M-40  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=313.5312151244  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-09-17  comsof_auto=False
+  manhole(41)  name=WH-M-41  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=125.26410691944  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-05-12  comsof_auto=False
+  manhole(42)  name=WH-M-42  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=48.7731004340194  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-07  comsof_auto=False
+  manhole(43)  name=WH-M-43  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-09-02  comsof_auto=False
+  manhole(44)  name=WH-M-44  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=145.491466914771  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-05-24  comsof_auto=False
+  manhole(45)  name=WH-M-45  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=138.366452182408  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-19  comsof_auto=False
+  manhole(46)  name=WH-M-46  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=141.76616803417  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-09-14  comsof_auto=False
+  manhole(47)  name=WH-M-47  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=344.357755273562  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-05-09  comsof_auto=False
+  manhole(48)  name=WH-M-48  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=43.0250585895702  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-04  comsof_auto=False
+  manhole(49)  name=WH-M-49  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=48.8140664259553  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-09-26  comsof_auto=False
+  manhole(50)  name=XX-M-50  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=69.6768488217774  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-05-21  comsof_auto=False
+  manhole(51)  name=XX-M-51  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=48.814064187374  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-16  comsof_auto=False
+  manhole(52)  name=WH-M-52  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=138.468220922143  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-09-11  comsof_auto=False
+  manhole(53)  name=WH-M-53  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=45.85508856871  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-05-06  comsof_auto=False
+  manhole(54)  name=WH-M-54  specification=FPM-CCANN-MCX  labor_costs=tree_trim,hole_dig,survey  location=point  myw_orientation_location=41.1859177475264  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-01-03  comsof_auto=False
+  manhole(55)  name=WH-M-55  specification=FPM-CCANN-J4  labor_costs=tree_trim  location=point  myw_orientation_location=43.451832716428  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-03  comsof_auto=False
+  manhole(56)  name=WH-M-56  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=42.3974266843675  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-05-18  comsof_auto=False
+  manhole(57)  name=WH-M-57  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=232.589003875194  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(58)  name=WH-M-58  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=141.359397452568  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-09-08  comsof_auto=False
+  manhole(59)  name=WH-M-59  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=44.0989009978462  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-05-03  comsof_auto=False
+  manhole(60)  name=WH-M-60  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=133.329560145433  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-25  comsof_auto=False
+  manhole(61)  name=WH-M-61  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=59.3320384537298  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-20  comsof_auto=False
+  manhole(62)  name=WH-M-62  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-05-15  comsof_auto=False
+  manhole(63)  name=WH-M-63  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=160.475750601862  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-10  comsof_auto=False
+  manhole(64)  name=WH-M-64  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=163.311591387095  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-09-05  comsof_auto=False
+  manhole(65)  name=WH-M-65  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=132.226555621791  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-05-27  comsof_auto=False
+  manhole(66)  name=WH-M-66  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=69.5542675965888  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-22  comsof_auto=False
+  manhole(67)  name=XX-M-67  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=44.3339343673015  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-17  comsof_auto=False
+  manhole(68)  name=XX-M-68  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=48.102535145617  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-05-12  comsof_auto=False
+  manhole(69)  name=WH-M-69  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=125.236145160107  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-07  comsof_auto=False
+  manhole(70)  name=WH-M-70  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=224.477361944043  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-09-02  comsof_auto=False
+  manhole(71)  name=WH-M-71  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=232.754158852519  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-24  comsof_auto=False
+  manhole(72)  name=WH-M-72  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-19  comsof_auto=False
+  manhole(73)  name=WH-M-73  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-14  comsof_auto=False
+  manhole(74)  name=WH-M-74  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-05-09  comsof_auto=False
+  manhole(75)  name=WH-M-75  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(76)  name=WH-M-76  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-26  comsof_auto=False
+  manhole(78)  name=WH-M-78  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=135.535452070155  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-16  comsof_auto=False
+  manhole(81)  name=WH-M-81  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=310.763612988374  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-01  comsof_auto=False
+  manhole(82)  name=WH-M-82  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=147.380748493879  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-23  comsof_auto=False
+  manhole(83)  name=WH-M-83  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=140.355817359008  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-05-18  comsof_auto=False
+  manhole(84)  name=WH-M-84  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=134.144893668239  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-13  comsof_auto=False
+  manhole(86)  name=WH-M-86  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=89.9999836415162  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-03  comsof_auto=False
+  manhole(87)  name=WH-M-87  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=160.974388593179  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-25  comsof_auto=False
+  manhole(88)  name=WH-M-88  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-20  comsof_auto=False
+  manhole(89)  name=WH-M-89  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=239.264522317344  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-05-15  comsof_auto=False
+  manhole(90)  name=WH-M-90  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-10  comsof_auto=False
+  manhole(91)  name=WH-M-91  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-09-05  comsof_auto=False
+  manhole(93)  name=WH-M-93  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=44.9999919311444  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(94)  name=WH-M-94  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=223.152397547633  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-09-17  comsof_auto=False
+  manhole(96)  name=WH-M-96  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=222.709399507898  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-07  comsof_auto=False
+  manhole(97)  name=WH-M-97  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-09-02  comsof_auto=False
+  manhole(98)  name=WH-M-98  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-05-24  comsof_auto=False
+  manhole(99)  name=WH-M-99  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=220.855384826258  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-19  comsof_auto=False
+  manhole(100)  name=WH-M-100  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=220.486020781801  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-09-14  comsof_auto=False
+  manhole(101)  name=WH-M-101  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=44.9994692921075  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-05-09  comsof_auto=False
+  manhole(102)  name=WH-M-102  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=216.973973969208  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-04  comsof_auto=False
+  manhole(103)  name=WH-M-103  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=220.500076945671  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-09-26  comsof_auto=False
+  manhole(104)  name=WH-M-104  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=134.999989201351  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-05-21  comsof_auto=False
+  manhole(105)  name=WH-M-105  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-16  comsof_auto=False
+  manhole(106)  name=WH-M-106  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-09-11  comsof_auto=False
+  manhole(107)  name=WH-M-107  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-05-06  comsof_auto=False
+  manhole(108)  name=WH-M-108  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-01  comsof_auto=False
+  manhole(109)  name=WH-M-109  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-09-23  comsof_auto=False
+  manhole(110)  name=WH-M-110  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=142.288942445692  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-05-18  comsof_auto=False
+  manhole(111)  name=WH-M-111  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=137.353287642273  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(112)  name=WH-M-112  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-09-08  comsof_auto=False
+  manhole(113)  name=WH-M-113  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-05-03  comsof_auto=False
+  manhole(114)  name=XX-M-114  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-25  comsof_auto=False
+  manhole(115)  name=XX-M-115  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-09-20  comsof_auto=False
+  manhole(116)  name=WH-M-116  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-05-15  comsof_auto=False
+  manhole(117)  name=XX-M-117  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-10  comsof_auto=False
+  manhole(118)  name=XX-M-118  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-09-05  comsof_auto=False
+  manhole(119)  name=XX-M-119  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-05-27  comsof_auto=False
+  manhole(120)  name=XX-M-120  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-22  comsof_auto=False
+  manhole(121)  name=XX-M-121  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-17  comsof_auto=False
+  manhole(122)  name=WH-M-122  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-05-12  comsof_auto=False
+  manhole(123)  name=WH-M-123  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-07  comsof_auto=False
+  manhole(124)  name=WH-M-124  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-09-02  comsof_auto=False
+  manhole(125)  name=XX-M-125  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-05-24  comsof_auto=False
+  manhole(126)  name=XX-M-126  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-19  comsof_auto=False
+  manhole(127)  name=SP-M-127  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-14  comsof_auto=False
+  manhole(128)  name=SP-M-128  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-05-09  comsof_auto=False
+  manhole(129)  name=SP-M-129  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(130)  name=SP-M-130  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-09-26  comsof_auto=False
+  manhole(131)  name=SP-M-131  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-21  comsof_auto=False
+  manhole(132)  name=SP-M-132  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-16  comsof_auto=False
+  manhole(133)  name=SP-M-133  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-11  comsof_auto=False
+  manhole(134)  name=SP-M-134  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-05-06  comsof_auto=False
+  manhole(135)  name=SP-M-135  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-01  comsof_auto=False
+  manhole(136)  name=SP-M-136  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-23  comsof_auto=False
+  manhole(137)  name=SP-M-137  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-05-18  comsof_auto=False
+  manhole(138)  name=SP-M-138  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-13  comsof_auto=False
+  manhole(139)  name=SP-M-139  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-09-08  comsof_auto=False
+  manhole(140)  name=SP-M-140  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-05-03  comsof_auto=False
+  manhole(141)  name=SP-M-141  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-25  comsof_auto=False
+  manhole(142)  name=SP-M-142  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-20  comsof_auto=False
+  manhole(143)  name=SP-M-143  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-05-15  comsof_auto=False
+  manhole(144)  name=SP-M-144  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-10  comsof_auto=False
+  manhole(145)  name=SP-M-145  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-09-05  comsof_auto=False
+  manhole(146)  name=SP-M-146  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-27  comsof_auto=False
+  manhole(147)  name=SP-M-147  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(148)  name=SP-M-148  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-17  comsof_auto=False
+  manhole(149)  name=SP-M-149  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-05-12  comsof_auto=False
+  manhole(150)  name=SP-M-150  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-07  comsof_auto=False
+  manhole(151)  name=SP-M-151  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-09-02  comsof_auto=False
+  manhole(152)  name=SP-M-152  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-05-24  comsof_auto=False
+  manhole(153)  name=SP-M-153  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-19  comsof_auto=False
+  manhole(154)  name=SP-M-154  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-09-14  comsof_auto=False
+  manhole(155)  name=SP-M-155  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-05-09  comsof_auto=False
+  manhole(156)  name=SP-M-156  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-04  comsof_auto=False
+  manhole(157)  name=SP-M-157  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-09-26  comsof_auto=False
+  manhole(158)  name=SP-M-158  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-05-21  comsof_auto=False
+  manhole(159)  name=SP-M-159  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-16  comsof_auto=False
+  manhole(160)  name=SP-M-160  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-09-11  comsof_auto=False
+  manhole(161)  name=SP-M-161  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-05-06  comsof_auto=False
+  manhole(162)  name=SP-M-162  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-01  comsof_auto=False
+  manhole(164)  name=SP-M-164  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-05-18  comsof_auto=False
+  manhole(165)  name=SP-M-165  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(166)  name=SP-M-166  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-09-08  comsof_auto=False
+  manhole(167)  name=SP-M-167  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-05-03  comsof_auto=False
+  manhole(168)  name=SP-M-168  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-25  comsof_auto=False
+  manhole(169)  name=SP-M-169  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-09-20  comsof_auto=False
+  manhole(170)  name=SP-M-170  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-05-15  comsof_auto=False
+  manhole(171)  name=SP-M-171  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-10  comsof_auto=False
+  manhole(172)  name=SP-M-172  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-09-05  comsof_auto=False
+  manhole(173)  name=SP-M-173  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-05-27  comsof_auto=False
+  manhole(174)  name=SP-M-174  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-22  comsof_auto=False
+  manhole(175)  name=SP-M-175  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-09-17  comsof_auto=False
+  manhole(176)  name=SP-M-176  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-05-12  comsof_auto=False
+  manhole(177)  name=SP-M-177  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-07  comsof_auto=False
+  manhole(178)  name=SP-M-178  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-09-02  comsof_auto=False
+  manhole(179)  name=SP-M-179  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-05-24  comsof_auto=False
+  manhole(181)  name=SP-M-181  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-14  comsof_auto=False
+  manhole(182)  name=SP-M-182  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-05-09  comsof_auto=False
+  manhole(183)  name=SP-M-183  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(184)  name=SP-M-184  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-09-26  comsof_auto=False
+  manhole(185)  name=SP-M-185  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-05-21  comsof_auto=False
+  manhole(186)  name=SP-M-186  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-16  comsof_auto=False
+  manhole(187)  name=SP-M-187  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-11  comsof_auto=False
+  manhole(188)  name=SP-M-188  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-05-06  comsof_auto=False
+  manhole(189)  name=SP-M-189  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-01  comsof_auto=False
+  manhole(190)  name=SP-M-190  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-09-23  comsof_auto=False
+  manhole(191)  name=SP-M-191  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-18  comsof_auto=False
+  manhole(192)  name=SP-M-192  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-13  comsof_auto=False
+  manhole(193)  name=SP-M-193  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-08  comsof_auto=False
+  manhole(194)  name=SP-M-194  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-05-03  comsof_auto=False
+  manhole(195)  name=SP-M-195  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-25  comsof_auto=False
+  manhole(196)  name=SP-M-196  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-20  comsof_auto=False
+  manhole(197)  name=SP-M-197  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-05-15  comsof_auto=False
+  manhole(198)  name=SP-M-198  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-10  comsof_auto=False
+  manhole(199)  name=SP-M-199  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-09-05  comsof_auto=False
+  manhole(200)  name=SP-M-200  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-05-27  comsof_auto=False
+  manhole(201)  name=SP-M-201  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(202)  name=SP-M-202  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-17  comsof_auto=False
+  manhole(203)  name=SP-M-203  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-05-12  comsof_auto=False
+  manhole(204)  name=SP-M-204  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-07  comsof_auto=False
+  manhole(205)  name=SP-M-205  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-09-02  comsof_auto=False
+  manhole(206)  name=SP-M-206  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-24  comsof_auto=False
+  manhole(207)  name=SP-M-207  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-19  comsof_auto=False
+  manhole(208)  name=SP-M-208  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-14  comsof_auto=False
+  manhole(209)  name=SP-M-209  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-05-09  comsof_auto=False
+  manhole(210)  name=SP-M-210  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-04  comsof_auto=False
+  manhole(211)  name=SP-M-211  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-09-26  comsof_auto=False
+  manhole(212)  name=SP-M-212  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-05-21  comsof_auto=False
+  manhole(213)  name=SP-M-213  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-16  comsof_auto=False
+  manhole(214)  name=SP-M-214  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-09-11  comsof_auto=False
+  manhole(215)  name=XX-M-215  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-05-06  comsof_auto=False
+  manhole(216)  name=XX-M-216  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-01  comsof_auto=False
+  manhole(217)  name=XX-M-217  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-09-23  comsof_auto=False
+  manhole(218)  name=XX-M-218  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-05-18  comsof_auto=False
+  manhole(219)  name=XX-M-219  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(220)  name=XX-M-220  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-09-08  comsof_auto=False
+  manhole(221)  name=XX-M-221  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-05-03  comsof_auto=False
+  manhole(222)  name=XX-M-222  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-25  comsof_auto=False
+  manhole(223)  name=XX-M-223  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-09-20  comsof_auto=False
+  manhole(224)  name=XX-M-224  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-05-15  comsof_auto=False
+  manhole(225)  name=XX-M-225  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-10  comsof_auto=False
+  manhole(226)  name=XX-M-226  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-09-05  comsof_auto=False
+  manhole(227)  name=XX-M-227  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-05-27  comsof_auto=False
+  manhole(228)  name=XX-M-228  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-22  comsof_auto=False
+  manhole(229)  name=SP-M-229  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-09-17  comsof_auto=False
+  manhole(230)  name=XX-M-230  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-05-12  comsof_auto=False
+  manhole(231)  name=XX-M-231  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-07  comsof_auto=False
+  manhole(232)  name=XX-M-232  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-09-02  comsof_auto=False
+  manhole(233)  name=SP-M-233  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-05-24  comsof_auto=False
+  manhole(234)  name=SP-M-234  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-19  comsof_auto=False
+  manhole(235)  name=SP-M-235  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-09-14  comsof_auto=False
+  manhole(236)  name=SP-M-236  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-05-09  comsof_auto=False
+  manhole(237)  name=SP-M-237  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(238)  name=SP-M-238  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-09-26  comsof_auto=False
+  manhole(239)  name=SP-M-239  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-05-21  comsof_auto=False
+  manhole(240)  name=SP-M-240  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-16  comsof_auto=False
+  manhole(241)  name=XX-M-241  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-11  comsof_auto=False
+  manhole(242)  name=XX-M-242  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=0.0  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-05-06  comsof_auto=False
+  manhole(243)  name=XX-M-243  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=0.0  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-01  comsof_auto=False
+  manhole(244)  name=WH-M-244  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=136.605982364319  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-09-23  comsof_auto=False
+  manhole(245)  name=WH-M-245  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=135.134153688342  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-05-18  comsof_auto=False
+  manhole(246)  name=WH-M-246  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=135.153582986285  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-13  comsof_auto=False
+  manhole(247)  name=WH-M-247  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=135.499758739712  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-08  comsof_auto=False
+  manhole(248)  name=WH-M-248  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=137.00370147699  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-05-03  comsof_auto=False
+  manhole(249)  name=WH-M-249  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=135.324664763904  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-25  comsof_auto=False
+  manhole(250)  name=WH-M-250  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=134.831778157701  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-09-20  comsof_auto=False
+  manhole(251)  name=WH-M-251  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=137.034757130375  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-15  comsof_auto=False
+  manhole(252)  name=WH-M-252  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=140.728516773861  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-10  comsof_auto=False
+  manhole(253)  name=WH-M-253  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=43.4821569164121  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-05  comsof_auto=False
+  manhole(254)  name=WH-M-254  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=45.85508856871  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-05-27  comsof_auto=False
+  manhole(255)  name=WH-M-255  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=28.35203519  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(256)  name=WH-M-256  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=139.4974392  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2010-09-17  comsof_auto=False
+  manhole(257)  name=WH-M-257  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=29.68486529  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-05-12  comsof_auto=False
+  manhole(258)  name=WH-M-258  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=36.57858684  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2014-01-07  comsof_auto=False
+  manhole(259)  name=WH-M-259  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=44.6084273  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-09-02  comsof_auto=False
+  manhole(260)  name=WH-M-260  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=41.42903899  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-05-24  comsof_auto=False
+  manhole(261)  name=WH-M-261  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=139.0761405  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-19  comsof_auto=False
+  manhole(262)  name=WH-M-262  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2002-09-14  comsof_auto=False
+  manhole(263)  name=WH-M-263  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-05-09  comsof_auto=False
+  manhole(264)  name=WH-M-264  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=224.909743  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2006-01-04  comsof_auto=False
+  manhole(265)  name=WH-M-265  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=46.71644822  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=1998-09-26  comsof_auto=False
+  manhole(266)  name=WH-M-266  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=30.39216054  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-05-21  comsof_auto=False
+  manhole(267)  name=WH-M-267  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=44.21689706  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2002-01-16  comsof_auto=False
+  manhole(268)  name=WH-M-268  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=137.4874421  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2014-09-11  comsof_auto=False
+  manhole(269)  name=WH-M-269  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=224.2169502  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2006-05-06  comsof_auto=False
+  manhole(270)  name=WH-M-270  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=45.4121742  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=1998-01-01  comsof_auto=False
+  manhole(271)  name=WH-M-271  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=306.9444414  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2010-09-23  comsof_auto=False
+  manhole(272)  name=WH-M-272  specification=FPM-CCANN-C2  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=58.61679567  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-05-18  comsof_auto=False
+  manhole(273)  name=WH-M-273  specification=FPM-CCANN-J4  labor_costs=level_ground  location=point  myw_orientation_location=50.64586456  size_x=440.0  size_y=910.0  size_z=800.0  comsof_auto=False
+  manhole(274)  name=WH-M-274  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=51.73323343  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2006-09-08  comsof_auto=False
+  manhole(275)  name=WH-M-275  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=50.16329481  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=1998-05-03  comsof_auto=False
+  manhole(276)  name=WH-M-276  specification=FPM-CCANN-J4  labor_costs=tree_trim,hole_dig  location=point  myw_orientation_location=50.59358937  size_x=440.0  size_y=910.0  size_z=800.0  installation_date=2010-01-25  comsof_auto=False
+  manhole(277)  name=WH-M-277  specification=FPM-CCANN-C2  labor_costs=survey  location=point  myw_orientation_location=49.92060523  size_x=600.0  size_y=1200.0  size_z=895.0  installation_date=2002-09-20  comsof_auto=False
+  manhole(278)  name=WH-M-278  specification=FPM-CCANN-MCX  labor_costs=hole_dig  location=point  myw_orientation_location=349.8060771  size_x=850.0  size_y=1300.0  size_z=900.0  installation_date=2014-05-15  comsof_auto=False
+  manhole(6100)  name=WH-M-3205:1  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6101)  name=WH-M-3205:2  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6102)  name=WH-M-3205:3  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6103)  name=WH-M-1753:1  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6105)  name=WH-M-1753:3  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6106)  name=WH-M-3206:1  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6107)  name=WH-M-3206:2  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6108)  name=WH-M-3206:3  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6109)  name=WH-M-3208:1  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6110)  name=WH-M-3208:2  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6111)  name=WH-M-2818:1  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(6113)  name=WH-M-2818:3  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0  size_x=600.0  size_y=1200.0  size_z=895.0
+  manhole(50000)  name=WH-M-50000  location=point  myw_orientation_location=0.0
+  manhole(50001)  name=XX-M-50001  location=point  myw_orientation_location=0.0
+
+Opening database <database> ...
+
+  cabinet(1)  name=WH-C-01  specification=CS-A-100324  labor_costs=tree_trim  location=point  myw_orientation_location=318.532319748415  type=Micro Cell Site Enclosure  powered=True  photo=image(234KB)  installation_date=2010-09-23  comsof_auto=False
+  cabinet(2)  name=WH-C-02  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=319.537795555605  type=Power Supply Enclosure  powered=True  photo=image(1129KB)  installation_date=2002-05-18  comsof_auto=False
+  cabinet(3)  name=WH-C-03  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=138.918221891335  type=Power Supply Enclosure  powered=True  photo=image(437KB)  comsof_auto=False
+  cabinet(4)  name=WH-C-04  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=242.465807681361  type=Micro Cell Site Enclosure  powered=False  installation_date=2006-09-08  comsof_auto=False
+  cabinet(5)  name=WH-C-05  specification=CS-A-100324  labor_costs=tree_trim  location=point  myw_orientation_location=231.985629600232  type=Micro Cell Site Enclosure  powered=True  installation_date=1998-05-03  comsof_auto=False
+  cabinet(6)  name=WH-C-06  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=136.696162005592  type=Power Supply Enclosure  powered=True  installation_date=2010-01-25  comsof_auto=False
+  cabinet(7)  name=WH-C-07  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=332.389559058063  type=Power Supply Enclosure  powered=True  installation_date=2002-09-20  comsof_auto=False
+  cabinet(8)  name=WH-C-08  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=141.070490541924  type=Micro Cell Site Enclosure  powered=False  installation_date=2014-05-15  comsof_auto=False
+  cabinet(9)  name=WH-C-09  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=239.778188986776  type=Power Supply Enclosure  powered=True  installation_date=2006-01-10  comsof_auto=False
+  cabinet(10)  name=WH-C-10  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=323.300613969715  type=Power Supply Enclosure  powered=True  installation_date=1998-09-05  comsof_auto=False
+  cabinet(11)  name=WH-C-11  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=42.3321984872792  type=Power Supply Enclosure  powered=True  installation_date=2010-05-27  comsof_auto=False
+  cabinet(12)  name=WH-C-12  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=46.6602447553191  type=Micro Cell Site Enclosure  powered=False  installation_date=2002-01-22  comsof_auto=False
+  cabinet(13)  name=WH-C-13  specification=CS-A-100324  labor_costs=tree_trim  location=point  myw_orientation_location=221.00912400321  type=Micro Cell Site Enclosure  powered=True  installation_date=2014-09-17  comsof_auto=False
+  cabinet(14)  name=WH-C-14  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=51.2674305300911  type=Power Supply Enclosure  powered=True  installation_date=2006-05-12  comsof_auto=False
+  cabinet(15)  name=WH-C-15  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=12.1138312891079  type=Power Supply Enclosure  powered=True  installation_date=1998-01-07  comsof_auto=False
+  cabinet(17)  name=WH-C-17  specification=CS-A-100324  labor_costs=tree_trim  location=point  myw_orientation_location=312.049247916656  type=Micro Cell Site Enclosure  powered=True  installation_date=2002-05-24  comsof_auto=False
+  cabinet(18)  name=WH-C-18  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=227.615809472749  type=Power Supply Enclosure  powered=True  installation_date=2014-01-19  comsof_auto=False
+  cabinet(19)  name=WH-C-19  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=233.196148109085  type=Power Supply Enclosure  powered=True  installation_date=2006-09-14  comsof_auto=False
+  cabinet(20)  name=WH-C-20  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=311.739883636423  type=Micro Cell Site Enclosure  powered=False  installation_date=1998-05-09  comsof_auto=False
+  cabinet(21)  name=WH-C-21  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=315.362668269849  type=Power Supply Enclosure  powered=True  comsof_auto=False
+  cabinet(22)  name=WH-C-22  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=312.697946576194  type=Power Supply Enclosure  powered=True  installation_date=2002-09-26  comsof_auto=False
+  cabinet(23)  name=WH-C-23  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=124.82447707699  type=Power Supply Enclosure  powered=True  installation_date=2014-05-21  comsof_auto=False
+  cabinet(24)  name=WH-C-24  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=131.378504146909  type=Micro Cell Site Enclosure  powered=False  installation_date=2006-01-16  comsof_auto=False
+  cabinet(25)  name=WH-C-25  specification=CS-A-100324  labor_costs=tree_trim  location=point  myw_orientation_location=318.468241539051  type=Micro Cell Site Enclosure  powered=True  installation_date=1998-09-11  comsof_auto=False
+  cabinet(26)  name=WH-C-26  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=316.39718899866  type=Power Supply Enclosure  powered=True  installation_date=2010-05-06  comsof_auto=False
+  cabinet(27)  name=WH-C-27  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=49.9697009524955  type=Power Supply Enclosure  powered=True  installation_date=2002-01-01  comsof_auto=False
+  cabinet(28)  name=WH-C-28  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=42.1701261463489  type=Micro Cell Site Enclosure  powered=False  installation_date=2014-09-23  comsof_auto=False
+  cabinet(29)  name=WH-C-29  specification=CS-A-100324  labor_costs=tree_trim  location=point  myw_orientation_location=0.0  type=Micro Cell Site Enclosure  powered=True  installation_date=2006-05-18  comsof_auto=False
+  cabinet(30)  name=WH-C-30  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=0.0  type=Power Supply Enclosure  powered=True  installation_date=1998-01-13  comsof_auto=False
+  cabinet(31)  name=XX-C-31  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=0.0  type=Power Supply Enclosure  powered=True  installation_date=2010-09-08  comsof_auto=False
+  cabinet(32)  name=WH-C-32  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=0.0  type=Micro Cell Site Enclosure  powered=False  installation_date=2002-05-03  comsof_auto=False
+  cabinet(33)  name=XX-C-33  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=0.0  type=Power Supply Enclosure  powered=True  installation_date=2014-01-25  comsof_auto=False
+  cabinet(34)  name=WH-C-34  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=0.0  type=Power Supply Enclosure  powered=True  installation_date=2006-09-20  comsof_auto=False
+  cabinet(35)  name=SP-C-35  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=67.4925159611509  type=Power Supply Enclosure  powered=True  installation_date=1998-05-15  comsof_auto=False
+  cabinet(36)  name=SP-C-36  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=45.3450626048955  type=Micro Cell Site Enclosure  powered=False  installation_date=2010-01-10  comsof_auto=False
+  cabinet(37)  name=SP-C-37  specification=CS-A-100324  labor_costs=tree_trim  location=point  myw_orientation_location=48.2502297126144  type=Micro Cell Site Enclosure  powered=True  installation_date=2002-09-05  comsof_auto=False
+  cabinet(38)  name=SP-C-38  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=320.013155092218  type=Power Supply Enclosure  powered=True  installation_date=2014-05-27  comsof_auto=False
+  cabinet(39)  name=SP-C-39  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=37.5830083446641  type=Power Supply Enclosure  powered=True  comsof_auto=False
+  cabinet(40)  name=XX-C-40  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=0.0  type=Micro Cell Site Enclosure  powered=False  installation_date=1998-09-17  comsof_auto=False
+  cabinet(41)  name=XX-C-41  specification=CS-A-100324  labor_costs=tree_trim  location=point  myw_orientation_location=33.0030839672426  type=Micro Cell Site Enclosure  powered=True  installation_date=2010-05-12  comsof_auto=False
+  cabinet(44)  name=SP-C-44  specification=CS-A-100586  labor_costs=fiber_connect  location=point  myw_orientation_location=0.0  type=Micro Cell Site Enclosure  powered=False  installation_date=2006-05-24  comsof_auto=False
+  cabinet(45)  name=SP-C-45  specification=CS-A-100468  labor_costs=fiber_connect,survey  location=point  myw_orientation_location=0.0  type=Power Supply Enclosure  powered=True  installation_date=1998-01-19  comsof_auto=False
+  cabinet(46)  name=SP-C-46  specification=CS-A-100455  labor_costs=fiber_connect  location=point  myw_orientation_location=0.0  type=Power Supply Enclosure  powered=True  installation_date=2010-09-14  comsof_auto=False
+
+Opening database <database> ...
+
+  pole(1)  name=WH-P-001  location=point  type=Wood  owner=Acme Co  installation_date=2010-09-23  comsof_auto=False
+  pole(2)  name=WH-P-002  location=point  type=Wood  owner=SFB Comms  installation_date=2002-05-18  comsof_auto=False
+  pole(4)  name=WH-P-004  location=point  type=Wood  owner=Acme Co  installation_date=2006-09-08  comsof_auto=False
+  pole(5)  name=WH-P-005  location=point  type=Wood  owner=Acme Co  installation_date=1998-05-03  comsof_auto=False
+  pole(6)  name=WH-P-006  location=point  type=Wood  owner=Acme Co  installation_date=2010-01-25  comsof_auto=False
+  pole(7)  name=WH-P-007  location=point  type=Wood  installation_date=2002-09-20  comsof_auto=False
+  pole(8)  name=WH-P-008  location=point  type=Wood  owner=Acme Co  installation_date=2014-05-15  comsof_auto=False
+  pole(9)  name=WH-P-009  location=point  type=Wood  owner=Acme Co  installation_date=2006-01-10  comsof_auto=False
+  pole(10)  name=WH-P-010  location=point  type=Wood  owner=Acme Co  installation_date=1998-09-05  comsof_auto=False
+  pole(11)  name=WH-P-011  location=point  type=Wood  owner=SFB Comms  installation_date=2010-05-27  comsof_auto=False
+  pole(12)  name=WH-P-012  location=point  type=Wood  owner=Acme Co  installation_date=2002-01-22  comsof_auto=False
+  pole(13)  name=WH-P-013  location=point  type=Wood  owner=Acme Co  installation_date=2014-09-17  comsof_auto=False
+  pole(14)  name=WH-P-014  location=point  type=Wood  owner=Acme Co  installation_date=2006-05-12  comsof_auto=False
+  pole(15)  name=WH-P-015  location=point  type=Wood  owner=Acme Co  installation_date=1998-01-07  comsof_auto=False
+  pole(16)  name=WH-P-016  location=point  type=Wood  owner=Acme Co  installation_date=2010-09-02  comsof_auto=False
+  pole(17)  name=WH-P-017  location=point  type=Wood  owner=Acme Co  installation_date=2002-05-24  comsof_auto=False
+  pole(18)  name=WH-P-018  location=point  type=Steel  owner=Acme Co  installation_date=2014-01-19  comsof_auto=False
+  pole(19)  name=WH-P-019  location=point  type=Wood  owner=Acme Co  installation_date=2006-09-14  comsof_auto=False
+  pole(20)  name=WH-P-020  location=point  type=Wood  installation_date=1998-05-09  comsof_auto=False
+  pole(21)  name=XX-P-021  location=point  type=Wood  owner=Acme Co  comsof_auto=False
+  pole(22)  name=XX-P-022  location=point  type=Wood  owner=Acme Co  installation_date=2002-09-26  comsof_auto=False
+  pole(23)  name=WH-P-023  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2014-05-21  comsof_auto=False
+  pole(24)  name=WH-P-024  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2006-01-16  comsof_auto=False
+  pole(25)  name=WH-P-025  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=1998-09-11  comsof_auto=False
+  pole(26)  name=WH-P-026  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2010-05-06  comsof_auto=False
+  pole(27)  name=WH-P-027  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2002-01-01  comsof_auto=False
+  pole(28)  name=WH-P-028  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2014-09-23  comsof_auto=False
+  pole(29)  name=WH-P-029  location=point  type=Wood  height=5.0  owner=SFB Comms  installation_date=2006-05-18  comsof_auto=False
+  pole(30)  name=WH-P-030  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=1998-01-13  comsof_auto=False
+  pole(31)  name=WH-P-031  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2010-09-08  comsof_auto=False
+  pole(32)  name=WH-P-032  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2002-05-03  comsof_auto=False
+  pole(33)  name=WH-P-033  location=point  type=Wood  height=5.0  installation_date=2014-01-25  comsof_auto=False
+  pole(34)  name=WH-P-034  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2006-09-20  comsof_auto=False
+  pole(35)  name=WH-P-035  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=1998-05-15  comsof_auto=False
+  pole(36)  name=XX-P-036  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2010-01-10  comsof_auto=False
+  pole(37)  name=XX-P-037  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2002-09-05  comsof_auto=False
+  pole(38)  name=XX-P-038  location=point  type=Wood  height=5.0  owner=SFB Comms  installation_date=2014-05-27  comsof_auto=False
+  pole(39)  name=XX-P-039  location=point  type=Wood  height=5.0  owner=Acme Co  comsof_auto=False
+  pole(40)  name=XX-P-040  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=1998-09-17  comsof_auto=False
+  pole(41)  name=XX-P-041  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2010-05-12  comsof_auto=False
+  pole(42)  name=XX-P-042  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2002-01-07  comsof_auto=False
+  pole(43)  name=XX-P-043  location=point  type=Wood  height=5.0  owner=Acme Co  installation_date=2014-09-02  comsof_auto=False
+  pole(44)  name=WH-P-044  location=point  type=Steel  owner=Acme Co  installation_date=2006-05-24  comsof_auto=False
+  pole(6104)  name=WH-M-1753:2  specification=FPM-CCANN-C2  labor_costs=hole_dig,level_ground  location=point  myw_orientation_location=0.0
+
+Opening database <database> ...
+
+  wall_box(1)  name=WH-0001  location=point  installation_date=2010-09-23  comsof_auto=False
+  wall_box(2)  name=WH-0002  location=point  installation_date=2002-05-18  comsof_auto=False
+  wall_box(3)  name=WH-0003  location=point  comsof_auto=False
+  wall_box(4)  name=WH-0004  location=point  installation_date=2006-09-08  comsof_auto=False
+  wall_box(5)  name=WH-0005  location=point  installation_date=1998-05-03  comsof_auto=False
+  wall_box(6)  name=WH-0006  location=point  installation_date=2010-01-25  comsof_auto=False
+  wall_box(7)  name=WH-0007  location=point  installation_date=2002-09-20  comsof_auto=False
+  wall_box(8)  name=WH-0008  location=point  installation_date=2014-05-15  comsof_auto=False
+  wall_box(9)  name=WH-0009  location=point  installation_date=2006-01-10  comsof_auto=False
+  wall_box(10)  name=WH-0010  location=point  installation_date=1998-09-05  comsof_auto=False
+  wall_box(11)  name=WH-0011  location=point  installation_date=2010-05-27  comsof_auto=False
+  wall_box(12)  name=WH-0012  location=point  installation_date=2002-01-22  comsof_auto=False
+  wall_box(13)  name=WH-0013  location=point  installation_date=2014-09-17  comsof_auto=False
+  wall_box(14)  name=WH-0014  location=point  installation_date=2006-05-12  comsof_auto=False
+  wall_box(15)  name=WH-0015  location=point  installation_date=1998-01-07  comsof_auto=False
+  wall_box(16)  name=WH-0016  location=point  installation_date=2010-09-02  comsof_auto=False
+  wall_box(17)  name=WH-0017  location=point  installation_date=2002-05-24  comsof_auto=False
+  wall_box(18)  name=WH-0018  location=point  installation_date=2014-01-19  comsof_auto=False
+  wall_box(19)  name=WH-0019  location=point  installation_date=2006-09-14  comsof_auto=False
+  wall_box(20)  name=WH-0020  location=point  installation_date=1998-05-09  comsof_auto=False
+  wall_box(21)  name=WH-0021  location=point  comsof_auto=False
+  wall_box(22)  name=WH-0022  location=point  installation_date=2002-09-26  comsof_auto=False
+  wall_box(23)  name=WH-0023  location=point  installation_date=2014-05-21  comsof_auto=False
+  wall_box(24)  name=WH-0024  location=point  installation_date=2006-01-16  comsof_auto=False
+  wall_box(25)  name=WH-0025  location=point  installation_date=1998-09-11  comsof_auto=False
+  wall_box(26)  name=WH-0026  location=point  installation_date=2010-05-06  comsof_auto=False
+  wall_box(27)  name=WH-0027  location=point  installation_date=2002-01-01  comsof_auto=False
+  wall_box(28)  name=WH-0028  location=point  installation_date=2014-09-23  comsof_auto=False
+  wall_box(29)  name=WH-0029  location=point  installation_date=2006-05-18  comsof_auto=False
+  wall_box(30)  name=WH-0030  location=point  installation_date=1998-01-13  comsof_auto=False
+  wall_box(31)  name=WH-0031  location=point  installation_date=2010-09-08  comsof_auto=False
+  wall_box(32)  name=WH-0032  location=point  installation_date=2002-05-03  comsof_auto=False
+  wall_box(33)  name=WH-0033  location=point  installation_date=2014-01-25  comsof_auto=False
+  wall_box(34)  name=WH-0034  location=point  installation_date=2006-09-20  comsof_auto=False
+  wall_box(35)  name=WH-0035  location=point  installation_date=1998-05-15  comsof_auto=False
+  wall_box(36)  name=WH-0036  location=point  installation_date=2010-01-10  comsof_auto=False
+  wall_box(37)  name=WH-0037  location=point  installation_date=2002-09-05  comsof_auto=False
+  wall_box(38)  name=WH-0038  location=point  installation_date=2014-05-27  comsof_auto=False
+  wall_box(39)  name=WH-0039  location=point  comsof_auto=False
+  wall_box(40)  name=WH-0040  location=point  installation_date=1998-09-17  comsof_auto=False
+  wall_box(41)  name=WH-0041  location=point  installation_date=2010-05-12  comsof_auto=False
+  wall_box(42)  name=WH-0042  location=point  installation_date=2002-01-07  comsof_auto=False
+  wall_box(43)  name=WH-0043  location=point  installation_date=2014-09-02  comsof_auto=False
+  wall_box(44)  name=WH-0044  location=point  installation_date=2006-05-24  comsof_auto=False
+  wall_box(45)  name=WH-0045  location=point  installation_date=1998-01-19  comsof_auto=False
+  wall_box(46)  name=WH-0046  location=point  installation_date=2010-09-14  comsof_auto=False
+  wall_box(47)  name=WH-0047  location=point  installation_date=2002-05-09  comsof_auto=False
+  wall_box(48)  name=WH-0048  location=point  installation_date=2014-01-04  comsof_auto=False
+  wall_box(49)  name=WH-0049  location=point  installation_date=2006-09-26  comsof_auto=False
+  wall_box(50)  name=WH-0050  location=point  installation_date=1998-05-21  comsof_auto=False
+  wall_box(51)  name=WH-0051  location=point  installation_date=2010-01-16  comsof_auto=False
+  wall_box(52)  name=WH-0052  location=point  installation_date=2002-09-11  comsof_auto=False
+  wall_box(53)  name=WH-0053  location=point  installation_date=2014-05-06  comsof_auto=False
+  wall_box(54)  name=WH-0054  location=point  installation_date=2006-01-01  comsof_auto=False
+  wall_box(55)  name=WH-0055  location=point  installation_date=1998-09-23  comsof_auto=False
+  wall_box(56)  name=WH-0056  location=point  installation_date=2010-05-18  comsof_auto=False
+  wall_box(57)  name=WH-0057  location=point  comsof_auto=False
+  wall_box(58)  name=WH-0058  location=point  installation_date=2014-09-08  comsof_auto=False
+  wall_box(59)  name=WH-0059  location=point  installation_date=2006-05-03  comsof_auto=False
+  wall_box(60)  name=WH-0060  location=point  installation_date=1998-01-25  comsof_auto=False
+  wall_box(61)  name=WH-0061  location=point  installation_date=2010-09-20  comsof_auto=False
+  wall_box(62)  name=WH-0062  location=point  installation_date=2002-05-15  comsof_auto=False
+  wall_box(63)  name=WH-0063  location=point  installation_date=2014-01-10  comsof_auto=False
+  wall_box(64)  name=WH-0064  location=point  installation_date=2006-09-05  comsof_auto=False
+  wall_box(65)  name=WH-0065  location=point  installation_date=1998-05-27  comsof_auto=False
+  wall_box(66)  name=WH-0066  location=point  installation_date=2010-01-22  comsof_auto=False
+  wall_box(67)  name=WH-0067  location=point  installation_date=2002-09-17  comsof_auto=False
+  wall_box(68)  name=WH-0068  location=point  installation_date=2014-05-12  comsof_auto=False
+  wall_box(69)  name=WH-0069  location=point  installation_date=2006-01-07  comsof_auto=False
+  wall_box(70)  name=WH-0070  location=point  installation_date=1998-09-02  comsof_auto=False
+  wall_box(71)  name=WH-0071  location=point  installation_date=2010-05-24  comsof_auto=False
+  wall_box(72)  name=WH-0072  location=point  installation_date=2002-01-19  comsof_auto=False
+  wall_box(73)  name=WH-0073  location=point  installation_date=2014-09-14  comsof_auto=False
+  wall_box(74)  name=WH-0074  location=point  installation_date=2006-05-09  comsof_auto=False
+  wall_box(75)  name=WH-0075  location=point  comsof_auto=False
+  wall_box(76)  name=WH-0076  location=point  installation_date=2010-09-26  comsof_auto=False
+  wall_box(77)  name=WH-0077  location=point  installation_date=2002-05-21  comsof_auto=False
+  wall_box(78)  name=WH-0078  location=point  installation_date=2014-01-16  comsof_auto=False
+  wall_box(79)  name=WH-0079  location=point  installation_date=2006-09-11  comsof_auto=False
+  wall_box(80)  name=WH-0080  location=point  installation_date=1998-05-06  comsof_auto=False
+  wall_box(81)  name=WH-0081  location=point  installation_date=2010-01-01  comsof_auto=False
+  wall_box(82)  name=WH-0082  location=point  installation_date=2002-09-23  comsof_auto=False
+  wall_box(83)  name=WH-0083  location=point  installation_date=2014-05-18  comsof_auto=False
+  wall_box(84)  name=WH-0084  location=point  installation_date=2006-01-13  comsof_auto=False
+  wall_box(85)  name=WH-0085  location=point  installation_date=1998-09-08  comsof_auto=False
+  wall_box(86)  name=WH-0086  location=point  installation_date=2010-05-03  comsof_auto=False
+  wall_box(87)  name=WH-0087  location=point  installation_date=2002-01-25  comsof_auto=False
+  wall_box(88)  name=WH-0088  location=point  installation_date=2014-09-20  comsof_auto=False
+  wall_box(89)  name=WH-0089  location=point  installation_date=2006-05-15  comsof_auto=False
+  wall_box(90)  name=WH-0090  location=point  installation_date=1998-01-10  comsof_auto=False
+  wall_box(91)  name=WH-0091  location=point  installation_date=2010-09-05  comsof_auto=False
+  wall_box(92)  name=WH-0092  location=point  installation_date=2002-05-27  comsof_auto=False
+  wall_box(93)  name=WH-0093  location=point  comsof_auto=False
+  wall_box(94)  name=WH-0094  location=point  installation_date=2006-09-17  comsof_auto=False
+  wall_box(95)  name=WH-0095  location=point  installation_date=1998-05-12  comsof_auto=False
+  wall_box(96)  name=WH-0096  location=point  installation_date=2010-01-07  comsof_auto=False
+  wall_box(97)  name=WH-0097  location=point  installation_date=2002-09-02  comsof_auto=False
+  wall_box(98)  name=WH-0098  location=point  installation_date=2014-05-24  comsof_auto=False
+  wall_box(99)  name=WH-0099  location=point  installation_date=2006-01-19  comsof_auto=False
+  wall_box(100)  name=WH-0100  location=point  installation_date=1998-09-14  comsof_auto=False
+  wall_box(101)  name=WH-0101  location=point  installation_date=2010-05-09  comsof_auto=False
+  wall_box(102)  name=WH-0102  location=point  installation_date=2002-01-04  comsof_auto=False
+  wall_box(103)  name=WH-0103  location=point  installation_date=2014-09-26  comsof_auto=False
+  wall_box(104)  name=WH-0104  location=point  installation_date=2006-05-21  comsof_auto=False
+  wall_box(105)  name=WH-0105  location=point  installation_date=1998-01-16  comsof_auto=False
+  wall_box(106)  name=WH-0106  location=point  installation_date=2010-09-11  comsof_auto=False
+  wall_box(107)  name=WH-0107  location=point  installation_date=2002-05-06  comsof_auto=False
+  wall_box(108)  name=WH-0108  location=point  installation_date=2014-01-01  comsof_auto=False
+  wall_box(109)  name=WH-0109  location=point  installation_date=2006-09-23  comsof_auto=False
+  wall_box(110)  name=WH-0110  location=point  installation_date=1998-05-18  comsof_auto=False
+  wall_box(111)  name=WH-0111  location=point  comsof_auto=False
+  wall_box(112)  name=WH-0112  location=point  installation_date=2002-09-08  comsof_auto=False
+  wall_box(113)  name=WH-0113  location=point  installation_date=2014-05-03  comsof_auto=False
+  wall_box(114)  name=WH-0114  location=point  installation_date=2006-01-25  comsof_auto=False
+  wall_box(115)  name=WH-0115  location=point  installation_date=1998-09-20  comsof_auto=False
+  wall_box(116)  name=WH-0116  location=point  installation_date=2010-05-15  comsof_auto=False
+  wall_box(117)  name=WH-0117  location=point  installation_date=2002-01-10  comsof_auto=False
+  wall_box(118)  name=WH-0118  location=point  installation_date=2014-09-05  comsof_auto=False
+  wall_box(119)  name=WH-0119  location=point  installation_date=2006-05-27  comsof_auto=False
+  wall_box(120)  name=WH-0120  location=point  installation_date=1998-01-22  comsof_auto=False
+  wall_box(121)  name=WH-0121  location=point  installation_date=2010-09-17  comsof_auto=False
+  wall_box(122)  name=WH-0122  location=point  installation_date=2002-05-12  comsof_auto=False
+  wall_box(123)  name=WH-0123  location=point  installation_date=2014-01-07  comsof_auto=False
+  wall_box(124)  name=WH-0124  location=point  installation_date=2006-09-02  comsof_auto=False
+  wall_box(125)  name=WH-0125  location=point  installation_date=1998-05-24  comsof_auto=False
+  wall_box(126)  name=WH-0126  location=point  installation_date=2010-01-19  comsof_auto=False
+  wall_box(127)  name=WH-0127  location=point  installation_date=2002-09-14  comsof_auto=False
+  wall_box(128)  name=WH-0128  location=point  installation_date=2014-05-09  comsof_auto=False
+  wall_box(129)  name=WH-0129  location=point  comsof_auto=False
+  wall_box(130)  name=WH-0130  location=point  installation_date=1998-09-26  comsof_auto=False
+  wall_box(131)  name=XX-0131  location=point  installation_date=2010-05-21  comsof_auto=False
+  wall_box(132)  name=WH-0132  location=point  myw_orientation_location=318.179839166054  installation_date=2002-01-16  comsof_auto=False
+  wall_box(133)  name=WH-0133  location=point  myw_orientation_location=312.324642222703  installation_date=2014-09-11  comsof_auto=False
+  wall_box(134)  name=WH-0134  location=point  myw_orientation_location=222.436299463577  installation_date=2006-05-06  comsof_auto=False
+  wall_box(135)  name=WH-0135  location=point  myw_orientation_location=143.130066553334  installation_date=1998-01-01  comsof_auto=False
+  wall_box(136)  name=WH-0136  location=point  myw_orientation_location=312.978677812487  installation_date=2010-09-23  comsof_auto=False
+  wall_box(137)  name=WH-0137  location=point  myw_orientation_location=142.352332665146  installation_date=2002-05-18  comsof_auto=False
+  wall_box(138)  name=WH-0138  location=point  myw_orientation_location=137.045358040083  installation_date=2014-01-13  comsof_auto=False
+  wall_box(142)  name=WH-0142  location=point  myw_orientation_location=316.273089982375  installation_date=2002-09-20  comsof_auto=False
+  wall_box(143)  name=WH-0143  location=point  myw_orientation_location=139.279391443658  installation_date=2014-05-15  comsof_auto=False
+  wall_box(144)  name=WH-0144  location=point  myw_orientation_location=38.5411337961822  installation_date=2006-01-10  comsof_auto=False
+  wall_box(145)  name=WH-0145  location=point  myw_orientation_location=138.406433299435  installation_date=1998-09-05  comsof_auto=False
+  wall_box(146)  name=WH-0146  location=point  myw_orientation_location=136.005019524509  installation_date=2010-05-27  comsof_auto=False
+  wall_box(147)  name=WH-0147  location=point  myw_orientation_location=134.999932830109  comsof_auto=False
+  wall_box(148)  name=WH-0148  location=point  myw_orientation_location=137.891148696604  installation_date=2014-09-17  comsof_auto=False
+  wall_box(149)  name=WH-0149  location=point  myw_orientation_location=313.394055314763  installation_date=2006-05-12  comsof_auto=False
+  wall_box(150)  name=WH-0150  location=point  myw_orientation_location=320.042517969322  installation_date=1998-01-07  comsof_auto=False
+  wall_box(151)  name=WH-0151  location=point  myw_orientation_location=135.0  installation_date=2010-09-02  comsof_auto=False
+  wall_box(50000)  name=WH-50000  location=point  myw_orientation_location=45.0
+

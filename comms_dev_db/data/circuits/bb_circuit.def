@@ -1,0 +1,61 @@
+{
+   "datasource": "myworld", 
+   "name": "bb_circuit", 
+   "external_name": "Backbone Circuit", 
+   "track_changes": true, 
+   "versioned": true,
+   "editable": { "insert_from_gui": true,
+                 "update_from_gui": true,
+                 "delete_from_gui": true }, 
+   "fields": [
+      {
+         "name": "id", 
+         "external_name": "Id", 
+         "type": "integer", 
+         "key": true, 
+         "generator": "sequence"
+      }, 
+      {
+         "name": "name", 
+         "type": "string(64)",
+         "mandatory": true
+      },
+      {
+         "name": "status", 
+         "external_name": "Status", 
+         "type": "string(64)",
+         "enum": "circuit_status",
+         "mandatory": true,
+         "default": "New"
+      },
+      {
+         "name": "in_feature",
+         "external_name": "Served From", 
+         "type": "reference",
+         "indexed": true,
+         "read_only": true
+      },
+      {
+         "name": "in_pins", 
+         "external_name": "Serving Port", 
+         "type": "string(32)"
+      },
+      {
+         "name": "out_feature", 
+         "external_name": "Terminates At", 
+         "type": "reference",
+         "indexed": true,
+         "read_only": true
+      },
+      {
+         "name": "out_pins", 
+         "external_name": "Termination Port", 
+         "type": "string(32)"
+      },
+      {
+         "name": "path", 
+         "external_name": "Path", 
+         "type": "linestring"
+      }
+   ]
+}

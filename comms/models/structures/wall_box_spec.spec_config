@@ -1,0 +1,5 @@
+{
+    "layer": "mywcom_structures",
+    "ref_feature": "wall_box",
+    "field_name": "specification"
+}

@@ -1,0 +1,8 @@
+#!/bin/bash
+HERE=$(dirname $0)
+
+# Set import paths
+export PATH=$HERE/../../../../../Tools:${PATH}
+source myw_env
+
+python $0.py  ${MYW_COMMS_DEV_DB} ${MYW_COMMS_ARCHIVE_DIR} comms_dev_db

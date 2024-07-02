@@ -1,0 +1,4 @@
+#!/bin/bash
+comsof_engine_tests "$@"
+comsof_server_tests "$@"
+comsof_client_tests "$@"

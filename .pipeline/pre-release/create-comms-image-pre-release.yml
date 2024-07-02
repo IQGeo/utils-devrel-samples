@@ -1,0 +1,110 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  tags:
+    include:
+      - v*beta*
+      - v*alpha*
+      - v*rc*
+      - v*.final
+
+pr:
+  - false
+
+# We are setting up a pipeline resource that references the "Create Platform Image Base (Pre-Release"
+# pipeline and setting up a pipeline completion trigger so that our "Create Platform Image with COMMS (Pre-Release)"
+# pipeline runs when a run of the "Create Platform Image Base (Pre-Release)" pipeline completes
+resources:
+  # pipelines:
+  # - pipeline: create-pre-release-images # Name of the pipeline resource.
+  #   source: Create Platform Image Base (Pre-Release) # The name of the pipeline referenced by this pipeline resource (note, if that pipeline is renamed, we have to rename this).
+  #   #project: TestDemo # Required only if the source pipeline is in another project
+  #   trigger: true # Run this pipeline (i.e. "Create Platform Image with COMMS (Pre-Release)") when any run of "Create Platform Image Base (Pre-Release)" completes
+  repositories:
+    - repository: apps-dev-tools # The name used to reference this repository in the checkout step
+      type: github
+      endpoint: Demo
+      name: IQGeo/myworld-utils-apps-dev-tools
+      # ref: '6.0'
+    - repository: core # The name used to reference this repository in the checkout step
+      type: github
+      endpoint: Demo
+      name: IQGeo/myworld-product-core
+      ref: v7.1
+    - repository: comsof # The name used to reference this repository in the checkout step
+      type: github
+      endpoint: Demo
+      name: IQGeo/product-nmt-comsof-integration
+      ref: v1.1 # ENH: Change to stable branch once it exists
+
+variables:
+  # Container registry service connection established during pipeline creation
+  dockerRegistryServiceConnection: "Docker-ACR for iqgeoproddev"
+  containerRegistry: "iqgeoproddev.azurecr.io"
+
+  # Agent VM image name
+  vmImageName: "ubuntu-latest"
+
+stages:
+  - stage:
+    displayName: Build Platform Comms Image (Pre-Release)
+    condition: ne(variables['Build.Reason'], 'PullRequest') # Stop new PR from running pipeline
+    jobs:
+      - job: define_version
+        displayName: Definate version from source tag or build number.
+        steps:
+          - bash: |
+              # GATHER AVAILABLE DATA - echo for the log
+              #   note: build.sourceBranch is the source that triggered this build.
+              export SOURCE_TAG=$(echo $BUILD_SOURCEBRANCH | sed -e "s/^refs\/tags\///")
+              echo "SOURCE_BRANCH: $BUILD_SOURCEBRANCH"
+              echo "SOURCE_TAG: ${SOURCE_TAG}"
+              echo "BUILD_NUMBER: $BUILD_BUILDNUMBER"
+
+              # DECIDE WHETHER TO USE TAG OR BUILDNUMBER
+              #   note: $SOURCE_TAG and $BUILD_SOURCEBRANCH will be the same if there's not /refs/tags for the source branch
+              if [[ $SOURCE_TAG == $BUILD_SOURCEBRANCH ]]
+              then export SOURCE_TAG=$BUILD_BUILDNUMBER
+              else export SOURCE_TAG=${SOURCE_TAG:1}
+              fi
+
+              # SET VERSION_TAG - echo for the log
+              echo "##vso[task.setvariable variable=VERSION_TAG;isOutput=true;]${SOURCE_TAG}"
+              echo "VERSION_TAG: ${SOURCE_TAG}"
+            name: set_version
+            displayName: Set the VERSION_TAG as source tag or default to build number if tag is not available.
+
+      - job: build_image
+        displayName: Build Platform Comms Image (Pre-Release)
+        dependsOn: ["define_version"]
+        variables:
+          IQG_COMMS_DIR: myworld-product-network-manager-comms/comms
+          IQG_COMMS_DEV_DB_DIR: myworld-product-network-manager-comms/comms_dev_db
+          IQG_COMSOF_DIR: product-nmt-comsof-integration/comsof
+          VERSION_TAG: $[dependencies.define_version.outputs['set_version.VERSION_TAG']]
+        pool:
+          vmImage: $(vmImageName)
+        steps:
+          - checkout: self
+          - checkout: core
+          - checkout: apps-dev-tools
+          - checkout: comsof
+          - bash: |
+              echo {\"comms\": \"$(VERSION_TAG)\"} > $(IQG_COMMS_DIR)/version_info.json
+              echo {\"comms_dev_db\": \"$(VERSION_TAG)\"} > $(IQG_COMMS_DEV_DB_DIR)/version_info.json
+              echo {\"comsof\": \"1.1\"} > $(IQG_COMSOF_DIR)/version_info.json
+            displayName: Create version_info.json
+          - task: Docker@2
+            displayName: Build and push Platform Comms Pre-Release image to container registry
+            inputs:
+              containerRegistry: "$(dockerRegistryServiceConnection)"
+              repository: "platform-comms"
+              command: "buildAndPush"
+              Dockerfile: "myworld-product-network-manager-comms/.pipeline/pre-release/platform-comms-pre-release-image/dockerfile"
+              buildContext: "$(Build.SourcesDirectory)"
+              tags: |
+                pre-release
+                $(VERSION_TAG)

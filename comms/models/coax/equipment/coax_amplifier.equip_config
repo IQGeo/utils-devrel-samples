@@ -1,0 +1,37 @@
+{
+    "image": "modules/comms/images/features/coax_amplifier.svg",
+    "housings": [
+        "manhole",
+        "cabinet",
+        "pole"
+    ],
+    "function": "connector",
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/coax_amplifier.svg:10.5:24"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/coax_amplifier.svg:10.5:12:1.5m",
+        "geometry": "offset_geom"
+    },
+    "data_block": {
+        "svg": "modules/comms/images/features/data_block_coax_amplifier.svg:22:19.5:22m",
+        "properties": {
+            "fld1": "name",
+            "fld2": "specification",
+            "fld3": "output_frequency_1",
+            "fld4": "output_frequency_2",
+            "fld5": "output_frequency_3",
+            "fld6": "output_frequency_4",
+            "fld7": "forward_pad",
+            "fld8": "related_power_supply",
+            "fld9": "distance_to_last_active",
+            "fld10": "voltage",
+            "fld11": "current_draw"
+        }
+    },
+    "offset": true
+}

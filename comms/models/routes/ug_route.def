@@ -1,0 +1,75 @@
+{
+    "datasource": "myworld",
+    "name": "ug_route",
+    "external_name": "{:ug_route_feature_external_name}",
+    "title": "{display_name}: [id]",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "delete_from_gui": true,
+        "update_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "length",
+            "external_name": "{:ug_route_feature_length_name}",
+            "type": "double",
+            "unit_scale": "length",
+            "unit": "m",
+            "display_unit": "m"
+        },
+        {
+            "name": "in_structure",
+            "type": "reference",
+            "external_name": "{:in_structure_field_name}",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "out_structure",
+            "type": "reference",
+            "external_name": "{:out_structure_field_name}",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "conduits",
+            "external_name": "{:ug_route_feature_conduits_name}",
+            "type": "reference_set",
+            "value": "select()",
+            "read_only": true
+        },
+        {
+            "name": "cable_segments",
+            "external_name": "{:ug_route_feature_cable_segments_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_fiber_segment.housing,mywcom_copper_segment.housing,mywcom_coax_segment.housing)",
+            "read_only": true
+        },
+        {
+            "name": "cables",
+            "external_name": "{:ug_route_feature_cables_name}",
+            "type": "reference_set",
+            "value": "method(cables)",
+            "read_only": true
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        }
+    ]
+}

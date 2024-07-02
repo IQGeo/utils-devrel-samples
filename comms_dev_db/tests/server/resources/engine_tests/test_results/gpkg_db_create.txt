@@ -1,0 +1,73 @@
+Opening database <conn_spec> ...
+fiber_cable : linestring
+manhole : point
+service_area : polygon
+
+Opening database <conn_spec> ...
+    fiber_cable._row_id : integer
+    fiber_cable.id : integer
+    fiber_cable.name : string
+    fiber_cable.specification : string
+    fiber_cable.type : string
+    fiber_cable.fiber_count : integer
+    fiber_cable.directed : integer
+    fiber_cable.path : linestring
+    fiber_cable.tick_mark_spacing : double
+    fiber_cable.labor_costs : string
+    fiber_cable.owner : string
+    fiber_cable.job_id : string
+    fiber_cable.installation_date : date
+    fiber_cable.diameter : double
+    fiber_cable.comsof_auto : integer
+    manhole._row_id : integer
+    manhole.id : integer
+    manhole.name : string
+    manhole.specification : string
+    manhole.labor_costs : string
+    manhole.location : point
+    manhole.myw_orientation_location : double
+    manhole.size_x : double
+    manhole.size_y : double
+    manhole.size_z : double
+    manhole.lockable : integer
+    manhole.powered : integer
+    manhole.installation_date : date
+    manhole.comsof_auto : integer
+    service_area._row_id : integer
+    service_area.name : string
+    service_area.boundary : polygon
+
+Opening database <conn_spec> ...
+feature       n_recs
+------------  ------
+fiber_cable        5
+manhole            5
+service_area       4
+
+Opening database <conn_spec> ...
+feature_type  _row_id  id  name        specification      type      fiber_count  directed  path                                                                    tick_mark_spacing  labor_costs  owner      job_id  installation_date  diameter  comsof_auto
+------------  -------  --  ----------  -----------------  --------  -----------  --------  ----------------------------------------------------------------------  -----------------  -----------  ---------  ------  -----------------  --------  -----------
+fiber_cable         1   1  WH-FCB-001  D-144-LA-8W-F12NS  External          144         1  LINESTRING (546030.8707875409 260578.53419309226, 546029.9005198454...                  -            -  Acme Co    19347   2010-09-23              9.9            0
+fiber_cable         2   2  WH-FCB-002  D-072-LA-8W-F12NS  External           72         1  LINESTRING (545953.6658606471 260509.84808152093, 545950.0256817716...                  -            -  SFB Comms  20090   2002-05-18             11.6            0
+fiber_cable         3   3  WH-FCB-003  D-144-LA-8W-F12NS  External          144         1  LINESTRING (546030.8707875409 260578.53419309226, 546029.9005198454...                  -            -  Acme Co    20833   -                       9.9            0
+fiber_cable         4   4  WH-FCB-004  D-144-LA-8W-F12NS  External          144         1  LINESTRING (546035.2295933042 260582.27468186064, 546034.0796743156...                  -            -  Acme Co    21576   2006-09-08              9.9            0
+fiber_cable         5   5  WH-FCB-005  D-144-LA-8W-F12NS  External          144         1  LINESTRING (546035.2295933042 260582.27468186064, 546034.0796743156...                  -            -  Acme Co    22319   1998-05-03              9.9            0
+feature_type  _row_id  id  name     specification  labor_costs         location                                      myw_orientation_location  size_x  size_y  size_z  lockable  powered  installation_date  comsof_auto
+------------  -------  --  -------  -------------  ------------------  --------------------------------------------  ------------------------  ------  ------  ------  --------  -------  -----------------  -----------
+manhole             1   1  WH-M-01  FPM-CCANN-C2   survey              POINT (545954.782048573 260520.96849280142)           59.3813815475527   600.0  1200.0   895.0         -        -  2010-09-23                   0
+manhole             2   2  WH-M-02  FPM-CCANN-MCX  hole_dig            POINT (545941.0170439251 260513.65891360736)          227.726322582537   850.0  1300.0   900.0         -        -  2002-05-18                   0
+manhole             3   3  WH-M-03  FPM-CCANN-J4   level_ground        POINT (545856.5558376942 260520.86400536675)           300.25645626294   440.0   910.0   800.0         -        -  -                            0
+manhole             4   4  WH-M-04  FPM-CCANN-C2   tree_trim,hole_dig  POINT (545808.0697672294 260576.58810438804)          128.659800503994   600.0  1200.0   895.0         -        -  2006-09-08                   0
+manhole             5   5  WH-M-05  FPM-CCANN-C2   survey              POINT (545779.8632583412 260583.3932405823)                          -   600.0  1200.0   895.0         -        -  1998-05-03                   0
+feature_type  _row_id  name  boundary
+------------  -------  ----  ----------------------------------------------------------------------
+service_area        1  AR    POLYGON ((546037.1245102162 261617.7272736032, 545866.8405966897 26...
+service_area        2  KH    POLYGON ((545642.0714348394 261469.15439486655, 545611.0689366353 2...
+service_area        3  SP    POLYGON ((546839.5570267723 261233.04081295215, 546813.9346717058 2...
+service_area        4  WH    POLYGON ((546607.7599548429 260882.56187344523, 546432.859795462 26...
+
+
+SUB TEST : Set coord system
+    Opening database <conn_spec> ...
+    coord_system 32618
+    

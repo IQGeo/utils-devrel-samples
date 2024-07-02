@@ -1,0 +1,18 @@
+.comms-feature-divider {
+    height: 20px;
+    text-align: center;
+    margin-bottom: 6px;
+    hr {
+        position: relative;
+        top: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .comms-divider-label {
+        position: relative;
+        padding: 0 6px;
+        margin: auto;
+        background-color: white;
+        width: fit-content;
+        color: rgb(0, 0, 0, 0.85);
+    }
+}

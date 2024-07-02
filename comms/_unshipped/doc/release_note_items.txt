@@ -1,0 +1,75 @@
+Network Manager Comms - Release Note Items
+==========================================
+
+Data Model
+------------
+
+   - Technology specific system tables
+      - mywcom_coax_segment
+      - mywcom_coax_connection
+      - mywcom_coax_slack
+      - mywcom_copper_segment
+      - mywcom_copper_connection
+      - mywcom_copper_slack
+      - mywcom_data_block
+   - Line of count [Mark]. New line of count and line of count section objects.
+   - Cable segment [Tim M]. New fields of cable segment for modelling explicit containment
+
+
+
+GUI
+---
+   - [Isaac] Circuits can only be added to fiber cables. Circuits cannot be added to exclusively copper or coaxial equipment. Circuits can be added to the fiber side of mixed technology equipment.
+
+   - Trees now support textual filtering
+   - Cable connection trees also support filtering by containment
+   - Structure cable trees support new context menu item 'Set Enclosure' on cable segments
+   - Adding equipment from equipment tree context menu now has technology sub-menus (if > 1 technology is configured in the system)
+   
+   - Line of count [Mark]
+        - Edit and view line of count option available from cable and equipment context menu.
+        - Line of count displayed against fiber, pair and port in tree view. Toggle on/off
+
+
+Upgrade
+--------
+
+   - Adds line of count model and setting
+   - Adds technology specific system tables
+   - Adds technology specific layer groups 
+   - Adds technology designation (fiber) to existing features
+
+
+Doc
+---
+
+   - CDIF Format.pdf: New version 1.1 (adds optional equipment fields on segment objects)
+   - CDIF Format.pdf: New version 1.2 (adds tech notes for equipment and cables, adds optional offset_geom field on cables)
+   - CDIF Format.pdf: New version 1.3 (adds line of count feature specifications)
+   
+Configuration Pages
+-------------------
+   - Equipment technology
+   - Cable technology
+
+Configuration Items
+-------------------
+   - data block
+   - LOC 
+   - ewl
+   - network types (by technology)
+
+Template Models
+---------------
+   - added Coax template model
+   - added Copper template model
+
+Tools
+-----
+n/a 
+
+Release notes
+-------------
+Remove references to workflow module dependency (it's now part of platform)
+
+

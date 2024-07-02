@@ -1,0 +1,7 @@
+TEST: MAP DETAILS
+  Zoom: 18
+  Centre: LatLng(52.2221, 0.1473)
+  Visible Layers: mywcom_st,mywcom_eq,mywcom_cueq,re
+  Selected Feature: 
+
+Map has new alert: True

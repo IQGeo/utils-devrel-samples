@@ -1,0 +1,88 @@
+@use './_sharedStyles.scss' as sharedStyles;
+
+.results {
+
+    &__container {
+        border: 1px solid sharedStyles.$global-border-color;
+        padding: 5px;
+        overflow-y: auto;
+        scrollbar-gutter: stable;
+        height: 200px;
+        list-style-type: none;
+    }
+
+    &__error {
+        padding: 10px;
+        color: sharedStyles.$alert;
+    }
+
+    &__progress {
+        padding: 10px
+    }
+}
+
+.subinfo {
+    margin-left: 20px;
+    list-style-type: none;
+    padding: 0px !important;
+}
+
+.collapse {
+    height: 0px;
+    overflow: hidden;
+}
+
+.caret-and-label {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.list-item {
+    &__zoom {
+        height: 16px;
+    }
+
+    &__expanded {
+
+        &::before {
+            // content: url('../../../../images/caret.svg');
+            content: url("../images/caret.svg");
+            height: 16px;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.arrow-collapse {
+    &::before {
+        transform: rotate(0deg) !important;
+    }
+}
+
+.inLine {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    margin-left: 10px;
+}
+
+.info {
+    margin-bottom: 0px !important
+}
+
+
+.path {
+    &-item:hover {
+        background-color: sharedStyles.$chosen-path-background;
+        color: sharedStyles.$blue;
+    }
+
+    &-chosen {
+        background-color: sharedStyles.$chosen-path-background;
+        color: sharedStyles.$blue;
+        font-weight: 600;
+    }
+}

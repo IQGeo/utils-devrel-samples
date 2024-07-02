@@ -1,0 +1,4 @@
+{
+   "mywcom.editMaster":            { "description": "{:right_edit_master}" },
+   "mywcom.manageSpecifications":  { "description": "{:right_manage_specifications}" }
+}

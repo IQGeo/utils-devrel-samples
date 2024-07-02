@@ -1,0 +1,7 @@
+Title, Delta (blank means master), Cable URN(Optional), Structure URNs(; delimited)
+New Cable Short Route Trace,,,manhole/23;manhole/36
+New Cable Short Route Trace,design/NB217,,manhole/23;manhole/36
+Ramsden Square Route Trace,,fiber_cable/20,manhole/91;cabinet/15;manhole/87;manhole/89;manhole/90;manhole/83
+Ramsden Square Route Trace,design/NB217,fiber_cable/20,manhole/91;cabinet/15;manhole/87;manhole/89;manhole/90;manhole/83
+WH-FCB-021 Route Trace,,fiber_cable/21,manhole/43;manhole/124
+WH-FCB-021 Route Trace,design/NB217,fiber_cable/21,manhole/43;manhole/124

@@ -1,0 +1,69 @@
+MERGE REPORT systest/conflicts1
+   FeatureChange(fiber_ont(147,systest/conflicts1),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(fiber_cable(9,systest/conflicts1),update) fields=
+      master_changes_derived_only
+      segment_paths_changed
+   FeatureChange(mywcom_fiber_segment(86,systest/conflicts1),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(85,systest/conflicts1),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(ug_route(89,systest/conflicts1),update) fields=path
+      in_structure moved
+      out_structure moved
+   FeatureChange(blown_fiber_tube(73,systest/conflicts1),update) fields=path
+      root_housing moved
+   FeatureChange(mywcom_conduit_run(57,systest/conflicts1),update) fields=path
+      conduit_paths_changed
+   FeatureChange(mywcom_fiber_segment(87,systest/conflicts1),update) fields=path
+      root_housing moved
+
+DATABASE CHANGES: AFTER MERGE
+   update base.fiber_cable(systest/conflicts1,9) fields=(path)
+   update base.fiber_ont(systest/conflicts1,147) fields=(location)
+   update base.mywcom_fiber_segment(systest/conflicts1,85) fields=(path)
+   update base.mywcom_fiber_segment(systest/conflicts1,86) fields=(path)
+   update delta.blown_fiber_tube(systest/conflicts1,73,update) fields=(path)
+   update delta.fiber_cable(systest/conflicts1,9,update) fields=(path)
+   update delta.fiber_ont(systest/conflicts1,147,update) fields=(location)
+   update delta.mywcom_conduit_run(systest/conflicts1,57,update) fields=(path)
+   update delta.mywcom_fiber_segment(systest/conflicts1,85,update) fields=(path)
+   update delta.mywcom_fiber_segment(systest/conflicts1,86,update) fields=(path)
+   update delta.mywcom_fiber_segment(systest/conflicts1,87,update) fields=(path)
+   update delta.ug_route(systest/conflicts1,89,update) fields=(path)
+
+CONFLICTS AFTER MERGE
+   integrity_error fiber_ont(147,systest/conflicts1) root_housing derived_value_mismatch ug_route(89,systest/conflicts1)
+      ['expected=ug_route/89', 'value=wall_box/147']
+   integrity_error fiber_ont(147,systest/conflicts1) location geom_mismatch_at ug_route(89,systest/conflicts1)
+      ['_coord=(0.1365777, 52.225717)', '_expected_coord=(0.1366585493088, 52.226540927122)', '_ref=housing', 'ref_side=None']
+   integrity_error blown_fiber_tube(73,systest/conflicts1) in_conduit broken_chain
+      ['_ref=blown_fiber_tube/43', 'at=Cabinet: WH-C-11']
+   integrity_error blown_fiber_tube(73,systest/conflicts1) out_conduit broken_chain
+      ['_ref=blown_fiber_tube/48', 'at=Manhole: WH-M-39']
+   integrity_error fiber_cable(9,systest/conflicts1) directed not_set
+      []
+   integrity_error fiber_cable(9,systest/conflicts1) path not_set
+      []
+   integrity_error mywcom_fiber_segment(83,systest/conflicts1) in_structure duplicate_connection splice_closure(39)
+      ['_conn1=mywcom_fiber_connection/205', '_conn2=mywcom_fiber_connection/207', 'clash_pins=out:13', 'conn1=WH-FCB-009#out:13 -> DROP-146#in:1', 'conn2=WH-FCB-009#out:13 -> DROP-148#in:1', 'housing=Splice Closure: WH-SC-039', 'side=in', 'struct=Cabinet: WH-C-11']
+   integrity_error mywcom_fiber_connection(190,systest/conflicts1) out_high bad_pin_range
+      ['connection=WH-FCB-009#out:80:6 -> DROP-144#in:35:6', 'housing=Splice Closure: WH-SC-039', 'range=in:35:6', 'side=out', 'struct=Cabinet: WH-C-11']
+   integrity_error mywcom_fiber_connection(190,systest/conflicts1) in_low bad_pin_range
+      ['connection=WH-FCB-009#out:80:6 -> DROP-144#in:35:6', 'housing=Splice Closure: WH-SC-039', 'range=out:80:6', 'side=in', 'struct=Cabinet: WH-C-11']
+   integrity_error mywcom_fiber_connection(190,systest/conflicts1) in_high bad_pin_range
+      ['connection=WH-FCB-009#out:80:6 -> DROP-144#in:35:6', 'housing=Splice Closure: WH-SC-039', 'range=out:80:6', 'side=in', 'struct=Cabinet: WH-C-11']
+   integrity_error mywcom_fiber_connection(190,systest/conflicts1) out_low bad_pin_range
+      ['connection=WH-FCB-009#out:80:6 -> DROP-144#in:35:6', 'housing=Splice Closure: WH-SC-039', 'range=in:35:6', 'side=out', 'struct=Cabinet: WH-C-11']
+   integrity_error mywcom_conduit_run(57,systest/conflicts1) path geom_mismatch
+      ['ref=conduits']
+   integrity_error mywcom_fiber_segment(76,systest/conflicts1) in_segment broken_chain
+      ['_ref=76', 'back_ref=77']
+   integrity_error mywcom_fiber_segment(76,systest/conflicts1) path geom_mismatch_at mywcom_fiber_segment(76,systest/conflicts1)
+      ['_coord=(0.1380164176226, 52.2250326615595)', '_expected_coord=(0.137692879720297, 52.22528278305279)', '_ref=in_segment', 'ref_side=out']
+   integrity_error mywcom_fiber_segment(76,systest/conflicts1) in_tick tick_mark_invalid
+      ['invalid_tick=0', 'overlap_seg=Cable Segment: 77 (fiber_cable/9)']
+

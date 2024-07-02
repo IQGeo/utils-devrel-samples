@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   width="125"
+   height="45.549999"
+   viewBox="0 0 93.744993 34.161248"
+   version="1.1"
+   sodipodi:docname="IQGeo_logo_header.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata25">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>IQGeo</dc:title>
+        <dc:title>IQGeo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1278"
+     inkscape:window-height="1368"
+     id="namedview23"
+     showgrid="false"
+     units="px"
+     scale-x="0.94996"
+     inkscape:zoom="10.210556"
+     inkscape:cx="122.2626"
+     inkscape:cy="24.641194"
+     inkscape:window-x="1913"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1"
+     inkscape:document-rotation="0" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+      .cls-1 {
+        fill: #1d1d1b;
+      }
+
+      .cls-2 {
+        fill: #00bf43;
+      }
+    </style>
+    <clipPath
+       id="clip-path">
+      <rect
+         width="162"
+         height="46"
+         id="rect863" />
+    </clipPath>
+  </defs>
+  <title
+     id="title6">IQGeo</title>
+  <g
+     id="g886"
+     transform="matrix(0.79444906,0,0,0.79444906,-2.0289709e-4,0.15036382)">
+    <g
+       transform="translate(0,-3.4204002e-6)"
+       id="g872">
+      <rect
+         style="fill:#1d1d1b"
+         id="rect860"
+         height="20"
+         width="4"
+         y="12.97"
+         x="7"
+         class="cls-1" />
+      <path
+         style="fill:#1d1d1b"
+         inkscape:connector-curvature="0"
+         id="path862"
+         d="M 33.21,28.68 A 9.86,9.86 0 0 0 35,23 10,10 0 1 0 30.32,31.46 L 35,35.82 37.83,33 Z M 19,23 a 6,6 0 1 1 6,6 6,6 0 0 1 -6,-6 z"
+         class="cls-1" />
+      <path
+         style="fill:#1d1d1b"
+         inkscape:connector-curvature="0"
+         id="path864"
+         d="M 58.8,21 H 49 v 4 h 5.65 A 6,6 0 1 1 49,17 h 0.16 a 6,6 0 0 1 4,1.67 L 56,15.82 A 9.88,9.88 0 0 0 52.54,13.62 10,10 0 1 0 49,33 9.82,9.82 0 0 0 52.52,32.35 10,10 0 0 0 59,23 10.2,10.2 0 0 0 58.8,21 Z"
+         class="cls-1" />
+      <path
+         style="fill:#1d1d1b"
+         inkscape:connector-curvature="0"
+         id="path866"
+         d="M 81.8,21 A 10,10 0 1 0 72,33 9.82,9.82 0 0 0 75.52,32.35 10,10 0 0 0 79,30.13 L 76.15,27.3 a 6,6 0 0 1 -4,1.66 H 72 a 6,6 0 0 1 -5.65,-4 H 81.8 A 10,10 0 0 0 82,22.96 10.2,10.2 0 0 0 81.8,21 Z m -15.45,0 a 6,6 0 0 1 11.3,0 z"
+         class="cls-1" />
+      <path
+         style="fill:#1d1d1b"
+         inkscape:connector-curvature="0"
+         id="path868"
+         d="M 95,13 A 10,10 0 1 0 105,23 10,10 0 0 0 95,13 Z m 0,16 a 6,6 0 1 1 6,-6 6,6 0 0 1 -6,6 z"
+         class="cls-1" />
+      <path
+         style="fill:#00bf43"
+         inkscape:connector-curvature="0"
+         id="path870"
+         d="m 110,8 a 3.5,3.5 0 1 0 0,5 3.48,3.48 0 0 0 0,-5 z m -1.41,3.53 a 1.5,1.5 0 0 1 -2.12,-2.12 1.51,1.51 0 0 1 2.12,0 1.49,1.49 0 0 1 -0.03,2.12 z"
+         class="cls-2" />
+    </g>
+    <rect
+       y="-0.18901666"
+       x="-0.0009890215"
+       height="42.999676"
+       width="118.00198"
+       id="rect876"
+       style="fill:none;fill-opacity:1;stroke:#eeeeee;stroke-width:0;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  </g>
+  <ellipse
+     style="fill:#000000;fill-opacity:0.0120482;stroke:#000000;stroke-width:0.303068;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path891"
+     cx="83.287407"
+     cy="24.882748"
+     rx="1.1601677"
+     ry="1.1832726" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:1.61604px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.323207;stroke-miterlimit:4;stroke-dasharray:none"
+     x="85.810402"
+     y="24.567001"
+     id="text895"
+     transform="scale(0.96336236,1.038031)"><tspan
+       sodipodi:role="line"
+       id="tspan893"
+       x="85.810402"
+       y="24.567001"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.61604px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.323207;stroke-miterlimit:4;stroke-dasharray:none">R</tspan></text>
+</svg>

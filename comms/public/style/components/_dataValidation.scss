@@ -1,0 +1,91 @@
+.data-validation-dialog {
+    min-height: 106px !important;
+    .primary-btn {
+        min-width: 80px;
+    }
+}
+
+.delta-owner-map-watermark {
+    left: 45px;
+    top: 6px;
+    transition: bottom 0.5s, width 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    z-index: 5000;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+        0 9px 28px 8px rgb(0 0 0 / 5%);
+    cursor: default;
+    padding-right: 0px !important;
+    border: 0 !important;
+}
+
+.delta-owner-map-watermark-text {
+    color: #535353;
+    cursor: pointer;
+    &:hover {
+        color: #6fb969;
+    }
+}
+
+.watermark-toolbar {
+    overflow: hidden;
+    border: none;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.watermark-toolbar-container {
+    overflow: visible;
+}
+
+.watermark-toolbar-container-collapsed {
+    width: 0;
+}
+
+#watermark-handle {
+    display: flex;
+    align-items: center;
+    padding-right: 6px;
+    svg {
+        margin-top: -1px;
+        cursor: move;
+    }
+}
+
+.toolbar-expand-button {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-left: 1px solid lightgray;
+    height: 100%;
+    padding: 0px 5px;
+    margin-left: 10px;
+}
+
+.toolbar-expand-icon-container {
+    transition: transform 0.2s;
+    position: relative;
+    bottom: -1px;
+}
+
+.toolbar-expand-icon-container-active {
+    transform: rotate(180deg);
+    position: relative;
+    bottom: 2px;
+}
+
+.toolbar-expand-icon:hover {
+    filter: invert(83%) sepia(16%) saturate(1241%) hue-rotate(62deg) brightness(95%) contrast(85%);
+}
+
+.delta-owner-tools-button-list > .button-list > li > img {
+    background-color: #535353;
+}
+
+.delta-owner-tools-button-list > .button-list > li.inactive > img {
+    background-color: #cbcbcb !important;
+    border-color: #cbcbcb !important;
+    cursor: auto;
+}

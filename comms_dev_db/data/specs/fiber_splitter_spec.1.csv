@@ -1,0 +1,5 @@
+name,model,description,manufacturer,n_fiber_out_ports,cost,cost_currency,retired
+CS-EF3421-000,EF3421-000,"OCFPS Fiber Optic Splitter Panel, one 1x8, symmetrical, planar, singlemode, SC/APC 9°, 1U, 19 in, gray",CommScope,8,145,$,FALSE
+CS-EG4886-000,EG4886-000 ,"OCFPS Fiber Optic Splitter Panel, two 1x4, symmetrical, planar, singlemode, LC/UPC, 1U, 19 in, gray",CommScope,4,135,$,FALSE
+CS-CZ9490-000,CZ9490-000,"OCFPS Fiber Optic Splitter Panel, one 1x64, symmetrical, planar, singlemode, SC/APC 9°, 1U, 19 in, gray",CommScope,64,105,$,FALSE
+CS-FPS-FMTSP-AJJ01,FPS-FMTSP-AJJ01,"FMT Fiber Optic Splitter Patch Panel, 1U, 19 in, 1x32 splitter, SC/APC splitter and output connect., 1 splitter",CommScope,32,125,$,FALSE

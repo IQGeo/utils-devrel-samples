@@ -1,0 +1,16 @@
+{
+    "name": "Designer",
+    "description": "Example Network Manager designer role",
+    "permissions": {
+        "mywcom": [
+            "addPrivateLayers",
+            "createSharedBookmark",
+            "editFeatures",
+            "editGroups",
+            "modifyLayerList",
+            "persistState",
+            "bulkEditFeatures",
+            "mywcom.bulkMoveFeatures"
+        ]
+    }
+}

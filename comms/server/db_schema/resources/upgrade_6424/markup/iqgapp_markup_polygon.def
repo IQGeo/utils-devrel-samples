@@ -1,0 +1,70 @@
+{
+   "datasource": "myworld",
+   "name": "iqgapp_markup_polygon",
+   "external_name": "{:markup_polygon_external_name}",
+   "title": "{display_name}: [id]",
+   "short_description": null,
+   "track_changes": true,
+   "versioned": false,
+   "geom_indexed": true,
+   "editable": {
+      "insert_from_gui": false,
+      "update_from_gui": true,
+      "delete_from_gui": true
+   },
+   "editor_options": null,
+   "fields": [
+      {
+         "name": "id",
+         "external_name": "{:id_field_name}",
+         "type": "integer",
+         "key": true,
+         "generator": "sequence",
+         "visible": "false"
+      },
+      {
+         "name": "boundary",
+         "external_name": "{:markup_polygon_boundary_field_name}",
+         "type": "polygon"
+      },
+      {
+         "name": "referenced_feature",
+         "external_name": "{:markup_polygon_referenced_feature_field_name}",
+         "type": "reference",
+         "editor_class": "myw.SelectionReferenceFieldEditor"
+      },
+      {
+         "name": "fill_style",
+         "external_name": "{:markup_polygon_fill_style_field_name}",
+         "type": "string",
+         "visible": "false"
+      },
+      {
+         "name": "line_style",
+         "external_name": "{:markup_polygon_line_style_field_name}",
+         "type": "string",
+         "visible": "false"
+      },
+      {
+         "name": "owner",
+         "external_name": "{:markup_polygon_owner_field_name}",
+         "type": "reference",
+         "visible": "false"    
+      }
+   ],
+   "groups": [],
+   "searches": [],
+   "queries": [
+      {
+         "value": "markup polygon",
+         "description": "{:markup_polygon_external_name}",
+         "lang": "en"
+      }
+   ],
+   "filters": [
+      {
+         "name": "OwnerIsActive",
+         "value": "{activeDelta} =  [owner]"
+      }
+   ]
+}

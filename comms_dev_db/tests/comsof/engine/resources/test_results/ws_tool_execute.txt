@@ -1,0 +1,11 @@
+COMMAND: comsof_ws <database> 2 execute <resource_dir>/test_data/execute.ctrl
+Opening database <conn_spec> ...
+Executing initialise
+  Copying <templates_dir>/rules/hybrid.rules /opt/iqgeo/data/workspaces/2/workspace/input/CalculationInput/Rules.rules
+Executing populate
+Executing preprocess
+Executing validate
+
+DATABASE CHANGES: AFTER EXECUTE
+   update data.comsof_workspace(2) fields=(busy,op_stats,state)
+

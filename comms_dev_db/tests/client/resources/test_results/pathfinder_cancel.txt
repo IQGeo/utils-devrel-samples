@@ -1,0 +1,120 @@
+TEST: Pathfinder
+    button: ant-modal-close
+    button: ant-btn css-dev-only-do-not-override-6j9yrn ant-btn-text
+    input: 
+    button: Set
+    input: 
+    button: Set
+    button: include-and-avoid__button hover-cursor
+    button: include-and-avoid__button hover-cursor
+    label: Shortest distance
+    input: on
+    label: Least new connections
+    input: on
+    label: Least amount of existing connections
+    input: on
+    input: 
+    input: 
+    label: ft
+    input: true
+    button (disabled): Generate
+    button (disabled): Cancel
+    select (disabled): 
+    button (disabled): Create
+
+
+TEST: After cancel
+    input: SP-C-46
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Cabinet: SP-C-46
+    label: Name
+    label: SP-C-46
+    label: Spec
+    label: CS-A-100455
+    label: CS-A-100455
+    label: Type
+    label: Power Supply Enclosure
+    label: Powered
+    label: true
+    label: Installed
+    label: 14/09/2010
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Cabinet: SP-C-46 Rack: SP-BB-03 Fiber Shelf: SP-S-019
+    label: Rack: SP-BB-03 Fiber Shelf: SP-S-019
+    label: Fiber Shelf: SP-S-019
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: BB-FCB-027 (24)
+    label: Spec manager
+    label: Labor costs manager
+    label: Data Validation
+    label: User Groups
+    label: Layout Strand
+    label: Path Finder
+    label: Connect Customer
+    label: Virtual Walkout
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    label: [Comms] admin
+    label: Built by
+    button: ant-modal-close
+    button: ant-btn css-dev-only-do-not-override-6j9yrn ant-btn-text
+    input: Fiber Shelf: SP-S-018 out:1
+    button: Set
+    input: Cabinet: SP-C-46
+    button: Set
+    button: include-and-avoid__button hover-cursor
+    button: include-and-avoid__button hover-cursor
+    label: Shortest distance
+    input: on
+    label: Least new connections
+    input: on
+    label: Least amount of existing connections
+    input: on
+    input: 
+    input: 
+    label: ft
+    input (disabled): true
+    button (disabled): Generate
+    button: Cancel
+    select (disabled): 
+    button (disabled): Create
+
+

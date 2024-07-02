@@ -1,0 +1,107 @@
+{
+    "datasource": "myworld",
+    "name": "copper_dslam",
+    "external_name": "{:copper_dslam_feature_external_name}",
+    "title": "{display_name}: [name] ([n_fiber_in_ports]/[n_copper_out_ports])",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "specification",
+            "external_name": "{:copper_specification_field_name}",
+            "type": "foreign_key(copper_dslam_spec)"
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "equipment",
+            "external_name": "{:feature_equipment_name}",
+            "type": "reference_set",
+            "value": "select()",
+            "read_only": true
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "n_fiber_in_ports",
+            "external_name": "{:n_in_ports_field_name}",
+            "type": "integer",
+            "mandatory": false
+        },
+        {
+            "name": "n_copper_out_ports",
+            "external_name": "{:n_out_ports_field_name}",
+            "type": "integer",
+            "mandatory": false
+        },
+        {
+            "name": "fiber_connections",
+            "type": "reference_set",
+            "value": "select(mywcom_fiber_connection.in_object,mywcom_fiber_connection.out_object)",
+            "read_only": true
+        },
+        {
+            "name": "copper_connections",
+            "type": "reference_set",
+            "value": "select(mywcom_copper_connection.in_object,mywcom_copper_connection.out_object)",
+            "read_only": true
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point"
+        },
+        {
+            "name": "circuits",
+            "external_name": "{:circuits_field_name}",
+            "type": "reference_set",
+            "read_only": true
+        },
+        {
+            "name": "directed",
+            "external_name": "{:equipment_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": true
+        }
+    ],
+    "groups": [],
+    "searches": [
+        {
+            "value": "[name]",
+            "description": "{title}"
+        }
+    ],
+    "filters": []
+}

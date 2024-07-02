@@ -1,0 +1,15 @@
+#!/bin/bash
+# Bash wrapper to python build command 
+
+HERE=$(dirname $0)
+
+# Set import paths
+export PATH=$HERE/../../../../../Tools:${PATH}
+source myw_env
+DB=$MYW_COMMS_DEV_DB 
+
+if [ -z "$DB" ]; then
+    DB='myw_comms_dev'
+fi
+# Run command
+myw_db $DB run $0.py "$@"

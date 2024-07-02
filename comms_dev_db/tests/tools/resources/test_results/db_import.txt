@@ -1,0 +1,1378 @@
+COMMAND: comms_db comms_scratch import <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/milton.zip --delta design/milton
+Opening database <conn_spec> ...
+Import engine: cdif
+Loading data
+  Feature type: blown_fiber_bundle
+    Loaded 3 records) #, 3 inserts, 0 updates
+  Feature type: blown_fiber_tube
+    Loaded 18 records) #, 18 inserts, 0 updates
+  Feature type: building
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: cabinet
+    Loaded 2 records) #, 2 inserts, 0 updates
+  Feature type: conduit
+    Loaded 4 records) #, 4 inserts, 0 updates
+  Feature type: fiber_cable
+    Loaded 4 records) #, 4 inserts, 0 updates
+  Feature type: fiber_olt
+    Loaded 2 records) #, 2 inserts, 0 updates
+  Feature type: fiber_patch_panel
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: fiber_shelf
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: fiber_splitter
+    Loaded 4 records) #, 4 inserts, 0 updates
+  Feature type: manhole
+    Loaded 5 records) #, 5 inserts, 0 updates
+  Feature type: mywcom_conduit_run
+    Loaded 7 records) #, 7 inserts, 0 updates
+  Feature type: mywcom_fiber_connection
+    Loaded 10 records) #, 10 inserts, 0 updates
+  Feature type: mywcom_fiber_segment
+    Loaded 18 records) #, 18 inserts, 0 updates
+  Feature type: mywcom_fiber_slack
+    Loaded 3 records) #, 3 inserts, 0 updates
+  Feature type: mywcom_line_of_count
+    Loaded 3 records) #, 3 inserts, 0 updates
+  Feature type: mywcom_line_of_count_section
+    Loaded 25 records) #, 25 inserts, 0 updates
+  Feature type: mywcom_route_junction
+    Loaded 4 records) #, 4 inserts, 0 updates
+  Feature type: rack
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: splice_closure
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: ug_route
+    Loaded 11 records) #, 11 inserts, 0 updates
+Mapping references
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+
+COMMAND: myw_db comms_scratch list records --delta design/milton --full
+Opening database <conn_spec> ...
+
+delta          change  record                 name        bundle_size  path           housing     root_housing  in_structure             out_structure            in_conduit            out_conduit           conduit_run           labor_costs
+-------------  ------  ---------------------  ----------  -----------  -------------  ----------  ------------  -----------------------  -----------------------  --------------------  --------------------  --------------------  -----------
+design/milton  insert  blown_fiber_bundle(1)  XX-BF-6000            6  linestring(2)  ug_route/1  ug_route/1    mywcom_route_junction/1  building/1               blown_fiber_bundle/2  -                     mywcom_conduit_run/1            -
+design/milton  insert  blown_fiber_bundle(2)  XX-BF-6001            6  linestring(2)  ug_route/9  ug_route/9    mywcom_route_junction/3  mywcom_route_junction/1  blown_fiber_bundle/3  blown_fiber_bundle/1  mywcom_conduit_run/1            -
+design/milton  insert  blown_fiber_bundle(3)  XX-BF-6002            6  linestring(6)  ug_route/4  ug_route/4    mywcom_route_junction/3  cabinet/1                blown_fiber_bundle/2  -                     mywcom_conduit_run/1            -
+
+delta          change  record                name            diameter  length  bundle_size  path           housing               root_housing  in_structure             out_structure            in_conduit           out_conduit          conduit_run           labor_costs
+-------------  ------  --------------------  --------------  --------  ------  -----------  -------------  --------------------  ------------  -----------------------  -----------------------  -------------------  -------------------  --------------------  -----------
+design/milton  insert  blown_fiber_tube(1)   XX-BF-6000 : 1         -       -            6  linestring(2)  blown_fiber_bundle/1  ug_route/1    mywcom_route_junction/1  building/1               blown_fiber_tube/2   -                    mywcom_conduit_run/2            -
+design/milton  insert  blown_fiber_tube(2)   XX-BF-6000 : 1         -       -            6  linestring(2)  blown_fiber_bundle/2  ug_route/9    mywcom_route_junction/3  mywcom_route_junction/1  blown_fiber_tube/3   blown_fiber_tube/1   mywcom_conduit_run/2            -
+design/milton  insert  blown_fiber_tube(3)   XX-BF-6000 : 1         -       -            6  linestring(6)  blown_fiber_bundle/3  ug_route/4    mywcom_route_junction/3  cabinet/1                blown_fiber_tube/2   -                    mywcom_conduit_run/2            -
+design/milton  insert  blown_fiber_tube(4)   XX-BF-6003 : 2         -       -            6  linestring(2)  blown_fiber_bundle/1  ug_route/1    mywcom_route_junction/1  building/1               blown_fiber_tube/5   -                    mywcom_conduit_run/3            -
+design/milton  insert  blown_fiber_tube(5)   XX-BF-6003 : 2         -       -            6  linestring(2)  blown_fiber_bundle/2  ug_route/9    mywcom_route_junction/3  mywcom_route_junction/1  blown_fiber_tube/6   blown_fiber_tube/4   mywcom_conduit_run/3            -
+design/milton  insert  blown_fiber_tube(6)   XX-BF-6003 : 2         -       -            6  linestring(6)  blown_fiber_bundle/3  ug_route/4    mywcom_route_junction/3  cabinet/1                blown_fiber_tube/5   -                    mywcom_conduit_run/3            -
+design/milton  insert  blown_fiber_tube(7)   XX-BF-6006 : 3         -       -            6  linestring(2)  blown_fiber_bundle/1  ug_route/1    mywcom_route_junction/1  building/1               blown_fiber_tube/8   -                    mywcom_conduit_run/4            -
+design/milton  insert  blown_fiber_tube(8)   XX-BF-6006 : 3         -       -            6  linestring(2)  blown_fiber_bundle/2  ug_route/9    mywcom_route_junction/3  mywcom_route_junction/1  blown_fiber_tube/9   blown_fiber_tube/7   mywcom_conduit_run/4            -
+design/milton  insert  blown_fiber_tube(9)   XX-BF-6006 : 3         -       -            6  linestring(6)  blown_fiber_bundle/3  ug_route/4    mywcom_route_junction/3  cabinet/1                blown_fiber_tube/8   -                    mywcom_conduit_run/4            -
+design/milton  insert  blown_fiber_tube(10)  XX-BF-6009 : 4         -       -            6  linestring(2)  blown_fiber_bundle/1  ug_route/1    mywcom_route_junction/1  building/1               blown_fiber_tube/11  -                    mywcom_conduit_run/5            -
+design/milton  insert  blown_fiber_tube(11)  XX-BF-6009 : 4         -       -            6  linestring(2)  blown_fiber_bundle/2  ug_route/9    mywcom_route_junction/3  mywcom_route_junction/1  blown_fiber_tube/12  blown_fiber_tube/10  mywcom_conduit_run/5            -
+design/milton  insert  blown_fiber_tube(12)  XX-BF-6009 : 4         -       -            6  linestring(6)  blown_fiber_bundle/3  ug_route/4    mywcom_route_junction/3  cabinet/1                blown_fiber_tube/11  -                    mywcom_conduit_run/5            -
+design/milton  insert  blown_fiber_tube(13)  XX-BF-6012 : 5         -       -            6  linestring(2)  blown_fiber_bundle/1  ug_route/1    mywcom_route_junction/1  building/1               blown_fiber_tube/14  -                    mywcom_conduit_run/6            -
+design/milton  insert  blown_fiber_tube(14)  XX-BF-6012 : 5         -       -            6  linestring(2)  blown_fiber_bundle/2  ug_route/9    mywcom_route_junction/3  mywcom_route_junction/1  blown_fiber_tube/15  blown_fiber_tube/13  mywcom_conduit_run/6            -
+design/milton  insert  blown_fiber_tube(15)  XX-BF-6012 : 5         -       -            6  linestring(6)  blown_fiber_bundle/3  ug_route/4    mywcom_route_junction/3  cabinet/1                blown_fiber_tube/14  -                    mywcom_conduit_run/6            -
+design/milton  insert  blown_fiber_tube(16)  XX-BF-6015 : 6         -       -            6  linestring(2)  blown_fiber_bundle/1  ug_route/1    mywcom_route_junction/1  building/1               blown_fiber_tube/17  -                    mywcom_conduit_run/7            -
+design/milton  insert  blown_fiber_tube(17)  XX-BF-6015 : 6         -       -            6  linestring(2)  blown_fiber_bundle/2  ug_route/9    mywcom_route_junction/3  mywcom_route_junction/1  blown_fiber_tube/18  blown_fiber_tube/16  mywcom_conduit_run/7            -
+design/milton  insert  blown_fiber_tube(18)  XX-BF-6015 : 6         -       -            6  linestring(6)  blown_fiber_bundle/3  ug_route/4    mywcom_route_junction/3  cabinet/1                blown_fiber_tube/17  -                    mywcom_conduit_run/7            -
+
+delta          change  record       name        labor_costs  location
+-------------  ------  -----------  ----------  -----------  --------
+design/milton  insert  building(1)  Milton Hub            -  point
+
+delta          change  record      name       specification  labor_costs  location  myw_orientation_location
+-------------  ------  ----------  ---------  -------------  -----------  --------  ------------------------
+design/milton  insert  cabinet(1)  XX-C-6000  CS-A-100455              -  point           48.759152618420046
+design/milton  insert  cabinet(2)  XX-C-6001  -                        -  point            322.4829211667028
+
+delta          change  record      name         diameter  length  path           housing      root_housing  in_structure             out_structure            specification    labor_costs
+-------------  ------  ----------  -----------  --------  ------  -------------  -----------  ------------  -----------------------  -----------------------  ---------------  -----------
+design/milton  insert  conduit(1)  XX-CND-6000      26.5       -  linestring(2)  ug_route/1   ug_route/1    mywcom_route_junction/1  building/1               JDP-26.5MM-Grey            -
+design/milton  insert  conduit(2)  XX-CND-6001      26.5       -  linestring(2)  ug_route/9   ug_route/9    mywcom_route_junction/3  mywcom_route_junction/1  JDP-26.5MM-Grey            -
+design/milton  insert  conduit(3)  XX-CND-6002      26.5       -  linestring(2)  ug_route/5   ug_route/5    mywcom_route_junction/2  mywcom_route_junction/3  JDP-26.5MM-Grey            -
+design/milton  insert  conduit(4)  XX-CND-6003      26.5       -  linestring(5)  ug_route/10  ug_route/10   cabinet/2                mywcom_route_junction/2  JDP-26.5MM-Grey            -
+
+delta          change  record          name         specification            type      fiber_count  directed  path            placement_path  tick_mark_spacing  labor_costs
+-------------  ------  --------------  -----------  -----------------------  --------  -----------  --------  --------------  --------------  -----------------  -----------
+design/milton  insert  fiber_cable(1)  XX-FCB-6000  O-048-CN-5L-F12NS        External           48      True  linestring(8)   linestring(2)                   -            -
+design/milton  insert  fiber_cable(2)  XX-FCB-6001  -                        External            4      True  linestring(8)   linestring(2)                   -            -
+design/milton  insert  fiber_cable(3)  BB-FCB-6004  NETCONNECT 24 Count OS2  External           24     False  linestring(6)   linestring(2)                   -            -
+design/milton  insert  fiber_cable(4)  BB-FCB-6006  NETCONNECT 24 Count OM4  External           24     False  linestring(13)  linestring(2)                   -            -
+
+delta          change  record        name         n_fiber_out_ports  root_housing  housing        location  labor_costs  circuits
+-------------  ------  ------------  -----------  -----------------  ------------  -------------  --------  -----------  --------
+design/milton  insert  fiber_olt(1)  XX-OLT-6000                  8  building/1    fiber_shelf/1  point               -         -
+design/milton  insert  fiber_olt(2)  XX-OLT-6001                  8  building/1    fiber_shelf/1  point               -         -
+
+delta          change  record                name         specification  labor_costs  n_fiber_ports  root_housing  housing     location  circuits
+-------------  ------  --------------------  -----------  -------------  -----------  -------------  ------------  ----------  --------  --------
+design/milton  insert  fiber_patch_panel(1)  XX-ODF-6000              -            -            144  building/1    building/1  point            -
+
+delta          change  record          name       root_housing  housing  labor_costs  n_fiber_in_ports  n_fiber_out_ports  location  circuits
+-------------  ------  --------------  ---------  ------------  -------  -----------  ----------------  -----------------  --------  --------
+design/milton  insert  fiber_shelf(1)  XX-S-6000  building/1    rack/1             -                 -                  -  point            -
+
+delta          change  record             name         n_fiber_in_ports  n_fiber_out_ports  root_housing  housing    specification  labor_costs  location  circuits
+-------------  ------  -----------------  -----------  ----------------  -----------------  ------------  ---------  -------------  -----------  --------  --------
+design/milton  insert  fiber_splitter(1)  XX-SPL-6000                 1                  4  cabinet/1     cabinet/1  CS-EG4886-000            -  point            -
+design/milton  insert  fiber_splitter(2)  XX-SPL-6001                 1                  4  cabinet/1     cabinet/1  CS-EG4886-000            -  point            -
+design/milton  insert  fiber_splitter(3)  XX-SPL-6002                 1                  4  cabinet/1     cabinet/1  CS-EG4886-000            -  point            -
+design/milton  insert  fiber_splitter(4)  XX-SPL-6003                 1                  4  cabinet/1     cabinet/1  CS-EG4886-000            -  point            -
+
+delta          change  record      name       specification  labor_costs  location  myw_orientation_location
+-------------  ------  ----------  ---------  -------------  -----------  --------  ------------------------
+design/milton  insert  manhole(1)  XX-M-6000  FPM-CCANN-C2             -  point                            -
+design/milton  insert  manhole(2)  XX-M-6001  FPM-CCANN-C2             -  point                            -
+design/milton  insert  manhole(3)  XX-M-6002  FPM-CCANN-C2             -  point                            -
+design/milton  insert  manhole(4)  XX-M-6003  FPM-CCANN-C2             -  point                            -
+design/milton  insert  manhole(5)  XX-M-6004  FPM-CCANN-C2             -  point                            -
+
+delta          change  record                 path
+-------------  ------  ---------------------  -------------
+design/milton  insert  mywcom_conduit_run(1)  linestring(8)
+design/milton  insert  mywcom_conduit_run(2)  linestring(8)
+design/milton  insert  mywcom_conduit_run(3)  linestring(8)
+design/milton  insert  mywcom_conduit_run(4)  linestring(8)
+design/milton  insert  mywcom_conduit_run(5)  linestring(8)
+design/milton  insert  mywcom_conduit_run(6)  linestring(8)
+design/milton  insert  mywcom_conduit_run(7)  linestring(8)
+
+delta          change  record                       in_object                out_object               in_side  in_low  in_high  out_side  out_low  out_high  splice  root_housing  housing              location
+-------------  ------  ---------------------------  -----------------------  -----------------------  -------  ------  -------  --------  -------  --------  ------  ------------  -------------------  --------
+design/milton  insert  mywcom_fiber_connection(1)   mywcom_fiber_segment/18  mywcom_fiber_segment/17  in            1       12  out             1        12    True  manhole/4     splice_closure/1     point
+design/milton  insert  mywcom_fiber_connection(2)   mywcom_fiber_segment/18  mywcom_fiber_segment/14  in           13       24  in              1        12    True  manhole/4     splice_closure/1     point
+design/milton  insert  mywcom_fiber_connection(3)   fiber_olt/1              mywcom_fiber_segment/10  out           1        8  out             1         8   False  building/1    fiber_olt/1          point
+design/milton  insert  mywcom_fiber_connection(4)   fiber_olt/2              mywcom_fiber_segment/10  out           1        8  out            13        20   False  building/1    fiber_olt/2          point
+design/milton  insert  mywcom_fiber_connection(5)   fiber_patch_panel/1      mywcom_fiber_segment/5   out           1        4  in              1         4   False  building/1    fiber_patch_panel/1  point
+design/milton  insert  mywcom_fiber_connection(6)   fiber_patch_panel/1      mywcom_fiber_segment/1   out           5       30  in              1        26   False  building/1    fiber_patch_panel/1  point
+design/milton  insert  mywcom_fiber_connection(7)   fiber_splitter/1         mywcom_fiber_segment/16  in            1        1  out             1         1   False  cabinet/1     fiber_splitter/1     point
+design/milton  insert  mywcom_fiber_connection(8)   fiber_splitter/2         mywcom_fiber_segment/16  in            1        1  out             2         2   False  cabinet/1     fiber_splitter/2     point
+design/milton  insert  mywcom_fiber_connection(9)   fiber_splitter/3         mywcom_fiber_segment/16  in            1        1  out             3         3   False  cabinet/1     fiber_splitter/3     point
+design/milton  insert  mywcom_fiber_connection(10)  fiber_splitter/4         mywcom_fiber_segment/16  in            1        1  out             4         4   False  cabinet/1     fiber_splitter/4     point
+
+delta          change  record                    length  cable          housing               root_housing  directed  forward  in_structure             out_structure            in_segment  out_segment  path           in_tick  out_tick  circuits  in_equipment  out_equipment
+-------------  ------  ------------------------  ------  -------------  --------------------  ------------  --------  -------  -----------------------  -----------------------  ----------  -----------  -------------  -------  --------  --------  ------------  -------------
+design/milton  insert  mywcom_fiber_segment(1)        -  fiber_cable/1  conduit/1             ug_route/1        True    False  building/1               mywcom_route_junction/1  -           2            linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(2)        -  fiber_cable/1  conduit/2             ug_route/9        True    False  mywcom_route_junction/1  mywcom_route_junction/3  1           3            linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(3)        -  fiber_cable/1  conduit/3             ug_route/5        True    False  mywcom_route_junction/3  mywcom_route_junction/2  2           4            linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(4)        -  fiber_cable/1  conduit/4             ug_route/10       True    False  mywcom_route_junction/2  cabinet/2                3           -            linestring(5)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(5)        -  fiber_cable/2  blown_fiber_tube/1    ug_route/1        True    False  building/1               mywcom_route_junction/1  -           6            linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(6)        -  fiber_cable/2  blown_fiber_tube/2    ug_route/9        True    False  mywcom_route_junction/1  mywcom_route_junction/3  5           7            linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(7)        -  fiber_cable/2  blown_fiber_tube/3    ug_route/4        True     True  mywcom_route_junction/3  cabinet/1                6           16           linestring(6)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(8)        -  fiber_cable/3  ug_route/11           ug_route/11      False    False  manhole/4                mywcom_route_junction/4  18          9            linestring(3)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(9)        -  fiber_cable/3  ug_route/2            ug_route/2       False    False  mywcom_route_junction/4  mywcom_route_junction/1  8           10           linestring(3)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(10)       -  fiber_cable/3  ug_route/1            ug_route/1       False     True  mywcom_route_junction/1  building/1               9           -            linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(11)       -  fiber_cable/4  ug_route/6            ug_route/6       False    False  manhole/1                manhole/2                -           12           linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(12)       -  fiber_cable/4  ug_route/7            ug_route/7       False    False  manhole/2                manhole/3                11          13           linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(13)       -  fiber_cable/4  ug_route/8            ug_route/8       False    False  manhole/3                manhole/4                12          17           linestring(8)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(14)       -  fiber_cable/4  ug_route/11           ug_route/11      False    False  manhole/4                mywcom_route_junction/4  17          15           linestring(3)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(15)       -  fiber_cable/4  ug_route/3            ug_route/3       False    False  mywcom_route_junction/4  manhole/5                14          -            linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(16)    10.0  fiber_cable/2  mywcom_fiber_slack/1  cabinet/1         True        -  cabinet/1                cabinet/1                7           -            linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(17)    15.0  fiber_cable/4  mywcom_fiber_slack/2  manhole/4        False        -  manhole/4                manhole/4                13          14           linestring(2)        -         -         -             -              -
+design/milton  insert  mywcom_fiber_segment(18)     5.0  fiber_cable/3  mywcom_fiber_slack/3  manhole/4        False        -  manhole/4                manhole/4                -           8            linestring(2)        -         -         -             -              -
+
+delta          change  record                 length  root_housing  housing    cable          location  circuits
+-------------  ------  ---------------------  ------  ------------  ---------  -------------  --------  --------
+design/milton  insert  mywcom_fiber_slack(1)    10.0  cabinet/1     cabinet/1  fiber_cable/2  point            -
+design/milton  insert  mywcom_fiber_slack(2)    15.0  manhole/4     manhole/4  fiber_cable/4  point            -
+design/milton  insert  mywcom_fiber_slack(3)     5.0  manhole/4     manhole/4  fiber_cable/3  point            -
+
+delta          change  record                   label  route            name   low_logical  high_logical  low_physical  high_physical  origin               status  deleted  stale  physical
+-------------  ------  -----------------------  -----  ---------------  -----  -----------  ------------  ------------  -------------  -------------------  ------  -------  -----  --------
+design/milton  insert  mywcom_line_of_count(1)      -  multilinestring  MIL-1            1             8             1              8  fiber_olt/1          Active    False  False     False
+design/milton  insert  mywcom_line_of_count(2)      -  multilinestring  MIL-1            9            16             1              8  fiber_olt/2          Active    False  False     False
+design/milton  insert  mywcom_line_of_count(3)      -  multilinestring  MIL-2           11            40             1             30  fiber_patch_panel/1  Active    False  False     False
+
+delta          change  record                            label  route          line_of_count  container                     mapping                                                                 forward
+-------------  ------  --------------------------------  -----  -------------  -------------  ----------------------------  ----------------------------------------------------------------------  -------
+design/milton  insert  mywcom_line_of_count_section(1)       -  point          1              fiber_olt/1?side=out          -                                                                          True
+design/milton  insert  mywcom_line_of_count_section(2)       -  linestring(2)  1              mywcom_fiber_segment/17       {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...     True
+design/milton  insert  mywcom_line_of_count_section(3)       -  linestring(8)  1              mywcom_fiber_segment/13       {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...     True
+design/milton  insert  mywcom_line_of_count_section(4)       -  linestring(2)  1              mywcom_fiber_segment/12       {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...     True
+design/milton  insert  mywcom_line_of_count_section(5)       -  linestring(2)  3              mywcom_fiber_segment/6        {"1": [1], "2": [2], "3": [3], "4": [4]}                                   True
+design/milton  insert  mywcom_line_of_count_section(6)       -  linestring(2)  1              mywcom_fiber_segment/11       {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...     True
+design/milton  insert  mywcom_line_of_count_section(7)       -  point          2              fiber_olt/2?side=out          -                                                                          True
+design/milton  insert  mywcom_line_of_count_section(8)       -  linestring(2)  2              mywcom_fiber_segment/10       {"1": [13], "2": [14], "3": [15], "4": [16], "5": [17], "6": [18], ...     True
+design/milton  insert  mywcom_line_of_count_section(9)       -  linestring(3)  2              mywcom_fiber_segment/9        {"1": [13], "2": [14], "3": [15], "4": [16], "5": [17], "6": [18], ...     True
+design/milton  insert  mywcom_line_of_count_section(10)      -  linestring(2)  3              mywcom_fiber_segment/2        {"5": [1], "6": [2], "7": [3], "8": [4], "9": [5], "10": [6], "11":...     True
+design/milton  insert  mywcom_line_of_count_section(11)      -  linestring(3)  2              mywcom_fiber_segment/8        {"1": [13], "2": [14], "3": [15], "4": [16], "5": [17], "6": [18], ...     True
+design/milton  insert  mywcom_line_of_count_section(12)      -  linestring(2)  2              mywcom_fiber_segment/18       {"1": [13], "2": [14], "3": [15], "4": [16], "5": [17], "6": [18], ...     True
+design/milton  insert  mywcom_line_of_count_section(13)      -  linestring(3)  2              mywcom_fiber_segment/14       {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...     True
+design/milton  insert  mywcom_line_of_count_section(14)      -  linestring(6)  3              mywcom_fiber_segment/7        {"1": [1], "2": [2], "3": [3], "4": [4]}                                   True
+design/milton  insert  mywcom_line_of_count_section(15)      -  linestring(2)  2              mywcom_fiber_segment/15       {"1": [1], "2": [2], "3": [3], "4": [4], "5": [5], "6": [6], "7": [...     True
+design/milton  insert  mywcom_line_of_count_section(16)      -  point          3              fiber_patch_panel/1?side=out  -                                                                          True
+design/milton  insert  mywcom_line_of_count_section(17)      -  linestring(2)  3              mywcom_fiber_segment/5        {"1": [1], "2": [2], "3": [3], "4": [4]}                                   True
+design/milton  insert  mywcom_line_of_count_section(18)      -  linestring(2)  3              mywcom_fiber_segment/1        {"5": [1], "6": [2], "7": [3], "8": [4], "9": [5], "10": [6], "11":...     True
+design/milton  insert  mywcom_line_of_count_section(19)      -  linestring(2)  3              mywcom_fiber_segment/3        {"5": [1], "6": [2], "7": [3], "8": [4], "9": [5], "10": [6], "11":...     True
+design/milton  insert  mywcom_line_of_count_section(20)      -  linestring(2)  3              mywcom_fiber_segment/16       {"1": [1], "2": [2], "3": [3], "4": [4]}                                   True
+design/milton  insert  mywcom_line_of_count_section(21)      -  linestring(5)  3              mywcom_fiber_segment/4        {"5": [1], "6": [2], "7": [3], "8": [4], "9": [5], "10": [6], "11":...     True
+design/milton  insert  mywcom_line_of_count_section(22)      -  point          3              fiber_splitter/1?side=in      {"1": [1]}                                                                 True
+design/milton  insert  mywcom_line_of_count_section(23)      -  point          3              fiber_splitter/2?side=in      {"2": [1]}                                                                 True
+design/milton  insert  mywcom_line_of_count_section(24)      -  point          3              fiber_splitter/3?side=in      {"3": [1]}                                                                 True
+design/milton  insert  mywcom_line_of_count_section(25)      -  point          3              fiber_splitter/4?side=in      {"4": [1]}                                                                 True
+
+delta          change  record                    location
+-------------  ------  ------------------------  --------
+design/milton  insert  mywcom_route_junction(1)  point
+design/milton  insert  mywcom_route_junction(2)  point
+design/milton  insert  mywcom_route_junction(3)  point
+design/milton  insert  mywcom_route_junction(4)  point
+
+delta          change  record   name   root_housing  housing     labor_costs  location  circuits
+-------------  ------  -------  -----  ------------  ----------  -----------  --------  --------
+design/milton  insert  rack(1)  Rack1  building/1    building/1            -  point            -
+
+delta          change  record             name        root_housing  housing    specification            labor_costs  location  circuits
+-------------  ------  -----------------  ----------  ------------  ---------  -----------------------  -----------  --------  --------
+design/milton  insert  splice_closure(1)  XX-SC-6000  manhole/4     manhole/4  CS-FOSC-400B4-S24-4-NNN            -  point            -
+
+delta          change  record        length  in_structure             out_structure            path           labor_costs
+-------------  ------  ------------  ------  -----------------------  -----------------------  -------------  -----------
+design/milton  insert  ug_route(1)        -  mywcom_route_junction/1  building/1               linestring(2)            -
+design/milton  insert  ug_route(2)        -  mywcom_route_junction/1  mywcom_route_junction/4  linestring(3)            -
+design/milton  insert  ug_route(3)        -  manhole/5                mywcom_route_junction/4  linestring(2)            -
+design/milton  insert  ug_route(4)        -  mywcom_route_junction/3  cabinet/1                linestring(6)            -
+design/milton  insert  ug_route(5)        -  mywcom_route_junction/2  mywcom_route_junction/3  linestring(2)            -
+design/milton  insert  ug_route(6)        -  manhole/2                manhole/1                linestring(2)            -
+design/milton  insert  ug_route(7)        -  manhole/3                manhole/2                linestring(2)            -
+design/milton  insert  ug_route(8)        -  manhole/4                manhole/3                linestring(8)            -
+design/milton  insert  ug_route(9)        -  mywcom_route_junction/3  mywcom_route_junction/1  linestring(2)            -
+design/milton  insert  ug_route(10)       -  cabinet/2                mywcom_route_junction/2  linestring(5)            -
+design/milton  insert  ug_route(11)       -  mywcom_route_junction/4  manhole/4                linestring(3)            -
+
+COMMAND: comms_db comms_scratch import <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/minimal --delta design/minimal
+Opening database <conn_spec> ...
+Import engine: cdif
+Loading data
+  Feature type: blown_fiber_bundle
+    Loaded 3 records) #, 3 inserts, 0 updates
+  Feature type: blown_fiber_tube
+    Loaded 18 records) #, 18 inserts, 0 updates
+  Feature type: building
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: cabinet
+    Loaded 2 records) #, 2 inserts, 0 updates
+  Feature type: conduit
+    Loaded 4 records) #, 4 inserts, 0 updates
+  Feature type: fiber_cable
+    Loaded 4 records) #, 4 inserts, 0 updates
+  Feature type: fiber_olt
+    Loaded 2 records) #, 2 inserts, 0 updates
+  Feature type: fiber_patch_panel
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: fiber_shelf
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: fiber_splitter
+    Loaded 4 records) #, 4 inserts, 0 updates
+  Feature type: manhole
+    Loaded 5 records) #, 5 inserts, 0 updates
+  Feature type: mywcom_conduit_run
+    Loaded 7 records) #, 7 inserts, 0 updates
+  Feature type: mywcom_fiber_connection
+    Loaded 10 records) #, 10 inserts, 0 updates
+  Feature type: mywcom_fiber_segment
+    Loaded 18 records) #, 18 inserts, 0 updates
+  Feature type: mywcom_fiber_slack
+    Loaded 3 records) #, 3 inserts, 0 updates
+  Feature type: mywcom_route_junction
+    Loaded 4 records) #, 4 inserts, 0 updates
+  Feature type: rack
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: splice_closure
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: ug_route
+    Loaded 11 records) #, 11 inserts, 0 updates
+Mapping references
+***Warning*** manhole/8002 manhole(8,design/minimal) : specification : Cannot find manhole_spec/bad_ref
+***Warning*** manhole/8003 manhole(9,design/minimal) : specification : Cannot find bad_ref
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+
+COMMAND: myw_db comms_scratch list records --delta design/minimal --full
+Opening database <conn_spec> ...
+
+delta           change  record                 name        bundle_size  path           housing      root_housing  in_structure             out_structure            in_conduit            out_conduit           conduit_run           labor_costs
+--------------  ------  ---------------------  ----------  -----------  -------------  -----------  ------------  -----------------------  -----------------------  --------------------  --------------------  --------------------  -----------
+design/minimal  insert  blown_fiber_bundle(4)  XX-BF-6000            6  linestring(2)  ug_route/12  ug_route/12   mywcom_route_junction/5  building/2               blown_fiber_bundle/5  -                     mywcom_conduit_run/8            -
+design/minimal  insert  blown_fiber_bundle(5)  XX-BF-6001            6  linestring(2)  ug_route/20  ug_route/20   mywcom_route_junction/7  mywcom_route_junction/5  blown_fiber_bundle/6  blown_fiber_bundle/4  mywcom_conduit_run/8            -
+design/minimal  insert  blown_fiber_bundle(6)  XX-BF-6002            6  linestring(6)  ug_route/15  ug_route/15   mywcom_route_junction/7  cabinet/3                blown_fiber_bundle/5  -                     mywcom_conduit_run/8            -
+
+delta           change  record                name            diameter  length  bundle_size  path           housing               root_housing  in_structure             out_structure            in_conduit           out_conduit          conduit_run            labor_costs
+--------------  ------  --------------------  --------------  --------  ------  -----------  -------------  --------------------  ------------  -----------------------  -----------------------  -------------------  -------------------  ---------------------  -----------
+design/minimal  insert  blown_fiber_tube(19)  XX-BF-6000 : 1         -       -            6  linestring(2)  blown_fiber_bundle/4  ug_route/12   mywcom_route_junction/5  building/2               blown_fiber_tube/20  -                    mywcom_conduit_run/9             -
+design/minimal  insert  blown_fiber_tube(20)  XX-BF-6000 : 1         -       -            6  linestring(2)  blown_fiber_bundle/5  ug_route/20   mywcom_route_junction/7  mywcom_route_junction/5  blown_fiber_tube/21  blown_fiber_tube/19  mywcom_conduit_run/9             -
+design/minimal  insert  blown_fiber_tube(21)  XX-BF-6000 : 1         -       -            6  linestring(6)  blown_fiber_bundle/6  ug_route/15   mywcom_route_junction/7  cabinet/3                blown_fiber_tube/20  -                    mywcom_conduit_run/9             -
+design/minimal  insert  blown_fiber_tube(22)  XX-BF-6003 : 2         -       -            6  linestring(2)  blown_fiber_bundle/4  ug_route/12   mywcom_route_junction/5  building/2               blown_fiber_tube/23  -                    mywcom_conduit_run/10            -
+design/minimal  insert  blown_fiber_tube(23)  XX-BF-6003 : 2         -       -            6  linestring(2)  blown_fiber_bundle/5  ug_route/20   mywcom_route_junction/7  mywcom_route_junction/5  blown_fiber_tube/24  blown_fiber_tube/22  mywcom_conduit_run/10            -
+design/minimal  insert  blown_fiber_tube(24)  XX-BF-6003 : 2         -       -            6  linestring(6)  blown_fiber_bundle/6  ug_route/15   mywcom_route_junction/7  cabinet/3                blown_fiber_tube/23  -                    mywcom_conduit_run/10            -
+design/minimal  insert  blown_fiber_tube(25)  XX-BF-6006 : 3         -       -            6  linestring(2)  blown_fiber_bundle/4  ug_route/12   mywcom_route_junction/5  building/2               blown_fiber_tube/26  -                    mywcom_conduit_run/11            -
+design/minimal  insert  blown_fiber_tube(26)  XX-BF-6006 : 3         -       -            6  linestring(2)  blown_fiber_bundle/5  ug_route/20   mywcom_route_junction/7  mywcom_route_junction/5  blown_fiber_tube/27  blown_fiber_tube/25  mywcom_conduit_run/11            -
+design/minimal  insert  blown_fiber_tube(27)  XX-BF-6006 : 3         -       -            6  linestring(6)  blown_fiber_bundle/6  ug_route/15   mywcom_route_junction/7  cabinet/3                blown_fiber_tube/26  -                    mywcom_conduit_run/11            -
+design/minimal  insert  blown_fiber_tube(28)  XX-BF-6009 : 4         -       -            6  linestring(2)  blown_fiber_bundle/4  ug_route/12   mywcom_route_junction/5  building/2               blown_fiber_tube/29  -                    mywcom_conduit_run/12            -
+design/minimal  insert  blown_fiber_tube(29)  XX-BF-6009 : 4         -       -            6  linestring(2)  blown_fiber_bundle/5  ug_route/20   mywcom_route_junction/7  mywcom_route_junction/5  blown_fiber_tube/30  blown_fiber_tube/28  mywcom_conduit_run/12            -
+design/minimal  insert  blown_fiber_tube(30)  XX-BF-6009 : 4         -       -            6  linestring(6)  blown_fiber_bundle/6  ug_route/15   mywcom_route_junction/7  cabinet/3                blown_fiber_tube/29  -                    mywcom_conduit_run/12            -
+design/minimal  insert  blown_fiber_tube(31)  XX-BF-6012 : 5         -       -            6  linestring(2)  blown_fiber_bundle/4  ug_route/12   mywcom_route_junction/5  building/2               blown_fiber_tube/32  -                    mywcom_conduit_run/13            -
+design/minimal  insert  blown_fiber_tube(32)  XX-BF-6012 : 5         -       -            6  linestring(2)  blown_fiber_bundle/5  ug_route/20   mywcom_route_junction/7  mywcom_route_junction/5  blown_fiber_tube/33  blown_fiber_tube/31  mywcom_conduit_run/13            -
+design/minimal  insert  blown_fiber_tube(33)  XX-BF-6012 : 5         -       -            6  linestring(6)  blown_fiber_bundle/6  ug_route/15   mywcom_route_junction/7  cabinet/3                blown_fiber_tube/32  -                    mywcom_conduit_run/13            -
+design/minimal  insert  blown_fiber_tube(34)  XX-BF-6015 : 6         -       -            6  linestring(2)  blown_fiber_bundle/4  ug_route/12   mywcom_route_junction/5  building/2               blown_fiber_tube/35  -                    mywcom_conduit_run/14            -
+design/minimal  insert  blown_fiber_tube(35)  XX-BF-6015 : 6         -       -            6  linestring(2)  blown_fiber_bundle/5  ug_route/20   mywcom_route_junction/7  mywcom_route_junction/5  blown_fiber_tube/36  blown_fiber_tube/34  mywcom_conduit_run/14            -
+design/minimal  insert  blown_fiber_tube(36)  XX-BF-6015 : 6         -       -            6  linestring(6)  blown_fiber_bundle/6  ug_route/15   mywcom_route_junction/7  cabinet/3                blown_fiber_tube/35  -                    mywcom_conduit_run/14            -
+
+delta           change  record       name        labor_costs  location
+--------------  ------  -----------  ----------  -----------  --------
+design/minimal  insert  building(2)  Milton Hub            -  point
+
+delta           change  record      name       specification  labor_costs  location  myw_orientation_location
+--------------  ------  ----------  ---------  -------------  -----------  --------  ------------------------
+design/minimal  insert  cabinet(3)  XX-C-6000  CS-A-100455              -  point           48.759152618420046
+design/minimal  insert  cabinet(4)  XX-C-6001  -                        -  point            322.4829211667028
+
+delta           change  record      name  diameter  length  path           housing      root_housing  in_structure             out_structure            specification    labor_costs
+--------------  ------  ----------  ----  --------  ------  -------------  -----------  ------------  -----------------------  -----------------------  ---------------  -----------
+design/minimal  insert  conduit(5)     -      26.5       -  linestring(2)  ug_route/12  ug_route/12   mywcom_route_junction/5  building/2               JDP-26.5MM-Grey            -
+design/minimal  insert  conduit(6)     -      26.5       -  linestring(2)  ug_route/20  ug_route/20   mywcom_route_junction/7  mywcom_route_junction/5  JDP-26.5MM-Grey            -
+design/minimal  insert  conduit(7)     -      26.5       -  linestring(2)  ug_route/16  ug_route/16   mywcom_route_junction/6  mywcom_route_junction/7  JDP-26.5MM-Grey            -
+design/minimal  insert  conduit(8)     -      26.5       -  linestring(5)  ug_route/21  ug_route/21   cabinet/4                mywcom_route_junction/6  JDP-26.5MM-Grey            -
+
+delta           change  record          name         specification            type      fiber_count  directed  path            placement_path  tick_mark_spacing  labor_costs
+--------------  ------  --------------  -----------  -----------------------  --------  -----------  --------  --------------  --------------  -----------------  -----------
+design/minimal  insert  fiber_cable(5)  XX-FCB-6000  O-048-CN-5L-F12NS        External           48      True  linestring(8)   linestring(2)                   -            -
+design/minimal  insert  fiber_cable(6)  XX-FCB-6001  -                        External            4      True  linestring(8)   linestring(2)                   -            -
+design/minimal  insert  fiber_cable(7)  BB-FCB-6004  NETCONNECT 24 Count OS2  External           24     False  linestring(6)   linestring(2)                   -            -
+design/minimal  insert  fiber_cable(8)  BB-FCB-6006  NETCONNECT 24 Count OM4  External           24     False  linestring(13)  linestring(2)                   -            -
+
+delta           change  record        name         n_fiber_out_ports  root_housing  housing        location  labor_costs  circuits
+--------------  ------  ------------  -----------  -----------------  ------------  -------------  --------  -----------  --------
+design/minimal  insert  fiber_olt(3)  XX-OLT-6000                  8  building/2    fiber_shelf/2  point               -         -
+design/minimal  insert  fiber_olt(4)  XX-OLT-6001                  8  building/2    fiber_shelf/2  point               -         -
+
+delta           change  record                name         specification  labor_costs  n_fiber_ports  root_housing  housing     location  circuits
+--------------  ------  --------------------  -----------  -------------  -----------  -------------  ------------  ----------  --------  --------
+design/minimal  insert  fiber_patch_panel(2)  XX-ODF-6000              -            -            144  building/2    building/2  point            -
+
+delta           change  record          name       root_housing  housing  labor_costs  n_fiber_in_ports  n_fiber_out_ports  location  circuits
+--------------  ------  --------------  ---------  ------------  -------  -----------  ----------------  -----------------  --------  --------
+design/minimal  insert  fiber_shelf(2)  XX-S-6000  building/2    rack/2             -                 -                  -  point            -
+
+delta           change  record             name         n_fiber_in_ports  n_fiber_out_ports  root_housing  housing    specification  labor_costs  location  circuits
+--------------  ------  -----------------  -----------  ----------------  -----------------  ------------  ---------  -------------  -----------  --------  --------
+design/minimal  insert  fiber_splitter(5)  XX-SPL-6000                 1                  4  cabinet/3     cabinet/3  CS-EG4886-000            -  point            -
+design/minimal  insert  fiber_splitter(6)  XX-SPL-6001                 1                  4  cabinet/3     cabinet/3  CS-EG4886-000            -  point            -
+design/minimal  insert  fiber_splitter(7)  XX-SPL-6002                 1                  4  cabinet/3     cabinet/3  CS-EG4886-000            -  point            -
+design/minimal  insert  fiber_splitter(8)  XX-SPL-6003                 1                  4  cabinet/3     cabinet/3  CS-EG4886-000            -  point            -
+
+delta           change  record       name       specification  labor_costs  location  myw_orientation_location
+--------------  ------  -----------  ---------  -------------  -----------  --------  ------------------------
+design/minimal  insert  manhole(6)   XX-M-6000  FPM-CCANN-C2             -  point                            -
+design/minimal  insert  manhole(7)   XX-M-6001  FPM-CCANN-C2             -  point                            -
+design/minimal  insert  manhole(8)   XX-M-6002  bad_ref                  -  point                            -
+design/minimal  insert  manhole(9)   XX-M-6003  bad_ref                  -  point                            -
+design/minimal  insert  manhole(10)  XX-M-6004  FPM-CCANN-C2             -  point                            -
+
+delta           change  record                  path
+--------------  ------  ----------------------  -------------
+design/minimal  insert  mywcom_conduit_run(8)   linestring(8)
+design/minimal  insert  mywcom_conduit_run(9)   linestring(8)
+design/minimal  insert  mywcom_conduit_run(10)  linestring(8)
+design/minimal  insert  mywcom_conduit_run(11)  linestring(8)
+design/minimal  insert  mywcom_conduit_run(12)  linestring(8)
+design/minimal  insert  mywcom_conduit_run(13)  linestring(8)
+design/minimal  insert  mywcom_conduit_run(14)  linestring(8)
+
+delta           change  record                       in_object                out_object               in_side  in_low  in_high  out_side  out_low  out_high  splice  root_housing  housing              location
+--------------  ------  ---------------------------  -----------------------  -----------------------  -------  ------  -------  --------  -------  --------  ------  ------------  -------------------  --------
+design/minimal  insert  mywcom_fiber_connection(11)  mywcom_fiber_segment/36  mywcom_fiber_segment/35  in            1       12  out             1        12    True  manhole/9     splice_closure/2     point
+design/minimal  insert  mywcom_fiber_connection(12)  mywcom_fiber_segment/36  mywcom_fiber_segment/32  in           13       24  in              1        12    True  manhole/9     splice_closure/2     point
+design/minimal  insert  mywcom_fiber_connection(13)  fiber_olt/3              mywcom_fiber_segment/28  out           1        8  out             1         8   False  building/2    fiber_olt/3          point
+design/minimal  insert  mywcom_fiber_connection(14)  fiber_olt/4              mywcom_fiber_segment/28  out           1        8  out            13        20   False  building/2    fiber_olt/4          point
+design/minimal  insert  mywcom_fiber_connection(15)  fiber_patch_panel/2      mywcom_fiber_segment/23  out           1        4  in              1         4   False  building/2    fiber_patch_panel/2  point
+design/minimal  insert  mywcom_fiber_connection(16)  fiber_patch_panel/2      mywcom_fiber_segment/19  out           5       30  in              1        26   False  building/2    fiber_patch_panel/2  point
+design/minimal  insert  mywcom_fiber_connection(17)  fiber_splitter/5         mywcom_fiber_segment/34  in            1        1  out             1         1   False  cabinet/3     fiber_splitter/5     point
+design/minimal  insert  mywcom_fiber_connection(18)  fiber_splitter/6         mywcom_fiber_segment/34  in            1        1  out             2         2   False  cabinet/3     fiber_splitter/6     point
+design/minimal  insert  mywcom_fiber_connection(19)  fiber_splitter/7         mywcom_fiber_segment/34  in            1        1  out             3         3   False  cabinet/3     fiber_splitter/7     point
+design/minimal  insert  mywcom_fiber_connection(20)  fiber_splitter/8         mywcom_fiber_segment/34  in            1        1  out             4         4   False  cabinet/3     fiber_splitter/8     point
+
+delta           change  record                    length  cable          housing               root_housing  directed  forward  in_structure             out_structure            in_segment  out_segment  path           in_tick  out_tick  circuits  in_equipment  out_equipment
+--------------  ------  ------------------------  ------  -------------  --------------------  ------------  --------  -------  -----------------------  -----------------------  ----------  -----------  -------------  -------  --------  --------  ------------  -------------
+design/minimal  insert  mywcom_fiber_segment(19)       -  fiber_cable/5  conduit/5             ug_route/12       True    False  building/2               mywcom_route_junction/5  -           20           linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(20)       -  fiber_cable/5  conduit/6             ug_route/20       True    False  mywcom_route_junction/5  mywcom_route_junction/7  19          21           linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(21)       -  fiber_cable/5  conduit/7             ug_route/16       True    False  mywcom_route_junction/7  mywcom_route_junction/6  20          22           linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(22)       -  fiber_cable/5  conduit/8             ug_route/21       True    False  mywcom_route_junction/6  cabinet/4                21          -            linestring(5)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(23)       -  fiber_cable/6  blown_fiber_tube/19   ug_route/12       True    False  building/2               mywcom_route_junction/5  -           24           linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(24)       -  fiber_cable/6  blown_fiber_tube/20   ug_route/20       True    False  mywcom_route_junction/5  mywcom_route_junction/7  23          25           linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(25)       -  fiber_cable/6  blown_fiber_tube/21   ug_route/15       True     True  mywcom_route_junction/7  cabinet/3                24          34           linestring(6)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(26)       -  fiber_cable/7  ug_route/22           ug_route/22      False    False  manhole/9                mywcom_route_junction/8  36          27           linestring(3)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(27)       -  fiber_cable/7  ug_route/13           ug_route/13      False    False  mywcom_route_junction/8  mywcom_route_junction/5  26          28           linestring(3)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(28)       -  fiber_cable/7  ug_route/12           ug_route/12      False     True  mywcom_route_junction/5  building/2               27          -            linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(29)       -  fiber_cable/8  ug_route/17           ug_route/17      False    False  manhole/6                manhole/7                -           30           linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(30)       -  fiber_cable/8  ug_route/18           ug_route/18      False    False  manhole/7                manhole/8                29          31           linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(31)       -  fiber_cable/8  ug_route/19           ug_route/19      False    False  manhole/8                manhole/9                30          35           linestring(8)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(32)       -  fiber_cable/8  ug_route/22           ug_route/22      False    False  manhole/9                mywcom_route_junction/8  35          33           linestring(3)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(33)       -  fiber_cable/8  ug_route/14           ug_route/14      False    False  mywcom_route_junction/8  manhole/10               32          -            linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(34)       -  fiber_cable/6  mywcom_fiber_slack/4  cabinet/3         True        -  cabinet/3                cabinet/3                25          -            linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(35)       -  fiber_cable/8  mywcom_fiber_slack/5  manhole/9        False        -  manhole/9                manhole/9                31          32           linestring(2)        -         -         -             -              -
+design/minimal  insert  mywcom_fiber_segment(36)       -  fiber_cable/7  mywcom_fiber_slack/6  manhole/9        False        -  manhole/9                manhole/9                -           26           linestring(2)        -         -         -             -              -
+
+delta           change  record                 length  root_housing  housing    cable          location  circuits
+--------------  ------  ---------------------  ------  ------------  ---------  -------------  --------  --------
+design/minimal  insert  mywcom_fiber_slack(4)    10.0  cabinet/3     cabinet/3  fiber_cable/6  point            -
+design/minimal  insert  mywcom_fiber_slack(5)    15.0  manhole/9     manhole/9  fiber_cable/8  point            -
+design/minimal  insert  mywcom_fiber_slack(6)     5.0  manhole/9     manhole/9  fiber_cable/7  point            -
+
+delta           change  record                    location
+--------------  ------  ------------------------  --------
+design/minimal  insert  mywcom_route_junction(5)  point
+design/minimal  insert  mywcom_route_junction(6)  point
+design/minimal  insert  mywcom_route_junction(7)  point
+design/minimal  insert  mywcom_route_junction(8)  point
+
+delta           change  record   name   root_housing  housing     labor_costs  location  circuits
+--------------  ------  -------  -----  ------------  ----------  -----------  --------  --------
+design/minimal  insert  rack(2)  Rack1  building/2    building/2            -  point            -
+
+delta           change  record             name        root_housing  housing    specification            labor_costs  location  circuits
+--------------  ------  -----------------  ----------  ------------  ---------  -----------------------  -----------  --------  --------
+design/minimal  insert  splice_closure(2)  XX-SC-6000  manhole/9     manhole/9  CS-FOSC-400B4-S24-4-NNN            -  point            -
+
+delta           change  record        length  in_structure             out_structure            path           labor_costs
+--------------  ------  ------------  ------  -----------------------  -----------------------  -------------  -----------
+design/minimal  insert  ug_route(12)       -  mywcom_route_junction/5  building/2               linestring(2)            -
+design/minimal  insert  ug_route(13)       -  mywcom_route_junction/5  mywcom_route_junction/8  linestring(3)            -
+design/minimal  insert  ug_route(14)       -  manhole/10               mywcom_route_junction/8  linestring(2)            -
+design/minimal  insert  ug_route(15)       -  mywcom_route_junction/7  cabinet/3                linestring(6)            -
+design/minimal  insert  ug_route(16)       -  mywcom_route_junction/6  mywcom_route_junction/7  linestring(2)            -
+design/minimal  insert  ug_route(17)       -  manhole/7                manhole/6                linestring(2)            -
+design/minimal  insert  ug_route(18)       -  manhole/8                manhole/7                linestring(2)            -
+design/minimal  insert  ug_route(19)       -  manhole/9                manhole/8                linestring(8)            -
+design/minimal  insert  ug_route(20)       -  mywcom_route_junction/7  mywcom_route_junction/5  linestring(2)            -
+design/minimal  insert  ug_route(21)       -  cabinet/4                mywcom_route_junction/6  linestring(5)            -
+design/minimal  insert  ug_route(22)       -  mywcom_route_junction/8  manhole/9                linestring(3)            -
+
+COMMAND: comms_db comms_scratch import <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/ucam_fex_network.gpkg --delta design/west_cambridge --mappings <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/ucam_fex_network.json
+Opening database <conn_spec> ...
+Import engine: cdif
+Loading data
+  Feature type: building
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: fiber_cable
+    Loaded 3 records) #, 3 inserts, 0 updates
+  Feature type: manhole
+    Loaded 14 records) #, 14 inserts, 0 updates
+  Feature type: mywcom_fiber_segment
+    Loaded 15 records) #, 15 inserts, 0 updates
+  Feature type: ug_route
+    Loaded 15 records) #, 15 inserts, 0 updates
+Mapping references
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+
+COMMAND: myw_db comms_scratch list records --delta design/west_cambridge --full
+Opening database <conn_spec> ...
+
+delta                  change  record       name        labor_costs  location
+---------------------  ------  -----------  ----------  -----------  --------
+design/west_cambridge  insert  building(3)  FEX-UCAM-1            -  point
+
+delta                  change  record           name         specification  type  fiber_count  directed  path           placement_path  tick_mark_spacing  labor_costs
+---------------------  ------  ---------------  -----------  -------------  ----  -----------  --------  -------------  --------------  -----------------  -----------
+design/west_cambridge  insert  fiber_cable(9)   XX-FCB-6334              -     -            -      True  linestring(7)               -                  -            -
+design/west_cambridge  insert  fiber_cable(10)  XX-FCB-6335              -     -            -      True  linestring(7)               -                  -            -
+design/west_cambridge  insert  fiber_cable(11)  XX-FCB-6338              -     -            -      True  linestring(8)               -                  -            -
+
+delta                  change  record       name       specification  labor_costs  location  myw_orientation_location
+---------------------  ------  -----------  ---------  -------------  -----------  --------  ------------------------
+design/west_cambridge  insert  manhole(11)  XX-M-6000              -            -  point                            -
+design/west_cambridge  insert  manhole(12)  XX-M-6001              -            -  point                            -
+design/west_cambridge  insert  manhole(13)  XX-M-6002              -            -  point                            -
+design/west_cambridge  insert  manhole(14)  XX-M-6003              -            -  point                            -
+design/west_cambridge  insert  manhole(15)  XX-M-6005              -            -  point                            -
+design/west_cambridge  insert  manhole(16)  XX-M-6006              -            -  point                            -
+design/west_cambridge  insert  manhole(17)  XX-M-6007              -            -  point                            -
+design/west_cambridge  insert  manhole(18)  XX-M-6008              -            -  point                            -
+design/west_cambridge  insert  manhole(19)  XX-M-6009              -            -  point                            -
+design/west_cambridge  insert  manhole(20)  XX-M-6010              -            -  point                            -
+design/west_cambridge  insert  manhole(21)  XX-M-6011              -            -  point                            -
+design/west_cambridge  insert  manhole(22)  XX-M-6012              -            -  point                            -
+design/west_cambridge  insert  manhole(23)  XX-M-6013              -            -  point                            -
+design/west_cambridge  insert  manhole(24)  XX-M-6014              -            -  point                            -
+
+delta                  change  record                    length  cable           housing      root_housing  directed  forward  in_structure  out_structure  in_segment  out_segment  path           in_tick  out_tick  circuits  in_equipment  out_equipment
+---------------------  ------  ------------------------  ------  --------------  -----------  ------------  --------  -------  ------------  -------------  ----------  -----------  -------------  -------  --------  --------  ------------  -------------
+design/west_cambridge  insert  mywcom_fiber_segment(37)       -  fiber_cable/10  ug_route/31  ug_route/31       True        -             -              -  -           38           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(38)       -  fiber_cable/10  ug_route/30  ug_route/30       True        -             -              -  37          39           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(39)       -  fiber_cable/10  ug_route/29  ug_route/29       True        -             -              -  38          40           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(40)       -  fiber_cable/10  ug_route/28  ug_route/28       True        -             -              -  39          41           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(41)       -  fiber_cable/10  ug_route/27  ug_route/27       True        -             -              -  40          42           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(42)       -  fiber_cable/10  ug_route/26  ug_route/26       True        -             -              -  41          -            linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(43)       -  fiber_cable/9   ug_route/35  ug_route/35       True        -             -              -  -           44           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(44)       -  fiber_cable/9   ug_route/36  ug_route/36       True        -             -              -  43          45           linestring(4)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(45)       -  fiber_cable/9   ug_route/32  ug_route/32       True        -             -              -  44          -            linestring(3)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(46)       -  fiber_cable/11  ug_route/25  ug_route/25       True        -             -              -  -           47           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(47)       -  fiber_cable/11  ug_route/33  ug_route/33       True        -             -              -  46          48           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(48)       -  fiber_cable/11  ug_route/34  ug_route/34       True        -             -              -  47          49           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(49)       -  fiber_cable/11  ug_route/37  ug_route/37       True        -             -              -  48          50           linestring(3)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(50)       -  fiber_cable/11  ug_route/24  ug_route/24       True        -             -              -  49          51           linestring(2)        -         -         -             -              -
+design/west_cambridge  insert  mywcom_fiber_segment(51)       -  fiber_cable/11  ug_route/23  ug_route/23       True        -             -              -  50          -            linestring(2)        -         -         -             -              -
+
+delta                  change  record        length  in_structure  out_structure  path           labor_costs
+---------------------  ------  ------------  ------  ------------  -------------  -------------  -----------
+design/west_cambridge  insert  ug_route(23)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(24)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(25)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(26)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(27)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(28)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(29)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(30)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(31)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(32)       -             -              -  linestring(3)            -
+design/west_cambridge  insert  ug_route(33)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(34)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(35)       -             -              -  linestring(2)            -
+design/west_cambridge  insert  ug_route(36)       -             -              -  linestring(4)            -
+design/west_cambridge  insert  ug_route(37)       -             -              -  linestring(3)            -
+
+COMMAND: comms_db comms_scratch list <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/ucam_fex_network.gpkg records --full
+Opening database <conn_spec> ...
+feature_type  fid  geom                                                                    pk  id                name
+------------  ---  ----------------------------------------------------------------------  --  ----------------  -----------
+cable           1  LINESTRING (0.1006274682455877 52.210278224695855, 0.09921669230755...   1  fiber_cable/6334  XX-FCB-6334
+cable           2  LINESTRING (0.0812788084911016 52.213790703016684, 0.08434725560413...   2  fiber_cable/6335  XX-FCB-6335
+cable           3  LINESTRING (0.0883383826182989 52.21701171816602, 0.094840057270398...   3  fiber_cable/6338  XX-FCB-6338
+
+feature_type  fid  geom                                           pk  id            name
+------------  ---  ---------------------------------------------  --  ------------  ---------
+chamber         1  POINT (0.101320274250379 52.2115950200465)      1  manhole/6000  XX-M-6000
+chamber         2  POINT (0.1033802107738165 52.211555575647566)   2  manhole/6001  XX-M-6001
+chamber         3  POINT (0.1000757292674688 52.21415883085544)    3  manhole/6002  XX-M-6002
+chamber         4  POINT (0.0997538641856817 52.21571019322775)    4  manhole/6003  XX-M-6003
+chamber         5  POINT (0.0948400572703985 52.21737981931079)    5  manhole/6005  XX-M-6005
+chamber         6  POINT (0.0883383826182989 52.21701171816602)    6  manhole/6006  XX-M-6006
+chamber         7  POINT (0.0878448561595587 52.21996958755594)    7  manhole/6007  XX-M-6007
+chamber         8  POINT (0.0841541365550665 52.21979869379763)    8  manhole/6008  XX-M-6008
+chamber         9  POINT (0.0843472556041388 52.21752442964015)    9  manhole/6009  XX-M-6009
+chamber        10  POINT (0.0872225836681036 52.216144039111356)  10  manhole/6010  XX-M-6010
+chamber        11  POINT (0.0843472556041388 52.21360663795329)   11  manhole/6011  XX-M-6011
+chamber        12  POINT (0.0812788084911016 52.213790703016684)  12  manhole/6012  XX-M-6012
+chamber        13  POINT (0.079648025410047 52.20920199645647)    13  manhole/6013  XX-M-6013
+chamber        14  POINT (0.0992166923075536 52.20755828305025)   14  manhole/6014  XX-M-6014
+
+feature_type  fid  geom                                           pk  id             name
+------------  ---  ---------------------------------------------  --  -------------  ----------
+fex             1  POINT (0.1006274682455877 52.210278224695855)   1  building/6001  FEX-UCAM-1
+
+feature_type          fid  geom                                                                    pk  id                         cable             housing        root_housing   in_segment                 in_segment:1               out_segment                out_structure
+--------------------  ---  ----------------------------------------------------------------------  --  -------------------------  ----------------  -------------  -------------  -------------------------  -------------------------  -------------------------  -------------
+mywcom_fiber_segment    1  LINESTRING (0.0812788084911016 52.213790703016684, 0.08434725560413...   1  mywcom_fiber_segment/6027  fiber_cable/6335  ug_route/6013  ug_route/6013  -                          -                          mywcom_fiber_segment/6028  manhole/6011
+mywcom_fiber_segment    2  LINESTRING (0.0843472556041388 52.21360663795329, 0.087222583668103...   2  mywcom_fiber_segment/6028  fiber_cable/6335  ug_route/6012  ug_route/6012  mywcom_fiber_segment/6027  mywcom_fiber_segment/6027  mywcom_fiber_segment/6029  manhole/6010
+mywcom_fiber_segment    3  LINESTRING (0.0872225836681036 52.216144039111356, 0.08434725560413...   3  mywcom_fiber_segment/6029  fiber_cable/6335  ug_route/6011  ug_route/6011  mywcom_fiber_segment/6028  mywcom_fiber_segment/6028  mywcom_fiber_segment/6030  manhole/6009
+mywcom_fiber_segment    4  LINESTRING (0.0843472556041388 52.21752442964015, 0.084154136555066...   4  mywcom_fiber_segment/6030  fiber_cable/6335  ug_route/6010  ug_route/6010  mywcom_fiber_segment/6029  mywcom_fiber_segment/6029  mywcom_fiber_segment/6031  manhole/6008
+mywcom_fiber_segment    5  LINESTRING (0.0841541365550665 52.21979869379763, 0.087844856159558...   5  mywcom_fiber_segment/6031  fiber_cable/6335  ug_route/6009  ug_route/6009  mywcom_fiber_segment/6030  mywcom_fiber_segment/6030  mywcom_fiber_segment/6032  manhole/6007
+mywcom_fiber_segment    6  LINESTRING (0.0878448561595587 52.21996958755594, 0.088338382618298...   6  mywcom_fiber_segment/6032  fiber_cable/6335  ug_route/6008  ug_route/6008  mywcom_fiber_segment/6031  mywcom_fiber_segment/6031  -                          manhole/6006
+mywcom_fiber_segment    7  LINESTRING (0.1006274682455877 52.210278224695855, 0.09921669230755...   7  mywcom_fiber_segment/6024  fiber_cable/6334  ug_route/6000  ug_route/6000  -                          -                          mywcom_fiber_segment/6025  manhole/6014
+mywcom_fiber_segment    8  LINESTRING (0.0992166923075536 52.20755828305025, 0.092629917042127...   8  mywcom_fiber_segment/6025  fiber_cable/6334  ug_route/6015  ug_route/6015  mywcom_fiber_segment/6024  mywcom_fiber_segment/6024  mywcom_fiber_segment/6026  manhole/6013
+mywcom_fiber_segment    9  LINESTRING (0.079648025410047 52.20920199645647, 0.0808281973765997...   9  mywcom_fiber_segment/6026  fiber_cable/6334  ug_route/6014  ug_route/6014  mywcom_fiber_segment/6025  mywcom_fiber_segment/6025  -                          manhole/6012
+mywcom_fiber_segment   10  LINESTRING (0.0883383826182989 52.21701171816602, 0.094840057270398...  10  mywcom_fiber_segment/6058  fiber_cable/6338  ug_route/6007  ug_route/6007  -                          -                          mywcom_fiber_segment/6059  manhole/6005
+mywcom_fiber_segment   11  LINESTRING (0.0948400572703985 52.21737981931079, 0.099753864185681...  11  mywcom_fiber_segment/6059  fiber_cable/6338  ug_route/6006  ug_route/6006  mywcom_fiber_segment/6058  mywcom_fiber_segment/6058  mywcom_fiber_segment/6060  manhole/6003
+mywcom_fiber_segment   12  LINESTRING (0.0997538641856817 52.21571019322775, 0.100075729267468...  12  mywcom_fiber_segment/6060  fiber_cable/6338  ug_route/6016  ug_route/6016  mywcom_fiber_segment/6059  mywcom_fiber_segment/6059  mywcom_fiber_segment/6061  manhole/6002
+mywcom_fiber_segment   13  LINESTRING (0.1000757292674688 52.21415883085544, 0.104608662502637...  13  mywcom_fiber_segment/6061  fiber_cable/6338  ug_route/6017  ug_route/6017  mywcom_fiber_segment/6060  mywcom_fiber_segment/6060  mywcom_fiber_segment/6062  manhole/6001
+mywcom_fiber_segment   14  LINESTRING (0.1033802107738165 52.211555575647566, 0.10132027425037...  14  mywcom_fiber_segment/6062  fiber_cable/6338  ug_route/6002  ug_route/6002  mywcom_fiber_segment/6061  mywcom_fiber_segment/6061  mywcom_fiber_segment/6063  manhole/6000
+mywcom_fiber_segment   15  LINESTRING (0.101320274250379 52.2115950200465, 0.1006274682455877 ...  15  mywcom_fiber_segment/6063  fiber_cable/6338  ug_route/6001  ug_route/6001  mywcom_fiber_segment/6062  mywcom_fiber_segment/6062  -                          building/6001
+
+feature_type  fid  geom                                                                    pk  id             cover_type  length
+------------  ---  ----------------------------------------------------------------------  --  -------------  ----------  ------
+ug_route        1  LINESTRING (0.101320274250379 52.2115950200465, 0.1006274682455877 ...   1  ug_route/6001  -           -
+ug_route        2  LINESTRING (0.1033802107738165 52.211555575647566, 0.10132027425037...   2  ug_route/6002  -           -
+ug_route        3  LINESTRING (0.0883383826182989 52.21701171816602, 0.094840057270398...   3  ug_route/6007  -           -
+ug_route        4  LINESTRING (0.0878448561595587 52.21996958755594, 0.088338382618298...   4  ug_route/6008  -           -
+ug_route        5  LINESTRING (0.0841541365550665 52.21979869379763, 0.087844856159558...   5  ug_route/6009  -           -
+ug_route        6  LINESTRING (0.0843472556041388 52.21752442964015, 0.084154136555066...   6  ug_route/6010  -           -
+ug_route        7  LINESTRING (0.0872225836681036 52.216144039111356, 0.08434725560413...   7  ug_route/6011  -           -
+ug_route        8  LINESTRING (0.0843472556041388 52.21360663795329, 0.087222583668103...   8  ug_route/6012  -           -
+ug_route        9  LINESTRING (0.0812788084911016 52.213790703016684, 0.08434725560413...   9  ug_route/6013  -           -
+ug_route       10  LINESTRING (0.079648025410047 52.20920199645647, 0.0808281973765997...  10  ug_route/6014  -           -
+ug_route       11  LINESTRING (0.0948400572703985 52.21737981931079, 0.099753864185681...  11  ug_route/6006  -           -
+ug_route       12  LINESTRING (0.0997538641856817 52.21571019322775, 0.100075729267468...  12  ug_route/6016  -           -
+ug_route       13  LINESTRING (0.1006274682455877 52.210278224695855, 0.09921669230755...  13  ug_route/6000  -           -
+ug_route       14  LINESTRING (0.0992166923075536 52.20755828305025, 0.092629917042127...  14  ug_route/6015  -           -
+ug_route       15  LINESTRING (0.1000757292674688 52.21415883085544, 0.104608662502637...  15  ug_route/6017  -           -
+
+
+COMMAND: comms_db comms_scratch import <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/fex_network.sqlite --delta design/fex --reload
+Opening database <conn_spec> ...
+Dropping existing data ...
+Import engine: cdif
+Loading data
+  Feature type: building
+<product_dir>/WebApps/myworldapp/core/server/base/geom/myw_geometry.py:55: ShapelyDeprecationWarning: The 'type' attribute is deprecated, and will be removed in the future. You can use the 'geom_type' attribute instead.
+  value = getattr(self._shapely_geom, name)
+    Loaded 1 records) #, 1 inserts, 0 updates
+  Feature type: fiber_cable
+    Loaded 3 records) #, 3 inserts, 0 updates
+  Feature type: manhole
+    Loaded 14 records) #, 14 inserts, 0 updates
+  Feature type: mywcom_fiber_segment
+    Loaded 15 records) #, 15 inserts, 0 updates
+  Feature type: ug_route
+    Loaded 15 records) #, 15 inserts, 0 updates
+Mapping references
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+
+COMMAND: myw_db comms_scratch list records --delta design/fex --full
+Opening database <conn_spec> ...
+
+delta       change  record       name        labor_costs  location
+----------  ------  -----------  ----------  -----------  --------
+design/fex  insert  building(4)  FEX-UCAM-1            -  point
+
+delta       change  record           name         specification      type      fiber_count  directed  path           placement_path  tick_mark_spacing  labor_costs
+----------  ------  ---------------  -----------  -----------------  --------  -----------  --------  -------------  --------------  -----------------  -----------
+design/fex  insert  fiber_cable(12)  XX-FCB-6334  O-048-CN-5L-F12NS  External           48      True  linestring(7)  linestring(2)                   -            -
+design/fex  insert  fiber_cable(13)  XX-FCB-6335  O-048-CN-5L-F12NS  External           48      True  linestring(7)  linestring(2)                   -            -
+design/fex  insert  fiber_cable(14)  XX-FCB-6338  O-048-CN-5L-F12NS  External           48      True  linestring(8)  linestring(3)                   -            -
+
+delta       change  record       name       specification  labor_costs  location  myw_orientation_location
+----------  ------  -----------  ---------  -------------  -----------  --------  ------------------------
+design/fex  insert  manhole(25)  XX-M-6000              -            -  point                            -
+design/fex  insert  manhole(26)  XX-M-6001              -            -  point                            -
+design/fex  insert  manhole(27)  XX-M-6002              -            -  point                            -
+design/fex  insert  manhole(28)  XX-M-6003              -            -  point                            -
+design/fex  insert  manhole(29)  XX-M-6005              -            -  point                            -
+design/fex  insert  manhole(30)  XX-M-6006              -            -  point                            -
+design/fex  insert  manhole(31)  XX-M-6007              -            -  point                            -
+design/fex  insert  manhole(32)  XX-M-6008              -            -  point                            -
+design/fex  insert  manhole(33)  XX-M-6009              -            -  point                            -
+design/fex  insert  manhole(34)  XX-M-6010              -            -  point                            -
+design/fex  insert  manhole(35)  XX-M-6011              -            -  point                            -
+design/fex  insert  manhole(36)  XX-M-6012              -            -  point                            -
+design/fex  insert  manhole(37)  XX-M-6013              -            -  point                            -
+design/fex  insert  manhole(38)  XX-M-6014              -            -  point                            -
+
+delta       change  record                    length  cable           housing      root_housing  directed  forward  in_structure  out_structure  in_segment  out_segment  path           in_tick  out_tick  circuits  in_equipment  out_equipment
+----------  ------  ------------------------  ------  --------------  -----------  ------------  --------  -------  ------------  -------------  ----------  -----------  -------------  -------  --------  --------  ------------  -------------
+design/fex  insert  mywcom_fiber_segment(52)       -  fiber_cable/13  ug_route/46  ug_route/46       True     True  manhole/36    manhole/35     -           53           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(53)       -  fiber_cable/13  ug_route/45  ug_route/45       True     True  manhole/35    manhole/34     52          54           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(54)       -  fiber_cable/13  ug_route/44  ug_route/44       True     True  manhole/34    manhole/33     53          55           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(55)       -  fiber_cable/13  ug_route/43  ug_route/43       True     True  manhole/33    manhole/32     54          56           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(56)       -  fiber_cable/13  ug_route/42  ug_route/42       True     True  manhole/32    manhole/31     55          57           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(57)       -  fiber_cable/13  ug_route/41  ug_route/41       True     True  manhole/31    manhole/30     56          -            linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(58)       -  fiber_cable/12  ug_route/50  ug_route/50       True     True  building/4    manhole/38     -           59           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(59)       -  fiber_cable/12  ug_route/51  ug_route/51       True     True  manhole/38    manhole/37     58          60           linestring(4)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(60)       -  fiber_cable/12  ug_route/47  ug_route/47       True     True  manhole/37    manhole/36     59          -            linestring(3)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(61)       -  fiber_cable/14  ug_route/40  ug_route/40       True     True  manhole/30    manhole/29     -           62           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(62)       -  fiber_cable/14  ug_route/48  ug_route/48       True     True  manhole/29    manhole/28     61          63           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(63)       -  fiber_cable/14  ug_route/49  ug_route/49       True     True  manhole/28    manhole/27     62          64           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(64)       -  fiber_cable/14  ug_route/52  ug_route/52       True     True  manhole/27    manhole/26     63          65           linestring(3)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(65)       -  fiber_cable/14  ug_route/39  ug_route/39       True     True  manhole/26    manhole/25     64          66           linestring(2)        -         -         -             -              -
+design/fex  insert  mywcom_fiber_segment(66)       -  fiber_cable/14  ug_route/38  ug_route/38       True     True  manhole/25    building/4     65          -            linestring(2)        -         -         -             -              -
+
+delta       change  record        length  in_structure  out_structure  path           labor_costs
+----------  ------  ------------  ------  ------------  -------------  -------------  -----------
+design/fex  insert  ug_route(38)       -  manhole/25    building/4     linestring(2)            -
+design/fex  insert  ug_route(39)       -  manhole/26    manhole/25     linestring(2)            -
+design/fex  insert  ug_route(40)       -  manhole/30    manhole/29     linestring(2)            -
+design/fex  insert  ug_route(41)       -  manhole/31    manhole/30     linestring(2)            -
+design/fex  insert  ug_route(42)       -  manhole/32    manhole/31     linestring(2)            -
+design/fex  insert  ug_route(43)       -  manhole/33    manhole/32     linestring(2)            -
+design/fex  insert  ug_route(44)       -  manhole/34    manhole/33     linestring(2)            -
+design/fex  insert  ug_route(45)       -  manhole/35    manhole/34     linestring(2)            -
+design/fex  insert  ug_route(46)       -  manhole/36    manhole/35     linestring(2)            -
+design/fex  insert  ug_route(47)       -  manhole/37    manhole/36     linestring(3)            -
+design/fex  insert  ug_route(48)       -  manhole/29    manhole/28     linestring(2)            -
+design/fex  insert  ug_route(49)       -  manhole/28    manhole/27     linestring(2)            -
+design/fex  insert  ug_route(50)       -  building/4    manhole/38     linestring(2)            -
+design/fex  insert  ug_route(51)       -  manhole/38    manhole/37     linestring(4)            -
+design/fex  insert  ug_route(52)       -  manhole/27    manhole/26     linestring(3)            -
+
+COMMAND: comms_db comms_scratch list <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/fex_network.sqlite records --full
+Opening database <conn_spec> ...
+feature_type  id             name        labor_costs  owner  access_code  location
+------------  -------------  ----------  -----------  -----  -----------  --------------------------------------------
+building      building/6001  FEX-UCAM-1  -            -      -            POINT (0.1006274682455877 52.21027822469586)
+
+feature_type  id                name         specification                       type      fiber_count  directed  tick_mark_spacing  labor_costs  owner  job_id  installation_date  diameter  path                                                                                                                                                                                                                                                                                                                       placement_path
+------------  ----------------  -----------  ----------------------------------  --------  -----------  --------  -----------------  -----------  -----  ------  -----------------  --------  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ---------------------------------------------------------------------------------------------------------------------------
+fiber_cable   fiber_cable/6334  XX-FCB-6334  fiber_cable_spec/O-048-CN-5L-F12NS  External           48  True      -                  -            -      -       -                  12.1      LINESTRING (0.1006274682455877 52.21027822469586, 0.0992166923075536 52.20755828305025, 0.0926299170421271 52.20809748055493, 0.0851841048167853 52.20870233790217, 0.079648025410047 52.20920199645647, 0.0808281973765997 52.21238390067074, 0.0812788084911016 52.21379070301668)                                       LINESTRING (0.1006274682455877 52.21027822469586, 0.0812788084911016 52.21379070301668)
+fiber_cable   fiber_cable/6335  XX-FCB-6335  fiber_cable_spec/O-048-CN-5L-F12NS  External           48  True      -                  -            -      -       -                  12.1      LINESTRING (0.0812788084911016 52.21379070301668, 0.0843472556041388 52.21360663795329, 0.0872225836681036 52.21614403911136, 0.0843472556041388 52.21752442964015, 0.0841541365550665 52.21979869379763, 0.0878448561595587 52.21996958755594, 0.0883383826182989 52.21701171816602)                                      LINESTRING (0.0812788084911016 52.21379070301668, 0.0883383826182989 52.21701171816602)
+fiber_cable   fiber_cable/6338  XX-FCB-6338  fiber_cable_spec/O-048-CN-5L-F12NS  External           48  True      -                  -            -      -       -                  -         LINESTRING (0.0883383826182989 52.21701171816602, 0.0948400572703985 52.21737981931079, 0.0997538641856817 52.21571019322775, 0.1000757292674688 52.21415883085544, 0.1046086625026372 52.21322864480678, 0.1033802107738165 52.21155557564757, 0.101320274250379 52.2115950200465, 0.1006274682455877 52.21027822469586)  LINESTRING (0.0883383826182989 52.21701171816602, 0.101320274250379 52.2115950200465, 0.1006274682455877 52.21027822469586)
+
+feature_type  id            name       specification  labor_costs  myw_orientation_location  size_x  size_y  size_z  lockable  powered  installation_date  location
+------------  ------------  ---------  -------------  -----------  ------------------------  ------  ------  ------  --------  -------  -----------------  --------------------------------------------
+manhole       manhole/6000  XX-M-6000  -              -            -                         -       -       -       -         -        -                  POINT (0.101320274250379 52.2115950200465)
+manhole       manhole/6001  XX-M-6001  -              -            -                         -       -       -       -         -        -                  POINT (0.1033802107738165 52.21155557564757)
+manhole       manhole/6002  XX-M-6002  -              -            -                         -       -       -       -         -        -                  POINT (0.1000757292674688 52.21415883085544)
+manhole       manhole/6003  XX-M-6003  -              -            -                         -       -       -       -         -        -                  POINT (0.0997538641856817 52.21571019322775)
+manhole       manhole/6005  XX-M-6005  -              -            -                         -       -       -       -         -        -                  POINT (0.0948400572703985 52.21737981931079)
+manhole       manhole/6006  XX-M-6006  -              -            -                         -       -       -       -         -        -                  POINT (0.0883383826182989 52.21701171816602)
+manhole       manhole/6007  XX-M-6007  -              -            -                         -       -       -       -         -        -                  POINT (0.0878448561595587 52.21996958755594)
+manhole       manhole/6008  XX-M-6008  -              -            -                         -       -       -       -         -        -                  POINT (0.0841541365550665 52.21979869379763)
+manhole       manhole/6009  XX-M-6009  -              -            -                         -       -       -       -         -        -                  POINT (0.0843472556041388 52.21752442964015)
+manhole       manhole/6010  XX-M-6010  -              -            -                         -       -       -       -         -        -                  POINT (0.0872225836681036 52.21614403911136)
+manhole       manhole/6011  XX-M-6011  -              -            -                         -       -       -       -         -        -                  POINT (0.0843472556041388 52.21360663795329)
+manhole       manhole/6012  XX-M-6012  -              -            -                         -       -       -       -         -        -                  POINT (0.0812788084911016 52.21379070301668)
+manhole       manhole/6013  XX-M-6013  -              -            -                         -       -       -       -         -        -                  POINT (0.079648025410047 52.20920199645647)
+manhole       manhole/6014  XX-M-6014  -              -            -                         -       -       -       -         -        -                  POINT (0.0992166923075536 52.20755828305025)
+
+feature_type          id                         length  cable             housing        root_housing   directed  forward  in_structure   out_structure  in_segment                 out_segment                in_tick  out_tick  circuits  path
+--------------------  -------------------------  ------  ----------------  -------------  -------------  --------  -------  -------------  -------------  -------------------------  -------------------------  -------  --------  --------  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mywcom_fiber_segment  mywcom_fiber_segment/6027  -       fiber_cable/6335  ug_route/6013  ug_route/6013  True      True     manhole/6012   manhole/6011   -                          mywcom_fiber_segment/6028  -        -         -         LINESTRING (0.0812788084911016 52.21379070301668, 0.0843472556041388 52.21360663795329)
+mywcom_fiber_segment  mywcom_fiber_segment/6028  -       fiber_cable/6335  ug_route/6012  ug_route/6012  True      True     manhole/6011   manhole/6010   mywcom_fiber_segment/6027  mywcom_fiber_segment/6029  -        -         -         LINESTRING (0.0843472556041388 52.21360663795329, 0.0872225836681036 52.21614403911136)
+mywcom_fiber_segment  mywcom_fiber_segment/6029  -       fiber_cable/6335  ug_route/6011  ug_route/6011  True      True     manhole/6010   manhole/6009   mywcom_fiber_segment/6028  mywcom_fiber_segment/6030  -        -         -         LINESTRING (0.0872225836681036 52.21614403911136, 0.0843472556041388 52.21752442964015)
+mywcom_fiber_segment  mywcom_fiber_segment/6030  -       fiber_cable/6335  ug_route/6010  ug_route/6010  True      True     manhole/6009   manhole/6008   mywcom_fiber_segment/6029  mywcom_fiber_segment/6031  -        -         -         LINESTRING (0.0843472556041388 52.21752442964015, 0.0841541365550665 52.21979869379763)
+mywcom_fiber_segment  mywcom_fiber_segment/6031  -       fiber_cable/6335  ug_route/6009  ug_route/6009  True      True     manhole/6008   manhole/6007   mywcom_fiber_segment/6030  mywcom_fiber_segment/6032  -        -         -         LINESTRING (0.0841541365550665 52.21979869379763, 0.0878448561595587 52.21996958755594)
+mywcom_fiber_segment  mywcom_fiber_segment/6032  -       fiber_cable/6335  ug_route/6008  ug_route/6008  True      True     manhole/6007   manhole/6006   mywcom_fiber_segment/6031  -                          -        -         -         LINESTRING (0.0878448561595587 52.21996958755594, 0.0883383826182989 52.21701171816602)
+mywcom_fiber_segment  mywcom_fiber_segment/6024  -       fiber_cable/6334  ug_route/6000  ug_route/6000  True      True     building/6001  manhole/6014   -                          mywcom_fiber_segment/6025  -        -         -         LINESTRING (0.1006274682455877 52.21027822469586, 0.0992166923075536 52.20755828305025)
+mywcom_fiber_segment  mywcom_fiber_segment/6025  -       fiber_cable/6334  ug_route/6015  ug_route/6015  True      True     manhole/6014   manhole/6013   mywcom_fiber_segment/6024  mywcom_fiber_segment/6026  -        -         -         LINESTRING (0.0992166923075536 52.20755828305025, 0.0926299170421271 52.20809748055493, 0.0851841048167853 52.20870233790217, 0.079648025410047 52.20920199645647)
+mywcom_fiber_segment  mywcom_fiber_segment/6026  -       fiber_cable/6334  ug_route/6014  ug_route/6014  True      True     manhole/6013   manhole/6012   mywcom_fiber_segment/6025  -                          -        -         -         LINESTRING (0.079648025410047 52.20920199645647, 0.0808281973765997 52.21238390067074, 0.0812788084911016 52.21379070301668)
+mywcom_fiber_segment  mywcom_fiber_segment/6058  -       fiber_cable/6338  ug_route/6007  ug_route/6007  True      True     manhole/6006   manhole/6005   -                          mywcom_fiber_segment/6059  -        -         -         LINESTRING (0.0883383826182989 52.21701171816602, 0.0948400572703985 52.21737981931079)
+mywcom_fiber_segment  mywcom_fiber_segment/6059  -       fiber_cable/6338  ug_route/6006  ug_route/6006  True      True     manhole/6005   manhole/6003   mywcom_fiber_segment/6058  mywcom_fiber_segment/6060  -        -         -         LINESTRING (0.0948400572703985 52.21737981931079, 0.0997538641856817 52.21571019322775)
+mywcom_fiber_segment  mywcom_fiber_segment/6060  -       fiber_cable/6338  ug_route/6016  ug_route/6016  True      True     manhole/6003   manhole/6002   mywcom_fiber_segment/6059  mywcom_fiber_segment/6061  -        -         -         LINESTRING (0.0997538641856817 52.21571019322775, 0.1000757292674688 52.21415883085544)
+mywcom_fiber_segment  mywcom_fiber_segment/6061  -       fiber_cable/6338  ug_route/6017  ug_route/6017  True      True     manhole/6002   manhole/6001   mywcom_fiber_segment/6060  mywcom_fiber_segment/6062  -        -         -         LINESTRING (0.1000757292674688 52.21415883085544, 0.1046086625026372 52.21322864480678, 0.1033802107738165 52.21155557564757)
+mywcom_fiber_segment  mywcom_fiber_segment/6062  -       fiber_cable/6338  ug_route/6002  ug_route/6002  True      True     manhole/6001   manhole/6000   mywcom_fiber_segment/6061  mywcom_fiber_segment/6063  -        -         -         LINESTRING (0.1033802107738165 52.21155557564757, 0.101320274250379 52.2115950200465)
+mywcom_fiber_segment  mywcom_fiber_segment/6063  -       fiber_cable/6338  ug_route/6001  ug_route/6001  True      True     manhole/6000   building/6001  mywcom_fiber_segment/6062  -                          -        -         -         LINESTRING (0.101320274250379 52.2115950200465, 0.1006274682455877 52.21027822469586)
+
+feature_type  id             length  in_structure   out_structure  labor_costs  cover_type  path
+------------  -------------  ------  -------------  -------------  -----------  ----------  ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ug_route      ug_route/6001  -       manhole/6000   building/6001  -            -           LINESTRING (0.101320274250379 52.2115950200465, 0.1006274682455877 52.21027822469586)
+ug_route      ug_route/6002  -       manhole/6001   manhole/6000   -            -           LINESTRING (0.1033802107738165 52.21155557564757, 0.101320274250379 52.2115950200465)
+ug_route      ug_route/6007  -       manhole/6006   manhole/6005   -            -           LINESTRING (0.0883383826182989 52.21701171816602, 0.0948400572703985 52.21737981931079)
+ug_route      ug_route/6008  -       manhole/6007   manhole/6006   -            -           LINESTRING (0.0878448561595587 52.21996958755594, 0.0883383826182989 52.21701171816602)
+ug_route      ug_route/6009  -       manhole/6008   manhole/6007   -            -           LINESTRING (0.0841541365550665 52.21979869379763, 0.0878448561595587 52.21996958755594)
+ug_route      ug_route/6010  -       manhole/6009   manhole/6008   -            -           LINESTRING (0.0843472556041388 52.21752442964015, 0.0841541365550665 52.21979869379763)
+ug_route      ug_route/6011  -       manhole/6010   manhole/6009   -            -           LINESTRING (0.0872225836681036 52.21614403911136, 0.0843472556041388 52.21752442964015)
+ug_route      ug_route/6012  -       manhole/6011   manhole/6010   -            -           LINESTRING (0.0843472556041388 52.21360663795329, 0.0872225836681036 52.21614403911136)
+ug_route      ug_route/6013  -       manhole/6012   manhole/6011   -            -           LINESTRING (0.0812788084911016 52.21379070301668, 0.0843472556041388 52.21360663795329)
+ug_route      ug_route/6014  -       manhole/6013   manhole/6012   -            -           LINESTRING (0.079648025410047 52.20920199645647, 0.0808281973765997 52.21238390067074, 0.0812788084911016 52.21379070301668)
+ug_route      ug_route/6006  -       manhole/6005   manhole/6003   -            -           LINESTRING (0.0948400572703985 52.21737981931079, 0.0997538641856817 52.21571019322775)
+ug_route      ug_route/6016  -       manhole/6003   manhole/6002   -            -           LINESTRING (0.0997538641856817 52.21571019322775, 0.1000757292674688 52.21415883085544)
+ug_route      ug_route/6000  -       building/6001  manhole/6014   -            -           LINESTRING (0.1006274682455877 52.21027822469586, 0.0992166923075536 52.20755828305025)
+ug_route      ug_route/6015  -       manhole/6014   manhole/6013   -            -           LINESTRING (0.0992166923075536 52.20755828305025, 0.0926299170421271 52.20809748055493, 0.0851841048167853 52.20870233790217, 0.079648025410047 52.20920199645647)
+ug_route      ug_route/6017  -       manhole/6002   manhole/6001   -            -           LINESTRING (0.1000757292674688 52.21415883085544, 0.1046086625026372 52.21322864480678, 0.1033802107738165 52.21155557564757)
+
+
+COMMAND: myw_db comms_scratch load <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/shp_config.settings --update
+Opening database <conn_spec> ...
+Loading file <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/shp_config.settings ...
+  1 setting(s) loaded
+
+COMMAND: comms_db comms_scratch import <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/shp_file/OUT_DistributionPoints.shp --delta design/shape --mappings <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/shp_mapping.json
+Opening database <conn_spec> ...
+Import engine: cdif
+Loading data
+  Feature type: cabinet
+<product_dir>/WebApps/myworldapp/core/server/base/geom/myw_geometry.py:55: ShapelyDeprecationWarning: The 'type' attribute is deprecated, and will be removed in the future. You can use the 'geom_type' attribute instead.
+  value = getattr(self._shapely_geom, name)
+    Loaded 287 records) #, 287 inserts, 0 updates
+Mapping references
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+
+COMMAND: myw_db comms_scratch list records --delta design/shape --full
+Opening database <conn_spec> ...
+
+delta         change  record        name    specification  labor_costs  location  myw_orientation_location
+------------  ------  ------------  ------  -------------  -----------  --------  ------------------------
+design/shape  insert  cabinet(5)    60419               -            -  point                            -
+design/shape  insert  cabinet(6)    86977               -            -  point                            -
+design/shape  insert  cabinet(7)    425031              -            -  point                            -
+design/shape  insert  cabinet(8)    7310                -            -  point                            -
+design/shape  insert  cabinet(9)    441626              -            -  point                            -
+design/shape  insert  cabinet(10)   52987               -            -  point                            -
+design/shape  insert  cabinet(11)   420660              -            -  point                            -
+design/shape  insert  cabinet(12)   67120               -            -  point                            -
+design/shape  insert  cabinet(13)   113383              -            -  point                            -
+design/shape  insert  cabinet(14)   17800               -            -  point                            -
+design/shape  insert  cabinet(15)   418020              -            -  point                            -
+design/shape  insert  cabinet(16)   28857               -            -  point                            -
+design/shape  insert  cabinet(17)   48787               -            -  point                            -
+design/shape  insert  cabinet(18)   18146               -            -  point                            -
+design/shape  insert  cabinet(19)   84554               -            -  point                            -
+design/shape  insert  cabinet(20)   28591               -            -  point                            -
+design/shape  insert  cabinet(21)   89241               -            -  point                            -
+design/shape  insert  cabinet(22)   60040               -            -  point                            -
+design/shape  insert  cabinet(23)   35506               -            -  point                            -
+design/shape  insert  cabinet(24)   76059               -            -  point                            -
+design/shape  insert  cabinet(25)   121697              -            -  point                            -
+design/shape  insert  cabinet(26)   153159              -            -  point                            -
+design/shape  insert  cabinet(27)   417008              -            -  point                            -
+design/shape  insert  cabinet(28)   100515              -            -  point                            -
+design/shape  insert  cabinet(29)   148119              -            -  point                            -
+design/shape  insert  cabinet(30)   454874              -            -  point                            -
+design/shape  insert  cabinet(31)   427096              -            -  point                            -
+design/shape  insert  cabinet(32)   116447              -            -  point                            -
+design/shape  insert  cabinet(33)   6008                -            -  point                            -
+design/shape  insert  cabinet(34)   151905              -            -  point                            -
+design/shape  insert  cabinet(35)   79907               -            -  point                            -
+design/shape  insert  cabinet(36)   79762               -            -  point                            -
+design/shape  insert  cabinet(37)   154479              -            -  point                            -
+design/shape  insert  cabinet(38)   55325               -            -  point                            -
+design/shape  insert  cabinet(39)   78354               -            -  point                            -
+design/shape  insert  cabinet(40)   131084              -            -  point                            -
+design/shape  insert  cabinet(41)   8591                -            -  point                            -
+design/shape  insert  cabinet(42)   58698               -            -  point                            -
+design/shape  insert  cabinet(43)   16239               -            -  point                            -
+design/shape  insert  cabinet(44)   38577               -            -  point                            -
+design/shape  insert  cabinet(45)   102355              -            -  point                            -
+design/shape  insert  cabinet(46)   429670              -            -  point                            -
+design/shape  insert  cabinet(47)   40882               -            -  point                            -
+design/shape  insert  cabinet(48)   76722               -            -  point                            -
+design/shape  insert  cabinet(49)   52667               -            -  point                            -
+design/shape  insert  cabinet(50)   81341               -            -  point                            -
+design/shape  insert  cabinet(51)   117295              -            -  point                            -
+design/shape  insert  cabinet(52)   26706               -            -  point                            -
+design/shape  insert  cabinet(53)   409544              -            -  point                            -
+design/shape  insert  cabinet(54)   14528               -            -  point                            -
+design/shape  insert  cabinet(55)   163266              -            -  point                            -
+design/shape  insert  cabinet(56)   4591                -            -  point                            -
+design/shape  insert  cabinet(57)   425237              -            -  point                            -
+design/shape  insert  cabinet(58)   69581               -            -  point                            -
+design/shape  insert  cabinet(59)   443958              -            -  point                            -
+design/shape  insert  cabinet(60)   436387              -            -  point                            -
+design/shape  insert  cabinet(61)   17455               -            -  point                            -
+design/shape  insert  cabinet(62)   38301               -            -  point                            -
+design/shape  insert  cabinet(63)   41066               -            -  point                            -
+design/shape  insert  cabinet(64)   81449               -            -  point                            -
+design/shape  insert  cabinet(65)   1025                -            -  point                            -
+design/shape  insert  cabinet(66)   99079               -            -  point                            -
+design/shape  insert  cabinet(67)   37728               -            -  point                            -
+design/shape  insert  cabinet(68)   106691              -            -  point                            -
+design/shape  insert  cabinet(69)   3345                -            -  point                            -
+design/shape  insert  cabinet(70)   131466              -            -  point                            -
+design/shape  insert  cabinet(71)   460113              -            -  point                            -
+design/shape  insert  cabinet(72)   92534               -            -  point                            -
+design/shape  insert  cabinet(73)   434841              -            -  point                            -
+design/shape  insert  cabinet(74)   26897               -            -  point                            -
+design/shape  insert  cabinet(75)   153122              -            -  point                            -
+design/shape  insert  cabinet(76)   16576               -            -  point                            -
+design/shape  insert  cabinet(77)   51244               -            -  point                            -
+design/shape  insert  cabinet(78)   441500              -            -  point                            -
+design/shape  insert  cabinet(79)   67288               -            -  point                            -
+design/shape  insert  cabinet(80)   12053               -            -  point                            -
+design/shape  insert  cabinet(81)   405689              -            -  point                            -
+design/shape  insert  cabinet(82)   40442               -            -  point                            -
+design/shape  insert  cabinet(83)   463116              -            -  point                            -
+design/shape  insert  cabinet(84)   118092              -            -  point                            -
+design/shape  insert  cabinet(85)   22664               -            -  point                            -
+design/shape  insert  cabinet(86)   138934              -            -  point                            -
+design/shape  insert  cabinet(87)   15342               -            -  point                            -
+design/shape  insert  cabinet(88)   44                  -            -  point                            -
+design/shape  insert  cabinet(89)   422962              -            -  point                            -
+design/shape  insert  cabinet(90)   41203               -            -  point                            -
+design/shape  insert  cabinet(91)   434947              -            -  point                            -
+design/shape  insert  cabinet(92)   64889               -            -  point                            -
+design/shape  insert  cabinet(93)   70074               -            -  point                            -
+design/shape  insert  cabinet(94)   445326              -            -  point                            -
+design/shape  insert  cabinet(95)   174                 -            -  point                            -
+design/shape  insert  cabinet(96)   401525              -            -  point                            -
+design/shape  insert  cabinet(97)   74443               -            -  point                            -
+design/shape  insert  cabinet(98)   435554              -            -  point                            -
+design/shape  insert  cabinet(99)   55172               -            -  point                            -
+design/shape  insert  cabinet(100)  433510              -            -  point                            -
+design/shape  insert  cabinet(101)  20297               -            -  point                            -
+design/shape  insert  cabinet(102)  404003              -            -  point                            -
+design/shape  insert  cabinet(103)  47183               -            -  point                            -
+design/shape  insert  cabinet(104)  40692               -            -  point                            -
+design/shape  insert  cabinet(105)  75378               -            -  point                            -
+design/shape  insert  cabinet(106)  5952                -            -  point                            -
+design/shape  insert  cabinet(107)  85778               -            -  point                            -
+design/shape  insert  cabinet(108)  103059              -            -  point                            -
+design/shape  insert  cabinet(109)  33579               -            -  point                            -
+design/shape  insert  cabinet(110)  443276              -            -  point                            -
+design/shape  insert  cabinet(111)  436576              -            -  point                            -
+design/shape  insert  cabinet(112)  51055               -            -  point                            -
+design/shape  insert  cabinet(113)  431157              -            -  point                            -
+design/shape  insert  cabinet(114)  120334              -            -  point                            -
+design/shape  insert  cabinet(115)  83294               -            -  point                            -
+design/shape  insert  cabinet(116)  152061              -            -  point                            -
+design/shape  insert  cabinet(117)  65377               -            -  point                            -
+design/shape  insert  cabinet(118)  152637              -            -  point                            -
+design/shape  insert  cabinet(119)  9924                -            -  point                            -
+design/shape  insert  cabinet(120)  40482               -            -  point                            -
+design/shape  insert  cabinet(121)  430640              -            -  point                            -
+design/shape  insert  cabinet(122)  93524               -            -  point                            -
+design/shape  insert  cabinet(123)  15348               -            -  point                            -
+design/shape  insert  cabinet(124)  27457               -            -  point                            -
+design/shape  insert  cabinet(125)  412523              -            -  point                            -
+design/shape  insert  cabinet(126)  20466               -            -  point                            -
+design/shape  insert  cabinet(127)  398230              -            -  point                            -
+design/shape  insert  cabinet(128)  90178               -            -  point                            -
+design/shape  insert  cabinet(129)  118919              -            -  point                            -
+design/shape  insert  cabinet(130)  48571               -            -  point                            -
+design/shape  insert  cabinet(131)  68654               -            -  point                            -
+design/shape  insert  cabinet(132)  85872               -            -  point                            -
+design/shape  insert  cabinet(133)  150011              -            -  point                            -
+design/shape  insert  cabinet(134)  159292              -            -  point                            -
+design/shape  insert  cabinet(135)  161298              -            -  point                            -
+design/shape  insert  cabinet(136)  164953              -            -  point                            -
+design/shape  insert  cabinet(137)  455841              -            -  point                            -
+design/shape  insert  cabinet(138)  2804                -            -  point                            -
+design/shape  insert  cabinet(139)  15152               -            -  point                            -
+design/shape  insert  cabinet(140)  57084               -            -  point                            -
+design/shape  insert  cabinet(141)  34227               -            -  point                            -
+design/shape  insert  cabinet(142)  42385               -            -  point                            -
+design/shape  insert  cabinet(143)  27417               -            -  point                            -
+design/shape  insert  cabinet(144)  411876              -            -  point                            -
+design/shape  insert  cabinet(145)  9352                -            -  point                            -
+design/shape  insert  cabinet(146)  30674               -            -  point                            -
+design/shape  insert  cabinet(147)  428917              -            -  point                            -
+design/shape  insert  cabinet(148)  14679               -            -  point                            -
+design/shape  insert  cabinet(149)  17559               -            -  point                            -
+design/shape  insert  cabinet(150)  57836               -            -  point                            -
+design/shape  insert  cabinet(151)  7491                -            -  point                            -
+design/shape  insert  cabinet(152)  79969               -            -  point                            -
+design/shape  insert  cabinet(153)  23681               -            -  point                            -
+design/shape  insert  cabinet(154)  75816               -            -  point                            -
+design/shape  insert  cabinet(155)  404407              -            -  point                            -
+design/shape  insert  cabinet(156)  40552               -            -  point                            -
+design/shape  insert  cabinet(157)  88333               -            -  point                            -
+design/shape  insert  cabinet(158)  17196               -            -  point                            -
+design/shape  insert  cabinet(159)  442586              -            -  point                            -
+design/shape  insert  cabinet(160)  26277               -            -  point                            -
+design/shape  insert  cabinet(161)  410904              -            -  point                            -
+design/shape  insert  cabinet(162)  97034               -            -  point                            -
+design/shape  insert  cabinet(163)  84146               -            -  point                            -
+design/shape  insert  cabinet(164)  170005              -            -  point                            -
+design/shape  insert  cabinet(165)  42677               -            -  point                            -
+design/shape  insert  cabinet(166)  402426              -            -  point                            -
+design/shape  insert  cabinet(167)  23277               -            -  point                            -
+design/shape  insert  cabinet(168)  80277               -            -  point                            -
+design/shape  insert  cabinet(169)  91040               -            -  point                            -
+design/shape  insert  cabinet(170)  127896              -            -  point                            -
+design/shape  insert  cabinet(171)  106822              -            -  point                            -
+design/shape  insert  cabinet(172)  56448               -            -  point                            -
+design/shape  insert  cabinet(173)  94299               -            -  point                            -
+design/shape  insert  cabinet(174)  24017               -            -  point                            -
+design/shape  insert  cabinet(175)  105537              -            -  point                            -
+design/shape  insert  cabinet(176)  74328               -            -  point                            -
+design/shape  insert  cabinet(177)  89020               -            -  point                            -
+design/shape  insert  cabinet(178)  45525               -            -  point                            -
+design/shape  insert  cabinet(179)  12693               -            -  point                            -
+design/shape  insert  cabinet(180)  7415                -            -  point                            -
+design/shape  insert  cabinet(181)  125545              -            -  point                            -
+design/shape  insert  cabinet(182)  29464               -            -  point                            -
+design/shape  insert  cabinet(183)  90690               -            -  point                            -
+design/shape  insert  cabinet(184)  64295               -            -  point                            -
+design/shape  insert  cabinet(185)  104529              -            -  point                            -
+design/shape  insert  cabinet(186)  17963               -            -  point                            -
+design/shape  insert  cabinet(187)  442009              -            -  point                            -
+design/shape  insert  cabinet(188)  83815               -            -  point                            -
+design/shape  insert  cabinet(189)  35637               -            -  point                            -
+design/shape  insert  cabinet(190)  72451               -            -  point                            -
+design/shape  insert  cabinet(191)  422548              -            -  point                            -
+design/shape  insert  cabinet(192)  144242              -            -  point                            -
+design/shape  insert  cabinet(193)  66709               -            -  point                            -
+design/shape  insert  cabinet(194)  125181              -            -  point                            -
+design/shape  insert  cabinet(195)  407731              -            -  point                            -
+design/shape  insert  cabinet(196)  77269               -            -  point                            -
+design/shape  insert  cabinet(197)  55293               -            -  point                            -
+design/shape  insert  cabinet(198)  127832              -            -  point                            -
+design/shape  insert  cabinet(199)  133342              -            -  point                            -
+design/shape  insert  cabinet(200)  71002               -            -  point                            -
+design/shape  insert  cabinet(201)  50948               -            -  point                            -
+design/shape  insert  cabinet(202)  96016               -            -  point                            -
+design/shape  insert  cabinet(203)  29016               -            -  point                            -
+design/shape  insert  cabinet(204)  55288               -            -  point                            -
+design/shape  insert  cabinet(205)  150395              -            -  point                            -
+design/shape  insert  cabinet(206)  417538              -            -  point                            -
+design/shape  insert  cabinet(207)  12243               -            -  point                            -
+design/shape  insert  cabinet(208)  126899              -            -  point                            -
+design/shape  insert  cabinet(209)  135883              -            -  point                            -
+design/shape  insert  cabinet(210)  87957               -            -  point                            -
+design/shape  insert  cabinet(211)  150913              -            -  point                            -
+design/shape  insert  cabinet(212)  115817              -            -  point                            -
+design/shape  insert  cabinet(213)  131022              -            -  point                            -
+design/shape  insert  cabinet(214)  137100              -            -  point                            -
+design/shape  insert  cabinet(215)  432880              -            -  point                            -
+design/shape  insert  cabinet(216)  3731                -            -  point                            -
+design/shape  insert  cabinet(217)  62868               -            -  point                            -
+design/shape  insert  cabinet(218)  153942              -            -  point                            -
+design/shape  insert  cabinet(219)  60365               -            -  point                            -
+design/shape  insert  cabinet(220)  106738              -            -  point                            -
+design/shape  insert  cabinet(221)  430256              -            -  point                            -
+design/shape  insert  cabinet(222)  408780              -            -  point                            -
+design/shape  insert  cabinet(223)  57245               -            -  point                            -
+design/shape  insert  cabinet(224)  408112              -            -  point                            -
+design/shape  insert  cabinet(225)  64675               -            -  point                            -
+design/shape  insert  cabinet(226)  454389              -            -  point                            -
+design/shape  insert  cabinet(227)  144180              -            -  point                            -
+design/shape  insert  cabinet(228)  69689               -            -  point                            -
+design/shape  insert  cabinet(229)  69454               -            -  point                            -
+design/shape  insert  cabinet(230)  17213               -            -  point                            -
+design/shape  insert  cabinet(231)  400570              -            -  point                            -
+design/shape  insert  cabinet(232)  409588              -            -  point                            -
+design/shape  insert  cabinet(233)  33409               -            -  point                            -
+design/shape  insert  cabinet(234)  21214               -            -  point                            -
+design/shape  insert  cabinet(235)  1013                -            -  point                            -
+design/shape  insert  cabinet(236)  157711              -            -  point                            -
+design/shape  insert  cabinet(237)  129878              -            -  point                            -
+design/shape  insert  cabinet(238)  93838               -            -  point                            -
+design/shape  insert  cabinet(239)  89849               -            -  point                            -
+design/shape  insert  cabinet(240)  14037               -            -  point                            -
+design/shape  insert  cabinet(241)  33811               -            -  point                            -
+design/shape  insert  cabinet(242)  445480              -            -  point                            -
+design/shape  insert  cabinet(243)  426054              -            -  point                            -
+design/shape  insert  cabinet(244)  83056               -            -  point                            -
+design/shape  insert  cabinet(245)  419362              -            -  point                            -
+design/shape  insert  cabinet(246)  49869               -            -  point                            -
+design/shape  insert  cabinet(247)  86643               -            -  point                            -
+design/shape  insert  cabinet(248)  412760              -            -  point                            -
+design/shape  insert  cabinet(249)  5933                -            -  point                            -
+design/shape  insert  cabinet(250)  3220                -            -  point                            -
+design/shape  insert  cabinet(251)  12720               -            -  point                            -
+design/shape  insert  cabinet(252)  32264               -            -  point                            -
+design/shape  insert  cabinet(253)  57658               -            -  point                            -
+design/shape  insert  cabinet(254)  86505               -            -  point                            -
+design/shape  insert  cabinet(255)  12910               -            -  point                            -
+design/shape  insert  cabinet(256)  65275               -            -  point                            -
+design/shape  insert  cabinet(257)  32762               -            -  point                            -
+design/shape  insert  cabinet(258)  14943               -            -  point                            -
+design/shape  insert  cabinet(259)  54945               -            -  point                            -
+design/shape  insert  cabinet(260)  98077               -            -  point                            -
+design/shape  insert  cabinet(261)  406749              -            -  point                            -
+design/shape  insert  cabinet(262)  34216               -            -  point                            -
+design/shape  insert  cabinet(263)  101044              -            -  point                            -
+design/shape  insert  cabinet(264)  164212              -            -  point                            -
+design/shape  insert  cabinet(265)  109227              -            -  point                            -
+design/shape  insert  cabinet(266)  138498              -            -  point                            -
+design/shape  insert  cabinet(267)  36732               -            -  point                            -
+design/shape  insert  cabinet(268)  19685               -            -  point                            -
+design/shape  insert  cabinet(269)  454998              -            -  point                            -
+design/shape  insert  cabinet(270)  5624                -            -  point                            -
+design/shape  insert  cabinet(271)  128997              -            -  point                            -
+design/shape  insert  cabinet(272)  417018              -            -  point                            -
+design/shape  insert  cabinet(273)  51381               -            -  point                            -
+design/shape  insert  cabinet(274)  167807              -            -  point                            -
+design/shape  insert  cabinet(275)  16183               -            -  point                            -
+design/shape  insert  cabinet(276)  19276               -            -  point                            -
+design/shape  insert  cabinet(277)  409160              -            -  point                            -
+design/shape  insert  cabinet(278)  135540              -            -  point                            -
+design/shape  insert  cabinet(279)  415135              -            -  point                            -
+design/shape  insert  cabinet(280)  442777              -            -  point                            -
+design/shape  insert  cabinet(281)  130605              -            -  point                            -
+design/shape  insert  cabinet(282)  55445               -            -  point                            -
+design/shape  insert  cabinet(283)  79294               -            -  point                            -
+design/shape  insert  cabinet(284)  68005               -            -  point                            -
+design/shape  insert  cabinet(285)  138638              -            -  point                            -
+design/shape  insert  cabinet(286)  83374               -            -  point                            -
+design/shape  insert  cabinet(287)  25524               -            -  point                            -
+design/shape  insert  cabinet(288)  5965                -            -  point                            -
+design/shape  insert  cabinet(289)  94818               -            -  point                            -
+design/shape  insert  cabinet(290)  15124               -            -  point                            -
+design/shape  insert  cabinet(291)  402739              -            -  point                            -
+
+COMMAND: comms_db comms_scratch list <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/shp_file/OUT_DistributionPoints.shp records --full
+Opening database <conn_spec> ...
+feature_type            locked  agg_id  subcluster  homecount  fiber_in  fiber_out  label  opt_budget         cost                id_feeder  di_feeder  name_rules  id      geometry
+----------------------  ------  ------  ----------  ---------  --------  ---------  -----  -----------------  ------------------  ---------  ---------  ----------  ------  -----------------------------------------
+OUT_DistributionPoints  T         5723          11        390       391          9      -  3.747432494377159  179990.92445262594       1947    14746.9  Rules64      60419  POINT (516243.440555893 871641.919430778)
+OUT_DistributionPoints  T         5770           8        407       428         49      -  2.197251941311153  441243.69605591084       1947    6543.63  Rules64      86977  POINT (521862.198886001 878986.320764419)
+OUT_DistributionPoints  T         5662          11        432       432          7      -  3.474177501894914  127083.93696026942       1947   14922.39  Rules64     425031  POINT (515860.257852022 871199.611462329)
+OUT_DistributionPoints  T         5589           3        380       428        102      -  1.999657703010286   527362.8360894723       1947    9184.09  Rules64       7310  POINT (526074.340903353 881166.684208622)
+OUT_DistributionPoints  T         5773          11        427       427          7      -  3.463422627722759  237833.96006429684       1947   14851.82  Rules64     441626  POINT (514448.541338042 872653.464667082)
+OUT_DistributionPoints  T         5572          16        193       386        386      -  2.423194614934038  219265.62055942664       1947    13931.7  Rules64      52987  POINT (518635.084559063 868692.612889449)
+OUT_DistributionPoints  T         5809           4        388       423         82      -   5.85320510325822   792149.9224390571       1947   32501.28  Rules32     420660  POINT (537949.672914741 870411.641265738)
+OUT_DistributionPoints  T         5707           5        419       422         19      -  7.616882373010514   979854.8294963269       1947   40136.94  Rules32      67120  POINT (547254.00254061 873919.147682203)
+OUT_DistributionPoints  T         5586           2        417       430         33      -  4.206083722985204   315747.5533705619       1947   17756.42  Rules64     113383  POINT (528876.533955792 886525.625354472)
+OUT_DistributionPoints  T         5731           6        346       347          8      -  1.571383106533701  229253.43676497467       1947    6373.89  Rules64      17800  POINT (518466.393536162 874799.181756351)
+OUT_DistributionPoints  T         5775          15        362       425        131      -  3.322299905429081   710458.2085020257       1947   15894.32  Rules64     418020  POINT (526875.101711831 874538.530977005)
+OUT_DistributionPoints  T         5730           4        423       431         23      -  4.230998748884451   723152.6656497247       1947    21856.9  Rules64      28857  POINT (531477.23319957 872605.44846606)
+OUT_DistributionPoints  T         5700          14        334       337         17      -  7.051820046771773  236528.98715487614       1947   38397.69  Rules32      48787  POINT (543284.444301696 891908.447850608)
+OUT_DistributionPoints  T         5668          14        353       376         57      -  5.678894620388228   618339.4400685551       1947   29389.01  Rules32      18146  POINT (536280.543133899 891338.581143614)
+OUT_DistributionPoints  T         5649           9         56        56          2      -  6.054639972902194  185927.62951891246       1947   29886.03  Rules32      84554  POINT (533338.06222793 892330.644508075)
+OUT_DistributionPoints  T         5762           5        398       431         78      -  6.780653700968532   390805.1021933814       1947   38586.89  Rules32      28591  POINT (540206.964577311 870700.549322895)
+OUT_DistributionPoints  T         5549           5        399       430         74      -  8.962182371151004  444718.56048989587       1947   48964.35  Rules32      89241  POINT (551864.161013902 878175.845675882)
+OUT_DistributionPoints  T         5782          10        418       420         11      -   3.21847289270567   547431.3776173543       1947   15213.05  Rules64      60040  POINT (510327.898039733 882906.284772555)
+OUT_DistributionPoints  T         5610           2        395       431         78      -  2.341719720925652  423764.86076139304       1947    9460.08  Rules64      35506  POINT (524658.590266938 880152.341145143)
+OUT_DistributionPoints  T         5764          11        280       428        299      -  1.559411231047325   549467.7796285021       1947    6295.34  Rules64      76059  POINT (518897.155399043 875797.235530462)
+OUT_DistributionPoints  T         5659          15        324       432        220      -  2.878006090872635   622361.2797716277       1947   14947.52  Rules64     121697  POINT (529132.702207148 877727.954494538)
+OUT_DistributionPoints  T         5597           5        396       411         42      -  6.564418087432418  420208.05590678856       1947   37168.02  Rules32     153159  POINT (541888.58549031 878620.256679087)
+OUT_DistributionPoints  T         5567          14        138       143         15      -  7.158715780612745   440485.4473210805       1947   35162.11  Rules32     417008  POINT (536279.711284932 893960.039159825)
+OUT_DistributionPoints  T         5535           1        407       431         54      -  4.327159904388053   672872.3007886411       1947   22487.88  Rules64     100515  POINT (508482.184031363 870408.444291537)
+OUT_DistributionPoints  T         5757           6        169       199         63      -  4.537432199205604  327445.07392574876       1947   23867.62  Rules64     148119  POINT (522226.215254992 865268.569947068)
+OUT_DistributionPoints  T         5744           9         14        14          1      -  6.879428433734597  140436.10607950413       1947   35298.02  Rules32     454874  POINT (535971.595591261 894720.508269032)
+OUT_DistributionPoints  T         5709          15        165       168          9      -  3.422927281636222  190319.36909826373       1947   16554.61  Rules64     427096  POINT (529620.033649512 876644.854062631)
+OUT_DistributionPoints  T         5694           5         40        40          2      -  6.658418494645331  231981.90077723155       1947   37784.82  Rules32     116447  POINT (543306.418436847 872329.612465077)
+OUT_DistributionPoints  T         5681           6        148       252        209      -  3.882246624936639  249780.34726673356       1947   19568.51  Rules64       6008  POINT (517588.169223879 864639.634723992)
+OUT_DistributionPoints  T         5556           4        356       409        111      -  3.356748877518038    524838.680529604       1947   16120.37  Rules64     151905  POINT (528559.644840488 875882.30246356)
+OUT_DistributionPoints  T         5614           6        416       418         11      -   3.60958711903169  203464.56926434796       1947   17779.41  Rules64      79907  POINT (517039.434536064 867058.447907991)
+OUT_DistributionPoints  T         5768           2        286       432        295      -  1.881442752700617  436321.37106897344       1947     8408.4  Rules64      79762  POINT (525324.704441959 881141.460005545)
+OUT_DistributionPoints  T         5691          14        425       429         22      -  5.235023567573998   913372.3069786986       1947   28444.98  Rules32     154479  POINT (540973.031561637 884576.97357008)
+OUT_DistributionPoints  T         5796           8        216       432        432      -  1.697915988693237  290073.42277893645       1947    9172.66  Rules64      55325  POINT (513252.387736506 877767.129681)
+OUT_DistributionPoints  T         5736          10        427       432         17      -   1.30834154949033   704920.0977876557       1947     4647.9  Rules64      78354  POINT (517112.682166231 883734.822813244)
+OUT_DistributionPoints  T         5531          14         14        14          1      -  6.963168080892285  124440.01107707733       1947   37815.99  Rules32     131084  POINT (546830.404830876 887851.846763321)
+OUT_DistributionPoints  T         5574          10        423       432         25      -  2.943164004430425   624440.8956990952       1947   15375.06  Rules64       8591  POINT (509038.65741707 882833.932731366)
+OUT_DistributionPoints  T         5802           8        418       431         33      -  2.953592953803182  289431.57644150476       1947   13474.99  Rules64      58698  POINT (509504.611855024 878701.17802177)
+OUT_DistributionPoints  T         5741          11        307       431        251      -  3.642741765992282  506121.22176145256       1947   16028.46  Rules64      16239  POINT (516349.475367726 870533.724680411)
+OUT_DistributionPoints  T         5805          13        303       309         17      -  2.452718189752436   313014.9585720492       1947   10188.42  Rules64      38577  POINT (521024.111589337 875031.121345145)
+OUT_DistributionPoints  T         5712          14        428       429         16      -  7.558876938263234  1037760.6890341219       1947   41724.83  Rules32     102355  POINT (551228.613762065 884761.942412292)
+OUT_DistributionPoints  T         5534          12        231       429        398      -  5.943903212644742  519537.82156070333       1947   33096.41  Rules32     429670  POINT (534147.906082628 865008.847494305)
+OUT_DistributionPoints  T         5725           3        376       431        116      -  3.989485685008235   749190.6825174799       1947   20272.18  Rules64      40882  POINT (532198.415696296 878736.531515854)
+OUT_DistributionPoints  T         5728           2        354       429        155      -   1.81191183466855   592956.9078264672       1947    5983.66  Rules64      76722  POINT (521743.554337887 882449.856745289)
+OUT_DistributionPoints  T         5554          14        377       415         82      -   4.44740676483163   566027.3715499858       1947    23276.9  Rules64      52667  POINT (534209.878497401 886940.514987755)
+OUT_DistributionPoints  T         5547           9        258       259         11      -  6.030440056858382   567036.6111691671       1947   29727.24  Rules32      81341  POINT (531598.648644123 890835.136930599)
+OUT_DistributionPoints  T         5795           2        427       429         11      -  4.842398081366631  1024378.4848407693       1947    21931.7  Rules64     117295  POINT (528955.876006734 888829.074178697)
+OUT_DistributionPoints  T         5569           9        340       414        157      -   5.90749421164443   789270.1245910464       1947   30889.01  Rules32      26706  POINT (533731.467311626 891787.342046306)
+OUT_DistributionPoints  T         5788          11        258       516        516      -  0.830943583459824   186639.7632962666       1947    3483.87  Rules64     409544  POINT (518425.681709374 877784.194632291)
+OUT_DistributionPoints  T         5648           8        368       386         42      -  3.332633134905202   811239.6096355247       1947   15962.13  Rules64      14528  POINT (508116.721116567 879734.651059791)
+OUT_DistributionPoints  T         5793           9        379       381         10      -  4.097755939580501   532570.1025877562       1947   20982.61  Rules64     163266  POINT (527632.969454727 890791.829439534)
+OUT_DistributionPoints  T         5767           2        292       432        283      -  2.110162966159551    592470.106870539       1947    7940.69  Rules64       4591  POINT (523648.253595576 879954.87976352)
+OUT_DistributionPoints  T         5749          14        422       430         23      -  3.132672785484124   796065.3268759134       1947   16618.55  Rules64     425237  POINT (531506.414815333 883102.226530878)
+OUT_DistributionPoints  T         5631          10        337       337          6      -  2.669398284570244  501291.10217032215       1947    11610.2  Rules64      69581  POINT (511825.76775738 882501.584784679)
+OUT_DistributionPoints  T         5759          14        412       429         47      -  8.369245573370025   660937.5585236415       1947    47042.2  Rules32     443958  POINT (553279.936556543 881625.165322864)
+OUT_DistributionPoints  T         5675          13        326       376        105      -  4.773292288150933   216551.9514061298       1947   23446.75  Rules64     436387  POINT (521327.571522196 867341.248805146)
+OUT_DistributionPoints  T         5640           2        317       336         43      -  2.491216407772224  487508.86066693824       1947   10441.03  Rules64      17455  POINT (524937.514527735 883631.958111444)
+OUT_DistributionPoints  T         5568           5        331       404        155      -  7.023375194281273   627407.8751697254       1947   40179.55  Rules32      38301  POINT (543796.193120609 878702.584852093)
+OUT_DistributionPoints  T         5580           5        407       407         13      -  5.980254508924753   773013.4766147347       1947   33334.94  Rules32      41066  POINT (541379.699657398 872424.719152778)
+OUT_DistributionPoints  T         5575          15        412       421         25      -  3.938125876944081   253311.7924729551       1947   17966.67  Rules64      81449  POINT (530835.173202445 876531.335840472)
+OUT_DistributionPoints  T         5726           9         10        10          1      -  6.385322945736418   63699.43433573358       1947   30087.36  Rules32       1025  POINT (530366.553202434 894478.174097234)
+OUT_DistributionPoints  T         5814           1        427       427          7      -  3.377471269307948   860553.8938828981       1947   16256.34  Rules64      99079  POINT (511104.658495318 873432.04940354)
+OUT_DistributionPoints  T         5591           9        350       419        143      -  1.984516135330274   320840.9295639969       1947    9084.73  Rules64      37728  POINT (521728.25982788 884786.532417867)
+OUT_DistributionPoints  T         5766          14        410       430         47      -  3.978621794411172    619510.027686647       1947   20200.89  Rules64     106691  POINT (532844.03484395 885296.403333168)
+OUT_DistributionPoints  T         5671          15        332       422        184      -  2.432050966234775   515390.9093511391       1947   12021.31  Rules64       3345  POINT (526653.98414145 877610.188054249)
+OUT_DistributionPoints  T         5800          10        412       431         45      -   1.07935107751707  461718.62499939755       1947    3145.34  Rules64     131466  POINT (515874.681936574 881470.453206096)
+OUT_DistributionPoints  T         5613          14        356       356         12      -   8.45218797218957    697479.875000276       1947   43649.44  Rules32     460113  POINT (547192.342536306 891900.580992584)
+OUT_DistributionPoints  T         5732           3        395       429         74      -  4.603554091957472   549236.4703965945       1947   24301.49  Rules64      92534  POINT (535516.860569619 881068.041898558)
+OUT_DistributionPoints  T         5710           9        275       276          7      -  3.656262980162317   96353.38912314904       1947   18085.68  Rules64     434841  POINT (523995.0497289 891092.702838805)
+OUT_DistributionPoints  T         5617           4        419       425         19      -  3.343258940493643   324221.8147512291       1947   18000.35  Rules64      26897  POINT (529355.309587398 874248.017344869)
+OUT_DistributionPoints  T         5721           2        417       427         27      -   1.84218309390977   626416.2713655293       1947    6182.29  Rules64     153122  POINT (521069.035160268 880238.715131588)
+OUT_DistributionPoints  T         5703          14        429       432         20      -  5.683585182195594   928594.9304564769       1947   31388.29  Rules32      16576  POINT (543328.733840439 884682.979043108)
+OUT_DistributionPoints  T         5636           1        396       418         50      -  3.776842038659488   344382.7647879248       1947   18876.88  Rules64      51244  POINT (511929.489471898 871158.624445963)
+OUT_DistributionPoints  T         5737           5        316       316         10      -  5.487304149449689  100086.69277498942       1947   30100.36  Rules32     441500  POINT (539922.881949517 875140.01549568)
+OUT_DistributionPoints  T         5566           4        387       431         99      -  5.337484379613175   731456.5297575713       1947   29117.29  Rules32      67288  POINT (535123.455861851 870624.476730095)
+OUT_DistributionPoints  T         5570           4        422       424         18      -  6.379454923678235    970617.169142205       1947   33985.86  Rules32      12053  POINT (536767.597010566 867477.248644762)
+OUT_DistributionPoints  T         5611          14        425       427         18      -  7.712059020041193  290746.90202397824       1947   42729.96  Rules32     405689  POINT (547882.547095037 881972.334753939)
+OUT_DistributionPoints  T         5727          14        401       402         15      -  8.971231540421758  1106311.8849884665       1947   49023.73  Rules32      40442  POINT (541586.971199732 895732.518219812)
+OUT_DistributionPoints  T         5588           5        146       160         33      -  8.048009250426368  323629.63606221357       1947   44934.35  Rules32     463116  POINT (550011.572184874 877380.692076853)
+OUT_DistributionPoints  T         5644          14        229       238         25      -   6.36697505757924   603122.3320951232       1947   33903.97  Rules32     118092  POINT (544659.068007911 886590.31079095)
+OUT_DistributionPoints  T         5635          10        238       239          6      -  2.252082965940978  153767.72311479205       1947   10840.42  Rules64      22664  POINT (510927.086576421 880414.566608474)
+OUT_DistributionPoints  T         5753          15        300       431        265      -  2.572060666574711   340339.4113546535       1947    10971.5  Rules64     138934  POINT (525179.15089452 878296.485921431)
+OUT_DistributionPoints  T         5702          13        381       383         10      -  4.376790312999137  241803.23764552627       1947   20845.04  Rules64      15342  POINT (522751.512457457 868953.148254639)
+OUT_DistributionPoints  T         5798          14        430       431         16      -  7.886791010690443   309549.4745692952       1947   41907.99  Rules32         44  POINT (548250.216695789 881310.256019513)
+OUT_DistributionPoints  T         5579           7        403       419         39      -  2.918135590872944  233937.89144807676       1947   13242.33  Rules64     422962  POINT (522999.261727396 874847.707230771)
+OUT_DistributionPoints  T         5607          10        305       305          5      -  2.840302987294137  272889.96829857916       1947   12731.62  Rules64      41203  POINT (511509.842573163 881693.210949413)
+OUT_DistributionPoints  T         5596           7        415       418         13      -  2.069389869307644   403672.1331129325       1947    9641.65  Rules64     434947  POINT (521137.470454152 874209.52048139)
+OUT_DistributionPoints  T         5678           4        418       424         19      -  3.934234592503352   763297.3042716996       1947   21878.14  Rules64      64889  POINT (532825.102842303 874585.471546316)
+OUT_DistributionPoints  T         5673          14        415       431         45      -  6.224313741114075  1001763.2806475017       1947   34936.37  Rules32      70074  POINT (545630.342044353 883421.943460472)
+OUT_DistributionPoints  T         5625           2        409       410          9      -  4.722721864958097  164358.81776043522       1947   19177.93  Rules64     445326  POINT (529970.805146895 886886.009912973)
+OUT_DistributionPoints  T         5781           7        371       431        125      -  2.891078218246153   621428.3175334977       1947   15033.29  Rules64        174  POINT (525369.956287445 873226.133401469)
+OUT_DistributionPoints  T         5680           7         47        94         94      -  2.761941188717099   86407.88906172977       1947   14185.94  Rules64     401525  POINT (523183.906459285 872836.141866843)
+OUT_DistributionPoints  T         5533          14        114       116          8      -     9.200134703694   423446.2423721778       1947   48557.22  Rules32      74443  POINT (543455.250104914 897019.598113178)
+OUT_DistributionPoints  T         5706          11        429       431         11      -   3.28519589281643    321911.177742646       1947   13682.36  Rules64     435554  POINT (514959.937284558 872360.348567937)
+OUT_DistributionPoints  T         5801          15        329       426        198      -  4.369883795623477     694248.37053528       1947   22768.22  Rules64      55172  POINT (534056.860496148 878587.712694312)
+OUT_DistributionPoints  T         5804           5        439       440         16      -  7.149090902505566  173822.08151143248       1947   39035.95  Rules32     433510  POINT (545940.583664921 877894.950790559)
+OUT_DistributionPoints  T         5698           8        310       426        236      -  1.844828822262853  472770.93946794706       1947    6199.65  Rules64      20297  POINT (520245.992492707 877819.549404532)
+OUT_DistributionPoints  T         5661           6        387       413         58      -  4.214057390954157   498143.4041467823       1947   21745.74  Rules64     404003  POINT (514625.61374098 864636.511991589)
+OUT_DistributionPoints  T         5543           8        411       422         29      -  3.238861829325744  242072.35162558698       1947   13378.33  Rules64      47183  POINT (509907.264592135 877534.687784317)
+OUT_DistributionPoints  T         5817           1        304       309         15      -  3.361631702135018  216206.12638111864       1947   16152.41  Rules64      40692  POINT (513602.679497116 872185.08884331)
+OUT_DistributionPoints  T         5760          14        395       427         76      -  5.500121465049554   989354.8471536763       1947   30184.46  Rules32      75378  POINT (540799.04832986 886596.171878274)
+OUT_DistributionPoints  T         5559           6        431       431         14      -  6.270877244410225   668429.1185060125       1947   29336.41  Rules32       5952  POINT (509927.288629542 864399.069996996)
+OUT_DistributionPoints  T         5815           4        422       425         13      -   4.20861155405473   597223.4871715278       1947   23678.51  Rules64      85778  POINT (534189.694065828 874175.25240342)
+OUT_DistributionPoints  T         5557          11        183       184          5      -  3.277231010095041   192234.0647951234       1947    13630.1  Rules64     103059  POINT (515712.363153795 872168.357086905)
+OUT_DistributionPoints  T         5740          15        401       428         60      -  5.085245686072394   602872.6995908294       1947   27462.19  Rules64      33579  POINT (535911.250358528 877575.491299079)
+OUT_DistributionPoints  T         5619          14        422       422         14      -  8.379188879332055  283677.33509540465       1947   45138.94  Rules32     443276  POINT (551644.596762592 880589.987733005)
+OUT_DistributionPoints  T         5621           6        276       276          5      -  1.974590859241133   82703.65847581853       1947    7051.11  Rules64     436576  POINT (518696.637276619 874431.587978339)
+OUT_DistributionPoints  T         5663          14        401       420         44      -  2.571537342677615   344182.9082270873       1947   12936.57  Rules64      51055  POINT (528563.063995426 882467.972852156)
+OUT_DistributionPoints  T         5656           4        433       434         16      -  7.434271000607539  155091.74664008257       1947   40907.21  Rules32     431157  POINT (538662.962983805 867465.486950463)
+OUT_DistributionPoints  T         5641           4        249       413        331      -  6.262792243595189   528900.4171701059       1947   35188.86  Rules32     120334  POINT (538744.147344708 869357.611667899)
+OUT_DistributionPoints  T         5595          14        431       432         16      -  6.326045754300767    1122476.43536639       1947    33635.4  Rules32      83294  POINT (542036.785479533 889055.883532674)
+OUT_DistributionPoints  T         5704          15        302       307         20      -  5.261407362458287  460466.62487310165       1947    28618.1  Rules32     152061  POINT (536277.888634911 876788.646806192)
+OUT_DistributionPoints  T         5803           3        367       425        121      -   4.96757820115969  515998.79155890335       1947   26690.09  Rules64      65377  POINT (536822.0421387 880034.290580168)
+OUT_DistributionPoints  T         5774          11        427       428          9      -  2.607920439451642    815442.267813657       1947    11206.8  Rules64     152637  POINT (515733.755322365 874039.546065468)
+OUT_DistributionPoints  T         5692           6        252       288         79      -  6.596216938621975   582159.8464806367       1947   33439.68  Rules32       9924  POINT (506762.478702099 865639.092556278)
+OUT_DistributionPoints  T         5645           8        345       367         50      -  2.525507740451999   423542.9585023271       1947   10666.04  Rules64      40482  POINT (511733.980256324 878455.399473191)
+OUT_DistributionPoints  T         5605          14         78        78          3      -  7.458936417938508  38430.940300557115       1947   39100.55  Rules32     430640  POINT (543097.426122815 891389.945637932)
+OUT_DistributionPoints  T         5560          14        201       243         89      -  7.532813458262909   689227.0212291183       1947   41553.81  Rules32      93524  POINT (544684.969990898 890564.552134163)
+OUT_DistributionPoints  T         5699           5        427       429         18      -   5.44392326529865   583954.1025692653       1947   31784.21  Rules32      15348  POINT (541362.110570574 875807.687629894)
+OUT_DistributionPoints  T         5761           4        410       410          7      -  3.805773096345458   704725.1173101503       1947   19066.71  Rules64      27457  POINT (528965.728831732 872904.680509323)
+OUT_DistributionPoints  T         5653           1        358       432        153      -  3.284078325369885   732116.7691764521       1947   15643.53  Rules64     412523  POINT (509082.167594408 875719.265080482)
+OUT_DistributionPoints  T         5650          13        276       426        302      -  4.084604396297941   588239.0293636397       1947   20896.31  Rules64      20466  POINT (523629.232728737 867277.886076368)
+OUT_DistributionPoints  T         5584          13        396       396          7      -  3.684161201362246   492071.2869762293       1947   18268.74  Rules64     398230  POINT (522158.876310063 868308.856913083)
+OUT_DistributionPoints  T         5690           5        420       420         14      -  5.843958849479114   820626.5602227994       1947   32440.61  Rules32      90178  POINT (541964.281956603 874462.287630045)
+OUT_DistributionPoints  T         5616           8        406       426         47      -  1.653688780344666   765124.4020775344       1947    4945.45  Rules64     118919  POINT (515841.189845051 879201.522517775)
+OUT_DistributionPoints  T         5593          14        142       142          5      -  5.956925124343758   319192.8125206203       1947   29244.86  Rules32      48571  POINT (531991.099343532 889230.262323763)
+OUT_DistributionPoints  T         5771           3        198       241         89      -  4.710445051724506  334575.95533130347       1947   23034.37  Rules64      68654  POINT (534180.339306952 880388.931770843)
+OUT_DistributionPoints  T         5786           7        393       427         74      -  4.828908961442246   589488.3952089959       1947   25780.19  Rules64      85872  POINT (530079.603254893 871234.255848602)
+OUT_DistributionPoints  T         5561          11        330       430        204      -  2.072407686943851   704498.1778363067       1947    9661.45  Rules64     150011  POINT (515797.093052031 875507.231038881)
+OUT_DistributionPoints  T         5542          14        385       432        105      -  4.613529156953125   962172.0841163626       1947   26335.44  Rules32     159292  POINT (539444.842588117 883948.53956903)
+OUT_DistributionPoints  T         5632          10        408       429         49      -  2.634379310897504   640087.5070768931       1947   13348.92  Rules64     161298  POINT (509994.322653678 881748.755203179)
+OUT_DistributionPoints  T         5734           6          5         5          1      -  2.915253396706251    48193.8626938286       1947   13223.42  Rules64     164953  POINT (519038.782035066 869469.068654429)
+OUT_DistributionPoints  T         5581           9         10        13          7      -  6.184077408733547   82074.59158689568       1947   30735.35  Rules32     455841  POINT (532486.844743585 895549.350994841)
+OUT_DistributionPoints  T         5714           6        284       287         15      -  6.889982338497968   537669.9705037869       1947   33398.77  Rules32       2804  POINT (511118.314093509 866964.315132709)
+OUT_DistributionPoints  T         5563           9        296       335         83      -  3.531642738720966  285288.79656526225       1947   17267.96  Rules64      15152  POINT (523624.705104695 890666.708990989)
+OUT_DistributionPoints  F           23           6          2         4          4      -  2.125953804768649   3375.699754100155       1947    11981.3  Rules        57084  POINT (519009.378799822 870393.18239165)
+OUT_DistributionPoints  T         5806          14        366       372         24      -  8.526804214861817   877510.8709920496       1947   46107.55  Rules32      34227  POINT (551635.852385745 883075.585775938)
+OUT_DistributionPoints  T         5812           3        297       321         53      -  2.959725958530291    267636.797522876       1947   13515.24  Rules64      42385  POINT (528113.572945978 879117.107595896)
+OUT_DistributionPoints  T         5602           3        377       427        106      -  5.670345482293097   579912.3070857361       1947   29332.92  Rules64      27417  POINT (537484.967195348 881259.850763558)
+OUT_DistributionPoints  T         5679           1        263       282         42      -  2.861339073725454  139195.09864889336       1947   12869.65  Rules64     411876  POINT (512414.763664113 874989.908670245)
+OUT_DistributionPoints  T         5565           2        407       429         51      -  4.807666037452309   695437.5402298121       1947    23672.3  Rules64       9352  POINT (531561.73445055 886976.492372847)
+OUT_DistributionPoints  T         5729           6        144       145          5      -   2.16216069330649   268400.1722079857       1947   10250.38  Rules64      30674  POINT (518381.902202282 871438.311128662)
+OUT_DistributionPoints  T         5808           5        392       393         15      -   8.09366541198938  261060.06587574774       1947   43265.43  Rules32     428917  POINT (547942.148031519 876712.977664496)
+OUT_DistributionPoints  T         5811           9        382       432        106      -  4.666562027674509   778754.6808193267       1947   24714.92  Rules64      14679  POINT (528978.99189722 893110.78568365)
+OUT_DistributionPoints  T         5664           5        167       186         43      -   6.53867341448333   117524.0863825717       1947    35030.6  Rules32      17559  POINT (539972.12328868 875886.563943542)
+OUT_DistributionPoints  T         5733          14        394       424         66      -  3.667174840533104   786085.4232380735       1947   20125.78  Rules64      57836  POINT (534201.244377106 883143.148164456)
+OUT_DistributionPoints  T         5629          14        336       337         13      -  6.828437503294526   892088.1660649235       1947   36931.93  Rules32       7491  POINT (538362.944702705 889607.707065073)
+OUT_DistributionPoints  T         5546          14        412       432         47      -  2.698422670092596   571379.0907837305       1947   13769.15  Rules64      79969  POINT (528865.398142262 883002.220919541)
+OUT_DistributionPoints  T         5713          15        390       413         52      -  3.881066231055915  456934.78557642526       1947   19560.76  Rules64      23681  POINT (531492.373531184 877553.889892974)
+OUT_DistributionPoints  T         5685          13        246       289         90      -   3.35851198006833   437727.4768827209       1947   16131.94  Rules64      75816  POINT (521253.770353321 869013.572936389)
+OUT_DistributionPoints  T         5787           5        355       408        116      -  5.512740586608962   575623.1815694305       1947   30267.27  Rules32     404407  POINT (540100.149690322 874458.058756015)
+OUT_DistributionPoints  T         5739           2        414       429         37      -  2.709202401283587   546043.2488676761       1947    9902.88  Rules64      40552  POINT (523631.776076589 884312.894551159)
+OUT_DistributionPoints  T         5779          14        368       389         53      -  6.602686968387545   868033.6808121395       1947   33482.13  Rules32      88333  POINT (537425.631896069 893437.511868965)
+OUT_DistributionPoints  T         5754          10        418       421         13      -   2.47369409532713    931035.471734212       1947    8357.56  Rules64      17196  POINT (519346.431302185 885696.677770431)
+OUT_DistributionPoints  T         5810           3        351       432        171      -  6.070512103771972   612173.2327230212       1947   31958.68  Rules32     442586  POINT (539622.990855197 880899.610563748)
+OUT_DistributionPoints  T         5790           7        384       431        100      -  4.304100239013582   773277.1835980831       1947   22336.57  Rules64      26277  POINT (528856.463428884 869359.999746346)
+OUT_DistributionPoints  T         5684           1        421       431         27      -  2.786087495630662  169533.91602848822       1947   12375.88  Rules64     410904  POINT (513568.589527443 875173.571876099)
+OUT_DistributionPoints  T         5540           7        268       431        328      -  3.659873201386338   469836.1078315277       1947   20077.87  Rules64      97034  POINT (527630.131071602 870395.171541309)
+OUT_DistributionPoints  T         5606           4        365       377         30      -   3.09564531524473   345310.2974670825       1947   16375.59  Rules64      84146  POINT (528664.843100944 875185.001950254)
+OUT_DistributionPoints  T         5689           6        297       411        231      -  3.376681605088922  434050.50225564325       1947   18219.66  Rules64     170005  POINT (517534.32460161 865496.788647133)
+OUT_DistributionPoints  T         5695           6        428       428          7      -  4.035242769421906   788682.9290412402       1947   20572.42  Rules64      42677  POINT (515303.512767783 866999.748036875)
+OUT_DistributionPoints  T         5638          14        127       130         10      -  6.297212685787584  332818.21962645435       1947   33446.21  Rules32     402426  POINT (542683.562982175 883268.476435199)
+OUT_DistributionPoints  T         5818          14        405       406         15      -  8.782909686458975  207206.02766750922       1947   49756.53  Rules32      23277  POINT (554592.3206162 880597.235729559)
+OUT_DistributionPoints  T         5578           4        429       432         20      -  5.105197707329563   844051.1195543262       1947   27593.11  Rules32      80277  POINT (535467.705733937 871809.82784648)
+OUT_DistributionPoints  T         5819           2        423       424          9      -  3.678212378845372   468136.4436402467       1947    14292.7  Rules64      91040  POINT (527438.284992758 884938.251406047)
+OUT_DistributionPoints  T         5633           5        217       279        129      -   8.83731506158204   612097.5799277329       1947   48145.02  Rules32     127896  POINT (548546.508066402 878733.392835462)
+OUT_DistributionPoints  T         5622          14        431       431         14      -  8.431552516501965  1010707.3507036301       1947   45482.54  Rules32     106822  POINT (543678.033069388 894849.800321027)
+OUT_DistributionPoints  T         5682           6         69        83         29      -  4.694528486139077   271343.8424514082       1947   22929.93  Rules64      56448  POINT (519667.562332615 866877.389169232)
+OUT_DistributionPoints  T         5612           8        283       410        257      -  2.080474991408757  389062.34783640114       1947    7745.88  Rules64      94299  POINT (522310.041091088 877204.10042834)
+OUT_DistributionPoints  T         5538           4        404       428         54      -  3.629391916428041  509788.30079047865       1947   19877.86  Rules64      24017  POINT (531169.396462829 874220.962262223)
+OUT_DistributionPoints  T         5772           7        219       431        425      -  5.244187690726774   629619.1268964678       1947   28505.11  Rules32     105537  POINT (526553.236539544 865280.949016818)
+OUT_DistributionPoints  T         5792           1        147       147          3      -  2.934700881215432  195258.92948788978       1947   13351.03  Rules64      74328  POINT (512004.574799714 874669.456615357)
+OUT_DistributionPoints  T         5630           9        155       155          3      -  5.033856717299461   277478.9309695444       1947   25156.49  Rules64      89020  POINT (529419.376832073 893093.685030755)
+OUT_DistributionPoints  T         5672           1        218       432        429      -  2.789735258017306   422957.4591699393       1947   12399.81  Rules64      45525  POINT (511137.974730119 876355.860037616)
+OUT_DistributionPoints  T         5701           5        361       420        123      -   4.86776954867191  463647.87429778115       1947   26035.18  Rules64      12693  POINT (535638.31597444 875926.845052957)
+OUT_DistributionPoints  T         5769           9         32        32          1      -  5.543292743623467  169670.00946371182       1947   28499.24  Rules32       7415  POINT (529829.120933617 895953.345340024)
+OUT_DistributionPoints  T         5587           5        104       170        134      -   9.17207687581463   324769.0629960556       1947   50341.61  Rules32     125545  POINT (552395.262834292 878962.422905992)
+OUT_DistributionPoints  T         5750          14        281       301         49      -  7.850570507025374   801131.5231324548       1947   41670.33  Rules32      29464  POINT (549948.812450127 886069.394058633)
+OUT_DistributionPoints  T         5697          13        408       415         21      -  2.172542040553417  362373.12454033236       1947    10318.5  Rules64      90690  POINT (521026.62854675 873432.103660166)
+OUT_DistributionPoints  T         5669           2        422       426         15      -  3.331885013579891  393724.33839602314       1947   13988.72  Rules64      64295  POINT (526248.488502618 885760.268783039)
+OUT_DistributionPoints  T         5666           4        357       417        130      -  7.098826240394313   691484.8408540968       1947   38706.13  Rules32     104529  POINT (539338.398401974 866457.701636288)
+OUT_DistributionPoints  T         5763           9        360       430        145      -  1.074117879636141   741389.1588036555       1947     3111.0  Rules64      17963  POINT (518959.738045016 882019.464662265)
+OUT_DistributionPoints  T         5599           7        321       390        142      -  3.457565992369038   472029.9817370667       1947    18750.4  Rules64     442009  POINT (526603.645061906 870692.049837749)
+OUT_DistributionPoints  T         5665           5        384       386         16      -  6.403455597036162   415413.6131276008       1947   36111.84  Rules32      83815  POINT (541959.518615101 870385.709164894)
+OUT_DistributionPoints  T         5677          10        416       426         27      -  1.547089353981519   563426.1602080751       1947    6214.48  Rules64      35637  POINT (513720.711652274 881735.953995303)
+OUT_DistributionPoints  T         5564           2        423       431         23      -  4.296583292826135   708465.5930414876       1947   20318.75  Rules64      72451  POINT (529968.993431942 885122.817827074)
+OUT_DistributionPoints  T         5655           4        256       274         40      -  4.544181828201761  466545.91670632473       1947   23911.91  Rules64     422548  POINT (533346.223523995 872738.358327375)
+OUT_DistributionPoints  T         5783          10        290       427        277      -  2.299125349614111   703069.7554845442       1947    9180.59  Rules64     144242  POINT (514984.686228554 885111.237456369)
+OUT_DistributionPoints  T         5748           8        417       426         25      -  1.061033812622046   410696.3558498832       1947    3025.15  Rules64      66709  POINT (517197.056338177 879780.975384227)
+OUT_DistributionPoints  T         5789          12        213       426        426      -  4.374887747900916   564370.4820558887       1947   26738.06  Rules32     125181  POINT (529518.180288081 866011.236191142)
+OUT_DistributionPoints  T         5545          14        309       341         73      -  7.646821354844127   604721.6035728083       1947   40333.39  Rules32     407731  POINT (549085.359834939 882375.502786995)
+OUT_DistributionPoints  T         5562           1        374       432        121      -  3.977576019391779   807851.5229219827       1947   20194.03  Rules64      77269  POINT (508804.749913924 872081.071759068)
+OUT_DistributionPoints  T         5600           3        392       401         30      -  6.785466721088458   801908.5908525165       1947   36649.97  Rules32      55293  POINT (542651.459148733 881307.444630857)
+OUT_DistributionPoints  T         5627           2        358       408        105      -  1.523590969405622  461134.86037398846       1947     6060.3  Rules64     127832  POINT (523055.268381324 881172.545928481)
+OUT_DistributionPoints  T         5676           9        384       386         10      -  3.654517450584023   723651.3396438404       1947   18074.23  Rules64     133342  POINT (525866.848796558 889086.670705074)
+OUT_DistributionPoints  T         5717           8        380       424         94      -  1.237257807646138  507754.66688303737       1947    2212.97  Rules64      71002  POINT (518552.426720747 878919.83212594)
+OUT_DistributionPoints  T         5577           4        273       352        162      -  4.632060922664429   517398.5289927986       1947   24488.54  Rules64      50948  POINT (532838.108396497 871396.030224412)
+OUT_DistributionPoints  T         5738           9        383       396         32      -  5.378894338909258  282202.57780209056       1947   27420.51  Rules64      96016  POINT (531631.068185582 893088.684195528)
+OUT_DistributionPoints  T         5594           1        323       432        222      -  3.549312516401883    389976.513468536       1947   17383.91  Rules64      29016  POINT (513461.856364817 870719.934336314)
+OUT_DistributionPoints  T         5609           4        406       427         55      -  5.839522164771396   489030.4736874786       1947    32411.5  Rules32      55288  POINT (533614.764954181 868953.072252289)
+OUT_DistributionPoints  T         5583          14        141       141          5      -  8.541774949674341  450239.94730502856       1947   44237.28  Rules32     150395  POINT (547607.780167117 885659.097756311)
+OUT_DistributionPoints  T         5603           6        415       417         11      -  2.796464349883283   168965.4514359371       1947   12443.97  Rules64     417538  POINT (519979.718080457 870863.116004659)
+OUT_DistributionPoints  T         5651           7        336       427        186      -  2.605527903851903  382390.86611690244       1947   13159.61  Rules64      12243  POINT (523549.99089196 873229.496294466)
+OUT_DistributionPoints  T         5624          14        312       312         10      -   5.54743863988601   606685.2208822273       1947   26557.94  Rules32     126899  POINT (534037.084357936 889647.498357937)
+OUT_DistributionPoints  T         5657           9        362       396         74      -  4.680479724860084   796504.9537352305       1947   22837.75  Rules64     135883  POINT (524773.246913489 891361.922045256)
+OUT_DistributionPoints  T         5755           8        243       251         20      -  1.580874141890068   195202.7311664375       1947    4467.67  Rules64      87957  POINT (519676.894175087 878507.268942018)
+OUT_DistributionPoints  T         5539           6        390       400         26      -  4.372161250934366   381677.2548872534       1947   22783.16  Rules64     150913  POINT (513793.888032815 866409.834674818)
+OUT_DistributionPoints  T         5652           3        199       381        365      -  2.298374262249166   264146.1993166631       1947   11144.17  Rules64     115817  POINT (527316.733612421 880394.657100555)
+OUT_DistributionPoints  T         5807           5        417       419         17      -  6.008902518033356   746078.6763591846       1947   33522.92  Rules32     131022  POINT (540663.858592308 876862.197497486)
+OUT_DistributionPoints  T         5558           8        475       476         10      -  2.676944412857167  181700.41050919166       1947   11659.72  Rules64     137100  POINT (512223.040942253 877616.721828283)
+OUT_DistributionPoints  T         5778           6        248       248          4      -  4.655411539412608    215163.439168134       1947   22673.26  Rules64     432880  POINT (514498.050186614 864865.520020219)
+OUT_DistributionPoints  T         5683           6        398       428         66      -   2.32854259805405  498079.11802675773       1947    9373.62  Rules64       3731  POINT (517967.396590092 872311.335078648)
+OUT_DistributionPoints  T         5654           5        411       425         41      -  5.015259422097068   459337.4573215896       1947   27002.96  Rules32      62868  POINT (537440.54256684 874967.612186428)
+OUT_DistributionPoints  T         5797          15        355       432        159      -  2.454843319588695  433087.92923764355       1947   10202.36  Rules64     153942  POINT (524204.120209522 876958.014299956)
+OUT_DistributionPoints  T         5688           7        416       417          9      -  2.819902117894367   610470.3555268571       1947   12597.76  Rules64      60365  POINT (522761.980208011 872943.573734542)
+OUT_DistributionPoints  T         5643           7        374       429        115      -  4.316175006504835   703341.3309593343       1947    22415.8  Rules64     106738  POINT (527636.960892826 872052.25496072)
+OUT_DistributionPoints  T         5658           5        416       432         45      -  6.686678109733318   331972.7558147686       1947   36001.75  Rules32     430256  POINT (544733.954522601 876209.2758336)
+OUT_DistributionPoints  T         5696          11        238       239          6      -    3.6780349624488     80330.153147566       1947   14291.54  Rules64     408780  POINT (514644.106153708 872204.389142815)
+OUT_DistributionPoints  T         5582           4        426       429         20      -  4.970120884943975   822388.4812882246       1947   28675.28  Rules32      57245  POINT (538228.375112963 873352.267533083)
+OUT_DistributionPoints  T         5541           2        345       361         38      -  3.718735948126083  122944.53265279428       1947   16527.11  Rules64     408112  POINT (528540.240968949 886181.318843234)
+OUT_DistributionPoints  T         5711          14         50        50          2      -  7.826313484983463  305163.60259581154       1947   39542.66  Rules32      64675  POINT (539657.274480151 897629.502250441)
+OUT_DistributionPoints  T         5576          12        144       283        279      -  6.071624673160673  408725.41372021055       1947   33934.48  Rules32     454389  POINT (534693.539459452 866410.736684798)
+OUT_DistributionPoints  T         5708           7        416       417          9      -  4.976627735996178    820111.074868975       1947   24780.97  Rules64     144180  POINT (530167.236099355 869419.618144677)
+OUT_DistributionPoints  T         5745           7        583       584         12      -  3.126444065610087  193354.34672205438       1947   14609.18  Rules64      69689  POINT (524169.428875081 872644.662418894)
+OUT_DistributionPoints  T         5642          10        412       428         39      -  2.623216930982474   859944.4177995501       1947   11307.18  Rules64      69454  POINT (518634.56062433 888375.357018733)
+OUT_DistributionPoints  T         5799          13        257       431        350      -  2.165835339776798   394535.4056478501       1947    8305.99  Rules64      17213  POINT (521344.007938401 875860.435856971)
+OUT_DistributionPoints  T         5722           1        207       414        414      -  3.601202013811303   314488.9529805246       1947   19692.89  Rules64     400570  POINT (512548.052935894 868365.769860064)
+OUT_DistributionPoints  T         5555           2        374       428        113      -  2.908241302982381  284889.38049108646       1947   11208.91  Rules64     409588  POINT (523312.43512026 883321.259569567)
+OUT_DistributionPoints  T         5715           2        252       264         28      -  2.556134990224497  274344.94270212174       1947    8898.51  Rules64      33409  POINT (523182.856950182 883819.954556046)
+OUT_DistributionPoints  T         5785          15        411       422         29      -  4.066855788668765   434993.8475835619       1947   18811.35  Rules64      21214  POINT (530159.061759259 876403.693899095)
+OUT_DistributionPoints  T         5623           1        411       428         41      -  5.054889510408911   808187.1131563368       1947    25294.5  Rules64       1013  POINT (509386.018349811 869190.320387125)
+OUT_DistributionPoints  T         5780           3        395       415         46      -  2.970709332232659  333320.64877642854       1947    15555.8  Rules64     157711  POINT (529512.722953871 879940.424563099)
+OUT_DistributionPoints  T         5746          13        265       430        332      -  3.439874020368919    562320.813592432       1947   18634.31  Rules64     129878  POINT (523620.702146868 869295.770783378)
+OUT_DistributionPoints  T         5719           2        387       411         54      -  3.535816494954127  392245.59041336254       1947   13358.35  Rules64      93838  POINT (524185.833840844 885454.704587187)
+OUT_DistributionPoints  T         5550           6        370       426        122      -  6.054738185109533   793325.6866054968       1947   29886.67  Rules32      89849  POINT (509200.295195036 865878.18291357)
+OUT_DistributionPoints  T         5537           1        233       262         62      -  5.134521981570297   589521.6266944526       1947   25817.02  Rules64      14037  POINT (507724.274053602 872957.894774654)
+OUT_DistributionPoints  T         5608           9        271       295         52      -  3.306814706275177   381336.6100592109       1947   15792.72  Rules64      33811  POINT (522698.871263813 888201.477839481)
+OUT_DistributionPoints  T         5626           2        425       427         11      -  2.994654148723581    257250.232032546       1947   11775.92  Rules64     445480  POINT (524919.896498879 884940.742086503)
+OUT_DistributionPoints  T         5794           2        354       368         34      -  3.936272839866365   438097.8404520474       1947   17954.51  Rules64     426054  POINT (528788.056529691 885319.691270921)
+OUT_DistributionPoints  T         5647           1          1         2          2      -   3.94951037235613  27512.701089937716       1947   20009.87  Rules64      83056  POINT (514239.139738149 869330.523175392)
+OUT_DistributionPoints  T         5601          14        478       479         17      -  7.849976096651046   170196.8759519342       1947   41666.43  Rules32     419362  POINT (547128.94912839 880709.768227624)
+OUT_DistributionPoints  T         5784           3        353       360         25      -  6.869091976698851  485325.37197806104       1947   35230.19  Rules32      49869  POINT (541366.399287518 880124.587866531)
+OUT_DistributionPoints  T         5765           6        387       388          9      -  2.507988766730763  295442.06267669995       1947   10551.09  Rules64      86643  POINT (519476.658258233 872820.118591697)
+OUT_DistributionPoints  T         5758          13        286       373        178      -  3.018008591192411    239748.821645212       1947   15866.17  Rules64     412760  POINT (522576.156023149 870388.961122365)
+OUT_DistributionPoints  T         5742          14        391       427         84      -  5.805718546242137   707866.7686414873       1947   30221.19  Rules32       5933  POINT (538411.504472099 886567.245370704)
+OUT_DistributionPoints  T         5718          13        242       287         94      -  2.846874834451968  502686.83712727705       1947   12774.74  Rules64       3220  POINT (521172.427442942 871142.486294805)
+OUT_DistributionPoints  T         5791           6        226       323        197      -   3.04006152290143  248844.32015444883       1947   16010.87  Rules64      12720  POINT (518151.040957727 866979.235616158)
+OUT_DistributionPoints  T         5551          10        430       432         11      -  1.107260996259341   708007.7135887002       1947    3328.48  Rules64      32264  POINT (517111.715566735 882439.403017116)
+OUT_DistributionPoints  T         5747           1        415       422         21      -  2.966767731735227  457316.96316079784       1947   15529.94  Rules64      57658  POINT (513064.563481012 871974.840067759)
+OUT_DistributionPoints  T         5777          14         42        42          2      -  9.471893553238893   194466.3063729865       1947   52308.91  Rules32      86505  POINT (539575.084831293 894893.845094999)
+OUT_DistributionPoints  T         5670          14        377       378         14      -  8.100452259061685   886134.7195949473       1947   43309.97  Rules32      12910  POINT (544711.971558873 893729.558709275)
+OUT_DistributionPoints  T         5751           6        329       399        145      -  5.019118130816935   353210.1871043042       1947   25059.78  Rules64      65275  POINT (512149.835360408 864356.05163707)
+OUT_DistributionPoints  T         5693           9        372       410         82      -  2.635302041042761   381131.5753931841       1947   13354.97  Rules64      32762  POINT (523674.680331504 887403.477241655)
+OUT_DistributionPoints  T         5667          15        377       392         36      -  4.807969249616026   591263.8958749162       1947   25642.79  Rules64      14943  POINT (534824.5632403 877277.758051747)
+OUT_DistributionPoints  T         5687           3        326       389        135      -  5.850392744708686   768822.1038717994       1947   30514.33  Rules32      54945  POINT (538846.102598104 878677.95398117)
+OUT_DistributionPoints  T         5615          14        394       395          9      -  4.921239916895862   806923.8966164279       1947   24417.54  Rules64      98077  POINT (534208.750804144 888055.096887356)
+OUT_DistributionPoints  T         5646           1        326       327          8      -  3.495312353273768   95062.65255584853       1947   17029.57  Rules64     406749  POINT (512678.092757051 871513.938482606)
+OUT_DistributionPoints  T         5573           6        374       430        117      -  2.202029040394854  483302.36319917534       1947    8543.48  Rules64      34216  POINT (517900.782394424 873199.979931484)
+OUT_DistributionPoints  T         5592           3        389       430         88      -  3.515964251775856   702070.6332973039       1947   19133.59  Rules64     101044  POINT (531523.976675211 881511.432655303)
+OUT_DistributionPoints  T         5637           5        390       432         95      -  6.243035333763662   623559.7028248277       1947   35059.22  Rules32     164212  POINT (544244.222820675 875860.318180886)
+OUT_DistributionPoints  T         5813           9        303       348         95      -  4.511401621173087   398964.9474542596       1947   23696.81  Rules64     109227  POINT (526307.702017212 893044.782444359)
+OUT_DistributionPoints  T         5532           3        420       432         31      -  5.565001646604276   459130.5589696163       1947   28641.69  Rules64     138498  POINT (538094.840001528 880391.932433695)
+OUT_DistributionPoints  T         5585          14        418       419          9      -  4.562866879896809  1041339.8392415795       1947   24034.51  Rules64      36732  POINT (536728.392731289 884375.159748257)
+OUT_DistributionPoints  T         5598          13        409       417         23      -   3.78333929214974   410916.4978177243       1947   18919.51  Rules64      19685  POINT (524899.070349234 870773.558803776)
+OUT_DistributionPoints  T         5816          10        394       430         78      -  1.981253464302952  316250.02402362303       1947    9063.32  Rules64     454998  POINT (512059.261604119 881082.559042042)
+OUT_DistributionPoints  T         5552           9        425       426          9      -   4.39775260467094   592866.5369364694       1947   20982.59  Rules64       5624  POINT (528189.160451994 890255.762838023)
+OUT_DistributionPoints  T         5743          14        359       413        118      -  7.123556862839912   697827.5619574639       1947   38868.41  Rules32     128997  POINT (545451.773389822 881503.816779052)
+OUT_DistributionPoints  T         5724           8        406       417         29      -  3.139320823061191  500520.40439150727       1947   12725.18  Rules64     417018  POINT (512468.695566264 879749.471168735)
+OUT_DistributionPoints  T         5628           9        420       424         15      -  1.518354961654642   612657.5546767924       1947    6025.94  Rules64      51381  POINT (519890.020851941 883938.925061921)
+OUT_DistributionPoints  T         5776          14        387       432        101      -  6.333807173630892  1103924.3351902117       1947   33686.33  Rules32     167807  POINT (538087.686808019 891834.870331662)
+OUT_DistributionPoints  T         5752          10        414       428         35      -    3.3036355206501    913631.624648641       1947   15771.86  Rules64      16183  POINT (521323.434187393 890390.108457927)
+OUT_DistributionPoints  T         5544           8        321       423        208      -  1.886817595790601   598962.2412082924       1947    6475.17  Rules64      19276  POINT (514488.493250629 880176.312100985)
+OUT_DistributionPoints  T         5634          11        414       414          7      -  3.344142262344861   316601.8746108197       1947   14069.15  Rules64     409160  POINT (516723.411072398 872737.528396349)
+OUT_DistributionPoints  T         5571           4        304       405        209      -  5.632024745032029   562054.1331514064       1947   31049.97  Rules32     135540  POINT (539345.009694943 872102.132233484)
+OUT_DistributionPoints  T         5620           6        318       432        232      -  4.921920848919734   701181.4187744068       1947    26390.5  Rules64     415135  POINT (512382.912806054 865477.767603063)
+OUT_DistributionPoints  T         5639           9        381       382         14      -   6.50092522318317  185316.70567181497       1947    32814.4  Rules32     442777  POINT (534609.366279157 890723.48288179)
+OUT_DistributionPoints  T         5686           5        225       225          8      -   6.80122726647808   413769.2707878014       1947   36753.39  Rules32     130605  POINT (543293.373373748 876798.005318341)
+OUT_DistributionPoints  T         5604           1        347       363         38      -  3.129727899300709  496184.03714619466       1947   14630.73  Rules64      55445  POINT (512390.010556767 873146.51415168)
+OUT_DistributionPoints  T         5536           3        374       391         40      -  3.498731093248653   609836.0464477276       1947   19020.51  Rules64      79294  POINT (531523.402509133 881398.357633414)
+OUT_DistributionPoints  T         5618           4        287       408        245      -  4.756395761270209   444783.9722816499       1947   25304.38  Rules64      68005  POINT (532808.919409438 870605.661778655)
+OUT_DistributionPoints  T         5553          10        278       305         58      -  2.342536477520116  523979.38954298815       1947    9465.44  Rules64     138638  POINT (513126.064527412 883260.531613926)
+OUT_DistributionPoints  T         5756          14        388       403         42      -  6.606520716502847   861210.4401428932       1947   35475.79  Rules32      83374  POINT (542073.89355443 890870.218589009)
+OUT_DistributionPoints  T         5720          14        430       431         16      -  6.097320393485476  1180838.3646841312       1947   32134.58  Rules32      25524  POINT (538176.056943073 888137.453035626)
+OUT_DistributionPoints  T         5820          15        312       432        243      -  2.944909239618245   671840.8162702863       1947   13418.01  Rules64       5965  POINT (525084.218649668 875874.699577697)
+OUT_DistributionPoints  T         5735           8        413       414          9      -   1.78211051775135  160397.73286000517       1947    5788.12  Rules64      94818  POINT (520401.010036542 879006.309209227)
+OUT_DistributionPoints  T         5705          15        292       334         88      -  4.503022859950545   449823.7534536748       1947   23641.83  Rules64      15124  POINT (534172.304775265 876232.03680604)
+OUT_DistributionPoints  T         5716          12        203       406        406      -  4.895765078107896  495412.23873302154       1947   30155.88  Rules32     402739  POINT (531642.362727974 866398.212114144)
+
+

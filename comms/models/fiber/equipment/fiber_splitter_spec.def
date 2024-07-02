@@ -1,0 +1,65 @@
+{
+    "datasource": "myworld",
+    "name": "fiber_splitter_spec",
+    "external_name": "{:fiber_splitter_spec_external_name}",
+    "title": "[name]",
+    "short_description": "",
+    "track_changes": true,
+    "versioned": false,
+    "editable": {
+        "insert_from_gui": false,
+        "delete_from_gui": false,
+        "update_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)",
+            "key": true
+        },
+        {
+            "name": "model",
+            "external_name": "{:spec_model_field_name}",
+            "type": "string(128)"
+        },
+        {
+            "name": "description",
+            "external_name": "{:spec_description_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "manufacturer",
+            "external_name": "{:spec_manufacturer_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "n_fiber_out_ports",
+            "external_name": "{:n_out_ports_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "cost",
+            "external_name": "{:spec_cost_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "cost_currency",
+            "external_name": "{:spec_currency_field_name}",
+            "type": "string(3)"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "retired",
+            "external_name": "{:spec_retired_field_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": false
+        }
+    ],
+    "queries": []
+}

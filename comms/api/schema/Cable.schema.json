@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Cable.schema.json",
+    "title": "Cable",
+    "definitions": {
+        "Cable": {
+            "$id": "#Cable",
+            "description": "Parent schema for cable objects.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "The name of the cable",
+                    "type": "string"
+                },
+                "specification": {
+                    "description": "The specificiation of the cable",
+                    "type": "string"
+                },
+                "directed": {
+                    "description": "True if is a distribution cable.)",
+                    "type": "boolean"
+                },
+                "technology": {
+                    "description": "Technology (physical media) of the cable",
+                    "type": "string",
+                    "enum": ["fiber", "copper", "coax"]
+                },
+                "count": {
+                    "description": "Number of stands in the cable",
+                    "type": "number"
+                },
+                "laborCosts": {
+                    "description": "Labor cost associated with feature, overides spec derived labor cost",
+                    "type": "string"
+                },
+                "path": {
+                    "description": "Path geometry for the cable",
+                    "$ref": "https://geojson.org/schema/LineString.json"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "./Feature.schema.json"
+                }
+            ]
+        }
+    }
+}

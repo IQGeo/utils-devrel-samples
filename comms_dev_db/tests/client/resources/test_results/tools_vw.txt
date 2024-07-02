@@ -1,0 +1,62 @@
+TEST: VIRTUAL WALKOUT
+    input: WH-P-009
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: Route (Underground): 44
+    label: Route (Underground): 44
+    label: Route (Underground): 391
+    label: Route (Underground): 391
+    label: Route (Underground): 367
+    label: Route (Underground): 367
+    label: User Groups
+    label: Layout Strand
+    label: Path Finder
+    label: Connect Customer
+    label: Virtual WalkoutVirtual Walkout
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+    label: Virtual Walkout
+    button: Close
+    label: Set Path
+    button (disabled): Previous
+    button: Play
+    button: Next
+    button: Set Path
+    button: Reverse path
+
+

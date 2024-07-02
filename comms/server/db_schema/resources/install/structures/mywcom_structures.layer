@@ -1,0 +1,28 @@
+{
+    "name": "mywcom_structures",
+    "display_name": "{:structures_layer_display_name}",
+    "category": "overlay",
+    "code": "mywcom_st",
+    "description": "{:mywcom_structures_layer_desc}",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": ""
+    },
+    "transparency": 0,
+    "min_scale": 10,
+    "max_scale": 22,
+    "control_item_class": "myw.MyWorldLegendLayerControlWidget",
+    "feature_types": [
+        {
+            "name": "mywcom_route_junction",
+            "field_name": "location",
+            "min_vis": 20,
+            "point_style": "circle:#783f04:0.5m:#783f04"
+        }
+    ]
+}

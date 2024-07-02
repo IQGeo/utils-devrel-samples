@@ -1,0 +1,66 @@
+Request: POST: /modules/comms/loc/update
+Response: 200 (200 OK)
+b'{"mywcom_fiber_segment/184": [{"name": "WH-001", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100000", "loc_ref": "mywcom_line_of_count/100000", "low": 1, "high": 10, "origin": "mywcom_fiber_segment/184", "forward": true, "physical": false}]}'
+
+
+"{/"mywcom_fiber_segment/184/": [{/"name/": /"WH-001/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100000/", /"loc_ref/": /"mywcom_line_of_count/100000/", /"low/": 1, /"high/": 10, /"origin/": /"mywcom_fiber_segment/184/", /"forward/": true, /"physical/": false}]}"
+DATABASE CHANGES: AFTER INITIAL SETTING OF LOC
+   insert data.mywcom_line_of_count(100000)
+   insert data.mywcom_line_of_count_section(100000)
+
+Request: POST: /modules/comms/loc/get
+Response: 200 (200 OK)
+b'{"mywcom_fiber_segment/184": [{"name": "WH-001", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100000", "loc_ref": "mywcom_line_of_count/100000", "low": 1, "high": 10, "origin": "mywcom_fiber_segment/184", "forward": true, "physical": false}]}'
+
+
+Request: POST: /modules/comms/loc/update
+Response: 200 (200 OK)
+b'{"mywcom_fiber_segment/184": [{"name": "WH-002", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100000", "loc_ref": "mywcom_line_of_count/100000", "low": 1, "high": 10, "origin": "mywcom_fiber_segment/184", "forward": true, "physical": false}, {"name": "WH-003", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100001", "loc_ref": "mywcom_line_of_count/100001", "low": 1, "high": 5, "origin": "mywcom_fiber_segment/184", "forward": true, "physical": false}]}'
+
+
+"{/"mywcom_fiber_segment/184/": [{/"name/": /"WH-002/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100000/", /"loc_ref/": /"mywcom_line_of_count/100000/", /"low/": 1, /"high/": 10, /"origin/": /"mywcom_fiber_segment/184/", /"forward/": true, /"physical/": false}, {/"name/": /"WH-003/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100001/", /"loc_ref/": /"mywcom_line_of_count/100001/", /"low/": 1, /"high/": 5, /"origin/": /"mywcom_fiber_segment/184/", /"forward/": true, /"physical/": false}]}"
+DATABASE CHANGES: AFTER UPDATE LOC
+   update data.mywcom_line_of_count(100000) fields=(label,name)
+   insert data.mywcom_line_of_count(100001)
+   update data.mywcom_line_of_count_section(100000) fields=(label)
+   insert data.mywcom_line_of_count_section(100001)
+
+Request: POST: /modules/comms/loc/update
+Response: 200 (200 OK)
+b'{"mywcom_fiber_segment/184": []}'
+
+
+"{/"mywcom_fiber_segment/184/": []}"
+DATABASE CHANGES: AFTER DELETE LOC
+   update data.mywcom_line_of_count(100000) fields=(deleted)
+   update data.mywcom_line_of_count(100001) fields=(deleted)
+   delete data.mywcom_line_of_count_section(100000)
+   delete data.mywcom_line_of_count_section(100001)
+
+Request: POST: /modules/comms/loc/mywcom_fiber_segment/184/ripple_deletions
+Response: 200 (200 OK)
+b'{"update": []}'
+
+
+DATABASE CHANGES: AFTER RIPPLE DELETE LOC
+   delete data.mywcom_line_of_count(100000)
+   delete data.mywcom_line_of_count(100001)
+
+Request: POST: /modules/comms/loc/update
+Response: 200 (200 OK)
+b'{"copper_dslam/1": {"in": [], "out": [{"name": "DSLAM-2", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100002", "loc_ref": "mywcom_line_of_count/100002", "low": 1, "high": 12, "origin": "copper_dslam/1?side=out", "forward": true, "physical": false}]}}'
+
+
+"{/"copper_dslam/1/": {/"in/": [], /"out/": [{/"name/": /"DSLAM-2/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100002/", /"loc_ref/": /"mywcom_line_of_count/100002/", /"low/": 1, /"high/": 12, /"origin/": /"copper_dslam/1?side=out/", /"forward/": true, /"physical/": false}]}}"
+DATABASE CHANGES: AFTER INITIAL SETTING OF LOC ON DSLAM
+   insert data.mywcom_line_of_count(100002)
+   insert data.mywcom_line_of_count_section(100002)
+
+
+SUB TEST : GET LINE DETAILS CONTIGUOUS LOGICAL RANGES
+    Request: POST: /modules/comms/loc/update
+    Response: 200 (200 OK)
+    b'{"mywcom_copper_segment/18": [{"name": "XX", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100003", "loc_ref": "mywcom_line_of_count/100003", "low": 1, "high": 2, "origin": "mywcom_copper_segment/18", "forward": true, "physical": false}, {"name": "YY", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100004", "loc_ref": "mywcom_line_of_count/100004", "low": 3, "high": 4, "origin": "mywcom_copper_segment/18", "forward": true, "physical": false}]}'
+    
+    
+    "{/"mywcom_copper_segment/18/": [{/"name/": /"XX/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100003/", /"loc_ref/": /"mywcom_line_of_count/100003/", /"low/": 1, /"high/": 2, /"origin/": /"mywcom_copper_segment/18/", /"forward/": true, /"physical/": false}, {/"name/": /"YY/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100004/", /"loc_ref/": /"mywcom_line_of_count/100004/", /"low/": 3, /"high/": 4, /"origin/": /"mywcom_copper_segment/18/", /"forward/": true, /"physical/": false}]}"

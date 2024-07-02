@@ -1,0 +1,230 @@
+TEST: AFTER CLICK EDIT
+    input: WH-M-58
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Manhole: WH-M-58
+    label: Name
+    label: WH-M-58
+    label: Spec
+    label: FPM-CCANN-MCX
+    label: FPM-CCANN-MCX
+    label: Length
+    label: 33 in
+    label: Width
+    label: 51 in
+    label: Depth
+    label: 35 in
+    label: Installed
+    label: 08/09/2014
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Labor Costs
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Manhole: WH-M-58 Copper Terminal: WH-T-6 (4)
+    label: Copper Terminal: WH-T-6 (4)
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Copper Cable: WH-CC-005 (100)
+    label: Copper Cable: WH-CC-008 (100)
+    label: Fiber Cable: WH-FCB-001 (144)
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: DETAILS PANE AFTER CLICK ON DISABLED "Add - Splice Closure" CONTEXT MENU ITEM
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Pole: WH-P-006
+    label: Name
+    label: WH-P-006
+    label: Type
+    label: Wood
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-006 Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way)
+    label: Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way)
+    label: Fiber Splitter: WH-SPL-001 (8 way)
+    label: Fiber Splitter: WH-SPL-004 (8 way)
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: DROP-001 (4)
+    label: Fiber Cable: DROP-002 (4)
+    label: Fiber Cable: DROP-003 (4)
+    label: Fiber Cable: DROP-004 (4)
+    label: Fiber Cable: DROP-005 (4)
+    label: Fiber Cable: DROP-006 (4)
+    label: Fiber Cable: DROP-007 (4)
+    label: Fiber Cable: DROP-008 (4)
+    label: Fiber Cable: DROP-009 (4)
+    label: Fiber Cable: DROP-010 (4)
+    label: Fiber Cable: DROP-011 (4)
+    label: Fiber Cable: DROP-012 (4)
+    label: Fiber Cable: DROP-013 (4)
+    label: Fiber Cable: DROP-014 (4)
+    label: Fiber Cable: DROP-015 (4)
+    label: Fiber Cable: RISER-001 (4)
+
+
+TEST: AFTER CLICK ON DISABLED "Disconnect" CONTEXT MENU ITEM
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-006 Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) 1 <- RISER-001 #2OR : 5 circuits OUT (7/8)
+    label: Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) 1 <- RISER-001 #2OR : 5 circuits OUT (7/8)
+    label: Fiber Splitter: WH-SPL-001 (8 way)
+    label: Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) 1 <- RISER-001 #2OR : 5 circuits OUT (7/8)
+    label: IN (1/1) 1 <- RISER-001 #2OR : 5 circuits
+    label: 1 <- RISER-001 #2OR : 5 circuits
+    label: OUT (7/8)
+
+
+TEST: AFTER CLICK ON DISABLED "Connect" CONTEXT MENU ITEM
+    input: WH-P-006
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Pole: WH-P-006
+    label: Name
+    label: WH-P-006
+    label: Type
+    label: Wood
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-006 Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) 1 <- RISER-001 #2OR : 5 circuits OUT (7/8) 1 -> DROP-009 #1BL : 1 circuit 2 -> DROP-010 #1BL : 1 circuit 3 -> DROP-011 #1BL : 1 circuit 4 -> DROP-012 #1BL 5 -> DROP-013 #1BL : 1 circuit 6 -> DROP-014 #1BL : 1 circuit 7 -> DROP-015 #1BL 8
+    label: Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) 1 <- RISER-001 #2OR : 5 circuits OUT (7/8) 1 -> DROP-009 #1BL : 1 circuit 2 -> DROP-010 #1BL : 1 circuit 3 -> DROP-011 #1BL : 1 circuit 4 -> DROP-012 #1BL 5 -> DROP-013 #1BL : 1 circuit 6 -> DROP-014 #1BL : 1 circuit 7 -> DROP-015 #1BL 8
+    label: Fiber Splitter: WH-SPL-001 (8 way)
+    label: Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) 1 <- RISER-001 #2OR : 5 circuits OUT (7/8) 1 -> DROP-009 #1BL : 1 circuit 2 -> DROP-010 #1BL : 1 circuit 3 -> DROP-011 #1BL : 1 circuit 4 -> DROP-012 #1BL 5 -> DROP-013 #1BL : 1 circuit 6 -> DROP-014 #1BL : 1 circuit 7 -> DROP-015 #1BL 8
+    label: IN (1/1) 1 <- RISER-001 #2OR : 5 circuits
+    label: 1 <- RISER-001 #2OR : 5 circuits
+    label: OUT (7/8) 1 -> DROP-009 #1BL : 1 circuit 2 -> DROP-010 #1BL : 1 circuit 3 -> DROP-011 #1BL : 1 circuit 4 -> DROP-012 #1BL 5 -> DROP-013 #1BL : 1 circuit 6 -> DROP-014 #1BL : 1 circuit 7 -> DROP-015 #1BL 8
+    label: 1 -> DROP-009 #1BL : 1 circuit
+    label: 2 -> DROP-010 #1BL : 1 circuit
+    label: 3 -> DROP-011 #1BL : 1 circuit
+    label: 4 -> DROP-012 #1BL
+    label: 5 -> DROP-013 #1BL : 1 circuit
+    label: 6 -> DROP-014 #1BL : 1 circuit
+    label: 7 -> DROP-015 #1BL
+    label: 8
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: DROP-001 (4)
+    label: Fiber Cable: DROP-002 (4)
+    label: Fiber Cable: DROP-003 (4)
+    label: Fiber Cable: DROP-004 (4)
+    label: Fiber Cable: DROP-005 (4)
+    label: Fiber Cable: DROP-006 (4)
+    label: Fiber Cable: DROP-007 (4)
+    label: Fiber Cable: DROP-008 (4)
+    label: Fiber Cable: DROP-009 (4)
+    label: Fiber Cable: DROP-010 (4)
+    label: Fiber Cable: DROP-011 (4)
+    label: Fiber Cable: DROP-012 (4)
+    label: Fiber Cable: DROP-013 (4)
+    label: Fiber Cable: DROP-014 (4)
+    label: Fiber Cable: DROP-015 (4)
+    label: Fiber Cable: RISER-001 (4)
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    label: [Comms] designer
+    label: Built by
+    list item: Show circuits
+    list item: Show terminations
+    list item: 
+    list item: Trace upstream
+    list item: Trace downstream
+    list item: Trace both
+    list item: 
+    list item: OTDR upstream
+    list item: OTDR downstream
+    list item: 
+    list item (disabled): Connect
+
+

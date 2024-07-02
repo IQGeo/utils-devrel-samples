@@ -1,0 +1,11 @@
+{
+	"name": "mywcom_fiber_group",
+	"display_name": "{:mywcom_fiber_group_layer_display_name}",
+	"description": "",
+	"thumbnail": "",
+	"exclusive": false,
+	"layers": [
+		"mywcom_cables",
+        "mywcom_equipment"
+	]
+}

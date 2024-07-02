@@ -1,0 +1,3 @@
+id,name,root_housing,housing,labor_costs,n_coax_in_ports,n_coax_out_ports,status,frequency,specification,location,offset_geom,myw_orientation_offset_geom,comsof_auto
+1,WH-2WSPL-001,manhole/255,manhole/255,,1,2,,,,0101000020E610000029A4C367CC1DC13F94356F8C2C1C4A40,0101000020E6100000F1F1E9F22A1DC13F98FCAE7E2D1C4A40,,False
+2,WH-2WSPL-002,manhole/274,manhole/274,,1,2,,,,0101000020E6100000E91CC594CA31C13FA49468C8FD1B4A40,0101000020E6100000D56080651034C13F1422928DFC1B4A40,,False

@@ -1,0 +1,95 @@
+{
+   "name": "delta_structures", 
+   "display_name": "{:delta_structures_layer_display_name}", 
+   "category": "overlay", 
+   "code": "dlts", 
+   "description": "{:delta_structures_layer_display_desc}", 
+   "datasource": "myworld", 
+   "spec": {
+      "isStatic": false, 
+      "extraOptions": {
+         "schema": "delta"
+      }, 
+      "nativeAppVector": null, 
+      "nativeAppMode": "switchable", 
+      "rendering": "vector", 
+      "jsClass": ""
+   }, 
+   "transparency": 0, 
+   "min_scale": 14, 
+   "max_scale": 22, 
+   "control_item_class": "myw.MyWorldLegendLayerControlWidget", 
+   "feature_types": [
+      {
+         "name": "building", 
+         "field_name": "location", 
+         "min_select": 0, 
+         "max_select": 0, 
+         "point_style": "triangle:#ffffff:8m:#ffa500", 
+         "text_style": "name:#ffa500:5m:top+7:centre::"
+      },
+       {
+         "name": "mdu",
+         "field_name": "location",
+         "min_vis": 18,
+         "min_select": 0, 
+         "max_select": 0, 
+         "point_style": "modules/comms/images/features/mdu.svg:12:12:4m",
+         "text_style": "name:#000000:1m:top+2:centre::"
+      },
+      {
+         "name": "cabinet", 
+         "field_name": "location", 
+         "min_select": 0, 
+         "max_select": 0, 
+         "point_style": "rectangle:#cccccc:2.4m:#ffa500", 
+         "text_style": "name:#ffa500:1.2m:middle:right+1.8::"
+      }, 
+      {
+         "name": "manhole", 
+         "field_name": "location", 
+         "min_select": 0, 
+         "max_select": 0, 
+         "point_style": "square:#cccccc:1.8m:#ffa500", 
+         "text_style": "name:#ffa500:1.2m:middle:right+1.8::"
+      }, 
+      {
+         "name": "oh_route", 
+         "field_name": "path", 
+         "min_select": 0, 
+         "max_select": 0, 
+         "line_style": "#ffa500:1:dot:none:none"
+      }, 
+      {
+         "name": "pole", 
+         "field_name": "location", 
+         "min_select": 0, 
+         "max_select": 0, 
+         "point_style": "circle:#cccccc:1.5m:#ffa500", 
+         "text_style": "name:#ffa500:1.5m:middle:left+1.5::"
+      }, 
+      {
+         "name": "mywcom_route_junction", 
+         "field_name": "location", 
+         "min_vis": 19, 
+         "min_select": 0, 
+         "max_select": 0, 
+         "point_style": "circle:#cccccc:0.5m:#ffa500"
+      }, 
+      {
+         "name": "ug_route", 
+         "field_name": "path", 
+         "min_select": 0, 
+         "max_select": 0, 
+         "line_style": "#ffa500:3:dot:none:none"
+      }, 
+      {
+         "name": "wall_box", 
+         "field_name": "location", 
+         "min_select": 0, 
+         "max_select": 0, 
+         "point_style": "triangle:#cccccc:0.6m:#ffa500", 
+         "text_style": "name:#ffa500:0.5m:top+0.8:centre::"
+      }
+   ]
+}

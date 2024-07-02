@@ -1,0 +1,212 @@
+General notes:
+--------------
+    o layers: Client does not have to use the mywcom_* layers, so any layer validations should be a warning rather than error. 
+              Validation is has it been added to any non-future layer rather than specifically the mywcom_* specific one
+              
+    o future view: Client may not use future views but if they do they will often want to add the feature to them.
+                   Validation is: Scan layers looking for those with option schema='delta'. 
+                                  If they have any (indicating they are using future view layers), and feature type not added to any of them, shows as a warning.
+      
+    o feature types: do NOT set it with a mywcom_* prefix as that reserved for comms module  (validate in some way?)
+
+    o feature_types: warn if they do not have versioned=on
+                     Some clients may choose to not use versioning, so warning rather than error
+                     
+    o calculated reference fields: validate the feature types listed actually exist. Will help catch typos.
+
+    o feature models: automatically applied based on configuration, so no code required
+    
+    
+    
+
+Structures:
+-----------
+    o Create new feature type:
+      - add point geometry field
+      - add 'name' string field
+      - add 'equipment' calculated reference set field. 
+        This must list the <feature type.housing> of all feature types that can be housed inside the structure
+      - add 'routes' calculated reference set field. 
+        This must list the <feature type.in_structure>,<feature type.out_structure> of all route types
+      - in_fiber_segments - calculated reference set field. 
+        Returns all segments consider the in segment. Currently: method(in_fiber_segments)
+      - out_fiber_segments - calculated reference set field. 
+        Returns all segments consider the out segment. Currently: method(out_fiber_segments)
+      - cables - calculated reference set.
+        Returns all cables associated with the structure. Currently: method(cables)
+      - fiber_splices - optional calculated field
+        Add this field if the structure can contain splices
+        
+    o Networks:
+      - Add to the mywcom_routes network
+            
+    o Layers:
+      - Add to the mywcom_structures layer
+      - Optionally add to future view layer
+
+      
+    o Settings: add to mywcom.structures setting by using config page
+      - set the name to the feature_type
+      - create/set an appropriate image to use that exists
+      - check palette checkbox if user allowed to add to the structure palette
+
+
+Routes:
+-------
+    o Create new feature type:    
+      - Add linear geometry field
+      - in_structure reference field. Must be indexed.
+      - out_structure reference field. Must be indexed.
+      - length double field. Optional.
+      - cable_segments calculated reference field
+        Returns all segments housed inside the route
+      - cables calculated reference field
+        Returns all cables inside the route (and contained conduits). Currently: method(cables)
+      - conduits - optional calculated field.
+        Returns conduits housed inside this conduit.
+           
+    o Networks:
+      - Add to the mywcom_routes network
+      - Optionally add to future view layer
+       
+    o Layers:
+      - Add to the mywcom_structures layer
+      - Optionally add to the delta_structures layer if exists
+       
+    o Settings: add to mywcom.routes setting by using config page
+      - set the name to the feature type
+      - create/set an appropriate image to use that exists
+      - check palette checkbox if user allowed to add to the structure palette
+      
+
+Equipment:
+----------
+
+    o Create new feature type
+      - Add point geometry field
+      - Add name string field
+      - Add root_housing reference field. Must be indexed.
+      - Add housing reference field. Must be indexed.
+      - add 'equipment' calculated reference set field. 
+        This must list the <feature type.housing> of all feature types that can be housed inside the equipment
+      - fiber_splices - optional calculated field
+        Add this field if the equipment can contain splices
+      - ? in and out ports ?
+
+                
+    o Layers:
+      - Add to the mywcom_equipment layer
+      - To reduce clutter, only specific/important equipment types should actually render on the layer
+        If the equipment type shouldn't render on the map, set min/max zoom to 0
+            
+    o Settings: add to mywcom.equipment setting by using config page
+      - set the name to the feature type
+      - create/set an appropriate image to use that exists
+      - set the function of the equipment
+      - set the list of housings the equipment can be installed in. Note this equipment type must also be listed in the <housing>.equipment field      
+      - check palette checkbox if user allowed to add to the equipment palette
+    
+    
+    
+Conduits:
+----------
+
+    o Create new feature type
+      - Add linear geometry field
+      - Add name string field
+      - Add root_housing reference field. Must be indexed.
+      - Add housing reference field. Must be indexed.
+      - Add in_structure reference field. Must be indexed.
+      - Add out_structure reference field. Must be indexed.
+      - cable segments - calculated reference field
+        Returns cable segments housed inside the conduit        
+      - cables - calculated
+        Returns cables running through conduit. Currently: method(cables)
+      - conduits - optional calculated field.
+        Returns conduits housed inside this conduit.
+              
+    o Layers:
+      - Add to the conduits layer
+          
+    o Settings: add to mywcom.conduits setting by using config page
+      - set the name to the feature type
+      - create/set an appropriate image to use that exists. This image is used in places such as the cable tree.
+      - create/set an appropriate image to use for the structure palette
+      - set the list of housings the conduit can be installed in. Note this conduit type must also be listed in the <housing>.conduits field            
+      - check palette checkbox if user allowed to add to the structure palette
+    
+    
+Cables:
+-------
+    o Create new feature type
+      - Add linestring geometry
+      - Add placement_path linestring geometry (used by system to store vertexes cable was routed with)
+      - Add name string field
+      - Add fiber_count integer field
+      - Add directed boolean field (mandatory)
+      - cable_segments calculated reference field
+        Returns all segments housed inside the route
+      - cable_slacks calculated reference field
+        Returns all slack features associated with cable              
+      - splices - optional calculated reference field
+        Returns splice connections for cable. Currently: method(splices)
+      - connections - optional calculated reference field
+        Returns port and splice connections for cable. Currently: method(splices)
+      - specification - optional foreign key field
+        Joins to related spec record. Required if color schemes are of interest for the cable feature type.
+        Does not have to be called 'specification' as the field is configured in the specs config page
+
+
+    o Layers:
+      - Add to the mywcom_cables layer
+      - Optionally add to future view layer
+
+    
+    o Settings: add to mywcom.cables setting by using config page
+      - set the name to the feature type
+      - create/set an appropriate image to use that exists
+      - set the list of housings the cable can be installed in
+      
+    
+Specs:
+------
+    o Create new feature type:
+      - add name field. Expected to be the key field.
+    
+    o Settings: add to mywcom.specs setting by using config page    
+      - set the name to the feature type
+      - set the spec field to the field on the feature type that joins to its spec record
+        This field must exist and be a foreign key field
+            
+    
+    
+Fiber Colors:
+-------------
+    o Add fiber color
+      - set the name it is known as
+      - pick a color
+      - set an abbrev
+      - set a label
+      - all of the values should be populated
+      
+
+Fiber Color Schemes:
+--------------------
+
+    o Add a new color scheme
+      - set the name it is known as
+      - enter a description of it
+      - enter the engine name. You will need to get this from the dev of the engine.
+      - Colors
+        - the colors (in order) that make up the scheme
+        - the names are from the fiber color names. Validate that the name exists.
+    
+    
+Circuits:
+----------
+    <TBD>
+
+
+    
+    
+    

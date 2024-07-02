@@ -1,0 +1,6 @@
+
+*** BOUNDS
+Set delta to: design/CC4827
+Max Distance of new Delta bounds is less than 0.05 meters: true
+DATABASE CHANGES: BOUNDS
+

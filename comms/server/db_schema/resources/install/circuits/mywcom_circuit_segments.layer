@@ -1,0 +1,31 @@
+{
+    "name": "mywcom_circuit_segments",
+    "display_name": "{:circuit_segments_display_name}",
+    "category": "overlay",
+    "code": "mywcom_cts",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": ""
+    },
+    "transparency": 0,
+    "min_scale": 16,
+    "max_scale": 22,
+    "feature_types": [
+        {
+            "name": "mywcom_circuit_segment",
+            "field_name": "path",
+            "line_style": "#11a7cb:4:shortdash:none:arrow"
+        },
+        {
+            "name": "mywcom_circuit_port",
+            "field_name": "location",
+            "min_vis": 18,
+            "line_style": "circle:#11a7cb:0.5m:#11a7cb"
+        }
+    ]
+}

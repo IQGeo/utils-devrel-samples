@@ -1,0 +1,112 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_line_of_count",
+    "external_name": "{:mywcom_line_of_count_feature_external_name}",
+    "title": "{display_name}: [name] [status]",
+    "short_description": "[label]",
+    "track_changes": true,
+    "versioned": true,
+    "geom_indexed": true,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "editor_options": null,
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "label",
+            "external_name": "{:mywcom_line_of_count_label_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "route",
+            "external_name": "{:mywcom_line_of_count_route_field_name}",
+            "type": "linestring",
+            "mandatory": "true"
+        },
+        {
+            "name": "name",
+            "external_name": "{:mywcom_line_of_count_name_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "low_logical",
+            "external_name": "{:mywcom_line_of_count_low_logical_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "high_logical",
+            "external_name": "{:mywcom_line_of_count_high_logical_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "low_physical",
+            "external_name": "{:mywcom_line_of_count_low_physical_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "high_physical",
+            "external_name": "{:mywcom_line_of_count_high_physical_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "origin",
+            "external_name": "{:mywcom_line_of_count_origin_field_name}",
+            "type": "reference_set()"
+        },
+        {
+            "name": "status",
+            "external_name": "{:mywcom_line_of_count_status_field_name}",
+            "type": "string()",
+            "enum": "loc_status"
+        },
+        {
+            "name": "deleted",
+            "external_name": "{:mywcom_line_of_count_deleted_field_name}",
+            "type": "boolean",
+            "default": false
+        },
+        {
+            "name": "stale",
+            "external_name": "{:mywcom_line_of_count_stale_field_name}",
+            "type": "boolean",
+            "default": false
+        },
+        {
+            "name": "loc_sections",
+            "external_name": "{:mywcom_line_of_count_loc_sections_field_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_line_of_count_section.line_of_count)"
+        },
+        {
+            "name": "physical",
+            "external_name": "{:mywcom_line_of_count_physical_field_name}",
+            "type": "boolean",
+            "default": false
+        }
+    ],
+    "groups": [],
+    "searches": [
+        {
+            "value": "[label]",
+            "description": "{display_name} : [label]",
+            "lang": "en"
+        }
+    ],
+    "queries": [
+        {
+            "value": "{:mywcom_line_of_count_feature_query_value_1}",
+            "description": "{:mywcom_line_of_count_feature_query_desc_1}",
+            "lang": "en"
+        }
+    ],
+    "filters": []
+}

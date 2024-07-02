@@ -1,0 +1,26 @@
+.size-input {
+    width: 55px;
+}
+
+.bundle-type-input {
+    width: 100px;
+    display: inline-block;
+}
+
+.level-delete-btn {
+    background-image: url('#{$path-to-img}editor/x.svg');
+    background-repeat: no-repeat;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-position: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin: 5px 5px 8px 0;
+
+    &:disabled {
+        visibility: hidden;
+    }
+}

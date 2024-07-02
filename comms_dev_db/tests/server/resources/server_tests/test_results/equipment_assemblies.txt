@@ -1,0 +1,73 @@
+
+SUB TEST : MOVE
+    Request: POST: /modules/comms/equip/rack/4/move_to/manhole/42?delta=design/NB046
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: MOVE
+       insert delta.fiber_olt(design/NB046,34,update)
+       insert delta.fiber_olt(design/NB046,35,update)
+       insert delta.fiber_olt(design/NB046,36,update)
+       insert delta.fiber_olt(design/NB046,37,update)
+       insert delta.fiber_olt(design/NB046,38,update)
+       insert delta.fiber_olt(design/NB046,39,update)
+       insert delta.fiber_olt(design/NB046,40,update)
+       insert delta.rack(design/NB046,4,update)
+    
+    VALIDATION ERRORS: MOVE
+
+SUB TEST : COPY
+    Request: POST: /modules/comms/equip/splice_closure/1/copy_to/manhole/33?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "bbox": [
+          0.1366508379579039,
+          52.22415671856789,
+          0.1366508379579039,
+          52.22415671856789
+       ],
+       "geometry": {
+          "coordinates": [
+             0.1366508379579039,
+             52.22415671856789
+          ],
+          "type": "Point"
+       },
+       "id": 100000,
+       "myw": {
+          "change_type": "insert",
+          "delta": "design/NB046",
+          "feature_type": "splice_closure",
+          "title": "Splice Closure: WH-SC-100000"
+       },
+       "properties": {
+          "circuits": [],
+          "comsof_auto": false,
+          "housing": "manhole/33",
+          "id": 100000,
+          "installation_date": "2010-09-23",
+          "job_id": "19347",
+          "labor_costs": null,
+          "name": "WH-SC-100000",
+          "root_housing": "manhole/33",
+          "specification": "CS- FOSC-100-DM-144"
+       },
+       "type": "Feature"
+    }
+    
+    
+    DATABASE CHANGES: COPY
+       insert delta.fiber_mux(design/NB046,100000,insert)
+       insert delta.splice_closure(design/NB046,100000,insert)
+    
+    VALIDATION ERRORS: COPY
+
+SUB TEST : ATTEMPT MOVE
+    Request: POST: /modules/comms/equip/fiber_olt/25/move_to/fiber_shelf/15?delta=design/NB046
+    Response: 502 (502 Bad Gateway)
+    b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "equipment_has_circuit", "params": {"feature": "OLT: WH-OLT-025"}}/n/n'
+    
+    
+    DATABASE CHANGES: ATTEMPT MOVE
+    
+    VALIDATION ERRORS: ATTEMPT MOVE

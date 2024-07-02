@@ -1,0 +1,277 @@
+
+SUB TEST : SPLIT ROUTE 301
+    Request: POST:/modules/comms/feature/manhole
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER SPLIT ROUTE 301
+       update data.fiber_cable(170) fields=(path)
+       update data.ftth_circuit(3) fields=(path)
+       insert data.manhole(100000)
+       update data.mywcom_fiber_segment(395) fields=(out_segment)
+       update data.mywcom_fiber_segment(396) fields=(in_segment,in_structure,path)
+       insert data.mywcom_fiber_segment(100000)
+       update data.mywcom_line_of_count(4) fields=(route)
+       update data.mywcom_line_of_count_section(88) fields=(route)
+       insert data.mywcom_line_of_count_section(100000)
+       update data.ug_route(301) fields=(length,out_structure,path)
+       insert data.ug_route(100000)
+    
+    VALIDATION ERRORS: AFTER SPLIT ROUTE 301
+
+SUB TEST : SPLIT ROUTE 6 AT VERTEX
+    Request: POST:/modules/comms/feature/manhole
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER SPLIT ROUTE 6 AT VERTEX
+       update data.conduit(75) fields=(length,out_structure,path)
+       update data.conduit(146) fields=(length,out_structure,path)
+       update data.conduit(147) fields=(length,out_structure,path)
+       update data.conduit(148) fields=(length,out_structure,path)
+       insert data.conduit(100000)
+       insert data.conduit(100001)
+       insert data.conduit(100002)
+       insert data.conduit(100003)
+       update data.copper_cable(6) fields=(path)
+       update data.fiber_cable(22) fields=(path)
+       update data.fiber_cable(167) fields=(path)
+       update data.ftth_circuit(30) fields=(path)
+       update data.ftth_circuit(31) fields=(path)
+       update data.ftth_circuit(32) fields=(path)
+       update data.ftth_circuit(33) fields=(path)
+       update data.ftth_circuit(34) fields=(path)
+       update data.ftth_circuit(35) fields=(path)
+       update data.ftth_circuit(36) fields=(path)
+       update data.ftth_circuit(37) fields=(path)
+       update data.ftth_circuit(38) fields=(path)
+       update data.ftth_circuit(39) fields=(path)
+       update data.ftth_circuit(40) fields=(path)
+       update data.ftth_circuit(41) fields=(path)
+       update data.ftth_circuit(42) fields=(path)
+       update data.ftth_circuit(43) fields=(path)
+       update data.ftth_circuit(44) fields=(path)
+       update data.ftth_circuit(45) fields=(path)
+       update data.ftth_circuit(46) fields=(path)
+       update data.ftth_circuit(47) fields=(path)
+       update data.ftth_circuit(48) fields=(path)
+       update data.ftth_circuit(49) fields=(path)
+       update data.ftth_circuit(50) fields=(path)
+       update data.ftth_circuit(51) fields=(path)
+       update data.ftth_circuit(52) fields=(path)
+       update data.ftth_circuit(53) fields=(path)
+       update data.ftth_circuit(54) fields=(path)
+       update data.ftth_circuit(55) fields=(path)
+       update data.ftth_circuit(56) fields=(path)
+       update data.ftth_circuit(57) fields=(path)
+       update data.ftth_circuit(58) fields=(path)
+       update data.ftth_circuit(59) fields=(path)
+       update data.ftth_circuit(5801) fields=(path)
+       insert data.manhole(100001)
+       update data.mywcom_copper_segment(18) fields=(in_segment,in_structure,path)
+       insert data.mywcom_copper_segment(100000)
+       update data.mywcom_fiber_connection(1) fields=(in_object)
+       update data.mywcom_fiber_connection(2) fields=(in_object)
+       update data.mywcom_fiber_connection(3) fields=(in_object)
+       update data.mywcom_fiber_connection(4) fields=(in_object)
+       update data.mywcom_fiber_connection(5) fields=(in_object)
+       update data.mywcom_fiber_connection(6) fields=(in_object)
+       update data.mywcom_fiber_connection(7) fields=(in_object)
+       update data.mywcom_fiber_connection(8) fields=(in_object)
+       update data.mywcom_fiber_segment(184) fields=(out_segment,out_structure,out_tick,path)
+       update data.mywcom_fiber_segment(381) fields=(in_segment,in_structure,in_tick,path)
+       update data.mywcom_fiber_segment(597) fields=(out_segment)
+       insert data.mywcom_fiber_segment(100001)
+       insert data.mywcom_fiber_segment(100002)
+       update data.ug_route(6) fields=(length,out_structure,path)
+       insert data.ug_route(100001)
+    
+    VALIDATION ERRORS: AFTER SPLIT ROUTE 6 AT VERTEX
+
+SUB TEST : SPLIT ROUTE 4 IN DELTA
+    Request: POST:/modules/comms/feature/manhole?delta=design/NB046
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER SPLIT ROUTE 4 IN DELTA
+       insert delta.bb_circuit(design/NB046,1,update)
+       insert delta.bb_circuit(design/NB046,2,update)
+       insert delta.bb_circuit(design/NB046,3,update)
+       insert delta.bb_circuit(design/NB046,4,update)
+       insert delta.conduit(design/NB046,81,update)
+       insert delta.conduit(design/NB046,82,update)
+       insert delta.conduit(design/NB046,100004,insert)
+       insert delta.conduit(design/NB046,100005,insert)
+       insert delta.fiber_cable(design/NB046,5,update)
+       insert delta.fiber_cable(design/NB046,167,update)
+       insert delta.manhole(design/NB046,100002,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,56,update)
+       insert delta.mywcom_fiber_segment(design/NB046,388,update)
+       insert delta.mywcom_fiber_segment(design/NB046,586,update)
+       insert delta.mywcom_fiber_segment(design/NB046,587,update)
+       insert delta.mywcom_fiber_segment(design/NB046,100003,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,100004,insert)
+       insert delta.ug_route(design/NB046,4,update)
+       insert delta.ug_route(design/NB046,100002,insert)
+    
+    VALIDATION ERRORS: AFTER SPLIT ROUTE 4 IN DELTA
+
+SUB TEST : SPLIT ROUTE 8
+    Request: POST:/modules/comms/feature/manhole
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER SPLIT ROUTE 8
+       update data.conduit(71) fields=(length,out_structure,path)
+       update data.conduit(72) fields=(length,out_structure,path)
+       update data.conduit(73) fields=(length,out_structure,path)
+       update data.conduit(74) fields=(length,out_structure,path)
+       insert data.conduit(100006)
+       insert data.conduit(100007)
+       insert data.conduit(100008)
+       insert data.conduit(100009)
+       update data.fiber_cable(3) fields=(path)
+       update data.fiber_cable(4) fields=(path)
+       update data.fiber_cable(6) fields=(path)
+       update data.ftth_circuit(1) fields=(path)
+       update data.ftth_circuit(2) fields=(path)
+       update data.ftth_circuit(3) fields=(path)
+       update data.ftth_circuit(4) fields=(path)
+       update data.ftth_circuit(5) fields=(path)
+       update data.ftth_circuit(6) fields=(path)
+       update data.ftth_circuit(7) fields=(path)
+       update data.ftth_circuit(8) fields=(path)
+       update data.ftth_circuit(10) fields=(path)
+       update data.ftth_circuit(14) fields=(path)
+       update data.ftth_circuit(20) fields=(path)
+       update data.ftth_circuit(21) fields=(path)
+       update data.ftth_circuit(22) fields=(path)
+       update data.ftth_circuit(23) fields=(path)
+       update data.ftth_circuit(24) fields=(path)
+       update data.ftth_circuit(26) fields=(path)
+       update data.ftth_circuit(27) fields=(path)
+       update data.ftth_circuit(28) fields=(path)
+       update data.ftth_circuit(29) fields=(path)
+       insert data.manhole(100003)
+       update data.mywcom_fiber_segment(36) fields=(out_segment,out_structure,out_tick,path)
+       update data.mywcom_fiber_segment(45) fields=(out_segment,out_structure,out_tick,path)
+       update data.mywcom_fiber_segment(46) fields=(in_segment)
+       update data.mywcom_fiber_segment(59) fields=(out_equipment,out_segment,out_structure,out_tick,path)
+       update data.mywcom_fiber_segment(60) fields=(in_segment)
+       update data.mywcom_fiber_segment(584) fields=(in_segment)
+       insert data.mywcom_fiber_segment(100005)
+       insert data.mywcom_fiber_segment(100006)
+       insert data.mywcom_fiber_segment(100007)
+       update data.mywcom_line_of_count(2) fields=(route)
+       update data.mywcom_line_of_count(4) fields=(route)
+       update data.mywcom_line_of_count_section(50) fields=(route)
+       update data.mywcom_line_of_count_section(51) fields=(route)
+       update data.mywcom_line_of_count_section(53) fields=(route)
+       insert data.mywcom_line_of_count_section(100001)
+       insert data.mywcom_line_of_count_section(100002)
+       insert data.mywcom_line_of_count_section(100003)
+       update data.ug_route(8) fields=(length,out_structure,path)
+       insert data.ug_route(100003)
+    
+    VALIDATION ERRORS: AFTER SPLIT ROUTE 8
+
+SUB TEST : ADD BARE ROUTE
+    Request: POST:/modules/comms/feature/ug_route
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER ADD BARE ROUTE
+       insert data.ug_route(100004)
+    
+    VALIDATION ERRORS: AFTER ADD BARE ROUTE
+
+SUB TEST : CONNECT TO ROUTE START
+    Request: POST:/modules/comms/feature/manhole
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER CONNECT TO ROUTE START
+       insert data.manhole(100004)
+       update data.ug_route(100004) fields=(in_structure)
+    
+    VALIDATION ERRORS: AFTER CONNECT TO ROUTE START
+
+SUB TEST : CONNECT TO ROUTE END
+    Request: POST:/modules/comms/feature/manhole
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER CONNECT TO ROUTE END
+       insert data.manhole(100005)
+       update data.ug_route(100004) fields=(out_structure)
+    
+    VALIDATION ERRORS: AFTER CONNECT TO ROUTE END
+    Request: POST: /modules/comms/conduit/blown_fiber_tube/195/move_to/conduit/70
+    Response: 200 (200 OK)
+    
+    
+    Request: POST: /modules/comms/conduit/mywcom_fiber_segment/75/move_to/blown_fiber_tube/195
+    Response: 200 (200 OK)
+    
+    
+
+SUB TEST : SPLIT CONDUIT CONTAINING BF TUBE
+    Request: POST:/modules/comms/feature/manhole
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER SPLIT CONDUIT CONTAINING BF TUBE
+       update data.blown_fiber_tube(195) fields=(housing,out_conduit,out_structure,path)
+       insert data.blown_fiber_tube(100000)
+       update data.conduit(70) fields=(length,out_structure,path)
+       insert data.conduit(100010)
+       update data.fiber_cable(8) fields=(path)
+       insert data.manhole(100006)
+       update data.mywcom_conduit_run(70) fields=(path)
+       update data.mywcom_fiber_segment(75) fields=(housing,out_segment,out_structure,out_tick,path)
+       insert data.mywcom_fiber_segment(100008)
+       update data.mywcom_line_of_count(2) fields=(route)
+       update data.mywcom_line_of_count_section(87) fields=(route)
+       insert data.mywcom_line_of_count_section(100004)
+       update data.ug_route(58) fields=(length,out_structure,path)
+       insert data.ug_route(100005)
+    
+    VALIDATION ERRORS: AFTER SPLIT CONDUIT CONTAINING BF TUBE
+
+SUB TEST : REPLACE JUNCTION
+    Request: POST:/modules/comms/feature/manhole?delta=design/NB046
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER REPLACE JUNCTION
+       update delta.fiber_cable(design/NB046,6,update) fields=(path)
+       insert delta.ftth_circuit(design/NB046,1,update)
+       insert delta.ftth_circuit(design/NB046,2,update)
+       insert delta.ftth_circuit(design/NB046,3,update)
+       insert delta.ftth_circuit(design/NB046,4,update)
+       insert delta.ftth_circuit(design/NB046,5,update)
+       insert delta.ftth_circuit(design/NB046,6,update)
+       insert delta.ftth_circuit(design/NB046,7,update)
+       insert delta.ftth_circuit(design/NB046,8,update)
+       insert delta.ftth_circuit(design/NB046,10,update)
+       insert delta.ftth_circuit(design/NB046,14,update)
+       insert delta.ftth_circuit(design/NB046,20,update)
+       insert delta.ftth_circuit(design/NB046,21,update)
+       insert delta.ftth_circuit(design/NB046,22,update)
+       insert delta.ftth_circuit(design/NB046,23,update)
+       insert delta.ftth_circuit(design/NB046,24,update)
+       insert delta.ftth_circuit(design/NB046,26,update)
+       insert delta.ftth_circuit(design/NB046,27,update)
+       insert delta.ftth_circuit(design/NB046,28,update)
+       insert delta.ftth_circuit(design/NB046,29,update)
+       insert delta.manhole(design/NB046,100007,insert)
+       update delta.mywcom_fiber_segment(design/NB046,61,update) fields=(out_structure)
+       insert delta.mywcom_fiber_segment(design/NB046,62,update)
+       insert delta.mywcom_fiber_segment(design/NB046,395,update)
+       insert delta.mywcom_fiber_segment(design/NB046,100000,update)
+       insert delta.mywcom_route_junction(design/NB046,47,delete)
+       insert delta.ug_route(design/NB046,10,update)
+       insert delta.ug_route(design/NB046,394,update)
+       insert delta.ug_route(design/NB046,100000,update)
+    
+    VALIDATION ERRORS: AFTER REPLACE JUNCTION

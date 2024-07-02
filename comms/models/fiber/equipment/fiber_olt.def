@@ -1,0 +1,75 @@
+{
+    "datasource": "myworld",
+    "name": "fiber_olt",
+    "external_name": "{:fiber_olt_feature_external_name}",
+    "title": "{display_name}: [name]",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "n_fiber_out_ports",
+            "type": "integer",
+            "external_name": "{:n_ports_field_name}",
+            "mandatory": true
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "fiber_connections",
+            "type": "reference_set",
+            "value": "select(mywcom_fiber_connection.in_object,mywcom_fiber_connection.out_object)",
+            "read_only": true
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "circuits",
+            "external_name": "{:circuits_field_name}",
+            "type": "reference_set",
+            "read_only": true
+        },
+        {
+            "name": "directed",
+            "external_name": "{:equipment_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": true
+        }
+    ]
+}

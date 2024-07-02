@@ -1,0 +1,2687 @@
+
+*** BASIC
+Science Park Ring 1
+Paths
+[
+   {
+      "properties": {
+         "distance": 707.55,
+         "existing_splices": 2,
+         "new_splices": 3,
+         "loss": 0.65
+      },
+      "path": {
+         "properties": {
+            "distance": 707.55,
+            "existing_splices": 2,
+            "new_splices": 3,
+            "loss": 0.65
+         },
+         "result": {
+            "metadata": [
+               "ports",
+               "fibers",
+               "from_",
+               "to_",
+               "length",
+               "direction",
+               "individualLoss",
+               "cumulativeLoss",
+               "dist"
+            ],
+            "metadata_unit_scales": {
+               "dist": {
+                  "scale": "length",
+                  "unit": "m"
+               },
+               "length": {
+                  "scale": "length",
+                  "unit": "m"
+               },
+               "individualLoss": {
+                  "scale": "fiber_loss",
+                  "unit": "dB"
+               },
+               "cumulativeLoss": {
+                  "scale": "fiber_loss",
+                  "unit": "dB"
+               }
+            },
+            "nodes": {
+               "1": {
+                  "parent": 0,
+                  "feature": "shelf/18",
+                  "dist": 0,
+                  "ports": "out:1",
+                  "direction": "forward",
+                  "individualLoss": 0,
+                  "cumulativeLoss": 0
+               },
+               "2": {
+                  "parent": 1,
+                  "feature": "fiber_cable/192",
+                  "dist": 8.64,
+                  "start_coord": [
+                     0.1416571884668,
+                     52.2328145288195
+                  ],
+                  "stop_coord": [
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "fibers": "1",
+                  "length": "8.64",
+                  "direction": "forward",
+                  "individualLoss": 0.00432,
+                  "cumulativeLoss": 0.00432
+               },
+               "3": {
+                  "parent": 2,
+                  "feature": "manhole/184",
+                  "dist": 8.64,
+                  "is_new_connection": true,
+                  "from_ref": "mywcom_fiber_segment/499",
+                  "to_ref": "mywcom_fiber_segment/500",
+                  "to_pins": "in:1",
+                  "from_pins": "out:1",
+                  "from_": "1",
+                  "to_": "1",
+                  "direction": "forward",
+                  "individualLoss": 0.1,
+                  "cumulativeLoss": 0.10432000000000001
+               },
+               "4": {
+                  "parent": 3,
+                  "feature": "fiber_cable/193",
+                  "dist": 268.1,
+                  "start_coord": [
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "stop_coord": [
+                     0.1402661204338,
+                     52.2345200808762
+                  ],
+                  "fibers": "1",
+                  "length": "259.46",
+                  "direction": "forward",
+                  "individualLoss": 0.12972999999999998,
+                  "cumulativeLoss": 0.23404999999999998
+               },
+               "5": {
+                  "parent": 4,
+                  "feature": "manhole/174",
+                  "dist": 268.1,
+                  "is_new_connection": true,
+                  "from_ref": "mywcom_fiber_segment/505",
+                  "to_ref": "mywcom_fiber_segment/506",
+                  "to_pins": "in:1",
+                  "from_pins": "out:1",
+                  "from_": "1",
+                  "to_": "1",
+                  "direction": "forward",
+                  "individualLoss": 0.1,
+                  "cumulativeLoss": 0.33404999999999996
+               },
+               "6": {
+                  "parent": 5,
+                  "feature": "fiber_cable/194",
+                  "dist": 697.0799999999999,
+                  "start_coord": [
+                     0.1402661204338,
+                     52.2345200808762
+                  ],
+                  "stop_coord": [
+                     0.144799053669,
+                     52.2362678448293
+                  ],
+                  "fibers": "1",
+                  "length": "428.98",
+                  "direction": "forward",
+                  "individualLoss": 0.21449000000000001,
+                  "cumulativeLoss": 0.54854
+               },
+               "7": {
+                  "parent": 6,
+                  "feature": "manhole/159",
+                  "dist": 697.0799999999999,
+                  "is_new_connection": true,
+                  "from_ref": "mywcom_fiber_segment/515",
+                  "to_ref": "mywcom_fiber_segment/516",
+                  "to_pins": "in:1",
+                  "from_pins": "out:1",
+                  "from_": "1",
+                  "to_": "1",
+                  "direction": "forward",
+                  "individualLoss": 0.1,
+                  "cumulativeLoss": 0.64854
+               },
+               "8": {
+                  "parent": 7,
+                  "feature": "fiber_cable/195",
+                  "dist": 707.55,
+                  "start_coord": [
+                     0.144799053669,
+                     52.2362678448293
+                  ],
+                  "stop_coord": [
+                     0.1448285229346,
+                     52.2363556962577
+                  ],
+                  "fibers": "1",
+                  "length": "10.47",
+                  "direction": "forward",
+                  "individualLoss": 0.005235,
+                  "cumulativeLoss": 0.653775
+               },
+               "9": {
+                  "parent": 8,
+                  "feature": "shelf/19",
+                  "dist": 707.55,
+                  "ports": "in:1",
+                  "direction": "forward",
+                  "individualLoss": 0,
+                  "cumulativeLoss": 0.653775
+               }
+            },
+            "features": {
+               "shelf/18": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "shelf",
+                     "title": "Shelf: SP-S-018"
+                  },
+                  "bbox": [
+                     0.1416571884668,
+                     52.2328145288195,
+                     0.1416571884668,
+                     52.2328145288195
+                  ],
+                  "display_values": {
+                     "root_housing": "Cabinet: SP-C-45",
+                     "housing": "Rack: SP-BB-02",
+                     "circuits": 0
+                  },
+                  "id": 18,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1416571884668,
+                        52.2328145288195
+                     ]
+                  },
+                  "properties": {
+                     "id": 18,
+                     "name": "SP-S-018",
+                     "root_housing": "cabinet/45",
+                     "housing": "rack/7",
+                     "labor_costs": null,
+                     "n_fiber_in_ports": 10,
+                     "n_fiber_out_ports": 10,
+                     "circuits": [],
+                     "installation_date": "2014-01-19",
+                     "job_id": "31978"
+                  }
+               },
+               "fiber_cable/192": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-024 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.1416571884668,
+                     52.2328145288195,
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.1416571884668,
+                              52.2328145288195
+                           ],
+                           [
+                              0.1417024433613,
+                              52.2328831323955
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 192,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.1416571884668,
+                           52.2328145288195
+                        ],
+                        [
+                           0.1417024433613,
+                           52.2328831323955
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 192,
+                     "name": "BB-FCB-024",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "30188",
+                     "installation_date": "2002-01-13",
+                     "diameter": 10.4
+                  }
+               },
+               "manhole/184": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "manhole",
+                     "title": "Manhole: SP-M-184"
+                  },
+                  "bbox": [
+                     0.1417024433613,
+                     52.2328831323955,
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "display_values": {
+                     "specification": "FPM-CCANN-C2"
+                  },
+                  "id": 184,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1417024433613,
+                        52.2328831323955
+                     ]
+                  },
+                  "properties": {
+                     "id": 184,
+                     "name": "SP-M-184",
+                     "specification": "FPM-CCANN-C2",
+                     "labor_costs": "tree_trim,hole_dig",
+                     "myw_orientation_location": 0,
+                     "size_x": 600,
+                     "size_y": 1200,
+                     "size_z": 895,
+                     "lockable": null,
+                     "powered": null,
+                     "installation_date": "2006-09-26"
+                  }
+               },
+               "fiber_cable/193": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-025 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.1399952173233,
+                     52.2328831323955,
+                     0.1417024433613,
+                     52.2345200808762
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.1417024433613,
+                              52.2328831323955
+                           ],
+                           [
+                              0.1402661204338,
+                              52.2345200808762
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 193,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.1417024433613,
+                           52.2328831323955
+                        ],
+                        [
+                           0.1415106654167,
+                           52.2329365210303
+                        ],
+                        [
+                           0.1412934064865,
+                           52.2329915523251
+                        ],
+                        [
+                           0.1412746310234,
+                           52.2330137290963
+                        ],
+                        [
+                           0.141199529171,
+                           52.2330449408295
+                        ],
+                        [
+                           0.1411056518555,
+                           52.2330695816561
+                        ],
+                        [
+                           0.1409634947777,
+                           52.2330975079096
+                        ],
+                        [
+                           0.140845477581,
+                           52.2331352904599
+                        ],
+                        [
+                           0.1407113671303,
+                           52.2331796438476
+                        ],
+                        [
+                           0.1406416296959,
+                           52.2332124981802
+                        ],
+                        [
+                           0.140522941947,
+                           52.2332732786315
+                        ],
+                        [
+                           0.1404485106468,
+                           52.2333012047568
+                        ],
+                        [
+                           0.1403841376305,
+                           52.2333537715334
+                        ],
+                        [
+                           0.140309035778,
+                           52.2334129090827
+                        ],
+                        [
+                           0.1401722431183,
+                           52.2334819027906
+                        ],
+                        [
+                           0.1400783658028,
+                           52.2336100336779
+                        ],
+                        [
+                           0.1400300860405,
+                           52.2337102383449
+                        ],
+                        [
+                           0.1400086283684,
+                           52.2338022293154
+                        ],
+                        [
+                           0.1399952173233,
+                           52.2339361086908
+                        ],
+                        [
+                           0.1399978995323,
+                           52.234012493675
+                        ],
+                        [
+                           0.1400193572044,
+                           52.2341619778874
+                        ],
+                        [
+                           0.1400756835938,
+                           52.2342605386312
+                        ],
+                        [
+                           0.14011323452,
+                           52.2343393870687
+                        ],
+                        [
+                           0.1402151584625,
+                           52.2344576594622
+                        ],
+                        [
+                           0.1402661204338,
+                           52.2345200808762
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 193,
+                     "name": "BB-FCB-025",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "30931",
+                     "installation_date": "2014-09-08",
+                     "diameter": 10.4
+                  }
+               },
+               "manhole/174": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "manhole",
+                     "title": "Manhole: SP-M-174"
+                  },
+                  "bbox": [
+                     0.1402661204338,
+                     52.2345200808762,
+                     0.1402661204338,
+                     52.2345200808762
+                  ],
+                  "display_values": {
+                     "specification": "FPM-CCANN-J4"
+                  },
+                  "id": 174,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1402661204338,
+                        52.2345200808762
+                     ]
+                  },
+                  "properties": {
+                     "id": 174,
+                     "name": "SP-M-174",
+                     "specification": "FPM-CCANN-J4",
+                     "labor_costs": "level_ground",
+                     "myw_orientation_location": 0,
+                     "size_x": 440,
+                     "size_y": 910,
+                     "size_z": 800,
+                     "lockable": null,
+                     "powered": null,
+                     "installation_date": "2006-01-22"
+                  }
+               },
+               "fiber_cable/194": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-026 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.1402661204338,
+                     52.2345200808762,
+                     0.144799053669,
+                     52.2363253358954
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.1402661204338,
+                              52.2345200808762
+                           ],
+                           [
+                              0.144799053669,
+                              52.2362678448293
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 194,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.1402661204338,
+                           52.2345200808762
+                        ],
+                        [
+                           0.1403707265854,
+                           52.2346104275042
+                        ],
+                        [
+                           0.140472650528,
+                           52.2347184325499
+                        ],
+                        [
+                           0.1404404640198,
+                           52.2347582670442
+                        ],
+                        [
+                           0.1405397057533,
+                           52.2348946075169
+                        ],
+                        [
+                           0.140660405159,
+                           52.2350210916773
+                        ],
+                        [
+                           0.1407811045647,
+                           52.2351377196097
+                        ],
+                        [
+                           0.1409460604191,
+                           52.2352535259154
+                        ],
+                        [
+                           0.1410520076752,
+                           52.2352839147541
+                        ],
+                        [
+                           0.1412451267242,
+                           52.2354218962465
+                        ],
+                        [
+                           0.1412746310234,
+                           52.235471175247
+                        ],
+                        [
+                           0.1413336396217,
+                           52.2355352378658
+                        ],
+                        [
+                           0.141376554966,
+                           52.2355910872529
+                        ],
+                        [
+                           0.1414811611176,
+                           52.235688002199
+                        ],
+                        [
+                           0.1414892077446,
+                           52.2357241399214
+                        ],
+                        [
+                           0.1415374875069,
+                           52.2357734185863
+                        ],
+                        [
+                           0.1415938138962,
+                           52.2358292676737
+                        ],
+                        [
+                           0.141744017601,
+                           52.2359179690211
+                        ],
+                        [
+                           0.1418218016624,
+                           52.2359672474708
+                        ],
+                        [
+                           0.1419425010681,
+                           52.2360280241501
+                        ],
+                        [
+                           0.1420524716377,
+                           52.2360658042061
+                        ],
+                        [
+                           0.1421731710434,
+                           52.2361027629254
+                        ],
+                        [
+                           0.1422938704491,
+                           52.2361298659667
+                        ],
+                        [
+                           0.1423904299736,
+                           52.2361512198663
+                        ],
+                        [
+                           0.1425191760063,
+                           52.2361742163622
+                        ],
+                        [
+                           0.142647922039,
+                           52.2361873572116
+                        ],
+                        [
+                           0.1427257061005,
+                           52.2361972128461
+                        ],
+                        [
+                           0.1428061723709,
+                           52.2362054258732
+                        ],
+                        [
+                           0.1429644227028,
+                           52.2362234945274
+                        ],
+                        [
+                           0.1432621479034,
+                           52.2362415631742
+                        ],
+                        [
+                           0.1434445381165,
+                           52.2362629170202
+                        ],
+                        [
+                           0.1436054706573,
+                           52.2362842708558
+                        ],
+                        [
+                           0.1438656449318,
+                           52.2363039820796
+                        ],
+                        [
+                           0.1440319418907,
+                           52.2363253358954
+                        ],
+                        [
+                           0.1441419124603,
+                           52.2363056246811
+                        ],
+                        [
+                           0.14444231987,
+                           52.2362941264688
+                        ],
+                        [
+                           0.1445952057838,
+                           52.2362859134581
+                        ],
+                        [
+                           0.144799053669,
+                           52.2362678448293
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 194,
+                     "name": "BB-FCB-026",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "31674",
+                     "installation_date": "2006-05-03",
+                     "diameter": 10.4
+                  }
+               },
+               "manhole/159": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "manhole",
+                     "title": "Manhole: SP-M-159"
+                  },
+                  "bbox": [
+                     0.144799053669,
+                     52.2362678448293,
+                     0.144799053669,
+                     52.2362678448293
+                  ],
+                  "display_values": {
+                     "specification": "FPM-CCANN-J4"
+                  },
+                  "id": 159,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.144799053669,
+                        52.2362678448293
+                     ]
+                  },
+                  "properties": {
+                     "id": 159,
+                     "name": "SP-M-159",
+                     "specification": "FPM-CCANN-J4",
+                     "labor_costs": "level_ground",
+                     "myw_orientation_location": 0,
+                     "size_x": 440,
+                     "size_y": 910,
+                     "size_z": 800,
+                     "lockable": null,
+                     "powered": null,
+                     "installation_date": "2006-01-16"
+                  }
+               },
+               "fiber_cable/195": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-027 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.144799053669,
+                     52.2362678448293,
+                     0.1448285229346,
+                     52.2363556962577
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.144799053669,
+                              52.2362678448293
+                           ],
+                           [
+                              0.1448285229346,
+                              52.2363556962577
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 195,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.144799053669,
+                           52.2362678448293
+                        ],
+                        [
+                           0.1448285229346,
+                           52.2363556962577
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 195,
+                     "name": "BB-FCB-027",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "32417",
+                     "installation_date": "1998-01-25",
+                     "diameter": 10.4
+                  }
+               },
+               "shelf/19": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "shelf",
+                     "title": "Shelf: SP-S-019"
+                  },
+                  "bbox": [
+                     0.1448285229346,
+                     52.2363556962577,
+                     0.1448285229346,
+                     52.2363556962577
+                  ],
+                  "display_values": {
+                     "root_housing": "Cabinet: SP-C-46",
+                     "housing": "Rack: SP-BB-03",
+                     "circuits": 0
+                  },
+                  "id": 19,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1448285229346,
+                        52.2363556962577
+                     ]
+                  },
+                  "properties": {
+                     "id": 19,
+                     "name": "SP-S-019",
+                     "root_housing": "cabinet/46",
+                     "housing": "rack/8",
+                     "labor_costs": null,
+                     "n_fiber_in_ports": 10,
+                     "n_fiber_out_ports": 10,
+                     "circuits": [],
+                     "installation_date": "2006-09-14",
+                     "job_id": "32721"
+                  }
+               }
+            }
+         }
+      }
+   },
+   {
+      "properties": {
+         "distance": 1351.99,
+         "existing_splices": 2,
+         "new_splices": 2,
+         "loss": 0.88
+      },
+      "path": {
+         "properties": {
+            "distance": 1351.99,
+            "existing_splices": 2,
+            "new_splices": 2,
+            "loss": 0.88
+         },
+         "result": {
+            "metadata": [
+               "ports",
+               "fibers",
+               "from_",
+               "to_",
+               "length",
+               "direction",
+               "individualLoss",
+               "cumulativeLoss",
+               "dist"
+            ],
+            "metadata_unit_scales": {
+               "dist": {
+                  "scale": "length",
+                  "unit": "m"
+               },
+               "length": {
+                  "scale": "length",
+                  "unit": "m"
+               },
+               "individualLoss": {
+                  "scale": "fiber_loss",
+                  "unit": "dB"
+               },
+               "cumulativeLoss": {
+                  "scale": "fiber_loss",
+                  "unit": "dB"
+               }
+            },
+            "nodes": {
+               "1": {
+                  "parent": 0,
+                  "feature": "shelf/18",
+                  "dist": 0,
+                  "ports": "out:1",
+                  "direction": "forward",
+                  "individualLoss": 0,
+                  "cumulativeLoss": 0
+               },
+               "2": {
+                  "parent": 1,
+                  "feature": "fiber_cable/192",
+                  "dist": 8.64,
+                  "start_coord": [
+                     0.1416571884668,
+                     52.2328145288195
+                  ],
+                  "stop_coord": [
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "fibers": "1",
+                  "length": "8.64",
+                  "direction": "forward",
+                  "individualLoss": 0.00432,
+                  "cumulativeLoss": 0.00432
+               },
+               "3": {
+                  "parent": 2,
+                  "feature": "manhole/184",
+                  "dist": 8.64,
+                  "is_new_connection": true,
+                  "from_ref": "mywcom_fiber_segment/499",
+                  "to_ref": "mywcom_fiber_segment/517",
+                  "to_pins": "in:1",
+                  "from_pins": "out:1",
+                  "from_": "1",
+                  "to_": "1",
+                  "direction": "forward",
+                  "individualLoss": 0.1,
+                  "cumulativeLoss": 0.10432000000000001
+               },
+               "4": {
+                  "parent": 3,
+                  "feature": "fiber_cable/196",
+                  "dist": 1341.5199999999998,
+                  "start_coord": [
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "stop_coord": [
+                     0.144799053669,
+                     52.2362678448293
+                  ],
+                  "fibers": "1",
+                  "length": "1332.88",
+                  "direction": "forward",
+                  "individualLoss": 0.66644,
+                  "cumulativeLoss": 0.77076
+               },
+               "5": {
+                  "parent": 4,
+                  "feature": "manhole/159",
+                  "dist": 1341.5199999999998,
+                  "is_new_connection": true,
+                  "from_ref": "mywcom_fiber_segment/548",
+                  "to_ref": "mywcom_fiber_segment/516",
+                  "to_pins": "in:1",
+                  "from_pins": "out:1",
+                  "from_": "1",
+                  "to_": "1",
+                  "direction": "forward",
+                  "individualLoss": 0.1,
+                  "cumulativeLoss": 0.87076
+               },
+               "6": {
+                  "parent": 5,
+                  "feature": "fiber_cable/195",
+                  "dist": 1351.9899999999998,
+                  "start_coord": [
+                     0.144799053669,
+                     52.2362678448293
+                  ],
+                  "stop_coord": [
+                     0.1448285229346,
+                     52.2363556962577
+                  ],
+                  "fibers": "1",
+                  "length": "10.47",
+                  "direction": "forward",
+                  "individualLoss": 0.005235,
+                  "cumulativeLoss": 0.875995
+               },
+               "7": {
+                  "parent": 6,
+                  "feature": "shelf/19",
+                  "dist": 1351.9899999999998,
+                  "ports": "in:1",
+                  "direction": "forward",
+                  "individualLoss": 0,
+                  "cumulativeLoss": 0.875995
+               }
+            },
+            "features": {
+               "shelf/18": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "shelf",
+                     "title": "Shelf: SP-S-018"
+                  },
+                  "bbox": [
+                     0.1416571884668,
+                     52.2328145288195,
+                     0.1416571884668,
+                     52.2328145288195
+                  ],
+                  "display_values": {
+                     "root_housing": "Cabinet: SP-C-45",
+                     "housing": "Rack: SP-BB-02",
+                     "circuits": 0
+                  },
+                  "id": 18,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1416571884668,
+                        52.2328145288195
+                     ]
+                  },
+                  "properties": {
+                     "id": 18,
+                     "name": "SP-S-018",
+                     "root_housing": "cabinet/45",
+                     "housing": "rack/7",
+                     "labor_costs": null,
+                     "n_fiber_in_ports": 10,
+                     "n_fiber_out_ports": 10,
+                     "circuits": [],
+                     "installation_date": "2014-01-19",
+                     "job_id": "31978"
+                  }
+               },
+               "fiber_cable/192": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-024 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.1416571884668,
+                     52.2328145288195,
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.1416571884668,
+                              52.2328145288195
+                           ],
+                           [
+                              0.1417024433613,
+                              52.2328831323955
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 192,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.1416571884668,
+                           52.2328145288195
+                        ],
+                        [
+                           0.1417024433613,
+                           52.2328831323955
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 192,
+                     "name": "BB-FCB-024",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "30188",
+                     "installation_date": "2002-01-13",
+                     "diameter": 10.4
+                  }
+               },
+               "manhole/184": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "manhole",
+                     "title": "Manhole: SP-M-184"
+                  },
+                  "bbox": [
+                     0.1417024433613,
+                     52.2328831323955,
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "display_values": {
+                     "specification": "FPM-CCANN-C2"
+                  },
+                  "id": 184,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1417024433613,
+                        52.2328831323955
+                     ]
+                  },
+                  "properties": {
+                     "id": 184,
+                     "name": "SP-M-184",
+                     "specification": "FPM-CCANN-C2",
+                     "labor_costs": "tree_trim,hole_dig",
+                     "myw_orientation_location": 0,
+                     "size_x": 600,
+                     "size_y": 1200,
+                     "size_z": 895,
+                     "lockable": null,
+                     "powered": null,
+                     "installation_date": "2006-09-26"
+                  }
+               },
+               "fiber_cable/196": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-028 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.1417024433613,
+                     52.2310728089924,
+                     0.1492454856635,
+                     52.2362678448293
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.1417024433613,
+                              52.2328831323955
+                           ],
+                           [
+                              0.1470641791821,
+                              52.23107363039
+                           ],
+                           [
+                              0.1485367119312,
+                              52.231705280641
+                           ],
+                           [
+                              0.1486667990685,
+                              52.2341422657124
+                           ],
+                           [
+                              0.144799053669,
+                              52.2362678448293
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 196,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.1417024433613,
+                           52.2328831323955
+                        ],
+                        [
+                           0.141929090023,
+                           52.2328083881989
+                        ],
+                        [
+                           0.1420819759369,
+                           52.2327541780435
+                        ],
+                        [
+                           0.1422321796417,
+                           52.2326843618367
+                        ],
+                        [
+                           0.1424494385719,
+                           52.2325849762236
+                        ],
+                        [
+                           0.142637193203,
+                           52.2324929827305
+                        ],
+                        [
+                           0.1427002251148,
+                           52.2324560210055
+                        ],
+                        [
+                           0.1428544521332,
+                           52.2323829188365
+                        ],
+                        [
+                           0.1429335772991,
+                           52.2323681341135
+                        ],
+                        [
+                           0.1432085037231,
+                           52.2322514989041
+                        ],
+                        [
+                           0.1435075700283,
+                           52.2321340420102
+                        ],
+                        [
+                           0.143720805645,
+                           52.2320543682759
+                        ],
+                        [
+                           0.1440265774727,
+                           52.2319508743457
+                        ],
+                        [
+                           0.1441070437431,
+                           52.2319303398071
+                        ],
+                        [
+                           0.1442170143127,
+                           52.2318884493188
+                        ],
+                        [
+                           0.1443994045258,
+                           52.2318145248312
+                        ],
+                        [
+                           0.1444678008556,
+                           52.2317964543822
+                        ],
+                        [
+                           0.1447024941444,
+                           52.2317028164832
+                        ],
+                        [
+                           0.1449117064476,
+                           52.2316272489118
+                        ],
+                        [
+                           0.1451075077057,
+                           52.2315483956568
+                        ],
+                        [
+                           0.1453247666359,
+                           52.2314662567005
+                        ],
+                        [
+                           0.1455044746399,
+                           52.2314005454261
+                        ],
+                        [
+                           0.1455809175968,
+                           52.2313767250651
+                        ],
+                        [
+                           0.1458960771561,
+                           52.2312494091257
+                        ],
+                        [
+                           0.1461857557297,
+                           52.2311771263654
+                        ],
+                        [
+                           0.1463627815247,
+                           52.2311409849411
+                        ],
+                        [
+                           0.1465009152889,
+                           52.2311261998045
+                        ],
+                        [
+                           0.1466028392315,
+                           52.2311138788536
+                        ],
+                        [
+                           0.1467731595039,
+                           52.2310925225305
+                        ],
+                        [
+                           0.1468536257744,
+                           52.2310728089924
+                        ],
+                        [
+                           0.1469166576862,
+                           52.23107363039
+                        ],
+                        [
+                           0.1470641791821,
+                           52.23107363039
+                        ],
+                        [
+                           0.1470605751296,
+                           52.2311857616924
+                        ],
+                        [
+                           0.1472425460815,
+                           52.231180411948
+                        ],
+                        [
+                           0.1474142074585,
+                           52.2311968398572
+                        ],
+                        [
+                           0.14768242836,
+                           52.2312526947029
+                        ],
+                        [
+                           0.1478272676468,
+                           52.2313184061963
+                        ],
+                        [
+                           0.1479828357697,
+                           52.2314169732538
+                        ],
+                        [
+                           0.1481008529663,
+                           52.2315286823212
+                        ],
+                        [
+                           0.1482456922531,
+                           52.2316371055589
+                        ],
+                        [
+                           0.1483261585236,
+                           52.2317061020268
+                        ],
+                        [
+                           0.1484173536301,
+                           52.231771812849
+                        ],
+                        [
+                           0.1485367119312,
+                           52.231705280641
+                        ],
+                        [
+                           0.14858096838,
+                           52.2317438857615
+                        ],
+                        [
+                           0.1486185193062,
+                           52.2317652417712
+                        ],
+                        [
+                           0.1486855745316,
+                           52.2317882405393
+                        ],
+                        [
+                           0.1487754285336,
+                           52.2318038468395
+                        ],
+                        [
+                           0.1488290727139,
+                           52.2318054896077
+                        ],
+                        [
+                           0.1488907635212,
+                           52.2318017933793
+                        ],
+                        [
+                           0.1489417254925,
+                           52.2317915260767
+                        ],
+                        [
+                           0.148996040225,
+                           52.231771812849
+                        ],
+                        [
+                           0.149040967226,
+                           52.2317471713021
+                        ],
+                        [
+                           0.1490396261215,
+                           52.2317184228134
+                        ],
+                        [
+                           0.1492454856635,
+                           52.2318683254427
+                        ],
+                        [
+                           0.1492139697075,
+                           52.2318876279363
+                        ],
+                        [
+                           0.1491670310497,
+                           52.2319204832252
+                        ],
+                        [
+                           0.1491388678551,
+                           52.2319459460573
+                        ],
+                        [
+                           0.1491093635559,
+                           52.2319820868263
+                        ],
+                        [
+                           0.1490879058838,
+                           52.2320223344662
+                        ],
+                        [
+                           0.1490785181522,
+                           52.2320716172408
+                        ],
+                        [
+                           0.1490771770477,
+                           52.2321102220428
+                        ],
+                        [
+                           0.1490704715252,
+                           52.2321512909441
+                        ],
+                        [
+                           0.1490718126297,
+                           52.2322301431283
+                        ],
+                        [
+                           0.1490986347198,
+                           52.2322695691678
+                        ],
+                        [
+                           0.1491361856461,
+                           52.2323632058714
+                        ],
+                        [
+                           0.149117410183,
+                           52.2324929827305
+                        ],
+                        [
+                           0.1490825414658,
+                           52.2326161882583
+                        ],
+                        [
+                           0.1489618420601,
+                           52.2328478137249
+                        ],
+                        [
+                           0.1488545536995,
+                           52.2329874455144
+                        ],
+                        [
+                           0.1488116383553,
+                           52.233030156327
+                        ],
+                        [
+                           0.1487821340561,
+                           52.2330794379828
+                        ],
+                        [
+                           0.1487499475479,
+                           52.233122148707
+                        ],
+                        [
+                           0.1487351953983,
+                           52.2331558244412
+                        ],
+                        [
+                           0.1486775279045,
+                           52.2332075700319
+                        ],
+                        [
+                           0.1486346125603,
+                           52.2332732786315
+                        ],
+                        [
+                           0.1486185193062,
+                           52.2333028474696
+                        ],
+                        [
+                           0.1485729217529,
+                           52.2333948392844
+                        ],
+                        [
+                           0.1485702395439,
+                           52.2334769746722
+                        ],
+                        [
+                           0.1485648751259,
+                           52.233626460688
+                        ],
+                        [
+                           0.148586332798,
+                           52.2337102383449
+                        ],
+                        [
+                           0.1486051082611,
+                           52.2337315934086
+                        ],
+                        [
+                           0.1486440002918,
+                           52.2337480203737
+                        ],
+                        [
+                           0.1486667990685,
+                           52.2338137281733
+                        ],
+                        [
+                           0.1486882567406,
+                           52.2339139323805
+                        ],
+                        [
+                           0.1486882567406,
+                           52.2340289205361
+                        ],
+                        [
+                           0.1486721634865,
+                           52.2340847718186
+                        ],
+                        [
+                           0.1486667990685,
+                           52.2341422657124
+                        ],
+                        [
+                           0.1486399769783,
+                           52.2342638239855
+                        ],
+                        [
+                           0.1486131548882,
+                           52.2343377443943
+                        ],
+                        [
+                           0.1485756039619,
+                           52.2344215207087
+                        ],
+                        [
+                           0.1485688984394,
+                           52.234460944802
+                        ],
+                        [
+                           0.1485300064087,
+                           52.2345480062172
+                        ],
+                        [
+                           0.1485139131546,
+                           52.2345792168717
+                        ],
+                        [
+                           0.1484750211239,
+                           52.2346539580866
+                        ],
+                        [
+                           0.148409307003,
+                           52.2347172005547
+                        ],
+                        [
+                           0.1483127474785,
+                           52.234796048181
+                        ],
+                        [
+                           0.1482349634171,
+                           52.2348469705318
+                        ],
+                        [
+                           0.1481665670872,
+                           52.2348978928243
+                        ],
+                        [
+                           0.1480311155319,
+                           52.2349701695262
+                        ],
+                        [
+                           0.1479050517082,
+                           52.2350260196243
+                        ],
+                        [
+                           0.1478138566017,
+                           52.2350851549457
+                        ],
+                        [
+                           0.1475778222084,
+                           52.2351475754773
+                        ],
+                        [
+                           0.1474088430405,
+                           52.2351968547823
+                        ],
+                        [
+                           0.1472680270672,
+                           52.2352485979937
+                        ],
+                        [
+                           0.1470279693604,
+                           52.2353200528055
+                        ],
+                        [
+                           0.146601498127,
+                           52.2354793884084
+                        ],
+                        [
+                           0.1463654637337,
+                           52.2355795888554
+                        ],
+                        [
+                           0.1462286710739,
+                           52.2356682907017
+                        ],
+                        [
+                           0.1460167765617,
+                           52.2357750612075
+                        ],
+                        [
+                           0.145890712738,
+                           52.2358670478989
+                        ],
+                        [
+                           0.1458263397217,
+                           52.2358999002425
+                        ],
+                        [
+                           0.1456627249718,
+                           52.2360033849658
+                        ],
+                        [
+                           0.1454937458038,
+                           52.2360756598676
+                        ],
+                        [
+                           0.1453006267548,
+                           52.2361512198663
+                        ],
+                        [
+                           0.1451155543327,
+                           52.2362070684784
+                        ],
+                        [
+                           0.1449251174927,
+                           52.2362399205703
+                        ],
+                        [
+                           0.144799053669,
+                           52.2362678448293
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 196,
+                     "name": "BB-FCB-028",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "33160",
+                     "installation_date": "2010-09-20",
+                     "diameter": 10.4
+                  }
+               },
+               "manhole/159": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "manhole",
+                     "title": "Manhole: SP-M-159"
+                  },
+                  "bbox": [
+                     0.144799053669,
+                     52.2362678448293,
+                     0.144799053669,
+                     52.2362678448293
+                  ],
+                  "display_values": {
+                     "specification": "FPM-CCANN-J4"
+                  },
+                  "id": 159,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.144799053669,
+                        52.2362678448293
+                     ]
+                  },
+                  "properties": {
+                     "id": 159,
+                     "name": "SP-M-159",
+                     "specification": "FPM-CCANN-J4",
+                     "labor_costs": "level_ground",
+                     "myw_orientation_location": 0,
+                     "size_x": 440,
+                     "size_y": 910,
+                     "size_z": 800,
+                     "lockable": null,
+                     "powered": null,
+                     "installation_date": "2006-01-16"
+                  }
+               },
+               "fiber_cable/195": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-027 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.144799053669,
+                     52.2362678448293,
+                     0.1448285229346,
+                     52.2363556962577
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.144799053669,
+                              52.2362678448293
+                           ],
+                           [
+                              0.1448285229346,
+                              52.2363556962577
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 195,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.144799053669,
+                           52.2362678448293
+                        ],
+                        [
+                           0.1448285229346,
+                           52.2363556962577
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 195,
+                     "name": "BB-FCB-027",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "32417",
+                     "installation_date": "1998-01-25",
+                     "diameter": 10.4
+                  }
+               },
+               "shelf/19": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "shelf",
+                     "title": "Shelf: SP-S-019"
+                  },
+                  "bbox": [
+                     0.1448285229346,
+                     52.2363556962577,
+                     0.1448285229346,
+                     52.2363556962577
+                  ],
+                  "display_values": {
+                     "root_housing": "Cabinet: SP-C-46",
+                     "housing": "Rack: SP-BB-03",
+                     "circuits": 0
+                  },
+                  "id": 19,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1448285229346,
+                        52.2363556962577
+                     ]
+                  },
+                  "properties": {
+                     "id": 19,
+                     "name": "SP-S-019",
+                     "root_housing": "cabinet/46",
+                     "housing": "rack/8",
+                     "labor_costs": null,
+                     "n_fiber_in_ports": 10,
+                     "n_fiber_out_ports": 10,
+                     "circuits": [],
+                     "installation_date": "2006-09-14",
+                     "job_id": "32721"
+                  }
+               }
+            }
+         }
+      }
+   }
+]
+
+*** AVOID
+Avoid Test
+Paths
+[
+   {
+      "properties": {
+         "distance": 707.55,
+         "existing_splices": 2,
+         "new_splices": 3,
+         "loss": 0.65
+      },
+      "path": {
+         "properties": {
+            "distance": 707.55,
+            "existing_splices": 2,
+            "new_splices": 3,
+            "loss": 0.65
+         },
+         "result": {
+            "metadata": [
+               "ports",
+               "fibers",
+               "from_",
+               "to_",
+               "length",
+               "direction",
+               "individualLoss",
+               "cumulativeLoss",
+               "dist"
+            ],
+            "metadata_unit_scales": {
+               "dist": {
+                  "scale": "length",
+                  "unit": "m"
+               },
+               "length": {
+                  "scale": "length",
+                  "unit": "m"
+               },
+               "individualLoss": {
+                  "scale": "fiber_loss",
+                  "unit": "dB"
+               },
+               "cumulativeLoss": {
+                  "scale": "fiber_loss",
+                  "unit": "dB"
+               }
+            },
+            "nodes": {
+               "1": {
+                  "parent": 0,
+                  "feature": "shelf/18",
+                  "dist": 0,
+                  "ports": "out:1",
+                  "direction": "forward",
+                  "individualLoss": 0,
+                  "cumulativeLoss": 0
+               },
+               "2": {
+                  "parent": 1,
+                  "feature": "fiber_cable/192",
+                  "dist": 8.64,
+                  "start_coord": [
+                     0.1416571884668,
+                     52.2328145288195
+                  ],
+                  "stop_coord": [
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "fibers": "1",
+                  "length": "8.64",
+                  "direction": "forward",
+                  "individualLoss": 0.00432,
+                  "cumulativeLoss": 0.00432
+               },
+               "3": {
+                  "parent": 2,
+                  "feature": "manhole/184",
+                  "dist": 8.64,
+                  "is_new_connection": true,
+                  "from_ref": "mywcom_fiber_segment/499",
+                  "to_ref": "mywcom_fiber_segment/500",
+                  "to_pins": "in:1",
+                  "from_pins": "out:1",
+                  "from_": "1",
+                  "to_": "1",
+                  "direction": "forward",
+                  "individualLoss": 0.1,
+                  "cumulativeLoss": 0.10432000000000001
+               },
+               "4": {
+                  "parent": 3,
+                  "feature": "fiber_cable/193",
+                  "dist": 268.1,
+                  "start_coord": [
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "stop_coord": [
+                     0.1402661204338,
+                     52.2345200808762
+                  ],
+                  "fibers": "1",
+                  "length": "259.46",
+                  "direction": "forward",
+                  "individualLoss": 0.12972999999999998,
+                  "cumulativeLoss": 0.23404999999999998
+               },
+               "5": {
+                  "parent": 4,
+                  "feature": "manhole/174",
+                  "dist": 268.1,
+                  "is_new_connection": true,
+                  "from_ref": "mywcom_fiber_segment/505",
+                  "to_ref": "mywcom_fiber_segment/506",
+                  "to_pins": "in:1",
+                  "from_pins": "out:1",
+                  "from_": "1",
+                  "to_": "1",
+                  "direction": "forward",
+                  "individualLoss": 0.1,
+                  "cumulativeLoss": 0.33404999999999996
+               },
+               "6": {
+                  "parent": 5,
+                  "feature": "fiber_cable/194",
+                  "dist": 697.0799999999999,
+                  "start_coord": [
+                     0.1402661204338,
+                     52.2345200808762
+                  ],
+                  "stop_coord": [
+                     0.144799053669,
+                     52.2362678448293
+                  ],
+                  "fibers": "1",
+                  "length": "428.98",
+                  "direction": "forward",
+                  "individualLoss": 0.21449000000000001,
+                  "cumulativeLoss": 0.54854
+               },
+               "7": {
+                  "parent": 6,
+                  "feature": "manhole/159",
+                  "dist": 697.0799999999999,
+                  "is_new_connection": true,
+                  "from_ref": "mywcom_fiber_segment/515",
+                  "to_ref": "mywcom_fiber_segment/516",
+                  "to_pins": "in:1",
+                  "from_pins": "out:1",
+                  "from_": "1",
+                  "to_": "1",
+                  "direction": "forward",
+                  "individualLoss": 0.1,
+                  "cumulativeLoss": 0.64854
+               },
+               "8": {
+                  "parent": 7,
+                  "feature": "fiber_cable/195",
+                  "dist": 707.55,
+                  "start_coord": [
+                     0.144799053669,
+                     52.2362678448293
+                  ],
+                  "stop_coord": [
+                     0.1448285229346,
+                     52.2363556962577
+                  ],
+                  "fibers": "1",
+                  "length": "10.47",
+                  "direction": "forward",
+                  "individualLoss": 0.005235,
+                  "cumulativeLoss": 0.653775
+               },
+               "9": {
+                  "parent": 8,
+                  "feature": "shelf/19",
+                  "dist": 707.55,
+                  "ports": "in:1",
+                  "direction": "forward",
+                  "individualLoss": 0,
+                  "cumulativeLoss": 0.653775
+               }
+            },
+            "features": {
+               "shelf/18": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "shelf",
+                     "title": "Shelf: SP-S-018"
+                  },
+                  "bbox": [
+                     0.1416571884668,
+                     52.2328145288195,
+                     0.1416571884668,
+                     52.2328145288195
+                  ],
+                  "display_values": {
+                     "root_housing": "Cabinet: SP-C-45",
+                     "housing": "Rack: SP-BB-02",
+                     "circuits": 0
+                  },
+                  "id": 18,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1416571884668,
+                        52.2328145288195
+                     ]
+                  },
+                  "properties": {
+                     "id": 18,
+                     "name": "SP-S-018",
+                     "root_housing": "cabinet/45",
+                     "housing": "rack/7",
+                     "labor_costs": null,
+                     "n_fiber_in_ports": 10,
+                     "n_fiber_out_ports": 10,
+                     "circuits": [],
+                     "installation_date": "2014-01-19",
+                     "job_id": "31978"
+                  }
+               },
+               "fiber_cable/192": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-024 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.1416571884668,
+                     52.2328145288195,
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.1416571884668,
+                              52.2328145288195
+                           ],
+                           [
+                              0.1417024433613,
+                              52.2328831323955
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 192,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.1416571884668,
+                           52.2328145288195
+                        ],
+                        [
+                           0.1417024433613,
+                           52.2328831323955
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 192,
+                     "name": "BB-FCB-024",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "30188",
+                     "installation_date": "2002-01-13",
+                     "diameter": 10.4
+                  }
+               },
+               "manhole/184": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "manhole",
+                     "title": "Manhole: SP-M-184"
+                  },
+                  "bbox": [
+                     0.1417024433613,
+                     52.2328831323955,
+                     0.1417024433613,
+                     52.2328831323955
+                  ],
+                  "display_values": {
+                     "specification": "FPM-CCANN-C2"
+                  },
+                  "id": 184,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1417024433613,
+                        52.2328831323955
+                     ]
+                  },
+                  "properties": {
+                     "id": 184,
+                     "name": "SP-M-184",
+                     "specification": "FPM-CCANN-C2",
+                     "labor_costs": "tree_trim,hole_dig",
+                     "myw_orientation_location": 0,
+                     "size_x": 600,
+                     "size_y": 1200,
+                     "size_z": 895,
+                     "lockable": null,
+                     "powered": null,
+                     "installation_date": "2006-09-26"
+                  }
+               },
+               "fiber_cable/193": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-025 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.1399952173233,
+                     52.2328831323955,
+                     0.1417024433613,
+                     52.2345200808762
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.1417024433613,
+                              52.2328831323955
+                           ],
+                           [
+                              0.1402661204338,
+                              52.2345200808762
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 193,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.1417024433613,
+                           52.2328831323955
+                        ],
+                        [
+                           0.1415106654167,
+                           52.2329365210303
+                        ],
+                        [
+                           0.1412934064865,
+                           52.2329915523251
+                        ],
+                        [
+                           0.1412746310234,
+                           52.2330137290963
+                        ],
+                        [
+                           0.141199529171,
+                           52.2330449408295
+                        ],
+                        [
+                           0.1411056518555,
+                           52.2330695816561
+                        ],
+                        [
+                           0.1409634947777,
+                           52.2330975079096
+                        ],
+                        [
+                           0.140845477581,
+                           52.2331352904599
+                        ],
+                        [
+                           0.1407113671303,
+                           52.2331796438476
+                        ],
+                        [
+                           0.1406416296959,
+                           52.2332124981802
+                        ],
+                        [
+                           0.140522941947,
+                           52.2332732786315
+                        ],
+                        [
+                           0.1404485106468,
+                           52.2333012047568
+                        ],
+                        [
+                           0.1403841376305,
+                           52.2333537715334
+                        ],
+                        [
+                           0.140309035778,
+                           52.2334129090827
+                        ],
+                        [
+                           0.1401722431183,
+                           52.2334819027906
+                        ],
+                        [
+                           0.1400783658028,
+                           52.2336100336779
+                        ],
+                        [
+                           0.1400300860405,
+                           52.2337102383449
+                        ],
+                        [
+                           0.1400086283684,
+                           52.2338022293154
+                        ],
+                        [
+                           0.1399952173233,
+                           52.2339361086908
+                        ],
+                        [
+                           0.1399978995323,
+                           52.234012493675
+                        ],
+                        [
+                           0.1400193572044,
+                           52.2341619778874
+                        ],
+                        [
+                           0.1400756835938,
+                           52.2342605386312
+                        ],
+                        [
+                           0.14011323452,
+                           52.2343393870687
+                        ],
+                        [
+                           0.1402151584625,
+                           52.2344576594622
+                        ],
+                        [
+                           0.1402661204338,
+                           52.2345200808762
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 193,
+                     "name": "BB-FCB-025",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "30931",
+                     "installation_date": "2014-09-08",
+                     "diameter": 10.4
+                  }
+               },
+               "manhole/174": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "manhole",
+                     "title": "Manhole: SP-M-174"
+                  },
+                  "bbox": [
+                     0.1402661204338,
+                     52.2345200808762,
+                     0.1402661204338,
+                     52.2345200808762
+                  ],
+                  "display_values": {
+                     "specification": "FPM-CCANN-J4"
+                  },
+                  "id": 174,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1402661204338,
+                        52.2345200808762
+                     ]
+                  },
+                  "properties": {
+                     "id": 174,
+                     "name": "SP-M-174",
+                     "specification": "FPM-CCANN-J4",
+                     "labor_costs": "level_ground",
+                     "myw_orientation_location": 0,
+                     "size_x": 440,
+                     "size_y": 910,
+                     "size_z": 800,
+                     "lockable": null,
+                     "powered": null,
+                     "installation_date": "2006-01-22"
+                  }
+               },
+               "fiber_cable/194": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-026 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.1402661204338,
+                     52.2345200808762,
+                     0.144799053669,
+                     52.2363253358954
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.1402661204338,
+                              52.2345200808762
+                           ],
+                           [
+                              0.144799053669,
+                              52.2362678448293
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 194,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.1402661204338,
+                           52.2345200808762
+                        ],
+                        [
+                           0.1403707265854,
+                           52.2346104275042
+                        ],
+                        [
+                           0.140472650528,
+                           52.2347184325499
+                        ],
+                        [
+                           0.1404404640198,
+                           52.2347582670442
+                        ],
+                        [
+                           0.1405397057533,
+                           52.2348946075169
+                        ],
+                        [
+                           0.140660405159,
+                           52.2350210916773
+                        ],
+                        [
+                           0.1407811045647,
+                           52.2351377196097
+                        ],
+                        [
+                           0.1409460604191,
+                           52.2352535259154
+                        ],
+                        [
+                           0.1410520076752,
+                           52.2352839147541
+                        ],
+                        [
+                           0.1412451267242,
+                           52.2354218962465
+                        ],
+                        [
+                           0.1412746310234,
+                           52.235471175247
+                        ],
+                        [
+                           0.1413336396217,
+                           52.2355352378658
+                        ],
+                        [
+                           0.141376554966,
+                           52.2355910872529
+                        ],
+                        [
+                           0.1414811611176,
+                           52.235688002199
+                        ],
+                        [
+                           0.1414892077446,
+                           52.2357241399214
+                        ],
+                        [
+                           0.1415374875069,
+                           52.2357734185863
+                        ],
+                        [
+                           0.1415938138962,
+                           52.2358292676737
+                        ],
+                        [
+                           0.141744017601,
+                           52.2359179690211
+                        ],
+                        [
+                           0.1418218016624,
+                           52.2359672474708
+                        ],
+                        [
+                           0.1419425010681,
+                           52.2360280241501
+                        ],
+                        [
+                           0.1420524716377,
+                           52.2360658042061
+                        ],
+                        [
+                           0.1421731710434,
+                           52.2361027629254
+                        ],
+                        [
+                           0.1422938704491,
+                           52.2361298659667
+                        ],
+                        [
+                           0.1423904299736,
+                           52.2361512198663
+                        ],
+                        [
+                           0.1425191760063,
+                           52.2361742163622
+                        ],
+                        [
+                           0.142647922039,
+                           52.2361873572116
+                        ],
+                        [
+                           0.1427257061005,
+                           52.2361972128461
+                        ],
+                        [
+                           0.1428061723709,
+                           52.2362054258732
+                        ],
+                        [
+                           0.1429644227028,
+                           52.2362234945274
+                        ],
+                        [
+                           0.1432621479034,
+                           52.2362415631742
+                        ],
+                        [
+                           0.1434445381165,
+                           52.2362629170202
+                        ],
+                        [
+                           0.1436054706573,
+                           52.2362842708558
+                        ],
+                        [
+                           0.1438656449318,
+                           52.2363039820796
+                        ],
+                        [
+                           0.1440319418907,
+                           52.2363253358954
+                        ],
+                        [
+                           0.1441419124603,
+                           52.2363056246811
+                        ],
+                        [
+                           0.14444231987,
+                           52.2362941264688
+                        ],
+                        [
+                           0.1445952057838,
+                           52.2362859134581
+                        ],
+                        [
+                           0.144799053669,
+                           52.2362678448293
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 194,
+                     "name": "BB-FCB-026",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "31674",
+                     "installation_date": "2006-05-03",
+                     "diameter": 10.4
+                  }
+               },
+               "manhole/159": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "manhole",
+                     "title": "Manhole: SP-M-159"
+                  },
+                  "bbox": [
+                     0.144799053669,
+                     52.2362678448293,
+                     0.144799053669,
+                     52.2362678448293
+                  ],
+                  "display_values": {
+                     "specification": "FPM-CCANN-J4"
+                  },
+                  "id": 159,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.144799053669,
+                        52.2362678448293
+                     ]
+                  },
+                  "properties": {
+                     "id": 159,
+                     "name": "SP-M-159",
+                     "specification": "FPM-CCANN-J4",
+                     "labor_costs": "level_ground",
+                     "myw_orientation_location": 0,
+                     "size_x": 440,
+                     "size_y": 910,
+                     "size_z": 800,
+                     "lockable": null,
+                     "powered": null,
+                     "installation_date": "2006-01-16"
+                  }
+               },
+               "fiber_cable/195": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "fiber_cable",
+                     "title": "Fiber Cable: BB-FCB-027 (24)",
+                     "short_description": "NETCONNECT 24 Count OS2"
+                  },
+                  "bbox": [
+                     0.144799053669,
+                     52.2362678448293,
+                     0.1448285229346,
+                     52.2363556962577
+                  ],
+                  "secondary_geometries": {
+                     "placement_path": {
+                        "type": "LineString",
+                        "coordinates": [
+                           [
+                              0.144799053669,
+                              52.2362678448293
+                           ],
+                           [
+                              0.1448285229346,
+                              52.2363556962577
+                           ]
+                        ],
+                        "world_name": "geo",
+                        "world_type": "geo"
+                     }
+                  },
+                  "display_values": {
+                     "specification": "NETCONNECT 24 Count OS2"
+                  },
+                  "id": 195,
+                  "geometry": {
+                     "type": "LineString",
+                     "coordinates": [
+                        [
+                           0.144799053669,
+                           52.2362678448293
+                        ],
+                        [
+                           0.1448285229346,
+                           52.2363556962577
+                        ]
+                     ]
+                  },
+                  "properties": {
+                     "id": 195,
+                     "name": "BB-FCB-027",
+                     "specification": "NETCONNECT 24 Count OS2",
+                     "type": "Backbone",
+                     "fiber_count": 24,
+                     "directed": false,
+                     "tick_mark_spacing": null,
+                     "labor_costs": null,
+                     "owner": "Acme Co",
+                     "job_id": "32417",
+                     "installation_date": "1998-01-25",
+                     "diameter": 10.4
+                  }
+               },
+               "shelf/19": {
+                  "type": "Feature",
+                  "myw": {
+                     "feature_type": "shelf",
+                     "title": "Shelf: SP-S-019"
+                  },
+                  "bbox": [
+                     0.1448285229346,
+                     52.2363556962577,
+                     0.1448285229346,
+                     52.2363556962577
+                  ],
+                  "display_values": {
+                     "root_housing": "Cabinet: SP-C-46",
+                     "housing": "Rack: SP-BB-03",
+                     "circuits": 0
+                  },
+                  "id": 19,
+                  "geometry": {
+                     "type": "Point",
+                     "coordinates": [
+                        0.1448285229346,
+                        52.2363556962577
+                     ]
+                  },
+                  "properties": {
+                     "id": 19,
+                     "name": "SP-S-019",
+                     "root_housing": "cabinet/46",
+                     "housing": "rack/8",
+                     "labor_costs": null,
+                     "n_fiber_in_ports": 10,
+                     "n_fiber_out_ports": 10,
+                     "circuits": [],
+                     "installation_date": "2006-09-14",
+                     "job_id": "32721"
+                  }
+               }
+            }
+         }
+      }
+   }
+]

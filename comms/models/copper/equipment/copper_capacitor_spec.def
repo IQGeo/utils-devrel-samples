@@ -1,0 +1,69 @@
+{
+    "datasource": "myworld",
+    "name": "copper_capacitor_spec",
+    "external_name": "{:copper_capacitor_spec_external_name}",
+    "title": "{display_name}: [name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": false,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": false,
+        "delete_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)",
+            "key": true
+        },
+        {
+            "name": "type",
+            "external_name": "{:fiber_cable_spec_type_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "manufacturer",
+            "external_name": "{:spec_manufacturer_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "size",
+            "external_name": "{:copper_size_field_name}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length",
+            "display_format": "1"
+        },
+        {
+            "name": "cost",
+            "external_name": "{:spec_cost_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "cost_currency",
+            "external_name": "{:spec_currency_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "retired",
+            "external_name": "{:spec_retired_field_name}",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        }
+    ],
+    "queries": []
+}

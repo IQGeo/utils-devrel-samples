@@ -1,0 +1,14 @@
+{
+    "mywcom.strandLayout": {
+        "defaultLengthUnit": "ft",
+        "enabled": false,
+        "overhead": {
+            "structures": {},
+            "routes": []
+        },
+        "underground": {
+            "structures": {},
+            "routes": []
+        }
+    }
+}

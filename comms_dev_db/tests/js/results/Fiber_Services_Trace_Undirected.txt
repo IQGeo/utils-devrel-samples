@@ -1,0 +1,401 @@
+
+*** TRACE BB WESTWARDS UPSTREAM
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "fiber_shelf/13: Fiber Shelf: WH-S-013",
+			"individualLoss": 0,
+			"ports": "in:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.080415,
+			"dist": 160.83,
+			"feature": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"fibers": "2",
+			"individualLoss": 0.080415,
+			"length": "160.83",
+			"parent": "fiber_shelf/13: Fiber Shelf: WH-S-013",
+			"start_coord": [
+				0.13660491,
+				52.224016
+			],
+			"stop_coord": [
+				0.13796532,
+				52.223338
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.180415,
+			"dist": 160.83,
+			"feature": "mywcom_fiber_connection/221: Fiber Connection: 221",
+			"from_": "2",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"to_": "12"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.344715,
+			"dist": 489.43,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "12",
+			"individualLoss": 0.1643,
+			"length": "328.60",
+			"parent": "mywcom_fiber_connection/221: Fiber Connection: 221",
+			"start_coord": [
+				0.13796532,
+				52.223338
+			],
+			"stop_coord": [
+				0.13498521,
+				52.221376
+			]
+		}
+	]
+}
+
+*** TRACE BB WESTWARDS DOWNSTREAM
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "fiber_shelf/13: Fiber Shelf: WH-S-013",
+			"individualLoss": 0,
+			"ports": "out:3"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.080415,
+			"dist": 160.83,
+			"feature": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"fibers": "11",
+			"individualLoss": 0.080415,
+			"length": "160.83",
+			"parent": "fiber_shelf/13: Fiber Shelf: WH-S-013",
+			"start_coord": [
+				0.13660491,
+				52.224016
+			],
+			"stop_coord": [
+				0.13796532,
+				52.223338
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.180415,
+			"dist": 160.83,
+			"feature": "mywcom_fiber_connection/221: Fiber Connection: 221",
+			"from_": "11",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"to_": "21"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.344715,
+			"dist": 489.43,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "21",
+			"individualLoss": 0.1643,
+			"length": "328.60",
+			"parent": "mywcom_fiber_connection/221: Fiber Connection: 221",
+			"start_coord": [
+				0.13796532,
+				52.223338
+			],
+			"stop_coord": [
+				0.13498521,
+				52.221376
+			]
+		}
+	]
+}
+
+*** TRACE BB EASTWARDS UPSTREAM
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "fiber_shelf/14: Fiber Shelf: WH-S-014",
+			"individualLoss": 0,
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.13527,
+			"dist": 270.54,
+			"feature": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"fibers": "11",
+			"individualLoss": 0.13527,
+			"length": "270.54",
+			"parent": "fiber_shelf/14: Fiber Shelf: WH-S-014",
+			"start_coord": [
+				0.13660491,
+				52.224016
+			],
+			"stop_coord": [
+				0.13811244,
+				52.22341
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.23527,
+			"dist": 270.54,
+			"feature": "mywcom_fiber_connection/215: Fiber Connection: 215",
+			"from_": "11",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"to_": "11"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.775735,
+			"dist": 1351.47,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "11",
+			"individualLoss": 0.540465,
+			"length": "1080.93",
+			"parent": "mywcom_fiber_connection/215: Fiber Connection: 215",
+			"start_coord": [
+				0.13811244,
+				52.22341
+			],
+			"stop_coord": [
+				0.14841681,
+				52.229851
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.775735,
+			"dist": 1351.47,
+			"feature": "fiber_shelf/15: Fiber Shelf: SP-S-015",
+			"individualLoss": 0,
+			"parent": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"ports": "out:12"
+		}
+	]
+}
+
+*** TRACE BB EASTWARDS DOWNSTREAM
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "fiber_shelf/14: Fiber Shelf: WH-S-014",
+			"individualLoss": 0,
+			"ports": "out:5"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.13527,
+			"dist": 270.54,
+			"feature": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"fibers": "23",
+			"individualLoss": 0.13527,
+			"length": "270.54",
+			"parent": "fiber_shelf/14: Fiber Shelf: WH-S-014",
+			"start_coord": [
+				0.13660491,
+				52.224016
+			],
+			"stop_coord": [
+				0.13811244,
+				52.22341
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.23527,
+			"dist": 270.54,
+			"feature": "mywcom_fiber_connection/216: Fiber Connection: 216",
+			"from_": "23",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"to_": "23"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.90622,
+			"dist": 1612.44,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "23",
+			"individualLoss": 0.67095,
+			"length": "1341.90",
+			"parent": "mywcom_fiber_connection/216: Fiber Connection: 216",
+			"start_coord": [
+				0.13811244,
+				52.22341
+			],
+			"stop_coord": [
+				0.15102848,
+				52.229727
+			]
+		}
+	]
+}
+
+*** TRACE BB TO DIST DOWNSTREAM
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "fiber_shelf/13: Fiber Shelf: WH-S-013",
+			"individualLoss": 0,
+			"ports": "in:2"
+		}
+	]
+}
+
+*** TRACE BB TO DIST UPSTREAM
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "fiber_shelf/13: Fiber Shelf: WH-S-013",
+			"individualLoss": 0,
+			"ports": "in:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.080415,
+			"dist": 160.83,
+			"feature": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"fibers": "2",
+			"individualLoss": 0.080415,
+			"length": "160.83",
+			"parent": "fiber_shelf/13: Fiber Shelf: WH-S-013",
+			"start_coord": [
+				0.13660491,
+				52.224016
+			],
+			"stop_coord": [
+				0.13796532,
+				52.223338
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.180415,
+			"dist": 160.83,
+			"feature": "mywcom_fiber_connection/221: Fiber Connection: 221",
+			"from_": "2",
+			"individualLoss": 0.1,
+			"parent": "fiber_cable/167: Fiber Cable: BB-FCB-017 (72)",
+			"to_": "12"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.25,
+			"dist": 300,
+			"feature": "fiber_cable/166: Fiber Cable: BB-FCB-016 (72)",
+			"fibers": "12",
+			"individualLoss": 0.069585,
+			"length": "139.17",
+			"parent": "mywcom_fiber_connection/221: Fiber Connection: 221",
+			"start_coord": [
+				0.13796532,
+				52.223338
+			],
+			"stop_coord": [
+				0.13680702,
+				52.222539
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+Request: POST:/modules/comms/feature?delta=NB217
+Response: 200 (200 OK)
+{
+   "ids": [
+      100000
+   ]
+}
+
+
+DATABASE CHANGES: COAX CABLE INSERT WITH OFFSET
+   insert delta.coax_cable(NB217,100000,insert)
+   insert delta.mywcom_coax_segment(NB217,100000,insert)
+   insert delta.mywcom_coax_segment(NB217,100001,insert)
+   insert delta.mywcom_coax_segment(NB217,100002,insert)
+

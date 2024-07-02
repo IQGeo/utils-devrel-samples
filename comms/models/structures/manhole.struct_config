@@ -1,0 +1,9 @@
+{
+    "image": "modules/comms/images/features/manhole.svg",
+    "palette": true,
+    "layer": {
+        "min_vis": 18,
+        "point_style": "square:#e2d3a6:1.8m:#660000",
+        "text_style": "name:#783f04:1.2m:middle:right+1.8::"
+    }
+}

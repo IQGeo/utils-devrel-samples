@@ -1,0 +1,3809 @@
+
+*** splice_trays
+
+FEATURE SET REPORT: csv
+FeatureSetReport.type
+32 FeatureSetReport.features
+FeatureSetReport.date: 6/10/2020
+
+Splice Tray (x32)
+
+FeatureSetReport.feature,Name,Structure,Housing,Circuits,Slots
+Splice Tray: Tray-1,Tray-1,Manhole: WH-M-28,Splice Closure: WH-SC-024,,12
+Splice Tray: Tray-1,Tray-1,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-1,Tray-1,Manhole: WH-M-32,Splice Closure: WH-SC-020,,12
+Splice Tray: Tray-2,Tray-2,Manhole: WH-M-28,Splice Closure: WH-SC-024,,12
+Splice Tray: Tray-2,Tray-2,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-2,Tray-2,Manhole: WH-M-32,Splice Closure: WH-SC-020,,12
+Splice Tray: Tray-3,Tray-3,Manhole: WH-M-28,Splice Closure: WH-SC-024,,12
+Splice Tray: Tray-3,Tray-3,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-3,Tray-3,Manhole: WH-M-32,Splice Closure: WH-SC-020,,12
+Splice Tray: Tray-4,Tray-4,Manhole: WH-M-28,Splice Closure: WH-SC-024,,12
+Splice Tray: Tray-4,Tray-4,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-4,Tray-4,Manhole: WH-M-32,Splice Closure: WH-SC-020,,12
+Splice Tray: Tray-5,Tray-5,Manhole: WH-M-28,Splice Closure: WH-SC-024,,12
+Splice Tray: Tray-5,Tray-5,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-5,Tray-5,Manhole: WH-M-32,Splice Closure: WH-SC-020,,12
+Splice Tray: Tray-6,Tray-6,Manhole: WH-M-28,Splice Closure: WH-SC-024,,12
+Splice Tray: Tray-6,Tray-6,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-6,Tray-6,Manhole: WH-M-32,Splice Closure: WH-SC-020,,12
+Splice Tray: Tray-7,Tray-7,Manhole: WH-M-28,Splice Closure: WH-SC-024,,12
+Splice Tray: Tray-7,Tray-7,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-7,Tray-7,Manhole: WH-M-32,Splice Closure: WH-SC-020,,12
+Splice Tray: Tray-8,Tray-8,Manhole: WH-M-28,Splice Closure: WH-SC-024,,12
+Splice Tray: Tray-8,Tray-8,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-8,Tray-8,Manhole: WH-M-32,Splice Closure: WH-SC-020,,12
+Splice Tray: Tray-9,Tray-9,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-10,Tray-10,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-11,Tray-11,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-12,Tray-12,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-13,Tray-13,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-14,Tray-14,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-16,Tray-16,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+Splice Tray: Tray-17,Tray-17,Manhole: WH-M-29,Splice Closure: WH-SC-023,,16
+
+
+
+FEATURE SET REPORT: html
+<h3>
+FeatureSetReport.type</h3>
+<h1>
+32 FeatureSetReport.features</h1>
+FeatureSetReport.date: 6&#x2F;10&#x2F;2020<br>
+<br>
+<h3>
+Splice Tray (x32)</h3>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+FeatureSetReport.feature</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+Name</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+Structure</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+Housing</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+Circuits</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+Slots</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-1</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-1</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-28</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-024</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-1</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-1</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-1</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-1</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-32</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-020</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-2</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-2</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-28</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-024</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-2</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-2</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-2</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-2</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-32</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-020</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-3</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-3</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-28</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-024</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-3</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-3</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-3</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-3</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-32</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-020</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-4</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-4</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-28</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-024</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-4</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-4</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-4</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-4</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-32</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-020</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-5</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-5</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-28</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-024</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-5</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-5</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-5</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-5</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-32</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-020</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-6</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-6</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-28</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-024</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-6</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-6</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-6</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-6</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-32</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-020</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-7</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-7</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-28</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-024</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-7</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-7</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-7</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-7</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-32</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-020</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-8</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-8</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-28</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-024</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-8</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-8</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-8</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-8</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-32</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-020</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+12</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-9</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-9</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-10</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-10</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-11</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-11</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-12</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-12</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-13</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-13</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-14</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-14</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-16</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-16</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Tray: Tray-17</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Tray-17</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Splice Closure: WH-SC-023</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+16</td>
+</tr>
+</table>
+<br>
+
+
+FEATURE SET REPORT: pdf
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 19718
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+45. 780.8899999999999864 Td
+(FeatureSetReport.type) Tj
+ET
+BT
+/F1 15 Tf
+17.25 TL
+0 g
+45. 761.4900000000000091 Td
+(32 FeatureSetReport.features) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+45. 746.4900000000000091 Td
+(FeatureSetReport.date) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+135.9000000000000057 746.4900000000000091 Td
+(: ) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+140.9399999999999977 746.4900000000000091 Td
+(6/10/2020) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+45. 723.7899999999999636 Td
+(Splice Tray \(x32\)) Tj
+ET
+0.95 G
+44.5 718.8899999999999864 m
+458.7899999999999636 718.8899999999999864 l
+S
+44.5 197.7899999999999636 m
+458.7899999999999636 197.7899999999999636 l
+S
+44.5 718.8899999999999864 m
+44.5 197.7899999999999636 l
+S
+458.7899999999999636 718.8899999999999864 m
+458.7899999999999636 197.7899999999999636 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 718.3899999999999864 413.2899999999999636 -19.7999999999999972 re
+f
+0. g
+0.95 g
+45. 682.8399999999999181 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 651.3399999999999181 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 619.8399999999999181 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 588.3399999999999181 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 556.8399999999999181 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 525.3399999999999181 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 493.839999999999975 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 462.339999999999975 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 430.839999999999975 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 399.339999999999975 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 367.839999999999975 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 336.339999999999975 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 304.8400000000000318 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 273.3400000000000318 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 241.8400000000000318 412.2899999999999636 -15.75 re
+f
+0. g
+0.95 g
+45. 210.3400000000000318 412.2899999999999636 -15.75 re
+f
+0. g
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+48.6000000000000014 703.6399999999999864 Td
+(FeatureSetReport.feature) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+157.1400000000000148 703.6399999999999864 Td
+(Name) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+194.0400000000000205 703.6399999999999864 Td
+(Structure) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+278.7300000000000182 703.6399999999999864 Td
+(Housing) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+396.7200000000000273 703.6399999999999864 Td
+(Circuits) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+433.8000000000000114 703.6399999999999864 Td
+(Slots) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 687.8899999999999864 Td
+(Splice Tray: Tray-1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 687.8899999999999864 Td
+(Tray-1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 687.8899999999999864 Td
+(Manhole: WH-M-28) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 687.8899999999999864 Td
+(Splice Closure: WH-SC-024) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 687.8899999999999864 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 672.1399999999999864 Td
+(Splice Tray: Tray-1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 672.1399999999999864 Td
+(Tray-1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 672.1399999999999864 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 672.1399999999999864 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 672.1399999999999864 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 656.3899999999999864 Td
+(Splice Tray: Tray-1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 656.3899999999999864 Td
+(Tray-1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 656.3899999999999864 Td
+(Manhole: WH-M-32) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 656.3899999999999864 Td
+(Splice Closure: WH-SC-020) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 656.3899999999999864 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 640.6399999999999864 Td
+(Splice Tray: Tray-2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 640.6399999999999864 Td
+(Tray-2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 640.6399999999999864 Td
+(Manhole: WH-M-28) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 640.6399999999999864 Td
+(Splice Closure: WH-SC-024) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 640.6399999999999864 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 624.8899999999999864 Td
+(Splice Tray: Tray-2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 624.8899999999999864 Td
+(Tray-2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 624.8899999999999864 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 624.8899999999999864 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 624.8899999999999864 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 609.1399999999999864 Td
+(Splice Tray: Tray-2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 609.1399999999999864 Td
+(Tray-2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 609.1399999999999864 Td
+(Manhole: WH-M-32) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 609.1399999999999864 Td
+(Splice Closure: WH-SC-020) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 609.1399999999999864 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 593.3899999999999864 Td
+(Splice Tray: Tray-3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 593.3899999999999864 Td
+(Tray-3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 593.3899999999999864 Td
+(Manhole: WH-M-28) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 593.3899999999999864 Td
+(Splice Closure: WH-SC-024) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 593.3899999999999864 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 577.6400000000001 Td
+(Splice Tray: Tray-3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 577.6400000000001 Td
+(Tray-3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 577.6400000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 577.6400000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 577.6400000000001 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 561.8900000000001 Td
+(Splice Tray: Tray-3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 561.8900000000001 Td
+(Tray-3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 561.8900000000001 Td
+(Manhole: WH-M-32) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 561.8900000000001 Td
+(Splice Closure: WH-SC-020) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 561.8900000000001 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 546.1400000000001 Td
+(Splice Tray: Tray-4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 546.1400000000001 Td
+(Tray-4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 546.1400000000001 Td
+(Manhole: WH-M-28) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 546.1400000000001 Td
+(Splice Closure: WH-SC-024) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 546.1400000000001 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 530.3900000000001 Td
+(Splice Tray: Tray-4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 530.3900000000001 Td
+(Tray-4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 530.3900000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 530.3900000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 530.3900000000001 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 514.6400000000001 Td
+(Splice Tray: Tray-4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 514.6400000000001 Td
+(Tray-4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 514.6400000000001 Td
+(Manhole: WH-M-32) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 514.6400000000001 Td
+(Splice Closure: WH-SC-020) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 514.6400000000001 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 498.8900000000000432 Td
+(Splice Tray: Tray-5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 498.8900000000000432 Td
+(Tray-5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 498.8900000000000432 Td
+(Manhole: WH-M-28) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 498.8900000000000432 Td
+(Splice Closure: WH-SC-024) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 498.8900000000000432 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 483.1400000000000432 Td
+(Splice Tray: Tray-5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 483.1400000000000432 Td
+(Tray-5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 483.1400000000000432 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 483.1400000000000432 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 483.1400000000000432 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 467.3900000000000432 Td
+(Splice Tray: Tray-5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 467.3900000000000432 Td
+(Tray-5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 467.3900000000000432 Td
+(Manhole: WH-M-32) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 467.3900000000000432 Td
+(Splice Closure: WH-SC-020) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 467.3900000000000432 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 451.6400000000000432 Td
+(Splice Tray: Tray-6) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 451.6400000000000432 Td
+(Tray-6) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 451.6400000000000432 Td
+(Manhole: WH-M-28) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 451.6400000000000432 Td
+(Splice Closure: WH-SC-024) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 451.6400000000000432 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 435.8900000000000432 Td
+(Splice Tray: Tray-6) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 435.8900000000000432 Td
+(Tray-6) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 435.8900000000000432 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 435.8900000000000432 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 435.8900000000000432 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 420.1400000000000432 Td
+(Splice Tray: Tray-6) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 420.1400000000000432 Td
+(Tray-6) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 420.1400000000000432 Td
+(Manhole: WH-M-32) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 420.1400000000000432 Td
+(Splice Closure: WH-SC-020) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 420.1400000000000432 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 404.3900000000000432 Td
+(Splice Tray: Tray-7) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 404.3900000000000432 Td
+(Tray-7) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 404.3900000000000432 Td
+(Manhole: WH-M-28) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 404.3900000000000432 Td
+(Splice Closure: WH-SC-024) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 404.3900000000000432 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 388.6400000000000432 Td
+(Splice Tray: Tray-7) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 388.6400000000000432 Td
+(Tray-7) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 388.6400000000000432 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 388.6400000000000432 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 388.6400000000000432 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 372.8900000000000432 Td
+(Splice Tray: Tray-7) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 372.8900000000000432 Td
+(Tray-7) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 372.8900000000000432 Td
+(Manhole: WH-M-32) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 372.8900000000000432 Td
+(Splice Closure: WH-SC-020) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 372.8900000000000432 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 357.1400000000000432 Td
+(Splice Tray: Tray-8) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 357.1400000000000432 Td
+(Tray-8) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 357.1400000000000432 Td
+(Manhole: WH-M-28) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 357.1400000000000432 Td
+(Splice Closure: WH-SC-024) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 357.1400000000000432 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 341.3900000000000432 Td
+(Splice Tray: Tray-8) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 341.3900000000000432 Td
+(Tray-8) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 341.3900000000000432 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 341.3900000000000432 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 341.3900000000000432 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 325.6400000000001 Td
+(Splice Tray: Tray-8) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 325.6400000000001 Td
+(Tray-8) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 325.6400000000001 Td
+(Manhole: WH-M-32) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 325.6400000000001 Td
+(Splice Closure: WH-SC-020) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 325.6400000000001 Td
+(12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 309.8900000000001 Td
+(Splice Tray: Tray-9) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 309.8900000000001 Td
+(Tray-9) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 309.8900000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 309.8900000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 309.8900000000001 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 294.1400000000001 Td
+(Splice Tray: Tray-10) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 294.1400000000001 Td
+(Tray-10) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 294.1400000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 294.1400000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 294.1400000000001 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 278.3900000000001 Td
+(Splice Tray: Tray-11) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 278.3900000000001 Td
+(Tray-11) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 278.3900000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 278.3900000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 278.3900000000001 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 262.6400000000001 Td
+(Splice Tray: Tray-12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 262.6400000000001 Td
+(Tray-12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 262.6400000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 262.6400000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 262.6400000000001 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 246.8900000000001 Td
+(Splice Tray: Tray-13) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 246.8900000000001 Td
+(Tray-13) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 246.8900000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 246.8900000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 246.8900000000001 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 231.1400000000001 Td
+(Splice Tray: Tray-14) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 231.1400000000001 Td
+(Tray-14) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 231.1400000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 231.1400000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 231.1400000000001 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 215.3900000000001 Td
+(Splice Tray: Tray-16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 215.3900000000001 Td
+(Tray-16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 215.3900000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 215.3900000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 215.3900000000001 Td
+(16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 199.6400000000001 Td
+(Splice Tray: Tray-17) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+157.1400000000000148 199.6400000000001 Td
+(Tray-17) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+194.0400000000000205 199.6400000000001 Td
+(Manhole: WH-M-29) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+278.7300000000000182 199.6400000000001 Td
+(Splice Closure: WH-SC-023) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+433.8000000000000114 199.6400000000001 Td
+(16) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 2.3.1)
+/CreationDate <date>
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000019923 00000 n 
+0000021740 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000019980 00000 n 
+0000020105 00000 n 
+0000020235 00000 n 
+0000020368 00000 n 
+0000020505 00000 n 
+0000020628 00000 n 
+0000020757 00000 n 
+0000020889 00000 n 
+0000021025 00000 n 
+0000021153 00000 n 
+0000021280 00000 n 
+0000021409 00000 n 
+0000021542 00000 n 
+0000021644 00000 n 
+0000021988 00000 n 
+0000022074 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID <id>
+>>
+startxref
+22178
+%%EOF
+
+FEATURE SET REPORT: xlsx
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 13
+			},
+			"text": "FeatureSetReport.type"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 17
+			},
+			"text": "32 FeatureSetReport.features"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "FeatureSetReport.date"
+		},
+		{
+			"font": {
+
+			},
+			"text": ": "
+		},
+		{
+			"font": {
+
+			},
+			"text": "6/10/2020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 13
+			},
+			"text": "Splice Tray (x32)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "FeatureSetReport.feature"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "Name"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "Structure"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "Housing"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "Circuits"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "Slots"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-1"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-1"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-28"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-024"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-1"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-1"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-1"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-1"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-32"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-28"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-024"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-32"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-3"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-3"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-28"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-024"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-3"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-3"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-3"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-3"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-32"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-4"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-4"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-28"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-024"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-4"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-4"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-4"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-4"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-32"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-5"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-5"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-28"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-024"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-5"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-5"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-5"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-5"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-32"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-6"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-6"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-28"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-024"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-6"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-6"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-6"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-6"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-32"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-7"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-7"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-28"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-024"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-7"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-7"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-7"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-7"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-32"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-8"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-8"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-28"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-024"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-8"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-8"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-8"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-8"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-32"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+12
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-9"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-9"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-10"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-10"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-11"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-11"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-12"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-12"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-13"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-13"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-14"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-14"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-16"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-16"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Tray: Tray-17"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Tray-17"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-29"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Splice Closure: WH-SC-023"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+16

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ActionLog>
+  <ActionLogEntry timestamp="2022/11/08 16:36:22" action="/streetDoubler" tooltip="" icon="doubler.png"/>
+  <ActionLogEntry timestamp="2022/11/08 16:36:25" action="/createBuildingTrenches" tooltip="Create the suggested building to street trenches." icon="drop.png"/>
+  <ActionLogEntry timestamp="2022/11/08 16:36:28" action="/createTransitions" tooltip="Generate transitions from existing pipes." icon="transitions.png"/>
+  <ActionLogEntry timestamp="2022/11/08 16:36:32" action="/processInput" tooltip="Read in the shape files of a new area, preparing them for use in calculations." icon="process_area.png"/>
+  <ActionLogEntry timestamp="2022/11/08 16:37:06" action="/calculate" tooltip="Calculate the network and copy the results (clusters and aggregation nodes) back to the CalculationInput folder." icon="fiberplanit.png"/>
+</ActionLog>

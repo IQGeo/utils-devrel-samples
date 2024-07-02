@@ -1,0 +1,450 @@
+Request: POST: /modules/comms/loc/update
+Response: 200 (200 OK)
+b'{"mywcom_copper_segment/1": [{"name": "WH-1", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100000", "loc_ref": "mywcom_line_of_count/100000", "low": 1, "high": 100, "origin": "mywcom_copper_segment/1", "forward": true, "physical": false}]}'
+
+
+"{/"mywcom_copper_segment/1/": [{/"name/": /"WH-1/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100000/", /"loc_ref/": /"mywcom_line_of_count/100000/", /"low/": 1, /"high/": 100, /"origin/": /"mywcom_copper_segment/1/", /"forward/": true, /"physical/": false}]}"
+DATABASE CHANGES: AFTER INITIAL SETTING OF COPPER LOC
+   update data.mywcom_line_of_count(1) fields=(route)
+   insert data.mywcom_line_of_count(100000)
+   insert data.mywcom_line_of_count_section(100000)
+   delete data.mywcom_line_of_count_section(2)
+
+Request: GET: /modules/comms/loc/mywcom_copper_segment/1/ripple_trace
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/loc/update
+Response: 200 (200 OK)
+b'{"fiber_patch_panel/1": {"in": [], "out": [{"name": "WH-1", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100001", "loc_ref": "mywcom_line_of_count/100001", "low": 1, "high": 44, "origin": "fiber_patch_panel/1?side=out", "forward": true, "physical": false}]}}'
+
+
+"{/"fiber_patch_panel/1/": {/"in/": [], /"out/": [{/"name/": /"WH-1/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100001/", /"loc_ref/": /"mywcom_line_of_count/100001/", /"low/": 1, /"high/": 44, /"origin/": /"fiber_patch_panel/1?side=out/", /"forward/": true, /"physical/": false}]}}"
+DATABASE CHANGES: AFTER INITIAL SETTING OF FIBER LOC
+   insert data.mywcom_line_of_count(100001)
+   insert data.mywcom_line_of_count_section(100001)
+
+Request: POST: /modules/comms/loc/fiber_patch_panel/1/ripple_trace_update?side=out
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/loc/get?application=mywcom&lang=en-GB
+Response: 200 (200 OK)
+
+
+{
+   "fiber_splitter/4": {
+      "in": [
+         {
+            "forward": true,
+            "high": 2,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100179",
+            "low": 2,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         }
+      ],
+      "out": [
+         {
+            "forward": true,
+            "high": 2,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100180",
+            "low": 2,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 2,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100180",
+            "low": 2,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 2,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100180",
+            "low": 2,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 2,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100180",
+            "low": 2,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 2,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100180",
+            "low": 2,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 2,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100180",
+            "low": 2,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 2,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100180",
+            "low": 2,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         }
+      ]
+   },
+   "fiber_splitter/9": {
+      "in": [
+         {
+            "forward": true,
+            "high": 10,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100058",
+            "low": 10,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         }
+      ],
+      "out": [
+         {
+            "forward": true,
+            "high": 10,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100059",
+            "low": 10,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 10,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100059",
+            "low": 10,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 10,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100059",
+            "low": 10,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 10,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100059",
+            "low": 10,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 10,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100059",
+            "low": 10,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 10,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100059",
+            "low": 10,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 10,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100059",
+            "low": 10,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         },
+         {
+            "forward": true,
+            "high": 10,
+            "loc_ref": "mywcom_line_of_count/100001",
+            "loc_section_ref": "mywcom_line_of_count_section/100059",
+            "low": 10,
+            "name": "WH-1",
+            "origin": "fiber_patch_panel/1?side=out",
+            "physical": false,
+            "status": "Active"
+         }
+      ]
+   }
+}
+DATABASE CHANGES: AFTER RIPPLE UPDATE
+   update data.mywcom_line_of_count(100001) fields=(route)
+   update data.mywcom_line_of_count_section(100001) fields=(mapping)
+   insert data.mywcom_line_of_count_section(100002)
+   insert data.mywcom_line_of_count_section(100003)
+   insert data.mywcom_line_of_count_section(100004)
+   insert data.mywcom_line_of_count_section(100005)
+   insert data.mywcom_line_of_count_section(100006)
+   insert data.mywcom_line_of_count_section(100007)
+   insert data.mywcom_line_of_count_section(100008)
+   insert data.mywcom_line_of_count_section(100009)
+   insert data.mywcom_line_of_count_section(100010)
+   insert data.mywcom_line_of_count_section(100011)
+   insert data.mywcom_line_of_count_section(100012)
+   insert data.mywcom_line_of_count_section(100013)
+   insert data.mywcom_line_of_count_section(100014)
+   insert data.mywcom_line_of_count_section(100015)
+   insert data.mywcom_line_of_count_section(100016)
+   insert data.mywcom_line_of_count_section(100017)
+   insert data.mywcom_line_of_count_section(100018)
+   insert data.mywcom_line_of_count_section(100019)
+   insert data.mywcom_line_of_count_section(100020)
+   insert data.mywcom_line_of_count_section(100021)
+   insert data.mywcom_line_of_count_section(100022)
+   insert data.mywcom_line_of_count_section(100023)
+   insert data.mywcom_line_of_count_section(100024)
+   insert data.mywcom_line_of_count_section(100025)
+   insert data.mywcom_line_of_count_section(100026)
+   insert data.mywcom_line_of_count_section(100027)
+   insert data.mywcom_line_of_count_section(100028)
+   insert data.mywcom_line_of_count_section(100029)
+   insert data.mywcom_line_of_count_section(100030)
+   insert data.mywcom_line_of_count_section(100031)
+   insert data.mywcom_line_of_count_section(100032)
+   insert data.mywcom_line_of_count_section(100033)
+   insert data.mywcom_line_of_count_section(100034)
+   insert data.mywcom_line_of_count_section(100035)
+   insert data.mywcom_line_of_count_section(100036)
+   insert data.mywcom_line_of_count_section(100037)
+   insert data.mywcom_line_of_count_section(100038)
+   insert data.mywcom_line_of_count_section(100039)
+   insert data.mywcom_line_of_count_section(100040)
+   insert data.mywcom_line_of_count_section(100041)
+   insert data.mywcom_line_of_count_section(100042)
+   insert data.mywcom_line_of_count_section(100043)
+   insert data.mywcom_line_of_count_section(100044)
+   insert data.mywcom_line_of_count_section(100045)
+   insert data.mywcom_line_of_count_section(100046)
+   insert data.mywcom_line_of_count_section(100047)
+   insert data.mywcom_line_of_count_section(100048)
+   insert data.mywcom_line_of_count_section(100049)
+   insert data.mywcom_line_of_count_section(100050)
+   insert data.mywcom_line_of_count_section(100051)
+   insert data.mywcom_line_of_count_section(100052)
+   insert data.mywcom_line_of_count_section(100053)
+   insert data.mywcom_line_of_count_section(100054)
+   insert data.mywcom_line_of_count_section(100055)
+   insert data.mywcom_line_of_count_section(100056)
+   insert data.mywcom_line_of_count_section(100057)
+   insert data.mywcom_line_of_count_section(100058)
+   insert data.mywcom_line_of_count_section(100059)
+   insert data.mywcom_line_of_count_section(100060)
+   insert data.mywcom_line_of_count_section(100061)
+   insert data.mywcom_line_of_count_section(100062)
+   insert data.mywcom_line_of_count_section(100063)
+   insert data.mywcom_line_of_count_section(100064)
+   insert data.mywcom_line_of_count_section(100065)
+   insert data.mywcom_line_of_count_section(100066)
+   insert data.mywcom_line_of_count_section(100067)
+   insert data.mywcom_line_of_count_section(100068)
+   insert data.mywcom_line_of_count_section(100069)
+   insert data.mywcom_line_of_count_section(100070)
+   insert data.mywcom_line_of_count_section(100071)
+   insert data.mywcom_line_of_count_section(100072)
+   insert data.mywcom_line_of_count_section(100073)
+   insert data.mywcom_line_of_count_section(100074)
+   insert data.mywcom_line_of_count_section(100075)
+   insert data.mywcom_line_of_count_section(100076)
+   insert data.mywcom_line_of_count_section(100077)
+   insert data.mywcom_line_of_count_section(100078)
+   insert data.mywcom_line_of_count_section(100079)
+   insert data.mywcom_line_of_count_section(100080)
+   insert data.mywcom_line_of_count_section(100081)
+   insert data.mywcom_line_of_count_section(100082)
+   insert data.mywcom_line_of_count_section(100083)
+   insert data.mywcom_line_of_count_section(100084)
+   insert data.mywcom_line_of_count_section(100085)
+   insert data.mywcom_line_of_count_section(100086)
+   insert data.mywcom_line_of_count_section(100087)
+   insert data.mywcom_line_of_count_section(100088)
+   insert data.mywcom_line_of_count_section(100089)
+   insert data.mywcom_line_of_count_section(100090)
+   insert data.mywcom_line_of_count_section(100091)
+   insert data.mywcom_line_of_count_section(100092)
+   insert data.mywcom_line_of_count_section(100093)
+   insert data.mywcom_line_of_count_section(100094)
+   insert data.mywcom_line_of_count_section(100095)
+   insert data.mywcom_line_of_count_section(100096)
+   insert data.mywcom_line_of_count_section(100097)
+   insert data.mywcom_line_of_count_section(100098)
+   insert data.mywcom_line_of_count_section(100099)
+   insert data.mywcom_line_of_count_section(100100)
+   insert data.mywcom_line_of_count_section(100101)
+   insert data.mywcom_line_of_count_section(100102)
+   insert data.mywcom_line_of_count_section(100103)
+   insert data.mywcom_line_of_count_section(100104)
+   insert data.mywcom_line_of_count_section(100105)
+   insert data.mywcom_line_of_count_section(100106)
+   insert data.mywcom_line_of_count_section(100107)
+   insert data.mywcom_line_of_count_section(100108)
+   insert data.mywcom_line_of_count_section(100109)
+   insert data.mywcom_line_of_count_section(100110)
+   insert data.mywcom_line_of_count_section(100111)
+   insert data.mywcom_line_of_count_section(100112)
+   insert data.mywcom_line_of_count_section(100113)
+   insert data.mywcom_line_of_count_section(100114)
+   insert data.mywcom_line_of_count_section(100115)
+   insert data.mywcom_line_of_count_section(100116)
+   insert data.mywcom_line_of_count_section(100117)
+   insert data.mywcom_line_of_count_section(100118)
+   insert data.mywcom_line_of_count_section(100119)
+   insert data.mywcom_line_of_count_section(100120)
+   insert data.mywcom_line_of_count_section(100121)
+   insert data.mywcom_line_of_count_section(100122)
+   insert data.mywcom_line_of_count_section(100123)
+   insert data.mywcom_line_of_count_section(100124)
+   insert data.mywcom_line_of_count_section(100125)
+   insert data.mywcom_line_of_count_section(100126)
+   insert data.mywcom_line_of_count_section(100127)
+   insert data.mywcom_line_of_count_section(100128)
+   insert data.mywcom_line_of_count_section(100129)
+   insert data.mywcom_line_of_count_section(100130)
+   insert data.mywcom_line_of_count_section(100131)
+   insert data.mywcom_line_of_count_section(100132)
+   insert data.mywcom_line_of_count_section(100133)
+   insert data.mywcom_line_of_count_section(100134)
+   insert data.mywcom_line_of_count_section(100135)
+   insert data.mywcom_line_of_count_section(100136)
+   insert data.mywcom_line_of_count_section(100137)
+   insert data.mywcom_line_of_count_section(100138)
+   insert data.mywcom_line_of_count_section(100139)
+   insert data.mywcom_line_of_count_section(100140)
+   insert data.mywcom_line_of_count_section(100141)
+   insert data.mywcom_line_of_count_section(100142)
+   insert data.mywcom_line_of_count_section(100143)
+   insert data.mywcom_line_of_count_section(100144)
+   insert data.mywcom_line_of_count_section(100145)
+   insert data.mywcom_line_of_count_section(100146)
+   insert data.mywcom_line_of_count_section(100147)
+   insert data.mywcom_line_of_count_section(100148)
+   insert data.mywcom_line_of_count_section(100149)
+   insert data.mywcom_line_of_count_section(100150)
+   insert data.mywcom_line_of_count_section(100151)
+   insert data.mywcom_line_of_count_section(100152)
+   insert data.mywcom_line_of_count_section(100153)
+   insert data.mywcom_line_of_count_section(100154)
+   insert data.mywcom_line_of_count_section(100155)
+   insert data.mywcom_line_of_count_section(100156)
+   insert data.mywcom_line_of_count_section(100157)
+   insert data.mywcom_line_of_count_section(100158)
+   insert data.mywcom_line_of_count_section(100159)
+   insert data.mywcom_line_of_count_section(100160)
+   insert data.mywcom_line_of_count_section(100161)
+   insert data.mywcom_line_of_count_section(100162)
+   insert data.mywcom_line_of_count_section(100163)
+   insert data.mywcom_line_of_count_section(100164)
+   insert data.mywcom_line_of_count_section(100165)
+   insert data.mywcom_line_of_count_section(100166)
+   insert data.mywcom_line_of_count_section(100167)
+   insert data.mywcom_line_of_count_section(100168)
+   insert data.mywcom_line_of_count_section(100169)
+   insert data.mywcom_line_of_count_section(100170)
+   insert data.mywcom_line_of_count_section(100171)
+   insert data.mywcom_line_of_count_section(100172)
+   insert data.mywcom_line_of_count_section(100173)
+   insert data.mywcom_line_of_count_section(100174)
+   insert data.mywcom_line_of_count_section(100175)
+   insert data.mywcom_line_of_count_section(100176)
+   insert data.mywcom_line_of_count_section(100177)
+   insert data.mywcom_line_of_count_section(100178)
+   insert data.mywcom_line_of_count_section(100179)
+   insert data.mywcom_line_of_count_section(100180)
+   insert data.mywcom_line_of_count_section(100181)
+   insert data.mywcom_line_of_count_section(100182)
+   insert data.mywcom_line_of_count_section(100183)
+   insert data.mywcom_line_of_count_section(100184)
+   insert data.mywcom_line_of_count_section(100185)
+   insert data.mywcom_line_of_count_section(100186)
+   insert data.mywcom_line_of_count_section(100187)
+   insert data.mywcom_line_of_count_section(100188)
+   insert data.mywcom_line_of_count_section(100189)
+   insert data.mywcom_line_of_count_section(100190)
+   insert data.mywcom_line_of_count_section(100191)
+   insert data.mywcom_line_of_count_section(100192)
+   insert data.mywcom_line_of_count_section(100193)
+   insert data.mywcom_line_of_count_section(100194)
+   insert data.mywcom_line_of_count_section(100195)
+   insert data.mywcom_line_of_count_section(100196)
+   insert data.mywcom_line_of_count_section(100197)
+   insert data.mywcom_line_of_count_section(100198)
+   insert data.mywcom_line_of_count_section(100199)
+   insert data.mywcom_line_of_count_section(100200)
+   insert data.mywcom_line_of_count_section(100201)
+   insert data.mywcom_line_of_count_section(100202)
+   insert data.mywcom_line_of_count_section(100203)
+   insert data.mywcom_line_of_count_section(100204)
+   insert data.mywcom_line_of_count_section(100205)
+   insert data.mywcom_line_of_count_section(100206)
+   insert data.mywcom_line_of_count_section(100207)
+   insert data.mywcom_line_of_count_section(100208)
+   insert data.mywcom_line_of_count_section(100209)
+   insert data.mywcom_line_of_count_section(100210)
+   insert data.mywcom_line_of_count_section(100211)
+   insert data.mywcom_line_of_count_section(100212)
+

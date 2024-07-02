@@ -1,0 +1,69 @@
+{
+    "datasource": "myworld",
+    "name": "building",
+    "external_name": "{:building_feature_external_name}",
+    "title": "{display_name}: [name]",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "delete_from_gui": true,
+        "update_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "equipment",
+            "type": "reference_set",
+            "external_name": "{:building_feature_equipment_name}",
+            "value": "select()",
+            "read_only": true
+        },
+        {
+            "name": "routes",
+            "type": "reference_set",
+            "external_name": "{:building_feature_routes_name}",
+            "value": "select()",
+            "read_only": true
+        },
+        {
+            "name": "in_fiber_segments",
+            "type": "reference_set",
+            "value": "method(in_fiber_segments)",
+            "read_only": true
+        },
+        {
+            "name": "out_fiber_segments",
+            "type": "reference_set",
+            "value": "method(out_fiber_segments)",
+            "read_only": true
+        },
+        {
+            "name": "cables",
+            "type": "reference_set",
+            "value": "method(cables)",
+            "read_only": true
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+
+SUB TEST : DELETE SLOT WITH OLTS : slot/16
+    Request: DELETE:/modules/comms/feature/slot/16?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE SLOT WITH OLTS
+       insert delta.fiber_olt(design/NB217,16,delete)
+       insert delta.fiber_olt(design/NB217,17,delete)
+       insert delta.fiber_olt(design/NB217,18,delete)
+       insert delta.mywcom_fiber_connection(design/NB217,239,delete)
+       insert delta.mywcom_fiber_connection(design/NB217,240,delete)
+       insert delta.slot(design/NB217,16,delete)
+    
+    VALIDATION ERRORS: AFTER DELETE SLOT WITH OLTS
+
+SUB TEST : DELETE SPLICE CLOSURE WITH CABLE SEGMENTS : splice_closure/1
+    Request: DELETE:/modules/comms/feature/splice_closure/1?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE SPLICE CLOSURE WITH CABLE SEGMENTS
+       insert delta.fiber_mux(design/NB217,1,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,59,update)
+       insert delta.mywcom_fiber_segment(design/NB217,60,update)
+       insert delta.splice_closure(design/NB217,1,delete)
+    
+    VALIDATION ERRORS: AFTER DELETE SPLICE CLOSURE WITH CABLE SEGMENTS
+
+SUB TEST : ATTEMPT DELETE PATCH PANEL WITH CIRCUITS : fiber_patch_panel/1
+    Request: DELETE:/modules/comms/feature/fiber_patch_panel/1?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    
+    
+    DATABASE CHANGES: AFTER ATTEMPT DELETE PATCH PANEL WITH CIRCUITS
+    
+    VALIDATION ERRORS: AFTER ATTEMPT DELETE PATCH PANEL WITH CIRCUITS
+
+SUB TEST : ATTEMPT DELETE SHELF WITH CHILDREN WITH CIRCUITS : fiber_shelf/9
+    Request: DELETE:/modules/comms/feature/fiber_shelf/9?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    
+    
+    DATABASE CHANGES: AFTER ATTEMPT DELETE SHELF WITH CHILDREN WITH CIRCUITS
+    
+    VALIDATION ERRORS: AFTER ATTEMPT DELETE SHELF WITH CHILDREN WITH CIRCUITS
+
+SUB TEST : ATTEMPT DELETE SPLICE CLOSURE WITH CIRCUITS : splice_closure/35
+    Request: DELETE:/modules/comms/feature/splice_closure/35?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    
+    
+    DATABASE CHANGES: AFTER ATTEMPT DELETE SPLICE CLOSURE WITH CIRCUITS
+    
+    VALIDATION ERRORS: AFTER ATTEMPT DELETE SPLICE CLOSURE WITH CIRCUITS
+
+SUB TEST : DELETE SHELF WITH LOC : copper_shelf/1
+    Request: DELETE:/modules/comms/feature/copper_shelf/1?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE SHELF WITH LOC
+       insert delta.copper_shelf(design/NB217,1,delete)
+       insert delta.mywcom_copper_connection(design/NB217,6,delete)
+       insert delta.mywcom_line_of_count(design/NB217,1,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,1,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,2,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,3,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,4,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,5,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,6,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,7,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,8,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,9,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,10,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,11,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,12,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,13,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,14,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,15,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,16,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,17,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,18,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,19,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,20,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,21,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,22,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,23,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,24,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,25,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,26,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,27,delete)
+       insert delta.mywcom_line_of_count_section(design/NB217,28,delete)
+    
+    VALIDATION ERRORS: AFTER DELETE SHELF WITH LOC
+
+SUB TEST : DELETE LOAD COIL WITH LOC : copper_load_coil/2
+    Request: DELETE:/modules/comms/feature/copper_load_coil/2?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE LOAD COIL WITH LOC
+       insert delta.copper_load_coil(design/NB217,2,delete)
+       insert delta.mywcom_copper_connection(design/NB217,10,delete)
+       insert delta.mywcom_copper_connection(design/NB217,11,delete)
+    
+    VALIDATION ERRORS: AFTER DELETE LOAD COIL WITH LOC

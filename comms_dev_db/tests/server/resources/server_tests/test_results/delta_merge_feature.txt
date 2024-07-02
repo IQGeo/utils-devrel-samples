@@ -1,0 +1,661 @@
+
+SUB TEST : design/NB335
+    Request: POST: /modules/comms/delta/design/NB335/merge/manhole/55
+    Response: 200 (200 OK)
+    {
+       "status": 200
+    }
+    
+    
+    DATABASE CHANGES: AFTER MERGE DELETED FEATURE
+       delete delta.manhole(design/NB335,55,delete)
+    
+    Request: POST: /modules/comms/delta/design/NB335/merge/manhole/54
+    Response: 200 (200 OK)
+    {
+       "conflict": {
+          "base": {
+             "bbox": [
+                0.1377535611391,
+                52.2254446465907,
+                0.1377535611391,
+                52.2254446465907
+             ],
+             "geometry": {
+                "coordinates": [
+                   0.1377535611391,
+                   52.2254446465907
+                ],
+                "type": "Point"
+             },
+             "id": 54,
+             "myw": {
+                "delta": "design/NB335",
+                "feature_type": "manhole",
+                "title": "Manhole: WH-M-54"
+             },
+             "properties": {
+                "comsof_auto": false,
+                "id": 54,
+                "installation_date": "2006-01-01",
+                "labor_costs": "level_ground",
+                "lockable": null,
+                "myw_orientation_location": 41.1859177475264,
+                "name": "WH-M-54",
+                "powered": null,
+                "size_x": 440.0,
+                "size_y": 910.0,
+                "size_z": 800.0,
+                "specification": "FPM-CCANN-J4"
+             },
+             "type": "Feature"
+          },
+          "conflict_fields": [
+             "labor_costs",
+             "location",
+             "size_x",
+             "size_y",
+             "size_z",
+             "specification"
+          ],
+          "delta": {
+             "bbox": [
+                0.1377824590031292,
+                52.22542308965285,
+                0.1377824590031292,
+                52.22542308965285
+             ],
+             "geometry": {
+                "coordinates": [
+                   0.1377824590031292,
+                   52.22542308965285
+                ],
+                "type": "Point"
+             },
+             "id": 54,
+             "myw": {
+                "change_type": "update",
+                "delta": "design/NB335",
+                "feature_type": "manhole",
+                "title": "Manhole: WH-M-54"
+             },
+             "properties": {
+                "comsof_auto": false,
+                "id": 54,
+                "installation_date": "2006-01-03",
+                "labor_costs": "hole_dig,level_ground",
+                "lockable": true,
+                "myw_orientation_location": 41.1859177475264,
+                "name": "WH-M-54",
+                "powered": null,
+                "size_x": 600.0,
+                "size_y": 1200.0,
+                "size_z": 895.0,
+                "specification": "FPM-CCANN-C2"
+             },
+             "type": "Feature"
+          },
+          "delta_fields": [
+             "specification",
+             "labor_costs",
+             "location",
+             "size_x",
+             "size_y",
+             "size_z",
+             "lockable",
+             "installation_date"
+          ],
+          "master": {
+             "bbox": [
+                0.1377227798525478,
+                52.2254584142305,
+                0.1377227798525478,
+                52.2254584142305
+             ],
+             "geometry": {
+                "coordinates": [
+                   0.1377227798525478,
+                   52.2254584142305
+                ],
+                "type": "Point"
+             },
+             "id": 54,
+             "myw": {
+                "feature_type": "manhole",
+                "title": "Manhole: WH-M-54"
+             },
+             "properties": {
+                "comsof_auto": false,
+                "id": 54,
+                "installation_date": "2006-01-03",
+                "labor_costs": "tree_trim,hole_dig,survey",
+                "lockable": null,
+                "myw_orientation_location": 41.1859177475264,
+                "name": "WH-M-54",
+                "powered": null,
+                "size_x": 850.0,
+                "size_y": 1300.0,
+                "size_z": 900.0,
+                "specification": "FPM-CCANN-MCX"
+             },
+             "type": "Feature"
+          },
+          "master_change": "update",
+          "master_fields": [
+             "specification",
+             "labor_costs",
+             "location",
+             "size_x",
+             "size_y",
+             "size_z",
+             "installation_date"
+          ]
+       }
+    }
+    
+    
+    DATABASE CHANGES: AFTER MERGE UPDATED FEATURE WITH REAL CONFLICTS
+    
+    Request: POST: /modules/comms/delta/design/NB301/merge/ug_route/88
+    Response: 200 (200 OK)
+    {
+       "change": {
+          "change_type": "update",
+          "feature": {
+             "bbox": [
+                0.1334522,
+                52.2235447,
+                0.1336176,
+                52.2236381
+             ],
+             "geometry": {
+                "coordinates": [
+                   [
+                      0.1336176,
+                      52.2236381
+                   ],
+                   [
+                      0.1335840672255,
+                      52.2236352521549
+                   ],
+                   [
+                      0.1335518807173,
+                      52.223616356841
+                   ],
+                   [
+                      0.1335029304028,
+                      52.2235937646074
+                   ],
+                   [
+                      0.1334522,
+                      52.2235447
+                   ]
+                ],
+                "type": "LineString"
+             },
+             "id": 88,
+             "myw": {
+                "change_type": "update",
+                "delta": "design/NB301",
+                "feature_type": "ug_route",
+                "title": "Route (Underground): 88"
+             },
+             "properties": {
+                "comsof_auto": false,
+                "cover_type": "Brick",
+                "id": 88,
+                "in_structure": "manhole/7",
+                "labor_costs": "cherry_picker,trench_dig",
+                "length": 18.26,
+                "out_structure": "manhole/75"
+             },
+             "type": "Feature"
+          }
+       },
+       "conflict": {
+          "base": {
+             "bbox": [
+                0.1334150880575,
+                52.2235524824053,
+                0.1336028426886,
+                52.2236559959141
+             ],
+             "geometry": {
+                "coordinates": [
+                   [
+                      0.1336028426886,
+                      52.2236559959141
+                   ],
+                   [
+                      0.1335840672255,
+                      52.2236352521549
+                   ],
+                   [
+                      0.1335518807173,
+                      52.223616356841
+                   ],
+                   [
+                      0.1335029304028,
+                      52.2235937646074
+                   ],
+                   [
+                      0.1334150880575,
+                      52.2235524824053
+                   ]
+                ],
+                "type": "LineString"
+             },
+             "id": 88,
+             "myw": {
+                "delta": "design/NB301",
+                "feature_type": "ug_route",
+                "title": "Route (Underground): 88"
+             },
+             "properties": {
+                "comsof_auto": false,
+                "cover_type": "Mixed",
+                "id": 88,
+                "in_structure": "manhole/7",
+                "labor_costs": "cherry_picker,trench_dig",
+                "length": 18.26,
+                "out_structure": "manhole/75"
+             },
+             "type": "Feature"
+          },
+          "conflict_fields": [
+             "path"
+          ],
+          "delta": {
+             "bbox": [
+                0.1334522,
+                52.2235447,
+                0.1336176,
+                52.2236381
+             ],
+             "geometry": {
+                "coordinates": [
+                   [
+                      0.1336176,
+                      52.2236381
+                   ],
+                   [
+                      0.1335840672255,
+                      52.2236352521549
+                   ],
+                   [
+                      0.1335518807173,
+                      52.223616356841
+                   ],
+                   [
+                      0.1335029304028,
+                      52.2235937646074
+                   ],
+                   [
+                      0.1334522,
+                      52.2235447
+                   ]
+                ],
+                "type": "LineString"
+             },
+             "id": 88,
+             "myw": {
+                "change_type": "update",
+                "delta": "design/NB301",
+                "feature_type": "ug_route",
+                "title": "Route (Underground): 88"
+             },
+             "properties": {
+                "comsof_auto": false,
+                "cover_type": "Brick",
+                "id": 88,
+                "in_structure": "manhole/7",
+                "labor_costs": "cherry_picker,trench_dig",
+                "length": 18.26,
+                "out_structure": "manhole/75"
+             },
+             "type": "Feature"
+          },
+          "delta_fields": [
+             "path",
+             "cover_type"
+          ],
+          "master": {
+             "bbox": [
+                0.1334522,
+                52.2235447,
+                0.1336176,
+                52.2236381
+             ],
+             "geometry": {
+                "coordinates": [
+                   [
+                      0.1336176,
+                      52.2236381
+                   ],
+                   [
+                      0.1335876,
+                      52.2236144
+                   ],
+                   [
+                      0.1334522,
+                      52.2235447
+                   ]
+                ],
+                "type": "LineString"
+             },
+             "id": 88,
+             "myw": {
+                "feature_type": "ug_route",
+                "title": "Route (Underground): 88"
+             },
+             "properties": {
+                "comsof_auto": false,
+                "cover_type": "Brick",
+                "id": 88,
+                "in_structure": "manhole/7",
+                "labor_costs": "cherry_picker,trench_dig",
+                "length": 18.26,
+                "out_structure": "manhole/75"
+             },
+             "type": "Feature"
+          },
+          "master_change": "update",
+          "master_fields": [
+             "path",
+             "cover_type"
+          ]
+       }
+    }
+    
+    
+    DATABASE CHANGES: AFTER MERGE UPDATED FEATURE WITHOUT REAL CONFLICTS
+       update delta.ug_route(design/NB301,88,update) fields=(path)
+    
+    Request: POST: /modules/comms/delta/design/NB301/merge/ug_route/88
+    Response: 200 (200 OK)
+    {}
+    
+    
+    DATABASE CHANGES: AFTER MERGE UPDATED FEATURE WITHOUT REAL CONFLICTS AGAIN
+    
+    Request: POST: /modules/comms/delta/design/NB301/merge/ug_route/4801
+    Response: 200 (200 OK)
+    {
+       "change": {
+          "change_type": "update",
+          "feature": {
+             "bbox": [
+                0.13329237,
+                52.2233353,
+                0.13346403,
+                52.2235447
+             ],
+             "geometry": {
+                "coordinates": [
+                   [
+                      0.1334522,
+                      52.2235447
+                   ],
+                   [
+                      0.13346403,
+                      52.223507
+                   ],
+                   [
+                      0.13343185,
+                      52.223431
+                   ],
+                   [
+                      0.13335943,
+                      52.223361
+                   ],
+                   [
+                      0.13329237,
+                      52.2233353
+                   ]
+                ],
+                "type": "LineString"
+             },
+             "id": 4801,
+             "myw": {
+                "change_type": "insert",
+                "delta": "design/NB301",
+                "feature_type": "ug_route",
+                "title": "Route (Underground): 4801"
+             },
+             "properties": {
+                "comsof_auto": null,
+                "cover_type": "Brick",
+                "id": 4801,
+                "in_structure": "manhole/75",
+                "labor_costs": "cherry_picker,trench_dig",
+                "length": null,
+                "out_structure": "manhole/4801"
+             },
+             "type": "Feature"
+          },
+          "fields": [
+             "path"
+          ],
+          "orig_feature": {
+             "bbox": [
+                0.13329237,
+                52.2233353,
+                0.13346403,
+                52.2235524824053
+             ],
+             "geometry": {
+                "coordinates": [
+                   [
+                      0.1334150880575,
+                      52.2235524824053
+                   ],
+                   [
+                      0.13346403,
+                      52.223507
+                   ],
+                   [
+                      0.13343185,
+                      52.223431
+                   ],
+                   [
+                      0.13335943,
+                      52.223361
+                   ],
+                   [
+                      0.13329237,
+                      52.2233353
+                   ]
+                ],
+                "type": "LineString"
+             },
+             "id": 4801,
+             "myw": {
+                "feature_type": "ug_route",
+                "title": "Route (Underground): 4801"
+             },
+             "properties": {
+                "comsof_auto": null,
+                "cover_type": "Brick",
+                "id": 4801,
+                "in_structure": "manhole/75",
+                "labor_costs": "cherry_picker,trench_dig",
+                "length": null,
+                "out_structure": "manhole/4801"
+             },
+             "type": "Feature"
+          }
+       }
+    }
+    
+    
+    DATABASE CHANGES: AFTER MERGE INSERTED INGERITY ERROR
+       update delta.ug_route(design/NB301,4801,insert) fields=(path)
+    
+    Request: POST: /modules/comms/delta/systest/conflicts1/merge/ug_route/89
+    Response: 200 (200 OK)
+    {
+       "change": {
+          "change_type": "update",
+          "feature": {
+             "bbox": [
+                0.1361207664,
+                52.225588819,
+                0.1371467113,
+                52.226573786
+             ],
+             "geometry": {
+                "coordinates": [
+                   [
+                      0.1366585493088,
+                      52.226540927122
+                   ],
+                   [
+                      0.1367390155,
+                      52.226573786
+                   ],
+                   [
+                      0.1371198892,
+                      52.226314197
+                   ],
+                   [
+                      0.1371467113,
+                      52.22627312
+                   ],
+                   [
+                      0.137117207,
+                      52.22623369
+                   ],
+                   [
+                      0.1368194818,
+                      52.22607268
+                   ],
+                   [
+                      0.136156976,
+                      52.225714509
+                   ],
+                   [
+                      0.136167705,
+                      52.225699722
+                   ],
+                   [
+                      0.1361207664,
+                      52.225671791
+                   ],
+                   [
+                      0.136232078,
+                      52.225588819
+                   ],
+                   [
+                      0.1362562179565,
+                      52.2255937489052
+                   ]
+                ],
+                "type": "LineString"
+             },
+             "id": 89,
+             "myw": {
+                "change_type": "update",
+                "delta": "systest/conflicts1",
+                "feature_type": "ug_route",
+                "title": "Route (Underground): 89"
+             },
+             "properties": {
+                "comsof_auto": false,
+                "cover_type": "Mixed",
+                "id": 89,
+                "in_structure": "manhole/76",
+                "labor_costs": "pavement_re-surface,site_manager",
+                "length": 170.42,
+                "out_structure": "manhole/48"
+             },
+             "type": "Feature"
+          },
+          "fields": [
+             "path"
+          ],
+          "orig_feature": {
+             "bbox": [
+                0.1361207664,
+                52.2255836,
+                0.1371467113,
+                52.226573786
+             ],
+             "geometry": {
+                "coordinates": [
+                   [
+                      0.1366963,
+                      52.2265398
+                   ],
+                   [
+                      0.1367390155,
+                      52.226573786
+                   ],
+                   [
+                      0.1371198892,
+                      52.226314197
+                   ],
+                   [
+                      0.1371467113,
+                      52.22627312
+                   ],
+                   [
+                      0.137117207,
+                      52.22623369
+                   ],
+                   [
+                      0.1368194818,
+                      52.22607268
+                   ],
+                   [
+                      0.136156976,
+                      52.225714509
+                   ],
+                   [
+                      0.136167705,
+                      52.225699722
+                   ],
+                   [
+                      0.1361207664,
+                      52.225671791
+                   ],
+                   [
+                      0.136232078,
+                      52.225588819
+                   ],
+                   [
+                      0.1362135,
+                      52.2255836
+                   ]
+                ],
+                "type": "LineString"
+             },
+             "id": 89,
+             "myw": {
+                "feature_type": "ug_route",
+                "title": "Route (Underground): 89"
+             },
+             "properties": {
+                "comsof_auto": false,
+                "cover_type": "Mixed",
+                "id": 89,
+                "in_structure": "manhole/76",
+                "labor_costs": "pavement_re-surface,site_manager",
+                "length": 170.42,
+                "out_structure": "manhole/48"
+             },
+             "type": "Feature"
+          }
+       }
+    }
+    
+    
+    DATABASE CHANGES: AFTER MERGE INTEGRITY ERROR
+       update delta.ug_route(systest/conflicts1,89,update) fields=(path)
+    
+    Request: POST: /modules/comms/delta/systest/conflicts1/merge/mywcom_fiber_segment/83
+    Response: 200 (200 OK)
+    {}
+    
+    
+    DATABASE CHANGES: AFTER FAILED MERGE INTEGRITY ERROR
+    

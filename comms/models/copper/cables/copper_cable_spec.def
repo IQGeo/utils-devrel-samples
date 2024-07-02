@@ -1,0 +1,121 @@
+{
+    "datasource": "myworld",
+    "name": "copper_cable_spec",
+    "external_name": "{:copper_cable_spec_external_name}",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": false,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": false,
+        "delete_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)",
+            "key": true
+        },
+        {
+            "name": "model",
+            "external_name": "{:spec_model_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "type",
+            "external_name": "{:fiber_cable_spec_type_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "manufacturer",
+            "external_name": "{:spec_manufacturer_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "copper_count",
+            "external_name": "{:copper_pair_count_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "maximum_length",
+            "external_name": "{:copper_maximum_length_field_name}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length",
+            "display_format": "1"
+        },
+        {
+            "name": "diameter",
+            "external_name": "{:conduit_spec_diameter_name}",
+            "type": "double",
+            "unit": "mm",
+            "display_unit": "in",
+            "unit_scale": "length",
+            "display_format": "2"
+        },
+        {
+            "name": "item_unit_length",
+            "external_name": "{:copper_item_unit_length_field_name}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length",
+            "display_format": "1"
+        },
+        {
+            "name": "item_length",
+            "external_name": "{:conduit_cable_spec_item_length_name}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length",
+            "display_format": "1"
+        },
+        {
+            "name": "cost_currency",
+            "external_name": "{:spec_currency_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "item_cost",
+            "external_name": "{:spec_cost_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "retired",
+            "external_name": "{:spec_retired_field_name}",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "cable_structure",
+            "external_name": "{:fiber_cable_spec_cable_structure_name}",
+            "type": "string"
+        },
+        {
+            "name": "gauge",
+            "external_name": "{:copper_gauge_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "resistance",
+            "external_name": "{:copper_resistance_field_name}",
+            "type": "double"
+        }
+    ],
+    "queries": []
+}

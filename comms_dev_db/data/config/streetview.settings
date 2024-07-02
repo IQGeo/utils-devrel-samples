@@ -1,0 +1,72 @@
+{
+   "core.plugin.streetview": {
+      "pole": {
+         "z-orientation": "0", 
+         "base": {
+            "iconUrl": "images/info32.png", 
+            "iconAnchor": [
+               16,
+               32
+            ]
+         }, 
+         "bright": {
+            "iconUrl": "images/info32-bright.png", 
+            "iconAnchor": [
+               16,
+               32
+            ]
+         }
+      }, 
+      "manhole": {
+         "z-orientation": "0", 
+         "base": {
+            "iconUrl": "images/info32.png", 
+            "iconAnchor": [
+               16,
+               32
+            ]
+         }, 
+         "bright": {
+            "iconUrl": "images/info32-bright.png", 
+            "iconAnchor": [
+               16,
+               32
+            ]
+         }
+      }, 
+      "cabinet": {
+         "z-orientation": "0", 
+         "base": {
+            "iconUrl": "images/info32.png", 
+            "iconAnchor": [
+               16,
+               32
+            ]
+         }, 
+         "bright": {
+            "iconUrl": "images/info32-bright.png", 
+            "iconAnchor": [
+               16,
+               32
+            ]
+         }
+      },
+      "ug_route": {
+         "z-orientation": "0", 
+         "base": {
+            "iconUrl": "modules/comms/images/streetview/ug_route.png", 
+            "iconAnchor": [
+               3,
+               7
+            ]
+         }, 
+         "bright": {
+            "iconUrl": "modules/comms/images/streetview/ug_route.png", 
+            "iconAnchor": [
+               3,
+               7
+            ]
+         }
+      }
+   }
+}

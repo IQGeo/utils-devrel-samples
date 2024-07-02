@@ -1,0 +1,49 @@
+{
+    "datasource": "myworld",
+    "name": "circuit_template",
+    "external_name": "Circuit Template",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "Id",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "path",
+            "external_name": "Path",
+            "type": "linestring",
+            "mandatory": "true"
+        },
+        {
+            "name": "name",
+            "external_name": "Name",
+            "type": "string(64)"
+        },
+        {
+            "name": "in_feature",
+            "external_name": "In Feature",
+            "type": "reference()"
+        },
+        {
+            "name": "out_feature",
+            "external_name": "Out Feature",
+            "type": "reference()"
+        },
+        {
+            "name": "out_pins",
+            "external_name": "Pins",
+            "type": "string()"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "mywcom_routes",
+    "external_name": "{:routes_network_name}",
+    "description": "{:routes_network_desc}",
+    "topology": "mesh",
+    "directed": false,
+    "engine": "mywcom_graph_network_engine",
+    "feature_types": {
+        "mywcom_route_junction": {
+            "upstream": "routes",
+            "downstream": "routes"
+        }
+    }
+}

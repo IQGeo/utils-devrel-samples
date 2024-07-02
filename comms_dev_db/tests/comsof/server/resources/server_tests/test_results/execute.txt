@@ -1,0 +1,38 @@
+Request: POST:/modules/comsof/workspace/2/execute?delta=comsof_design/arbury&log_level=1
+Response: 200 (200 OK)
+{
+   "initialise": {
+      "errors": [],
+      "log": [
+         "[<time>] Initialising: <workspaces>/2/workspace"
+      ],
+      "warnings": []
+   },
+   "populate": {
+      "errors": [],
+      "log": [
+         "[<time>] Clearing data",
+         "[<time>] Adding data to input.gpkg",
+         "[<time>] Adding data to CalculationInput.gpkg"
+      ],
+      "warnings": []
+   },
+   "preprocess": {
+      "errors": [],
+      "log": [
+         "[<time>] Initialising connection",
+         "[<time>] Building zip: <workspaces>/2/workspace.zip",
+         "[<time>] Uploading <workspaces>/2/workspace.zip",
+         "[<time>] Running calculation on workspace <workspace_no> : /createDemandPoints /streetDoubler /createBuildingTrenches",
+         "[<time>] Waiting for calculation <calc_no> to complete",
+         "[<time>] Downloading result of calculation <calc_no> as <workspaces>/2/workspace.download.zip",
+         "[<time>] Replacing <workspaces>/2/workspace"
+      ],
+      "warnings": []
+   }
+}
+
+
+DATABASE CHANGES: AFTER EXECUTE
+   update data.comsof_workspace(2) fields=(busy,op_stats,state)
+

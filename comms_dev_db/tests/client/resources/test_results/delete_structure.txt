@@ -1,0 +1,84 @@
+
+SUB TEST : REPLACE MANHOLE BY JUNCTION
+    TEST: AFTER SHOWN EQUIPMENT BREAKDOWN
+        label: Fiber Slack (82.0 ft)
+        label: Fiber Slack (82.0 ft)
+        label: Splice Closure: WH-SC-002
+        label: Splice Closure: WH-SC-002
+        label: Multiplexer: WH-MUX-005 (8 way)
+        label: Multiplexer: WH-MUX-005 (8 way)
+    
+    
+    DATABASE CHANGES: AFTER DELETE MANHOLE
+       insert data.mywcom_change_detail(5)
+       insert delta.conduit(design/NB046,166,update)
+       insert delta.conduit(design/NB046,167,update)
+       insert delta.conduit(design/NB046,168,update)
+       insert delta.conduit(design/NB046,169,update)
+       insert delta.conduit(design/NB046,22,update)
+       insert delta.conduit(design/NB046,23,update)
+       insert delta.conduit(design/NB046,232,update)
+       insert delta.conduit(design/NB046,233,update)
+       insert delta.conduit(design/NB046,234,update)
+       insert delta.conduit(design/NB046,235,update)
+       insert delta.conduit(design/NB046,52,update)
+       insert delta.fiber_mux(design/NB046,5,delete)
+       insert delta.manhole(design/NB046,13,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,26,update)
+       insert delta.mywcom_fiber_segment(design/NB046,27,update)
+       insert delta.mywcom_fiber_segment(design/NB046,583,update)
+       insert delta.mywcom_fiber_segment(design/NB046,608,update)
+       insert delta.mywcom_fiber_segment(design/NB046,609,update)
+       insert delta.mywcom_fiber_slack(design/NB046,3,update)
+       insert delta.mywcom_route_junction(design/NB046,100000,insert)
+       insert delta.splice_closure(design/NB046,2,delete)
+       insert delta.ug_route(design/NB046,30,update)
+       insert delta.ug_route(design/NB046,388,update)
+    
+
+SUB TEST : DELETE STRUCTURE WITH EQUIPMENT
+    TEST: AFTER SHOWN EQUIPMENT BREAKDOWN WITH EQUIPMENT
+        label: Splice Closure: WH-SC-030
+        label: Splice Closure: WH-SC-030
+    
+    
+    DATABASE CHANGES: AFTER DELETE STRUCTURE WITH EQUIPMENT
+       insert data.mywcom_change_detail(6)
+       insert delta.conduit(design/NB046,131,update)
+       insert delta.conduit(design/NB046,132,update)
+       insert delta.conduit(design/NB046,133,update)
+       insert delta.conduit(design/NB046,134,update)
+       insert delta.conduit(design/NB046,135,update)
+       insert delta.conduit(design/NB046,136,update)
+       insert delta.manhole(design/NB046,248,delete)
+       insert delta.mywcom_fiber_connection(design/NB046,37,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,164,update)
+       insert delta.mywcom_fiber_segment(design/NB046,165,update)
+       insert delta.mywcom_fiber_segment(design/NB046,198,update)
+       insert delta.mywcom_fiber_segment(design/NB046,348,update)
+       insert delta.mywcom_fiber_segment(design/NB046,349,update)
+       insert delta.mywcom_route_junction(design/NB046,100001,insert)
+       insert delta.splice_closure(design/NB046,30,delete)
+       insert delta.ug_route(design/NB046,390,update)
+       insert delta.ug_route(design/NB046,47,update)
+    
+
+SUB TEST : DELETE STRUCTURE WITH SPLICES
+    TEST: AFTER SHOWN EQUIPMENT BREAKDOWN WITH SPLICES
+        label: Splice Closure: WH-SC-044
+        label: Splice Closure: WH-SC-044
+    
+    
+    DATABASE CHANGES: AFTER DELETE STRUCTURE WITH SPLICES
+       insert data.mywcom_change_detail(7)
+       insert delta.manhole(design/NB046,83,delete)
+       insert delta.mywcom_fiber_connection(design/NB046,235,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,151,update)
+       insert delta.mywcom_fiber_segment(design/NB046,445,update)
+       insert delta.mywcom_fiber_segment(design/NB046,446,update)
+       insert delta.mywcom_route_junction(design/NB046,100002,insert)
+       insert delta.splice_closure(design/NB046,44,delete)
+       insert delta.ug_route(design/NB046,111,update)
+       insert delta.ug_route(design/NB046,98,update)
+       insert delta.ug_route(design/NB046,99,update)
+    

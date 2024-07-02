@@ -1,0 +1,27 @@
+#!/bin/bash
+if [ -z "$1" ]
+then
+    echo usage: $0 \<version\>
+    return 1
+fi
+
+VERSION=$1
+TAG="v${VERSION}"
+
+if [[ $VERSION == *.final ]]; then
+    SECTION="${VERSION%.final}"
+    VERSION=${SECTION}
+fi
+
+
+#echo tag: ${TAG}, version: ${VERSION}
+cut_comms_modules ${VERSION}
+
+echo Tagging release ${TAG}
+comms_git tag ${TAG}
+comms_git push --tags
+
+echo Freezing DevDB
+# ENH: Just copy it
+comms_restore_dev_db
+comms_freeze_dev_db ${VERSION}

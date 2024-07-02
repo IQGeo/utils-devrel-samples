@@ -1,0 +1,62 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  branches:
+    include:
+      - v7.0.2.6
+
+# We are setting up a pipeline resource that references the "Create Platform Image Base (Stable)"
+# pipeline and setting up a pipeline completion trigger so that our "Create Platform Image with Comms (Stable)"
+# pipeline runs when a run of the "Create Platform Image Base (Stable)" pipeline completes
+resources:
+  pipelines:
+    - pipeline: create-stable-images # Name of the pipeline resource.
+      source: Create Platform Image Base (Stable) # The name of the pipeline referenced by this pipeline resource (note, if that pipeline is renamed, we have to rename this).
+      #project: TestDemo # Required only if the source pipeline is in another project
+      trigger: true # Run this pipeline (i.e. "Create Platform Image with Comms (Stable)") when any run of "Create Platform Image Base (Stable)" completes
+  repositories:
+    - repository: myworld-product-network-manager-comms # The name used to reference this repository in the checkout step
+      type: github
+      endpoint: Demo # Github Service Connection
+      name: IQGeo/myworld-product-network-manager-comms
+      ref: v7.0.2.6
+    - repository: core # The name used to reference this repository in the checkout step
+      type: github
+      endpoint: Demo
+      name: IQGeo/myworld-product-core
+      ref: v7.0
+
+variables:
+  # Container registry service connection established during pipeline creation
+  dockerRegistryServiceConnection: "Docker-ACR for iqgeoproddev"
+  containerRegistry: "iqgeoproddev.azurecr.io"
+
+  # Agent VM image name
+  vmImageName: "ubuntu-latest"
+
+stages:
+  - stage:
+    displayName: Build Platform Comms Image (Stable)
+    condition: ne(variables['Build.Reason'], 'PullRequest') # Stop new PR from running pipeline
+    jobs:
+      - job: build_image
+        displayName: Build Platform Comms Image (Stable)
+        pool:
+          vmImage: $(vmImageName)
+        steps:
+          - checkout: myworld-product-network-manager-comms
+          - checkout: core
+          - task: Docker@2
+            displayName: Build and push Platform Comms Stable image to container registry
+            inputs:
+              containerRegistry: "$(dockerRegistryServiceConnection)"
+              repository: "platform-comms"
+              command: "buildAndPush"
+              Dockerfile: "myworld-product-network-manager-comms/.pipeline/stable/platform-comms-stable-image/dockerfile"
+              buildContext: "$(Build.SourcesDirectory)"
+              tags: |
+                stable
+                7.0.2.6

@@ -1,0 +1,60 @@
+MERGE REPORT design/NB120
+   FeatureChange(fiber_cable(167,design/NB120),update) fields=
+      master_changes_derived_only
+      segment_paths_changed
+   FeatureChange(fiber_cable(5,design/NB120),update) fields=
+      master_changes_derived_only
+      segment_paths_changed
+   FeatureChange(mywcom_fiber_segment(595,design/NB120),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(387,design/NB120),rebase)
+      master_changes_derived_only
+   FeatureChange(mywcom_fiber_segment(73,design/NB120),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(56,design/NB120),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(55,design/NB120),rebase)
+      master_changes_derived_only
+   FeatureChange(ug_route(4203,design/NB120),update) fields=path
+      out_structure moved
+   FeatureChange(conduit(4205,design/NB120),update) fields=path
+      root_housing moved
+   FeatureChange(conduit(4204,design/NB120),update) fields=path
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(4203,design/NB120),update) fields=path
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(4202,design/NB120),update) fields=path
+      root_housing moved
+
+DATABASE CHANGES: AFTER MERGE
+   update base.fiber_cable(design/NB120,5) fields=(path)
+   update base.fiber_cable(design/NB120,167) fields=(path)
+   update base.mywcom_fiber_segment(design/NB120,55) fields=(path)
+   update base.mywcom_fiber_segment(design/NB120,56) fields=(path)
+   update base.mywcom_fiber_segment(design/NB120,73) fields=(circuits)
+   update base.mywcom_fiber_segment(design/NB120,387) fields=(path)
+   update base.mywcom_fiber_segment(design/NB120,595) fields=(path)
+   update delta.conduit(design/NB120,4204,insert) fields=(path)
+   update delta.conduit(design/NB120,4205,insert) fields=(path)
+   update delta.fiber_cable(design/NB120,5,update) fields=(path)
+   update delta.fiber_cable(design/NB120,167,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,56,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,73,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/NB120,595,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,4202,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,4203,insert) fields=(path)
+   update delta.ug_route(design/NB120,4203,insert) fields=(path)
+
+CONFLICTS AFTER MERGE
+   conflict ug_route(3,design/NB120) update/update
+      master_fields: length,path
+      delta_fields : length,out_structure,path
+   conflict conduit(80,design/NB120) update/update
+      master_fields: length,path
+      delta_fields : length,path,out_structure
+   conflict conduit(79,design/NB120) update/update
+      master_fields: length,path
+      delta_fields : length,path,out_structure
+

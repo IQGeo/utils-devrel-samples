@@ -1,0 +1,44 @@
+{
+    "iqgapp.markup.featureTypes": {
+      "iqgapp_markup_line": {
+         "styles": {
+            "line_style": "{\"color\":\"#9013fe\",\"width\":3,\"widthUnit\":\"px\",\"lineStyle\":\"solid\", \"startStyle\":\"\",\"endStyle\":\"arrow\",\"arrowLength\":5,\"minArrowLength\":2,\"opacity\":1}"
+         },
+         "properties": {},
+         "formClass": "LinestringStyleForm",
+         "image": "modules/comms/images/markup/iqgapp_markup_line.svg"
+      },
+      "iqgapp_markup_point": {
+         "styles": {
+            "point_style": "{\"symbol\":\"x\",\"color\":\"#f5a623\",\"size\":5,\"sizeUnit\":\"m\",\"borderColor\":\"\",\"isSymbolPicker\":true,\"iconUrl\":null}"
+         },
+         "properties": {},
+         "formClass": "PointStyleForm",
+         "image": "modules/comms/images/markup/iqgapp_markup_point.svg"
+      },
+      "iqgapp_markup_text": {
+         "styles": {
+            "text_style": "{\"textProp\":\"text\",\"orientationProp\":\"myw_orientation_location\",\"color\":\"#000000\",\"size\":20,\"sizeUnit\":\"px\",\"vAlign\":\"middle\",\"hAlign\":\"center\",\"vOffset\":0,\"hOffset\":0, \"backgroundColor\":\"\", \"borderWidth\":1,\"placement\":\"point\",\"fontFamily\":\"Arial\",\"minSize\":4}"
+         },
+         "properties": {
+            "myw_offset_width": "{ dx : 0, dy : 0, width : 0 }"
+         },
+         "formClass": "LabelForm",
+         "image": "modules/comms/images/markup/iqgapp_markup_text.svg"
+      },
+      "iqgapp_markup_photo": {
+         "styles": {},
+         "properties": {},
+         "image": "modules/comms/images/markup/iqgapp_markup_photo.svg"
+      },
+      "iqgapp_markup_polygon": {
+         "styles": {
+            "fill_style": "{ \"color\" : \"#b8e986\", \"opacity\" : 0.5}",
+            "line_style": "{ \"color\" :\"#000000\", \"width\" :3, \"widthUnit\": \"px\",\"lineStyle\" : \"solid\", \"startStyle\" :\"\", \"endStyle\" : \"\", \"opacity\" :1}"
+         },
+         "properties": {},
+         "formClass": "PolygonStyleForm",
+         "image": "modules/comms/images/markup/iqgapp_markup_polygon.svg"
+      }
+   }
+}

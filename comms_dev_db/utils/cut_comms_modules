@@ -1,0 +1,29 @@
+#!/bin/bash
+# Cut comms modules for release
+# Usage: cut_comms_modules <version>
+#
+
+HERE=$(dirname $0)
+
+version=$1
+
+if [ "${version}" == "" ]
+then
+    echo 'Usage: cut_comms_modules <version>'
+    exit 1
+fi
+
+# Modules root directory
+modules_root=$HERE/../..
+
+output_dir=${MYW_COMMS_PRE_RELEASE_DIR}/${version}
+echo Cutting to ${output_dir}
+mkdir $output_dir
+
+for module in comms comms_dev_db
+do
+    cd ${modules_root}/${module}
+
+    echo Running: $HERE/cut_module ${module} ${version} --output=${output_dir}
+    $HERE/cut_module ${module} ${version} --output=${output_dir}
+done

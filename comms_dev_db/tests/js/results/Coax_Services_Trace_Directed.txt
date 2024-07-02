@@ -1,0 +1,3077 @@
+
+*** TRACE DOWNSTREAM
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "optical_node/1: WH-ON-001",
+			"individualLoss": 0,
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 54.28,
+			"feature": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "54.28",
+			"parent": "optical_node/1: WH-ON-001",
+			"start_coord": [
+				0.13438748,
+				52.220842
+			],
+			"stop_coord": [
+				0.13401164,
+				52.220438
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 54.28,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 54.28,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 97.92,
+			"feature": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "43.64",
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"start_coord": [
+				0.13401164,
+				52.220438
+			],
+			"stop_coord": [
+				0.13372188,
+				52.22011
+			]
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0,
+			"dist": 97.92,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 97.92,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 136.55,
+			"feature": "coax_cable/3: Coaxial Cable: WH-CA-004 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "38.63",
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"start_coord": [
+				0.13372188,
+				52.22011
+			],
+			"stop_coord": [
+				0.13340006,
+				52.219844
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 136.55,
+			"feature": "coax_tap/3: WH-CTAP-003",
+			"individualLoss": 0,
+			"parent": "coax_cable/3: Coaxial Cable: WH-CA-004 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 136.55,
+			"feature": "coax_tap/3: WH-CTAP-003",
+			"individualLoss": 0,
+			"parent": "coax_tap/3: WH-CTAP-003",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 175.96,
+			"feature": "coax_cable/4: Coaxial Cable: WH-CA-005 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "39.41",
+			"parent": "coax_tap/3: WH-CTAP-003",
+			"start_coord": [
+				0.13340006,
+				52.219844
+			],
+			"stop_coord": [
+				0.13302391,
+				52.219597
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 175.96,
+			"feature": "coax_tap/2: WH-CTAP-002",
+			"individualLoss": 0,
+			"parent": "coax_cable/4: Coaxial Cable: WH-CA-005 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 175.96,
+			"feature": "coax_tap/2: WH-CTAP-002",
+			"individualLoss": 0,
+			"parent": "coax_tap/2: WH-CTAP-002",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 221.47,
+			"feature": "coax_cable/5: Coaxial Cable: WH-CA-006 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "45.51",
+			"parent": "coax_tap/2: WH-CTAP-002",
+			"start_coord": [
+				0.13302391,
+				52.219597
+			],
+			"stop_coord": [
+				0.13258954,
+				52.219312
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 221.47,
+			"feature": "coax_tap/12: WH-CTAP-012",
+			"individualLoss": 0,
+			"parent": "coax_cable/5: Coaxial Cable: WH-CA-006 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 221.47,
+			"feature": "coax_tap/12: WH-CTAP-012",
+			"individualLoss": 0,
+			"parent": "coax_tap/12: WH-CTAP-012",
+			"ports": "out:1"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 221.47,
+			"feature": "coax_terminator/1: WH-CT-001",
+			"individualLoss": 0,
+			"parent": "coax_tap/12: WH-CTAP-012",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 97.92,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 136.21,
+			"feature": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "38.29",
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"start_coord": [
+				0.13372188,
+				52.22011
+			],
+			"stop_coord": [
+				0.13412867,
+				52.219898
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 136.21,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 136.21,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 178.03,
+			"feature": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "41.82",
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"start_coord": [
+				0.13412867,
+				52.219898
+			],
+			"stop_coord": [
+				0.13452714,
+				52.21965
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 178.03,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 178.03,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 211.77,
+			"feature": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "33.74",
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"start_coord": [
+				0.13452714,
+				52.21965
+			],
+			"stop_coord": [
+				0.13479079,
+				52.219417
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 211.77,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 211.77,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 248.6,
+			"feature": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "36.83",
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"start_coord": [
+				0.13479079,
+				52.219417
+			],
+			"stop_coord": [
+				0.13512804,
+				52.219179
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 248.6,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 248.6,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 301.7,
+			"feature": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "53.10",
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"start_coord": [
+				0.13512804,
+				52.219179
+			],
+			"stop_coord": [
+				0.13471951,
+				52.21887
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 301.7,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 301.7,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 337,
+			"feature": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.30",
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13433201,
+				52.218682
+			]
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0,
+			"dist": 337,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 337,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 367.44,
+			"feature": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "30.44",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13400641,
+				52.218514
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 367.44,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 367.44,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 402.81,
+			"feature": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.37",
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"start_coord": [
+				0.13400641,
+				52.218514
+			],
+			"stop_coord": [
+				0.13362478,
+				52.218322
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 402.81,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 402.81,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "out:1"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 402.81,
+			"feature": "coax_terminator/2: WH-CT-002",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 337,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 377.88,
+			"feature": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "40.88",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13396017,
+				52.218948
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 377.88,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 377.88,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 444.95,
+			"feature": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "67.07",
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"start_coord": [
+				0.13396017,
+				52.218948
+			],
+			"stop_coord": [
+				0.13327109,
+				52.219077
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 444.95,
+			"feature": "coax_tap/13: WH-CTAP-013",
+			"individualLoss": 0,
+			"parent": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"ports": "in:1"
+		}
+	]
+}
+
+*** TRACE UPSTREAM
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "coax_tap/13: WH-CTAP-013",
+			"individualLoss": 0,
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 67.07,
+			"feature": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "67.07",
+			"parent": "coax_tap/13: WH-CTAP-013",
+			"start_coord": [
+				0.13327109,
+				52.219077
+			],
+			"stop_coord": [
+				0.13396017,
+				52.218948
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 67.07,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 67.07,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 107.95,
+			"feature": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "40.88",
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"start_coord": [
+				0.13396017,
+				52.218948
+			],
+			"stop_coord": [
+				0.13433201,
+				52.218682
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 107.95,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 107.95,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 143.25,
+			"feature": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.30",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13471951,
+				52.21887
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 143.25,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 143.25,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 196.35,
+			"feature": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "53.10",
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13512804,
+				52.219179
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 196.35,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 196.35,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 233.18,
+			"feature": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "36.83",
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"start_coord": [
+				0.13512804,
+				52.219179
+			],
+			"stop_coord": [
+				0.13479079,
+				52.219417
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 233.18,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 233.18,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 266.92,
+			"feature": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "33.74",
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"start_coord": [
+				0.13479079,
+				52.219417
+			],
+			"stop_coord": [
+				0.13452714,
+				52.21965
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 266.92,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 266.92,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 308.74,
+			"feature": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "41.82",
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"start_coord": [
+				0.13452714,
+				52.21965
+			],
+			"stop_coord": [
+				0.13412867,
+				52.219898
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 308.74,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 308.74,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 347.03,
+			"feature": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "38.29",
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"start_coord": [
+				0.13412867,
+				52.219898
+			],
+			"stop_coord": [
+				0.13372188,
+				52.22011
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 347.03,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 347.03,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 390.67,
+			"feature": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "43.64",
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"start_coord": [
+				0.13372188,
+				52.22011
+			],
+			"stop_coord": [
+				0.13401164,
+				52.220438
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 390.67,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 390.67,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 444.95,
+			"feature": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "54.28",
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"start_coord": [
+				0.13401164,
+				52.220438
+			],
+			"stop_coord": [
+				0.13438748,
+				52.220842
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 444.95,
+			"feature": "optical_node/1: WH-ON-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"ports": "out:1"
+		}
+	]
+}
+
+*** TRACE BOTH
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 3,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "mywcom_coax_connection/4: Coaxial Connection: 4",
+			"from_": "Ports: in:1",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"to_": "Fibers: 1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 43.64,
+			"feature": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "43.64",
+			"parent": "mywcom_coax_connection/4: Coaxial Connection: 4",
+			"start_coord": [
+				0.13372188,
+				52.22011
+			],
+			"stop_coord": [
+				0.13401164,
+				52.220438
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 43.64,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 43.64,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 97.92,
+			"feature": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "54.28",
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"start_coord": [
+				0.13401164,
+				52.220438
+			],
+			"stop_coord": [
+				0.13438748,
+				52.220842
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 97.92,
+			"feature": "optical_node/1: WH-ON-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 38.63,
+			"feature": "coax_cable/3: Coaxial Cable: WH-CA-004 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "38.63",
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"start_coord": [
+				0.13372188,
+				52.22011
+			],
+			"stop_coord": [
+				0.13340006,
+				52.219844
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 38.63,
+			"feature": "coax_tap/3: WH-CTAP-003",
+			"individualLoss": 0,
+			"parent": "coax_cable/3: Coaxial Cable: WH-CA-004 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 38.63,
+			"feature": "coax_tap/3: WH-CTAP-003",
+			"individualLoss": 0,
+			"parent": "coax_tap/3: WH-CTAP-003",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 78.04,
+			"feature": "coax_cable/4: Coaxial Cable: WH-CA-005 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "39.41",
+			"parent": "coax_tap/3: WH-CTAP-003",
+			"start_coord": [
+				0.13340006,
+				52.219844
+			],
+			"stop_coord": [
+				0.13302391,
+				52.219597
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 78.04,
+			"feature": "coax_tap/2: WH-CTAP-002",
+			"individualLoss": 0,
+			"parent": "coax_cable/4: Coaxial Cable: WH-CA-005 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 78.04,
+			"feature": "coax_tap/2: WH-CTAP-002",
+			"individualLoss": 0,
+			"parent": "coax_tap/2: WH-CTAP-002",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 123.55,
+			"feature": "coax_cable/5: Coaxial Cable: WH-CA-006 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "45.51",
+			"parent": "coax_tap/2: WH-CTAP-002",
+			"start_coord": [
+				0.13302391,
+				52.219597
+			],
+			"stop_coord": [
+				0.13258954,
+				52.219312
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 123.55,
+			"feature": "coax_tap/12: WH-CTAP-012",
+			"individualLoss": 0,
+			"parent": "coax_cable/5: Coaxial Cable: WH-CA-006 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 123.55,
+			"feature": "coax_tap/12: WH-CTAP-012",
+			"individualLoss": 0,
+			"parent": "coax_tap/12: WH-CTAP-012",
+			"ports": "out:1"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 123.55,
+			"feature": "coax_terminator/1: WH-CT-001",
+			"individualLoss": 0,
+			"parent": "coax_tap/12: WH-CTAP-012",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 38.29,
+			"feature": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "38.29",
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"start_coord": [
+				0.13372188,
+				52.22011
+			],
+			"stop_coord": [
+				0.13412867,
+				52.219898
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 38.29,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 38.29,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 80.11,
+			"feature": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "41.82",
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"start_coord": [
+				0.13412867,
+				52.219898
+			],
+			"stop_coord": [
+				0.13452714,
+				52.21965
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 80.11,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 80.11,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 113.85,
+			"feature": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "33.74",
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"start_coord": [
+				0.13452714,
+				52.21965
+			],
+			"stop_coord": [
+				0.13479079,
+				52.219417
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 113.85,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 113.85,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 150.68,
+			"feature": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "36.83",
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"start_coord": [
+				0.13479079,
+				52.219417
+			],
+			"stop_coord": [
+				0.13512804,
+				52.219179
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 150.68,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 150.68,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 203.78,
+			"feature": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "53.10",
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"start_coord": [
+				0.13512804,
+				52.219179
+			],
+			"stop_coord": [
+				0.13471951,
+				52.21887
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 203.78,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 203.78,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 239.08,
+			"feature": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.30",
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13433201,
+				52.218682
+			]
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0,
+			"dist": 239.08,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 239.08,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 269.52,
+			"feature": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "30.44",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13400641,
+				52.218514
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 269.52,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 269.52,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 304.89,
+			"feature": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.37",
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"start_coord": [
+				0.13400641,
+				52.218514
+			],
+			"stop_coord": [
+				0.13362478,
+				52.218322
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 304.89,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 304.89,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "out:1"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 304.89,
+			"feature": "coax_terminator/2: WH-CT-002",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 239.08,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 279.96,
+			"feature": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "40.88",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13396017,
+				52.218948
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 279.96,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 279.96,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 347.03,
+			"feature": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "67.07",
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"start_coord": [
+				0.13396017,
+				52.218948
+			],
+			"stop_coord": [
+				0.13327109,
+				52.219077
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 347.03,
+			"feature": "coax_tap/13: WH-CTAP-013",
+			"individualLoss": 0,
+			"parent": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"ports": "in:1"
+		}
+	]
+}
+
+*** TRACE UPSTREAM FROM SEG IN
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13471951,
+				52.21887
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 53.1,
+			"feature": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "53.10",
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13512804,
+				52.219179
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 53.1,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 53.1,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 89.93,
+			"feature": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "36.83",
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"start_coord": [
+				0.13512804,
+				52.219179
+			],
+			"stop_coord": [
+				0.13479079,
+				52.219417
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 89.93,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 89.93,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 123.67,
+			"feature": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "33.74",
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"start_coord": [
+				0.13479079,
+				52.219417
+			],
+			"stop_coord": [
+				0.13452714,
+				52.21965
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 123.67,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 123.67,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 165.49,
+			"feature": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "41.82",
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"start_coord": [
+				0.13452714,
+				52.21965
+			],
+			"stop_coord": [
+				0.13412867,
+				52.219898
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 165.49,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 165.49,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 203.78,
+			"feature": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "38.29",
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"start_coord": [
+				0.13412867,
+				52.219898
+			],
+			"stop_coord": [
+				0.13372188,
+				52.22011
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 203.78,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 203.78,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 247.42,
+			"feature": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "43.64",
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"start_coord": [
+				0.13372188,
+				52.22011
+			],
+			"stop_coord": [
+				0.13401164,
+				52.220438
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 247.42,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 247.42,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 301.7,
+			"feature": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "54.28",
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"start_coord": [
+				0.13401164,
+				52.220438
+			],
+			"stop_coord": [
+				0.13438748,
+				52.220842
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 301.7,
+			"feature": "optical_node/1: WH-ON-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"ports": "out:1"
+		}
+	]
+}
+
+*** TRACE UPSTREAM FROM SEG OUT
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.30",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13471951,
+				52.21887
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 88.4,
+			"feature": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "53.10",
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13512804,
+				52.219179
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 88.4,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 88.4,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 125.23,
+			"feature": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "36.83",
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"start_coord": [
+				0.13512804,
+				52.219179
+			],
+			"stop_coord": [
+				0.13479079,
+				52.219417
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 125.23,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 125.23,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 158.97,
+			"feature": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "33.74",
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"start_coord": [
+				0.13479079,
+				52.219417
+			],
+			"stop_coord": [
+				0.13452714,
+				52.21965
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 158.97,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 158.97,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 200.79,
+			"feature": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "41.82",
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"start_coord": [
+				0.13452714,
+				52.21965
+			],
+			"stop_coord": [
+				0.13412867,
+				52.219898
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 200.79,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 200.79,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 239.08,
+			"feature": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "38.29",
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"start_coord": [
+				0.13412867,
+				52.219898
+			],
+			"stop_coord": [
+				0.13372188,
+				52.22011
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 239.08,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 239.08,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 282.72,
+			"feature": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "43.64",
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"start_coord": [
+				0.13372188,
+				52.22011
+			],
+			"stop_coord": [
+				0.13401164,
+				52.220438
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 282.72,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 282.72,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 337,
+			"feature": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "54.28",
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"start_coord": [
+				0.13401164,
+				52.220438
+			],
+			"stop_coord": [
+				0.13438748,
+				52.220842
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 337,
+			"feature": "optical_node/1: WH-ON-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"ports": "out:1"
+		}
+	]
+}
+
+*** TRACE DOWNSTREAM FROM SEG IN
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.30",
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13433201,
+				52.218682
+			]
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 65.74,
+			"feature": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "30.44",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13400641,
+				52.218514
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 65.74,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 65.74,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 101.11,
+			"feature": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.37",
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"start_coord": [
+				0.13400641,
+				52.218514
+			],
+			"stop_coord": [
+				0.13362478,
+				52.218322
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 101.11,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 101.11,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "out:1"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 101.11,
+			"feature": "coax_terminator/2: WH-CT-002",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 76.18,
+			"feature": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "40.88",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13396017,
+				52.218948
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 76.18,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 76.18,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 143.25,
+			"feature": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "67.07",
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"start_coord": [
+				0.13396017,
+				52.218948
+			],
+			"stop_coord": [
+				0.13327109,
+				52.219077
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 143.25,
+			"feature": "coax_tap/13: WH-CTAP-013",
+			"individualLoss": 0,
+			"parent": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"ports": "in:1"
+		}
+	]
+}
+
+*** TRACE DOWNTSTREAM FROM SEG OUT
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13471951,
+				52.21887
+			]
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 30.44,
+			"feature": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "30.44",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13400641,
+				52.218514
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 30.44,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 30.44,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 65.81,
+			"feature": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.37",
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"start_coord": [
+				0.13400641,
+				52.218514
+			],
+			"stop_coord": [
+				0.13362478,
+				52.218322
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 65.81,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 65.81,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "out:1"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 65.81,
+			"feature": "coax_terminator/2: WH-CT-002",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 40.88,
+			"feature": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "40.88",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13396017,
+				52.218948
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 40.88,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 40.88,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 107.95,
+			"feature": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "67.07",
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"start_coord": [
+				0.13396017,
+				52.218948
+			],
+			"stop_coord": [
+				0.13327109,
+				52.219077
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 107.95,
+			"feature": "coax_tap/13: WH-CTAP-013",
+			"individualLoss": 0,
+			"parent": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"ports": "in:1"
+		}
+	]
+}
+
+*** TRACE BOTH FROM SEG IN
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 2,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13471951,
+				52.21887
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "mywcom_coax_connection/22: Coaxial Connection: 22",
+			"from_": "Fibers: 1",
+			"individualLoss": 0,
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"to_": "Ports: out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "mywcom_coax_connection/22: Coaxial Connection: 22",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "coax_tap/8: WH-CTAP-008",
+			"individualLoss": 0,
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 53.1,
+			"feature": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "53.10",
+			"parent": "coax_tap/8: WH-CTAP-008",
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13512804,
+				52.219179
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 53.1,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_cable/10: Coaxial Cable: WH-CA-011 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 53.1,
+			"feature": "coax_tap/9: WH-CTAP-009",
+			"individualLoss": 0,
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 89.93,
+			"feature": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "36.83",
+			"parent": "coax_tap/9: WH-CTAP-009",
+			"start_coord": [
+				0.13512804,
+				52.219179
+			],
+			"stop_coord": [
+				0.13479079,
+				52.219417
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 89.93,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_cable/9: Coaxial Cable: WH-CA-010 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 89.93,
+			"feature": "coax_tap/10: WH-CTAP-010",
+			"individualLoss": 0,
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 123.67,
+			"feature": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "33.74",
+			"parent": "coax_tap/10: WH-CTAP-010",
+			"start_coord": [
+				0.13479079,
+				52.219417
+			],
+			"stop_coord": [
+				0.13452714,
+				52.21965
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 123.67,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_cable/8: Coaxial Cable: WH-CA-009 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 123.67,
+			"feature": "coax_tap/11: WH-CTAP-011",
+			"individualLoss": 0,
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 165.49,
+			"feature": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "41.82",
+			"parent": "coax_tap/11: WH-CTAP-011",
+			"start_coord": [
+				0.13452714,
+				52.21965
+			],
+			"stop_coord": [
+				0.13412867,
+				52.219898
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 165.49,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_cable/7: Coaxial Cable: WH-CA-008 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 165.49,
+			"feature": "coax_tap/4: WH-CTAP-004",
+			"individualLoss": 0,
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 203.78,
+			"feature": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "38.29",
+			"parent": "coax_tap/4: WH-CTAP-004",
+			"start_coord": [
+				0.13412867,
+				52.219898
+			],
+			"stop_coord": [
+				0.13372188,
+				52.22011
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 203.78,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/6: Coaxial Cable: WH-CA-007 (1)",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 203.78,
+			"feature": "two_way_splitter/1: WH-2WSPL-001",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 247.42,
+			"feature": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "43.64",
+			"parent": "two_way_splitter/1: WH-2WSPL-001",
+			"start_coord": [
+				0.13372188,
+				52.22011
+			],
+			"stop_coord": [
+				0.13401164,
+				52.220438
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 247.42,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/2: Coaxial Cable: WH-CA-003 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 247.42,
+			"feature": "coax_tap/1: WH-CTAP-001",
+			"individualLoss": 0,
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 301.7,
+			"feature": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "54.28",
+			"parent": "coax_tap/1: WH-CTAP-001",
+			"start_coord": [
+				0.13401164,
+				52.220438
+			],
+			"stop_coord": [
+				0.13438748,
+				52.220842
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 301.7,
+			"feature": "optical_node/1: WH-ON-001",
+			"individualLoss": 0,
+			"parent": "coax_cable/1: Coaxial Cable: WH-CA-002 (1)",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.30",
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"start_coord": [
+				0.13471951,
+				52.21887
+			],
+			"stop_coord": [
+				0.13433201,
+				52.218682
+			]
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "coax_cable/11: Coaxial Cable: WH-CA-012 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 65.74,
+			"feature": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "30.44",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13400641,
+				52.218514
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 65.74,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_cable/12: Coaxial Cable: WH-CA-013 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 65.74,
+			"feature": "coax_tap/5: WH-CTAP-005",
+			"individualLoss": 0,
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 101.11,
+			"feature": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "35.37",
+			"parent": "coax_tap/5: WH-CTAP-005",
+			"start_coord": [
+				0.13400641,
+				52.218514
+			],
+			"stop_coord": [
+				0.13362478,
+				52.218322
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 101.11,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_cable/13: Coaxial Cable: WH-CA-014 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 101.11,
+			"feature": "coax_tap/6: WH-CTAP-006",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "out:1"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 101.11,
+			"feature": "coax_terminator/2: WH-CT-002",
+			"individualLoss": 0,
+			"parent": "coax_tap/6: WH-CTAP-006",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 35.3,
+			"feature": "two_way_splitter/2: WH-2WSPL-002",
+			"individualLoss": 0,
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"ports": "out:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 76.18,
+			"feature": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "40.88",
+			"parent": "two_way_splitter/2: WH-2WSPL-002",
+			"start_coord": [
+				0.13433201,
+				52.218682
+			],
+			"stop_coord": [
+				0.13396017,
+				52.218948
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 76.18,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_cable/14: Coaxial Cable: WH-CA-015 (1)",
+			"ports": "in:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 76.18,
+			"feature": "coax_tap/7: WH-CTAP-007",
+			"individualLoss": 0,
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"ports": "out:1"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 143.25,
+			"feature": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"fibers": "1",
+			"individualLoss": 0,
+			"length": "67.07",
+			"parent": "coax_tap/7: WH-CTAP-007",
+			"start_coord": [
+				0.13396017,
+				52.218948
+			],
+			"stop_coord": [
+				0.13327109,
+				52.219077
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0,
+			"dist": 143.25,
+			"feature": "coax_tap/13: WH-CTAP-013",
+			"individualLoss": 0,
+			"parent": "coax_cable/15: Coaxial Cable: WH-CA-016 (1)",
+			"ports": "in:1"
+		}
+	]
+}

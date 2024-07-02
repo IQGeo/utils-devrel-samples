@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<warnings xmlns="https://comsof.com/fiber/warnings/1.0">
+    <warning description="The following Demand Points have a connection to their Drop Point that exceeds the cut-off distance (150 m)." filename="OUT_DemandPoints" key="AGG_ID" layer="Demand" type="ID">
+        <entry>20</entry>
+        <entry>30</entry>
+        <entry>34</entry>
+    </warning>
+</warnings>

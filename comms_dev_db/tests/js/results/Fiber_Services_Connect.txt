@@ -1,0 +1,201 @@
+
+*** CONNECT SPLITTER -> CABLE
+Set delta to: design/NB217
+id: 100000
+type: mywcom_fiber_connection
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Fiber Connection: 100000"
+}
+geom: {
+	"coordinates": [
+		0.139073207974,
+		52.2238911596
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"housing": "fiber_splitter/4",
+	"id": 100000,
+	"in_high": 8,
+	"in_low": 8,
+	"in_object": "fiber_splitter/4",
+	"in_side": "out",
+	"out_high": 2,
+	"out_low": 2,
+	"out_object": "mywcom_fiber_segment/207",
+	"out_side": "in",
+	"root_housing": "pole/6",
+	"splice": false
+}
+displayValues: {
+
+}
+
+DATABASE CHANGES: CONNECT SPLITTER -> CABLE
+    insert delta.mywcom_fiber_connection(design/NB217,100000,insert)
+
+VALIDATION ERRORS: CONNECT SPLITTER -> CABLE
+
+
+*** CONNECT CABLE ONE TO ONE
+Set delta to: design/NB217
+Connecting mywcom_fiber_segment/186 to mywcom_fiber_segment/33...
+New fiber connection record: 
+id: 100001
+type: mywcom_fiber_connection
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Fiber Connection: 100001"
+}
+geom: {
+	"coordinates": [
+		0.136493593454,
+		52.22405793
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"housing": "cabinet/1",
+	"id": 100001,
+	"in_high": 37,
+	"in_low": 37,
+	"in_object": "mywcom_fiber_segment/186",
+	"in_side": "out",
+	"out_high": 12,
+	"out_low": 12,
+	"out_object": "mywcom_fiber_segment/33",
+	"out_side": "in",
+	"root_housing": "cabinet/1",
+	"splice": true
+}
+displayValues: {
+
+}
+
+
+DATABASE CHANGES: CONNECT CABLE ONE TO ONE
+    insert delta.mywcom_fiber_connection(design/NB217,100001,insert)
+
+VALIDATION ERRORS: CONNECT CABLE ONE TO ONE
+
+
+*** SPLICE CABLE -> CABLE
+Set delta to: design/NB217
+id: 100002
+type: mywcom_fiber_connection
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Fiber Connection: 100002"
+}
+geom: {
+	"coordinates": [
+		0.137965323374,
+		52.2233384716
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"housing": "manhole/29",
+	"id": 100002,
+	"in_high": 5,
+	"in_low": 5,
+	"in_object": "mywcom_fiber_segment/73",
+	"in_side": "out",
+	"out_high": 72,
+	"out_low": 72,
+	"out_object": "mywcom_fiber_segment/152",
+	"out_side": "in",
+	"root_housing": "manhole/29",
+	"splice": true
+}
+displayValues: {
+
+}
+
+DATABASE CHANGES: SPLICE CABLE -> CABLE
+    insert delta.mywcom_fiber_connection(design/NB217,100002,insert)
+
+VALIDATION ERRORS: SPLICE CABLE -> CABLE
+
+
+*** SPLICE CABLES
+Set delta to: design/NB046
+{
+	"_excludedFields": [
+		"id",
+		"myw_geometry_world_name",
+		"myw_internal_world_view"
+	],
+	"_loadedAspects": {
+		"calculated": false,
+		"display_values": false,
+		"lobs": undefined,
+		"simple": undefined
+	},
+	"_myw": {
+		"change_type": "insert",
+		"delta": "design/NB046",
+		"title": "Fiber Connection: 100003"
+	},
+	"displayValues": {
+
+	},
+	"geometry": {
+		"coordinates": [
+			0.137456841767,
+			52.2247063158
+		],
+		"type": "Point",
+		"world_name": "geo",
+		"world_type": "geo"
+	},
+	"id": 100003,
+	"isNew": false,
+	"keyFieldName": "id",
+	"layer": null,
+	"properties": {
+		"comsof_auto": false,
+		"housing": "splice_closure/35",
+		"id": 100003,
+		"in_high": 2,
+		"in_low": 2,
+		"in_object": "mywcom_fiber_segment/63",
+		"in_side": "in",
+		"out_high": 2,
+		"out_low": 2,
+		"out_object": "mywcom_fiber_segment/394",
+		"out_side": "out",
+		"root_housing": "manhole/24",
+		"splice": true
+	}
+}
+DATABASE CHANGES: SPLICE CABLES
+    insert delta.mywcom_fiber_connection(design/NB046,100003,insert)
+
+VALIDATION ERRORS: SPLICE CABLES
+
+
+*** ATTEMPT CONNECT PORT TO CABLE IN CONTINUOUS CONDUIT
+Set delta to: design/NB046
+conduit_is_continuous
+DATABASE CHANGES: ATTEMPT CONNECT PORT TO CABLE IN CONTINUOUS CONDUIT
+
+
+*** ATTEMPT SPLICE TO CABLE IN CONTINUOUS CONDUIT
+Set delta to: design/NB046
+conduit_is_continuous
+DATABASE CHANGES: ATTEMPT SPLICE TO CABLE IN CONTINUOUS CONDUIT
+

@@ -1,0 +1,90 @@
+TEST: DIALOG BEFORE VALIDATING
+    button: ant-modal-close
+    input: true
+    label: Structures
+    input: true
+    label: Routes
+    input: true
+    label: Conduits
+    input: true
+    label: Conduit Runs
+    input: true
+    label: Equipment
+    input: true
+    label: Cables
+    input: true
+    label: Segments
+    input: true
+    label: Connections
+    input: true
+    label: Circuits
+    input: true
+    label: Line Of Counts
+    input: true
+    label: Other
+    input: true
+    input: true
+    label: Cable specs
+    input: false
+    label: Pole spacing
+    input: false
+    label: Conduit capacity
+    input: false
+    input: false
+    input: 100
+    button: Start
+    button (disabled): Stop
+
+
+TEST: DIALOG AFTER VALIDATING
+    button: ant-modal-close
+    input: true
+    label: Structures3
+    input: true
+    label: Routes4
+    input: true
+    label: Conduits
+    input: true
+    label: Conduit Runs
+    input: true
+    label: Equipment
+    input: true
+    label: Cables3
+    input: true
+    label: Segments6
+    input: true
+    label: Connections
+    input: true
+    label: Circuits
+    input: true
+    label: Line Of Counts
+    input: true
+    label: Other
+    input: true
+    input: true
+    label: Cable specs
+    input: false
+    label: Pole spacing
+    input: false
+    label: Conduit capacity
+    input: false
+    input: false
+    input: 100
+    label: 16 warnings found
+    button: Start
+    button (disabled): Stop
+
+
+DATABASE CHANGES: AFTER CONFLICT SET TO MASTER
+   insert data.mywcom_change_detail(5)
+   update delta.blown_fiber_tube(design/NB335,5200,insert) fields=(path)
+   update delta.fiber_cable(design/NB335,13,update) fields=(path)
+   update delta.fiber_cable(design/NB335,185,update) fields=(path)
+   update delta.fiber_cable(design/NB335,5200,insert) fields=(path)
+   update delta.manhole(design/NB335,54,update) fields=(location)
+   update delta.mywcom_conduit_run(design/NB335,5200,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB335,110,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB335,450,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB335,5200,insert) fields=(path)
+   update delta.ug_route(design/NB335,68,update) fields=(path)
+

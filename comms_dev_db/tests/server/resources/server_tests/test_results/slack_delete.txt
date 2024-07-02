@@ -1,0 +1,55 @@
+
+SUB TEST : DELETE SLACK : mywcom_fiber_slack/5
+    Request: DELETE:/modules/comms/feature/mywcom_fiber_slack/5?delta=design/NB046
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE SLACK
+       insert delta.mywcom_fiber_segment(design/NB046,38,update)
+       insert delta.mywcom_fiber_segment(design/NB046,39,update)
+       insert delta.mywcom_fiber_segment(design/NB046,585,delete)
+       insert delta.mywcom_fiber_slack(design/NB046,5,delete)
+    
+    VALIDATION ERRORS: AFTER DELETE SLACK
+
+SUB TEST : DELETE SLACK WITH CIRCUITS : mywcom_fiber_slack/9
+    Request: DELETE:/modules/comms/feature/mywcom_fiber_slack/9?delta=design/NB046
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE SLACK WITH CIRCUITS
+       insert delta.mywcom_fiber_segment(design/NB046,157,update)
+       insert delta.mywcom_fiber_segment(design/NB046,158,update)
+       insert delta.mywcom_fiber_segment(design/NB046,589,delete)
+       insert delta.mywcom_fiber_slack(design/NB046,9,delete)
+    
+    VALIDATION ERRORS: AFTER DELETE SLACK WITH CIRCUITS
+
+SUB TEST : DELETE SLACK WITH UPSTREAM CONNECTION : mywcom_fiber_slack/12
+    Request: DELETE:/modules/comms/feature/mywcom_fiber_slack/12?delta=design/NB046
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE SLACK WITH UPSTREAM CONNECTION
+       insert delta.mywcom_fiber_connection(design/NB046,209,update)
+       insert delta.mywcom_fiber_segment(design/NB046,65,update)
+       insert delta.mywcom_fiber_segment(design/NB046,591,update)
+       insert delta.mywcom_fiber_segment(design/NB046,592,delete)
+       insert delta.mywcom_fiber_slack(design/NB046,12,delete)
+    
+    VALIDATION ERRORS: AFTER DELETE SLACK WITH UPSTREAM CONNECTION
+
+SUB TEST : DELETE SLACK WITH DOWNSTREAM CONNECTION : mywcom_fiber_slack/7
+    Request: DELETE:/modules/comms/feature/mywcom_fiber_slack/7?delta=design/NB046
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE SLACK WITH DOWNSTREAM CONNECTION
+       insert delta.mywcom_fiber_connection(design/NB046,215,update)
+       insert delta.mywcom_fiber_connection(design/NB046,216,update)
+       insert delta.mywcom_fiber_segment(design/NB046,388,update)
+       insert delta.mywcom_fiber_segment(design/NB046,389,update)
+       insert delta.mywcom_fiber_segment(design/NB046,587,delete)
+       insert delta.mywcom_fiber_slack(design/NB046,7,delete)
+    
+    VALIDATION ERRORS: AFTER DELETE SLACK WITH DOWNSTREAM CONNECTION

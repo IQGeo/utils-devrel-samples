@@ -1,0 +1,49 @@
+TEST: ADMIN TOOLBAR
+    list item: Open
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+
+
+TEST: AFTER SELECT OBJECTS 1
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: Wall Box: WH-5600 Update: Changed field: Location
+    label: Wall Box: WH-5600
+    label: Fiber Cable: DROP2 (2) Insert
+    label: Fiber Cable: DROP2 (2)
+    label: Route (Underground): 5600 Update: Changed field: Cover
+    label: Route (Underground): 5600
+    label: Wall Box: WH-5601 Delete
+    label: Wall Box: WH-5601
+
+
+TEST: AFTER SELECT OBJECTS 2
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: Fiber Cable: DROP2 (2) Insert
+    label: Fiber Cable: DROP2 (2)
+    label: Wall Box: WH-5601 Delete
+    label: Wall Box: WH-5601
+    label: Route (Underground): 5600 Update: Changed fields: 2
+    label: Route (Underground): 5600
+    label: Wall Box: WH-5600 Update: Changed field: Location
+    label: Wall Box: WH-5600
+
+

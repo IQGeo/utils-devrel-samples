@@ -1,0 +1,21 @@
+{
+    "image": "modules/comms/images/features/coax_inline_equalizer.svg",
+    "housings": [
+        "manhole",
+        "cabinet",
+        "pole"
+    ],
+    "function": "connector",
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/coax_inline_equalizer.svg:12:24"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/coax_inline_equalizer.svg:12:12:1.5m",
+        "geometry": "offset_geom"
+    },
+    "offset": true
+}

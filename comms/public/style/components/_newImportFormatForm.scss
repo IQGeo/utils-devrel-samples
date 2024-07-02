@@ -1,0 +1,15 @@
+// Important required to overwrite antd
+.import-form {
+    width: 350px !important;
+    padding: 10px 0px;
+    label {
+        width: 90px;
+    }
+    input {
+        width: 260px;
+    }
+}
+
+.ant-form-item {
+    margin-bottom: 7px;
+}

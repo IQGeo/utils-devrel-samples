@@ -1,0 +1,9 @@
+{
+    "mywcom.fiberReport": {
+        "cableFields": [],
+        "circuitFields": []
+    },
+    "mywcom.circuitReport": {
+        "circuitFields": []
+    }
+}

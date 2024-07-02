@@ -1,0 +1,10 @@
+#!/bin/bash
+# Bash wrapper to myWorld js api tests command 
+
+HERE=$(dirname $0)
+
+# Make myworld command line tools available
+source $HERE/../../../../../../Tools/myw_env
+
+# Run command
+python $0.py comms_dev_db "$@"

@@ -1,0 +1,18 @@
+{
+   "name": "slack_storage",
+   "description": "Slack storage type",
+   "values": [
+      {
+         "value": "Coil",
+         "display_value": "Coil"
+      },
+      {
+         "value": "Rack",
+         "display_value": "Rack"
+      },
+      {
+         "value": "Snowshoe",
+         "display_value": "Snowshoe"
+      }
+   ]
+}

@@ -1,0 +1,12 @@
+{
+    "mywcom.equipmentReport": {
+        "featureFields": [
+            "specification"
+        ]
+    },
+    "mywcom.connectivityReport": {
+        "circuitFields": [
+            "name"
+        ]
+    }
+}

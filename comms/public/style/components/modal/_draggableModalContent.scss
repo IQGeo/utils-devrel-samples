@@ -1,0 +1,16 @@
+.ui-label-input-side-by-side {
+    display: flex;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    align-items: center;
+}
+
+.form {
+    &-label {}
+}
+
+.found-warnings {
+    display: block;
+    margin-top: 5px;
+    padding: 3px 0px;
+}

@@ -1,0 +1,49 @@
+
+SUB TEST : design/NB335
+    Request: POST: /modules/comms/delta/design/NB335/revert/manhole/55
+    Response: 200 (200 OK)
+    {
+       "status": 200
+    }
+    
+    
+    DATABASE CHANGES: AFTER REVERT DELETED FEATURE
+       delete delta.manhole(design/NB335,55,delete)
+    
+    Request: POST: /modules/comms/delta/design/NB335/revert/manhole/38
+    Response: 200 (200 OK)
+    {
+       "status": 200
+    }
+    
+    
+    DATABASE CHANGES: AFTER REVERT DELETE/DELETE FEATURE
+       delete delta.manhole(design/NB335,38,delete)
+    
+    Request: POST: /modules/comms/delta/design/NB335/revert/mywcom_route_junction/5200
+    Response: 200 (200 OK)
+    {
+       "status": 200
+    }
+    
+    
+    DATABASE CHANGES: AFTER REVERT INSERTED FEATURE
+       delete delta.mywcom_route_junction(design/NB335,5200,insert)
+    
+    Request: POST: /modules/comms/delta/design/NB335/revert/mywcom_route_junction/5200
+    Response: 502 (502 Bad Gateway)
+    b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "400", "params": {}}/n/n'
+    
+    
+    DATABASE CHANGES: AFTER REVERT INSERTED FEATURE TWICE
+    
+    Request: POST: /modules/comms/delta/design/NB335/revert/manhole/54
+    Response: 200 (200 OK)
+    {
+       "status": 200
+    }
+    
+    
+    DATABASE CHANGES: AFTER REVERT UPDATED FEATURE
+       delete delta.manhole(design/NB335,54,update)
+    

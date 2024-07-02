@@ -1,0 +1,44 @@
+Set delta to: design/NB046
+
+*** DELETE SLACK
+DATABASE CHANGES: DELETE SLACK
+    insert delta.mywcom_fiber_segment(design/NB046,38,update)
+    insert delta.mywcom_fiber_segment(design/NB046,39,update)
+    insert delta.mywcom_fiber_segment(design/NB046,585,delete)
+    insert delta.mywcom_fiber_slack(design/NB046,5,delete)
+
+VALIDATION ERRORS: DELETE SLACK
+
+
+*** DELETE SLACK WITH CIRCUITS
+DATABASE CHANGES: DELETE SLACK WITH CIRCUITS
+    insert delta.mywcom_fiber_segment(design/NB046,157,update)
+    insert delta.mywcom_fiber_segment(design/NB046,158,update)
+    insert delta.mywcom_fiber_segment(design/NB046,589,delete)
+    insert delta.mywcom_fiber_slack(design/NB046,9,delete)
+
+VALIDATION ERRORS: DELETE SLACK WITH CIRCUITS
+
+
+*** DELETE SLACK WITH UPSTREAM CONNECTION
+DATABASE CHANGES: DELETE SLACK WITH UPSTREAM CONNECTION
+    insert delta.mywcom_fiber_connection(design/NB046,209,update)
+    insert delta.mywcom_fiber_segment(design/NB046,591,update)
+    insert delta.mywcom_fiber_segment(design/NB046,592,delete)
+    insert delta.mywcom_fiber_segment(design/NB046,65,update)
+    insert delta.mywcom_fiber_slack(design/NB046,12,delete)
+
+VALIDATION ERRORS: DELETE SLACK WITH UPSTREAM CONNECTION
+
+
+*** DELETE SLACK WITH DOWNSTREAM CONNECTION
+DATABASE CHANGES: DELETE SLACK WITH DOWNSTREAM CONNECTION
+    insert delta.mywcom_fiber_connection(design/NB046,215,update)
+    insert delta.mywcom_fiber_connection(design/NB046,216,update)
+    insert delta.mywcom_fiber_segment(design/NB046,388,update)
+    insert delta.mywcom_fiber_segment(design/NB046,389,update)
+    insert delta.mywcom_fiber_segment(design/NB046,587,delete)
+    insert delta.mywcom_fiber_slack(design/NB046,7,delete)
+
+VALIDATION ERRORS: DELETE SLACK WITH DOWNSTREAM CONNECTION
+

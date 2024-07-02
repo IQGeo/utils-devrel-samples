@@ -1,0 +1,135 @@
+
+*** RIPPLE MULTIPLE
+Set delta to: design/NB217
+DATABASE CHANGES: RIPPLE MULTIPLEAFTER RIPPLE BEFORE UPDATE
+
+FORMATTED LOC AFTER RIPPLE ON WH-FCB-021 (between WH-M-123 and WH-M-124)
+{
+	"mywcom_fiber_segment/183": {
+		"": [
+			{
+				"high": 20,
+				"low": 12,
+				"name": "",
+				"origin": "mywcom_fiber_segment/184",
+				"physical": false,
+				"physical_low": 12,
+				"status": "Dead"
+			},
+			{
+				"high": 53,
+				"low": 1,
+				"name": "WH-3",
+				"origin": "mywcom_fiber_segment/184",
+				"physical": false,
+				"physical_low": 21,
+				"status": "Active"
+			}
+		]
+	}
+}
+ [12 - 20] Dead"<br>WH-3 [1 - 53] Active"
+DATABASE CHANGES: RIPPLE MULTIPLEAFTER RIPPLE AFTER UPDATE
+    insert delta.mywcom_line_of_count(design/NB217,100000,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100001,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100002,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100003,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100004,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100000,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100001,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100002,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100003,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100004,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100005,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100006,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100007,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100008,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100009,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100010,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100011,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100012,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100013,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100014,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100015,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100016,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100017,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100018,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100019,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100020,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100021,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100022,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100023,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100024,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100025,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100026,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100027,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100028,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100029,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100030,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100031,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100032,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100033,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100034,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100035,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100036,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100037,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100038,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100039,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100040,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100041,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100042,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100043,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100044,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100045,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100046,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100047,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100048,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100049,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100050,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100051,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100052,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100053,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100054,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100055,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100056,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100057,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100058,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100059,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100060,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100061,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100062,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100063,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100064,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100065,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100066,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100067,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100068,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100069,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100070,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100071,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100072,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100073,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100074,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100075,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100076,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100077,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100078,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100079,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100080,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100081,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100082,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100083,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100084,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100085,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100086,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100087,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100088,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100089,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100090,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100091,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100092,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100093,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100094,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100095,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100096,insert)
+

@@ -1,0 +1,33 @@
+Set delta to: design/NB046
+
+*** ADD SLACK BEFORE SEGMENT
+DATABASE CHANGES: ADD SLACK BEFORE SEGMENT
+    insert delta.mywcom_fiber_segment(design/NB046,100000,insert)
+    insert delta.mywcom_fiber_segment(design/NB046,63,update)
+    insert delta.mywcom_fiber_segment(design/NB046,64,update)
+    insert delta.mywcom_fiber_slack(design/NB046,100000,insert)
+    insert delta.mywcom_line_of_count_section(design/NB046,100000,insert)
+    update delta.mywcom_line_of_count(design/NB046,4,update) fields=(route)
+
+
+*** ADD SLACK AFTER SEGMENT
+DATABASE CHANGES: ADD SLACK AFTER SEGMENT
+    insert delta.mywcom_fiber_connection(design/NB046,191,update)
+    insert delta.mywcom_fiber_connection(design/NB046,193,update)
+    insert delta.mywcom_fiber_connection(design/NB046,195,update)
+    insert delta.mywcom_fiber_segment(design/NB046,100001,insert)
+    insert delta.mywcom_fiber_slack(design/NB046,100001,insert)
+    insert delta.mywcom_line_of_count_section(design/NB046,100001,insert)
+    update delta.mywcom_fiber_segment(design/NB046,100000,insert) fields=(in_segment)
+    update delta.mywcom_fiber_segment(design/NB046,63,update) fields=(out_segment)
+    update delta.mywcom_line_of_count(design/NB046,4,update) fields=(route)
+
+
+*** SPLIT SLACK
+DATABASE CHANGES: SPLIT SLACK
+    insert delta.mywcom_fiber_segment(design/NB046,100002,insert)
+    insert delta.mywcom_fiber_segment(design/NB046,27,update)
+    insert delta.mywcom_fiber_segment(design/NB046,583,update)
+    insert delta.mywcom_fiber_slack(design/NB046,100002,insert)
+    insert delta.mywcom_fiber_slack(design/NB046,3,update)
+

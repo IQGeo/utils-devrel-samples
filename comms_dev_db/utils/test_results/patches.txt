@@ -1,0 +1,29 @@
+module  patch      title
+------  ---------  ----------------------------------------------------------------------
+core    PLAT-8214  client: Fixes issue when creating an object that that has geometrie...
+core    PLAT-8828  Client: Treat bigint type as a number
+core    PLAT-8904  Server: Added AutoCAD compatibility setting to DXF export
+core    PLAT-9239  fixed KmlDatasource from returning invalid features
+core    PLAT-9273  config: fix cannot open config page if standand application is not ...
+core    PLAT-9274  server api: MywFeatureDescriptor.storedFields: fix bug when types a...
+core    PLAT-9278  Jan 24 Security Update
+core    PLAT-9295  Storing redirect_to and params in OIDC state session
+core    PLAT-9297  Anywhere: feature editor: fix editor not closing if snapping layers...
+core    PLAT-9301  client: featureViewer: Persists field group state
+core    PLAT-9340  Updated internal auth engine to protect against brute force attacks
+core    PLAT-9345  Server: bookmark update: validate username in request
+core    PLAT-9363  config: features: Fix for the delete field from a field group funct...
+core    PLAT-9369  client: featureEditor: Fixes cancel method so it can be subclassed
+core    PLAT-9378  Fixed feature filtering when using {groups} session variable
+core    PLAT-9382  client: fix I&S field app does not work in Android Anywhere
+core    PLAT-9393  Server: fix path traversal security issues
+core    PLAT-9404  Corrected the issue with saving polygons that contain holes.
+core    PLAT-9410  tools: Relaxes rules for package requirements files, and fixes a sm...
+core    PLAT-9419  Client API: fix MyWorldDatasource.export() not sending type argument
+core    PLAT-9459  client: fixed XSS vulnerability found in user groups control.
+core    PLAT-9471  Client: Initialisation: fix issue starting application in Anywhere ...
+core    PLAT-9476  Client: Adds the ability to make timestamp fields editable
+core    PLAT-9481  Server: versioning: improve performance when updating records alrea...
+core    PLAT-9482  Server, API: MywFeatureTable: added insertMany/updateMany methods
+core    PLAT-9508  Server, API: MywFeatureTabl.update() performance improvement
+

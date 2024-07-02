@@ -1,0 +1,63 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_circuit_port",
+    "external_name": "{:mywcom_circuit_port_feature_external_name}",
+    "title": "{display_name}: [id] ([circuit])",
+    "short_description": "[equipment]#[side]:[low]:[high]",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {},
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "circuit",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "root_housing",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "equipment",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "side",
+            "type": "string(16)",
+            "indexed": true
+        },
+        {
+            "name": "low",
+            "type": "integer",
+            "indexed": true
+        },
+        {
+            "name": "high",
+            "type": "integer",
+            "indexed": true
+        },
+        {
+            "name": "in_segment",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "out_segment",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "location",
+            "type": "point"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "image": "modules/comms/images/features/coax_power_supply.svg",
+    "housings": [
+        "rack",
+        "slot",
+        "manhole",
+        "cabinet",
+        "splice_closure"
+    ],
+    "function": "mux",
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/coax_power_supply.svg:24:14"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/coax_power_supply.svg:12:14:1.5m",
+        "geometry": "offset_geom"
+    },
+    "offset": true
+}

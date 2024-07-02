@@ -1,0 +1,337 @@
+
+*** TRACE DOWNSTREAM FROM PORTS
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0,
+			"dist": 0,
+			"feature": "copper_shelf/1: Copper Shelf: S-1 (0/100)",
+			"individualLoss": 0,
+			"ports": "out:25:30"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.012143,
+			"dist": 121.43,
+			"feature": "copper_cable/1: Copper Cable: WH-CC-001 (100)",
+			"fibers": "25:30",
+			"individualLoss": 0.012143,
+			"length": "121.43",
+			"parent": "copper_shelf/1: Copper Shelf: S-1 (0/100)",
+			"start_coord": [
+				0.13660491,
+				52.224016
+			],
+			"stop_coord": [
+				0.13533454,
+				52.223461
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.112143,
+			"dist": 121.43,
+			"feature": "mywcom_copper_connection/1: Copper Connection: 1",
+			"from_": "25:30",
+			"individualLoss": 0.1,
+			"parent": "copper_cable/1: Copper Cable: WH-CC-001 (100)",
+			"to_": "25:30"
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0.117589,
+			"dist": 175.89,
+			"feature": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"fibers": "25:30",
+			"individualLoss": 0.005446,
+			"length": "54.46",
+			"parent": "mywcom_copper_connection/1: Copper Connection: 1",
+			"start_coord": [
+				0.13533454,
+				52.223461
+			],
+			"stop_coord": [
+				0.13461672,
+				52.223329
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.217589,
+			"dist": 175.89,
+			"feature": "mywcom_copper_connection/2: Copper Connection: 2",
+			"from_": "25",
+			"individualLoss": 0.1,
+			"parent": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"to_": "25"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.223579,
+			"dist": 235.79,
+			"feature": "copper_cable/3: Copper Cable: WH-CC-003 (100)",
+			"fibers": "25",
+			"individualLoss": 0.00599,
+			"length": "59.90",
+			"parent": "mywcom_copper_connection/2: Copper Connection: 2",
+			"start_coord": [
+				0.13461672,
+				52.223329
+			],
+			"stop_coord": [
+				0.13438806,
+				52.222849
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.523579,
+			"dist": 235.79,
+			"feature": "copper_load_coil/2: Load Coil: WH-LC-2 (25)",
+			"individualLoss": 0.3,
+			"parent": "copper_cable/3: Copper Cable: WH-CC-003 (100)",
+			"ports": "in:25"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.523579,
+			"dist": 235.79,
+			"feature": "copper_load_coil/2: Load Coil: WH-LC-2 (25)",
+			"individualLoss": 0.3,
+			"parent": "copper_load_coil/2: Load Coil: WH-LC-2 (25)",
+			"ports": "out:25"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.524282,
+			"dist": 242.82,
+			"feature": "copper_cable/3: Copper Cable: WH-CC-003 (100)",
+			"fibers": "25",
+			"individualLoss": 0.000703,
+			"length": "7.03",
+			"parent": "copper_load_coil/2: Load Coil: WH-LC-2 (25)",
+			"start_coord": [
+				0.13438806,
+				52.222849
+			],
+			"stop_coord": [
+				0.13429753,
+				52.222826
+			]
+		},
+		{
+			"children": 2,
+			"cumulativeLoss": 0.117589,
+			"dist": 184.85,
+			"feature": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"fibers": "26:30",
+			"individualLoss": 0.000896,
+			"length": "8.96",
+			"parent": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"start_coord": [
+				0.13461672,
+				52.223329
+			],
+			"stop_coord": [
+				0.13449535,
+				52.223348
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.117589,
+			"dist": 184.85,
+			"feature": "mywcom_copper_connection/8: Copper Connection: 8",
+			"from_": "Fibers: 26:29",
+			"individualLoss": 0,
+			"parent": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"to_": "Ports: in:1:4"
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.417589,
+			"dist": 184.85,
+			"feature": "copper_terminal/2: Copper Terminal: WH-T-2 (4)",
+			"individualLoss": 0.3,
+			"parent": "mywcom_copper_connection/8: Copper Connection: 8",
+			"ports": "in:1:4"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.117589,
+			"dist": 260.01,
+			"feature": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"fibers": "30",
+			"individualLoss": 0.007516,
+			"length": "75.16",
+			"parent": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"start_coord": [
+				0.13449535,
+				52.223348
+			],
+			"stop_coord": [
+				0.1336176,
+				52.223638
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.417589,
+			"dist": 260.01,
+			"feature": "copper_terminal/3: Copper Terminal: WH-T-3 (4)",
+			"individualLoss": 0.3,
+			"parent": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"ports": "in:1"
+		}
+	]
+}
+
+*** TRACE MESH DOWNSTREAM FROM SEGMENT
+Set delta to: *** master ***
+{
+	"metadata": [
+		"ports",
+		"fibers",
+		"from_",
+		"to_",
+		"length",
+		"direction",
+		"individualLoss",
+		"cumulativeLoss",
+		"loc",
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"cumulativeLoss": 0.1,
+			"dist": 0,
+			"feature": "copper_cable/1: Copper Cable: WH-CC-001 (100)",
+			"fibers": "1:2",
+			"individualLoss": 0.1,
+			"start_coord": [
+				0.13647989,
+				52.224068
+			],
+			"stop_coord": [
+				0.13647989,
+				52.224068
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.2,
+			"dist": 0,
+			"feature": "mywcom_copper_connection/1: Copper Connection: 1",
+			"from_": "1:2",
+			"individualLoss": 0.1,
+			"parent": "copper_cable/1: Copper Cable: WH-CC-001 (100)",
+			"to_": "1:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.205446,
+			"dist": 54.46,
+			"feature": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"fibers": "1:2",
+			"individualLoss": 0.005446,
+			"length": "54.46",
+			"parent": "mywcom_copper_connection/1: Copper Connection: 1",
+			"start_coord": [
+				0.13533454,
+				52.223461
+			],
+			"stop_coord": [
+				0.13461672,
+				52.223329
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.305446,
+			"dist": 54.46,
+			"feature": "mywcom_copper_connection/2: Copper Connection: 2",
+			"from_": "1:2",
+			"individualLoss": 0.1,
+			"parent": "copper_cable/2: Copper Cable: WH-CC-002 (100)",
+			"to_": "1:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.311436,
+			"dist": 114.36,
+			"feature": "copper_cable/3: Copper Cable: WH-CC-003 (100)",
+			"fibers": "1:2",
+			"individualLoss": 0.00599,
+			"length": "59.90",
+			"parent": "mywcom_copper_connection/2: Copper Connection: 2",
+			"start_coord": [
+				0.13461672,
+				52.223329
+			],
+			"stop_coord": [
+				0.13438806,
+				52.222849
+			]
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.611436,
+			"dist": 114.36,
+			"feature": "copper_load_coil/2: Load Coil: WH-LC-2 (25)",
+			"individualLoss": 0.3,
+			"parent": "copper_cable/3: Copper Cable: WH-CC-003 (100)",
+			"ports": "in:1:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.611436,
+			"dist": 114.36,
+			"feature": "copper_load_coil/2: Load Coil: WH-LC-2 (25)",
+			"individualLoss": 0.3,
+			"parent": "copper_load_coil/2: Load Coil: WH-LC-2 (25)",
+			"ports": "out:1:2"
+		},
+		{
+			"children": 1,
+			"cumulativeLoss": 0.612139,
+			"dist": 121.39,
+			"feature": "copper_cable/3: Copper Cable: WH-CC-003 (100)",
+			"fibers": "1:2",
+			"individualLoss": 0.000703,
+			"length": "7.03",
+			"parent": "copper_load_coil/2: Load Coil: WH-LC-2 (25)",
+			"start_coord": [
+				0.13438806,
+				52.222849
+			],
+			"stop_coord": [
+				0.13429753,
+				52.222826
+			]
+		},
+		{
+			"children": 0,
+			"cumulativeLoss": 0.912139,
+			"dist": 121.39,
+			"feature": "copper_terminal/1: Copper Terminal: WH-T-1 (4)",
+			"individualLoss": 0.3,
+			"parent": "copper_cable/3: Copper Cable: WH-CC-003 (100)",
+			"ports": "in:1:2"
+		}
+	]
+}

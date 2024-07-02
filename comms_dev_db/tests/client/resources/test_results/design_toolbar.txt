@@ -1,0 +1,141 @@
+TEST: ADMIN TOOLBAR
+    list item: Open
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Publish
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: More...
+
+
+DATABASE CHANGES: AFTER DESIGN BOUNDS
+   update data.design(NB120) fields=(boundary)
+
+TEST: AFTER CHECK DESIGN
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: Route (Underground): 3 Conflict: Update / Update
+    label: Route (Underground): 3
+    label: Route (Underground): 4203 Integrity: Path does not match Manhole: WH-M-27
+    label: Route (Underground): 4203
+    label: Conduit: WH-CND-079 Conflict: Update / Update
+    label: Conduit: WH-CND-079
+    label: Conduit: WH-CND-080 Conflict: Update / Update
+    label: Conduit: WH-CND-080
+    label: Fiber Cable: WH-FCB-005 (144) Conflict: Update / Update
+    label: Fiber Cable: WH-FCB-005 (144)
+    label: Fiber Cable: BB-FCB-017 (72) Conflict: Update / Update
+    label: Fiber Cable: BB-FCB-017 (72)
+    label: Cable Segment: 55 (fiber_cable/5) Conflict: Update / Update
+    label: Cable Segment: 55 (fiber_cable/5)
+    label: Cable Segment: 56 (fiber_cable/5) Conflict: Update / Update
+    label: Cable Segment: 56 (fiber_cable/5)
+    label: Cable Segment: 73 (fiber_cable/7) Conflict: Update / Update
+    label: Cable Segment: 73 (fiber_cable/7)
+    label: Cable Segment: 387 (fiber_cable/167) Conflict: Update / Update
+    label: Cable Segment: 387 (fiber_cable/167)
+    label: Cable Segment: 595 (fiber_cable/167) Conflict: Update / Update
+    label: Cable Segment: 595 (fiber_cable/167)
+
+
+TEST: AFTER FIX CONFLICTS
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: Fiber Cable: BB-FCB-017 (72) Update: Changed fields: 0
+    label: Fiber Cable: BB-FCB-017 (72)
+    label: Fiber Cable: WH-FCB-005 (144) Update: Changed fields: 0
+    label: Fiber Cable: WH-FCB-005 (144)
+    label: Cable Segment: 595 (fiber_cable/167) Update: Changed fields: 0
+    label: Cable Segment: 595 (fiber_cable/167)
+    label: Cable Segment: 387 (fiber_cable/167) Rebase
+    label: Cable Segment: 387 (fiber_cable/167)
+    label: Cable Segment: 73 (fiber_cable/7) Update: Changed field: Circuits
+    label: Cable Segment: 73 (fiber_cable/7)
+    label: Cable Segment: 56 (fiber_cable/5) Update: Changed fields: 0
+    label: Cable Segment: 56 (fiber_cable/5)
+    label: Cable Segment: 55 (fiber_cable/5) Rebase
+    label: Cable Segment: 55 (fiber_cable/5)
+    label: Route (Underground): 4203 Update: Changed field: Path
+    label: Route (Underground): 4203
+    label: Conduit: WH-CND-4205 Update: Changed field: Path
+    label: Conduit: WH-CND-4205
+    label: Conduit: WH-CND-4204 Update: Changed field: Path
+    label: Conduit: WH-CND-4204
+    label: Cable Segment: 4203 (fiber_cable/167) Update: Changed field: Path
+    label: Cable Segment: 4203 (fiber_cable/167)
+    label: Cable Segment: 4202 (fiber_cable/5) Update: Changed field: Path
+    label: Cable Segment: 4202 (fiber_cable/5)
+
+
+DATABASE CHANGES: AFTER FIX CONFLICTS
+   update delta.conduit(design/NB120,4204,insert) fields=(path)
+   update delta.conduit(design/NB120,4205,insert) fields=(path)
+   update delta.fiber_cable(design/NB120,167,update) fields=(path)
+   update delta.fiber_cable(design/NB120,5,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,4202,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,4203,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,56,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,595,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,73,update) fields=(circuits)
+   update delta.ug_route(design/NB120,4203,insert) fields=(path)
+
+TEST: AFTER PUBLISH
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Design: NB120
+    label: Network Build (Designing)
+    label: State
+    label: Designing
+    label: Group
+    label: Admin Group
+    label: Admin Group
+    list item: Open
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Publish
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: More...
+
+
+DATABASE CHANGES: AFTER PUBLISH
+
+TEST: DESIGNER TOOLBAR
+    list item: Open
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+
+
+TEST: DESIGNER TOOLBAR
+    list item: Open
+    list item: System User
+    list item: Check design
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Close
+
+

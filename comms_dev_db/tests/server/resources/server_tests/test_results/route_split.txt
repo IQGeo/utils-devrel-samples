@@ -1,0 +1,105 @@
+
+SUB TEST : DONT SPLIT
+
+SUB TEST : INSERT FEATURE TO SPLIT
+    Request: POST:/modules/comms/feature/ug_route?delta=design/NB046
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER INSERT FEATURE TO SPLIT
+       insert delta.ug_route(design/NB046,100000,insert)
+    
+    VALIDATION ERRORS: AFTER INSERT FEATURE TO SPLIT
+    Request: POST: /modules/comms/route/ug_route/100000/split?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "count": 1,
+       "features": [
+          "ug_route(100000)    Route (Underground): 100000"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: DONT SPLIT
+    
+    VALIDATION ERRORS: DONT SPLIT
+
+SUB TEST : SPLIT ONCE
+
+SUB TEST : INSERT FEATURE TO SPLIT
+    Request: POST:/modules/comms/feature/ug_route?delta=design/NB046
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER INSERT FEATURE TO SPLIT
+       insert delta.ug_route(design/NB046,100001,insert)
+    
+    VALIDATION ERRORS: AFTER INSERT FEATURE TO SPLIT
+    Request: POST: /modules/comms/route/ug_route/100001/split?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "count": 2,
+       "features": [
+          "ug_route(100001)    Route (Underground): 100001",
+          "ug_route(100002)    Route (Underground): 100002"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: SPLIT ONCE
+       update delta.ug_route(design/NB046,100001,insert) fields=(out_structure,path)
+       insert delta.ug_route(design/NB046,100002,insert)
+    
+    VALIDATION ERRORS: SPLIT ONCE
+
+SUB TEST : SPLIT FIVE TIMES
+
+SUB TEST : INSERT FEATURE TO SPLIT
+    Request: POST:/modules/comms/feature/ug_route?delta=design/NB046
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER INSERT FEATURE TO SPLIT
+       insert delta.ug_route(design/NB046,100003,insert)
+    
+    VALIDATION ERRORS: AFTER INSERT FEATURE TO SPLIT
+    Request: POST: /modules/comms/route/ug_route/100003/split?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "count": 5,
+       "features": [
+          "ug_route(100003)    Route (Underground): 100003",
+          "ug_route(100004)    Route (Underground): 100004",
+          "ug_route(100005)    Route (Underground): 100005",
+          "ug_route(100006)    Route (Underground): 100006",
+          "ug_route(100007)    Route (Underground): 100007"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+    DATABASE CHANGES: SPLIT FIVE TIMES
+       update delta.ug_route(design/NB046,100003,insert) fields=(out_structure,path)
+       insert delta.ug_route(design/NB046,100004,insert)
+       insert delta.ug_route(design/NB046,100005,insert)
+       insert delta.ug_route(design/NB046,100006,insert)
+       insert delta.ug_route(design/NB046,100007,insert)
+    
+    VALIDATION ERRORS: SPLIT FIVE TIMES

@@ -1,0 +1,590 @@
+TEST: AFTER ENTER EQUIPMENT MODE
+    input: 
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Organize layers
+    list item: Update render order
+    list item: Add layers
+    list item: Save application state
+    label: Structures BuildingCabinetDrop PointMDUManholePoleRoute (Overhead)Route (Underground)Route JunctionWall Box
+    label: Structures
+    label: Structures and routes
+    input: true
+    label: Fiber Network Fiber Cables Fiber Equipment Fiber SlackFiber SplitterFiber TapMultiplexerOLTONTPatch Panel
+    label: Fiber Network
+    input: true
+    label: Copper Network Copper Cables Copper Equipment Bridge TapBuild OutCapacitorCopper SlackCopper Splice ClosureCopper TerminalLoad CoilPair GainRepeater
+    label: Copper Network
+    input: true
+    label: Coax Network Coaxial Cables Coax Equipment Coaxial AmplifierCoaxial SlackCoaxial TapCoaxial TerminatorDirectional CouplerInline EqualizerInternal Directional CouplerInternal SplitterPower BlockPower InserterPower SupplyThree Way SplitterTwo Way SplitterWiFi Unit
+    label: Coax Network
+    input: false
+    label: Coax Offset Group Coaxial Cables Offset Coax Equipment Offset Coaxial AmplifierCoaxial TapCoaxial TerminatorDirectional CouplerInline EqualizerInternal Directional CouplerInternal SplitterOptical NodePower BlockPower InserterPower SupplyThree Way SplitterTwo Way SplitterWiFi Unit
+    label: Coax Offset Group
+    input: false
+    label: Conduits
+    label: Conduits
+    input: false
+    label: Blown Fiber Tubes
+    label: Blown Fiber Tubes
+    input: false
+    label (disabled): Service Areas
+    label: Service Areas
+    input: true
+    label: Addresses
+    label: Addresses
+    label: Customer locations (from OSM building centroids)
+    input: false
+    label: Designs Boundaries Structures BuildingCabinetMDUManholePoleRoute (Overhead)Route (Underground)Route JunctionWall Box Cables
+    label: Designs
+    label: Design boundaries and data
+    input: false
+    label: Design Markup
+    label: Design Markup
+    input: true
+    label: Cable (x144)
+    label: Cable (x48)
+    label: Drop Cable (x4)
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: AFTER SELECT MANHOLE
+    input: WH-M-35
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Manhole: WH-M-35
+    label: Name
+    label: WH-M-35
+    label: Spec
+    label: FPM-CCANN-MCX
+    label: FPM-CCANN-MCX
+    label: Length
+    label: 33 in
+    label: Width
+    label: 51 in
+    label: Depth
+    label: 35 in
+    label: Installed
+    label: 15/05/1998
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Labor Costs
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Manhole: WH-M-35 Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Multiplexer: WH-MUX-001 (24 way)
+    label: Fiber Cable: WH-FCB-006 (144)
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: WH-FCB-003 (144) 29.5 ft
+    label: Fiber Cable: WH-FCB-004 (144)
+    label: Fiber Cable: WH-FCB-006 (144)
+    label: Fiber Cable: WH-FCB-NB046:1 (24)
+    label: Splice Closure
+    label: Rack
+    label: Multiplexer 8-Way
+    label: Multiplexer 12-Way
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: AFTER CLICK PALETTE ENTRY: MULTIPLEXER 12-WAY
+    input: WH-M-35
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    label: In Ports*
+    label: *
+    label: feature-edit-input
+    input: 12
+    label: Device ID*
+    label: feature-edit-input
+    input: 
+    label: Installed*
+    label: feature-edit-input
+    input: 
+    label: Job ID*
+    label: feature-edit-input
+    input: 
+    button: Cancel
+    button: Save
+    label: Splice Closure
+    label: Rack
+    label: Multiplexer 8-Way
+    label: Multiplexer 12-WayMultiplexer 12-Way
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: AFTER ADDING A SPLICE CLOSURE TO THE PALETTE
+    input: WH-M-35
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Manhole: WH-M-35
+    label: Name
+    label: WH-M-35
+    label: Spec
+    label: FPM-CCANN-MCX
+    label: FPM-CCANN-MCX
+    label: Length
+    label: 33 in
+    label: Width
+    label: 51 in
+    label: Depth
+    label: 35 in
+    label: Installed
+    label: 15/05/1998
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Labor Costs
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Manhole: WH-M-35 Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Multiplexer: WH-MUX-001 (24 way)
+    label: Fiber Cable: WH-FCB-006 (144)
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: WH-FCB-003 (144) 29.5 ft
+    label: Fiber Cable: WH-FCB-004 (144)
+    label: Fiber Cable: WH-FCB-006 (144)
+    label: Fiber Cable: WH-FCB-NB046:1 (24)
+    label: Splice Closure
+    label: Rack
+    label: Multiplexer 8-Way
+    label: Multiplexer 12-Way
+    label: Splice Closure-1
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: AFTER RENAMING A BUTTON
+    input: WH-M-35
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Manhole: WH-M-35
+    label: Name
+    label: WH-M-35
+    label: Spec
+    label: FPM-CCANN-MCX
+    label: FPM-CCANN-MCX
+    label: Length
+    label: 33 in
+    label: Width
+    label: 51 in
+    label: Depth
+    label: 35 in
+    label: Installed
+    label: 15/05/1998
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Labor Costs
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Manhole: WH-M-35 Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Multiplexer: WH-MUX-001 (24 way)
+    label: Fiber Cable: WH-FCB-006 (144)
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: WH-FCB-003 (144) 29.5 ft
+    label: Fiber Cable: WH-FCB-004 (144)
+    label: Fiber Cable: WH-FCB-006 (144)
+    label: Fiber Cable: WH-FCB-NB046:1 (24)
+    label: Splice Closure
+    label: Rack
+    label: Multiplexer 8-Way
+    label: Multiplexer 12-Way
+    label: Splice Closure (EM1621)
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+    list item: Rename
+    label: Rename
+    list item: Remove
+    label: Remove
+    list item: context-menu-item context-menu-separator context-menu-not-selectable
+    list item (disabled): Add object
+    label: Add object
+    list item (disabled): Add assembly
+    label: Add assembly
+    list item: context-menu-item context-menu-separator context-menu-not-selectable
+    list item: Reset to default
+    label: Reset to default
+
+
+TEST: AFTER REMOVING A BUTTON
+    input: WH-M-35
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Manhole: WH-M-35
+    label: Name
+    label: WH-M-35
+    label: Spec
+    label: FPM-CCANN-MCX
+    label: FPM-CCANN-MCX
+    label: Length
+    label: 33 in
+    label: Width
+    label: 51 in
+    label: Depth
+    label: 35 in
+    label: Installed
+    label: 15/05/1998
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Labor Costs
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Manhole: WH-M-35 Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Multiplexer: WH-MUX-001 (24 way)
+    label: Fiber Cable: WH-FCB-006 (144)
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: WH-FCB-003 (144) 29.5 ft
+    label: Fiber Cable: WH-FCB-004 (144)
+    label: Fiber Cable: WH-FCB-006 (144)
+    label: Fiber Cable: WH-FCB-NB046:1 (24)
+    label: Splice Closure
+    label: Rack
+    label: Multiplexer 12-Way
+    label: Splice Closure (EM1621)
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+
+TEST: AFTER RESETTING TO DEFAULT
+    input: WH-M-35
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Manhole: WH-M-35
+    label: Name
+    label: WH-M-35
+    label: Spec
+    label: FPM-CCANN-MCX
+    label: FPM-CCANN-MCX
+    label: Length
+    label: 33 in
+    label: Width
+    label: 51 in
+    label: Depth
+    label: 35 in
+    label: Installed
+    label: 15/05/1998
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Labor Costs
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Manhole: WH-M-35 Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Splice Closure: WH-SC-001 Multiplexer: WH-MUX-001 (24 way) Fiber Cable: WH-FCB-006 (144)
+    label: Multiplexer: WH-MUX-001 (24 way)
+    label: Fiber Cable: WH-FCB-006 (144)
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: WH-FCB-003 (144) 29.5 ft
+    label: Fiber Cable: WH-FCB-004 (144)
+    label: Fiber Cable: WH-FCB-006 (144)
+    label: Fiber Cable: WH-FCB-NB046:1 (24)
+    label: Splice Closure
+    label: Rack
+    label: Multiplexer 8-Way
+    label: Multiplexer 12-Way
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+

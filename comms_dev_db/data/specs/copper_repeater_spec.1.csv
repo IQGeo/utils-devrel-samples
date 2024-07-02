@@ -1,0 +1,13 @@
+retired,manufacturer,name,model,gain,n_copper_ports,type
+false,Altex,100pr Repeater,100pr Repeater,0.000,100,Known
+false,Altex,12pr Repeater,12pr Repeater,0.000,12,Unknown
+false,Altex,1pr Repeater,1pr Repeater,0.000,1,Known
+false,Altex,24pr Repeater,24pr Repeater,0.000,24,Unknown
+false,Altex,25pr Repeater,25pr Repeater,0.000,25,Known
+false,StarTech,2pr Repeater,2pr Repeater,0.000,2,Known
+false,StarTech,4pr Repeater,4pr Repeater,0.000,4,Unknown
+false,StarTech,50pr Repeater,50pr Repeater,0.000,50,Known
+false,StarTech,65pr Repeater,65pr Repeater,0.000,65,Unknown
+false,StarTech,6pr Repeater,6pr Repeater,0.000,6,Known
+false,StarTech,72pr Repeater,72pr Repeater,0.000,72,Unknown
+false,Erghth,Default Repeater,Default,0.000,99,Unknown

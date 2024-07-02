@@ -1,0 +1,35 @@
+@use './_sharedStyles.scss' as sharedStyles;
+
+.modal {
+
+    &-container {
+
+        &-grid {
+            margin: 10px 20px;
+            padding-bottom: 20px;
+            display: grid;
+            grid-template-columns: 600px;
+            row-gap: 20px;
+            font-size: 1.1em !important;
+            overflow-y: auto;
+        }
+    }
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 270px));
+    justify-content: space-between;
+}
+
+.create-section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    justify-content: end;
+}
+
+.create-button {
+    height: 30px;
+    justify-self: end;
+}

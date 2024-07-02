@@ -1,0 +1,46 @@
+{
+    "mywcom.network_types": {
+        "fiber": {
+            "segment_type": "mywcom_fiber_segment",
+            "slack_type": "mywcom_fiber_slack",
+            "connection_type": "mywcom_fiber_connection",
+            "struct_in_segments_field": "in_fiber_segments",
+            "struct_out_segments_field": "out_fiber_segments",
+            "equip_n_in_pins_field": "n_fiber_in_ports",
+            "equip_n_out_pins_field": "n_fiber_out_ports",
+            "equip_n_pins_field": "n_fiber_ports",
+            "cable_n_pins_field": "fiber_count",
+            "connections_field": "fiber_connections",
+            "splices_field": "fiber_splices",
+            "network_name": "mywcom_fiber"
+        },
+        "copper": {
+            "segment_type": "mywcom_copper_segment",
+            "slack_type": "mywcom_copper_slack",
+            "connection_type": "mywcom_copper_connection",
+            "struct_in_segments_field": "in_copper_segments",
+            "struct_out_segments_field": "out_copper_segments",
+            "equip_n_in_pins_field": "n_copper_in_ports",
+            "equip_n_out_pins_field": "n_copper_out_ports",
+            "equip_n_pins_field": "n_copper_ports",
+            "cable_n_pins_field": "copper_count",
+            "connections_field": "copper_connections",
+            "splices_field": "copper_splices",
+            "network_name": "mywcom_copper"
+        },
+        "coax": {
+            "segment_type": "mywcom_coax_segment",
+            "slack_type": "mywcom_coax_slack",
+            "connection_type": "mywcom_coax_connection",
+            "struct_in_segments_field": "in_coax_segments",
+            "struct_out_segments_field": "out_coax_segments",
+            "equip_n_in_pins_field": "n_coax_in_ports",
+            "equip_n_out_pins_field": "n_coax_out_ports",
+            "equip_n_pins_field": "n_coax_ports",
+            "cable_n_pins_field": "coax_count",
+            "connections_field": "coax_connections",
+            "splices_field": "coax_splices",
+            "network_name": "mywcom_coax"
+        }
+    }
+}

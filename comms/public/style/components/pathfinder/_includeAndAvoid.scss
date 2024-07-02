@@ -1,0 +1,71 @@
+@use './_sharedStyles.scss' as sharedStyles;
+
+.include-and-avoid {
+    &__container {
+        display: grid;
+        grid-auto-rows: 22px 100px;
+        gap: 4px;
+    }
+
+    &__label-and-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list-container {
+        border: 1px solid sharedStyles.$global-border-color;
+        padding: 5px;
+        overflow-y: auto;
+        scrollbar-gutter: stable;
+    }
+
+    &__list-item {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    &__list-item-button {
+        height: 15px;
+        border: none;
+
+        .svg-style {
+            @include sharedStyles.svg-defaults();
+            height: 20px;
+        }
+    }
+
+    &__button {
+        height: 20px;
+        border: none;
+
+        .svg-style {
+            @include sharedStyles.svg-defaults();
+            border: 1px solid sharedStyles.$global-border-color;
+            border-radius: 2px;
+        }
+    }
+
+
+    &__error {
+        width: 180px;
+        font-size: 15px;
+        border: 1px solid #df6f56 !important;
+        border-radius: 5px;
+        text-align: center;
+        cursor: default;
+        color: sharedStyles.$alert;
+    }
+}
+
+.hide-error {
+    visibility: hidden;
+}
+
+.hover-cursor {
+    &:hover {
+        cursor: pointer;
+    }
+}

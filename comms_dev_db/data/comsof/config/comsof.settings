@@ -1,0 +1,9 @@
+{
+   "comsof.workspaces"       : "/opt/iqgeo/data/workspaces",
+   "comsof.templates"        : "/opt/iqgeo/platform/WebApps/myworldapp/modules/comsof/templates",
+   "comsof.designs"          : ["comsof_design"],
+
+   "comsof.cloud.project": "IQGeo Integration",
+
+   "comsof.licence_server.company" : "IQGeo Integration"
+}

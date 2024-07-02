@@ -1,0 +1,68 @@
+.checkbox {
+    &-container {
+        padding: 15px;
+        padding-top: 6px;
+
+        &_list {
+            padding-left: 15px;
+            padding-top: 6px;
+            list-style-type: none;
+            display: grid;
+            gap: 8px;
+        }
+
+        &_label {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        &_parent-checkbox {
+            cursor: pointer;
+
+            &-container {
+                display: flex;
+                gap: 5px;
+            }
+        }
+
+        &_list-item-container {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        &_no-parent {
+            display: grid;
+            gap: 8px;
+            margin: 10px 0 0 10px;
+        }
+    }
+
+    &__img {
+        height: 15px;
+        align-self: center;
+    }
+
+    &__warnings {
+        align-self: center;
+    }
+}
+
+.hide-arrow {
+    transform: rotate(270deg);
+}
+
+.hide-tree {
+    height: 0px;
+    overflow: hidden;
+}
+
+#arrowSVG {
+    height: 14px;
+    margin-left: -5px;
+
+    &:hover {
+        cursor: pointer !important;
+    }
+}

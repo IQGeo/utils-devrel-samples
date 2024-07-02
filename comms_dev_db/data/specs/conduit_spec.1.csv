@@ -1,0 +1,5 @@
+name,model,description,manufacturer,diameter,material,cost_currency,item_length,item_length_unit,item_cost,labor_costs,retired
+JDP-54MM-Grey,54MM-Grey,54mm grey solid wall ducting for telecommunications cabling use. Can be used on the national BT network,JDP,54,PVC (Smooth),$,50,ft,12,trench_dig,FALSE
+JDP-26.5MM-Grey,26.5MM-Grey,26.5mm grey solid wall ducting for telecommunications cabling use,JDP,26.5,PVC (Smooth),$,45,ft,6,sidewalk_re-lay,FALSE
+JDP-63MM-Green,63MM-Green,"50/63mm (ID/OD) green ducting coil used for CCTV, fibre optics and cable utilities and manufactured from polyethylene. With a smooth internal bore and a corrugated external profile.",JDP,63,PE (Corrugated),$,50,ft,8,"trench_dig,sidewalk_re-lay",FALSE
+JDP-110MM-Green,100MM-Green,"94/110mm (ID/OD) green ducting coil used for CCTV, fibre optics and cable utilities and manufactured from polyethylene. With a smooth internal bore and a corrugated external profile.",JDP,110,PE (Corrugated),$,94,ft,12,,FALSE

@@ -1,0 +1,33 @@
+DATABASE CHANGES: CUT CABLE
+   update delta.fiber_cable(design/NB046,6,update) fields=(path,placement_path)
+   insert delta.fiber_cable(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,70,update)
+   insert delta.mywcom_fiber_segment(design/NB046,71,update)
+   insert delta.mywcom_fiber_segment(design/NB046,72,update)
+
+DATABASE CHANGES: CUT CABLE BACKWARD
+   insert delta.fiber_cable(design/NB046,17,update)
+   insert delta.fiber_cable(design/NB046,100001,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,124,update)
+   insert delta.mywcom_fiber_segment(design/NB046,125,update)
+   insert delta.mywcom_fiber_segment(design/NB046,126,update)
+   insert delta.mywcom_fiber_segment(design/NB046,127,update)
+
+DATABASE CHANGES: CUT CABLE AND CONNECT
+   update delta.fiber_cable(design/NB046,6,update) fields=(path,placement_path)
+   insert delta.fiber_cable(design/NB046,100002,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100001,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,63,update)
+   insert delta.mywcom_fiber_segment(design/NB046,64,update)
+   insert delta.mywcom_fiber_segment(design/NB046,65,update)
+   insert delta.mywcom_fiber_segment(design/NB046,66,update)
+   insert delta.mywcom_fiber_segment(design/NB046,67,update)
+   insert delta.mywcom_fiber_segment(design/NB046,68,update)
+   insert delta.mywcom_fiber_segment(design/NB046,69,update)
+   update delta.mywcom_fiber_segment(design/NB046,70,update) fields=(cable)
+   insert delta.mywcom_fiber_segment(design/NB046,591,update)
+   insert delta.mywcom_fiber_segment(design/NB046,592,update)
+   insert delta.mywcom_fiber_slack(design/NB046,11,update)
+   insert delta.mywcom_fiber_slack(design/NB046,12,update)
+

@@ -1,0 +1,933 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta />*/
+
+/* Date of last update: 08 June 2015, Geetha Haridas (adjusted the line height for lists) */
+/*Default styles, intended for HTML5*/
+/*Print media, intended for printing help from browser*/
+/*PDF media, for PDF targets only.*/
+/*Default styles*/
+
+body
+{
+	font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif;
+	font-size: 10pt;
+	mc-hyphenate: never;
+	line-height: 120%;
+}
+
+/* Heading styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	font-weight: normal;
+	margin-top: 1.2em;
+	margin-bottom: .6em;
+}
+
+h1
+{
+	font-size: 22pt;
+	color: #f78e1e;
+	border-bottom-style: double;
+	border-bottom-width: 2px;
+	border-bottom-color: #585858;
+	margin-top: .6em;
+	margin-bottom: .4em;
+	padding-bottom: .4em;
+}
+
+h1.Auto
+{
+	
+}
+
+h1.Appendix
+{
+	
+}
+
+h2
+{
+	font-size: 16pt;
+	color: #1e398d;
+}
+
+h2.Appendix
+{
+	
+}
+
+h3
+{
+	font-size: 14pt;
+	color: #585858;
+}
+
+h3.Appendix
+{
+	
+}
+
+h4
+{
+	font-weight: bold;
+	font-size: 12pt;
+	color: #0f6bac;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 11pt;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 11pt;
+	color: #585858;
+}
+
+/* Paragraph styles */
+
+p
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+p.keep_with_next
+{
+	
+}
+
+p.Command
+{
+	font-family: 'Courier New';
+	border-top-color: #585858;
+	border-bottom-color: #585858;
+	border-bottom: solid 1px;
+	border-top: solid 1px;
+	line-height: 240%;
+	font-size: 95%;
+}
+
+/* List styles */
+
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/*ol
+{
+	list-style-image: none;
+}*/
+
+li
+{
+	line-height: 120%;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+ol.LowerAlpha
+{
+	list-style-type: lower-alpha;
+	margin-left: -10px;
+}
+
+ol.LowerRoman
+{
+	list-style-type: lower-roman;
+	margin-left: -10px;
+}
+
+ul.FirstLevelLessIndentation
+{
+	margin-left: -10px;
+}
+
+ul.SecondLevel
+{
+	margin-left: -10px;
+}
+
+/* Images */
+
+p.Figure
+{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+p.FigureCaption
+{
+	color: #585858;
+	font-weight: bold;
+	margin-top: 0pt;
+	margin-bottom: 6pt;
+	font-size: 95%;
+	text-align: center;
+	mc-auto-number-format: 'CF:Figure: ';
+}
+
+img
+{
+	border: none;
+}
+
+/* Links */
+
+a.Popup
+{
+	
+}
+
+/* Title page, copyright and Contents page */
+
+td.ProductName
+{
+	font-family: 'Trebuchet MS';
+	font-size: 40pt;
+	color: #ea8519;
+}
+
+td.GuideName
+{
+	font-size: 30pt;
+	font-family: 'Trebuchet MS';
+	color: #053b79;
+}
+
+td.Version
+{
+	font-size: 16pt;
+	font-family: 'Trebuchet MS';
+	color: #585858;
+}
+
+p.copyright
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: 'Segoe UI';
+	font-size: 9pt;
+}
+
+p.Introline
+{
+	font-family: 'Segoe UI';
+	font-size: 10pt;
+	font-weight: bold;
+	font-style: normal;
+	color: #585858;
+}
+
+td.PartNumber
+{
+	font-family: 'Trebuchet MS';
+	font-size: 11pt;
+	text-indent: 0;
+	line-height: 1cm;
+	color: #585858;
+}
+
+/*Styles for TOC, title page and copyright page*/
+
+/*
+	p.TOC1
+	{
+		color: #1e398d;
+		line-height: 12pt;
+		margin-bottom: 4pt;
+		margin-top: 6pt;
+	}
+	
+p.TOC2
+{
+	mc-heading-level: 2;
+	line-height: 32pt;
+	margin-bottom: 2pt;
+	margin-top: 2pt;
+}
+
+p.TOC3
+{
+	mc-heading-level: 3;
+	line-height: 12pt;
+	margin-bottom: 2pt;
+	margin-top: 2pt;
+}*/
+
+/* Additional attributes for tables */
+
+table
+{
+	margin-left: 6pt;
+	margin-right: 6pt;
+}
+
+thead
+{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 10pt;
+	font-family: 'Segoe UI';
+	color: #ffffff;
+	background-color: #053b79;
+}
+
+div
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+div.Note
+{
+	border: solid 1px;
+	border-radius: 5px;
+	border-color: #585858;
+	background-image: url('../Images/Note.png');
+	background-size: 43px 43px;
+	background-repeat: no-repeat;
+	padding: 6pt;
+	padding-left: 46pt;
+	padding-bottom: 12pt;
+}
+
+/*Reduces the amount of space when P and LI are in a Note*/
+
+div.Note p
+{
+	margin-top: 0;
+	margin-bottom: 0pt;
+}
+
+div.Note li
+{
+	margin-left: -16pt;
+}
+
+div.Warning
+{
+	border: solid 1px;
+	border-radius: 5px;
+	background-image: url('../Images/Warning.png');
+	background-size: 45px 45px;
+	background-repeat: no-repeat;
+	border-color: #ea8519;
+	padding: 6pt;
+	padding-left: 46pt;
+	padding-bottom: 12pt;
+}
+
+/*Reduces the amount of space when P and LI are in a Warning*/
+
+div.Warning p
+{
+	margin-top: 0;
+	margin-bottom: 0pt;
+}
+
+/*Reduces the amount of space when lists are in a Warning*/
+
+div.Warning li
+{
+	margin-left: -16pt;
+}
+
+div.Tip
+{
+	border: solid 1px;
+	border-radius: 5px;
+	border-color: #585858;
+	background-image: url('../Images/Tip.png');
+	background-size: 45px 45px;
+	background-repeat: no-repeat;
+	padding: 6pt;
+	padding-left: 40pt;
+	padding-bottom: 12pt;
+}
+
+/*Reduces the amount of space when P and LI are in a Tip*/
+
+div.Tip p
+{
+	margin-top: 0;
+	margin-bottom: 0pt;
+}
+
+/*Reduces the amount of space when lists are in a Tip*/
+
+div.Tip li
+{
+	margin-left: -16pt;
+}
+
+div.Code
+{
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-image: none;
+	background-color: #cccccc;
+	padding: 6pt;
+	font-family: 'Courier New';
+	line-height: 75%;
+}
+
+/* Character styles */
+
+span.GuideName
+{
+	font-weight: normal;
+	font-style: italic;
+}
+
+span.Command
+{
+	font-weight: bold;
+}
+
+span.FileName
+{
+	font-weight: bold;
+}
+
+span.Dialog
+{
+	font-weight: bold;
+}
+
+span.Variable
+{
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+span.PlaceholderText
+{
+	font-style: italic;
+}
+
+span.Option
+{
+	font-weight: bold;
+}
+
+span.Button
+{
+	font-weight: bold;
+}
+
+span.Menu
+{
+	font-weight: bold;
+}
+
+span.SubMenu
+{
+	font-weight: bold;
+}
+
+span.MenuItem
+{
+	font-weight: bold;
+}
+
+/* Link and xref styles */
+
+MadCap|xref
+{
+	text-decoration: none;
+	color: #000000;
+	mc-format: '{color DarkBlue}{u}{paratext}{/u}{/color}';
+}
+
+MadCap|xref.ConceptPageNumber
+{
+	mc-format: '{i}{paratext}{/i}.';
+}
+
+/* Glossary styles */
+
+div.GlossaryPageDefinition
+{
+	font-family: 'Segoe UI';
+	font-size: 9pt;
+}
+
+div.GlossaryPageTerm
+{
+	font-family: 'Segoe UI';
+	font-size: 9pt;
+	color: #1e398d;
+}
+
+div.GlossaryPageHeading
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #585858;
+	font-family: 'Trebuchet MS';
+	font-size: 12pt;
+	color: #f78e1e;
+}
+
+div.GlossaryPageEntry
+{
+	font-family: 'Segoe UI';
+	font-size: 9pt;
+}
+
+/* Styles for printing help from a browser - nothing currently defined*/
+
+@media print
+{
+	pre.code
+	{
+		line-height: 0.6em;
+	}
+}
+
+/* Styles for PDF */
+
+@media pdf
+{
+	/*Adds watermark to all pages for drafts*/
+
+	/*body
+	{
+		background-image: url('../Images/DraftStamp.png');
+		background-repeat: no-repeat;
+	}*/
+
+	/*Overrides for p styles in Print targets*/
+
+	p
+	{
+		margin-bottom: 6pt;
+		margin-top: 6pt;
+		line-height: 130%;
+		orphans: 4;
+		widows: 0;
+		frame-break-inside: avoid;
+	}
+
+	p.keep_with_next
+	{
+		page-break-after: avoid;
+	}
+
+	p.Introline
+	{
+		page-break-after: avoid;
+	}
+
+	/* List styles */
+
+	ol.LowerAlpha
+	{
+		margin-left: 30px;
+	}
+
+	ol,
+	ul
+	{
+		frame-break-inside: avoid;
+		/*page-break-inside: avoid;*/
+	}
+
+	ul
+	{
+		margin-left: 30px;
+		/*mc-hyphenate: never;*/
+	}
+
+	ul.FirstLevelLessIndentation
+	{
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+
+	ul.SecondLevel
+	{
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+
+	li
+	{
+		line-height: 130%;
+		page-break-inside: avoid;
+	}
+
+	li.Table
+	{
+		font-size: 9pt;
+	}
+
+	/* Overrides for print headings */
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+	{
+		page-break-after: avoid;
+	}
+
+	h1
+	{
+		padding-bottom: 10px;
+		page-break-before: always;
+	}
+
+	h1.Auto
+	{
+		mc-auto-number-format: 'CH:Chapter {chapnum}: ';
+	}
+
+	h1.Appendix
+	{
+		mc-auto-number-format: 'GH:Appendix { }{A+}: ';
+	}
+
+	h1.NotInTOC
+	{
+		mc-heading-level: 0;
+	}
+
+	h2
+	{
+		mc-auto-number-format: 'CH:{chapnum}.{n+} ';
+		margin-top: 1.75em;
+	}
+
+	h2.Appendix
+	{
+		mc-auto-number-format: 'GH:{ }{A}.{n+}: ';
+	}
+
+	h3
+	{
+		mc-auto-number-format: 'CH:{chapnum}.{n}.{n+} ';
+		mc-heading-level: 3;
+		font-variant: normal;
+		margin-bottom: .6em;
+		margin-top: 1.2em;
+		font-weight: normal;
+		font-style: normal;
+		color: #000000;
+	}
+
+	h3.Appendix
+	{
+		mc-auto-number-format: 'GH:{ }{A}.{n}.{n+}: ';
+	}
+
+	h4
+	{
+		mc-auto-number-format: 'CH:{chapnum}.{n}.{n}.{n+} ';
+		color: #0079c1;
+	}
+
+	/*Overrides for images in Print targets */
+
+	p.Figure
+	{
+		page-break-after: avoid;
+	}
+
+	/*figcaption
+	{
+		font-weight: bold;
+		font-style: normal;
+		mc-float: center;
+		font-size: 9pt;
+		font-family: 'Segoe UI';
+		color: #585858;
+		mc-auto-number-format: 'CF:Figure{chapnum}-{n+}: ';
+	}*/
+
+	p.FigureCaption
+	{
+		mc-auto-number-format: 'CF:Figure {chapnum}-{n+}: ';
+		page-break-before: avoid;
+	}
+
+	/*Styles for TOC, title page and copyright page*/
+
+	p.TOC1
+	{
+		color: #1e398d;
+		font-weight: normal;
+		font-style: normal;
+		color: #053b79;
+		margin-bottom: 0;
+		margin-top: 7px;
+		font-size: 11pt;
+		page-break-after: avoid;
+	}
+
+	p.TOC2
+	{
+		mc-heading-level: 0;
+	}
+
+	p.TOC3
+	{
+		mc-heading-level: 0;
+	}
+
+	p.TOC4
+	{
+		mc-heading-level: 0;
+	}
+
+	p.TOC5
+	{
+		mc-heading-level: 0;
+	}
+
+	td.GuideName
+	{
+		color: #1e398d;
+	}
+
+	td.ProductName
+	{
+		color: #f78e1e;
+	}
+
+	thead
+	{
+		background-color: #1e398d;
+	}
+
+	/*TABLES*/
+
+	table
+	{
+		page-break-inside: avoid;
+	}
+
+	/* Link and xref styles */
+
+	MadCap|xref
+	{
+		mc-format: '{color DarkBlue}{i}{paratext}{/i}{/color} on page {page}';
+	}
+
+	MadCap|xref.ConceptPageNumber
+	{
+		mc-format: '{i}{paratext}{/i} on page {page}.';
+	}
+
+	div
+	{
+		margin-top: 6pt;
+		margin-bottom: 6pt;
+	}
+
+	
+
+	/*Reduces the amount of space when P and LI are in a Note*/
+	/*add note prefix for Word*/
+
+	div.Note p
+	{
+		/*FOR WORD OUTPUT COMBINES THE DIV.NOTE AND DIV.NOTE P STYLES*/
+		border: solid 1px;
+		border-radius: 5px;
+		border-color: #1e398d;
+		background-repeat: no-repeat;
+		padding: 6pt;
+		padding-left: 40pt;
+		padding-bottom: 13pt;
+		margin-top: 0;
+		margin-bottom: 0pt;
+		page-break-before: avoid;
+		page-break-inside: avoid;
+		frame-break-inside: avoid;	
+		mc-auto-number-format: 'NOTE: ';
+	}
+
+	div.Note li
+	{
+		margin-left: -8pt;
+		page-break-before: avoid;
+		page-break-inside: avoid;
+	}
+
+	div.Warning
+	{
+		
+	}
+
+	/*For Word, combines the div.warning and div.warning p styles*/
+
+	div.Warning p
+	{
+		mc-auto-number-format: 'IMPORTANT: ';
+		border: solid 2px;
+		border-radius: 5px;
+		background-repeat: no-repeat;
+		border-color: #ea8519;
+		padding: 6pt;
+		padding-left: 46pt;
+		padding-bottom: 12pt;
+		margin-top: 0;
+		margin-bottom: 0;
+		page-break-before: avoid;
+		page-break-inside: avoid;
+	}
+
+	/*Reduces the amount of space when lists are in a Warning*/
+
+	div.Warning li
+	{
+		margin-left: -8pt;
+		page-break-before: avoid;
+		page-break-inside: avoid;
+	}
+
+	div.Tip
+	{
+		
+	}
+
+	/*Reduces the amount of space when P and LI are in a Tip*/
+
+	div.Tip p
+	{
+		mc-auto-number-format: 'TIP: ';
+		border: solid 1px;
+		border-radius: 5px;
+		border-color: #1e398d;
+		background-repeat: no-repeat;
+		padding: 6pt;
+		padding-left: 40pt;
+		padding-bottom: 12pt;
+		margin-top: 0;
+		margin-bottom: 0;
+		page-break-before: avoid;
+		page-break-inside: avoid;
+	}
+
+	/*Reduces the amount of space when lists are in a Tip*/
+
+	div.Tip li
+	{
+		margin-left: -8pt;
+		page-break-before: avoid;
+		page-break-inside: avoid;
+	}
+
+	div.Code
+	{
+		border-radius: 5px;
+		background-repeat: no-repeat;
+		background-image: none;
+		background-color: #cccccc;
+		padding: 6pt;
+		font-family: 'Courier New';
+	}
+}
+
+/* Non-print media - Not currently used 
+
+@media non-print
+{
+	body
+	{
+		font-size: 10pt;
+	}
+
+	p
+	{
+		font-size: 10pt;
+	}
+}*/
+
+/*MadCap styles*/
+
+MadCap|tocProxy
+{
+	border-top-width: 0px;
+	border-top-color: #ffffff;
+}
+
+MadCap|glossaryProxy
+{
+	border-top-width: 0px;
+	border-top-color: #ffffff;
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	font-style: italic;
+	text-decoration: none;
+	color: #006600;
+}
+
+span.Emphasis
+{
+	font-style: italic;
+}
+
+span.CodeText
+{
+	font-family: 'Courier New';
+	font-size: 95%;
+}
+
+pre.code
+{
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-image: none;
+	background-color: #cccccc;
+	padding: 6pt;
+	line-height: 0.75em;
+	font-size: 9pt;
+}
+
+span.mwParameter
+{
+	font-weight: bold;
+}
+
+span.mwFunction
+{
+	font-weight: bold;
+}
+

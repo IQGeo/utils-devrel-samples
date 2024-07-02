@@ -1,0 +1,117 @@
+Request: POST: /modules/comms/loc/update
+Response: 200 (200 OK)
+b'{"mywcom_fiber_segment/596": [{"name": "WH-2-DSL", "status": "Active", "loc_section_ref": "mywcom_line_of_count_section/100000", "loc_ref": "mywcom_line_of_count/100000", "low": 1, "high": 10, "origin": "mywcom_fiber_segment/596", "forward": true, "physical": false, "myw_delta": "design/NB217", "myw_change_type": "insert"}]}'
+
+
+"{/"mywcom_fiber_segment/596/": [{/"name/": /"WH-2-DSL/", /"status/": /"Active/", /"loc_section_ref/": /"mywcom_line_of_count_section/100000/", /"loc_ref/": /"mywcom_line_of_count/100000/", /"low/": 1, /"high/": 10, /"origin/": /"mywcom_fiber_segment/596/", /"forward/": true, /"physical/": false, /"myw_delta/": /"design/NB217/", /"myw_change_type/": /"insert/"}]}"
+Request: POST: /modules/comms/loc/mywcom_fiber_segment/596/ripple_trace_update
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/loc/get_details?delta=design/NB217&side=in&application=mywcom&lang=en-GB&include_proposed=true
+Response: 200 (200 OK)
+
+
+{
+   "copper_dslam/1": {
+      "in": {
+         "design/NB236": [
+            {
+               "high": 3,
+               "low": 1,
+               "myw_delta": "design/NB236",
+               "myw_delta_owner_title": "Design: NB236",
+               "name": "WH-1-DSL",
+               "origin": "mywcom_fiber_segment/596",
+               "physical": null,
+               "physical_low": 1,
+               "status": "Active"
+            }
+         ]
+      },
+      "out": {}
+   }
+}
+Request: POST: /delta/design/NB217/promote?application=mywcom&lang=en_gb,show_response=False
+Response: 200 (200 OK)
+
+
+
+SUB TEST : ALL ERRORS
+    Request: GET: /modules/comms/validate?delta=design/NB236&bounds=0.1308347,52.2210578,0.1391710,52.2259673
+    Response: 200 (200 OK)
+    {
+       "errors": {
+          "mywcom_line_of_count/100000": {
+             "": {
+                "feature": {
+                   "type": "Feature",
+                   "myw": {
+                      "feature_type": "mywcom_line_of_count",
+                      "title": "Line of Count: WH-2-DSL Active",
+                      "short_description": "1-10 : WH-2-DSL [1-10] Active"
+                   },
+                   "bbox": [
+                      0.1365425789235,
+                      52.2233384715684,
+                      0.1510284841061,
+                      52.2303852938754
+                   ],
+                   "id": 100000,
+                   "geometry": "<skipped>",
+                   "properties": {
+                      "id": 100000,
+                      "label": "1-10 : WH-2-DSL [1-10] Active",
+                      "name": "WH-2-DSL",
+                      "low_logical": 1,
+                      "high_logical": 10,
+                      "low_physical": 1,
+                      "high_physical": 10,
+                      "origin": [
+                         "mywcom_fiber_segment/596"
+                      ],
+                      "status": "Active",
+                      "deleted": false,
+                      "stale": false,
+                      "physical": false
+                   }
+                },
+                "field": "",
+                "type": "loc_overlap",
+                "ref_feature": {
+                   "type": "Feature",
+                   "myw": {
+                      "feature_type": "mywcom_line_of_count",
+                      "title": "Line of Count: WH-1-DSL Active",
+                      "short_description": "WH-1-DSL [1-4] Active",
+                      "delta": "design/NB236",
+                      "change_type": "insert"
+                   },
+                   "id": 6000,
+                   "geometry": "<skipped>",
+                   "properties": {
+                      "id": 6000,
+                      "label": "WH-1-DSL [1-4] Active",
+                      "name": "WH-1-DSL",
+                      "low_logical": 1,
+                      "high_logical": 4,
+                      "low_physical": 1,
+                      "high_physical": 4,
+                      "origin": [
+                         "mywcom_fiber_segment/596"
+                      ],
+                      "status": "Active",
+                      "deleted": false,
+                      "stale": null,
+                      "physical": null
+                   }
+                },
+                "data": {
+                   "value": "mywcom_line_of_count(6000,design/NB236)"
+                }
+             }
+          }
+       }
+    }
+    
+    

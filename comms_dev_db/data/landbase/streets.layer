@@ -1,0 +1,28 @@
+{
+   "name": "streets",
+   "display_name": "Streets",
+   "category": "overlay",
+   "code": "st",
+   "datasource": "myworld",
+   "spec": {
+      "rendering": "vector",
+      "tileType": "raster",
+      "isStatic": true,
+      "useImageCanvas": true,
+      "nativeAppMode": "switchable",
+      "render_order_point_offset": 0,
+      "jsClass": null,
+      "extraOptions": null
+   },
+   "transparency": 0,
+   "min_scale": 0,
+   "max_scale": 22,
+   "render_order": 0,
+   "feature_types": [
+      {
+         "name": "street",
+         "field_name": "geometry",
+         "line_style": "{\"lookupProp\":\"type\",\"pickList\":\"street_type\",\"defaultStyle\":\"#9b9b9b:2:solid::\",\"lookup\":{\"tertiary\":\"#9b9b9b:4:solid::\",\"residential\":\"#9b9b9b:2:solid::\",\"service\":\"#9b9b9b:1:solid::\",\"cycleway\":\"#9b9b9b:2:shortdash::\",\"footway\":\"#9b9b9b:1:dot::\"}}"
+      }
+   ]
+}

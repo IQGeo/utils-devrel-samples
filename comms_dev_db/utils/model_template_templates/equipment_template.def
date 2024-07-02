@@ -1,0 +1,76 @@
+{
+    "datasource": "myworld",
+    "name": "equipment_template",
+    "external_name": "Equipment Template",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "Id",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "location",
+            "external_name": "Location",
+            "type": "point",
+            "mandatory": "true"
+        },
+        {
+            "name": "name",
+            "external_name": "Name",
+            "type": "string(64)"
+        },
+        {
+            "name": "root_housing",
+            "external_name": "Root",
+            "type": "reference()"
+        },
+        {
+            "name": "housing",
+            "external_name": "Housing",
+            "type": "reference()"
+        },
+        {
+            "name": "circuits",
+            "external_name": "Circuits",
+            "type": "reference_set()"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "Labor Costs",
+            "type": "string()"
+        },
+        {
+            "name": "n_fiber_in_ports",
+            "external_name": "In Ports",
+            "type": "integer"
+        },
+        {
+            "name": "n_fiber_out_ports",
+            "external_name": "Out Ports",
+            "type": "integer"
+        },
+        {
+            "name": "equipment",
+            "external_name": "Equipment",
+            "type": "reference_set()",
+            "value": "select(*)"
+        },
+        {
+            "name": "fiber_splices",
+            "external_name": "Splices",
+            "type": "reference_set()",
+            "value": "select(*)"
+        }
+    ]
+}

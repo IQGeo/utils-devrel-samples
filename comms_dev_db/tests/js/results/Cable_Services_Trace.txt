@@ -1,0 +1,63 @@
+
+*** TRACE OUT
+Set delta to: *** master ***
+{
+	"metadata": [
+		"dist"
+	],
+	"nodes": [
+		{
+			"children": 1,
+			"dist": 0,
+			"feature": "cabinet/45: Cabinet: SP-C-45"
+		},
+		{
+			"children": 1,
+			"dist": 8.227427,
+			"feature": "mywcom_fiber_segment/499: Cable Segment: 499 (fiber_cable/192)",
+			"parent": "cabinet/45: Cabinet: SP-C-45"
+		},
+		{
+			"children": 1,
+			"dist": 8.227427,
+			"feature": "manhole/184: Manhole: SP-M-184",
+			"parent": "mywcom_fiber_segment/499: Cable Segment: 499 (fiber_cable/192)"
+		},
+		{
+			"children": 1,
+			"dist": 38.584924,
+			"feature": "mywcom_fiber_segment/500: Cable Segment: 500 (fiber_cable/193)",
+			"parent": "manhole/184: Manhole: SP-M-184"
+		},
+		{
+			"children": 1,
+			"dist": 38.584924,
+			"feature": "manhole/182: Manhole: SP-M-182",
+			"parent": "mywcom_fiber_segment/500: Cable Segment: 500 (fiber_cable/193)"
+		},
+		{
+			"children": 1,
+			"dist": 54.499156,
+			"feature": "mywcom_fiber_segment/501: Cable Segment: 501 (fiber_cable/193)",
+			"parent": "manhole/182: Manhole: SP-M-182"
+		},
+		{
+			"children": 1,
+			"dist": 54.499156,
+			"feature": "manhole/183: Manhole: SP-M-183",
+			"parent": "mywcom_fiber_segment/501: Cable Segment: 501 (fiber_cable/193)"
+		},
+		{
+			"children": 1,
+			"dist": 100.64252,
+			"feature": "mywcom_fiber_segment/502: Cable Segment: 502 (fiber_cable/193)",
+			"parent": "manhole/183: Manhole: SP-M-183"
+		},
+		{
+			"children": 0,
+			"dist": 100.64252,
+			"feature": "manhole/181: Manhole: SP-M-181",
+			"parent": "mywcom_fiber_segment/502: Cable Segment: 502 (fiber_cable/193)"
+		}
+	]
+}

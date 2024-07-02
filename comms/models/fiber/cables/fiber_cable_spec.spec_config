@@ -1,0 +1,5 @@
+{
+    "layer": "mywcom_cables",
+    "ref_feature": "fiber_cable",
+    "field_name": "specification"
+}

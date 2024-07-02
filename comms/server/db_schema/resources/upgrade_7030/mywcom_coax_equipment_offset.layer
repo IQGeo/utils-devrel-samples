@@ -1,0 +1,21 @@
+{
+    "name": "mywcom_coax_equipment_offset",
+    "display_name": "{:mywcom_coax_equipment_offset_layer_display_name}",
+    "category": "overlay",
+    "code": "mywcom_cxeqo",
+    "description": "{:mywcom_coax_equipment_offset_layer_desc}",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": ""
+    },
+    "transparency": 0,
+    "min_scale": 16,
+    "max_scale": 22,
+    "control_item_class": "myw.MyWorldLegendLayerControlWidget",
+    "feature_types": []
+}

@@ -1,0 +1,8 @@
+{
+   "name": "ftth_circuit_type", 
+   "description": "", 
+   "values": [
+       "Direct",
+       "PON1"
+   ]
+}

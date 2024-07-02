@@ -1,0 +1,26 @@
+Request: POST:/modules/comms/feature?delta=NB217
+Response: 200 (200 OK)
+{
+   "ids": [
+      100000
+   ]
+}
+
+
+DATABASE CHANGES: FIBER CABLE INSERT TRANSACTION
+   insert delta.fiber_cable(NB217,100000,insert)
+   insert delta.mywcom_fiber_segment(NB217,100000,insert)
+
+Request: POST:/modules/comms/feature?delta=NB217
+Response: 200 (200 OK)
+{
+   "ids": [
+      100000
+   ]
+}
+
+
+DATABASE CHANGES: COPPER CABLE INSERT TRANSACTION
+   insert delta.copper_cable(NB217,100000,insert)
+   insert delta.mywcom_copper_segment(NB217,100000,insert)
+

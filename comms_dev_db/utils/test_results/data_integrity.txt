@@ -1,0 +1,680 @@
+Opening database <database> ...
+------------------------
+Checking data: None
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: comsof_design/kings_hedges
+------------------------
+Checking routes
+  ug_route(3172,comsof_design/kings_hedges) path geom_mismatch_at building(3000,comsof_design/kings_hedges)
+    _coord : (0.1286817800287089, 52.23169854390866)
+    _expected_coord : (0.1286817800287081, 52.231698543908664)
+    _ref : in_structure
+    ref_side : None
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 1
+
+Opening database <database> ...
+------------------------
+Checking data: comsof_design/arbury
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: comsof_design/chesterfield
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: systest/comsof_errors
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: design/NB046
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: design/NB120
+------------------------
+Checking routes
+  ug_route(4203,design/NB120) path geom_mismatch_at manhole(27)
+    _coord : (0.137459, 52.223875)
+    _expected_coord : (0.1374105736613241, 52.223911903275294)
+    _ref : out_structure
+    ref_side : None
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+  mywcom_fiber_segment(56,design/NB120) path geom_mismatch_at conduit(81)
+    _coord : (0.137459, 52.223875)
+    _expected_coord : (0.1374105736613241, 52.223911903275294)
+    _ref : housing
+  mywcom_fiber_segment(595,design/NB120) path geom_mismatch_at mywcom_fiber_slack(15)
+    _coord : (0.137459, 52.223875)
+    _expected_coord : (0.1374105736613241, 52.223911903275294)
+    _ref : housing
+  mywcom_fiber_segment(595,design/NB120) path geom_mismatch_at mywcom_fiber_segment(388)
+    _coord : (0.137459, 52.223875)
+    _expected_coord : (0.1374105736613241, 52.223911903275294)
+    _ref : out_segment
+    ref_side : in
+  mywcom_fiber_segment(388) path geom_mismatch_at mywcom_fiber_segment(595,design/NB120)
+    _coord : (0.1374105736613241, 52.223911903275294)
+    _expected_coord : (0.137459, 52.223875)
+    _ref : in_segment
+    ref_side : out
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 4
+
+Opening database <database> ...
+------------------------
+Checking data: design/CC5462
+------------------------
+Checking routes
+Checking conduits
+  blown_fiber_bundle(12,design/CC5462) out_structure derived_value_mismatch ug_route(81) out_structure
+    expected : mywcom_route_junction/50000
+    value : drop_point/4
+  blown_fiber_bundle(12,design/CC5462) path geom_size_mismatch ug_route(81)
+    _ref : housing
+    n_coords : 3
+    n_expected : 8
+  blown_fiber_bundle(50000) in_conduit broken_chain
+    _ref : blown_fiber_bundle/12
+    at : Route Junction: 50000
+  blown_fiber_bundle(50000) out_conduit broken_chain
+    _ref : blown_fiber_bundle/11
+    at : Drop Point: WH-DP-004
+  blown_fiber_tube(62) out_structure derived_value_mismatch blown_fiber_bundle(12,design/CC5462) out_structure
+    expected : drop_point/4
+    value : mywcom_route_junction/50000
+  blown_fiber_tube(62) path geom_size_mismatch blown_fiber_bundle(12,design/CC5462)
+    _ref : housing
+    n_coords : 8
+    n_expected : 3
+  blown_fiber_tube(67) out_structure derived_value_mismatch blown_fiber_bundle(12,design/CC5462) out_structure
+    expected : drop_point/4
+    value : mywcom_route_junction/50000
+  blown_fiber_tube(67) path geom_size_mismatch blown_fiber_bundle(12,design/CC5462)
+    _ref : housing
+    n_coords : 8
+    n_expected : 3
+  blown_fiber_tube(50000) in_conduit broken_chain
+    _ref : blown_fiber_tube/47
+    at : Route Junction: 50000
+  blown_fiber_tube(50000) out_conduit broken_chain
+    _ref : blown_fiber_tube/46
+    at : Drop Point: WH-DP-004
+  blown_fiber_tube(50001) in_conduit broken_chain
+    _ref : blown_fiber_tube/52
+    at : Route Junction: 50000
+  blown_fiber_tube(50001) out_conduit broken_chain
+    _ref : blown_fiber_tube/51
+    at : Drop Point: WH-DP-004
+  blown_fiber_tube(50002) in_conduit broken_chain
+    _ref : blown_fiber_tube/57
+    at : Route Junction: 50000
+  blown_fiber_tube(50002) out_conduit broken_chain
+    _ref : blown_fiber_tube/56
+    at : Drop Point: WH-DP-004
+  blown_fiber_tube(50005) in_conduit broken_chain
+    _ref : blown_fiber_tube/72
+    at : Route Junction: 50000
+  blown_fiber_tube(50005) out_conduit broken_chain
+    _ref : blown_fiber_tube/71
+    at : Drop Point: WH-DP-004
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+  mywcom_fiber_segment(99,design/CC5462) out_segment broken_chain
+    _ref : 100
+    back_ref : 50000
+  mywcom_fiber_segment(99,design/CC5462) path geom_mismatch_at mywcom_fiber_segment(100)
+    _coord : (0.1364546682522194, 52.22544555637069)
+    _expected_coord : (0.1359339, 52.2255569)
+    _ref : out_segment
+    ref_side : in
+  mywcom_fiber_segment(50000) in_segment broken_chain
+    _ref : 99
+    back_ref : 100
+Checking connections
+  mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+    _conn1 : mywcom_fiber_connection/4400
+    _conn2 : mywcom_fiber_connection/205
+    clash_pins : out:11
+    conn1 : WH-FCB-009#out:10:13 -> DROP-5462#in:1:4
+    conn2 : WH-FCB-009#out:11 -> DROP-146#in:1
+    housing : Splice Closure: WH-SC-039
+    side : in
+    struct : Cabinet: WH-C-11
+  mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+    _conn1 : mywcom_fiber_connection/4400
+    _conn2 : mywcom_fiber_connection/207
+    clash_pins : out:13
+    conn1 : WH-FCB-009#out:10:13 -> DROP-5462#in:1:4
+    conn2 : WH-FCB-009#out:13 -> DROP-148#in:1
+    housing : Splice Closure: WH-SC-039
+    side : in
+    struct : Cabinet: WH-C-11
+  mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+    _conn1 : mywcom_fiber_connection/205
+    _conn2 : mywcom_fiber_connection/4400
+    clash_pins : out:11
+    conn1 : WH-FCB-009#out:11 -> DROP-146#in:1
+    conn2 : WH-FCB-009#out:10:13 -> DROP-5462#in:1:4
+    housing : Splice Closure: WH-SC-039
+    side : in
+    struct : Cabinet: WH-C-11
+  mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+    _conn1 : mywcom_fiber_connection/207
+    _conn2 : mywcom_fiber_connection/4400
+    clash_pins : out:13
+    conn1 : WH-FCB-009#out:13 -> DROP-148#in:1
+    conn2 : WH-FCB-009#out:10:13 -> DROP-5462#in:1:4
+    housing : Splice Closure: WH-SC-039
+    side : in
+    struct : Cabinet: WH-C-11
+Checking circuits
+Checking line_of_counts
+Errors: 11
+
+Opening database <database> ...
+------------------------
+Checking data: design/CC4827
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+  fiber_ont(147,design/CC4827) location geom_mismatch_at wall_box(147)
+    _coord : (0.1366008818149567, 52.22573176051871)
+    _expected_coord : (0.1365777, 52.225717)
+    _ref : housing
+    ref_side : None
+Checking cables
+Checking segments
+  mywcom_fiber_segment(430,design/CC4827) path geom_mismatch_at blown_fiber_tube(74)
+    _coord : (0.1365587736006413, 52.22575679294339)
+    _expected_coord : (0.1365358, 52.2257432)
+    _ref : housing
+  mywcom_fiber_segment(431,design/CC4827) path geom_mismatch_at blown_fiber_tube(170)
+    _coord : (0.1365587736006413, 52.22575679294339)
+    _expected_coord : (0.1365358, 52.2257432)
+    _ref : housing
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 3
+
+Opening database <database> ...
+------------------------
+Checking data: design/NB301
+------------------------
+Checking routes
+  ug_route(88,design/NB301) path geom_mismatch_at manhole(7)
+    _coord : (0.1336028426886, 52.2236559959141)
+    _expected_coord : (0.1336176, 52.2236381)
+    _ref : in_structure
+    ref_side : None
+  ug_route(88,design/NB301) path geom_mismatch_at manhole(75)
+    _coord : (0.1334150880575, 52.2235524824053)
+    _expected_coord : (0.1334522, 52.2235447)
+    _ref : out_structure
+    ref_side : None
+  ug_route(4800,design/NB301) path geom_mismatch_at manhole(75)
+    _coord : (0.1334150880575, 52.2235524824053)
+    _expected_coord : (0.1334522, 52.2235447)
+    _ref : out_structure
+    ref_side : None
+  ug_route(4801,design/NB301) path geom_mismatch_at manhole(75)
+    _coord : (0.1334150880575, 52.2235524824053)
+    _expected_coord : (0.1334522, 52.2235447)
+    _ref : in_structure
+    ref_side : None
+Checking conduits
+  conduit(60) path geom_size_mismatch ug_route(88,design/NB301)
+    _ref : housing
+    n_coords : 5
+    n_expected : 3
+Checking conduit_runs
+Checking equips
+  mywcom_fiber_slack(4800,design/NB301) location geom_mismatch_at manhole(75)
+    _coord : (0.1334150880575, 52.2235524824053)
+    _expected_coord : (0.1334522, 52.2235447)
+    _ref : housing
+    ref_side : None
+  splice_closure(4800,design/NB301) location geom_mismatch_at manhole(7)
+    _coord : (0.1336028426886, 52.2236559959141)
+    _expected_coord : (0.1336176, 52.2236381)
+    _ref : housing
+    ref_side : None
+Checking cables
+Checking segments
+  mywcom_fiber_segment(4800,design/NB301) path geom_size_mismatch conduit(60)
+    _ref : housing
+    n_coords : 3
+    n_expected : 5
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 7
+
+Opening database <database> ...
+------------------------
+Checking data: design/NU23
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+  mywcom_fiber_segment(387,design/NU23) path geom_mismatch_at conduit(80)
+    _coord : (0.137459, 52.223875)
+    _expected_coord : (0.1374105736613241, 52.223911903275294)
+    _ref : housing
+  mywcom_fiber_segment(388,design/NU23) path geom_mismatch_at conduit(82)
+    _coord : (0.137459, 52.223875)
+    _expected_coord : (0.1374105736613241, 52.223911903275294)
+    _ref : housing
+  mywcom_fiber_segment(595,design/NU23) path geom_mismatch_at mywcom_fiber_slack(15)
+    _coord : (0.137459, 52.223875)
+    _expected_coord : (0.1374105736613241, 52.223911903275294)
+    _ref : housing
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 3
+
+Opening database <database> ...
+------------------------
+Checking data: design/NB335
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: systest/conflicts1
+------------------------
+Checking routes
+  ug_route(89,systest/conflicts1) path geom_mismatch_at manhole(76)
+    _coord : (0.1366963, 52.2265398)
+    _expected_coord : (0.1366585493088, 52.226540927122)
+    _ref : in_structure
+    ref_side : None
+  ug_route(89,systest/conflicts1) path geom_mismatch_at manhole(48)
+    _coord : (0.1362135, 52.2255836)
+    _expected_coord : (0.1362562179565, 52.2255937489052)
+    _ref : out_structure
+    ref_side : None
+Checking conduits
+  blown_fiber_bundle(16) path geom_mismatch_at ug_route(89,systest/conflicts1)
+    _coord : (0.1366585493088, 52.226540927122)
+    _expected_coord : (0.1366963, 52.2265398)
+    _ref : housing
+  blown_fiber_tube(73,systest/conflicts1) path geom_mismatch_at blown_fiber_bundle(13)
+    _coord : (0.1366507, 52.2266047)
+    _expected_coord : (0.1367644965649, 52.2257637988677)
+    _ref : housing
+  blown_fiber_tube(73,systest/conflicts1) in_conduit broken_chain
+    _ref : blown_fiber_tube/43
+    at : Cabinet: WH-C-11
+  blown_fiber_tube(73,systest/conflicts1) out_conduit broken_chain
+    _ref : blown_fiber_tube/48
+    at : Manhole: WH-M-39
+Checking conduit_runs
+  mywcom_conduit_run(57,systest/conflicts1) path geom_mismatch
+    ref : conduits
+Checking equips
+  fiber_ont(147,systest/conflicts1) root_housing derived_value_mismatch ug_route(89,systest/conflicts1)
+    expected : ug_route/89
+    value : wall_box/147
+  fiber_ont(147,systest/conflicts1) location geom_mismatch_at ug_route(89,systest/conflicts1)
+    _coord : (0.1366008818149567, 52.22573176051871)
+    _expected_coord : (0.1366963, 52.2265398)
+    _ref : housing
+    ref_side : None
+Checking cables
+  fiber_cable(9,systest/conflicts1) directed not_set
+Checking segments
+  mywcom_fiber_segment(76,systest/conflicts1) in_segment broken_chain
+    _ref : 76
+    back_ref : 77
+  mywcom_fiber_segment(76,systest/conflicts1) path geom_mismatch_at mywcom_fiber_segment(76,systest/conflicts1)
+    _coord : (0.1380164176226, 52.2250326615595)
+    _expected_coord : (0.137692879720297, 52.22528278305279)
+    _ref : in_segment
+    ref_side : out
+  mywcom_fiber_segment(76,systest/conflicts1) in_tick tick_mark_invalid
+    invalid_tick : 0
+    overlap_seg : Cable Segment: 77 (fiber_cable/9)
+  mywcom_fiber_segment(85,systest/conflicts1) path geom_mismatch_at ug_route(79)
+    _coord : (0.1365587736006413, 52.22575679294339)
+    _expected_coord : (0.1365358, 52.2257432)
+    _ref : housing
+  mywcom_fiber_segment(86,systest/conflicts1) path geom_mismatch_at ug_route(400)
+    _coord : (0.1365587736006413, 52.22575679294339)
+    _expected_coord : (0.1365358, 52.2257432)
+    _ref : housing
+  mywcom_fiber_segment(87,systest/conflicts1) path geom_mismatch_at ug_route(89,systest/conflicts1)
+    _coord : (0.1362562179565, 52.2255937489052)
+    _expected_coord : (0.1362135, 52.2255836)
+    _ref : housing
+Checking connections
+  mywcom_fiber_connection(190,systest/conflicts1) out_high pins_out_of_range fiber_cable(178)
+    cable_pins : 1:16
+    housing : Splice Closure: WH-SC-039
+    pins : 35:6
+    struct : Cabinet: WH-C-11
+  mywcom_fiber_connection(190,systest/conflicts1) in_low bad_pin_range
+    connection : WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+    housing : Splice Closure: WH-SC-039
+    range : out:80:6
+    side : in
+    struct : Cabinet: WH-C-11
+  mywcom_fiber_connection(190,systest/conflicts1) in_high bad_pin_range
+    connection : WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+    housing : Splice Closure: WH-SC-039
+    range : out:80:6
+    side : in
+    struct : Cabinet: WH-C-11
+  mywcom_fiber_connection(190,systest/conflicts1) out_low bad_pin_range
+    connection : WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+    housing : Splice Closure: WH-SC-039
+    range : in:35:6
+    side : out
+    struct : Cabinet: WH-C-11
+  mywcom_fiber_connection(190,systest/conflicts1) out_high bad_pin_range
+    connection : WH-FCB-009#out:80:6 -> DROP-144#in:35:6
+    housing : Splice Closure: WH-SC-039
+    range : in:35:6
+    side : out
+    struct : Cabinet: WH-C-11
+  mywcom_fiber_segment(83,systest/conflicts1) in_structure duplicate_connection splice_closure(39)
+    _conn1 : mywcom_fiber_connection/205
+    _conn2 : mywcom_fiber_connection/207
+    clash_pins : out:13
+    conn1 : WH-FCB-009#out:13 -> DROP-146#in:1
+    conn2 : WH-FCB-009#out:13 -> DROP-148#in:1
+    housing : Splice Closure: WH-SC-039
+    side : in
+    struct : Cabinet: WH-C-11
+  mywcom_fiber_connection(154) root_housing derived_value_mismatch mywcom_fiber_segment(259,systest/conflicts1)
+    expected : mywcom_route_junction/5400 or wall_box/56
+    value : pole/8
+  mywcom_fiber_segment(83,systest/conflicts1) in_structure duplicate_connection splice_closure(39)
+    _conn1 : mywcom_fiber_connection/207
+    _conn2 : mywcom_fiber_connection/205
+    clash_pins : out:13
+    conn1 : WH-FCB-009#out:13 -> DROP-148#in:1
+    conn2 : WH-FCB-009#out:13 -> DROP-146#in:1
+    housing : Splice Closure: WH-SC-039
+    side : in
+    struct : Cabinet: WH-C-11
+Checking circuits
+Checking line_of_counts
+  mywcom_line_of_count_section(165) route geom_mismatch
+    ref : container
+  mywcom_line_of_count_section(172) route geom_mismatch
+    ref : container
+Errors: 15
+
+Opening database <database> ...
+------------------------
+Checking data: design/CC4970
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: design/CC4975
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: systest/verrors1
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+  mywcom_fiber_connection(5900,systest/verrors1) root_housing derived_value_mismatch mywcom_fiber_segment(549)
+    expected : manhole/50000 or mywcom_route_junction/38
+    value : manhole/63
+  mywcom_fiber_connection(5901,systest/verrors1) in_object referenced_record_missing
+    ref : fiber_shelf/20
+  mywcom_fiber_connection(5901,systest/verrors1) housing referenced_record_missing
+    ref : fiber_shelf/20
+Checking circuits
+Checking line_of_counts
+Errors: 2
+
+Opening database <database> ...
+------------------------
+Checking data: design/NB236
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: design/NMC3205
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+  mywcom_fiber_connection(6200,design/NMC3205) root_housing derived_value_mismatch mywcom_fiber_segment(6100)
+    expected : manhole/6100 or manhole/50001
+    value : manhole/6101
+Checking circuits
+Checking line_of_counts
+Errors: 1
+
+Opening database <database> ...
+------------------------
+Checking data: design/NMC1753
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+  mywcom_fiber_connection(6300,design/NMC1753) root_housing derived_value_mismatch mywcom_fiber_segment(6102)
+    expected : manhole/6103 or pole/6104
+    value : manhole/6104
+  mywcom_fiber_connection(6300,design/NMC1753) root_housing derived_value_mismatch mywcom_fiber_segment(6103)
+    expected : pole/6104 or manhole/6105
+    value : manhole/6104
+  mywcom_fiber_connection(6300,design/NMC1753) root_housing derived_value_mismatch splice_closure(6101) root_housing
+    expected : pole/6104
+    value : manhole/6104
+Checking circuits
+Checking line_of_counts
+Errors: 1
+
+Opening database <database> ...
+------------------------
+Checking data: design/NMC3206
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+  mywcom_fiber_connection(6400,design/NMC3206) in_object referenced_record_missing
+    ref : mywcom_fiber_segment/6104
+Checking circuits
+Checking line_of_counts
+Errors: 1
+
+Opening database <database> ...
+------------------------
+Checking data: design/NMC3208
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+  mywcom_fiber_segment(6106,design/NMC3208) cable referenced_record_missing
+    ref : fiber_cable/6106
+  mywcom_fiber_segment(6500,design/NMC3208) cable referenced_record_missing
+    ref : fiber_cable/6106
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 2
+
+Opening database <database> ...
+------------------------
+Checking data: design/NMC2623
+------------------------
+Checking routes
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+Checking connections
+Checking circuits
+Checking line_of_counts
+Errors: 0
+
+Opening database <database> ...
+------------------------
+Checking data: design/NMC2818
+------------------------
+Checking routes
+  ug_route(6700,design/NMC2818) in_structure referenced_record_missing
+    ref : manhole/6112
+Checking conduits
+Checking conduit_runs
+Checking equips
+Checking cables
+Checking segments
+  mywcom_fiber_segment(6700,design/NMC2818) in_structure referenced_record_missing
+    ref : manhole/6112
+Checking connections
+  mywcom_fiber_connection(6700,design/NMC2818) root_housing derived_value_mismatch mywcom_fiber_segment(6107)
+    expected : manhole/6111 or mywcom_route_junction/50003
+    value : manhole/6112
+  mywcom_fiber_connection(6700,design/NMC2818) housing referenced_record_missing
+    ref : splice_closure/6103
+Checking circuits
+Checking line_of_counts
+Errors: 3
+

@@ -1,0 +1,9 @@
+{
+    "image": "modules/comms/images/features/building.svg",
+    "palette": true,
+    "layer": {
+        "min_vis": 16,
+        "point_style": "triangle:#ffffff:8m:#008000",
+        "text_style": "name:#000000:5m:top+7:centre::"
+    }
+}

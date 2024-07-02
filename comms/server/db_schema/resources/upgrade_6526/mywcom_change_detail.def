@@ -1,0 +1,10 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_change_detail",
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": false,
+        "delete_from_gui": false
+    },
+    "queries": []
+}

@@ -1,0 +1,96 @@
+
+SUB TEST : MISSING BUILDING
+    COMMAND: comsof_ws <database> <resource_dir>/test_data/test_workspace import --delta=comsof_design/kings_hedges --mappings=mywcom.import_config.comsof --reload
+    Opening database <conn_spec> ...
+    Dropping existing auto-generated data ...
+    Opening <resource_dir>/test_data/test_workspace/output/output.gpkg
+    Coordinate system: 32631 unit_size=1.0
+    Loading data
+      Feature type: building
+    ***Warning*** _struct[412,type=CentralOffice] : No such record: building/6002
+        Loaded 1 records
+      Feature type: cabinet
+        Loaded 1 records
+      Feature type: drop_point
+        Loaded 32 records
+      Feature type: fiber_cable
+        Loaded 66 records
+      Feature type: fiber_splitter
+        Loaded 2 records
+      Feature type: manhole
+        Loaded 0 records
+      Feature type: oh_route
+        Loaded 0 records
+      Feature type: pole
+        Loaded 0 records
+      Feature type: rack
+        Loaded 0 records
+      Feature type: splice_closure
+    ***Warning*** _struct[253,type=Closure] : No such record: building/6002
+        Loaded 67 records
+      Feature type: ug_route
+        Loaded 214 records
+      Feature type: wall_box
+        Loaded 61 records
+    Mapping references
+    Setting derived properties
+      Setting root housings
+      Setting geometry
+      Setting in/out structures
+      Setting cable segment properties
+      Setting line of count properties
+    Setting derived properties
+      Setting root housings
+      Setting geometry
+      Setting in/out structures
+      Setting cable segment properties
+      Setting line of count properties
+    Building route network
+      Reading nodes
+        Read 393 node records
+      Finding structures
+      Ordering coincident structures
+      Connecting routes
+      Adding riser routes
+    Adding conduits
+      Reading duct pieces
+        Read 94 duct piece records
+      Created 354 conduits
+    Adding cable segments
+      Reading cable details
+        Read 123 cable detail records
+      Reading cable pieces
+        Read 66 cable piece records
+      Reading slacks
+        Read 0 slack records
+      Building segment chains
+    ***Warning*** fiber_cable[66] Unused duct piece(s) at (0.13776243827644477, 52.23023502501261) dp_node=1 DuctCablePiece(65,66)
+      Routed 66 cables
+    Connecting fibers
+      Reading fibers
+        Read 190 fiber records
+      Building connection infos
+        Found connections in 67 locations
+      Adding connection records
+    ***Warning***  No such object equip/253
+    Pruning unused objects
+      Pruning unused conduits
+        conduit : Pruned 0 records
+        blown_fiber_bundle : Pruned 0 records
+        blown_fiber_tube : Pruned 0 records
+      Pruning unused routes
+        oh_route : Pruned 0 records
+        ug_route : Pruned 1 records
+      Pruning unused equipment
+        Equipment: Pruned 0 records
+      Pruning unused structures
+        mywcom_route_junction : Pruned 1 records
+        building : Pruned 0 records
+        cabinet : Pruned 0 records
+        drop_point : Pruned 0 records
+        manhole : Pruned 0 records
+        mdu : Pruned 0 records
+        pole : Pruned 0 records
+        wall_box : Pruned 0 records
+    Snapping geometries
+    

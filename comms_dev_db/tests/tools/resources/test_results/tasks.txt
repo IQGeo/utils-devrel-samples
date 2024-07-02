@@ -1,0 +1,19 @@
+COMMAND: comms_db comms_scratch manage_tasks list
+Opening database <conn_spec> ...
+
+id  status  error_msg  log  result
+--  ------  ---------  ---  ------
+
+COMMAND: comms_db comms_scratch manage_tasks delete
+Opening database <conn_spec> ...
+Deleted 0 task records.
+
+COMMAND: comms_db comms_scratch manage_tasks run 1
+Opening database <conn_spec> ...
+Running task 1
+Task not found with id  1
+
+COMMAND: comms_db comms_scratch manage_tasks cancel 1
+Opening database <conn_spec> ...
+Task not found with id  1
+

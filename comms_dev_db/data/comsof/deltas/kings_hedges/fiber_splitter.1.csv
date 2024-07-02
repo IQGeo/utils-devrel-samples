@@ -1,0 +1,3 @@
+id,name,n_fiber_in_ports,n_fiber_out_ports,root_housing,housing,specification,labor_costs,location,circuits,device_id,installation_date,job_id,comsof_auto
+fiber_splitter/6000,202,1,32,cabinet/6001,splice_closure/6017,,,0101000020E61000007B227DEDF25FC03F14962426B31D4A40,,,,,True
+fiber_splitter/6001,203,1,32,cabinet/6001,splice_closure/6017,,,0101000020E61000007B227DEDF25FC03F14962426B31D4A40,,,,,True

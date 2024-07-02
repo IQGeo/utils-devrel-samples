@@ -1,0 +1,26 @@
+{
+   "name": "Buildings (OSM)", 
+   "category": "overlay", 
+   "code": "bo", 
+   "description": "Building outlines from http://download.geofabrik.de (positions adjusted)", 
+   "datasource": "myworld", 
+   "spec": {
+      "isStatic": true, 
+      "extraOptions": {}, 
+      "nativeAppVector": null, 
+      "nativeAppMode": "switchable", 
+      "rendering": "vector", 
+      "jsClass": ""
+   }, 
+   "transparency": 15, 
+   "min_scale": 16, 
+   "max_scale": 22, 
+   "feature_types": [
+      {
+         "name": "osm_building", 
+         "field_name": "outline", 
+         "line_style": "#000000:1:solid", 
+         "fill_style": "#cccccc:100"
+      }
+   ]
+}

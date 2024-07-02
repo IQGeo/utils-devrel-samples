@@ -1,0 +1,25 @@
+Request: POST:/modules/comsof/workspace/2/execute?delta=comsof_design/arbury
+Response: 200 (200 OK)
+{
+   "populate": {
+      "errors": [],
+      "log": [
+         "[<time>] Clearing data",
+         "[<time>] ... Clearing <workspaces>/2/workspace/input/input.gpkg",
+         "[<time>] ... Clearing <workspaces>/2/workspace/input/CalculationInput/CalculationInput.gpkg",
+         "[<time>] ... Clearing <workspaces>/2/workspace/input/ProcessedArea/ProcessedArea.gpkg",
+         "[<time>] ... Clearing <workspaces>/2/workspace/output/output.gpkg",
+         "[<time>] Adding data to input.gpkg",
+         "[<time>] ... IN_Buildings : Wrote 68 records",
+         "[<time>] ... IN_StreetCenterLines : Wrote 22 records",
+         "[<time>] ... IN_CentralOffice : Wrote 1 records",
+         "[<time>] Adding data to CalculationInput.gpkg"
+      ],
+      "warnings": []
+   }
+}
+
+
+DATABASE CHANGES: AFTER POPULATE 2
+   update data.comsof_workspace(2) fields=(busy,op_stats,state)
+

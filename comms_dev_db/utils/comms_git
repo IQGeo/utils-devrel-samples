@@ -1,0 +1,14 @@
+#!/bin/bash
+# Run git command %* on the comms modules
+
+HERE=$(dirname $0)
+
+MODULES=$HERE/../..
+
+cd $MODULES
+echo -----------------------------------------------------------------------
+pwd
+echo -----------------------------------------------------------------------
+echo git $*
+git "$@"
+echo ""

@@ -1,0 +1,53 @@
+[
+   {
+     "feature_type": "fiber_cable",
+     "src_feature_type": "cable",
+     "field_mappings": {
+       "id": "[id]",
+       "name": "[name]",
+       "path": "[geom]"      
+     }
+   },
+   {
+     "feature_type": "building",
+     "src_feature_type": "fex",
+     "field_mappings": {
+       "id": "[id]",
+       "name": "[name]",
+       "location": "[geom]"
+     }
+   },
+   {
+    "feature_type": "manhole",
+    "src_feature_type": "chamber",
+    "field_mappings": {
+      "id": "[id]",
+      "name": "[name]",
+      "location": "[geom]"
+    }
+  },
+  {
+    "feature_type": "ug_route",
+    "src_feature_type": "ug_route",
+    "field_mappings": {
+      "id": "[id]",  
+      "path": "[geom]",
+      "cover_type" : "[cover_type]",
+      "length" : "[length]"
+    }
+  },
+  {
+    "feature_type": "mywcom_fiber_segment",
+    "src_feature_type": "mywcom_fiber_segment",
+    "field_mappings": {
+      "id": "[id]",  
+      "path": "[geom]",
+      "cable" : "[cable]",
+      "housing" : "[housing]",
+      "root_housing" : "[root_housing]",
+      "in_segment" : "[in_segment]",
+      "out_segment" : "[out_segment]"     
+    }
+  }
+ ]
+   

@@ -1,0 +1,46 @@
+
+SUB TEST : SHOW CONFLICTS AND ERRORS design/NMC3205 - Cable Segment Split
+    CONFLICTS design/NMC3205
+       integrity_error mywcom_fiber_connection(6200,design/NMC3205) root_housing derived_value_mismatch mywcom_fiber_segment(6100)
+          ['expected=manhole/6100 or manhole/50001', 'value=manhole/6101']
+    
+
+SUB TEST : SHOW CONFLICTS AND ERRORS design/NMC1753 - Change Structure Type
+    CONFLICTS design/NMC1753
+       integrity_error mywcom_fiber_connection(6300,design/NMC1753) root_housing derived_value_mismatch splice_closure(6101) root_housing
+          ['expected=pole/6104', 'value=manhole/6104']
+    
+
+SUB TEST : SHOW CONFLICTS AND ERRORS design/NMC3206 - Delete Cable
+    CONFLICTS design/NMC3206
+       integrity_error mywcom_fiber_connection(6400,design/NMC3206) in_object referenced_record_missing
+          ['ref=mywcom_fiber_segment/6104']
+    
+
+SUB TEST : SHOW CONFLICTS AND ERRORS design/NMC3208 - Delete Cable Slack
+    CONFLICTS design/NMC3208
+       conflict mywcom_fiber_segment(6106,design/NMC3208) delete/update
+       integrity_error mywcom_fiber_segment(6500,design/NMC3208) cable referenced_record_missing
+          ['ref=fiber_cable/6106']
+       integrity_error mywcom_fiber_segment(6106,design/NMC3208) cable referenced_record_missing
+          ['ref=fiber_cable/6106']
+    
+
+SUB TEST : SHOW CONFLICTS AND ERRORS design/NMC2623 - Unpublished Structure
+    CONFLICTS design/NMC2623
+       conflict ug_route(6107,design/NMC2623) update/update
+          master_fields: out_structure
+          delta_fields : out_structure
+    
+
+SUB TEST : SHOW CONFLICTS AND ERRORS design/NMC2818 - Delete Structure
+    CONFLICTS design/NMC2818
+       integrity_error ug_route(6700,design/NMC2818) in_structure referenced_record_missing
+          ['ref=manhole/6112']
+       integrity_error mywcom_fiber_connection(6700,design/NMC2818) root_housing derived_value_mismatch mywcom_fiber_segment(6107)
+          ['expected=manhole/6111 or mywcom_route_junction/50003', 'value=manhole/6112']
+       integrity_error mywcom_fiber_connection(6700,design/NMC2818) housing referenced_record_missing
+          ['ref=splice_closure/6103']
+       integrity_error mywcom_fiber_segment(6700,design/NMC2818) in_structure referenced_record_missing
+          ['ref=manhole/6112']
+    

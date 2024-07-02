@@ -1,0 +1,192 @@
+Set delta to: *** master ***
+
+*** ROUTE CONTENTS NO PROPOSED
+{
+	"cable_segs": [
+		"mywcom_fiber_segment/36: Cable Segment: 36 (fiber_cable/3)",
+		"mywcom_fiber_segment/45: Cable Segment: 45 (fiber_cable/4)",
+		"mywcom_fiber_segment/59: Cable Segment: 59 (fiber_cable/6)"
+	],
+	"cables": [
+		"fiber_cable/3: Fiber Cable: WH-FCB-003 (144)",
+		"fiber_cable/4: Fiber Cable: WH-FCB-004 (144)",
+		"fiber_cable/6: Fiber Cable: WH-FCB-006 (144)"
+	],
+	"circuits": [
+		{
+			"circuit_urn": "ftth_circuit/10",
+			"high": 50,
+			"low": 50,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/14",
+			"high": 60,
+			"low": 60,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/1",
+			"high": 25,
+			"low": 25,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/20",
+			"high": 80,
+			"low": 80,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/21",
+			"high": 79,
+			"low": 79,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/22",
+			"high": 78,
+			"low": 78,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/23",
+			"high": 82,
+			"low": 82,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/24",
+			"high": 83,
+			"low": 83,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/26",
+			"high": 50,
+			"low": 50,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/27",
+			"high": 51,
+			"low": 51,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/28",
+			"high": 54,
+			"low": 54,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/29",
+			"high": 55,
+			"low": 55,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/2",
+			"high": 26,
+			"low": 26,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/3",
+			"high": 27,
+			"low": 27,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/4",
+			"high": 28,
+			"low": 28,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/5",
+			"high": 75,
+			"low": 75,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/6",
+			"high": 76,
+			"low": 76,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/7",
+			"high": 77,
+			"low": 77,
+			"seg_urn": "mywcom_fiber_segment/59"
+		},
+		{
+			"circuit_urn": "ftth_circuit/8",
+			"high": 84,
+			"low": 84,
+			"seg_urn": "mywcom_fiber_segment/59"
+		}
+	],
+	"conduit_runs": [
+
+	],
+	"conduits": [
+		"conduit/71: Conduit: WH-CND-071",
+		"conduit/72: Conduit: WH-CND-072",
+		"conduit/73: Conduit: WH-CND-073",
+		"conduit/74: Conduit: WH-CND-074"
+	]
+}
+
+*** ROUTE CONTENTS WITH PROPOSED
+{
+	"cable_segs": [
+		"mywcom_fiber_segment/401: Cable Segment: 401 (fiber_cable/173)",
+		"mywcom_fiber_segment/403: Cable Segment: 403 (fiber_cable/174)",
+		"mywcom_fiber_segment/90: Cable Segment: 90 (fiber_cable/10)"
+	],
+	"cables": [
+		"fiber_cable/10: Fiber Cable: WH-FCB-010 (96)",
+		"fiber_cable/173: Fiber Cable: DROP-139 (2)",
+		"fiber_cable/174: Fiber Cable: DROP-140 (2)"
+	],
+	"circuits": [
+		{
+			"circuit_urn": "ftth_circuit/6",
+			"high": 1,
+			"low": 1,
+			"seg_urn": "mywcom_fiber_segment/401"
+		},
+		{
+			"circuit_urn": "ftth_circuit/7",
+			"high": 1,
+			"low": 1,
+			"seg_urn": "mywcom_fiber_segment/403"
+		},
+		{
+			"circuit_urn": "ftth_circuit/8",
+			"high": 10,
+			"low": 10,
+			"seg_urn": "mywcom_fiber_segment/90"
+		}
+	],
+	"conduit_runs": [
+		"mywcom_conduit_run/1: Conduit Run: 1",
+		"mywcom_conduit_run/2: Conduit Run: 2",
+		"mywcom_conduit_run/3: Conduit Run: 3",
+		"mywcom_conduit_run/48: Conduit Run: 48",
+		"mywcom_conduit_run/5: Conduit Run: 5",
+		"mywcom_conduit_run/6: Conduit Run: 6",
+		"mywcom_conduit_run/7: Conduit Run: 7"
+	],
+	"conduits": [
+		"blown_fiber_bundle/7: BF Bundle: (6)",
+		"blown_fiber_tube/14: BF Tube: WH-BF-8 : 2",
+		"blown_fiber_tube/21: BF Tube: WH-BF-15 : 3",
+		"blown_fiber_tube/28: BF Tube: WH-BF-22 : 4",
+		"blown_fiber_tube/35: BF Tube: WH-BF-29 : 5",
+		"blown_fiber_tube/42: BF Tube: WH-BF-36 : 6",
+		"blown_fiber_tube/7: BF Tube: WH-BF-1 : 1"
+	]
+}

@@ -1,0 +1,4 @@
+{
+   "mywcom.checkMaster": { "description": "{:right_check_master}" },
+   "mywcom.manageSpecifications": { "description": "{:right_manage_specifications}" }
+}

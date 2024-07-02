@@ -1,0 +1,1517 @@
+TEST REPORT: 
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 17
+			},
+			"text": "Heading Level 1 "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Some text"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "Heading Level 2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 13
+			},
+			"text": "Heading "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"size": 13
+			},
+			"text": "Green"
+		},
+		{
+			"font": {
+				"bold": true,
+				"size": 13
+			},
+			"text": " Level 3 "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Some text "
+		},
+		{
+			"font": {
+
+			},
+			"text": "in"
+		},
+		{
+			"font": {
+
+			},
+			"text": " multiple "
+		},
+		{
+			"font": {
+
+			},
+			"text": "items"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Some "
+		},
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "bold"
+		},
+		{
+			"font": {
+
+			},
+			"text": ", "
+		},
+		{
+			"font": {
+				"underline": true
+			},
+			"text": "underlined"
+		},
+		{
+			"font": {
+
+			},
+			"text": " and "
+		},
+		{
+			"font": {
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "green"
+		},
+		{
+			"font": {
+
+			},
+			"text": " text"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Some "
+		},
+		{
+			"font": {
+				"fill": {
+					"fgColor": {
+						"argb": "FFdddddd"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "text with grey"
+		},
+		{
+			"font": {
+
+			},
+			"text": " background"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 13
+			},
+			"text": "Heading with Punctuation:"
+		},
+		{
+			"font": {
+				"bold": true,
+				"size": 13
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Text with punctuation: "
+		},
+		{
+			"font": {
+
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Text with green punctuation: "
+		},
+		{
+			"font": {
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Text with a PNG icon "
+		},
+		{
+			"font": {
+
+			},
+			"text": "<image>"
+		},
+		{
+			"font": {
+
+			},
+			"text": " and a SVG icon"
+		},
+		{
+			"font": {
+
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "This is the "
+		},
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		},
+		{
+			"font": {
+
+			},
+			"text": " report"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "Table 1: Defaults"
+		}
+	]
+}
+0
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cell text 0"
+		}
+	]
+}
+0
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+1
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Cell text 1"
+		}
+	]
+}
+0.333
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+2
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "Cell text 4"
+		}
+	]
+}
+0.666
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+3
+{
+	"richText": [
+		{
+			"font": {
+				"fill": {
+					"fgColor": {
+						"argb": "FF33aa33"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "Cell text 9"
+		}
+	]
+}
+0.999
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"fill": {
+					"fgColor": {
+						"argb": "FF33aa33"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"fill": {
+					"fgColor": {
+						"argb": "FF33aa33"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+4
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"underline": true
+			},
+			"text": "Cell text 16"
+		}
+	]
+}
+1.332
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"underline": true
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"underline": true
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "Table 2: Modern"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "int"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "text"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true,
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "dist"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true,
+				"fill": {
+					"fgColor": {
+						"argb": "FFdddddd"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "empty"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true,
+				"fill": {
+					"fgColor": {
+						"argb": "FFdddddd"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "empty"
+		}
+	]
+}
+0
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				}
+			},
+			"text": "Cell text 0"
+		}
+	]
+}
+0
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+1
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				}
+			},
+			"text": "Cell text 1"
+		}
+	]
+}
+0.333
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+2
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "Cell text 4"
+		}
+	]
+}
+0.666
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				},
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+3
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"fill": {
+					"fgColor": {
+						"argb": "FF33aa33"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "Cell text 9"
+		}
+	]
+}
+0.999
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				},
+				"fill": {
+					"fgColor": {
+						"argb": "FF33aa33"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"fill": {
+					"fgColor": {
+						"argb": "FF33aa33"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+4
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"underline": true
+			},
+			"text": "Cell text 16"
+		}
+	]
+}
+1.332
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				},
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"underline": true
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"underline": true
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "Table 3: Clasic + No Empty Columns"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "int"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "text"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true,
+				"color": {
+					"argb": "FFFF0000"
+				}
+			},
+			"text": "dist"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+0
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				}
+			},
+			"text": "Cell text 0"
+		}
+	]
+}
+0
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+1
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				}
+			},
+			"text": "Cell text 1"
+		}
+	]
+}
+0.333
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+2
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "Cell text 4"
+		}
+	]
+}
+0.666
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				},
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"color": {
+					"argb": "FF33aa33"
+				}
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+3
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"fill": {
+					"fgColor": {
+						"argb": "FF33aa33"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "Cell text 9"
+		}
+	]
+}
+0.999
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				},
+				"fill": {
+					"fgColor": {
+						"argb": "FF33aa33"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"fill": {
+					"fgColor": {
+						"argb": "FF33aa33"
+					},
+					"pattern": "solid",
+					"type": "pattern"
+				}
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+4
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"underline": true
+			},
+			"text": "Cell text 16"
+		}
+	]
+}
+1.332
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "center"
+				},
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"underline": true
+			},
+			"text": "<image>"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF33aa33"
+				},
+				"underline": true
+			},
+			"text": "<>?:@{}!$%^&*()+'.;[]`£€¬\""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "xlsx"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "Table 4: Style None, no headings"
+		}
+	]
+}

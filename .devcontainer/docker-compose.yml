@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+    postgis:
+        image: ${POSTGIS_IMAGE:-postgis/postgis:12-3.2-alpine}
+        container_name: postgis
+        restart: always
+        environment:
+            PGDATA: /opt/iqgeo/data/pgdata
+            POSTGRES_USER: ${DB_USERNAME:-iqgeo}
+            POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
+        ports:
+            - ${POSTGIS_PORT:-5432}:5432
+        volumes:
+            - pgdata:/opt/iqgeo/data/pgdata
+    comms:
+        container_name: comms
+        restart: always
+        build:
+            context: ./
+            dockerfile: dockerfile
+        environment:
+            PGHOST: postgis
+            PGPORT: 5432
+            PGUSER: ${DB_USERNAME:-iqgeo}
+            PGPASSWORD: ${DB_PASSWORD:-password}
+            MYW_DB_HOST: postgis
+            MYW_DB_PORT: 5432
+            MYW_DB_NAME: ${DB_NAME:-iqg_comms_dev}
+            MYW_COMMS_DEV_DB: ${DB_NAME:-iqg_comms_dev}
+            MYW_DB_USERNAME: ${DB_USERNAME:-iqgeo}
+            MYW_DB_PASSWORD: ${DB_PASSWORD:-password}
+            APP_PORT: ${APP_PORT:-82}
+            DB_PORT: ${DB_PORT:-5434}
+            MYW_COMMS_REMOTE_URL: http://selenium-chrome:4444
+            MYW_COMMS_BASE_URL: http://comms
+            APACHE_ERROR_LOG: /var/log/apache2/error.log
+            MYW_COMMS_ARCHIVE_DIR: ${MYW_COMMS_ARCHIVE_DIR:-}
+        ports:
+            - ${APP_PORT:-82}:80
+            # Locust
+            - 8089:8089
+        volumes:
+            - js_bundles:/opt/iqgeo/platform/WebApps/myworldapp/core/public/bundles # to keep builds when container is recreated
+            # Load dirs needed for comms enterpirse development
+
+            - ../.vscode:/opt/iqgeo/platform/WebApps/myworldapp/modules/.vscode:delegated
+            - ../.devcontainer:/opt/iqgeo/platform/WebApps/myworldapp/modules/.devcontainer:delegated
+            - ../.testcontainer:/opt/iqgeo/platform/WebApps/myworldapp/modules/.testcontainer:delegated
+            - ../.pipeline:/opt/iqgeo/platform/WebApps/myworldapp/modules/.pipeline:delegated
+            - ../comms:/opt/iqgeo/platform/WebApps/myworldapp/modules/comms:delegated
+            - ../comms_dev_db:/opt/iqgeo/platform/WebApps/myworldapp/modules/comms_dev_db:delegated
+            - ../.git:/opt/iqgeo/platform/WebApps/myworldapp/modules/.git:delegated
+            - ../.gitignore:/opt/iqgeo/platform/WebApps/myworldapp/modules/.gitignore:delegated
+            # Load comsof module from it's repo
+            - ../../product-nmt-comsof-integration/comsof:/opt/iqgeo/platform/WebApps/myworldapp/modules/comsof:delegated
+            # mount directory from host to container for moving data back and forth
+            - ../${IQGCOM_DATA_DIR:-data}:/opt/iqgeo/platform/WebApps/myworldapp/modules/data:delegated
+        depends_on:
+            - postgis
+    selenium-chrome:
+        image: ${SELENIUM_IMAGE:-selenium/standalone-chrome:latest}
+        container_name: selenium-chrome
+        shm_size: 2g
+        environment:
+            LANG_WHICH: en
+            LANG_WHERE: GB
+            LANGUAGE: en_GB.UTF-8
+            LANG: en_GB.UTF-8
+            VNC_NO_PASSWORD: 1
+            VNC_VIEW_ONLY: 1
+            SCREEN_WIDTH: 1600
+            SCREEN_HEIGHT: 950
+        ports:
+            - ${SELENIUM_PORT:-4444}:4444
+
+volumes:
+    pgdata:
+        name: ${VOLUME_NAME_PREFIX:-comms}_pgdata
+    js_bundles:
+        name: ${VOLUME_NAME_PREFIX:-comms}_js_bundles

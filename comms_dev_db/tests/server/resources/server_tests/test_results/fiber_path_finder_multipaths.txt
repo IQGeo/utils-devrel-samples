@@ -1,0 +1,29 @@
+Request: POST: /modules/comms/upload
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/upload/<upload_id>/import
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/fiber_path/find
+Response: 200 (200 OK)
+
+
+PROPERTIES sort_by=shortest [(230.26, 2, 2), (248.25, 2, 2), (263.5, 2, 2), (271.06, 3, 2), (363.73, 2, 2)]
+Request: POST: /modules/comms/fiber_path/find
+Response: 200 (200 OK)
+
+
+PROPERTIES sort_by=least_new [(230.26, 2, 2), (248.25, 2, 2), (263.5, 2, 2), (363.73, 2, 2), (271.06, 3, 2)]
+Request: POST: /modules/comms/fiber_path/find
+Response: 200 (200 OK)
+
+
+PROPERTIES sort_by=least_existing [(230.26, 2, 2), (248.25, 2, 2), (263.5, 2, 2), (271.06, 3, 2), (363.73, 2, 2)]
+TEST FOR LOOP PREVENTION
+Request: POST: /modules/comms/fiber_path/find
+Response: 200 (200 OK)
+
+
+Routes found 1

@@ -1,0 +1,9 @@
+{
+    "image": "modules/comms/images/features/mdu.svg",
+    "palette": true,
+    "layer": {
+        "min_vis": 18,
+        "point_style": "modules/comms/images/features/mdu.svg:12:12:4m",
+        "text_style": "name:#000000:1m:top+2:centre::"
+    }
+}

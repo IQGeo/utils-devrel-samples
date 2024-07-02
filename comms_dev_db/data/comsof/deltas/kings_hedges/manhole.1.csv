@@ -1,0 +1,3 @@
+id,name,specification,labor_costs,location,myw_orientation_location,size_x,size_y,size_z,lockable,powered,installation_date,comsof_auto
+manhole/6000,BT-71543,FPM-CCANN-J4,tree_trim,0101000020E61000008AC275882C79C03F88F17DE3AF1D4A40,190.56101458321513,440.0,910.0,800.0,,,,False
+manhole/6002,BT-92474,FPM-CCANN-J4,tree_trim,0101000020E6100000B5B86F5C9C7DC03FBC60D255C01D4A40,190.49148072577594,440.0,910.0,800.0,,,,False

@@ -1,0 +1,33 @@
+
+SUB TEST : NULL UPDATE
+    DATABASE CHANGES: AFTER SAVE CABLE NO CHANGES
+       insert data.mywcom_change_detail(5)
+       insert delta.fiber_cable(design/NB046,21,update)
+    
+
+SUB TEST : CHANGE OF PATH
+    DATABASE CHANGES: AFTER SAVE CABLE CHANGES
+       insert data.mywcom_change_detail(6)
+       insert delta.fiber_cable(design/NB046,20,update)
+       insert delta.mywcom_fiber_segment(design/NB046,100000,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,100001,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,100002,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,100003,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,100004,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,144,update)
+       insert delta.mywcom_fiber_segment(design/NB046,145,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,146,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,147,update)
+       insert delta.mywcom_fiber_segment(design/NB046,148,update)
+       insert delta.mywcom_fiber_segment(design/NB046,149,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,150,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,151,delete)
+    
+
+SUB TEST : CONNECTIONS CONSTRAINT
+    DATABASE CHANGES: AFTER INVALID FIBER COUNT
+    
+
+SUB TEST : CIRCUITS CONSTRAINT
+    DATABASE CHANGES: AFTER INVALID RE-ROUTE
+    

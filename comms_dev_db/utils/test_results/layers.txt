@@ -1,0 +1,88 @@
+Opening database <database> ...
+  Addresses  display_name=Addresses  category=overlay  datasource=myworld  type=myworld (vector)  code=a  scales=16:22  description=Customer locations (from OSM building centroids)  spec={"extraOptions": {}, "isStatic": true, "jsClass": "", "nativeAppMode": "switchable", "nativeAppVe...  transparency=0  features=1
+  Bing  display_name=Bing  category=basemap  datasource=bing  type=bing  scales=0:20  description=Bing map  spec={"mapType": "Road"}  transparency=0
+  Bing Aerial  display_name=Bing Aerial  category=basemap  datasource=bing  type=bing  scales=0:20  description=Bing imagery  spec={"mapType": "Aerial"}  transparency=0
+  Buildings (OSM)  display_name=Buildings (OSM)  category=overlay  datasource=myworld  type=myworld (vector)  code=bo  scales=16:22  description=Building outlines from http://download.geofabrik.de (positions adjusted)  spec={"extraOptions": {}, "isStatic": true, "jsClass": "", "nativeAppMode": "switchable", "nativeAppVe...  transparency=15  features=1
+  Google  display_name=Google  category=basemap  datasource=google  type=google  scales=0:22  description=Google map  spec={"mapType": "ROADMAP"}  transparency=0
+  Google Hybrid  display_name=Google Hybrid  category=basemap  datasource=google  type=google  scales=0:22  description=Google imagery + map  spec={"mapType": "HYBRID"}  transparency=50
+  Google Sat  display_name=Google Sat  category=basemap  datasource=google  type=google  scales=0:22  description=Google imagery  spec={"mapType": "SATELLITE"}  transparency=50
+  Google Traffic  display_name=Google Traffic  category=overlay  datasource=google  type=google  code=z  scales=10:20  description=Google Traffic (Google vector basemap only)  spec={"className": "TrafficLayer"}  transparency=0
+  None  display_name=None  category=basemap  datasource=built_in  type=built_in  scales=1:22  description=Grey background  spec={"mapType": "Blank"}  transparency=0
+  Notes  display_name=Notes  category=overlay  datasource=myworld  type=myworld (vector)  code=n  scales=10:22  description=myWorld Notes  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=1
+  OSM  display_name=OSM  category=basemap  datasource=mapbox  type=generic_tiles  scales=0:20  description=OpenStreetMap by Mapbox Streets  spec={"relativeUrl": "v3/MAPBOX_MAP_ID_HERE/{z}/{x}/{y}.png"}  transparency=0
+  Service Areas  display_name=Service Areas  category=overlay  datasource=myworld  type=myworld (vector)  code=sa  scales=0:16  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=3
+  bb_circuits  display_name=Circuits (Backbone)  category=overlay  datasource=myworld  type=myworld (vector)  code=bbc  scales=1:22  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=1
+  blown_fiber_tubes  display_name=Blown Fiber Tubes  category=overlay  datasource=myworld  type=myworld (vector)  code=bft  scales=15:22  spec={"isStatic": false, "nativeAppMode": "switchable", "rendering": "vector"}  transparency=0  features=2
+  cabinet_areas  display_name=Cabinet Areas  category=overlay  datasource=myworld  type=myworld (vector)  code=distcl  scales=0:22  spec={"extraOptions": null, "isStatic": true, "jsClass": null, "nativeAppMode": "switchable", "render_...  transparency=0  features=1
+  comsof_in_cables  display_name=Cables  category=overlay  datasource=comsof  type=comsof_workspace  code=coic  scales=10:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=1
+  comsof_in_conduits  display_name=Conduits  category=overlay  datasource=comsof  type=comsof_workspace  code=coip  scales=10:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=1
+  comsof_in_demands  display_name=Demands  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_idm  scales=10:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=2
+  comsof_in_distribution_clusters  display_name=Distribution Clusters  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_idsc  scales=10:22  spec={}  transparency=0  features=2
+  comsof_in_drop_clusters  display_name=Drop Clusters  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_idpc  scales=10:22  spec={}  transparency=0  features=2
+  comsof_in_forced_routes  display_name=Forced Routes  category=overlay  datasource=comsof  type=comsof_workspace  code=cifr  scales=0:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=4
+  comsof_in_potential_oh_routes  display_name=Potential Routes (Overhead)  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_ipohr  scales=10:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=2
+  comsof_in_potential_ug_routes  display_name=Potential Routes (Underground)  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_ipugr  scales=10:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=4
+  comsof_in_streets  display_name=Streets  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_istcl  scales=10:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=1
+  comsof_in_structures  display_name=Structures  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_istr  scales=10:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=3
+  comsof_out_backbone_cables  display_name=Cables (Backbone)  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_cbc  scales=10:22  spec={}  transparency=0  features=1
+  comsof_out_demands  display_name=Demands  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_odm  scales=10:22  spec={}  transparency=0  features=3
+  comsof_out_distribution_cables  display_name=Cables (Distribution)  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_odsc  scales=10:22  spec={}  transparency=0  features=1
+  comsof_out_drop_cables  display_name=Cables (Drop)  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_odpc  scales=10:22  spec={}  transparency=0  features=1
+  comsof_out_equipment  display_name=Equipment  category=overlay  datasource=comsof  type=comsof_workspace  code=coeq  scales=0:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=2
+  comsof_out_feeder_cables  display_name=Cables (Feeder)  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_ofc  scales=10:22  spec={}  transparency=0  features=1
+  comsof_out_structures  display_name=Structures  category=overlay  datasource=comsof  type=comsof_workspace  code=comsof_ostr  scales=10:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=1
+  comsof_proc_warnings  display_name=Warnings  category=overlay  datasource=comsof  type=comsof_workspace  code=cpw  scales=0:22  spec={}  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=3
+  comsof_workspaces  display_name=Workspaces  category=overlay  datasource=myworld  type=myworld (vector)  code=co  scales=0:20  spec={"extraOptions": null, "isStatic": true, "jsClass": null, "nativeAppMode": "switchable", "render_...  transparency=0  features=1
+  delta_cables  display_name=Cables  category=overlay  datasource=myworld  type=myworld (vector)  code=dltc  scales=14:22  description=Cables from designs  spec={"extraOptions": {"schema": "delta"}, "isStatic": false, "jsClass": "", "nativeAppMode": "switcha...  transparency=0  features=1
+  delta_structures  display_name=Structures  category=overlay  datasource=myworld  type=myworld (vector)  code=dlts  scales=14:22  description=Structures and routes from designs  spec={"extraOptions": {"schema": "delta"}, "isStatic": false, "jsClass": "", "nativeAppMode": "switcha...  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=9
+  designs  display_name=Boundaries  category=overlay  datasource=myworld  type=myworld (vector)  code=dn  scales=10:22  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=2
+  iqgapp_markup_layer  display_name=Design Markup  category=overlay  datasource=myworld  type=myworld (vector)  code=re  scales=0:22  spec={"extraOptions": null, "isStatic": false, "jsClass": "myw.MarkupVectorLayer", "nativeAppMode": "s...  transparency=0  features=6
+  mywcom_cable_segments  display_name=Cable Segments  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_cs  scales=16:22  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=6
+  mywcom_cables  display_name=Fiber Cables  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_fc  scales=14:22  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=2
+  mywcom_circuits  display_name=Circuits  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_cir  scales=1:22  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=1
+  mywcom_coax_cables  display_name=Coaxial Cables  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_cxc  scales=14:22  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=2
+  mywcom_coax_cables_offset  display_name=Coaxial Cables Offset  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_cxco  scales=14:22  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=1
+  mywcom_coax_equipment  display_name=Coax Equipment  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_cxeq  scales=16:22  description=Coax equipment and closures  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=28
+  mywcom_coax_equipment_offset  display_name=Coax Equipment Offset  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_cxeqo  scales=16:22  description=Coax equipment and closures offset  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=14
+  mywcom_conduit_runs  display_name=Conduit Runs  category=overlay  datasource=myworld  type=myworld (vector)  code=my  scales=15:22  spec={"extraOptions": null, "isStatic": false, "jsClass": null, "nativeAppMode": "switchable", "render...  transparency=0  features=1
+  mywcom_conduits  display_name=Conduits  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_co  scales=15:22  spec={"isStatic": false, "nativeAppMode": "switchable", "rendering": "vector"}  transparency=0  features=3
+  mywcom_copper_cables  display_name=Copper Cables  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_cuc  scales=14:22  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=2
+  mywcom_copper_equipment  display_name=Copper Equipment  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_cueq  scales=16:22  description=Copper equipment and closures  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=19
+  mywcom_data_block  display_name=Data Block  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_cxdb  scales=17:22  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=1
+  mywcom_equipment  display_name=Fiber Equipment  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_eq  scales=16:22  description=Fiber equipment and closures  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=15
+  mywcom_line_of_count  display_name=Line of Count  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_loc  scales=0:22  spec={"extraOptions": null, "isStatic": true, "jsClass": null, "nativeAppMode": "switchable", "render_...  transparency=0  features=2
+  mywcom_mixed_equipment  display_name=Mixed Equipment  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_meq  scales=16:22  description=Mixed equipment and closures  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=10
+  mywcom_structures  display_name=Structures  category=overlay  datasource=myworld  type=myworld (vector)  code=mywcom_st  scales=10:22  description=Structures and routes  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  class=myw.MyWorldLegendLayerControlWidget  features=16
+  streets  display_name=Streets  category=overlay  datasource=myworld  type=myworld (vector)  code=st  scales=0:22  spec={"extraOptions": null, "isStatic": true, "jsClass": null, "nativeAppMode": "switchable", "render_...  transparency=0  features=1
+  systests  display_name=Systest Deltas  category=overlay  datasource=myworld  type=myworld (vector)  code=stds  scales=10:22  description=Deltas containing data for system testing  spec={"extraOptions": {}, "isStatic": false, "jsClass": "", "nativeAppMode": "switchable", "nativeAppV...  transparency=0  features=1
+
+Opening database <database> ...
+***Warning*** No layer matching: *
+
+Opening database <database> ...
+layer                            type              error
+-------------------------------  ----------------  -------------------------------------
+Addresses                        myworld           Bad property in spec: useImageCanvas
+cabinet_areas                    myworld           Bad property in spec: useImageCanvas
+comsof_in_cables                 comsof_workspace  Bad datasource type: comsof_workspace
+comsof_in_conduits               comsof_workspace  Bad datasource type: comsof_workspace
+comsof_in_demands                comsof_workspace  Bad datasource type: comsof_workspace
+comsof_in_distribution_clusters  comsof_workspace  Bad datasource type: comsof_workspace
+comsof_in_drop_clusters          comsof_workspace  Bad datasource type: comsof_workspace
+comsof_in_forced_routes          comsof_workspace  Bad datasource type: comsof_workspace
+comsof_in_potential_oh_routes    comsof_workspace  Bad datasource type: comsof_workspace
+comsof_in_potential_ug_routes    comsof_workspace  Bad datasource type: comsof_workspace
+comsof_in_streets                comsof_workspace  Bad datasource type: comsof_workspace
+comsof_in_structures             comsof_workspace  Bad datasource type: comsof_workspace
+comsof_out_backbone_cables       comsof_workspace  Bad datasource type: comsof_workspace
+comsof_out_demands               comsof_workspace  Bad datasource type: comsof_workspace
+comsof_out_distribution_cables   comsof_workspace  Bad datasource type: comsof_workspace
+comsof_out_drop_cables           comsof_workspace  Bad datasource type: comsof_workspace
+comsof_out_equipment             comsof_workspace  Bad datasource type: comsof_workspace
+comsof_out_feeder_cables         comsof_workspace  Bad datasource type: comsof_workspace
+comsof_out_structures            comsof_workspace  Bad datasource type: comsof_workspace
+comsof_proc_warnings             comsof_workspace  Bad datasource type: comsof_workspace
+comsof_workspaces                myworld           Bad property in spec: useImageCanvas
+mywcom_line_of_count             myworld           Bad property in spec: useImageCanvas
+streets                          myworld           Bad property in spec: useImageCanvas
+

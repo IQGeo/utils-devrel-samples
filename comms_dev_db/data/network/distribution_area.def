@@ -1,0 +1,45 @@
+{
+    "datasource": "myworld",
+    "name": "distribution_area",
+    "external_name": "Distribution Area",
+    "title": "{display_name}: [id]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "geom_indexed": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "editor_options": null,
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "Id",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "boundary",
+            "external_name": "Boundary",
+            "type": "polygon"
+        },
+        {
+            "name": "name",
+            "external_name": "Name",
+            "type": "string"
+        }
+    ],
+    "groups": [],
+    "searches": [],
+    "queries": [
+        {
+            "value": "cabinet area",
+            "description": "Cabinet Area",
+            "lang": "en"
+        }
+    ],
+    "filters": []
+}

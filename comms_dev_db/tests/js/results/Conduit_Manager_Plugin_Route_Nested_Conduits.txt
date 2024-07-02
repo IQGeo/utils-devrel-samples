@@ -1,0 +1,237 @@
+Set delta to: design/NB217
+
+*** ROUTE CONDUIT ASSEMBLY
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 26.5,
+	"in_structure": "manhole/24",
+	"installation_date": "2002-09-26",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PVC (Smooth)",
+	"out_structure": "mywcom_route_junction/49",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/11",
+	"specification": "JDP-26.5MM-Grey"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 26.5,
+	"in_structure": "manhole/24",
+	"installation_date": "2010-01-04",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PVC (Smooth)",
+	"out_structure": "mywcom_route_junction/49",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/11",
+	"specification": "JDP-26.5MM-Grey"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 26.5,
+	"in_structure": "mywcom_route_junction/49",
+	"installation_date": "2002-09-26",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PVC (Smooth)",
+	"out_structure": "manhole/26",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/396",
+	"specification": "JDP-26.5MM-Grey"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 26.5,
+	"in_structure": "mywcom_route_junction/49",
+	"installation_date": "2010-01-04",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PVC (Smooth)",
+	"out_structure": "manhole/26",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/396",
+	"specification": "JDP-26.5MM-Grey"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 26.5,
+	"in_structure": "mywcom_route_junction/50",
+	"installation_date": "2002-09-26",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PVC (Smooth)",
+	"out_structure": "manhole/26",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/397",
+	"specification": "JDP-26.5MM-Grey"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 26.5,
+	"in_structure": "mywcom_route_junction/50",
+	"installation_date": "2010-01-04",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PVC (Smooth)",
+	"out_structure": "manhole/26",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/397",
+	"specification": "JDP-26.5MM-Grey"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 26.5,
+	"in_structure": "manhole/36",
+	"installation_date": "2002-09-26",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PVC (Smooth)",
+	"out_structure": "mywcom_route_junction/50",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/12",
+	"specification": "JDP-26.5MM-Grey"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 26.5,
+	"in_structure": "manhole/36",
+	"installation_date": "2010-01-04",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PVC (Smooth)",
+	"out_structure": "mywcom_route_junction/50",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/12",
+	"specification": "JDP-26.5MM-Grey"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 110,
+	"in_structure": "manhole/24",
+	"installation_date": "2002-05-03",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PE (Corrugated)",
+	"out_structure": "mywcom_route_junction/49",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/11",
+	"specification": "JDP-110MM-Green"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 110,
+	"in_structure": "manhole/36",
+	"installation_date": "2002-05-03",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PE (Corrugated)",
+	"out_structure": "mywcom_route_junction/50",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/12",
+	"specification": "JDP-110MM-Green"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 110,
+	"in_structure": "mywcom_route_junction/49",
+	"installation_date": "2002-05-03",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PE (Corrugated)",
+	"out_structure": "manhole/26",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/396",
+	"specification": "JDP-110MM-Green"
+}
+displayValues: {
+
+}
+
+type: conduit
+properties: {
+	"comsof_auto": false,
+	"diameter": 110,
+	"in_structure": "mywcom_route_junction/50",
+	"installation_date": "2002-05-03",
+	"labor_costs": null,
+	"length": 62.94,
+	"material": "PE (Corrugated)",
+	"out_structure": "manhole/26",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/397",
+	"specification": "JDP-110MM-Green"
+}
+displayValues: {
+
+}
+
+type: fiber_cable
+properties: {
+	"comsof_auto": false,
+	"diameter": 9.9,
+	"directed": true,
+	"fiber_count": 144,
+	"installation_date": null,
+	"job_id": "20833",
+	"labor_costs": null,
+	"owner": "Acme Co",
+	"specification": "D-144-LA-8W-F12NS",
+	"tick_mark_spacing": null,
+	"type": "External"
+}
+displayValues: {
+	"specification": "D-144-LA-8W-F12NS"
+}
+

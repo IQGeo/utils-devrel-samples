@@ -1,0 +1,21 @@
+.text-edit-overlay {
+    z-index: 500;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    #textEditor {
+        font-family: 'Open Sans', Arial, sans-serif;
+        line-height: 1.25em;
+        overflow: hidden;
+    }
+}
+
+.textbox-container {
+    pointer-events: none !important;
+    .text-container {
+        pointer-events: none;
+        .interactive {
+            pointer-events: auto;
+        }
+    }
+}

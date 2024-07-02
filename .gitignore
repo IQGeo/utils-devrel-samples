@@ -1,0 +1,40 @@
+# Exclude everything except comms modules
+/*
+!comms
+!comms_dev_db
+!.devcontainer
+!.pipeline
+!.cicdvars
+!.vscode
+!.prettierignore
+!.gitmodules
+!.git-blame-ignore-revs
+!.pylintrc
+!pyproject.toml
+!.github
+!.testcontainer
+# Devcontainer exclusions
+.devcontainer/.env
+.testcontainer/.env
+.testcontainer/.env.bat
+
+
+# Standard exclusions
+.svn
+.idea
+*.py[cod]
+__pycache__/
+*.py.bak
+*~
+*esproj*
+.DS_Store
+.#*
+\#*#
+
+ehthumbs.db
+Icon?
+Thumbs.db
+sh.exe.stackdump
+debug.log
+
+node_modules

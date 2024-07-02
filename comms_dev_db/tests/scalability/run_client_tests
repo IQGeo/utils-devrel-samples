@@ -1,0 +1,15 @@
+#!/bin/bash
+# Run client tests against cluster and capture times that each test takes to run.
+#
+# Most tests will be indicate as failed as we are not saving and comparing the same 
+# database. We are only interested in performance metrics against cluster
+# 
+# ENH: Write tests specific to this in such a way that we don't change master or configuration and not
+# include database save/restore and comparisons.
+#
+HERE=$(dirname `which $0`)
+
+# Init environment
+source $HERE/../../../../../../Tools/myw_env
+
+$HERE/../client/comms_client_tests run "*" --delay 2 --metrics_file metrics.csv --base_url https://engineering-1.sandbox.iqgeo.cloud

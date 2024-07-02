@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MadCapSynonyms xml:lang="en-us">
+    <!-- saved from url=(0016)http://localhost -->
+    <Groups>
+        <SynonymGroup>
+            <Word>polygon</Word>
+            <Word>rectangle</Word>
+            <Word>square</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>core</Word>
+            <Word>myworld</Word>
+            <Word>IQGeo Platform</Word>
+            <Word>platform</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>myworld anywhere</Word>
+            <Word>anywhere</Word>
+            <Word>native app</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>drop down</Word>
+            <Word>drop-down</Word>
+            <Word>dropdown</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>checkbox</Word>
+            <Word>check box</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>popup</Word>
+            <Word>pop up</Word>
+            <Word>pop-up</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>text box</Word>
+            <Word>textbox</Word>
+            <Word>text-box</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>plugin</Word>
+            <Word>plug-in</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>login</Word>
+            <Word>log in</Word>
+            <Word>log-in</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>passthrough</Word>
+            <Word>pass through</Word>
+            <Word>pass-through</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>username</Word>
+            <Word>user name</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>postgres</Word>
+            <Word>PostGreSQL</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>pick list</Word>
+            <Word>picklist</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>streetview</Word>
+            <Word>street view</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>phone</Word>
+            <Word>mobile</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>barcode</Word>
+            <Word>bar code</Word>
+            <Word>qr code</Word>
+            <Word>qrcode</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>myw db</Word>
+            <Word>myw_db</Word>
+            <Word>mywdb</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>command-line</Word>
+            <Word>command line</Word>
+            <Word>commandline</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>building</Word>
+            <Word>cabinet</Word>
+            <Word>manhole</Word>
+            <Word>pole</Word>
+            <Word>structure</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>splitter</Word>
+            <Word>splice closure</Word>
+            <Word>multiplexer</Word>
+            <Word>rack</Word>
+            <Word>slot</Word>
+            <Word>equipment</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>conduit</Word>
+            <Word>duct</Word>
+        </SynonymGroup>
+        <SynonymGroup>
+            <Word>housing</Word>
+            <Word>containment</Word>
+        </SynonymGroup>
+    </Groups>
+    <Directional>
+        <DirectionalSynonym From="mod wsgi" To="mod_wsgi" />
+        <DirectionalSynonym From="shape" To="geometri" />
+        <DirectionalSynonym From="writeable" To="writabl" />
+        <DirectionalSynonym From="data source" To="datasourc" />
+        <DirectionalSynonym From="useage" To="usag" />
+        <DirectionalSynonym From="map box" To="mapbox" />
+        <DirectionalSynonym From="geoserver" To="geoserv" />
+        <DirectionalSynonym From="dialogue" To="dialog" />
+        <DirectionalSynonym Stem="true" From="colour" To="color" FromStem="colour" />
+        <DirectionalSynonym Stem="true" From="fibre" To="fiber" FromStem="fibr" />
+        <DirectionalSynonym Stem="true" From="initialise" To="initi" FromStem="initialis" />
+        <DirectionalSynonym Stem="true" From="execute" To="run" FromStem="execut" />
+        <DirectionalSynonym Stem="true" From="config page" To="configuration pag" FromStem="config pag" />
+        <DirectionalSynonym Stem="true" From="directory" To="folder" FromStem="directori" />
+        <DirectionalSynonym Stem="true" From="ini" To="myworldapp.ini" FromStem="ini" />
+        <DirectionalSynonym Stem="true" From="customise" To="custom" FromStem="customis" />
+        <DirectionalSynonym Stem="true" From="synchronise" To="synchron" FromStem="synchronis" />
+        <DirectionalSynonym Stem="true" From="tile store" To="tilestor" FromStem="tile stor" />
+        <DirectionalSynonym Stem="true" From="osm" To="open street map" FromStem="osm" />
+        <DirectionalSynonym Stem="true" From="license" To="licenc" FromStem="licens" />
+        <DirectionalSynonym Stem="true" From="authorise" To="author" FromStem="authoris" />
+        <DirectionalSynonym Stem="true" From="checkbox" To="check box" FromStem="checkbox" />
+        <DirectionalSynonym Stem="true" From="localise" To="local" FromStem="localis" />
+        <DirectionalSynonym Stem="true" From="wild card" To="wildcard" FromStem="wild card" />
+        <DirectionalSynonym Stem="true" From="tableset" To="table set" FromStem="tableset" />
+        <DirectionalSynonym Stem="true" From="organise" To="organ" FromStem="organis" />
+        <DirectionalSynonym Stem="true" From="licence" To="licens" FromStem="licenc" />
+    </Directional>
+</MadCapSynonyms>

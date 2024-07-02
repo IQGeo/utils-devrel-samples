@@ -1,0 +1,39 @@
+.paletteTooltip {
+
+    &-text {
+        animation: appearAfterDelay 2s;
+        font-size: 13px;
+        height: 18px;
+        width: fit-content;
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color: #ffffff;
+        color: black;
+        padding: 4px 10px;
+        direction: rtl;
+        transform: translate(-100%, -100%);
+    }
+
+    &-container {
+        height: 90px;
+        width: 121px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        margin-bottom: -82px;
+    }
+}
+
+@keyframes appearAfterDelay {
+    0% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

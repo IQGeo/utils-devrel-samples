@@ -1,0 +1,61 @@
+Request: POST: /modules/comms/structure/cabinet/1/replace/manhole
+Response: 200 (200 OK)
+{
+   "bbox": [
+      0.1364935934544,
+      52.224057930009,
+      0.1364935934544,
+      52.224057930009
+   ],
+   "geometry": {
+      "coordinates": [
+         0.1364935934544,
+         52.224057930009
+      ],
+      "type": "Point"
+   },
+   "id": 100000,
+   "myw": {
+      "change_type": "insert",
+      "delta": "design/NB046",
+      "feature_type": "manhole",
+      "title": "Manhole: WH-M-100000"
+   },
+   "properties": {
+      "comsof_auto": null,
+      "id": 100000,
+      "installation_date": "2022-09-14",
+      "labor_costs": "hole_dig",
+      "lockable": null,
+      "myw_orientation_location": null,
+      "name": "WH-M-100000",
+      "powered": null,
+      "size_x": 850.0,
+      "size_y": 1300.0,
+      "size_z": 900.0,
+      "specification": "FPM-CCANN-MCX"
+   },
+   "type": "Feature"
+}
+
+
+DATABASE CHANGES: AFTER REPLACING STRUCTURE
+   insert delta.cabinet(design/NB046,1,delete)
+   insert delta.conduit(design/NB046,3,update)
+   insert delta.conduit(design/NB046,10,update)
+   insert delta.conduit(design/NB046,11,update)
+   insert delta.manhole(design/NB046,100000,insert)
+   insert delta.mywcom_copper_segment(design/NB046,2,update)
+   insert delta.mywcom_copper_segment(design/NB046,3,update)
+   insert delta.mywcom_copper_segment(design/NB046,20,update)
+   insert delta.mywcom_fiber_connection(design/NB046,17,update)
+   insert delta.mywcom_fiber_connection(design/NB046,18,update)
+   insert delta.mywcom_fiber_segment(design/NB046,1,update)
+   insert delta.mywcom_fiber_segment(design/NB046,33,update)
+   insert delta.mywcom_fiber_segment(design/NB046,186,update)
+   insert delta.mywcom_fiber_segment(design/NB046,601,update)
+   insert delta.mywcom_fiber_segment(design/NB046,602,update)
+   insert delta.ug_route(design/NB046,266,update)
+   insert delta.ug_route(design/NB046,384,update)
+
+VALIDATION ERRORS: AFTER REPLACING STRUCTURE

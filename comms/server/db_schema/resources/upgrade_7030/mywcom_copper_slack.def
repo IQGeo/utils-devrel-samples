@@ -1,0 +1,70 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_copper_slack",
+    "external_name": "{:mywcom_copper_slack_feature_external_name}",
+    "title": "{display_name}",
+    "short_description": "{:mywcom_copper_slack_feature_short_desc}",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": false,
+        "delete_from_gui": true,
+        "update_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "length",
+            "external_name": "{:mywcom_slack_feature_length_name}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length",
+            "display_format": "1"
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "cable",
+            "external_name": "{:mywcom_slack_feature_cable_name}",
+            "type": "reference",
+            "mandatory": true,
+            "indexed": true
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point"
+        },
+        {
+            "name": "circuits",
+            "external_name": "{:circuits_field_name}",
+            "type": "reference_set"
+        }
+    ],
+    "groups": [],
+    "searches": [],
+    "queries": [
+        {
+            "value": "{:mywcom_copper_slack_feature_query_value_1}",
+            "description": "{:mywcom_copper_slack_feature_query_desc_1}"
+        }
+    ],
+    "filters": []
+}

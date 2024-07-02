@@ -1,0 +1,12 @@
+{
+    "image": "modules/comms/images/features/copper/copper_pair_gain.svg",
+    "housings": ["rack", "copper_shelf", "slot", "manhole", "cabinet", "copper_splice_closure"],
+    "function": "splitter",
+    "palette": true,
+    "tech" : "copper", 
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/copper/copper_pair_gain.svg:12:24"
+    }
+}

@@ -1,0 +1,433 @@
+
+SUB TEST : TRACE OUT OVER MIXED TECH
+    Request: GET: /network/mywcom_coax/trace_out?from=coax_tap%2F13%3Fpins%3Din%3A1&direction=upstream&result_type=tree
+    Response: 200 (200 OK)
+    {
+       "features": [
+          "coax_cable/10: coax_cable(10)    Coaxial Cable: WH-CA-011 (1)",
+          "coax_cable/11: coax_cable(11)    Coaxial Cable: WH-CA-012 (1)",
+          "coax_cable/14: coax_cable(14)    Coaxial Cable: WH-CA-015 (1)",
+          "coax_cable/15: coax_cable(15)    Coaxial Cable: WH-CA-016 (1)",
+          "coax_cable/1: coax_cable(1)    Coaxial Cable: WH-CA-002 (1)",
+          "coax_cable/2: coax_cable(2)    Coaxial Cable: WH-CA-003 (1)",
+          "coax_cable/6: coax_cable(6)    Coaxial Cable: WH-CA-007 (1)",
+          "coax_cable/7: coax_cable(7)    Coaxial Cable: WH-CA-008 (1)",
+          "coax_cable/8: coax_cable(8)    Coaxial Cable: WH-CA-009 (1)",
+          "coax_cable/9: coax_cable(9)    Coaxial Cable: WH-CA-010 (1)",
+          "coax_tap/10: coax_tap(10)    WH-CTAP-010",
+          "coax_tap/11: coax_tap(11)    WH-CTAP-011",
+          "coax_tap/13: coax_tap(13)    WH-CTAP-013",
+          "coax_tap/1: coax_tap(1)    WH-CTAP-001",
+          "coax_tap/4: coax_tap(4)    WH-CTAP-004",
+          "coax_tap/7: coax_tap(7)    WH-CTAP-007",
+          "coax_tap/8: coax_tap(8)    WH-CTAP-008",
+          "coax_tap/9: coax_tap(9)    WH-CTAP-009",
+          "optical_node/1: optical_node(1)    WH-ON-001",
+          "two_way_splitter/1: two_way_splitter(1)    WH-2WSPL-001",
+          "two_way_splitter/2: two_way_splitter(2)    WH-2WSPL-002"
+       ],
+       "metadata": [
+          "ports",
+          "fibers",
+          "from_",
+          "to_",
+          "length",
+          "direction",
+          "individualLoss",
+          "cumulativeLoss",
+          "loc",
+          "dist"
+       ],
+       "metadata_unit_scales": {
+          "cumulativeLoss": {
+             "scale": "fiber_loss",
+             "unit": "dB"
+          },
+          "dist": {
+             "scale": "length",
+             "unit": "m"
+          },
+          "individualLoss": {
+             "scale": "fiber_loss",
+             "unit": "dB"
+          },
+          "length": {
+             "scale": "length",
+             "unit": "m"
+          }
+       },
+       "nodes": {
+          "1": {
+             "cumulativeLoss": 4.83,
+             "direction": "upstream",
+             "dist": 0.0,
+             "feature": "coax_tap/13",
+             "individualLoss": 4.83,
+             "parent": 0,
+             "ports": "in:1"
+          },
+          "10": {
+             "cumulativeLoss": 19.391625,
+             "direction": "upstream",
+             "dist": 143.25,
+             "feature": "coax_tap/8",
+             "individualLoss": 4.83,
+             "parent": 9,
+             "ports": "in:1"
+          },
+          "11": {
+             "cumulativeLoss": 19.418175,
+             "direction": "upstream",
+             "dist": 196.35,
+             "feature": "coax_cable/10",
+             "fibers": "1",
+             "individualLoss": 0.02655,
+             "length": "53.10",
+             "loc": "",
+             "parent": 10,
+             "start_coord": [
+                0.1347195097458519,
+                52.21886960182633
+             ],
+             "stop_coord": [
+                0.1351280359032618,
+                52.219179118671235
+             ]
+          },
+          "12": {
+             "cumulativeLoss": 24.248175000000003,
+             "direction": "upstream",
+             "dist": 196.35,
+             "feature": "coax_tap/9",
+             "individualLoss": 4.83,
+             "parent": 11,
+             "ports": "out:1"
+          },
+          "13": {
+             "cumulativeLoss": 24.248175000000003,
+             "direction": "upstream",
+             "dist": 196.35,
+             "feature": "coax_tap/9",
+             "individualLoss": 4.83,
+             "parent": 12,
+             "ports": "in:1"
+          },
+          "14": {
+             "cumulativeLoss": 24.26659,
+             "direction": "upstream",
+             "dist": 233.18,
+             "feature": "coax_cable/9",
+             "fibers": "1",
+             "individualLoss": 0.018415,
+             "length": "36.83",
+             "loc": "",
+             "parent": 13,
+             "start_coord": [
+                0.1351280359032618,
+                52.219179118671235
+             ],
+             "stop_coord": [
+                0.1347907869093927,
+                52.21941743815967
+             ]
+          },
+          "15": {
+             "cumulativeLoss": 29.09659,
+             "direction": "upstream",
+             "dist": 233.18,
+             "feature": "coax_tap/10",
+             "individualLoss": 4.83,
+             "parent": 14,
+             "ports": "out:1"
+          },
+          "16": {
+             "cumulativeLoss": 29.09659,
+             "direction": "upstream",
+             "dist": 233.18,
+             "feature": "coax_tap/10",
+             "individualLoss": 4.83,
+             "parent": 15,
+             "ports": "in:1"
+          },
+          "17": {
+             "cumulativeLoss": 29.113459999999996,
+             "direction": "upstream",
+             "dist": 266.92,
+             "feature": "coax_cable/8",
+             "fibers": "1",
+             "individualLoss": 0.016870000000000003,
+             "length": "33.74",
+             "loc": "",
+             "parent": 16,
+             "start_coord": [
+                0.1347907869093927,
+                52.21941743815967
+             ],
+             "stop_coord": [
+                0.1345271436433039,
+                52.21964951982781
+             ]
+          },
+          "18": {
+             "cumulativeLoss": 33.94346,
+             "direction": "upstream",
+             "dist": 266.92,
+             "feature": "coax_tap/11",
+             "individualLoss": 4.83,
+             "parent": 17,
+             "ports": "out:1"
+          },
+          "19": {
+             "cumulativeLoss": 33.94346,
+             "direction": "upstream",
+             "dist": 266.92,
+             "feature": "coax_tap/11",
+             "individualLoss": 4.83,
+             "parent": 18,
+             "ports": "in:1"
+          },
+          "2": {
+             "cumulativeLoss": 4.863535,
+             "direction": "upstream",
+             "dist": 67.07,
+             "feature": "coax_cable/15",
+             "fibers": "1",
+             "individualLoss": 0.033534999999999995,
+             "length": "67.07",
+             "loc": "",
+             "parent": 1,
+             "start_coord": [
+                0.1332710915549357,
+                52.219077192726445
+             ],
+             "stop_coord": [
+                0.1339601719663478,
+                52.218948244049216
+             ]
+          },
+          "20": {
+             "cumulativeLoss": 33.964369999999995,
+             "direction": "upstream",
+             "dist": 308.74,
+             "feature": "coax_cable/7",
+             "fibers": "1",
+             "individualLoss": 0.02091,
+             "length": "41.82",
+             "loc": "",
+             "parent": 19,
+             "start_coord": [
+                0.1345271436433039,
+                52.21964951982781
+             ],
+             "stop_coord": [
+                0.1341286736220556,
+                52.21989776520911
+             ]
+          },
+          "21": {
+             "cumulativeLoss": 38.79437,
+             "direction": "upstream",
+             "dist": 308.74,
+             "feature": "coax_tap/4",
+             "individualLoss": 4.83,
+             "parent": 20,
+             "ports": "out:1"
+          },
+          "22": {
+             "cumulativeLoss": 38.79437,
+             "direction": "upstream",
+             "dist": 308.74,
+             "feature": "coax_tap/4",
+             "individualLoss": 4.83,
+             "parent": 21,
+             "ports": "in:1"
+          },
+          "23": {
+             "cumulativeLoss": 38.813514999999995,
+             "direction": "upstream",
+             "dist": 347.03000000000003,
+             "feature": "coax_cable/6",
+             "fibers": "1",
+             "individualLoss": 0.019145,
+             "length": "38.29",
+             "loc": "",
+             "parent": 22,
+             "start_coord": [
+                0.1341286736220556,
+                52.21989776520911
+             ],
+             "stop_coord": [
+                0.1337218767796753,
+                52.2201095145239
+             ]
+          },
+          "24": {
+             "cumulativeLoss": 43.643515,
+             "direction": "upstream",
+             "dist": 347.03000000000003,
+             "feature": "two_way_splitter/1",
+             "individualLoss": 4.83,
+             "parent": 23,
+             "ports": "out:2"
+          },
+          "25": {
+             "cumulativeLoss": 43.643515,
+             "direction": "upstream",
+             "dist": 347.03000000000003,
+             "feature": "two_way_splitter/1",
+             "individualLoss": 4.83,
+             "parent": 24,
+             "ports": "in:1"
+          },
+          "26": {
+             "cumulativeLoss": 43.665335,
+             "direction": "upstream",
+             "dist": 390.67,
+             "feature": "coax_cable/2",
+             "fibers": "1",
+             "individualLoss": 0.02182,
+             "length": "43.64",
+             "loc": "",
+             "parent": 25,
+             "start_coord": [
+                0.1337218767796753,
+                52.2201095145239
+             ],
+             "stop_coord": [
+                0.1340116388557264,
+                52.22043848170071
+             ]
+          },
+          "27": {
+             "cumulativeLoss": 48.495335000000004,
+             "direction": "upstream",
+             "dist": 390.67,
+             "feature": "coax_tap/1",
+             "individualLoss": 4.83,
+             "parent": 26,
+             "ports": "out:1"
+          },
+          "28": {
+             "cumulativeLoss": 48.495335000000004,
+             "direction": "upstream",
+             "dist": 390.67,
+             "feature": "coax_tap/1",
+             "individualLoss": 4.83,
+             "parent": 27,
+             "ports": "in:1"
+          },
+          "29": {
+             "cumulativeLoss": 48.52247500000001,
+             "direction": "upstream",
+             "dist": 444.95000000000005,
+             "feature": "coax_cable/1",
+             "fibers": "1",
+             "individualLoss": 0.02714,
+             "length": "54.28",
+             "loc": "",
+             "parent": 28,
+             "start_coord": [
+                0.1340116388557264,
+                52.22043848170071
+             ],
+             "stop_coord": [
+                0.1343874776141138,
+                52.22084239570779
+             ]
+          },
+          "3": {
+             "cumulativeLoss": 9.693535,
+             "direction": "upstream",
+             "dist": 67.07,
+             "feature": "coax_tap/7",
+             "individualLoss": 4.83,
+             "parent": 2,
+             "ports": "out:1"
+          },
+          "30": {
+             "cumulativeLoss": 48.822475000000004,
+             "direction": "upstream",
+             "dist": 444.95000000000005,
+             "feature": "optical_node/1",
+             "individualLoss": 0.3,
+             "parent": 29,
+             "ports": "out:1"
+          },
+          "4": {
+             "cumulativeLoss": 9.693535,
+             "direction": "upstream",
+             "dist": 67.07,
+             "feature": "coax_tap/7",
+             "individualLoss": 4.83,
+             "parent": 3,
+             "ports": "in:1"
+          },
+          "5": {
+             "cumulativeLoss": 9.713975,
+             "direction": "upstream",
+             "dist": 107.94999999999999,
+             "feature": "coax_cable/14",
+             "fibers": "1",
+             "individualLoss": 0.020440000000000003,
+             "length": "40.88",
+             "loc": "",
+             "parent": 4,
+             "start_coord": [
+                0.1339601719663478,
+                52.218948244049216
+             ],
+             "stop_coord": [
+                0.1343320108810311,
+                52.218682337822685
+             ]
+          },
+          "6": {
+             "cumulativeLoss": 14.543975000000001,
+             "direction": "upstream",
+             "dist": 107.94999999999999,
+             "feature": "two_way_splitter/2",
+             "individualLoss": 4.83,
+             "parent": 5,
+             "ports": "out:2"
+          },
+          "7": {
+             "cumulativeLoss": 14.543975000000001,
+             "direction": "upstream",
+             "dist": 107.94999999999999,
+             "feature": "two_way_splitter/2",
+             "individualLoss": 4.83,
+             "parent": 6,
+             "ports": "in:1"
+          },
+          "8": {
+             "cumulativeLoss": 14.561625000000001,
+             "direction": "upstream",
+             "dist": 143.25,
+             "feature": "coax_cable/11",
+             "fibers": "1",
+             "individualLoss": 0.01765,
+             "length": "35.30",
+             "loc": "",
+             "parent": 7,
+             "start_coord": [
+                0.1343320108810311,
+                52.218682337822685
+             ],
+             "stop_coord": [
+                0.1347195097458519,
+                52.21886960182633
+             ]
+          },
+          "9": {
+             "cumulativeLoss": 19.391625,
+             "direction": "upstream",
+             "dist": 143.25,
+             "feature": "coax_tap/8",
+             "individualLoss": 4.83,
+             "parent": 8,
+             "ports": "out:1"
+          }
+       }
+    }
+    
+    

@@ -1,0 +1,7 @@
+{
+    "image": "modules/comms/images/features/ug_route.svg",
+    "palette": true,
+    "layer":{
+        "line_style": "#783f04:3:dot:none:none"
+    }
+}

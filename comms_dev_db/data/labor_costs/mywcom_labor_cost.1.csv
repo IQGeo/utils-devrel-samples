@@ -1,0 +1,13 @@
+name,description,cost,cost_currency,length_unit,linear
+tree_trim,Trimming trees around hole,100,$,,FALSE
+hole_dig,Dig hole to 2ft,200,$,,FALSE
+fiber_connect,,350,$,,FALSE
+level_ground,,150,$,,FALSE
+survey,,450,$,,FALSE
+cherry_picker,,20,$,ft,TRUE
+trench_dig,,30,$,ft,TRUE
+sidewalk_re-lay,,24,$,ft,TRUE
+site_manager,,54,$,ft,TRUE
+fiber_pull,,12,$,ft,TRUE
+fiber_engineer,,24,$,ft,TRUE
+pavement_re-surface,Cost to re lay paving slabs,36,£,m,TRUE

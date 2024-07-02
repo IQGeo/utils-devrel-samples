@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "NetworkTrace.schema.json",
+    "title": "NetworkTrace",
+    "definitions": {
+        "NetworkTrace": {
+            "$id": "#NetworkTrace",
+            "description": "Results of a network trace. Provides topology of trace as a tree and features the trace passes through.",
+            "type": "object",
+            "properties": {
+                "ends": {
+                    "description": "Index of nodes that form the end of the trace.",
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "nodes": {
+                    "description": "List of nodes in trace. These can form a tree.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "description": "A node in the trace tree. These map to linear features or point features. For example, fiber cables, connections or ports on equipment",
+                        "properties": {
+                            "parent": {
+                                "description": "Parent node of this node. Index into nodes list. 0 indicates root node.",
+                                "type": "integer"
+                            },
+                            "resource": {
+                                "description": "Resource (feature) associated with this node (URN)",
+                                "type": "string"
+                            },
+                            "direction": {
+                                "description": "Direction of trace",
+                                "type": "string",
+                                "enum": ["upstream", "downstream", "both"]
+                            },
+                            "distance": {
+                                "description": "Total distance along the trace at this node (m). For linear features this is the distance before it moves to next node.",
+                                "type": "number"
+                            },
+                            "length": {
+                                "description": "Distance between start and stop coordinates (m)",
+                                "type": "number"
+                            },
+                            "fibers": {
+                                "description": "Fiber strands the trace passes through. Either a single number or a range 'low:high'",
+                                "type": "string"
+                            },
+                            "ports": {
+                                "description": "Ports the trace passes through. Format is: 'side:range' where side is 'in' or 'out' and range is a single number or 'low:high'.",
+                                "type": "string"
+                            },
+                            "startCoordinate": {
+                                "description": "Start coordinate of node",
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            },
+                            "stopCoordinate": {
+                                "description": "Stop coordinate of node (which might be part way along a linear feature).",
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            },
+                            "individualLoss": {
+                                "description": "Individual loss for the port or strand (dB).",
+                                "type": "number"
+                            },
+                            "cumulativeLoss": {
+                                "description": "Cumulative loss for trace up to this node (dB).",
+                                "type": "number"
+                            },
+                            "lineOfCount": {
+                                "description": "Line of count assignment for the port or strand",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "resources": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "Feature.schema.json#/definitions/Feature"
+                        }
+                    }
+                }
+            },
+            "required": ["ends", "nodes", "resources"]
+        }
+    }
+}

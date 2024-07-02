@@ -1,0 +1,91 @@
+version: '3.8'
+
+services:
+    postgis:
+        image: ${POSTGIS_IMAGE:-postgis/postgis:12-3.2-alpine} #using pg10 to match db backups (produced on MW2) - Otherwise can't run pg_dump used in some tests/tools
+        container_name: postgis${CONTAINER_NAME_SUFFIX:--test}
+        restart: 'no'
+        environment:
+            PGDATA: /opt/iqgeo/data/pgdata
+            POSTGRES_PASSWORD: ${DB_USERNAME:-iqgeo}
+            POSTGRES_USER: ${DB_PASSWORD:-iqgeo}
+        ports:
+            - ${POSTGIS_PORT:-5432}:5432
+        volumes:
+            - ./init.sh:/docker-entrypoint-initdb.d/init.sh
+            - pgdata12-dev:/opt/iqgeo/data/pgdata
+
+    comms-test:
+        container_name: comms-test
+        restart: always
+        build:
+            context: ./
+            dockerfile: dockerfile
+        environment:
+            PGHOST: postgis
+            PGPORT: 5432
+            PGUSER: ${DB_USERNAME:-iqgeo}
+            PGPASSWORD: ${DB_PASSWORD:-password}
+            MYW_DB_HOST: postgis
+            MYW_DB_PORT: 5432
+            MYW_DB_NAME: ${DB_NAME:-iqg_comms_dev}
+            MYW_COMMS_DEV_DB: ${DB_NAME:-iqg_comms_dev}
+            MYW_DB_USERNAME: ${DB_USERNAME:-iqgeo}
+            MYW_DB_PASSWORD: ${DB_PASSWORD:-password}
+            APP_PORT: ${APP_PORT:-85}
+            DB_PORT: ${DB_PORT:-5435}
+            MYW_COMMS_REMOTE_URL: http://selenium-chrome:4444
+            MYW_COMMS_BASE_URL: http://comms-test
+            APACHE_ERROR_LOG: /var/log/apache2/error.log
+            MYW_COMMS_BUILD: ${MYW_COMMS_BUILD:-/opt/iqgeo/build}
+            MYW_BUILD_TEMP_DIR: /tmp
+            MYW_COMMS_SLACK_TOKEN: ${MYW_COMMS_SLACK_TOKEN:-}
+            MYW_COMMS_SLACK_CHANNEL: ${MYW_COMMS_SLACK_CHANNEL:-slack_api_dev}
+            RESTORE_DB: ${RESTORE_DB:-false}
+            TEST_RUN_STEPS: ${TEST_RUN_STEPS:-}
+            KEEP_RUNNING: ${KEEP_RUNNING:-}
+            PUSH_TEST_CHANGES: ${PUSH_TEST_CHANGES:-false} # creates new branch with failed test results if == true
+            PUBLISH_AND_SLACK: ${PUBLISH_AND_SLACK:-false} # publishes changes to MW2 and notifies slack if == true
+            MYW_BUILD_ID: ${MYW_BUILD_ID:-}
+            BASE_BRANCH_NAME: ${BASE_BRANCH_NAME:-missing_branch_name}
+            HOST: ${HOST:-missing_hostname}
+            MYW_COMMS_ARCHIVE_DIR: ${MYW_COMMS_ARCHIVE_DIR-none}
+            MYW_COMMS_BUILD_INI_FILE: ${MYW_COMMS_BUILD_INI_FILE:-}
+        ports:
+            - ${APP_PORT:-82}:80
+            # Locust
+            - 8090:8089
+        volumes:
+            - js_bundles:/opt/iqgeo/platform/WebApps/myworldapp/core/public/bundles # to keep builds when container is recreated
+            # Load dirs needed for comms enterpirse development
+            - ../.testcontainer:/opt/iqgeo/platform/WebApps/myworldapp/modules/.testcontainer:delegated
+            - ../.pipeline:/opt/iqgeo/platform/WebApps/myworldapp/modules/.pipeline:delegated
+            - ../comms:/opt/iqgeo/platform/WebApps/myworldapp/modules/comms:delegated
+            - ../comms_dev_db:/opt/iqgeo/platform/WebApps/myworldapp/modules/comms_dev_db:delegated
+            # Load comsof module from it's repo
+            - ../../product-nmt-comsof-integration/comsof:/opt/iqgeo/platform/WebApps/myworldapp/modules/comsof:delegated
+        depends_on:
+            - postgis
+    selenium-chrome:
+        image: ${SELENIUM_IMAGE:-selenium/standalone-chrome:latest}
+        container_name: selenium-chrome${CONTAINER_NAME_SUFFIX:--test}
+        shm_size: 2g
+        environment:
+            LANG_WHICH: en
+            LANG_WHERE: GB
+            LANGUAGE: en_GB.UTF-8
+            LANG: en_GB.UTF-8
+            VNC_NO_PASSWORD: 1
+            VNC_VIEW_ONLY: 1
+            SCREEN_WIDTH: 1600
+            SCREEN_HEIGHT: 950
+        ports:
+            - ${SELENIUM_PORT:-4444}:4444
+
+volumes:
+    pgdata:
+        name: ${VOLUME_NAME_PREFIX:-comms-test}_pgdata
+    js_bundles:
+        name: ${VOLUME_NAME_PREFIX:-comms-test}_js_bundles
+    pgdata12-dev:
+

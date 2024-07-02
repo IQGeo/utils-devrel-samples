@@ -1,0 +1,6 @@
+retired,manufacturer,name,model,type,value,max_ac_current_bypass,output_port_type,ports
+false,Unknown,1-unset,Two Way,passive,99.000,15000.000,2 Port,3
+false,Unknown,10-unset,Max Twelve Way,passive,99.000,15000.000,12 Port,3
+false,Unknown,12-unset,Twelve Way,passive,99.000,15000.000,12 Port,3
+false,Unknown,2-10,Two Way,passive,10.000,15000.000,2 Port,3
+false,Unknown,2-11,Two Way,passive,11.000,15000.000,2 Port,3

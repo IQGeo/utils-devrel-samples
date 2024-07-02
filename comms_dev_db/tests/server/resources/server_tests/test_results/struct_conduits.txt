@@ -1,0 +1,48 @@
+
+SUB TEST : STRUCTURE CONDUITS WITHOUT PROPOSED OBJECTS
+    Request: GET: /modules/comms/conduit/mywcom_route_junction/58/struct_conduits?delta=design/NB355&include_proposed=False
+    Response: 200 (200 OK)
+    {
+       "conduits": [],
+       "features": [
+          "mywcom_route_junction/58: mywcom_route_junction(58)    Route Junction: 58"
+       ]
+    }
+    
+    
+
+SUB TEST : STRUCTURE CONDUITS WITH PROPOSED OBJECTS
+    Request: GET: /modules/comms/conduit/mywcom_route_junction/58/struct_conduits?delta=design/NB355&include_proposed=True
+    Response: 200 (200 OK)
+    {
+       "conduits": [
+          {
+             "conduit": "blown_fiber_tube/1102",
+             "conduit_run": "mywcom_conduit_run/1100",
+             "pass_through_conduit": "blown_fiber_tube/1107",
+             "structure_housing": "mywcom_route_junction/58"
+          },
+          {
+             "conduit": "blown_fiber_tube/1103",
+             "conduit_run": "mywcom_conduit_run/1103",
+             "pass_through_conduit": null,
+             "structure_housing": "mywcom_route_junction/58"
+          },
+          {
+             "conduit": "blown_fiber_tube/1107",
+             "conduit_run": "mywcom_conduit_run/1100",
+             "pass_through_conduit": "blown_fiber_tube/1102",
+             "structure_housing": "mywcom_route_junction/58"
+          }
+       ],
+       "features": [
+          "blown_fiber_tube/1102: blown_fiber_tube(1102)    BF Tube: WH-BF-1102",
+          "blown_fiber_tube/1103: blown_fiber_tube(1103)    BF Tube: WH-BF-1103",
+          "blown_fiber_tube/1107: blown_fiber_tube(1107)    BF Tube: WH-BF-1107",
+          "mywcom_conduit_run/1100: mywcom_conduit_run(1100)    Conduit Run: 1100",
+          "mywcom_conduit_run/1103: mywcom_conduit_run(1103)    Conduit Run: 1103",
+          "mywcom_route_junction/58: mywcom_route_junction(58)    Route Junction: 58"
+       ]
+    }
+    
+    

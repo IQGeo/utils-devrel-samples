@@ -1,0 +1,23 @@
+{
+    "image": "modules/comms/images/features/coax_power_block.svg",
+    "housings": [
+        "rack",
+        "slot",
+        "manhole",
+        "cabinet",
+        "splice_closure"
+    ],
+    "function": "connector",
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/coax_power_block.svg:75:150:24"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/coax_power_block.svg:75:75:1.5m",
+        "geometry": "offset_geom"
+    },
+    "offset": true
+}

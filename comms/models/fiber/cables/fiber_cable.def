@@ -1,0 +1,101 @@
+{
+    "datasource": "myworld",
+    "name": "fiber_cable",
+    "external_name": "{:fiber_cable_feature_external_name}",
+    "title": "{display_name}: [name] ([fiber_count])",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)",
+            "mandatory": true
+        },
+        {
+            "name": "specification",
+            "external_name": "{:fiber_cable_feature_specification_name}",
+            "type": "foreign_key(fiber_cable_spec)"
+        },
+        {
+            "name": "type",
+            "external_name": "{:fiber_cable_feature_type_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "fiber_count",
+            "external_name": "{:fiber_cable_feature_fiber_count_name}",
+            "type": "integer"
+        },
+        {
+            "name": "directed",
+            "external_name": "{:fiber_cable_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": true
+        },
+        {
+            "name": "cable_segments",
+            "external_name": "{:fiber_cable_feature_cable_segments_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_fiber_segment.cable)",
+            "read_only": true
+        },
+        {
+            "name": "splices",
+            "external_name": "{:fiber_cable_feature_splices_name}",
+            "type": "reference_set",
+            "value": "method(splices)",
+            "read_only": true
+        },
+        {
+            "name": "connections",
+            "external_name": "{:fiber_cable_feature_connections_name}",
+            "type": "reference_set",
+            "value": "method(connections)",
+            "read_only": true
+        },
+        {
+            "name": "cable_slacks",
+            "external_name": "{:fiber_cable_feature_cable_slacks_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_fiber_slack.cable)",
+            "read_only": true
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring"
+        },
+        {
+            "name": "placement_path",
+            "external_name": "{:placement_path_field_name}",
+            "type": "linestring"
+        },
+        {
+            "name": "tick_mark_spacing",
+            "external_name": "{:fiber_cable_feature_cable_tick_mark_spacing}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        }
+    ]
+}

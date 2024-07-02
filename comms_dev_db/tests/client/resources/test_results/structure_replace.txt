@@ -1,0 +1,95 @@
+TEST: AFTER REPLACING MANHOLE WITH POLE
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Pole: WH-P-100000
+    label: Name
+    label: WH-P-100000
+    label: Routes
+    label: Items
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Items
+    label: Served Customers
+    label: Items
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-100000 Splice Closure: WH-SC-020 Splice Tray: Tray-1 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-2 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-3 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-4 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-5 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-6 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-7 Splice: WH-FCB-022 -> WH-FCB-007 (1) Splice Tray: Tray-8 Splice: WH-FCB-022 -> WH-FCB-007 (1) Splice Closure: WH-SC-021 Splice Closure: WH-SC-022
+    label: Splice Closure: WH-SC-020 Splice Tray: Tray-1 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-2 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-3 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-4 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-5 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-6 Splice: WH-FCB-022 -> WH-FCB-007 (12) Splice Tray: Tray-7 Splice: WH-FCB-022 -> WH-FCB-007 (1) Splice Tray: Tray-8 Splice: WH-FCB-022 -> WH-FCB-007 (1)
+    label: Splice Tray: Tray-1 Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice Tray: Tray-2 Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice Tray: Tray-3 Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice Tray: Tray-4 Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice Tray: Tray-5 Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice Tray: Tray-6 Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice: WH-FCB-022 -> WH-FCB-007 (12)
+    label: Splice Tray: Tray-7 Splice: WH-FCB-022 -> WH-FCB-007 (1)
+    label: Splice: WH-FCB-022 -> WH-FCB-007 (1)
+    label: Splice Tray: Tray-8 Splice: WH-FCB-022 -> WH-FCB-007 (1)
+    label: Splice: WH-FCB-022 -> WH-FCB-007 (1)
+    label: Splice Closure: WH-SC-021
+    label: Splice Closure: WH-SC-022
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Copper Cable: WH-CC-006 (100)
+    label: Fiber Cable: BB-FCB-017 (72) 16.4 ft
+    label: Fiber Cable: WH-FCB-007 (288)
+    label: Fiber Cable: WH-FCB-022 (288)
+
+
+DATABASE CHANGES: AFTER REPLACING MANHOLE WITH POLE
+   insert data.mywcom_change_detail(5)
+   insert data.mywcom_change_detail(6)
+   insert delta.conduit(design/NB120,146,update)
+   insert delta.conduit(design/NB120,147,update)
+   insert delta.conduit(design/NB120,148,update)
+   insert delta.conduit(design/NB120,75,update)
+   insert delta.fiber_splice_tray(design/NB120,25,update)
+   insert delta.fiber_splice_tray(design/NB120,26,update)
+   insert delta.fiber_splice_tray(design/NB120,27,update)
+   insert delta.fiber_splice_tray(design/NB120,28,update)
+   insert delta.fiber_splice_tray(design/NB120,29,update)
+   insert delta.fiber_splice_tray(design/NB120,30,update)
+   insert delta.fiber_splice_tray(design/NB120,31,update)
+   insert delta.fiber_splice_tray(design/NB120,32,update)
+   insert delta.manhole(design/NB120,32,delete)
+   insert delta.mywcom_copper_segment(design/NB120,18,update)
+   insert delta.mywcom_fiber_connection(design/NB120,1,update)
+   insert delta.mywcom_fiber_connection(design/NB120,2,update)
+   insert delta.mywcom_fiber_connection(design/NB120,3,update)
+   insert delta.mywcom_fiber_connection(design/NB120,4,update)
+   insert delta.mywcom_fiber_connection(design/NB120,5,update)
+   insert delta.mywcom_fiber_connection(design/NB120,6,update)
+   insert delta.mywcom_fiber_connection(design/NB120,7,update)
+   insert delta.mywcom_fiber_connection(design/NB120,8,update)
+   insert delta.mywcom_fiber_segment(design/NB120,184,update)
+   insert delta.mywcom_fiber_segment(design/NB120,381,update)
+   insert delta.mywcom_fiber_segment(design/NB120,597,update)
+   insert delta.mywcom_fiber_slack(design/NB120,17,update)
+   insert delta.pole(design/NB120,100000,insert)
+   insert delta.splice_closure(design/NB120,20,update)
+   insert delta.splice_closure(design/NB120,21,update)
+   insert delta.splice_closure(design/NB120,22,update)
+   insert delta.ug_route(design/NB120,6,update)
+   update delta.conduit(design/NB120,149,update) fields=(in_structure)
+   update delta.conduit(design/NB120,150,update) fields=(in_structure)
+   update delta.conduit(design/NB120,151,update) fields=(in_structure)
+   update delta.conduit(design/NB120,76,update) fields=(in_structure)
+   update delta.fiber_cable(design/NB120,167,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB120,380,update) fields=(out_structure)
+   update delta.mywcom_fiber_segment(design/NB120,73,update) fields=(in_structure)
+   update delta.ug_route(design/NB120,7,update) fields=(in_structure)
+

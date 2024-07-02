@@ -1,0 +1,7 @@
+DATABASE CHANGES: AFTER COPY EQUIPMENT BETWEEN STRUCTURES
+   insert data.mywcom_change_detail(5)
+   insert delta.fiber_splitter(design/NB046,100000,insert)
+   insert delta.fiber_splitter(design/NB046,100001,insert)
+   insert delta.fiber_splitter(design/NB046,100002,insert)
+   insert delta.splice_closure(design/NB046,100000,insert)
+

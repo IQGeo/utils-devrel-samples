@@ -1,0 +1,91 @@
+
+SUB TEST : Spec Chooser All
+    TEST: Spec Chooser Render: All
+        button: Show/hide columns
+        input: 
+        label: Name Model Type Description Manufacturer Fiber Count Item Length Item Length Unit Item Cost Currency Labor Costs Tick Mark Spacing Cable Structure Retired
+        label: D-072-LA-8W-F12NS D-072-LA-8W-F12NS Internal TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 72 1100 ft 2500 $ fiber_pull 1.0 ft [{"bundleType": "tube", "bundleSize": 6, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: D-096-LA-8W-F12NS D-096-LA-8W-F12NS Internal TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 96 500 ft 2300 $ fiber_engineer 1.0 ft [{"bundleType": "tube", "bundleSize": 8, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: D-144-LA-5K-F12NS D-144-LA-5K-F12NS Internal LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 550 ft 2255 $ site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 12, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: D-144-LA-5L-F12NS D-144-LA-5L-F12NS External LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 600 ft 1535 $ site_manager,fiber_pull 1.0 ft false
+        label: D-144-LA-8W-F12NS D-144-LA-8W-F12NS External TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 825 ft 1470 $ fiber_engineer,site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 12, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: D-288-LA-8W-F12NS D-288-LA-8W-F12NS External TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 288 840 ft 2235 $ fiber_pull 1.0 ft [{"bundleType": "tube", "bundleSize": 24, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 12 Count OM4 NETCONNECT 12 Count OM4 Internal Outside Plant Fiber Optic Cable, HDPE, 12-fiber, MM, OM4, loose tube, gel-filled, 1000 m CommScope 12 1250 ft 2775 $ fiber_engineer 1.0 ft [{"bundleType": "tube", "bundleSize": 1, "colorScheme": "FIN2012"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "FIN2012"}] false
+        label: NETCONNECT 12 Count OS2 NETCONNECT 12 Count OS2 Internal Outside Plant Fiber Optic Cable, 12-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 12 1450 ft 3281 $ site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 1, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 24 Count OM4 NETCONNECT 24 Count OM4 External Outside Plant Fiber Optic Cable, HDPE, 24-fiber, MM, OM4, loose tube, gel-filled, 1000 m CommScope 24 1500 ft 1595 $ site_manager,fiber_pull 1.0 ft [{"bundleType": null, "bundleSize": 24, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 24 Count OS2 NETCONNECT 24 Count OS2 External Outside Plant Fiber Optic Cable, 24-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 24 2000 ft 3281 $ fiber_engineer 1.0 ft [{"bundleType": null, "bundleSize": 24, "colorScheme": "DIN VDE 0888"}] false
+        label: NETCONNECT 6 Count OM4 NETCONNECT 6 Count OM4 Riser Outside Plant Fiber Optic Cable, 6-fiber, OM4, HDPE, loose tube, gel-filled, 1000 m, black CommScope 6 75 ft 3281 $ site_manager 1.0 ft [{"bundleType": null, "bundleSize": 6, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 6 Count OS2 NETCONNECT 6 Count OS2 Riser Outside Plant Fiber Optic Cable, 6-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 6 425 ft 3281 $ site_manager,fiber_pull 1.0 ft [{"bundleType": null, "bundleSize": 6, "colorScheme": "TIA-598-C"}] false
+        label: O-002-CA-8W-F04NS O-002-CA-8W-F04NS Drop TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable CommScope 2 550 ft 175 $ fiber_engineer,site_manager 1.0 ft [{"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: O-004-CA-8W-F04NS O-004-CA-8W-F04NS Drop TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable CommScope 4 1000 ft 195 $ fiber_pull 1.0 ft [{"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: O-008-CA-8W-F04NS O-008-CA-8W-F04NS Drop TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable CommScope 8 650 ft 225 $ 1.0 ft [{"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: O-048-CN-5L-F12NS O-048-CN-5L-F12NS External LazrSPEEDÂ® Single Jacket All-Dielectric, Gel-Filled, Outdoor Central Tube Cable CommScope 48 900 ft 200 £ 16.4 ft [{"bundleType": "tube", "bundleSize": 4, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+    
+    
+
+SUB TEST : Spec Chooser Filtered
+    TEST: Spec Chooser Render: Filtered
+        button: Show/hide columns
+        input: 
+        label: Type: External
+        label: Fiber Count: 144
+        label: Diameter: 0.39 in
+        label: Name Model Type Description Manufacturer Fiber Count Item Length Item Length Unit Item Cost Currency Labor Costs Tick Mark Spacing Cable Structure Retired
+        label: D-144-LA-8W-F12NS D-144-LA-8W-F12NS External TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 825 ft 1470 $ fiber_engineer,site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 12, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+    
+    
+    TEST: Spec Chooser Render: type filter removed
+        button: Show/hide columns
+        input: 
+        label: Fiber Count: 144
+        label: Diameter: 0.39 in
+        label: Name Model Type Description Manufacturer Fiber Count Item Length Item Length Unit Item Cost Currency Labor Costs Tick Mark Spacing Cable Structure Retired
+        label: D-144-LA-8W-F12NS D-144-LA-8W-F12NS External TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 825 ft 1470 $ fiber_engineer,site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 12, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+    
+    
+    TEST: Spec Chooser Render: fiber count filter removed
+        button: Show/hide columns
+        input: 
+        label: Diameter: 0.39 in
+        label: Name Model Type Description Manufacturer Fiber Count Item Length Item Length Unit Item Cost Currency Labor Costs Tick Mark Spacing Cable Structure Retired
+        label: D-144-LA-8W-F12NS D-144-LA-8W-F12NS External TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 825 ft 1470 $ fiber_engineer,site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 12, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 12 Count OM4 NETCONNECT 12 Count OM4 Internal Outside Plant Fiber Optic Cable, HDPE, 12-fiber, MM, OM4, loose tube, gel-filled, 1000 m CommScope 12 1250 ft 2775 $ fiber_engineer 1.0 ft [{"bundleType": "tube", "bundleSize": 1, "colorScheme": "FIN2012"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "FIN2012"}] false
+        label: NETCONNECT 12 Count OS2 NETCONNECT 12 Count OS2 Internal Outside Plant Fiber Optic Cable, 12-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 12 1450 ft 3281 $ site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 1, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 6 Count OM4 NETCONNECT 6 Count OM4 Riser Outside Plant Fiber Optic Cable, 6-fiber, OM4, HDPE, loose tube, gel-filled, 1000 m, black CommScope 6 75 ft 3281 $ site_manager 1.0 ft [{"bundleType": null, "bundleSize": 6, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 6 Count OS2 NETCONNECT 6 Count OS2 Riser Outside Plant Fiber Optic Cable, 6-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 6 425 ft 3281 $ site_manager,fiber_pull 1.0 ft [{"bundleType": null, "bundleSize": 6, "colorScheme": "TIA-598-C"}] false
+    
+    
+    TEST: Spec Chooser Render: Diameter filter removed
+        button: Show/hide columns
+        input: 
+        label: Name Model Type Description Manufacturer Fiber Count Item Length Item Length Unit Item Cost Currency Labor Costs Tick Mark Spacing Cable Structure Retired
+        label: D-072-LA-8W-F12NS D-072-LA-8W-F12NS Internal TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 72 1100 ft 2500 $ fiber_pull 1.0 ft [{"bundleType": "tube", "bundleSize": 6, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: D-096-LA-8W-F12NS D-096-LA-8W-F12NS Internal TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 96 500 ft 2300 $ fiber_engineer 1.0 ft [{"bundleType": "tube", "bundleSize": 8, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: D-144-LA-5K-F12NS D-144-LA-5K-F12NS Internal LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 550 ft 2255 $ site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 12, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: D-144-LA-5L-F12NS D-144-LA-5L-F12NS External LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 600 ft 1535 $ site_manager,fiber_pull 1.0 ft false
+        label: D-144-LA-8W-F12NS D-144-LA-8W-F12NS External TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 825 ft 1470 $ fiber_engineer,site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 12, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: D-288-LA-8W-F12NS D-288-LA-8W-F12NS External TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 288 840 ft 2235 $ fiber_pull 1.0 ft [{"bundleType": "tube", "bundleSize": 24, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 12 Count OM4 NETCONNECT 12 Count OM4 Internal Outside Plant Fiber Optic Cable, HDPE, 12-fiber, MM, OM4, loose tube, gel-filled, 1000 m CommScope 12 1250 ft 2775 $ fiber_engineer 1.0 ft [{"bundleType": "tube", "bundleSize": 1, "colorScheme": "FIN2012"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "FIN2012"}] false
+        label: NETCONNECT 12 Count OS2 NETCONNECT 12 Count OS2 Internal Outside Plant Fiber Optic Cable, 12-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 12 1450 ft 3281 $ site_manager 1.0 ft [{"bundleType": "tube", "bundleSize": 1, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 24 Count OM4 NETCONNECT 24 Count OM4 External Outside Plant Fiber Optic Cable, HDPE, 24-fiber, MM, OM4, loose tube, gel-filled, 1000 m CommScope 24 1500 ft 1595 $ site_manager,fiber_pull 1.0 ft [{"bundleType": null, "bundleSize": 24, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 24 Count OS2 NETCONNECT 24 Count OS2 External Outside Plant Fiber Optic Cable, 24-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 24 2000 ft 3281 $ fiber_engineer 1.0 ft [{"bundleType": null, "bundleSize": 24, "colorScheme": "DIN VDE 0888"}] false
+        label: NETCONNECT 6 Count OM4 NETCONNECT 6 Count OM4 Riser Outside Plant Fiber Optic Cable, 6-fiber, OM4, HDPE, loose tube, gel-filled, 1000 m, black CommScope 6 75 ft 3281 $ site_manager 1.0 ft [{"bundleType": null, "bundleSize": 6, "colorScheme": "TIA-598-C"}] false
+        label: NETCONNECT 6 Count OS2 NETCONNECT 6 Count OS2 Riser Outside Plant Fiber Optic Cable, 6-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 6 425 ft 3281 $ site_manager,fiber_pull 1.0 ft [{"bundleType": null, "bundleSize": 6, "colorScheme": "TIA-598-C"}] false
+        label: O-002-CA-8W-F04NS O-002-CA-8W-F04NS Drop TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable CommScope 2 550 ft 175 $ fiber_engineer,site_manager 1.0 ft [{"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: O-004-CA-8W-F04NS O-004-CA-8W-F04NS Drop TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable CommScope 4 1000 ft 195 $ fiber_pull 1.0 ft [{"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: O-008-CA-8W-F04NS O-008-CA-8W-F04NS Drop TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable CommScope 8 650 ft 225 $ 1.0 ft [{"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+        label: O-048-CN-5L-F12NS O-048-CN-5L-F12NS External LazrSPEEDÂ® Single Jacket All-Dielectric, Gel-Filled, Outdoor Central Tube Cable CommScope 48 900 ft 200 £ 16.4 ft [{"bundleType": "tube", "bundleSize": 4, "colorScheme": "TIA-598-C"}, {"bundleType": null, "bundleSize": 12, "colorScheme": "TIA-598-C"}] false
+    
+    
+
+SUB TEST : Spec Chooser: From Palette
+    TEST: Spec Grid Render: From Palette
+        button: Show/hide columns
+        input: 
+        label: Type: External
+        label: Fiber Count: 144
+        label: Diameter: 0.67 in
+        label: Name Model Type Description Manufacturer Fiber Count Item Length Item Length Unit Item Cost Currency Labor Costs Tick Mark Spacing Cable Structure Retired
+        label: D-144-LA-5L-F12NS D-144-LA-5L-F12NS External LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 600 ft 1535 $ site_manager,fiber_pull 1.0 ft false
+    
+    

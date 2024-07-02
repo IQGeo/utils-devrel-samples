@@ -1,0 +1,20 @@
+{
+    "image": "modules/comms/images/features/fiber_cable.svg",
+    "housings": [
+        "ug_route",
+        "oh_route",
+        "conduit",
+        "building",
+        "mdu"
+    ],
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "line_style": "#878600:2:solid:none:none"
+    },
+    "secondary_layer": {
+        "line_style": "#878600:2:shortdash:none:none",
+        "text_style": "name:#878600:12:bottom:centre:::17:",
+        "geometry": "offset_geom"
+    }
+}

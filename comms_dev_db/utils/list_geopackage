@@ -1,0 +1,3 @@
+#!/bin/bash
+
+myw_db $COMSOF_DEV_DB run $0.py $@

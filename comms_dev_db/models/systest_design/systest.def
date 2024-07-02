@@ -1,0 +1,46 @@
+{
+   "datasource": "myworld", 
+   "name": "systest", 
+   "title": "{display_name}: [name]", 
+   "track_changes": true, 
+   "editable": {
+      "insert_from_gui": false, 
+      "delete_from_gui": true, 
+      "update_from_gui": true
+   }, 
+   "fields": [
+      {
+         "name": "name", 
+         "type": "string(32)",
+         "key": true
+      }, 
+      {
+         "name": "purpose", 
+         "type": "string(200)"
+      }, 
+      {
+         "name": "user_group", 
+         "external_name": "Group", 
+         "type": "string(200)"
+      },
+      {
+         "name": "boundary", 
+         "external_name": "Boundary", 
+         "type": "polygon"
+      }
+   ], 
+   "groups": [], 
+   "searches": [
+      {
+         "value": "[name]", 
+         "description": "{title}"
+      }
+   ], 
+   "queries": [
+      {
+         "value": "systest", 
+         "description": "Systest"
+      }
+   ], 
+   "filters": []
+}

@@ -1,0 +1,69 @@
+
+*** DISCONNECT SPLITTER FROM OUT CABLE
+Set delta to: design/NB217
+{
+
+}
+DATABASE CHANGES: DISCONNECT SPLITTER FROM OUT CABLE
+
+VALIDATION ERRORS: DISCONNECT SPLITTER FROM OUT CABLE
+
+
+*** DISCONNECT SPLITTER FROM IN CABLE
+Set delta to: design/NB217
+{
+
+}
+DATABASE CHANGES: DISCONNECT SPLITTER FROM IN CABLE
+    insert delta.mywcom_fiber_connection(design/NB217,39,delete)
+
+VALIDATION ERRORS: DISCONNECT SPLITTER FROM IN CABLE
+
+
+*** DISCONNECT PORT -> CABLE (PARTIAL RANGE)
+Set delta to: design/NB217
+{
+
+}
+DATABASE CHANGES: DISCONNECT PORT -> CABLE (PARTIAL RANGE)
+    insert delta.mywcom_fiber_connection(design/NB217,100000,insert)
+    insert delta.mywcom_fiber_connection(design/NB217,100001,insert)
+    insert delta.mywcom_fiber_connection(design/NB217,249,delete)
+
+VALIDATION ERRORS: DISCONNECT PORT -> CABLE (PARTIAL RANGE)
+
+
+*** DISCONNECT CABLE -> CABLE (PARTIAL RANGE)
+Set delta to: design/NB217
+{
+
+}
+DATABASE CHANGES: DISCONNECT CABLE -> CABLE (PARTIAL RANGE)
+    insert delta.mywcom_fiber_connection(design/NB217,100002,insert)
+    insert delta.mywcom_fiber_connection(design/NB217,100003,insert)
+    insert delta.mywcom_fiber_connection(design/NB217,18,delete)
+
+VALIDATION ERRORS: DISCONNECT CABLE -> CABLE (PARTIAL RANGE)
+
+
+*** DISCONNECT CABLE -> CABLE (FULL RANGE)
+Set delta to: design/NB217
+{
+
+}
+DATABASE CHANGES: DISCONNECT CABLE -> CABLE (FULL RANGE)
+    insert delta.mywcom_fiber_connection(design/NB217,22,delete)
+
+VALIDATION ERRORS: DISCONNECT CABLE -> CABLE (FULL RANGE)
+
+
+*** DISCONNECT SINGLE CABLE
+Set delta to: design/NB217
+disconnecting mywcom_fiber_segment/186
+
+DATABASE CHANGES: DISCONNECT SINGLE CABLE
+    delete delta.mywcom_fiber_connection(design/NB217,100003,insert)
+    insert delta.mywcom_fiber_connection(design/NB217,100004,insert)
+
+VALIDATION ERRORS: DISCONNECT SINGLE CABLE
+

@@ -1,0 +1,66 @@
+COMMAND: comsof_ws <database> 2 initialise --overwrite
+Opening database <conn_spec> ...
+Initialising: /opt/iqgeo/data/workspaces/2/workspace
+  Template: <templates_dir>/23.2.1.60
+  Rules: <templates_dir>/rules/hybrid.rules
+  Copying <templates_dir>/rules/hybrid.rules /opt/iqgeo/data/workspaces/2/workspace/input/CalculationInput/Rules.rules
+  Setting coordinate system to: epsg:32631
+  Clearing data
+
+COMMAND: comsof_ws <database> 2 populate
+Opening database <conn_spec> ...
+Clearing data
+  Clearing /opt/iqgeo/data/workspaces/2/workspace/input/input.gpkg
+  Clearing /opt/iqgeo/data/workspaces/2/workspace/input/CalculationInput/CalculationInput.gpkg
+  Clearing /opt/iqgeo/data/workspaces/2/workspace/input/ProcessedArea/ProcessedArea.gpkg
+  Clearing /opt/iqgeo/data/workspaces/2/workspace/output/output.gpkg
+Adding data to input.gpkg
+  IN_Buildings : Wrote 68 records
+  IN_StreetCenterLines : Wrote 22 records
+  IN_CentralOffice : Wrote 1 records
+Adding data to CalculationInput.gpkg
+
+COMMAND: comsof_ws <database> 2 run /streetDoubler /createBuildingTrenches /createTransitions /processInput --verbosity=1
+Opening database <conn_spec> ...
+Initialising connection
+Building zip: /opt/iqgeo/data/workspaces/2/workspace.zip
+Uploading /opt/iqgeo/data/workspaces/2/workspace.zip
+Running calculation on workspace <id> : /streetDoubler /createBuildingTrenches /createTransitions /processInput
+Waiting for calculation <id> to complete
+Downloading result of calculation <id> as /opt/iqgeo/data/workspaces/2/workspace.download.zip
+Replacing /opt/iqgeo/data/workspaces/2/workspace
+
+COMMAND: comsof_ws <database> 2 acquire_licence
+Opening database <conn_spec> ...
+Sending POST request https://license.comsof.com/login
+Sending GET request https://license.comsof.com/companies
+Company: 471 IQGeo Integration
+Project: 973 DESIGN Mode
+Requesting licence for workspace /opt/iqgeo/data/workspaces/2/workspace/input/ProcessedArea/licenseRequest.req2
+Sending MPF POST request https://license.comsof.com/projects/973/licenses/create
+Queued licence request <id>
+Waiting for licence request <id> to complete
+  Licence request <id> : Ready
+Licence cost: 0 homes
+Sending POST request https://license.comsof.com/licenses/confirm
+Sending GET request https://license.comsof.com/licenses/get
+Creating /opt/iqgeo/data/workspaces/2/workspace/area licenses/<id>.lic
+
+COMMAND: comsof_ws <database> 2 run /calculate --verbosity=1
+Opening database <conn_spec> ...
+Initialising connection
+Building zip: /opt/iqgeo/data/workspaces/2/workspace.zip
+Uploading /opt/iqgeo/data/workspaces/2/workspace.zip
+Running calculation on workspace <id> : /calculate
+Waiting for calculation <id> to complete
+Downloading result of calculation <id> as /opt/iqgeo/data/workspaces/2/workspace.download.zip
+Replacing /opt/iqgeo/data/workspaces/2/workspace
+
+COMMAND: comsof_ws <database> 2 import --verbosity=1
+Opening database <conn_spec> ...
+Opening /opt/iqgeo/data/workspaces/2/workspace/output/OUT_FullDesign.cdif.zip
+Loading data
+Mapping references
+Setting derived properties
+Snapping geometries
+

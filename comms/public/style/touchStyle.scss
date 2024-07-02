@@ -1,0 +1,51 @@
+/*
+ * Over-riding default jsTree styles
+ */
+.jstree-default {
+    .jstree-anchor,
+    .jstree-wholerow {
+        height: 36px;
+        line-height: 36px;
+    }
+    .jstree-icon,
+    .jstree-icon:empty {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .jstree-root-node > a > i.jstree-icon {
+        //Since root node has no image
+        width: 0;
+    }
+    .jstree-leaf-node > i.jstree-icon {
+        //So leaf nodes are not unnecessarily indented
+        width: 0;
+    }
+    & > .jstree-no-dots .jstree-open > .jstree-ocl {
+        background-position: -30px 1px;
+    }
+    & > .jstree-no-dots .jstree-closed > .jstree-ocl {
+        background-position: 3px 1px;
+    }
+}
+
+.vakata-context li > a {
+    line-height: 2.2em;
+}
+
+//Spec field editor
+.spec-edit-btn,
+.spec-clear-btn,
+.labor-costs-edit-btn,
+.labor-costs-clear-btn {
+    height: 36px;
+}
+
+//Connect port dialog
+.connect-port-container {
+    //Move js-tree down to allow space for larger buttons
+    .js-tree {
+        margin: 30px 0 6px 0;
+    }
+}

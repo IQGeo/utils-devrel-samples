@@ -1,0 +1,49 @@
+
+*** all labor costs
+
+LABOR COSTS REPORT: csv
+LaborCostsReport.type
+Labor Cost
+LaborCostsReport.date: 6/10/2020
+
+LaborCostsReport.linear_false (x5)
+
+LaborCostsReport.feature,Description,Cost,Currency,Linear
+fiber_connect,,350,$,BooleanFieldViewer.false
+hole_dig,Dig hole to 2ft,200,$,BooleanFieldViewer.false
+level_ground,,150,$,BooleanFieldViewer.false
+survey,,450,$,BooleanFieldViewer.false
+tree_trim,Trimming trees around hole,100,$,BooleanFieldViewer.false
+
+LaborCostsReport.linear_true (x7)
+
+LaborCostsReport.feature,Description,Cost,Currency,Length Unit,Linear
+cherry_picker,,20,$,ft,BooleanFieldViewer.true
+fiber_engineer,,24,$,ft,BooleanFieldViewer.true
+fiber_pull,,12,$,ft,BooleanFieldViewer.true
+pavement_re-surface,Cost to re lay paving slabs,36,£,m,BooleanFieldViewer.true
+sidewalk_re-lay,,24,$,ft,BooleanFieldViewer.true
+site_manager,,54,$,ft,BooleanFieldViewer.true
+trench_dig,,30,$,ft,BooleanFieldViewer.true
+
+
+
+*** linear labor costs
+
+LABOR COSTS REPORT: csv
+LaborCostsReport.type
+Labor Cost
+LaborCostsReport.date: 6/10/2020
+
+LaborCostsReport.linear_true (x7)
+
+LaborCostsReport.feature,Description,Cost,Currency,Length Unit,Linear
+cherry_picker,,20,$,ft,BooleanFieldViewer.true
+fiber_engineer,,24,$,ft,BooleanFieldViewer.true
+fiber_pull,,12,$,ft,BooleanFieldViewer.true
+pavement_re-surface,Cost to re lay paving slabs,36,£,m,BooleanFieldViewer.true
+sidewalk_re-lay,,24,$,ft,BooleanFieldViewer.true
+site_manager,,54,$,ft,BooleanFieldViewer.true
+trench_dig,,30,$,ft,BooleanFieldViewer.true
+
+

@@ -1,0 +1,51 @@
+TEST REPORT: 
+<image>
+Heading Level 1 
+Some text
+
+Heading Level 2
+A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. A long line of text that is likely to cause a line wrap. 
+
+Heading Green Level 3 
+Some text in multiple items
+Some bold", "underlined and green text
+Some text with grey background
+
+Heading with Punctuation:<>?:@{}!$%^&*()+'.;[]`£€¬"""
+Text with punctuation: <>?:@{}!$%^&*()+'.;[]`£€¬"""
+Text with green punctuation: <>?:@{}!$%^&*()+'.;[]`£€¬"""
+Text with a PNG icon <image> and a SVG icon<image>
+This is the csv report
+
+Table 1: Defaults
+
+,,,,,,,
+0,Cell text 0,0,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+1,Cell text 1,0.333,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+2,Cell text 4,0.666,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+3,Cell text 9,0.9990000000000001,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+4,Cell text 16,1.332,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+
+Table 2: Modern
+
+int,text,dist,empty,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,empty
+0,Cell text 0,0,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+1,Cell text 1,0.333,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+2,Cell text 4,0.666,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+3,Cell text 9,0.9990000000000001,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+4,Cell text 16,1.332,,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv,
+
+Table 3: Clasic + No Empty Columns
+
+int,text,dist,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv
+0,Cell text 0,0,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv
+1,Cell text 1,0.333,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv
+2,Cell text 4,0.666,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv
+3,Cell text 9,0.9990000000000001,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv
+4,Cell text 16,1.332,<image>,<>?:@{}!$%^&*()+'.;[]`£€¬""",csv
+"Table 4: Style None, no headings"
+
+,
+<img>,<img>
+
+

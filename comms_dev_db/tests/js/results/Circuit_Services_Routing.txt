@@ -1,0 +1,461 @@
+
+*** ROUTE CIRCUIT
+Set delta to: design/NB217
+id: 100000
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.13660490513,
+			52.2240164429
+		],
+		[
+			0.13665318489,
+			52.224050947
+		],
+		[
+			0.13663443856,
+			52.2240861255
+		],
+		[
+			0.13668403029,
+			52.2241248844
+		],
+		[
+			0.13673231006,
+			52.2241388504
+		],
+		[
+			0.13690665364,
+			52.2240566977
+		],
+		[
+			0.13697639108,
+			52.2240361595
+		],
+		[
+			0.13704746962,
+			52.2240361595
+		],
+		[
+			0.13712525368,
+			52.2239991908
+		],
+		[
+			0.13733714819,
+			52.2238570661
+		],
+		[
+			0.13761475682,
+			52.2236475752
+		],
+		[
+			0.13780251145,
+			52.2234964125
+		],
+		[
+			0.13789102435,
+			52.2234265817
+		],
+		[
+			0.13795003295,
+			52.2233756463
+		],
+		[
+			0.13796532337,
+			52.2233384716
+		],
+		[
+			0.13811243866,
+			52.2234101509
+		],
+		[
+			0.13854011893,
+			52.2236286799
+		],
+		[
+			0.13904269785,
+			52.2238950619
+		],
+		[
+			0.13905659258,
+			52.2239026109
+		],
+		[
+			0.13936288655,
+			52.2240690206
+		],
+		[
+			0.13951711357,
+			52.2241474764
+		],
+		[
+			0.13998281211,
+			52.2243978357
+		],
+		[
+			0.14000460505,
+			52.224394755
+		],
+		[
+			0.13947755098,
+			52.2243031553
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"address": "2618",
+	"customer": "Abdy,OJ",
+	"date": null,
+	"id": 100000,
+	"in_feature": "fiber_olt/10",
+	"in_pins": "out:3",
+	"name": "WH-FTTH-016",
+	"out_feature": "fiber_ont/16",
+	"out_pins": "in:1",
+	"service_type": "Direct",
+	"status": "New"
+}
+
+DATABASE CHANGES: ROUTE CIRCUIT
+    insert delta.fiber_olt(design/NB217,10,update)
+    insert delta.fiber_ont(design/NB217,16,update)
+    insert delta.fiber_patch_panel(design/NB217,1,update)
+    insert delta.fiber_patch_panel(design/NB217,4,update)
+    insert delta.fiber_splitter(design/NB217,2,update)
+    insert delta.ftth_circuit(design/NB217,100000,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,153,update)
+    insert delta.mywcom_fiber_segment(design/NB217,154,update)
+    insert delta.mywcom_fiber_segment(design/NB217,155,update)
+    insert delta.mywcom_fiber_segment(design/NB217,156,update)
+    insert delta.mywcom_fiber_segment(design/NB217,184,update)
+    insert delta.mywcom_fiber_segment(design/NB217,193,update)
+    insert delta.mywcom_fiber_segment(design/NB217,218,update)
+    insert delta.mywcom_fiber_segment(design/NB217,557,update)
+    insert delta.mywcom_fiber_segment(design/NB217,73,update)
+
+VALIDATION ERRORS: ROUTE CIRCUIT
+
+
+*** RE-ROUTE CIRCUIT
+Set delta to: design/NB217
+id: 44
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.13660490513,
+			52.2240164429
+		],
+		[
+			0.13665318489,
+			52.224050947
+		],
+		[
+			0.13663443856,
+			52.2240861255
+		],
+		[
+			0.13668403029,
+			52.2241248844
+		],
+		[
+			0.13673231006,
+			52.2241388504
+		],
+		[
+			0.13690665364,
+			52.2240566977
+		],
+		[
+			0.13697639108,
+			52.2240361595
+		],
+		[
+			0.13704746962,
+			52.2240361595
+		],
+		[
+			0.13712525368,
+			52.2239991908
+		],
+		[
+			0.13733714819,
+			52.2238570661
+		],
+		[
+			0.13761475682,
+			52.2236475752
+		],
+		[
+			0.13780251145,
+			52.2234964125
+		],
+		[
+			0.13789102435,
+			52.2234265817
+		],
+		[
+			0.13795003295,
+			52.2233756463
+		],
+		[
+			0.13796532337,
+			52.2233384716
+		],
+		[
+			0.13811243866,
+			52.2234101509
+		],
+		[
+			0.13854011893,
+			52.2236286799
+		],
+		[
+			0.13904269785,
+			52.2238950619
+		],
+		[
+			0.13905659258,
+			52.2239026109
+		],
+		[
+			0.13936288655,
+			52.2240690206
+		],
+		[
+			0.13951711357,
+			52.2241474764
+		],
+		[
+			0.13998281211,
+			52.2243978357
+		],
+		[
+			0.14013536274,
+			52.2244896405
+		],
+		[
+			0.14016151428,
+			52.2245245551
+		],
+		[
+			0.14036118428,
+			52.2246284771
+		],
+		[
+			0.14100540429,
+			52.2249597525
+		],
+		[
+			0.14102253954,
+			52.224970207
+		],
+		[
+			0.14103859663,
+			52.2249611902
+		],
+		[
+			0.14087364078,
+			52.2250918102
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"address": "3741",
+	"customer": "Bertram,J",
+	"date": null,
+	"id": 44,
+	"in_feature": "fiber_olt/10",
+	"in_pins": "out:5",
+	"name": "WH-FTTH-044",
+	"out_feature": "fiber_ont/37",
+	"out_pins": "in:1",
+	"service_type": "PON1",
+	"status": "In Service"
+}
+
+DATABASE CHANGES: RE-ROUTE CIRCUIT
+    insert delta.fiber_ont(design/NB217,20,update)
+    insert delta.fiber_ont(design/NB217,37,update)
+    insert delta.fiber_splitter(design/NB217,11,update)
+    insert delta.ftth_circuit(design/NB217,44,update)
+    insert delta.mywcom_fiber_segment(design/NB217,157,update)
+    insert delta.mywcom_fiber_segment(design/NB217,158,update)
+    insert delta.mywcom_fiber_segment(design/NB217,194,update)
+    insert delta.mywcom_fiber_segment(design/NB217,195,update)
+    insert delta.mywcom_fiber_segment(design/NB217,222,update)
+    insert delta.mywcom_fiber_segment(design/NB217,240,update)
+    insert delta.mywcom_fiber_segment(design/NB217,589,update)
+    update delta.fiber_olt(design/NB217,10,update) fields=(circuits)
+    update delta.fiber_patch_panel(design/NB217,1,update) fields=(circuits)
+    update delta.fiber_patch_panel(design/NB217,4,update) fields=(circuits)
+    update delta.fiber_splitter(design/NB217,2,update) fields=(circuits)
+    update delta.mywcom_fiber_segment(design/NB217,153,update) fields=(circuits)
+    update delta.mywcom_fiber_segment(design/NB217,154,update) fields=(circuits)
+    update delta.mywcom_fiber_segment(design/NB217,155,update) fields=(circuits)
+    update delta.mywcom_fiber_segment(design/NB217,156,update) fields=(circuits)
+    update delta.mywcom_fiber_segment(design/NB217,184,update) fields=(circuits)
+    update delta.mywcom_fiber_segment(design/NB217,193,update) fields=(circuits)
+    update delta.mywcom_fiber_segment(design/NB217,557,update) fields=(circuits)
+    update delta.mywcom_fiber_segment(design/NB217,73,update) fields=(circuits)
+
+VALIDATION ERRORS: RE-ROUTE CIRCUIT
+
+
+*** NULL RE-ROUTE CIRCUIT
+Set delta to: design/NB217
+id: 3
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.13660490513,
+			52.2240164429
+		],
+		[
+			0.13655796647,
+			52.2240476609
+		],
+		[
+			0.13659216464,
+			52.2240661453
+		],
+		[
+			0.1365589723,
+			52.2240903803
+		],
+		[
+			0.13654257892,
+			52.2240996191
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13645570725,
+			52.2241862935
+		],
+		[
+			0.13649962842,
+			52.2242111446
+		],
+		[
+			0.13657070696,
+			52.2242456486
+		],
+		[
+			0.13667866588,
+			52.2242953508
+		],
+		[
+			0.13675242662,
+			52.2243429991
+		],
+		[
+			0.13681545854,
+			52.2243738062
+		],
+		[
+			0.13696700335,
+			52.2244641735
+		],
+		[
+			0.13702031225,
+			52.2244953912
+		],
+		[
+			0.13706356287,
+			52.2245040171
+		],
+		[
+			0.13720706105,
+			52.2245771323
+		],
+		[
+			0.13734394482,
+			52.2246495666
+		],
+		[
+			0.13734988868,
+			52.2246527119
+		],
+		[
+			0.13740182841,
+			52.2246804879
+		],
+		[
+			0.13742364943,
+			52.2246921446
+		],
+		[
+			0.13745684177,
+			52.2247063158
+		],
+		[
+			0.13742364943,
+			52.2246921446
+		],
+		[
+			0.13740182841,
+			52.2246804879
+		],
+		[
+			0.13734988868,
+			52.2246527119
+		],
+		[
+			0.13734394482,
+			52.2246495666
+		],
+		[
+			0.13729289174,
+			52.2246826972
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"address": "2600",
+	"customer": "Darcy,M",
+	"date": null,
+	"id": 3,
+	"in_feature": "fiber_olt/25",
+	"in_pins": "out:3",
+	"name": "WH-FTTH-003",
+	"out_feature": "fiber_ont/150",
+	"out_pins": "in:1",
+	"service_type": "Direct",
+	"status": "In Service"
+}
+
+DATABASE CHANGES: NULL RE-ROUTE CIRCUIT
+    insert delta.fiber_olt(design/NB217,25,update)
+    insert delta.fiber_ont(design/NB217,150,update)
+    insert delta.fiber_patch_panel(design/NB217,2,update)
+    insert delta.fiber_patch_panel(design/NB217,5,update)
+    insert delta.ftth_circuit(design/NB217,3,update)
+    insert delta.mywcom_fiber_segment(design/NB217,189,update)
+    insert delta.mywcom_fiber_segment(design/NB217,190,update)
+    insert delta.mywcom_fiber_segment(design/NB217,394,update)
+    insert delta.mywcom_fiber_segment(design/NB217,395,update)
+    insert delta.mywcom_fiber_segment(design/NB217,396,update)
+    insert delta.mywcom_fiber_segment(design/NB217,560,update)
+    insert delta.mywcom_fiber_segment(design/NB217,57,update)
+    insert delta.mywcom_fiber_segment(design/NB217,58,update)
+    insert delta.mywcom_fiber_segment(design/NB217,59,update)
+    insert delta.mywcom_fiber_segment(design/NB217,60,update)
+    insert delta.mywcom_fiber_segment(design/NB217,61,update)
+    insert delta.mywcom_fiber_segment(design/NB217,62,update)
+    insert delta.mywcom_fiber_segment(design/NB217,63,update)
+
+VALIDATION ERRORS: NULL RE-ROUTE CIRCUIT
+
+
+*** TRY INVALID PATH
+Set delta to: design/NB217
+Error: bad_circuit_path
+

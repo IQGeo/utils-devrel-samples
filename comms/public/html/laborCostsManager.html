@@ -1,0 +1,45 @@
+<script type="text/template" id="labor-costs-manager-dialog-template">
+    <div>
+      <%=menu%>
+      <div class="labor-costs-container">
+        <div class='labor-costs-type-title bold-font'></div>
+        <ul class="button-container results-grid-actions hidden">
+          <li class='labor-costs-report' title='{:labor_costs_report}' style="background-image: url(&quot;modules/comms/images/actions/reports.svg&quot;);">
+            <div id="labor-costs-report-menu-container">
+              <ul id="labor-costs-report-menu">
+                <li id="all-labor-costs-report-item">
+                  <div>{:all_labor_costs_report}</div>
+                </li>
+                <li id="labor-costs-report-item">
+                  <div>{:labor_costs_report}</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class='labor-costs-add' title='{:add}' style="background-image: url(&quot;modules/comms/images/actions/add-layers.svg&quot;);"></li>
+          <li class="labor-costs-import" title="{:import}" style="background-image: url(&quot;modules/comms/images/actions/import.svg&quot;);"></li>
+          <li class="labor-costs-export" title="{:export_to_csv}" style="background-image: url(&quot;modules/comms/images/actions/export.svg&quot;);"></li>
+        </ul>
+        <div id='labor-costs-manager-grid'></div>
+      </div>
+    </div>
+</script>
+
+<script type="text/template" id="labor-costs-import-dialog-template">
+    <div>
+        <div class="file-select-container">
+          <div id="csv_upload_dialog_file" ondragover="return false" class="file_drop_zone">
+
+            <input type="file" name="file" id="csv_upload_dialog_file_input" class="hidden">
+            <label class='file_input' for="csv_upload_dialog_file_input"><div style='padding:30px'>{:select_or_drop}</div></label>
+          </div>
+          <div class="message-container"></div>
+        </div>
+        <div class="bold-font">{:summary}</div>
+        <div class="import-summary">
+            <div>{:file}<span class='file-name'></span></div>
+            <div>{:new_labor_cost_items}<span class='num-new-labor-costs'></span></div>
+            <div>{:updated_labor_cost_items}<span class='num-updated-labor-costs'></span></div>
+        </div>
+    </div>
+</script>

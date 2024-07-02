@@ -1,0 +1,15 @@
+Request: GET: /modules/comsof/workspace/1/file?filename=input/input.gpkg
+Response: 200 (200 OK)
+size=978944
+
+
+Request: GET: /modules/comsof/workspace/1/file?filename=no_file.dat
+Response: 502 (502 Bad Gateway)
+b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "file_not_found", "params": {"file": "no_file.dat"}}/n/n'
+
+
+Request: GET: /modules/comsof/workspace/1/file?filename=../../../../../../secret.dat
+Response: 502 (502 Bad Gateway)
+b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "File not accessible: /secret.dat", "params": {}}/n/n'
+
+

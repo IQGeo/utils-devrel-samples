@@ -1,0 +1,36 @@
+Opening database <database> ...
+right                        config  description
+---------------------------  ------  ---------------------------------------------
+accessApplication             False  Access the application
+addPrivateLayers              False  Add private layers
+bulkEditFeatures              False  Bulk-edit features
+comsof.openWorkspace          False  Comsof: Open workspace
+comsof.viewRules              False  Comsof: View rules
+createSharedBookmark          False  Create shared bookmarks
+editFeatures                  False  Edit features
+editGroups                    False  Edit user groups
+manageApplications             True  Manage applications
+manageDatasources              True  Manage datasources
+manageFeatureConfig            True  Manage feature configuration
+manageFeatures                 True  Manage features
+manageLayers                   True  Manage layers
+manageNetworks                 True  Manage networks
+manageNotifications            True  Manage notifications
+managePickLists                True  Manage pick lists
+manageReplicas                 True  Manage replicas
+manageRoles                    True  Manage roles
+manageSettings                 True  Manage settings
+manageUpload                   True  Manage upload
+manageUsage                    True  Manage usage
+manageUsers                    True  Manage users
+modifyLayerList               False  Modify layer list
+mywcom.bulkMoveFeatures       False  Comms: Bulk-move features
+mywcom.checkMaster            False  Comms: Run data validation
+mywcom.editMaster             False  Comms: Edit master
+mywcom.manageLaborCosts       False  Comms: Manage Labor Costs
+mywcom.manageSpecifications   False  Comms: Manage specifications
+mywcom.publishDesign          False  Comms: Publish Designs
+mywcom.viewAllDeltas          False  Comms: View All Designs
+persistState                  False  Save current state to database
+saveDefaultState              False  Save states for all users (default and named)
+

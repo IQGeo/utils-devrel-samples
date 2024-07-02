@@ -1,0 +1,175 @@
+TEST: Pathfinder
+    button: ant-modal-close
+    button: ant-btn css-dev-only-do-not-override-yp8pcc ant-btn-text
+    input: 
+    button: Set
+    input: 
+    button: Set
+    button: include-and-avoid__button hover-cursor
+    button: include-and-avoid__button hover-cursor
+    label: Shortest distance
+    input: on
+    label: Least new connections
+    input: on
+    label: Least amount of existing connections
+    input: on
+    input: 
+    input: 
+    label: ft
+    input: true
+    button (disabled): Generate
+    button (disabled): Cancel
+    select (disabled): 
+    button (disabled): Create
+
+
+TEST: After circuit insert
+    input: SP-C-46
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Circuit: test
+    label: Direct ()
+    label: Name
+    label: test
+    label: Served From
+    label: Shelf: SP-S-018
+    label: Shelf: SP-S-018
+    label: Serving Port
+    label: out:1
+    label: Terminates At
+    label: Shelf: SP-S-019
+    label: Shelf: SP-S-019
+    label: Termination Port
+    label: in:1
+    label: Spec manager
+    label: Labor costs manager
+    label: Data Validation
+    label: User Groups
+    label: Layout Strand
+    label: Path Finder
+    label: Connect Customer
+    label: Virtual Walkout
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    label: [Comms] admin
+    label: Built by
+    button: ant-modal-close
+    button: ant-btn css-dev-only-do-not-override-yp8pcc ant-btn-text
+    input: Shelf: SP-S-018 out:1
+    button: Set
+    input: Cabinet: SP-C-46
+    button: Set
+    button: include-and-avoid__button hover-cursor
+    button: include-and-avoid__button hover-cursor
+    label: Shortest distance
+    input: on
+    label: Least new connections
+    input: on
+    label: Least amount of existing connections
+    input: on
+    input: 
+    input: 
+    label: ft
+    input: true
+    button: Generate
+    button (disabled): Cancel
+    label: Path 1InfoDistance: 2321.36 ftExisting connections: 2New connections: 3Loss: 0.65ResultsShelf: SP-S-018Fiber Cable: BB-FCB-024 (24)* Manhole: SP-M-184Fiber Cable: BB-FCB-025 (24)* Manhole: SP-M-174Fiber Cable: BB-FCB-026 (24)* Manhole: SP-M-159Fiber Cable: BB-FCB-027 (24)Shelf: SP-S-019
+    label: Path 1
+    label: InfoDistance: 2321.36 ftExisting connections: 2New connections: 3Loss: 0.65
+    label: Distance: 2321.36 ftExisting connections: 2New connections: 3Loss: 0.65
+    label: ResultsShelf: SP-S-018Fiber Cable: BB-FCB-024 (24)* Manhole: SP-M-184Fiber Cable: BB-FCB-025 (24)* Manhole: SP-M-174Fiber Cable: BB-FCB-026 (24)* Manhole: SP-M-159Fiber Cable: BB-FCB-027 (24)Shelf: SP-S-019
+    label: Shelf: SP-S-018
+    input: false
+    label: Fiber Cable: BB-FCB-024 (24)
+    input: false
+    label: * Manhole: SP-M-184
+    input: false
+    label: Fiber Cable: BB-FCB-025 (24)
+    input: false
+    label: * Manhole: SP-M-174
+    input: false
+    label: Fiber Cable: BB-FCB-026 (24)
+    input: false
+    label: * Manhole: SP-M-159
+    input: false
+    label: Fiber Cable: BB-FCB-027 (24)
+    input: false
+    label: Shelf: SP-S-019
+    input: false
+    label: Path 2InfoDistance: 4435.66 ftExisting connections: 2New connections: 2Loss: 0.88ResultsShelf: SP-S-018Fiber Cable: BB-FCB-024 (24)* Manhole: SP-M-184Fiber Cable: BB-FCB-028 (24)* Manhole: SP-M-159Fiber Cable: BB-FCB-027 (24)Shelf: SP-S-019
+    label: Path 2
+    label: InfoDistance: 4435.66 ftExisting connections: 2New connections: 2Loss: 0.88
+    label: Distance: 4435.66 ftExisting connections: 2New connections: 2Loss: 0.88
+    label: ResultsShelf: SP-S-018Fiber Cable: BB-FCB-024 (24)* Manhole: SP-M-184Fiber Cable: BB-FCB-028 (24)* Manhole: SP-M-159Fiber Cable: BB-FCB-027 (24)Shelf: SP-S-019
+    label: Shelf: SP-S-018
+    input: false
+    label: Fiber Cable: BB-FCB-024 (24)
+    input: false
+    label: * Manhole: SP-M-184
+    input: false
+    label: Fiber Cable: BB-FCB-028 (24)
+    input: false
+    label: * Manhole: SP-M-159
+    input: false
+    label: Fiber Cable: BB-FCB-027 (24)
+    input: false
+    label: Shelf: SP-S-019
+    input: false
+    select: ftth_circuit
+    button: Create
+
+
+DATABASE CHANGES: AFTER CIRCUIT INSERT
+   insert data.ftth_circuit(6000)
+   insert data.iqgapp_task_queue(1)
+   insert data.mywcom_fiber_connection(6000)
+   insert data.mywcom_fiber_connection(6001)
+   insert data.mywcom_fiber_connection(6002)
+   insert data.splice_closure(6000)
+   insert data.splice_closure(6001)
+   insert data.splice_closure(6002)
+   update data.mywcom_fiber_segment(499) fields=(circuits)
+   update data.mywcom_fiber_segment(500) fields=(circuits)
+   update data.mywcom_fiber_segment(501) fields=(circuits)
+   update data.mywcom_fiber_segment(502) fields=(circuits)
+   update data.mywcom_fiber_segment(503) fields=(circuits)
+   update data.mywcom_fiber_segment(504) fields=(circuits)
+   update data.mywcom_fiber_segment(505) fields=(circuits)
+   update data.mywcom_fiber_segment(506) fields=(circuits)
+   update data.mywcom_fiber_segment(507) fields=(circuits)
+   update data.mywcom_fiber_segment(508) fields=(circuits)
+   update data.mywcom_fiber_segment(509) fields=(circuits)
+   update data.mywcom_fiber_segment(510) fields=(circuits)
+   update data.mywcom_fiber_segment(511) fields=(circuits)
+   update data.mywcom_fiber_segment(512) fields=(circuits)
+   update data.mywcom_fiber_segment(513) fields=(circuits)
+   update data.mywcom_fiber_segment(514) fields=(circuits)
+   update data.mywcom_fiber_segment(515) fields=(circuits)
+   update data.mywcom_fiber_segment(516) fields=(circuits)
+   update data.shelf(18) fields=(circuits)
+   update data.shelf(19) fields=(circuits)
+

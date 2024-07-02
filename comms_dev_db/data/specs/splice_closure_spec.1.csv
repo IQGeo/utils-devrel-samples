@@ -1,0 +1,5 @@
+name,model,description,manufacturer,cost,cost_currency,retired
+CS-FOSC-400B4-S24-4-NNN,FOSC-400B4-S24-4-NNN,"FOSC™400 B4 Fiber Optic Splice Closure, Heat Shrink Cable sealing, four pre-installed 24-splice trays",CommScope,22,$,FALSE
+CS-FOSC400-A4-16-1-BNV,FOSC400-A4-16-1-BNV,"FOSC™400 A4 Fiber Optic Splice Closure, Heat Shrink Cable sealing, one pre-installed 16-splice tray, cable blocking, with test valve",CommScope,35,$,FALSE
+CS- FOSC-100-DM-144,FOSC-100-DM-144,"FOSC™100 DM Fiber Optic Splice Closure, Five round ports, Heat Shrink Cable sealing, two pre-installed 72-splice tray and with test valve",CommScope,55,$,FALSE
+CS-FOSC450-D6-6-36-1-N0V,FOSC450-D6-6-36-1-N0V,"FOSC™450 D6 Fiber Optic Splice Closure, Gel Cable sealing, one pre-installed 36-splice tray, 6 cable attach., valve",CommScope,62,$,FALSE

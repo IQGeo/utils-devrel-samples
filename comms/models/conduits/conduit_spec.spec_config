@@ -1,0 +1,5 @@
+{
+    "layer": "mywcom_conduits",
+    "ref_feature": "conduit",
+    "field_name": "specification"
+}

@@ -1,0 +1,24 @@
+{
+    "mywcom.equipmentReport": {
+        "featureFields": [
+            "specification",
+            "installation_date"
+        ]
+    },
+    "mywcom.fiberReport": {
+        "cableFields": [
+            "specification",
+            "installation_date"
+        ],
+        "circuitFields": [
+            "service_type"
+        ]
+    },
+    "mywcom.circuitReport": {
+        "circuitFields": [
+            "service_type",
+            "status",
+            "customer"
+        ]
+    }
+}

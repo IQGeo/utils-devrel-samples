@@ -1,0 +1,107 @@
+TEST: CUSTOMER CONNECTION TOOL
+    input: WH-P-009
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Fiber Splitter: WH-SPL-008 (8 way)
+    label: Name
+    label: WH-SPL-008
+    label: Spec
+    label: CS-EF3421-000
+    label: CS-EF3421-000
+    label: Out Ports
+    label: 8
+    label: Device ID
+    label: E258-2808-4ED8-097140
+    label: Installed
+    label: 15/05/2014
+    label: Job ID
+    label: 24548
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-009 Splice Closure: WH-SC-017 Fiber Splitter: WH-SPL-007 (8 way) Fiber Splitter: WH-SPL-008 (8 way)
+    label: Splice Closure: WH-SC-017 Fiber Splitter: WH-SPL-007 (8 way) Fiber Splitter: WH-SPL-008 (8 way)
+    label: Fiber Splitter: WH-SPL-007 (8 way)
+    label: Fiber Splitter: WH-SPL-008 (8 way)
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: DROP-048 (4)
+    label: Fiber Cable: DROP-049 (4)
+    label: Fiber Cable: DROP-050 (4)
+    label: Fiber Cable: DROP-051 (4)
+    label: Fiber Cable: DROP-052 (4)
+    label: Fiber Cable: DROP-053 (4)
+    label: Fiber Cable: DROP-054 (4)
+    label: Fiber Cable: DROP-055 (4)
+    label: Fiber Cable: DROP-056 (4)
+    label: Fiber Cable: DROP-6000 (4)
+    label: Fiber Cable: RISER-005 (4)
+    label: User Groups
+    label: Layout Strand
+    label: Path Finder
+    label: Connect Customer
+    label: Virtual Walkout
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+    label: Connect Customer
+    button: Close
+    label: Pole:
+    input (disabled): Pole: WH-P-009
+    label: Customer:
+    input (disabled): 
+    label: Wall Box Name:
+    input: WH-6001
+    label: Drop Cable Name:
+    input: DROP-6001
+    label: Feeder Fiber
+    input: 1
+    button (disabled): Create
+    button: Close
+
+
+DATABASE CHANGES: AFTER CONNECT CUSTOMER
+   insert data.mywcom_change_detail(5)
+   insert data.mywcom_change_detail(6)
+   insert delta.fiber_cable(design/NB046,100000,insert)
+   insert delta.fiber_ont(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100001,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100000,insert)
+   insert delta.oh_route(design/NB046,100000,insert)
+   insert delta.wall_box(design/NB046,100000,insert)
+

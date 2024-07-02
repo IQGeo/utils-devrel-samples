@@ -1,0 +1,10 @@
+{
+   "userGroup":"user_group",
+   "layer": {
+         "layer": "designs",
+         "field_name": "boundary", 
+         "line_style": "#351c75:2:solid", 
+         "fill_style": "#351c75:34", 
+         "text_style": "name:#351c75:4m:middle:centre:"
+    }
+}

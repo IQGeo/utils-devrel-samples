@@ -1,0 +1,51 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_labor_cost",
+    "external_name": "{:mywcom_labor_cost_feature_external_name}",
+    "title": "[name]",
+    "track_changes": true,
+    "versioned": false,
+    "editable": {
+        "insert_from_gui": false,
+        "delete_from_gui": false,
+        "update_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "name",
+            "external_name": "{:labor_cost_name_field_name}",
+            "type": "string(64)",
+            "key": true
+        },
+        {
+            "name": "description",
+            "external_name": "{:labor_cost_description_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "cost",
+            "external_name": "{:labor_cost_cost_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "cost_currency",
+            "external_name": "{:labor_cost_currency_field_name}",
+            "type": "string(3)"
+        },
+        {
+            "name": "length_unit",
+            "external_name": "{:labor_cost_length_unit_name}",
+            "type": "string(3)"
+        },
+        {
+            "name": "linear",
+            "external_name": "{:labor_cost_linear_field_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": false
+        }
+    ],
+    "searches": [],
+    "queries": [],
+    "filters": []
+}

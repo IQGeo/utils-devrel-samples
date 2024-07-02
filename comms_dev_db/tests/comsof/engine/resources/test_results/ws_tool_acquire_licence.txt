@@ -1,0 +1,10 @@
+COMMAND: comsof_ws <database> <temp_dir>/test_ws_tool_acquire_licence acquire_licence --company=IQGeo Integration --project=DESIGN Mode --verbosity=1
+Opening database <conn_spec> ...
+Company: 471 IQGeo Integration
+Project: 973 DESIGN Mode
+Requesting licence for test_ws_tool_acquire_licence <temp_dir>/test_ws_tool_acquire_licence/input/ProcessedArea/licenseRequest.req2
+Queued licence request <id>
+Waiting for licence request <id> to complete
+Licence cost: 0 homes
+Creating <temp_dir>/test_ws_tool_acquire_licence/area licenses/<id>.lic
+

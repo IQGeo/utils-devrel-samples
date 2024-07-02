@@ -1,0 +1,4 @@
+name,description,manufacturer,model,cost,cost_currency,labor_costs,retired,size_x,size_y,size_z
+FPM-CCANN-C2,,FPMCCANN,COMMS-C2,43,$,"hole_dig,level_ground",FALSE,600,1200,895
+FPM-CCANN-J4,"A major innovation, Comms J4 is a unique one piece unit manufactured with reinforcements, overcoming the self-assembly problem that is associated with other manufactured units.",FPMCCANN,COMMS-J4,65,$,tree_trim,FALSE,440,910,800
+FPM-CCANN-MCX,,FPMCCANN,COMMS-MCX,76,$,"tree_trim,hole_dig,survey",FALSE,850,1300,900

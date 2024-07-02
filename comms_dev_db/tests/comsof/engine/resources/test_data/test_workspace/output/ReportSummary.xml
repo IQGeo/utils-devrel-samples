@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ReportSummary>
+  <configName>Rules</configName>
+  <areaName>Unspecified Area</areaName>
+  <fileNameBOM>BOM.xlsx</fileNameBOM>
+  <version>22.2.1.39 - SA_DESIGNER</version>
+  <mode>DESIGN</mode>
+  <currency>USD</currency>
+  <distanceUnit>METER</distanceUnit>
+  <areaLicense>file:/C:/Users/trmay/myWorld/projects/comsof/dev/workspaces/2/area%20licenses/75588.lic</areaLicense>
+  <numberOfPON>61</numberOfPON>
+  <numberOfP2P>0</numberOfP2P>
+  <numberOfHomes>61</numberOfHomes>
+  <numberOfAggregatePoints>0</numberOfAggregatePoints>
+  <numberOfDemandPoints>61</numberOfDemandPoints>
+  <costPerHomePassed>676.8510600914187</costPerHomePassed>
+  <costPerHomeActivated>1820.0565955122127</costPerHomeActivated>
+  <deploymentCost>41287.91466557654</deploymentCost>
+  <activationCost>111023.45232624497</activationCost>
+  <totalCost>152311.3669918215</totalCost>
+  <ponMonthlyRevenue>0.0</ponMonthlyRevenue>
+  <p2pMonthlyRevenue>0.0</p2pMonthlyRevenue>
+  <totalMonthlyRevenue>0.0</totalMonthlyRevenue>
+  <expectedTotalRevenues>0.0</expectedTotalRevenues>
+  <configIdentifier>1102592380</configIdentifier>
+  <areaIdentifier>313597047</areaIdentifier>
+  <date>2022-11-08 12:16:41.46 UTC</date>
+  <calculationTimeInMs>1408</calculationTimeInMs>
+  <calculationTime>1 sec</calculationTime>
+  <postCalculationTimeInMs>10043</postCalculationTimeInMs>
+  <identifier>1449203495</identifier>
+</ReportSummary>

@@ -1,0 +1,58 @@
+TEST: AFTER CUT CABLE
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: BB-FCB-016 (72) A (0/72) @316
+    label: A (0/72) @316
+    label: Fiber Cable: BB-FCB-018 (72)
+    label: Fiber Cable: BB-FCB-019 (72)
+    label: Fiber Cable: BB-FCB-020 (72)
+    label: Fiber Cable: BB-FCB-021 (72)
+    label: Fiber Cable: BB-FCB-023 (72)
+    label: Fiber Cable: BB-FCB-100000 (72) Z (0/72) @316
+    label: Z (0/72) @316
+
+
+DATABASE CHANGES: AFTER CUT CABLE
+   insert delta.fiber_cable(design/NB046,100000,insert)
+   insert delta.fiber_cable(design/NB046,166,update)
+   insert delta.mywcom_fiber_segment(design/NB046,377,update)
+   insert delta.mywcom_fiber_segment(design/NB046,378,update)
+   insert delta.mywcom_fiber_segment(design/NB046,379,update)
+
+TEST: AFTER CUT AND CONNECT CABLE
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Manhole: XX-M-220 Splice Closure: XX-SC-100000 Splice: BB-FCB-018 -> BB-FCB-100001 (72)
+    label: Splice Closure: XX-SC-100000 Splice: BB-FCB-018 -> BB-FCB-100001 (72)
+    label: Splice: BB-FCB-018 -> BB-FCB-100001 (72)
+
+
+TEST: AFTER CUT AND CONNECT CABLE
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: BB-FCB-016 (72) A (0/72) @316
+    label: A (0/72) @316
+    label: Fiber Cable: BB-FCB-018 (72) A (72/72) @316
+    label: A (72/72) @316
+    label: Fiber Cable: BB-FCB-019 (72)
+    label: Fiber Cable: BB-FCB-020 (72)
+    label: Fiber Cable: BB-FCB-021 (72)
+    label: Fiber Cable: BB-FCB-023 (72)
+    label: Fiber Cable: BB-FCB-100000 (72) Z (0/72) @316
+    label: Z (0/72) @316
+    label: Fiber Cable: BB-FCB-100001 (72)
+
+
+DATABASE CHANGES: AFTER CUT AND CONNECT CABLE
+   insert data.mywcom_change_detail(5)
+   insert delta.fiber_cable(design/NB046,100001,insert)
+   insert delta.fiber_cable(design/NB046,186,update)
+   insert delta.mywcom_fiber_connection(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,460,update)
+   insert delta.mywcom_fiber_segment(design/NB046,461,update)
+   insert delta.mywcom_fiber_segment(design/NB046,462,update)
+   insert delta.splice_closure(design/NB046,100000,insert)
+

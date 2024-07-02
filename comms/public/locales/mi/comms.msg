@@ -1,0 +1,5 @@
+{
+    "EquipmentPlugin": {
+        "equipment": "(-------Equipment-------)"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "image": "modules/comms/images/features/coax_tap.svg",
+    "housings": [
+        "manhole",
+        "cabinet",
+        "pole"
+    ],
+    "function": "splitter",
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/coax_tap.svg:13.5:0"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/coax_tap.svg:13.5:12.5:1.5m",
+        "geometry": "offset_geom"
+    },
+    "data_block": {
+        "svg": "modules/comms/images/features/data_block_coax_tap.svg:10.2:12.2:10m",
+            "properties": {
+            "fld1": "frequency_1",
+            "fld2": "frequency_2",
+            "fld3": "frequency_3"
+        }
+    },
+    "offset": true
+}

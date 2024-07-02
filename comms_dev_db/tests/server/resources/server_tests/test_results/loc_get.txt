@@ -1,0 +1,143 @@
+Request: POST:/modules/comms/feature?delta=NB217
+Response: 200 (200 OK)
+{
+   "ids": [
+      8
+   ]
+}
+
+
+
+SUB TEST : GET LINE OF COUNT
+    Request: POST: /modules/comms/loc/get?delta=NB217&application=mywcom&lang=en-GB
+    Response: 200 (200 OK)
+    
+    
+    {
+       "copper_shelf/1": {
+          "in": [],
+          "out": [
+             {
+                "forward": true,
+                "high": 100,
+                "loc_ref": "mywcom_line_of_count/1",
+                "loc_section_ref": "mywcom_line_of_count_section/1",
+                "low": 1,
+                "name": "WH-1",
+                "origin": "copper_shelf/1?side=out",
+                "physical": null,
+                "status": "Active"
+             }
+          ]
+       },
+       "mywcom_copper_segment/1": [
+          {
+             "forward": true,
+             "high": 100,
+             "loc_ref": "mywcom_line_of_count/1",
+             "loc_section_ref": "mywcom_line_of_count_section/2",
+             "low": 1,
+             "name": "WH-1",
+             "origin": "copper_shelf/1?side=out",
+             "physical": null,
+             "status": "Active"
+          }
+       ],
+       "mywcom_copper_segment/12": [
+          {
+             "high": 33,
+             "low": 1,
+             "name": "",
+             "status": ""
+          },
+          {
+             "forward": true,
+             "high": 100,
+             "loc_ref": "mywcom_line_of_count/1",
+             "loc_section_ref": "mywcom_line_of_count_section/11",
+             "low": 34,
+             "name": "WH-1",
+             "origin": "copper_shelf/1?side=out",
+             "physical": null,
+             "status": "Active"
+          }
+       ],
+       "mywcom_fiber_segment/1": [
+          {
+             "forward": true,
+             "high": 24,
+             "loc_ref": "mywcom_line_of_count/2",
+             "loc_section_ref": "mywcom_line_of_count_section/40",
+             "low": 1,
+             "name": "WH-2",
+             "origin": "fiber_patch_panel/2?side=out",
+             "physical": false,
+             "status": "Active"
+          }
+       ],
+       "mywcom_fiber_segment/75": []
+    }
+
+SUB TEST : GET LINE OF COUNT DETAILS
+    Request: POST: /modules/comms/loc/get_details?delta=NB217&application=mywcom&lang=en-GB&include_proposed=true
+    Response: 200 (200 OK)
+    
+    
+    {
+       "copper_shelf/1": {
+          "in": [],
+          "out": {
+             "": [
+                {
+                   "high": 100,
+                   "low": 1,
+                   "name": "WH-1",
+                   "origin": "copper_shelf/1?side=out",
+                   "physical": null,
+                   "physical_low": 1,
+                   "status": "Active"
+                }
+             ]
+          }
+       },
+       "mywcom_copper_segment/1": {
+          "": [
+             {
+                "high": 100,
+                "low": 1,
+                "name": "WH-1",
+                "origin": "copper_shelf/1?side=out",
+                "physical": null,
+                "physical_low": 1,
+                "status": "Active"
+             }
+          ]
+       },
+       "mywcom_copper_segment/12": {
+          "": [
+             {
+                "high": 100,
+                "low": 34,
+                "name": "WH-1",
+                "origin": "copper_shelf/1?side=out",
+                "physical": null,
+                "physical_low": 34,
+                "status": "Active"
+             }
+          ]
+       },
+       "mywcom_fiber_segment/1": {
+          "": [
+             {
+                "high": 24,
+                "low": 1,
+                "name": "WH-2",
+                "origin": "fiber_patch_panel/2?side=out",
+                "physical": false,
+                "physical_low": 1,
+                "status": "Active"
+             }
+          ]
+       },
+       "mywcom_fiber_segment/75": []
+    }

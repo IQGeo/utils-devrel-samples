@@ -1,0 +1,30 @@
+
+*** REVERT DELETED FEATURE
+Set delta to: design/NB335
+DATABASE CHANGES: REVERT DELETED FEATURE
+    delete delta.manhole(design/NB335,55,delete)
+
+{
+	"status": 200
+}
+
+*** REVERT INSERTED FEATURE
+Set delta to: design/NB335
+DATABASE CHANGES: REVERT INSERTED FEATURE
+    delete delta.mywcom_route_junction(design/NB335,5200,insert)
+
+{
+	"status": 200
+}
+
+*** REVERT INSERTED FEATURE TWICE
+Set delta to: design/NB335
+
+*** REVERT UPDATED FEATURE
+Set delta to: design/NB335
+DATABASE CHANGES: REVERT UPDATED FEATURE
+    delete delta.manhole(design/NB335,54,update)
+
+{
+	"status": 200
+}

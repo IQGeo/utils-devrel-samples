@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Circuit.schema.json",
+    "title": "Circuit",
+    "definitions": {
+        "Circuit": {
+            "$id": "#Circuit",
+            "description": "Circuit is an abstract entity that describes the common set of attributes shared by all IQGeo features.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "The name of the circuit",
+                    "type": "string"
+                },
+                "inFeature": {
+                    "description": "Serving equipment for circuit (URN)",
+                    "type": "string"
+                },
+                "inPins": {
+                    "description": "Serving ports (Pin Range)",
+                    "type": "string"
+                },
+                "outFeature": {
+                    "description": "Terminating equipment (URN)",
+                    "type": "string"
+                },
+                "outPins": {
+                    "description": "Terminating ports (Pin Range)",
+                    "type": "string"
+                },
+                "path": {
+                    "description": "Path geometry for the circuit",
+                    "$ref": "https://geojson.org/schema/LineString.json"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "./Feature.schema.json"
+                }
+            ]
+        }
+    }
+}

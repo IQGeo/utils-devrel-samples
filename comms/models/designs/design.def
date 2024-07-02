@@ -1,0 +1,57 @@
+{
+    "datasource": "myworld",
+    "name": "design",
+    "external_name": "{:design_external_name}",
+    "title": "{display_name}: [name]",
+    "short_description": "[status]",
+    "track_changes": true,
+    "editable": {
+        "insert_from_gui": true,
+        "delete_from_gui": true,
+        "update_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(32)",
+            "key": true
+        },
+        {
+            "name": "details",
+            "external_name": "{:details_field_name}",
+            "type": "string(200)"
+        },
+        {
+            "name": "status",
+            "external_name": "{:status_field_name}",
+            "type": "string(20)",
+            "enum": "design_state",
+            "default": "{:design_state_new}"
+        },
+        {
+            "name": "user_group", 
+            "external_name": "{:user_group_field_name}", 
+            "type": "string(200)"
+        },
+        {
+            "name": "boundary",
+            "external_name": "{:boundary_field_name}",
+            "type": "polygon"
+        }
+    ],
+    "groups": [],
+    "searches": [
+        {
+            "value": "[name]",
+            "description": "{title}"
+        }
+    ],
+    "queries": [
+        {
+            "value": "design",
+            "description": "{:design_external_name}"
+        }
+    ],
+    "filters": []
+}

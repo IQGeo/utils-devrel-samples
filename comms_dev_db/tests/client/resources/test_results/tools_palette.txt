@@ -1,0 +1,85 @@
+TEST: No open design
+    label: User Groups
+    label: Virtual Walkout
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+
+
+TEST: Design NB046 Open, Designing
+  header: Design: NB046
+    label: Network Build (Designing)
+    label: State
+    label: Designing
+    label: User Groups
+    label: Layout Strand
+    label: Path Finder
+    label: Connect Customer
+    label: Virtual Walkout
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+
+
+TEST: Design NB046 Open, New
+  header: Design: NB046
+    label: Network Build (New)
+    label: User Groups
+    label: Path Finder
+    label: Virtual Walkout
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+
+
+TEST: Design NB046 Open, Designing
+  header: Design: NB046
+    label: Network Build (Designing)
+    label: State
+    label: Designing
+    label: User Groups
+    label: Layout Strand
+    label: Path Finder
+    label: Connect Customer
+    label: Virtual Walkout
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+
+
+TEST: No open design
+  header: Design: NB046
+    label: Network Build (Designing)
+    label: State
+    label: Designing
+    label: User Groups
+    label: Virtual Walkout
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+
+

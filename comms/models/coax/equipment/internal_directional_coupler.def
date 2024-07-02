@@ -1,0 +1,117 @@
+{
+    "datasource": "myworld",
+    "name": "internal_directional_coupler",
+    "external_name": "{:coax_internal_directional_coupler_field_name}",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "n_coax_in_ports",
+            "external_name": "{:n_in_ports_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "n_coax_out_ports",
+            "external_name": "{:n_out_ports_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "coax_connections",
+            "type": "reference_set",
+            "value": "select(mywcom_coax_connection.in_object,mywcom_coax_connection.out_object)",
+            "read_only": true
+        },
+        {
+            "name": "equipment",
+            "external_name": "{:wall_box_feature_equipment_name}",
+            "type": "reference_set",
+            "value": "select()"
+        },
+        {
+            "name": "coax_splices",
+            "external_name": "{:cabinet_feature_fiber_splices_name}",
+            "type": "reference_set",
+            "value": "select()"
+        },
+        {
+            "name": "coupler_valve",
+            "external_name": "{:coax_coupler_value_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "status",
+            "external_name": "{:coax_construction_status_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "frequency",
+            "external_name": "{:coax_design_frequency_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "specification",
+            "external_name": "{:wall_box_feature_specification_name}",
+            "type": "foreign_key(internal_directional_coupler_spec)"
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point",
+            "mandatory": "true"
+        },
+        {
+            "name": "offset_geom",
+            "external_name": "{:offset_field_name}",
+            "type": "point"
+        },
+        {
+            "name": "myw_orientation_offset_geom",
+            "type": "double"
+        },
+        {
+            "name": "directed",
+            "external_name": "{:equipment_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": true
+        }
+    ]
+}

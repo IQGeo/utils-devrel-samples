@@ -1,0 +1,12 @@
+{
+    "image": "modules/comms/images/features/fiber_tap.svg",
+    "housings": ["splice_closure"],
+    "function": "enclosure",
+    "palette": true,
+    "tech": "fiber",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/fiber_tap.svg:12:-12"
+    }
+}

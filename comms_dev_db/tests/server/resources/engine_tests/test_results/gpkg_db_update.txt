@@ -1,0 +1,201 @@
+INITIAL STATE
+   COORD_SYS: epsg:26985
+   TABLE IN_AerialConnections count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(crossing,integer)
+      MywFieldDescriptor(include,integer)
+      MywFieldDescriptor(avoid,string)
+      MywFieldDescriptor(locked,integer)
+   TABLE IN_AerialDropConnections count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(include,integer)
+      MywFieldDescriptor(avoid,string)
+      MywFieldDescriptor(locked,integer)
+   TABLE IN_Boundaries count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(gistool_id,integer)
+      MywFieldDescriptor(width,integer)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(avoid,string)
+   TABLE IN_Buildings count=2
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,polygon)
+      MywFieldDescriptor(bldg_id,string)
+      MywFieldDescriptor(pon_homes,integer)
+      MywFieldDescriptor(p2p_homes,integer)
+      MywFieldDescriptor(include,string)
+      MywFieldDescriptor(connection,string)
+      MywFieldDescriptor(streetname,string)
+      MywFieldDescriptor(identifier,string)
+   TABLE IN_ExistingCables count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(gistool_id,integer)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(include,string)
+      MywFieldDescriptor(avoid,string)
+      MywFieldDescriptor(max_fibers,integer)
+   TABLE IN_ExistingPipes count=1
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(gistool_id,integer)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(max_diam,integer)
+   TABLE IN_FacadeDropLines count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(locked,integer)
+   TABLE IN_FacadeLines count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(include,string)
+      MywFieldDescriptor(span,string)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(avoid,string)
+   TABLE IN_HomePoints count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geom,point)
+      MywFieldDescriptor(p2p_homes,integer)
+      MywFieldDescriptor(pon_homes,integer)
+      MywFieldDescriptor(demand,string)
+   TABLE IN_NonFiberCables count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geom,linestring)
+      MywFieldDescriptor(type,string)
+      MywFieldDescriptor(loss,double)
+      MywFieldDescriptor(identifier,string)
+   TABLE IN_NonFiberEquipment count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geom,point)
+      MywFieldDescriptor(port_0,double)
+      MywFieldDescriptor(port_1,double)
+      MywFieldDescriptor(port_2,double)
+      MywFieldDescriptor(port_3,double)
+      MywFieldDescriptor(type,string)
+      MywFieldDescriptor(identifier,string)
+   TABLE IN_Poles count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,point)
+      MywFieldDescriptor(existing,string)
+      MywFieldDescriptor(locked,string)
+      MywFieldDescriptor(identifier,string)
+   TABLE IN_PolygonBoundaries count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geom,polygon)
+      MywFieldDescriptor(include,string)
+   TABLE IN_DemandPoints count=827
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,point)
+      MywFieldDescriptor(pon_homes,integer)
+      MywFieldDescriptor(p2p_homes,integer)
+      MywFieldDescriptor(include,string)
+      MywFieldDescriptor(connection,string)
+      MywFieldDescriptor(identifier,string)
+      MywFieldDescriptor(pon_m_rev,double)
+      MywFieldDescriptor(p2p_m_rev,double)
+      MywFieldDescriptor(bldg_id,string)
+      MywFieldDescriptor(streetname,string)
+      MywFieldDescriptor(gistool_id,integer)
+   TABLE IN_StreetCenterLines count=57
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(streetname,string)
+      MywFieldDescriptor(width,integer)
+      MywFieldDescriptor(include,string)
+      MywFieldDescriptor(subtype_cr,string)
+      MywFieldDescriptor(locked,string)
+   TABLE IN_CentralOffice count=1
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,point)
+      MywFieldDescriptor(include,string)
+   TABLE IN_AccessStructures count=0
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,point)
+      MywFieldDescriptor(type,string)
+      MywFieldDescriptor(has_demand,string)
+   TABLE IN_PossibleTrenches count=121
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(include,integer)
+      MywFieldDescriptor(locked,integer)
+      MywFieldDescriptor(avoid,string)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(streetname,string)
+      MywFieldDescriptor(skip_cross,integer)
+      MywFieldDescriptor(duct_class,string)
+      MywFieldDescriptor(o_id,integer)
+      MywFieldDescriptor(street_id,integer)
+      MywFieldDescriptor(gistool_id,integer)
+   TABLE IN_Crossings count=115
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(include,integer)
+      MywFieldDescriptor(avoid,string)
+      MywFieldDescriptor(jnc_id,integer)
+      MywFieldDescriptor(locked,integer)
+      MywFieldDescriptor(gistool_id,integer)
+      MywFieldDescriptor(duct_class,string)
+   TABLE IN_DropTrenches count=828
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(subtype,string)
+      MywFieldDescriptor(include,integer)
+      MywFieldDescriptor(avoid,string)
+      MywFieldDescriptor(locked,integer)
+      MywFieldDescriptor(duct_class,string)
+      MywFieldDescriptor(gistool_id,integer)
+   TABLE IN_Transitions count=47
+      MywFieldDescriptor(fid,integer)
+      MywFieldDescriptor(geometry,linestring)
+      MywFieldDescriptor(source,string)
+      MywFieldDescriptor(target,string)
+      MywFieldDescriptor(include,integer)
+      MywFieldDescriptor(avoid,string)
+      MywFieldDescriptor(duct_class,string)
+      MywFieldDescriptor(aerial,integer)
+
+SUB TEST : BULK INSERT
+    Opening database <conn_spec> ...
+    feature       n_recs
+    ------------  ------
+    IN_Buildings       2
+    
+    Opening database <conn_spec> ...
+    feature_type  fid  geometry                                      bldg_id  pon_homes  p2p_homes  include  connection  streetname    identifier
+    ------------  ---  --------------------------------------------  -------  ---------  ---------  -------  ----------  ------------  ----------
+    IN_Buildings    3  -                                             test/3           -          -        -           -  test_street3           -
+    IN_Buildings    4  POINT (9539436.399398802 133485.15258805215)  test/4           -          -        -           -  test_street4           -
+    
+
+SUB TEST : RECORD INSERT
+    Opening database <conn_spec> ...
+    feature_type  fid  geometry                                      bldg_id  pon_homes  p2p_homes  include  connection  streetname    identifier
+    ------------  ---  --------------------------------------------  -------  ---------  ---------  -------  ----------  ------------  ----------
+    IN_Buildings    3  -                                             test/3           -          -        -           -  test_street3           -
+    IN_Buildings    4  POINT (9539436.399398802 133485.15258805215)  test/4           -          -        -           -  test_street4           -
+    IN_Buildings    5  POINT (10423273.4206736 -461027.3659486873)   test/7           -          -        -           -  test_street7           -
+    
+
+SUB TEST : RECORD UPDATE
+    Opening database <conn_spec> ...
+    feature_type  fid  geometry                                        bldg_id         pon_homes  p2p_homes  include  connection  streetname    identifier
+    ------------  ---  ----------------------------------------------  --------------  ---------  ---------  -------  ----------  ------------  ----------
+    IN_Buildings    3  -                                               test/3                  -          -        -           -  test_street3           -
+    IN_Buildings    4  POINT (10916026.859044189 -413939.73767681303)  test/4 updated         27          -        -           -  -                      -
+    IN_Buildings    5  POINT (10423273.4206736 -461027.3659486873)     test/7                  -          -        -           -  test_street7           -
+    
+
+SUB TEST : RECORD DELETE
+    Opening database <conn_spec> ...
+    feature_type  fid  geometry                                        bldg_id         pon_homes  p2p_homes  include  connection  streetname    identifier
+    ------------  ---  ----------------------------------------------  --------------  ---------  ---------  -------  ----------  ------------  ----------
+    IN_Buildings    4  POINT (10916026.859044189 -413939.73767681303)  test/4 updated         27          -        -           -  -                      -
+    IN_Buildings    5  POINT (10423273.4206736 -461027.3659486873)     test/7                  -          -        -           -  test_street7           -
+    

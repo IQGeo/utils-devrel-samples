@@ -1,0 +1,8 @@
+{
+   "name": "comsof_cloud_project",
+   "description": "Permitted values for 'tag' in a Comsof cloud request",
+   "values": [
+      "IQGeo Integration",
+      "IQGeo demo integration"
+   ]
+}

@@ -1,0 +1,155 @@
+TEST: STRUCTURE
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: DROP-001 (4)
+    label: Fiber Cable: DROP-002 (4)
+    label: Fiber Cable: DROP-003 (4)
+    label: Fiber Cable: DROP-004 (4)
+    label: Fiber Cable: DROP-005 (4)
+    label: Fiber Cable: DROP-006 (4)
+    label: Fiber Cable: DROP-007 (4)
+    label: Fiber Cable: DROP-008 (4)
+    label: Fiber Cable: DROP-009 (4)
+    label: Fiber Cable: DROP-010 (4)
+    label: Fiber Cable: DROP-011 (4)
+    label: Fiber Cable: DROP-012 (4)
+    label: Fiber Cable: DROP-013 (4)
+    label: Fiber Cable: DROP-014 (4)
+    label: Fiber Cable: DROP-015 (4)
+    label: Fiber Cable: RISER-001 (4)
+
+
+TEST: STRUCTURE WITH NO OUT SEGMENTS FIELD
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: DROP-022 (4)
+
+
+TEST: OVERHEAD ROUTE
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Route (Overhead): 14 Fiber Cable: DROP-014 (4)
+    label: Fiber Cable: DROP-014 (4)
+
+
+TEST: UG ROUTE WITH CONDUITS
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Route (Underground): 52 Conduit: WH-CND-004 Fiber Cable: BB-FCB-017 (72) Fiber Cable: WH-FCB-003 (144) Fiber Cable: WH-FCB-005 (144) Conduit: WH-CND-005 Fiber Cable: WH-FCB-004 (144) Fiber Cable: WH-FCB-006 (144)
+    label: Conduit: WH-CND-004 Fiber Cable: BB-FCB-017 (72) Fiber Cable: WH-FCB-003 (144) Fiber Cable: WH-FCB-005 (144)
+    label: Fiber Cable: BB-FCB-017 (72)
+    label: Fiber Cable: WH-FCB-003 (144)
+    label: Fiber Cable: WH-FCB-005 (144)
+    label: Conduit: WH-CND-005 Fiber Cable: WH-FCB-004 (144) Fiber Cable: WH-FCB-006 (144)
+    label: Fiber Cable: WH-FCB-004 (144)
+    label: Fiber Cable: WH-FCB-006 (144)
+
+
+TEST: SHOW TERMINATIONS ON FIBER CABLE
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Route (Underground): 52 Conduit: WH-CND-004 Fiber Cable: BB-FCB-017 (72) BLBL 1 BLOR 2 BLGN 3 BLBN 4 BLSL 5 BLWT 6 BLRD 7 BLBK 8 BLYL 9 BLVT 10 BLRO 11 : 1 circuit BLA 12 : 1 circuit ORBL 13 : 1 circuit OROR 14 : 1 circuit ORGN 15 ORBN 16 ORSL 17 ORWT 18 ORRD 19 : 1 circuit ORBK 20 ORYL 21 : 1 circuit ORVT 22 : 1 circuit ORRO 23 : 1 circuit ORA 24 : 1 circuit GNBL 25 GNOR 26 GNGN 27 GNBN 28 GNSL 29 GNWT 30 GNRD 31 GNBK 32 GNYL 33 GNVT 34 GNRO 35 GNA 36 BNBL 37 BNOR 38 BNGN 39 BNBN 40 BNSL 41 BNWT 42 BNRD 43 BNBK 44 BNYL 45 BNVT 46 BNRO 47 BNA 48 SLBL 49 SLOR 50 SLGN 51 SLBN 52 SLSL 53 SLWT 54 SLRD 55 SLBK 56 SLYL 57 SLVT 58 SLRO 59 SLA 60 WTBL 61 WTOR 62 WTGN 63 WTBN 64 WTSL 65 WTWT 66 WTRD 67 WTBK 68 WTYL 69 WTVT 70 WTRO 71 WTA 72 Fiber Cable: WH-FCB-003 (144) Fiber Cable: WH-FCB-005 (144) Conduit: WH-CND-005 Fiber Cable: WH-FCB-004 (144) Fiber Cable: WH-FCB-006 (144)
+    label: Conduit: WH-CND-004 Fiber Cable: BB-FCB-017 (72) BLBL 1 BLOR 2 BLGN 3 BLBN 4 BLSL 5 BLWT 6 BLRD 7 BLBK 8 BLYL 9 BLVT 10 BLRO 11 : 1 circuit BLA 12 : 1 circuit ORBL 13 : 1 circuit OROR 14 : 1 circuit ORGN 15 ORBN 16 ORSL 17 ORWT 18 ORRD 19 : 1 circuit ORBK 20 ORYL 21 : 1 circuit ORVT 22 : 1 circuit ORRO 23 : 1 circuit ORA 24 : 1 circuit GNBL 25 GNOR 26 GNGN 27 GNBN 28 GNSL 29 GNWT 30 GNRD 31 GNBK 32 GNYL 33 GNVT 34 GNRO 35 GNA 36 BNBL 37 BNOR 38 BNGN 39 BNBN 40 BNSL 41 BNWT 42 BNRD 43 BNBK 44 BNYL 45 BNVT 46 BNRO 47 BNA 48 SLBL 49 SLOR 50 SLGN 51 SLBN 52 SLSL 53 SLWT 54 SLRD 55 SLBK 56 SLYL 57 SLVT 58 SLRO 59 SLA 60 WTBL 61 WTOR 62 WTGN 63 WTBN 64 WTSL 65 WTWT 66 WTRD 67 WTBK 68 WTYL 69 WTVT 70 WTRO 71 WTA 72 Fiber Cable: WH-FCB-003 (144) Fiber Cable: WH-FCB-005 (144)
+    label: Fiber Cable: BB-FCB-017 (72) BLBL 1 BLOR 2 BLGN 3 BLBN 4 BLSL 5 BLWT 6 BLRD 7 BLBK 8 BLYL 9 BLVT 10 BLRO 11 : 1 circuit BLA 12 : 1 circuit ORBL 13 : 1 circuit OROR 14 : 1 circuit ORGN 15 ORBN 16 ORSL 17 ORWT 18 ORRD 19 : 1 circuit ORBK 20 ORYL 21 : 1 circuit ORVT 22 : 1 circuit ORRO 23 : 1 circuit ORA 24 : 1 circuit GNBL 25 GNOR 26 GNGN 27 GNBN 28 GNSL 29 GNWT 30 GNRD 31 GNBK 32 GNYL 33 GNVT 34 GNRO 35 GNA 36 BNBL 37 BNOR 38 BNGN 39 BNBN 40 BNSL 41 BNWT 42 BNRD 43 BNBK 44 BNYL 45 BNVT 46 BNRO 47 BNA 48 SLBL 49 SLOR 50 SLGN 51 SLBN 52 SLSL 53 SLWT 54 SLRD 55 SLBK 56 SLYL 57 SLVT 58 SLRO 59 SLA 60 WTBL 61 WTOR 62 WTGN 63 WTBN 64 WTSL 65 WTWT 66 WTRD 67 WTBK 68 WTYL 69 WTVT 70 WTRO 71 WTA 72
+    label: BLBL 1
+    label: BLOR 2
+    label: BLGN 3
+    label: BLBN 4
+    label: BLSL 5
+    label: BLWT 6
+    label: BLRD 7
+    label: BLBK 8
+    label: BLYL 9
+    label: BLVT 10
+    label: BLRO 11 : 1 circuit
+    label: BLA 12 : 1 circuit
+    label: ORBL 13 : 1 circuit
+    label: OROR 14 : 1 circuit
+    label: ORGN 15
+    label: ORBN 16
+    label: ORSL 17
+    label: ORWT 18
+    label: ORRD 19 : 1 circuit
+    label: ORBK 20
+    label: ORYL 21 : 1 circuit
+    label: ORVT 22 : 1 circuit
+    label: ORRO 23 : 1 circuit
+    label: : 1 circuit
+    label: ORA 24 : 1 circuit
+    label: : 1 circuit
+    label: GNBL 25
+    label: GNOR 26
+    label: GNGN 27
+    label: GNBN 28
+    label: GNSL 29
+    label: GNWT 30
+    label: GNRD 31
+    label: GNBK 32
+    label: GNYL 33
+    label: GNVT 34
+    label: GNRO 35
+    label: GNA 36
+    label: BNBL 37
+    label: BNOR 38
+    label: BNGN 39
+    label: BNBN 40
+    label: BNSL 41
+    label: BNWT 42
+    label: BNRD 43
+    label: BNBK 44
+    label: BNYL 45
+    label: BNVT 46
+    label: BNRO 47
+    label: BNA 48
+    label: SLBL 49
+    label: SLOR 50
+    label: SLGN 51
+    label: SLBN 52
+    label: SLSL 53
+    label: SLWT 54
+    label: SLRD 55
+    label: SLBK 56
+    label: SLYL 57
+    label: SLVT 58
+    label: SLRO 59
+    label: SLA 60
+    label: WTBL 61
+    label: WTOR 62
+    label: WTGN 63
+    label: WTBN 64
+    label: WTSL 65
+    label: WTWT 66
+    label: WTRD 67
+    label: WTBK 68
+    label: WTYL 69
+    label: WTVT 70
+    label: WTRO 71
+    label: WTA 72
+    label: Fiber Cable: WH-FCB-003 (144)
+    label: Fiber Cable: WH-FCB-005 (144)
+    label: Conduit: WH-CND-005 Fiber Cable: WH-FCB-004 (144) Fiber Cable: WH-FCB-006 (144)
+    label: Fiber Cable: WH-FCB-004 (144)
+    label: Fiber Cable: WH-FCB-006 (144)
+
+
+TEST: SHOW PROPOSED CABLES
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable [Design: CC5462]
+    label: Fiber Cable
+    label: [Design: CC5462]
+    label: Fiber Cable: DROP-144 (16)
+    label: Fiber Cable: DROP-145 (8)
+    label: Fiber Cable: DROP-146 (2)
+    label: Fiber Cable: DROP-147 (2)
+    label: Fiber Cable: DROP-148 (2)
+    label: Fiber Cable: WH-FCB-009 (96)
+    label: Fiber Cable: WH-FCB-011 (48)
+
+

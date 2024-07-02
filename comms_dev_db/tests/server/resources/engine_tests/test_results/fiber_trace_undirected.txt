@@ -1,0 +1,43 @@
+
+SUB TEST : TRACE BB WESTWARDS UPSTREAM : mywcom_fiber from fiber_shelf/WH-S-013 upstream
+    PortTraceNode( 0.000m,fiber_shelf/13-in:2,ports=in:2,direction=upstream,1 )   Fiber Shelf: WH-S-013
+    SegmentTraceNode( 160.830m,mywcom_fiber_segment/381-out:2,fibers=2,length=160.83,direction=upstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: BB-FCB-017 (72)
+    ConnectionTraceNode( 160.830m,mywcom_fiber_connection/221-12,from_=2,to_=12,direction=upstream,1 )   Fiber Connection: 221
+    SegmentTraceNode( 489.430m,mywcom_fiber_segment/336-out:12,fibers=12,length=328.60,direction=upstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.1349852058691, 52.2213763836428),0 )   Fiber Cable: BB-FCB-016 (72)
+    
+
+SUB TEST : TRACE BB WESTWARDS DOWNSTREAM : mywcom_fiber from fiber_shelf/WH-S-013 downstream
+    PortTraceNode( 0.000m,fiber_shelf/13-out:3,ports=out:3,direction=downstream,1 )   Fiber Shelf: WH-S-013
+    SegmentTraceNode( 160.830m,mywcom_fiber_segment/381-out:11,fibers=11,length=160.83,direction=downstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.1379653233735, 52.2233384715684),1 )   Fiber Cable: BB-FCB-017 (72)
+    ConnectionTraceNode( 160.830m,mywcom_fiber_connection/221-21,from_=11,to_=21,direction=downstream,1 )   Fiber Connection: 221
+    SegmentTraceNode( 489.430m,mywcom_fiber_segment/336-out:21,fibers=21,length=328.60,direction=downstream,loc=,start_coord=(0.1379653233735, 52.2233384715684),stop_coord=(0.1349852058691, 52.2213763836428),0 )   Fiber Cable: BB-FCB-016 (72)
+    
+
+SUB TEST : TRACE BB EASTWARDS UPSTREAM : mywcom_fiber from fiber_shelf/WH-S-014 upstream
+    PortTraceNode( 0.000m,fiber_shelf/14-in:1,ports=in:1,direction=upstream,1 )   Fiber Shelf: WH-S-014
+    SegmentTraceNode( 270.540m,mywcom_fiber_segment/382-in:11,fibers=11,length=270.54,direction=upstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.138112438657, 52.2234101509367),1 )   Fiber Cable: BB-FCB-017 (72)
+    ConnectionTraceNode( 270.540m,mywcom_fiber_connection/215-11,from_=11,to_=11,direction=upstream,1 )   Fiber Connection: 215
+    SegmentTraceNode( 1351.470m,mywcom_fiber_segment/338-in:11,fibers=11,length=1080.93,direction=upstream,loc=,start_coord=(0.138112438657, 52.2234101509367),stop_coord=(0.148416814189, 52.2298513739546),1 )   Fiber Cable: BB-FCB-016 (72)
+    PortTraceNode( 1351.470m,fiber_shelf/15-out:12,ports=out:12,direction=upstream,0 )   Fiber Shelf: SP-S-015
+    
+
+SUB TEST : TRACE BB EASTWARDS DOWNSTREAM : mywcom_fiber from fiber_shelf/WH-S-014 downstream
+    PortTraceNode( 0.000m,fiber_shelf/14-out:5,ports=out:5,direction=downstream,1 )   Fiber Shelf: WH-S-014
+    SegmentTraceNode( 270.540m,mywcom_fiber_segment/382-in:23,fibers=23,length=270.54,direction=downstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.138112438657, 52.2234101509367),1 )   Fiber Cable: BB-FCB-017 (72)
+    ConnectionTraceNode( 270.540m,mywcom_fiber_connection/216-23,from_=23,to_=23,direction=downstream,1 )   Fiber Connection: 216
+    SegmentTraceNode( 1612.440m,mywcom_fiber_segment/338-in:23,fibers=23,length=1341.90,direction=downstream,loc=,start_coord=(0.138112438657, 52.2234101509367),stop_coord=(0.1510284841061, 52.2297265179083),0 )   Fiber Cable: BB-FCB-016 (72)
+    
+
+SUB TEST : TRACE BB TO DIST DOWNSTREAM : mywcom_fiber from fiber_shelf/WH-S-014 downstream to distance 300m
+    PortTraceNode( 0.000m,fiber_shelf/14-out:5,ports=out:5,direction=downstream,1 )   Fiber Shelf: WH-S-014
+    SegmentTraceNode( 270.540m,mywcom_fiber_segment/382-in:23,fibers=23,length=270.54,direction=downstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.138112438657, 52.2234101509367),1 )   Fiber Cable: BB-FCB-017 (72)
+    ConnectionTraceNode( 270.540m,mywcom_fiber_connection/216-23,from_=23,to_=23,direction=downstream,1 )   Fiber Connection: 216
+    SegmentTraceNode( 300.000m,mywcom_fiber_segment/338-in:23,fibers=23,length=29.46,direction=downstream,loc=,start_coord=(0.138112438657, 52.2234101509367),stop_coord=(0.1384287317489109, 52.22357176510683),0 )   Fiber Cable: BB-FCB-016 (72)
+    
+
+SUB TEST : TRACE BB TO DIST UPSTREAM : mywcom_fiber from fiber_shelf/WH-S-014 upstream to distance 300m
+    PortTraceNode( 0.000m,fiber_shelf/14-in:1,ports=in:1,direction=upstream,1 )   Fiber Shelf: WH-S-014
+    SegmentTraceNode( 270.540m,mywcom_fiber_segment/382-in:11,fibers=11,length=270.54,direction=upstream,loc=,start_coord=(0.1366049051285, 52.2240164428564),stop_coord=(0.138112438657, 52.2234101509367),1 )   Fiber Cable: BB-FCB-017 (72)
+    ConnectionTraceNode( 270.540m,mywcom_fiber_connection/215-11,from_=11,to_=11,direction=upstream,1 )   Fiber Connection: 215
+    SegmentTraceNode( 300.000m,mywcom_fiber_segment/338-in:11,fibers=11,length=29.46,direction=upstream,loc=,start_coord=(0.138112438657, 52.2234101509367),stop_coord=(0.1384287317489109, 52.22357176510683),0 )   Fiber Cable: BB-FCB-016 (72)
+    

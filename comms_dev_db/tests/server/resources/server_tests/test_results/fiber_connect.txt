@@ -1,0 +1,188 @@
+
+SUB TEST : CONNECT SPLITTER -> CABLE
+    Request: POST: /modules/comms/fiber/connect?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "bbox": [
+          0.1390732079744,
+          52.2238911596356,
+          0.1390732079744,
+          52.2238911596356
+       ],
+       "geometry": {
+          "coordinates": [
+             0.1390732079744,
+             52.2238911596356
+          ],
+          "type": "Point"
+       },
+       "id": 100000,
+       "myw": {
+          "change_type": "insert",
+          "delta": "design/NB217",
+          "feature_type": "mywcom_fiber_connection",
+          "title": "Fiber Connection: 100000"
+       },
+       "properties": {
+          "comsof_auto": null,
+          "housing": "fiber_splitter/4",
+          "id": 100000,
+          "in_high": 8,
+          "in_low": 8,
+          "in_object": "fiber_splitter/4",
+          "in_side": "out",
+          "out_high": 2,
+          "out_low": 2,
+          "out_object": "mywcom_fiber_segment/203",
+          "out_side": "in",
+          "root_housing": "pole/6",
+          "splice": false
+       },
+       "type": "Feature"
+    }
+    
+    
+    DATABASE CHANGES: AFTER CONNECT SPLITTER
+       insert delta.mywcom_fiber_connection(design/NB217,100000,insert)
+    
+    VALIDATION ERRORS: AFTER CONNECT SPLITTER
+
+SUB TEST : CONNECT CABLE ONE TO ONE
+    Request: POST: /modules/comms/fiber/connect?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "bbox": [
+          0.1364935934544,
+          52.224057930009,
+          0.1364935934544,
+          52.224057930009
+       ],
+       "geometry": {
+          "coordinates": [
+             0.1364935934544,
+             52.224057930009
+          ],
+          "type": "Point"
+       },
+       "id": 100001,
+       "myw": {
+          "change_type": "insert",
+          "delta": "design/NB217",
+          "feature_type": "mywcom_fiber_connection",
+          "title": "Fiber Connection: 100001"
+       },
+       "properties": {
+          "comsof_auto": null,
+          "housing": "cabinet/1",
+          "id": 100001,
+          "in_high": 37,
+          "in_low": 37,
+          "in_object": "mywcom_fiber_segment/186",
+          "in_side": "out",
+          "out_high": 12,
+          "out_low": 12,
+          "out_object": "mywcom_fiber_segment/33",
+          "out_side": "in",
+          "root_housing": "cabinet/1",
+          "splice": true
+       },
+       "type": "Feature"
+    }
+    
+    
+    DATABASE CHANGES: AFTER CONNECT CABLE ONE TO ONE
+       insert delta.mywcom_fiber_connection(design/NB217,100001,insert)
+    
+    VALIDATION ERRORS: AFTER CONNECT CABLE ONE TO ONE
+
+SUB TEST : SPLICE CABLE -> CABLE
+    Request: POST: /modules/comms/fiber/connect?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "bbox": [
+          0.1379653233735,
+          52.2233384715684,
+          0.1379653233735,
+          52.2233384715684
+       ],
+       "geometry": {
+          "coordinates": [
+             0.1379653233735,
+             52.2233384715684
+          ],
+          "type": "Point"
+       },
+       "id": 100002,
+       "myw": {
+          "change_type": "insert",
+          "delta": "design/NB217",
+          "feature_type": "mywcom_fiber_connection",
+          "title": "Fiber Connection: 100002"
+       },
+       "properties": {
+          "comsof_auto": null,
+          "housing": "splice_closure/23",
+          "id": 100002,
+          "in_high": 5,
+          "in_low": 5,
+          "in_object": "mywcom_fiber_segment/73",
+          "in_side": "out",
+          "out_high": 127,
+          "out_low": 127,
+          "out_object": "mywcom_fiber_segment/153",
+          "out_side": "in",
+          "root_housing": "manhole/29",
+          "splice": true
+       },
+       "type": "Feature"
+    }
+    
+    
+    DATABASE CHANGES: AFTER SPLICE CABLES
+       insert delta.mywcom_fiber_connection(design/NB217,100002,insert)
+    
+    VALIDATION ERRORS: AFTER SPLICE CABLES
+
+SUB TEST : SPLICE CABLE -> CABLE
+    Request: POST: /modules/comms/fiber/connect?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "bbox": [
+          0.1374568417668,
+          52.2247063157682,
+          0.1374568417668,
+          52.2247063157682
+       ],
+       "geometry": {
+          "coordinates": [
+             0.1374568417668,
+             52.2247063157682
+          ],
+          "type": "Point"
+       },
+       "id": 100003,
+       "myw": {
+          "change_type": "insert",
+          "delta": "design/NB046",
+          "feature_type": "mywcom_fiber_connection",
+          "title": "Fiber Connection: 100003"
+       },
+       "properties": {
+          "comsof_auto": null,
+          "housing": "splice_closure/35",
+          "id": 100003,
+          "in_high": 2,
+          "in_low": 2,
+          "in_object": "mywcom_fiber_segment/63",
+          "in_side": "out",
+          "out_high": 2,
+          "out_low": 2,
+          "out_object": "mywcom_fiber_segment/394",
+          "out_side": "in",
+          "root_housing": "manhole/24",
+          "splice": true
+       },
+       "type": "Feature"
+    }
+    
+    

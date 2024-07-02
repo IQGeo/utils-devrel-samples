@@ -1,0 +1,41 @@
+{
+    "name": "Service Areas",
+    "display_name": "Service Areas",
+    "category": "overlay",
+    "code": "sa",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": "",
+        "render_order_point_offset": 0
+    },
+    "transparency": 0,
+    "min_scale": 0,
+    "max_scale": 16,
+    "feature_types": [
+        {
+            "name": "pedestal_area",
+            "field_name": "boundary",
+            "line_style": "#008000:2:solid::",
+            "fill_style": "#4d0080:40"
+        },
+        {
+            "name": "service_area",
+            "field_name": "boundary",
+            "line_style": "#3d85c6:2:solid",
+            "fill_style": "#3d85c6:34",
+            "text_style": "name:#3d85c6:30m:middle:centre:#ffffff:"
+        },
+        {
+            "name": "node_boundary",
+            "field_name": "area",
+            "line_style": "#B8E986:2:solid",
+            "fill_style": "#B8E986:34",
+            "text_style": "name:#B8E986:30m:middle:centre:#ffffff:"
+        }
+    ]
+}

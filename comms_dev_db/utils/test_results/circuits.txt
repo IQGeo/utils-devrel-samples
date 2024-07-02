@@ -1,0 +1,63 @@
+Opening database <database> ...
+
+  ftth_circuit(1)  name=WH-FTTH-001  in_feature=fiber_olt/25  in_pins=out:1  out_feature=fiber_ont/132  out_pins=in:1  path=linestring(24)  status=In Service  customer=Bourgh,AD  address=2604  service_type=Direct
+  ftth_circuit(2)  name=WH-FTTH-002  in_feature=fiber_olt/25  in_pins=out:2  out_feature=fiber_ont/133  out_pins=in:1  path=linestring(25)  status=In Service  customer=Bingley,C  address=2601  service_type=Direct
+  ftth_circuit(3)  name=WH-FTTH-003  in_feature=fiber_olt/25  in_pins=out:3  out_feature=fiber_ont/150  out_pins=in:1  path=linestring(26)  status=In Service  customer=Darcy,M  address=2600  service_type=Direct
+  ftth_circuit(4)  name=WH-FTTH-004  in_feature=fiber_olt/25  in_pins=out:4  out_feature=fiber_ont/149  out_pins=in:1  path=linestring(28)  status=In Service  customer=Forester,H  address=2581  service_type=Direct
+  ftth_circuit(5)  name=WH-FTTH-005  in_feature=fiber_olt/28  in_pins=out:2  out_feature=fiber_ont/134  out_pins=in:1  path=linestring(38)  status=In Service  customer=Bennet,L  address=2606  service_type=Direct
+  ftth_circuit(6)  name=WH-FTTH-006  in_feature=fiber_olt/28  in_pins=out:3  out_feature=fiber_ont/135  out_pins=in:1  path=linestring(43)  status=In Service  customer=Pratt,M  address=2580  service_type=Direct
+  ftth_circuit(7)  name=WH-FTTH-007  in_feature=fiber_olt/28  in_pins=out:4  out_feature=fiber_ont/136  out_pins=in:1  path=linestring(47)  status=In Service  customer=Morton,L  address=2598  service_type=Direct
+  ftth_circuit(8)  name=WH-FTTH-008  in_feature=fiber_olt/29  in_pins=out:3  out_feature=fiber_ont/137  out_pins=in:1  path=linestring(56)  status=In Service  customer=Grey,S  address=2612  service_type=Direct
+  ftth_circuit(9)  name=WH-FTTH-009  out_feature=fiber_ont/138  out_pins=in:1  status=New  customer=Dashwood,H  address=2610  service_type=Direct
+  ftth_circuit(10)  name=WH-FTTH-010  in_feature=fiber_olt/26  in_pins=out:6  out_feature=fiber_ont/140  out_pins=in:1  path=linestring(57)  status=In Service  customer=Price,C  address=2617  service_type=Direct
+  ftth_circuit(11)  name=WH-FTTH-011  out_feature=fiber_ont/140  out_pins=in:2  status=New  customer=Coxe,W  address=2617  service_type=Direct
+  ftth_circuit(12)  name=WH-FTTH-012  out_feature=fiber_ont/140  out_pins=in:3  status=New  customer=Partridge,C  address=2617  service_type=Direct
+  ftth_circuit(13)  name=WH-FTTH-013  out_feature=fiber_ont/145  out_pins=in:1  status=New  customer=Rushworth,J  address=2593  service_type=Direct
+  ftth_circuit(14)  name=WH-FTTH-014  in_feature=fiber_olt/27  in_pins=out:7  out_feature=fiber_ont/146  out_pins=in:1  path=linestring(63)  status=In Service  customer=Dashwood,U  address=2614  service_type=Direct
+  ftth_circuit(15)  name=WH-FTTH-015  out_feature=fiber_ont/147  out_pins=in:1  status=New  customer=Yates,J  address=452  service_type=Direct
+  ftth_circuit(16)  name=WH-FTTH-016  out_feature=fiber_ont/148  out_pins=in:1  status=New  customer=Abdy,OJ  address=2618  service_type=Direct
+  ftth_circuit(17)  name=WH-FTTH-017  in_feature=fiber_olt/11  in_pins=out:3  out_feature=fiber_ont/154  out_pins=in:1  path=linestring(105)  status=In Service  customer=Dice, J  address=4362  service_type=Direct
+  ftth_circuit(18)  name=WH-FTTH-018  in_feature=fiber_olt/11  in_pins=out:4  out_feature=fiber_ont/155  out_pins=in:1  path=linestring(105)  status=In Service  customer=Dennis, E  address=4362  service_type=Direct
+  ftth_circuit(19)  name=WH-FTTH-019  in_feature=fiber_olt/11  in_pins=out:5  out_feature=fiber_ont/156  out_pins=in:1  path=linestring(105)  status=In Service  customer=Brown, A  address=4362  service_type=Direct
+  ftth_circuit(20)  name=WH-FTTH-020  in_feature=fiber_olt/28  in_pins=out:7  out_feature=fiber_ont/139  out_pins=in:1  path=linestring(40)  status=In Service  customer=Ferrars,E  address=2597  service_type=Direct
+  ftth_circuit(21)  name=WH-FTTH-021  in_feature=fiber_olt/28  in_pins=out:6  out_feature=fiber_ont/151  out_pins=in:1  path=linestring(40)  status=In Service  customer=Bates,H  address=2597  service_type=Direct
+  ftth_circuit(22)  name=WH-FTTH-022  in_feature=fiber_olt/28  in_pins=out:5  out_feature=fiber_ont/157  out_pins=in:1  path=linestring(40)  status=In Service  customer=Abbots,TM  address=2597  service_type=Direct
+  ftth_circuit(23)  name=WH-FTTH-023  in_feature=fiber_olt/29  in_pins=out:1  out_feature=fiber_ont/158  out_pins=in:1  path=linestring(40)  status=In Service  customer=Helton,T  address=2597  service_type=Direct
+  ftth_circuit(24)  name=WH-FTTH-024  in_feature=fiber_olt/29  in_pins=out:2  out_feature=fiber_ont/159  out_pins=in:1  path=linestring(40)  status=In Service  customer=Spilborghs,R  address=2597  service_type=Direct
+  ftth_circuit(25)  name=WH-FTTH-025  out_feature=fiber_ont/160  out_pins=in:1  status=New  customer=Blackmon,C  address=2597  service_type=Direct
+  ftth_circuit(26)  name=WH-FTTH-026  in_feature=fiber_olt/26  in_pins=out:6  out_feature=fiber_ont/140  out_pins=in:1  path=linestring(57)  status=In Service  customer=Davis,T  address=2617  service_type=Direct
+  ftth_circuit(27)  name=WH-FTTH-027  in_feature=fiber_olt/26  in_pins=out:7  out_feature=fiber_ont/152  out_pins=in:1  path=linestring(57)  status=In Service  customer=Atwater,S  address=2617  service_type=Direct
+  ftth_circuit(28)  name=WH-FTTH-028  in_feature=fiber_olt/27  in_pins=out:1  out_feature=fiber_ont/161  out_pins=in:1  path=linestring(57)  status=In Service  customer=Smith, R  address=2617  service_type=Direct
+  ftth_circuit(29)  name=WH-FTTH-029  in_feature=fiber_olt/27  in_pins=out:2  out_feature=fiber_ont/162  out_pins=in:1  path=linestring(57)  status=In Service  customer=Wilson, A  address=2617  service_type=Direct
+  ftth_circuit(30)  name=WH-FTTH-030  in_feature=fiber_olt/10  in_pins=out:1  out_feature=fiber_ont/1  out_pins=in:1  path=linestring(21)  status=In Service  customer=Jennings,M  address=567  service_type=PON1
+  ftth_circuit(31)  name=WH-FTTH-031  in_feature=fiber_olt/10  in_pins=out:1  out_feature=fiber_ont/2  out_pins=in:1  path=linestring(21)  status=In Service  customer=Middleton,A  address=551  service_type=PON1
+  ftth_circuit(32)  name=WH-FTTH-032  in_feature=fiber_olt/10  in_pins=out:1  out_feature=fiber_ont/3  out_pins=in:1  path=linestring(21)  status=In Service  customer=Morton,LL  address=558  service_type=PON1
+  ftth_circuit(33)  name=WH-FTTH-033  in_feature=fiber_olt/10  in_pins=out:1  out_feature=fiber_ont/4  out_pins=in:1  path=linestring(21)  status=In Service  customer=Henshawe,B  address=561  service_type=PON1
+  ftth_circuit(34)  name=WH-FTTH-034  in_feature=fiber_olt/10  in_pins=out:1  out_feature=fiber_ont/5  out_pins=in:1  path=linestring(21)  status=In Service  customer=Ellison,M  address=565  service_type=PON1
+  ftth_circuit(35)  name=WH-FTTH-035  in_feature=fiber_olt/10  in_pins=out:1  out_feature=fiber_ont/7  out_pins=in:1  path=linestring(21)  status=In Service  customer=Davies,D  address=584  service_type=PON1
+  ftth_circuit(36)  name=WH-FTTH-036  in_feature=fiber_olt/10  in_pins=out:1  out_feature=fiber_ont/8  out_pins=in:1  path=linestring(21)  status=In Service  customer=Careys,T  address=583  service_type=PON1
+  ftth_circuit(37)  name=WH-FTTH-037  in_feature=fiber_olt/10  in_pins=out:2  out_feature=fiber_ont/9  out_pins=in:1  path=linestring(21)  status=In Service  customer=Brandon,E  address=3718  service_type=PON1
+  ftth_circuit(38)  name=WH-FTTH-038  in_feature=fiber_olt/10  in_pins=out:2  out_feature=fiber_ont/10  out_pins=in:1  path=linestring(21)  status=In Service  customer=Goulding,W  address=574  service_type=PON1
+  ftth_circuit(39)  name=WH-FTTH-039  in_feature=fiber_olt/10  in_pins=out:2  out_feature=fiber_ont/11  out_pins=in:1  path=linestring(21)  status=In Service  customer=Harrington,H  address=3735  service_type=PON1
+  ftth_circuit(40)  name=WH-FTTH-040  in_feature=fiber_olt/10  in_pins=out:2  out_feature=fiber_ont/13  out_pins=in:1  path=linestring(21)  status=In Service  customer=Lucas,SW  address=3736  service_type=PON1
+  ftth_circuit(41)  name=WH-FTTH-041  in_feature=fiber_olt/10  in_pins=out:2  out_feature=fiber_ont/14  out_pins=in:1  path=linestring(21)  status=In Service  customer=Morris,M  address=576  service_type=PON1
+  ftth_circuit(42)  name=WH-FTTH-042  in_feature=fiber_olt/10  in_pins=out:3  out_feature=fiber_ont/17  out_pins=in:1  path=linestring(24)  status=In Service  customer=Nicholls,M  address=563  service_type=PON1
+  ftth_circuit(43)  name=WH-FTTH-043  in_feature=fiber_olt/10  in_pins=out:3  out_feature=fiber_ont/19  out_pins=in:1  path=linestring(24)  status=In Service  customer=Pratt,M  address=580  service_type=PON1
+  ftth_circuit(44)  name=WH-FTTH-044  in_feature=fiber_olt/10  in_pins=out:3  out_feature=fiber_ont/20  out_pins=in:1  path=linestring(24)  status=In Service  customer=Bertram,J  address=3741  service_type=PON1
+  ftth_circuit(45)  name=WH-FTTH-045  in_feature=fiber_olt/10  in_pins=out:3  out_feature=fiber_ont/22  out_pins=in:1  path=linestring(24)  status=In Service  customer=Bertram,ST  address=579  service_type=PON1
+  ftth_circuit(46)  name=WH-FTTH-046  in_feature=fiber_olt/10  in_pins=out:3  out_feature=fiber_ont/23  out_pins=in:1  path=linestring(24)  status=In Service  customer=Norris,M  address=3742  service_type=PON1
+  ftth_circuit(47)  name=WH-FTTH-047  in_feature=fiber_olt/10  in_pins=out:4  out_feature=fiber_ont/24  out_pins=in:1  path=linestring(24)  status=In Service  customer=Price,S  address=3749  service_type=PON1
+  ftth_circuit(48)  name=WH-FTTH-048  in_feature=fiber_olt/10  in_pins=out:4  out_feature=fiber_ont/25  out_pins=in:1  path=linestring(24)  status=In Service  customer=Bragge,M  address=575  service_type=PON1
+  ftth_circuit(49)  name=WH-FTTH-049  in_feature=fiber_olt/10  in_pins=out:4  out_feature=fiber_ont/27  out_pins=in:1  path=linestring(24)  status=In Service  customer=Mitchell,F  address=559  service_type=PON1
+  ftth_circuit(50)  name=WH-FTTH-050  in_feature=fiber_olt/10  in_pins=out:7  out_feature=fiber_ont/30  out_pins=in:1  path=linestring(33)  status=In Service  customer=Nash,M  address=541  service_type=PON1
+  ftth_circuit(51)  name=WH-FTTH-051  in_feature=fiber_olt/10  in_pins=out:5  out_feature=fiber_ont/34  out_pins=in:1  path=linestring(29)  status=In Service  customer=Manwaring,M  address=3719  service_type=PON1
+  ftth_circuit(52)  name=WH-FTTH-052  in_feature=fiber_olt/10  in_pins=out:5  out_feature=fiber_ont/36  out_pins=in:1  path=linestring(29)  status=In Service  customer=Otway,G  address=554  service_type=PON1
+  ftth_circuit(53)  name=WH-FTTH-053  in_feature=fiber_olt/10  in_pins=out:7  out_feature=fiber_ont/33  out_pins=in:1  path=linestring(33)  status=In Service  customer=Morland,M  address=533  service_type=PON1
+  ftth_circuit(54)  name=WH-FTTH-054  in_feature=fiber_olt/10  in_pins=out:5  out_feature=fiber_ont/38  out_pins=in:1  path=linestring(29)  status=In Service  customer=Thorpe,J  address=556  service_type=PON1
+  ftth_circuit(55)  name=WH-FTTH-055  in_feature=fiber_olt/10  in_pins=out:5  out_feature=fiber_ont/40  out_pins=in:1  path=linestring(29)  status=In Service  customer=Coucy,RD  address=3763  service_type=PON1
+  ftth_circuit(56)  name=WH-FTTH-056  in_feature=fiber_olt/10  in_pins=out:5  out_feature=fiber_ont/41  out_pins=in:1  path=linestring(29)  status=In Service  customer=Martin,SJ  address=3758  service_type=PON1
+  ftth_circuit(57)  name=WH-FTTH-057  in_feature=fiber_olt/10  in_pins=out:6  out_feature=fiber_ont/42  out_pins=in:1  path=linestring(29)  status=In Service  customer=Vernon,C  address=3757  service_type=PON1
+  ftth_circuit(58)  name=WH-FTTH-058  in_feature=fiber_olt/10  in_pins=out:6  out_feature=fiber_ont/43  out_pins=in:1  path=linestring(29)  status=In Service  customer=Vernon,F  address=3751  service_type=PON1
+  ftth_circuit(59)  name=WH-FTTH-059  in_feature=fiber_olt/10  in_pins=out:6  out_feature=fiber_ont/44  out_pins=in:1  path=linestring(29)  status=In Service  customer=Scroggs,M  address=549  service_type=PON1
+  ftth_circuit(5801)  name=WH-FTTH-5801  in_feature=fiber_olt/6  in_pins=out:1  out_feature=fiber_ont/66  out_pins=in:1  path=linestring(43)  status=In Service  address=486  service_type=Direct
+

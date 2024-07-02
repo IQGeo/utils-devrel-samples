@@ -1,0 +1,34 @@
+.spec-edit-input {
+    width: 66% !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.spec-edit-btn,
+.spec-clear-btn {
+    background-repeat: no-repeat;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-position: center;
+    vertical-align: middle;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+
+.spec-edit-btn {
+    background-image: url('#{$path-to-img}editor/list.svg');
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.spec-clear-btn {
+    background-image: url('#{$path-to-img}editor/x.svg');
+
+    &.disabled {
+        background-image: url('#{$path-to-img}editor/x-inactive.svg');
+        background-color: #eee;
+    }
+}

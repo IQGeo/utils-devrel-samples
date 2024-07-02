@@ -1,0 +1,14 @@
+
+*** GET CABLES
+
+Cables for:  fiber_patch_panel/1
+[
+	"fiber_cable/22: Fiber Cable: WH-FCB-022 (288)"
+]
+
+Cables for:  fiber_patch_panel/2
+[
+	"fiber_cable/23: Fiber Cable: WH-FCB-023 (144)",
+	"fiber_cable/24: Fiber Cable: WH-FCB-024 (144)",
+	"fiber_cable/25: Fiber Cable: WH-FCB-025 (576)"
+]

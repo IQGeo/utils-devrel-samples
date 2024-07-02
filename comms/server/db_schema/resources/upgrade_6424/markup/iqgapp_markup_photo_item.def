@@ -1,0 +1,45 @@
+{
+   "datasource": "myworld",
+   "name": "iqgapp_markup_photo_item",
+   "external_name": "{:markup_photo_item_external_name}",
+   "title": "{display_name}: [id]",
+   "short_description": null,
+   "track_changes": true,
+   "versioned": false,
+   "geom_indexed": true,
+   "editable": {
+      "insert_from_gui": false,
+      "update_from_gui": false,
+      "delete_from_gui": false
+   },
+   "editor_options": null,
+   "fields": [
+      {
+         "name": "id",
+         "external_name": "{:id_field_name}",
+         "type": "integer",
+         "key": true,
+         "generator": "sequence"
+      },
+      {
+         "name": "owner",
+         "external_name": "{:markup_photo_item_owner_field_name}",
+         "type": "reference"
+      },
+      {
+         "name": "photo",
+         "external_name": "{:markup_photo_item_photo_field_name}",
+         "type": "image(256,256)"
+      }
+   ],
+   "groups": [],
+   "searches": [],
+   "queries": [
+      {
+         "value": "iqgapp markup photo item",
+         "description": "{:markup_photo_item_external_name}",
+         "lang": "en"
+      }
+   ],
+   "filters": []
+}

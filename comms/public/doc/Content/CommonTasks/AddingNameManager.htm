@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" /><title>Adding a Name Manager</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/IQGeo.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../index.htm#CommonTasks/AddingNameManager.htm">Open topic with navigation</a>
+        </p>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div role="main" id="mc-main-content">
+            <h1>Adding a Name Manager</h1>
+            <p>A name managers is a server-side class that provides default names for objects as they are inserted. The class is activated by register it as a server-side trigger. The code below provides a simple example.</p>
+            <p>&#160;</p><pre class="code">class StructNameManager():
+    ##
+    ## Engine to auto-name structures
+    ##
+    
+    prefixes = { 'manhole':    'M',
+                 'cabinet':    'C',
+                 'pole':       'P',
+                 'drop_point': 'DP' }
+
+    @classmethod
+    def registerTriggers(self,NetworkView):
+        ##
+        ## Register self's trigger methods on NETWORKVIEW
+        ##
+
+        NetworkView.registerTrigger('struct', 'pos_insert',self,'setNameFor')
+        NetworkView.registerTrigger('struct', 'pos_update',self,'setNameFor')
+
+        
+    def __init__(self,nw_view,progress):
+        ##
+        ## Init slots of self
+        ##
+        ## NW_VIEW is a NetworkView. PROGRESS is a MywProgressHandler
+
+        self.nw_view  = nw_view
+        self.db_view  = nw_view.db_view
+        self.progress = progress
+         
+    
+    def setNameFor(self,struct,orig_struct=None):
+        ##
+        ## Sets name value for feature
+        ##
+
+        ft = struct.feature_type
+        
+        # Check for not auto-named
+        prefix = self.prefixes.get(ft)
+        if not prefix: return
+
+        # Check for name already set
+        if struct.name: return
+
+        # Set name
+        struct.name = '{}-{}'.format(prefix,struct._id)
+        self.db_view.table(ft).update(struct)
+
+# Register triggers
+from myworldapp.modules.comms.server.api.network_view import NetworkView
+StructNameManager.registerTriggers(NetworkView)
+</pre>
+            <p>To enable the name manager during server startup, add the following line in the  <span class="FileName">__init__.py</span> of your module's <span class="FileName">server</span> directory:</p><pre class="code" xml:space="preserve"># Import name manager and register triggers
+from .struct_name_manager import StructNameManager
+</pre>
+            <p>To enable the name manager in custom scripts, simply import the file.</p>
+            <p>&#160;</p>
+        </div>
+        <p>&#160;</p>
+        <table style="width: 100%;border-top-style: solid;border-top-width: 1px;border-top-color: #696969;">
+            <col />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="copyright">Copyright © 2022, <span class="mc-variable IQGeoVariables.CompanyNameLong variable">IQGeo UK Ltd</span>. <span class="mc-variable IQGeoVariables.CompanyName variable">IQGeo</span> is a registered ® trademark. All Rights Reserved.</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

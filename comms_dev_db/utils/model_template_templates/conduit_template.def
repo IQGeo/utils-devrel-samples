@@ -1,0 +1,86 @@
+{
+    "datasource": "myworld",
+    "name": "conduit_template",
+    "external_name": "Conduit Template",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "Id",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "route",
+            "external_name": "Route",
+            "type": "linestring",
+            "mandatory": "true"
+        },
+        {
+            "name": "name",
+            "external_name": "Name",
+            "type": "string(64)"
+        },
+        {
+            "name": "root_housing",
+            "external_name": "Root",
+            "type": "reference()"
+        },
+        {
+            "name": "housing",
+            "external_name": "Housing",
+            "type": "reference()"
+        },
+        {
+            "name": "in_structure",
+            "external_name": "In Structure",
+            "type": "reference()"
+        },
+        {
+            "name": "out_structure",
+            "external_name": "Out Structure",
+            "type": "reference()"
+        },
+        {
+            "name": "in_conduit",
+            "external_name": "In Conduit",
+            "type": "reference()"
+        },
+        {
+            "name": "out_conduit",
+            "external_name": "Out Conduit",
+            "type": "reference()"
+        },
+        {
+            "name": "conduit_run",
+            "external_name": "Run",
+            "type": "reference()"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "Labor Costs",
+            "type": "string()"
+        },
+        {
+            "name": "conduits",
+            "external_name": "Conduits",
+            "type": "reference_set()",
+            "value": "select(*)"
+        },
+        {
+            "name": "cable_segments",
+            "external_name": "Cable Segments",
+            "type": "reference_set()",
+            "value": "select(*)"
+        }
+    ]
+}

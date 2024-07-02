@@ -1,0 +1,5500 @@
+
+*** Formats
+Set delta to: *** master ***
+
+
+SPLICE REPORT: html : splice_closure/47 : Splice Closure: WH-SC-047
+<h3>
+ConnectivityReport.type</h3>
+<h1>
+Splice Closure: WH-SC-047</h1>
+Manhole: WH-M-44<br>
+ConnectivityReport.date: 6&#x2F;10&#x2F;2020<br>
+<br>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+<span style="">
+ConnectivityReport.from_col</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px;text-align:left">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+<span style="">
+ConnectivityReport.to_col</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#1</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ff8080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+RD</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#1</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#2</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#80c080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+GN</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#2</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#3</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#ffffff;background-color:#80c080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+GN</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#3</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#4</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#ffffff;background-color:#d29595;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BN</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffff80;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+YL</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#4</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#5</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#ffffff;background-color:#b8c0c8;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+SL</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffffff;min-width:14px;padding:0 4px;height:16px;line-height:16px;display:inline-block;text-align:center;font-size:10px;border:1px solid #ccc">
+WT</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#5</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#6</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#000000;background-color:#ffffff;min-width:14px;padding:0 4px;height:16px;line-height:16px;display:inline-block;text-align:center;font-size:10px;border:1px solid #ccc">
+WT</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#b8c0c8;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+SL</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#6</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#7</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#000000;background-color:#ff8080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+RD</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#d29595;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BN</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#7</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#8</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#ffffff;background-color:#808080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BK</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#f7c1f7;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+VT</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#8</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#9</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#000000;background-color:#ffff80;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+YL</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#a0f0e8;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+TQ</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#9</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#10</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#000000;background-color:#f7c1f7;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+VT</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#808080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#10</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#11</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#000000;background-color:#fff2f0;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+RO</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#11</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#12</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+<span style="color:#000000;background-color:#80ffff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+A</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffe0e5;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+PK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#12</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#13</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ff8080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+RD/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#13</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#14</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#80c080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+GN/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#14</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#15</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#ffffff;background-color:#80c080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+GN</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#8080ff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BL/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#15</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#16</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#ffffff;background-color:#d29595;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BN</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffff80;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+YL/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#16</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#17</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#ffffff;background-color:#b8c0c8;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+SL</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffffff;min-width:14px;padding:0 4px;height:16px;line-height:16px;display:inline-block;text-align:center;font-size:10px;border:1px solid #ccc">
+WT/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#17</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#18</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#000000;background-color:#ffffff;min-width:14px;padding:0 4px;height:16px;line-height:16px;display:inline-block;text-align:center;font-size:10px;border:1px solid #ccc">
+WT</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#b8c0c8;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+SL/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#18</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#19</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#000000;background-color:#ff8080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+RD</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#ffffff;background-color:#d29595;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BN/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#19</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#20</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#ffffff;background-color:#808080;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+BK</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#f7c1f7;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+VT/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#20</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#21</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#000000;background-color:#ffff80;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+YL</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#a0f0e8;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+TQ/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#21</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#22</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#000000;background-color:#f7c1f7;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+VT</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#f7f7f7;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+TR</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#22</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#23</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#000000;background-color:#fff2f0;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+RO</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#23</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-004</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#24</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffd280;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+OR</span>
+<span style="color:#000000;background-color:#80ffff;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+A</span>
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px">
+-&gt;</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="color:#000000;background-color:#ffe0e5;min-width:14px;padding:0 4px;height:18px;line-height:18px;display:inline-block;text-align:center;font-size:10px">
+PK/BK</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+#24</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="">
+WH-FCB-008</span>
+</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:24px;padding-right:24px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+</tr>
+</table>
+
+
+
+SPLICE REPORT: pdf : splice_closure/47 : Splice Closure: WH-SC-047
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 27095
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+45. 780.8899999999999864 Td
+(ConnectivityReport.type) Tj
+ET
+BT
+/F1 15 Tf
+17.25 TL
+0 g
+45. 761.4900000000000091 Td
+(Splice Closure: WH-SC-047) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+45. 746.4900000000000091 Td
+(Manhole: WH-M-44) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+45. 736.1399999999999864 Td
+(ConnectivityReport.date: ) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+145.5299999999999727 736.1399999999999864 Td
+(6/10/2020) Tj
+ET
+0.95 G
+44.5 723.9400000000000546 m
+465.0599999999999454 723.9400000000000546 l
+S
+44.5 313.0900000000000318 m
+465.0599999999999454 313.0900000000000318 l
+S
+44.5 723.9400000000000546 m
+44.5 313.0900000000000318 l
+S
+465.0599999999999454 723.9400000000000546 m
+465.0599999999999454 313.0900000000000318 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 723.4400000000000546 419.5599999999999454 -19.7999999999999972 re
+f
+0. g
+0.95 g
+45. 687.8899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 656.3899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 624.8899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 593.3899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 561.8899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 530.3899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 498.8899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 467.3899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 435.8899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 404.3899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 372.8899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+0.95 g
+45. 341.3899999999999864 418.5599999999999454 -15.75 re
+f
+0. g
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+48.6000000000000014 708.6900000000000546 Td
+(ConnectivityReport.from_col) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 708.6900000000000546 Td
+(ConnectivityReport.to_col) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 692.9400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 692.9400000000000546 Td
+(#1) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 700.5900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 692.9400000000000546 Td
+(BL) Tj
+ET
+0. g
+0.5 0.5 1. rg
+203.1499999999999773 700.5900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+204.1499999999999773 692.9400000000000546 Td
+(BL) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 692.9400000000000546 Td
+(->) Tj
+ET
+1. 0.5 0.5 rg
+274.1000000000000227 700.5900000000000318 14.9599999999999991 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 692.9400000000000546 Td
+(RD) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 692.9400000000000546 Td
+(#1) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 692.9400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 677.1900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 677.1900000000000546 Td
+(#2) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 684.8400000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 677.1900000000000546 Td
+(BL) Tj
+ET
+0. g
+1. 0.82 0.5 rg
+203.1499999999999773 684.8400000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+204.1499999999999773 677.1900000000000546 Td
+(OR) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 677.1900000000000546 Td
+(->) Tj
+ET
+0.5 0.75 0.5 rg
+274.1000000000000227 684.8400000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 677.1900000000000546 Td
+(GN) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 677.1900000000000546 Td
+(#2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 677.1900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 661.4400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 661.4400000000000546 Td
+(#3) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 669.0900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 661.4400000000000546 Td
+(BL) Tj
+ET
+0. g
+0.5 0.75 0.5 rg
+203.1499999999999773 669.0900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+204.1499999999999773 661.4400000000000546 Td
+(GN) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 661.4400000000000546 Td
+(->) Tj
+ET
+0.5 0.5 1. rg
+274.1000000000000227 669.0900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 661.4400000000000546 Td
+(BL) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 661.4400000000000546 Td
+(#3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 661.4400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 645.6900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 645.6900000000000546 Td
+(#4) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 653.3400000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 645.6900000000000546 Td
+(BL) Tj
+ET
+0. g
+0.82 0.58 0.58 rg
+203.1499999999999773 653.3400000000000318 14.4199999999999982 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+204.1499999999999773 645.6900000000000546 Td
+(BN) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 645.6900000000000546 Td
+(->) Tj
+ET
+1. 1. 0.5 rg
+274.1000000000000227 653.3400000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 645.6900000000000546 Td
+(YL) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 645.6900000000000546 Td
+(#4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 645.6900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 629.9400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 629.9400000000000546 Td
+(#5) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 637.5900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 629.9400000000000546 Td
+(BL) Tj
+ET
+0. g
+0.72 0.75 0.78 rg
+203.1499999999999773 637.5900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+204.1499999999999773 629.9400000000000546 Td
+(SL) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 629.9400000000000546 Td
+(->) Tj
+ET
+1. g
+274.1000000000000227 637.5900000000000318 15.9499999999999993 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 629.9400000000000546 Td
+(WT) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 629.9400000000000546 Td
+(#5) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 629.9400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 614.1900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 614.1900000000000546 Td
+(#6) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 621.8400000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 614.1900000000000546 Td
+(BL) Tj
+ET
+0. g
+1. g
+203.1499999999999773 621.8400000000000318 15.9499999999999993 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+204.1499999999999773 614.1900000000000546 Td
+(WT) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 614.1900000000000546 Td
+(->) Tj
+ET
+0.72 0.75 0.78 rg
+274.1000000000000227 621.8400000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 614.1900000000000546 Td
+(SL) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 614.1900000000000546 Td
+(#6) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 614.1900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 598.4400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 598.4400000000000546 Td
+(#7) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 606.0900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 598.4400000000000546 Td
+(BL) Tj
+ET
+0. g
+1. 0.5 0.5 rg
+203.1499999999999773 606.0900000000000318 14.9599999999999991 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+204.1499999999999773 598.4400000000000546 Td
+(RD) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 598.4400000000000546 Td
+(->) Tj
+ET
+0.82 0.58 0.58 rg
+274.1000000000000227 606.0900000000000318 14.4199999999999982 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 598.4400000000000546 Td
+(BN) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 598.4400000000000546 Td
+(#7) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 598.4400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 582.6900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 582.6900000000000546 Td
+(#8) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 590.3400000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 582.6900000000000546 Td
+(BL) Tj
+ET
+0. g
+0.5 g
+203.1499999999999773 590.3400000000000318 13.8800000000000008 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+204.1499999999999773 582.6900000000000546 Td
+(BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 582.6900000000000546 Td
+(->) Tj
+ET
+0.97 0.76 0.97 rg
+274.1000000000000227 590.3400000000000318 13.4299999999999997 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 582.6900000000000546 Td
+(VT) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 582.6900000000000546 Td
+(#8) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 582.6900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 566.9400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 566.9400000000000546 Td
+(#9) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 574.5900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 566.9400000000000546 Td
+(BL) Tj
+ET
+0. g
+1. 1. 0.5 rg
+203.1499999999999773 574.5900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+204.1499999999999773 566.9400000000000546 Td
+(YL) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 566.9400000000000546 Td
+(->) Tj
+ET
+0.63 0.94 0.91 rg
+274.1000000000000227 574.5900000000000318 14.5100000000000016 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 566.9400000000000546 Td
+(TQ) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 566.9400000000000546 Td
+(#9) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 566.9400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 551.1900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 551.1900000000000546 Td
+(#10) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 558.8400000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 551.1900000000000546 Td
+(BL) Tj
+ET
+0. g
+0.97 0.76 0.97 rg
+203.1499999999999773 558.8400000000000318 13.4299999999999997 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+204.1499999999999773 551.1900000000000546 Td
+(VT) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 551.1900000000000546 Td
+(->) Tj
+ET
+0.5 g
+274.1000000000000227 558.8400000000000318 13.8800000000000008 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 551.1900000000000546 Td
+(BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 551.1900000000000546 Td
+(#10) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 551.1900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 535.4400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 535.4400000000000546 Td
+(#11) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 543.0900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 535.4400000000000546 Td
+(BL) Tj
+ET
+0. g
+1. 0.95 0.94 rg
+203.1499999999999773 543.0900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+204.1499999999999773 535.4400000000000546 Td
+(RO) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 535.4400000000000546 Td
+(->) Tj
+ET
+1. 0.82 0.5 rg
+274.1000000000000227 543.0900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 535.4400000000000546 Td
+(OR) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 535.4400000000000546 Td
+(#11) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 535.4400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 519.6900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 519.6900000000000546 Td
+(#12) Tj
+ET
+0.5 0.5 1. rg
+189.2599999999999909 527.3400000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+190.2599999999999909 519.6900000000000546 Td
+(BL) Tj
+ET
+0. g
+0.5 1. 1. rg
+203.1499999999999773 527.3400000000000318 7.9400000000000004 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+204.1499999999999773 519.6900000000000546 Td
+(A) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 519.6900000000000546 Td
+(->) Tj
+ET
+1. 0.88 0.9 rg
+274.1000000000000227 527.3400000000000318 13.8800000000000008 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 519.6900000000000546 Td
+(PK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 519.6900000000000546 Td
+(#12) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 519.6900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 503.9400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 503.9400000000000546 Td
+(#13) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 511.5900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 503.9400000000000546 Td
+(OR) Tj
+ET
+0. g
+0.5 0.5 1. rg
+205.7599999999999909 511.5900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+206.7599999999999909 503.9400000000000546 Td
+(BL) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 503.9400000000000546 Td
+(->) Tj
+ET
+1. 0.5 0.5 rg
+274.1000000000000227 511.5900000000000318 29.3599999999999994 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 503.9400000000000546 Td
+(RD/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 503.9400000000000546 Td
+(#13) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 503.9400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 488.1900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 488.1900000000000546 Td
+(#14) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 495.8400000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 488.1900000000000546 Td
+(OR) Tj
+ET
+0. g
+1. 0.82 0.5 rg
+205.7599999999999909 495.8400000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+206.7599999999999909 488.1900000000000546 Td
+(OR) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 488.1900000000000546 Td
+(->) Tj
+ET
+0.5 0.75 0.5 rg
+274.1000000000000227 495.8400000000000318 29.9000000000000021 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 488.1900000000000546 Td
+(GN/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 488.1900000000000546 Td
+(#14) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 488.1900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 472.4400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 472.4400000000000546 Td
+(#15) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 480.0900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 472.4400000000000546 Td
+(OR) Tj
+ET
+0. g
+0.5 0.75 0.5 rg
+205.7599999999999909 480.0900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+206.7599999999999909 472.4400000000000546 Td
+(GN) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 472.4400000000000546 Td
+(->) Tj
+ET
+0.5 0.5 1. rg
+274.1000000000000227 480.0900000000000318 27.2899999999999991 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 472.4400000000000546 Td
+(BL/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 472.4400000000000546 Td
+(#15) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 472.4400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 456.6900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 456.6900000000000546 Td
+(#16) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 464.3400000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 456.6900000000000546 Td
+(OR) Tj
+ET
+0. g
+0.82 0.58 0.58 rg
+205.7599999999999909 464.3400000000000318 14.4199999999999982 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+206.7599999999999909 456.6900000000000546 Td
+(BN) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 456.6900000000000546 Td
+(->) Tj
+ET
+1. 1. 0.5 rg
+274.1000000000000227 464.3400000000000318 27.2899999999999991 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 456.6900000000000546 Td
+(YL/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 456.6900000000000546 Td
+(#16) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 456.6900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 440.9400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 440.9400000000000546 Td
+(#17) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 448.5900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 440.9400000000000546 Td
+(OR) Tj
+ET
+0. g
+0.72 0.75 0.78 rg
+205.7599999999999909 448.5900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+206.7599999999999909 440.9400000000000546 Td
+(SL) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 440.9400000000000546 Td
+(->) Tj
+ET
+1. g
+274.1000000000000227 448.5900000000000318 30.3499999999999979 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 440.9400000000000546 Td
+(WT/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 440.9400000000000546 Td
+(#17) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 440.9400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 425.1900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 425.1900000000000546 Td
+(#18) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 432.8400000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 425.1900000000000546 Td
+(OR) Tj
+ET
+0. g
+1. g
+205.7599999999999909 432.8400000000000318 15.9499999999999993 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+206.7599999999999909 425.1900000000000546 Td
+(WT) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 425.1900000000000546 Td
+(->) Tj
+ET
+0.72 0.75 0.78 rg
+274.1000000000000227 432.8400000000000318 27.2899999999999991 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 425.1900000000000546 Td
+(SL/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 425.1900000000000546 Td
+(#18) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 425.1900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 409.4400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 409.4400000000000546 Td
+(#19) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 417.0900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 409.4400000000000546 Td
+(OR) Tj
+ET
+0. g
+1. 0.5 0.5 rg
+205.7599999999999909 417.0900000000000318 14.9599999999999991 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+206.7599999999999909 409.4400000000000546 Td
+(RD) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 409.4400000000000546 Td
+(->) Tj
+ET
+0.82 0.58 0.58 rg
+274.1000000000000227 417.0900000000000318 28.8200000000000003 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+275.1000000000000227 409.4400000000000546 Td
+(BN/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 409.4400000000000546 Td
+(#19) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 409.4400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 393.6900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 393.6900000000000546 Td
+(#20) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 401.3400000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 393.6900000000000546 Td
+(OR) Tj
+ET
+0. g
+0.5 g
+205.7599999999999909 401.3400000000000318 13.8800000000000008 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+1. g
+206.7599999999999909 393.6900000000000546 Td
+(BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 393.6900000000000546 Td
+(->) Tj
+ET
+0.97 0.76 0.97 rg
+274.1000000000000227 401.3400000000000318 27.8300000000000018 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 393.6900000000000546 Td
+(VT/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 393.6900000000000546 Td
+(#20) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 393.6900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 377.9400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 377.9400000000000546 Td
+(#21) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 385.5900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 377.9400000000000546 Td
+(OR) Tj
+ET
+0. g
+1. 1. 0.5 rg
+205.7599999999999909 385.5900000000000318 12.8900000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+206.7599999999999909 377.9400000000000546 Td
+(YL) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 377.9400000000000546 Td
+(->) Tj
+ET
+0.63 0.94 0.91 rg
+274.1000000000000227 385.5900000000000318 28.9100000000000037 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 377.9400000000000546 Td
+(TQ/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 377.9400000000000546 Td
+(#21) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 377.9400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 362.1900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 362.1900000000000546 Td
+(#22) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 369.8400000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 362.1900000000000546 Td
+(OR) Tj
+ET
+0. g
+0.97 0.76 0.97 rg
+205.7599999999999909 369.8400000000000318 13.4299999999999997 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+206.7599999999999909 362.1900000000000546 Td
+(VT) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 362.1900000000000546 Td
+(->) Tj
+ET
+0.97 g
+274.1000000000000227 369.8400000000000318 13.9700000000000006 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 362.1900000000000546 Td
+(TR) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 362.1900000000000546 Td
+(#22) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 362.1900000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 346.4400000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 346.4400000000000546 Td
+(#23) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 354.0900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 346.4400000000000546 Td
+(OR) Tj
+ET
+0. g
+1. 0.95 0.94 rg
+205.7599999999999909 354.0900000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+206.7599999999999909 346.4400000000000546 Td
+(RO) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 346.4400000000000546 Td
+(->) Tj
+ET
+1. 0.82 0.5 rg
+274.1000000000000227 354.0900000000000318 29.9000000000000021 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 346.4400000000000546 Td
+(OR/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 346.4400000000000546 Td
+(#23) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 346.4400000000000546 Td
+(WH-FCB-008) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 330.6900000000000546 Td
+(WH-FCB-004) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+168.2099999999999795 330.6900000000000546 Td
+(#24) Tj
+ET
+1. 0.82 0.5 rg
+189.2599999999999909 338.3400000000000318 15.5 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+190.2599999999999909 330.6900000000000546 Td
+(OR) Tj
+ET
+0. g
+0.5 1. 1. rg
+205.7599999999999909 338.3400000000000318 7.9400000000000004 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+206.7599999999999909 330.6900000000000546 Td
+(A) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+245.3100000000000023 330.6900000000000546 Td
+(->) Tj
+ET
+1. 0.88 0.9 rg
+274.1000000000000227 338.3400000000000318 28.2800000000000047 -10. re
+f
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+275.1000000000000227 330.6900000000000546 Td
+(PK/BK) Tj
+ET
+0. g
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+384.2699999999999818 330.6900000000000546 Td
+(#24) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+406.3199999999999932 330.6900000000000546 Td
+(WH-FCB-008) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 2.3.1)
+/CreationDate <date>
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000027300 00000 n 
+0000029117 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000027357 00000 n 
+0000027482 00000 n 
+0000027612 00000 n 
+0000027745 00000 n 
+0000027882 00000 n 
+0000028005 00000 n 
+0000028134 00000 n 
+0000028266 00000 n 
+0000028402 00000 n 
+0000028530 00000 n 
+0000028657 00000 n 
+0000028786 00000 n 
+0000028919 00000 n 
+0000029021 00000 n 
+0000029365 00000 n 
+0000029451 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID <id>
+>>
+startxref
+29555
+%%EOF
+
+
+SPLICE REPORT: xlsx : splice_closure/47 : Splice Closure: WH-SC-047
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 13
+			},
+			"text": "ConnectivityReport.type"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 17
+			},
+			"text": "Splice Closure: WH-SC-047"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-44"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "ConnectivityReport.date: "
+		},
+		{
+			"font": {
+
+			},
+			"text": "6/10/2020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "ConnectivityReport.from_col"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "ConnectivityReport.to_col"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#1"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd32d2d"
+				}
+			},
+			"text": "[RD] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#1"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d802d"
+				}
+			},
+			"text": "[GN] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#3"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d802d"
+				}
+			},
+			"text": "[GN] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#3"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#4"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF984848"
+				}
+			},
+			"text": "[BN] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3d32d"
+				}
+			},
+			"text": "[YL] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#4"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#5"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF76808a"
+				}
+			},
+			"text": "[SL] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2d2d"
+				}
+			},
+			"text": "[WT] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#5"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#6"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2d2d"
+				}
+			},
+			"text": "[WT] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF76808a"
+				}
+			},
+			"text": "[SL] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#6"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#7"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd32d2d"
+				}
+			},
+			"text": "[RD] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF984848"
+				}
+			},
+			"text": "[BN] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#7"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#8"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2d2d"
+				}
+			},
+			"text": "[BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFc881c8"
+				}
+			},
+			"text": "[VT] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#8"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#9"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3d32d"
+				}
+			},
+			"text": "[YL] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF56beb4"
+				}
+			},
+			"text": "[TQ] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#9"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#10"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFc881c8"
+				}
+			},
+			"text": "[VT] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2d2d"
+				}
+			},
+			"text": "[BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#10"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#11"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3c1bf"
+				}
+			},
+			"text": "[RO] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#11"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#12"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2dd3d3"
+				}
+			},
+			"text": "[A] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3aab1"
+				}
+			},
+			"text": "[PK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#12"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#13"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd32d2d"
+				}
+			},
+			"text": "[RD/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#13"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#14"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d802d"
+				}
+			},
+			"text": "[GN/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#14"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#15"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d802d"
+				}
+			},
+			"text": "[GN] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2dd3"
+				}
+			},
+			"text": "[BL/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#15"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#16"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF984848"
+				}
+			},
+			"text": "[BN] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3d32d"
+				}
+			},
+			"text": "[YL/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#16"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#17"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF76808a"
+				}
+			},
+			"text": "[SL] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2d2d"
+				}
+			},
+			"text": "[WT/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#17"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#18"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2d2d"
+				}
+			},
+			"text": "[WT] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF76808a"
+				}
+			},
+			"text": "[SL/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#18"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#19"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd32d2d"
+				}
+			},
+			"text": "[RD] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF984848"
+				}
+			},
+			"text": "[BN/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#19"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#20"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2d2d2d"
+				}
+			},
+			"text": "[BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFc881c8"
+				}
+			},
+			"text": "[VT/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#20"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#21"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3d32d"
+				}
+			},
+			"text": "[YL] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF56beb4"
+				}
+			},
+			"text": "[TQ/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#21"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#22"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFc881c8"
+				}
+			},
+			"text": "[VT] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFc8c8c8"
+				}
+			},
+			"text": "[TR] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#22"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#23"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3c1bf"
+				}
+			},
+			"text": "[RO] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#23"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-004"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#24"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3982d"
+				}
+			},
+			"text": "[OR] "
+		},
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FF2dd3d3"
+				}
+			},
+			"text": "[A] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "->"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"color": {
+					"argb": "FFd3aab1"
+				}
+			},
+			"text": "[PK/BK] "
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "#24"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "WH-FCB-008"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+
+
+SPLICE REPORT: csv : splice_closure/47 : Splice Closure: WH-SC-047
+ConnectivityReport.type
+Splice Closure: WH-SC-047
+Manhole: WH-M-44
+ConnectivityReport.date: 6/10/2020
+
+
+ConnectivityReport.from_col,,,,ConnectivityReport.to_col,,
+WH-FCB-004,#1,[BL][BL],->,[RD],#1,WH-FCB-008
+WH-FCB-004,#2,[BL][OR],->,[GN],#2,WH-FCB-008
+WH-FCB-004,#3,[BL][GN],->,[BL],#3,WH-FCB-008
+WH-FCB-004,#4,[BL][BN],->,[YL],#4,WH-FCB-008
+WH-FCB-004,#5,[BL][SL],->,[WT],#5,WH-FCB-008
+WH-FCB-004,#6,[BL][WT],->,[SL],#6,WH-FCB-008
+WH-FCB-004,#7,[BL][RD],->,[BN],#7,WH-FCB-008
+WH-FCB-004,#8,[BL][BK],->,[VT],#8,WH-FCB-008
+WH-FCB-004,#9,[BL][YL],->,[TQ],#9,WH-FCB-008
+WH-FCB-004,#10,[BL][VT],->,[BK],#10,WH-FCB-008
+WH-FCB-004,#11,[BL][RO],->,[OR],#11,WH-FCB-008
+WH-FCB-004,#12,[BL][A],->,[PK],#12,WH-FCB-008
+WH-FCB-004,#13,[OR][BL],->,[RD/BK],#13,WH-FCB-008
+WH-FCB-004,#14,[OR][OR],->,[GN/BK],#14,WH-FCB-008
+WH-FCB-004,#15,[OR][GN],->,[BL/BK],#15,WH-FCB-008
+WH-FCB-004,#16,[OR][BN],->,[YL/BK],#16,WH-FCB-008
+WH-FCB-004,#17,[OR][SL],->,[WT/BK],#17,WH-FCB-008
+WH-FCB-004,#18,[OR][WT],->,[SL/BK],#18,WH-FCB-008
+WH-FCB-004,#19,[OR][RD],->,[BN/BK],#19,WH-FCB-008
+WH-FCB-004,#20,[OR][BK],->,[VT/BK],#20,WH-FCB-008
+WH-FCB-004,#21,[OR][YL],->,[TQ/BK],#21,WH-FCB-008
+WH-FCB-004,#22,[OR][VT],->,[TR],#22,WH-FCB-008
+WH-FCB-004,#23,[OR][RO],->,[OR/BK],#23,WH-FCB-008
+WH-FCB-004,#24,[OR][A],->,[PK/BK],#24,WH-FCB-008
+,,,,,,
+
+
+*** Splice Closure
+Set delta to: *** master ***
+
+
+SPLICE REPORT: csv : splice_closure/39 : Splice Closure: WH-SC-039
+ConnectivityReport.type
+Splice Closure: WH-SC-039
+Cabinet: WH-C-11
+ConnectivityReport.date: 6/10/2020
+
+
+ConnectivityReport.from_col,,,,ConnectivityReport.to_col,,,ConnectivityReport.circuit_col
+WH-FCB-009,#1,[BL][BL],->,,#1,DROP-144,WH-FTTH-010
+,,,,,,,WH-FTTH-026
+WH-FCB-009,#2,[BL][OR],->,,#2,DROP-144,WH-FTTH-027
+WH-FCB-009,#3,[BL][GN],->,,#3,DROP-144,
+WH-FCB-009,#4,[BL][BN],->,,#4,DROP-144,
+WH-FCB-009,#5,[BL][SL],->,,#5,DROP-144,WH-FTTH-028
+WH-FCB-009,#6,[BL][WT],->,,#6,DROP-144,WH-FTTH-029
+WH-FCB-009,#11,[BL][RO],->,[BL],#1,DROP-146,WH-FTTH-014
+WH-FCB-009,#13,[OR][BL],->,[BL],#1,DROP-148,
+,,,,,,,
+
+
+*** Manhole
+Set delta to: *** master ***
+
+
+SPLICE REPORT: csv : manhole/29 : Manhole: WH-M-29
+ConnectivityReport.type
+Manhole: WH-M-29
+ConnectivityReport.date: 6/10/2020
+
+
+ConnectivityReport.housing_col,ConnectivityReport.from_col,,,,ConnectivityReport.to_col,,,ConnectivityReport.circuit_col
+Tray-1,BB-FCB-016,#11,[BL][RO],->,[BL][BL],#1,BB-FCB-017,
+Tray-1,BB-FCB-016,#12,[BL][A],->,[BL][OR],#2,BB-FCB-017,
+Tray-1,BB-FCB-016,#13,[OR][BL],->,[BL][GN],#3,BB-FCB-017,
+Tray-1,BB-FCB-016,#14,[OR][OR],->,[BL][BN],#4,BB-FCB-017,
+Tray-1,BB-FCB-016,#15,[OR][GN],->,[BL][SL],#5,BB-FCB-017,
+Tray-1,BB-FCB-016,#16,[OR][BN],->,[BL][WT],#6,BB-FCB-017,
+Tray-1,BB-FCB-016,#17,[OR][SL],->,[BL][RD],#7,BB-FCB-017,
+Tray-1,BB-FCB-016,#18,[OR][WT],->,[BL][BK],#8,BB-FCB-017,
+Tray-1,BB-FCB-016,#19,[OR][RD],->,[BL][YL],#9,BB-FCB-017,
+Tray-1,BB-FCB-016,#20,[OR][BK],->,[BL][VT],#10,BB-FCB-017,
+Tray-1,BB-FCB-016,#21,[OR][YL],->,[BL][RO],#11,BB-FCB-017,
+Tray-1,BB-FCB-016,#22,[OR][VT],->,[BL][A],#12,BB-FCB-017,
+Tray-1,BB-FCB-016,#23,[OR][RO],->,[OR][BL],#13,BB-FCB-017,
+Tray-1,BB-FCB-016,#24,[OR][A],->,[OR][OR],#14,BB-FCB-017,
+Tray-1,BB-FCB-016,#25,[GN][BL],->,[OR][GN],#15,BB-FCB-017,
+Tray-1,BB-FCB-016,#26,[GN][OR],->,[OR][BN],#16,BB-FCB-017,
+Tray-2,BB-FCB-016,#27,[GN][GN],->,[OR][SL],#17,BB-FCB-017,
+Tray-2,BB-FCB-016,#28,[GN][BN],->,[OR][WT],#18,BB-FCB-017,
+Tray-2,BB-FCB-016,#29,[GN][SL],->,[OR][RD],#19,BB-FCB-017,
+Tray-2,BB-FCB-016,#30,[GN][WT],->,[OR][BK],#20,BB-FCB-017,
+Tray-4,WH-FCB-007,#145,[BL/BK][BL],->,[BL][BL],#1,WH-FCB-021,WH-FTTH-030
+,,,,,,,,WH-FTTH-031
+,,,,,,,,WH-FTTH-032
+,,,,,,,,WH-FTTH-033
+,,,,,,,,WH-FTTH-034
+,,,,,,,,WH-FTTH-035
+,,,,,,,,WH-FTTH-036
+Tray-4,WH-FCB-007,#146,[BL/BK][OR],->,[BL][OR],#2,WH-FCB-021,WH-FTTH-037
+,,,,,,,,WH-FTTH-038
+,,,,,,,,WH-FTTH-039
+,,,,,,,,WH-FTTH-040
+,,,,,,,,WH-FTTH-041
+Tray-4,WH-FCB-007,#147,[BL/BK][GN],->,[BL][GN],#3,WH-FCB-021,WH-FTTH-042
+,,,,,,,,WH-FTTH-043
+,,,,,,,,WH-FTTH-044
+,,,,,,,,WH-FTTH-045
+,,,,,,,,WH-FTTH-046
+Tray-4,WH-FCB-007,#148,[BL/BK][BN],->,[BL][BN],#4,WH-FCB-021,WH-FTTH-047
+,,,,,,,,WH-FTTH-048
+,,,,,,,,WH-FTTH-049
+Tray-4,WH-FCB-007,#149,[BL/BK][SL],->,[BL][SL],#5,WH-FCB-021,WH-FTTH-051
+,,,,,,,,WH-FTTH-052
+,,,,,,,,WH-FTTH-054
+,,,,,,,,WH-FTTH-055
+,,,,,,,,WH-FTTH-056
+Tray-4,WH-FCB-007,#150,[BL/BK][WT],->,[BL][WT],#6,WH-FCB-021,WH-FTTH-057
+,,,,,,,,WH-FTTH-058
+,,,,,,,,WH-FTTH-059
+Tray-4,WH-FCB-007,#151,[BL/BK][RD],->,[BL][RD],#7,WH-FCB-021,WH-FTTH-050
+,,,,,,,,WH-FTTH-053
+Tray-4,WH-FCB-007,#152,[BL/BK][BK],->,[BL][BK],#8,WH-FCB-021,
+Tray-4,WH-FCB-007,#153,[BL/BK][YL],->,[BL][YL],#9,WH-FCB-021,
+Tray-4,WH-FCB-007,#154,[BL/BK][VT],->,[BL][VT],#10,WH-FCB-021,
+Tray-4,WH-FCB-007,#155,[BL/BK][RO],->,[BL][RO],#11,WH-FCB-021,WH-FTTH-5801
+Tray-4,WH-FCB-007,#156,[BL/BK][A],->,[BL][A],#12,WH-FCB-021,
+Tray-4,WH-FCB-007,#157,[OR/BK][BL],->,[OR][BL],#13,WH-FCB-021,
+Tray-4,WH-FCB-007,#158,[OR/BK][OR],->,[OR][OR],#14,WH-FCB-021,
+Tray-4,WH-FCB-007,#159,[OR/BK][GN],->,[OR][GN],#15,WH-FCB-021,
+Tray-4,WH-FCB-007,#160,[OR/BK][BN],->,[OR][BN],#16,WH-FCB-021,
+Tray-5,WH-FCB-007,#161,[OR/BK][SL],->,[OR][SL],#17,WH-FCB-021,
+Tray-5,WH-FCB-007,#162,[OR/BK][WT],->,[OR][WT],#18,WH-FCB-021,
+Tray-5,WH-FCB-007,#163,[OR/BK][RD],->,[OR][RD],#19,WH-FCB-021,
+Tray-5,WH-FCB-007,#164,[OR/BK][BK],->,[OR][BK],#20,WH-FCB-021,
+Tray-5,WH-FCB-007,#165,[OR/BK][YL],->,[OR][YL],#21,WH-FCB-021,
+Tray-5,WH-FCB-007,#166,[OR/BK][VT],->,[OR][VT],#22,WH-FCB-021,
+Tray-5,WH-FCB-007,#167,[OR/BK][RO],->,[OR][RO],#23,WH-FCB-021,
+Tray-5,WH-FCB-007,#168,[OR/BK][A],->,[OR][A],#24,WH-FCB-021,
+Tray-5,WH-FCB-007,#169,[GN/BK][BL],->,[GN][BL],#25,WH-FCB-021,
+Tray-5,WH-FCB-007,#170,[GN/BK][OR],->,[GN][OR],#26,WH-FCB-021,
+Tray-5,WH-FCB-007,#171,[GN/BK][GN],->,[GN][GN],#27,WH-FCB-021,
+Tray-5,WH-FCB-007,#172,[GN/BK][BN],->,[GN][BN],#28,WH-FCB-021,
+Tray-5,WH-FCB-007,#173,[GN/BK][SL],->,[GN][SL],#29,WH-FCB-021,
+Tray-5,WH-FCB-007,#174,[GN/BK][WT],->,[GN][WT],#30,WH-FCB-021,
+Tray-5,WH-FCB-007,#175,[GN/BK][RD],->,[GN][RD],#31,WH-FCB-021,
+Tray-5,WH-FCB-007,#176,[GN/BK][BK],->,[GN][BK],#32,WH-FCB-021,
+Tray-6,WH-FCB-007,#177,[GN/BK][YL],->,[GN][YL],#33,WH-FCB-021,
+Tray-6,WH-FCB-007,#178,[GN/BK][VT],->,[GN][VT],#34,WH-FCB-021,
+Tray-6,WH-FCB-007,#179,[GN/BK][RO],->,[GN][RO],#35,WH-FCB-021,
+Tray-6,WH-FCB-007,#180,[GN/BK][A],->,[GN][A],#36,WH-FCB-021,
+Tray-6,WH-FCB-007,#181,[BN/BK][BL],->,[BN][BL],#37,WH-FCB-021,
+Tray-6,WH-FCB-007,#182,[BN/BK][OR],->,[BN][OR],#38,WH-FCB-021,
+Tray-6,WH-FCB-007,#183,[BN/BK][GN],->,[BN][GN],#39,WH-FCB-021,
+Tray-6,WH-FCB-007,#184,[BN/BK][BN],->,[BN][BN],#40,WH-FCB-021,
+Tray-6,WH-FCB-007,#185,[BN/BK][SL],->,[BN][SL],#41,WH-FCB-021,
+Tray-6,WH-FCB-007,#186,[BN/BK][WT],->,[BN][WT],#42,WH-FCB-021,
+Tray-6,WH-FCB-007,#187,[BN/BK][RD],->,[BN][RD],#43,WH-FCB-021,
+Tray-6,WH-FCB-007,#188,[BN/BK][BK],->,[BN][BK],#44,WH-FCB-021,
+Tray-6,WH-FCB-007,#189,[BN/BK][YL],->,[BN][YL],#45,WH-FCB-021,
+Tray-6,WH-FCB-007,#190,[BN/BK][VT],->,[BN][VT],#46,WH-FCB-021,
+Tray-6,WH-FCB-007,#191,[BN/BK][RO],->,[BN][RO],#47,WH-FCB-021,
+Tray-6,WH-FCB-007,#192,[BN/BK][A],->,[BN][A],#48,WH-FCB-021,
+Tray-7,WH-FCB-007,#193,[SL/BK][BL],->,[SL][BL],#49,WH-FCB-021,
+Tray-7,WH-FCB-007,#194,[SL/BK][OR],->,[SL][OR],#50,WH-FCB-021,
+Tray-7,WH-FCB-007,#195,[SL/BK][GN],->,[SL][GN],#51,WH-FCB-021,
+Tray-7,WH-FCB-007,#196,[SL/BK][BN],->,[SL][BN],#52,WH-FCB-021,
+Tray-7,WH-FCB-007,#197,[SL/BK][SL],->,[SL][SL],#53,WH-FCB-021,
+Tray-7,WH-FCB-007,#198,[SL/BK][WT],->,[SL][WT],#54,WH-FCB-021,
+Tray-7,WH-FCB-007,#199,[SL/BK][RD],->,[SL][RD],#55,WH-FCB-021,
+Tray-7,WH-FCB-007,#200,[SL/BK][BK],->,[SL][BK],#56,WH-FCB-021,
+Tray-7,WH-FCB-007,#201,[SL/BK][YL],->,[SL][YL],#57,WH-FCB-021,
+Tray-7,WH-FCB-007,#202,[SL/BK][VT],->,[SL][VT],#58,WH-FCB-021,
+Tray-7,WH-FCB-007,#203,[SL/BK][RO],->,[SL][RO],#59,WH-FCB-021,
+Tray-7,WH-FCB-007,#204,[SL/BK][A],->,[SL][A],#60,WH-FCB-021,
+Tray-7,WH-FCB-007,#205,[WT/BK][BL],->,[WT][BL],#61,WH-FCB-021,
+Tray-7,WH-FCB-007,#206,[WT/BK][OR],->,[WT][OR],#62,WH-FCB-021,
+Tray-7,WH-FCB-007,#207,[WT/BK][GN],->,[WT][GN],#63,WH-FCB-021,
+Tray-7,WH-FCB-007,#208,[WT/BK][BN],->,[WT][BN],#64,WH-FCB-021,
+Tray-8,WH-FCB-007,#209,[WT/BK][SL],->,[WT][SL],#65,WH-FCB-021,
+Tray-8,WH-FCB-007,#210,[WT/BK][WT],->,[WT][WT],#66,WH-FCB-021,
+Tray-8,WH-FCB-007,#211,[WT/BK][RD],->,[WT][RD],#67,WH-FCB-021,
+Tray-8,WH-FCB-007,#212,[WT/BK][BK],->,[WT][BK],#68,WH-FCB-021,
+Tray-8,WH-FCB-007,#213,[WT/BK][YL],->,[WT][YL],#69,WH-FCB-021,
+Tray-8,WH-FCB-007,#214,[WT/BK][VT],->,[WT][VT],#70,WH-FCB-021,
+Tray-8,WH-FCB-007,#215,[WT/BK][RO],->,[WT][RO],#71,WH-FCB-021,
+Tray-8,WH-FCB-007,#216,[WT/BK][A],->,[WT][A],#72,WH-FCB-021,
+Tray-8,WH-FCB-007,#217,[RD/BK][BL],->,[RD][BL],#73,WH-FCB-021,
+Tray-8,WH-FCB-007,#218,[RD/BK][OR],->,[RD][OR],#74,WH-FCB-021,
+Tray-8,WH-FCB-007,#219,[RD/BK][GN],->,[RD][GN],#75,WH-FCB-021,
+Tray-8,WH-FCB-007,#220,[RD/BK][BN],->,[RD][BN],#76,WH-FCB-021,
+Tray-8,WH-FCB-007,#221,[RD/BK][SL],->,[RD][SL],#77,WH-FCB-021,
+Tray-8,WH-FCB-007,#222,[RD/BK][WT],->,[RD][WT],#78,WH-FCB-021,
+Tray-8,WH-FCB-007,#223,[RD/BK][RD],->,[RD][RD],#79,WH-FCB-021,
+Tray-8,WH-FCB-007,#224,[RD/BK][BK],->,[RD][BK],#80,WH-FCB-021,
+Tray-9,WH-FCB-007,#225,[RD/BK][YL],->,[RD][YL],#81,WH-FCB-021,
+Tray-9,WH-FCB-007,#226,[RD/BK][VT],->,[RD][VT],#82,WH-FCB-021,
+Tray-9,WH-FCB-007,#227,[RD/BK][RO],->,[RD][RO],#83,WH-FCB-021,
+Tray-9,WH-FCB-007,#228,[RD/BK][A],->,[RD][A],#84,WH-FCB-021,
+Tray-9,WH-FCB-007,#229,[BK/YL][BL],->,[BK][BL],#85,WH-FCB-021,
+Tray-9,WH-FCB-007,#230,[BK/YL][OR],->,[BK][OR],#86,WH-FCB-021,
+Tray-9,WH-FCB-007,#231,[BK/YL][GN],->,[BK][GN],#87,WH-FCB-021,
+Tray-9,WH-FCB-007,#232,[BK/YL][BN],->,[BK][BN],#88,WH-FCB-021,
+Tray-9,WH-FCB-007,#233,[BK/YL][SL],->,[BK][SL],#89,WH-FCB-021,
+Tray-9,WH-FCB-007,#234,[BK/YL][WT],->,[BK][WT],#90,WH-FCB-021,
+Tray-9,WH-FCB-007,#235,[BK/YL][RD],->,[BK][RD],#91,WH-FCB-021,
+Tray-9,WH-FCB-007,#236,[BK/YL][BK],->,[BK][BK],#92,WH-FCB-021,
+Tray-9,WH-FCB-007,#237,[BK/YL][YL],->,[BK][YL],#93,WH-FCB-021,
+Tray-9,WH-FCB-007,#238,[BK/YL][VT],->,[BK][VT],#94,WH-FCB-021,
+Tray-9,WH-FCB-007,#239,[BK/YL][RO],->,[BK][RO],#95,WH-FCB-021,
+Tray-9,WH-FCB-007,#240,[BK/YL][A],->,[BK][A],#96,WH-FCB-021,
+Tray-10,WH-FCB-007,#241,[YL/BK][BL],->,[YL][BL],#97,WH-FCB-021,
+Tray-10,WH-FCB-007,#242,[YL/BK][OR],->,[YL][OR],#98,WH-FCB-021,
+Tray-10,WH-FCB-007,#243,[YL/BK][GN],->,[YL][GN],#99,WH-FCB-021,
+Tray-10,WH-FCB-007,#244,[YL/BK][BN],->,[YL][BN],#100,WH-FCB-021,
+Tray-10,WH-FCB-007,#245,[YL/BK][SL],->,[YL][SL],#101,WH-FCB-021,
+Tray-10,WH-FCB-007,#246,[YL/BK][WT],->,[YL][WT],#102,WH-FCB-021,
+Tray-10,WH-FCB-007,#247,[YL/BK][RD],->,[YL][RD],#103,WH-FCB-021,
+Tray-10,WH-FCB-007,#248,[YL/BK][BK],->,[YL][BK],#104,WH-FCB-021,
+Tray-10,WH-FCB-007,#249,[YL/BK][YL],->,[YL][YL],#105,WH-FCB-021,
+Tray-10,WH-FCB-007,#250,[YL/BK][VT],->,[YL][VT],#106,WH-FCB-021,
+Tray-10,WH-FCB-007,#251,[YL/BK][RO],->,[YL][RO],#107,WH-FCB-021,
+Tray-10,WH-FCB-007,#252,[YL/BK][A],->,[YL][A],#108,WH-FCB-021,
+Tray-10,WH-FCB-007,#253,[VT/BK][BL],->,[VT][BL],#109,WH-FCB-021,
+Tray-10,WH-FCB-007,#254,[VT/BK][OR],->,[VT][OR],#110,WH-FCB-021,
+Tray-10,WH-FCB-007,#255,[VT/BK][GN],->,[VT][GN],#111,WH-FCB-021,
+Tray-10,WH-FCB-007,#256,[VT/BK][BN],->,[VT][BN],#112,WH-FCB-021,
+Tray-11,WH-FCB-007,#257,[VT/BK][SL],->,[VT][SL],#113,WH-FCB-021,
+Tray-11,WH-FCB-007,#258,[VT/BK][WT],->,[VT][WT],#114,WH-FCB-021,
+Tray-11,WH-FCB-007,#259,[VT/BK][RD],->,[VT][RD],#115,WH-FCB-021,
+Tray-11,WH-FCB-007,#260,[VT/BK][BK],->,[VT][BK],#116,WH-FCB-021,
+Tray-11,WH-FCB-007,#261,[VT/BK][YL],->,[VT][YL],#117,WH-FCB-021,
+Tray-11,WH-FCB-007,#262,[VT/BK][VT],->,[VT][VT],#118,WH-FCB-021,
+Tray-11,WH-FCB-007,#263,[VT/BK][RO],->,[VT][RO],#119,WH-FCB-021,
+Tray-11,WH-FCB-007,#264,[VT/BK][A],->,[VT][A],#120,WH-FCB-021,
+Tray-11,WH-FCB-007,#265,[RO/BK][BL],->,[RO][BL],#121,WH-FCB-021,
+Tray-11,WH-FCB-007,#266,[RO/BK][OR],->,[RO][OR],#122,WH-FCB-021,
+Tray-11,WH-FCB-007,#267,[RO/BK][GN],->,[RO][GN],#123,WH-FCB-021,
+Tray-11,WH-FCB-007,#268,[RO/BK][BN],->,[RO][BN],#124,WH-FCB-021,
+Tray-11,WH-FCB-007,#269,[RO/BK][SL],->,[RO][SL],#125,WH-FCB-021,
+Tray-11,WH-FCB-007,#270,[RO/BK][WT],->,[RO][WT],#126,WH-FCB-021,
+Tray-17,WH-FCB-007,#144,[A][A],->,[BL][BL],#1,WH-FCB-198,
+,,,,,,,,
+
+
+*** Splitters
+Set delta to: *** master ***
+
+
+SPLICE REPORT: csv : pole/6 : Pole: WH-P-006
+ConnectivityReport.type
+Pole: WH-P-006
+ConnectivityReport.date: 6/10/2020
+
+
+ConnectivityReport.housing_col,ConnectivityReport.from_col,,,,ConnectivityReport.to_col,,,,ConnectivityReport.to_col,,,ConnectivityReport.circuit_col
+WH-SC-012,RISER-001,#1,[BL],->,[1],WH-SPL-001,[1],->,[BL],#1,DROP-001,WH-FTTH-030
+,,,,,,,[2],->,[BL],#1,DROP-002,WH-FTTH-031
+,,,,,,,[3],->,[BL],#1,DROP-003,WH-FTTH-032
+,,,,,,,[4],->,[BL],#1,DROP-004,WH-FTTH-033
+,,,,,,,[5],->,[BL],#1,DROP-005,WH-FTTH-034
+,,,,,,,[6],->,[BL],#1,DROP-006,
+,,,,,,,[7],->,[BL],#1,DROP-007,WH-FTTH-035
+,,,,,,,[8],->,[BL],#1,DROP-008,WH-FTTH-036
+,,,,,,,,,,,,
+WH-SC-012,RISER-001,#2,[OR],->,[1],WH-SPL-004,[1],->,[BL],#1,DROP-009,WH-FTTH-037
+,,,,,,,[2],->,[BL],#1,DROP-010,WH-FTTH-038
+,,,,,,,[3],->,[BL],#1,DROP-011,WH-FTTH-039
+,,,,,,,[4],->,[BL],#1,DROP-012,
+,,,,,,,[5],->,[BL],#1,DROP-013,WH-FTTH-040
+,,,,,,,[6],->,[BL],#1,DROP-014,WH-FTTH-041
+,,,,,,,[7],->,[BL],#1,DROP-015,
+,,,,,,,[8],,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+
+
+*** Rack
+Set delta to: *** master ***
+
+
+SPLICE REPORT: csv : rack/1 : Rack: WH-R-01
+ConnectivityReport.type
+Rack: WH-R-01
+Building: Woodhead Hub
+ConnectivityReport.date: 6/10/2020
+
+
+ConnectivityReport.housing_col,ConnectivityReport.from_col,,,ConnectivityReport.to_col,,,ConnectivityReport.circuit_col
+WH-SL-0003,WH-OLT-010,[1],->,[BL][BL],#1,WH-INT-01,WH-FTTH-030
+,,,,,,,WH-FTTH-031
+,,,,,,,WH-FTTH-032
+,,,,,,,WH-FTTH-033
+,,,,,,,WH-FTTH-034
+,,,,,,,WH-FTTH-035
+,,,,,,,WH-FTTH-036
+WH-SL-0003,WH-OLT-010,[2],->,[BL][OR],#2,WH-INT-01,WH-FTTH-037
+,,,,,,,WH-FTTH-038
+,,,,,,,WH-FTTH-039
+,,,,,,,WH-FTTH-040
+,,,,,,,WH-FTTH-041
+WH-SL-0003,WH-OLT-010,[3],->,[BL][GN],#3,WH-INT-01,WH-FTTH-042
+,,,,,,,WH-FTTH-043
+,,,,,,,WH-FTTH-044
+,,,,,,,WH-FTTH-045
+,,,,,,,WH-FTTH-046
+WH-SL-0003,WH-OLT-010,[4],->,[BL][BN],#4,WH-INT-01,WH-FTTH-047
+,,,,,,,WH-FTTH-048
+,,,,,,,WH-FTTH-049
+WH-SL-0003,WH-OLT-010,[5],->,[BL][SL],#5,WH-INT-01,WH-FTTH-051
+,,,,,,,WH-FTTH-052
+,,,,,,,WH-FTTH-054
+,,,,,,,WH-FTTH-055
+,,,,,,,WH-FTTH-056
+WH-SL-0003,WH-OLT-010,[6],->,[BL][WT],#6,WH-INT-01,WH-FTTH-057
+,,,,,,,WH-FTTH-058
+,,,,,,,WH-FTTH-059
+WH-SL-0003,WH-OLT-010,[7],->,[BL][RD],#7,WH-INT-01,WH-FTTH-050
+,,,,,,,WH-FTTH-053
+WH-SL-0003,WH-OLT-010,[8],->,[BL][BK],#8,WH-INT-01,
+WH-SL-0003,WH-OLT-011,[1],->,[BL][YL],#9,WH-INT-01,
+WH-SL-0003,WH-OLT-011,[2],->,[BL][VT],#10,WH-INT-01,
+WH-SL-0003,WH-OLT-011,[3],->,[BL][YL],#9,WH-INT-04,WH-FTTH-017
+WH-SL-0003,WH-OLT-011,[4],->,[BL][VT],#10,WH-INT-04,WH-FTTH-018
+WH-SL-0003,WH-OLT-011,[5],->,[OR][RD],#19,WH-INT-04,WH-FTTH-019
+WH-SL-0003,WH-OLT-011,[6],->,[BL][BL],#1,WH-INT-46,
+WH-SL-0007,WH-OLT-006,[1],->,[BL][RO],#11,WH-INT-01,WH-FTTH-5801
+WH-SL-0007,WH-OLT-006,[2],->,[BL][A],#12,WH-INT-01,
+WH-SL-0007,WH-OLT-006,[3],->,[OR][BL],#13,WH-INT-01,
+WH-SL-0007,WH-OLT-006,[4],->,[OR][OR],#14,WH-INT-01,
+WH-SL-0007,WH-OLT-006,[5],->,[OR][GN],#15,WH-INT-01,
+WH-SL-0007,WH-OLT-006,[6],->,[OR][BN],#16,WH-INT-01,
+,,,,,,,
+
+
+*** BB Rack
+Set delta to: *** master ***
+
+
+SPLICE REPORT: csv : rack/5 : Rack: WH-BB-01
+ConnectivityReport.type
+Rack: WH-BB-01
+Building: Woodhead Hub
+ConnectivityReport.date: 6/10/2020
+
+
+ConnectivityReport.from_col,,,,ConnectivityReport.to_col,,,ConnectivityReport.circuit_col
+WH-S-013,[1],,->,[BL][YL],#9,BB-FCB-017,
+WH-S-013,[2],,->,[BL][VT],#10,BB-FCB-017,
+WH-S-013,[3],,->,[BL][RO],#11,BB-FCB-017,
+WH-S-013,[4],,->,[BL][A],#12,BB-FCB-017,
+WH-S-013,[5],,->,[OR][BL],#13,BB-FCB-017,
+WH-S-013,[6],,->,[OR][OR],#14,BB-FCB-017,
+WH-S-014,[1],,->,[OR][RD],#19,BB-FCB-017,BB-0001
+WH-S-014,[2],,->,[OR][BK],#20,BB-FCB-017,
+WH-S-014,[3],,->,[OR][YL],#21,BB-FCB-017,BB-0002
+WH-S-014,[4],,->,[OR][VT],#22,BB-FCB-017,BB-0002
+WH-S-014,[5],,->,[OR][RO],#23,BB-FCB-017,
+WH-S-014,[6],,->,[OR][A],#24,BB-FCB-017,
+BB-FCB-017,#1,[BL][BL],->,,[1],WH-S-013,
+BB-FCB-017,#2,[BL][OR],->,,[2],WH-S-013,
+BB-FCB-017,#3,[BL][GN],->,,[3],WH-S-013,
+BB-FCB-017,#4,[BL][BN],->,,[4],WH-S-013,
+BB-FCB-017,#5,[BL][SL],->,,[5],WH-S-013,
+BB-FCB-017,#6,[BL][WT],->,,[6],WH-S-013,
+BB-FCB-017,#11,[BL][RO],->,,[1],WH-S-014,
+BB-FCB-017,#12,[BL][A],->,,[2],WH-S-014,
+BB-FCB-017,#13,[OR][BL],->,,[3],WH-S-014,
+BB-FCB-017,#14,[OR][OR],->,,[4],WH-S-014,
+BB-FCB-017,#15,[OR][GN],->,,[5],WH-S-014,
+BB-FCB-017,#16,[OR][BN],->,,[6],WH-S-014,
+,,,,,,,
+
+
+*** MUX Rack
+Set delta to: *** master ***
+
+
+SPLICE REPORT: csv : rack/6 : Rack: SP-BB-01
+ConnectivityReport.type
+Rack: SP-BB-01
+Building: Science Park Hub
+ConnectivityReport.date: 6/10/2020
+
+
+ConnectivityReport.housing_col,ConnectivityReport.from_col,,,,ConnectivityReport.to_col,,,,,ConnectivityReport.to_col,,,ConnectivityReport.circuit_col
+,SP-S-015,[3],,->,[OR][SL],#17,BB-FCB-016,,,,,,
+,SP-S-015,[4],,->,[OR][WT],#18,BB-FCB-016,,,,,,
+,SP-S-015,[5],,->,[OR][RD],#19,BB-FCB-016,,,,,,
+,SP-S-015,[6],,->,[OR][BK],#20,BB-FCB-016,,,,,,
+,SP-S-015,[7],,->,[OR][YL],#21,BB-FCB-016,,,,,,
+,SP-S-015,[8],,->,[OR][VT],#22,BB-FCB-016,,,,,,
+,SP-S-015,[10],,->,[BL][YL],#9,BB-FCB-016,,,,,,
+,SP-S-015,[11],,->,[BL][VT],#10,BB-FCB-016,,,,,,
+,SP-S-015,[12],,->,[BL][RO],#11,BB-FCB-016,,,,,,BB-0003
+,SP-S-015,[13],,->,[BL][A],#12,BB-FCB-016,,,,,,BB-0003
+,SP-S-015,[14],,->,[OR][BL],#13,BB-FCB-016,,,,,,BB-0004
+,SP-S-015,[15],,->,[OR][OR],#14,BB-FCB-016,,,,,,BB-0004
+,SP-S-017,[1],,->,[BL][BL],#1,BB-FCB-022,,,,,,
+,SP-S-017,[2],,->,[BL][OR],#2,BB-FCB-022,,,,,,
+,SP-S-017,[3],,->,[BL][GN],#3,BB-FCB-022,,,,,,
+,SP-S-017,[4],,->,[BL][BN],#4,BB-FCB-022,,,,,,
+,SP-S-017,[5],,->,[BL][SL],#5,BB-FCB-022,,,,,,
+,SP-S-017,[6],,->,[BL][WT],#6,BB-FCB-022,,,,,,
+,SP-S-017,[7],,->,[BL][RD],#7,BB-FCB-022,,,,,,
+,SP-S-017,[8],,->,[BL][BK],#8,BB-FCB-022,,,,,,
+,SP-SPL-030,[1],,->,[BL][OR],#2,BB-FCB-018,,,,,,
+,SP-SPL-030,[2],,->,[BL][OR],#2,BB-FCB-021,,,,,,
+,BB-FCB-016,#9,[BL][YL],->,,[3],SP-S-015,,,,,,
+,BB-FCB-016,#10,[BL][VT],->,,[4],SP-S-015,,,,,,
+,BB-FCB-016,#11,[BL][RO],->,,[5],SP-S-015,,,,,,
+,BB-FCB-016,#12,[BL][A],->,,[6],SP-S-015,,,,,,
+,BB-FCB-016,#13,[OR][BL],->,,[7],SP-S-015,,,,,,
+,BB-FCB-016,#14,[OR][OR],->,,[8],SP-S-015,,,,,,
+,BB-FCB-016,#17,[OR][SL],->,,[10],SP-S-015,,,,,,
+,BB-FCB-016,#18,[OR][WT],->,,[11],SP-S-015,,,,,,
+,BB-FCB-016,#19,[OR][RD],->,,[12],SP-S-015,,,,,,
+,BB-FCB-016,#20,[OR][BK],->,,[13],SP-S-015,,,,,,
+,BB-FCB-016,#21,[OR][YL],->,,[14],SP-S-015,,,,,,
+,BB-FCB-016,#22,[OR][VT],->,,[15],SP-S-015,,,,,,
+,BB-FCB-020,#1,[BL][BL],->,,[1],SP-SPL-031,[1],->,[BL][OR],#2,BB-FCB-020,
+,,,,,,,,[2],->,[BL][OR],#2,BB-FCB-019,
+,,,,,,,,[3],,,,,
+,,,,,,,,[4],,,,,
+,,,,,,,,,,,,,
+SP-S-015,SP-MUX-021,[1],,->,[SL][BK],#56,BB-FCB-021,,,,,,
+SP-S-015,BB-FCB-020,#50,[SL][OR],->,,[1],SP-MUX-020,[1],->,[OR][BK],#20,BB-FCB-018,
+SP-S-015,BB-FCB-020,#51,[SL][GN],->,,[2],SP-MUX-020,[1],->,[OR][BK],#20,BB-FCB-018,
+SP-S-015,BB-FCB-020,#52,[SL][BN],->,,[3],SP-MUX-020,[1],->,[OR][BK],#20,BB-FCB-018,
+SP-S-015,BB-FCB-020,#53,[SL][SL],->,,[4],SP-MUX-020,[1],->,[OR][BK],#20,BB-FCB-018,
+SP-S-015,BB-FCB-020,#54,[SL][WT],->,,[5],SP-MUX-020,[1],->,[OR][BK],#20,BB-FCB-018,
+SP-S-015,BB-FCB-020,#55,[SL][RD],->,,[6],SP-MUX-020,[1],->,[OR][BK],#20,BB-FCB-018,
+,,,,,,,,,,,,,
+
+
+*** ODF
+Set delta to: *** master ***
+
+
+SPLICE REPORT: csv : fiber_patch_panel/2 : Patch Panel: WH-ODF-02
+ConnectivityReport.type
+Patch Panel: WH-ODF-02
+Building: Woodhead Hub
+ConnectivityReport.date: 6/10/2020
+
+
+ConnectivityReport.from_col,,,ConnectivityReport.to_col,,,,ConnectivityReport.to_col,,,ConnectivityReport.circuit_col
+WH-ODF-02E,[1],->,[101],WH-ODF-02,[101],->,,#101,WH-FCB-025,WH-FTTH-001
+WH-ODF-02E,[2],->,[102],WH-ODF-02,[102],->,,#102,WH-FCB-025,WH-FTTH-002
+WH-ODF-02E,[3],->,[103],WH-ODF-02,[103],->,,#103,WH-FCB-025,WH-FTTH-003
+WH-ODF-02E,[4],->,[104],WH-ODF-02,[104],->,,#104,WH-FCB-025,WH-FTTH-004
+WH-ODF-02E,[5],->,[105],WH-ODF-02,[105],->,,#105,WH-FCB-025,
+WH-ODF-02E,[6],->,[106],WH-ODF-02,[106],->,,#106,WH-FCB-025,
+WH-ODF-02E,[7],->,[107],WH-ODF-02,[107],->,,#107,WH-FCB-025,
+WH-ODF-02E,[8],->,[108],WH-ODF-02,[108],->,,#108,WH-FCB-025,
+WH-ODF-02E,[9],->,[1],WH-ODF-02,[1],->,[BL][BL],#1,WH-FCB-023,WH-FTTH-017
+WH-ODF-02E,[10],->,[2],WH-ODF-02,[2],->,[BL][OR],#2,WH-FCB-023,WH-FTTH-018
+WH-ODF-02E,[11],->,[109],WH-ODF-02,[109],->,,#109,WH-FCB-025,
+WH-ODF-02E,[12],->,[110],WH-ODF-02,[110],->,,#110,WH-FCB-025,
+WH-ODF-02E,[13],->,[111],WH-ODF-02,[111],->,,#111,WH-FCB-025,
+WH-ODF-02E,[14],->,[112],WH-ODF-02,[112],->,,#112,WH-FCB-025,
+WH-ODF-02E,[15],->,[125],WH-ODF-02,[125],->,,#125,WH-FCB-025,
+WH-ODF-02E,[16],->,[126],WH-ODF-02,[126],->,,#126,WH-FCB-025,WH-FTTH-010
+,,,,,,,,,,WH-FTTH-026
+WH-ODF-02E,[17],->,[127],WH-ODF-02,[127],->,,#127,WH-FCB-025,WH-FTTH-027
+WH-ODF-02E,[18],->,[128],WH-ODF-02,[128],->,,#128,WH-FCB-025,
+WH-ODF-02E,[19],->,[3],WH-ODF-02,[3],->,[BL][GN],#3,WH-FCB-023,WH-FTTH-019
+WH-ODF-02E,[21],->,[130],WH-ODF-02,[130],->,,#130,WH-FCB-025,WH-FTTH-028
+WH-ODF-02E,[22],->,[131],WH-ODF-02,[131],->,,#131,WH-FCB-025,WH-FTTH-029
+WH-ODF-02E,[23],->,[132],WH-ODF-02,[132],->,,#132,WH-FCB-025,
+WH-ODF-02E,[24],->,[133],WH-ODF-02,[133],->,,#133,WH-FCB-025,
+WH-ODF-02E,[25],->,[134],WH-ODF-02,[134],->,,#134,WH-FCB-025,
+WH-ODF-02E,[26],->,[135],WH-ODF-02,[135],->,,#135,WH-FCB-025,
+WH-ODF-02E,[27],->,[136],WH-ODF-02,[136],->,,#136,WH-FCB-025,WH-FTTH-014
+WH-ODF-02E,[28],->,[137],WH-ODF-02,[137],->,,#137,WH-FCB-025,
+WH-ODF-02E,[31],->,[150],WH-ODF-02,[150],->,,#150,WH-FCB-025,
+WH-ODF-02E,[32],->,[151],WH-ODF-02,[151],->,,#151,WH-FCB-025,WH-FTTH-005
+WH-ODF-02E,[33],->,[152],WH-ODF-02,[152],->,,#152,WH-FCB-025,WH-FTTH-006
+WH-ODF-02E,[34],->,[153],WH-ODF-02,[153],->,,#153,WH-FCB-025,WH-FTTH-007
+WH-ODF-02E,[35],->,[154],WH-ODF-02,[154],->,,#154,WH-FCB-025,WH-FTTH-022
+WH-ODF-02E,[36],->,[155],WH-ODF-02,[155],->,,#155,WH-FCB-025,WH-FTTH-021
+WH-ODF-02E,[37],->,[156],WH-ODF-02,[156],->,,#156,WH-FCB-025,WH-FTTH-020
+WH-ODF-02E,[38],->,[157],WH-ODF-02,[157],->,,#157,WH-FCB-025,
+WH-ODF-02E,[41],->,[158],WH-ODF-02,[158],->,,#158,WH-FCB-025,WH-FTTH-023
+WH-ODF-02E,[42],->,[159],WH-ODF-02,[159],->,,#159,WH-FCB-025,WH-FTTH-024
+WH-ODF-02E,[43],->,[160],WH-ODF-02,[160],->,,#160,WH-FCB-025,WH-FTTH-008
+WH-ODF-02E,[44],->,[161],WH-ODF-02,[161],->,,#161,WH-FCB-025,
+WH-ODF-02E,[45],->,[162],WH-ODF-02,[162],->,,#162,WH-FCB-025,
+WH-ODF-02E,[46],->,[163],WH-ODF-02,[163],->,,#163,WH-FCB-025,
+WH-ODF-02E,[47],->,[164],WH-ODF-02,[164],->,,#164,WH-FCB-025,
+WH-ODF-02E,[48],->,[165],WH-ODF-02,[165],->,,#165,WH-FCB-025,
+,,,,,,,,,,
+

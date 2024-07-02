@@ -1,0 +1,14 @@
+retired,manufacturer,name,gauge,copper_count,type,resistivity,diameter,description,cable_structure
+false,TSCables,1-14-C-W,14,1,C-W,0.008,7.112,
+false,Insight,1-19-BJ,19,1,BJ,,6.858,
+false,Insight,1-19-BJF,19,1,BJF,,6.858,
+false,Eaton,1-19-DW,19,1,DW,,25.400,
+false,Eaton,1-19-FIG8,19,1,FIG8,0.029,10.160,Default Diameter
+false,Eaton,1-19-SEA,19,1,SEA,,6.858,
+false,TSCables,1-19-SEB,19,1,SEB,,6.858,
+false,Eaton,1-22-BJ,22,1,BJ,,6.350,
+false,TSCables,1-22-FIG8,22,1,FIG8,0.057,7.620,Default Diameter
+false,VIVO,1-22-SEB,22,1,SEB,,6.350,
+false,TSCables,100-19-ASPICF,19,100,ASPICF,0.029,38.100,Default Diameter,"[{""bundleSize"":4,""bundleType"":""tube"",""colorScheme"":""Copper Ring Colors""},{""bundleSize"":5,""bundleType"":""tube"",""colorScheme"":""Copper Tip Colors""},{""bundleSize"":5,""bundleType"":null,""colorScheme"":""Copper Ring Colors""}]"
+false,VIVO,100-19-BFC,19,100,BFC,,47.498,"[{""bundleSize"":4,""bundleType"":""tube"",""colorScheme"":""Copper Ring Colors""},{""bundleSize"":5,""bundleType"":""tube"",""colorScheme"":""Copper Tip Colors""},{""bundleSize"":5,""bundleType"":null,""colorScheme"":""Copper Ring Colors""}]"
+false,VIVO,100-19-C,19,100,C,,47.498,"[{""bundleSize"":4,""bundleType"":""tube"",""colorScheme"":""Copper Ring Colors""},{""bundleSize"":5,""bundleType"":""tube"",""colorScheme"":""Copper Tip Colors""},{""bundleSize"":5,""bundleType"":null,""colorScheme"":""Copper Ring Colors""}]"

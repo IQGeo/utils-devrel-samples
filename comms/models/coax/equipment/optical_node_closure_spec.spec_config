@@ -1,0 +1,5 @@
+{
+    "layer": "mywcom_coax_equipment",
+    "ref_feature": "optical_node_closure",
+    "field_name": "specification"
+}

@@ -1,0 +1,44 @@
+#!/bin/bash
+# Bash wrapper to start locust server
+# Example run:
+#   nohup bash start_locust ./resultsautoscale > locust_run.log 2>&1 &
+#
+# Note that --reset-stats resets stats when user level hits the required number. This means that the auth request count
+# and stats is reset to 1 request.
+
+ulimit -Sn 10000
+
+
+HERE=$(dirname `which $0`)
+
+# Init environment
+source $HERE/../../../../../../Tools/myw_env
+
+HOST=https://engineering-2.sandbox.iqgeo.cloud
+#HOST=https://simple-performance.sandbox.iqgeo.cloud/nmcomms
+
+STATSDIR=$1
+if [ ! -d "$STATSDIR" ]; then
+    echo "Need to specify valid directory for results"
+    exit 1
+fi
+
+RUNTIME=30m
+DBNAME=iqg_comms_scale
+
+myw_db $DBNAME run setup_users.py --commit
+
+export IQGEO_CSV_FILE=$STATSDIR/comms_locust.csv
+rm -f $IQGEO_CSV_FILE
+touch $IQGEO_CSV_FILE
+
+#for NUSERS in 1 10 50 100 200 300 400
+for NUSERS in 1 10 50 100 200 300
+do
+    echo "*** Loading up $NUSERS users ***"
+    myw_db $DBNAME run reset_data.py --commit
+    echo "Starting Locust"
+    export IQGEO_TEST_TAG=$NUSERS
+    locust -f $HERE/locust/comms_user.py CommsConnectedUser --spawn-rate 5 --headless --host $HOST  -u $NUSERS --csv $STATSDIR/comms_users_$NUSERS --run-time $RUNTIME --html $STATSDIR/comms_users_$NUSERS.html --loglevel WARNING --only-summary --reset-stats
+done
+

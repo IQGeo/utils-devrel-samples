@@ -1,0 +1,951 @@
+Set delta to: design/NB301
+Basic Call:
+id: 60
+type: conduit
+myw: {
+	"title": "Conduit: WH-CND-060"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1336176,
+			52.2236381
+		],
+		[
+			0.1335876,
+			52.2236144
+		],
+		[
+			0.1334522,
+			52.2235447
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 110,
+	"housing": "ug_route/88",
+	"id": 60,
+	"in_structure": "manhole/7",
+	"installation_date": "1998-01-25",
+	"labor_costs": null,
+	"length": 18.26,
+	"material": "PE (Corrugated)",
+	"name": "WH-CND-060",
+	"out_structure": "manhole/75",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/88",
+	"specification": "JDP-110MM-Green"
+}
+displayValues: {
+
+}
+
+[
+	"path"
+]
+{
+	"_ref": "housing",
+	"n_coords": 5,
+	"n_expected": 3
+}
+geom_size_mismatch
+path
+id: 60
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.1336176,
+			52.2236381
+		],
+		[
+			0.1335876,
+			52.2236144
+		],
+		[
+			0.1334522,
+			52.2235447
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 110,
+	"housing": "ug_route/88",
+	"id": 60,
+	"in_structure": "manhole/7",
+	"installation_date": "1998-01-25",
+	"labor_costs": null,
+	"length": 18.26,
+	"material": "PE (Corrugated)",
+	"name": "WH-CND-060",
+	"out_structure": "manhole/75",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/88",
+	"specification": "JDP-110MM-Green"
+}
+
+id: 4800
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Cable Segment: 4800 (fiber_cable/4800)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.133602842689,
+			52.2236559959
+		],
+		[
+			0.133584067226,
+			52.2236352522
+		],
+		[
+			0.133551880717,
+			52.2236163568
+		],
+		[
+			0.133502930403,
+			52.2235937646
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/4800",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/60",
+	"id": 4800,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/7",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "4804",
+	"out_structure": "manhole/75",
+	"out_tick": null,
+	"root_housing": "ug_route/88"
+}
+displayValues: {
+
+}
+
+[
+	"path"
+]
+{
+	"_ref": "housing",
+	"n_coords": 3,
+	"n_expected": 5
+}
+geom_size_mismatch
+path
+id: 4800
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.133602842689,
+			52.2236559959
+		],
+		[
+			0.133584067226,
+			52.2236352522
+		],
+		[
+			0.133551880717,
+			52.2236163568
+		],
+		[
+			0.133502930403,
+			52.2235937646
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"cable": "fiber_cable/4800",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/60",
+	"id": 4800,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/7",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "4804",
+	"out_structure": "manhole/75",
+	"out_tick": null,
+	"root_housing": "ug_route/88"
+}
+
+id: 4800
+type: mywcom_fiber_slack
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Fiber Slack"
+}
+geom: {
+	"coordinates": [
+		0.133415088057,
+		52.2235524824
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/4800",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"housing": "manhole/75",
+	"id": 4800,
+	"job_id": null,
+	"length": 13,
+	"root_housing": "manhole/75",
+	"storage": null
+}
+displayValues: {
+
+}
+
+[
+	"location"
+]
+{
+	"_coord": [
+		0.133415088057,
+		52.2235524824
+	],
+	"_expected_coord": [
+		0.1334522,
+		52.2235447
+	],
+	"_ref": "housing",
+	"ref_side": null
+}
+geom_mismatch_at
+location
+id: 4800
+type: Feature
+geom: {
+	"coordinates": [
+		0.133415088057,
+		52.2235524824
+	],
+	"type": "Point"
+}
+properties: {
+	"cable": "fiber_cable/4800",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"housing": "manhole/75",
+	"id": 4800,
+	"job_id": null,
+	"length": 13,
+	"root_housing": "manhole/75",
+	"storage": null
+}
+
+id: 4800
+type: splice_closure
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Splice Closure: WH-SC-D301:1"
+}
+geom: {
+	"coordinates": [
+		0.133602842689,
+		52.2236559959
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"housing": "manhole/7",
+	"id": 4800,
+	"installation_date": null,
+	"job_id": null,
+	"labor_costs": null,
+	"name": "WH-SC-D301:1",
+	"root_housing": "manhole/7",
+	"specification": "CS-FOSC450-D6-6-36-1-N0V"
+}
+displayValues: {
+
+}
+
+[
+	"location"
+]
+{
+	"_coord": [
+		0.133602842689,
+		52.2236559959
+	],
+	"_expected_coord": [
+		0.1336176,
+		52.2236381
+	],
+	"_ref": "housing",
+	"ref_side": null
+}
+geom_mismatch_at
+location
+id: 4800
+type: Feature
+geom: {
+	"coordinates": [
+		0.133602842689,
+		52.2236559959
+	],
+	"type": "Point"
+}
+properties: {
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"housing": "manhole/7",
+	"id": 4800,
+	"installation_date": null,
+	"job_id": null,
+	"labor_costs": null,
+	"name": "WH-SC-D301:1",
+	"root_housing": "manhole/7",
+	"specification": "CS-FOSC450-D6-6-36-1-N0V"
+}
+
+id: 4800
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Route (Underground): 4800"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13309121,
+			52.2235021
+		],
+		[
+			0.133177,
+			52.223544
+		],
+		[
+			0.1333259,
+			52.223558
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4800,
+	"in_structure": "manhole/4800",
+	"labor_costs": "cherry_picker",
+	"length": null,
+	"out_structure": "manhole/75"
+}
+displayValues: {
+
+}
+
+[
+	"path"
+]
+{
+	"_coord": [
+		0.133415088057,
+		52.2235524824
+	],
+	"_expected_coord": [
+		0.1334522,
+		52.2235447
+	],
+	"_ref": "out_structure",
+	"ref_side": null
+}
+geom_mismatch_at
+path
+id: 4800
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.13309121,
+			52.2235021
+		],
+		[
+			0.133177,
+			52.223544
+		],
+		[
+			0.1333259,
+			52.223558
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4800,
+	"in_structure": "manhole/4800",
+	"labor_costs": "cherry_picker",
+	"length": null,
+	"out_structure": "manhole/75"
+}
+
+id: 4801
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Route (Underground): 4801"
+}
+geom: {
+	"coordinates": [
+		[
+			0.133415088057,
+			52.2235524824
+		],
+		[
+			0.13346403,
+			52.223507
+		],
+		[
+			0.13343185,
+			52.223431
+		],
+		[
+			0.13335943,
+			52.223361
+		],
+		[
+			0.13329237,
+			52.2233353
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4801,
+	"in_structure": "manhole/75",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": null,
+	"out_structure": "manhole/4801"
+}
+displayValues: {
+
+}
+
+[
+	"path"
+]
+{
+	"_coord": [
+		0.133415088057,
+		52.2235524824
+	],
+	"_expected_coord": [
+		0.1334522,
+		52.2235447
+	],
+	"_ref": "in_structure",
+	"ref_side": null
+}
+geom_mismatch_at
+path
+id: 4801
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.133415088057,
+			52.2235524824
+		],
+		[
+			0.13346403,
+			52.223507
+		],
+		[
+			0.13343185,
+			52.223431
+		],
+		[
+			0.13335943,
+			52.223361
+		],
+		[
+			0.13329237,
+			52.2233353
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4801,
+	"in_structure": "manhole/75",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": null,
+	"out_structure": "manhole/4801"
+}
+
+id: 88
+type: ug_route
+myw: {
+	"change_type": "update",
+	"delta": "design/NB301",
+	"title": "Route (Underground): 88"
+}
+geom: {
+	"coordinates": [
+		[
+			0.133602842689,
+			52.2236559959
+		],
+		[
+			0.133584067226,
+			52.2236352522
+		],
+		[
+			0.133551880717,
+			52.2236163568
+		],
+		[
+			0.133502930403,
+			52.2235937646
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 88,
+	"in_structure": "manhole/7",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": 18.26,
+	"out_structure": "manhole/75"
+}
+displayValues: {
+
+}
+
+[
+	"path"
+]
+{
+	"_coord": [
+		0.133415088057,
+		52.2235524824
+	],
+	"_expected_coord": [
+		0.1334522,
+		52.2235447
+	],
+	"_ref": "out_structure",
+	"ref_side": null
+}
+geom_mismatch_at
+path
+id: 88
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.133602842689,
+			52.2236559959
+		],
+		[
+			0.133584067226,
+			52.2236352522
+		],
+		[
+			0.133551880717,
+			52.2236163568
+		],
+		[
+			0.133502930403,
+			52.2235937646
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 88,
+	"in_structure": "manhole/7",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": 18.26,
+	"out_structure": "manhole/75"
+}
+
+
+Exercised Categories:
+id: 4800
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Route (Underground): 4800"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13309121,
+			52.2235021
+		],
+		[
+			0.133177,
+			52.223544
+		],
+		[
+			0.1333259,
+			52.223558
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4800,
+	"in_structure": "manhole/4800",
+	"labor_costs": "cherry_picker",
+	"length": null,
+	"out_structure": "manhole/75"
+}
+displayValues: {
+
+}
+
+[
+	"path"
+]
+{
+	"_coord": [
+		0.133415088057,
+		52.2235524824
+	],
+	"_expected_coord": [
+		0.1334522,
+		52.2235447
+	],
+	"_ref": "out_structure",
+	"ref_side": null
+}
+geom_mismatch_at
+path
+id: 4800
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.13309121,
+			52.2235021
+		],
+		[
+			0.133177,
+			52.223544
+		],
+		[
+			0.1333259,
+			52.223558
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4800,
+	"in_structure": "manhole/4800",
+	"labor_costs": "cherry_picker",
+	"length": null,
+	"out_structure": "manhole/75"
+}
+
+id: 4801
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Route (Underground): 4801"
+}
+geom: {
+	"coordinates": [
+		[
+			0.133415088057,
+			52.2235524824
+		],
+		[
+			0.13346403,
+			52.223507
+		],
+		[
+			0.13343185,
+			52.223431
+		],
+		[
+			0.13335943,
+			52.223361
+		],
+		[
+			0.13329237,
+			52.2233353
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4801,
+	"in_structure": "manhole/75",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": null,
+	"out_structure": "manhole/4801"
+}
+displayValues: {
+
+}
+
+[
+	"path"
+]
+{
+	"_coord": [
+		0.133415088057,
+		52.2235524824
+	],
+	"_expected_coord": [
+		0.1334522,
+		52.2235447
+	],
+	"_ref": "in_structure",
+	"ref_side": null
+}
+geom_mismatch_at
+path
+id: 4801
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.133415088057,
+			52.2235524824
+		],
+		[
+			0.13346403,
+			52.223507
+		],
+		[
+			0.13343185,
+			52.223431
+		],
+		[
+			0.13335943,
+			52.223361
+		],
+		[
+			0.13329237,
+			52.2233353
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4801,
+	"in_structure": "manhole/75",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": null,
+	"out_structure": "manhole/4801"
+}
+
+id: 88
+type: ug_route
+myw: {
+	"change_type": "update",
+	"delta": "design/NB301",
+	"title": "Route (Underground): 88"
+}
+geom: {
+	"coordinates": [
+		[
+			0.133602842689,
+			52.2236559959
+		],
+		[
+			0.133584067226,
+			52.2236352522
+		],
+		[
+			0.133551880717,
+			52.2236163568
+		],
+		[
+			0.133502930403,
+			52.2235937646
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 88,
+	"in_structure": "manhole/7",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": 18.26,
+	"out_structure": "manhole/75"
+}
+displayValues: {
+
+}
+
+[
+	"path"
+]
+{
+	"_coord": [
+		0.133415088057,
+		52.2235524824
+	],
+	"_expected_coord": [
+		0.1334522,
+		52.2235447
+	],
+	"_ref": "out_structure",
+	"ref_side": null
+}
+geom_mismatch_at
+path
+id: 88
+type: Feature
+geom: {
+	"coordinates": [
+		[
+			0.133602842689,
+			52.2236559959
+		],
+		[
+			0.133584067226,
+			52.2236352522
+		],
+		[
+			0.133551880717,
+			52.2236163568
+		],
+		[
+			0.133502930403,
+			52.2235937646
+		],
+		[
+			0.133415088057,
+			52.2235524824
+		]
+	],
+	"type": "LineString"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 88,
+	"in_structure": "manhole/7",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": 18.26,
+	"out_structure": "manhole/75"
+}
+
+

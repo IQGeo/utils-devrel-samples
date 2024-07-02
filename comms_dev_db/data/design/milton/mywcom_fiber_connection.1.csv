@@ -1,0 +1,11 @@
+id,in_object,out_object,in_side,in_low,in_high,out_side,out_low,out_high,splice,root_housing,housing,location
+8000,mywcom_fiber_segment/8029,mywcom_fiber_segment/8027,in,1,12,out,1,12,True,manhole/8003,splice_closure/8000,0101000020E61000001E8DC93F6FAEC03F74952C8A5D1C4A40
+8001,mywcom_fiber_segment/8029,mywcom_fiber_segment/8024,in,13,24,in,1,12,True,manhole/8003,splice_closure/8000,0101000020E61000001E8DC93F6FAEC03F74952C8A5D1C4A40
+8002,fiber_olt/8000,mywcom_fiber_segment/8015,out,1,8,out,1,8,False,building/8000,fiber_olt/8000,0101000020E6100000184B2264B8CEC03F801A0C83521C4A40
+8003,fiber_olt/8001,mywcom_fiber_segment/8015,out,1,8,out,13,20,False,building/8000,fiber_olt/8001,0101000020E6100000184B2264B8CEC03F801A0C83521C4A40
+8005,fiber_patch_panel/8000,mywcom_fiber_segment/8004,out,1,4,in,1,4,False,building/8000,fiber_patch_panel/8000,0101000020E6100000184B2264B8CEC03F801A0C83521C4A40
+8006,fiber_patch_panel/8000,mywcom_fiber_segment/8000,out,5,30,in,1,26,False,building/8000,fiber_patch_panel/8000,0101000020E6100000184B2264B8CEC03F801A0C83521C4A40
+8007,fiber_splitter/8000,mywcom_fiber_segment/8026,in,1,1,out,1,1,False,cabinet/8000,fiber_splitter/8000,0101000020E61000006735A3858FEDC03F6C323257541C4A40
+8008,fiber_splitter/8001,mywcom_fiber_segment/8026,in,1,1,out,2,2,False,cabinet/8000,fiber_splitter/8001,0101000020E61000006735A3858FEDC03F6C323257541C4A40
+8009,fiber_splitter/8002,mywcom_fiber_segment/8026,in,1,1,out,3,3,False,cabinet/8000,fiber_splitter/8002,0101000020E61000006735A3858FEDC03F6C323257541C4A40
+8010,fiber_splitter/8003,mywcom_fiber_segment/8026,in,1,1,out,4,4,False,cabinet/8000,fiber_splitter/8003,0101000020E61000006735A3858FEDC03F6C323257541C4A40

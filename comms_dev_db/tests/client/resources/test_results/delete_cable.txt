@@ -1,0 +1,23 @@
+
+SUB TEST : DELETE
+    DATABASE CHANGES: AFTER DELETE CABLE
+       insert data.mywcom_change_detail(5)
+       insert delta.fiber_cable(design/NB046,18,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,128,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,129,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,130,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,131,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,132,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,133,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,134,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,135,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,136,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,137,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,138,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,139,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,50001,delete)
+    
+
+SUB TEST : CIRCUITS CONSTRAINT
+    DATABASE CHANGES: AFTER ATTEMPT DELETE CABLE WITH CIRCUITS
+    

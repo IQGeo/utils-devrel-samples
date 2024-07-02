@@ -1,0 +1,446 @@
+
+SUB TEST : SPLIT AND CONNECT CABLE IN WH-M-24
+    Request: POST: /modules/comms/cable/fiber_cable/6/split/63/True?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "bbox": [
+          0.1374568417668,
+          52.2247063157682,
+          0.13981218974,
+          52.2260911778295
+       ],
+       "geometry": {
+          "coordinates": [
+             [
+                0.1374568417668,
+                52.2247063157682
+             ],
+             [
+                0.1374960690737,
+                52.2247315773593
+             ],
+             [
+                0.1375409960747,
+                52.2247537582569
+             ],
+             [
+                0.1376950590175197,
+                52.2248388063771
+             ],
+             [
+                0.1377106457949,
+                52.224847410813
+             ],
+             [
+                0.1378105580807,
+                52.2249077919616
+             ],
+             [
+                0.1379146349301719,
+                52.22496758847534
+             ],
+             [
+                0.1380050182343,
+                52.2250195174078
+             ],
+             [
+                0.1380164176226,
+                52.2250326615595
+             ],
+             [
+                0.138222627437,
+                52.22515219101
+             ],
+             [
+                0.1383325277379,
+                52.2252195545449
+             ],
+             [
+                0.1383385588519,
+                52.2252359846598
+             ],
+             [
+                0.1383533015752,
+                52.2252524147687
+             ],
+             [
+                0.1383657753468,
+                52.2252856857205
+             ],
+             [
+                0.1384368538857,
+                52.2253316899585
+             ],
+             [
+                0.138498544693,
+                52.2253703006215
+             ],
+             [
+                0.1385360956192,
+                52.2253965887132
+             ],
+             [
+                0.1385860646662,
+                52.2254356100707
+             ],
+             [
+                0.1387131214142,
+                52.2255411729396
+             ],
+             [
+                0.138773471117,
+                52.2255921059072
+             ],
+             [
+                0.1388700306416,
+                52.2256627547656
+             ],
+             [
+                0.1389223337173,
+                52.225712866097
+             ],
+             [
+                0.1389974355698,
+                52.2257646203635
+             ],
+             [
+                0.1390738785267,
+                52.2257950156982
+             ],
+             [
+                0.1391570270061,
+                52.2258410194085
+             ],
+             [
+                0.1391878724098,
+                52.2258730576786
+             ],
+             [
+                0.1392535865307,
+                52.2259100248846
+             ],
+             [
+                0.1393246650696,
+                52.2259502780295
+             ],
+             [
+                0.1393836736679,
+                52.2259856021878
+             ],
+             [
+                0.1394534111023,
+                52.2260044964935
+             ],
+             [
+                0.1395446062088,
+                52.2260389991179
+             ],
+             [
+                0.139587521553,
+                52.2260578934008
+             ],
+             [
+                0.1396733522415,
+                52.2260817166157
+             ],
+             [
+                0.1397154768464,
+                52.2260911778295
+             ],
+             [
+                0.13981218974,
+                52.2260192833358
+             ]
+          ],
+          "type": "LineString"
+       },
+       "id": 100000,
+       "myw": {
+          "change_type": "insert",
+          "delta": "design/NB217",
+          "feature_type": "fiber_cable",
+          "short_description": "D-144-LA-8W-F12NS",
+          "title": "Fiber Cable: WH-FCB-100000 (144)"
+       },
+       "properties": {
+          "comsof_auto": false,
+          "diameter": 9.9,
+          "directed": true,
+          "fiber_count": 144,
+          "id": 100000,
+          "installation_date": "2010-01-25",
+          "job_id": "23062",
+          "labor_costs": null,
+          "name": "WH-FCB-100000",
+          "owner": "Acme Co",
+          "specification": "D-144-LA-8W-F12NS",
+          "tick_mark_spacing": null,
+          "type": "External"
+       },
+       "secondary_geometries": {
+          "placement_path": {
+             "coordinates": [
+                [
+                   0.1374568417668,
+                   52.2247063157682
+                ],
+                [
+                   0.1376950590175197,
+                   52.2248388063771
+                ],
+                [
+                   0.1378105580807,
+                   52.2249077919616
+                ],
+                [
+                   0.1379146349301719,
+                   52.22496758847534
+                ],
+                [
+                   0.1380164176226,
+                   52.2250326615595
+                ],
+                [
+                   0.138222627437,
+                   52.22515219101
+                ],
+                [
+                   0.1383533015752,
+                   52.2252524147687
+                ],
+                [
+                   0.1385860646662,
+                   52.2254356100707
+                ],
+                [
+                   0.1397154768464,
+                   52.2260911778295
+                ],
+                [
+                   0.13981218974,
+                   52.2260192833358
+                ]
+             ],
+             "type": "LineString"
+          }
+       },
+       "type": "Feature"
+    }
+    
+    
+    DATABASE CHANGES: AFTER SPLIT AND CONNECT CABLE IN WH-M-24
+       insert delta.fiber_cable(design/NB217,6,update)
+       insert delta.fiber_cable(design/NB217,100000,insert)
+       insert delta.mywcom_fiber_connection(design/NB217,100000,insert)
+       insert delta.mywcom_fiber_connection(design/NB217,100001,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,63,update)
+       insert delta.mywcom_fiber_segment(design/NB217,64,update)
+       insert delta.mywcom_fiber_segment(design/NB217,65,update)
+       insert delta.mywcom_fiber_segment(design/NB217,66,update)
+       insert delta.mywcom_fiber_segment(design/NB217,67,update)
+       insert delta.mywcom_fiber_segment(design/NB217,68,update)
+       insert delta.mywcom_fiber_segment(design/NB217,69,update)
+       insert delta.mywcom_fiber_segment(design/NB217,70,update)
+       insert delta.mywcom_fiber_segment(design/NB217,71,update)
+       insert delta.mywcom_fiber_segment(design/NB217,72,update)
+       insert delta.mywcom_fiber_segment(design/NB217,591,update)
+       insert delta.mywcom_fiber_segment(design/NB217,592,update)
+       insert delta.mywcom_fiber_slack(design/NB217,11,update)
+       insert delta.mywcom_fiber_slack(design/NB217,12,update)
+    
+    VALIDATION ERRORS: AFTER SPLIT AND CONNECT CABLE IN WH-M-24
+
+SUB TEST : SPLIT CABLE BACKWARDS IN WH-M-39
+    Request: POST: /modules/comms/cable/fiber_cable/9/split/85/False?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "bbox": [
+          0.1367644965649,
+          52.2250326615595,
+          0.1380237936974,
+          52.2257781750423
+       ],
+       "geometry": {
+          "coordinates": [
+             [
+                0.1380164176226,
+                52.2250326615595
+             ],
+             [
+                0.1380237936974,
+                52.2250737370083
+             ],
+             [
+                0.1379916071892,
+                52.2251172769426
+             ],
+             [
+                0.1379580795765,
+                52.2251369931252
+             ],
+             [
+                0.137864202261,
+                52.2251862835435
+             ],
+             [
+                0.1377207040787,
+                52.2252667911089
+             ],
+             [
+                0.137692879720297,
+                52.22528278305279
+             ],
+             [
+                0.1376285755148,
+                52.2253197416276
+             ],
+             [
+                0.1376120746136,
+                52.225329225447
+             ],
+             [
+                0.1374270021915,
+                52.2254351993197
+             ],
+             [
+                0.1374187876918631,
+                52.22543965459698
+             ],
+             [
+                0.1372982561588,
+                52.2255050269272
+             ],
+             [
+                0.137150734663,
+                52.2255855339147
+             ],
+             [
+                0.137086617252149,
+                52.22562214654749
+             ],
+             [
+                0.1370716094971,
+                52.2256307163437
+             ],
+             [
+                0.1370233297348,
+                52.2256578257791
+             ],
+             [
+                0.1369754571374,
+                52.2256824205229
+             ],
+             [
+                0.1369107211955,
+                52.2257156788577
+             ],
+             [
+                0.1368570327759,
+                52.2257432614672
+             ],
+             [
+                0.1367960125208,
+                52.2257781750423
+             ],
+             [
+                0.1367644965649,
+                52.2257637988677
+             ],
+             [
+                0.1367960125208,
+                52.2257781750423
+             ]
+          ],
+          "type": "LineString"
+       },
+       "id": 100001,
+       "myw": {
+          "change_type": "insert",
+          "delta": "design/NB217",
+          "feature_type": "fiber_cable",
+          "short_description": "D-096-LA-8W-F12NS",
+          "title": "Fiber Cable: WH-FCB-100001 (96)"
+       },
+       "properties": {
+          "comsof_auto": false,
+          "diameter": 16.0,
+          "directed": true,
+          "fiber_count": 96,
+          "id": 100001,
+          "installation_date": "2006-01-10",
+          "job_id": "25291",
+          "labor_costs": null,
+          "name": "WH-FCB-100001",
+          "owner": "Acme Co",
+          "specification": "D-096-LA-8W-F12NS",
+          "tick_mark_spacing": null,
+          "type": "External"
+       },
+       "secondary_geometries": {
+          "placement_path": {
+             "coordinates": [
+                [
+                   0.1380164176226,
+                   52.2250326615595
+                ],
+                [
+                   0.137692879720297,
+                   52.22528278305279
+                ],
+                [
+                   0.1376285755148,
+                   52.2253197416276
+                ],
+                [
+                   0.1374187876918631,
+                   52.22543965459698
+                ],
+                [
+                   0.137086617252149,
+                   52.22562214654749
+                ],
+                [
+                   0.1369754571374,
+                   52.2256824205229
+                ],
+                [
+                   0.1369107211955,
+                   52.2257156788577
+                ],
+                [
+                   0.1367960125208,
+                   52.2257781750423
+                ],
+                [
+                   0.1367644965649,
+                   52.2257637988677
+                ],
+                [
+                   0.1367960125208,
+                   52.2257781750423
+                ]
+             ],
+             "type": "LineString"
+          }
+       },
+       "type": "Feature"
+    }
+    
+    
+    DATABASE CHANGES: AFTER SPLIT CABLE BACKWARDS IN WH-M-39
+       insert delta.fiber_cable(design/NB217,9,update)
+       insert delta.fiber_cable(design/NB217,100001,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,76,update)
+       insert delta.mywcom_fiber_segment(design/NB217,77,update)
+       insert delta.mywcom_fiber_segment(design/NB217,78,update)
+       insert delta.mywcom_fiber_segment(design/NB217,79,update)
+       insert delta.mywcom_fiber_segment(design/NB217,80,update)
+       insert delta.mywcom_fiber_segment(design/NB217,81,update)
+       insert delta.mywcom_fiber_segment(design/NB217,82,update)
+       insert delta.mywcom_fiber_segment(design/NB217,83,update)
+       insert delta.mywcom_fiber_segment(design/NB217,84,update)
+       insert delta.mywcom_fiber_segment(design/NB217,85,update)
+       insert delta.mywcom_fiber_segment(design/NB217,593,update)
+       insert delta.mywcom_fiber_slack(design/NB217,13,update)
+    
+    VALIDATION ERRORS: AFTER SPLIT CABLE BACKWARDS IN WH-M-39

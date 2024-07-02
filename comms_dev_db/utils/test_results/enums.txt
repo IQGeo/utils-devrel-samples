@@ -1,0 +1,92 @@
+Opening database <database> ...
+enum                          value                      display_value
+----------------------------  -------------------------  -----------------------
+cable_type                    Backbone                   Backbone
+cable_type                    Internal                   Internal
+cable_type                    External                   External
+cable_type                    Riser                      Riser
+cable_type                    Drop                       Drop
+circuit_status                New                        New
+circuit_status                Planned                    Planned
+circuit_status                In Service                 In Service
+comsof_access_structure_type  CentralOffice              Central Office
+comsof_access_structure_type  Cabinet                    Cabinet
+comsof_access_structure_type  HandHole                   Hand Hole
+comsof_access_structure_type  DropBox                    Drop Box
+comsof_access_structure_type  Building                   Building
+comsof_access_structure_type  AccessStructure            Other
+comsof_cloud_project          IQGeo Integration          IQGeo Integration
+comsof_cloud_project          IQGeo demo integration     IQGeo demo integration
+comsof_color_code             1                          1
+comsof_color_code             2                          2
+comsof_color_code             3                          3
+comsof_color_code             4                          4
+comsof_color_code             5                          5
+comsof_color_code             6                          6
+comsof_color_code             7                          7
+comsof_color_code             8                          8
+comsof_color_code             9                          9
+comsof_color_code             10                         10
+comsof_licence_project        DESIGN Mode                DESIGN Mode
+comsof_licence_project        Development Testing        Development Testing
+comsof_locked                 locked                     Locked
+comsof_product                SA_DESIGNER                Fiber Designer
+comsof_product                SA_DESIGNER_APF            Fiber Designer (Custom)
+comsof_rules                  hybrid.rules               Hybrid
+comsof_rules                  hybrid_cabinet_area.rules  Hybrid (Cabinet Area)
+comsof_version                23.2.1.60                  23.2.1.60
+comsof_version                23.2.0.2                   23.2.0.2
+comsof_version                23.1.1.49                  23.1.1
+comsof_version                22.2.3.46                  22.2.3
+comsof_version                22.2.2.43                  22.2.2
+comsof_version                22.2.3.246                 22.2.3.246 (Custom)
+comsof_workspace_state        new                        new
+comsof_workspace_state        initialised                initialised
+comsof_workspace_state        populated                  populated
+comsof_workspace_state        preprocessed               preprocessed
+comsof_workspace_state        validated                  validated
+comsof_workspace_state        licenced                   licenced
+comsof_workspace_state        calculated                 calculated
+comsof_workspace_state        imported                   imported
+comsof_workspace_state        accepted                   accepted
+conduit_material              PE (Corrugated)            PE (Corrugated)
+conduit_material              PVC (Smooth)               PVC (Smooth)
+conduit_material              uPVC                       uPVC
+conduit_material              other                      other
+copper_status                 In Service                 In Service
+copper_status                 Installed                  Installed
+copper_status                 Abandoned                  Abandoned
+cover_type                    Grass                      Grass
+cover_type                    Paving                     Paving
+cover_type                    Brick                      Brick
+cover_type                    Tarmac                     Tarmac
+cover_type                    Mixed                      Mixed
+design_state                  New                        New
+design_state                  Designing                  Designing
+design_state                  Awaiting Approval          Awaiting Approval
+design_state                  Approved                   Approved
+design_state                  Building                   Building
+design_state                  Complete                   Complete
+design_type                   Customer Connection        Customer Connection
+design_type                   Network Build              Network Build
+design_type                   Network Upgrade            Network Upgrade
+ftth_circuit_type             Direct                     Direct
+ftth_circuit_type             PON1                       PON1
+loc_status                    Active                     Active
+loc_status                    Dead                       Dead
+loc_status                    Spare                      Spare
+manhole_model                 FPM-MCANN J4               FPM-MCANN J4
+manhole_model                 FPM-MCANN C2               FPM-MCANN C2
+service_status                New                        New
+service_status                Planned                    Planned
+service_status                Built                      Built
+service_status                In Service                 In Service
+slack_storage                 Coil                       Coil
+slack_storage                 Rack                       Rack
+slack_storage                 Snowshoe                   Snowshoe
+street_type                   tertiary                   tertiary
+street_type                   residential                residential
+street_type                   service                    service
+street_type                   cycleway                   cycleway
+street_type                   footway                    footway
+

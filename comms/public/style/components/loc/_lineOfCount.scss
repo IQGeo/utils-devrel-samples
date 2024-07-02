@@ -1,0 +1,90 @@
+.loc {
+
+    &__assignment-header {
+        padding: 10px 5px;
+        background-color: rgba(211, 211, 211, 0.5) !important;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    &__add {
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    &-line-delete-btn {
+        border: 1px solid #d9d9d9;
+        background-image: none !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            border-color: green;
+        }
+    }
+
+    &__physical-header {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__spinner {
+        position: absolute;
+        right: 35px;
+        bottom: 17px;
+    }
+
+    &__table {
+        max-height: 400px !important;
+        overflow-y: auto !important;
+    }
+
+}
+
+.ant-table-thead {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.ant-select-selector {
+
+    outline-color: green !important;
+
+    &:hover {
+        border-color: green !important
+    }
+
+    &:focus {
+        border-color: green !important
+    }
+
+    &:active {
+        border-color: green !important
+    }
+}
+
+.ant-select-item-option-selected {
+    background-color: rgba(0, 128, 0, 0.2) !important;
+}
+
+.ant-input-number:hover {
+    border-color: green !important;
+}
+
+.ant-select-focused {
+    outline: none !important;
+    border: none !important;
+}
+
+.ant-select-open {
+    outline: none !important;
+    border: none !important;
+}
+
+.hide {
+    display: none;
+}

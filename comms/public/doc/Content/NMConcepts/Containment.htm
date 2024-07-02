@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" /><title>Containment Model</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/IQGeo.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon.ico" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../index.htm#NMConcepts/Containment.htm">Open topic with navigation</a>
+        </p>
+        <div class="nocontent">
+            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+            </div>
+        </div>
+        <div role="main" id="mc-main-content">
+            <h1>Containment Model</h1>
+            <p>The following figure shows the <span class="mc-variable NetworkManagerVariables.NetworkManager variable">Network Manager</span> containment model.</p>
+            <p class="Figure">
+                <img src="../Resources/Images/Containment.PNG" class="Border" />
+            </p>
+            <p class="FigureCaption" data-mc-autonum="Figure: "><span class="autonumber"><span>Figure: </span></span>Containment Model</p>
+            <p><span class="mc-variable NetworkManagerVariables.NetworkManager variable">Network Manager</span> objects are divided <span class="Emphasis">into top level</span> objects and <span class="Emphasis">contained</span> objects. Top level objects are positioned by the user on the map. Contained objects inherit their location from their housing.</p>
+            <p>Top level objects are:</p>
+            <ul>
+                <li>
+                    <p><span class="Emphasis">Structure</span>: A point object modeling a building, manhole, pole, and so on. It can be connected to other structures through routes and can house equipment and cable segments. Administrators can add their own structure types.</p>
+                </li>
+                <li>
+                    <p><span class="Emphasis">Route</span>: A linear object modeling a path between two structures. It holds a reference to its start structure and end structure. It may correspond to a physical object (for example, strand messenger wire) or something conceptual (for example, a trench path). A route can house cable segments and conduits. Its direction is not important. Administrators can add their own route types.</p>
+                </li>
+            </ul>
+            <p>Contained objects are:</p>
+            <ul>
+                <li>
+                    <p><span class="Emphasis">Cable</span>: A cable consists of an ordered list of cable segments. It inherits its geometry from those segments. For directed cables, the direction of the geometry is important. Connections can be made at any segment along the cable (not just at its end points). Administrators can define their own cable types.</p>
+                </li>
+                <li>
+                    <p><span class="Emphasis">Cable Segment</span>: A cable segment models a section of cable between two structures. It holds a reference to the cable of which it is a part and the route or conduit that houses it. It also holds references to the previous and next segment in its chain and the top level object in which it is housed (its <span class="Option">root_housing</span>). Its geometry is inherited from its <span class="Option">root_housing</span> (but may differ in direction).</p>
+                    <p>A cable segment housed within a single structure is said to be an internal segment. Internal segments are used to model portions of cable within the structure such as slacks and risers.</p>
+                    <p>Cable segment is a system object. There is currently only one type in the system.</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p><span class="Emphasis">Conduit</span>: A conduit models a tube running between two structures. It stores a reference to its start and end structure and to the route that houses it (its <span class="mwParameter">root_housing</span>). Its geometry is inherited from its <span class="mwParameter">root_housing</span>. Conduit types declared as continuous additionally store references to the previous and next conduit in the chain.</p>
+                    <p>Conduits can be housed directly within a route or within another conduit. Their use is optional. Administrators can define their own conduit types.</p>
+                </li>
+                <li>
+                    <p><span class="Emphasis">Equipment</span>: An equipment object models a signal carrying device (splitter, mux, and so on) or enclosure (splice closure, rack, room, and so on). It inherits its geometry from the structure in which it is located (its <span class="mwParameter">root_housing</span>).</p>
+                    <p>Equipment can be housed directly within a structure or within another equipment. Administrators can define their own equipment types.</p>
+                </li>
+            </ul>
+            <p>For details about the data stored on each object type, see <a href="../DataModelUser/DataModelUserObjects.htm" class="MCXref xref"><span style="color: DarkBlue;" class="mcFormatColor"><u>Data Model (User-level Objects)</u></span></a>.</p>
+        </div>
+        <p>&#160;</p>
+        <table style="width: 100%;border-top-style: solid;border-top-width: 1px;border-top-color: #696969;">
+            <col />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="copyright">Copyright © 2022, <span class="mc-variable IQGeoVariables.CompanyNameLong variable">IQGeo UK Ltd</span>. <span class="mc-variable IQGeoVariables.CompanyName variable">IQGeo</span> is a registered ® trademark. All Rights Reserved.</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

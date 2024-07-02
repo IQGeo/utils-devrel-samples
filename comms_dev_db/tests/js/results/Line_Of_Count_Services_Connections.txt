@@ -1,0 +1,21 @@
+
+*** DISCONNECT AND CONNECT
+Set delta to: design/NB217
+DATABASE CHANGES: DISCONNECT
+
+DATABASE CHANGES: RECONNECT
+    insert delta.mywcom_copper_connection(design/NB217,100000,insert)
+    insert delta.mywcom_line_of_count(design/NB217,1,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,1,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,15,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,16,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,19,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,20,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,22,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,23,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,24,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,25,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,26,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,27,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,28,update)
+

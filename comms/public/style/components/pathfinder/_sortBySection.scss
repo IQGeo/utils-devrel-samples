@@ -1,0 +1,21 @@
+
+.sort-by {
+    &__container {
+        display: grid;
+        grid-template-rows: repeat(2, min-content);
+        gap: 5px;
+    }
+
+    &__list-container {
+        list-style-type: none;
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+    }
+
+    &__list-item {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,24 @@
+Set delta to: design/NB046
+
+*** CHECK CABLE OFFSET AFTER CONNECT
+Set delta to: design/NB046
+DATABASE CHANGES: DISCONNECT
+    insert delta.mywcom_coax_connection(design/NB046,10,delete)
+
+DATABASE CHANGES: RECONNECT
+    insert delta.coax_cable(design/NB046,5,update)
+    insert delta.mywcom_coax_connection(design/NB046,100000,insert)
+
+Coaxial Cable: WH-CA-006 (1)
+[
+	0.132997330658,
+	52.2196093384
+]
+[
+	0.1326084,
+	52.2193498
+]
+[
+	0.132578263506,
+	52.2193296265
+]

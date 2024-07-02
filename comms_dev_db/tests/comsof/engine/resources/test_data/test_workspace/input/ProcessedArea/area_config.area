@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AreaConfiguration>
+  <identifier>313597047</identifier>
+  <version>22.2.1.39 - SA_DESIGNER</version>
+  <creationDate>2022-11-08 12:12:36.511 UTC</creationDate>
+  <areaName>Unspecified Area</areaName>
+  <areaPreviewImageName>preview.png</areaPreviewImageName>
+  <inputFiles class="map"/>
+  <calculationInputFiles class="map"/>
+  <buildingsNotConnected>0</buildingsNotConnected>
+  <totalStreetLength>2564.1331905287593</totalStreetLength>
+  <numberOfLivingUnits>61</numberOfLivingUnits>
+  <numberOfPONLivingUnits>61</numberOfPONLivingUnits>
+  <numberOfP2PLivingUnits>0</numberOfP2PLivingUnits>
+  <numberOfBuildings>61</numberOfBuildings>
+  <sizeOfCustomersArea>0.24</sizeOfCustomersArea>
+  <areaDensity>254.16666666666669</areaDensity>
+</AreaConfiguration>

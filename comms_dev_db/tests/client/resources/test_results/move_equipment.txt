@@ -1,0 +1,10 @@
+DATABASE CHANGES: AFTER MOVE EQUIPMENT TO DIFFERENT STRUCTURE
+   insert data.mywcom_change_detail(5)
+   insert delta.fiber_splitter(design/NB046,8,update)
+   insert delta.mywcom_fiber_connection(design/NB046,152,delete)
+   insert delta.mywcom_fiber_connection(design/NB046,39,delete)
+
+DATABASE CHANGES: AFTER MOVE EQUIPMENT WITHIN SAME STRUCTURE
+   insert data.mywcom_change_detail(6)
+   insert delta.fiber_splitter(design/NB046,12,update)
+

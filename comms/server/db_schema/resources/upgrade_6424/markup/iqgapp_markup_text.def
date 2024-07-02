@@ -1,0 +1,88 @@
+{
+   "datasource": "myworld",
+   "name": "iqgapp_markup_text",
+   "external_name": "{:markup_text_external_name}",
+   "title": "{display_name}: [id]",
+   "short_description": null,
+   "track_changes": true,
+   "versioned": false,
+   "geom_indexed": true,
+   "editable": {
+      "insert_from_gui": false,
+      "update_from_gui": true,
+      "delete_from_gui": true
+   },
+   "editor_options": null,
+   "fields": [
+      {
+         "name": "id",
+         "external_name": "{:id_field_name}",
+         "type": "integer",
+         "key": true,
+         "generator": "sequence",
+         "visible": "false"
+      },
+      {
+         "name": "location",
+         "external_name": "{:location_field_name}",
+         "type": "point"
+      },
+      {
+         "name": "text_style",
+         "external_name": "{:markup_text_style_field_name}",
+         "type": "string",
+         "visible": "false"
+      },
+      {
+         "name": "text",
+         "external_name": "{:markup_text_text_field_name}",
+         "type": "string"
+      },
+      {
+         "name": "myw_orientation_location",
+         "external_name": "{:orientation_field_name}",
+         "type": "double",
+         "visible": "false"
+      },
+      {
+         "name": "offset_width",
+         "external_name": "{:markup_text_offset_width_field_name}",
+         "type": "string",
+         "visible" : "false"
+      },
+      {
+         "name": "referenced_feature",
+         "external_name": "{:markup_text_referenced_feature_field_name}",
+         "type": "reference",
+         "editor_class": "myw.SelectionReferenceFieldEditor"
+      },
+      {
+         "name": "owner",
+         "external_name": "{:markup_text_owner_field_name}",
+         "type": "reference",
+         "visible": "false"
+      },
+      {
+         "name": "leaderline",
+         "external_name": "{:markup_text_leaderline_field_name}",
+         "type": "boolean",
+         "default": "false",
+         "mandatory" : "true"
+      }
+   ],
+   "groups": [],
+   "searches": [],
+   "queries": [
+      {
+         "value": "markup text",
+         "description": "{:markup_text_external_name}",
+         "lang": "en"
+      }
+   ],
+   "filters": [
+      {
+         "name": "OwnerIsActive",
+         "value": "{activeDelta} =  [owner]"
+      }
+   ]
+}

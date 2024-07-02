@@ -1,0 +1,40 @@
+
+SUB TEST : Labor Costs Chooser All
+    TEST: Labor Costs Chooser Render: All
+        button: Show/hide columns
+        input: 
+        label: Name Description Cost Currency Length Unit Linear
+        label: fiber_connect 350 $ false
+        input: true
+        label: hole_dig Dig hole to 2ft 200 $ false
+        input: false
+        label: level_ground 150 $ false
+        input: false
+        label: survey 450 $ false
+        input: false
+        label: tree_trim Trimming trees around hole 100 $ false
+        input: false
+    
+    
+    DATABASE CHANGES: AFTER ADDING LABOR COSTS TO MANHOLE
+       insert data.mywcom_change_detail(5)
+       insert delta.manhole(design/NB046,100000,insert)
+    
+
+SUB TEST : Labor Costs Chooser: From Palette
+    TEST: Labor Costs Grid Render: From Palette
+        button: Show/hide columns
+        input: 
+        label: Name Description Cost Currency Length Unit Linear
+        label: fiber_connect 350 $ false
+        input: false
+        label: hole_dig Dig hole to 2ft 200 $ false
+        input: false
+        label: level_ground 150 $ false
+        input: false
+        label: survey 450 $ false
+        input: false
+        label: tree_trim Trimming trees around hole 100 $ false
+        input: false
+    
+    

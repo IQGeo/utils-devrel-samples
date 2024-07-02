@@ -1,0 +1,7 @@
+<svg viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .small { font: italic 2px sans-serif; }   
+  </style>
+
+  <text x="3" y="2" class="small">Abc</text> 
+</svg>

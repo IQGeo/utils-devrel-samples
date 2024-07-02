@@ -1,0 +1,26 @@
+{
+   "name": "street_type",
+   "description": null,
+   "values": [
+      {
+         "value": "tertiary",
+         "display_value": "tertiary"
+      },
+      {
+         "value": "residential",
+         "display_value": "residential"
+      },
+      {
+         "value": "service",
+         "display_value": "service"
+      },
+      {
+         "value": "cycleway",
+         "display_value": "cycleway"
+      },
+      {
+         "value": "footway",
+         "display_value": "footway"
+      }
+   ]
+}

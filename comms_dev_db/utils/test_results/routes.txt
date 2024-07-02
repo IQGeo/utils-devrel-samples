@@ -1,0 +1,591 @@
+Opening database <database> ...
+
+  mywcom_route_junction(1)  location=point  comsof_auto=False
+  mywcom_route_junction(2)  location=point  comsof_auto=False
+  mywcom_route_junction(3)  location=point  comsof_auto=False
+  mywcom_route_junction(4)  location=point  comsof_auto=False
+  mywcom_route_junction(5)  location=point  comsof_auto=False
+  mywcom_route_junction(6)  location=point  comsof_auto=False
+  mywcom_route_junction(7)  location=point  comsof_auto=False
+  mywcom_route_junction(8)  location=point  comsof_auto=False
+  mywcom_route_junction(9)  location=point  comsof_auto=False
+  mywcom_route_junction(10)  location=point  comsof_auto=False
+  mywcom_route_junction(11)  location=point  comsof_auto=False
+  mywcom_route_junction(12)  location=point  comsof_auto=False
+  mywcom_route_junction(13)  location=point  comsof_auto=False
+  mywcom_route_junction(14)  location=point  comsof_auto=False
+  mywcom_route_junction(15)  location=point  comsof_auto=False
+  mywcom_route_junction(16)  location=point  comsof_auto=False
+  mywcom_route_junction(17)  location=point  comsof_auto=False
+  mywcom_route_junction(18)  location=point  comsof_auto=False
+  mywcom_route_junction(19)  location=point  comsof_auto=False
+  mywcom_route_junction(20)  location=point  comsof_auto=False
+  mywcom_route_junction(21)  location=point  comsof_auto=False
+  mywcom_route_junction(22)  location=point  comsof_auto=False
+  mywcom_route_junction(23)  location=point  comsof_auto=False
+  mywcom_route_junction(24)  location=point  comsof_auto=False
+  mywcom_route_junction(25)  location=point  comsof_auto=False
+  mywcom_route_junction(26)  location=point  comsof_auto=False
+  mywcom_route_junction(27)  location=point  comsof_auto=False
+  mywcom_route_junction(28)  location=point  comsof_auto=False
+  mywcom_route_junction(29)  location=point  comsof_auto=False
+  mywcom_route_junction(30)  location=point  comsof_auto=False
+  mywcom_route_junction(31)  location=point  comsof_auto=False
+  mywcom_route_junction(32)  location=point  comsof_auto=False
+  mywcom_route_junction(33)  location=point  comsof_auto=False
+  mywcom_route_junction(34)  location=point  comsof_auto=False
+  mywcom_route_junction(35)  location=point  comsof_auto=False
+  mywcom_route_junction(36)  location=point  comsof_auto=False
+  mywcom_route_junction(37)  location=point  comsof_auto=False
+  mywcom_route_junction(38)  location=point  comsof_auto=False
+  mywcom_route_junction(39)  location=point  comsof_auto=False
+  mywcom_route_junction(40)  location=point  comsof_auto=False
+  mywcom_route_junction(41)  location=point  comsof_auto=False
+  mywcom_route_junction(42)  location=point  comsof_auto=False
+  mywcom_route_junction(43)  location=point  comsof_auto=False
+  mywcom_route_junction(44)  location=point  comsof_auto=False
+  mywcom_route_junction(45)  location=point  comsof_auto=False
+  mywcom_route_junction(46)  location=point  comsof_auto=False
+  mywcom_route_junction(47)  location=point  comsof_auto=False
+  mywcom_route_junction(48)  location=point  comsof_auto=False
+  mywcom_route_junction(49)  location=point  comsof_auto=False
+  mywcom_route_junction(50)  location=point  comsof_auto=False
+  mywcom_route_junction(51)  location=point  comsof_auto=False
+  mywcom_route_junction(52)  location=point  comsof_auto=False
+  mywcom_route_junction(53)  location=point  comsof_auto=False
+  mywcom_route_junction(54)  location=point  comsof_auto=False
+  mywcom_route_junction(50000)  location=point
+  mywcom_route_junction(50001)  location=point
+  mywcom_route_junction(50002)  location=point
+  mywcom_route_junction(50003)  location=point
+
+Opening database <database> ...
+
+  ug_route(1)  length=4.96  in_structure=building/1  out_structure=mywcom_route_junction/37  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(2)  length=6.95  in_structure=manhole/34  out_structure=manhole/33  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(3)  length=68.34  in_structure=manhole/33  out_structure=manhole/27  path=linestring(10)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(4)  length=78.47  in_structure=manhole/27  out_structure=manhole/28  path=linestring(6)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(5)  length=13.44  in_structure=manhole/29  out_structure=manhole/28  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(6)  length=15.38  in_structure=building/1  out_structure=manhole/32  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(7)  length=135.45  in_structure=manhole/32  out_structure=manhole/29  path=linestring(12)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(8)  length=11.64  in_structure=manhole/34  out_structure=manhole/35  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(9)  length=54.26  in_structure=manhole/35  out_structure=manhole/23  path=linestring(8)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(10)  length=29.54  in_structure=manhole/23  out_structure=mywcom_route_junction/47  path=linestring(4)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(11)  length=23.03  in_structure=manhole/24  out_structure=mywcom_route_junction/49  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(12)  length=10.6  in_structure=manhole/36  out_structure=mywcom_route_junction/50  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(13)  length=20.3  in_structure=manhole/36  out_structure=mywcom_route_junction/1  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(14)  length=39.22  in_structure=manhole/36  out_structure=drop_point/1  path=linestring(7)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(15)  length=48.22  in_structure=mywcom_route_junction/1  out_structure=mywcom_route_junction/8  path=linestring(4)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(16)  length=5.78  in_structure=mywcom_route_junction/2  out_structure=mywcom_route_junction/32  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(17)  length=9.27  in_structure=manhole/12  out_structure=mywcom_route_junction/40  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  comsof_auto=False
+  ug_route(18)  length=8.96  in_structure=manhole/11  out_structure=manhole/10  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(19)  length=14.46  in_structure=manhole/12  out_structure=manhole/2  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(20)  length=15.37  in_structure=manhole/35  out_structure=mywcom_route_junction/31  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(21)  length=17.12  in_structure=manhole/1  out_structure=manhole/2  path=linestring(4)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(22)  length=7.03  in_structure=manhole/8  out_structure=manhole/9  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(23)  length=76.62  in_structure=manhole/9  out_structure=manhole/10  path=linestring(14)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(24)  length=59.9  in_structure=manhole/11  out_structure=manhole/8  path=linestring(10)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(25)  length=82.8  in_structure=manhole/2  out_structure=manhole/41  path=linestring(12)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(26)  length=93.82  in_structure=manhole/42  out_structure=mywcom_route_junction/3  path=linestring(18)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(27)  length=75.16  in_structure=manhole/10  out_structure=manhole/7  path=linestring(14)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(28)  length=11.55  in_structure=manhole/41  out_structure=manhole/3  path=linestring(5)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(29)  length=43.14  in_structure=manhole/3  out_structure=mywcom_route_junction/41  path=linestring(8)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(30)  length=3.34  in_structure=manhole/13  out_structure=mywcom_route_junction/4  path=linestring(2)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(31)  length=11.51  in_structure=mywcom_route_junction/4  out_structure=mywcom_route_junction/5  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(32)  length=28.23  in_structure=manhole/15  out_structure=manhole/17  path=linestring(8)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(33)  length=21.52  in_structure=mywcom_route_junction/5  out_structure=manhole/14  path=linestring(6)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(34)  length=26.01  in_structure=manhole/17  out_structure=manhole/18  path=linestring(6)  labor_costs=cherry_picker  comsof_auto=False
+  ug_route(35)  length=18.64  in_structure=manhole/18  out_structure=manhole/19  path=linestring(4)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(36)  length=38.27  in_structure=manhole/19  out_structure=manhole/22  path=linestring(7)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(37)  length=72.37  in_structure=manhole/7  out_structure=manhole/6  path=linestring(8)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(38)  length=17.0  in_structure=manhole/6  out_structure=manhole/5  path=linestring(5)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(39)  length=45.12  in_structure=manhole/5  out_structure=manhole/4  path=linestring(10)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(40)  length=87.37  in_structure=manhole/28  out_structure=manhole/244  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(41)  length=1.33  in_structure=manhole/244  out_structure=mywcom_route_junction/46  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(42)  length=38.52  in_structure=manhole/245  out_structure=manhole/252  path=linestring(4)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(43)  length=1.73  in_structure=manhole/246  out_structure=mywcom_route_junction/45  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(44)  length=63.25  in_structure=manhole/247  out_structure=mywcom_route_junction/43  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(45)  length=19.93  in_structure=manhole/252  out_structure=manhole/30  path=linestring(2)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(46)  length=328.6  in_structure=manhole/29  out_structure=manhole/43  path=linestring(11)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(47)  length=42.1  in_structure=manhole/248  out_structure=manhole/91  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(48)  length=67.14  in_structure=manhole/249  out_structure=mywcom_route_junction/18  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(50)  length=52.59  in_structure=mywcom_route_junction/6  out_structure=pole/12  path=linestring(2)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(51)  length=37.46  in_structure=pole/12  out_structure=pole/13  path=linestring(2)  labor_costs=trench_dig  comsof_auto=False
+  ug_route(52)  length=3.27  in_structure=mywcom_route_junction/2  out_structure=manhole/34  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(53)  length=19.36  in_structure=mywcom_route_junction/4  out_structure=manhole/15  path=linestring(6)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(54)  length=15.27  in_structure=mywcom_route_junction/1  out_structure=manhole/37  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(56)  length=45.55  in_structure=mywcom_route_junction/3  out_structure=manhole/44  path=linestring(5)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(57)  length=7.42  in_structure=manhole/44  out_structure=manhole/45  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(58)  length=58.79  in_structure=manhole/45  out_structure=manhole/46  path=linestring(8)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(59)  length=80.13  in_structure=manhole/44  out_structure=manhole/47  path=linestring(17)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(60)  length=38.61  in_structure=manhole/14  out_structure=manhole/58  path=linestring(11)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(61)  length=6.51  in_structure=manhole/17  out_structure=manhole/16  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(62)  length=60.84  in_structure=manhole/16  out_structure=manhole/57  path=linestring(13)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(63)  length=31.43  in_structure=manhole/49  out_structure=manhole/58  path=linestring(9)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(64)  length=42.15  in_structure=manhole/16  out_structure=manhole/20  path=linestring(8)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(65)  length=17.91  in_structure=manhole/20  out_structure=manhole/21  path=linestring(6)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(66)  length=12.17  in_structure=mywcom_route_junction/50001  out_structure=manhole/56  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(67)  length=9.9  in_structure=mywcom_route_junction/7  out_structure=manhole/55  path=linestring(3)  labor_costs=cherry_picker  cover_type=Brick  comsof_auto=False
+  ug_route(68)  length=9.63  in_structure=mywcom_route_junction/8  out_structure=manhole/54  path=linestring(3)  labor_costs=cherry_picker,trench_dig  comsof_auto=False
+  ug_route(69)  length=27.56  in_structure=manhole/37  out_structure=manhole/59  path=linestring(6)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(70)  length=113.37  in_structure=manhole/59  out_structure=mywcom_route_junction/11  path=linestring(17)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(71)  length=22.2  in_structure=manhole/66  out_structure=mywcom_route_junction/10  path=linestring(5)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(72)  length=10.88  in_structure=mywcom_route_junction/11  out_structure=manhole/61  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(73)  length=10.62  in_structure=manhole/62  out_structure=mywcom_route_junction/9  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(74)  length=23.45  in_structure=manhole/62  out_structure=manhole/63  path=linestring(5)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(75)  length=10.6  in_structure=manhole/74  out_structure=manhole/73  path=linestring(4)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(76)  length=53.93  in_structure=manhole/73  out_structure=manhole/72  path=linestring(12)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(77)  length=38.45  in_structure=manhole/72  out_structure=manhole/71  path=linestring(14)  labor_costs=pavement_re-surface,site_manager  cover_type=Tarmac  comsof_auto=False
+  ug_route(78)  length=6.97  in_structure=manhole/53  out_structure=drop_point/9  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(79)  length=22.19  in_structure=manhole/39  out_structure=mywcom_route_junction/54  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(80)  length=10.98  in_structure=mywcom_route_junction/12  out_structure=manhole/40  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(81)  length=19.571846806228546  in_structure=manhole/52  out_structure=mywcom_route_junction/50000  path=linestring(3)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(82)  length=6.14  in_structure=manhole/71  out_structure=mywcom_route_junction/39  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(83)  length=7.56  in_structure=manhole/70  out_structure=mywcom_route_junction/14  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(84)  length=82.45  in_structure=manhole/69  out_structure=mywcom_route_junction/38  path=linestring(11)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(85)  length=43.52  in_structure=manhole/65  out_structure=mywcom_route_junction/10  path=linestring(5)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(87)  length=111.14  in_structure=manhole/60  out_structure=manhole/61  path=linestring(11)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(88)  length=18.26  in_structure=manhole/7  out_structure=manhole/75  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Brick  comsof_auto=False
+  ug_route(89)  length=170.42  in_structure=manhole/76  out_structure=manhole/48  path=linestring(11)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(90)  length=36.7  in_structure=mywcom_route_junction/15  out_structure=manhole/81  path=linestring(7)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(91)  length=17.38  in_structure=manhole/81  out_structure=manhole/82  path=linestring(6)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(92)  length=34.49  in_structure=manhole/82  out_structure=mywcom_route_junction/35  path=linestring(6)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(93)  length=92.98  in_structure=manhole/91  out_structure=manhole/84  path=linestring(7)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(94)  length=71.65  in_structure=manhole/84  out_structure=manhole/86  path=linestring(8)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(95)  length=8.72  in_structure=manhole/86  out_structure=mywcom_route_junction/36  path=linestring(3)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(96)  length=69.53  in_structure=manhole/87  out_structure=manhole/88  path=linestring(8)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(97)  length=84.43  in_structure=manhole/88  out_structure=manhole/89  path=linestring(11)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(98)  length=69.35  in_structure=manhole/90  out_structure=manhole/83  path=linestring(7)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(99)  length=94.63  in_structure=manhole/83  out_structure=mywcom_route_junction/16  path=linestring(5)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(100)  length=16.4  in_structure=mywcom_route_junction/17  out_structure=manhole/93  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(101)  length=18.44  in_structure=mywcom_route_junction/18  out_structure=manhole/94  path=linestring(3)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(103)  length=13.01  in_structure=manhole/104  out_structure=manhole/103  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(104)  length=31.53  in_structure=manhole/110  out_structure=manhole/111  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(105)  length=107.18  in_structure=manhole/109  out_structure=pole/18  path=linestring(5)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(106)  length=17.53  in_structure=pole/18  out_structure=manhole/110  path=linestring(5)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(107)  length=27.31  in_structure=manhole/107  out_structure=manhole/106  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(110)  length=90.56  in_structure=manhole/61  out_structure=manhole/78  path=linestring(11)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(111)  length=9.09  in_structure=manhole/84  out_structure=manhole/83  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(112)  length=214.87  in_structure=manhole/89  out_structure=manhole/90  path=linestring(22)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(113)  length=42.69  in_structure=manhole/49  out_structure=manhole/57  path=linestring(4)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(114)  length=49.64  in_structure=manhole/106  out_structure=manhole/112  path=linestring(9)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(115)  length=76.72  in_structure=manhole/112  out_structure=manhole/105  path=linestring(5)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(116)  length=76.69  in_structure=manhole/105  out_structure=manhole/113  path=linestring(10)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(121)  length=53.3  in_structure=manhole/109  out_structure=mywcom_route_junction/19  path=linestring(5)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(123)  length=2.8  in_structure=manhole/251  out_structure=mywcom_route_junction/42  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(125)  length=19.36  in_structure=manhole/96  out_structure=mywcom_route_junction/21  path=linestring(3)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(126)  length=8.9  in_structure=manhole/99  out_structure=manhole/100  path=linestring(3)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(127)  length=3.87  in_structure=manhole/100  out_structure=mywcom_route_junction/20  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(128)  length=1.47  in_structure=manhole/101  out_structure=mywcom_route_junction/20  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(130)  length=251.61  in_structure=manhole/102  out_structure=manhole/113  path=linestring(9)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(131)  length=48.46  in_structure=manhole/103  out_structure=manhole/31  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(132)  length=8.32  in_structure=manhole/102  out_structure=manhole/103  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(133)  length=8.37  in_structure=manhole/108  out_structure=mywcom_route_junction/19  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Tarmac  comsof_auto=False
+  ug_route(134)  length=14.68  in_structure=manhole/97  out_structure=mywcom_route_junction/21  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(135)  length=15.47  in_structure=manhole/30  out_structure=mywcom_route_junction/34  path=linestring(3)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(136)  length=50.5  in_structure=manhole/117  out_structure=manhole/118  path=linestring(5)  labor_costs=cherry_picker,trench_dig  comsof_auto=False
+  ug_route(137)  length=19.42  in_structure=manhole/118  out_structure=manhole/114  path=linestring(5)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(138)  length=73.29  in_structure=manhole/119  out_structure=manhole/120  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(139)  length=49.66  in_structure=manhole/116  out_structure=mywcom_route_junction/22  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(140)  length=12.79  in_structure=manhole/117  out_structure=mywcom_route_junction/22  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(141)  length=38.28  in_structure=manhole/114  out_structure=manhole/121  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(142)  length=11.76  in_structure=manhole/114  out_structure=manhole/115  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(144)  length=5.58  in_structure=manhole/132  out_structure=manhole/133  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(145)  length=51.25  in_structure=manhole/133  out_structure=manhole/134  path=linestring(6)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(146)  length=22.85  in_structure=manhole/134  out_structure=manhole/136  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(147)  length=37.3  in_structure=manhole/136  out_structure=manhole/139  path=linestring(6)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(148)  length=50.91  in_structure=manhole/139  out_structure=manhole/140  path=linestring(6)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(149)  length=69.62  in_structure=manhole/140  out_structure=manhole/143  path=linestring(6)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(150)  length=35.75  in_structure=manhole/143  out_structure=manhole/144  path=linestring(3)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(151)  length=19.82  in_structure=manhole/144  out_structure=manhole/145  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(152)  length=35.17  in_structure=manhole/145  out_structure=manhole/149  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(153)  length=72.19  in_structure=manhole/149  out_structure=manhole/153  path=linestring(7)  labor_costs=trench_dig  comsof_auto=False
+  ug_route(154)  length=102.46  in_structure=manhole/153  out_structure=manhole/154  path=linestring(7)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(155)  length=107.63  in_structure=manhole/154  out_structure=manhole/157  path=linestring(6)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(156)  length=37.08  in_structure=manhole/157  out_structure=manhole/158  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(157)  length=68.22  in_structure=manhole/158  out_structure=manhole/162  path=linestring(4)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(158)  length=85.58  in_structure=manhole/162  out_structure=manhole/166  path=linestring(6)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(159)  length=40.81  in_structure=manhole/166  out_structure=manhole/168  path=linestring(5)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(160)  length=17.34  in_structure=manhole/168  out_structure=manhole/170  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(161)  length=31.75  in_structure=manhole/170  out_structure=manhole/172  path=linestring(5)  labor_costs=pavement_re-surface,site_manager  cover_type=Tarmac  comsof_auto=False
+  ug_route(162)  length=93.27  in_structure=manhole/172  out_structure=manhole/176  path=linestring(11)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(163)  length=40.47  in_structure=manhole/176  out_structure=manhole/177  path=linestring(5)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(164)  length=233.05  in_structure=manhole/177  out_structure=manhole/186  path=linestring(12)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(165)  length=6.89  in_structure=manhole/186  out_structure=manhole/185  path=linestring(2)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(166)  length=180.62  in_structure=manhole/185  out_structure=manhole/191  path=linestring(9)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(167)  length=212.51  in_structure=manhole/191  out_structure=manhole/196  path=linestring(10)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(168)  length=26.58  in_structure=manhole/196  out_structure=manhole/197  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(169)  length=10.98  in_structure=manhole/197  out_structure=mywcom_route_junction/27  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(170)  length=72.74  in_structure=manhole/194  out_structure=manhole/195  path=linestring(5)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(171)  length=26.06  in_structure=manhole/195  out_structure=manhole/198  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(172)  length=15.06  in_structure=manhole/198  out_structure=manhole/199  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(173)  length=53.45  in_structure=manhole/199  out_structure=manhole/201  path=linestring(11)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(174)  length=8.84  in_structure=manhole/201  out_structure=manhole/200  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(175)  length=39.2  in_structure=manhole/200  out_structure=manhole/202  path=linestring(5)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(176)  length=20.76  in_structure=manhole/202  out_structure=manhole/203  path=linestring(5)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(177)  length=27.97  in_structure=manhole/203  out_structure=mywcom_route_junction/24  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(178)  length=31.98  in_structure=mywcom_route_junction/24  out_structure=manhole/204  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(179)  length=16.15  in_structure=manhole/204  out_structure=manhole/205  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(180)  length=23.02  in_structure=manhole/205  out_structure=manhole/207  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(181)  length=21.35  in_structure=manhole/209  out_structure=manhole/208  path=linestring(5)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(182)  length=24.29  in_structure=manhole/208  out_structure=manhole/211  path=linestring(7)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(183)  length=24.14  in_structure=manhole/210  out_structure=manhole/130  path=linestring(6)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(184)  length=9.33  in_structure=manhole/130  out_structure=manhole/131  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(185)  length=101.67  in_structure=manhole/131  out_structure=manhole/135  path=linestring(8)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(186)  length=21.55  in_structure=manhole/135  out_structure=manhole/137  path=linestring(5)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(187)  length=19.22  in_structure=manhole/137  out_structure=manhole/138  path=linestring(4)  labor_costs=cherry_picker  comsof_auto=False
+  ug_route(188)  length=54.38  in_structure=manhole/138  out_structure=manhole/141  path=linestring(7)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(189)  length=46.41  in_structure=manhole/141  out_structure=manhole/142  path=linestring(6)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(190)  length=37.93  in_structure=manhole/142  out_structure=manhole/148  path=linestring(5)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(191)  length=8.5  in_structure=manhole/147  out_structure=manhole/148  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(192)  length=23.52  in_structure=manhole/148  out_structure=manhole/146  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(193)  length=36.1  in_structure=manhole/146  out_structure=manhole/150  path=linestring(5)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(194)  length=33.47  in_structure=manhole/150  out_structure=manhole/151  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(195)  length=43.51  in_structure=manhole/151  out_structure=manhole/152  path=linestring(4)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(196)  length=129.22  in_structure=manhole/152  out_structure=mywcom_route_junction/25  path=linestring(8)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(197)  length=76.84  in_structure=manhole/156  out_structure=mywcom_route_junction/25  path=linestring(6)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(198)  length=9.59  in_structure=manhole/159  out_structure=manhole/156  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(199)  length=55.42  in_structure=manhole/159  out_structure=manhole/160  path=linestring(5)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(200)  length=42.67  in_structure=manhole/160  out_structure=manhole/161  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(201)  length=57.69  in_structure=manhole/161  out_structure=manhole/164  path=linestring(6)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(202)  length=35.45  in_structure=manhole/164  out_structure=manhole/165  path=linestring(5)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(203)  length=52.76  in_structure=manhole/165  out_structure=manhole/167  path=linestring(6)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(204)  length=18.63  in_structure=manhole/167  out_structure=manhole/169  path=linestring(4)  labor_costs=cherry_picker,trench_dig  comsof_auto=False
+  ug_route(205)  length=35.49  in_structure=manhole/169  out_structure=manhole/171  path=linestring(5)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(206)  length=29.58  in_structure=manhole/171  out_structure=manhole/173  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(207)  length=73.79  in_structure=manhole/173  out_structure=manhole/175  path=linestring(6)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(208)  length=27.5  in_structure=manhole/175  out_structure=manhole/174  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(209)  length=71.98  in_structure=manhole/174  out_structure=manhole/178  path=linestring(7)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(210)  length=67.78  in_structure=manhole/178  out_structure=manhole/179  path=linestring(6)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(211)  length=22.66  in_structure=manhole/179  out_structure=manhole/181  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(212)  length=48.45  in_structure=manhole/181  out_structure=manhole/183  path=linestring(6)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(213)  length=16.71  in_structure=manhole/183  out_structure=manhole/182  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(214)  length=31.88  in_structure=manhole/182  out_structure=manhole/184  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(215)  length=44.52  in_structure=manhole/184  out_structure=manhole/187  path=linestring(4)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(216)  length=42.82  in_structure=manhole/187  out_structure=manhole/188  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(217)  length=19.86  in_structure=manhole/188  out_structure=manhole/189  path=linestring(3)  labor_costs=pavement_re-surface,site_manager  cover_type=Tarmac  comsof_auto=False
+  ug_route(218)  length=49.32  in_structure=manhole/189  out_structure=manhole/190  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(219)  length=49.08  in_structure=manhole/190  out_structure=manhole/192  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(220)  length=30.23  in_structure=manhole/192  out_structure=manhole/193  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(221)  length=93.51  in_structure=manhole/193  out_structure=manhole/194  path=linestring(7)  labor_costs=pavement_re-surface,site_manager  comsof_auto=False
+  ug_route(222)  length=28.82  in_structure=manhole/31  out_structure=mywcom_route_junction/26  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(223)  length=66.58  in_structure=manhole/123  out_structure=manhole/124  path=linestring(6)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(224)  length=14.74  in_structure=manhole/124  out_structure=manhole/125  path=linestring(5)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(225)  length=22.41  in_structure=manhole/127  out_structure=manhole/129  path=linestring(3)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(226)  length=5.11  in_structure=manhole/129  out_structure=manhole/128  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(227)  length=38.52  in_structure=manhole/203  out_structure=manhole/212  path=linestring(9)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(228)  length=3.19  in_structure=manhole/210  out_structure=mywcom_route_junction/28  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(229)  length=21.36  in_structure=manhole/214  out_structure=manhole/213  path=linestring(4)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(230)  length=11.31  in_structure=manhole/218  out_structure=manhole/217  path=linestring(3)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(231)  length=20.03  in_structure=manhole/217  out_structure=manhole/220  path=linestring(3)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(232)  length=17.89  in_structure=manhole/220  out_structure=manhole/221  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(233)  length=83.12  in_structure=manhole/221  out_structure=manhole/225  path=linestring(7)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(234)  length=49.46  in_structure=manhole/216  out_structure=manhole/219  path=linestring(13)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(235)  length=37.17  in_structure=manhole/219  out_structure=manhole/222  path=linestring(4)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(236)  length=25.07  in_structure=manhole/222  out_structure=manhole/223  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(237)  length=38.64  in_structure=manhole/223  out_structure=manhole/224  path=linestring(7)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(238)  length=43.06  in_structure=manhole/125  out_structure=manhole/127  path=linestring(7)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(239)  length=19.57  in_structure=mywcom_route_junction/26  out_structure=manhole/122  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(240)  length=54.93  in_structure=manhole/124  out_structure=manhole/126  path=linestring(6)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(241)  length=44.0  in_structure=manhole/224  out_structure=manhole/226  path=linestring(5)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(242)  length=13.09  in_structure=manhole/199  out_structure=mywcom_route_junction/27  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(243)  length=11.54  in_structure=mywcom_route_junction/23  out_structure=manhole/209  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(244)  length=22.87  in_structure=manhole/211  out_structure=mywcom_route_junction/28  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(245)  length=15.06  in_structure=manhole/228  out_structure=manhole/227  path=linestring(4)  labor_costs=pavement_re-surface,site_manager  cover_type=Tarmac  comsof_auto=False
+  ug_route(246)  length=71.48  in_structure=manhole/215  out_structure=manhole/227  path=linestring(5)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(247)  length=35.54  in_structure=manhole/213  out_structure=manhole/229  path=linestring(6)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(248)  length=41.91  in_structure=manhole/43  out_structure=manhole/262  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(249)  length=36.51  in_structure=manhole/6  out_structure=manhole/278  path=linestring(5)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(250)  length=18.1  in_structure=manhole/128  out_structure=mywcom_route_junction/29  path=linestring(2)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(251)  length=137.21  in_structure=manhole/226  out_structure=mywcom_route_junction/30  path=linestring(5)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(252)  length=14.98  in_structure=mywcom_route_junction/30  out_structure=manhole/230  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(253)  length=119.79  in_structure=manhole/231  out_structure=manhole/232  path=linestring(6)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(254)  length=63.45  in_structure=mywcom_route_junction/9  out_structure=manhole/66  path=linestring(9)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(255)  length=47.74  in_structure=manhole/111  out_structure=pole/16  path=linestring(2)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(256)  length=61.73  in_structure=mywcom_route_junction/23  out_structure=manhole/132  path=linestring(9)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(257)  length=63.62  in_structure=pole/14  out_structure=pole/13  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(258)  length=7.55  in_structure=mywcom_route_junction/25  out_structure=manhole/155  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(259)  length=98.7  in_structure=pole/16  out_structure=pole/14  path=linestring(2)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(260)  length=68.92  in_structure=mywcom_route_junction/29  out_structure=manhole/218  path=linestring(5)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(261)  length=11.67  in_structure=mywcom_route_junction/10  out_structure=manhole/64  path=linestring(3)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(262)  length=102.31  in_structure=mywcom_route_junction/19  out_structure=manhole/107  path=linestring(16)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(263)  length=13.09  in_structure=mywcom_route_junction/14  out_structure=manhole/69  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(264)  length=36.87  in_structure=mywcom_route_junction/24  out_structure=manhole/206  path=linestring(5)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(265)  length=2.34  in_structure=cabinet/3  out_structure=mywcom_route_junction/31  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(266)  length=1.56  in_structure=cabinet/1  out_structure=mywcom_route_junction/32  path=linestring(2)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(267)  length=1.59  in_structure=cabinet/2  out_structure=mywcom_route_junction/2  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(268)  length=1.76  in_structure=mywcom_route_junction/33  out_structure=manhole/42  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(269)  length=1.37  in_structure=mywcom_route_junction/34  out_structure=cabinet/32  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(270)  length=1.87  in_structure=mywcom_route_junction/35  out_structure=cabinet/12  path=linestring(2)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(271)  length=3.28  in_structure=mywcom_route_junction/36  out_structure=cabinet/15  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(272)  length=3.8  in_structure=manhole/86  out_structure=pole/23  path=linestring(3)  labor_costs=cherry_picker,trench_dig  comsof_auto=False
+  ug_route(273)  length=6.96  in_structure=mywcom_route_junction/37  out_structure=cabinet/2  path=linestring(3)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(274)  length=1.19  in_structure=cabinet/9  out_structure=mywcom_route_junction/38  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(275)  length=2.24  in_structure=cabinet/10  out_structure=mywcom_route_junction/39  path=linestring(2)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(276)  length=2.81  in_structure=cabinet/11  out_structure=manhole/39  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(277)  length=10.73  in_structure=manhole/53  out_structure=cabinet/8  path=linestring(3)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(278)  length=1.73  in_structure=cabinet/7  out_structure=mywcom_route_junction/40  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(279)  length=1.07  in_structure=cabinet/4  out_structure=mywcom_route_junction/41  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(280)  length=1.84  in_structure=manhole/16  out_structure=cabinet/5  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(281)  length=0.57  in_structure=pole/10  out_structure=mywcom_route_junction/42  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(282)  length=3.34  in_structure=manhole/249  out_structure=pole/8  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(283)  length=1.84  in_structure=pole/9  out_structure=mywcom_route_junction/43  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(284)  length=0.69  in_structure=pole/7  out_structure=mywcom_route_junction/44  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(285)  length=1.56  in_structure=mywcom_route_junction/45  out_structure=pole/5  path=linestring(2)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(286)  length=1.6  in_structure=manhole/245  out_structure=pole/4  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(287)  length=1.79  in_structure=mywcom_route_junction/46  out_structure=pole/6  path=linestring(2)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(288)  length=14.08  in_structure=manhole/127  out_structure=building/2  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(301)  length=5.32  in_structure=wall_box/150  out_structure=mywcom_route_junction/47  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Tarmac  comsof_auto=False
+  ug_route(302)  length=5.13  in_structure=wall_box/132  out_structure=mywcom_route_junction/48  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(303)  length=4.26  in_structure=wall_box/133  out_structure=mywcom_route_junction/49  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(304)  length=3.65  in_structure=wall_box/149  out_structure=mywcom_route_junction/50  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(305)  length=5.14  in_structure=wall_box/134  out_structure=drop_point/1  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(306)  length=1.42  in_structure=wall_box/135  out_structure=drop_point/6  path=linestring(2)  labor_costs=trench_dig  comsof_auto=False
+  ug_route(307)  length=11.64  in_structure=wall_box/136  out_structure=manhole/254  path=linestring(4)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(308)  length=9.74  in_structure=drop_point/8  out_structure=wall_box/142  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(309)  length=3.02  in_structure=wall_box/137  out_structure=drop_point/7  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(310)  length=3.06  in_structure=wall_box/138  out_structure=drop_point/9  path=linestring(2)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(311)  length=4.36  in_structure=mdu/2  out_structure=drop_point/2  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(312)  length=5.97  in_structure=mdu/5  out_structure=mywcom_route_junction/51  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(313)  length=4.33  in_structure=wall_box/144  out_structure=mywcom_route_junction/52  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(314)  length=8.1  in_structure=drop_point/3  out_structure=mdu/3  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(315)  length=7.76  in_structure=wall_box/145  out_structure=drop_point/5  path=linestring(2)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(316)  length=6.25  in_structure=wall_box/146  out_structure=mywcom_route_junction/53  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(317)  length=6.18  in_structure=wall_box/148  out_structure=mywcom_route_junction/53  path=linestring(3)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(318)  length=5.83  in_structure=mywcom_route_junction/53  out_structure=drop_point/4  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(319)  length=4.2  in_structure=wall_box/147  out_structure=mywcom_route_junction/54  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(320)  length=12.55  in_structure=wall_box/143  out_structure=manhole/53  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(321)  length=11.63  in_structure=manhole/20  out_structure=mdu/1  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(322)  length=14.85  in_structure=manhole/11  out_structure=mdu/4  path=linestring(2)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(323)  length=8.64  in_structure=cabinet/45  out_structure=manhole/184  path=linestring(2)  labor_costs=cherry_picker  comsof_auto=False
+  ug_route(324)  length=10.47  in_structure=cabinet/46  out_structure=manhole/159  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(325)  length=43.64  in_structure=manhole/257  out_structure=manhole/255  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(326)  length=38.63  in_structure=manhole/255  out_structure=manhole/258  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(327)  length=45.51  in_structure=manhole/260  out_structure=manhole/259  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(328)  length=39.41  in_structure=manhole/258  out_structure=manhole/260  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(329)  length=54.28  in_structure=manhole/266  out_structure=manhole/257  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Tarmac  comsof_auto=False
+  ug_route(330)  length=32.08  in_structure=manhole/265  out_structure=manhole/263  path=linestring(2)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(331)  length=50.77  in_structure=manhole/265  out_structure=manhole/264  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(332)  length=34.95  in_structure=manhole/262  out_structure=manhole/266  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(333)  length=77.0  in_structure=manhole/266  out_structure=manhole/265  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(334)  length=82.56  in_structure=manhole/263  out_structure=manhole/267  path=linestring(6)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(335)  length=41.85  in_structure=manhole/267  out_structure=manhole/268  path=linestring(2)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(336)  length=44.05  in_structure=manhole/267  out_structure=manhole/269  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(337)  length=38.29  in_structure=manhole/255  out_structure=manhole/270  path=linestring(4)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(338)  length=33.74  in_structure=manhole/271  out_structure=manhole/261  path=linestring(6)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(339)  length=41.82  in_structure=manhole/270  out_structure=manhole/271  path=linestring(5)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(340)  length=36.83  in_structure=manhole/261  out_structure=manhole/272  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(341)  length=53.1  in_structure=manhole/272  out_structure=manhole/273  path=linestring(6)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(342)  length=35.37  in_structure=manhole/275  out_structure=manhole/276  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(343)  length=35.3  in_structure=manhole/273  out_structure=manhole/274  path=linestring(2)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(344)  length=30.44  in_structure=manhole/274  out_structure=manhole/275  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(345)  length=67.07  in_structure=manhole/277  out_structure=manhole/256  path=linestring(10)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(346)  length=40.88  in_structure=manhole/274  out_structure=manhole/277  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(347)  length=13.91  in_structure=manhole/91  out_structure=mywcom_route_junction/16  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(348)  length=60.16  in_structure=manhole/252  out_structure=manhole/246  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(349)  length=20.52  in_structure=manhole/253  out_structure=drop_point/2  path=linestring(4)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(350)  length=11.95  in_structure=manhole/254  out_structure=drop_point/6  path=linestring(3)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(351)  length=6.31  in_structure=drop_point/1  out_structure=manhole/253  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(352)  length=31.91  in_structure=drop_point/2  out_structure=drop_point/3  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(353)  length=10.62  in_structure=drop_point/3  out_structure=mywcom_route_junction/12  path=linestring(4)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(354)  length=21.89  in_structure=drop_point/4  out_structure=drop_point/5  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(355)  length=23.88  in_structure=drop_point/5  out_structure=mywcom_route_junction/13  path=linestring(6)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(356)  length=27.39  in_structure=drop_point/6  out_structure=manhole/253  path=linestring(7)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(357)  length=9.56  in_structure=drop_point/7  out_structure=manhole/254  path=linestring(2)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(358)  length=1.19  in_structure=drop_point/8  out_structure=drop_point/7  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(359)  length=10.05  in_structure=drop_point/9  out_structure=drop_point/8  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(360)  length=12.27  in_structure=mywcom_route_junction/5  out_structure=manhole/4  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(361)  length=24.62  in_structure=mywcom_route_junction/6  out_structure=manhole/99  path=linestring(3)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(362)  length=6.44  in_structure=mywcom_route_junction/7  out_structure=mywcom_route_junction/51  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(363)  length=10.68  in_structure=mywcom_route_junction/8  out_structure=mywcom_route_junction/7  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(364)  length=31.63  in_structure=mywcom_route_junction/11  out_structure=mywcom_route_junction/9  path=linestring(9)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(365)  length=6.04  in_structure=mywcom_route_junction/12  out_structure=mywcom_route_junction/13  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Grass  comsof_auto=False
+  ug_route(366)  length=10.98  in_structure=mywcom_route_junction/13  out_structure=manhole/39  path=linestring(3)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(367)  length=49.57  in_structure=mywcom_route_junction/15  out_structure=mywcom_route_junction/44  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(368)  length=25.26  in_structure=mywcom_route_junction/16  out_structure=mywcom_route_junction/17  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(369)  length=7.94  in_structure=mywcom_route_junction/17  out_structure=manhole/249  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(370)  length=14.85  in_structure=mywcom_route_junction/18  out_structure=manhole/251  path=linestring(2)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(371)  length=64.7  in_structure=mywcom_route_junction/20  out_structure=manhole/102  path=linestring(7)  labor_costs=cherry_picker  cover_type=Tarmac  comsof_auto=False
+  ug_route(372)  length=26.92  in_structure=mywcom_route_junction/21  out_structure=mywcom_route_junction/6  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(373)  length=107.6  in_structure=mywcom_route_junction/22  out_structure=manhole/119  path=linestring(8)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(374)  length=37.91  in_structure=mywcom_route_junction/26  out_structure=manhole/123  path=linestring(5)  labor_costs=cherry_picker  comsof_auto=False
+  ug_route(375)  length=126.47  in_structure=mywcom_route_junction/27  out_structure=mywcom_route_junction/23  path=linestring(10)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(376)  length=28.5  in_structure=mywcom_route_junction/28  out_structure=manhole/214  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(377)  length=8.01  in_structure=mywcom_route_junction/30  out_structure=manhole/231  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(378)  length=29.7  in_structure=mywcom_route_junction/31  out_structure=mywcom_route_junction/33  path=linestring(7)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(379)  length=108.43  in_structure=mywcom_route_junction/32  out_structure=manhole/12  path=linestring(9)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(380)  length=62.94  in_structure=mywcom_route_junction/33  out_structure=manhole/1  path=linestring(8)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(381)  length=3.33  in_structure=mywcom_route_junction/34  out_structure=manhole/116  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(382)  length=1.85  in_structure=mywcom_route_junction/35  out_structure=manhole/78  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(383)  length=75.71  in_structure=mywcom_route_junction/36  out_structure=manhole/87  path=linestring(8)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(384)  length=6.48  in_structure=mywcom_route_junction/37  out_structure=cabinet/1  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(385)  length=19.243166288413857  in_structure=mywcom_route_junction/38  out_structure=manhole/50000  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Tarmac  comsof_auto=False
+  ug_route(386)  length=5.62  in_structure=mywcom_route_junction/39  out_structure=mywcom_route_junction/14  path=linestring(2)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(387)  length=45.19  in_structure=mywcom_route_junction/40  out_structure=manhole/11  path=linestring(7)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(388)  length=10.65  in_structure=mywcom_route_junction/41  out_structure=manhole/13  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(389)  length=32.73  in_structure=mywcom_route_junction/42  out_structure=manhole/96  path=linestring(3)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(390)  length=12.09  in_structure=mywcom_route_junction/43  out_structure=manhole/248  path=linestring(2)  labor_costs=trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(391)  length=9.97  in_structure=mywcom_route_junction/44  out_structure=manhole/247  path=linestring(2)  labor_costs=cherry_picker  comsof_auto=False
+  ug_route(392)  length=51.94  in_structure=mywcom_route_junction/45  out_structure=mywcom_route_junction/15  path=linestring(2)  labor_costs=cherry_picker,trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(393)  length=87.93  in_structure=mywcom_route_junction/46  out_structure=manhole/245  path=linestring(4)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(394)  length=5.49  in_structure=mywcom_route_junction/47  out_structure=mywcom_route_junction/48  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(395)  length=4.96  in_structure=mywcom_route_junction/48  out_structure=manhole/24  path=linestring(3)  labor_costs=cherry_picker  cover_type=Grass  comsof_auto=False
+  ug_route(396)  length=11.54  in_structure=mywcom_route_junction/49  out_structure=manhole/26  path=linestring(3)  labor_costs=cherry_picker,trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(397)  length=10.21  in_structure=mywcom_route_junction/50  out_structure=manhole/26  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(398)  length=29.12  in_structure=mywcom_route_junction/51  out_structure=mywcom_route_junction/52  path=linestring(3)  labor_costs=cherry_picker  cover_type=Mixed  comsof_auto=False
+  ug_route(399)  length=6.4  in_structure=mywcom_route_junction/52  out_structure=mywcom_route_junction/50001  path=linestring(2)  labor_costs=trench_dig  cover_type=Tarmac  comsof_auto=False
+  ug_route(400)  length=28.86  in_structure=mywcom_route_junction/54  out_structure=manhole/48  path=linestring(4)  labor_costs=cherry_picker,trench_dig  cover_type=Grass  comsof_auto=False
+  ug_route(401)  length=22.77  out_structure=manhole/119  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Mixed  comsof_auto=False
+  ug_route(402)  length=44.87  in_structure=manhole/121  path=linestring(2)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(6100)  in_structure=manhole/6100  out_structure=manhole/50001  path=linestring(2)
+  ug_route(6101)  in_structure=manhole/6101  out_structure=manhole/6102  path=linestring(2)
+  ug_route(6102)  in_structure=manhole/6103  out_structure=pole/6104  path=linestring(2)
+  ug_route(6103)  in_structure=pole/6104  out_structure=manhole/6105  path=linestring(2)
+  ug_route(6104)  in_structure=manhole/6106  out_structure=manhole/6107  path=linestring(2)
+  ug_route(6105)  in_structure=manhole/6107  out_structure=manhole/6108  path=linestring(2)
+  ug_route(6106)  in_structure=manhole/6109  out_structure=manhole/6110  path=linestring(2)
+  ug_route(6107)  out_structure=mywcom_route_junction/50002  path=linestring(2)
+  ug_route(6108)  in_structure=manhole/6111  out_structure=mywcom_route_junction/50003  path=linestring(2)
+  ug_route(6109)  in_structure=mywcom_route_junction/50003  out_structure=manhole/6113  path=linestring(2)
+  ug_route(50000)  in_structure=mywcom_route_junction/50000  out_structure=wall_box/50000  path=linestring(2)  labor_costs=site_manager
+  ug_route(50001)  length=53.448153193771454  in_structure=mywcom_route_junction/50000  out_structure=drop_point/4  path=linestring(6)  labor_costs=trench_dig  cover_type=Mixed  comsof_auto=False
+  ug_route(50002)  length=5.7868337115861435  in_structure=manhole/50000  out_structure=manhole/63  path=linestring(2)  labor_costs=pavement_re-surface,site_manager  cover_type=Tarmac  comsof_auto=False
+  ug_route(50003)  in_structure=manhole/50001  out_structure=manhole/6101  path=linestring(2)
+  ug_route(50004)  in_structure=mywcom_route_junction/50002  path=linestring(2)
+
+Opening database <database> ...
+
+  oh_route(1)  length=25.76  in_structure=wall_box/1  out_structure=pole/6  path=linestring(2)  comsof_auto=False
+  oh_route(2)  length=23.71  in_structure=pole/6  out_structure=wall_box/2  path=linestring(2)  comsof_auto=False
+  oh_route(3)  length=17.18  in_structure=wall_box/3  out_structure=pole/6  path=linestring(2)  comsof_auto=False
+  oh_route(4)  length=24.31  in_structure=wall_box/4  out_structure=pole/6  path=linestring(2)  comsof_auto=False
+  oh_route(5)  length=40.65  in_structure=pole/6  out_structure=wall_box/5  path=linestring(2)  comsof_auto=False
+  oh_route(6)  length=43.6  in_structure=pole/6  out_structure=wall_box/6  path=linestring(2)  comsof_auto=False
+  oh_route(7)  length=44.12  in_structure=pole/6  out_structure=wall_box/7  path=linestring(2)  comsof_auto=False
+  oh_route(8)  length=37.36  in_structure=pole/6  out_structure=wall_box/8  path=linestring(2)  comsof_auto=False
+  oh_route(9)  length=34.43  in_structure=pole/6  out_structure=wall_box/9  path=linestring(2)  comsof_auto=False
+  oh_route(10)  length=32.02  in_structure=pole/6  out_structure=wall_box/10  path=linestring(2)  comsof_auto=False
+  oh_route(11)  length=32.66  in_structure=pole/6  out_structure=wall_box/11  path=linestring(2)  comsof_auto=False
+  oh_route(12)  length=37.42  in_structure=pole/6  out_structure=wall_box/12  path=linestring(2)  comsof_auto=False
+  oh_route(13)  length=41.22  in_structure=pole/6  out_structure=wall_box/13  path=linestring(2)  comsof_auto=False
+  oh_route(14)  length=51.46  in_structure=pole/6  out_structure=wall_box/14  path=linestring(2)  comsof_auto=False
+  oh_route(15)  length=57.01  in_structure=pole/6  out_structure=wall_box/15  path=linestring(2)  comsof_auto=False
+  oh_route(16)  length=39.18  in_structure=pole/4  out_structure=wall_box/16  path=linestring(2)  comsof_auto=False
+  oh_route(17)  length=28.52  in_structure=pole/4  out_structure=wall_box/17  path=linestring(2)  comsof_auto=False
+  oh_route(18)  length=20.54  in_structure=pole/4  out_structure=wall_box/18  path=linestring(2)  comsof_auto=False
+  oh_route(19)  length=47.25  in_structure=pole/4  out_structure=wall_box/19  path=linestring(2)  comsof_auto=False
+  oh_route(20)  length=42.77  in_structure=pole/4  out_structure=wall_box/20  path=linestring(2)  comsof_auto=False
+  oh_route(21)  length=36.37  in_structure=wall_box/21  out_structure=pole/4  path=linestring(2)  comsof_auto=False
+  oh_route(22)  length=34.74  in_structure=pole/4  out_structure=wall_box/22  path=linestring(2)  comsof_auto=False
+  oh_route(23)  length=34.39  in_structure=pole/4  out_structure=wall_box/23  path=linestring(2)  comsof_auto=False
+  oh_route(24)  length=36.58  in_structure=pole/4  out_structure=wall_box/24  path=linestring(2)  comsof_auto=False
+  oh_route(25)  length=41.28  in_structure=pole/4  out_structure=wall_box/25  path=linestring(2)  comsof_auto=False
+  oh_route(26)  length=45.88  in_structure=pole/4  out_structure=wall_box/26  path=linestring(2)  comsof_auto=False
+  oh_route(27)  length=47.71  in_structure=pole/4  out_structure=wall_box/27  path=linestring(2)  comsof_auto=False
+  oh_route(28)  length=27.49  in_structure=pole/4  out_structure=wall_box/28  path=linestring(2)  comsof_auto=False
+  oh_route(30)  length=44.91  in_structure=pole/7  out_structure=wall_box/29  path=linestring(2)  comsof_auto=False
+  oh_route(31)  length=35.74  in_structure=pole/7  out_structure=wall_box/30  path=linestring(2)  comsof_auto=False
+  oh_route(32)  length=35.74  in_structure=pole/7  out_structure=wall_box/30  path=linestring(2)  comsof_auto=False
+  oh_route(33)  length=36.76  in_structure=pole/7  out_structure=wall_box/31  path=linestring(2)  comsof_auto=False
+  oh_route(34)  length=43.89  in_structure=pole/7  out_structure=wall_box/32  path=linestring(2)  comsof_auto=False
+  oh_route(35)  length=55.85  in_structure=pole/7  out_structure=wall_box/33  path=linestring(2)  comsof_auto=False
+  oh_route(36)  length=53.02  in_structure=pole/5  out_structure=wall_box/34  path=linestring(2)  comsof_auto=False
+  oh_route(37)  length=39.37  in_structure=pole/5  out_structure=wall_box/35  path=linestring(2)  comsof_auto=False
+  oh_route(38)  length=24.97  in_structure=pole/5  out_structure=wall_box/36  path=linestring(2)  comsof_auto=False
+  oh_route(39)  length=19.28  in_structure=pole/5  out_structure=wall_box/37  path=linestring(2)  comsof_auto=False
+  oh_route(40)  length=35.11  in_structure=pole/5  out_structure=wall_box/38  path=linestring(2)  comsof_auto=False
+  oh_route(41)  length=51.29  in_structure=pole/5  out_structure=wall_box/39  path=linestring(2)  comsof_auto=False
+  oh_route(42)  length=38.65  in_structure=pole/5  out_structure=wall_box/40  path=linestring(2)  comsof_auto=False
+  oh_route(43)  length=31.83  in_structure=pole/5  out_structure=wall_box/41  path=linestring(2)  comsof_auto=False
+  oh_route(44)  length=35.23  in_structure=pole/5  out_structure=wall_box/42  path=linestring(2)  comsof_auto=False
+  oh_route(45)  length=47.45  in_structure=pole/5  out_structure=wall_box/43  path=linestring(2)  comsof_auto=False
+  oh_route(46)  length=47.9  in_structure=pole/5  out_structure=wall_box/44  path=linestring(2)  comsof_auto=False
+  oh_route(47)  length=16.68  in_structure=pole/7  out_structure=wall_box/45  path=linestring(2)  comsof_auto=False
+  oh_route(48)  length=34.34  in_structure=pole/7  out_structure=wall_box/46  path=linestring(2)  comsof_auto=False
+  oh_route(49)  length=24.46  in_structure=pole/9  out_structure=wall_box/47  path=linestring(2)  comsof_auto=False
+  oh_route(50)  length=16.81  in_structure=pole/9  out_structure=wall_box/48  path=linestring(2)  comsof_auto=False
+  oh_route(51)  length=27.18  in_structure=pole/9  out_structure=wall_box/49  path=linestring(2)  comsof_auto=False
+  oh_route(52)  length=47.97  in_structure=pole/9  out_structure=wall_box/50  path=linestring(2)  comsof_auto=False
+  oh_route(53)  length=40.67  in_structure=pole/9  out_structure=wall_box/51  path=linestring(2)  comsof_auto=False
+  oh_route(54)  length=38.48  in_structure=pole/9  out_structure=wall_box/52  path=linestring(2)  comsof_auto=False
+  oh_route(55)  length=46.61  in_structure=pole/9  out_structure=wall_box/53  path=linestring(2)  comsof_auto=False
+  oh_route(56)  length=58.82  in_structure=pole/9  out_structure=wall_box/54  path=linestring(2)  comsof_auto=False
+  oh_route(57)  length=72.22  in_structure=pole/9  out_structure=wall_box/55  path=linestring(2)  comsof_auto=False
+  oh_route(58)  length=28.78  in_structure=pole/8  out_structure=wall_box/56  path=linestring(2)  comsof_auto=False
+  oh_route(60)  length=19.49  in_structure=pole/8  out_structure=wall_box/57  path=linestring(2)  comsof_auto=False
+  oh_route(61)  length=30.33  in_structure=pole/8  out_structure=wall_box/58  path=linestring(2)  comsof_auto=False
+  oh_route(62)  length=48.91  in_structure=pole/8  out_structure=wall_box/59  path=linestring(2)  comsof_auto=False
+  oh_route(63)  length=34.14  in_structure=pole/8  out_structure=wall_box/60  path=linestring(2)  comsof_auto=False
+  oh_route(64)  length=39.15  in_structure=pole/8  out_structure=wall_box/61  path=linestring(2)  comsof_auto=False
+  oh_route(65)  length=36.35  in_structure=pole/8  out_structure=wall_box/62  path=linestring(2)  comsof_auto=False
+  oh_route(66)  length=43.44  in_structure=pole/8  out_structure=wall_box/63  path=linestring(2)  comsof_auto=False
+  oh_route(67)  length=26.06  in_structure=wall_box/64  out_structure=pole/10  path=linestring(2)  comsof_auto=False
+  oh_route(68)  length=14.92  in_structure=pole/10  out_structure=wall_box/65  path=linestring(2)  comsof_auto=False
+  oh_route(69)  length=26.98  in_structure=pole/10  out_structure=wall_box/66  path=linestring(2)  comsof_auto=False
+  oh_route(70)  length=48.42  in_structure=pole/10  out_structure=wall_box/67  path=linestring(2)  comsof_auto=False
+  oh_route(71)  length=55.27  in_structure=pole/10  out_structure=wall_box/68  path=linestring(2)  comsof_auto=False
+  oh_route(72)  length=47.31  in_structure=pole/10  out_structure=wall_box/69  path=linestring(2)  comsof_auto=False
+  oh_route(73)  length=39.59  in_structure=pole/10  out_structure=wall_box/70  path=linestring(2)  comsof_auto=False
+  oh_route(74)  length=46.3  in_structure=pole/10  out_structure=wall_box/71  path=linestring(2)  comsof_auto=False
+  oh_route(75)  length=50.42  in_structure=pole/10  out_structure=wall_box/72  path=linestring(2)  comsof_auto=False
+  oh_route(76)  length=37.46  in_structure=pole/10  out_structure=wall_box/73  path=linestring(2)  comsof_auto=False
+  oh_route(77)  length=13.02  in_structure=pole/13  out_structure=wall_box/74  path=linestring(2)  comsof_auto=False
+  oh_route(78)  length=12.58  in_structure=wall_box/75  out_structure=pole/13  path=linestring(2)  comsof_auto=False
+  oh_route(79)  length=20.05  in_structure=pole/13  out_structure=wall_box/76  path=linestring(2)  comsof_auto=False
+  oh_route(80)  length=17.77  in_structure=pole/14  out_structure=wall_box/77  path=linestring(2)  comsof_auto=False
+  oh_route(81)  length=24.28  in_structure=pole/14  out_structure=wall_box/78  path=linestring(2)  comsof_auto=False
+  oh_route(82)  length=36.73  in_structure=pole/14  out_structure=wall_box/79  path=linestring(2)  comsof_auto=False
+  oh_route(83)  length=51.02  in_structure=pole/14  out_structure=wall_box/80  path=linestring(2)  comsof_auto=False
+  oh_route(84)  length=22.25  in_structure=pole/14  out_structure=wall_box/81  path=linestring(2)  comsof_auto=False
+  oh_route(85)  length=35.98  in_structure=pole/14  out_structure=wall_box/82  path=linestring(2)  comsof_auto=False
+  oh_route(86)  length=23.46  in_structure=pole/14  out_structure=wall_box/83  path=linestring(2)  comsof_auto=False
+  oh_route(87)  length=28.14  in_structure=pole/14  out_structure=wall_box/84  path=linestring(2)  comsof_auto=False
+  oh_route(88)  length=24.9  in_structure=pole/14  out_structure=wall_box/85  path=linestring(2)  comsof_auto=False
+  oh_route(89)  length=30.78  in_structure=pole/14  out_structure=wall_box/86  path=linestring(2)  comsof_auto=False
+  oh_route(90)  length=41.09  in_structure=pole/14  out_structure=wall_box/87  path=linestring(2)  comsof_auto=False
+  oh_route(91)  length=47.55  in_structure=pole/14  out_structure=wall_box/88  path=linestring(2)  comsof_auto=False
+  oh_route(92)  length=42.38  in_structure=pole/14  out_structure=wall_box/89  path=linestring(2)  comsof_auto=False
+  oh_route(93)  length=49.05  in_structure=pole/14  out_structure=wall_box/90  path=linestring(2)  comsof_auto=False
+  oh_route(94)  length=63.03  in_structure=wall_box/91  out_structure=pole/14  path=linestring(2)  comsof_auto=False
+  oh_route(95)  length=43.31  in_structure=pole/16  out_structure=wall_box/92  path=linestring(2)  comsof_auto=False
+  oh_route(96)  length=35.18  in_structure=pole/16  out_structure=wall_box/93  path=linestring(2)  comsof_auto=False
+  oh_route(97)  length=30.8  in_structure=pole/16  out_structure=wall_box/94  path=linestring(2)  comsof_auto=False
+  oh_route(98)  length=28.53  in_structure=pole/16  out_structure=wall_box/95  path=linestring(2)  comsof_auto=False
+  oh_route(99)  length=22.94  in_structure=pole/16  out_structure=wall_box/96  path=linestring(2)  comsof_auto=False
+  oh_route(100)  length=28.34  in_structure=pole/16  out_structure=wall_box/97  path=linestring(2)  comsof_auto=False
+  oh_route(101)  length=33.32  in_structure=pole/16  out_structure=wall_box/98  path=linestring(2)  comsof_auto=False
+  oh_route(102)  length=43.34  in_structure=pole/16  out_structure=wall_box/99  path=linestring(2)  comsof_auto=False
+  oh_route(103)  length=15.92  in_structure=pole/16  out_structure=wall_box/100  path=linestring(2)  comsof_auto=False
+  oh_route(104)  length=17.08  in_structure=pole/16  out_structure=wall_box/101  path=linestring(2)  comsof_auto=False
+  oh_route(105)  length=17.57  in_structure=pole/16  out_structure=wall_box/102  path=linestring(2)  comsof_auto=False
+  oh_route(106)  length=20.82  in_structure=pole/16  out_structure=wall_box/103  path=linestring(2)  comsof_auto=False
+  oh_route(107)  length=26.96  in_structure=pole/16  out_structure=wall_box/104  path=linestring(2)  comsof_auto=False
+  oh_route(108)  length=34.08  in_structure=pole/16  out_structure=wall_box/105  path=linestring(2)  comsof_auto=False
+  oh_route(109)  length=41.28  in_structure=pole/16  out_structure=wall_box/106  path=linestring(2)  comsof_auto=False
+  oh_route(110)  length=27.11  in_structure=pole/16  out_structure=wall_box/107  path=linestring(2)  comsof_auto=False
+  oh_route(111)  length=35.96  in_structure=pole/16  out_structure=wall_box/108  path=linestring(2)  comsof_auto=False
+  oh_route(112)  length=42.17  in_structure=pole/16  out_structure=wall_box/109  path=linestring(2)  comsof_auto=False
+  oh_route(113)  length=27.17  in_structure=pole/18  out_structure=pole/17  path=linestring(2)  comsof_auto=False
+  oh_route(114)  length=27.39  in_structure=pole/18  out_structure=wall_box/110  path=linestring(2)  comsof_auto=False
+  oh_route(115)  length=31.37  in_structure=wall_box/111  out_structure=pole/18  path=linestring(2)  comsof_auto=False
+  oh_route(116)  length=20.68  in_structure=pole/18  out_structure=wall_box/112  path=linestring(2)  comsof_auto=False
+  oh_route(117)  length=16.68  in_structure=pole/18  out_structure=wall_box/113  path=linestring(2)  comsof_auto=False
+  oh_route(118)  length=15.19  in_structure=pole/18  out_structure=wall_box/114  path=linestring(2)  comsof_auto=False
+  oh_route(119)  length=19.31  in_structure=pole/18  out_structure=wall_box/115  path=linestring(2)  comsof_auto=False
+  oh_route(120)  length=24.55  in_structure=wall_box/116  out_structure=pole/18  path=linestring(2)  comsof_auto=False
+  oh_route(121)  length=34.5  in_structure=pole/18  out_structure=wall_box/117  path=linestring(2)  comsof_auto=False
+  oh_route(122)  length=39.29  in_structure=pole/18  out_structure=wall_box/118  path=linestring(2)  comsof_auto=False
+  oh_route(123)  length=15.26  in_structure=pole/15  out_structure=wall_box/119  path=linestring(2)  comsof_auto=False
+  oh_route(124)  length=14.22  in_structure=pole/15  out_structure=wall_box/120  path=linestring(2)  comsof_auto=False
+  oh_route(125)  length=18.86  in_structure=pole/15  out_structure=wall_box/121  path=linestring(2)  comsof_auto=False
+  oh_route(126)  length=22.31  in_structure=pole/15  out_structure=wall_box/122  path=linestring(2)  comsof_auto=False
+  oh_route(127)  length=20.72  in_structure=pole/15  out_structure=wall_box/123  path=linestring(2)  comsof_auto=False
+  oh_route(128)  length=23.94  in_structure=pole/15  out_structure=wall_box/124  path=linestring(2)  comsof_auto=False
+  oh_route(129)  length=33.64  in_structure=pole/15  out_structure=wall_box/125  path=linestring(2)  comsof_auto=False
+  oh_route(130)  length=45.32  in_structure=pole/15  out_structure=wall_box/126  path=linestring(2)  comsof_auto=False
+  oh_route(131)  length=61.86  in_structure=pole/15  out_structure=wall_box/127  path=linestring(2)  comsof_auto=False
+  oh_route(132)  length=28.53  in_structure=pole/15  out_structure=wall_box/128  path=linestring(2)  comsof_auto=False
+  oh_route(133)  length=32.48  in_structure=pole/15  out_structure=wall_box/129  path=linestring(2)  comsof_auto=False
+  oh_route(134)  length=37.48  in_structure=pole/15  out_structure=wall_box/130  path=linestring(2)  comsof_auto=False
+  oh_route(135)  length=44.95  in_structure=pole/15  out_structure=wall_box/131  path=linestring(2)  comsof_auto=False
+

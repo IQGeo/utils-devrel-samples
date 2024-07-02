@@ -1,0 +1,49 @@
+TEST: AFTER SELECT DEMAND POINT
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: IN Demand Point: 18
+    label: Id
+    label: 18
+    label: Include
+    label: true
+    label: pon_homes
+    label: 1
+
+
+TEST: AFTER DELETE DEMAND POINT
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+
+
+TEST: AFTER ATTEMPT RE-SELECT DEMAND POINT
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: IN Trench: 62
+    label: Drop
+    label: Id
+    label: 62
+    label: Include
+    label: true
+    label: Locked
+    label: false
+
+

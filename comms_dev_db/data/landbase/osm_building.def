@@ -1,0 +1,62 @@
+{
+    "datasource": "myworld",
+    "name": "osm_building",
+    "external_name": "OSM Building",
+    "title": "{display_name}: [name]",
+    "short_description": null,
+    "track_changes": true,
+    "editable": false,
+    "fields": [
+        {
+            "name": "osm_id",
+            "external_name": "Osm Id",
+            "type": "string(10)",
+            "key": true
+        },
+        {
+            "name": "code",
+            "external_name": "Code",
+            "type": "integer"
+        },
+        {
+            "name": "fclass",
+            "external_name": "Fclass",
+            "type": "string(28)"
+        },
+        {
+            "name": "name",
+            "external_name": "Name",
+            "type": "string(100)"
+        },
+        {
+            "name": "type",
+            "external_name": "Type",
+            "type": "string(20)"
+        },
+        {
+            "name": "outline",
+            "external_name": "Outline",
+            "type": "polygon"
+        },
+        {
+            "name": "location",
+            "external_name": "Location",
+            "type": "point"
+        },
+        {
+            "name": "address",
+            "type": "reference",
+            "value": "select(address.building)",
+            "read_only": true
+        }
+    ],
+    "groups": [],
+    "searches": [],
+    "queries": [
+        {
+            "value": "osm building",
+            "description": "OSM Building"
+        }
+    ],
+    "filters": []
+}

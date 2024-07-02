@@ -1,0 +1,34 @@
+#!/bin/bash
+# Run all the comms tests with args $*
+
+# ENH: Add option test_suite --banner and remove echos here
+
+echo =======================
+echo     VALIDATION TESTS
+echo =======================
+comms_validation_tests "$@"
+
+echo =======================
+echo      TOOLS TESTS
+echo =======================
+comms_tools_tests "$@"
+
+echo =======================
+echo      ENGINE TESTS
+echo =======================
+comms_engine_tests "$@"
+
+echo =======================
+echo      SERVER TESTS
+echo =======================
+comms_server_tests "$@"
+
+echo =======================
+echo      JS API TESTS
+echo =======================
+comms_js_api_tests "$@"
+
+echo =======================
+echo      CLIENT TESTS
+echo =======================
+comms_client_tests "$@"

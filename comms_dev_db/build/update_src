@@ -1,0 +1,7 @@
+echo
+echo "-----------------------"
+echo "Updating Source"
+echo "-----------------------"
+echo
+
+comms_git pull --rebase

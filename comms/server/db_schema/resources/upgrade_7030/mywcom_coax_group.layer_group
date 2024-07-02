@@ -1,0 +1,11 @@
+{
+	"name": "mywcom_coax_group",
+	"display_name": "{:mywcom_coax_group_layer_display_name}",
+	"description": "",
+	"thumbnail": "",
+	"exclusive": false,
+	"layers": [
+		"mywcom_coax_cables",
+        "mywcom_coax_equipment"
+	]
+}

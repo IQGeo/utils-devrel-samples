@@ -1,0 +1,46 @@
+<script type="text/template" id="spec-manager-dialog-template">
+    <div>
+      <%=menu%>
+      <div class="spec-container">
+        <div class='spec-type-title bold-font'></div>
+        <ul class="button-container results-grid-actions hidden">
+          <li class='spec-report' title='{:spec_report}' style="background-image: url(&quot;modules/comms/images/actions/reports.svg&quot;);">
+            <div id="spec-report-menu-container">
+              <ul id="spec-report-menu">
+                <li id="all-spec-report-item">
+                  <div>{:all_specs_report}</div>
+                </li>
+                <li id="spec-report-item">
+                  <div>{:spec_report}</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class='spec-add' title='{:add}' style="background-image: url(&quot;modules/comms/images/actions/add-layers.svg&quot;);"></li>
+          <li class="spec-import" title="{:import}" style="background-image: url(&quot;modules/comms/images/actions/import.svg&quot;);"></li>
+          <li class="spec-export" title="{:export_to_csv}" style="background-image: url(&quot;modules/comms/images/actions/export.svg&quot;);"></li>
+        </ul>
+        <div id='spec-manager-grid'></div>
+      </div>
+    </div>
+</script>
+
+<script type="text/template" id="spec-import-dialog-template">
+    <div>
+        <div class="file-select-container">
+          <div id="csv_upload_dialog_file" ondragover="return false" class="file_drop_zone">
+
+            <input type="file" name="file" id="csv_upload_dialog_file_input" class="hidden">
+            <label class='file_input' for="csv_upload_dialog_file_input"><div style='padding:30px'>{:select_or_drop}</div></label>
+          </div>
+          <div class="message-container"></div>
+        </div>
+        <div class="bold-font">{:summary}</div>
+        <div class="import-summary">
+            <div>{:file}<span class='file-name'></span></div>
+            <div>{:new_spec_items}<span class='num-new-specs'></span></div>
+            <div>{:updated_spec_items}<span class='num-updated-specs'></span></div>
+            <div>{:retired_spec_items}<span class='num-retired-specs'></span></div>
+        </div>
+    </div>
+</script>

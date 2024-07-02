@@ -1,0 +1,155 @@
+{
+  "mywcom.import_config.comsof_ws_cdif": {
+  "name": "Comsof workspace CDIF",
+  "description": "Workspace via CDIF file",
+  "engine": "comsof_ws_cdif",
+  "options": {},
+  "file_specs": [
+    "*.csv"
+  ],
+  "mappings": [
+      
+       {
+         "feature_type": "building",
+         "src_feature_type": "structures_centraloffice",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "cabinet",
+         "src_feature_type": "structures_cabinet",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "manhole",
+         "src_feature_type": "structures_manhole",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "manhole",
+         "src_feature_type": "structures_handhole",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "drop_point",
+         "src_feature_type": "structures_dropbox",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "wall_box",
+         "src_feature_type": "structures_building",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "mywcom_route_junction",
+         "src_feature_type": "structures_accessstructure",
+         "field_mappings": { "name": "[id]" }
+       },
+       
+       {
+         "feature_type": "splice_closure",
+         "src_feature_type": "equipment_closure",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "fiber_splitter",
+         "src_feature_type": "equipment_splitter",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "pole",
+         "src_feature_type": "structures_pole",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "fiber_ont",
+         "src_feature_type": "equipment_ont",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "fiber_splice_tray",
+         "src_feature_type": "equipment_splice_tray_cabinet",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "fiber_patch_panel",
+         "src_feature_type": "equipment_patch_panel_co",
+         "field_mappings": { "name": "[id]" }
+       },
+       
+       {
+         "feature_type": "oh_route",
+         "src_feature_type": "routes_aerial",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "oh_route",
+         "src_feature_type": "routes_facade",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "ug_route",
+         "src_feature_type": "routes_existing_cable",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "ug_route",
+         "src_feature_type": "routes_existing_pipe",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "ug_route",
+         "src_feature_type": "routes_underground",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "mywcom_route_junction",
+         "src_feature_type": "structures_route_junction",
+         "field_mappings": { "name": "[id]" }
+       },
+ 
+       {
+         "feature_type": "conduit",
+         "src_feature_type": "ducts_conventional_ducts",
+         "field_mappings": { "name": "[id]" }
+       },
+       
+       {
+         "feature_type": "mywcom_conduit_run",
+         "src_feature_type": "microduct_bundles_*",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "mywcom_conduit_run",
+         "src_feature_type": "microducts_*",
+         "field_mappings": { "name": "[id]" }
+       },
+
+       {
+         "feature_type": "blown_fiber_bundle",
+         "src_feature_type": "microduct_bundle_segments_*",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "blown_fiber_tube",
+         "src_feature_type": "microduct_segments_*",
+         "field_mappings": { "name": "[conduit_run]" }
+       },
+       
+       {
+         "feature_type": "fiber_cable",
+         "src_feature_type": "cables_*",
+         "field_mappings": { "name": "[id]" }
+       },
+       {
+         "feature_type": "mywcom_fiber_segment",
+         "src_feature_type": "cable_segments_*",
+         "field_mappings": {}
+       },
+       
+       {
+         "feature_type": "mywcom_fiber_connection",
+         "src_feature_type": "connections_splice",
+         "field_mappings": {}
+       }
+    ]
+}}

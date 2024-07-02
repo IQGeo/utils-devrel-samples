@@ -1,0 +1,11 @@
+{
+   "name": "cable_type", 
+   "description": "", 
+   "values": [
+       "Backbone",
+       "Internal",
+       "External",
+       "Riser",
+       "Drop"
+   ]
+}

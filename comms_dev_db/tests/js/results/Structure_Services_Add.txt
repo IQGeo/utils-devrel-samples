@@ -1,0 +1,361 @@
+
+*** SPLIT ROUTE 301
+Set delta to: design/NB217
+DATABASE CHANGES: SPLIT ROUTE 301
+    insert delta.fiber_cable(design/NB217,170,update)
+    insert delta.ftth_circuit(design/NB217,3,update)
+    insert delta.manhole(design/NB217,100000,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100000,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,395,update)
+    insert delta.mywcom_fiber_segment(design/NB217,396,update)
+    insert delta.mywcom_line_of_count(design/NB217,4,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,100000,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,88,update)
+    insert delta.ug_route(design/NB217,100000,insert)
+    insert delta.ug_route(design/NB217,301,update)
+
+VALIDATION ERRORS: SPLIT ROUTE 301
+
+id: 301
+type: ug_route
+myw: {
+	"change_type": "update",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Route (Underground): 301"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137292891741,
+			52.2246826972
+		],
+		[
+			0.137318602769,
+			52.2246660122
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Tarmac",
+	"id": 301,
+	"in_structure": "wall_box/150",
+	"labor_costs": "pavement_re-surface,site_manager",
+	"length": 2.67922,
+	"out_structure": "manhole/100000"
+}
+displayValues: {
+	"in_structure": "Wall Box: WH-0150",
+	"out_structure": "Manhole: WH-M-100000"
+}
+
+
+*** SPLIT ROUTE 6 AT VERTEX
+DATABASE CHANGES: SPLIT ROUTE 6 AT VERTEX
+    insert delta.conduit(design/NB217,100000,insert)
+    insert delta.conduit(design/NB217,100001,insert)
+    insert delta.conduit(design/NB217,100002,insert)
+    insert delta.conduit(design/NB217,100003,insert)
+    insert delta.conduit(design/NB217,146,update)
+    insert delta.conduit(design/NB217,147,update)
+    insert delta.conduit(design/NB217,148,update)
+    insert delta.conduit(design/NB217,75,update)
+    insert delta.copper_cable(design/NB217,6,update)
+    insert delta.fiber_cable(design/NB217,167,update)
+    insert delta.fiber_cable(design/NB217,22,update)
+    insert delta.ftth_circuit(design/NB217,30,update)
+    insert delta.ftth_circuit(design/NB217,31,update)
+    insert delta.ftth_circuit(design/NB217,32,update)
+    insert delta.ftth_circuit(design/NB217,33,update)
+    insert delta.ftth_circuit(design/NB217,34,update)
+    insert delta.ftth_circuit(design/NB217,35,update)
+    insert delta.ftth_circuit(design/NB217,36,update)
+    insert delta.ftth_circuit(design/NB217,37,update)
+    insert delta.ftth_circuit(design/NB217,38,update)
+    insert delta.ftth_circuit(design/NB217,39,update)
+    insert delta.ftth_circuit(design/NB217,40,update)
+    insert delta.ftth_circuit(design/NB217,41,update)
+    insert delta.ftth_circuit(design/NB217,42,update)
+    insert delta.ftth_circuit(design/NB217,43,update)
+    insert delta.ftth_circuit(design/NB217,44,update)
+    insert delta.ftth_circuit(design/NB217,45,update)
+    insert delta.ftth_circuit(design/NB217,46,update)
+    insert delta.ftth_circuit(design/NB217,47,update)
+    insert delta.ftth_circuit(design/NB217,48,update)
+    insert delta.ftth_circuit(design/NB217,49,update)
+    insert delta.ftth_circuit(design/NB217,50,update)
+    insert delta.ftth_circuit(design/NB217,51,update)
+    insert delta.ftth_circuit(design/NB217,52,update)
+    insert delta.ftth_circuit(design/NB217,53,update)
+    insert delta.ftth_circuit(design/NB217,54,update)
+    insert delta.ftth_circuit(design/NB217,55,update)
+    insert delta.ftth_circuit(design/NB217,56,update)
+    insert delta.ftth_circuit(design/NB217,57,update)
+    insert delta.ftth_circuit(design/NB217,58,update)
+    insert delta.ftth_circuit(design/NB217,5801,update)
+    insert delta.ftth_circuit(design/NB217,59,update)
+    insert delta.manhole(design/NB217,100001,insert)
+    insert delta.mywcom_copper_segment(design/NB217,100000,insert)
+    insert delta.mywcom_copper_segment(design/NB217,18,update)
+    insert delta.mywcom_fiber_connection(design/NB217,1,update)
+    insert delta.mywcom_fiber_connection(design/NB217,2,update)
+    insert delta.mywcom_fiber_connection(design/NB217,3,update)
+    insert delta.mywcom_fiber_connection(design/NB217,4,update)
+    insert delta.mywcom_fiber_connection(design/NB217,5,update)
+    insert delta.mywcom_fiber_connection(design/NB217,6,update)
+    insert delta.mywcom_fiber_connection(design/NB217,7,update)
+    insert delta.mywcom_fiber_connection(design/NB217,8,update)
+    insert delta.mywcom_fiber_segment(design/NB217,100001,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100002,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,184,update)
+    insert delta.mywcom_fiber_segment(design/NB217,381,update)
+    insert delta.mywcom_fiber_segment(design/NB217,597,update)
+    insert delta.ug_route(design/NB217,100001,insert)
+    insert delta.ug_route(design/NB217,6,update)
+
+VALIDATION ERRORS: SPLIT ROUTE 6 AT VERTEX
+
+id: 6
+type: ug_route
+myw: {
+	"change_type": "update",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Route (Underground): 6"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136604905128,
+			52.2240164429
+		],
+		[
+			0.136653184891,
+			52.224050947
+		],
+		[
+			0.1366344,
+			52.2240861
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Mixed",
+	"id": 6,
+	"in_structure": "building/1",
+	"labor_costs": "trench_dig",
+	"length": 9.6256,
+	"out_structure": "manhole/100001"
+}
+displayValues: {
+	"in_structure": "Building: Woodhead Hub",
+	"out_structure": "Manhole: WH-M-100001"
+}
+
+id: 146
+type: conduit
+myw: {
+	"change_type": "update",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Conduit: WH-CND-I-146"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136604905128,
+			52.2240164429
+		],
+		[
+			0.136653184891,
+			52.224050947
+		],
+		[
+			0.1366344,
+			52.2240861
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 26.5,
+	"housing": "conduit/75",
+	"id": 146,
+	"in_structure": "building/1",
+	"installation_date": "2010-05-27",
+	"labor_costs": null,
+	"length": 9.6256,
+	"material": "PVC (Smooth)",
+	"name": "WH-CND-I-146",
+	"out_structure": "manhole/100001",
+	"owner": "SFB Comms",
+	"root_housing": "ug_route/6",
+	"specification": "JDP-26.5MM-Grey"
+}
+displayValues: {
+	"housing": "Conduit: WH-CND-075",
+	"in_structure": "Building: Woodhead Hub",
+	"out_structure": "Manhole: WH-M-100001",
+	"root_housing": "Route (Underground): 6",
+	"specification": "JDP-26.5MM-Grey"
+}
+
+
+*** SPLIT ROUTE 4 IN DELTA
+Set delta to: design/NB046
+DATABASE CHANGES: SPLIT ROUTE 4 IN DELTA
+    insert delta.bb_circuit(design/NB046,1,update)
+    insert delta.bb_circuit(design/NB046,2,update)
+    insert delta.bb_circuit(design/NB046,3,update)
+    insert delta.bb_circuit(design/NB046,4,update)
+    insert delta.conduit(design/NB046,100004,insert)
+    insert delta.conduit(design/NB046,100005,insert)
+    insert delta.conduit(design/NB046,81,update)
+    insert delta.conduit(design/NB046,82,update)
+    insert delta.fiber_cable(design/NB046,167,update)
+    insert delta.fiber_cable(design/NB046,5,update)
+    insert delta.manhole(design/NB046,100002,insert)
+    insert delta.mywcom_fiber_segment(design/NB046,100003,insert)
+    insert delta.mywcom_fiber_segment(design/NB046,100004,insert)
+    insert delta.mywcom_fiber_segment(design/NB046,388,update)
+    insert delta.mywcom_fiber_segment(design/NB046,56,update)
+    insert delta.mywcom_fiber_segment(design/NB046,586,update)
+    insert delta.mywcom_fiber_segment(design/NB046,587,update)
+    insert delta.ug_route(design/NB046,100002,insert)
+    insert delta.ug_route(design/NB046,4,update)
+
+VALIDATION ERRORS: SPLIT ROUTE 4 IN DELTA
+
+
+*** SPLIT ROUTE 8
+Set delta to: *** master ***
+DATABASE CHANGES: SPLIT ROUTE 8
+    insert data.conduit(100006)
+    insert data.conduit(100007)
+    insert data.conduit(100008)
+    insert data.conduit(100009)
+    insert data.manhole(100003)
+    insert data.mywcom_fiber_segment(100005)
+    insert data.mywcom_fiber_segment(100006)
+    insert data.mywcom_fiber_segment(100007)
+    insert data.mywcom_line_of_count_section(100001)
+    insert data.mywcom_line_of_count_section(100002)
+    insert data.mywcom_line_of_count_section(100003)
+    insert data.ug_route(100003)
+    update data.conduit(71) fields=(length,out_structure,path)
+    update data.conduit(72) fields=(length,out_structure,path)
+    update data.conduit(73) fields=(length,out_structure,path)
+    update data.conduit(74) fields=(length,out_structure,path)
+    update data.fiber_cable(3) fields=(path)
+    update data.fiber_cable(4) fields=(path)
+    update data.fiber_cable(6) fields=(path)
+    update data.ftth_circuit(1) fields=(path)
+    update data.ftth_circuit(10) fields=(path)
+    update data.ftth_circuit(14) fields=(path)
+    update data.ftth_circuit(2) fields=(path)
+    update data.ftth_circuit(20) fields=(path)
+    update data.ftth_circuit(21) fields=(path)
+    update data.ftth_circuit(22) fields=(path)
+    update data.ftth_circuit(23) fields=(path)
+    update data.ftth_circuit(24) fields=(path)
+    update data.ftth_circuit(26) fields=(path)
+    update data.ftth_circuit(27) fields=(path)
+    update data.ftth_circuit(28) fields=(path)
+    update data.ftth_circuit(29) fields=(path)
+    update data.ftth_circuit(3) fields=(path)
+    update data.ftth_circuit(4) fields=(path)
+    update data.ftth_circuit(5) fields=(path)
+    update data.ftth_circuit(6) fields=(path)
+    update data.ftth_circuit(7) fields=(path)
+    update data.ftth_circuit(8) fields=(path)
+    update data.mywcom_fiber_segment(36) fields=(out_segment,out_structure,out_tick,path)
+    update data.mywcom_fiber_segment(45) fields=(out_segment,out_structure,out_tick,path)
+    update data.mywcom_fiber_segment(46) fields=(in_segment)
+    update data.mywcom_fiber_segment(584) fields=(in_segment)
+    update data.mywcom_fiber_segment(59) fields=(out_equipment,out_segment,out_structure,out_tick,path)
+    update data.mywcom_fiber_segment(60) fields=(in_segment)
+    update data.mywcom_line_of_count(2) fields=(route)
+    update data.mywcom_line_of_count(4) fields=(route)
+    update data.mywcom_line_of_count_section(50) fields=(route)
+    update data.mywcom_line_of_count_section(51) fields=(route)
+    update data.mywcom_line_of_count_section(53) fields=(route)
+    update data.ug_route(8) fields=(length,out_structure,path)
+
+ERROR: NEED DELTA TO RUN VALIDATION
+
+*** CONNECT TO ROUTE START
+Set delta to: *** master ***
+DATABASE CHANGES: CONNECT TO ROUTE START
+    insert data.manhole(100004)
+    update data.ug_route(401) fields=(in_structure)
+
+ERROR: NEED DELTA TO RUN VALIDATION
+
+*** CONNECT TO ROUTE END
+Set delta to: *** master ***
+DATABASE CHANGES: CONNECT TO ROUTE END
+    insert data.manhole(100005)
+    update data.ug_route(402) fields=(out_structure)
+
+ERROR: NEED DELTA TO RUN VALIDATION
+
+*** SPLIT ROUTE WITH LOC
+Set delta to: *** master ***
+DATABASE CHANGES: SPLIT ROUTE WITH LOC
+    insert data.conduit(100010)
+    insert data.manhole(100006)
+    insert data.mywcom_copper_segment(100001)
+    insert data.mywcom_fiber_segment(100008)
+    insert data.mywcom_line_of_count_section(100004)
+    insert data.mywcom_line_of_count_section(100005)
+    insert data.ug_route(100004)
+    update data.conduit(16) fields=(length,out_structure,path)
+    update data.copper_cable(2) fields=(path)
+    update data.fiber_cable(1) fields=(path)
+    update data.ftth_circuit(17) fields=(path)
+    update data.ftth_circuit(18) fields=(path)
+    update data.ftth_circuit(19) fields=(path)
+    update data.mywcom_copper_connection(2) fields=(in_object)
+    update data.mywcom_copper_segment(6) fields=(out_segment,out_structure,path)
+    update data.mywcom_copper_segment(7) fields=(in_segment)
+    update data.mywcom_fiber_segment(6) fields=(out_segment,out_structure,out_tick,path)
+    update data.mywcom_fiber_segment(7) fields=(in_segment)
+    update data.mywcom_line_of_count(1) fields=(route)
+    update data.mywcom_line_of_count(2) fields=(route)
+    update data.mywcom_line_of_count_section(64) fields=(route)
+    update data.mywcom_line_of_count_section(7) fields=(route)
+    update data.ug_route(387) fields=(length,out_structure,path)
+
+ERROR: NEED DELTA TO RUN VALIDATION
+
+*** SPLIT CONDUIT CONTAINING BF TUBE
+Set delta to: design/NB217
+DATABASE CHANGES: SPLIT CONDUIT CONTAINING BF TUBE
+    insert delta.blown_fiber_tube(design/NB217,100000,insert)
+    insert delta.blown_fiber_tube(design/NB217,195,update)
+    insert delta.conduit(design/NB217,100011,insert)
+    insert delta.conduit(design/NB217,70,update)
+    insert delta.fiber_cable(design/NB217,8,update)
+    insert delta.manhole(design/NB217,100007,insert)
+    insert delta.mywcom_conduit_run(design/NB217,70,update)
+    insert delta.mywcom_fiber_segment(design/NB217,100009,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,75,update)
+    insert delta.mywcom_line_of_count(design/NB217,2,update)
+    insert delta.mywcom_line_of_count_section(design/NB217,100006,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,87,update)
+    insert delta.ug_route(design/NB217,100005,insert)
+    insert delta.ug_route(design/NB217,58,update)
+
+VALIDATION ERRORS: SPLIT CONDUIT CONTAINING BF TUBE
+

@@ -1,0 +1,79 @@
+TEST: RUN WS
+    input: arbury design
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Workspace 3: Full Area
+    label: calculated
+    sub-header: Basic
+    label: Owner
+    label: Comsof Design: arbury
+    label: Comsof Design: arbury
+    label: Name
+    label: Full Area
+    label: Details
+    label: Arbury full area
+    label: State
+    label: calculated
+    label: Busy
+    label: false
+    sub-header: Options
+    button: Open
+    button (disabled): Accept
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+    label: Workspace 3: Full Area
+    button: Close
+    label: Initialise
+    input (disabled): true
+    label: Populate
+    input (disabled): true
+    label: Pre-process
+    input (disabled): true
+    label: Validate
+    input (disabled): true
+    label: Acquire licence
+    input (disabled): true
+    label: Calculate
+    input (disabled): true
+    label: Import
+    input (disabled): false
+    label: Running...
+    button (disabled): Run
+    button (disabled): Clear
+    button: Close
+
+

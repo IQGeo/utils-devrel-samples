@@ -1,0 +1,9 @@
+#!/bin/bash
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Setup environment
+source "$MYW_HOME"/Tools/myw_env
+export PATH="$MYW_HOME"/Tools:$PATH
+export PATH="$here"/../../../dev_tools/Tools:$PATH
+
+python "$here"/"${0##*/}".py "$@"

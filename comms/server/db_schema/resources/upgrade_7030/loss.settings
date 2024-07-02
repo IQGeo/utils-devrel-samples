@@ -1,0 +1,23 @@
+{
+    "mywcom.loss": {
+        "fiber": {
+            "cable": 0.5,
+            "splice": 0.1,
+            "mux": 4.83,
+            "connector": 0.3,
+            "terminal": 0.3,
+            "splitter": 4.83
+        },
+        "copper": {
+            "cable": {
+                "19": 0.1,
+                "20": 0.2
+            },
+            "splice": 0.1,
+            "connector": 0.3,
+            "terminal": 0.3
+        },
+        "coax": {},
+        "mixed": {}
+    }
+}

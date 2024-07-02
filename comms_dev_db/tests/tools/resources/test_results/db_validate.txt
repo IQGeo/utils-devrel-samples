@@ -1,0 +1,206 @@
+COMMAND: comms_db comms_scratch validate config
+Opening database <conn_spec> ...
+------------------------------
+ Checking Comms Configuration 
+------------------------------
+Checking configuration: structures
+Checking configuration: routes
+Checking configuration: equipment
+Checking configuration: conduits
+Checking configuration: cables
+Checking configuration: circuits
+Checking configuration: specs
+Checking configuration: laborCosts
+Checking configuration: fiberColors
+Checking configuration: fiberColorSchemes
+Checking configuration: designs
+Checking configuration: import_config
+
+COMMAND: comms_db comms_scratch validate config structures --verbosity=3
+Opening database <conn_spec> ...
+------------------------------
+ Checking Comms Configuration 
+------------------------------
+Checking configuration: structures
+  Warning: missing_optional_calculated_field,{"feature_type": "building", "field_name": "fiber_splices"}
+  Warning: missing_optional_calculated_field,{"feature_type": "mdu", "field_name": "fiber_splices"}
+  Warning: missing_optional_calculated_field,{"feature_type": "manhole", "field_name": "fiber_splices"}
+  Warning: missing_optional_calculated_field,{"feature_type": "pole", "field_name": "fiber_splices"}
+  Warning: missing_optional_calculated_field,{"feature_type": "drop_point", "field_name": "equipment"}
+  Warning: missing_optional_calculated_field,{"feature_type": "drop_point", "field_name": "fiber_splices"}
+  Warning: missing_field_so_will_not_support,{"feature_type": "wall_box", "field_name": "out_fiber_segments", "direction": "outgoing"}
+  Warning: missing_optional_calculated_field,{"feature_type": "wall_box", "field_name": "fiber_splices"}
+
+COMMAND: comms_db comms_scratch validate data
+Opening database <conn_spec> ...
+------------------------------
+ Checking Comms Data
+------------------------------
+Data version: Master
+Checking integrity
+  Checking routes
+  Checking conduits
+  Checking conduit_runs
+  Checking equips
+  Checking cables
+  Checking segments
+  Checking connections
+  Checking circuits
+  Checking line_of_counts
+
+COMMAND: comms_db comms_scratch validate data routes --delta=design/NB301 --verbosity=4
+Opening database
+Opening database <conn_spec> ...
+------------------------------
+ Checking Comms Data
+------------------------------
+Data version: design/NB301
+Checking for conflicts
+  Checking ug_route
+    ug_route(88,design/NB301): conflict: update(path,cover_type)/update(cover_type)
+  Checking oh_route
+Checking integrity
+  Checking routes
+    ug_route(88,design/NB301) path geom_mismatch_at manhole(7)
+      _coord : (0.1336028426886, 52.2236559959141)
+      _expected_coord : (0.1336176, 52.2236381)
+      _ref : in_structure
+      ref_side : None
+    ug_route(88,design/NB301) path geom_mismatch_at manhole(75)
+      _coord : (0.1334150880575, 52.2235524824053)
+      _expected_coord : (0.1334522, 52.2235447)
+      _ref : out_structure
+      ref_side : None
+    ug_route(4800,design/NB301) path geom_mismatch_at manhole(75)
+      _coord : (0.1334150880575, 52.2235524824053)
+      _expected_coord : (0.1334522, 52.2235447)
+      _ref : out_structure
+      ref_side : None
+    ug_route(4801,design/NB301) path geom_mismatch_at manhole(75)
+      _coord : (0.1334150880575, 52.2235524824053)
+      _expected_coord : (0.1334522, 52.2235447)
+      _ref : in_structure
+      ref_side : None
+
+COMMAND: comms_db comms_scratch validate data connections --delta=design/CC5462 --verbosity=4
+Opening database
+Opening database <conn_spec> ...
+------------------------------
+ Checking Comms Data
+------------------------------
+Data version: design/CC5462
+Checking for conflicts
+  Checking mywcom_fiber_connection
+  Checking mywcom_copper_connection
+  Checking mywcom_coax_connection
+Checking integrity
+  Checking connections
+    mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+      _conn1 : mywcom_fiber_connection/4400
+      _conn2 : mywcom_fiber_connection/191
+      clash_pins : out:11
+      conn1 : WH-FCB-009#out:10:13 -> DROP-5462#in:1:4
+      conn2 : WH-FCB-009#out:11 -> DROP-146#in:1
+      housing : Splice Closure: WH-SC-039
+      side : in
+      struct : Cabinet: WH-C-11
+    mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+      _conn1 : mywcom_fiber_connection/4400
+      _conn2 : mywcom_fiber_connection/193
+      clash_pins : out:13
+      conn1 : WH-FCB-009#out:10:13 -> DROP-5462#in:1:4
+      conn2 : WH-FCB-009#out:13 -> DROP-148#in:1
+      housing : Splice Closure: WH-SC-039
+      side : in
+      struct : Cabinet: WH-C-11
+    mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+      _conn1 : mywcom_fiber_connection/191
+      _conn2 : mywcom_fiber_connection/4400
+      clash_pins : out:11
+      conn1 : WH-FCB-009#out:11 -> DROP-146#in:1
+      conn2 : WH-FCB-009#out:10:13 -> DROP-5462#in:1:4
+      housing : Splice Closure: WH-SC-039
+      side : in
+      struct : Cabinet: WH-C-11
+    mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+      _conn1 : mywcom_fiber_connection/193
+      _conn2 : mywcom_fiber_connection/4400
+      clash_pins : out:13
+      conn1 : WH-FCB-009#out:13 -> DROP-148#in:1
+      conn2 : WH-FCB-009#out:10:13 -> DROP-5462#in:1:4
+      housing : Splice Closure: WH-SC-039
+      side : in
+      struct : Cabinet: WH-C-11
+
+COMMAND: myw_db comms_scratch load <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/network/distribution_area.def
+Opening database <conn_spec> ...
+Loading file <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/network/distribution_area.def ...
+  Defining feature type: distribution_area
+  1 feature type(s) defined
+
+COMMAND: myw_db comms_scratch load <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/distribution_area.1.csv --delta design/NB120
+Opening database <conn_spec> ...
+Loading file <product_dir>/WebApps/myworldapp/modules/comms_dev_db/data/import/distribution_area.1.csv ...
+  1 record(s) processed (1 inserted, 0 updated, 0 skipped)
+
+COMMAND: comms_db comms_scratch validate data --delta=design/NB120 --area=distribution_area/2
+Opening database <conn_spec> ...
+------------------------------
+ Checking Comms Data
+------------------------------
+Data version: design/NB120
+Checking for conflicts
+  Checking distribution_area
+  Checking mywcom_coax_slack
+  Checking mywcom_copper_slack
+  Checking mywcom_data_block
+  Checking building
+  Checking mdu
+  Checking manhole
+  Checking cabinet
+  Checking pole
+  Checking drop_point
+  Checking wall_box
+  Checking mywcom_route_junction
+  Checking ug_route
+  Checking oh_route
+  Checking floor
+  Checking room
+  Checking fiber_patch_panel
+  Checking fiber_olt
+  Checking fiber_mux
+  Checking mywcom_fiber_slack
+  Checking fiber_splitter
+  Checking fiber_tap
+  Checking fiber_ont
+  Checking fiber_splice_tray
+  Checking splice_closure
+  Checking rack
+  Checking shelf
+  Checking slot
+  Checking blown_fiber_bundle
+  Checking blown_fiber_tube
+  Checking conduit
+  Checking fiber_cable
+  Checking mywcom_fiber_connection
+  Checking mywcom_copper_connection
+  Checking mywcom_coax_connection
+  Checking ftth_circuit
+  Checking bb_circuit
+  Checking mywcom_line_of_count
+  Checking mywcom_line_of_count_section
+  Checking mywcom_conduit_run
+  Checking mywcom_fiber_segment
+  Checking mywcom_copper_segment
+  Checking mywcom_coax_segment
+Checking integrity
+  Checking routes
+  Checking conduits
+  Checking conduit_runs
+  Checking equips
+  Checking cables
+  Checking segments
+  Checking connections
+  Checking circuits
+  Checking line_of_counts
+

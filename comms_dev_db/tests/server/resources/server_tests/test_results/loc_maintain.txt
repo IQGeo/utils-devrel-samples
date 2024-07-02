@@ -1,0 +1,114 @@
+
+SUB TEST : MOVE MANHOLE WITH LOC : manhole/12
+    Request: GET: /feature/manhole/12
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/manhole/12
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER MOVE MANHOLE WITH LOC
+       update data.conduit(12) fields=(path)
+       update data.conduit(13) fields=(path)
+       update data.conduit(14) fields=(path)
+       update data.conduit(64) fields=(path)
+       update data.conduit(65) fields=(path)
+       update data.copper_cable(1) fields=(path)
+       update data.copper_cable(2) fields=(path)
+       update data.copper_splice_closure(1) fields=(location)
+       update data.fiber_cable(1) fields=(path)
+       update data.fiber_cable(2) fields=(path)
+       update data.fiber_cable(223) fields=(path)
+       update data.fiber_mux(4) fields=(location)
+       update data.ftth_circuit(17) fields=(path)
+       update data.ftth_circuit(18) fields=(path)
+       update data.ftth_circuit(19) fields=(path)
+       update data.manhole(12) fields=(location)
+       update data.mywcom_copper_connection(1) fields=(location)
+       update data.mywcom_copper_segment(4) fields=(path)
+       update data.mywcom_copper_segment(5) fields=(path)
+       update data.mywcom_fiber_segment(2) fields=(path)
+       update data.mywcom_fiber_segment(3) fields=(path)
+       update data.mywcom_fiber_segment(20) fields=(path)
+       update data.mywcom_fiber_segment(581) fields=(path)
+       update data.mywcom_fiber_segment(603) fields=(path)
+       update data.mywcom_fiber_segment(604) fields=(path)
+       update data.mywcom_fiber_slack(1) fields=(location)
+       update data.mywcom_line_of_count(1) fields=(route)
+       update data.mywcom_line_of_count(2) fields=(route)
+       update data.mywcom_line_of_count_section(5) fields=(route)
+       update data.mywcom_line_of_count_section(6) fields=(route)
+       update data.mywcom_line_of_count_section(44) fields=(route)
+       update data.mywcom_line_of_count_section(48) fields=(route)
+       update data.mywcom_line_of_count_section(52) fields=(route)
+       update data.splice_closure(6) fields=(location)
+       update data.splice_closure(7) fields=(location)
+       update data.ug_route(17) fields=(path)
+       update data.ug_route(19) fields=(path)
+       update data.ug_route(379) fields=(path)
+    
+    VALIDATION ERRORS: AFTER MOVE MANHOLE WITH LOC
+    DATABASE CHANGES: AFTER MOVING MANHOLE WITH LOC
+    
+    Request: POST:/modules/comms/feature/manhole
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER ROUTE SPLIT
+       update data.conduit(16) fields=(length,out_structure,path)
+       insert data.conduit(100000)
+       update data.copper_cable(2) fields=(path)
+       update data.fiber_cable(1) fields=(path)
+       update data.ftth_circuit(17) fields=(path)
+       update data.ftth_circuit(18) fields=(path)
+       update data.ftth_circuit(19) fields=(path)
+       insert data.manhole(100000)
+       update data.mywcom_copper_connection(2) fields=(in_object)
+       update data.mywcom_copper_segment(6) fields=(out_segment,out_structure,path)
+       update data.mywcom_copper_segment(7) fields=(in_segment)
+       insert data.mywcom_copper_segment(100000)
+       update data.mywcom_fiber_segment(6) fields=(out_segment,out_structure,out_tick,path)
+       update data.mywcom_fiber_segment(7) fields=(in_segment)
+       insert data.mywcom_fiber_segment(100000)
+       update data.mywcom_line_of_count(1) fields=(route)
+       update data.mywcom_line_of_count(2) fields=(route)
+       update data.mywcom_line_of_count_section(7) fields=(route)
+       update data.mywcom_line_of_count_section(64) fields=(route)
+       insert data.mywcom_line_of_count_section(100000)
+       insert data.mywcom_line_of_count_section(100001)
+       update data.ug_route(387) fields=(length,out_structure,path)
+       insert data.ug_route(100000)
+    
+    Request: POST: /modules/comms/slack/mywcom_copper_slack/add
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER ADD SLACK AT WH-M-12
+       update data.mywcom_copper_segment(3) fields=(out_segment)
+       update data.mywcom_copper_segment(4) fields=(in_segment)
+       insert data.mywcom_copper_segment(100001)
+       insert data.mywcom_copper_slack(100000)
+       update data.mywcom_line_of_count(1) fields=(route)
+       insert data.mywcom_line_of_count_section(100002)
+    
+    Request: POST:/modules/comms/feature/copper_splice_closure
+    Response: 201 (201 Created)
+    
+    
+
+SUB TEST : SPLIT CABLE IN WH-M-10
+    Request: POST: /modules/comms/cable/copper_cable/2/split/7/True?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER SPLIT CABLE IN WH-M-10
+       insert data.copper_splice_closure(100000)
+       insert delta.copper_cable(design/NB217,2,update)
+       insert delta.copper_cable(design/NB217,100000,insert)
+       insert delta.mywcom_copper_connection(design/NB217,100000,insert)
+       insert delta.mywcom_copper_connection(design/NB217,100001,insert)
+       insert delta.mywcom_copper_segment(design/NB217,7,update)
+       insert delta.mywcom_copper_segment(design/NB217,8,update)
+    
+    VALIDATION ERRORS: AFTER SPLIT CABLE IN WH-M-10

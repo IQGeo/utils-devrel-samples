@@ -1,0 +1,243 @@
+
+SUB TEST : NULL UPDATE : ug_route/318
+    Request: GET: /feature/ug_route/318
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/ug_route/318
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER NULL UPDATE
+       update data.ftth_circuit(14) fields=(path)
+       update data.mywcom_line_of_count(4) fields=(route)
+    
+    VALIDATION ERRORS: AFTER NULL UPDATE
+
+SUB TEST : MOVE ROUTE : ug_route/8
+    Request: GET: /feature/ug_route/8
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/ug_route/8
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER MOVE ROUTE
+       update data.conduit(71) fields=(path)
+       update data.conduit(72) fields=(path)
+       update data.conduit(73) fields=(path)
+       update data.conduit(74) fields=(path)
+       update data.fiber_cable(3) fields=(path)
+       update data.fiber_cable(4) fields=(path)
+       update data.fiber_cable(6) fields=(path)
+       update data.ftth_circuit(1) fields=(path)
+       update data.ftth_circuit(2) fields=(path)
+       update data.ftth_circuit(3) fields=(path)
+       update data.ftth_circuit(4) fields=(path)
+       update data.ftth_circuit(5) fields=(path)
+       update data.ftth_circuit(6) fields=(path)
+       update data.ftth_circuit(7) fields=(path)
+       update data.ftth_circuit(8) fields=(path)
+       update data.ftth_circuit(10) fields=(path)
+       update data.ftth_circuit(14) fields=(path)
+       update data.ftth_circuit(20) fields=(path)
+       update data.ftth_circuit(21) fields=(path)
+       update data.ftth_circuit(22) fields=(path)
+       update data.ftth_circuit(23) fields=(path)
+       update data.ftth_circuit(24) fields=(path)
+       update data.ftth_circuit(26) fields=(path)
+       update data.ftth_circuit(27) fields=(path)
+       update data.ftth_circuit(28) fields=(path)
+       update data.ftth_circuit(29) fields=(path)
+       update data.mywcom_fiber_segment(36) fields=(path)
+       update data.mywcom_fiber_segment(45) fields=(path)
+       update data.mywcom_fiber_segment(59) fields=(path)
+       update data.mywcom_line_of_count(2) fields=(route)
+       update data.mywcom_line_of_count(4) fields=(route)
+       update data.mywcom_line_of_count_section(50) fields=(route)
+       update data.mywcom_line_of_count_section(51) fields=(route)
+       update data.mywcom_line_of_count_section(53) fields=(route)
+       update data.ug_route(8) fields=(path)
+    
+    VALIDATION ERRORS: AFTER MOVE ROUTE
+
+SUB TEST : MOVE ROUTE IN DELTA : ug_route/2
+    Request: GET: /feature/ug_route/2
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/ug_route/2?delta=design/NB217
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER MOVE ROUTE IN DELTA
+       insert delta.bb_circuit(design/NB217,1,update)
+       insert delta.bb_circuit(design/NB217,2,update)
+       insert delta.bb_circuit(design/NB217,3,update)
+       insert delta.bb_circuit(design/NB217,4,update)
+       insert delta.conduit(design/NB217,77,update)
+       insert delta.conduit(design/NB217,78,update)
+       insert delta.fiber_cable(design/NB217,5,update)
+       insert delta.fiber_cable(design/NB217,167,update)
+       insert delta.mywcom_fiber_segment(design/NB217,54,update)
+       insert delta.mywcom_fiber_segment(design/NB217,386,update)
+       insert delta.ug_route(design/NB217,2,update)
+    
+    VALIDATION ERRORS: AFTER MOVE ROUTE IN DELTA
+
+SUB TEST : MODIFY ROUTE PATH : ug_route/366
+    Request: GET: /feature/ug_route/366
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/ug_route/366?delta=design/NB217
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER MODIFY ROUTE PATH
+       insert delta.blown_fiber_bundle(design/NB217,9,update)
+       insert delta.blown_fiber_bundle(design/NB217,23,update)
+       insert delta.blown_fiber_bundle(design/NB217,27,update)
+       insert delta.blown_fiber_tube(design/NB217,44,update)
+       insert delta.blown_fiber_tube(design/NB217,49,update)
+       insert delta.blown_fiber_tube(design/NB217,54,update)
+       insert delta.blown_fiber_tube(design/NB217,59,update)
+       insert delta.blown_fiber_tube(design/NB217,64,update)
+       insert delta.blown_fiber_tube(design/NB217,69,update)
+       insert delta.blown_fiber_tube(design/NB217,103,update)
+       insert delta.blown_fiber_tube(design/NB217,111,update)
+       insert delta.blown_fiber_tube(design/NB217,119,update)
+       insert delta.blown_fiber_tube(design/NB217,127,update)
+       insert delta.blown_fiber_tube(design/NB217,135,update)
+       insert delta.blown_fiber_tube(design/NB217,143,update)
+       insert delta.blown_fiber_tube(design/NB217,151,update)
+       insert delta.blown_fiber_tube(design/NB217,159,update)
+       insert delta.blown_fiber_tube(design/NB217,177,update)
+       insert delta.blown_fiber_tube(design/NB217,182,update)
+       insert delta.blown_fiber_tube(design/NB217,187,update)
+       insert delta.blown_fiber_tube(design/NB217,192,update)
+       insert delta.fiber_cable(design/NB217,9,update)
+       insert delta.fiber_cable(design/NB217,11,update)
+       insert delta.fiber_cable(design/NB217,178,update)
+       insert delta.fiber_cable(design/NB217,179,update)
+       insert delta.fiber_cable(design/NB217,180,update)
+       insert delta.fiber_cable(design/NB217,182,update)
+       insert delta.ftth_circuit(design/NB217,10,update)
+       insert delta.ftth_circuit(design/NB217,14,update)
+       insert delta.ftth_circuit(design/NB217,26,update)
+       insert delta.ftth_circuit(design/NB217,27,update)
+       insert delta.ftth_circuit(design/NB217,28,update)
+       insert delta.ftth_circuit(design/NB217,29,update)
+       insert delta.mywcom_conduit_run(design/NB217,8,update)
+       insert delta.mywcom_conduit_run(design/NB217,9,update)
+       insert delta.mywcom_conduit_run(design/NB217,10,update)
+       insert delta.mywcom_conduit_run(design/NB217,12,update)
+       insert delta.mywcom_conduit_run(design/NB217,13,update)
+       insert delta.mywcom_conduit_run(design/NB217,14,update)
+       insert delta.mywcom_conduit_run(design/NB217,22,update)
+       insert delta.mywcom_conduit_run(design/NB217,24,update)
+       insert delta.mywcom_conduit_run(design/NB217,25,update)
+       insert delta.mywcom_conduit_run(design/NB217,26,update)
+       insert delta.mywcom_conduit_run(design/NB217,27,update)
+       insert delta.mywcom_conduit_run(design/NB217,28,update)
+       insert delta.mywcom_conduit_run(design/NB217,29,update)
+       insert delta.mywcom_conduit_run(design/NB217,30,update)
+       insert delta.mywcom_conduit_run(design/NB217,51,update)
+       insert delta.mywcom_conduit_run(design/NB217,56,update)
+       insert delta.mywcom_conduit_run(design/NB217,65,update)
+       insert delta.mywcom_conduit_run(design/NB217,66,update)
+       insert delta.mywcom_conduit_run(design/NB217,67,update)
+       insert delta.mywcom_conduit_run(design/NB217,68,update)
+       insert delta.mywcom_conduit_run(design/NB217,69,update)
+       insert delta.mywcom_fiber_segment(design/NB217,82,update)
+       insert delta.mywcom_fiber_segment(design/NB217,97,update)
+       insert delta.mywcom_fiber_segment(design/NB217,415,update)
+       insert delta.mywcom_fiber_segment(design/NB217,420,update)
+       insert delta.mywcom_fiber_segment(design/NB217,424,update)
+       insert delta.mywcom_fiber_segment(design/NB217,433,update)
+       insert delta.mywcom_line_of_count(design/NB217,4,update)
+       insert delta.mywcom_line_of_count_section(design/NB217,145,update)
+       insert delta.mywcom_line_of_count_section(design/NB217,166,update)
+       insert delta.mywcom_line_of_count_section(design/NB217,167,update)
+       insert delta.mywcom_line_of_count_section(design/NB217,168,update)
+       insert delta.ug_route(design/NB217,366,update)
+    
+    VALIDATION ERRORS: AFTER MODIFY ROUTE PATH
+
+SUB TEST : CONNECT CABLE END TO NEW STRUCTURE : ug_route/58
+    Request: GET: /feature/ug_route/58
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/ug_route/58?delta=design/NB217
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER CONNECT CABLE END TO NEW STRUCTURE
+       insert delta.blown_fiber_tube(design/NB217,195,update)
+       insert delta.conduit(design/NB217,70,update)
+       insert delta.fiber_cable(design/NB217,8,update)
+       insert delta.mywcom_conduit_run(design/NB217,70,update)
+       insert delta.mywcom_fiber_segment(design/NB217,75,update)
+       insert delta.mywcom_line_of_count(design/NB217,2,update)
+       insert delta.mywcom_line_of_count_section(design/NB217,87,update)
+       insert delta.ug_route(design/NB217,58,update)
+    
+    VALIDATION ERRORS: AFTER CONNECT CABLE END TO NEW STRUCTURE
+
+SUB TEST : DISCONNECT CABLE CONNECTIONS : ug_route/273
+    Request: GET: /feature/ug_route/273
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/ug_route/273?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "cable_has_connection", "params": {}}/n/n'
+    
+    
+    DATABASE CHANGES: AFTER DISCONNECT CABLE CONNECTIONS
+    
+    VALIDATION ERRORS: AFTER DISCONNECT CABLE CONNECTIONS
+
+SUB TEST : DISCONNECT CABLE FROM STRUCTURE : ug_route/59
+    Request: GET: /feature/ug_route/59
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/ug_route/59?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "route_has_cable", "params": {}}/n/n'
+    
+    
+    DATABASE CHANGES: AFTER DISCONNECT CABLE FROM STRUCTURE
+    
+    VALIDATION ERRORS: AFTER DISCONNECT CABLE FROM STRUCTURE
+
+SUB TEST : DISCONNECT CABLE FROM STRUCTURE : ug_route/46
+    Request: GET: /feature/ug_route/46
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/ug_route/46?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "route_has_cable", "params": {}}/n/n'
+    
+    
+    DATABASE CHANGES: AFTER DISCONNECT CABLE FROM STRUCTURE
+    
+    VALIDATION ERRORS: AFTER DISCONNECT CABLE FROM STRUCTURE
+
+SUB TEST : MOVE FIRST POINT OFF STRUCTURE : ug_route/8
+    Request: GET: /feature/ug_route/8
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/ug_route/8?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "route_has_cable", "params": {}}/n/n'
+    
+    
+    DATABASE CHANGES: AFTER MOVE FIRST POINT OFF STRUCTURE
+    
+    VALIDATION ERRORS: AFTER MOVE FIRST POINT OFF STRUCTURE

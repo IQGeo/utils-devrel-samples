@@ -1,0 +1,10 @@
+{
+   "name": "conduit_material", 
+   "description": "", 
+   "values": [
+       "PE (Corrugated)",
+       "PVC (Smooth)",
+       "uPVC",
+       "other"
+   ]
+}

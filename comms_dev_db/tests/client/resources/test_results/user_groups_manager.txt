@@ -1,0 +1,97 @@
+TEST: User Groups
+    input: 
+    button: ant-btn-icon-only
+    label: Group Description
+    label: Group
+    label: Admin Group Comms Dev DB Test Group
+    button: ant-table-row-expand-icon ant-table-row-expand-icon-collapsed
+    button: ant-btn-icon-only
+    label: Designer Group Comms Dev DB Test Group
+    button: ant-table-row-expand-icon ant-table-row-expand-icon-collapsed
+    button: ant-btn-icon-only
+    list item (disabled): Previous Page
+    button (disabled): ant-pagination-item-link
+    list item: 1
+    list item (disabled): Next Page
+    button (disabled): ant-pagination-item-link
+    label: Import
+    label: Import
+    button: Import
+    label: Import
+    button: Add User Group
+    label: Add User Group
+
+
+
+SUB TEST : Filter
+    TEST: User Groups
+        input: designer
+        button: ant-btn-icon-only
+        label: Group Description
+        label: Group
+        label: Designer Group Comms Dev DB Test Group
+        button: ant-table-row-expand-icon ant-table-row-expand-icon-collapsed
+        button: ant-btn-icon-only
+        list item (disabled): Previous Page
+        button (disabled): ant-pagination-item-link
+        list item: 1
+        list item (disabled): Next Page
+        button (disabled): ant-pagination-item-link
+        label: Import
+        label: Import
+        button: Import
+        label: Import
+        button: Add User Group
+        label: Add User Group
+    
+    
+
+SUB TEST : Add
+    TEST: Added User Group
+        input: designer
+        button: ant-btn-icon-only
+        label: Group Description
+        label: Group
+        label: Designer Group Comms Dev DB Test Group
+        button: ant-table-row-expand-icon ant-table-row-expand-icon-collapsed
+        button: ant-btn-icon-only
+        label: Test Group Test User Group
+        button: ant-table-row-expand-icon ant-table-row-expand-icon-collapsed
+        button: ant-btn-icon-only
+        list item (disabled): Previous Page
+        button (disabled): ant-pagination-item-link
+        list item: 1
+        list item (disabled): Next Page
+        button (disabled): ant-pagination-item-link
+        label: Import
+        label: Import
+        button: Import
+        label: Import
+        button: Add User Group
+        label: Add User Group
+    
+    
+    TEST: Updated User Group
+        input: designer
+        button: ant-btn-icon-only
+        label: Group Description
+        label: Group
+        label: Designer Group Comms Dev DB Test Group
+        button: ant-table-row-expand-icon ant-table-row-expand-icon-collapsed
+        button: ant-btn-icon-only
+        label: Test Group Test User Group
+        button: ant-table-row-expand-icon ant-table-row-expand-icon-collapsed
+        button: ant-btn-icon-only
+        list item (disabled): Previous Page
+        button (disabled): ant-pagination-item-link
+        list item: 1
+        list item (disabled): Next Page
+        button (disabled): ant-pagination-item-link
+        label: Import
+        label: Import
+        button: Import
+        label: Import
+        button: Add User Group
+        label: Add User Group
+    
+    

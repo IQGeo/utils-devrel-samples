@@ -1,0 +1,159 @@
+COMMAND: comms_db comsof_test_maryland import <resource_dir>/test_data/workspaces/maryland.geopackage.v22.1.zip --format=comsof
+Opening database postgresql://***:***@postgis:5432/comsof_test_maryland ...
+Opening /tmp/<tmp_dir>/workspace/output/output.gpkg
+Coordinate system: 26985 unit_size=1.0
+Import engine: comsof
+Loading data
+  Feature type: building
+    Loaded 1 records
+  Feature type: cabinet
+    Loaded 2 records
+  Feature type: drop_point
+    Loaded 411 records
+  Feature type: fiber_cable
+    Loaded 1566 records
+  Feature type: fiber_splitter
+    Loaded 28 records
+  Feature type: manhole
+    Loaded 733 records
+  Feature type: oh_route
+    Loaded 327 records
+  Feature type: pole
+    Loaded 19 records
+  Feature type: rack
+    Loaded 32 records
+  Feature type: splice_closure
+    Loaded 1645 records
+  Feature type: ug_route
+    Loaded 1949 records
+  Feature type: wall_box
+    Loaded 827 records
+Mapping references
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+Building route network
+  Reading nodes
+    Read 2851 node records
+  Finding structures
+  Ordering coincident structures
+  Connecting routes
+  Adding riser routes
+Adding conduits
+  Reading duct pieces
+    Read 2309 duct piece records
+  Created 4868 conduits
+Adding cable segments
+  Reading cable details
+    Read 10052 cable detail records
+  Reading cable pieces
+    Read 1688 cable piece records
+  Reading slacks
+    Read 10747 slack records
+  Building segment chains
+***Warning*** fiber_cable[1002] Cannot determine riser segment directions
+***Warning*** fiber_cable[1317] Cannot determine riser segment directions
+  Routed 1566 cables
+Connecting fibers
+  Reading fibers
+    Read 2982 fiber records
+  Building connection infos
+    Found connections in 1645 locations
+  Adding connection records
+Pruning unused objects
+  Pruning unused conduits
+    conduit : Pruned 0 records
+    blown_fiber_bundle : Pruned 0 records
+    blown_fiber_tube : Pruned 0 records
+  Pruning unused routes
+    oh_route : Pruned 0 records
+    ug_route : Pruned 0 records
+  Pruning unused equipment
+    Equipment: Pruned 0 records
+  Pruning unused structures
+    mywcom_route_junction : Pruned 0 records
+    building : Pruned 0 records
+    cabinet : Pruned 0 records
+    drop_point : Pruned 0 records
+    manhole : Pruned 0 records
+    mdu : Pruned 0 records
+    pole : Pruned 0 records
+    wall_box : Pruned 0 records
+Snapping geometries
+
+Opening database postgresql://***:***@postgis:5432/comsof_test_maryland ...
+table                         count
+----------------------------  -----
+blown_fiber_bundle                0
+blown_fiber_tube                  0
+building                          1
+cabinet                           2
+cabinet_spec                      0
+conduit                        4868
+conduit_spec                      0
+drop_point                      411
+fiber_cable                    1566
+fiber_cable_spec                  0
+fiber_mux                         0
+fiber_mux_spec                    0
+fiber_olt                         0
+fiber_ont                         0
+fiber_ont_spec                    0
+fiber_patch_panel                 0
+fiber_patch_panel_spec            0
+fiber_shelf                       0
+fiber_splice_tray                 0
+fiber_splitter                   28
+fiber_splitter_spec               0
+fiber_tap                         0
+fiber_tap_spec                    0
+floor                             0
+ftth_circuit                      0
+iqgapp_markup_line                0
+iqgapp_markup_photo               0
+iqgapp_markup_photo_item          0
+iqgapp_markup_point               0
+iqgapp_markup_polygon             0
+iqgapp_markup_text                0
+iqgapp_task_queue                 0
+manhole                         733
+manhole_spec                      0
+mdu                               0
+mywcom_change_detail              0
+mywcom_coax_connection            0
+mywcom_coax_segment               0
+mywcom_coax_slack                 0
+mywcom_conduit_run                0
+mywcom_copper_connection          0
+mywcom_copper_segment             0
+mywcom_copper_slack               0
+mywcom_data_block                 0
+mywcom_fiber_connection        1975
+mywcom_fiber_segment          37118
+mywcom_fiber_slack            10747
+mywcom_labor_cost                 0
+mywcom_line_of_count              0
+mywcom_line_of_count_section      0
+mywcom_route_junction           585
+note                              0
+oh_route                        327
+pole                             19
+pole_spec                         0
+rack                             32
+room                              0
+slot                              0
+splice_closure                 1645
+splice_closure_spec               0
+ug_route                       2255
+wall_box                        827
+wall_box_spec                     0
+

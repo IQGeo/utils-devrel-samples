@@ -1,0 +1,30 @@
+SUBMIT TASK
+Request: POST: /modules/comms/task/create
+Response: 200 (200 OK)
+{
+   "task_id": 1
+}
+
+
+SUMMARY: SUBMIT TASK task_id=1
+GET STATUS
+Request: GET: /modules/comms/task/1/status
+Response: 200 (200 OK)
+
+
+GET STATUS
+Request: GET: /modules/comms/task/1/status
+Response: 200 (200 OK)
+
+
+GET STATUS
+Request: GET: /modules/comms/task/1/status
+Response: 200 (200 OK)
+
+
+GET STATUS
+Request: GET: /modules/comms/task/1/status
+Response: 200 (200 OK)
+
+
+FINAL SUMMARY: {'status': 'SUCCESS', 'data': {'data': 'Worker done'}}

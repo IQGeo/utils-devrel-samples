@@ -1,0 +1,167 @@
+Opening database <database> ...
+
+  rack(1)  name=WH-R-01  root_housing=building/1  housing=building/1  location=point  installation_date=2010-09-23  job_id=19347  comsof_auto=False
+  rack(2)  name=WH-R-02  root_housing=building/1  housing=building/1  location=point  installation_date=2002-05-18  job_id=20090  comsof_auto=False
+  rack(3)  name=WH-R-03  root_housing=building/1  housing=building/1  location=point  job_id=20833  comsof_auto=False
+  rack(4)  name=WH-R-04  root_housing=building/1  housing=building/1  location=point  installation_date=2006-09-08  job_id=21576  comsof_auto=False
+  rack(5)  name=WH-BB-01  root_housing=building/1  housing=building/1  location=point  installation_date=1998-05-03  job_id=22319  comsof_auto=False
+  rack(6)  name=SP-BB-01  root_housing=building/2  housing=building/2  location=point  installation_date=2010-01-25  job_id=23062  comsof_auto=False
+  rack(7)  name=SP-BB-02  root_housing=cabinet/45  housing=cabinet/45  location=point  installation_date=2002-09-20  job_id=23805  comsof_auto=False
+  rack(8)  name=SP-BB-03  root_housing=cabinet/46  housing=cabinet/46  location=point  installation_date=2014-05-15  job_id=24548  comsof_auto=False
+  rack(9)  name=WH-R-09  root_housing=cabinet/10  housing=cabinet/10  location=point  installation_date=2006-01-10  job_id=25291  comsof_auto=False
+  rack(10)  name=WH-R-05  root_housing=building/1  housing=building/1  location=point
+  rack(11)  name=R-1  root_housing=cabinet/5  housing=cabinet/5  location=point
+
+Opening database <database> ...
+
+  fiber_shelf(1)  name=WH-S-001  root_housing=building/1  housing=rack/1  location=point  installation_date=2010-09-23  job_id=19347  comsof_auto=False
+  fiber_shelf(2)  name=WH-S-002  root_housing=building/1  housing=rack/1  location=point  installation_date=2002-05-18  job_id=20090  comsof_auto=False
+  fiber_shelf(3)  name=WH-S-003  root_housing=building/1  housing=rack/1  location=point  job_id=20833  comsof_auto=False
+  fiber_shelf(4)  name=WH-S-004  root_housing=building/1  housing=rack/1  location=point  installation_date=2006-09-08  job_id=21576  comsof_auto=False
+  fiber_shelf(5)  name=WH-S-005  root_housing=building/1  housing=rack/2  location=point  installation_date=1998-05-03  job_id=22319  comsof_auto=False
+  fiber_shelf(6)  name=WH-S-006  root_housing=building/1  housing=rack/2  location=point  installation_date=2010-01-25  job_id=23062  comsof_auto=False
+  fiber_shelf(7)  name=WH-S-007  root_housing=building/1  housing=rack/2  location=point  installation_date=2002-09-20  job_id=23805  comsof_auto=False
+  fiber_shelf(8)  name=WH-S-008  root_housing=building/1  housing=rack/2  location=point  installation_date=2014-05-15  job_id=24548  comsof_auto=False
+  fiber_shelf(9)  name=WH-S-009  root_housing=building/1  housing=rack/3  location=point  installation_date=2006-01-10  job_id=25291  comsof_auto=False
+  fiber_shelf(10)  name=WH-S-010  root_housing=building/1  housing=rack/3  location=point  installation_date=1998-09-05  job_id=26034  comsof_auto=False
+  fiber_shelf(11)  name=WH-S-011  root_housing=building/1  housing=rack/3  location=point  installation_date=2010-05-27  job_id=26777  comsof_auto=False
+  fiber_shelf(12)  name=WH-S-012  root_housing=building/1  housing=rack/3  location=point  installation_date=2002-01-22  job_id=27520  comsof_auto=False
+  fiber_shelf(13)  name=WH-S-013  root_housing=building/1  housing=rack/5  n_fiber_in_ports=10  n_fiber_out_ports=10  location=point  installation_date=2014-09-17  job_id=28263  comsof_auto=False
+  fiber_shelf(14)  name=WH-S-014  root_housing=building/1  housing=rack/5  n_fiber_in_ports=10  n_fiber_out_ports=20  location=point  circuits=bb_circuit/1?out=1:1;bb_circuit/2?out=3:4;bb_circuit/3?in=1:2;bb_circuit/4?in=3:4  installation_date=2006-05-12  job_id=29006  comsof_auto=False
+  fiber_shelf(15)  name=SP-S-015  root_housing=building/2  housing=rack/6  n_fiber_in_ports=16  n_fiber_out_ports=16  location=point  circuits=bb_circuit/1?in=12:12;bb_circuit/2?in=14:15;bb_circuit/3?out=12:13;bb_circuit/4?out=14:15  installation_date=1998-01-07  job_id=29749  comsof_auto=False
+  fiber_shelf(16)  name=SP-S-016  root_housing=building/2  housing=rack/6  n_fiber_in_ports=16  n_fiber_out_ports=32  location=point  installation_date=2010-09-02  job_id=30492  comsof_auto=False
+  fiber_shelf(17)  name=SP-S-017  root_housing=building/2  housing=rack/6  n_fiber_in_ports=16  n_fiber_out_ports=16  location=point  installation_date=2002-05-24  job_id=31235  comsof_auto=False
+  fiber_shelf(18)  name=SP-S-018  root_housing=cabinet/45  housing=rack/7  n_fiber_in_ports=10  n_fiber_out_ports=10  location=point  installation_date=2014-01-19  job_id=31978  comsof_auto=False
+  fiber_shelf(19)  name=SP-S-019  root_housing=cabinet/46  housing=rack/8  n_fiber_in_ports=10  n_fiber_out_ports=10  location=point  installation_date=2006-09-14  job_id=32721  comsof_auto=False
+
+Opening database <database> ...
+
+  slot(1)  name=WH-SL-0001  root_housing=building/1  housing=fiber_shelf/1  location=point  installation_date=2010-09-23  job_id=19347  comsof_auto=False
+  slot(2)  name=WH-SL-0002  root_housing=building/1  housing=fiber_shelf/1  location=point  installation_date=2002-05-18  job_id=20090  comsof_auto=False
+  slot(3)  name=WH-SL-0003  root_housing=building/1  housing=fiber_shelf/1  location=point  job_id=20833  comsof_auto=False
+  slot(4)  name=WH-SL-0004  root_housing=building/1  housing=fiber_shelf/1  location=point  installation_date=2006-09-08  job_id=21576  comsof_auto=False
+  slot(5)  name=WH-SL-0005  root_housing=building/1  housing=fiber_shelf/1  location=point  installation_date=1998-05-03  job_id=22319  comsof_auto=False
+  slot(6)  name=WH-SL-0006  root_housing=building/1  housing=fiber_shelf/4  location=point  installation_date=2010-01-25  job_id=23062  comsof_auto=False
+  slot(7)  name=WH-SL-0007  root_housing=building/1  housing=fiber_shelf/4  location=point  installation_date=2002-09-20  job_id=23805  comsof_auto=False
+  slot(8)  name=WH-SL-0008  root_housing=building/1  housing=fiber_shelf/4  location=point  installation_date=2014-05-15  job_id=24548  comsof_auto=False
+  slot(9)  name=WH-SL-0009  root_housing=building/1  housing=fiber_shelf/4  location=point  installation_date=2006-01-10  job_id=25291  comsof_auto=False
+  slot(10)  name=WH-SL-0010  root_housing=building/1  housing=fiber_shelf/4  location=point  installation_date=1998-09-05  job_id=26034  comsof_auto=False
+  slot(11)  name=WH-SL-0011  root_housing=building/1  housing=fiber_shelf/2  location=point  installation_date=2010-05-27  job_id=26777  comsof_auto=False
+  slot(12)  name=WH-SL-0012  root_housing=building/1  housing=fiber_shelf/2  location=point  installation_date=2002-01-22  job_id=27520  comsof_auto=False
+  slot(13)  name=WH-SL-0013  root_housing=building/1  housing=fiber_shelf/5  location=point  installation_date=2014-09-17  job_id=28263  comsof_auto=False
+  slot(14)  name=WH-SL-0014  root_housing=building/1  housing=fiber_shelf/5  location=point  installation_date=2006-05-12  job_id=29006  comsof_auto=False
+  slot(15)  name=WH-SL-0015  root_housing=building/1  housing=fiber_shelf/5  location=point  installation_date=1998-01-07  job_id=29749  comsof_auto=False
+  slot(16)  name=WH-SL-0016  root_housing=building/1  housing=fiber_shelf/5  location=point  installation_date=2010-09-02  job_id=30492  comsof_auto=False
+  slot(17)  name=WH-SL-0017  root_housing=building/1  housing=fiber_shelf/5  location=point  installation_date=2002-05-24  job_id=31235  comsof_auto=False
+  slot(18)  name=WH-SL-0018  root_housing=building/1  housing=fiber_shelf/7  location=point  installation_date=2014-01-19  job_id=31978  comsof_auto=False
+  slot(19)  name=WH-SL-0019  root_housing=building/1  housing=fiber_shelf/7  location=point  installation_date=2006-09-14  job_id=32721  comsof_auto=False
+  slot(20)  name=WH-SL-0020  root_housing=building/1  housing=fiber_shelf/8  location=point  installation_date=1998-05-09  job_id=33464  comsof_auto=False
+  slot(21)  name=WH-SL-0021  root_housing=building/1  housing=fiber_shelf/8  location=point  job_id=34207  comsof_auto=False
+  slot(22)  name=WH-SL-0022  root_housing=building/1  housing=fiber_shelf/8  location=point  installation_date=2002-09-26  job_id=34950  comsof_auto=False
+  slot(23)  name=WH-SL-0023  root_housing=building/1  housing=fiber_shelf/8  location=point  installation_date=2014-05-21  job_id=35693  comsof_auto=False
+  slot(24)  name=WH-SL-0024  root_housing=building/1  housing=fiber_shelf/8  location=point  installation_date=2006-01-16  job_id=36436  comsof_auto=False
+  slot(25)  name=WH-SL-0025  root_housing=building/1  housing=fiber_shelf/9  location=point  installation_date=1998-09-11  job_id=37179  comsof_auto=False
+  slot(26)  name=WH-SL-0026  root_housing=building/1  housing=fiber_shelf/9  location=point  installation_date=2010-05-06  job_id=37922  comsof_auto=False
+  slot(27)  name=WH-SL-0027  root_housing=building/1  housing=fiber_shelf/9  location=point  installation_date=2002-01-01  job_id=38665  comsof_auto=False
+  slot(28)  name=WH-SL-0028  root_housing=building/1  housing=fiber_shelf/9  location=point  installation_date=2014-09-23  job_id=39408  comsof_auto=False
+  slot(29)  name=WH-SL-0029  root_housing=building/1  housing=fiber_shelf/9  location=point  installation_date=2006-05-18  job_id=40151  comsof_auto=False
+  slot(30)  name=WH-SL-0030  root_housing=building/1  housing=fiber_shelf/11  location=point  installation_date=1998-01-13  job_id=40894  comsof_auto=False
+  slot(31)  name=WH-SL-0031  root_housing=building/1  housing=fiber_shelf/11  location=point  installation_date=2010-09-08  job_id=41637  comsof_auto=False
+  slot(32)  name=WH-SL-0032  root_housing=building/1  housing=fiber_shelf/12  location=point  installation_date=2002-05-03  job_id=42380  comsof_auto=False
+  slot(33)  name=WH-SL-0033  root_housing=building/1  housing=fiber_shelf/12  location=point  installation_date=2014-01-25  job_id=43123  comsof_auto=False
+  slot(34)  name=WH-SL-0034  root_housing=building/1  housing=fiber_shelf/12  location=point  installation_date=2006-09-20  job_id=43866  comsof_auto=False
+  slot(35)  name=WH-SL-0035  root_housing=building/1  housing=fiber_shelf/12  location=point  installation_date=1998-05-15  job_id=44609  comsof_auto=False
+  slot(36)  name=WH-SL-0036  root_housing=building/1  housing=fiber_shelf/12  location=point  installation_date=2010-01-10  job_id=45352  comsof_auto=False
+
+Opening database <database> ...
+
+  splice_closure(1)  name=WH-SC-001  root_housing=manhole/35  housing=manhole/35  specification=CS- FOSC-100-DM-144  location=point  installation_date=2010-09-23  job_id=19347  comsof_auto=False
+  splice_closure(2)  name=WH-SC-002  root_housing=manhole/13  housing=manhole/13  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2002-05-18  job_id=20090  comsof_auto=False
+  splice_closure(3)  name=WH-SC-003  root_housing=manhole/3  housing=manhole/3  specification=CS-FOSC400-A4-16-1-BNV  location=point  job_id=20833  comsof_auto=False
+  splice_closure(4)  name=WH-SC-004  root_housing=manhole/41  housing=manhole/41  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2006-09-08  job_id=21576  comsof_auto=False
+  splice_closure(5)  name=WH-SC-005  root_housing=manhole/2  housing=manhole/2  specification=CS- FOSC-100-DM-144  location=point  installation_date=1998-05-03  job_id=22319  comsof_auto=False
+  splice_closure(6)  name=WH-SC-006  root_housing=manhole/12  housing=manhole/12  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=2010-01-25  job_id=23062  comsof_auto=False
+  splice_closure(7)  name=WH-SC-007  root_housing=manhole/12  housing=manhole/12  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2002-09-20  job_id=23805  comsof_auto=False
+  splice_closure(8)  name=WH-SC-008  root_housing=manhole/42  housing=manhole/42  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2014-05-15  job_id=24548  comsof_auto=False
+  splice_closure(9)  name=WH-SC-009  root_housing=manhole/34  housing=manhole/34  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=2006-01-10  job_id=25291  comsof_auto=False
+  splice_closure(10)  name=WH-SC-010  root_housing=manhole/23  housing=manhole/23  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=1998-09-05  job_id=26034  comsof_auto=False
+  splice_closure(11)  name=WH-SC-011  root_housing=manhole/26  housing=manhole/26  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2010-05-27  job_id=26777  comsof_auto=False
+  splice_closure(12)  name=WH-SC-012  root_housing=pole/6  housing=pole/6  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2002-01-22  job_id=27520  comsof_auto=False
+  splice_closure(13)  name=WH-SC-013  root_housing=pole/4  housing=pole/4  specification=CS- FOSC-100-DM-144  location=point  installation_date=2014-09-17  job_id=28263  comsof_auto=False
+  splice_closure(14)  name=WH-SC-014  root_housing=pole/5  housing=pole/5  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2006-05-12  job_id=29006  comsof_auto=False
+  splice_closure(15)  name=WH-SC-015  root_housing=pole/5  housing=pole/5  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=1998-01-07  job_id=29749  comsof_auto=False
+  splice_closure(16)  name=WH-SC-016  root_housing=pole/7  housing=pole/7  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2010-09-02  job_id=30492  comsof_auto=False
+  splice_closure(17)  name=WH-SC-017  root_housing=pole/9  housing=pole/9  specification=CS- FOSC-100-DM-144  location=point  installation_date=2002-05-24  job_id=31235  comsof_auto=False
+  splice_closure(18)  name=WH-SC-018  root_housing=pole/8  housing=pole/8  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=2014-01-19  job_id=31978  comsof_auto=False
+  splice_closure(19)  name=WH-SC-019  root_housing=pole/10  housing=pole/10  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2006-09-14  job_id=32721  comsof_auto=False
+  splice_closure(20)  name=WH-SC-020  root_housing=manhole/32  housing=manhole/32  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=1998-05-09  job_id=33464  comsof_auto=False
+  splice_closure(21)  name=WH-SC-021  root_housing=manhole/32  housing=manhole/32  specification=CS-FOSC400-A4-16-1-BNV  location=point  job_id=34207  comsof_auto=False
+  splice_closure(22)  name=WH-SC-022  root_housing=manhole/32  housing=manhole/32  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2002-09-26  job_id=34950  comsof_auto=False
+  splice_closure(23)  name=WH-SC-023  root_housing=manhole/29  housing=manhole/29  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2014-05-21  job_id=35693  comsof_auto=False
+  splice_closure(24)  name=WH-SC-024  root_housing=manhole/28  housing=manhole/28  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2006-01-16  job_id=36436  comsof_auto=False
+  splice_closure(25)  name=WH-SC-025  root_housing=manhole/91  housing=manhole/91  specification=CS- FOSC-100-DM-144  location=point  installation_date=1998-09-11  job_id=37179  comsof_auto=False
+  splice_closure(26)  name=WH-SC-026  root_housing=manhole/244  housing=manhole/244  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2010-05-06  job_id=37922  comsof_auto=False
+  splice_closure(27)  name=WH-SC-027  root_housing=manhole/245  housing=manhole/245  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=2002-01-01  job_id=38665  comsof_auto=False
+  splice_closure(28)  name=WH-SC-028  root_housing=manhole/246  housing=manhole/246  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2014-09-23  job_id=39408  comsof_auto=False
+  splice_closure(29)  name=WH-SC-029  root_housing=manhole/247  housing=manhole/247  specification=CS- FOSC-100-DM-144  location=point  installation_date=2006-05-18  job_id=40151  comsof_auto=False
+  splice_closure(30)  name=WH-SC-030  root_housing=manhole/248  housing=manhole/248  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=1998-01-13  job_id=40894  comsof_auto=False
+  splice_closure(31)  name=WH-SC-031  root_housing=manhole/249  housing=manhole/249  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2010-09-08  job_id=41637  comsof_auto=False
+  splice_closure(32)  name=WH-SC-032  root_housing=manhole/251  housing=manhole/251  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2002-05-03  job_id=42380  comsof_auto=False
+  splice_closure(33)  name=WH-SC-033  root_housing=manhole/36  housing=manhole/36  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=2014-01-25  job_id=43123  comsof_auto=False
+  splice_closure(35)  name=WH-SC-035  root_housing=manhole/24  housing=manhole/24  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=1998-05-15  job_id=44609  comsof_auto=False
+  splice_closure(36)  name=WH-SC-036  root_housing=manhole/26  housing=manhole/26  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2010-01-10  job_id=45352  comsof_auto=False
+  splice_closure(37)  name=WH-SC-037  root_housing=manhole/253  housing=manhole/253  specification=CS- FOSC-100-DM-144  location=point  installation_date=2002-09-05  job_id=46095  comsof_auto=False
+  splice_closure(38)  name=WH-SC-038  root_housing=manhole/53  housing=manhole/53  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2014-05-27  job_id=46838  comsof_auto=False
+  splice_closure(39)  name=WH-SC-039  root_housing=cabinet/11  housing=cabinet/11  specification=CS-FOSC400-A4-16-1-BNV  location=point  job_id=47581  comsof_auto=False
+  splice_closure(40)  name=WH-SC-040  root_housing=manhole/89  housing=manhole/89  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=1998-09-17  job_id=48324  comsof_auto=False
+  splice_closure(41)  name=WH-SC-041  root_housing=manhole/87  housing=manhole/87  specification=CS- FOSC-100-DM-144  location=point  installation_date=2010-05-12  job_id=49067  comsof_auto=False
+  splice_closure(42)  name=WH-SC-042  root_housing=manhole/86  housing=manhole/86  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=2002-01-07  job_id=49810  comsof_auto=False
+  splice_closure(43)  name=WH-SC-043  root_housing=manhole/90  housing=manhole/90  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2014-09-02  job_id=50553  comsof_auto=False
+  splice_closure(44)  name=WH-SC-044  root_housing=manhole/83  housing=manhole/83  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2006-05-24  job_id=51296  comsof_auto=False
+  splice_closure(45)  name=WH-SC-045  root_housing=manhole/20  housing=manhole/20  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=1998-01-19  job_id=52039  comsof_auto=False
+  splice_closure(46)  name=WH-SC-046  root_housing=manhole/254  housing=manhole/254  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2010-09-14  job_id=52782  comsof_auto=False
+  splice_closure(47)  name=WH-SC-047  root_housing=manhole/44  housing=manhole/44  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=2002-05-09  job_id=53525  comsof_auto=False
+  splice_closure(48)  name=XX-SC-048  root_housing=manhole/217  housing=manhole/217  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2014-01-04  job_id=54268  comsof_auto=False
+  splice_closure(49)  name=WH-SC-049  root_housing=manhole/66  housing=manhole/66  specification=CS- FOSC-100-DM-144  location=point  installation_date=2006-09-26  job_id=55011  comsof_auto=False
+  splice_closure(50)  name=WH-SC-050  root_housing=manhole/64  housing=manhole/64  specification=CS-FOSC450-D6-6-36-1-N0V  location=point  installation_date=1998-05-21  job_id=55754  comsof_auto=False
+  splice_closure(51)  name=WH-SC-051  root_housing=manhole/65  housing=manhole/65  specification=CS-FOSC400-A4-16-1-BNV  location=point  installation_date=2010-01-16  job_id=56497  comsof_auto=False
+  splice_closure(52)  name=WH-SC-052  root_housing=manhole/61  housing=manhole/61  specification=CS-FOSC-400B4-S24-4-NNN  location=point  installation_date=2002-09-11  job_id=57240  comsof_auto=False
+  splice_closure(6100)  name=WH-SC-3205:1  root_housing=manhole/6101  housing=manhole/6101  specification=CS-FOSC450-D6-6-36-1-N0V  location=point
+  splice_closure(6101)  name=WH-SC-1753:1  root_housing=pole/6104  housing=pole/6104  specification=CS-FOSC450-D6-6-36-1-N0V  location=point
+  splice_closure(6102)  name=WH-SC-3206:1  root_housing=manhole/6107  housing=manhole/6107  specification=CS-FOSC450-D6-6-36-1-N0V  location=point
+
+Opening database <database> ...
+
+  fiber_splice_tray(1)  name=Tray-1  root_housing=manhole/28  housing=splice_closure/24  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(2)  name=Tray-2  root_housing=manhole/28  housing=splice_closure/24  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(3)  name=Tray-3  root_housing=manhole/28  housing=splice_closure/24  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(4)  name=Tray-4  root_housing=manhole/28  housing=splice_closure/24  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(5)  name=Tray-5  root_housing=manhole/28  housing=splice_closure/24  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(6)  name=Tray-6  root_housing=manhole/28  housing=splice_closure/24  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(7)  name=Tray-7  root_housing=manhole/28  housing=splice_closure/24  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(8)  name=Tray-8  root_housing=manhole/28  housing=splice_closure/24  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(9)  name=Tray-1  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(10)  name=Tray-2  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(11)  name=Tray-3  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(12)  name=Tray-4  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(13)  name=Tray-5  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(14)  name=Tray-6  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(15)  name=Tray-7  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(16)  name=Tray-8  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(17)  name=Tray-9  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(18)  name=Tray-10  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(19)  name=Tray-11  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(20)  name=Tray-12  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(21)  name=Tray-13  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(22)  name=Tray-14  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(23)  name=Tray-16  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(24)  name=Tray-17  root_housing=manhole/29  housing=splice_closure/23  location=point  slots=16  comsof_auto=False
+  fiber_splice_tray(25)  name=Tray-1  root_housing=manhole/32  housing=splice_closure/20  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(26)  name=Tray-2  root_housing=manhole/32  housing=splice_closure/20  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(27)  name=Tray-3  root_housing=manhole/32  housing=splice_closure/20  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(28)  name=Tray-4  root_housing=manhole/32  housing=splice_closure/20  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(29)  name=Tray-5  root_housing=manhole/32  housing=splice_closure/20  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(30)  name=Tray-6  root_housing=manhole/32  housing=splice_closure/20  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(31)  name=Tray-7  root_housing=manhole/32  housing=splice_closure/20  location=point  slots=12  comsof_auto=False
+  fiber_splice_tray(32)  name=Tray-8  root_housing=manhole/32  housing=splice_closure/20  location=point  slots=12  comsof_auto=False
+

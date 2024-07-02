@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="leader" transform="translate(2.000000, 3.000000)"></g>
+        <g id="edit_check" transform="translate(-0.000000, 3.074351)"></g>
+        <g id="width" transform="translate(0.096303, 7.500000)">
+            <path d="M2.90369676,4.5 C2.90369676,4.5 20.9036968,4.5 20.9036968,4.5 C20.9036968,4.5 2.90369676,4.5 2.90369676,4.5 Z" id="Path-4" stroke="#333333" stroke-width="4"></path>
+            <polygon id="Triangle" fill="#333333" transform="translate(3.403697, 4.500000) rotate(-90.000000) translate(-3.403697, -4.500000) " points="3.40369676 2 7.90369676 7 -1.09630324 7"></polygon>
+            <polygon id="Triangle-Copy" fill="#333333" transform="translate(20.403697, 4.500000) rotate(90.000000) translate(-20.403697, -4.500000) " points="20.4036968 2 24.9036968 7 15.9036968 7"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+[
+   [
+      "initialise",
+      "initialised",
+      {"overwrite": true}
+   ],
+   [
+      "populate",
+      "populated",
+      {}
+   ],
+   [
+      "preprocess",
+      "preprocessed",
+      {
+         "operations": [
+            "/createDemandPoints",
+            "/streetDoubler",
+            "/createBuildingTrenches",
+            "/moveDemandPoints",
+            "/createTransitions",
+            "/createCrossings"
+         ]
+      }
+   ],
+   [
+      "validate",
+      "validated",
+      {
+         "operations": [
+            "/processInput --ignore-unconnected"
+         ]
+      }
+   ]
+]

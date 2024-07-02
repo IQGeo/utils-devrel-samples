@@ -1,0 +1,12 @@
+{
+   "name": "mywcom_schematic",
+   "display_name": "Schematic",
+   "category": "schematic",
+   "datasource": "myworld",
+   "spec": {
+      "rendering": "vector"
+   },
+   "min_scale": 0,
+   "max_scale": 20,
+   "feature_types": []
+}

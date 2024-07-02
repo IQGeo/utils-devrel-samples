@@ -1,0 +1,379 @@
+@import 'base/_variables';
+@import '~jstree/dist/themes/default/style.css';
+@import 'base/_mixins';
+@import 'base/_utils';
+@import 'components/_index';
+
+#myWorldApp[data-myw-layout='desktop'] {
+    @import './touchStylesPlugin';
+
+    .feature-tree-processing {
+        @include background-with-image(
+            '#{$path-to-core-img}loading-blue.gif',
+            no-repeat,
+            top right
+        );
+        background-size: 15px;
+        display: inline;
+        padding-right: 20px;
+    }
+
+    .feature-tree-data-error {
+        background-image: url('#{$path-to-img}editor/warning-twotone.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 17px;
+        display: inline;
+        padding-right: 20px;
+        margin-left: 5px;
+    }
+
+    select:disabled {
+        background: rgb(235, 235, 228);
+    }
+
+    .mywcom-palette-container {
+        background-color: #fff;
+        border-left: none !important;
+        ul {
+            overflow: auto;
+            height: 100%;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+        }
+        .palette-msg {
+            padding: 10px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #c1c1c1;
+            font-size: 1.1em;
+        }
+        .palette-btn {
+            position: relative;
+            list-style: none;
+            text-align: center;
+            padding: 10px 5px;
+            margin: 0 0 5px;
+            border: 1px solid #e3e3e3;
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12), 0 -1px 0 rgba(0, 0, 0, 0.02);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            &:hover {
+                background-color: #fbfbfb;
+                color: #246bd4;
+                cursor: pointer;
+            }
+            &.clicked {
+                background-color: #fbfbfb;
+                color: #246bd4;
+                cursor: default;
+            }
+            div {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        .ui-button {
+            position: absolute;
+            bottom: 0;
+        }
+        .alert-message {
+            border-radius: 0;
+            text-align: center;
+            .alert-text {
+                padding-right: 0;
+            }
+        }
+    }
+    .palette-error {
+        color: red;
+        font-weight: bold;
+    }
+    .js-tree {
+        padding: 10px 20px 10px 0;
+        .jstree-root-node > a > i {
+            //Since root node has no image
+            width: 0;
+        }
+        .jstree-leaf-node > i {
+            //So leaf nodes are not unnecessarily indented
+            width: 0;
+        }
+        .jstree-icon.jstree-icon-right {
+            margin-left: 10px;
+            margin-right: 4px;
+            margin-top: 1px;
+            background-position: center center;
+            background-size: auto;
+        }
+    }
+    .length-preview {
+        background: none;
+        border: none;
+    }
+    .vertex-label {
+        background: none;
+        border: none;
+
+        // span {
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        padding: 5px 5px;
+        border-radius: 6px;
+        //}
+    }
+
+    .validation-dialog .ui-input {
+        width: 60px;
+    }
+
+    .validation-title-container {
+        display: flex;
+        display: -ms-flexbox;
+        align-items: center;
+        -ms-flex-align: center;
+    }
+
+    .validation-conflicts-checkbox {
+        margin-left: 0px !important;
+        margin-right: 6px !important;
+    }
+
+    .validation-checkbox {
+        margin-right: 4px;
+    }
+}
+
+.pinnable-dialog-title {
+    padding-left: 28px;
+}
+
+// Override jstree hover and clicked styles
+.jstree-default {
+    .jstree-clicked {
+        background: #eeeeee 50% 50% repeat-x !important;
+        color: #246bd4;
+        box-shadow: none;
+        font-weight: 600;
+        &.jstree-hovered {
+            color: black;
+            text-decoration: none !important;
+        }
+    }
+    .jstree-hovered,
+    .jstree-context {
+        background: transparent;
+        box-shadow: none;
+    }
+    .jstree-context {
+        color: #246bd4;
+        font-weight: 600;
+        background: #eeeeee 50% 50% repeat-x !important;
+    }
+    .jstree-hovered {
+        color: #246bd4;
+        text-decoration: none !important;
+    }
+    .jstree-wholerow-clicked {
+        background: transparent;
+    }
+    .jstree-wholerow-hovered {
+        background: #f6f6f6 50% 50% repeat-x;
+    }
+    .jstree-themeicon-custom {
+        background-size: 20px 20px !important;
+    }
+}
+
+
+.connections-dialog-form,
+.port-connections-dialog-form,
+.conduit-connections-dialog-form {
+    overflow: auto !important;
+    .js-tree {
+        margin: 10px 0 6px 0;
+        border: 1px solid #ddd;
+        box-shadow: none !important;
+        border-radius: 3px;
+    }
+}
+
+.connect-cable-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 10px;
+}
+
+.connect-cable-tree,
+.connect-port-container,
+.connect-conduit-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .tree-header {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .tree-options {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-left: auto;
+        }
+    }
+    .js-tree {
+        min-width: 280px;
+        height: calc(100% - 43px - 1em);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .jstree-clicked {
+        color: #246bd4;
+        background: #eeeeee 50% 50% repeat-x !important;
+    }
+    /* Hack to get rid of strange black pixels at corners */
+    .ant-select-single {
+        border-radius: 4px
+    }
+}
+
+.filter-input-item {
+    background: url('#{$path-to-core-img}text-search.svg') no-repeat scroll 5px center;
+    width: 100px;
+    padding-left: 25px !important;
+    background-size: 12px;
+}
+
+.filter-input-item-populated {
+    background: url('#{$path-to-core-img}x.svg') no-repeat scroll 5px center;
+    background-size: 9px;
+}
+
+
+#related-equipment-container,
+#related-cables-container {
+    position: relative;
+}
+
+.vakata-context {
+    // To allow nested context menus
+    ul {
+        max-height: 500px !important;
+        overflow-x: visible !important;
+    }
+    &.jstree-default-contextmenu,
+    ul {
+        background: #fff;
+        border: 1px solid #bebebe;
+        border-radius: 0.2em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        max-width: 26em;
+        min-width: 13em;
+        padding: 0.25em 0;
+        z-index: 1001;
+    }
+
+    &.jstree-default-contextmenu {
+        margin: 0.3em;
+    }
+    .vakata-context-hover > a {
+        background-color: transparent;
+        box-shadow: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    li.vakata-context-separator > a {
+        margin: 0 !important;
+    }
+    li > a {
+        border: none;
+        background-color: #fff;
+        text-shadow: none;
+        font-size: 1.1em;
+        line-height: 2em;
+        &:hover {
+            background-color: #f4f4f4;
+            box-shadow: none;
+            text-decoration: none !important;
+            border: none;
+        }
+        .vakata-contextmenu-sep,
+        i {
+            display: none;
+        }
+    }
+}
+
+.js-tree {
+    .js-tree-loading-label {
+        padding-left: 10px;
+    }
+}
+
+// To avoid showing a horizontal scroll bar on the spec grid dialog
+#spec-grid-table_wrapper {
+    width: calc(100% - 28px) !important;
+}
+
+span.design-link {
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/*
+ * Fix for MS Edge: Hides the clear button in the dataTables filter box
+ * The clear button cleared the input box but had no effect on the table
+ */
+.dataTables_filter {
+    input {
+        &::-ms-clear {
+            display: none;
+        }
+    }
+}
+
+.touch-enabled {
+    @import './touchStyle';
+}
+
+.toolbar-expand-button {
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-left: 1px solid lightgray;
+    height: 100%;
+    padding: 0px 5px;
+}
+
+.toolbar-expand-button:hover {
+    background-color: #fafafa;
+}
+
+.delta-owner-map-watermark {
+    left: 45px;
+    top: 6px;
+    transition: bottom 0.5s, width 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+        0 9px 28px 8px rgb(0 0 0 / 5%);
+}
+
+.strand-loc {
+    display: inline-block;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.strand-loc-proposed {
+    color:#ffa500;
+    font-weight:normal
+}

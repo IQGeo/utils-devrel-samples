@@ -1,0 +1,24 @@
+{
+    "image": "modules/comms/images/features/building.svg",
+    "housings": [
+        "rack",
+        "slot",
+        "manhole",
+        "cabinet",
+        "splice_closure",
+        "pole"
+    ],
+    "function": "splitter",
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/building.svg:75:150:24"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/building.svg:75:75:1.5m",
+        "geometry": "offset_geom"
+    },
+    "offset": true
+}

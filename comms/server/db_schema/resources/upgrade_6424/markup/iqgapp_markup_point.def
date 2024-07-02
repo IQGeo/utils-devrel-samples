@@ -1,0 +1,69 @@
+{
+   "datasource": "myworld",
+   "name": "iqgapp_markup_point",
+   "external_name": "{:markup_point_external_name}",
+   "title": "{display_name}: [id]",
+   "short_description": null,
+   "track_changes": true,
+   "versioned": false,
+   "geom_indexed": true,
+   "editable": {
+      "insert_from_gui": false,
+      "update_from_gui": true,
+      "delete_from_gui": true
+   },
+   "editor_options": null,
+   "fields": [
+      {
+         "name": "id",
+         "external_name": "{:id_field_name}",
+         "type": "integer",
+         "key": true,
+         "generator": "sequence",
+         "visible": "false"
+      },
+      {
+         "name": "location",
+         "external_name": "{:markup_point_location_field_name}",
+         "type": "point"
+      },
+      {
+         "name": "point_style",
+         "external_name": "{:markup_point_style_field_name}",
+         "type": "string",
+         "visible": "false"
+      },
+      {
+         "name": "myw_orientation_location",
+         "external_name": "{:orientation_field_name}",
+         "type": "double"
+      },
+      {
+         "name": "referenced_feature",
+         "external_name": "{:markup_point_referenced_feature_field_name}",
+         "type": "reference",
+         "editor_class": "myw.SelectionReferenceFieldEditor"
+      },
+      {
+         "name": "owner",
+         "external_name": "{:markup_point_owner_field_name}",
+         "type": "reference",
+         "visible": "false"
+      }
+   ],
+   "groups": [],
+   "searches": [],
+   "queries": [
+      {
+         "value": "markup point",
+         "description": "{:markup_point_external_name}",
+         "lang": "en"
+      }
+   ],
+   "filters": [
+      {
+         "name": "OwnerIsActive",
+         "value": "{activeDelta} =  [owner]"
+      }
+   ]
+}

@@ -1,0 +1,88 @@
+TEST: Fiber Cable Specs
+    label: Spec Manager
+    button: Close
+    label: StructuresManhole SpecCabinet Spec
+    label: EquipmentFiber Splitter SpecSplice Closure Spec
+    label: CablesFiber Cable Spec
+    list item: Add
+    list item: Import
+    list item: Export to csv
+    button: Show/hide columns
+    input: 
+    label: Retired Name Model Type Description Manufacturer Fiber Count Diameter Cost Cost Currency Cost Per Unit Color Scheme
+    label: D-072-LA-8W-F12NS D-072-LA-8W-F12NS Internal TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 72 0.46 in TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    label: D-144-LA-5K-F12NS D-144-LA-5K-F12NS Internal LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 0.67 in TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    label: D-144-LA-5L-F12NS D-144-LA-5L-F12NS External LazrSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 0.67 in TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: 
+    label: D-144-LA-8W-F12NS D-144-LA-8W-F12NS External TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 144 0.39 in TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    label: D-288-LA-8W-F12NS D-288-LA-8W-F12NS External TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Free, Outdoor Stranded Loose Tube Cable CommScope 288 0.77 in TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    label: NETCONNECT 6 Count OM4 NETCONNECT 6 Count OM4 Riser Outside Plant Fiber Optic Cable, 6-fiber, OM4, HDPE, loose tube, gel-filled, 1000 m, black CommScope 6 0.39 in 3281 TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    label: NETCONNECT 6 Count OS2 NETCONNECT 6 Count OS2 Riser Outside Plant Fiber Optic Cable, 6-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 6 0.39 in 3281 TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    label: NETCONNECT 12 Count OM4 NETCONNECT 12 Count OM4 Internal Outside Plant Fiber Optic Cable, HDPE, 12-fiber, MM, OM4, loose tube, gel-filled, 1000 m CommScope 12 0.39 in 3281 TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: FIN2012
+    label: NETCONNECT 12 Count OS2 NETCONNECT 12 Count OS2 Internal Outside Plant Fiber Optic Cable, 12-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 12 0.39 in 3281 TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    label: NETCONNECT 24 Count OM4 NETCONNECT 24 Count OM4 External Outside Plant Fiber Optic Cable, HDPE, 24-fiber, MM, OM4, loose tube, gel-filled, 1000 m CommScope 24 0.41 in 3281 TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    label: NETCONNECT 24 Count OS2 NETCONNECT 24 Count OS2 External Outside Plant Fiber Optic Cable, 24-fiber, OS2, HDPE, loose tube, gel-filled, 1000 m, black CommScope 24 0.41 in 3281 TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: DIN VDE 0888
+    label: O-004-CA-8W-F04NS O-004-CA-8W-F04NS Drop TeraSPEEDÂ® Single Jacket/Single Armor, Gel-Filled, Outdoor Central Tube Cable CommScope 4 0.41 in TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    label: O-048-CN-5L-F12NS O-048-CN-5L-F12NS External LazrSPEEDÂ® Single Jacket All-Dielectric, Gel-Filled, Outdoor Central Tube Cable CommScope 48 0.48 in TIA-598-CDIN VDE 0888FIN2012
+    input: false
+    input: TIA-598-C
+    button: Close
+
+
+DATABASE CHANGES: AFTER UPDATING COLOR SCHEME FOR A SPEC
+   update data.mywcom_fiber_cable_spec(D-072-LA-8W-F12NS) fields=(color_scheme)
+
+TEST: COLOR SCHEME CONFIG
+    label: D-072-LA-8W-F12NS
+    button: Close
+    input: 
+    input: 
+    input: 
+    input: 
+    input: 12
+    input: 6
+    input: tube
+    button: Save
+    button: Cancel
+
+
+DATABASE CHANGES: AFTER UPDATING COLOR SCHEME CONFIG FOR A SPEC
+   update data.mywcom_fiber_cable_spec(D-072-LA-8W-F12NS) fields=(color_scheme_config)
+
+TEST: UPDATED COLOR SCHEME CONFIG
+    label: D-072-LA-8W-F12NS
+    button: Close
+    input: 2
+    input: ribbon
+    input: 2
+    input: tube
+    input: 12
+    input: 6
+    input: tube
+    button: Save
+    button: Cancel
+
+

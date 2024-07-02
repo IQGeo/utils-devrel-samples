@@ -1,0 +1,20 @@
+
+*** CONNECT TUBES
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: CONNECT TUBES
+    insert delta.blown_fiber_tube(design/NB046,28,update)
+    insert delta.blown_fiber_tube(design/NB046,29,update)
+    insert delta.blown_fiber_tube(design/NB046,30,update)
+    insert delta.blown_fiber_tube(design/NB046,31,update)
+    insert delta.blown_fiber_tube(design/NB046,32,update)
+    insert delta.blown_fiber_tube(design/NB046,33,update)
+    insert delta.blown_fiber_tube(design/NB046,34,update)
+    insert delta.blown_fiber_tube(design/NB046,35,update)
+    insert delta.mywcom_conduit_run(design/NB046,5,update)
+    insert delta.mywcom_conduit_run(design/NB046,6,delete)
+
+VALIDATION ERRORS: CONNECT TUBES
+

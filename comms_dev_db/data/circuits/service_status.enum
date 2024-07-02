@@ -1,0 +1,10 @@
+{
+    "name": "service_status",
+    "description": "Service status",
+    "values": [
+        "New",
+        "Planned",
+        "Built",
+        "In Service"
+    ]
+}

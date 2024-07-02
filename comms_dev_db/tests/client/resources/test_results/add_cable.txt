@@ -1,0 +1,46 @@
+TEST: Cable Feature Editor with spec
+    label: Type*
+    label: External
+    label: External
+    label: Spec*
+    label: feature-edit-input
+    input (disabled): D-144-LA-8W-F12NS
+    label: Fiber Count*
+    label: feature-edit-input
+    input (disabled): 144
+    label: Diameter*
+    label: feature-edit-input
+    input (disabled): 0.39 in
+    label: Installed*
+    label: feature-edit-input
+    input: 
+    label: Job ID*
+    label: feature-edit-input
+    input: 
+    label: Distribution*
+    label: feature-edit-input
+    input: true
+  header: Path
+    button: Preview
+    button: Cancel
+    button: Save
+
+
+DATABASE CHANGES: AFTER ADD CABLE
+   insert data.mywcom_change_detail(5)
+   insert delta.fiber_cable(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100001,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100002,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100003,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100004,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100005,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100006,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100007,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100008,insert)
+
+DATABASE CHANGES: AFTER ADD INTERNAL CABLE
+   insert data.mywcom_change_detail(6)
+   insert delta.fiber_cable(design/NB046,100001,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100009,insert)
+

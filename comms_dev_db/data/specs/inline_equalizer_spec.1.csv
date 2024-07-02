@@ -1,0 +1,4 @@
+retired,manufacturer,name,max_ac_current_bypass,model,frequency,ports
+false,Unknown,1-FEQ870,15000.000,FEQ870,"870, forward",2
+false,Unknown,1-LEQ1GHz,15000.000,LEQ1GHz,"1G, forward",2
+false,Unknown,1-LEQ550,15000.000,LEQ550,"550, forward",2

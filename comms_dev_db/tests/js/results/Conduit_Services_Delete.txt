@@ -1,0 +1,19 @@
+
+*** DELETE FAIL
+Set delta to: design/NB046
+Error: conduit_has_cable
+
+DATABASE CHANGES: DELETE FAIL
+
+VALIDATION ERRORS: DELETE FAIL
+
+
+*** DELETE SUCCESS
+Set delta to: design/NB046
+DATABASE CHANGES: DELETE SUCCESS
+    insert delta.blown_fiber_tube(design/NB046,105,delete)
+    insert delta.blown_fiber_tube(design/NB046,106,update)
+    insert delta.mywcom_conduit_run(design/NB046,24,update)
+
+VALIDATION ERRORS: DELETE SUCCESS
+

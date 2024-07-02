@@ -1,0 +1,5 @@
+retired,manufacturer,name,type,ports
+false,Aurora,Aurora NC4000-1X1,Sextuple,7
+false,Aurora,Aurora NC4191,Sextuple,7
+false,Aurora,AURORA-2X2,Quad,7
+false,Aurora,AURORA-2X2 - v2,Sextuple,7

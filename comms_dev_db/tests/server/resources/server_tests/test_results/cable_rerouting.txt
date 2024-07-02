@@ -1,0 +1,609 @@
+
+SUB TEST : NULL UPDATE
+    Request: POST: /modules/comms/cable/fiber_cable/2/reroute?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "add_routes": [],
+       "affected_structure_internals": {},
+       "affected_structures": {},
+       "cable": {
+          "bbox": [
+             0.133495554328,
+             52.2234257601821,
+             0.1353345438838,
+             52.2241963571585
+          ],
+          "geometry": {
+             "coordinates": " [0.1353345438838 52.2234612917333]  [0.1352825760841 52.2234890186467]  [0.1352423429489 52.2234964124873]  [0.1351511478424 52.2234988771006]  [0.1351498067379 52.2234865540329]  [0.1351176202297 52.2234766955762]  [0.1350344717503 52.2234569786564]  [0.1349097490311 52.2234372617278]  [0.1346911489964 52.2234257601821]  [0.1344926655293 52.2234421909608]  [0.1343773305416 52.2234602648103]  [0.1343049108982 52.2234725878853]  [0.1342150568962 52.223500520176]  [0.1341077685356 52.2235366678202]  [0.1340685622237 52.2235518662528]  [0.1340326666832 52.2235654216071]  [0.1339964568615 52.223572815435]  [0.1339548826218 52.2235826738703]  [0.1339186728001 52.2235859600149]  [0.1338556408882 52.2236056768775]  [0.1337791979313 52.2236303229434]  [0.1337295770645 52.223666470482]  [0.1336920261383 52.2237132979313]  [0.1336531341076 52.2237929866352]  [0.1336222887039 52.2238472077334]  [0.1335937435143 52.2238754545963]  [0.1336061954498 52.2238804797381]  [0.1335937435143 52.2238754545963]  [0.1335525512695 52.223916216308]  [0.1335116475821 52.2239515420845]  [0.1334968954325 52.2239786525451]  [0.133495554328 52.2240057629891]  [0.1335351169109 52.2240431425135]  [0.1336061954498 52.2240788789525]  [0.1336236298084 52.2240858619315]  [0.1336645334959 52.2240858619315]  [0.1337121427059 52.2241109184941]  [0.1337912678719 52.2241561024237]  [0.1338167488575 52.224180748184]  [0.1338690519333 52.2241963571585]  [0.1338985562325 52.2241955356337]  [0.1339253783226 52.2241823912343]  [0.133958235383 52.2241561024237]  [0.1340132206678 52.2241113292573]  [0.1340521126986 52.2240788789525]  [0.1341138035059 52.2240402671666]  [0.1341419667006 52.2240230150812]  [0.1342076808214 52.2239967261762]  [0.134309604764 52.2239737233716]  [0.1344054937363 52.2239462021433]  [0.1344447210431 52.2239314146107]  [0.1345033943653 52.2239121086578]  [0.1346200704575 52.2238324201677]  [0.1346924901009 52.2237749129211]  [0.1347407698631 52.2237412300706]  [0.1347260177135 52.2237100117961]  [0.1346894726157 52.2236900895963] ",
+             "type": "LineString"
+          },
+          "id": 2,
+          "myw": {
+             "feature_type": "fiber_cable",
+             "short_description": "D-072-LA-8W-F12NS",
+             "title": "Fiber Cable: WH-FCB-002 (72)"
+          },
+          "properties": {
+             "comsof_auto": false,
+             "diameter": 11.6,
+             "directed": true,
+             "fiber_count": 72,
+             "id": 2,
+             "installation_date": "2002-05-18",
+             "job_id": "20090",
+             "labor_costs": null,
+             "name": "WH-FCB-002",
+             "owner": "SFB Comms",
+             "specification": "D-072-LA-8W-F12NS",
+             "tick_mark_spacing": null,
+             "type": "External"
+          },
+          "secondary_geometries": {
+             "placement_path": {
+                "coordinates": " [0.1353345438838 52.2234612917333]  [0.1339186728001 52.2235859600149]  [0.1336061954498 52.2238804797381]  [0.1346894726157 52.2236900895963] ",
+                "type": "LineString"
+             }
+          },
+          "type": "Feature"
+       },
+       "connection_deletes": [],
+       "connection_updates": [],
+       "deleted_segs": [],
+       "remove_routes": [],
+       "same_routes": [
+          "ug_route(19)    Route (Underground): 19",
+          "ug_route(25)    Route (Underground): 25",
+          "ug_route(279)    Route (Underground): 279",
+          "ug_route(28)    Route (Underground): 28",
+          "ug_route(29)    Route (Underground): 29",
+          "ug_route(30)    Route (Underground): 30",
+          "ug_route(32)    Route (Underground): 32",
+          "ug_route(34)    Route (Underground): 34",
+          "ug_route(35)    Route (Underground): 35",
+          "ug_route(36)    Route (Underground): 36",
+          "ug_route(388)    Route (Underground): 388",
+          "ug_route(53)    Route (Underground): 53"
+       ],
+       "total_disassociations": 0,
+       "total_disconnects": 0
+    }
+    
+    
+    DATABASE CHANGES: AFTER NULL UPDATE
+    
+    VALIDATION ERRORS: AFTER NULL UPDATE
+
+SUB TEST : RE-ROUTE DRY RUN
+    Request: POST: /modules/comms/cable/fiber_cable/5/reroute?delta=design/NB217&dry_run=True
+    Response: 200 (200 OK)
+    {
+       "add_routes": [
+          "ug_route(16)    Route (Underground): 16",
+          "ug_route(19)    Route (Underground): 19",
+          "ug_route(266)    Route (Underground): 266",
+          "ug_route(379)    Route (Underground): 379",
+          "ug_route(5)    Route (Underground): 5"
+       ],
+       "affected_structure_internals": {},
+       "affected_structures": {
+          "cabinet/2": {
+             "disconnects": 12,
+             "feature": "feature: cabinet(2)    Cabinet: WH-C-02"
+          }
+       },
+       "cable": {
+          "bbox": [
+             0.1365425789235,
+             52.2234085078579,
+             0.138112438657,
+             52.2241992324954
+          ],
+          "geometry": {
+             "coordinates": " [0.1365589722991 52.2240903803291]  [0.1365425789235 52.224099619123]  [0.1365757361054 52.2241189283759]  [0.1366508379579039 52.22415671856789]  [0.1366940885782 52.2241782836086]  [0.136796683073 52.2241975894458]  [0.1368496567011 52.2241992324954]  [0.1369147002697 52.2241561024237]  [0.1370407640934 52.2241117400205]  [0.1371963322163 52.2240554654268]  [0.1372814923525 52.2240000122902]  [0.1373431831598 52.2239581143189]  [0.1374105736613241 52.223911903275294]  [0.1376603543758 52.2237190486673]  [0.1378870010376 52.2235407755052]  [0.1380278170109 52.2234265817212]  [0.1380774378777 52.2234085078579]  [0.138112438657 52.2234101509367] ",
+             "type": "LineString"
+          },
+          "id": 5,
+          "myw": {
+             "feature_type": "fiber_cable",
+             "short_description": "D-144-LA-8W-F12NS",
+             "title": "Fiber Cable: WH-FCB-005 (144)"
+          },
+          "properties": {
+             "comsof_auto": false,
+             "diameter": 9.9,
+             "directed": true,
+             "fiber_count": 144,
+             "id": 5,
+             "installation_date": "1998-05-03",
+             "job_id": "22319",
+             "labor_costs": null,
+             "name": "WH-FCB-005",
+             "owner": "Acme Co",
+             "specification": "D-144-LA-8W-F12NS",
+             "tick_mark_spacing": null,
+             "type": "External"
+          },
+          "secondary_geometries": {
+             "placement_path": {
+                "coordinates": " [0.1365589722991 52.2240903803291]  [0.1365757361054 52.2241189283759]  [0.138112438657 52.2234101509367] ",
+                "type": "LineString"
+             }
+          },
+          "type": "Feature"
+       },
+       "connection_deletes": [
+          "mywcom_fiber_connection/21"
+       ],
+       "connection_updates": [],
+       "deleted_segs": [],
+       "remove_routes": [
+          "ug_route(267)    Route (Underground): 267"
+       ],
+       "same_routes": [
+          "ug_route(2)    Route (Underground): 2",
+          "ug_route(3)    Route (Underground): 3",
+          "ug_route(4)    Route (Underground): 4",
+          "ug_route(52)    Route (Underground): 52"
+       ],
+       "total_disassociations": 0,
+       "total_disconnects": 12
+    }
+    
+    
+    DATABASE CHANGES: AFTER RE-ROUTE DRY RUN
+    
+    VALIDATION ERRORS: AFTER RE-ROUTE DRY RUN
+
+SUB TEST : RE-ROUTE
+    Request: POST: /modules/comms/cable/fiber_cable/5/reroute?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "add_routes": [
+          "ug_route(16)    Route (Underground): 16",
+          "ug_route(19)    Route (Underground): 19",
+          "ug_route(266)    Route (Underground): 266",
+          "ug_route(379)    Route (Underground): 379",
+          "ug_route(5)    Route (Underground): 5"
+       ],
+       "affected_structure_internals": {},
+       "affected_structures": {
+          "cabinet/2": {
+             "disconnects": 12,
+             "feature": "feature: cabinet(2)    Cabinet: WH-C-02"
+          }
+       },
+       "cable": {
+          "bbox": [
+             0.1351511478424,
+             52.2233384715684,
+             0.138112438657,
+             52.2241992324954
+          ],
+          "geometry": {
+             "coordinates": " [0.1364935934544 52.224057930009]  [0.136479887788 52.2240683620607]  [0.1364486664534 52.2240527954625]  [0.1364158093929 52.2240369810556]  [0.1363956928253 52.2240246581372]  [0.1361422240734 52.2238882842788]  [0.1359082013369 52.2237605360978]  [0.1355078816414 52.2235444724214]  [0.1353891938925 52.2234799817287]  [0.1353345438838 52.2234612917333]  [0.1352825760841 52.2234890186467]  [0.1352423429489 52.2234964124873]  [0.1351511478424 52.2234988771006]  [0.1352423429489 52.2234964124873]  [0.1352825760841 52.2234890186467]  [0.1353345438838 52.2234612917333]  [0.1353891938925 52.2234799817287]  [0.1355078816414 52.2235444724214]  [0.1359082013369 52.2237605360978]  [0.1361422240734 52.2238882842788]  [0.1363956928253 52.2240246581372]  [0.1364158093929 52.2240369810556]  [0.1364486664534 52.2240527954625]  [0.136479887788 52.2240683620607]  [0.1365425789235 52.224099619123]  [0.1365757361054 52.2241189283759]  [0.1366508379579039 52.22415671856789]  [0.1366940885782 52.2241782836086]  [0.136796683073 52.2241975894458]  [0.1368496567011 52.2241992324954]  [0.1369147002697 52.2241561024237]  [0.1370407640934 52.2241117400205]  [0.1371963322163 52.2240554654268]  [0.1372814923525 52.2240000122902]  [0.1373431831598 52.2239581143189]  [0.1374105736613241 52.223911903275294]  [0.1376603543758 52.2237190486673]  [0.1378870010376 52.2235407755052]  [0.1380278170109 52.2234265817212]  [0.1380774378777 52.2234085078579]  [0.138112438657 52.2234101509367]  [0.1379653233735 52.2233384715684] ",
+             "type": "LineString"
+          },
+          "id": 5,
+          "myw": {
+             "feature_type": "fiber_cable",
+             "short_description": "D-144-LA-8W-F12NS",
+             "title": "Fiber Cable: WH-FCB-005 (144)"
+          },
+          "properties": {
+             "comsof_auto": false,
+             "diameter": 9.9,
+             "directed": true,
+             "fiber_count": 144,
+             "id": 5,
+             "installation_date": "1998-05-03",
+             "job_id": "22319",
+             "labor_costs": null,
+             "name": "WH-FCB-005",
+             "owner": "Acme Co",
+             "specification": "D-144-LA-8W-F12NS",
+             "tick_mark_spacing": null,
+             "type": "External"
+          },
+          "secondary_geometries": {
+             "placement_path": {
+                "coordinates": " [0.1364935934544 52.224057930009]  [0.1351511478424 52.2234988771006]  [0.138112438657 52.2234101509367]  [0.1379653233735 52.2233384715684] ",
+                "type": "LineString"
+             }
+          },
+          "type": "Feature"
+       },
+       "connection_deletes": [
+          "mywcom_fiber_connection/21"
+       ],
+       "connection_updates": [],
+       "deleted_segs": [
+          "mywcom_fiber_segment/52"
+       ],
+       "remove_routes": [
+          "ug_route(267)    Route (Underground): 267"
+       ],
+       "same_routes": [
+          "ug_route(2)    Route (Underground): 2",
+          "ug_route(3)    Route (Underground): 3",
+          "ug_route(4)    Route (Underground): 4",
+          "ug_route(52)    Route (Underground): 52"
+       ],
+       "total_disassociations": 0,
+       "total_disconnects": 12
+    }
+    
+    
+    DATABASE CHANGES: AFTER RE-ROUTE
+       insert delta.fiber_cable(design/NB217,5,update)
+       insert delta.mywcom_fiber_connection(design/NB217,21,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,52,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,53,update)
+       insert delta.mywcom_fiber_segment(design/NB217,586,update)
+       insert delta.mywcom_fiber_segment(design/NB217,100000,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100001,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100002,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100003,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100004,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100005,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100006,insert)
+    
+    VALIDATION ERRORS: AFTER RE-ROUTE
+
+SUB TEST : EXTEND
+    Request: POST: /modules/comms/cable/fiber_cable/17/reroute?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "add_routes": [
+          "ug_route(392)    Route (Underground): 392",
+          "ug_route(43)    Route (Underground): 43",
+          "ug_route(87)    Route (Underground): 87",
+          "ug_route(90)    Route (Underground): 90"
+       ],
+       "affected_structure_internals": {},
+       "affected_structures": {},
+       "cable": {
+          "bbox": [
+             0.1388740539551,
+             52.2249597525442,
+             0.1416072249413,
+             52.2260644653235
+          ],
+          "geometry": {
+             "coordinates": " [0.1389162987471 52.2253760511429]  [0.1388740539551 52.225430270308]  [0.1389008760452 52.2254729883915]  [0.1390296220779 52.225530493439]  [0.139217376709 52.2256553612857]  [0.1392710208893 52.2256898641814]  [0.1392066478729 52.2257243670503]  [0.1394668221474 52.2258640212458]  [0.1395580172539 52.2259330266862]  [0.1396921277046 52.2259773872697]  [0.13981218974 52.2260192833358]  [0.1399227976799 52.2260422850807]  [0.1400153338909 52.2260513214772]  [0.1401735842228 52.2260644653235]  [0.1402942836285 52.2260611793623]  [0.1404163241386 52.2260513214772]  [0.1405718922615 52.2260381776271]  [0.1406738162041 52.226027498246]  [0.1407824456692 52.2260102469327]  [0.1409018039703 52.2259724583182]  [0.141019821167 52.225920704294]  [0.1410363651202 52.2259085435036]  [0.1411204040051 52.225846769869]  [0.1411820948124 52.2258151423274]  [0.141241773963 52.2257781750423]  [0.1412940770388 52.2257399754822]  [0.1413604617119 52.2256906856786]  [0.1413624733686 52.225682470706]  [0.1414006948471 52.2256446818125]  [0.1414429396391 52.225611821879]  [0.1414711028337 52.2255888199111]  [0.1415046304464 52.2255736221757]  [0.141564309597 52.2255009194239]  [0.1416045427322 52.2254647733787]  [0.1416072249413 52.2254204122829]  [0.1415938138962 52.2253579780731]  [0.1415455341339 52.2253004728022]  [0.1415370742242 52.2252841318289]  [0.1410225395384 52.2249702070345]  [0.1410054042935 52.2249597525442] ",
+             "type": "LineString"
+          },
+          "id": 17,
+          "myw": {
+             "feature_type": "fiber_cable",
+             "short_description": "O-048-CN-5L-F12NS",
+             "title": "Fiber Cable: WH-FCB-017 (48)"
+          },
+          "properties": {
+             "comsof_auto": false,
+             "diameter": 12.1,
+             "directed": true,
+             "fiber_count": 48,
+             "id": 17,
+             "installation_date": "2002-05-24",
+             "job_id": "31235",
+             "labor_costs": null,
+             "name": "WH-FCB-017",
+             "owner": "Acme Co",
+             "specification": "O-048-CN-5L-F12NS",
+             "tick_mark_spacing": null,
+             "type": "External"
+          },
+          "secondary_geometries": {
+             "placement_path": {
+                "coordinates": " [0.1389162987471 52.2253760511429]  [0.13981218974 52.2260192833358]  [0.1415046304464 52.2255736221757]  [0.1410054042935 52.2249597525442] ",
+                "type": "LineString"
+             }
+          },
+          "type": "Feature"
+       },
+       "connection_deletes": [],
+       "connection_updates": [],
+       "deleted_segs": [],
+       "remove_routes": [],
+       "same_routes": [
+          "ug_route(110)    Route (Underground): 110",
+          "ug_route(382)    Route (Underground): 382",
+          "ug_route(91)    Route (Underground): 91",
+          "ug_route(92)    Route (Underground): 92"
+       ],
+       "total_disassociations": 0,
+       "total_disconnects": 0
+    }
+    
+    
+    DATABASE CHANGES: AFTER EXTEND
+       insert delta.fiber_cable(design/NB217,17,update)
+       insert delta.mywcom_fiber_segment(design/NB217,124,update)
+       insert delta.mywcom_fiber_segment(design/NB217,127,update)
+       insert delta.mywcom_fiber_segment(design/NB217,100007,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100008,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100009,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100010,insert)
+    
+    VALIDATION ERRORS: AFTER EXTEND
+
+SUB TEST : SHRINK END
+    Request: POST: /modules/comms/cable/fiber_cable/23/reroute?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    b'502 Bad Gateway/n/nBad gateway./n/n/nmywAbort:{"msg": "cable_has_circuit", "params": {"feature": "Cable Segment: 185 (fiber_cable/23)"}}/n/n'
+    
+    
+    DATABASE CHANGES: AFTER SHRINK END
+    
+    VALIDATION ERRORS: AFTER SHRINK END
+
+SUB TEST : SHRINK START
+    Request: POST: /modules/comms/cable/fiber_cable/24/reroute?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "add_routes": [
+          "ug_route(384)    Route (Underground): 384"
+       ],
+       "affected_structure_internals": {},
+       "affected_structures": {
+          "building/1": {
+             "disconnects": 36,
+             "feature": "feature: building(1)    Building: Woodhead Hub"
+          },
+          "cabinet/2": {
+             "disconnects": 36,
+             "feature": "feature: cabinet(2)    Cabinet: WH-C-02"
+          }
+       },
+       "cable": {
+          "bbox": [
+             0.1364935934544,
+             52.2240332841805,
+             0.1365579664707,
+             52.224057930009
+          ],
+          "geometry": {
+             "coordinates": " [0.1365579664707 52.2240476609155]  [0.1365314796567 52.2240332841805]  [0.1364935934544 52.224057930009] ",
+             "type": "LineString"
+          },
+          "id": 24,
+          "myw": {
+             "feature_type": "fiber_cable",
+             "short_description": "D-144-LA-8W-F12NS",
+             "title": "Fiber Cable: WH-FCB-024 (144)"
+          },
+          "properties": {
+             "comsof_auto": false,
+             "diameter": 9.9,
+             "directed": true,
+             "fiber_count": 144,
+             "id": 24,
+             "installation_date": "2006-01-16",
+             "job_id": "36436",
+             "labor_costs": null,
+             "name": "WH-FCB-024",
+             "owner": "Acme Co",
+             "specification": "D-144-LA-8W-F12NS",
+             "tick_mark_spacing": null,
+             "type": "External"
+          },
+          "secondary_geometries": {
+             "placement_path": {
+                "coordinates": " [0.1365579664707 52.2240476609155]  [0.1364935934544 52.224057930009] ",
+                "type": "LineString"
+             }
+          },
+          "type": "Feature"
+       },
+       "connection_deletes": [
+          "mywcom_fiber_connection/19",
+          "mywcom_fiber_connection/267"
+       ],
+       "connection_updates": [],
+       "deleted_segs": [
+          "mywcom_fiber_segment/187",
+          "mywcom_fiber_segment/188"
+       ],
+       "remove_routes": [
+          "ug_route(1)    Route (Underground): 1",
+          "ug_route(273)    Route (Underground): 273"
+       ],
+       "same_routes": [],
+       "total_disassociations": 0,
+       "total_disconnects": 72
+    }
+    
+    
+    DATABASE CHANGES: AFTER SHRINK START
+       insert delta.fiber_cable(design/NB217,24,update)
+       insert delta.mywcom_fiber_connection(design/NB217,19,delete)
+       insert delta.mywcom_fiber_connection(design/NB217,267,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,187,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,188,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,100011,insert)
+    
+    VALIDATION ERRORS: AFTER SHRINK START
+
+SUB TEST : REVERSE
+    Request: POST: /modules/comms/cable/fiber_cable/183/reroute?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "add_routes": [],
+       "affected_structure_internals": {},
+       "affected_structures": {},
+       "cable": {
+          "bbox": [
+             0.1403197646141,
+             52.2263050233211,
+             0.1438370086014,
+             52.2283563640152
+          ],
+          "geometry": {
+             "coordinates": " [0.1438370086014 52.2265861085789]  [0.1437582051599 52.2265381619457]  [0.1435075700283 52.2263856668562]  [0.1432219147682 52.2265721434062]  [0.142993927002 52.2267183667611]  [0.1427820324898 52.2268613037325]  [0.1426023244858 52.2269767208936]  [0.1426559686661 52.2270370991467]  [0.142822265625 52.2271241751221]  [0.142993927002 52.2272161797408]  [0.1431038975716 52.2273048982997]  [0.1431414484978 52.2273689727042]  [0.1431488245726 52.2274408509326]  [0.1431414484978 52.2275373729419]  [0.1430676877499 52.2276425200834]  [0.1429630815983 52.2277164515183]  [0.1428504288197 52.2277887399132]  [0.142732411623 52.2278659569324]  [0.1426532864571 52.2279398879952]  [0.1425406336784 52.2280105331179]  [0.1424467563629 52.2280631061595]  [0.142288506031 52.22817071641]  [0.142190605402 52.2282380753653]  [0.1421383023262 52.2282717548047]  [0.1420779526234 52.2283037913208]  [0.1419465243816 52.228340756503]  [0.141833871603 52.2283530782236]  [0.1416943967342 52.2283563640152]  [0.1416045427322 52.2283399350549]  [0.1414865255356 52.2283095414623]  [0.1414275169373 52.2282807907475]  [0.141289383173 52.228202752999]  [0.1411499083042 52.2281263580177]  [0.141064748168 52.2280733743244]  [0.1409815996885 52.2280598203462]  [0.1409286260605 52.2280359981927]  [0.1408991217613 52.2280014971201]  [0.140837430954 52.2279489240055]  [0.1406925916672 52.2278684213032]  [0.1405370235443 52.2277879184549]  [0.1404565572739 52.2277369880061]  [0.1404029130936 52.227681128737]  [0.1403573155403 52.2276301981657]  [0.1403465867043 52.2275423017197]  [0.1403197646141 52.2275102646541]  [0.1403197646141 52.227444547524]  [0.1403278112411 52.2274149747838]  [0.1403814554214 52.2273706156365]  [0.1405155658722 52.227270396659]  [0.140663087368 52.2271701774553]  [0.1408280432224 52.2270674936103]  [0.1408535242081 52.2270091690806]  [0.1409929990768 52.2269483800527]  [0.1411163806915 52.2268678755362]  [0.1412719488144 52.2267594406506]  [0.141384601593 52.2266871505797]  [0.1415240764618 52.2266395047868]  [0.1415729019203 52.2266327755927]  [0.1416313648224 52.2266247181511]  [0.1416930556297 52.2266206107514]  [0.1418459415436 52.2266329329493]  [0.1419639587402 52.226660863252]  [0.1420766115189 52.226708509022]  [0.1424065232277 52.2268859479913]  [0.1424306631088 52.2269056633886]  [0.1425352692604 52.2269105922366]  [0.1426613330841 52.2268120151736]  [0.1428088545799 52.226708509022]  [0.143010020256 52.2265737863679]  [0.1432165503502 52.2264423492384]  [0.1433533430099 52.2263437711358]  [0.1433643994437 52.2263050233211] ",
+             "type": "LineString"
+          },
+          "id": 183,
+          "myw": {
+             "feature_type": "fiber_cable",
+             "short_description": "O-048-CN-5L-F12NS",
+             "title": "Fiber Cable: WH-FCB-183 (48)"
+          },
+          "properties": {
+             "comsof_auto": false,
+             "diameter": 12.1,
+             "directed": false,
+             "fiber_count": 48,
+             "id": 183,
+             "installation_date": null,
+             "job_id": "23501",
+             "labor_costs": null,
+             "name": "WH-FCB-183",
+             "owner": "Acme Co",
+             "specification": "O-048-CN-5L-F12NS",
+             "tick_mark_spacing": null,
+             "type": "External"
+          },
+          "secondary_geometries": {
+             "placement_path": {
+                "coordinates": " [0.1438370086014 52.2265861085789]  [0.1431488245726 52.2274408509326]  [0.141064748168 52.2280733743244]  [0.1408280432224 52.2270674936103]  [0.1433643994437 52.2263050233211] ",
+                "type": "LineString"
+             }
+          },
+          "type": "Feature"
+       },
+       "connection_deletes": [],
+       "connection_updates": [
+          "mywcom_fiber_connection/223",
+          "mywcom_fiber_connection/224",
+          "mywcom_fiber_connection/225",
+          "mywcom_fiber_connection/226",
+          "mywcom_fiber_connection/227",
+          "mywcom_fiber_connection/228",
+          "mywcom_fiber_connection/229",
+          "mywcom_fiber_connection/230",
+          "mywcom_fiber_connection/231",
+          "mywcom_fiber_connection/232",
+          "mywcom_fiber_connection/233",
+          "mywcom_fiber_connection/234",
+          "mywcom_fiber_connection/235"
+       ],
+       "deleted_segs": [
+          "mywcom_fiber_segment/438",
+          "mywcom_fiber_segment/439",
+          "mywcom_fiber_segment/440",
+          "mywcom_fiber_segment/441",
+          "mywcom_fiber_segment/442",
+          "mywcom_fiber_segment/443",
+          "mywcom_fiber_segment/444",
+          "mywcom_fiber_segment/445",
+          "mywcom_fiber_segment/446",
+          "mywcom_fiber_segment/447",
+          "mywcom_fiber_segment/448"
+       ],
+       "remove_routes": [],
+       "same_routes": [
+          "ug_route(112)    Route (Underground): 112",
+          "ug_route(368)    Route (Underground): 368",
+          "ug_route(369)    Route (Underground): 369",
+          "ug_route(383)    Route (Underground): 383",
+          "ug_route(93)    Route (Underground): 93",
+          "ug_route(94)    Route (Underground): 94",
+          "ug_route(95)    Route (Underground): 95",
+          "ug_route(96)    Route (Underground): 96",
+          "ug_route(97)    Route (Underground): 97",
+          "ug_route(98)    Route (Underground): 98",
+          "ug_route(99)    Route (Underground): 99"
+       ],
+       "total_disassociations": 0,
+       "total_disconnects": 0
+    }
+    
+    
+    DATABASE CHANGES: AFTER REVERSE
+       insert delta.fiber_cable(design/NB217,183,update)
+       insert delta.mywcom_fiber_connection(design/NB217,223,update)
+       insert delta.mywcom_fiber_connection(design/NB217,224,update)
+       insert delta.mywcom_fiber_connection(design/NB217,225,update)
+       insert delta.mywcom_fiber_connection(design/NB217,226,update)
+       insert delta.mywcom_fiber_connection(design/NB217,227,update)
+       insert delta.mywcom_fiber_connection(design/NB217,228,update)
+       insert delta.mywcom_fiber_connection(design/NB217,229,update)
+       insert delta.mywcom_fiber_connection(design/NB217,230,update)
+       insert delta.mywcom_fiber_connection(design/NB217,231,update)
+       insert delta.mywcom_fiber_connection(design/NB217,232,update)
+       insert delta.mywcom_fiber_connection(design/NB217,233,update)
+       insert delta.mywcom_fiber_connection(design/NB217,234,update)
+       insert delta.mywcom_fiber_connection(design/NB217,235,update)
+       insert delta.mywcom_fiber_segment(design/NB217,438,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,439,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,440,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,441,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,442,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,443,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,444,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,445,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,446,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,447,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,448,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,100012,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100013,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100014,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100015,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100016,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100017,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100018,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100019,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100020,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100021,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100022,insert)
+    
+    VALIDATION ERRORS: AFTER REVERSE
+
+SUB TEST : UPDATE VIA TRIGGERS : fiber_cable/183
+    Request: GET: /feature/fiber_cable/183
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /modules/comms/feature/fiber_cable/183?delta=design/NB217
+    Response: 201 (201 Created)
+    
+    
+    DATABASE CHANGES: AFTER UPDATE VIA TRIGGERS
+       update delta.fiber_cable(design/NB217,183,update) fields=(path,placement_path)
+       update delta.mywcom_fiber_connection(design/NB217,223,update) fields=(in_object)
+       update delta.mywcom_fiber_connection(design/NB217,224,update) fields=(in_object)
+       update delta.mywcom_fiber_connection(design/NB217,225,update) fields=(out_object)
+       update delta.mywcom_fiber_connection(design/NB217,226,update) fields=(out_object)
+       update delta.mywcom_fiber_connection(design/NB217,227,update) fields=(in_object)
+       update delta.mywcom_fiber_connection(design/NB217,228,update) fields=(out_object)
+       update delta.mywcom_fiber_connection(design/NB217,229,update) fields=(in_object)
+       update delta.mywcom_fiber_connection(design/NB217,230,update) fields=(out_object)
+       update delta.mywcom_fiber_connection(design/NB217,231,update) fields=(in_object,out_object)
+       update delta.mywcom_fiber_connection(design/NB217,232,update) fields=(in_object,out_object)
+       update delta.mywcom_fiber_connection(design/NB217,233,update) fields=(in_object,out_object)
+       update delta.mywcom_fiber_connection(design/NB217,234,update) fields=(in_object,out_object)
+       update delta.mywcom_fiber_connection(design/NB217,235,update) fields=(in_object,out_object)
+       insert delta.mywcom_fiber_segment(design/NB217,100023,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100024,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100025,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100026,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100027,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100028,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100029,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100030,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100031,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100032,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100033,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100012,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100013,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100014,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100015,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100016,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100017,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100018,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100019,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100020,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100021,insert)
+       delete delta.mywcom_fiber_segment(design/NB217,100022,insert)
+    
+    VALIDATION ERRORS: AFTER UPDATE VIA TRIGGERS

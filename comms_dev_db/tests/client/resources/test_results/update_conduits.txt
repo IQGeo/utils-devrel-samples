@@ -1,0 +1,85 @@
+TEST: EQUIPMENT TREE WITH CUT PASS THROUGH TUBES
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: BF Bundle: (4) BF Tube: WH-BF-175 : 1 BF Tube: WH-BF-180 : 2 BF Tube: WH-BF-185 : 3 BF Tube: WH-BF-190 : 4
+    label: BF Tube: WH-BF-175 : 1
+    label: BF Tube: WH-BF-180 : 2
+    label: BF Tube: WH-BF-185 : 3
+    label: BF Tube: WH-BF-190 : 4
+    label: BF Bundle: (6) == BF Bundle: (6) BF Tube: WH-BF-73 : 1 BF Tube: WH-BF-73 : 1 BF Tube: WH-BF-77 : 2 == BF Tube: WH-BF-77 : 2 BF Tube: WH-BF-81 : 3 == BF Tube: WH-BF-81 : 3 BF Tube: WH-BF-85 : 4 == BF Tube: WH-BF-85 : 4 BF Tube: WH-BF-89 : 5 == BF Tube: WH-BF-89 : 5 BF Tube: WH-BF-93 : 6 == BF Tube: WH-BF-93 : 6
+    label: BF Tube: WH-BF-73 : 1
+    label: BF Tube: WH-BF-73 : 1
+    label: BF Tube: WH-BF-77 : 2 == BF Tube: WH-BF-77 : 2
+    label: BF Tube: WH-BF-81 : 3 == BF Tube: WH-BF-81 : 3
+    label: BF Tube: WH-BF-85 : 4 == BF Tube: WH-BF-85 : 4
+    label: BF Tube: WH-BF-89 : 5 == BF Tube: WH-BF-89 : 5
+    label: BF Tube: WH-BF-93 : 6 == BF Tube: WH-BF-93 : 6
+    label: WH-FCB-009 : IN (0/96) @589
+    label: WH-FCB-009 : OUT (0/96) @589
+
+
+DATABASE CHANGES: AFTER CUT PASS THROUGHS
+   insert delta.blown_fiber_tube(design/NB046,75,update)
+   insert delta.blown_fiber_tube(design/NB046,76,update)
+   insert delta.blown_fiber_tube(design/NB046,79,update)
+   insert delta.blown_fiber_tube(design/NB046,80,update)
+   insert delta.mywcom_conduit_run(design/NB046,100000,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100001,insert)
+   insert delta.mywcom_conduit_run(design/NB046,17,update)
+   insert delta.mywcom_conduit_run(design/NB046,58,update)
+
+TEST: JOINED TUBE PATH
+    input: WH-M-48
+    list item: Previous view
+    list item: Next view
+    list item: Go to home bookmark
+    list item: Add and manage bookmarks
+    list item: Share map
+    list item: Add object
+    list item: Measurement tool
+    list item: Show current location
+    list item: Print map
+    list item: Network trace tool
+    list item: Schematic view
+    list item: Tools palette
+    list item: Structure palette
+    list item: Equipment palette
+    list item: Markup palette
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: list-export
+    list item: Zoom to all
+    list item: More...
+    label: BF Tube: WH-BF-73 : 1
+    label: BF Tube: WH-BF-73 : 1
+    label: BF Tube: WH-BF-77 : 2
+    label: BF Tube: WH-BF-77 : 2
+    button: +
+    button: –
+    button: ol-zoomslider-thumb ol-unselectable
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Export
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+    button: toolbar-expand-button
+    label: [Comms] designer
+    label: Built by
+
+
+DATABASE CHANGES: AFTER JOIN TUBES
+   delete delta.mywcom_conduit_run(design/NB046,100001,insert)
+   update delta.blown_fiber_tube(design/NB046,75,update) fields=(out_conduit)
+   update delta.blown_fiber_tube(design/NB046,80,update) fields=(conduit_run,out_conduit)
+   update delta.mywcom_conduit_run(design/NB046,58,update) fields=(path)
+

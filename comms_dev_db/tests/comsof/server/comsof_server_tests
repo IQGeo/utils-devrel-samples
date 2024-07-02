@@ -1,0 +1,13 @@
+#!/bin/bash
+# Bash wrapper to myWorld rest api tests 
+
+HERE=$(dirname `which $0`)
+
+# Set location of INI file
+export MYW_APP_ROOT=$HERE/../../../../../..
+
+# Init environment
+source ${MYW_APP_ROOT}/../Tools/myw_env
+
+# Run command
+python $0.py "$@"

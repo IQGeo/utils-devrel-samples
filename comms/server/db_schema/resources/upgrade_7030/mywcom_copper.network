@@ -1,0 +1,19 @@
+{
+    "name": "mywcom_copper",
+    "external_name": "{:copper_network_name}",
+    "description": "{:copper_network_desc}",
+    "topology": "tree",
+    "directed": true,
+    "engine": "mywcom_pin_network_engine",
+    "feature_types": {
+        "mywcom_copper_segment": {
+            "upstream": "copper_connections",
+            "downstream": "copper_connections",
+            "length": "length"
+        },
+        "mywcom_copper_connection": {
+            "upstream": "in_object",
+            "downstream": "out_object"
+        }
+    }
+}

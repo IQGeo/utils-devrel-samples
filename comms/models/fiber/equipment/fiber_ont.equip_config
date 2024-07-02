@@ -1,0 +1,13 @@
+{
+    "image": "modules/comms/images/features/fiber_ont.svg",
+    "housings": ["wall_box", "mdu", "room"],
+    "function": "terminal",
+    "palette": true,
+    "tech": "fiber",
+    "layer": {
+        "min_vis": 18,
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/fiber_ont.svg:12:12"
+    }
+}

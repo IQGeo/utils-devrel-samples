@@ -1,0 +1,340 @@
+Set delta to: design/NB046
+
+*** ADD IN TICKS TO LAST SEGMENT
+DATABASE CHANGES: ADD IN TICKS TO LAST SEGMENT
+    insert delta.mywcom_fiber_segment(design/NB046,74,update)
+    insert delta.mywcom_fiber_segment(design/NB046,75,update)
+
+
+mywcom_fiber_segment/74
+in_tick :  207
+out_tick :  80
+length :  127
+
+mywcom_fiber_segment/75
+in_tick :  80
+out_tick :  0
+length :  80
+
+*** ADD OUT TICKS TO LAST SEGMENT
+DATABASE CHANGES: ADD OUT TICKS TO LAST SEGMENT
+    update delta.mywcom_fiber_segment(design/NB046,75,update) fields=(length,out_tick)
+
+
+mywcom_fiber_segment/74
+in_tick :  207
+out_tick :  80
+length :  127
+
+mywcom_fiber_segment/75
+in_tick :  80
+out_tick :  50
+length :  30
+
+*** SET TICK WITH SLACK
+DATABASE CHANGES: SET TICK WITH SLACK
+    insert delta.mywcom_fiber_segment(design/NB046,381,update)
+    insert delta.mywcom_fiber_segment(design/NB046,597,update)
+
+
+mywcom_fiber_segment/380
+in_tick :  16
+out_tick :  440
+length :  null
+
+mywcom_fiber_segment/381
+in_tick :  440
+out_tick :  504
+length :  320
+
+mywcom_fiber_segment/382
+in_tick :  504
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/383
+in_tick :  null
+out_tick :  541
+length :  null
+
+mywcom_fiber_segment/384
+in_tick :  541
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/385
+in_tick :  null
+out_tick :  557
+length :  null
+
+mywcom_fiber_segment/386
+in_tick :  557
+out_tick :  578
+length :  null
+
+mywcom_fiber_segment/387
+in_tick :  595
+out_tick :  825
+length :  null
+
+mywcom_fiber_segment/388
+in_tick :  842
+out_tick :  1070
+length :  null
+
+mywcom_fiber_segment/389
+in_tick :  1365
+out_tick :  1407
+length :  null
+
+mywcom_fiber_segment/587
+in_tick :  1070
+out_tick :  1365
+length :  90
+
+mywcom_fiber_segment/595
+in_tick :  825
+out_tick :  842
+length :  5
+
+mywcom_fiber_segment/596
+in_tick :  0
+out_tick :  16
+length :  5
+
+mywcom_fiber_segment/597
+in_tick :  440
+out_tick :  440
+length :  null
+
+mywcom_fiber_segment/598
+in_tick :  578
+out_tick :  595
+length :  5
+
+*** SET TICK ON CABLE WITH ROUTE JUNCTIONS
+DATABASE CHANGES: SET TICK ON CABLE WITH ROUTE JUNCTIONS
+    insert delta.mywcom_fiber_segment(design/NB046,390,update)
+    insert delta.mywcom_fiber_segment(design/NB046,391,update)
+
+
+mywcom_fiber_segment/390
+in_tick :  45
+out_tick :  null
+length :  22.1261834116
+
+mywcom_fiber_segment/391
+in_tick :  null
+out_tick :  0
+length :  22.8738165884
+
+*** SET TICK TO NULL
+DATABASE CHANGES: SET TICK TO NULL
+    insert delta.mywcom_fiber_segment(design/NB046,18,update)
+    insert delta.mywcom_fiber_segment(design/NB046,19,update)
+
+
+mywcom_fiber_segment/1
+in_tick :  0
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/2
+in_tick :  null
+out_tick :  344
+length :  null
+
+mywcom_fiber_segment/3
+in_tick :  442
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/4
+in_tick :  null
+out_tick :  476
+length :  null
+
+mywcom_fiber_segment/5
+in_tick :  476
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/6
+in_tick :  null
+out_tick :  623
+length :  null
+
+mywcom_fiber_segment/7
+in_tick :  623
+out_tick :  651
+length :  null
+
+mywcom_fiber_segment/8
+in_tick :  782
+out_tick :  1017
+length :  null
+
+mywcom_fiber_segment/9
+in_tick :  1017
+out_tick :  1243
+length :  null
+
+mywcom_fiber_segment/10
+in_tick :  1243
+out_tick :  1296
+length :  null
+
+mywcom_fiber_segment/11
+in_tick :  1296
+out_tick :  1437
+length :  null
+
+mywcom_fiber_segment/12
+in_tick :  1437
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/13
+in_tick :  null
+out_tick :  1543
+length :  null
+
+mywcom_fiber_segment/14
+in_tick :  1543
+out_tick :  1664
+length :  null
+
+mywcom_fiber_segment/15
+in_tick :  1664
+out_tick :  1762
+length :  null
+
+mywcom_fiber_segment/16
+in_tick :  1762
+out_tick :  1895
+length :  null
+
+mywcom_fiber_segment/17
+in_tick :  1895
+out_tick :  2085
+length :  null
+
+mywcom_fiber_segment/18
+in_tick :  2085
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/19
+in_tick :  null
+out_tick :  2273
+length :  null
+
+mywcom_fiber_segment/581
+in_tick :  344
+out_tick :  442
+length :  30
+
+mywcom_fiber_segment/582
+in_tick :  651
+out_tick :  782
+length :  40
+
+*** SET TICK TO ZERO
+DATABASE CHANGES: SET TICK TO ZERO
+    insert delta.mywcom_fiber_segment(design/NB046,429,update)
+
+
+mywcom_fiber_segment/429
+in_tick :  0
+out_tick :  9
+length :  9
+
+mywcom_fiber_segment/430
+in_tick :  9
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/431
+in_tick :  null
+out_tick :  91
+length :  null
+
+*** SET INVALID TICK AT END
+Error: overlapping_tick_mark
+
+DATABASE CHANGES: SET INVALID TICK AT END
+
+
+mywcom_fiber_segment/20
+in_tick :  1015
+out_tick :  970
+length :  null
+
+mywcom_fiber_segment/21
+in_tick :  970
+out_tick :  711
+length :  null
+
+mywcom_fiber_segment/22
+in_tick :  711
+out_tick :  675
+length :  null
+
+mywcom_fiber_segment/23
+in_tick :  675
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/24
+in_tick :  null
+out_tick :  537
+length :  null
+
+mywcom_fiber_segment/25
+in_tick :  537
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/26
+in_tick :  null
+out_tick :  500
+length :  null
+
+mywcom_fiber_segment/27
+in_tick :  418
+out_tick :  null
+length :  null
+
+mywcom_fiber_segment/28
+in_tick :  null
+out_tick :  347
+length :  null
+
+mywcom_fiber_segment/29
+in_tick :  347
+out_tick :  259
+length :  null
+
+mywcom_fiber_segment/30
+in_tick :  259
+out_tick :  178
+length :  null
+
+mywcom_fiber_segment/31
+in_tick :  178
+out_tick :  120
+length :  null
+
+mywcom_fiber_segment/32
+in_tick :  120
+out_tick :  0
+length :  null
+
+mywcom_fiber_segment/583
+in_tick :  500
+out_tick :  418
+length :  25
+
+*** SET INVALID TICK AT MIDDLE OF CABLE
+Error: overlapping_tick_mark
+

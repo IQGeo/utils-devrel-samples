@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ActionLog>
+  <ActionLogEntry timestamp="2022/11/08 12:12:36" action="/streetDoubler" tooltip="" icon="doubler.png"/>
+  <ActionLogEntry timestamp="2022/11/08 12:12:39" action="/createBuildingTrenches" tooltip="Create the suggested building to street trenches." icon="drop.png"/>
+  <ActionLogEntry timestamp="2022/11/08 12:12:42" action="/createTransitions" tooltip="Generate transitions from existing pipes." icon="transitions.png"/>
+  <ActionLogEntry timestamp="2022/11/08 12:12:45" action="/processInput" tooltip="Read in the shape files of a new area, preparing them for use in calculations." icon="process_area.png"/>
+  <ActionLogEntry timestamp="2022/11/08 12:13:13" action="/calculate" tooltip="Calculate the network and copy the results (clusters and aggregation nodes) back to the CalculationInput folder." icon="fiberplanit.png"/>
+  <ActionLogEntry timestamp="2022/11/08 12:16:13" action="/streetDoubler" tooltip="" icon="doubler.png"/>
+  <ActionLogEntry timestamp="2022/11/08 12:16:16" action="/createBuildingTrenches" tooltip="Create the suggested building to street trenches." icon="drop.png"/>
+  <ActionLogEntry timestamp="2022/11/08 12:16:19" action="/createTransitions" tooltip="Generate transitions from existing pipes." icon="transitions.png"/>
+  <ActionLogEntry timestamp="2022/11/08 12:16:23" action="/processInput" tooltip="Read in the shape files of a new area, preparing them for use in calculations." icon="process_area.png"/>
+  <ActionLogEntry timestamp="2022/11/08 12:16:44" action="/calculate" tooltip="Calculate the network and copy the results (clusters and aggregation nodes) back to the CalculationInput folder." icon="fiberplanit.png"/>
+</ActionLog>

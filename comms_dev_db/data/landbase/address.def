@@ -1,0 +1,96 @@
+{
+    "datasource": "myworld",
+    "name": "address",
+    "external_name": "Address",
+    "title": "{display_name}: [street_number] [street_name]",
+    "short_description": "[name] [street_number] [street_name] [city] [postcode]",
+    "track_changes": true,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": true,
+        "delete_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "Id",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "Name",
+            "type": "string"
+        },
+        {
+            "name": "street_number",
+            "external_name": "Number",
+            "type": "string"
+        },
+        {
+            "name": "street_name",
+            "external_name": "Street",
+            "type": "string"
+        },
+        {
+            "name": "city",
+            "external_name": "City",
+            "type": "string"
+        },
+        {
+            "name": "postcode",
+            "external_name": "Postcode",
+            "type": "string"
+        },
+        {
+            "name": "building",
+            "external_name": "Building",
+            "type": "reference",
+            "read_only": true
+        },
+        {
+            "name": "location",
+            "external_name": "Location",
+            "type": "point"
+        },
+        {
+            "name": "service_status",
+            "external_name": "Service Status",
+            "type": "string()",
+            "enum": "service_status"
+        },
+        {
+            "name": "circuits",
+            "type": "reference_set",
+            "value": "select(ftth_circuit.address)",
+            "read_only": true
+        },
+        {
+            "name": "serving_equipment",
+            "external_name": "Serving Equipment",
+            "type": "reference(fiber_splitter,fiber_tap,fiber_ont)",
+            "editor_class": "myw.CommsEquipRefFieldEditor"
+        },
+        {
+            "name": "serving_structure",
+            "external_name": "Serving Structure",
+            "type": "reference"
+        }
+    ],
+    "groups": [],
+    "searches": [
+        {
+            "value": " [street_number] [street_name]",
+            "description": " {title}",
+            "lang": "en"
+        }
+    ],
+    "queries": [
+        {
+            "value": "address",
+            "description": "Address"
+        }
+    ],
+    "filters": []
+}

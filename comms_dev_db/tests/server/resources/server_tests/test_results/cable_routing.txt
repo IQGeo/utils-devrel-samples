@@ -1,0 +1,252 @@
+
+SUB TEST : ROUTE DROP CABLE
+    Request: POST: /modules/comms/cable/fiber_cable/3/route?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "cable": {
+          "bbox": [
+             0.1389317214489,
+             52.2238911596356,
+             0.1390732079744,
+             52.2240747713173
+          ],
+          "geometry": {
+             "coordinates": [
+                [
+                   0.1389317214489,
+                   52.2240747713173
+                ],
+                [
+                   0.1390732079744,
+                   52.2238911596356
+                ]
+             ],
+             "type": "LineString"
+          },
+          "id": 3,
+          "myw": {
+             "feature_type": "fiber_cable",
+             "short_description": "D-144-LA-8W-F12NS",
+             "title": "Fiber Cable: WH-FCB-003 (144)"
+          },
+          "properties": {
+             "comsof_auto": false,
+             "diameter": 9.9,
+             "directed": true,
+             "fiber_count": 144,
+             "id": 3,
+             "installation_date": null,
+             "job_id": "20833",
+             "labor_costs": null,
+             "name": "WH-FCB-003",
+             "owner": "Acme Co",
+             "specification": "D-144-LA-8W-F12NS",
+             "tick_mark_spacing": null,
+             "type": "External"
+          },
+          "secondary_geometries": {
+             "placement_path": {
+                "coordinates": [
+                   [
+                      0.1389317214489,
+                      52.2240747713173
+                   ],
+                   [
+                      0.1390732079744,
+                      52.2238911596356
+                   ]
+                ],
+                "type": "LineString"
+             }
+          },
+          "type": "Feature"
+       }
+    }
+    
+    
+    DATABASE CHANGES: AFTER ROUTE CABLE
+       insert delta.fiber_cable(design/NB217,3,update)
+       insert delta.mywcom_fiber_segment(design/NB217,100000,insert)
+    
+    VALIDATION ERRORS: AFTER ROUTE CABLE
+
+SUB TEST : ROUTE UNDERGROUND CABLE WITH VIA POINTS
+    Request: POST: /modules/comms/cable/fiber_cable/3/route?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "cable": {
+          "bbox": [
+             0.1352216786448,
+             52.2234101509367,
+             0.1374105736613241,
+             52.2241992324954
+          ],
+          "geometry": {
+             "coordinates": [
+                [
+                   0.1374105736613241,
+                   52.223911903275294
+                ],
+                [
+                   0.1373431831598,
+                   52.2239581143189
+                ],
+                [
+                   0.1372814923525,
+                   52.2240000122902
+                ],
+                [
+                   0.1371963322163,
+                   52.2240554654268
+                ],
+                [
+                   0.1370407640934,
+                   52.2241117400205
+                ],
+                [
+                   0.1369147002697,
+                   52.2241561024237
+                ],
+                [
+                   0.1368496567011,
+                   52.2241992324954
+                ],
+                [
+                   0.136796683073,
+                   52.2241975894458
+                ],
+                [
+                   0.1366940885782,
+                   52.2241782836086
+                ],
+                [
+                   0.1366508379579039,
+                   52.22415671856789
+                ],
+                [
+                   0.1365757361054,
+                   52.2241189283759
+                ],
+                [
+                   0.136455707252,
+                   52.2241862934783
+                ],
+                [
+                   0.1365757361054,
+                   52.2241189283759
+                ],
+                [
+                   0.1365425789235,
+                   52.224099619123
+                ],
+                [
+                   0.136479887788,
+                   52.2240683620607
+                ],
+                [
+                   0.1364486664534,
+                   52.2240527954625
+                ],
+                [
+                   0.1364158093929,
+                   52.2240369810556
+                ],
+                [
+                   0.1363956928253,
+                   52.2240246581372
+                ],
+                [
+                   0.1361422240734,
+                   52.2238882842788
+                ],
+                [
+                   0.1359082013369,
+                   52.2237605360978
+                ],
+                [
+                   0.1355078816414,
+                   52.2235444724214
+                ],
+                [
+                   0.1353891938925,
+                   52.2234799817287
+                ],
+                [
+                   0.1353345438838,
+                   52.2234612917333
+                ],
+                [
+                   0.1352216786448,
+                   52.2234222939998
+                ],
+                [
+                   0.1352356374264,
+                   52.2234101509367
+                ]
+             ],
+             "type": "LineString"
+          },
+          "id": 3,
+          "myw": {
+             "change_type": "update",
+             "delta": "design/NB217",
+             "feature_type": "fiber_cable",
+             "short_description": "D-144-LA-8W-F12NS",
+             "title": "Fiber Cable: WH-FCB-003 (144)"
+          },
+          "properties": {
+             "comsof_auto": false,
+             "diameter": 9.9,
+             "directed": true,
+             "fiber_count": 144,
+             "id": 3,
+             "installation_date": null,
+             "job_id": "20833",
+             "labor_costs": null,
+             "name": "WH-FCB-003",
+             "owner": "Acme Co",
+             "specification": "D-144-LA-8W-F12NS",
+             "tick_mark_spacing": null,
+             "type": "External"
+          },
+          "secondary_geometries": {
+             "placement_path": {
+                "coordinates": [
+                   [
+                      0.1374105736613241,
+                      52.223911903275294
+                   ],
+                   [
+                      0.136455707252,
+                      52.2241862934783
+                   ],
+                   [
+                      0.1353345438838,
+                      52.2234612917333
+                   ],
+                   [
+                      0.1352356374264,
+                      52.2234101509367
+                   ]
+                ],
+                "type": "LineString"
+             }
+          },
+          "type": "Feature"
+       }
+    }
+    
+    
+    DATABASE CHANGES: AFTER ROUTE CABLE
+       update delta.fiber_cable(design/NB217,3,update) fields=(path,placement_path)
+       insert delta.mywcom_fiber_segment(design/NB217,100001,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100002,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100003,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100004,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100005,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100006,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100007,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100008,insert)
+       insert delta.mywcom_fiber_segment(design/NB217,100009,insert)
+    
+    VALIDATION ERRORS: AFTER ROUTE CABLE

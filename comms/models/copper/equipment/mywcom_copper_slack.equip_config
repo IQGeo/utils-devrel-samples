@@ -1,0 +1,7 @@
+ {
+    "image": "modules/comms/images/features/fiber_slack.svg",
+    "housings": ["building", "mdu", "cabinet", "manhole", "pole", "splice_closure", "wall_box"],
+    "function": "slack",
+    "palette": false,
+    "tech": "copper"
+}

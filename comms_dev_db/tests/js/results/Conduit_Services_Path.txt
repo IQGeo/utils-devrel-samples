@@ -1,0 +1,36 @@
+
+*** FIND PATH
+Set delta to: design/NB046
+[
+	"ug_route/9: Route (Underground): 9 design/NB046",
+	"ug_route/4002: Route (Underground): 4002 design/NB046",
+	"ug_route/10: Route (Underground): 10",
+	"ug_route/394: Route (Underground): 394",
+	"ug_route/395: Route (Underground): 395",
+	"ug_route/11: Route (Underground): 11",
+	"ug_route/396: Route (Underground): 396",
+	"ug_route/397: Route (Underground): 397",
+	"ug_route/12: Route (Underground): 12"
+]
+DATABASE CHANGES: FIND PATH
+
+VALIDATION ERRORS: FIND PATH
+
+
+*** BLOWN FIBER FIND PATH
+Set delta to: design/NB046
+[
+	"ug_route/9: Route (Underground): 9 design/NB046",
+	"ug_route/4002: Route (Underground): 4002 design/NB046",
+	"ug_route/10: Route (Underground): 10",
+	"ug_route/394: Route (Underground): 394",
+	"ug_route/395: Route (Underground): 395",
+	"ug_route/11: Route (Underground): 11",
+	"ug_route/396: Route (Underground): 396",
+	"ug_route/397: Route (Underground): 397",
+	"ug_route/12: Route (Underground): 12"
+]
+DATABASE CHANGES: BLOWN FIBER FIND PATH
+
+VALIDATION ERRORS: BLOWN FIBER FIND PATH
+

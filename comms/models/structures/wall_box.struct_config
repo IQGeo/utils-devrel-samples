@@ -1,0 +1,9 @@
+{
+    "image": "modules/comms/images/features/wall_box.svg",
+    "palette": true,
+    "layer": {
+        "min_vis": 19,
+        "point_style": "triangle:#999999:0.6m:#000000",
+        "text_style": "name:#000000:0.5m:top+0.8:centre::"
+    }
+}

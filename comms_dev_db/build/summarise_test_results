@@ -1,0 +1,38 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+   echo "Usage: $(basename "$0") <db_file> <build>"
+   exit 1
+fi
+
+db_file="$1"
+build="$2"
+
+path="$(cd "$(dirname "$0")/../../../../../Tools" && pwd):$PATH"
+
+test_results "$db_file" list "$build/validation/*/*" --group --columns suite,test,linux
+echo
+
+test_results "$db_file" list "$build/tools/*/*" --group --columns suite,test,linux
+echo
+
+test_results "$db_file" list "$build/engine/*/*" --group --columns suite,test,linux
+echo
+
+test_results "$db_file" list "$build/server/*/*" --group --columns suite,test,linux
+echo
+
+test_results "$db_file" list "$build/js_api/*/*" --group --columns suite,test,linux,native
+echo
+
+test_results "$db_file" list "$build/client/*/*" --group --columns suite,test, #need space after comma, seems hacky
+echo
+
+test_results "$db_file" list "$build/comsof_engine/*/*" --group --columns suite,test,linux 
+echo
+
+test_results "$db_file" list "$build/comsof_server/*/*" --group --columns suite,test,linux
+echo
+
+test_results "$db_file" list "$build/comsof_client/*/*" --group --columns suite,test, #need space after comma, seems hacky
+echo

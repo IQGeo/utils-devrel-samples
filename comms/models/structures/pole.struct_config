@@ -1,0 +1,9 @@
+{
+    "image": "modules/comms/images/features/pole.svg",
+    "palette": true,
+    "layer": {
+        "min_vis": 18,
+        "point_style": "circle:#abe2ab:1.5m:#008000",
+        "text_style": "name:#38761d:1.5m:middle:left+1.5::"
+    }
+}

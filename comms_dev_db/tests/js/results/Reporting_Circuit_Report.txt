@@ -1,0 +1,59 @@
+
+*** ug_route/6
+
+CIRCUIT REPORT: csv
+CircuitReport.type
+Route (Underground): 6
+CircuitReport.date: 6/10/2020
+
+
+CircuitReport.cable,CircuitReport.pin,CircuitReport.name,Service Type,Status,Customer
+WH-FCB-022,#001,WH-FTTH-030,PON1,In Service,"Jennings,M"
+,#001,WH-FTTH-031,PON1,In Service,"Middleton,A"
+,#001,WH-FTTH-032,PON1,In Service,"Morton,LL"
+,#001,WH-FTTH-033,PON1,In Service,"Henshawe,B"
+,#001,WH-FTTH-034,PON1,In Service,"Ellison,M"
+,#001,WH-FTTH-035,PON1,In Service,"Davies,D"
+,#001,WH-FTTH-036,PON1,In Service,"Careys,T"
+,#002,WH-FTTH-037,PON1,In Service,"Brandon,E"
+,#002,WH-FTTH-038,PON1,In Service,"Goulding,W"
+,#002,WH-FTTH-039,PON1,In Service,"Harrington,H"
+,#002,WH-FTTH-040,PON1,In Service,"Lucas,SW"
+,#002,WH-FTTH-041,PON1,In Service,"Morris,M"
+,#003,WH-FTTH-042,PON1,In Service,"Nicholls,M"
+,#003,WH-FTTH-043,PON1,In Service,"Pratt,M"
+,#003,WH-FTTH-044,PON1,In Service,"Bertram,J"
+,#003,WH-FTTH-045,PON1,In Service,"Bertram,ST"
+,#003,WH-FTTH-046,PON1,In Service,"Norris,M"
+,#004,WH-FTTH-047,PON1,In Service,"Price,S"
+,#004,WH-FTTH-048,PON1,In Service,"Bragge,M"
+,#004,WH-FTTH-049,PON1,In Service,"Mitchell,F"
+,#005,WH-FTTH-051,PON1,In Service,"Manwaring,M"
+,#005,WH-FTTH-052,PON1,In Service,"Otway,G"
+,#005,WH-FTTH-054,PON1,In Service,"Thorpe,J"
+,#005,WH-FTTH-055,PON1,In Service,"Coucy,RD"
+,#005,WH-FTTH-056,PON1,In Service,"Martin,SJ"
+,#006,WH-FTTH-057,PON1,In Service,"Vernon,C"
+,#006,WH-FTTH-058,PON1,In Service,"Vernon,F"
+,#006,WH-FTTH-059,PON1,In Service,"Scroggs,M"
+,#007,WH-FTTH-050,PON1,In Service,"Nash,M"
+,#007,WH-FTTH-053,PON1,In Service,"Morland,M"
+,#011,WH-FTTH-5801,Direct,In Service,
+BB-FCB-017,,,,,
+WH-CC-006,,,,,
+
+
+*** mywcom_fiber_segment/382
+
+CIRCUIT REPORT: csv
+CircuitReport.type
+Fiber Cable: BB-FCB-017 (72)
+CircuitReport.date: 6/10/2020
+
+
+CircuitReport.cable,CircuitReport.pin,CircuitReport.name,Status
+BB-FCB-017,#11 - #12,BB-0003,In Service
+,#13 - #14,BB-0004,In Service
+,#19,BB-0001,In Service
+,#21 - #22,BB-0002,In Service
+

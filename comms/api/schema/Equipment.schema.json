@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Equipment.schema.json",
+    "title": "Equipment",
+    "definitions": {
+        "Equipment": {
+            "$id": "#Equipment",
+            "description": "Parent schema for Equipment objects.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "The name of the cable",
+                    "type": "string"
+                },
+                "specification": {
+                    "description": "The specificiation of the cable",
+                    "type": "string"
+                },
+                "housing": {
+                    "description": "Structure or equipment that is direct parent (URN).",
+                    "type": "string"
+                },
+                "rootHousing": {
+                    "description": "Structure in which object is housed (URN).",
+                    "type": "string"
+                },
+                "circuits": {
+                    "description": "Circuits that run through equipment (if any). (QURN list)"
+                },
+                "laborCosts": {
+                    "description": "Labor cost associated with feature, overides spec derived labor cost",
+                    "type": "string"
+                },
+                "location": {
+                    "description": "Location in geographic world",
+                    "$ref": "https://geojson.org/schema/Point.json"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "./Feature.schema.json"
+                }
+            ]
+        }
+    }
+}

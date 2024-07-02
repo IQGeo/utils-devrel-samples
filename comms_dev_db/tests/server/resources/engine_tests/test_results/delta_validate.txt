@@ -1,0 +1,92 @@
+
+SUB TEST : VALIDATE design/NB046
+
+SUB TEST : VALIDATE design/NB120
+    ug_route(4203,design/NB120) path geom_mismatch_at manhole(27)
+       ['_coord=(0.137459, 52.223875)', '_expected_coord=(0.1374105736613241, 52.223911903275294)', '_ref=out_structure', 'ref_side=None']
+    mywcom_fiber_segment(595,design/NB120) path geom_mismatch_at mywcom_fiber_segment(388)
+       ['_coord=(0.137459, 52.223875)', '_expected_coord=(0.1374105736613241, 52.223911903275294)', '_ref=out_segment', 'ref_side=in']
+    mywcom_fiber_segment(56,design/NB120) path geom_mismatch_at conduit(81)
+       ['_coord=(0.137459, 52.223875)', '_expected_coord=(0.1374105736613241, 52.223911903275294)', '_ref=housing']
+
+SUB TEST : VALIDATE design/NB301
+    ug_route(4801,design/NB301) path geom_mismatch_at manhole(75)
+       ['_coord=(0.1334150880575, 52.2235524824053)', '_expected_coord=(0.1334522, 52.2235447)', '_ref=in_structure', 'ref_side=None']
+    ug_route(4800,design/NB301) path geom_mismatch_at manhole(75)
+       ['_coord=(0.1334150880575, 52.2235524824053)', '_expected_coord=(0.1334522, 52.2235447)', '_ref=out_structure', 'ref_side=None']
+    ug_route(88,design/NB301) path geom_mismatch_at manhole(75)
+       ['_coord=(0.1334150880575, 52.2235524824053)', '_expected_coord=(0.1334522, 52.2235447)', '_ref=out_structure', 'ref_side=None']
+    splice_closure(4800,design/NB301) location geom_mismatch_at manhole(7)
+       ['_coord=(0.1336028426886, 52.2236559959141)', '_expected_coord=(0.1336176, 52.2236381)', '_ref=housing', 'ref_side=None']
+    mywcom_fiber_slack(4800,design/NB301) location geom_mismatch_at manhole(75)
+       ['_coord=(0.1334150880575, 52.2235524824053)', '_expected_coord=(0.1334522, 52.2235447)', '_ref=housing', 'ref_side=None']
+    mywcom_fiber_segment(4800,design/NB301) path geom_size_mismatch conduit(60)
+       ['_ref=housing', 'n_coords=3', 'n_expected=5']
+
+SUB TEST : VALIDATE design/CC5462
+    blown_fiber_bundle(12,design/CC5462) out_structure derived_value_mismatch ug_route(81) out_structure
+       ['expected=mywcom_route_junction/50000', 'value=drop_point/4']
+    blown_fiber_bundle(12,design/CC5462) path geom_size_mismatch ug_route(81)
+       ['_ref=housing', 'n_coords=3', 'n_expected=8']
+    mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+       ['_conn1=mywcom_fiber_connection/4400', '_conn2=mywcom_fiber_connection/207', 'clash_pins=out:13', 'conn1=WH-FCB-009#out:10:13 -> DROP-5462#in:1:4', 'conn2=WH-FCB-009#out:13 -> DROP-148#in:1', 'housing=Splice Closure: WH-SC-039', 'side=in', 'struct=Cabinet: WH-C-11']
+    mywcom_fiber_segment(99,design/CC5462) out_segment broken_chain
+       ['_ref=100', 'back_ref=50000']
+    mywcom_fiber_segment(99,design/CC5462) path geom_mismatch_at mywcom_fiber_segment(100)
+       ['_coord=(0.1364546682522194, 52.22544555637069)', '_expected_coord=(0.1359339, 52.2255569)', '_ref=out_segment', 'ref_side=in']
+
+SUB TEST : VALIDATE design/CC4827
+    fiber_ont(147,design/CC4827) location geom_mismatch_at wall_box(147)
+       ['_coord=(0.1366008818149567, 52.22573176051871)', '_expected_coord=(0.1365777, 52.225717)', '_ref=housing', 'ref_side=None']
+    mywcom_fiber_segment(431,design/CC4827) path geom_mismatch_at blown_fiber_tube(170)
+       ['_coord=(0.1365587736006413, 52.22575679294339)', '_expected_coord=(0.1365358, 52.2257432)', '_ref=housing']
+    mywcom_fiber_segment(430,design/CC4827) path geom_mismatch_at blown_fiber_tube(74)
+       ['_coord=(0.1365587736006413, 52.22575679294339)', '_expected_coord=(0.1365358, 52.2257432)', '_ref=housing']
+
+SUB TEST : VALIDATE design/NU23
+    mywcom_fiber_segment(595,design/NU23) path geom_mismatch_at mywcom_fiber_slack(15)
+       ['_coord=(0.137459, 52.223875)', '_expected_coord=(0.1374105736613241, 52.223911903275294)', '_ref=housing']
+    mywcom_fiber_segment(388,design/NU23) path geom_mismatch_at conduit(82)
+       ['_coord=(0.137459, 52.223875)', '_expected_coord=(0.1374105736613241, 52.223911903275294)', '_ref=housing']
+    mywcom_fiber_segment(387,design/NU23) path geom_mismatch_at conduit(80)
+       ['_coord=(0.137459, 52.223875)', '_expected_coord=(0.1374105736613241, 52.223911903275294)', '_ref=housing']
+
+SUB TEST : VALIDATE systest/conflicts1
+    ug_route(89,systest/conflicts1) path geom_mismatch_at manhole(48)
+       ['_coord=(0.1362135, 52.2255836)', '_expected_coord=(0.1362562179565, 52.2255937489052)', '_ref=out_structure', 'ref_side=None']
+    fiber_ont(147,systest/conflicts1) root_housing derived_value_mismatch ug_route(89,systest/conflicts1)
+       ['expected=ug_route/89', 'value=wall_box/147']
+    fiber_ont(147,systest/conflicts1) location geom_mismatch_at ug_route(89,systest/conflicts1)
+       ['_coord=(0.1366008818149567, 52.22573176051871)', '_expected_coord=(0.1366963, 52.2265398)', '_ref=housing', 'ref_side=None']
+    blown_fiber_tube(73,systest/conflicts1) path geom_mismatch_at blown_fiber_bundle(13)
+       ['_coord=(0.1366507, 52.2266047)', '_expected_coord=(0.1367644965649, 52.2257637988677)', '_ref=housing']
+    blown_fiber_tube(73,systest/conflicts1) in_conduit broken_chain
+       ['_ref=blown_fiber_tube/43', 'at=Cabinet: WH-C-11']
+    blown_fiber_tube(73,systest/conflicts1) out_conduit broken_chain
+       ['_ref=blown_fiber_tube/48', 'at=Manhole: WH-M-39']
+    fiber_cable(9,systest/conflicts1) directed not_set
+       []
+    mywcom_fiber_segment(83,systest/conflicts1) in_structure duplicate_connection splice_closure(39)
+       ['_conn1=mywcom_fiber_connection/205', '_conn2=mywcom_fiber_connection/207', 'clash_pins=out:13', 'conn1=WH-FCB-009#out:13 -> DROP-146#in:1', 'conn2=WH-FCB-009#out:13 -> DROP-148#in:1', 'housing=Splice Closure: WH-SC-039', 'side=in', 'struct=Cabinet: WH-C-11']
+    mywcom_fiber_connection(190,systest/conflicts1) out_high bad_pin_range
+       ['connection=WH-FCB-009#out:80:6 -> DROP-144#in:35:6', 'housing=Splice Closure: WH-SC-039', 'range=in:35:6', 'side=out', 'struct=Cabinet: WH-C-11']
+    mywcom_fiber_connection(190,systest/conflicts1) in_low bad_pin_range
+       ['connection=WH-FCB-009#out:80:6 -> DROP-144#in:35:6', 'housing=Splice Closure: WH-SC-039', 'range=out:80:6', 'side=in', 'struct=Cabinet: WH-C-11']
+    mywcom_fiber_connection(190,systest/conflicts1) in_high bad_pin_range
+       ['connection=WH-FCB-009#out:80:6 -> DROP-144#in:35:6', 'housing=Splice Closure: WH-SC-039', 'range=out:80:6', 'side=in', 'struct=Cabinet: WH-C-11']
+    mywcom_fiber_connection(190,systest/conflicts1) out_low bad_pin_range
+       ['connection=WH-FCB-009#out:80:6 -> DROP-144#in:35:6', 'housing=Splice Closure: WH-SC-039', 'range=in:35:6', 'side=out', 'struct=Cabinet: WH-C-11']
+    mywcom_conduit_run(57,systest/conflicts1) path geom_mismatch
+       ['ref=conduits']
+    mywcom_fiber_segment(87,systest/conflicts1) path geom_mismatch_at ug_route(89,systest/conflicts1)
+       ['_coord=(0.1362562179565, 52.2255937489052)', '_expected_coord=(0.1362135, 52.2255836)', '_ref=housing']
+    mywcom_fiber_segment(86,systest/conflicts1) path geom_mismatch_at ug_route(400)
+       ['_coord=(0.1365587736006413, 52.22575679294339)', '_expected_coord=(0.1365358, 52.2257432)', '_ref=housing']
+    mywcom_fiber_segment(85,systest/conflicts1) path geom_mismatch_at ug_route(79)
+       ['_coord=(0.1365587736006413, 52.22575679294339)', '_expected_coord=(0.1365358, 52.2257432)', '_ref=housing']
+    mywcom_fiber_segment(76,systest/conflicts1) in_segment broken_chain
+       ['_ref=76', 'back_ref=77']
+    mywcom_fiber_segment(76,systest/conflicts1) path geom_mismatch_at mywcom_fiber_segment(76,systest/conflicts1)
+       ['_coord=(0.1380164176226, 52.2250326615595)', '_expected_coord=(0.137692879720297, 52.22528278305279)', '_ref=in_segment', 'ref_side=out']
+    mywcom_fiber_segment(76,systest/conflicts1) in_tick tick_mark_invalid
+       ['invalid_tick=0', 'overlap_seg=Cable Segment: 77 (fiber_cable/9)']

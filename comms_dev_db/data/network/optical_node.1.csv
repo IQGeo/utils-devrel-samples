@@ -1,0 +1,4 @@
+id,name,root_housing,housing,labor_costs,n_fiber_in_ports,n_coax_out_ports,frequency,output_frequency_1,output_frequency_2,output_frequency_3,output_frequency_4,related_power_supply,voltage,current_draw,status,install_technician,install_date,type,distance_from_olt,specification,circuits,location,offset_geom,myw_orientation_offset_geom,comsof_auto
+1,WH-ON-001,manhole/266,manhole/266,,1,1,1250.0,105.0,750.0,870.0,1002.0,,58.9,12.0,,,,,,,,0101000020E61000003E1AACDE9B33C13F50914990441C4A40,0101000020E6100000DC255D357332C13F04E142A3451C4A40,,False
+2,WH-ON-002,manhole/266,manhole/266,,1,1,,,,,,,,,,,,,,,,0101000020E61000003E1AACDE9B33C13F50914990441C4A40,0101000020E6100000859DAB9B9E35C13F5C822302451C4A40,,False
+3,WH-ON-003,manhole/266,manhole/266,,1,1,,,,,,,,,,,,,,,,0101000020E61000003E1AACDE9B33C13F50914990441C4A40,,,False

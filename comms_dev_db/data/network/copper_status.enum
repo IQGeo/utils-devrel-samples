@@ -1,0 +1,9 @@
+{
+    "name": "copper_status",
+    "description": "",
+    "values": [
+        "In Service",
+        "Installed",
+        "Abandoned"
+    ]
+}

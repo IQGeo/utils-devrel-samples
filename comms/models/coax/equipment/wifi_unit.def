@@ -1,0 +1,170 @@
+{
+    "datasource": "myworld",
+    "name": "wifi_unit",
+    "external_name": "{:coax_wifi_unit_field_name}",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "n_coax_in_ports",
+            "external_name": "{:n_in_ports_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "n_coax_out_ports",
+            "external_name": "{:n_out_ports_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "specification",
+            "external_name": "{:wall_box_feature_specification_name}",
+            "type": "foreign_key(wifi_unit_spec)"
+        },
+        {
+            "name": "plant_or_external",
+            "external_name": "{:coax_plant_or_external_power_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "current_draw",
+            "external_name": "{:coax_current_draw_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "voltage",
+            "external_name": "{:coax_voltage_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "status",
+            "external_name": "{:coax_construction_status_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "install_technician",
+            "external_name": "{:coax_install_technician_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "install_date",
+            "external_name": "{:coax_install_date_field_name}",
+            "type": "date"
+        },
+        {
+            "name": "fiber_fed",
+            "external_name": "{:coax_fiber_fed_field_name}",
+            "type": "boolean"
+        },
+        {
+            "name": "coax_fed",
+            "external_name": "{:coax_coax_fed_field_name}",
+            "type": "boolean"
+        },
+        {
+            "name": "related_node",
+            "external_name": "{:coax_related_node_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "physical_address",
+            "external_name": "{:coax_physical_address_field_name}",
+            "type": "string(8)"
+        },
+        {
+            "name": "lat_lon",
+            "external_name": "{:coax_lat_/_lon_field_name}",
+            "type": "string(8)"
+        },
+        {
+            "name": "mac_address",
+            "external_name": "{:coax_mac_address_field_name}",
+            "type": "string(8)"
+        },
+        {
+            "name": "mount_type",
+            "external_name": "{:coax_mount_type_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "indoor",
+            "external_name": "{:coax_indoor_field_name}",
+            "type": "boolean"
+        },
+        {
+            "name": "outdoor",
+            "external_name": "{:coax_outdoor_field_name}",
+            "type": "boolean"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "number_of_antenna",
+            "external_name": "{:coax_number_of_antenna_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "coax_connections",
+            "type": "reference_set",
+            "value": "select(mywcom_coax_connection.in_object,mywcom_coax_connection.out_object)",
+            "read_only": true
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point",
+            "mandatory": "true"
+        },
+        {
+            "name": "offset_geom",
+            "external_name": "{:offset_field_name}",
+            "type": "point"
+        },
+        {
+            "name": "myw_orientation_offset_geom",
+            "type": "double"
+        },
+        {
+            "name": "directed",
+            "external_name": "{:equipment_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": true
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+/*
+ * --- Export Reports dropdown ---
+ * Move the dropdown to the left and increase width (to fit report names)
+ */
+#sub-list-export.reports {
+    left: -85px;
+    .report-export-btn-item {
+        width: 105px !important;
+    }
+}

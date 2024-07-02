@@ -1,0 +1,65 @@
+COMMAND: comms_db <database> import <resource_dir>/test_data/workspaces/arbury.geopackage.v23.2.zip --format=comsof --delta=comsof_design/arbury
+Opening database <conn_spec> ...
+Opening /tmp/<tmp_dir>/workspace/output/OUT_FullDesign.cdif.zip
+Import engine: comsof_ws_cdif
+Loading data
+  Feature type: blown_fiber_bundle
+    Loaded 165 records
+  Feature type: blown_fiber_tube
+    Loaded 1450 records
+  Feature type: cabinet
+    Loaded 1 records
+  Feature type: drop_point
+    Loaded 68 records
+  Feature type: fiber_cable
+    Loaded 137 records
+  Feature type: fiber_splitter
+    Loaded 3 records
+  Feature type: mywcom_conduit_run
+    Loaded 985 records
+  Feature type: mywcom_fiber_connection
+    Loaded 139 records
+  Feature type: mywcom_fiber_segment
+    Loaded 565 records
+  Feature type: mywcom_route_junction
+    Loaded 19 records
+  Feature type: splice_closure
+    Loaded 68 records
+  Feature type: ug_route
+    Loaded 156 records
+  Feature type: wall_box
+    Loaded 68 records
+Mapping references
+***Warning*** splitter#239 fiber_splitter[splitter#239] : housing : Cannot find closure#274
+***Warning*** splitter#241 fiber_splitter[splitter#241] : housing : Cannot find closure#274
+***Warning*** splitter#240 fiber_splitter[splitter#240] : housing : Cannot find closure#274
+Setting derived properties
+  Setting root housings
+  Setting geometry
+  Setting in/out structures
+  Setting cable segment properties
+  Setting line of count properties
+Snapping geometries
+
+Opening database <conn_spec> ...
+delta                    : comsof_design/arbury
+count                    : 3825
+inserts                  : 3825
+updates                  : 0
+deletes                  : 0
+blown_fiber_bundle       : 165:0:0
+blown_fiber_tube         : 1450:0:0
+building                 : 1:0:0
+cabinet                  : 1:0:0
+drop_point               : 68:0:0
+fiber_cable              : 137:0:0
+fiber_splitter           : 3:0:0
+mywcom_conduit_run       : 985:0:0
+mywcom_fiber_connection  : 139:0:0
+mywcom_fiber_segment     : 565:0:0
+mywcom_route_junction    : 19:0:0
+splice_closure           : 68:0:0
+ug_route                 : 156:0:0
+wall_box                 : 68:0:0
+
+

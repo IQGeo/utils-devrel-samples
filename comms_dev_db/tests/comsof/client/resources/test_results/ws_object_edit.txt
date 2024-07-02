@@ -1,0 +1,115 @@
+TEST: AFTER SELECT DEMAND POINT
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: IN Demand Point: 60
+    label: Id
+    label: 60
+    label: Include
+    label: true
+    label: pon_homes
+    label: 1
+
+
+TEST: AFTER EDIT DEMAND POINT
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    label: Id*
+    label: feature-edit-input
+    input (disabled): 60
+    label: Include*
+    label: *
+    label: feature-edit-input
+    input: true
+    label: pon_homes*
+    label: feature-edit-input
+    input: 1
+    label: p2p_homes*
+    label: feature-edit-input
+    input: 
+    label: connection*
+    label: feature-edit-input
+    input: 
+    label: identifier*
+    label: feature-edit-input
+    input: 
+    label: pon_m_rev*
+    label: feature-edit-input
+    input: 
+    label: p2p_m_rev*
+    label: feature-edit-input
+    input: 
+    label: bldg_id*
+    label: feature-edit-input
+    input: 
+    label: streetname*
+    label: feature-edit-input
+    input: 
+    label: gistool_id*
+    label: feature-edit-input
+    input: 
+  header: Geometry
+    button: Cancel
+    button: Delete
+    button: Save
+
+
+TEST: AFTER SAVE DEMAND POINT
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: IN Demand Point: 60
+    label: Id
+    label: 60
+    label: Include
+    label: false
+    label: pon_homes
+    label: 4
+    label: bldg_id
+    label: 12345
+
+
+TEST: AFTER RE-SELECT DEMAND POINT
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: IN Demand Point: 60
+    label: Id
+    label: 60
+    label: Include
+    label: false
+    label: pon_homes
+    label: 4
+    label: bldg_id
+    label: 12345
+
+

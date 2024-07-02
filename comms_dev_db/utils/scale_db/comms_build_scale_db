@@ -1,0 +1,13 @@
+#!/bin/bash
+# Build scalability database
+
+HERE=$(dirname $0)
+
+# Set import paths
+export PATH=$HERE/../../../../../../Tools:${PATH}
+source myw_env
+
+export MYW_COMMS_SCALE_DB=iqg_comms_scale
+
+cd $HERE
+myw_db $MYW_COMMS_SCALE_DB run comms_scale_db_builder.py --commit

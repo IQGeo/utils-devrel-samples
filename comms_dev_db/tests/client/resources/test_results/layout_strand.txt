@@ -1,0 +1,87 @@
+TEST: Layout Strand
+    button: rc-tabs-0-more
+    label: Overhead features:
+    select: Pole
+    label: Overhead routes:
+    select: Route (Overhead)
+    label: Type
+    input: 
+    label: Height
+    label: ft
+    label: ft
+    input: 
+    label: ft
+    label: Use linear assembly
+    input: false
+    label: Add structure
+    input: false
+    button (disabled): Start
+    label: Start
+    button (disabled): Reset
+    label: Reset
+    button (disabled): Done
+    label: Done
+
+
+TEST: Layout Strand Start
+    button: rc-tabs-0-more
+    label: Overhead features:
+    select (disabled): Pole
+    label: Overhead routes:
+    select (disabled): Route (Overhead)
+    label: Type
+    input (disabled): Wood
+    label: Height
+    label (disabled): ft
+    label: ft
+    input (disabled): 20
+    label: ft
+    label: Use linear assembly
+    input (disabled): false
+    label: Add structure
+    input: true
+    button (disabled): Start
+    label: Start
+    button: Reset
+    label: Reset
+    button: Done
+    label: Done
+
+
+TEST: Layout Strand Done
+    button: rc-tabs-0-more
+    label: Overhead features:
+    select: Pole
+    label: Overhead routes:
+    select: Route (Overhead)
+    label: Type
+    input: Wood
+    label: Height
+    label: ft
+    label: ft
+    input: 20
+    label: ft
+    label: Use linear assembly
+    input: false
+    label: Add structure
+    input: true
+    button: Start
+    label: Start
+    button (disabled): Reset
+    label: Reset
+    button (disabled): Done
+    label: Done
+
+
+DATABASE CHANGES: AFTER POLE INSERT
+   insert data.mywcom_change_detail(5)
+   insert data.mywcom_change_detail(6)
+   insert data.mywcom_change_detail(7)
+   insert data.mywcom_change_detail(8)
+   insert data.mywcom_change_detail(9)
+   insert delta.oh_route(design/NB120,100000,insert)
+   insert delta.oh_route(design/NB120,100001,insert)
+   insert delta.pole(design/NB120,100000,insert)
+   insert delta.pole(design/NB120,100001,insert)
+   insert delta.pole(design/NB120,100002,insert)
+

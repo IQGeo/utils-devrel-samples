@@ -1,0 +1,723 @@
+/*<meta />*/
+
+@media only screen and (max-width: 767px)
+{
+	.search-bar
+	{
+		width: 100%;
+	}
+
+	.knowledge-panel-container.micro-content-truncated-mode .micro-response
+	{
+		max-height: 200px;
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete ul
+	{
+		background-color: #ffffff;
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-item a
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-item
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-content
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-history
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-item.auto-result-selected a
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-item.auto-result-selected
+	{
+		background-color: #ececec;
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-content.auto-result-selected
+	{
+		background-color: #ececec;
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-history.auto-result-selected
+	{
+		background-color: #ececec;
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-item .auto-result-description
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-content .auto-result-description
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-history .auto-result-description
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-item .auto-result-icon
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-content .auto-result-icon
+	{
+		background: transparent url('Images/icon-topic.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-topic.png') no-repeat center center;
+		background-size: contain;
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-history .auto-result-icon
+	{
+		background: transparent url('Images/icon-search.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-search.png') no-repeat center center;
+		background-size: contain;
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase .search-result-highlight
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase .search-result-highlight
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase .search-result-highlight
+	{
+		
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li .auto-result-remove
+	{
+		width: 17px;
+		height: 27px;
+		background: transparent url('Images/icon-remove.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-remove.png') no-repeat center center;
+		background-size: contain;
+	}
+
+	._Skins_SearchTopics.mc-component .search-auto-complete li.auto-result-item .auto-result-separator
+	{
+		
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component
+	{
+		width: 100%;
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-field
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-submit
+	{
+		
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-filter
+	{
+		background: #ffffff url('Images/FilterOutline.png') no-repeat center center;
+		-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
+	}
+
+	._Skins_SearchTopics.mc-component .search-filter-content
+	{
+		top: 2em;
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-filter-wrapper.open
+	{
+		-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
+		background-color: #ffffff;
+		background-repeat: no-repeat;
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-filter:hover
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-filter.selected
+	{
+		background: transparent url('Images/Filter.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/Filter.png') no-repeat center center;
+	}
+
+	._Skins_SearchTopics.mc-component .search-filter-content ul li:hover
+	{
+		background-color: #ffffff;
+	}
+
+	._Skins_SearchTopics.mc-component .search-filter-content ul li button:focus
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-field::-webkit-input-placeholder
+	{
+		
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-field::-moz-placeholder
+	{
+		
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-field:-moz-placeholder
+	{
+		
+	}
+
+	.search-bar._Skins_SearchTopics.mc-component .search-field:-ms-input-placeholder
+	{
+		
+	}
+
+	.search-bar.search-bar-container._Skins_SearchTopics.mc-component .search-submit
+	{
+		background: #ffffff url('Images/SearchIcon.png') no-repeat center center;
+		-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/SearchIcon.png') no-repeat center center;
+	}
+
+	.search-bar.search-bar-container._Skins_SearchTopics.mc-component .search-submit:hover
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: #ffffff;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component
+	{
+		display: none;
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component a
+	{
+		
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component ul ul ul ul > li > a
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component li > a.selected
+	{
+		background-color: #6fb969;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component li > a:hover
+	{
+		background-color: #cacaca;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #cacaca;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #cacaca;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #cacaca;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component ul ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background-color: #cacaca;
+	}
+
+	ul.menu._Skins_SideMenu___Copy.mc-component li > a.selected:hover
+	{
+		background-color: #6fb969;
+	}
+
+	.buttons._Skins_TopicToolBar.mc-component
+	{
+		display: none;
+	}
+
+	._Skins_TopicToolBar.mc-component .button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button > div
+	{
+		
+	}
+
+	._Skins_TopicToolBar.mc-component .button .button-icon-wrapper
+	{
+		
+	}
+
+	._Skins_TopicToolBar.mc-component .button .button-text
+	{
+		
+	}
+
+	._Skins_TopicToolBar.mc-component .button.collapse-all-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.current-topic-index-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.expand-all-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.login-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.next-topic-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.previous-topic-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.print-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.remove-highlight-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.select-language-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.select-skin-button
+	{
+		background-repeat: no-repeat;
+		background: #ececec;
+		background: -moz-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ececec));
+		background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#ececec 100%);
+		background: linear-gradient(#ffffff 0%,#ececec 100%);
+		-pie-background: linear-gradient(#ffffff, #ececec);
+		background-position: center center;
+	}
+
+	._Skins_TopicToolBar.mc-component .button.topic-ratings-empty-button
+	{
+		background: transparent url('Images/star-empty.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/star-empty.png') no-repeat center center;
+		background-size: 16px 16px;
+	}
+
+	._Skins_TopicToolBar.mc-component .toolbar-button-drop-down
+	{
+		background-color: #FFFFFF;
+	}
+
+	._Skins_TopicToolBar.mc-component .toolbar-button-drop-down.select-language-drop-down
+	{
+		background-color: #FFFFFF;
+	}
+
+	._Skins_TopicToolBar.mc-component .toolbar-button-drop-down.select-language-drop-down ul li:hover
+	{
+		background-color: #E5EFF7;
+	}
+
+	._Skins_TopicToolBar.mc-component .toolbar-button-drop-down.select-skin-drop-down
+	{
+		background-color: #FFFFFF;
+	}
+
+	._Skins_TopicToolBar.mc-component .toolbar-button-drop-down.select-skin-drop-down ul li:hover
+	{
+		background-color: #E5EFF7;
+	}
+
+	._Skins_TopicToolBar.mc-component .button-separator
+	{
+		background-color: #e1e1e1;
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete ul
+	{
+		background-color: #ffffff;
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-item a
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-item
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-content
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-history
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-item.auto-result-selected a
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-item.auto-result-selected
+	{
+		background-color: #ececec;
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-content.auto-result-selected
+	{
+		background-color: #ececec;
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-history.auto-result-selected
+	{
+		background-color: #ececec;
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-item .auto-result-description
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-content .auto-result-description
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-history .auto-result-description
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-item .auto-result-icon
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-content .auto-result-icon
+	{
+		background: transparent url('Images/icon-topic.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-topic.png') no-repeat center center;
+		background-size: contain;
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-history .auto-result-icon
+	{
+		background: transparent url('Images/icon-search.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-search.png') no-repeat center center;
+		background-size: contain;
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase .search-result-highlight
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase .search-result-highlight
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase .search-result-highlight
+	{
+		
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li .auto-result-remove
+	{
+		width: 17px;
+		height: 27px;
+		background: transparent url('Images/icon-remove.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-remove.png') no-repeat center center;
+		background-size: contain;
+	}
+
+	._Skins_SearchHome.mc-component .search-auto-complete li.auto-result-item .auto-result-separator
+	{
+		
+	}
+
+	.search-bar._Skins_SearchHome.mc-component
+	{
+		width: 75%;
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-field
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-submit
+	{
+		
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-filter
+	{
+		background: #ffffff url('Images/FilterOutline.png') no-repeat center center;
+		-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
+	}
+
+	._Skins_SearchHome.mc-component .search-filter-content
+	{
+		top: 2.5em;
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-filter-wrapper.open
+	{
+		-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
+		background-color: #ffffff;
+		background-repeat: no-repeat;
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-filter:hover
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-filter.selected
+	{
+		background: transparent url('Images/Filter.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/Filter.png') no-repeat center center;
+	}
+
+	._Skins_SearchHome.mc-component .search-filter-content ul li:hover
+	{
+		background-color: #ffffff;
+	}
+
+	._Skins_SearchHome.mc-component .search-filter-content ul li button:focus
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-field::-webkit-input-placeholder
+	{
+		
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-field::-moz-placeholder
+	{
+		
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-field:-moz-placeholder
+	{
+		
+	}
+
+	.search-bar._Skins_SearchHome.mc-component .search-field:-ms-input-placeholder
+	{
+		
+	}
+
+	.search-bar.search-bar-container._Skins_SearchHome.mc-component .search-submit
+	{
+		background: #f5f5f5 url('Images/SearchIcon.png') no-repeat center center;
+		-pie-background: #f5f5f5 url('Skins/Default/Stylesheets/Components/Images/SearchIcon.png') no-repeat center center;
+	}
+
+	.search-bar.search-bar-container._Skins_SearchHome.mc-component .search-submit:hover
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: #f5f5f5;
+	}
+}
+

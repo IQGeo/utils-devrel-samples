@@ -1,0 +1,19 @@
+{
+    "name": "mywcom_coax",
+    "external_name": "{:coaxial_network_name}",
+    "description": "{:coaxial_network_desc}",
+    "topology": "tree",
+    "directed": true,
+    "engine": "mywcom_pin_network_engine",
+    "feature_types": {
+        "mywcom_coax_segment": {
+            "upstream": "coax_connections",
+            "downstream": "coax_connections",
+            "length": "length"
+        },
+        "mywcom_coax_connection": {
+            "upstream": "in_object",
+            "downstream": "out_object"
+        }
+    }
+}

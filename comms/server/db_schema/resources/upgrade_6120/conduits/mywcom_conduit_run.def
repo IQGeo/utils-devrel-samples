@@ -1,0 +1,9 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_conduit_run",
+    "editable": {
+        "insert_from_gui": false,
+        "delete_from_gui": false,
+        "update_from_gui": false
+        }
+}

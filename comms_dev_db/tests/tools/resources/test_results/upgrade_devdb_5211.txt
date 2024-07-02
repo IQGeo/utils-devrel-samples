@@ -1,0 +1,1574 @@
+Upgrading myw_comms_dev_5211.backup
+COMMAND: myw_db comms_scratch upgrade core 430
+Opening database <conn_spec> ...
+Running upgrade 430
+  Upgrading from schema version: 52010
+
+COMMAND: myw_db comms_scratch upgrade core 440
+Opening database <conn_spec> ...
+Running upgrade 440
+  Upgrading from schema version: 52010
+
+COMMAND: myw_db comms_scratch upgrade core 500
+Opening database <conn_spec> ...
+Running upgrade 500
+  Upgrading from schema version: 52010
+
+COMMAND: myw_db comms_scratch upgrade core 510
+Opening database <conn_spec> ...
+Running upgrade 510
+  Upgrading from schema version: 52010
+
+COMMAND: myw_db comms_scratch upgrade core 520
+Opening database <conn_spec> ...
+Running upgrade 520
+  Upgrading from schema version: 52010
+
+COMMAND: myw_db comms_scratch upgrade core 600
+Opening database <conn_spec> ...
+Running upgrade 600
+  Upgrading from schema version: 52010
+  Running update 60001: add_config_pages_setting()
+
+COMMAND: myw_db comms_scratch upgrade core 610
+Opening database <conn_spec> ...
+Running upgrade 610
+  Upgrading from schema version: 60001
+  Running update 61001: add_internetStatus_imgUrl_setting()
+  Running update 61002: extend_layer_style_field()
+  Running update 61003: add_new_dd_field_columns()
+  Running update 61004: extend_transaction_log_feature_id()
+
+COMMAND: myw_db comms_scratch upgrade core 620
+Opening database <conn_spec> ...
+Running upgrade 620
+  Upgrading from schema version: 61004
+  Running update 62001: add_new_layer_column()
+
+COMMAND: myw_db comms_scratch upgrade core 630
+Opening database <conn_spec> ...
+Running upgrade 630
+  Upgrading from schema version: 62001
+  Running update 63001: extend_multi_lang_fields()
+  Running update 63002: extend_feature_editor_configuration()
+  Running update 63003: extend_checkpoint_name_field()
+  Running update 63004: add_dd_feature_geom_indexed()
+  Running update 63005: extend_dd_field_type()
+
+COMMAND: myw_db comms_scratch upgrade core 640
+Opening database <conn_spec> ...
+Running upgrade 640
+  Upgrading from schema version: 63005
+  Running update 64001: add_bulk_update_rights()
+  Running update 64002: add_fine_grained_permissions()
+
+COMMAND: myw_db comms_scratch upgrade core 650
+Opening database <conn_spec> ...
+Running upgrade 650
+  Upgrading from schema version: 64002
+  Running update 65001: add_creates_world_type()
+  Running update 65002: set_primary_geom_mandatory()
+  Running update 65003: extend_layer_text_style_field()
+  Running update 65004: extend_field_group_item_field()
+  Running update 65005: set_reference_fields_readonly()
+  Running update 65006: add_geo_map_custom_options_settings()
+
+COMMAND: myw_db comms_scratch upgrade core 700
+Opening database <conn_spec> ...
+Running upgrade 700
+  Upgrading from schema version: 65006
+  Running update 70001: log_ids_to_bigints()
+  Running update 70002: add_extract_key_table()
+  Running update 70003: convert_geometry_indexes_to_geographies()
+  Running update 70004: remove_length_limit_on_style_lookups()
+  Running update 70005: add_save_default_state_right()
+  Running update 70006: extend_replica_username()
+
+COMMAND: myw_db comms_scratch upgrade core 710
+Opening database <conn_spec> ...
+Running upgrade 710
+  Upgrading from schema version: 70006
+  Running update 71001: usage_add_config_right()
+  Running update 71002: usage_add_config_permissions()
+  Running update 71003: application_state_add_name_column()
+  Running update 71004: update_save_default_state_right_description()
+
+COMMAND: myw_db comms_scratch upgrade comms 6120 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_6120
+Finding class: CommsDatabaseUpgrade6120
+Running upgrade 6120
+  Upgrading from schema version: 521001
+  Language: en
+  Running update 612001: add_circuit_segment_fields()
+    Updating field definitions
+    Mutating table data.mywcom_circuit_segment
+      Building SQL for: add field in_structure
+      Building SQL for: add field out_structure
+      Building SQL for: add index in_structure
+      Building SQL for: add index out_structure
+      Applying SQL
+    Mutating table base.mywcom_circuit_segment
+      Building SQL for: add field in_structure
+      Building SQL for: add field out_structure
+      Building SQL for: add index in_structure
+      Building SQL for: add index out_structure
+      Applying SQL
+    Mutating table delta.mywcom_circuit_segment
+      Building SQL for: add field in_structure
+      Building SQL for: add field out_structure
+      Building SQL for: add index in_structure
+      Building SQL for: add index out_structure
+      Applying SQL
+    Building triggers for: mywcom_circuit_segment
+  Running update 612002: add_circuits_layer()
+    Defining layer: mywcom_circuits
+  Running update 612003: add_settings()
+  Running update 612004: disable_conduit_run_edit()
+    Updating feature type: mywcom_conduit_run
+  Running update 612005: add_rights()
+  Running update 612006: rename_trace_engine()
+  Running update 612007: remove_name_manager_setting()
+    Dropping setting: mywcom.nameManager
+  Running update 612008: fix_bad_geometries()
+    Checking feature type building
+    Checking feature type pole
+    Checking feature type mywcom_route_junction
+    Checking feature type manhole
+    Checking feature type wall_box
+    Checking feature type cabinet
+    Checking feature type ug_route
+    Checking feature type oh_route
+    Checking feature type conduit
+    Checking feature type blown_fiber_bundle
+    Checking feature type blown_fiber_tube
+    Checking feature type splice_closure
+    Checking feature type fiber_olt
+    Checking feature type slot
+    Checking feature type mywcom_fiber_slack
+    Checking feature type fiber_splice_tray
+    Checking feature type fiber_splitter
+    Checking feature type fiber_mux
+    Checking feature type fiber_tap
+    Checking feature type shelf
+    Checking feature type fiber_patch_panel
+    Checking feature type rack
+    Checking feature type fiber_ont
+    Checking feature type fiber_cable
+    Checking feature type mywcom_fiber_segment
+    Checking feature type mywcom_fiber_connection
+  Running update 612009: reverse_conduits()
+    Processing blown_fiber_bundle
+      Upgrading master records
+        Reversing blown_fiber_bundle(1)
+        Reversing blown_fiber_bundle(44)
+        Reversing blown_fiber_bundle(45)
+        Reversing blown_fiber_bundle(46)
+        Reversing blown_fiber_bundle(47)
+        Reversing blown_fiber_bundle(76)
+        Reversing blown_fiber_bundle(104)
+      Upgrading base records
+      Upgrading delta records
+    Processing blown_fiber_tube
+      Upgrading master records
+        Reversing blown_fiber_tube(29)
+        Reversing blown_fiber_tube(36)
+        Reversing blown_fiber_tube(59)
+        Reversing blown_fiber_tube(60)
+        Reversing blown_fiber_tube(61)
+        Reversing blown_fiber_tube(62)
+        Reversing blown_fiber_tube(64)
+        Reversing blown_fiber_tube(65)
+        Reversing blown_fiber_tube(66)
+        Reversing blown_fiber_tube(67)
+        Reversing blown_fiber_tube(69)
+        Reversing blown_fiber_tube(136)
+        Reversing blown_fiber_tube(70)
+        Reversing blown_fiber_tube(71)
+        Reversing blown_fiber_tube(72)
+        Reversing blown_fiber_tube(80)
+        Reversing blown_fiber_tube(84)
+        Reversing blown_fiber_tube(88)
+        Reversing blown_fiber_tube(92)
+        Reversing blown_fiber_tube(96)
+        Reversing blown_fiber_tube(104)
+        Reversing blown_fiber_tube(144)
+        Reversing blown_fiber_tube(152)
+        Reversing blown_fiber_tube(160)
+        Reversing blown_fiber_tube(8)
+        Reversing blown_fiber_tube(164)
+        Reversing blown_fiber_tube(15)
+        Reversing blown_fiber_tube(165)
+        Reversing blown_fiber_tube(166)
+        Reversing blown_fiber_tube(22)
+        Reversing blown_fiber_tube(1)
+        Reversing blown_fiber_tube(168)
+        Reversing blown_fiber_tube(44)
+        Reversing blown_fiber_tube(112)
+        Reversing blown_fiber_tube(120)
+        Reversing blown_fiber_tube(75)
+        Reversing blown_fiber_tube(74)
+        Reversing blown_fiber_tube(49)
+        Reversing blown_fiber_tube(128)
+        Reversing blown_fiber_tube(54)
+      Upgrading base records
+      Upgrading delta records
+        Reversing blown_fiber_tube(123,design/test)
+        Reversing blown_fiber_tube(124,design/test)
+        Reversing blown_fiber_tube(125,design/test)
+        Reversing blown_fiber_tube(126,design/test)
+
+COMMAND: myw_db comms_scratch upgrade comms 6221 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_6221
+Finding class: CommsDatabaseUpgrade6221
+Running upgrade 6221
+  Upgrading from schema version: 612009
+  Language: en
+  Running update 622101: add_settings()
+  Running update 622102: fix_equipment_field()
+  Running update 622103: specs_add_new_cost_fields()
+    Adding item_length_unit to  conduit_spec
+    Adding item_length to  conduit_spec
+    Updating field definitions
+    Mutating table data.conduit_spec
+      Building SQL for: add field item_length_unit
+      Building SQL for: add field item_length
+      Applying SQL
+    Building triggers for: conduit_spec
+    Adding item_cost to  conduit_spec
+    Updating field definitions
+    Mutating table data.conduit_spec
+      Building SQL for: add field item_cost
+      Applying SQL
+    Building triggers for: conduit_spec
+    Adding item_length_unit to  fiber_cable_spec
+    Adding item_length to  fiber_cable_spec
+    Updating field definitions
+    Mutating table data.fiber_cable_spec
+      Building SQL for: add field item_length_unit
+      Building SQL for: add field item_length
+      Applying SQL
+    Building triggers for: fiber_cable_spec
+    Adding item_cost to  fiber_cable_spec
+    Updating field definitions
+    Mutating table data.fiber_cable_spec
+      Building SQL for: add field item_cost
+      Applying SQL
+    Building triggers for: fiber_cable_spec
+  Running update 622104: specs_populate_new_fields()
+    Populating item_length_unit with values from  cost_length_unit for conduit_spec
+    Splitting cost_length_unit into item_length and item_length_unit for  conduit_spec
+    Populating item_cost with values from  cost_unit for conduit_spec
+    Populating item_cost with values from  cost_per_unit for conduit_spec
+    Populating item_cost with values from  cost for conduit_spec
+    Populating item_length_unit with values from  cost_length_unit for fiber_cable_spec
+    Populating item_cost with values from  cost_unit for fiber_cable_spec
+    Populating item_cost with values from  cost_per_unit for fiber_cable_spec
+    Populating item_cost with values from  cost for fiber_cable_spec
+  Running update 622105: specs_drop_old_cost_fields()
+    Removing cost_length_unit from  conduit_spec
+    Updating field definitions
+    Mutating table data.conduit_spec
+      Building SQL for: drop field cost_length_unit
+      Applying SQL
+    Building triggers for: conduit_spec
+    Removing cost_unit from  conduit_spec
+    Updating field definitions
+    Mutating table data.conduit_spec
+      Building SQL for: drop field cost_unit
+      Applying SQL
+    Building triggers for: conduit_spec
+    Removing cost_per_unit from  conduit_spec
+    Removing cost from  conduit_spec
+    Updating field definitions
+    Mutating table data.conduit_spec
+      Building SQL for: drop field cost
+      Applying SQL
+    Building triggers for: conduit_spec
+    Removing cost_length_unit from  fiber_cable_spec
+    Removing cost_unit from  fiber_cable_spec
+    Removing cost_per_unit from  fiber_cable_spec
+    fiber_cable_spec : Removing cost_per_unit from group Specs
+    Updating field definitions
+    Mutating table data.fiber_cable_spec
+      Building SQL for: drop field cost_per_unit
+      Applying SQL
+    Building triggers for: fiber_cable_spec
+    Removing cost from  fiber_cable_spec
+    fiber_cable_spec : Removing cost from group Specs
+    Updating field definitions
+    Mutating table data.fiber_cable_spec
+      Building SQL for: drop field cost
+      Applying SQL
+    Building triggers for: fiber_cable_spec
+  Running update 622106: fix_mywcom_designs_setting()
+    Mutating mywcom.designs to a dict
+  Running update 622107: remove_forward_field_from_conduits()
+    blown_fiber_bundle : Removing field: forward
+      Updating field definitions
+      Mutating table data.blown_fiber_bundle
+      Mutating table base.blown_fiber_bundle
+      Mutating table delta.blown_fiber_bundle
+      Building triggers for: blown_fiber_bundle
+    blown_fiber_tube : Removing field: forward
+      Updating field definitions
+      Mutating table data.blown_fiber_tube
+      Mutating table base.blown_fiber_tube
+      Mutating table delta.blown_fiber_tube
+      Building triggers for: blown_fiber_tube
+
+COMMAND: myw_db comms_scratch upgrade comms 6222 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_6222
+Finding class: CommsDatabaseUpgrade6222
+Running upgrade 6222
+  Upgrading from schema version: 622107
+  Language: en
+  Running update 622201: add_report_settings()
+  Running update 622202: add_right_publish_design()
+  Running update 622203: grant_right_publish_design()
+    Checking right: Administrator mywcom editFeatures True
+    Application mywcom : Granting right mywcom.publishDesign to Administrator
+    Checking right: Data Editor mywcom editFeatures False
+    Checking right: Data Viewer mywcom editFeatures False
+    Checking right: Designer mywcom editFeatures True
+    Application mywcom : Granting right mywcom.publishDesign to Designer
+  Running update 622204: add_segment_tick_mark_fields()
+    Updating field definitions
+    Mutating table data.mywcom_fiber_segment
+      Building SQL for: add field in_tick
+      Building SQL for: add field out_tick
+      Applying SQL
+    Mutating table base.mywcom_fiber_segment
+      Building SQL for: add field in_tick
+      Building SQL for: add field out_tick
+      Applying SQL
+    Mutating table delta.mywcom_fiber_segment
+      Building SQL for: add field in_tick
+      Building SQL for: add field out_tick
+      Applying SQL
+    Building triggers for: mywcom_fiber_segment
+  Running update 622205: add_cable_tick_mark_fields()
+    Updating field definitions
+    Mutating table data.fiber_cable
+      Building SQL for: add field tick_mark_spacing
+      Applying SQL
+    Mutating table base.fiber_cable
+      Building SQL for: add field tick_mark_spacing
+      Applying SQL
+    Mutating table delta.fiber_cable
+      Building SQL for: add field tick_mark_spacing
+      Applying SQL
+    Building triggers for: fiber_cable
+  Running update 622206: add_cable_spec_tick_mark_fields()
+    Updating field definitions
+    Mutating table data.fiber_cable_spec
+      Building SQL for: add field tick_mark_spacing
+      Applying SQL
+    Building triggers for: fiber_cable_spec
+  Running update 622207: set_spec_retired_field_mandatory()
+    splice_closure_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.splice_closure_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: splice_closure_spec
+    conduit_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.conduit_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: conduit_spec
+    fiber_cable_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.fiber_cable_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: fiber_cable_spec
+    fiber_splitter_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.fiber_splitter_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: fiber_splitter_spec
+    cabinet_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.cabinet_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: cabinet_spec
+    fiber_mux_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.fiber_mux_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: fiber_mux_spec
+    fiber_tap_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.fiber_tap_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: fiber_tap_spec
+    wall_box_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.wall_box_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: wall_box_spec
+    manhole_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.manhole_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: manhole_spec
+    fiber_ont_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.fiber_ont_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: fiber_ont_spec
+    fiber_patch_panel_spec : Changing retired field to mandatory
+    Updating field definitions
+    Mutating table data.fiber_patch_panel_spec
+      Building SQL for: alter field retired default(None->False)
+      Applying SQL
+    Building triggers for: fiber_patch_panel_spec
+  Running update 622208: add_right_manage_labor_costs()
+  Running update 622209: grant_right_manage_labor_costs()
+    Checking right: Administrator mywcom manageSpecifications False
+    Checking right: Data Editor mywcom manageSpecifications False
+    Checking right: Data Viewer mywcom manageSpecifications False
+    Checking right: Designer mywcom manageSpecifications False
+  Running update 622210: add_mywcom_labor_costs_setting()
+  Running update 622211: add_mywcom_labor_cost_feature()
+    Defining feature type: mywcom_labor_cost
+  Running update 622212: add_labor_cost_feature_to_structures_layer()
+  Running update 622213: add_labor_cost_field_to_all_comms_features()
+    Adding labor_costs field to feature type building
+    Updating field definitions
+    Mutating table data.building
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.building
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.building
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: building
+    Adding labor_costs field to feature type pole
+    Updating field definitions
+    Mutating table data.pole
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.pole
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.pole
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: pole
+    Adding labor_costs field to feature type manhole
+    Updating field definitions
+    Mutating table data.manhole
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.manhole
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.manhole
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: manhole
+    Adding labor_costs field to feature type wall_box
+    Updating field definitions
+    Mutating table data.wall_box
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.wall_box
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.wall_box
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: wall_box
+    Adding labor_costs field to feature type cabinet
+    Updating field definitions
+    Mutating table data.cabinet
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.cabinet
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.cabinet
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: cabinet
+    Adding labor_costs field to feature type ug_route
+    Updating field definitions
+    Mutating table data.ug_route
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.ug_route
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.ug_route
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: ug_route
+    Adding labor_costs field to feature type oh_route
+    Updating field definitions
+    Mutating table data.oh_route
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.oh_route
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.oh_route
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: oh_route
+    Adding labor_costs field to feature type conduit
+    Updating field definitions
+    Mutating table data.conduit
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.conduit
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.conduit
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: conduit
+    Adding labor_costs field to feature type blown_fiber_bundle
+    Updating field definitions
+    Mutating table data.blown_fiber_bundle
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.blown_fiber_bundle
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.blown_fiber_bundle
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: blown_fiber_bundle
+    Adding labor_costs field to feature type blown_fiber_tube
+    Updating field definitions
+    Mutating table data.blown_fiber_tube
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.blown_fiber_tube
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.blown_fiber_tube
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: blown_fiber_tube
+    Adding labor_costs field to feature type splice_closure
+    Updating field definitions
+    Mutating table data.splice_closure
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.splice_closure
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.splice_closure
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: splice_closure
+    Adding labor_costs field to feature type fiber_olt
+    Updating field definitions
+    Mutating table data.fiber_olt
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.fiber_olt
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.fiber_olt
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_olt
+    Adding labor_costs field to feature type slot
+    Updating field definitions
+    Mutating table data.slot
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.slot
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.slot
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: slot
+    Adding labor_costs field to feature type fiber_splice_tray
+    Updating field definitions
+    Mutating table data.fiber_splice_tray
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.fiber_splice_tray
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.fiber_splice_tray
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_splice_tray
+    Adding labor_costs field to feature type fiber_splitter
+    Updating field definitions
+    Mutating table data.fiber_splitter
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.fiber_splitter
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.fiber_splitter
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_splitter
+    Adding labor_costs field to feature type fiber_mux
+    Updating field definitions
+    Mutating table data.fiber_mux
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.fiber_mux
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.fiber_mux
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_mux
+    Adding labor_costs field to feature type fiber_tap
+    Updating field definitions
+    Mutating table data.fiber_tap
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.fiber_tap
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.fiber_tap
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_tap
+    Adding labor_costs field to feature type shelf
+    Updating field definitions
+    Mutating table data.shelf
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.shelf
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.shelf
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: shelf
+    Adding labor_costs field to feature type fiber_patch_panel
+    Updating field definitions
+    Mutating table data.fiber_patch_panel
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.fiber_patch_panel
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.fiber_patch_panel
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_patch_panel
+    Adding labor_costs field to feature type rack
+    Updating field definitions
+    Mutating table data.rack
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.rack
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.rack
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: rack
+    Adding labor_costs field to feature type fiber_ont
+    Updating field definitions
+    Mutating table data.fiber_ont
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.fiber_ont
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.fiber_ont
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_ont
+    Adding labor_costs field to feature type fiber_cable
+    Updating field definitions
+    Mutating table data.fiber_cable
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table base.fiber_cable
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Mutating table delta.fiber_cable
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_cable
+    Adding labor_costs field to feature type splice_closure_spec
+    Updating field definitions
+    Mutating table data.splice_closure_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: splice_closure_spec
+    Adding labor_costs field to feature type conduit_spec
+    Updating field definitions
+    Mutating table data.conduit_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: conduit_spec
+    Adding labor_costs field to feature type fiber_cable_spec
+    Updating field definitions
+    Mutating table data.fiber_cable_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_cable_spec
+    Adding labor_costs field to feature type fiber_splitter_spec
+    Updating field definitions
+    Mutating table data.fiber_splitter_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_splitter_spec
+    Adding labor_costs field to feature type cabinet_spec
+    Updating field definitions
+    Mutating table data.cabinet_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: cabinet_spec
+    Adding labor_costs field to feature type fiber_mux_spec
+    Updating field definitions
+    Mutating table data.fiber_mux_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_mux_spec
+    Adding labor_costs field to feature type fiber_tap_spec
+    Updating field definitions
+    Mutating table data.fiber_tap_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_tap_spec
+    Adding labor_costs field to feature type wall_box_spec
+    Updating field definitions
+    Mutating table data.wall_box_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: wall_box_spec
+    Adding labor_costs field to feature type manhole_spec
+    Updating field definitions
+    Mutating table data.manhole_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: manhole_spec
+    Adding labor_costs field to feature type fiber_ont_spec
+    Updating field definitions
+    Mutating table data.fiber_ont_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_ont_spec
+    Adding labor_costs field to feature type fiber_patch_panel_spec
+    Updating field definitions
+    Mutating table data.fiber_patch_panel_spec
+      Building SQL for: add field labor_costs
+      Applying SQL
+    Building triggers for: fiber_patch_panel_spec
+  Running update 622214: migrate_fiber_spec_cable_structure()
+    Migrating cable structure for fiber_cable_spec
+    Updating field definitions
+    Mutating table data.fiber_cable_spec
+      Building SQL for: add field cable_structure
+      Applying SQL
+    Building triggers for: fiber_cable_spec
+    Updating field definitions
+    Mutating table data.fiber_cable_spec
+      Building SQL for: drop field color_scheme
+      Building SQL for: drop field color_scheme_config
+      Applying SQL
+    Building triggers for: fiber_cable_spec
+  Running update 622215: migrate_fiber_color_schemes_setting()
+  Running update 622216: add_core_unit_fiber_loss()
+    Adding new fiber_loss scale to core units
+  Running update 622217: add_fiber_loss_settings()
+  Running update 622218: migrate_circuit_segments()
+    Updating field definitions
+    Updating field definitions
+    Mutating table data.mywcom_fiber_segment
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.mywcom_fiber_segment
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.mywcom_fiber_segment
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: mywcom_fiber_segment
+    Dropping data for: mywcom_circuit_segment
+  Running update 622219: migrate_circuit_ports()
+    Migrating circuit_ports for splice_closure
+    Updating field definitions
+    Mutating table data.splice_closure
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.splice_closure
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.splice_closure
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: splice_closure
+    Migrating circuit_ports for fiber_olt
+    Updating field definitions
+    Mutating table data.fiber_olt
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.fiber_olt
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.fiber_olt
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: fiber_olt
+    Migrating circuit_ports for slot
+    Updating field definitions
+    Mutating table data.slot
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.slot
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.slot
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: slot
+    Migrating circuit_ports for mywcom_fiber_slack
+    Updating field definitions
+    Mutating table data.mywcom_fiber_slack
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.mywcom_fiber_slack
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.mywcom_fiber_slack
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: mywcom_fiber_slack
+    Migrating circuit_ports for fiber_splice_tray
+    Updating field definitions
+    Mutating table data.fiber_splice_tray
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.fiber_splice_tray
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.fiber_splice_tray
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: fiber_splice_tray
+    Migrating circuit_ports for fiber_splitter
+    Updating field definitions
+    Mutating table data.fiber_splitter
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.fiber_splitter
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.fiber_splitter
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: fiber_splitter
+    Migrating circuit_ports for fiber_mux
+    Updating field definitions
+    Mutating table data.fiber_mux
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.fiber_mux
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.fiber_mux
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: fiber_mux
+    Migrating circuit_ports for fiber_tap
+    Updating field definitions
+    Mutating table data.fiber_tap
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.fiber_tap
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.fiber_tap
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: fiber_tap
+    Migrating circuit_ports for shelf
+    Updating field definitions
+    Mutating table data.shelf
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.shelf
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.shelf
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: shelf
+    Migrating circuit_ports for fiber_patch_panel
+    Updating field definitions
+    Mutating table data.fiber_patch_panel
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.fiber_patch_panel
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.fiber_patch_panel
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: fiber_patch_panel
+    Migrating circuit_ports for rack
+    Updating field definitions
+    Mutating table data.rack
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.rack
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.rack
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: rack
+    Migrating circuit_ports for fiber_ont
+    Updating field definitions
+    Mutating table data.fiber_ont
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table base.fiber_ont
+      Building SQL for: add field circuits
+      Applying SQL
+    Mutating table delta.fiber_ont
+      Building SQL for: add field circuits
+      Applying SQL
+    Building triggers for: fiber_ont
+    Dropping data for: mywcom_circuit_port
+
+COMMAND: myw_db comms_scratch upgrade comms 6322 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_6322
+Finding class: CommsDatabaseUpgrade6322
+Running upgrade 6322
+  Upgrading from schema version: 622219
+  Language: en
+  Running update 632201: set_schema_version()
+  Running update 632202: remove_segment_geom_index()
+    Setting geom_indexed=False
+    Building triggers for: mywcom_fiber_segment
+    Building geometry indexes for: mywcom_fiber_segment
+      Building index records for schema: data
+      Building index records for schema: delta
+  Running update 632203: set_reference_fields_readonly()
+    Setting read_only=True for field:  building equipment
+    Setting read_only=True for field:  building routes
+    Setting read_only=True for field:  building in_fiber_segments
+    Setting read_only=True for field:  building out_fiber_segments
+    Setting read_only=True for field:  building cables
+    Updating field definitions
+    Setting read_only=True for field:  pole equipment
+    Setting read_only=True for field:  pole routes
+    Setting read_only=True for field:  pole in_fiber_segments
+    Setting read_only=True for field:  pole out_fiber_segments
+    Setting read_only=True for field:  pole cables
+    Setting read_only=True for field:  pole devdb_path_to_hub
+    Updating field definitions
+    Setting read_only=True for field:  mywcom_route_junction routes
+    Setting read_only=True for field:  mywcom_route_junction in_fiber_segments
+    Setting read_only=True for field:  mywcom_route_junction out_fiber_segments
+    Setting read_only=True for field:  mywcom_route_junction cables
+    Updating field definitions
+    Setting read_only=True for field:  manhole equipment
+    Setting read_only=True for field:  manhole routes
+    Setting read_only=True for field:  manhole in_fiber_segments
+    Setting read_only=True for field:  manhole out_fiber_segments
+    Setting read_only=True for field:  manhole cables
+    Setting read_only=True for field:  manhole devdb_path_to_hub
+    Updating field definitions
+    Setting read_only=True for field:  wall_box equipment
+    Setting read_only=True for field:  wall_box routes
+    Setting read_only=True for field:  wall_box in_fiber_segments
+    Setting read_only=True for field:  wall_box cables
+    Setting read_only=True for field:  wall_box devdb_path_to_hub
+    Updating field definitions
+    Setting read_only=True for field:  cabinet equipment
+    Setting read_only=True for field:  cabinet routes
+    Setting read_only=True for field:  cabinet in_fiber_segments
+    Setting read_only=True for field:  cabinet out_fiber_segments
+    Setting read_only=True for field:  cabinet cables
+    Setting read_only=True for field:  cabinet fiber_splices
+    Setting read_only=True for field:  cabinet devdb_path_to_hub
+    Updating field definitions
+    Setting read_only=True for field:  ug_route in_structure
+    Setting read_only=True for field:  ug_route out_structure
+    Setting read_only=True for field:  ug_route conduits
+    Setting read_only=True for field:  ug_route cable_segments
+    Setting read_only=True for field:  ug_route cables
+    Setting read_only=True for field:  ug_route blown_fiber_tubes
+    Updating field definitions
+    Setting read_only=True for field:  oh_route in_structure
+    Setting read_only=True for field:  oh_route out_structure
+    Setting read_only=True for field:  oh_route cable_segments
+    Setting read_only=True for field:  oh_route cables
+    Updating field definitions
+    Setting read_only=True for field:  conduit housing
+    Setting read_only=True for field:  conduit root_housing
+    Setting read_only=True for field:  conduit in_structure
+    Setting read_only=True for field:  conduit out_structure
+    Setting read_only=True for field:  conduit conduits
+    Setting read_only=True for field:  conduit cable_segments
+    Setting read_only=True for field:  conduit cables
+    Updating field definitions
+    Setting read_only=True for field:  blown_fiber_bundle housing
+    Setting read_only=True for field:  blown_fiber_bundle root_housing
+    Setting read_only=True for field:  blown_fiber_bundle in_structure
+    Setting read_only=True for field:  blown_fiber_bundle out_structure
+    Setting read_only=True for field:  blown_fiber_bundle conduits
+    Setting read_only=True for field:  blown_fiber_bundle in_conduit
+    Setting read_only=True for field:  blown_fiber_bundle out_conduit
+    Setting read_only=True for field:  blown_fiber_bundle continuous_conduits
+    Setting read_only=True for field:  blown_fiber_bundle cable_segments
+    Setting read_only=True for field:  blown_fiber_bundle conduit_run
+    Updating field definitions
+    Setting read_only=True for field:  blown_fiber_tube housing
+    Setting read_only=True for field:  blown_fiber_tube root_housing
+    Setting read_only=True for field:  blown_fiber_tube in_structure
+    Setting read_only=True for field:  blown_fiber_tube out_structure
+    Setting read_only=True for field:  blown_fiber_tube in_conduit
+    Setting read_only=True for field:  blown_fiber_tube out_conduit
+    Setting read_only=True for field:  blown_fiber_tube cable_segments
+    Setting read_only=True for field:  blown_fiber_tube cables
+    Setting read_only=True for field:  blown_fiber_tube continuous_conduits
+    Setting read_only=True for field:  blown_fiber_tube conduit_run
+    Updating field definitions
+    Setting read_only=True for field:  splice_closure equipment
+    Setting read_only=True for field:  splice_closure fiber_splices
+    Setting read_only=True for field:  splice_closure root_housing
+    Setting read_only=True for field:  splice_closure housing
+    Setting read_only=True for field:  splice_closure circuits
+    Updating field definitions
+    Setting read_only=True for field:  fiber_olt root_housing
+    Setting read_only=True for field:  fiber_olt housing
+    Setting read_only=True for field:  fiber_olt fiber_connections
+    Setting read_only=True for field:  fiber_olt circuits
+    Updating field definitions
+    Setting read_only=True for field:  slot root_housing
+    Setting read_only=True for field:  slot housing
+    Setting read_only=True for field:  slot equipment
+    Setting read_only=True for field:  slot circuits
+    Updating field definitions
+    Setting read_only=True for field:  mywcom_fiber_slack root_housing
+    Setting read_only=True for field:  mywcom_fiber_slack housing
+    Setting read_only=True for field:  mywcom_fiber_slack cable
+    Setting read_only=True for field:  mywcom_fiber_slack circuits
+    Updating field definitions
+    Setting read_only=True for field:  fiber_splice_tray equipment
+    Setting read_only=True for field:  fiber_splice_tray fiber_splices
+    Setting read_only=True for field:  fiber_splice_tray root_housing
+    Setting read_only=True for field:  fiber_splice_tray housing
+    Setting read_only=True for field:  fiber_splice_tray circuits
+    Updating field definitions
+    Setting read_only=True for field:  fiber_splitter root_housing
+    Setting read_only=True for field:  fiber_splitter housing
+    Setting read_only=True for field:  fiber_splitter fiber_connections
+    Setting read_only=True for field:  fiber_splitter circuits
+    Updating field definitions
+    Setting read_only=True for field:  fiber_mux fiber_connections
+    Setting read_only=True for field:  fiber_mux root_housing
+    Setting read_only=True for field:  fiber_mux housing
+    Setting read_only=True for field:  fiber_mux circuits
+    Updating field definitions
+    Setting read_only=True for field:  fiber_tap root_housing
+    Setting read_only=True for field:  fiber_tap housing
+    Setting read_only=True for field:  fiber_tap fiber_connections
+    Setting read_only=True for field:  fiber_tap circuits
+    Updating field definitions
+    Setting read_only=True for field:  shelf root_housing
+    Setting read_only=True for field:  shelf housing
+    Setting read_only=True for field:  shelf equipment
+    Setting read_only=True for field:  shelf fiber_connections
+    Setting read_only=True for field:  shelf circuits
+    Updating field definitions
+    Setting read_only=True for field:  fiber_patch_panel root_housing
+    Setting read_only=True for field:  fiber_patch_panel housing
+    Setting read_only=True for field:  fiber_patch_panel cables
+    Setting read_only=True for field:  fiber_patch_panel fiber_connections
+    Setting read_only=True for field:  fiber_patch_panel circuits
+    Updating field definitions
+    Setting read_only=True for field:  rack root_housing
+    Setting read_only=True for field:  rack housing
+    Setting read_only=True for field:  rack equipment
+    Setting read_only=True for field:  rack circuits
+    Updating field definitions
+    Setting read_only=True for field:  fiber_ont fiber_connections
+    Setting read_only=True for field:  fiber_ont root_housing
+    Setting read_only=True for field:  fiber_ont housing
+    Setting read_only=True for field:  fiber_ont circuits
+    Updating field definitions
+    Setting read_only=True for field:  fiber_cable cable_segments
+    Setting read_only=True for field:  fiber_cable splices
+    Setting read_only=True for field:  fiber_cable connections
+    Setting read_only=True for field:  fiber_cable cable_slacks
+    Updating field definitions
+    Setting read_only=True for field:  mywcom_fiber_segment cable
+    Setting read_only=True for field:  mywcom_fiber_segment housing
+    Setting read_only=True for field:  mywcom_fiber_segment root_housing
+    Setting read_only=True for field:  mywcom_fiber_segment in_structure
+    Setting read_only=True for field:  mywcom_fiber_segment out_structure
+    Setting read_only=True for field:  mywcom_fiber_segment fiber_connections
+    Setting read_only=True for field:  mywcom_fiber_segment circuits
+    Updating field definitions
+    Setting read_only=True for field:  mywcom_fiber_connection in_object
+    Setting read_only=True for field:  mywcom_fiber_connection out_object
+    Setting read_only=True for field:  mywcom_fiber_connection root_housing
+    Setting read_only=True for field:  mywcom_fiber_connection housing
+    Updating field definitions
+    Setting read_only=True for field:  mywcom_fiber_slack root_housing
+    Setting read_only=True for field:  mywcom_fiber_slack housing
+    Setting read_only=True for field:  mywcom_fiber_slack cable
+    Setting read_only=True for field:  mywcom_fiber_slack circuits
+    Updating field definitions
+    Setting read_only=True for field:  mywcom_route_junction routes
+    Setting read_only=True for field:  mywcom_route_junction in_fiber_segments
+    Setting read_only=True for field:  mywcom_route_junction out_fiber_segments
+    Setting read_only=True for field:  mywcom_route_junction cables
+    Updating field definitions
+    Setting read_only=True for field:  mywcom_conduit_run conduits
+    Updating field definitions
+
+COMMAND: myw_db comms_scratch upgrade comms 6323 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_6323
+Finding class: CommsDatabaseUpgrade6323
+Running upgrade 6323
+  Upgrading from schema version: 632203
+  Language: en
+  Running update 632301: add_design_user_group_setting()
+  Running update 632302: add_design_feature_user_group_field()
+  Running update 632303: add_mywcom_change_detail_feature()
+    Defining feature type: mywcom_change_detail
+  Running update 632304: add_mywcom_change_detail_feature_to_structures_layer()
+    Adding mywcom_change_detail to layer mywcom_structures
+
+COMMAND: myw_db comms_scratch upgrade comms 6423 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_6423
+Finding class: CommsDatabaseUpgrade6423
+Running upgrade 6423
+  Upgrading from schema version: 632304
+  Language: en
+  Running update 642301: set_schema_version()
+
+COMMAND: myw_db comms_scratch upgrade comms 6424 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_6424
+Finding class: CommsDatabaseUpgrade6424
+Running upgrade 6424
+  Upgrading from schema version: 642301
+  Language: en
+  Running update 642401: add_bulk_move_settings()
+  Running update 642402: add_design_markup()
+    Defining feature type: iqgapp_markup_line
+    Defining feature type: iqgapp_markup_photo
+    Defining feature type: iqgapp_markup_photo_item
+    Defining feature type: iqgapp_markup_point
+    Defining feature type: iqgapp_markup_polygon
+    Defining feature type: iqgapp_markup_text
+    Defining layer: iqgapp_markup_layer
+  Running update 642403: add_layout_strand()
+  Running update 642404: add_data_import_settings()
+
+COMMAND: myw_db comms_scratch upgrade comms 6525 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_6525
+Finding class: CommsDatabaseUpgrade6525
+Running upgrade 6525
+  Upgrading from schema version: 642404
+  Language: en
+  Running update 652501: add_view_all_deltas_right()
+  Running update 652502: add_system_changes_limit_setting()
+
+COMMAND: myw_db comms_scratch upgrade comms 6526 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_6526
+Finding class: CommsDatabaseUpgrade6526
+Running upgrade 6526
+  Upgrading from schema version: 652502
+  Language: en
+  Running update 652601: add_networks()
+    Defining network: mywcom_cable_segments
+    Defining network: mywcom_fiber_path
+  Running update 652602: add_path_finder_settings()
+  Running update 652603: add_task_queue()
+    Defining feature type: iqgapp_task_queue
+  Running update 652604: update_change_detail_feature()
+    Updating feature type: mywcom_change_detail
+
+COMMAND: myw_db comms_scratch upgrade comms 7026 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_7026
+Finding class: CommsDatabaseUpgrade7026
+Running upgrade 7026
+  Upgrading from schema version: 652604
+  Language: en
+  Running update 702601: set_schema_version()
+
+COMMAND: myw_db comms_scratch upgrade comms 7030 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_7030
+Finding class: CommsDatabaseUpgrade7030
+Running upgrade 7030
+  Upgrading from schema version: 702601
+  Language: en
+  Running update 703000: check_for_copper()
+  Running update 703001: add_cable_technology()
+  Running update 703002: add_equipment_technology()
+  Running update 703003: add_copper_schema()
+    Defining feature type: mywcom_copper_connection
+    Defining feature type: mywcom_copper_segment
+    Defining feature type: mywcom_copper_slack
+    Defining network: mywcom_copper
+    Defining layer: mywcom_copper_cables
+    Defining layer: mywcom_copper_equipment
+    Adding mywcom_copper_connection to layer mywcom_cable_segments
+    Adding mywcom_copper_segment to layer mywcom_cable_segments
+    Adding mywcom_copper_slack to layer mywcom_copper_equipment
+    Defining layer group: mywcom_copper_group
+  Running update 703004: add_coaxial_schema()
+    Defining feature type: mywcom_coax_connection
+    Defining feature type: mywcom_coax_segment
+    Defining feature type: mywcom_coax_slack
+    Defining network: mywcom_coax
+    Defining layer: mywcom_coax_cables
+    Defining layer: mywcom_coax_equipment
+    Adding mywcom_coax_connection to layer mywcom_cable_segments
+    Adding mywcom_coax_segment to layer mywcom_cable_segments
+    Adding mywcom_coax_slack to layer mywcom_coax_equipment
+    Defining layer group: mywcom_coax_group
+  Running update 703005: add_segment_refs_to_housings()
+    Adding mywcom_copper_segment to field ug_route .cable_segments
+    Updating field definitions
+    Adding mywcom_coax_segment to field ug_route .cable_segments
+    Updating field definitions
+    Adding mywcom_copper_segment to field oh_route .cable_segments
+    Updating field definitions
+    Adding mywcom_coax_segment to field oh_route .cable_segments
+    Updating field definitions
+    Adding mywcom_copper_segment to field conduit .cable_segments
+    Updating field definitions
+    Adding mywcom_coax_segment to field conduit .cable_segments
+    Updating field definitions
+    Adding mywcom_copper_segment to field blown_fiber_bundle .cable_segments
+    Updating field definitions
+    Adding mywcom_coax_segment to field blown_fiber_bundle .cable_segments
+    Updating field definitions
+    Adding mywcom_copper_segment to field blown_fiber_tube .cable_segments
+    Updating field definitions
+    Adding mywcom_coax_segment to field blown_fiber_tube .cable_segments
+    Updating field definitions
+  Running update 703006: add_line_of_count_schema()
+    Defining enumerator: loc_status
+    Defining feature type: mywcom_line_of_count
+    Defining feature type: mywcom_line_of_count_section
+    Defining layer: mywcom_line_of_count
+  Running update 703007: add_network_types()
+  Running update 703008: add_fiber_layout_group()
+    Defining layer group: mywcom_fiber_group
+    Defining layer: mywcom_mixed_equipment
+  Running update 703009: add_segment_containment_fields()
+    Adding fields to mywcom_fiber_segment
+    Updating field definitions
+    Mutating table data.mywcom_fiber_segment
+      Building SQL for: add field in_equipment
+      Building SQL for: add field out_equipment
+      Building SQL for: add index in_equipment
+      Building SQL for: add index out_equipment
+      Applying SQL
+    Mutating table base.mywcom_fiber_segment
+      Building SQL for: add field in_equipment
+      Building SQL for: add field out_equipment
+      Building SQL for: add index in_equipment
+      Building SQL for: add index out_equipment
+      Applying SQL
+    Mutating table delta.mywcom_fiber_segment
+      Building SQL for: add field in_equipment
+      Building SQL for: add field out_equipment
+      Building SQL for: add index in_equipment
+      Building SQL for: add index out_equipment
+      Applying SQL
+    Building triggers for: mywcom_fiber_segment
+    Adding fields to mywcom_copper_segment
+    Updating field definitions
+    Mutating table data.mywcom_copper_segment
+      Building SQL for: add field in_equipment
+      Building SQL for: add field out_equipment
+      Building SQL for: add index in_equipment
+      Building SQL for: add index out_equipment
+      Applying SQL
+    Mutating table base.mywcom_copper_segment
+      Building SQL for: add field in_equipment
+      Building SQL for: add field out_equipment
+      Building SQL for: add index in_equipment
+      Building SQL for: add index out_equipment
+      Applying SQL
+    Mutating table delta.mywcom_copper_segment
+      Building SQL for: add field in_equipment
+      Building SQL for: add field out_equipment
+      Building SQL for: add index in_equipment
+      Building SQL for: add index out_equipment
+      Applying SQL
+    Building triggers for: mywcom_copper_segment
+    Adding fields to mywcom_coax_segment
+    Updating field definitions
+    Mutating table data.mywcom_coax_segment
+      Building SQL for: add field in_equipment
+      Building SQL for: add field out_equipment
+      Building SQL for: add index in_equipment
+      Building SQL for: add index out_equipment
+      Applying SQL
+    Mutating table base.mywcom_coax_segment
+      Building SQL for: add field in_equipment
+      Building SQL for: add field out_equipment
+      Building SQL for: add index in_equipment
+      Building SQL for: add index out_equipment
+      Applying SQL
+    Mutating table delta.mywcom_coax_segment
+      Building SQL for: add field in_equipment
+      Building SQL for: add field out_equipment
+      Building SQL for: add index in_equipment
+      Building SQL for: add index out_equipment
+      Applying SQL
+    Building triggers for: mywcom_coax_segment
+  Running update 703010: add_coax_offset_layers()
+    Defining layer: mywcom_coax_cables_offset
+    Defining layer: mywcom_coax_equipment_offset
+    Defining layer group: mywcom_coax_offset_group
+  Running update 703011: add_data_block()
+    Defining feature type: mywcom_data_block
+    Defining layer: mywcom_data_block
+  Running update 703012: add_loss_settings()
+
+COMMAND: myw_db comms_scratch upgrade comms 7131 --verbosity=4
+Opening database <conn_spec> ...
+Compiling: myworldapp.modules.comms.server.db_schema.comms_database_upgrade_7131
+Finding class: CommsDatabaseUpgrade7131
+Running upgrade 7131
+  Upgrading from schema version: 703012
+  Language: en
+  Running update 713101: add_tmf_settings()
+
+Opening database <conn_spec> ...
+table                         count
+----------------------------  -----
+address                        4404
+blown_fiber_bundle               24
+blown_fiber_tube                174
+building                          2
+cabinet                          41
+cabinet_spec                      5
+conduit                         234
+conduit_spec                      4
+design                            6
+fiber_cable                     182
+fiber_cable_spec                 13
+fiber_mux                         6
+fiber_mux_spec                    0
+fiber_olt                        40
+fiber_ont                       153
+fiber_ont_spec                    0
+fiber_patch_panel                 3
+fiber_patch_panel_spec            0
+fiber_splice_tray                 0
+fiber_splitter                   12
+fiber_splitter_spec               4
+fiber_tap                         0
+fiber_tap_spec                    0
+iqgapp_markup_line                0
+iqgapp_markup_photo               0
+iqgapp_markup_photo_item          0
+iqgapp_markup_point               0
+iqgapp_markup_polygon             0
+iqgapp_markup_text                0
+iqgapp_task_queue                 0
+manhole                         245
+manhole_spec                      3
+mywcom_change_detail              0
+mywcom_coax_connection            0
+mywcom_coax_segment               0
+mywcom_coax_slack                 0
+mywcom_conduit_run               49
+mywcom_copper_connection          0
+mywcom_copper_segment             0
+mywcom_copper_slack               0
+mywcom_data_block                 0
+mywcom_fiber_connection         224
+mywcom_fiber_segment            450
+mywcom_fiber_slack               13
+mywcom_labor_cost                 0
+mywcom_line_of_count              0
+mywcom_line_of_count_section      0
+mywcom_route_junction            64
+note                              1
+oh_route                        133
+osm_building                      0
+pole                             43
+rack                              6
+service_area                      2
+shelf                            16
+slot                             36
+splice_closure                   38
+splice_closure_spec               4
+ug_route                        352
+wall_box                        150
+wall_box_spec                     0
+
+Opening database <conn_spec> ...
+  mywcom.bulkMove  value={'enabled': True, 'selectionLimit': {'max': 30, 'min': 1}}
+  mywcom.cables  value={'fiber_cable': {'image': 'modules/comms/images/features/fiber_cable.svg', 'housings': ['ug_route', 'oh_route', 'conduit', 'blown_fiber_tube'], 'palette': True, 'tech': 'fiber'}}
+  mywcom.circuitReport  value={'circuitFields': []}
+  mywcom.circuits  value={}
+  mywcom.conduits  value={'conduit': {'palette': True, 'image': 'modules/comms/images/features/conduit.svg', 'continuous': False, 'bundle_type': None, 'structurePaletteImage': 'modules/comms/images/features/conduit_in_structure_palette.svg', 'housings': ['ug_route', 'conduit']}, 'blown_fiber_bundle': {'palette': False, 'image': 'modules/comms/images/features/blown_fiber_bundle.svg', 'continuous': True, 'bundle_type': None, 'structurePaletteImage': 'modules/comms/images/features/blown_fiber_tube_in_structure_palette.svg', 'housings': ['ug_route', 'conduit']}, 'blown_fiber_tube': {'palette': True, 'image': 'modules/comms/images/features/blown_fiber_tube.svg', 'continuous': True, 'bundle_type': 'blown_fiber_bundle', 'structurePaletteImage': 'modules/comms/images/features/blown_fiber_tube_in_structure_palette.svg', 'housings': ['ug_route', 'conduit', 'blown_fiber_bundle']}}
+  mywcom.conflictStyles  value={'change': {'color': '#228b22', 'opacity': 0.9}, 'conflict': {'color': '#ff4500', 'opacity': 0.9}}
+  mywcom.connectivityReport  value={'circuitFields': ['name']}
+  mywcom.designs  value={}
+  mywcom.editableStates  value=['Designing']
+  mywcom.equipment  value={'splice_closure': {'function': 'enclosure', 'image': 'modules/comms/images/features/splice_closure.svg', 'housings': ['rack', 'shelf', 'slot', 'manhole', 'pole'], 'palette': True, 'tech': 'mixed'}, 'fiber_olt': {'function': 'terminal', 'image': 'modules/comms/images/features/fiber_olt.svg', 'housings': ['rack', 'shelf', 'slot'], 'palette': True, 'tech': 'fiber'}, 'slot': {'function': 'enclosure', 'image': 'modules/comms/images/features/slot.svg', 'housings': ['rack', 'shelf'], 'palette': True, 'tech': 'mixed'}, 'mywcom_fiber_slack': {'function': 'slack', 'image': 'modules/comms/images/features/fiber_slack.svg', 'housings': ['building', 'cabinet', 'manhole', 'pole', 'splice_closure', 'wall_box'], 'palette': False, 'tech': 'fiber'}, 'fiber_splice_tray': {'function': 'enclosure', 'image': 'modules/comms/images/features/fiber_splice_tray.svg', 'housings': ['splice_closure', 'cabinet'], 'palette': True, 'tech': 'mixed'}, 'fiber_splitter': {'function': 'splitter', 'image': 'modules/comms/images/features/fiber_splitter.svg', 'housings': ['rack', 'shelf', 'slot', 'cabinet', 'splice_closure'], 'palette': True, 'tech': 'fiber'}, 'fiber_mux': {'function': 'mux', 'image': 'modules/comms/images/features/fiber_mux.svg', 'housings': ['rack', 'shelf', 'slot', 'manhole', 'cabinet', 'splice_closure'], 'palette': True, 'tech': 'fiber'}, 'fiber_tap': {'function': 'enclosure', 'image': 'modules/comms/images/features/fiber_tap.svg', 'housings': ['splice_closure'], 'palette': True, 'tech': 'mixed'}, 'shelf': {'function': 'enclosure', 'image': 'modules/comms/images/features/shelf.svg', 'housings': ['rack'], 'palette': True, 'tech': 'mixed'}, 'fiber_patch_panel': {'function': 'cross_connect', 'image': 'modules/comms/images/features/fiber_patch_panel.svg', 'housings': ['building'], 'palette': True, 'tech': 'fiber'}, 'rack': {'function': 'enclosure', 'image': 'modules/comms/images/features/rack.svg', 'housings': ['building', 'cabinet', 'manhole'], 'palette': True, 'tech': 'mixed'}, 'fiber_ont': {'function': 'terminal', 'image': 'modules/comms/images/features/fiber_ont.svg', 'housings': ['wall_box'], 'palette': True, 'tech': 'fiber'}}
+  mywcom.equipmentReport  value={'featureFields': ['specification']}
+  mywcom.ewl  value={'conversions': [{'gauge': 19, 'ewl': 0.4}, {'gauge': 22, 'ewl': 0.6}, {'gauge': 24, 'ewl': 0.75}, {'gauge': 26, 'ewl': 1}]}
+  mywcom.fiberColorSchemes  value={'DIN VDE 0888': {'colors': [{'color': 'red'}, {'color': 'green'}, {'color': 'blue'}, {'color': 'yellow'}, {'color': 'white'}, {'color': 'slate'}, {'color': 'brown'}, {'color': 'violet'}, {'color': 'turquoise'}, {'color': 'black'}, {'color': 'orange'}, {'color': 'pink'}, {'color': 'red', 'stripes': ['black']}, {'color': 'green', 'stripes': ['black']}, {'color': 'blue', 'stripes': ['black']}, {'color': 'yellow', 'stripes': ['black']}, {'color': 'white', 'stripes': ['black']}, {'color': 'slate', 'stripes': ['black']}, {'color': 'brown', 'stripes': ['black']}, {'color': 'violet', 'stripes': ['black']}, {'color': 'turquoise', 'stripes': ['black']}, {'color': 'transparent', 'stripes': []}, {'color': 'orange', 'stripes': ['black']}, {'color': 'pink', 'stripes': ['black']}], 'description': 'DIN VDE 0888 standard color scheme'}, 'TIA-598-C': {'colors': [{'color': 'blue'}, {'color': 'orange'}, {'color': 'green'}, {'color': 'brown'}, {'color': 'slate'}, {'color': 'white'}, {'color': 'red'}, {'color': 'black'}, {'color': 'yellow'}, {'color': 'violet'}, {'color': 'rose'}, {'color': 'aqua'}, {'color': 'blue', 'stripes': ['black']}, {'color': 'orange', 'stripes': ['black']}, {'color': 'green', 'stripes': ['black']}, {'color': 'brown', 'stripes': ['black']}, {'color': 'slate', 'stripes': ['black']}, {'color': 'white', 'stripes': ['black']}, {'color': 'red', 'stripes': ['black']}, {'color': 'black', 'stripes': ['yellow']}, {'color': 'yellow', 'stripes': ['black']}, {'color': 'violet', 'stripes': ['black']}, {'color': 'rose', 'stripes': ['black']}, {'color': 'aqua', 'stripes': ['black']}], 'description': 'TIA-598-C standard color scheme'}, 'FIN2012': {'colors': [{'color': 'blue'}, {'color': 'white'}, {'color': 'yellow'}, {'color': 'green'}, {'color': 'grey'}, {'color': 'orange'}, {'color': 'brown'}, {'color': 'turquoise'}, {'color': 'black'}, {'color': 'violet'}, {'color': 'pink'}, {'color': 'red'}, {'color': 'blue', 'stripes': ['black']}, {'color': 'white', 'stripes': ['black']}, {'color': 'yellow', 'stripes': ['black']}, {'color': 'green', 'stripes': ['black']}, {'color': 'grey', 'stripes': ['black']}, {'color': 'orange', 'stripes': ['black']}, {'color': 'brown', 'stripes': ['black']}, {'color': 'turquoise', 'stripes': ['black']}, {'color': 'transparent', 'stripes': []}, {'color': 'violet', 'stripes': ['black']}, {'color': 'pink', 'stripes': ['black']}, {'color': 'red', 'stripes': ['black']}], 'description': 'FIN2012 color scheme typically used in Finland'}, 'Copper Tip Colors': {'colors': [{'color': 'white'}, {'color': 'red'}, {'color': 'black'}, {'color': 'yellow'}, {'color': 'violet'}], 'description': 'Copper Tip Colors'}, 'Copper Ring Colors': {'colors': [{'color': 'blue'}, {'color': 'orange'}, {'color': 'green'}, {'color': 'brown'}, {'color': 'slate'}], 'description': 'Copper Ring Colors'}}
+  mywcom.fiberColors  value={'brown': {'color': '#A52A2A', 'abbr': 'BN', 'label': 'Brown'}, 'turquoise': {'color': '#40E0D0', 'abbr': 'TQ', 'label': 'Turquoise'}, 'slate': {'color': '#708090', 'abbr': 'SL', 'label': 'Slate'}, 'yellow': {'color': '#FFFF00', 'abbr': 'YL', 'label': 'Yellow'}, 'pink': {'color': '#FFC0CB', 'abbr': 'PK', 'label': 'Pink'}, 'violet': {'color': '#EE82EE', 'abbr': 'VT', 'label': 'Violet'}, 'transparent': {'color': '#EEEEEE', 'abbr': 'TR', 'label': 'Transparent'}, 'blue': {'color': '#0000FF', 'abbr': 'BL', 'label': 'Blue'}, 'rose': {'color': '#FFE4E1', 'abbr': 'RO', 'label': 'Rose'}, 'aqua': {'color': '#00FFFF', 'abbr': 'A', 'label': 'Aqua'}, 'grey': {'color': '#808080', 'abbr': 'GY', 'label': 'Grey'}, 'green': {'color': '#008000', 'abbr': 'GN', 'label': 'Green'}, 'orange': {'color': '#FFA500', 'abbr': 'OR', 'label': 'Orange'}, 'black': {'color': '#000000', 'abbr': 'BK', 'label': 'Black'}, 'white': {'color': '#FFFFFF', 'abbr': 'WT', 'label': 'White'}, 'red': {'color': '#FF0000', 'abbr': 'RD', 'label': 'Red'}}
+  mywcom.fiberLoss  value={'cable': 0.5, 'splice': 0.1, 'mux': 4.83, 'connector': 0.3, 'terminal': 0.3, 'splitter': 4.83}
+  mywcom.fiberReport  value={'cableFields': [], 'circuitFields': []}
+  mywcom.import_config.cdif  value={'name': 'CDIF', 'description': 'IQGeo Comms Data Interchange Format (no mappings)', 'engine': 'cdif', 'options': {}, 'file_specs': ['*.csv'], 'mappings': []}
+  mywcom.import_file_types  value={'gpkg': 'gpkg_feature_package', 'sqlite': 'sqlite_feature_package', 'zip': 'file_feature_package'}
+  mywcom.laborCosts  value={'building': 'labor_costs', 'pole': 'labor_costs', 'manhole': 'labor_costs', 'wall_box': 'labor_costs', 'cabinet': 'labor_costs', 'ug_route': 'labor_costs', 'oh_route': 'labor_costs', 'conduit': 'labor_costs', 'blown_fiber_bundle': 'labor_costs', 'blown_fiber_tube': 'labor_costs', 'splice_closure': 'labor_costs', 'fiber_olt': 'labor_costs', 'slot': 'labor_costs', 'fiber_splice_tray': 'labor_costs', 'fiber_splitter': 'labor_costs', 'fiber_mux': 'labor_costs', 'fiber_tap': 'labor_costs', 'shelf': 'labor_costs', 'fiber_patch_panel': 'labor_costs', 'rack': 'labor_costs', 'fiber_ont': 'labor_costs', 'fiber_cable': 'labor_costs', 'splice_closure_spec': 'labor_costs', 'conduit_spec': 'labor_costs', 'fiber_cable_spec': 'labor_costs', 'fiber_splitter_spec': 'labor_costs', 'cabinet_spec': 'labor_costs', 'fiber_mux_spec': 'labor_costs', 'fiber_tap_spec': 'labor_costs', 'wall_box_spec': 'labor_costs', 'manhole_spec': 'labor_costs', 'fiber_ont_spec': 'labor_costs', 'fiber_patch_panel_spec': 'labor_costs'}
+  mywcom.line_of_count  value={'connect_disconnect_auto_ripple': True}
+  mywcom.loss  value={'fiber': {'cable': 0.5, 'splice': 0.1, 'mux': 4.83, 'connector': 0.3, 'terminal': 0.3, 'splitter': 4.83}, 'copper': {'cable': {'19': 0.1, '20': 0.2}, 'splice': 0.1, 'connector': 0.3, 'terminal': 0.3}, 'coax': {}, 'mixed': {}}
+  mywcom.network_types  value={'fiber': {'segment_type': 'mywcom_fiber_segment', 'slack_type': 'mywcom_fiber_slack', 'connection_type': 'mywcom_fiber_connection', 'struct_in_segments_field': 'in_fiber_segments', 'struct_out_segments_field': 'out_fiber_segments', 'equip_n_in_pins_field': 'n_fiber_in_ports', 'equip_n_out_pins_field': 'n_fiber_out_ports', 'equip_n_pins_field': 'n_fiber_ports', 'cable_n_pins_field': 'fiber_count', 'connections_field': 'fiber_connections', 'splices_field': 'fiber_splices', 'network_name': 'mywcom_fiber'}, 'copper': {'segment_type': 'mywcom_copper_segment', 'slack_type': 'mywcom_copper_slack', 'connection_type': 'mywcom_copper_connection', 'struct_in_segments_field': 'in_copper_segments', 'struct_out_segments_field': 'out_copper_segments', 'equip_n_in_pins_field': 'n_copper_in_ports', 'equip_n_out_pins_field': 'n_copper_out_ports', 'equip_n_pins_field': 'n_copper_ports', 'cable_n_pins_field': 'copper_count', 'connections_field': 'copper_connections', 'splices_field': 'copper_splices', 'network_name': 'mywcom_copper'}, 'coax': {'segment_type': 'mywcom_coax_segment', 'slack_type': 'mywcom_coax_slack', 'connection_type': 'mywcom_coax_connection', 'struct_in_segments_field': 'in_coax_segments', 'struct_out_segments_field': 'out_coax_segments', 'equip_n_in_pins_field': 'n_coax_in_ports', 'equip_n_out_pins_field': 'n_coax_out_ports', 'equip_n_pins_field': 'n_coax_ports', 'cable_n_pins_field': 'coax_count', 'connections_field': 'coax_connections', 'splices_field': 'coax_splices', 'network_name': 'mywcom_coax'}}
+  mywcom.path_finder  value={'max_nodes': 1000, 'show_partial': False, 'max_route_paths': 10, 'max_route_nodes': 1000, 'exclude_similar': False, 'similarity_threshold': 90, 'route_paths_only': False, 'cable_paths_only': False, 'bidirectional': False, 'num_back_steps': 20, 'max_paths_default': 5, 'max_dist_default': 5000, 'connection_cost_metres': 10, 'splice_closure_type': '', 'splice_closure_properties': {}, 'include_as_via': True}
+  mywcom.previewCableStyles  value={'insert': {'color': '#0000FF', 'opacity': 0.75, 'weight': 8}, 'keep': {'color': '#8888FF', 'opacity': 0.75, 'weight': 8}, 'affected_structure': {'text': {'vOffset': 0, 'fontStyle': 'normal', 'worldSize': False, 'halign': 'left', 'zIndexOffset': 2000, 'hOffset': 0, 'fontFamily': 'Arial', 'fieldName': 'disconnects', 'bcolor': '#ffffff', 'valign': 'top', 'fontColor': '#000000', 'fontSize': 10, 'border': 1}, 'icon': {'iconUrl': 'images/circle-empty2.svg', 'iconAnchor': [18, 18], 'orientiation': 0}}, 'delete': {'color': '#BBBBBB', 'opacity': 0.9, 'weight': 8}}
+  mywcom.proposedObjectStyle  value={'color': '#ffa500'}
+  mywcom.routes  value={'ug_route': {'image': 'modules/comms/images/features/ug_route.svg', 'palette': True}, 'oh_route': {'image': 'modules/comms/images/features/oh_route.svg', 'palette': True}}
+  mywcom.specs  value={'splice_closure': 'specification', 'conduit': 'specification', 'fiber_cable': 'specification', 'fiber_splitter': 'specification', 'cabinet': 'specification', 'fiber_mux': 'specification', 'fiber_tap': 'specification', 'wall_box': 'specification', 'manhole': 'specification', 'fiber_ont': 'specification', 'fiber_patch_panel': 'specification'}
+  mywcom.stateManager  value={'enabled': True}
+  mywcom.strandLayout  value={'defaultLengthUnit': 'ft', 'enabled': False, 'overhead': {'structures': {}, 'routes': []}, 'underground': {'structures': {}, 'routes': []}}
+  mywcom.structures  value={'building': {'image': 'modules/comms/images/features/building.svg', 'palette': True}, 'pole': {'image': 'modules/comms/images/features/pole.svg', 'palette': True}, 'mywcom_route_junction': {'image': None, 'palette': False}, 'manhole': {'image': 'modules/comms/images/features/manhole.svg', 'palette': True}, 'wall_box': {'image': 'modules/comms/images/features/wall_box.svg', 'palette': True}, 'cabinet': {'image': 'modules/comms/images/features/cabinet.svg', 'palette': True}}
+  mywcom.systemChangesLimit  value=1000
+  mywcom.tmf_categories  value={'Cable': 'Cable', 'Circuit': 'Circuit', 'Conduit': 'Conduit', 'Equip': 'Equipment', 'Route': 'Route', 'Struct': 'Structure'}
+  mywcom.tmf_edit_allowed  value=['Circuit']
+  mywcom.tmf_fields  value={'Cable': {'name': 'name', 'specification': 'specification', 'directed': 'directed', 'count': 'fiber_count', 'laborCosts': 'labor_costs', 'path': 'geometry'}, 'Circuit': {'name': 'name', 'inFeature': 'in_feature', 'inPins': 'in_pins', 'outFeature': 'out_feature', 'outPins': 'out_pins', 'path': 'geometry'}, 'Conduit': {'name': 'name', 'housing': 'housing', 'specification': 'specification', 'rootHousing': 'root_housing', 'inStructure': 'in_structure', 'outStructure': 'out_structure', 'inConduit': 'in_conduit', 'outConduit': 'out_conduit', 'conduitRun': 'conduit_run', 'laborCosts': 'labor_costs', 'path': 'geometry'}, 'Equipment': {'name': 'name', 'specification': 'specification', 'housing': 'housing', 'rootHousing': 'root_housing', 'circuits': 'circuits', 'laborCosts': 'labor_costs', 'location': 'geometry'}, 'Route': {'inStructure': 'in_structure', 'outStructure': 'out_structure', 'length': 'length', 'laborCosts': 'labor_costs', 'path': 'geometry'}, 'Structure': {'name': 'name', 'specification': 'specification', 'laborCosts': 'labor_costs', 'location': 'geometry'}, 'Connection': {'inObject': 'in_object', 'outObject': 'out_object', 'inSide': 'in_side', 'outSide': 'out_side', 'inLow': 'in_low', 'inHigh': 'in_high', 'outLow': 'out_low', 'outHigh': 'out_high', 'rootHousing': 'root_housing'}}
+  mywcom.tmf_tables  value={}
+
+Opening database <conn_spec> ...
+  mywcom.bulkMoveFeatures  config=False  description=Comms: Bulk-move features
+  mywcom.checkMaster  config=False  description=Comms: Run data validation
+  mywcom.editMaster  config=False  description=Comms: Edit master
+  mywcom.manageLaborCosts  config=False  description=Comms: Manage Labor Costs
+  mywcom.manageSpecifications  config=False  description=Comms: Manage specifications
+  mywcom.publishDesign  config=False  description=Comms: Publish Designs
+  mywcom.viewAllDeltas  config=False  description=Comms: View All Designs
+
+COMMAND: comms_db comms_scratch validate config
+Opening database <conn_spec> ...
+------------------------------
+ Checking Comms Configuration 
+------------------------------
+Checking configuration: structures
+Checking configuration: routes
+Checking configuration: equipment
+Checking configuration: conduits
+Checking configuration: cables
+Checking configuration: circuits
+Checking configuration: specs
+Checking configuration: laborCosts
+Checking configuration: fiberColors
+Checking configuration: fiberColorSchemes
+Checking configuration: designs
+Checking configuration: import_config
+
+COMMAND: comms_db comms_scratch validate data
+Opening database <conn_spec> ...
+------------------------------
+ Checking Comms Data
+------------------------------
+Data version: Master
+Checking integrity
+  Checking routes
+  Checking conduits
+  Checking conduit_runs
+  Checking equips
+  Checking cables
+  Checking segments
+  Checking connections
+    fiber_olt(26) n_fiber_in_ports duplicate_connection slot(27)
+    fiber_olt(26) n_fiber_in_ports duplicate_connection slot(27)
+    mywcom_fiber_connection(206) out_high port_out_of_range fiber_ont(139)
+    mywcom_fiber_connection(210) out_high port_out_of_range fiber_ont(140)
+  Checking circuits
+  Checking line_of_counts
+
+COMMAND: comms_db comms_scratch validate data --delta design/test
+Opening database <conn_spec> ...
+------------------------------
+ Checking Comms Data
+------------------------------
+Data version: design/test
+Checking for conflicts
+  Checking mywcom_coax_slack
+  Checking mywcom_copper_slack
+  Checking mywcom_data_block
+  Checking building
+  Checking pole
+  Checking mywcom_route_junction
+  Checking manhole
+  Checking wall_box
+  Checking cabinet
+  Checking ug_route
+  Checking oh_route
+  Checking splice_closure
+  Checking fiber_olt
+  Checking slot
+  Checking mywcom_fiber_slack
+  Checking fiber_splice_tray
+  Checking fiber_splitter
+  Checking fiber_mux
+  Checking fiber_tap
+  Checking shelf
+  Checking fiber_patch_panel
+  Checking rack
+  Checking fiber_ont
+  Checking conduit
+  Checking blown_fiber_bundle
+  Checking blown_fiber_tube
+  Checking fiber_cable
+  Checking mywcom_fiber_connection
+  Checking mywcom_copper_connection
+  Checking mywcom_coax_connection
+  Checking mywcom_line_of_count
+  Checking mywcom_line_of_count_section
+  Checking mywcom_conduit_run
+  Checking mywcom_fiber_segment
+  Checking mywcom_copper_segment
+  Checking mywcom_coax_segment
+Checking integrity
+  Checking routes
+  Checking conduits
+  Checking conduit_runs
+    mywcom_conduit_run(56,design/test) path geom_mismatch
+  Checking equips
+  Checking cables
+  Checking segments
+  Checking connections
+    mywcom_fiber_connection(206) out_high port_out_of_range fiber_ont(139)
+    mywcom_fiber_connection(210) out_high port_out_of_range fiber_ont(140)
+  Checking circuits
+  Checking line_of_counts
+

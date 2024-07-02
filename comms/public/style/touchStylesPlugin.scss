@@ -1,0 +1,10 @@
+.touch-styles-toggle {
+    display: inline-block;
+    background: url('../images/touch.svg') no-repeat center #f78e1e;
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+    &.inactive {
+        background-color: #bcbcbc;
+    }
+}

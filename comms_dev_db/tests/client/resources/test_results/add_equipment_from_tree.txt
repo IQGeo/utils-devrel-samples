@@ -1,0 +1,18 @@
+TEST: AFTER ADDING EQUIPMENT FROM CONTEXT MENU
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-006 Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) Multiplexer: WH-MUX-100000 (5 way) Splice Closure: WH-SC-100000
+    label: Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) Multiplexer: WH-MUX-100000 (5 way)
+    label: Fiber Splitter: WH-SPL-001 (8 way)
+    label: Fiber Splitter: WH-SPL-004 (8 way)
+    label: Multiplexer: WH-MUX-100000 (5 way)
+    label: Splice Closure: WH-SC-100000
+
+
+DATABASE CHANGES: AFTER ADDING EQUIPMENT
+   insert data.mywcom_change_detail(5)
+   insert data.mywcom_change_detail(6)
+   insert delta.fiber_mux(design/NB046,100000,insert)
+   insert delta.splice_closure(design/NB046,100000,insert)
+

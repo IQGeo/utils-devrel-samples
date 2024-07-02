@@ -1,0 +1,9 @@
+{
+    "mywcom.bulkMove": {
+      "enabled": true,
+      "selectionLimit": {
+          "max": 30,
+          "min": 1
+      }
+	}
+}

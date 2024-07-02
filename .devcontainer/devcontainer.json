@@ -1,0 +1,18 @@
+{
+  "name": "NM Comms",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "comms",
+  "workspaceFolder": "/opt/iqgeo/platform/WebApps/myworldapp/modules",
+  "shutdownAction": "stopCompose",
+  "settings": {
+    "editor.formatOnSave": true
+  },
+  "extensions": [
+    "ms-python.python",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "github.copilot"
+  ],
+  "remoteUser": "iqgeo"
+}

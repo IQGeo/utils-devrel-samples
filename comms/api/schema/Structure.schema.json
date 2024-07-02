@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Structure.schema.json",
+    "title": "Structure",
+    "definitions": {
+        "Structure": {
+            "$id": "#Structure",
+            "description": "Parent schema for structure objects.",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "Name of the structure",
+                    "type": "string"
+                },
+                "specification": {
+                    "description": "The specificiation of the cable",
+                    "type": "string"
+                },
+                "laborCosts": {
+                    "description": "Labor cost associated with feature, overides spec derived labor cost",
+                    "type": "string"
+                },
+                "location": {
+                    "description": "Location in geographic world",
+                    "$ref": "https://geojson.org/schema/Point.json"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "./Feature.schema.json"
+                }
+            ]
+        }
+    }
+}

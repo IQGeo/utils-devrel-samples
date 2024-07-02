@@ -1,0 +1,10 @@
+{
+    "username": "reviewer",
+    "password": "7ba917e4e5158c8a9ed6eda08a6ec572",
+    "locked_out": false,
+    "roles": [
+        "Reviewer"
+    ],
+    "state": {},
+    "bookmarks": {}
+}

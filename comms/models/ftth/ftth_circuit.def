@@ -1,0 +1,55 @@
+{
+    "datasource": "myworld",
+    "name": "ftth_circuit",
+    "external_name": "{:ftth_circuit_feature_external_name}",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "type": "string(64)",
+            "mandatory": true
+        },
+        {
+            "name": "in_feature",
+            "external_name": "{:ftth_circuit_feature_in_feature_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "in_pins",
+            "external_name": "{:ftth_circuit_feature_in_pins_name}",
+            "type": "string(32)"
+        },
+        {
+            "name": "out_feature",
+            "external_name": "{:ftth_circuit_feature_out_feature_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "out_pins",
+            "external_name": "{:ftth_circuit_feature_out_pins_name}",
+            "type": "string(32)"
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring"
+        }
+    ]
+}

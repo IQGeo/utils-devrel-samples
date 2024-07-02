@@ -1,0 +1,48 @@
+{
+    "datasource": "myworld",
+    "name": "struct_equip_spec_template",
+    "external_name": "Struct Equip Spec Template",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": false,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "Id",
+            "type": "integer",
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "Name",
+            "key": true,
+            "type": "string(64)"
+        },
+        {
+            "name": "cost",
+            "external_name": "Cost",
+            "type": "double"
+        },
+        {
+            "name": "cost_currency",
+            "external_name": "Currency",
+            "type": "string(3)"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "Labor Costs",
+            "type": "string()"
+        },
+        {
+            "name": "retired",
+            "external_name": "Retired",
+            "type": "boolean"
+        }
+    ]
+}

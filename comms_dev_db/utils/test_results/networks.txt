@@ -1,0 +1,8 @@
+Opening database <database> ...
+  mywcom_cable_segments  topology=mesh  directed=False  engine=mywcom_cable_network_engine  features=9  external_name=Cable Network
+  mywcom_coax  topology=tree  directed=True  engine=mywcom_pin_network_engine  features=16  external_name=Coaxial  description=Wires and equipment
+  mywcom_copper  topology=tree  directed=True  engine=mywcom_pin_network_engine  features=11  external_name=Copper  description=Copper pairs and equipment
+  mywcom_fiber  topology=tree  directed=True  engine=mywcom_pin_network_engine  features=11  external_name=Fiber  description=Fibers and equipment
+  mywcom_fiber_path  topology=tree  directed=True  engine=mywcom_fiber_path_network_engine  features=11  external_name=Fiber Path  description=Fibers and equipment for finding fiber path
+  mywcom_routes  topology=mesh  directed=False  engine=mywcom_graph_network_engine  features=10  external_name=Routes  description=Structures and routes
+

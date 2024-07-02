@@ -1,0 +1,75 @@
+{
+   "datasource": "myworld",
+   "name": "mywcom_change_detail",
+   "external_name": "{:mywcom_change_detail_external_name}",
+   "title": "{display_name}: [id]",
+   "short_description": null,
+   "track_changes": true,
+   "versioned": false,
+   "geom_indexed": true,
+   "editable": {
+      "insert_from_gui": true,
+      "update_from_gui": true,
+      "delete_from_gui": true
+   },
+   "editor_options": null,
+   "fields": [
+      {
+         "name": "id",
+         "external_name": "{:mywcom_change_detail_id}",
+         "type": "integer",
+         "key": true,
+         "generator": "sequence"
+      },
+      {
+         "name": "delta",
+         "external_name": "{:mywcom_change_detail_delta}",
+         "type": "string(32)"
+      },
+      {
+         "name": "change_type",
+         "external_name": "{:mywcom_change_detail_change_type}",
+         "type": "string(32)"
+      },
+      {
+         "name": "change_user",
+         "external_name":  "{:mywcom_change_detail_change_user}",
+         "type": "string(32)"
+      },
+      {
+         "name": "change_time",
+         "external_name": "{:mywcom_change_detail_change_time}",
+         "type": "timestamp"
+      },
+      {
+         "name": "feature",
+         "external_name": "{:mywcom_change_detail_feature}",
+         "type": "reference"
+      },
+      {
+         "name": "feature_title",
+         "external_name": "{:mywcom_change_detail_feature_title}",
+         "type": "string"
+      },
+      {
+         "name": "orig_feature",
+         "external_name": "{:mywcom_change_detail_orig_feature}",
+         "type": "string"
+      },
+      {
+         "name": "fields",
+         "external_name": "{:mywcom_change_detail_fields}",
+         "type": "string"
+      }
+   ],
+   "groups": [],
+   "searches": [],
+   "queries": [
+      {
+         "value": "mywcom change detail",
+         "description": "Mywcom Change Detail",
+         "lang": "en"
+      }
+   ],
+   "filters": []
+}

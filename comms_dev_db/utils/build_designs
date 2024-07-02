@@ -1,0 +1,11 @@
+#!/bin/bash
+# Bash wrapper to python build command 
+
+HERE=$(dirname $0)
+
+# Set import paths
+export PATH=$HERE/../../../../../Tools:${PATH}
+source myw_env
+
+# Run command
+myw_db iqg_comms_dev run $0.py "$@"

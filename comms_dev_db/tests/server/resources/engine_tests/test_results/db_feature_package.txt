@@ -1,0 +1,670 @@
+
+SUB TEST : MASTER
+    METADATA: coord_system: 4326
+    
+    FEATURE: address
+    FEATURE: bb_circuit
+    FEATURE: blown_fiber_bundle
+    FEATURE: blown_fiber_tube
+    FEATURE: building
+    FEATURE: cabinet
+    FEATURE: cabinet_area
+    FEATURE: cabinet_spec
+    FEATURE: coax_amplifier
+    FEATURE: coax_amplifier_spec
+    FEATURE: coax_cable
+    FEATURE: coax_cable_spec
+    FEATURE: coax_tap
+    FEATURE: coax_tap_spec
+    FEATURE: coax_terminator
+    FEATURE: coax_terminator_spec
+    FEATURE: comsof_design
+    FEATURE: comsof_workspace
+    FEATURE: conduit
+    FEATURE: conduit_spec
+    FEATURE: copper_bridge_tap
+    FEATURE: copper_bridge_tap_spec
+    FEATURE: copper_build_out
+    FEATURE: copper_build_out_spec
+    FEATURE: copper_cable
+    FEATURE: copper_cable_spec
+    FEATURE: copper_capacitor
+    FEATURE: copper_capacitor_spec
+    FEATURE: copper_dslam
+    FEATURE: copper_dslam_spec
+    FEATURE: copper_load_coil
+    FEATURE: copper_load_coil_spec
+    FEATURE: copper_pair_gain
+    FEATURE: copper_pair_gain_spec
+    FEATURE: copper_repeater
+    FEATURE: copper_repeater_spec
+    FEATURE: copper_shelf
+    FEATURE: copper_shelf_spec
+    FEATURE: copper_splice_closure
+    FEATURE: copper_splice_closure_spec
+    FEATURE: copper_terminal
+    FEATURE: copper_terminal_spec
+    FEATURE: design
+    FEATURE: directional_coupler
+    FEATURE: directional_coupler_spec
+    FEATURE: distribution_area
+    FEATURE: drop_point
+    FEATURE: fiber_cable
+    FEATURE: fiber_cable_spec
+    FEATURE: fiber_mux
+    FEATURE: fiber_mux_spec
+    FEATURE: fiber_olt
+    FEATURE: fiber_ont
+    FEATURE: fiber_ont_spec
+    FEATURE: fiber_patch_panel
+    FEATURE: fiber_patch_panel_spec
+    FEATURE: fiber_shelf
+    FEATURE: fiber_splice_tray
+    FEATURE: fiber_splitter
+    FEATURE: fiber_splitter_spec
+    FEATURE: fiber_tap
+    FEATURE: fiber_tap_spec
+    FEATURE: floor
+    FEATURE: ftth_circuit
+    FEATURE: inline_equalizer
+    FEATURE: inline_equalizer_spec
+    FEATURE: internal_directional_coupler
+    FEATURE: internal_directional_coupler_spec
+    FEATURE: internal_splitter
+    FEATURE: internal_splitter_spec
+    FEATURE: iqgapp_markup_line
+    FEATURE: iqgapp_markup_photo
+    FEATURE: iqgapp_markup_photo_item
+    FEATURE: iqgapp_markup_point
+    FEATURE: iqgapp_markup_polygon
+    FEATURE: iqgapp_markup_text
+    FEATURE: iqgapp_task_queue
+    FEATURE: manhole
+    FEATURE: manhole_spec
+    FEATURE: mdu
+    FEATURE: mywcom_change_detail
+    FEATURE: mywcom_coax_connection
+    FEATURE: mywcom_coax_segment
+    FEATURE: mywcom_coax_slack
+    FEATURE: mywcom_conduit_run
+    FEATURE: mywcom_copper_connection
+    FEATURE: mywcom_copper_segment
+    FEATURE: mywcom_copper_slack
+    FEATURE: mywcom_data_block
+    FEATURE: mywcom_fiber_connection
+    FEATURE: mywcom_fiber_segment
+    FEATURE: mywcom_fiber_slack
+    FEATURE: mywcom_labor_cost
+    FEATURE: mywcom_line_of_count
+    FEATURE: mywcom_line_of_count_section
+    FEATURE: mywcom_route_junction
+    FEATURE: node_boundary
+    FEATURE: note
+    FEATURE: oh_route
+    FEATURE: optical_node
+    FEATURE: optical_node_closure
+    FEATURE: optical_node_closure_spec
+    FEATURE: optical_node_spec
+    FEATURE: osm_building
+    FEATURE: pedestal_area
+    FEATURE: pole
+    FEATURE: pole_spec
+    FEATURE: power_block
+    FEATURE: power_block_spec
+    FEATURE: power_inserter
+    FEATURE: power_inserter_spec
+    FEATURE: power_supply
+    FEATURE: power_supply_boundary
+    FEATURE: power_supply_spec
+    FEATURE: rack
+    FEATURE: room
+    FEATURE: service_area
+    FEATURE: slot
+    FEATURE: splice_closure
+    FEATURE: splice_closure_spec
+    FEATURE: street
+    FEATURE: systest
+    FEATURE: three_way_splitter
+    FEATURE: three_way_splitter_spec
+    FEATURE: two_way_splitter
+    FEATURE: two_way_splitter_spec
+    FEATURE: ug_route
+    FEATURE: wall_box
+    FEATURE: wall_box_spec
+    FEATURE: wifi_unit
+    FEATURE: wifi_unit_spec
+    
+    FIELD: pedestal_area.id : integer
+    FIELD: pedestal_area.boundary : polygon
+    FIELD: pedestal_area.name : string(32)
+    FIELD: pole.id : integer
+    FIELD: pole.name : string(64)
+    FIELD: pole.equipment : reference_set
+    FIELD: pole.routes : reference_set
+    FIELD: pole.in_fiber_segments : reference_set
+    FIELD: pole.out_fiber_segments : reference_set
+    FIELD: pole.cables : reference_set
+    FIELD: pole.specification : foreign_key(pole_spec)
+    FIELD: pole.labor_costs : string()
+    FIELD: pole.location : point
+    FIELD: pole.myw_orientation_location : double
+    FIELD: pole.type : string(32)
+    FIELD: pole.height : double
+    FIELD: pole.owner : string(32)
+    FIELD: pole.installation_date : date
+    FIELD: pole.path_to_hub : reference_set
+    FIELD: pole.served_customers : reference_set
+    FIELD: pole.comsof_auto : boolean
+    FIELD: pole_spec.name : string(64)
+    FIELD: pole_spec.description : string()
+    FIELD: pole_spec.manufacturer : string()
+    FIELD: pole_spec.cost : double
+    FIELD: pole_spec.cost_currency : string(3)
+    FIELD: pole_spec.labor_costs : string()
+    FIELD: pole_spec.retired : boolean
+    FIELD: pole_spec.height : double
+    FIELD: pole_spec.type : string(32)
+    FIELD: power_block.id : integer
+    FIELD: power_block.name : string(64)
+    FIELD: power_block.root_housing : reference
+    FIELD: power_block.housing : reference
+    FIELD: power_block.labor_costs : string()
+    FIELD: power_block.n_coax_in_ports : integer
+    FIELD: power_block.n_coax_out_ports : integer
+    FIELD: power_block.coax_connections : reference_set
+    FIELD: power_block.equipment : reference_set
+    FIELD: power_block.fiber_coax : reference_set
+    FIELD: power_block.status : string(64)
+    FIELD: power_block.frequency : double
+    FIELD: power_block.specification : foreign_key(power_block_spec)
+    FIELD: power_block.location : point
+    FIELD: power_block.offset_geom : point
+    FIELD: power_block.myw_orientation_offset_geom : double
+    FIELD: power_block.comsof_auto : boolean
+    FIELD: power_block_spec.id : integer
+    FIELD: power_block_spec.name : string(64)
+    FIELD: power_block_spec.cost : double
+    FIELD: power_block_spec.cost_currency : string(3)
+    FIELD: power_block_spec.labor_costs : string()
+    FIELD: power_block_spec.retired : boolean
+    FIELD: power_block_spec.manufacturer : string(64)
+    FIELD: power_block_spec.model : string(64)
+    FIELD: power_block_spec.part_number : string(64)
+    FIELD: power_block_spec.frequency : double
+    FIELD: power_inserter.id : integer
+    FIELD: power_inserter.name : string(64)
+    FIELD: power_inserter.root_housing : reference
+    FIELD: power_inserter.housing : reference
+    FIELD: power_inserter.labor_costs : string()
+    FIELD: power_inserter.n_coax_in_ports : integer
+    FIELD: power_inserter.n_coax_out_ports : integer
+    FIELD: power_inserter.coax_connections : reference_set
+    FIELD: power_inserter.equipment : reference_set
+    FIELD: power_inserter.fiber_coax : reference_set
+    FIELD: power_inserter.status : string(64)
+    FIELD: power_inserter.frequency : double
+    FIELD: power_inserter.specification : foreign_key(power_inserter_spec)
+    FIELD: power_inserter.location : point
+    FIELD: power_inserter.offset_geom : point
+    FIELD: power_inserter.myw_orientation_offset_geom : double
+    FIELD: power_inserter.comsof_auto : boolean
+    FIELD: power_inserter_spec.id : integer
+    FIELD: power_inserter_spec.name : string(64)
+    FIELD: power_inserter_spec.cost : double
+    FIELD: power_inserter_spec.cost_currency : string(3)
+    FIELD: power_inserter_spec.labor_costs : string()
+    FIELD: power_inserter_spec.retired : boolean
+    FIELD: power_inserter_spec.manufacturer : string(64)
+    FIELD: power_inserter_spec.model : string(64)
+    FIELD: power_inserter_spec.part_number : string(64)
+    FIELD: power_inserter_spec.frequency : double
+    FIELD: power_inserter_spec.type : string(64)
+    FIELD: power_inserter_spec.in_port_current_bypass : double
+    FIELD: power_inserter_spec.rf_out_ports_current_bypass : double
+    FIELD: power_inserter_spec.rf_in_ports_current_bypass : double
+    FIELD: power_inserter_spec.ports : integer
+    FIELD: power_supply.id : integer
+    FIELD: power_supply.name : string(64)
+    FIELD: power_supply.root_housing : reference
+    FIELD: power_supply.housing : reference
+    FIELD: power_supply.labor_costs : string()
+    FIELD: power_supply.n_coax_in_ports : integer
+    FIELD: power_supply.n_coax_out_ports : integer
+    FIELD: power_supply.coax_connections : reference_set
+    FIELD: power_supply.equipment : reference_set
+    FIELD: power_supply.coax_splices : reference_set
+    FIELD: power_supply.current_draw : double
+    FIELD: power_supply.voltage : double
+    FIELD: power_supply.status : string(64)
+    FIELD: power_supply.install_technician : string(64)
+    FIELD: power_supply.install_date : date
+    FIELD: power_supply.frequency : double
+    FIELD: power_supply.specification : foreign_key(power_supply_spec)
+    FIELD: power_supply.location : point
+    FIELD: power_supply.offset_geom : point
+    FIELD: power_supply.myw_orientation_offset_geom : double
+    FIELD: power_supply.comsof_auto : boolean
+    FIELD: power_supply_boundary.id : integer
+    FIELD: power_supply_boundary.area : polygon
+    FIELD: power_supply_boundary.name : string(64)
+    FIELD: power_supply_boundary.in_feature : reference
+    FIELD: power_supply_boundary.out_feature : reference
+    FIELD: power_supply_boundary.out_pins : string()
+    FIELD: power_supply_boundary.related_power_supply_name : string(64)
+    FIELD: power_supply_boundary.status : string(64)
+    FIELD: power_supply_boundary.frequency : double
+    FIELD: power_supply_spec.id : integer
+    FIELD: power_supply_spec.name : string(64)
+    FIELD: power_supply_spec.cost : double
+    FIELD: power_supply_spec.cost_currency : string(3)
+    FIELD: power_supply_spec.labor_costs : string()
+    FIELD: power_supply_spec.retired : boolean
+    FIELD: power_supply_spec.manufacturer : string(64)
+    FIELD: power_supply_spec.model : string(64)
+    FIELD: power_supply_spec.part_number : string(64)
+    FIELD: power_supply_spec.frequency : double
+    FIELD: power_supply_spec.type : string(64)
+    FIELD: power_supply_spec.max_current_rating : double
+    FIELD: power_supply_spec.output_voltage : double
+    FIELD: power_supply_spec.ports : integer
+    
+    DATA: address : 4404
+    DATA: bb_circuit : 4
+    DATA: blown_fiber_bundle : 30
+    DATA: blown_fiber_tube : 201
+    DATA: building : 2
+    DATA: cabinet : 43
+    DATA: cabinet_area : 0
+    DATA: cabinet_spec : 5
+    DATA: coax_amplifier : 0
+    DATA: coax_amplifier_spec : 6
+    DATA: coax_cable : 15
+    DATA: coax_cable_spec : 4
+    DATA: coax_tap : 13
+    DATA: coax_tap_spec : 5
+    DATA: coax_terminator : 2
+    DATA: coax_terminator_spec : 0
+    DATA: comsof_design : 4
+    DATA: comsof_workspace : 8
+    DATA: conduit : 236
+    DATA: conduit_spec : 4
+    DATA: copper_bridge_tap : 1
+    DATA: copper_bridge_tap_spec : 1
+    DATA: copper_build_out : 0
+    DATA: copper_build_out_spec : 5
+    DATA: copper_cable : 9
+    DATA: copper_cable_spec : 13
+    DATA: copper_capacitor : 1
+    DATA: copper_capacitor_spec : 0
+    DATA: copper_dslam : 1
+    DATA: copper_dslam_spec : 0
+    DATA: copper_load_coil : 2
+    DATA: copper_load_coil_spec : 19
+    DATA: copper_pair_gain : 0
+    DATA: copper_pair_gain_spec : 0
+    DATA: copper_repeater : 0
+    DATA: copper_repeater_spec : 12
+    DATA: copper_shelf : 1
+    DATA: copper_shelf_spec : 0
+    DATA: copper_splice_closure : 5
+    DATA: copper_splice_closure_spec : 20
+    DATA: copper_terminal : 6
+    DATA: copper_terminal_spec : 25
+    DATA: design : 18
+    DATA: directional_coupler : 0
+    DATA: directional_coupler_spec : 0
+    DATA: distribution_area : 0
+    DATA: drop_point : 9
+    DATA: fiber_cable : 236
+    DATA: fiber_cable_spec : 16
+    DATA: fiber_mux : 11
+    DATA: fiber_mux_spec : 0
+    DATA: fiber_olt : 40
+    DATA: fiber_ont : 167
+    DATA: fiber_ont_spec : 1
+    DATA: fiber_patch_panel : 15
+    DATA: fiber_patch_panel_spec : 0
+    DATA: fiber_shelf : 19
+    DATA: fiber_splice_tray : 32
+    DATA: fiber_splitter : 19
+    DATA: fiber_splitter_spec : 4
+    DATA: fiber_tap : 0
+    DATA: fiber_tap_spec : 0
+    DATA: floor : 6
+    DATA: ftth_circuit : 60
+    DATA: inline_equalizer : 1
+    DATA: inline_equalizer_spec : 3
+    DATA: internal_directional_coupler : 0
+    DATA: internal_directional_coupler_spec : 0
+    DATA: internal_splitter : 0
+    DATA: internal_splitter_spec : 0
+    DATA: iqgapp_markup_line : 1
+    DATA: iqgapp_markup_photo : 1
+    DATA: iqgapp_markup_photo_item : 1
+    DATA: iqgapp_markup_point : 1
+    DATA: iqgapp_markup_polygon : 1
+    DATA: iqgapp_markup_text : 1
+    DATA: iqgapp_task_queue : 0
+    DATA: manhole : 283
+    DATA: manhole_spec : 3
+    DATA: mdu : 5
+    DATA: mywcom_change_detail : 4
+    DATA: mywcom_coax_connection : 32
+    DATA: mywcom_coax_segment : 15
+    DATA: mywcom_coax_slack : 0
+    DATA: mywcom_conduit_run : 53
+    DATA: mywcom_copper_connection : 21
+    DATA: mywcom_copper_segment : 25
+    DATA: mywcom_copper_slack : 0
+    DATA: mywcom_data_block : 2
+    DATA: mywcom_fiber_connection : 338
+    DATA: mywcom_fiber_segment : 629
+    DATA: mywcom_fiber_slack : 19
+    DATA: mywcom_labor_cost : 12
+    DATA: mywcom_line_of_count : 4
+    DATA: mywcom_line_of_count_section : 213
+    DATA: mywcom_route_junction : 58
+    DATA: node_boundary : 2
+    DATA: note : 1
+    DATA: oh_route : 133
+    DATA: optical_node : 3
+    DATA: optical_node_closure : 1
+    DATA: optical_node_closure_spec : 0
+    DATA: optical_node_spec : 4
+    DATA: osm_building : 4404
+    DATA: pedestal_area : 1
+    DATA: pole : 44
+    DATA: pole_spec : 6
+    DATA: power_block : 0
+    DATA: power_block_spec : 0
+    DATA: power_inserter : 0
+    DATA: power_inserter_spec : 2
+    DATA: power_supply : 0
+    DATA: power_supply_boundary : 0
+    DATA: power_supply_spec : 3
+    DATA: rack : 11
+    DATA: room : 15
+    DATA: service_area : 4
+    DATA: slot : 36
+    DATA: splice_closure : 54
+    DATA: splice_closure_spec : 4
+    DATA: street : 593
+    DATA: systest : 3
+    DATA: three_way_splitter : 0
+    DATA: three_way_splitter_spec : 0
+    DATA: two_way_splitter : 2
+    DATA: two_way_splitter_spec : 0
+    DATA: ug_route : 391
+    DATA: wall_box : 149
+    DATA: wall_box_spec : 0
+    DATA: wifi_unit : 0
+    DATA: wifi_unit_spec : 0
+    
+
+SUB TEST : DELTA NB120
+    DATA: address : 4404
+    DATA: bb_circuit : 4
+    DATA: blown_fiber_bundle : 30
+    DATA: blown_fiber_tube : 201
+    DATA: building : 2
+    DATA: cabinet : 43
+    DATA: cabinet_area : 0
+    DATA: cabinet_spec : 5
+    DATA: coax_amplifier : 0
+    DATA: coax_amplifier_spec : 6
+    DATA: coax_cable : 15
+    DATA: coax_cable_spec : 4
+    DATA: coax_tap : 13
+    DATA: coax_tap_spec : 5
+    DATA: coax_terminator : 2
+    DATA: coax_terminator_spec : 0
+    DATA: comsof_design : 4
+    DATA: comsof_workspace : 8
+    DATA: conduit : 242
+    DATA: conduit_spec : 4
+    DATA: copper_bridge_tap : 1
+    DATA: copper_bridge_tap_spec : 1
+    DATA: copper_build_out : 0
+    DATA: copper_build_out_spec : 5
+    DATA: copper_cable : 9
+    DATA: copper_cable_spec : 13
+    DATA: copper_capacitor : 1
+    DATA: copper_capacitor_spec : 0
+    DATA: copper_dslam : 1
+    DATA: copper_dslam_spec : 0
+    DATA: copper_load_coil : 2
+    DATA: copper_load_coil_spec : 19
+    DATA: copper_pair_gain : 0
+    DATA: copper_pair_gain_spec : 0
+    DATA: copper_repeater : 0
+    DATA: copper_repeater_spec : 12
+    DATA: copper_shelf : 1
+    DATA: copper_shelf_spec : 0
+    DATA: copper_splice_closure : 5
+    DATA: copper_splice_closure_spec : 20
+    DATA: copper_terminal : 6
+    DATA: copper_terminal_spec : 25
+    DATA: design : 18
+    DATA: directional_coupler : 0
+    DATA: directional_coupler_spec : 0
+    DATA: distribution_area : 0
+    DATA: drop_point : 9
+    DATA: fiber_cable : 236
+    DATA: fiber_cable_spec : 16
+    DATA: fiber_mux : 11
+    DATA: fiber_mux_spec : 0
+    DATA: fiber_olt : 40
+    DATA: fiber_ont : 167
+    DATA: fiber_ont_spec : 1
+    DATA: fiber_patch_panel : 15
+    DATA: fiber_patch_panel_spec : 0
+    DATA: fiber_shelf : 19
+    DATA: fiber_splice_tray : 32
+    DATA: fiber_splitter : 19
+    DATA: fiber_splitter_spec : 4
+    DATA: fiber_tap : 0
+    DATA: fiber_tap_spec : 0
+    DATA: floor : 6
+    DATA: ftth_circuit : 60
+    DATA: inline_equalizer : 1
+    DATA: inline_equalizer_spec : 3
+    DATA: internal_directional_coupler : 0
+    DATA: internal_directional_coupler_spec : 0
+    DATA: internal_splitter : 0
+    DATA: internal_splitter_spec : 0
+    DATA: iqgapp_markup_line : 1
+    DATA: iqgapp_markup_photo : 1
+    DATA: iqgapp_markup_photo_item : 1
+    DATA: iqgapp_markup_point : 1
+    DATA: iqgapp_markup_polygon : 1
+    DATA: iqgapp_markup_text : 1
+    DATA: iqgapp_task_queue : 0
+    DATA: manhole : 285
+    DATA: manhole_spec : 3
+    DATA: mdu : 5
+    DATA: mywcom_change_detail : 4
+    DATA: mywcom_coax_connection : 32
+    DATA: mywcom_coax_segment : 15
+    DATA: mywcom_coax_slack : 0
+    DATA: mywcom_conduit_run : 53
+    DATA: mywcom_copper_connection : 21
+    DATA: mywcom_copper_segment : 25
+    DATA: mywcom_copper_slack : 0
+    DATA: mywcom_data_block : 2
+    DATA: mywcom_fiber_connection : 338
+    DATA: mywcom_fiber_segment : 633
+    DATA: mywcom_fiber_slack : 19
+    DATA: mywcom_labor_cost : 12
+    DATA: mywcom_line_of_count : 4
+    DATA: mywcom_line_of_count_section : 213
+    DATA: mywcom_route_junction : 60
+    DATA: node_boundary : 2
+    DATA: note : 1
+    DATA: oh_route : 133
+    DATA: optical_node : 3
+    DATA: optical_node_closure : 1
+    DATA: optical_node_closure_spec : 0
+    DATA: optical_node_spec : 4
+    DATA: osm_building : 4404
+    DATA: pedestal_area : 1
+    DATA: pole : 44
+    DATA: pole_spec : 6
+    DATA: power_block : 0
+    DATA: power_block_spec : 0
+    DATA: power_inserter : 0
+    DATA: power_inserter_spec : 2
+    DATA: power_supply : 0
+    DATA: power_supply_boundary : 0
+    DATA: power_supply_spec : 3
+    DATA: rack : 11
+    DATA: room : 15
+    DATA: service_area : 4
+    DATA: slot : 36
+    DATA: splice_closure : 54
+    DATA: splice_closure_spec : 4
+    DATA: street : 593
+    DATA: systest : 3
+    DATA: three_way_splitter : 0
+    DATA: three_way_splitter_spec : 0
+    DATA: two_way_splitter : 2
+    DATA: two_way_splitter_spec : 0
+    DATA: ug_route : 395
+    DATA: wall_box : 149
+    DATA: wall_box_spec : 0
+    DATA: wifi_unit : 0
+    DATA: wifi_unit_spec : 0
+    
+
+SUB TEST : DELTA NB120+REGION
+    DATA: address : 73
+    DATA: bb_circuit : 4
+    DATA: blown_fiber_bundle : 0
+    DATA: blown_fiber_tube : 0
+    DATA: building : 1
+    DATA: cabinet : 8
+    DATA: cabinet_area : 0
+    DATA: cabinet_spec : 0
+    DATA: coax_amplifier : 0
+    DATA: coax_amplifier_spec : 0
+    DATA: coax_cable : 0
+    DATA: coax_cable_spec : 0
+    DATA: coax_tap : 0
+    DATA: coax_tap_spec : 0
+    DATA: coax_terminator : 0
+    DATA: coax_terminator_spec : 0
+    DATA: comsof_design : 0
+    DATA: comsof_workspace : 0
+    DATA: conduit : 0
+    DATA: conduit_spec : 0
+    DATA: copper_bridge_tap : 0
+    DATA: copper_bridge_tap_spec : 0
+    DATA: copper_build_out : 0
+    DATA: copper_build_out_spec : 0
+    DATA: copper_cable : 0
+    DATA: copper_cable_spec : 0
+    DATA: copper_capacitor : 0
+    DATA: copper_capacitor_spec : 0
+    DATA: copper_dslam : 0
+    DATA: copper_dslam_spec : 0
+    DATA: copper_load_coil : 0
+    DATA: copper_load_coil_spec : 0
+    DATA: copper_pair_gain : 0
+    DATA: copper_pair_gain_spec : 0
+    DATA: copper_repeater : 0
+    DATA: copper_repeater_spec : 0
+    DATA: copper_shelf : 0
+    DATA: copper_shelf_spec : 0
+    DATA: copper_splice_closure : 0
+    DATA: copper_splice_closure_spec : 0
+    DATA: copper_terminal : 0
+    DATA: copper_terminal_spec : 0
+    DATA: design : 1
+    DATA: directional_coupler : 0
+    DATA: directional_coupler_spec : 0
+    DATA: distribution_area : 0
+    DATA: drop_point : 0
+    DATA: fiber_cable : 11
+    DATA: fiber_cable_spec : 0
+    DATA: fiber_mux : 4
+    DATA: fiber_mux_spec : 0
+    DATA: fiber_olt : 0
+    DATA: fiber_ont : 0
+    DATA: fiber_ont_spec : 0
+    DATA: fiber_patch_panel : 1
+    DATA: fiber_patch_panel_spec : 0
+    DATA: fiber_shelf : 5
+    DATA: fiber_splice_tray : 0
+    DATA: fiber_splitter : 2
+    DATA: fiber_splitter_spec : 0
+    DATA: fiber_tap : 0
+    DATA: fiber_tap_spec : 0
+    DATA: floor : 0
+    DATA: ftth_circuit : 0
+    DATA: inline_equalizer : 0
+    DATA: inline_equalizer_spec : 0
+    DATA: internal_directional_coupler : 0
+    DATA: internal_directional_coupler_spec : 0
+    DATA: internal_splitter : 0
+    DATA: internal_splitter_spec : 0
+    DATA: iqgapp_markup_line : 0
+    DATA: iqgapp_markup_photo : 0
+    DATA: iqgapp_markup_photo_item : 0
+    DATA: iqgapp_markup_point : 0
+    DATA: iqgapp_markup_polygon : 0
+    DATA: iqgapp_markup_text : 0
+    DATA: iqgapp_task_queue : 0
+    DATA: manhole : 95
+    DATA: manhole_spec : 0
+    DATA: mdu : 0
+    DATA: mywcom_change_detail : 0
+    DATA: mywcom_coax_connection : 0
+    DATA: mywcom_coax_segment : 0
+    DATA: mywcom_coax_slack : 0
+    DATA: mywcom_conduit_run : 0
+    DATA: mywcom_copper_connection : 0
+    DATA: mywcom_copper_segment : 0
+    DATA: mywcom_copper_slack : 0
+    DATA: mywcom_data_block : 0
+    DATA: mywcom_fiber_connection : 17
+    DATA: mywcom_fiber_segment : 76
+    DATA: mywcom_fiber_slack : 0
+    DATA: mywcom_labor_cost : 0
+    DATA: mywcom_line_of_count : 0
+    DATA: mywcom_line_of_count_section : 0
+    DATA: mywcom_route_junction : 5
+    DATA: node_boundary : 0
+    DATA: note : 0
+    DATA: oh_route : 0
+    DATA: optical_node : 0
+    DATA: optical_node_closure : 0
+    DATA: optical_node_closure_spec : 0
+    DATA: optical_node_spec : 0
+    DATA: osm_building : 73
+    DATA: pedestal_area : 0
+    DATA: pole : 0
+    DATA: pole_spec : 0
+    DATA: power_block : 0
+    DATA: power_block_spec : 0
+    DATA: power_inserter : 0
+    DATA: power_inserter_spec : 0
+    DATA: power_supply : 0
+    DATA: power_supply_boundary : 0
+    DATA: power_supply_spec : 0
+    DATA: rack : 3
+    DATA: room : 0
+    DATA: service_area : 1
+    DATA: slot : 0
+    DATA: splice_closure : 0
+    DATA: splice_closure_spec : 0
+    DATA: street : 0
+    DATA: systest : 0
+    DATA: three_way_splitter : 0
+    DATA: three_way_splitter_spec : 0
+    DATA: two_way_splitter : 0
+    DATA: two_way_splitter_spec : 0
+    DATA: ug_route : 97
+    DATA: wall_box : 0
+    DATA: wall_box_spec : 0
+    DATA: wifi_unit : 0
+    DATA: wifi_unit_spec : 0
+    

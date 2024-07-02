@@ -1,0 +1,9 @@
+{
+   "mywcom.stateManager": {
+      "enabled": true
+   },
+
+   "mywcom.editableStates": [
+       "{:design_state_designing}"
+   ]
+}

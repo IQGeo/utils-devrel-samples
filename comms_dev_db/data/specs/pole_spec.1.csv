@@ -1,0 +1,7 @@
+name,description,manufacturer,cost,cost_currency,labor_costs,retired,height,type
+BL Pole 35 ft Cedar,35 foot Wood,BL Pole,500.0,$,survey,False,10.668000000000001,Wood
+BL Pole 40 ft Cedar,40 ft Wood,BL Pole,450.0,$,,False,12.192,Wood
+StressCrete 35 ft,35 ft Concrete,StressCrete,1450.0,$,,False,10.668000000000001,Concrete
+StressCrete 40 ft,40 ft Concrete,StressCrete,1650.0,$,,False,12.192,Concrete
+Valmont 35 ft, 35 ft Steel, Valmont Utility, 2500.0,$,,False,10.668000000000001,Steel
+Valmont 40 ft, 40 ft Steel, Valmont Utility, 2500.0,$,,False,12.192,Steel

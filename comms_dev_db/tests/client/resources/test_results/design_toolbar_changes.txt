@@ -1,0 +1,112 @@
+TEST: ADMIN TOOLBAR
+    list item: Open
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Publish
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: More...
+
+
+TEST: AFTER SELECT OBJECTS
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: Route Junction: 4201 Insert
+    label: Route Junction: 4201
+    label: Route Junction: 4200 Insert
+    label: Route Junction: 4200
+    label: Manhole: WH-M-D20:2 Insert
+    label: Manhole: WH-M-D20:2
+    label: Manhole: WH-M-D20:1 Insert
+    label: Manhole: WH-M-D20:1
+    label: Route (Underground): 4203 Insert
+    label: Route (Underground): 4203
+    label: Route (Underground): 4202 Insert
+    label: Route (Underground): 4202
+    label: Route (Underground): 4201 Insert
+    label: Route (Underground): 4201
+    label: Route (Underground): 4200 Insert
+    label: Route (Underground): 4200
+    label: Route (Underground): 7 Update: Changed fields: 3
+    label: Route (Underground): 7
+    label: Route (Underground): 3 Update: Changed fields: 3
+    label: Route (Underground): 3
+    label: Conduit: WH-CND-4205 Insert
+    label: Conduit: WH-CND-4205
+    label: Conduit: WH-CND-4204 Insert
+    label: Conduit: WH-CND-4204
+    label: Conduit: WH-CND-4203 Insert
+    label: Conduit: WH-CND-4203
+    label: Conduit: WH-CND-4202 Insert
+    label: Conduit: WH-CND-4202
+    label: Conduit: WH-CND-4201 Insert
+    label: Conduit: WH-CND-4201
+    label: Conduit: WH-CND-4200 Insert
+    label: Conduit: WH-CND-4200
+    label: Conduit: WH-CND-I-151 Update: Changed fields: 3
+    label: Conduit: WH-CND-I-151
+    label: Conduit: WH-CND-I-150 Update: Changed fields: 3
+    label: Conduit: WH-CND-I-150
+    label: Conduit: WH-CND-I-149 Update: Changed fields: 3
+    label: Conduit: WH-CND-I-149
+    label: Conduit: WH-CND-080 Update: Changed fields: 3
+    label: Conduit: WH-CND-080
+    label: Conduit: WH-CND-079 Update: Changed fields: 3
+    label: Conduit: WH-CND-079
+    label: Conduit: WH-CND-076 Update: Changed fields: 3
+    label: Conduit: WH-CND-076
+    label: Fiber Cable: BB-FCB-017 (72) Update: Changed field: Path
+    label: Fiber Cable: BB-FCB-017 (72)
+    label: Fiber Cable: WH-FCB-007 (288) Update: Changed field: Path
+    label: Fiber Cable: WH-FCB-007 (288)
+    label: Fiber Cable: WH-FCB-005 (144) Update: Changed field: Path
+    label: Fiber Cable: WH-FCB-005 (144)
+    label: Cable Segment: 4203 (fiber_cable/167) Insert
+    label: Cable Segment: 4203 (fiber_cable/167)
+    label: Cable Segment: 4202 (fiber_cable/5) Insert
+    label: Cable Segment: 4202 (fiber_cable/5)
+    label: Cable Segment: 4201 (fiber_cable/167) Insert
+    label: Cable Segment: 4201 (fiber_cable/167)
+    label: Cable Segment: 4200 (fiber_cable/7) Insert
+    label: Cable Segment: 4200 (fiber_cable/7)
+    label: Cable Segment: 596 (fiber_cable/167) Update: Changed field: Out Segment
+    label: Cable Segment: 596 (fiber_cable/167)
+    label: Cable Segment: 595 (fiber_cable/167) Update: Changed field: In Segment
+    label: Cable Segment: 595 (fiber_cable/167)
+    label: Cable Segment: 387 (fiber_cable/167) Update: Changed fields: 4
+    label: Cable Segment: 387 (fiber_cable/167)
+    label: Cable Segment: 380 (fiber_cable/167) Update: Changed fields: 4
+    label: Cable Segment: 380 (fiber_cable/167)
+    label: Cable Segment: 73 (fiber_cable/7) Update: Changed fields: 4
+    label: Cable Segment: 73 (fiber_cable/7)
+    label: Cable Segment: 56 (fiber_cable/5) Update: Changed field: In Segment
+    label: Cable Segment: 56 (fiber_cable/5)
+    label: Cable Segment: 55 (fiber_cable/5) Update: Changed fields: 4
+    label: Cable Segment: 55 (fiber_cable/5)
+    label: Fiber Splice: 336 Update: Changed field: In Object
+    label: Fiber Splice: 336
+    label: Fiber Splice: 16 Update: Changed field: In Object
+    label: Fiber Splice: 16
+    label: Fiber Splice: 15 Update: Changed field: In Object
+    label: Fiber Splice: 15
+    label: Fiber Splice: 14 Update: Changed field: In Object
+    label: Fiber Splice: 14
+    label: Fiber Splice: 13 Update: Changed field: In Object
+    label: Fiber Splice: 13
+    label: Fiber Splice: 12 Update: Changed field: In Object
+    label: Fiber Splice: 12
+    label: Fiber Splice: 11 Update: Changed field: In Object
+    label: Fiber Splice: 11
+    label: Fiber Splice: 10 Update: Changed field: In Object
+    label: Fiber Splice: 10
+    label: Fiber Splice: 9 Update: Changed field: In Object
+    label: Fiber Splice: 9
+
+

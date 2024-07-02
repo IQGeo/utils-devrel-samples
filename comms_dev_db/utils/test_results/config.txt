@@ -1,0 +1,17 @@
+Opening database <database> ...
+------------------------
+Checking Comms Config
+------------------------
+Checking configuration: structures
+Checking configuration: routes
+Checking configuration: equipment
+Checking configuration: conduits
+Checking configuration: cables
+Checking configuration: circuits
+Checking configuration: specs
+Checking configuration: laborCosts
+Checking configuration: fiberColors
+Checking configuration: fiberColorSchemes
+Checking configuration: designs
+Checking configuration: import_config
+

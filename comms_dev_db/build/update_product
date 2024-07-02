@@ -1,0 +1,20 @@
+echo off
+# Update the local copy of the platform product
+HERE=$(dirname $0)
+
+echo ------------------
+echo  Updating Product
+echo ------------------
+echo  Installing Patches
+myw_product install "${HERE}/../patches/core/" --rebuild --verbosity 0
+echo
+
+echo Fetching node modules
+myw_product fetch node_modules
+echo
+
+echo Rebuilding Bundles
+myw_product build base --debug
+myw_product build client --debug
+myw_product build applications_dev --debug
+echo

@@ -1,0 +1,12 @@
+{
+  "mywcom.conflictStyles": {
+		"change": {
+			"color": "#228b22",
+			"opacity": 0.9
+		},
+		"conflict": {
+			"color": "#ff4500",
+			"opacity": 0.9
+		}
+	}
+}

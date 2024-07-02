@@ -1,0 +1,78 @@
+{
+    "mywcom.tmf_categories": {
+        "Cable": "Cable",
+        "Circuit": "Circuit",
+        "Conduit": "Conduit",
+        "Equip": "Equipment",
+        "Route": "Route",
+        "Struct": "Structure"
+    },
+    "mywcom.tmf_fields": {
+        "Cable": {
+            "name": "name",
+            "specification": "specification",
+            "directed": "directed",
+            "count": "fiber_count",
+            "laborCosts": "labor_costs",
+            "path": "geometry"
+        },
+        "Circuit": {
+            "name": "name",
+            "inFeature": "in_feature",
+            "inPins": "in_pins",
+            "outFeature": "out_feature",
+            "outPins": "out_pins",
+            "path": "geometry"
+        },
+        "Conduit": {
+            "name": "name",
+            "housing": "housing",
+            "specification": "specification",
+            "rootHousing": "root_housing",
+            "inStructure": "in_structure",
+            "outStructure": "out_structure",
+            "inConduit": "in_conduit",
+            "outConduit": "out_conduit",
+            "conduitRun": "conduit_run",
+            "laborCosts": "labor_costs",
+            "path": "geometry"
+        },
+        "Equipment": {
+            "name": "name",
+            "specification": "specification",
+            "housing": "housing",
+            "rootHousing": "root_housing",
+            "circuits": "circuits",
+            "laborCosts": "labor_costs",
+            "location": "geometry"
+        },
+        "Route": {
+            "inStructure": "in_structure",
+            "outStructure": "out_structure",
+            "length": "length",
+            "laborCosts": "labor_costs",
+            "path": "geometry"
+        },
+        "Structure": {
+            "name": "name",
+            "specification": "specification",
+            "laborCosts": "labor_costs",
+            "location": "geometry"
+        },
+        "Connection": {
+            "inObject": "in_object",
+            "outObject": "out_object",
+            "inSide": "in_side",
+            "outSide": "out_side",
+            "inLow": "in_low",
+            "inHigh": "in_high",
+            "outLow": "out_low",
+            "outHigh": "out_high",
+            "rootHousing": "root_housing"
+        }
+    },
+    "mywcom.tmf_edit_allowed": [
+        "Circuit"
+    ],
+    "mywcom.tmf_tables": {}
+}

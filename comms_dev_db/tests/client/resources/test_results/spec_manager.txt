@@ -1,0 +1,121 @@
+TEST: Cabinet Specs
+    label: Spec Manager
+    button: Close
+    label: StructuresCabinet SpecManhole SpecPole SpecWall Box Spec
+    label: EquipmentSplice Closure SpecFiber Mux SpecFiber ONT SpecFiber Patch Panel SpecFiber Splitter SpecFiber Tap SpecBridge Tap SpecBuild Out SpecCapacitor SpecDSLAM SpecLoad Coil SpecPair Gain SpecRepeater SpecCopper Shelf SpecCopper Splice Closure SpecCopper Terminal SpecCoaxial Amplifier SpecCoaxial Tap SpecCoaxial Terminator SpecDirectional Coupler SpecInline Equalizer SpecInternal Directional Coupler SpecInternal Splitter SpecOptical Node SpecOptical Node Closure SpecPower Block SpecPower Inserter SpecPower Supply SpecThree Way Splitter SpecTwo Way Splitter SpecWiFi Unit Spec
+    label: CablesFiber Cable SpecCopper Cable SpecCoaxial Cable Spec
+    label: ConduitsConduit Spec
+    list item: Show all specs report Show spec report
+    list item: Add
+    list item: Import
+    list item: Export to csv
+    button: Show/hide columns
+    input: 
+    label: Retired Name Description Manufacturer Model Cost Currency Labor Costs Type Powered
+    label: CS-A-100324 Mini G Cabinet, Sealed to outside environment, Double wall construction CommScope A-100324 105 $ Micro Cell Site Enclosure true
+    input: false
+    label: CS-A-100451 Hercules Cabinet, Sealed to outside environment, Double wall construction CommScope A-100451 45 $ Macro Cell Site Enclosure true
+    input: false
+    label: CS-A-100455 Single Phase Meter Cabinet, Sealed to outside environment, Double wall construction CommScope A-100455 125 $ Power Supply Enclosure true
+    input: false
+    label: CS-A-100468 Three Phase Meter Cabinet, Sealed to outside environment, Double wall construction CommScope A-100468 85 $ Power Supply Enclosure true
+    input: false
+    label: CS-A-100586 Komodo Cabinet, Sealed to outside environment, Double wall construction CommScope A-100586 60 $ Micro Cell Site Enclosure true
+    input: false
+    button: Close
+
+
+TEST: Splice Closure Specs
+    label: Spec Manager
+    button: Close
+    label: StructuresCabinet SpecManhole SpecPole SpecWall Box Spec
+    label: EquipmentSplice Closure SpecFiber Mux SpecFiber ONT SpecFiber Patch Panel SpecFiber Splitter SpecFiber Tap SpecBridge Tap SpecBuild Out SpecCapacitor SpecDSLAM SpecLoad Coil SpecPair Gain SpecRepeater SpecCopper Shelf SpecCopper Splice Closure SpecCopper Terminal SpecCoaxial Amplifier SpecCoaxial Tap SpecCoaxial Terminator SpecDirectional Coupler SpecInline Equalizer SpecInternal Directional Coupler SpecInternal Splitter SpecOptical Node SpecOptical Node Closure SpecPower Block SpecPower Inserter SpecPower Supply SpecThree Way Splitter SpecTwo Way Splitter SpecWiFi Unit Spec
+    label: CablesFiber Cable SpecCopper Cable SpecCoaxial Cable Spec
+    label: ConduitsConduit Spec
+    list item: Show all specs report Show spec report
+    list item: Add
+    list item: Import
+    list item: Export to csv
+    button: Show/hide columns
+    input: 
+    label: Retired Name Model Description Manufacturer Cost Currency Labor Costs
+    label: CS- FOSC-100-DM-144 FOSC-100-DM-144 FOSC™100 DM Fiber Optic Splice Closure, Five round ports, Heat Shrink Cable sealing, two pre-installed 72-splice tray and with test valve CommScope 55 $
+    input: false
+    label: CS-FOSC400-A4-16-1-BNV FOSC400-A4-16-1-BNV FOSC™400 A4 Fiber Optic Splice Closure, Heat Shrink Cable sealing, one pre-installed 16-splice tray, cable blocking, with test valve CommScope 35 $
+    input: false
+    label: CS-FOSC450-D6-6-36-1-N0V FOSC450-D6-6-36-1-N0V FOSC™450 D6 Fiber Optic Splice Closure, Gel Cable sealing, one pre-installed 36-splice tray, 6 cable attach., valve CommScope 62 $
+    input: false
+    label: CS-FOSC-400B4-S24-4-NNN FOSC-400B4-S24-4-NNN FOSC™400 B4 Fiber Optic Splice Closure, Heat Shrink Cable sealing, four pre-installed 24-splice trays CommScope 22 $
+    input: false
+    button: Close
+
+
+
+SUB TEST : Filter
+    DATABASE CHANGES: AFTER RETIRING A SPEC
+       update data.splice_closure_spec(CS-FOSC-400B4-S24-4-NNN) fields=(retired)
+    
+
+SUB TEST : Add
+    DATABASE CHANGES: AFTER ADDING A SPEC
+       insert data.splice_closure_spec(CS-A-1100-TEST)
+    
+    TEST: AFTER ADDING A SPEC
+        label: Spec Manager
+        button: Close
+        label: StructuresCabinet SpecManhole SpecPole SpecWall Box Spec
+        label: EquipmentSplice Closure SpecFiber Mux SpecFiber ONT SpecFiber Patch Panel SpecFiber Splitter SpecFiber Tap SpecBridge Tap SpecBuild Out SpecCapacitor SpecDSLAM SpecLoad Coil SpecPair Gain SpecRepeater SpecCopper Shelf SpecCopper Splice Closure SpecCopper Terminal SpecCoaxial Amplifier SpecCoaxial Tap SpecCoaxial Terminator SpecDirectional Coupler SpecInline Equalizer SpecInternal Directional Coupler SpecInternal Splitter SpecOptical Node SpecOptical Node Closure SpecPower Block SpecPower Inserter SpecPower Supply SpecThree Way Splitter SpecTwo Way Splitter SpecWiFi Unit Spec
+        label: CablesFiber Cable SpecCopper Cable SpecCoaxial Cable Spec
+        label: ConduitsConduit Spec
+        list item: Show all specs report Show spec report
+        list item: Add
+        list item: Import
+        list item: Export to csv
+        button: Show/hide columns
+        input: 
+        label: Retired Name Model Description Manufacturer Cost Currency Labor Costs
+        label: CS- FOSC-100-DM-144 FOSC-100-DM-144 FOSC™100 DM Fiber Optic Splice Closure, Five round ports, Heat Shrink Cable sealing, two pre-installed 72-splice tray and with test valve CommScope 55 $
+        input: false
+        label: CS-A-1100-TEST Test cabinet
+        input: true
+        label: CS-FOSC400-A4-16-1-BNV FOSC400-A4-16-1-BNV FOSC™400 A4 Fiber Optic Splice Closure, Heat Shrink Cable sealing, one pre-installed 16-splice tray, cable blocking, with test valve CommScope 35 $
+        input: false
+        label: CS-FOSC450-D6-6-36-1-N0V FOSC450-D6-6-36-1-N0V FOSC™450 D6 Fiber Optic Splice Closure, Gel Cable sealing, one pre-installed 36-splice tray, 6 cable attach., valve CommScope 62 $
+        input: false
+        label: CS-FOSC-400B4-S24-4-NNN FOSC-400B4-S24-4-NNN FOSC™400 B4 Fiber Optic Splice Closure, Heat Shrink Cable sealing, four pre-installed 24-splice trays CommScope 22 $
+        input: true
+        button: Close
+    
+    
+
+SUB TEST : Edit
+    DATABASE CHANGES: AFTER EDITING A SPEC
+       update data.cabinet_spec(CS-A-100324) fields=(cost)
+    
+    TEST: AFTER EDITING A SPEC
+        label: Spec Manager
+        button: Close
+        label: StructuresCabinet SpecManhole SpecPole SpecWall Box Spec
+        label: EquipmentSplice Closure SpecFiber Mux SpecFiber ONT SpecFiber Patch Panel SpecFiber Splitter SpecFiber Tap SpecBridge Tap SpecBuild Out SpecCapacitor SpecDSLAM SpecLoad Coil SpecPair Gain SpecRepeater SpecCopper Shelf SpecCopper Splice Closure SpecCopper Terminal SpecCoaxial Amplifier SpecCoaxial Tap SpecCoaxial Terminator SpecDirectional Coupler SpecInline Equalizer SpecInternal Directional Coupler SpecInternal Splitter SpecOptical Node SpecOptical Node Closure SpecPower Block SpecPower Inserter SpecPower Supply SpecThree Way Splitter SpecTwo Way Splitter SpecWiFi Unit Spec
+        label: CablesFiber Cable SpecCopper Cable SpecCoaxial Cable Spec
+        label: ConduitsConduit Spec
+        list item: Show all specs report Show spec report
+        list item: Add
+        list item: Import
+        list item: Export to csv
+        button: Show/hide columns
+        input: 
+        label: Retired Name Description Manufacturer Model Cost Currency Labor Costs Type Powered
+        label: CS-A-100324 Mini G Cabinet, Sealed to outside environment, Double wall construction CommScope A-100324 100 $ Micro Cell Site Enclosure true
+        input: false
+        label: CS-A-100451 Hercules Cabinet, Sealed to outside environment, Double wall construction CommScope A-100451 45 $ Macro Cell Site Enclosure true
+        input: false
+        label: CS-A-100455 Single Phase Meter Cabinet, Sealed to outside environment, Double wall construction CommScope A-100455 125 $ Power Supply Enclosure true
+        input: false
+        label: CS-A-100468 Three Phase Meter Cabinet, Sealed to outside environment, Double wall construction CommScope A-100468 85 $ Power Supply Enclosure true
+        input: false
+        label: CS-A-100586 Komodo Cabinet, Sealed to outside environment, Double wall construction CommScope A-100586 60 $ Micro Cell Site Enclosure true
+        input: false
+        button: Close
+    
+    

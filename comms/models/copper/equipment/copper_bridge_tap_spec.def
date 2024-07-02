@@ -1,0 +1,72 @@
+{
+    "datasource": "myworld",
+    "name": "copper_bridge_tap_spec",
+    "external_name": "{:copper_bridge_tap_spec_external_name}",
+    "title": "{display_name}: [name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": false,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": false,
+        "delete_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "key": true,
+            "type": "string(64)"
+        },
+        {
+            "name": "type",
+            "external_name": "{:fiber_cable_spec_type_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "manufacturer",
+            "external_name": "{:spec_manufacturer_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "n_copper_in_ports",
+            "external_name": "{:n_in_ports_field_name}",
+            "type": "integer",
+            "default": 1
+        },
+        {
+            "name": "n_copper_out_ports",
+            "external_name": "{:n_out_ports_field_name}",
+            "type": "integer",
+            "default": 2
+        },
+        {
+            "name": "cost_currency",
+            "external_name": "{:spec_currency_field_name}",
+            "type": "string(3)"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "cost",
+            "external_name": "{:spec_cost_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "retired",
+            "external_name": "{:spec_retired_field_name}",
+            "type": "boolean",
+            "default": "false"
+        }
+    ],
+    "queries": []
+}

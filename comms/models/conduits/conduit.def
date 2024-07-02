@@ -1,0 +1,106 @@
+{
+    "datasource": "myworld",
+    "name": "conduit",
+    "external_name": "{:conduit_feature_external_name}",
+    "title": "{display_name}: [name]",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "delete_from_gui": true,
+        "update_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "diameter",
+            "external_name": "{:conduit_feature_diameter_name}",
+            "type": "double",
+            "unit": "mm",
+            "unit_scale": "length"
+        },
+        {
+            "name": "length",
+            "external_name": "{:conduit_feature_length_name}",
+            "type": "double",
+            "unit": "m",
+            "unit_scale": "length"
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring"
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_route_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "in_structure",
+            "type": "reference",
+            "external_name": "{:in_structure_field_name}",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "out_structure",
+            "type": "reference",
+            "external_name": "{:out_structure_field_name}",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "conduits",
+            "external_name": "{:conduit_feature_conduits_name}",
+            "type": "reference_set",
+            "value": "select()",
+            "read_only": true
+        },
+        {
+            "name": "cable_segments",
+            "external_name": "{:conduit_feature_cable_segments_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_fiber_segment.housing,mywcom_copper_segment.housing,mywcom_coax_segment.housing)",
+            "read_only": true
+        },
+        {
+            "name": "cables",
+            "external_name": "{:conduit_feature_cables_name}",
+            "type": "reference_set",
+            "value": "method(cables)",
+            "read_only": true
+        },
+        {
+            "name": "specification",
+            "external_name": "{:conduit_feature_specification_name}",
+            "type": "foreign_key(conduit_spec)"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        }
+    ],
+    "searches": []
+}

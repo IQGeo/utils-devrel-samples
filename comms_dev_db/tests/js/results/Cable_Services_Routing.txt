@@ -1,0 +1,3085 @@
+
+*** ROUTE DROP CABLE
+Set delta to: design/NB217
+id: 3
+type: fiber_cable
+myw: {
+	"short_description": "D-144-LA-8W-F12NS",
+	"title": "Fiber Cable: WH-FCB-003 (144)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13893172145,
+			52.2240747713
+		],
+		[
+			0.13907320797,
+			52.2238911596
+		]
+	],
+	"type": "LineString"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.13893172145,
+				52.2240747713
+			],
+			[
+				0.13907320797,
+				52.2238911596
+			]
+		],
+		"type": "LineString"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 9.9,
+	"directed": true,
+	"fiber_count": 144,
+	"id": 3,
+	"installation_date": null,
+	"job_id": "20833",
+	"labor_costs": null,
+	"name": "WH-FCB-003",
+	"owner": "Acme Co",
+	"specification": "D-144-LA-8W-F12NS",
+	"tick_mark_spacing": null,
+	"type": "External"
+}
+displayValues: {
+	"specification": "D-144-LA-8W-F12NS"
+}
+
+id: 33
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 33 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13649359345,
+			52.22405793
+		],
+		[
+			0.13647988779,
+			52.2240683621
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/11",
+	"id": 33,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "cabinet/1",
+	"in_tick": 0,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "34",
+	"out_structure": "mywcom_route_junction/32",
+	"out_tick": null,
+	"root_housing": "ug_route/266"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-011",
+	"in_structure": "Cabinet: WH-C-01",
+	"out_segment": "Cable Segment: 34 (fiber_cable/3)",
+	"out_structure": "Route Junction: 32",
+	"root_housing": "Route (Underground): 266"
+}
+
+id: 34
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 34 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13647988779,
+			52.2240683621
+		],
+		[
+			0.13654257892,
+			52.2240996191
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "conduit/8",
+	"id": 34,
+	"in_equipment": null,
+	"in_segment": "33",
+	"in_structure": "mywcom_route_junction/32",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "35",
+	"out_structure": "mywcom_route_junction/2",
+	"out_tick": null,
+	"root_housing": "ug_route/16"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-008",
+	"in_segment": "Cable Segment: 33 (fiber_cable/3)",
+	"in_structure": "Route Junction: 32",
+	"out_segment": "Cable Segment: 35 (fiber_cable/3)",
+	"out_structure": "Route Junction: 2",
+	"root_housing": "Route (Underground): 16"
+}
+
+id: 35
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 35 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13654257892,
+			52.2240996191
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/4",
+	"id": 35,
+	"in_equipment": null,
+	"in_segment": "34",
+	"in_structure": "mywcom_route_junction/2",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "36",
+	"out_structure": "manhole/34",
+	"out_tick": 33,
+	"root_housing": "ug_route/52"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-004",
+	"in_segment": "Cable Segment: 34 (fiber_cable/3)",
+	"in_structure": "Route Junction: 2",
+	"out_segment": "Cable Segment: 36 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-34",
+	"root_housing": "Route (Underground): 52"
+}
+
+id: 36
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 36 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13645570725,
+			52.2241862935
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/71",
+	"id": 36,
+	"in_equipment": null,
+	"in_segment": "35",
+	"in_structure": "manhole/34",
+	"in_tick": 33,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "584",
+	"out_structure": "manhole/35",
+	"out_tick": 70,
+	"root_housing": "ug_route/8"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-071",
+	"in_segment": "Cable Segment: 35 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-34",
+	"out_segment": "Cable Segment: 584 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-35",
+	"root_housing": "Route (Underground): 8"
+}
+
+id: 37
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 37 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13645570725,
+			52.2241862935
+		],
+		[
+			0.13630004381,
+			52.2240955243
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/152",
+	"id": 37,
+	"in_equipment": null,
+	"in_segment": "584",
+	"in_structure": "manhole/35",
+	"in_tick": 99,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "38",
+	"out_structure": "mywcom_route_junction/31",
+	"out_tick": null,
+	"root_housing": "ug_route/20"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-I-152",
+	"in_segment": "Cable Segment: 584 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-35",
+	"out_segment": "Cable Segment: 38 (fiber_cable/3)",
+	"out_structure": "Route Junction: 31",
+	"root_housing": "Route (Underground): 20"
+}
+
+id: 38
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 38 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13630004381,
+			52.2240955243
+		],
+		[
+			0.13627633452,
+			52.2241092754
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "conduit/38",
+	"id": 38,
+	"in_equipment": null,
+	"in_segment": "37",
+	"in_structure": "mywcom_route_junction/31",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "585",
+	"out_structure": "cabinet/3",
+	"out_tick": 154,
+	"root_housing": "ug_route/265"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-038",
+	"in_segment": "Cable Segment: 37 (fiber_cable/3)",
+	"in_structure": "Route Junction: 31",
+	"out_segment": "Cable Segment: 585 (fiber_cable/3)",
+	"out_structure": "Cabinet: WH-C-03",
+	"root_housing": "Route (Underground): 265"
+}
+
+id: 39
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 39 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13627633452,
+			52.2241092754
+		],
+		[
+			0.13630004381,
+			52.2240955243
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/39",
+	"id": 39,
+	"in_equipment": null,
+	"in_segment": "585",
+	"in_structure": "cabinet/3",
+	"in_tick": 194,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "40",
+	"out_structure": "mywcom_route_junction/31",
+	"out_tick": null,
+	"root_housing": "ug_route/265"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-039",
+	"in_segment": "Cable Segment: 585 (fiber_cable/3)",
+	"in_structure": "Cabinet: WH-C-03",
+	"out_segment": "Cable Segment: 40 (fiber_cable/3)",
+	"out_structure": "Route Junction: 31",
+	"root_housing": "Route (Underground): 265"
+}
+
+id: 40
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 40 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13630004381,
+			52.2240955243
+		],
+		[
+			0.13628840446,
+			52.2240887373
+		],
+		[
+			0.13627097011,
+			52.2240640915
+		],
+		[
+			0.13622269034,
+			52.2240378026
+		],
+		[
+			0.13612478971,
+			52.2239876894
+		],
+		[
+			0.13602823019,
+			52.2239277177
+		],
+		[
+			0.13600930956,
+			52.2239171352
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/154",
+	"id": 40,
+	"in_equipment": null,
+	"in_segment": "39",
+	"in_structure": "mywcom_route_junction/31",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "41",
+	"out_structure": "mywcom_route_junction/33",
+	"out_tick": null,
+	"root_housing": "ug_route/378"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-I-154",
+	"in_segment": "Cable Segment: 39 (fiber_cable/3)",
+	"in_structure": "Route Junction: 31",
+	"out_segment": "Cable Segment: 41 (fiber_cable/3)",
+	"out_structure": "Route Junction: 33",
+	"root_housing": "Route (Underground): 378"
+}
+
+id: 41
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 41 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13600930956,
+			52.2239171352
+		],
+		[
+			0.13590484858,
+			52.2238587092
+		],
+		[
+			0.13587534428,
+			52.2238381709
+		],
+		[
+			0.13572916389,
+			52.2237543746
+		],
+		[
+			0.13559639454,
+			52.2236763289
+		],
+		[
+			0.13547167182,
+			52.2236048553
+		],
+		[
+			0.13540193439,
+			52.2235695293
+		],
+		[
+			0.13535566628,
+			52.2235609032
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/156",
+	"id": 41,
+	"in_equipment": null,
+	"in_segment": "40",
+	"in_structure": "mywcom_route_junction/33",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "42",
+	"out_structure": "manhole/1",
+	"out_tick": 491,
+	"root_housing": "ug_route/380"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-I-156",
+	"in_segment": "Cable Segment: 40 (fiber_cable/3)",
+	"in_structure": "Route Junction: 33",
+	"out_segment": "Cable Segment: 42 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-01",
+	"root_housing": "Route (Underground): 380"
+}
+
+id: 42
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 42 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13535566628,
+			52.2235609032
+		],
+		[
+			0.13532549143,
+			52.2235342032
+		],
+		[
+			0.13526111841,
+			52.2235112002
+		],
+		[
+			0.13515114784,
+			52.2234988771
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/158",
+	"id": 42,
+	"in_equipment": null,
+	"in_segment": "41",
+	"in_structure": "manhole/1",
+	"in_tick": 491,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "manhole/2",
+	"out_tick": 544,
+	"root_housing": "ug_route/21"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-I-158",
+	"in_segment": "Cable Segment: 41 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-01",
+	"out_structure": "Manhole: WH-M-02",
+	"root_housing": "Route (Underground): 21"
+}
+
+id: 584
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 584 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13645570725,
+			52.2241862935
+		],
+		[
+			0.13645570725,
+			52.2241862935
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": null,
+	"housing": "mywcom_fiber_slack/4",
+	"id": 584,
+	"in_equipment": null,
+	"in_segment": "36",
+	"in_structure": "manhole/35",
+	"in_tick": 70,
+	"length": 9,
+	"out_equipment": null,
+	"out_segment": "37",
+	"out_structure": "manhole/35",
+	"out_tick": 99,
+	"root_housing": "manhole/35"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Fiber Slack",
+	"in_segment": "Cable Segment: 36 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-35",
+	"out_segment": "Cable Segment: 37 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-35",
+	"root_housing": "Manhole: WH-M-35"
+}
+
+id: 585
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 585 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13627633452,
+			52.2241092754
+		],
+		[
+			0.13627633452,
+			52.2241092754
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": null,
+	"housing": "mywcom_fiber_slack/5",
+	"id": 585,
+	"in_equipment": null,
+	"in_segment": "38",
+	"in_structure": "cabinet/3",
+	"in_tick": 154,
+	"length": 12,
+	"out_equipment": null,
+	"out_segment": "39",
+	"out_structure": "cabinet/3",
+	"out_tick": 194,
+	"root_housing": "cabinet/3"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Fiber Slack",
+	"in_segment": "Cable Segment: 38 (fiber_cable/3)",
+	"in_structure": "Cabinet: WH-C-03",
+	"out_segment": "Cable Segment: 39 (fiber_cable/3)",
+	"out_structure": "Cabinet: WH-C-03",
+	"root_housing": "Cabinet: WH-C-03"
+}
+
+id: 100000
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100000 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13893172145,
+			52.2240747713
+		],
+		[
+			0.13907320797,
+			52.2238911596
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "oh_route/2",
+	"id": 100000,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "wall_box/2",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "pole/6",
+	"out_tick": null,
+	"root_housing": "oh_route/2"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Overhead): 2",
+	"in_structure": "Wall Box: WH-0002",
+	"out_structure": "Pole: WH-P-006",
+	"root_housing": "Route (Overhead): 2"
+}
+
+DATABASE CHANGES: ROUTE DROP CABLE
+    insert delta.fiber_cable(design/NB217,3,update)
+    insert delta.mywcom_fiber_segment(design/NB217,100000,insert)
+
+VALIDATION ERRORS: ROUTE DROP CABLE
+
+
+*** ROUTE UNDERGROUND CABLE WITH VIA POINTS
+Set delta to: design/NB217
+id: 3
+type: fiber_cable
+myw: {
+	"change_type": "update",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"short_description": "D-144-LA-8W-F12NS",
+	"title": "Fiber Cable: WH-FCB-003 (144)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13741057366,
+			52.2239119033
+		],
+		[
+			0.13734318316,
+			52.2239581143
+		],
+		[
+			0.13728149235,
+			52.2240000123
+		],
+		[
+			0.13719633222,
+			52.2240554654
+		],
+		[
+			0.13704076409,
+			52.22411174
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.1368496567,
+			52.2241992325
+		],
+		[
+			0.13679668307,
+			52.2241975895
+		],
+		[
+			0.13669408858,
+			52.2241782836
+		],
+		[
+			0.13665083796,
+			52.2241567186
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13645570725,
+			52.2241862935
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13654257892,
+			52.2240996191
+		],
+		[
+			0.13647988779,
+			52.2240683621
+		],
+		[
+			0.13644866645,
+			52.2240527955
+		],
+		[
+			0.13641580939,
+			52.2240369811
+		],
+		[
+			0.13639569283,
+			52.2240246581
+		],
+		[
+			0.13614222407,
+			52.2238882843
+		],
+		[
+			0.13590820134,
+			52.2237605361
+		],
+		[
+			0.13550788164,
+			52.2235444724
+		],
+		[
+			0.13538919389,
+			52.2234799817
+		],
+		[
+			0.13533454388,
+			52.2234612917
+		],
+		[
+			0.13522167864,
+			52.223422294
+		],
+		[
+			0.13523563743,
+			52.2234101509
+		]
+	],
+	"type": "LineString"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.13741057366,
+				52.2239119033
+			],
+			[
+				0.13645570725,
+				52.2241862935
+			],
+			[
+				0.13533454388,
+				52.2234612917
+			],
+			[
+				0.13523563743,
+				52.2234101509
+			]
+		],
+		"type": "LineString"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 9.9,
+	"directed": true,
+	"fiber_count": 144,
+	"id": 3,
+	"installation_date": null,
+	"job_id": "20833",
+	"labor_costs": null,
+	"name": "WH-FCB-003",
+	"owner": "Acme Co",
+	"specification": "D-144-LA-8W-F12NS",
+	"tick_mark_spacing": null,
+	"type": "External"
+}
+displayValues: {
+	"specification": "D-144-LA-8W-F12NS"
+}
+
+id: 33
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 33 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13649359345,
+			52.22405793
+		],
+		[
+			0.13647988779,
+			52.2240683621
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/11",
+	"id": 33,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "cabinet/1",
+	"in_tick": 0,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "34",
+	"out_structure": "mywcom_route_junction/32",
+	"out_tick": null,
+	"root_housing": "ug_route/266"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-011",
+	"in_structure": "Cabinet: WH-C-01",
+	"out_segment": "Cable Segment: 34 (fiber_cable/3)",
+	"out_structure": "Route Junction: 32",
+	"root_housing": "Route (Underground): 266"
+}
+
+id: 34
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 34 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13647988779,
+			52.2240683621
+		],
+		[
+			0.13654257892,
+			52.2240996191
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "conduit/8",
+	"id": 34,
+	"in_equipment": null,
+	"in_segment": "33",
+	"in_structure": "mywcom_route_junction/32",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "35",
+	"out_structure": "mywcom_route_junction/2",
+	"out_tick": null,
+	"root_housing": "ug_route/16"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-008",
+	"in_segment": "Cable Segment: 33 (fiber_cable/3)",
+	"in_structure": "Route Junction: 32",
+	"out_segment": "Cable Segment: 35 (fiber_cable/3)",
+	"out_structure": "Route Junction: 2",
+	"root_housing": "Route (Underground): 16"
+}
+
+id: 35
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 35 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13654257892,
+			52.2240996191
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/4",
+	"id": 35,
+	"in_equipment": null,
+	"in_segment": "34",
+	"in_structure": "mywcom_route_junction/2",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "36",
+	"out_structure": "manhole/34",
+	"out_tick": 33,
+	"root_housing": "ug_route/52"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-004",
+	"in_segment": "Cable Segment: 34 (fiber_cable/3)",
+	"in_structure": "Route Junction: 2",
+	"out_segment": "Cable Segment: 36 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-34",
+	"root_housing": "Route (Underground): 52"
+}
+
+id: 36
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 36 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13645570725,
+			52.2241862935
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/71",
+	"id": 36,
+	"in_equipment": null,
+	"in_segment": "35",
+	"in_structure": "manhole/34",
+	"in_tick": 33,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "584",
+	"out_structure": "manhole/35",
+	"out_tick": 70,
+	"root_housing": "ug_route/8"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-071",
+	"in_segment": "Cable Segment: 35 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-34",
+	"out_segment": "Cable Segment: 584 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-35",
+	"root_housing": "Route (Underground): 8"
+}
+
+id: 37
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 37 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13645570725,
+			52.2241862935
+		],
+		[
+			0.13630004381,
+			52.2240955243
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/152",
+	"id": 37,
+	"in_equipment": null,
+	"in_segment": "584",
+	"in_structure": "manhole/35",
+	"in_tick": 99,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "38",
+	"out_structure": "mywcom_route_junction/31",
+	"out_tick": null,
+	"root_housing": "ug_route/20"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-I-152",
+	"in_segment": "Cable Segment: 584 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-35",
+	"out_segment": "Cable Segment: 38 (fiber_cable/3)",
+	"out_structure": "Route Junction: 31",
+	"root_housing": "Route (Underground): 20"
+}
+
+id: 38
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 38 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13630004381,
+			52.2240955243
+		],
+		[
+			0.13627633452,
+			52.2241092754
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "conduit/38",
+	"id": 38,
+	"in_equipment": null,
+	"in_segment": "37",
+	"in_structure": "mywcom_route_junction/31",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "585",
+	"out_structure": "cabinet/3",
+	"out_tick": 154,
+	"root_housing": "ug_route/265"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-038",
+	"in_segment": "Cable Segment: 37 (fiber_cable/3)",
+	"in_structure": "Route Junction: 31",
+	"out_segment": "Cable Segment: 585 (fiber_cable/3)",
+	"out_structure": "Cabinet: WH-C-03",
+	"root_housing": "Route (Underground): 265"
+}
+
+id: 39
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 39 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13627633452,
+			52.2241092754
+		],
+		[
+			0.13630004381,
+			52.2240955243
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/39",
+	"id": 39,
+	"in_equipment": null,
+	"in_segment": "585",
+	"in_structure": "cabinet/3",
+	"in_tick": 194,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "40",
+	"out_structure": "mywcom_route_junction/31",
+	"out_tick": null,
+	"root_housing": "ug_route/265"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-039",
+	"in_segment": "Cable Segment: 585 (fiber_cable/3)",
+	"in_structure": "Cabinet: WH-C-03",
+	"out_segment": "Cable Segment: 40 (fiber_cable/3)",
+	"out_structure": "Route Junction: 31",
+	"root_housing": "Route (Underground): 265"
+}
+
+id: 40
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 40 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13630004381,
+			52.2240955243
+		],
+		[
+			0.13628840446,
+			52.2240887373
+		],
+		[
+			0.13627097011,
+			52.2240640915
+		],
+		[
+			0.13622269034,
+			52.2240378026
+		],
+		[
+			0.13612478971,
+			52.2239876894
+		],
+		[
+			0.13602823019,
+			52.2239277177
+		],
+		[
+			0.13600930956,
+			52.2239171352
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/154",
+	"id": 40,
+	"in_equipment": null,
+	"in_segment": "39",
+	"in_structure": "mywcom_route_junction/31",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "41",
+	"out_structure": "mywcom_route_junction/33",
+	"out_tick": null,
+	"root_housing": "ug_route/378"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-I-154",
+	"in_segment": "Cable Segment: 39 (fiber_cable/3)",
+	"in_structure": "Route Junction: 31",
+	"out_segment": "Cable Segment: 41 (fiber_cable/3)",
+	"out_structure": "Route Junction: 33",
+	"root_housing": "Route (Underground): 378"
+}
+
+id: 41
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 41 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13600930956,
+			52.2239171352
+		],
+		[
+			0.13590484858,
+			52.2238587092
+		],
+		[
+			0.13587534428,
+			52.2238381709
+		],
+		[
+			0.13572916389,
+			52.2237543746
+		],
+		[
+			0.13559639454,
+			52.2236763289
+		],
+		[
+			0.13547167182,
+			52.2236048553
+		],
+		[
+			0.13540193439,
+			52.2235695293
+		],
+		[
+			0.13535566628,
+			52.2235609032
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/156",
+	"id": 41,
+	"in_equipment": null,
+	"in_segment": "40",
+	"in_structure": "mywcom_route_junction/33",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "42",
+	"out_structure": "manhole/1",
+	"out_tick": 491,
+	"root_housing": "ug_route/380"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-I-156",
+	"in_segment": "Cable Segment: 40 (fiber_cable/3)",
+	"in_structure": "Route Junction: 33",
+	"out_segment": "Cable Segment: 42 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-01",
+	"root_housing": "Route (Underground): 380"
+}
+
+id: 42
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 42 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13535566628,
+			52.2235609032
+		],
+		[
+			0.13532549143,
+			52.2235342032
+		],
+		[
+			0.13526111841,
+			52.2235112002
+		],
+		[
+			0.13515114784,
+			52.2234988771
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/158",
+	"id": 42,
+	"in_equipment": null,
+	"in_segment": "41",
+	"in_structure": "manhole/1",
+	"in_tick": 491,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "manhole/2",
+	"out_tick": 544,
+	"root_housing": "ug_route/21"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Conduit: WH-CND-I-158",
+	"in_segment": "Cable Segment: 41 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-01",
+	"out_structure": "Manhole: WH-M-02",
+	"root_housing": "Route (Underground): 21"
+}
+
+id: 584
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 584 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13645570725,
+			52.2241862935
+		],
+		[
+			0.13645570725,
+			52.2241862935
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": null,
+	"housing": "mywcom_fiber_slack/4",
+	"id": 584,
+	"in_equipment": null,
+	"in_segment": "36",
+	"in_structure": "manhole/35",
+	"in_tick": 70,
+	"length": 9,
+	"out_equipment": null,
+	"out_segment": "37",
+	"out_structure": "manhole/35",
+	"out_tick": 99,
+	"root_housing": "manhole/35"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Fiber Slack",
+	"in_segment": "Cable Segment: 36 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-35",
+	"out_segment": "Cable Segment: 37 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-35",
+	"root_housing": "Manhole: WH-M-35"
+}
+
+id: 585
+type: mywcom_fiber_segment
+myw: {
+	"title": "Cable Segment: 585 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13627633452,
+			52.2241092754
+		],
+		[
+			0.13627633452,
+			52.2241092754
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": null,
+	"housing": "mywcom_fiber_slack/5",
+	"id": 585,
+	"in_equipment": null,
+	"in_segment": "38",
+	"in_structure": "cabinet/3",
+	"in_tick": 154,
+	"length": 12,
+	"out_equipment": null,
+	"out_segment": "39",
+	"out_structure": "cabinet/3",
+	"out_tick": 194,
+	"root_housing": "cabinet/3"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Fiber Slack",
+	"in_segment": "Cable Segment: 38 (fiber_cable/3)",
+	"in_structure": "Cabinet: WH-C-03",
+	"out_segment": "Cable Segment: 39 (fiber_cable/3)",
+	"out_structure": "Cabinet: WH-C-03",
+	"root_housing": "Cabinet: WH-C-03"
+}
+
+id: 100000
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100000 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13893172145,
+			52.2240747713
+		],
+		[
+			0.13907320797,
+			52.2238911596
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "oh_route/2",
+	"id": 100000,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "wall_box/2",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "pole/6",
+	"out_tick": null,
+	"root_housing": "oh_route/2"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Overhead): 2",
+	"in_structure": "Wall Box: WH-0002",
+	"out_structure": "Pole: WH-P-006",
+	"root_housing": "Route (Overhead): 2"
+}
+
+id: 100001
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100001 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13741057366,
+			52.2239119033
+		],
+		[
+			0.13734318316,
+			52.2239581143
+		],
+		[
+			0.13728149235,
+			52.2240000123
+		],
+		[
+			0.13719633222,
+			52.2240554654
+		],
+		[
+			0.13704076409,
+			52.22411174
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.1368496567,
+			52.2241992325
+		],
+		[
+			0.13679668307,
+			52.2241975895
+		],
+		[
+			0.13669408858,
+			52.2241782836
+		],
+		[
+			0.13665083796,
+			52.2241567186
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/3",
+	"id": 100001,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/27",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100002",
+	"out_structure": "manhole/33",
+	"out_tick": null,
+	"root_housing": "ug_route/3"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 3",
+	"in_structure": "Manhole: WH-M-27",
+	"out_segment": "Cable Segment: 100002 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-33",
+	"root_housing": "Route (Underground): 3"
+}
+
+id: 100002
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100002 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13665083796,
+			52.2241567186
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/2",
+	"id": 100002,
+	"in_equipment": null,
+	"in_segment": "100001",
+	"in_structure": "manhole/33",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100003",
+	"out_structure": "manhole/34",
+	"out_tick": null,
+	"root_housing": "ug_route/2"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 2",
+	"in_segment": "Cable Segment: 100001 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-33",
+	"out_segment": "Cable Segment: 100003 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-34",
+	"root_housing": "Route (Underground): 2"
+}
+
+id: 100003
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100003 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13645570725,
+			52.2241862935
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/8",
+	"id": 100003,
+	"in_equipment": null,
+	"in_segment": "100002",
+	"in_structure": "manhole/34",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100004",
+	"out_structure": "manhole/35",
+	"out_tick": null,
+	"root_housing": "ug_route/8"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 8",
+	"in_segment": "Cable Segment: 100002 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-34",
+	"out_segment": "Cable Segment: 100004 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-35",
+	"root_housing": "Route (Underground): 8"
+}
+
+id: 100004
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100004 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13645570725,
+			52.2241862935
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/8",
+	"id": 100004,
+	"in_equipment": null,
+	"in_segment": "100003",
+	"in_structure": "manhole/35",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100005",
+	"out_structure": "manhole/34",
+	"out_tick": null,
+	"root_housing": "ug_route/8"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 8",
+	"in_segment": "Cable Segment: 100003 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-35",
+	"out_segment": "Cable Segment: 100005 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-34",
+	"root_housing": "Route (Underground): 8"
+}
+
+id: 100005
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100005 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13654257892,
+			52.2240996191
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/52",
+	"id": 100005,
+	"in_equipment": null,
+	"in_segment": "100004",
+	"in_structure": "manhole/34",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100006",
+	"out_structure": "mywcom_route_junction/2",
+	"out_tick": null,
+	"root_housing": "ug_route/52"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 52",
+	"in_segment": "Cable Segment: 100004 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-34",
+	"out_segment": "Cable Segment: 100006 (fiber_cable/3)",
+	"out_structure": "Route Junction: 2",
+	"root_housing": "Route (Underground): 52"
+}
+
+id: 100006
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100006 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13654257892,
+			52.2240996191
+		],
+		[
+			0.13647988779,
+			52.2240683621
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/16",
+	"id": 100006,
+	"in_equipment": null,
+	"in_segment": "100005",
+	"in_structure": "mywcom_route_junction/2",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100007",
+	"out_structure": "mywcom_route_junction/32",
+	"out_tick": null,
+	"root_housing": "ug_route/16"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 16",
+	"in_segment": "Cable Segment: 100005 (fiber_cable/3)",
+	"in_structure": "Route Junction: 2",
+	"out_segment": "Cable Segment: 100007 (fiber_cable/3)",
+	"out_structure": "Route Junction: 32",
+	"root_housing": "Route (Underground): 16"
+}
+
+id: 100007
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100007 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13647988779,
+			52.2240683621
+		],
+		[
+			0.13644866645,
+			52.2240527955
+		],
+		[
+			0.13641580939,
+			52.2240369811
+		],
+		[
+			0.13639569283,
+			52.2240246581
+		],
+		[
+			0.13614222407,
+			52.2238882843
+		],
+		[
+			0.13590820134,
+			52.2237605361
+		],
+		[
+			0.13550788164,
+			52.2235444724
+		],
+		[
+			0.13538919389,
+			52.2234799817
+		],
+		[
+			0.13533454388,
+			52.2234612917
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/379",
+	"id": 100007,
+	"in_equipment": null,
+	"in_segment": "100006",
+	"in_structure": "mywcom_route_junction/32",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100008",
+	"out_structure": "manhole/12",
+	"out_tick": null,
+	"root_housing": "ug_route/379"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 379",
+	"in_segment": "Cable Segment: 100006 (fiber_cable/3)",
+	"in_structure": "Route Junction: 32",
+	"out_segment": "Cable Segment: 100008 (fiber_cable/3)",
+	"out_structure": "Manhole: WH-M-12",
+	"root_housing": "Route (Underground): 379"
+}
+
+id: 100008
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100008 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13533454388,
+			52.2234612917
+		],
+		[
+			0.13522167864,
+			52.223422294
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/17",
+	"id": 100008,
+	"in_equipment": null,
+	"in_segment": "100007",
+	"in_structure": "manhole/12",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100009",
+	"out_structure": "mywcom_route_junction/40",
+	"out_tick": null,
+	"root_housing": "ug_route/17"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 17",
+	"in_segment": "Cable Segment: 100007 (fiber_cable/3)",
+	"in_structure": "Manhole: WH-M-12",
+	"out_segment": "Cable Segment: 100009 (fiber_cable/3)",
+	"out_structure": "Route Junction: 40",
+	"root_housing": "Route (Underground): 17"
+}
+
+id: 100009
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100009 (fiber_cable/3)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13522167864,
+			52.223422294
+		],
+		[
+			0.13523563743,
+			52.2234101509
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/3",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/278",
+	"id": 100009,
+	"in_equipment": null,
+	"in_segment": "100008",
+	"in_structure": "mywcom_route_junction/40",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "cabinet/7",
+	"out_tick": null,
+	"root_housing": "ug_route/278"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 278",
+	"in_segment": "Cable Segment: 100008 (fiber_cable/3)",
+	"in_structure": "Route Junction: 40",
+	"out_structure": "Cabinet: WH-C-07",
+	"root_housing": "Route (Underground): 278"
+}
+
+DATABASE CHANGES: ROUTE UNDERGROUND CABLE WITH VIA POINTS
+    insert delta.mywcom_fiber_segment(design/NB217,100001,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100002,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100003,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100004,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100005,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100006,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100007,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100008,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100009,insert)
+    update delta.fiber_cable(design/NB217,3,update) fields=(path,placement_path)
+
+VALIDATION ERRORS: ROUTE UNDERGROUND CABLE WITH VIA POINTS
+
+
+*** ROUTE CABLE VIA TRIGGERS
+Set delta to: design/NB217
+id: 100000
+type: fiber_cable
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"short_description": "D-144-LA-8W-F12NS",
+	"title": "Fiber Cable: WH-FCB-003 (144)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13741057366,
+			52.2239119033
+		],
+		[
+			0.13734318316,
+			52.2239581143
+		],
+		[
+			0.13728149235,
+			52.2240000123
+		],
+		[
+			0.13719633222,
+			52.2240554654
+		],
+		[
+			0.13704076409,
+			52.22411174
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.1368496567,
+			52.2241992325
+		],
+		[
+			0.13679668307,
+			52.2241975895
+		],
+		[
+			0.13669408858,
+			52.2241782836
+		],
+		[
+			0.13665083796,
+			52.2241567186
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13645570725,
+			52.2241862935
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13654257892,
+			52.2240996191
+		],
+		[
+			0.13647988779,
+			52.2240683621
+		],
+		[
+			0.13644866645,
+			52.2240527955
+		],
+		[
+			0.13641580939,
+			52.2240369811
+		],
+		[
+			0.13639569283,
+			52.2240246581
+		],
+		[
+			0.13614222407,
+			52.2238882843
+		],
+		[
+			0.13590820134,
+			52.2237605361
+		],
+		[
+			0.13550788164,
+			52.2235444724
+		],
+		[
+			0.13538919389,
+			52.2234799817
+		],
+		[
+			0.13533454388,
+			52.2234612917
+		],
+		[
+			0.13522167864,
+			52.223422294
+		],
+		[
+			0.13523563743,
+			52.2234101509
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.13741057366,
+				52.2239119033
+			],
+			[
+				0.13645570725,
+				52.2241862935
+			],
+			[
+				0.13533454388,
+				52.2234612917
+			],
+			[
+				0.13523563743,
+				52.2234101509
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 9.9,
+	"directed": true,
+	"fiber_count": 144,
+	"id": 100000,
+	"installation_date": null,
+	"job_id": "20833",
+	"labor_costs": null,
+	"name": "WH-FCB-003",
+	"owner": "Acme Co",
+	"specification": "D-144-LA-8W-F12NS",
+	"tick_mark_spacing": null,
+	"type": "External"
+}
+displayValues: {
+	"specification": "D-144-LA-8W-F12NS"
+}
+
+id: 100010
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100010 (fiber_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13741057366,
+			52.2239119033
+		],
+		[
+			0.13734318316,
+			52.2239581143
+		],
+		[
+			0.13728149235,
+			52.2240000123
+		],
+		[
+			0.13719633222,
+			52.2240554654
+		],
+		[
+			0.13704076409,
+			52.22411174
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.1368496567,
+			52.2241992325
+		],
+		[
+			0.13679668307,
+			52.2241975895
+		],
+		[
+			0.13669408858,
+			52.2241782836
+		],
+		[
+			0.13665083796,
+			52.2241567186
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/3",
+	"id": 100010,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/27",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100011",
+	"out_structure": "manhole/33",
+	"out_tick": null,
+	"root_housing": "ug_route/3"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 3",
+	"in_structure": "Manhole: WH-M-27",
+	"out_segment": "Cable Segment: 100011 (fiber_cable/100000)",
+	"out_structure": "Manhole: WH-M-33",
+	"root_housing": "Route (Underground): 3"
+}
+
+id: 100011
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100011 (fiber_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13665083796,
+			52.2241567186
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/2",
+	"id": 100011,
+	"in_equipment": null,
+	"in_segment": "100010",
+	"in_structure": "manhole/33",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100012",
+	"out_structure": "manhole/34",
+	"out_tick": null,
+	"root_housing": "ug_route/2"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 2",
+	"in_segment": "Cable Segment: 100010 (fiber_cable/100000)",
+	"in_structure": "Manhole: WH-M-33",
+	"out_segment": "Cable Segment: 100012 (fiber_cable/100000)",
+	"out_structure": "Manhole: WH-M-34",
+	"root_housing": "Route (Underground): 2"
+}
+
+id: 100012
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100012 (fiber_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13645570725,
+			52.2241862935
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/8",
+	"id": 100012,
+	"in_equipment": null,
+	"in_segment": "100011",
+	"in_structure": "manhole/34",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100013",
+	"out_structure": "manhole/35",
+	"out_tick": null,
+	"root_housing": "ug_route/8"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 8",
+	"in_segment": "Cable Segment: 100011 (fiber_cable/100000)",
+	"in_structure": "Manhole: WH-M-34",
+	"out_segment": "Cable Segment: 100013 (fiber_cable/100000)",
+	"out_structure": "Manhole: WH-M-35",
+	"root_housing": "Route (Underground): 8"
+}
+
+id: 100013
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100013 (fiber_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13645570725,
+			52.2241862935
+		],
+		[
+			0.13657573611,
+			52.2241189284
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/8",
+	"id": 100013,
+	"in_equipment": null,
+	"in_segment": "100012",
+	"in_structure": "manhole/35",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100014",
+	"out_structure": "manhole/34",
+	"out_tick": null,
+	"root_housing": "ug_route/8"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 8",
+	"in_segment": "Cable Segment: 100012 (fiber_cable/100000)",
+	"in_structure": "Manhole: WH-M-35",
+	"out_segment": "Cable Segment: 100014 (fiber_cable/100000)",
+	"out_structure": "Manhole: WH-M-34",
+	"root_housing": "Route (Underground): 8"
+}
+
+id: 100014
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100014 (fiber_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13657573611,
+			52.2241189284
+		],
+		[
+			0.13654257892,
+			52.2240996191
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/52",
+	"id": 100014,
+	"in_equipment": null,
+	"in_segment": "100013",
+	"in_structure": "manhole/34",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100015",
+	"out_structure": "mywcom_route_junction/2",
+	"out_tick": null,
+	"root_housing": "ug_route/52"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 52",
+	"in_segment": "Cable Segment: 100013 (fiber_cable/100000)",
+	"in_structure": "Manhole: WH-M-34",
+	"out_segment": "Cable Segment: 100015 (fiber_cable/100000)",
+	"out_structure": "Route Junction: 2",
+	"root_housing": "Route (Underground): 52"
+}
+
+id: 100015
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100015 (fiber_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13654257892,
+			52.2240996191
+		],
+		[
+			0.13647988779,
+			52.2240683621
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/16",
+	"id": 100015,
+	"in_equipment": null,
+	"in_segment": "100014",
+	"in_structure": "mywcom_route_junction/2",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100016",
+	"out_structure": "mywcom_route_junction/32",
+	"out_tick": null,
+	"root_housing": "ug_route/16"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 16",
+	"in_segment": "Cable Segment: 100014 (fiber_cable/100000)",
+	"in_structure": "Route Junction: 2",
+	"out_segment": "Cable Segment: 100016 (fiber_cable/100000)",
+	"out_structure": "Route Junction: 32",
+	"root_housing": "Route (Underground): 16"
+}
+
+id: 100016
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100016 (fiber_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13647988779,
+			52.2240683621
+		],
+		[
+			0.13644866645,
+			52.2240527955
+		],
+		[
+			0.13641580939,
+			52.2240369811
+		],
+		[
+			0.13639569283,
+			52.2240246581
+		],
+		[
+			0.13614222407,
+			52.2238882843
+		],
+		[
+			0.13590820134,
+			52.2237605361
+		],
+		[
+			0.13550788164,
+			52.2235444724
+		],
+		[
+			0.13538919389,
+			52.2234799817
+		],
+		[
+			0.13533454388,
+			52.2234612917
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/379",
+	"id": 100016,
+	"in_equipment": null,
+	"in_segment": "100015",
+	"in_structure": "mywcom_route_junction/32",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100017",
+	"out_structure": "manhole/12",
+	"out_tick": null,
+	"root_housing": "ug_route/379"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 379",
+	"in_segment": "Cable Segment: 100015 (fiber_cable/100000)",
+	"in_structure": "Route Junction: 32",
+	"out_segment": "Cable Segment: 100017 (fiber_cable/100000)",
+	"out_structure": "Manhole: WH-M-12",
+	"root_housing": "Route (Underground): 379"
+}
+
+id: 100017
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100017 (fiber_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13533454388,
+			52.2234612917
+		],
+		[
+			0.13522167864,
+			52.223422294
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/17",
+	"id": 100017,
+	"in_equipment": null,
+	"in_segment": "100016",
+	"in_structure": "manhole/12",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100018",
+	"out_structure": "mywcom_route_junction/40",
+	"out_tick": null,
+	"root_housing": "ug_route/17"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 17",
+	"in_segment": "Cable Segment: 100016 (fiber_cable/100000)",
+	"in_structure": "Manhole: WH-M-12",
+	"out_segment": "Cable Segment: 100018 (fiber_cable/100000)",
+	"out_structure": "Route Junction: 40",
+	"root_housing": "Route (Underground): 17"
+}
+
+id: 100018
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100018 (fiber_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13522167864,
+			52.223422294
+		],
+		[
+			0.13523563743,
+			52.2234101509
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/278",
+	"id": 100018,
+	"in_equipment": null,
+	"in_segment": "100017",
+	"in_structure": "mywcom_route_junction/40",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "cabinet/7",
+	"out_tick": null,
+	"root_housing": "ug_route/278"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-003 (144)",
+	"circuits": 0,
+	"housing": "Route (Underground): 278",
+	"in_segment": "Cable Segment: 100017 (fiber_cable/100000)",
+	"in_structure": "Route Junction: 40",
+	"out_structure": "Cabinet: WH-C-07",
+	"root_housing": "Route (Underground): 278"
+}
+
+DATABASE CHANGES: ROUTE CABLE VIA TRIGGERS
+    insert delta.fiber_cable(design/NB217,100000,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100010,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100011,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100012,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100013,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100014,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100015,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100016,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100017,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100018,insert)
+
+VALIDATION ERRORS: ROUTE CABLE VIA TRIGGERS
+
+
+*** CREATE INTERNAL CABLE
+Set delta to: design/NB217
+id: 100001
+type: fiber_cable
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"short_description": "D-096-LA-8W-F12NS",
+	"title": "Fiber Cable: WH-FCB-100001 (96)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13660490513,
+			52.2240164429
+		],
+		[
+			0.13660490513,
+			52.2240164429
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": null
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 6,
+	"directed": true,
+	"fiber_count": 96,
+	"id": 100001,
+	"installation_date": null,
+	"job_id": null,
+	"labor_costs": null,
+	"name": "WH-FCB-100001",
+	"owner": null,
+	"specification": "D-096-LA-8W-F12NS",
+	"tick_mark_spacing": null,
+	"type": "Internal"
+}
+displayValues: {
+	"specification": "D-096-LA-8W-F12NS"
+}
+
+id: 100019
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Cable Segment: 100019 (fiber_cable/100001)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13660490513,
+			52.2240164429
+		],
+		[
+			0.13660490513,
+			52.2240164429
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/100001",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "building/1",
+	"id": 100019,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "building/1",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "building/1",
+	"out_tick": null,
+	"root_housing": "building/1"
+}
+displayValues: {
+	"cable": "Fiber Cable: WH-FCB-100001 (96)",
+	"circuits": 0,
+	"housing": "Building: Woodhead Hub",
+	"in_structure": "Building: Woodhead Hub",
+	"out_structure": "Building: Woodhead Hub",
+	"root_housing": "Building: Woodhead Hub"
+}
+
+{
+	"ids": [
+		100001
+	]
+}
+DATABASE CHANGES: CREATE INTERNAL CABLE
+    insert delta.fiber_cable(design/NB217,100001,insert)
+    insert delta.mywcom_fiber_segment(design/NB217,100019,insert)
+
+VALIDATION ERRORS: CREATE INTERNAL CABLE
+

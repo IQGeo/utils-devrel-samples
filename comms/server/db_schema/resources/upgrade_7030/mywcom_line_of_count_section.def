@@ -1,0 +1,65 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_line_of_count_section",
+    "external_name": "{:mywcom_line_of_count_section_external_name}",
+    "title": "{display_name}: [id]",
+    "short_description": "[label]",
+    "track_changes": true,
+    "versioned": true,
+    "geom_indexed": true,
+    "editable": {},
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "label",
+            "external_name": "{:mywcom_line_of_count_label_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "route",
+            "external_name": "{:mywcom_line_of_count_section_route_field_name}",
+            "type": "linestring",
+            "mandatory": "true"
+        },
+        {
+            "name": "line_of_count",
+            "external_name": "{:mywcom_line_of_count_section_line_of_count_field_name}",
+            "type": "foreign_key(mywcom_line_of_count)"
+        },
+        {
+            "name": "container",
+            "external_name": "{:mywcom_line_of_count_section_container_field_name}",
+            "type": "reference()"
+        },
+        {
+            "name": "mapping",
+            "external_name": "{:mywcom_line_of_count_section_mapping_field_name}",
+            "type": "string()",
+            "visible": "false"
+        },
+        {
+            "name": "forward",
+            "external_name": "{:mywcom_line_of_count_forward_field_name}",
+            "type": "boolean",
+            "default": "true",
+            "mandatory": "true",
+            "visible": "false"
+        }
+    ],
+    "groups": [],
+    "searches": [],
+    "queries": [
+        {
+            "value": "{:mywcom_line_of_count_section_feature_query_value_1}",
+            "description": "{:mywcom_line_of_count_section_feature_query_desc_1}",
+            "lang": "en"
+        }
+    ],
+    "filters": []
+}

@@ -1,0 +1,7 @@
+retired,manufacturer,name,model,class,max_ac_current_bypass,min_voltage,interstage_tilt,internal_splitter_type,output_port_type,custom_cascade,n_coax_in_ports,n_coax_out_ports,type
+false,ATX,Amp-ATX HGD AGC 1.2GHz Dual,ATX HGD AGC 1.2GHz,AGC,15000.000,42.000,15.500,Balanced,Dual,False,1,4,
+false,ATX,Amp-ATX HGT AGC 1.2GHz Triple,ATX HGT AGC 1.2GHz,AGC,15000.000,42.000,15.500,Balanced,Triple,False,1,4,
+false,ATX,LE-ATX LE AGC 1.2GHz,ATX LE AGC 1.2GHz,AGC,15000.000,42.000,15.500,Balanced,Single Line Extender,False,1,2,LE
+false,C-Cor,Amp-FMBEGPJ,FMBEGPJ,,15000.000,45.000,14.500,Balanced,Quad,True,1,5,DA
+false,C-Cor,Amp-FMTED5J,FMTED5J,,15000.000,45.000,14.500,Balanced,Quin,True,1,6,TA
+false,C-Cor,Amp-FNB85CDJ,FNB85CDJ,,15000.000,45.000,14.500,Balanced,Quad,True,1,5,DA

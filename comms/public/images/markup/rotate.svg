@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="leader" transform="translate(2.000000, 3.000000)"></g>
+        <g id="edit_check" transform="translate(-0.000000, 3.074351)"></g>
+        <g id="rotate" transform="translate(-1.903697, 5.500000)">
+            <path d="M4.90369676,4.90369676 C4.90369676,4.90369676 6.13084761,9.19872474 10.0270096,11.0600992 C11.1048161,11.5750165 12.3868706,11.9036968 13.9036968,11.9036968 C14.7727838,11.9036968 15.5647982,11.795795 16.2854813,11.6067846 C21.3694889,10.2734244 22.9036968,4.90369676 22.9036968,4.90369676" id="Path-4" stroke="#333333" stroke-width="3"></path>
+            <polygon id="Triangle" fill="#333333" transform="translate(4.767238, 4.463630) rotate(-23.500000) translate(-4.767238, -4.463630) " points="4.76723838 1.96363045 8.26723838 6.96363045 1.26723838 6.96363045"></polygon>
+            <polygon id="Triangle-Copy" fill="#333333" transform="translate(23.032762, 4.463630) rotate(23.500000) translate(-23.032762, -4.463630) " points="23.0327616 1.96363045 26.5327616 6.96363045 19.5327616 6.96363045"></polygon>
+        </g>
+    </g>
+</svg>

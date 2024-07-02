@@ -1,0 +1,2125 @@
+
+*** SEGMENT TERMINATIONS
+Set delta to: *** master ***
+{
+	"1": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:1",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:1",
+			"pin": 1,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-001#IN:1",
+			"feature": "fiber_ont/1",
+			"id": "WH-ONT-001#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-001",
+			"type": "port"
+		}
+	},
+	"10": {
+		"in": {
+			"desc": "WH-OLT-011#OUT:2",
+			"feature": "fiber_olt/11",
+			"id": "WH-OLT-011#out:2",
+			"pin": 2,
+			"side": "out",
+			"title": "OLT: WH-OLT-011",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-056#IN:1",
+			"feature": "fiber_ont/56",
+			"id": "WH-ONT-056#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-056",
+			"type": "port"
+		}
+	},
+	"11": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:1",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:1",
+			"pin": 1,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-064#IN:1",
+			"feature": "fiber_ont/64",
+			"id": "WH-ONT-064#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-064",
+			"type": "port"
+		}
+	},
+	"12": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:2",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:2",
+			"pin": 2,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#12",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:12",
+			"pin": 12,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"13": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:3",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:3",
+			"pin": 3,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#13",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:13",
+			"pin": 13,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"14": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:4",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:4",
+			"pin": 4,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#14",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:14",
+			"pin": 14,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"15": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:5",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:5",
+			"pin": 5,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#15",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:15",
+			"pin": 15,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"16": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:6",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:6",
+			"pin": 6,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#16",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:16",
+			"pin": 16,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"17": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:2",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:2",
+			"pin": 2,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#17",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:17",
+			"pin": 17,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"18": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:3",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:3",
+			"pin": 3,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#18",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:18",
+			"pin": 18,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"19": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:4",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:4",
+			"pin": 4,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#19",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:19",
+			"pin": 19,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"2": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:2",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:2",
+			"pin": 2,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-009#IN:1",
+			"feature": "fiber_ont/9",
+			"id": "WH-ONT-009#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-009",
+			"type": "port"
+		}
+	},
+	"20": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:5",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:5",
+			"pin": 5,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#20",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:20",
+			"pin": 20,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"3": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:3",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:3",
+			"pin": 3,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-016#IN:1",
+			"feature": "fiber_ont/16",
+			"id": "WH-ONT-016#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-016",
+			"type": "port"
+		}
+	},
+	"4": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:4",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:4",
+			"pin": 4,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-024#IN:1",
+			"feature": "fiber_ont/24",
+			"id": "WH-ONT-024#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-024",
+			"type": "port"
+		}
+	},
+	"5": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:5",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:5",
+			"pin": 5,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-034#IN:1",
+			"feature": "fiber_ont/34",
+			"id": "WH-ONT-034#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-034",
+			"type": "port"
+		}
+	},
+	"6": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:6",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:6",
+			"pin": 6,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-042#IN:1",
+			"feature": "fiber_ont/42",
+			"id": "WH-ONT-042#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-042",
+			"type": "port"
+		}
+	},
+	"7": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:7",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:7",
+			"pin": 7,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-029#IN:1",
+			"feature": "fiber_ont/29",
+			"id": "WH-ONT-029#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-029",
+			"type": "port"
+		}
+	},
+	"8": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:8",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:8",
+			"pin": 8,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-047#IN:1",
+			"feature": "fiber_ont/47",
+			"id": "WH-ONT-047#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-047",
+			"type": "port"
+		}
+	},
+	"9": {
+		"in": {
+			"desc": "WH-OLT-011#OUT:1",
+			"feature": "fiber_olt/11",
+			"id": "WH-OLT-011#out:1",
+			"pin": 1,
+			"side": "out",
+			"title": "OLT: WH-OLT-011",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-055#IN:1",
+			"feature": "fiber_ont/55",
+			"id": "WH-ONT-055#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-055",
+			"type": "port"
+		}
+	}
+}
+
+*** SHELF IN PORT TERMINATIONS
+Set delta to: *** master ***
+{
+	"1": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:1",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:1",
+			"pin": 1,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				],
+				[
+					0.136653184891,
+					52.224050947
+				],
+				[
+					0.136634438556,
+					52.2240861255
+				],
+				[
+					0.136684030294,
+					52.2241248844
+				],
+				[
+					0.136732310057,
+					52.2241388504
+				],
+				[
+					0.136906653643,
+					52.2240566977
+				],
+				[
+					0.136976391077,
+					52.2240361595
+				],
+				[
+					0.137047469616,
+					52.2240361595
+				],
+				[
+					0.137125253677,
+					52.2239991908
+				],
+				[
+					0.137337148189,
+					52.2238570661
+				],
+				[
+					0.137614756823,
+					52.2236475752
+				],
+				[
+					0.137802511454,
+					52.2234964125
+				],
+				[
+					0.137891024351,
+					52.2234265817
+				],
+				[
+					0.137950032949,
+					52.2233756463
+				],
+				[
+					0.137965323374,
+					52.2233384716
+				],
+				[
+					0.138106942177,
+					52.2232483074
+				],
+				[
+					0.137318372726,
+					52.2228309619
+				],
+				[
+					0.136755108833,
+					52.2225089131
+				],
+				[
+					0.136540532112,
+					52.2223840364
+				],
+				[
+					0.135939717293,
+					52.2220126905
+				],
+				[
+					0.135778784752,
+					52.2219173888
+				],
+				[
+					0.135273188353,
+					52.2216051922
+				],
+				[
+					0.135077387095,
+					52.221474562
+				],
+				[
+					0.13498082757,
+					52.2214071928
+				],
+				[
+					0.134985205869,
+					52.2213763836
+				]
+			],
+			"desc": "BB-FCB-016#19",
+			"feature": "mywcom_fiber_segment/336",
+			"id": "BB-FCB-016#in:19",
+			"pin": 19,
+			"side": "in",
+			"title": "Fiber Cable: BB-FCB-016 (72)",
+			"type": "cable"
+		}
+	},
+	"10": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:10",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:10",
+			"pin": 10,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:10",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:10",
+			"pin": 10,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		}
+	},
+	"2": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:2",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:2",
+			"pin": 2,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				],
+				[
+					0.136653184891,
+					52.224050947
+				],
+				[
+					0.136634438556,
+					52.2240861255
+				],
+				[
+					0.136684030294,
+					52.2241248844
+				],
+				[
+					0.136732310057,
+					52.2241388504
+				],
+				[
+					0.136906653643,
+					52.2240566977
+				],
+				[
+					0.136976391077,
+					52.2240361595
+				],
+				[
+					0.137047469616,
+					52.2240361595
+				],
+				[
+					0.137125253677,
+					52.2239991908
+				],
+				[
+					0.137337148189,
+					52.2238570661
+				],
+				[
+					0.137614756823,
+					52.2236475752
+				],
+				[
+					0.137802511454,
+					52.2234964125
+				],
+				[
+					0.137891024351,
+					52.2234265817
+				],
+				[
+					0.137950032949,
+					52.2233756463
+				],
+				[
+					0.137965323374,
+					52.2233384716
+				],
+				[
+					0.138106942177,
+					52.2232483074
+				],
+				[
+					0.137318372726,
+					52.2228309619
+				],
+				[
+					0.136755108833,
+					52.2225089131
+				],
+				[
+					0.136540532112,
+					52.2223840364
+				],
+				[
+					0.135939717293,
+					52.2220126905
+				],
+				[
+					0.135778784752,
+					52.2219173888
+				],
+				[
+					0.135273188353,
+					52.2216051922
+				],
+				[
+					0.135077387095,
+					52.221474562
+				],
+				[
+					0.13498082757,
+					52.2214071928
+				],
+				[
+					0.134985205869,
+					52.2213763836
+				]
+			],
+			"desc": "BB-FCB-016#20",
+			"feature": "mywcom_fiber_segment/336",
+			"id": "BB-FCB-016#in:20",
+			"pin": 20,
+			"side": "in",
+			"title": "Fiber Cable: BB-FCB-016 (72)",
+			"type": "cable"
+		}
+	},
+	"3": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:3",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:3",
+			"pin": 3,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				],
+				[
+					0.136653184891,
+					52.224050947
+				],
+				[
+					0.136634438556,
+					52.2240861255
+				],
+				[
+					0.136684030294,
+					52.2241248844
+				],
+				[
+					0.136732310057,
+					52.2241388504
+				],
+				[
+					0.136906653643,
+					52.2240566977
+				],
+				[
+					0.136976391077,
+					52.2240361595
+				],
+				[
+					0.137047469616,
+					52.2240361595
+				],
+				[
+					0.137125253677,
+					52.2239991908
+				],
+				[
+					0.137337148189,
+					52.2238570661
+				],
+				[
+					0.137614756823,
+					52.2236475752
+				],
+				[
+					0.137802511454,
+					52.2234964125
+				],
+				[
+					0.137891024351,
+					52.2234265817
+				],
+				[
+					0.137950032949,
+					52.2233756463
+				],
+				[
+					0.137965323374,
+					52.2233384716
+				],
+				[
+					0.138106942177,
+					52.2232483074
+				],
+				[
+					0.137318372726,
+					52.2228309619
+				],
+				[
+					0.136755108833,
+					52.2225089131
+				],
+				[
+					0.136540532112,
+					52.2223840364
+				],
+				[
+					0.135939717293,
+					52.2220126905
+				],
+				[
+					0.135778784752,
+					52.2219173888
+				],
+				[
+					0.135273188353,
+					52.2216051922
+				],
+				[
+					0.135077387095,
+					52.221474562
+				],
+				[
+					0.13498082757,
+					52.2214071928
+				],
+				[
+					0.134985205869,
+					52.2213763836
+				]
+			],
+			"desc": "BB-FCB-016#21",
+			"feature": "mywcom_fiber_segment/336",
+			"id": "BB-FCB-016#in:21",
+			"pin": 21,
+			"side": "in",
+			"title": "Fiber Cable: BB-FCB-016 (72)",
+			"type": "cable"
+		}
+	},
+	"4": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:4",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:4",
+			"pin": 4,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				],
+				[
+					0.136653184891,
+					52.224050947
+				],
+				[
+					0.136634438556,
+					52.2240861255
+				],
+				[
+					0.136684030294,
+					52.2241248844
+				],
+				[
+					0.136732310057,
+					52.2241388504
+				],
+				[
+					0.136906653643,
+					52.2240566977
+				],
+				[
+					0.136976391077,
+					52.2240361595
+				],
+				[
+					0.137047469616,
+					52.2240361595
+				],
+				[
+					0.137125253677,
+					52.2239991908
+				],
+				[
+					0.137337148189,
+					52.2238570661
+				],
+				[
+					0.137614756823,
+					52.2236475752
+				],
+				[
+					0.137802511454,
+					52.2234964125
+				],
+				[
+					0.137891024351,
+					52.2234265817
+				],
+				[
+					0.137950032949,
+					52.2233756463
+				],
+				[
+					0.137965323374,
+					52.2233384716
+				],
+				[
+					0.138106942177,
+					52.2232483074
+				],
+				[
+					0.137318372726,
+					52.2228309619
+				],
+				[
+					0.136755108833,
+					52.2225089131
+				],
+				[
+					0.136540532112,
+					52.2223840364
+				],
+				[
+					0.135939717293,
+					52.2220126905
+				],
+				[
+					0.135778784752,
+					52.2219173888
+				],
+				[
+					0.135273188353,
+					52.2216051922
+				],
+				[
+					0.135077387095,
+					52.221474562
+				],
+				[
+					0.13498082757,
+					52.2214071928
+				],
+				[
+					0.134985205869,
+					52.2213763836
+				]
+			],
+			"desc": "BB-FCB-016#22",
+			"feature": "mywcom_fiber_segment/336",
+			"id": "BB-FCB-016#in:22",
+			"pin": 22,
+			"side": "in",
+			"title": "Fiber Cable: BB-FCB-016 (72)",
+			"type": "cable"
+		}
+	},
+	"5": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:5",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:5",
+			"pin": 5,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				],
+				[
+					0.136653184891,
+					52.224050947
+				],
+				[
+					0.136634438556,
+					52.2240861255
+				],
+				[
+					0.136684030294,
+					52.2241248844
+				],
+				[
+					0.136732310057,
+					52.2241388504
+				],
+				[
+					0.136906653643,
+					52.2240566977
+				],
+				[
+					0.136976391077,
+					52.2240361595
+				],
+				[
+					0.137047469616,
+					52.2240361595
+				],
+				[
+					0.137125253677,
+					52.2239991908
+				],
+				[
+					0.137337148189,
+					52.2238570661
+				],
+				[
+					0.137614756823,
+					52.2236475752
+				],
+				[
+					0.137802511454,
+					52.2234964125
+				],
+				[
+					0.137891024351,
+					52.2234265817
+				],
+				[
+					0.137950032949,
+					52.2233756463
+				],
+				[
+					0.137965323374,
+					52.2233384716
+				],
+				[
+					0.138106942177,
+					52.2232483074
+				],
+				[
+					0.137318372726,
+					52.2228309619
+				],
+				[
+					0.136755108833,
+					52.2225089131
+				],
+				[
+					0.136540532112,
+					52.2223840364
+				],
+				[
+					0.135939717293,
+					52.2220126905
+				],
+				[
+					0.135778784752,
+					52.2219173888
+				],
+				[
+					0.135273188353,
+					52.2216051922
+				],
+				[
+					0.135077387095,
+					52.221474562
+				],
+				[
+					0.13498082757,
+					52.2214071928
+				],
+				[
+					0.134985205869,
+					52.2213763836
+				]
+			],
+			"desc": "BB-FCB-016#23",
+			"feature": "mywcom_fiber_segment/336",
+			"id": "BB-FCB-016#in:23",
+			"pin": 23,
+			"side": "in",
+			"title": "Fiber Cable: BB-FCB-016 (72)",
+			"type": "cable"
+		}
+	},
+	"6": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:6",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:6",
+			"pin": 6,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				],
+				[
+					0.136653184891,
+					52.224050947
+				],
+				[
+					0.136634438556,
+					52.2240861255
+				],
+				[
+					0.136684030294,
+					52.2241248844
+				],
+				[
+					0.136732310057,
+					52.2241388504
+				],
+				[
+					0.136906653643,
+					52.2240566977
+				],
+				[
+					0.136976391077,
+					52.2240361595
+				],
+				[
+					0.137047469616,
+					52.2240361595
+				],
+				[
+					0.137125253677,
+					52.2239991908
+				],
+				[
+					0.137337148189,
+					52.2238570661
+				],
+				[
+					0.137614756823,
+					52.2236475752
+				],
+				[
+					0.137802511454,
+					52.2234964125
+				],
+				[
+					0.137891024351,
+					52.2234265817
+				],
+				[
+					0.137950032949,
+					52.2233756463
+				],
+				[
+					0.137965323374,
+					52.2233384716
+				],
+				[
+					0.138106942177,
+					52.2232483074
+				],
+				[
+					0.137318372726,
+					52.2228309619
+				],
+				[
+					0.136755108833,
+					52.2225089131
+				],
+				[
+					0.136540532112,
+					52.2223840364
+				],
+				[
+					0.135939717293,
+					52.2220126905
+				],
+				[
+					0.135778784752,
+					52.2219173888
+				],
+				[
+					0.135273188353,
+					52.2216051922
+				],
+				[
+					0.135077387095,
+					52.221474562
+				],
+				[
+					0.13498082757,
+					52.2214071928
+				],
+				[
+					0.134985205869,
+					52.2213763836
+				]
+			],
+			"desc": "BB-FCB-016#24",
+			"feature": "mywcom_fiber_segment/336",
+			"id": "BB-FCB-016#in:24",
+			"pin": 24,
+			"side": "in",
+			"title": "Fiber Cable: BB-FCB-016 (72)",
+			"type": "cable"
+		}
+	},
+	"7": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:7",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:7",
+			"pin": 7,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:7",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:7",
+			"pin": 7,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		}
+	},
+	"8": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:8",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:8",
+			"pin": 8,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:8",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:8",
+			"pin": 8,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		}
+	},
+	"9": {
+		"in": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:9",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:9",
+			"pin": 9,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		},
+		"out": {
+			"coords": [
+				[
+					0.136604905128,
+					52.2240164429
+				]
+			],
+			"desc": "WH-S-013#OUT:9",
+			"feature": "fiber_shelf/13",
+			"id": "WH-S-013#out:9",
+			"pin": 9,
+			"side": "out",
+			"title": "Fiber Shelf: WH-S-013",
+			"type": "port"
+		}
+	}
+}
+
+*** PATCH PANEL PORTS
+Set delta to: *** master ***
+{
+	"1": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:1",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:1",
+			"pin": 1,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-001#IN:1",
+			"feature": "fiber_ont/1",
+			"id": "WH-ONT-001#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-001",
+			"type": "port"
+		}
+	},
+	"10": {
+		"in": {
+			"desc": "WH-OLT-011#OUT:2",
+			"feature": "fiber_olt/11",
+			"id": "WH-OLT-011#out:2",
+			"pin": 2,
+			"side": "out",
+			"title": "OLT: WH-OLT-011",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-056#IN:1",
+			"feature": "fiber_ont/56",
+			"id": "WH-ONT-056#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-056",
+			"type": "port"
+		}
+	},
+	"11": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:1",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:1",
+			"pin": 1,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-064#IN:1",
+			"feature": "fiber_ont/64",
+			"id": "WH-ONT-064#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-064",
+			"type": "port"
+		}
+	},
+	"12": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:2",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:2",
+			"pin": 2,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#12",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:12",
+			"pin": 12,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"13": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:3",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:3",
+			"pin": 3,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#13",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:13",
+			"pin": 13,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"14": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:4",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:4",
+			"pin": 4,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#14",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:14",
+			"pin": 14,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"15": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:5",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:5",
+			"pin": 5,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#15",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:15",
+			"pin": 15,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"16": {
+		"in": {
+			"desc": "WH-OLT-006#OUT:6",
+			"feature": "fiber_olt/6",
+			"id": "WH-OLT-006#out:6",
+			"pin": 6,
+			"side": "out",
+			"title": "OLT: WH-OLT-006",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#16",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:16",
+			"pin": 16,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"17": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:2",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:2",
+			"pin": 2,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#17",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:17",
+			"pin": 17,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"18": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:3",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:3",
+			"pin": 3,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#18",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:18",
+			"pin": 18,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"19": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:4",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:4",
+			"pin": 4,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#19",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:19",
+			"pin": 19,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"2": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:2",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:2",
+			"pin": 2,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-009#IN:1",
+			"feature": "fiber_ont/9",
+			"id": "WH-ONT-009#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-009",
+			"type": "port"
+		}
+	},
+	"20": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:5",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:5",
+			"pin": 5,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#20",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:20",
+			"pin": 20,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"21": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:6",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:6",
+			"pin": 6,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#21",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:21",
+			"pin": 21,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"22": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:7",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:7",
+			"pin": 7,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#22",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:22",
+			"pin": 22,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"23": {
+		"in": {
+			"desc": "WH-OLT-016#OUT:8",
+			"feature": "fiber_olt/16",
+			"id": "WH-OLT-016#out:8",
+			"pin": 8,
+			"side": "out",
+			"title": "OLT: WH-OLT-016",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#23",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:23",
+			"pin": 23,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"24": {
+		"in": {
+			"desc": "WH-OLT-017#OUT:3",
+			"feature": "fiber_olt/17",
+			"id": "WH-OLT-017#out:3",
+			"pin": 3,
+			"side": "out",
+			"title": "OLT: WH-OLT-017",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#24",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:24",
+			"pin": 24,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"25": {
+		"in": {
+			"desc": "WH-OLT-017#OUT:4",
+			"feature": "fiber_olt/17",
+			"id": "WH-OLT-017#out:4",
+			"pin": 4,
+			"side": "out",
+			"title": "OLT: WH-OLT-017",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#25",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:25",
+			"pin": 25,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"26": {
+		"in": {
+			"desc": "WH-OLT-017#OUT:5",
+			"feature": "fiber_olt/17",
+			"id": "WH-OLT-017#out:5",
+			"pin": 5,
+			"side": "out",
+			"title": "OLT: WH-OLT-017",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#26",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:26",
+			"pin": 26,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"27": {
+		"in": {
+			"desc": "WH-OLT-017#OUT:6",
+			"feature": "fiber_olt/17",
+			"id": "WH-OLT-017#out:6",
+			"pin": 6,
+			"side": "out",
+			"title": "OLT: WH-OLT-017",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#27",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:27",
+			"pin": 27,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"28": {
+		"in": {
+			"desc": "WH-OLT-017#OUT:7",
+			"feature": "fiber_olt/17",
+			"id": "WH-OLT-017#out:7",
+			"pin": 7,
+			"side": "out",
+			"title": "OLT: WH-OLT-017",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-FCB-021#28",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:28",
+			"pin": 28,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"29": {
+		"in": {
+			"desc": "WH-INT-02#13",
+			"feature": "mywcom_fiber_segment/558",
+			"id": "WH-INT-02#in:13",
+			"pin": 13,
+			"side": "in",
+			"title": "Fiber Cable: WH-INT-02 (48)",
+			"type": "cable"
+		},
+		"out": {
+			"desc": "WH-FCB-021#29",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:29",
+			"pin": 29,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"3": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:3",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:3",
+			"pin": 3,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-016#IN:1",
+			"feature": "fiber_ont/16",
+			"id": "WH-ONT-016#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-016",
+			"type": "port"
+		}
+	},
+	"30": {
+		"in": {
+			"desc": "WH-INT-02#14",
+			"feature": "mywcom_fiber_segment/558",
+			"id": "WH-INT-02#in:14",
+			"pin": 14,
+			"side": "in",
+			"title": "Fiber Cable: WH-INT-02 (48)",
+			"type": "cable"
+		},
+		"out": {
+			"desc": "WH-FCB-021#30",
+			"feature": "mywcom_fiber_segment/183",
+			"id": "WH-FCB-021#out:30",
+			"pin": 30,
+			"side": "out",
+			"title": "Fiber Cable: WH-FCB-021 (144)",
+			"type": "cable"
+		}
+	},
+	"4": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:4",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:4",
+			"pin": 4,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-024#IN:1",
+			"feature": "fiber_ont/24",
+			"id": "WH-ONT-024#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-024",
+			"type": "port"
+		}
+	},
+	"5": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:5",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:5",
+			"pin": 5,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-034#IN:1",
+			"feature": "fiber_ont/34",
+			"id": "WH-ONT-034#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-034",
+			"type": "port"
+		}
+	},
+	"6": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:6",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:6",
+			"pin": 6,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-042#IN:1",
+			"feature": "fiber_ont/42",
+			"id": "WH-ONT-042#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-042",
+			"type": "port"
+		}
+	},
+	"7": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:7",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:7",
+			"pin": 7,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-029#IN:1",
+			"feature": "fiber_ont/29",
+			"id": "WH-ONT-029#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-029",
+			"type": "port"
+		}
+	},
+	"8": {
+		"in": {
+			"desc": "WH-OLT-010#OUT:8",
+			"feature": "fiber_olt/10",
+			"id": "WH-OLT-010#out:8",
+			"pin": 8,
+			"side": "out",
+			"title": "OLT: WH-OLT-010",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-047#IN:1",
+			"feature": "fiber_ont/47",
+			"id": "WH-ONT-047#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-047",
+			"type": "port"
+		}
+	},
+	"9": {
+		"in": {
+			"desc": "WH-OLT-011#OUT:1",
+			"feature": "fiber_olt/11",
+			"id": "WH-OLT-011#out:1",
+			"pin": 1,
+			"side": "out",
+			"title": "OLT: WH-OLT-011",
+			"type": "port"
+		},
+		"out": {
+			"desc": "WH-ONT-055#IN:1",
+			"feature": "fiber_ont/55",
+			"id": "WH-ONT-055#in:1",
+			"pin": 1,
+			"side": "in",
+			"title": "ONT: WH-ONT-055",
+			"type": "port"
+		}
+	}
+}
+
+*** SEGMENT PIN TERMINATIONS
+Set delta to: *** master ***
+{
+	"1": [
+		{
+			"name": "Circuit: WH-FTTH-030",
+			"urn": "ftth_circuit/30"
+		},
+		{
+			"name": "Circuit: WH-FTTH-031",
+			"urn": "ftth_circuit/31"
+		},
+		{
+			"name": "Circuit: WH-FTTH-032",
+			"urn": "ftth_circuit/32"
+		},
+		{
+			"name": "Circuit: WH-FTTH-033",
+			"urn": "ftth_circuit/33"
+		},
+		{
+			"name": "Circuit: WH-FTTH-034",
+			"urn": "ftth_circuit/34"
+		},
+		{
+			"name": "Circuit: WH-FTTH-035",
+			"urn": "ftth_circuit/35"
+		},
+		{
+			"name": "Circuit: WH-FTTH-036",
+			"urn": "ftth_circuit/36"
+		}
+	]
+}
+
+*** SEGMENT PIN TERMINATIONS WITH PIN RANGE
+Set delta to: *** master ***
+{
+	"1": [
+		{
+			"name": "Circuit: WH-FTTH-030",
+			"urn": "ftth_circuit/30"
+		},
+		{
+			"name": "Circuit: WH-FTTH-031",
+			"urn": "ftth_circuit/31"
+		},
+		{
+			"name": "Circuit: WH-FTTH-032",
+			"urn": "ftth_circuit/32"
+		},
+		{
+			"name": "Circuit: WH-FTTH-033",
+			"urn": "ftth_circuit/33"
+		},
+		{
+			"name": "Circuit: WH-FTTH-034",
+			"urn": "ftth_circuit/34"
+		},
+		{
+			"name": "Circuit: WH-FTTH-035",
+			"urn": "ftth_circuit/35"
+		},
+		{
+			"name": "Circuit: WH-FTTH-036",
+			"urn": "ftth_circuit/36"
+		}
+	],
+	"11": [
+		{
+			"delta": {
+				"name": "design/CC4975",
+				"title": "Design: CC4975"
+			},
+			"name": "Circuit: WH-FTTH-5800",
+			"urn": "ftth_circuit/5800"
+		},
+		{
+			"name": "Circuit: WH-FTTH-5801",
+			"urn": "ftth_circuit/5801"
+		}
+	],
+	"2": [
+		{
+			"name": "Circuit: WH-FTTH-037",
+			"urn": "ftth_circuit/37"
+		},
+		{
+			"name": "Circuit: WH-FTTH-038",
+			"urn": "ftth_circuit/38"
+		},
+		{
+			"name": "Circuit: WH-FTTH-039",
+			"urn": "ftth_circuit/39"
+		},
+		{
+			"name": "Circuit: WH-FTTH-040",
+			"urn": "ftth_circuit/40"
+		},
+		{
+			"name": "Circuit: WH-FTTH-041",
+			"urn": "ftth_circuit/41"
+		}
+	],
+	"3": [
+		{
+			"name": "Circuit: WH-FTTH-042",
+			"urn": "ftth_circuit/42"
+		},
+		{
+			"name": "Circuit: WH-FTTH-043",
+			"urn": "ftth_circuit/43"
+		},
+		{
+			"name": "Circuit: WH-FTTH-044",
+			"urn": "ftth_circuit/44"
+		},
+		{
+			"name": "Circuit: WH-FTTH-045",
+			"urn": "ftth_circuit/45"
+		},
+		{
+			"name": "Circuit: WH-FTTH-046",
+			"urn": "ftth_circuit/46"
+		}
+	],
+	"4": [
+		{
+			"name": "Circuit: WH-FTTH-047",
+			"urn": "ftth_circuit/47"
+		},
+		{
+			"name": "Circuit: WH-FTTH-048",
+			"urn": "ftth_circuit/48"
+		},
+		{
+			"name": "Circuit: WH-FTTH-049",
+			"urn": "ftth_circuit/49"
+		}
+	],
+	"5": [
+		{
+			"name": "Circuit: WH-FTTH-051",
+			"urn": "ftth_circuit/51"
+		},
+		{
+			"name": "Circuit: WH-FTTH-052",
+			"urn": "ftth_circuit/52"
+		},
+		{
+			"name": "Circuit: WH-FTTH-054",
+			"urn": "ftth_circuit/54"
+		},
+		{
+			"name": "Circuit: WH-FTTH-055",
+			"urn": "ftth_circuit/55"
+		},
+		{
+			"name": "Circuit: WH-FTTH-056",
+			"urn": "ftth_circuit/56"
+		}
+	],
+	"6": [
+		{
+			"name": "Circuit: WH-FTTH-057",
+			"urn": "ftth_circuit/57"
+		},
+		{
+			"name": "Circuit: WH-FTTH-058",
+			"urn": "ftth_circuit/58"
+		},
+		{
+			"name": "Circuit: WH-FTTH-059",
+			"urn": "ftth_circuit/59"
+		}
+	],
+	"7": [
+		{
+			"name": "Circuit: WH-FTTH-050",
+			"urn": "ftth_circuit/50"
+		},
+		{
+			"name": "Circuit: WH-FTTH-053",
+			"urn": "ftth_circuit/53"
+		}
+	]
+}
+
+*** SEGMENT PIN TERMINATIONS WITH PROPOSED
+Set delta to: *** master ***
+{
+	"7": [
+		{
+			"delta": {
+				"name": "design/CC4827",
+				"title": "Design: CC4827"
+			},
+			"name": "Circuit: WH-FTTH--4600",
+			"urn": "ftth_circuit/4600"
+		}
+	]
+}
+
+*** ONT PORT CIRCUITS
+Set delta to: *** master ***
+{
+	"1": [
+		{
+			"name": "Circuit: WH-FTTH-020",
+			"urn": "ftth_circuit/20"
+		}
+	]
+}

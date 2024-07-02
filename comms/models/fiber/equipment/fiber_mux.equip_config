@@ -1,0 +1,12 @@
+{
+    "image": "modules/comms/images/features/fiber_mux.svg",
+    "housings": ["rack", "fiber_shelf", "slot", "manhole", "cabinet", "splice_closure"],
+    "function": "mux",
+    "palette": true,
+    "tech": "fiber",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/fiber_mux.svg:12:24"
+    }
+}

@@ -1,0 +1,313 @@
+
+*** DONT SPLIT
+Set delta to: design/NB217
+id: 100000
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Route (Underground): 100000"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.136796012521,
+			52.225778175
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": null,
+	"id": 100000,
+	"in_structure": "manhole/52",
+	"labor_costs": null,
+	"length": null,
+	"out_structure": "manhole/39"
+}
+displayValues: {
+
+}
+
+DATABASE CHANGES: DONT SPLIT
+    insert delta.ug_route(design/NB217,100000,insert)
+
+VALIDATION ERRORS: DONT SPLIT
+
+
+*** SPLIT ROUTE ONCE
+Set delta to: design/NB217
+id: 100001
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Route (Underground): 100001"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.136256217957,
+			52.2255937489
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": null,
+	"id": 100001,
+	"in_structure": "manhole/52",
+	"labor_costs": null,
+	"length": null,
+	"out_structure": "manhole/48"
+}
+displayValues: {
+
+}
+
+id: 100002
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Route (Underground): 100002"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136256217957,
+			52.2255937489
+		],
+		[
+			0.136796012521,
+			52.225778175
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": null,
+	"id": 100002,
+	"in_structure": "manhole/48",
+	"labor_costs": null,
+	"length": null,
+	"out_structure": "manhole/39"
+}
+displayValues: {
+
+}
+
+DATABASE CHANGES: SPLIT ROUTE ONCE
+    insert delta.ug_route(design/NB217,100001,insert)
+    insert delta.ug_route(design/NB217,100002,insert)
+
+VALIDATION ERRORS: SPLIT ROUTE ONCE
+
+
+*** SPLIT ROUTE FIVE TIMES
+Set delta to: design/NB217
+id: 100003
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Route (Underground): 100003"
+}
+geom: {
+	"coordinates": [
+		[
+			0.141790956259,
+			52.2238200972
+		],
+		[
+			0.141977369785,
+			52.2238348848
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": null,
+	"id": 100003,
+	"in_structure": "manhole/118",
+	"labor_costs": null,
+	"length": null,
+	"out_structure": "cabinet/31"
+}
+displayValues: {
+
+}
+
+id: 100004
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Route (Underground): 100004"
+}
+geom: {
+	"coordinates": [
+		[
+			0.141977369785,
+			52.2238348848
+		],
+		[
+			0.141998827457,
+			52.2238102388
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": null,
+	"id": 100004,
+	"in_structure": "cabinet/31",
+	"labor_costs": null,
+	"length": null,
+	"out_structure": "manhole/114"
+}
+displayValues: {
+
+}
+
+id: 100005
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Route (Underground): 100005"
+}
+geom: {
+	"coordinates": [
+		[
+			0.141998827457,
+			52.2238102388
+		],
+		[
+			0.142112821341,
+			52.2237607415
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": null,
+	"id": 100005,
+	"in_structure": "manhole/114",
+	"labor_costs": null,
+	"length": null,
+	"out_structure": "manhole/115"
+}
+displayValues: {
+
+}
+
+id: 100006
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Route (Underground): 100006"
+}
+geom: {
+	"coordinates": [
+		[
+			0.142112821341,
+			52.2237607415
+		],
+		[
+			0.142389088869,
+			52.2240345165
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": null,
+	"id": 100006,
+	"in_structure": "manhole/115",
+	"labor_costs": null,
+	"length": null,
+	"out_structure": "manhole/121"
+}
+displayValues: {
+
+}
+
+id: 100007
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"title": "Route (Underground): 100007"
+}
+geom: {
+	"coordinates": [
+		[
+			0.142389088869,
+			52.2240345165
+		],
+		[
+			0.142623703634,
+			52.2240405255
+		],
+		[
+			0.142692099964,
+			52.2239575511
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": null,
+	"id": 100007,
+	"in_structure": "manhole/121",
+	"labor_costs": null,
+	"length": null,
+	"out_structure": null
+}
+displayValues: {
+
+}
+
+DATABASE CHANGES: SPLIT ROUTE FIVE TIMES
+    insert delta.ug_route(design/NB217,100003,insert)
+    insert delta.ug_route(design/NB217,100004,insert)
+    insert delta.ug_route(design/NB217,100005,insert)
+    insert delta.ug_route(design/NB217,100006,insert)
+    insert delta.ug_route(design/NB217,100007,insert)
+
+VALIDATION ERRORS: SPLIT ROUTE FIVE TIMES
+

@@ -1,0 +1,820 @@
+
+*** fiber_patch_panel/5
+
+EQUIP TERMINATION REPORT: csv
+EquipTerminationReport.type
+Patch Panel: WH-ODF-02E
+EquipTerminationReport.date: 6/10/2020
+
+
+EquipTerminationReport.feature,EquipTerminationReport.side,,EquipTerminationReport.port,EquipTerminationReport.in,EquipTerminationReport.in_side,EquipTerminationReport.in_pin,EquipTerminationReport.out,EquipTerminationReport.out_side,EquipTerminationReport.out_pin
+WH-ODF-02E,EquipTerminationReport.in_feature_side,,[01],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-132,EquipTerminationReport.in_feature_side,[01]
+,,,[02],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[02]
+,,,[03],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[03]
+,,,[04],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[04]
+,,,[05],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[05]
+,,,[06],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[06]
+,,,[07],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[07]
+,,,[08],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[08]
+,,,[09],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[09]
+,,,[10],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[10]
+,,,[11],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[11]
+,,,[12],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[12]
+,,,[13],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[13]
+,,,[14],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[14]
+,,,[15],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[15]
+,,,[16],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[16]
+,,,[17],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[17]
+,,,[18],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[18]
+,,,[19],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[19]
+,,,[20],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#20,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[20]
+,,,[21],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[21]
+,,,[22],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[22]
+,,,[23],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[23]
+,,,[24],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[24]
+,,,[25],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[25]
+,,,[26],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[26]
+,,,[27],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[27]
+,,,[28],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[28]
+,,,[29],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#29,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[29]
+,,,[30],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#30,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[30]
+,,,[31],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[31]
+,,,[32],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[32]
+,,,[33],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[33]
+,,,[34],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[34]
+,,,[35],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[35]
+,,,[36],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[36]
+,,,[37],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[37]
+,,,[38],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[38]
+,,,[39],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#39,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[39]
+,,,[40],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#40,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[40]
+,,,[41],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[41]
+,,,[42],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[42]
+,,,[43],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[43]
+,,,[44],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[44]
+,,,[45],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[45]
+,,,[46],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[46]
+,,,[47],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[47]
+,,,[48],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[48]
+,,,,,,,,,
+WH-ODF-02E,EquipTerminationReport.out_feature_side,,[01],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-132,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[102]
+,,,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[103]
+,,,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[104]
+,,,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[105]
+,,,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[106]
+,,,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[107]
+,,,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[108]
+,,,[09],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[09],ONT: WH-ONT-154,EquipTerminationReport.in_feature_side,[01]
+,,,[10],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[10],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[02]
+,,,[11],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[11],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#33
+,,,[12],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[12],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[110]
+,,,[13],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[13],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[111]
+,,,[14],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[14],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[112]
+,,,[15],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[15],ONT: WH-ONT-140,EquipTerminationReport.in_feature_side,[01]
+,,,[16],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[16],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[126]
+,,,[17],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[17],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[127]
+,,,[18],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[18],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[128]
+,,,[19],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[19],ONT: WH-ONT-156,EquipTerminationReport.in_feature_side,[01]
+,,,[21],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[21],ONT: WH-ONT-161,EquipTerminationReport.in_feature_side,[01]
+,,,[22],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[22],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[131]
+,,,[23],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[23],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[132]
+,,,[24],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[24],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[133]
+,,,[25],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[25],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[134]
+,,,[26],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[26],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[135]
+,,,[27],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[27],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[136]
+,,,[28],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[28],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[137]
+,,,[31],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[31],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#25
+,,,[32],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[32],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[151]
+,,,[33],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[33],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[152]
+,,,[34],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[34],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[153]
+,,,[35],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[35],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[154]
+,,,[36],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[36],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[155]
+,,,[37],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[37],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[156]
+,,,[38],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[38],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[157]
+,,,[41],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[41],ONT: WH-ONT-158,EquipTerminationReport.in_feature_side,[01]
+,,,[42],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[42],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[159]
+,,,[43],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[43],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[160]
+,,,[44],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[44],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[161]
+,,,[45],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[45],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[162]
+,,,[46],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[46],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[163]
+,,,[47],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[47],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[164]
+,,,[48],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[48],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[165]
+,,,,,,,,,
+,,,,,,,,,
+
+
+*** building/1
+
+EQUIP TERMINATION REPORT: csv
+EquipTerminationReport.type
+Building: Woodhead Hub
+EquipTerminationReport.date: 6/10/2020
+
+
+EquipTerminationReport.feature,EquipTerminationReport.side,,EquipTerminationReport.port,EquipTerminationReport.in,EquipTerminationReport.in_side,EquipTerminationReport.in_pin,EquipTerminationReport.out,EquipTerminationReport.out_side,EquipTerminationReport.out_pin
+WH-S-013,EquipTerminationReport.in_feature_side,,[01],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#11,Shelf: WH-S-013,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#12,Shelf: WH-S-013,EquipTerminationReport.in_feature_side,[02]
+,,,[03],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#13,Shelf: WH-S-013,EquipTerminationReport.in_feature_side,[03]
+,,,[04],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#14,Shelf: WH-S-013,EquipTerminationReport.in_feature_side,[04]
+,,,[05],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#15,Shelf: WH-S-013,EquipTerminationReport.in_feature_side,[05]
+,,,[06],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#16,Shelf: WH-S-013,EquipTerminationReport.in_feature_side,[06]
+,,,,,,,,,
+WH-S-013,EquipTerminationReport.out_feature_side,,[01],Shelf: WH-S-013,EquipTerminationReport.out_feature_side,[01],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#19
+,,,[02],Shelf: WH-S-013,EquipTerminationReport.out_feature_side,[02],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#20
+,,,[03],Shelf: WH-S-013,EquipTerminationReport.out_feature_side,[03],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#21
+,,,[04],Shelf: WH-S-013,EquipTerminationReport.out_feature_side,[04],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#22
+,,,[05],Shelf: WH-S-013,EquipTerminationReport.out_feature_side,[05],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#23
+,,,[06],Shelf: WH-S-013,EquipTerminationReport.out_feature_side,[06],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.in_feature_side,#24
+,,,,,,,,,
+WH-S-014,EquipTerminationReport.in_feature_side,,[01],Shelf: SP-S-015,EquipTerminationReport.out_feature_side,[12],Shelf: WH-S-014,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Shelf: SP-S-015,EquipTerminationReport.out_feature_side,[13],Shelf: WH-S-014,EquipTerminationReport.in_feature_side,[02]
+,,,[03],Shelf: SP-S-015,EquipTerminationReport.out_feature_side,[14],Shelf: WH-S-014,EquipTerminationReport.in_feature_side,[03]
+,,,[04],Shelf: SP-S-015,EquipTerminationReport.out_feature_side,[15],Shelf: WH-S-014,EquipTerminationReport.in_feature_side,[04]
+,,,[05],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.out_feature_side,#15,Shelf: WH-S-014,EquipTerminationReport.in_feature_side,[05]
+,,,[06],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.out_feature_side,#16,Shelf: WH-S-014,EquipTerminationReport.in_feature_side,[06]
+,,,,,,,,,
+WH-S-014,EquipTerminationReport.out_feature_side,,[01],Shelf: WH-S-014,EquipTerminationReport.out_feature_side,[01],Shelf: SP-S-015,EquipTerminationReport.in_feature_side,[12]
+,,,[02],Shelf: WH-S-014,EquipTerminationReport.out_feature_side,[02],Shelf: SP-S-015,EquipTerminationReport.in_feature_side,[13]
+,,,[03],Shelf: WH-S-014,EquipTerminationReport.out_feature_side,[03],Shelf: SP-S-015,EquipTerminationReport.in_feature_side,[14]
+,,,[04],Shelf: WH-S-014,EquipTerminationReport.out_feature_side,[04],Shelf: SP-S-015,EquipTerminationReport.in_feature_side,[15]
+,,,[05],Shelf: WH-S-014,EquipTerminationReport.out_feature_side,[05],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.out_feature_side,#23
+,,,[06],Shelf: WH-S-014,EquipTerminationReport.out_feature_side,[06],Fiber Cable: BB-FCB-016 (72),EquipTerminationReport.out_feature_side,#24
+,,,,,,,,,
+WH-ODF-02E,EquipTerminationReport.in_feature_side,,[01],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-132,EquipTerminationReport.in_feature_side,[01]
+,,,[02],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[02]
+,,,[03],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[03]
+,,,[04],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[04]
+,,,[05],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[05]
+,,,[06],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[06]
+,,,[07],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[07]
+,,,[08],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[08]
+,,,[09],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[09]
+,,,[10],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[10]
+,,,[11],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[11]
+,,,[12],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[12]
+,,,[13],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[13]
+,,,[14],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[14]
+,,,[15],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[15]
+,,,[16],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[16]
+,,,[17],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[17]
+,,,[18],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[18]
+,,,[19],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[19]
+,,,[20],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#20,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[20]
+,,,[21],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[21]
+,,,[22],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[22]
+,,,[23],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[23]
+,,,[24],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[24]
+,,,[25],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[25]
+,,,[26],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[26]
+,,,[27],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[27]
+,,,[28],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[28]
+,,,[29],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#29,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[29]
+,,,[30],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#30,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[30]
+,,,[31],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[31]
+,,,[32],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[32]
+,,,[33],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[33]
+,,,[34],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[34]
+,,,[35],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[35]
+,,,[36],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[36]
+,,,[37],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[37]
+,,,[38],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[38]
+,,,[39],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#39,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[39]
+,,,[40],Fiber Cable: WH-INT-04 (48),EquipTerminationReport.in_feature_side,#40,Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[40]
+,,,[41],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[41]
+,,,[42],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[42]
+,,,[43],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[43]
+,,,[44],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[44]
+,,,[45],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[45]
+,,,[46],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[46]
+,,,[47],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[47]
+,,,[48],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.in_feature_side,[48]
+,,,,,,,,,
+WH-ODF-02E,EquipTerminationReport.out_feature_side,,[01],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-132,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[102]
+,,,[03],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[103]
+,,,[04],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[104]
+,,,[05],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[105]
+,,,[06],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[106]
+,,,[07],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[107]
+,,,[08],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[108]
+,,,[09],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[09],ONT: WH-ONT-154,EquipTerminationReport.in_feature_side,[01]
+,,,[10],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[10],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[02]
+,,,[11],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[11],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#33
+,,,[12],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[12],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[110]
+,,,[13],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[13],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[111]
+,,,[14],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[14],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[112]
+,,,[15],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[15],ONT: WH-ONT-140,EquipTerminationReport.in_feature_side,[01]
+,,,[16],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[16],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[126]
+,,,[17],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[17],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[127]
+,,,[18],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[18],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[128]
+,,,[19],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[19],ONT: WH-ONT-156,EquipTerminationReport.in_feature_side,[01]
+,,,[21],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[21],ONT: WH-ONT-161,EquipTerminationReport.in_feature_side,[01]
+,,,[22],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[22],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[131]
+,,,[23],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[23],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[132]
+,,,[24],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[24],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[133]
+,,,[25],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[25],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[134]
+,,,[26],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[26],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[135]
+,,,[27],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[27],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[136]
+,,,[28],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[28],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[137]
+,,,[31],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[31],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#25
+,,,[32],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[32],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[151]
+,,,[33],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[33],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[152]
+,,,[34],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[34],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[153]
+,,,[35],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[35],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[154]
+,,,[36],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[36],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[155]
+,,,[37],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[37],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[156]
+,,,[38],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[38],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[157]
+,,,[41],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[41],ONT: WH-ONT-158,EquipTerminationReport.in_feature_side,[01]
+,,,[42],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[42],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[159]
+,,,[43],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[43],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[160]
+,,,[44],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[44],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[161]
+,,,[45],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[45],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[162]
+,,,[46],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[46],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[163]
+,,,[47],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[47],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[164]
+,,,[48],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[48],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[165]
+,,,,,,,,,
+WH-ODF-02,EquipTerminationReport.in_feature_side,,[01],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[03],ONT: WH-ONT-154,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[10],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[02]
+,,,[03],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[03]
+,,,[101],OLT: WH-OLT-025,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[101]
+,,,[102],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[102]
+,,,[103],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[103]
+,,,[104],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[104]
+,,,[105],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[105]
+,,,[106],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[106]
+,,,[107],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[107]
+,,,[108],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[108]
+,,,[109],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[109]
+,,,[110],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[12],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[110]
+,,,[111],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[13],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[111]
+,,,[112],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[14],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[112]
+,,,[125],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[125]
+,,,[126],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[16],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[126]
+,,,[127],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[17],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[127]
+,,,[128],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[18],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[128]
+,,,[130],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[130]
+,,,[131],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[22],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[131]
+,,,[132],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[23],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[132]
+,,,[133],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[24],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[133]
+,,,[134],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[25],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[134]
+,,,[135],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[26],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[135]
+,,,[136],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[27],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[136]
+,,,[137],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[28],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[137]
+,,,[150],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[150]
+,,,[151],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[32],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[151]
+,,,[152],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[33],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[152]
+,,,[153],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[34],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[153]
+,,,[154],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[35],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[154]
+,,,[155],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[36],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[155]
+,,,[156],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[37],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[156]
+,,,[157],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[38],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[157]
+,,,[158],OLT: WH-OLT-029,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[158]
+,,,[159],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[42],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[159]
+,,,[160],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[43],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[160]
+,,,[161],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[44],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[161]
+,,,[162],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[45],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[162]
+,,,[163],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[46],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[163]
+,,,[164],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[47],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[164]
+,,,[165],Patch Panel: WH-ODF-02E,EquipTerminationReport.out_feature_side,[48],Patch Panel: WH-ODF-02,EquipTerminationReport.in_feature_side,[165]
+,,,,,,,,,
+WH-ODF-02,EquipTerminationReport.out_feature_side,,[01],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[03],ONT: WH-ONT-154,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[02]
+,,,[03],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[03]
+,,,[04],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[04]
+,,,[05],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[05]
+,,,[06],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[06]
+,,,[07],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[07]
+,,,[08],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[08]
+,,,[09],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[09],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[09]
+,,,[10],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[10],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[10]
+,,,[11],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[11],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[11]
+,,,[12],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[12],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[12]
+,,,[13],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[13],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[13]
+,,,[14],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[14],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[14]
+,,,[15],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[15],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[15]
+,,,[16],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[16],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[16]
+,,,[17],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[17],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[17]
+,,,[18],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[18],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[18]
+,,,[19],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[19],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[19]
+,,,[20],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[20],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[20]
+,,,[21],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[21],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[21]
+,,,[22],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[22],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[22]
+,,,[23],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[23],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[23]
+,,,[24],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[24],Patch Panel: WH-CPP-06,EquipTerminationReport.in_feature_side,[24]
+,,,[25],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[25],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#13
+,,,[26],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[26],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#14
+,,,[27],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[27],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#15
+,,,[28],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[28],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#16
+,,,[29],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[29],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#17
+,,,[30],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[30],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#18
+,,,[31],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[31],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#19
+,,,[32],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[32],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#20
+,,,[33],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[33],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#21
+,,,[34],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[34],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#22
+,,,[35],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[35],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#23
+,,,[36],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[36],Fiber Cable: WH-FCB-003 (144),EquipTerminationReport.out_feature_side,#24
+,,,[37],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[37],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#01
+,,,[38],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[38],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#02
+,,,[39],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[39],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#03
+,,,[40],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[40],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#04
+,,,[41],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[41],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#05
+,,,[42],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[42],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#06
+,,,[43],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[43],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#07
+,,,[44],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[44],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#08
+,,,[45],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[45],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#09
+,,,[46],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[46],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#10
+,,,[47],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[47],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#11
+,,,[48],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[48],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#12
+,,,[49],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[49],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#13
+,,,[50],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[50],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#14
+,,,[51],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[51],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#15
+,,,[52],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[52],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#16
+,,,[53],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[53],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#17
+,,,[54],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[54],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#18
+,,,[55],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[55],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#19
+,,,[56],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[56],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#20
+,,,[57],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[57],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#21
+,,,[58],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[58],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#22
+,,,[59],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[59],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#23
+,,,[60],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[60],Fiber Cable: WH-FCB-008 (24),EquipTerminationReport.out_feature_side,#24
+,,,[61],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[61],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#25
+,,,[62],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[62],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#26
+,,,[63],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[63],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#27
+,,,[64],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[64],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#28
+,,,[65],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[65],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#29
+,,,[66],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[66],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#30
+,,,[67],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[67],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#31
+,,,[68],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[68],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#32
+,,,[69],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[69],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#33
+,,,[70],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[70],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#34
+,,,[71],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[71],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#35
+,,,[72],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[72],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#36
+,,,[73],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[73],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#37
+,,,[74],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[74],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#38
+,,,[75],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[75],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#39
+,,,[76],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[76],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#40
+,,,[77],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[77],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#41
+,,,[78],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[78],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#42
+,,,[79],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[79],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#43
+,,,[80],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[80],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#44
+,,,[81],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[81],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#45
+,,,[82],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[82],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#46
+,,,[83],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[83],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#47
+,,,[84],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[84],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#48
+,,,[85],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[85],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#49
+,,,[86],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[86],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#50
+,,,[87],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[87],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#51
+,,,[88],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[88],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#52
+,,,[89],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[89],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#53
+,,,[90],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[90],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#54
+,,,[91],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[91],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#55
+,,,[92],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[92],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#56
+,,,[93],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[93],Fiber Cable: WH-FCB-004 (144),EquipTerminationReport.out_feature_side,#57
+,,,[101],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[101],ONT: WH-ONT-132,EquipTerminationReport.in_feature_side,[01]
+,,,[102],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[102],ONT: WH-ONT-133,EquipTerminationReport.in_feature_side,[01]
+,,,[103],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[103],ONT: WH-ONT-150,EquipTerminationReport.in_feature_side,[01]
+,,,[104],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[104],ONT: WH-ONT-149,EquipTerminationReport.in_feature_side,[01]
+,,,[105],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[105],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#29
+,,,[106],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[106],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#30
+,,,[107],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[107],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#31
+,,,[108],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[108],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#32
+,,,[109],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[109],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#33
+,,,[110],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[110],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#34
+,,,[111],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[111],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#35
+,,,[112],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[112],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#36
+,,,[113],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[113],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#37
+,,,[114],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[114],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#38
+,,,[115],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[115],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#39
+,,,[116],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[116],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#40
+,,,[117],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[117],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#41
+,,,[118],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[118],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#42
+,,,[119],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[119],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#43
+,,,[120],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[120],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#44
+,,,[121],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[121],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#45
+,,,[122],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[122],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#46
+,,,[123],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[123],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#47
+,,,[124],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[124],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#48
+,,,[125],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[125],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#49
+,,,[126],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[126],ONT: WH-ONT-140,EquipTerminationReport.in_feature_side,[01]
+,,,[127],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[127],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[02]
+,,,[128],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[128],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[03]
+,,,[129],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[129],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[04]
+,,,[130],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[130],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[05]
+,,,[131],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[131],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[06]
+,,,[132],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[132],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#07
+,,,[133],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[133],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#08
+,,,[134],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[134],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#09
+,,,[135],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[135],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#10
+,,,[136],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[136],ONT: WH-ONT-146,EquipTerminationReport.in_feature_side,[01]
+,,,[137],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[137],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#12
+,,,[138],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[138],ONT: WH-ONT-148,EquipTerminationReport.in_feature_side,[01]
+,,,[139],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[139],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#14
+,,,[140],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[140],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#15
+,,,[141],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[141],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#16
+,,,[142],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[142],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#17
+,,,[143],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[143],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#18
+,,,[144],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[144],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#19
+,,,[145],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[145],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#20
+,,,[146],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[146],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#21
+,,,[147],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[147],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#22
+,,,[148],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[148],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#23
+,,,[149],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[149],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#24
+,,,[150],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[150],Fiber Cable: WH-FCB-009 (96),EquipTerminationReport.out_feature_side,#25
+,,,[151],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[151],ONT: WH-ONT-134,EquipTerminationReport.in_feature_side,[01]
+,,,[152],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[152],ONT: WH-ONT-135,EquipTerminationReport.in_feature_side,[01]
+,,,[153],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[153],ONT: WH-ONT-136,EquipTerminationReport.in_feature_side,[01]
+,,,[154],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[154],ONT: WH-ONT-157,EquipTerminationReport.in_feature_side,[01]
+,,,[155],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[155],Patch Panel: WH-CPP-07,EquipTerminationReport.in_feature_side,[02]
+,,,[156],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[156],Patch Panel: WH-CPP-07,EquipTerminationReport.in_feature_side,[03]
+,,,[157],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[157],Patch Panel: WH-CPP-07,EquipTerminationReport.in_feature_side,[04]
+,,,[158],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[158],ONT: WH-ONT-158,EquipTerminationReport.in_feature_side,[01]
+,,,[159],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[159],Patch Panel: WH-CPP-08,EquipTerminationReport.in_feature_side,[02]
+,,,[160],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[160],ONT: WH-ONT-137,EquipTerminationReport.in_feature_side,[01]
+,,,[161],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[161],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#11
+,,,[162],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[162],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#12
+,,,[163],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[163],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#13
+,,,[164],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[164],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#14
+,,,[165],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[165],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#15
+,,,[166],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[166],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#16
+,,,[167],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[167],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#17
+,,,[168],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[168],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#18
+,,,[169],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[169],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#19
+,,,[170],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[170],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#20
+,,,[171],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[171],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#21
+,,,[172],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[172],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#22
+,,,[173],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[173],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#23
+,,,[174],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[174],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#24
+,,,[175],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[175],Fiber Cable: WH-FCB-010 (96),EquipTerminationReport.out_feature_side,#25
+,,,[176],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[176],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#100
+,,,[177],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[177],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#101
+,,,[178],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[178],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#102
+,,,[179],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[179],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#103
+,,,[180],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[180],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#104
+,,,[181],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[181],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#105
+,,,[182],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[182],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#106
+,,,[183],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[183],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#107
+,,,[184],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[184],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#108
+,,,[185],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[185],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#109
+,,,[186],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[186],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#110
+,,,[187],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[187],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#111
+,,,[188],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[188],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#112
+,,,[189],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[189],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#113
+,,,[190],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[190],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#114
+,,,[191],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[191],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#115
+,,,[192],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[192],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#116
+,,,[193],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[193],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#117
+,,,[194],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[194],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#118
+,,,[195],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[195],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#119
+,,,[196],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[196],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#120
+,,,[197],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[197],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#121
+,,,[198],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[198],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#122
+,,,[199],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[199],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#123
+,,,[200],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[200],Fiber Cable: WH-FCB-006 (144),EquipTerminationReport.out_feature_side,#124
+,,,[201],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[201],Fiber Cable: WH-FCB-025 (576),EquipTerminationReport.out_feature_side,#201
+,,,,,,,,,
+WH-ODF-01E,EquipTerminationReport.in_feature_side,,[01],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-001,EquipTerminationReport.in_feature_side,[01]
+,,,[02],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[02]
+,,,[03],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[03]
+,,,[04],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[04]
+,,,[05],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[05]
+,,,[06],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[06]
+,,,[07],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[07]
+,,,[08],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[08]
+,,,[09],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[09]
+,,,[10],OLT: WH-OLT-011,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[10]
+,,,[11],OLT: WH-OLT-006,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[11]
+,,,[12],OLT: WH-OLT-006,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[12]
+,,,[13],OLT: WH-OLT-006,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[13]
+,,,[14],OLT: WH-OLT-006,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[14]
+,,,[15],OLT: WH-OLT-006,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[15]
+,,,[16],OLT: WH-OLT-006,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[16]
+,,,[17],OLT: WH-OLT-016,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[17]
+,,,[18],OLT: WH-OLT-016,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[18]
+,,,[19],OLT: WH-OLT-016,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[19]
+,,,[20],OLT: WH-OLT-016,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[20]
+,,,[21],OLT: WH-OLT-016,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[21]
+,,,[22],OLT: WH-OLT-016,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[22]
+,,,[23],OLT: WH-OLT-016,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[23]
+,,,[24],OLT: WH-OLT-017,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[24]
+,,,[25],OLT: WH-OLT-017,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[25]
+,,,[26],OLT: WH-OLT-017,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[26]
+,,,[27],OLT: WH-OLT-017,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[27]
+,,,[28],OLT: WH-OLT-017,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[28]
+,,,[29],Fiber Cable: WH-INT-02 (48),EquipTerminationReport.in_feature_side,#13,Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[29]
+,,,[30],Fiber Cable: WH-INT-02 (48),EquipTerminationReport.in_feature_side,#14,Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[30]
+,,,[31],Fiber Cable: WH-INT-02 (48),EquipTerminationReport.in_feature_side,#15,Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[31]
+,,,[32],Fiber Cable: WH-INT-02 (48),EquipTerminationReport.in_feature_side,#16,Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[32]
+,,,[33],OLT: WH-OLT-024,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[33]
+,,,[34],OLT: WH-OLT-024,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[34]
+,,,[35],OLT: WH-OLT-024,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[35]
+,,,[36],OLT: WH-OLT-024,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[36]
+,,,[37],OLT: WH-OLT-024,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[37]
+,,,[38],OLT: WH-OLT-024,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[38]
+,,,[39],OLT: WH-OLT-024,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[39]
+,,,[40],OLT: WH-OLT-024,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[40]
+,,,[41],OLT: WH-OLT-023,EquipTerminationReport.out_feature_side,[01],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[41]
+,,,[42],OLT: WH-OLT-023,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[42]
+,,,[43],OLT: WH-OLT-023,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[43]
+,,,[44],OLT: WH-OLT-023,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-01E,EquipTerminationReport.in_feature_side,[44]
+,,,,,,,,,
+WH-ODF-01E,EquipTerminationReport.out_feature_side,,[01],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-001,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[02]
+,,,[03],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[03]
+,,,[04],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[04]
+,,,[05],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[05]
+,,,[06],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[06]
+,,,[07],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[07]
+,,,[08],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[08]
+,,,[09],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[09],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[09]
+,,,[10],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[10],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[10]
+,,,[11],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[11],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[11]
+,,,[12],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[12],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[12]
+,,,[13],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[13],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[13]
+,,,[14],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[14],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[14]
+,,,[15],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[15],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[15]
+,,,[16],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[16],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[16]
+,,,[17],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[17],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[17]
+,,,[18],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[18],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[18]
+,,,[19],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[19],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[19]
+,,,[20],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[20],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[20]
+,,,[21],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[21],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[21]
+,,,[22],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[22],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[22]
+,,,[23],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[23],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[23]
+,,,[24],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[24],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[24]
+,,,[25],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[25],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[25]
+,,,[26],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[26],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[26]
+,,,[27],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[27],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[27]
+,,,[28],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[28],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[28]
+,,,[29],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[29],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[29]
+,,,[30],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[30],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[30]
+,,,[31],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[31],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[31]
+,,,[32],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[32],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[32]
+,,,[33],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[33],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[33]
+,,,[34],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[34],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[34]
+,,,[35],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[35],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[35]
+,,,[36],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[36],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[36]
+,,,[37],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[37],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[37]
+,,,[38],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[38],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[38]
+,,,[39],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[39],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[39]
+,,,[40],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[40],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[40]
+,,,[41],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[41],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[41]
+,,,[42],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[42],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[42]
+,,,[43],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[43],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[43]
+,,,[44],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[44],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[44]
+,,,,,,,,,
+WH-ODF-01,EquipTerminationReport.in_feature_side,,[01],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-001,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[02],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[02]
+,,,[03],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[03],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[03]
+,,,[04],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[04],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[04]
+,,,[05],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[05],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[05]
+,,,[06],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[06],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[06]
+,,,[07],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[07],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[07]
+,,,[08],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[08],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[08]
+,,,[09],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[09],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[09]
+,,,[10],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[10],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[10]
+,,,[11],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[11],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[11]
+,,,[12],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[12],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[12]
+,,,[13],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[13],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[13]
+,,,[14],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[14],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[14]
+,,,[15],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[15],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[15]
+,,,[16],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[16],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[16]
+,,,[17],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[17],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[17]
+,,,[18],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[18],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[18]
+,,,[19],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[19],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[19]
+,,,[20],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[20],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[20]
+,,,[21],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[21],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[21]
+,,,[22],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[22],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[22]
+,,,[23],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[23],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[23]
+,,,[24],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[24],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[24]
+,,,[25],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[25],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[25]
+,,,[26],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[26],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[26]
+,,,[27],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[27],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[27]
+,,,[28],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[28],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[28]
+,,,[29],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[29],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[29]
+,,,[30],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[30],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[30]
+,,,[31],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[31],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[31]
+,,,[32],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[32],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[32]
+,,,[33],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[33],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[33]
+,,,[34],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[34],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[34]
+,,,[35],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[35],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[35]
+,,,[36],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[36],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[36]
+,,,[37],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[37],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[37]
+,,,[38],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[38],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[38]
+,,,[39],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[39],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[39]
+,,,[40],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[40],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[40]
+,,,[41],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[41],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[41]
+,,,[42],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[42],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[42]
+,,,[43],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[43],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[43]
+,,,[44],Patch Panel: WH-ODF-01E,EquipTerminationReport.out_feature_side,[44],Patch Panel: WH-ODF-01,EquipTerminationReport.in_feature_side,[44]
+,,,,,,,,,
+WH-ODF-01,EquipTerminationReport.out_feature_side,,[01],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-001,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[02],ONT: WH-ONT-009,EquipTerminationReport.in_feature_side,[01]
+,,,[03],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[03],ONT: WH-ONT-016,EquipTerminationReport.in_feature_side,[01]
+,,,[04],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[04],ONT: WH-ONT-024,EquipTerminationReport.in_feature_side,[01]
+,,,[05],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[05],ONT: WH-ONT-034,EquipTerminationReport.in_feature_side,[01]
+,,,[06],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[06],ONT: WH-ONT-042,EquipTerminationReport.in_feature_side,[01]
+,,,[07],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[07],ONT: WH-ONT-029,EquipTerminationReport.in_feature_side,[01]
+,,,[08],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[08],ONT: WH-ONT-047,EquipTerminationReport.in_feature_side,[01]
+,,,[09],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[09],ONT: WH-ONT-055,EquipTerminationReport.in_feature_side,[01]
+,,,[10],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[10],ONT: WH-ONT-056,EquipTerminationReport.in_feature_side,[01]
+,,,[11],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[11],ONT: WH-ONT-064,EquipTerminationReport.in_feature_side,[01]
+,,,[12],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[12],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#12
+,,,[13],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[13],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#13
+,,,[14],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[14],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#14
+,,,[15],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[15],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#15
+,,,[16],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[16],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#16
+,,,[17],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[17],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#17
+,,,[18],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[18],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#18
+,,,[19],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[19],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#19
+,,,[20],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[20],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#20
+,,,[21],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[21],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#21
+,,,[22],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[22],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#22
+,,,[23],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[23],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#23
+,,,[24],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[24],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#24
+,,,[25],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[25],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#25
+,,,[26],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[26],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#26
+,,,[27],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[27],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#27
+,,,[28],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[28],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#28
+,,,[29],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[29],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#29
+,,,[30],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[30],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#30
+,,,[31],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[31],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#31
+,,,[32],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[32],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#32
+,,,[33],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[33],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#33
+,,,[34],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[34],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#34
+,,,[35],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[35],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#35
+,,,[36],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[36],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#36
+,,,[37],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[37],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#37
+,,,[38],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[38],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#38
+,,,[39],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[39],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#39
+,,,[40],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[40],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#40
+,,,[41],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[41],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#41
+,,,[42],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[42],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#42
+,,,[43],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[43],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#43
+,,,[44],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[44],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#44
+,,,,,,,,,
+,,,,,,,,,
+
+
+*** Seg with splice closures
+
+EQUIP TERMINATION REPORT: csv
+EquipTerminationReport.type
+Splice Tray: Tray-1
+EquipTerminationReport.date: 6/10/2020
+
+
+EquipTerminationReport.housing,EquipTerminationReport.feature,,EquipTerminationReport.port,EquipTerminationReport.in,EquipTerminationReport.in_side,EquipTerminationReport.in_pin,EquipTerminationReport.out,EquipTerminationReport.out_side,EquipTerminationReport.out_pin
+Tray-1,EquipTerminationReport.splice: WH-FCB-022 -> WH-FCB-007,,[01],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-001,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[02],ONT: WH-ONT-009,EquipTerminationReport.in_feature_side,[01]
+,,,[03],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[03],ONT: WH-ONT-016,EquipTerminationReport.in_feature_side,[01]
+,,,[04],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[04],ONT: WH-ONT-024,EquipTerminationReport.in_feature_side,[01]
+,,,[05],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[05],ONT: WH-ONT-034,EquipTerminationReport.in_feature_side,[01]
+,,,[06],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[06],ONT: WH-ONT-042,EquipTerminationReport.in_feature_side,[01]
+,,,[07],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[07],ONT: WH-ONT-029,EquipTerminationReport.in_feature_side,[01]
+,,,[08],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[08],ONT: WH-ONT-047,EquipTerminationReport.in_feature_side,[01]
+,,,[09],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[09],ONT: WH-ONT-055,EquipTerminationReport.in_feature_side,[01]
+,,,[10],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[10],ONT: WH-ONT-056,EquipTerminationReport.in_feature_side,[01]
+,,,[11],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[11],ONT: WH-ONT-064,EquipTerminationReport.in_feature_side,[01]
+,,,[12],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[12],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#12
+,,,,,,,,,
+,,,,,,,,,
+
+
+*** Struct with splice closures
+
+EQUIP TERMINATION REPORT: csv
+EquipTerminationReport.type
+Manhole: WH-M-32
+EquipTerminationReport.date: 6/10/2020
+
+
+EquipTerminationReport.housing,EquipTerminationReport.feature,,EquipTerminationReport.port,EquipTerminationReport.in,EquipTerminationReport.in_side,EquipTerminationReport.in_pin,EquipTerminationReport.out,EquipTerminationReport.out_side,EquipTerminationReport.out_pin
+Tray-1,EquipTerminationReport.splice: WH-FCB-022 -> WH-FCB-007,,[01],OLT: WH-OLT-010,EquipTerminationReport.out_feature_side,[01],ONT: WH-ONT-001,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[02],ONT: WH-ONT-009,EquipTerminationReport.in_feature_side,[01]
+,,,[03],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[03],ONT: WH-ONT-016,EquipTerminationReport.in_feature_side,[01]
+,,,[04],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[04],ONT: WH-ONT-024,EquipTerminationReport.in_feature_side,[01]
+,,,[05],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[05],ONT: WH-ONT-034,EquipTerminationReport.in_feature_side,[01]
+,,,[06],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[06],ONT: WH-ONT-042,EquipTerminationReport.in_feature_side,[01]
+,,,[07],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[07],ONT: WH-ONT-029,EquipTerminationReport.in_feature_side,[01]
+,,,[08],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[08],ONT: WH-ONT-047,EquipTerminationReport.in_feature_side,[01]
+,,,[09],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[09],ONT: WH-ONT-055,EquipTerminationReport.in_feature_side,[01]
+,,,[10],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[10],ONT: WH-ONT-056,EquipTerminationReport.in_feature_side,[01]
+,,,[11],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[11],ONT: WH-ONT-064,EquipTerminationReport.in_feature_side,[01]
+,,,[12],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[12],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#12
+,,,,,,,,,
+Tray-2,EquipTerminationReport.splice: WH-FCB-022 -> WH-FCB-007,,[13],OLT: WH-OLT-006,EquipTerminationReport.out_feature_side,[03],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#13
+,,,[14],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[14],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#14
+,,,[15],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[15],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#15
+,,,[16],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[16],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#16
+,,,[17],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[17],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#17
+,,,[18],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[18],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#18
+,,,[19],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[19],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#19
+,,,[20],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[20],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#20
+,,,[21],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[21],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#21
+,,,[22],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[22],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#22
+,,,[23],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[23],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#23
+,,,[24],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[24],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#24
+,,,,,,,,,
+Tray-3,EquipTerminationReport.splice: WH-FCB-022 -> WH-FCB-007,,[25],OLT: WH-OLT-017,EquipTerminationReport.out_feature_side,[04],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#25
+,,,[26],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[26],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#26
+,,,[27],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[27],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#27
+,,,[28],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[28],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#28
+,,,[29],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[29],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#29
+,,,[30],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[30],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#30
+,,,[31],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[31],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#31
+,,,[32],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[32],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#32
+,,,[33],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[33],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#33
+,,,[34],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[34],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#34
+,,,[35],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[35],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#35
+,,,[36],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[36],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#36
+,,,,,,,,,
+Tray-4,EquipTerminationReport.splice: WH-FCB-022 -> WH-FCB-007,,[37],OLT: WH-OLT-024,EquipTerminationReport.out_feature_side,[05],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#37
+,,,[38],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[38],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#38
+,,,[39],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[39],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#39
+,,,[40],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[40],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#40
+,,,[41],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[41],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#41
+,,,[42],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[42],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#42
+,,,[43],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[43],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#43
+,,,[44],Patch Panel: WH-ODF-01,EquipTerminationReport.out_feature_side,[44],Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#44
+,,,[45],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#45,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#45
+,,,[46],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#46,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#46
+,,,[47],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#47,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#47
+,,,[48],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#48,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#48
+,,,,,,,,,
+Tray-5,EquipTerminationReport.splice: WH-FCB-022 -> WH-FCB-007,,[49],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#49,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#49
+,,,[50],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#50,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#50
+,,,[51],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#51,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#51
+,,,[52],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#52,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#52
+,,,[53],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#53,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#53
+,,,[54],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#54,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#54
+,,,[55],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#55,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#55
+,,,[56],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#56,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#56
+,,,[57],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#57,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#57
+,,,[58],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#58,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#58
+,,,[59],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#59,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#59
+,,,[60],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#60,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#60
+,,,,,,,,,
+Tray-6,EquipTerminationReport.splice: WH-FCB-022 -> WH-FCB-007,,[61],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#61,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#61
+,,,[62],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#62,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#62
+,,,[63],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#63,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#63
+,,,[64],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#64,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#64
+,,,[65],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#65,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#65
+,,,[66],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#66,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#66
+,,,[67],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#67,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#67
+,,,[68],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#68,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#68
+,,,[69],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#69,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#69
+,,,[70],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#70,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#70
+,,,[71],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#71,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#71
+,,,[72],Fiber Cable: WH-FCB-022 (288),EquipTerminationReport.in_feature_side,#72,Fiber Cable: WH-FCB-021 (144),EquipTerminationReport.out_feature_side,#72
+,,,,,,,,,
+,,,,,,,,,
+
+
+*** Struct with multiple splice closures
+
+EQUIP TERMINATION REPORT: csv
+EquipTerminationReport.type
+Manhole: WH-M-253
+EquipTerminationReport.date: 6/10/2020
+
+
+EquipTerminationReport.housing,EquipTerminationReport.feature,,EquipTerminationReport.port,EquipTerminationReport.in,EquipTerminationReport.in_side,EquipTerminationReport.in_pin,EquipTerminationReport.out,EquipTerminationReport.out_side,EquipTerminationReport.out_pin
+WH-SC-037,EquipTerminationReport.splice: WH-FCB-010 -> DROP-138,,[01],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[02],ONT: WH-ONT-134,EquipTerminationReport.in_feature_side,[01]
+,,,,,,,,,
+WH-SC-037,EquipTerminationReport.splice: WH-FCB-010 -> DROP-139,,[02],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[03],ONT: WH-ONT-135,EquipTerminationReport.in_feature_side,[01]
+,,,,,,,,,
+WH-SC-037,EquipTerminationReport.splice: WH-FCB-010 -> DROP-140,,[03],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[04],ONT: WH-ONT-136,EquipTerminationReport.in_feature_side,[01]
+,,,,,,,,,
+WH-SC-037,EquipTerminationReport.splice: WH-FCB-010 -> DROP-141,,[04],OLT: WH-OLT-028,EquipTerminationReport.out_feature_side,[05],ONT: WH-ONT-157,EquipTerminationReport.in_feature_side,[01]
+,,,[05],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[155],Patch Panel: WH-CPP-07,EquipTerminationReport.in_feature_side,[02]
+,,,[06],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[156],Patch Panel: WH-CPP-07,EquipTerminationReport.in_feature_side,[03]
+,,,[07],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[157],Patch Panel: WH-CPP-07,EquipTerminationReport.in_feature_side,[04]
+,,,[08],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[158],ONT: WH-ONT-158,EquipTerminationReport.in_feature_side,[01]
+,,,[09],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[159],Patch Panel: WH-CPP-08,EquipTerminationReport.in_feature_side,[02]
+,,,,,,,,,
+,,,,,,,,,
+
+
+*** Struct proposed splices
+
+EQUIP TERMINATION REPORT: csv
+EquipTerminationReport.type
+Cabinet: WH-C-11
+EquipTerminationReport.date: 6/10/2020
+
+
+EquipTerminationReport.housing,EquipTerminationReport.feature,,EquipTerminationReport.port,EquipTerminationReport.in,EquipTerminationReport.in_side,EquipTerminationReport.in_pin,EquipTerminationReport.out,EquipTerminationReport.out_side,EquipTerminationReport.out_pin
+WH-SC-039,EquipTerminationReport.splice: WH-FCB-009 -> DROP-144,,[01],OLT: WH-OLT-026,EquipTerminationReport.out_feature_side,[06],ONT: WH-ONT-140,EquipTerminationReport.in_feature_side,[01]
+,,,[02],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[127],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[02]
+,,,[03],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[128],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[03]
+,,,[04],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[129],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[04]
+,,,[05],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[130],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[05]
+,,,[06],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[131],Patch Panel: WH-CPP-10,EquipTerminationReport.in_feature_side,[06]
+,,,,,,,,,
+WH-SC-039,EquipTerminationReport.splice: WH-FCB-009 -> DROP-146,,[11],OLT: WH-OLT-027,EquipTerminationReport.out_feature_side,[07],ONT: WH-ONT-146,EquipTerminationReport.in_feature_side,[01]
+,,,,,,,,,
+WH-SC-039,EquipTerminationReport.splice: WH-FCB-009 -> DROP-148,,[13],Patch Panel: WH-ODF-02,EquipTerminationReport.out_feature_side,[138],ONT: WH-ONT-148,EquipTerminationReport.in_feature_side,[01]
+,,,,,,,,,
+,,,,,,,,,
+

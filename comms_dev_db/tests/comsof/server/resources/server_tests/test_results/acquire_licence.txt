@@ -1,0 +1,29 @@
+Request: POST:/modules/comsof/workspace/1/execute?delta=comsof_design/arbury
+Response: 200 (200 OK)
+{
+   "acquire_licence": {
+      "errors": [],
+      "log": [
+         "[<time>] Sending POST request https://license.comsof.com/login",
+         "[<time>] Sending GET request https://license.comsof.com/companies",
+         "[<time>] Company: 471 IQGeo Integration",
+         "[<time>] Project: 973 DESIGN Mode",
+         "[<time>] Requesting licence for comsof_design/maryland <workspaces>/1/workspace/input/ProcessedArea/licenseRequest.req2",
+         "[<time>] Sending MPF POST request https://license.comsof.com/projects/973/licenses/create",
+         "[<time>] Queued licence request <req_no>",
+         "[<time>] Waiting for licence request <req_no> to complete",
+         "[<time>] ... Licence request <req_no> : Processing",
+         "[<time>] ... Licence request <req_no> : Ready",
+         "[<time>] Licence cost: 0 homes",
+         "[<time>] Sending POST request https://license.comsof.com/licenses/confirm",
+         "[<time>] Sending GET request https://license.comsof.com/licenses/get",
+         "[<time>] Creating <workspaces>/1/workspace/area licenses/<licence_no>.lic"
+      ],
+      "warnings": []
+   }
+}
+
+
+DATABASE CHANGES: AFTER ACQUIRE LICENCE
+   update data.comsof_workspace(1) fields=(busy,op_stats,state)
+

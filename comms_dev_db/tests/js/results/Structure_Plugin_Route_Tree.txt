@@ -1,0 +1,305 @@
+Set delta to: *** master ***
+
+*** ROUTE CONTENTS NO PROPOSED
+{
+	"children": [
+		{
+			"children": [
+				{
+					"cable": "fiber_cable/3: Fiber Cable: WH-FCB-003 (144)",
+					"cable_side": undefined,
+					"children": [
+
+					],
+					"circuits": undefined,
+					"conns": undefined,
+					"feature": "mywcom_fiber_segment/36: Cable Segment: 36 (fiber_cable/3)",
+					"housing": undefined,
+					"n_connected": undefined,
+					"pins": "PinRange(in:1:144)",
+					"side": undefined
+				}
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/71: Conduit: WH-CND-071"
+		},
+		{
+			"children": [
+				{
+					"cable": "fiber_cable/4: Fiber Cable: WH-FCB-004 (144)",
+					"cable_side": undefined,
+					"children": [
+
+					],
+					"circuits": undefined,
+					"conns": undefined,
+					"feature": "mywcom_fiber_segment/45: Cable Segment: 45 (fiber_cable/4)",
+					"housing": undefined,
+					"n_connected": undefined,
+					"pins": "PinRange(in:1:144)",
+					"side": undefined
+				}
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/72: Conduit: WH-CND-072"
+		},
+		{
+			"children": [
+				{
+					"cable": "fiber_cable/6: Fiber Cable: WH-FCB-006 (144)",
+					"cable_side": undefined,
+					"children": [
+
+					],
+					"circuits": [
+						{
+							"circuit_urn": "ftth_circuit/10",
+							"pins": "PinRange(undefined:50)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/14",
+							"pins": "PinRange(undefined:60)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/1",
+							"pins": "PinRange(undefined:25)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/20",
+							"pins": "PinRange(undefined:80)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/21",
+							"pins": "PinRange(undefined:79)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/22",
+							"pins": "PinRange(undefined:78)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/23",
+							"pins": "PinRange(undefined:82)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/24",
+							"pins": "PinRange(undefined:83)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/26",
+							"pins": "PinRange(undefined:50)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/27",
+							"pins": "PinRange(undefined:51)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/28",
+							"pins": "PinRange(undefined:54)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/29",
+							"pins": "PinRange(undefined:55)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/2",
+							"pins": "PinRange(undefined:26)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/3",
+							"pins": "PinRange(undefined:27)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/4",
+							"pins": "PinRange(undefined:28)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/5",
+							"pins": "PinRange(undefined:75)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/6",
+							"pins": "PinRange(undefined:76)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/7",
+							"pins": "PinRange(undefined:77)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						},
+						{
+							"circuit_urn": "ftth_circuit/8",
+							"pins": "PinRange(undefined:84)",
+							"seg_urn": "mywcom_fiber_segment/59"
+						}
+					],
+					"conns": undefined,
+					"feature": "mywcom_fiber_segment/59: Cable Segment: 59 (fiber_cable/6)",
+					"housing": undefined,
+					"n_connected": undefined,
+					"pins": "PinRange(in:1:144)",
+					"side": undefined
+				}
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/73: Conduit: WH-CND-073"
+		},
+		{
+			"children": [
+
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/74: Conduit: WH-CND-074"
+		}
+	],
+	"feature": "ug_route/8: Route (Underground): 8"
+}
+
+*** ROUTE CONTENTS WITH PROPOSED
+{
+	"children": [
+		{
+			"children": [
+				{
+					"children": [
+
+					],
+					"conduitRun": "mywcom_conduit_run/50: Conduit Run: 50",
+					"feature": "blown_fiber_tube/45: BF Tube: WH-BF-43 : 1"
+				},
+				{
+					"children": [
+						{
+							"cable": "fiber_cable/179: Fiber Cable: DROP-145 (8)",
+							"cable_side": undefined,
+							"children": [
+
+							],
+							"circuits": undefined,
+							"conns": undefined,
+							"feature": "mywcom_fiber_segment/421: Cable Segment: 421 (fiber_cable/179)",
+							"housing": undefined,
+							"n_connected": undefined,
+							"pins": "PinRange(in:1:8)",
+							"side": undefined
+						}
+					],
+					"conduitRun": "mywcom_conduit_run/10: Conduit Run: 10",
+					"feature": "blown_fiber_tube/50: BF Tube: WH-BF-48 : 2"
+				},
+				{
+					"children": [
+
+					],
+					"conduitRun": "mywcom_conduit_run/56: Conduit Run: 56",
+					"feature": "blown_fiber_tube/55: BF Tube: WH-BF-53 : 3"
+				},
+				{
+					"children": [
+						{
+							"cable": "fiber_cable/180: Fiber Cable: DROP-146 (2)",
+							"cable_side": undefined,
+							"children": [
+
+							],
+							"circuits": [
+								{
+									"circuit_urn": "ftth_circuit/14",
+									"pins": "PinRange(undefined:1)",
+									"seg_urn": "mywcom_fiber_segment/425"
+								}
+							],
+							"conns": undefined,
+							"feature": "mywcom_fiber_segment/425: Cable Segment: 425 (fiber_cable/180)",
+							"housing": undefined,
+							"n_connected": undefined,
+							"pins": "PinRange(in:1:2)",
+							"side": undefined
+						}
+					],
+					"conduitRun": "mywcom_conduit_run/12: Conduit Run: 12",
+					"feature": "blown_fiber_tube/60: BF Tube: WH-BF-58 : 4"
+				},
+				{
+					"children": [
+						{
+							"cable": "fiber_cable/182: Fiber Cable: DROP-148 (2)",
+							"cable_side": undefined,
+							"children": [
+
+							],
+							"circuits": undefined,
+							"conns": undefined,
+							"feature": "mywcom_fiber_segment/434: Cable Segment: 434 (fiber_cable/182)",
+							"housing": undefined,
+							"n_connected": undefined,
+							"pins": "PinRange(in:1:2)",
+							"side": undefined
+						}
+					],
+					"conduitRun": "mywcom_conduit_run/13: Conduit Run: 13",
+					"feature": "blown_fiber_tube/65: BF Tube: WH-BF-63 : 5"
+				},
+				{
+					"children": [
+						{
+							"cable": "fiber_cable/4400: Fiber Cable: DROP-5462 (4) design/CC5462 Design: CC5462",
+							"cable_side": undefined,
+							"children": [
+
+							],
+							"circuits": [
+								{
+									"circuit_urn": "ftth_circuit/4400",
+									"delta": "design/CC5462",
+									"pins": "PinRange(undefined:1:2)",
+									"seg_urn": "mywcom_fiber_segment/4405"
+								}
+							],
+							"conns": undefined,
+							"feature": "mywcom_fiber_segment/4405: Cable Segment: 4405 (fiber_cable/4400) design/CC5462 Design: CC5462",
+							"housing": undefined,
+							"n_connected": undefined,
+							"pins": "PinRange(in:1:4)",
+							"side": undefined
+						}
+					],
+					"conduitRun": "mywcom_conduit_run/14: Conduit Run: 14",
+					"feature": "blown_fiber_tube/70: BF Tube: WH-BF-68 : 6"
+				}
+			],
+			"conduitRun": "mywcom_conduit_run/8: Conduit Run: 8",
+			"feature": "blown_fiber_bundle/10: BF Bundle: (6)"
+		},
+		{
+			"cable": "fiber_cable/11: Fiber Cable: WH-FCB-011 (48)",
+			"cable_side": undefined,
+			"children": [
+
+			],
+			"circuits": undefined,
+			"conns": undefined,
+			"feature": "mywcom_fiber_segment/98: Cable Segment: 98 (fiber_cable/11)",
+			"housing": undefined,
+			"n_connected": undefined,
+			"pins": "PinRange(in:1:48)",
+			"side": undefined
+		}
+	],
+	"feature": "ug_route/355: Route (Underground): 355"
+}

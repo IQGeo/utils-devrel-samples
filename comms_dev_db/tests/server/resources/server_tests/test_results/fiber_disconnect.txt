@@ -1,0 +1,70 @@
+
+SUB TEST : DISCONNECT SPLITTER FROM OUT CABLE
+    Request: POST: /modules/comms/fiber/disconnect?delta=design/NB217
+    Response: 200 (200 OK)
+    b'{}'
+    
+    
+    DATABASE CHANGES: AFTER DISCONNECT SPLITTER FROM OUT CABLE
+    
+    VALIDATION ERRORS: AFTER DISCONNECT SPLITTER FROM OUT CABLE
+
+SUB TEST : DISCONNECT SPLITTER FROM IN CABLE
+    Request: POST: /modules/comms/fiber/disconnect?delta=design/NB217
+    Response: 200 (200 OK)
+    b'{}'
+    
+    
+    DATABASE CHANGES: AFTER DISCONNECT SPLITTER FROM IN CABLE
+       insert delta.mywcom_fiber_connection(design/NB217,39,delete)
+    
+    VALIDATION ERRORS: AFTER DISCONNECT SPLITTER FROM IN CABLE
+
+SUB TEST : DISCONNECT PORT -> CABLE (PARTIAL RANGE)
+    Request: POST: /modules/comms/fiber/disconnect?delta=design/NB217
+    Response: 200 (200 OK)
+    b'{}'
+    
+    
+    DATABASE CHANGES: AFTER DISCONNECT PORT -> CABLE (PARTIAL RANGE)
+       insert delta.mywcom_fiber_connection(design/NB217,249,delete)
+       insert delta.mywcom_fiber_connection(design/NB217,100000,insert)
+       insert delta.mywcom_fiber_connection(design/NB217,100001,insert)
+    
+    VALIDATION ERRORS: AFTER DISCONNECT PORT -> CABLE (PARTIAL RANGE)
+
+SUB TEST : DISCONNECT CABLE -> CABLE (PARTIAL RANGE)
+    Request: POST: /modules/comms/fiber/disconnect?delta=design/NB217
+    Response: 200 (200 OK)
+    {}
+    
+    
+    DATABASE CHANGES: AFTER DISCONNECT CABLES
+       insert delta.mywcom_fiber_connection(design/NB217,18,delete)
+       insert delta.mywcom_fiber_connection(design/NB217,100002,insert)
+       insert delta.mywcom_fiber_connection(design/NB217,100003,insert)
+    
+    VALIDATION ERRORS: AFTER DISCONNECT CABLES
+
+SUB TEST : DISCONNECT CABLE -> CABLE (FULL RANGE)
+    Request: POST: /modules/comms/fiber/disconnect?delta=design/NB217
+    Response: 200 (200 OK)
+    {}
+    
+    
+    DATABASE CHANGES: AFTER DISCONNECT CABLES
+       insert delta.mywcom_fiber_connection(design/NB217,22,delete)
+    
+    VALIDATION ERRORS: AFTER DISCONNECT CABLES
+
+SUB TEST : DISCONNECT SINGLE CABLE
+    Request: POST: /modules/comms/fiber/disconnect?delta=design/NB217
+    Response: 200 (200 OK)
+    {}
+    
+    
+    DATABASE CHANGES: AFTER DISCONNECT SINGLE CABLE
+       insert delta.mywcom_fiber_connection(design/NB217,100004,insert)
+       delete delta.mywcom_fiber_connection(design/NB217,100003,insert)
+    
+    VALIDATION ERRORS: AFTER DISCONNECT SINGLE CABLE

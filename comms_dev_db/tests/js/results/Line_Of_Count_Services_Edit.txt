@@ -1,0 +1,15 @@
+Set delta to: design/NB217
+
+*** ADD MULTIPLE
+DATABASE CHANGES: ADD MULTIPLE
+    insert delta.mywcom_line_of_count(design/NB217,100000,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100001,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100002,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100003,insert)
+    insert delta.mywcom_line_of_count(design/NB217,100004,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100000,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100001,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100002,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100003,insert)
+    insert delta.mywcom_line_of_count_section(design/NB217,100004,insert)
+

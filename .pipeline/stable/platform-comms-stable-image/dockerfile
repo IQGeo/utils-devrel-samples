@@ -1,0 +1,56 @@
+FROM iqgeoproddev.azurecr.io/platform:7.0
+USER root
+
+# Add Utilities
+RUN apt-get update \
+    && apt-get install -y git dos2unix \
+    && apt-get install -y git vim \
+    && apt-get install -y libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+
+
+# Some Core configuration items
+ENV PATH="/opt/iqgeo/platform/Tools/:${PATH}"
+ENV MYW_PRODUCT_ROOT_DIR=/opt/iqgeo/platform/WebApps/
+ENV IQG_MODULES_DIR="${WEBAPPS}/myworldapp/modules"
+
+# Some Comms configuration items
+ENV IQG_COMMS_DIR="${IQG_MODULES_DIR}/comms"
+ENV IQG_COMMS_DEV_DB_DIR="${IQG_MODULES_DIR}/comms_dev_db"
+ENV IQG_COMSOF_DIR="${IQG_MODULES_DIR}/comsof"
+ENV PATH="${IQG_COMMS_DIR}/tools:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/utils:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/utils/scale_db:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/client:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/server:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/js:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/tools:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/scalability:${PATH}"
+
+# To Run js_tests_native
+ENV MYWORLD_DATA_HOME=/opt/iqgeo/data
+ENV MYW_ATOM_DATA_ROOT=${MYWORLD_DATA_HOME}/AppDataRoot
+ENV LOCALAPPDATA=${MYW_ATOM_DATA_ROOT} 
+
+# To build extracts
+ENV MYW_COMMS_NATIVE_ROOT=${MYW_ATOM_DATA_ROOT}
+
+# Copy Comms, Comms DevDB, and comsof
+ADD  --chown=www-data:www-data myworld-product-network-manager-comms/comms ${IQG_MODULES_DIR}/comms
+ADD  --chown=www-data:www-data myworld-product-network-manager-comms/comms_dev_db ${IQG_MODULES_DIR}/comms_dev_db
+ADD  --chown=www-data:www-data myworld-product-network-manager-comms/comsof ${IQG_MODULES_DIR}/comsof
+
+# Create version_info
+RUN echo "{\"comms\": \"7.0.2.6\"}" > ${IQG_COMMS_DIR}/version_info.json
+RUN echo "{\"comms_dev_db\": \"7.0.2.6\"}" > ${IQG_COMMS_DEV_DB_DIR}/version_info.json
+RUN echo "{\"comsof\": \"7.0.2.6\"}" > ${IQG_COMSOF_DIR}/version_info.json
+# Copy dev_tools
+ADD --chown=www-data:www-data myworld-product-core/WebApps/myworldapp/modules/dev_tools ${IQG_MODULES_DIR}/dev_tools
+
+# Download node_modules and Build App
+RUN myw_product fetch node_modules \
+    && myw_product build all
+
+# add additional entrypoint scripts 
+COPY --chown=www-data:www-data myworld-product-network-manager-comms/.pipeline/stable/platform-comms-stable-image/entrypoint.d/* /entrypoint.d/
+RUN chmod +x -R /entrypoint.d/*
+USER www-data

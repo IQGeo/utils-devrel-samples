@@ -1,0 +1,64 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_circuit_segment",
+    "external_name": "{:mywcom_circuit_segment_feature_external_name}",
+    "title": "{display_name}: [id] ([circuit])",
+    "short_description": "[cable_segment]#[low]:[high]",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {},
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "circuit",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "root_housing",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "cable_segment",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "low",
+            "type": "integer",
+            "indexed": true
+        },
+        {
+            "name": "high",
+            "type": "integer",
+            "indexed": true
+        },
+        {
+            "name": "forward",
+            "type": "boolean",
+            "mandatory": true
+        },
+        {
+            "name": "in_segment",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "out_segment",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring"
+        }
+    ]
+}

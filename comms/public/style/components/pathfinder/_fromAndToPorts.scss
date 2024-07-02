@@ -1,0 +1,28 @@
+@import './_sharedStyles.scss';
+
+.grid-section {
+
+    &-container {
+        height: min-content;
+        display: grid;
+        align-content: center;
+
+        .input-and-button {
+            display: grid;
+            grid-template-columns: repeat(2, min-content);
+            gap: 10px;
+
+            .from-and-to-input {
+                resize: none;
+                font-family: inherit;
+                overflow-y: auto;
+                height: 20px;
+                width: 200px;
+            }
+        }
+    }
+}
+
+.margin-0 {
+    margin: 0px !important;
+}

@@ -1,0 +1,5 @@
+{
+    "mywcom.customManagerClasses": {
+        "circuit": "DevDbCircuitManager"
+    }
+}

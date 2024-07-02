@@ -1,0 +1,49 @@
+@use './_sharedStyles.scss' as sharedStyles;
+
+.max-paths {
+
+    &__container {
+        display: grid;
+        align-content: end;
+
+        &>* {
+            margin: 4px;
+        }
+    }
+
+    &__list-container {
+        display: grid;
+        grid-template-rows: repeat(auto-fit);
+        row-gap: 5px;
+    }
+
+    &__list-item {
+        display: grid;
+        grid-template-columns: 65px max-content min-content;
+        align-items: center;
+        gap: 10px;
+
+        label {
+            width: max-content;
+        }
+
+        &-unit {
+            width: 25px;
+        }
+    }
+
+    &__input {
+        &-paths {
+            width: 50px;
+        }
+
+        &-distance {
+            width: 70px;
+        }
+    }
+
+    &-button {
+        height: 30px;
+        justify-self: right;
+    }
+}

@@ -1,0 +1,3 @@
+retired,manufacturer,name,model,type,in_port_current_bypass,rf_out_ports_current_bypass,rf_in_ports_current_bypass,ports
+false,Unknown,Channel Rig,unset,Standard,0.000,0.000,0.000,3
+false,Unknown,Power Inserter,unset,Standard,15.000,15.000,15.000,3

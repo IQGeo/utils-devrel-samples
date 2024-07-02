@@ -1,0 +1,99 @@
+
+*** MASTER IN WINDOW
+Set delta to: *** master ***
+Error Type:  fiber_cable-specs_set
+Error display values:  {
+	"description": "Spec field must be set",
+	"problem_feature": "Fiber Cable: WH-FCB-223 (16)",
+	"resolution": "Set specification"
+}
+Error Type:  fiber_cable-conduit_capacity
+Error display values:  {
+	"description": "Objects inside conduits must have their diameter set",
+	"problem_feature": "Fiber Cable: WH-FCB-223 (16)",
+	"resolution": "Set diameter or specification"
+}
+Error Type:  fiber_cable-conduit_capacity
+Error display values:  {
+	"description": "Objects inside conduits must have their diameter set",
+	"problem_feature": "Fiber Cable: WH-FCB-223 (16)",
+	"resolution": "Set diameter or specification"
+}
+Error Type:  fiber_cable-conduit_capacity
+Error display values:  {
+	"description": "Objects inside conduits must have their diameter set",
+	"problem_feature": "Fiber Cable: WH-FCB-223 (16)",
+	"resolution": "Set diameter or specification"
+}
+
+*** MASTER+DELTA IN WINDOW
+Set delta to: design/NB301
+Error Type:  fiber_cable-specs_set
+Error display values:  {
+	"description": "Spec field must be set",
+	"problem_feature": "Fiber Cable: WH-FCB-NB301:1 (12)",
+	"resolution": "Set specification"
+}
+Error Type:  fiber_cable-specs_set
+Error display values:  {
+	"description": "Spec field must be set",
+	"problem_feature": "Fiber Cable: WH-FCB-NB301:2 (4)",
+	"resolution": "Set specification"
+}
+Error Type:  fiber_cable-specs_set
+Error display values:  {
+	"description": "Spec field must be set",
+	"problem_feature": "Fiber Cable: WH-FCB-223 (16)",
+	"resolution": "Set specification"
+}
+Error Type:  fiber_cable-conduit_capacity
+Error display values:  {
+	"description": "Objects inside conduits must have their diameter set",
+	"problem_feature": "Fiber Cable: WH-FCB-NB301:1 (12)",
+	"resolution": "Set diameter or specification"
+}
+Error Type:  fiber_cable-conduit_capacity
+Error display values:  {
+	"description": "Objects inside conduits must have their diameter set",
+	"problem_feature": "Fiber Cable: WH-FCB-223 (16)",
+	"resolution": "Set diameter or specification"
+}
+Error Type:  fiber_cable-conduit_capacity
+Error display values:  {
+	"description": "Objects inside conduits must have their diameter set",
+	"problem_feature": "Fiber Cable: WH-FCB-223 (16)",
+	"resolution": "Set diameter or specification"
+}
+Error Type:  fiber_cable-conduit_capacity
+Error display values:  {
+	"description": "Objects inside conduits must have their diameter set",
+	"problem_feature": "Fiber Cable: WH-FCB-223 (16)",
+	"resolution": "Set diameter or specification"
+}
+Error Type:  fiber_cable-conduit_capacity
+Error display values:  {
+	"description": "Objects inside conduits must have their diameter set",
+	"problem_feature": "Fiber Cable: WH-FCB-NB301:1 (12)",
+	"resolution": "Set diameter or specification"
+}
+
+*** DELTA
+Set delta to: design/NB301
+Error Type:  fiber_cable-specs_set
+Error display values:  {
+	"description": "Spec field must be set",
+	"problem_feature": "Fiber Cable: WH-FCB-NB301:2 (4)",
+	"resolution": "Set specification"
+}
+Error Type:  fiber_cable-specs_set
+Error display values:  {
+	"description": "Spec field must be set",
+	"problem_feature": "Fiber Cable: WH-FCB-NB301:1 (12)",
+	"resolution": "Set specification"
+}
+Error Type:  fiber_cable-conduit_capacity
+Error display values:  {
+	"description": "Objects inside conduits must have their diameter set",
+	"problem_feature": "Fiber Cable: WH-FCB-NB301:1 (12)",
+	"resolution": "Set diameter or specification"
+}

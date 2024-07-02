@@ -1,0 +1,107 @@
+{
+    "datasource": "myworld",
+    "name": "coax_cable",
+    "external_name": "{:coax_cable_field_name}",
+    "title": "{display_name}: [name] ([coax_count])",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring",
+            "mandatory": "true"
+        },
+        {
+            "name": "placement_path",
+            "external_name": "{:housing_route_field_name}",
+            "type": "linestring",
+            "mandatory": "true"
+        },
+        {
+            "name": "offset_geom",
+            "external_name": "{:offset_field_name}",
+            "type": "linestring"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "coax_count",
+            "external_name": "{:coax_cable_spec_coax_count_name}",
+            "type": "integer",
+            "default": 1
+        },
+        {
+            "name": "directed",
+            "external_name": "{:fiber_cable_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": true
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "cable_segments",
+            "external_name": "{:fiber_cable_feature_cable_segments_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_coax_segment.cable)"
+        },
+        {
+            "name": "cable_slacks",
+            "external_name": "{:fiber_cable_feature_cable_slacks_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_coax_slack.cable)"
+        },
+        {
+            "name": "connections",
+            "external_name": "{:fiber_cable_feature_connections_name}",
+            "type": "reference_set",
+            "value": "method(connections)",
+            "read_only": true
+        },
+        {
+            "name": "cable_size",
+            "external_name": "{:coax_cable_size_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "measured_length",
+            "external_name": "{:conduit_feature_length_name}",
+            "type": "double"
+        },
+        {
+            "name": "status",
+            "external_name": "{:coax_construction_status_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "frequency",
+            "external_name": "{:coax_design_frequency_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "specification",
+            "external_name": "{:wall_box_feature_specification_name}",
+            "type": "foreign_key(coax_cable_spec)"
+        }
+    ]
+}

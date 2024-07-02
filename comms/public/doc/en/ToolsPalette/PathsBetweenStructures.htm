@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_IQGeo_Responsive_Help" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon.ico" />
+        <meta charset="utf-8" /><title>Finding paths between structures</title>
+        <link href="../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/MainStyles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.topic-ratings-button
+{
+	-pie-background: transparent url('../Skins/Default/Stylesheets/Images/star-full.png') no-repeat center center;
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.edit-user-profile-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.print-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/IQGeoTable.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="../Skins/Favicons/favicon.ico" />
+        <script src="../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search our help and documentation" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="search-container">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie _Skins_SearchTopics mc-component">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="top-bar">
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="topic-layout">
+                                            <div>
+                                                <div class="side-menu">
+                                                    <ul class="nocontent menu _Skins_SideMenu___Copy mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/NetworkManager.js" data-mc-side-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent" style="mc-topic-toolbar-items: SelectLanguage;">
+                                                    <div class="button-group-container-left">
+                                                        <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <div class="button-group star-buttons loading feedback-topic-required">
+                                                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Click a star to rate this topic" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Click a star to rate this topic" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Click a star to rate this topic" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Click a star to rate this topic" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="button star-button topic-ratings-empty-button" data-state1-class="topic-ratings-empty-button" data-state2-class="topic-ratings-button" title="Click a star to rate this topic" data-state1-title="Click a star to rate this topic" data-state2-title="Click a star to rate this topic">
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Click a star to rate this topic" data-state1-alt="Click a star to rate this topic" data-state2-alt="Click a star to rate this topic">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-separator">
+                                                        </div>
+                                                        <button class="button feedback-required login-button" id="normalLoginBtn" data-state1-class="login-button" data-state2-class="edit-user-profile-button" title="Login" data-state1-title="Login">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Login">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <button class="button needs-pie print-button" title="Print">
+                                                            <div>
+                                                                <div role="img" class="button-icon-wrapper" aria-label="Print">
+                                                                    <div class="button-icon"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div role="main" id="mc-main-content">
+                                                    <h2>Finding paths between structures</h2>
+                                                    <p>The <span class="mwFunction">Path Finder</span> feature allows you to search the available paths between two structures you select in a design. You can view details of the found path(s) and if the paths relate to a fiber cable, then select one to create a circuit from it.</p>
+                                                    <p>To activate the <span class="mwFunction">Path Finder</span> feature:</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Open a design.</p>
+                                                            <div class="Note"> In the Designer role, this is required to obtain access to the <span class="mwFunction">Path Finder</span> function.</div>
+                                                        </li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="2">
+                                                            <p>Click the <span class="Button">Tools Palette</span> icon <img src="../Resources/Images/ToolsPaletteIcon_41x36.png" style="width: 41;height: 36;" /> to open the tools shown on the right side of the map.</p>
+                                                            <p class="Figure">
+                                                                <img src="../Resources/Images/PathFinderFeatureIcons_900x467.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #696969;border-right-style: solid;border-right-width: 1px;border-right-color: #696969;border-top-style: solid;border-top-width: 1px;border-top-color: #696969;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #696969;width: 900;height: 467;" />
+                                                            </p>
+                                                            <p class="FigureCaption" data-mc-autonum="Figure: "><span class="autonumber"><span>Figure: </span></span>Tools Palette &gt; Tools</p>
+                                                            <blockquote>
+                                                                <p>
+                                                                    <table style="mc-table-style: url('../Resources/TableStyles/IQGeoTable.css');margin-left: 0;margin-right: auto;" class="TableStyle-UbisenseTable_mw" cellspacing="0">
+                                                                        <col class="TableStyle-UbisenseTable_mw-Column-Column1" />
+                                                                        <col class="TableStyle-UbisenseTable_mw-Column-Column1" />
+                                                                        <thead>
+                                                                            <tr class="TableStyle-UbisenseTable_mw-Head-Header1">
+                                                                                <th class="TableStyle-UbisenseTable_mw-HeadE-Column1-Header1">Item</th>
+                                                                                <th class="TableStyle-UbisenseTable_mw-HeadD-Column1-Header1">Description</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                                <td class="TableStyle-UbisenseTable_mw-BodyE-Column1-Body1">1</td>
+                                                                                <td class="TableStyle-UbisenseTable_mw-BodyD-Column1-Body1"><span class="Button">Tools Palette</span> icon</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                                <td class="TableStyle-UbisenseTable_mw-BodyE-Column1-Body1">2</td>
+                                                                                <td class="TableStyle-UbisenseTable_mw-BodyD-Column1-Body1">Tool buttons</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                                <td class="TableStyle-UbisenseTable_mw-BodyE-Column1-Body1">3</td>
+                                                                                <td class="TableStyle-UbisenseTable_mw-BodyD-Column1-Body1"><span class="Button">Path Finder</span> button</td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                                <td class="TableStyle-UbisenseTable_mw-BodyB-Column1-Body1">4</td>
+                                                                                <td class="TableStyle-UbisenseTable_mw-BodyA-Column1-Body1"><span class="Dialog">Path Finder</span> dialog</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </p>
+                                                            </blockquote>
+                                                            <p>&#160;</p>
+                                                        </li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">
+                                                            <p>Click the <b>Path Finder</b> icon.</p>
+                                                            <p>The <span class="Dialog">Path Finder</span> dialog is displayed. You can move the dialog window around in the <span class="mc-variable NetworkManagerVariables.NetworkManager variable">Network Manager</span> application window and you can collapse and expand it as required.</p>
+                                                            <p class="Figure">
+                                                                <img src="../Resources/Images/PathFinderDialog_400x495.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #696969;border-right-style: solid;border-right-width: 1px;border-right-color: #696969;border-top-style: solid;border-top-width: 1px;border-top-color: #696969;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #696969;width: 400;height: 495;" />
+                                                            </p>
+                                                            <p class="FigureCaption" data-mc-autonum="Figure: "><span class="autonumber"><span>Figure: </span></span>Path Finder dialog</p>
+                                                        </li>
+                                                    </ol>
+                                                    <h3>Performing a path finder operation</h3>
+                                                    <p class="IntrolineMW">Basic Settings</p>
+                                                    <p>You must start by providing the basic settings for the operation.</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Specify the structure to start from in the <span class="Option">From</span> field.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Select the structure directly on the map or use the <span class="mwFunction">Search</span> tool to locate it.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Click the <span class="Button">Set</span> button next to the <span class="Option">From</span> input field. </p>
+                                                            <p>The <span class="Dialog">Set Port</span> dialog appears.</p>
+                                                            <p class="Figure">
+                                                                <img src="../Resources/Images/PathFinderFromSetPort_350x524.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #696969;border-right-style: solid;border-right-width: 1px;border-right-color: #696969;border-top-style: solid;border-top-width: 1px;border-top-color: #696969;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #696969;width: 350;height: 524;" />
+                                                            </p>
+                                                            <p class="FigureCaption" data-mc-autonum="Figure: "><span class="autonumber"><span>Figure: </span></span>Set Port dialog</p>
+                                                        </li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">
+                                                            <p>Expand the information tree up to the level of the port that you want to use as the starting point and click on it to select it.</p>
+                                                        </li>
+                                                        <li value="5">
+                                                            <p>Click the <span class="Button">Set</span> button. </p>
+                                                            <p>The name of the selected port appears in the <span class="Option">From</span> input field.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">
+                                                            <p>Specify the target structure in the <span class="Option">To</span> field.</p>
+                                                        </li>
+                                                        <li value="7">
+                                                            <p>Select the structure directly on the map or use the <span class="mwFunction">Search</span> tool to locate it.</p>
+                                                        </li>
+                                                        <li value="8">
+                                                            <p>Click the <span class="Button">Set</span> button next to the <span class="Option">To</span> input field.</p>
+                                                            <p>The name of the selected structure appears in the <span class="Option">To</span> input field.</p>
+                                                            <div class="Note">For the structure at the end location you do not have to set a specific port beforehand, but it is best to verify if ports are available to avoid that the operation terminates with the message that there is no port at the end location.</div>
+                                                        </li>
+                                                    </ol>
+                                                    <p class="IntrolineMW">Additional settings</p>
+                                                    <p>You can provide additional settings, if appropriate, using the other fields in the <span class="Dialog">Path Finder</span> dialog.</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Provide the names of certain elements in the design that <span class="Emphasis">must be included</span> in the paths that you want to find.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Select a structure or a route or a piece of equipment and click the <b>+</b> button at the top right of the <span class="Option">Include</span> field.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Provide the names of specific elements in the design that <span class="Emphasis">must be avoided</span> in the paths that you want to find.</p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>Select a structure or a route or a piece of equipment and click the <b>+</b> button at the top right of the <span class="Option">Avoid</span> field.</p>
+                                                        </li>
+                                                        <li value="5">
+                                                            <p>Supply the generic settings about the paths to be brought up.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <blockquote>
+                                                        <p>You can indicate:</p>
+                                                    </blockquote>
+                                                    <blockquote>
+                                                        <ul>
+                                                            <li>
+                                                                <p><span class="Option">Max paths</span>	: The maximum number of paths you want to be produced.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p><span class="Option">Max dist</span>	: The maximum length of the paths to be produced.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Whether you want to <span class="Option">Exclude similar paths</span> : Select this option if you do not want multiple paths that overlap for most part.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </blockquote>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">
+                                                            <p>Indicate how the results need to be sorted in the progress and results pane at the bottom of the dialog window.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <blockquote>
+                                                        <p>You can select one of these sorting criteria:</p>
+                                                    </blockquote>
+                                                    <blockquote>
+                                                        <ul>
+                                                            <li>
+                                                                <p><span class="Option">Shortest distance</span>		: If you prefer to see the shortest paths appear at the top of the results list.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p><span class="Option">Least new connections</span>	: If you prefer to see the paths that require the least new connections at the top of the results list.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p><span class="Option">Least amount of existing connections</span> : If you prefer to see the paths that include the lowest number of existing connections at the top of the results list.</p>
+                                                            </li>
+                                                        </ul>
+                                                    </blockquote>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="7">
+                                                            <p>Click <span class="Button">Generate</span> to start the search for the available path(s).</p>
+                                                            <p>The operation starts and progress information appears in the progress and results pane at the bottom. When Path Finder has completed its search, the result also appears in that pane.</p>
+                                                            <div class="Note">The direct feedback you obtain as a Designer from Path Finder allows you to monitor the operation that you have launched; if you need to monitor and / or manage the Path Finder task queue at a higher level (for example. as an Administrator), you can use the <span style="font-family: Arial;">comms_db command-line</span> Tool to do so. If you are an Administrator, refer to the <span style="font-family: 'Courier New';">comms_db <span style="font-family: Arial;">Command-line</span></span> topic in the <span class="mc-variable myWorld.myWorld_Installation variable">Installation and Configuration Guide</span>.</div>
+                                                        </li>
+                                                    </ol>
+                                                    <h3>Assessing the outcome of a Path Finder operation</h3>
+                                                    <p>Path Finder does not necessarily produce a path or a list of paths. There can be different reasons for this. To determine if usable paths are available, Path Finder works in two phases:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p> First, it looks for route paths between the start and the end location.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>And, subsequently, looks for fiber paths using those route paths.</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p>With the data gathered during these two phases, it can construct and present the possible paths. Typical reasons why no paths can be produced are:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p><i>End location has no ports</i>	: As mentioned above, no paths can be established if the structure at the end location does not have ports available.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><i>No route paths found</i> 		: Path Finder's search for route paths did not yield (usable) results. This can also occur if you have set the <span class="mwParameter">Max dist</span> parameter and route paths exceed this distance.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><![CDATA[	]]><i>No paths found</i>			: Path Finder was not able to detect any end to end path between start location and end location.</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p>If Path Finder can generate paths between the two selected structures, it displays the result in the <span class="Dialog">Path Finder</span> dialog, as well as on the map.</p>
+                                                    <p class="Figure">
+                                                        <img src="../Resources/Images/ToolsPathFinderPathsGenerated_900x540.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #696969;border-right-style: solid;border-right-width: 1px;border-right-color: #696969;border-top-style: solid;border-top-width: 1px;border-top-color: #696969;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #696969;width: 900;height: 540;" />
+                                                    </p>
+                                                    <p class="FigureCaption" data-mc-autonum="Figure: "><span class="autonumber"><span>Figure: </span></span>Path Finder results displayed in Path Finder dialog and on map</p>
+                                                    <blockquote>
+                                                        <table style="mc-table-style: url('../Resources/TableStyles/IQGeoTable.css');margin-left: 0;margin-right: auto;" class="TableStyle-UbisenseTable_mw" cellspacing="0">
+                                                            <col class="TableStyle-UbisenseTable_mw-Column-Column1" />
+                                                            <col class="TableStyle-UbisenseTable_mw-Column-Column1" />
+                                                            <thead>
+                                                                <tr class="TableStyle-UbisenseTable_mw-Head-Header1">
+                                                                    <th class="TableStyle-UbisenseTable_mw-HeadE-Column1-Header1">Item</th>
+                                                                    <th class="TableStyle-UbisenseTable_mw-HeadD-Column1-Header1">Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyE-Column1-Body1">1</td>
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyD-Column1-Body1">Route generated by <span class="mwFunction">Path Finder</span></td>
+                                                                </tr>
+                                                                <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyE-Column1-Body1">2</td>
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyD-Column1-Body1">Structure at start location</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyE-Column1-Body1">3</td>
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyD-Column1-Body1">Structure at end location</td>
+                                                                </tr>
+                                                                <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyE-Column1-Body1">4</td>
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyD-Column1-Body1">Existing connection </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyE-Column1-Body1">5</td>
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyD-Column1-Body1">
+                                                                        <p>New connection to create</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-UbisenseTable_mw-Body-Body1">
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyB-Column1-Body1">6</td>
+                                                                    <td class="TableStyle-UbisenseTable_mw-BodyA-Column1-Body1">Detailed information on path(s) found.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <p> </p>
+                                                    </blockquote>
+                                                    <p>In the results pane of the dialog, the information about path(s) is presented in a fixed format comprising these items:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>The identification of the path in the form "<b>Path n</b>" with 'n' a sequence number starting at 1 and incrementing for each subsequent path in the list.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>	The <span class="Button">Zoom</span> icon, which allows to highlight the path on the map.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>The <b>Info</b>, which indicates the length of the path, the number of existing connections that are part of the path, the number of new connections that need to be created should this path be used to create a circuit and the optical loss occurring along this path.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>The <b>Results</b>, which consists of an overview of all the objects that are part of the path.</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p>To assess the path(s) that Path Finder brought up, you can step through the information in the results pane, which interacts with the map. If you click the <span class="Button">Zoom</span> icon next to the path name, the map zooms to the path concerned. The selected path is displayed in red. All network objects that are part of the path are presented and highlighted on the map, and the connections that are part of it, are marked with a circle. Additionally, for new connections, the inside of that circle is highlighted in yellow.</p>
+                                                    <p>If you hover an object in the <b>Results</b> overview, a pop-up window appears with a set of key characteristics of the object. At the same time, the object is highlighted on the map.</p>
+                                                    <h3>Creating a circuit along a path</h3>
+                                                    <p>If the path relates to fiber cable, you can create a circuit along the path. </p>
+                                                    <p>To create a circuit:</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Select the path that you want to use in the <b>Results</b> pane of the <b>Path Finder</b> dialog.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Choose the circuit type that you want to create from the list at the bottom of the dialog window.</p>
+                                                            <div class="Note">Circuit types are set in the Comms Settings configuration page (see the <span style="font-style: italic;" class="mc-variable myWorld.myWorld_Installation variable">Installation and Configuration Guide</span>).</div>
+                                                        </li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="3">
+                                                            <p>Click <span class="Button">Create</span> to generate the circuit.</p>
+                                                            <p>The <span class="Dialog">Circuit</span> dialog appears.</p>
+                                                            <p class="Figure">
+                                                                <img src="../Resources/Images/PathFinderCreateCircuit_350x448.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #696969;border-right-style: solid;border-right-width: 1px;border-right-color: #696969;border-top-style: solid;border-top-width: 1px;border-top-color: #696969;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #696969;width: 350;height: 448;" />
+                                                            </p>
+                                                            <p class="FigureCaption" data-mc-autonum="Figure: "><span class="autonumber"><span>Figure: </span></span>Circuit dialog</p>
+                                                        </li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="4">
+                                                            <p>Enter the details for the circuit you are creating.</p>
+                                                            <p>The <span class="MenuItem">Name</span> and the <span class="MenuItem">Service Type</span> are mandatory fields.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="5">
+                                                            <p>Click <span class="Button">Save</span>.</p>
+                                                            <p>If new connections are to be created, the <span class="Dialog">Insert Circuit</span> dialog appears, prompting for your approval to the creation of these new connections.</p>
+                                                            <p class="Figure">
+                                                                <img src="../Resources/Images/PathFinderCreateCircuitInsert_200x117.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #696969;border-right-style: solid;border-right-width: 1px;border-right-color: #696969;border-top-style: solid;border-top-width: 1px;border-top-color: #696969;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #696969;width: 200;height: 117;" />
+                                                            </p>
+                                                            <p class="FigureCaption" data-mc-autonum="Figure: "><span class="autonumber"><span>Figure: </span></span>Insert Circuit dialog</p>
+                                                        </li>
+                                                    </ol>
+                                                    <ol data-mc-continue="true">
+                                                        <li value="6">
+                                                            <p>Click <span class="Button">OK</span> to confirm.</p>
+                                                            <p>The circuit is created with all the equipment and connections required and is saved to the database.</p>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <p>&#160;</p>
+                                        </div>
+                                        <p>&#160;</p>
+                                        <div class="footer center">
+                                            <div class="footer">Copyright © 2024, <span class="mc-variable IQGeoVariables.CompanyNameLong variable">IQGeo UK Ltd</span>. <span class="mc-variable IQGeoVariables.CompanyName variable">IQGeo</span> is a registered ® trademark.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

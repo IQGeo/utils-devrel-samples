@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="coax_ps60.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="27.680294"
+     inkscape:cx="5.3349615"
+     inkscape:cy="12.727069"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4148" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1028.3622)">
+    <rect
+       style="opacity:0.999;fill:none;stroke:#717572;stroke-width:0.279671;stroke-linecap:round;stroke-opacity:1"
+       id="rect4338"
+       width="18.875923"
+       height="17.659256"
+       x="2.6183016"
+       y="1033.5428" />
+    <path
+       style="fill:#727573;fill-opacity:1;stroke:#727573;stroke-width:0.165977;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 13.772257,1033.5428 h 7.721968 v 7.2243 l -7.721968,-7.2243"
+       id="path4378" />
+    <path
+       style="fill:#727573;fill-opacity:1;stroke:#727573;stroke-width:0.165977;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.34027,1051.2021 H 2.6183016 v -7.2242 l 7.7219684,7.2242"
+       id="path4378-4" />
+    <path
+       style="fill:#727573;fill-opacity:1;stroke:#727573;stroke-width:0.165977;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 21.494225,1043.9779 v 7.2242 h -7.721968 l 7.721968,-7.2242"
+       id="path4378-4-1" />
+    <path
+       style="fill:#727573;fill-opacity:1;stroke:#727573;stroke-width:0.165977;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2.6183016,1040.7671 v -7.2243 H 10.34027 l -7.7219684,7.2243"
+       id="path4378-4-1-5" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.42605px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#727573;fill-opacity:1;stroke-width:0.829884"
+       x="0.55082583"
+       y="1067.9006"
+       id="text838"
+       transform="scale(1.0338747,0.9672352)"><tspan
+         sodipodi:role="line"
+         id="tspan860"
+         x="0.55082583"
+         y="1067.9006"
+         style="stroke-width:0.829884">60V - 15A</tspan></text>
+  </g>
+</svg>

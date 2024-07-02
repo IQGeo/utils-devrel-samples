@@ -1,0 +1,27 @@
+
+SUB TEST : SAVE EDIT NO CHANGE
+    DATABASE CHANGES: AFTER SAVE EDIT NO CHANGE
+    
+
+SUB TEST : ATTEMPT DISCONNECT STRUCTURE
+    TEST: ATTEMPT DISCONNECT STRUCTURE
+        label: Cover*
+        label: Mixed
+        label: Mixed
+        label: Measured Length*
+        label: feature-edit-input
+        input: 224.2 ft
+        label: Labor Costs*
+        label: feature-edit-input
+        input (disabled): trench_dig
+      header: Path
+        label: ×
+        label: ×
+        label: Route contains cable
+        button: Cancel
+        button: Delete
+        button: Save
+    
+    
+    DATABASE CHANGES: ATTEMPT DISCONNECT STRUCTURE
+    

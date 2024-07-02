@@ -1,0 +1,27 @@
+{
+   "name": "Notes", 
+   "category": "overlay", 
+   "code": "n", 
+   "description": "myWorld Notes", 
+   "datasource": "myworld", 
+   "spec": {
+      "isStatic": false, 
+      "extraOptions": {}, 
+      "nativeAppVector": null, 
+      "nativeAppMode": "switchable", 
+      "rendering": "vector", 
+      "jsClass": ""
+   }, 
+   "thumbnail": "images/layers/layer-notes-small.png", 
+   "transparency": 0, 
+   "min_scale": 10, 
+   "max_scale": 22, 
+   "feature_types": [
+      {
+         "name": "note", 
+         "field_name": "the_geom", 
+         "min_select": 16, 
+         "point_style": "images/markers/blue-marker.svg"
+      }
+   ]
+}

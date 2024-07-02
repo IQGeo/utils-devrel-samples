@@ -1,0 +1,42 @@
+
+*** CREATE NON-COAX EQUIPMENT
+Set delta to: design/NB217
+{
+	"ids": [
+		100000
+	]
+}
+DATABASE CHANGES: CREATE NON-COAX EQUIPMENT
+    insert delta.copper_capacitor(design/NB217,100000,insert)
+
+VALIDATION ERRORS: CREATE NON-COAX EQUIPMENT
+
+
+*** CREATE COAX AMPLIFIER
+Set delta to: design/NB217
+{
+	"ids": [
+		100000
+	]
+}
+DATABASE CHANGES: CREATE COAX AMPLIFIER
+    insert delta.coax_amplifier(design/NB217,100000,insert)
+
+VALIDATION ERRORS: CREATE COAX AMPLIFIER
+
+
+*** CREATE TWO COAX AMPLIFIERs
+Set delta to: design/NB217
+{
+	"ids": [
+		100002,
+		100003
+	]
+}
+DATABASE CHANGES: CREATE TWO COAX AMPLIFIERs
+    insert delta.coax_amplifier(design/NB217,100001,insert)
+    insert delta.coax_amplifier(design/NB217,100002,insert)
+    insert delta.coax_amplifier(design/NB217,100003,insert)
+
+VALIDATION ERRORS: CREATE TWO COAX AMPLIFIERs
+

@@ -1,0 +1,24 @@
+
+*** REPLACE STRUCTURE
+Set delta to: design/NB046
+DATABASE CHANGES: REPLACE STRUCTURE
+    insert delta.cabinet(design/NB046,1,delete)
+    insert delta.conduit(design/NB046,10,update)
+    insert delta.conduit(design/NB046,11,update)
+    insert delta.conduit(design/NB046,3,update)
+    insert delta.manhole(design/NB046,100000,insert)
+    insert delta.mywcom_copper_segment(design/NB046,2,update)
+    insert delta.mywcom_copper_segment(design/NB046,20,update)
+    insert delta.mywcom_copper_segment(design/NB046,3,update)
+    insert delta.mywcom_fiber_connection(design/NB046,17,update)
+    insert delta.mywcom_fiber_connection(design/NB046,18,update)
+    insert delta.mywcom_fiber_segment(design/NB046,1,update)
+    insert delta.mywcom_fiber_segment(design/NB046,186,update)
+    insert delta.mywcom_fiber_segment(design/NB046,33,update)
+    insert delta.mywcom_fiber_segment(design/NB046,601,update)
+    insert delta.mywcom_fiber_segment(design/NB046,602,update)
+    insert delta.ug_route(design/NB046,266,update)
+    insert delta.ug_route(design/NB046,384,update)
+
+VALIDATION ERRORS: REPLACE STRUCTURE
+

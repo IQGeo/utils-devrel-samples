@@ -1,0 +1,58 @@
+MERGE REPORT design/NB301
+   FeatureChange(ug_route(88),revert)
+      all_changes_in_master
+   FeatureChange(ug_route(4801,design/NB301),update) fields=path
+      in_structure moved
+   FeatureChange(ug_route(4800,design/NB301),update) fields=path
+      out_structure moved
+   FeatureChange(splice_closure(4800,design/NB301),update) fields=location
+      root_housing moved
+   FeatureChange(mywcom_fiber_slack(4800,design/NB301),update) fields=location
+      root_housing moved
+   FeatureChange(conduit(4801,design/NB301),update) fields=path
+      root_housing moved
+   FeatureChange(conduit(4800,design/NB301),update) fields=path
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(4804,design/NB301),update) fields=path
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(4803,design/NB301),update) fields=path
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(4802,design/NB301),update) fields=path
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(4801,design/NB301),update) fields=path
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(4800,design/NB301),update) fields=path
+      root_housing moved
+   FeatureChange(fiber_cable(4801,design/NB301),update) fields=path
+      segment_paths_changed
+   FeatureChange(fiber_cable(4800,design/NB301),update) fields=path
+      segment_paths_changed
+   FeatureChange(mywcom_fiber_connection(4801,design/NB301),update) fields=location
+      root_housing moved
+   FeatureChange(mywcom_fiber_connection(4800,design/NB301),update) fields=location
+      root_housing moved
+
+DATABASE CHANGES: AFTER MERGE
+   delete base.ug_route(design/NB301,88)
+   update delta.conduit(design/NB301,4800,insert) fields=(path)
+   update delta.conduit(design/NB301,4801,insert) fields=(path)
+   update delta.fiber_cable(design/NB301,4800,insert) fields=(path)
+   update delta.fiber_cable(design/NB301,4801,insert) fields=(path)
+   update delta.mywcom_fiber_connection(design/NB301,4800,insert) fields=(location)
+   update delta.mywcom_fiber_connection(design/NB301,4801,insert) fields=(location)
+   update delta.mywcom_fiber_segment(design/NB301,4800,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB301,4801,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB301,4802,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB301,4803,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/NB301,4804,insert) fields=(path)
+   update delta.mywcom_fiber_slack(design/NB301,4800,insert) fields=(location)
+   update delta.splice_closure(design/NB301,4800,insert) fields=(location)
+   update delta.ug_route(design/NB301,4800,insert) fields=(path)
+   update delta.ug_route(design/NB301,4801,insert) fields=(path)
+   delete delta.ug_route(design/NB301,88,update)
+
+CONFLICTS AFTER MERGE
+   conflict pedestal_area(1,design/NB301) update/update
+      master_fields: name
+      delta_fields : name
+

@@ -1,0 +1,48 @@
+// Copyright: IQGeo, 2010-2019
+
+@import '/modules/comms/node_modules/jstree/dist/themes/default/style.css';
+
+.virtual-walkout-dialog {
+    .ui-button.ui-state-active:hover,
+    .ui-button:active,
+    .ui-state-active {
+        border: 1px solid #b3b3b3;
+        background-color: transparent;
+    }
+    .virtual-walkout-prev,
+    .virtual-walkout-next,
+    .virtual-walkout-play,
+    .virtual-walkout-pause,
+    .virtual-walkout-reverse-path {
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 14px 20px;
+        &:disabled {
+            opacity: 0.4;
+        }
+    }
+    .virtual-walkout-prev,
+    .virtual-walkout-prev:hover {
+        background-image: url(../images/tools/virtual_walkout_prev.svg);
+    }
+    .virtual-walkout-next,
+    .virtual-walkout-next:hover {
+        background-image: url(../images/tools/virtual_walkout_next.svg);
+    }
+    .virtual-walkout-play,
+    .virtual-walkout-play:hover {
+        background-image: url(../images/tools/virtual_walkout_play.svg);
+    }
+    .virtual-walkout-pause,
+    .virtual-walkout-pause:hover {
+        background-image: url(../images/tools/virtual_walkout_pause.svg);
+        display: none;
+    }
+    .virtual-walkout-setpath {
+        margin-left: 10px;
+    }
+    .virtual-walkout-reverse-path,
+    .virtual-walkout-reverse-path:hover {
+        background-image: url(../images/tools/virtual_walkout_reverse_path.svg);
+    }
+}

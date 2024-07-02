@@ -1,0 +1,137 @@
+
+*** MOVE TO HOUSING
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: MOVE TO HOUSING
+    insert delta.conduit(design/NB046,79,update)
+
+VALIDATION ERRORS: MOVE TO HOUSING
+
+
+*** CABLE INTO TUBE NOT IN CONDUIT
+Set delta to: design/NB046
+cable_not_in_conduit
+DATABASE CHANGES: CABLE INTO TUBE NOT IN CONDUIT
+
+VALIDATION ERRORS: CABLE INTO TUBE NOT IN CONDUIT
+
+
+*** CABLE INTO CONTINUOUS CONDUIT
+Set delta to: design/NB046
+conduit_path_not_suitable
+DATABASE CHANGES: CABLE INTO CONTINUOUS CONDUIT
+
+VALIDATION ERRORS: CABLE INTO CONTINUOUS CONDUIT
+
+
+*** CABLE INTO PROPOSED CONDUIT
+Set delta to: *** master ***
+conduit_missing
+DATABASE CHANGES: CABLE INTO PROPOSED CONDUIT
+
+
+*** CABLE WITH SLACK INTO TUBE
+Set delta to: design/NB046
+cable_has_slack
+DATABASE CHANGES: CABLE WITH SLACK INTO TUBE
+
+VALIDATION ERRORS: CABLE WITH SLACK INTO TUBE
+
+
+*** CABLE INTO TUBE SUCCESS
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: CABLE INTO TUBE SUCCESS
+    insert delta.mywcom_fiber_segment(design/NB046,100,update)
+    insert delta.mywcom_fiber_segment(design/NB046,50000,update)
+    insert delta.mywcom_fiber_segment(design/NB046,98,update)
+    insert delta.mywcom_fiber_segment(design/NB046,99,update)
+
+VALIDATION ERRORS: CABLE INTO TUBE SUCCESS
+
+
+*** CONDUIT OUT OF BUNDLE
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: CONDUIT OUT OF BUNDLE
+    insert delta.blown_fiber_tube(design/NB046,185,update)
+    insert delta.blown_fiber_tube(design/NB046,186,update)
+    insert delta.blown_fiber_tube(design/NB046,187,update)
+    insert delta.blown_fiber_tube(design/NB046,188,update)
+    insert delta.blown_fiber_tube(design/NB046,189,update)
+
+VALIDATION ERRORS: CONDUIT OUT OF BUNDLE
+
+
+*** CONDUIT INTO BUNDLE
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: CONDUIT INTO BUNDLE
+    insert delta.blown_fiber_tube(design/NB046,180,update)
+    insert delta.blown_fiber_tube(design/NB046,181,update)
+    insert delta.blown_fiber_tube(design/NB046,182,update)
+    insert delta.blown_fiber_tube(design/NB046,183,update)
+    insert delta.blown_fiber_tube(design/NB046,184,update)
+
+VALIDATION ERRORS: CONDUIT INTO BUNDLE
+
+
+*** BACKFEED CABLE INTO CONDUIT
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: BACKFEED CABLE INTO CONDUIT
+    insert delta.mywcom_fiber_segment(design/NB046,84,update)
+    insert delta.mywcom_fiber_segment(design/NB046,85,update)
+    insert delta.mywcom_fiber_segment(design/NB046,86,update)
+    insert delta.mywcom_fiber_segment(design/NB046,87,update)
+
+VALIDATION ERRORS: BACKFEED CABLE INTO CONDUIT
+
+
+*** BACKFEED CABLE INTO CONDUIT REVERSED GEOM
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: BACKFEED CABLE INTO CONDUIT REVERSED GEOM
+    insert delta.mywcom_fiber_segment(design/NB046,83,update)
+
+VALIDATION ERRORS: BACKFEED CABLE INTO CONDUIT REVERSED GEOM
+
+
+*** CONTINUOUS CONDUIT INTO CONDUIT
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: CONTINUOUS CONDUIT INTO CONDUIT
+    insert delta.blown_fiber_tube(design/NB046,195,update)
+
+VALIDATION ERRORS: CONTINUOUS CONDUIT INTO CONDUIT
+
+
+*** CABLE OUT OF CONTINUOUS CONDUIT
+Set delta to: design/NB046
+{
+	"ok": true
+}
+DATABASE CHANGES: CABLE OUT OF CONTINUOUS CONDUIT
+    insert delta.mywcom_fiber_segment(design/NB046,432,update)
+    insert delta.mywcom_fiber_segment(design/NB046,433,update)
+    insert delta.mywcom_fiber_segment(design/NB046,434,update)
+    insert delta.mywcom_fiber_segment(design/NB046,435,update)
+    insert delta.mywcom_fiber_segment(design/NB046,436,update)
+    insert delta.mywcom_fiber_segment(design/NB046,437,update)
+
+VALIDATION ERRORS: CABLE OUT OF CONTINUOUS CONDUIT
+

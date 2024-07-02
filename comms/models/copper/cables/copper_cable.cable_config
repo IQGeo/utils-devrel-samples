@@ -1,0 +1,17 @@
+{
+    "image": "modules/comms/images/features/copper/copper_cable.svg",
+    "housings": [
+        "ug_route",
+        "oh_route",
+        "conduit",
+        "building",
+        "mdu"
+    ],
+    "tech" : "copper", 
+    "palette": true,
+    "layer": {
+        "line_style": "#B87333:2:solid:none:none",
+        "text_style": "name:#B87333:12:bottom:centre:::17:"
+    },
+    "tech": "copper"
+}

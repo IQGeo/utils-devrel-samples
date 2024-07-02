@@ -1,0 +1,9 @@
+{
+   "replication.anonymous_downloads": true,
+   "replication.auth_options": {
+      "auth_via_os_username": false,
+      "local_session_timeout": null,
+      "on_application_start": false
+   },
+   "mywapp_enable_tests": "true"
+}

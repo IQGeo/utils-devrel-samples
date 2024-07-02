@@ -1,0 +1,10 @@
+$svg-background: #535353;
+$global-border-color: #cccccc;
+$alert: #b23b39;
+$blue: #004ADA;
+$chosen-path-background: #eeeeeeb5;
+
+@mixin svg-defaults {
+    background-color: $svg-background;
+    height: 20px;
+}

@@ -1,0 +1,3 @@
+id,name,specification,labor_costs,location,myw_orientation_location,type,powered,photo,installation_date,comsof_auto
+cabinet/6000,BT-C-6734,CS-A-100324,,0101000020E61000008CC2D372DA6CC03FC48351B6B61D4A40,42.969067753032846,Micro Cell Site Enclosure,True,,,False
+cabinet/6001,323,,,0101000020E61000007B227DEDF25FC03F14962426B31D4A40,,Cabinet,,,,True

@@ -1,0 +1,61 @@
+TEST: Conduit feature editor with 'contains cable' error
+    label: Spec*
+    label: feature-edit-input
+    input (disabled): JDP-110MM-Green
+    label: Diameter*
+    label: feature-edit-input
+    input (disabled): 110 mm
+    label: Material*
+    label: feature-edit-input
+    input (disabled): PE (Corrugated)
+    label: Owner*
+    label: feature-edit-input
+    input: Acme Co
+    label: Installed*
+    label: feature-edit-input
+    input: 02/09/2010
+    label: ×
+    label: ×
+    label: Conduit contains cable
+    label: ×
+    label: ×
+    button: Cancel
+    button: Delete
+    button: Save
+
+
+TEST: Blown fiber tube feature editor with 'contains cable' error
+    label: Name*
+    label: feature-edit-input
+    input: WH-BF-8 : 2
+    label: Diameter*
+    label: feature-edit-input
+    input: 17 mm
+    label: Measured Length*
+    label: feature-edit-input
+    input: 
+    label: Bundle Size*
+    label: feature-edit-input
+    input: 1
+    label: Labor Costs*
+    label: feature-edit-input
+    input: 
+    label: Imported*
+    label: feature-edit-input
+    input: false
+    label: ×
+    label: ×
+    label: Conduit contains cable
+    label: ×
+    label: ×
+    button: Cancel
+    button: Delete
+    button: Save
+
+
+DATABASE CHANGES: AFTER BLOWN FIBER TUBE DELETE
+   insert data.mywcom_change_detail(5)
+   insert delta.blown_fiber_tube(design/NB046,5,update)
+   insert delta.blown_fiber_tube(design/NB046,6,delete)
+   insert delta.mywcom_conduit_run(design/NB046,42,update)
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+HERE=$(dirname $0)
+
+# Run command
+python $0.py "$@"

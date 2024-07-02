@@ -1,0 +1,22 @@
+{
+    "mywcom.ewl": {
+        "conversions": [
+            {
+                "gauge": 19,
+                "ewl": 0.4
+            },
+            {
+                "gauge": 22,
+                "ewl": 0.6
+            },
+            {
+                "gauge": 24,
+                "ewl": 0.75
+            },
+            {
+                "gauge": 26,
+                "ewl": 1
+            }
+        ]
+    }
+}

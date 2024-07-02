@@ -1,0 +1,129 @@
+TEST: Add Object
+    label: Add Object
+    button: Close
+    list item: Cabinet Area
+    list item: Data Block
+    list item: Design
+    list item: Design (Comsof)
+    list item: Node Boundary
+    list item: Note
+    list item: Pedestal Area
+    list item: Service Area
+    list item: Street
+    button: Close
+
+
+TEST: With Design Open
+  header: Design: NB046
+    label: Network Build (Designing)
+    label: State
+    label: Designing
+    label: Add Object
+    button: Close
+    list item: Building
+    list item: Cabinet
+    list item: Drop Point
+    list item: MDU
+    list item: Manhole
+    list item: Pole
+    list item: Wall Box
+    list item: Route (Overhead)
+    list item: Route (Underground)
+    list item: Blown Fiber Tube
+    list item: Conduit
+    list item: Coaxial Cable
+    list item: Copper Cable
+    list item: Fiber Cable
+    list item: Backbone Circuit
+    list item: Circuit
+    list item: Cabinet Area
+    list item: Data Block
+    list item: Design
+    list item: Design (Comsof)
+    list item: Node Boundary
+    list item: Note
+    list item: Pedestal Area
+    list item: Service Area
+    list item: Street
+    button: Close
+
+
+TEST: With Cabinet Open
+  header: Cabinet: WH-C-11
+    label: Name
+    label: WH-C-11
+    label: Spec
+    label: CS-A-100455
+    label: Type
+    label: Power Supply Enclosure
+    label: Powered
+    label: true
+    label: Installed
+    label: 27/05/2010
+    label: Routes
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Served Customers
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+  header: Cables
+  header: feature-plugins-header-options
+    sub-header: Notes
+    label: Add Object
+    button: Close
+    list item: Building
+    list item: Cabinet
+    list item: Drop Point
+    list item: MDU
+    list item: Manhole
+    list item: Pole
+    list item: Wall Box
+    list item: Route (Overhead)
+    list item: Route (Underground)
+    list item: Blown Fiber Tube
+    list item: Conduit
+    list item: Bridge Tap
+    list item: Build Out
+    list item: Capacitor
+    list item: Coaxial Amplifier
+    list item: Coaxial Tap
+    list item: Coaxial Terminator
+    list item: Copper Splice Closure
+    list item: Copper Terminal
+    list item: Directional Coupler
+    list item: Fiber Splitter
+    list item: Inline Equalizer
+    list item: Internal Directional Coupler
+    list item: Internal Splitter
+    list item: Load Coil
+    list item: Multiplexer
+    list item: Optical Node
+    list item: Pair Gain
+    list item: Power Block
+    list item: Power Inserter
+    list item: Power Supply
+    list item: Rack
+    list item: Repeater
+    list item: Splice Tray
+    list item: Three Way Splitter
+    list item: Two Way Splitter
+    list item: WiFi Unit
+    list item: Coaxial Cable
+    list item: Copper Cable
+    list item: Fiber Cable
+    list item: Backbone Circuit
+    list item: Circuit
+    list item: Cabinet Area
+    list item: Data Block
+    list item: Design
+    list item: Design (Comsof)
+    list item: Node Boundary
+    list item: Note
+    list item: Pedestal Area
+    list item: Service Area
+    list item: Street
+    button: Close
+
+

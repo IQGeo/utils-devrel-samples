@@ -1,0 +1,103 @@
+MERGE REPORT design/CC5462
+   FeatureChange(blown_fiber_bundle(12,design/CC5462),update) fields=path,out_structure,out_conduit
+      merged_fields
+      root_housing moved
+   FeatureChange(blown_fiber_bundle(11,design/CC5462),update) fields=in_conduit
+      merged_fields
+   FeatureChange(blown_fiber_tube(72,design/CC5462),update) fields=path,out_structure,out_conduit
+      merged_fields
+      root_housing moved
+   FeatureChange(blown_fiber_tube(71,design/CC5462),update) fields=in_conduit
+      merged_fields
+   FeatureChange(blown_fiber_tube(57,design/CC5462),update) fields=path,out_structure,out_conduit
+      merged_fields
+      root_housing moved
+   FeatureChange(blown_fiber_tube(56,design/CC5462),update) fields=in_conduit
+      merged_fields
+   FeatureChange(blown_fiber_tube(52,design/CC5462),update) fields=path,out_structure,out_conduit
+      merged_fields
+      root_housing moved
+   FeatureChange(blown_fiber_tube(51,design/CC5462),update) fields=in_conduit
+      merged_fields
+   FeatureChange(blown_fiber_tube(47,design/CC5462),update) fields=path,out_structure,out_conduit
+      merged_fields
+      root_housing moved
+   FeatureChange(blown_fiber_tube(46,design/CC5462),update) fields=in_conduit
+      merged_fields
+   FeatureChange(fiber_cable(11,design/CC5462),update) fields=
+      master_changes_derived_only
+      segment_paths_changed
+   FeatureChange(mywcom_line_of_count(4,design/CC5462),update) fields=
+      master_changes_derived_only
+      containers moved
+   FeatureChange(mywcom_conduit_run(56,design/CC5462),update) fields=
+      master_changes_derived_only
+      conduit_paths_changed
+   FeatureChange(mywcom_conduit_run(54,design/CC5462),update) fields=
+      master_changes_derived_only
+      conduit_paths_changed
+   FeatureChange(mywcom_conduit_run(50,design/CC5462),update) fields=
+      master_changes_derived_only
+      conduit_paths_changed
+   FeatureChange(mywcom_conduit_run(14,design/CC5462),update) fields=
+      master_changes_derived_only
+      conduit_paths_changed
+   FeatureChange(mywcom_conduit_run(8,design/CC5462),update) fields=
+      master_changes_derived_only
+      conduit_paths_changed
+   FeatureChange(mywcom_fiber_segment(99,design/CC5462),update) fields=out_segment
+      merged_fields
+   FeatureChange(mywcom_conduit_run(4401,design/CC5462),update) fields=path
+      conduit_paths_changed
+   FeatureChange(mywcom_conduit_run(13,design/CC5462),update) fields=path
+      conduit_paths_changed
+   FeatureChange(mywcom_conduit_run(12,design/CC5462),update) fields=path
+      conduit_paths_changed
+
+DATABASE CHANGES: AFTER MERGE
+   update base.blown_fiber_bundle(design/CC5462,11) fields=(in_conduit)
+   update base.blown_fiber_bundle(design/CC5462,12) fields=(out_conduit,out_structure,path)
+   update base.blown_fiber_tube(design/CC5462,46) fields=(in_conduit)
+   update base.blown_fiber_tube(design/CC5462,47) fields=(out_conduit,out_structure,path)
+   update base.blown_fiber_tube(design/CC5462,51) fields=(in_conduit)
+   update base.blown_fiber_tube(design/CC5462,52) fields=(out_conduit,out_structure,path)
+   update base.blown_fiber_tube(design/CC5462,56) fields=(in_conduit)
+   update base.blown_fiber_tube(design/CC5462,57) fields=(out_conduit,out_structure,path)
+   update base.blown_fiber_tube(design/CC5462,71) fields=(in_conduit)
+   update base.blown_fiber_tube(design/CC5462,72) fields=(out_conduit,out_structure,path)
+   update base.fiber_cable(design/CC5462,11) fields=(path)
+   update base.mywcom_conduit_run(design/CC5462,8) fields=(path)
+   update base.mywcom_conduit_run(design/CC5462,14) fields=(path)
+   update base.mywcom_conduit_run(design/CC5462,50) fields=(path)
+   update base.mywcom_conduit_run(design/CC5462,54) fields=(path)
+   update base.mywcom_conduit_run(design/CC5462,56) fields=(path)
+   update base.mywcom_fiber_segment(design/CC5462,99) fields=(out_segment)
+   update base.mywcom_line_of_count(design/CC5462,4) fields=(route)
+   update delta.blown_fiber_bundle(design/CC5462,11,update) fields=(in_conduit)
+   update delta.blown_fiber_bundle(design/CC5462,12,update) fields=(out_conduit,out_structure,path)
+   update delta.blown_fiber_tube(design/CC5462,46,update) fields=(in_conduit)
+   update delta.blown_fiber_tube(design/CC5462,47,update) fields=(out_conduit,out_structure,path)
+   update delta.blown_fiber_tube(design/CC5462,51,update) fields=(in_conduit)
+   update delta.blown_fiber_tube(design/CC5462,52,update) fields=(out_conduit,out_structure,path)
+   update delta.blown_fiber_tube(design/CC5462,56,update) fields=(in_conduit)
+   update delta.blown_fiber_tube(design/CC5462,57,update) fields=(out_conduit,out_structure,path)
+   update delta.blown_fiber_tube(design/CC5462,71,update) fields=(in_conduit)
+   update delta.blown_fiber_tube(design/CC5462,72,update) fields=(out_conduit,out_structure,path)
+   update delta.fiber_cable(design/CC5462,11,update) fields=(path)
+   update delta.mywcom_conduit_run(design/CC5462,8,update) fields=(path)
+   update delta.mywcom_conduit_run(design/CC5462,12,update) fields=(path)
+   update delta.mywcom_conduit_run(design/CC5462,13,update) fields=(path)
+   update delta.mywcom_conduit_run(design/CC5462,14,update) fields=(path)
+   update delta.mywcom_conduit_run(design/CC5462,50,update) fields=(path)
+   update delta.mywcom_conduit_run(design/CC5462,54,update) fields=(path)
+   update delta.mywcom_conduit_run(design/CC5462,56,update) fields=(path)
+   update delta.mywcom_conduit_run(design/CC5462,4401,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/CC5462,99,update) fields=(out_segment)
+   update delta.mywcom_line_of_count(design/CC5462,4,update) fields=(route)
+
+CONFLICTS AFTER MERGE
+   integrity_error mywcom_fiber_segment(83,design/CC5462) in_structure duplicate_connection splice_closure(39)
+      ['_conn1=mywcom_fiber_connection/4400', '_conn2=mywcom_fiber_connection/207', 'clash_pins=out:13', 'conn1=WH-FCB-009#out:10:13 -> DROP-5462#in:1:4', 'conn2=WH-FCB-009#out:13 -> DROP-148#in:1', 'housing=Splice Closure: WH-SC-039', 'side=in', 'struct=Cabinet: WH-C-11']
+   integrity_error mywcom_conduit_run(4401,design/CC5462) path geom_mismatch
+      ['ref=conduits']
+

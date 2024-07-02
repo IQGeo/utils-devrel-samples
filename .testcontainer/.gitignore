@@ -1,0 +1,5 @@
+.env
+data/
+output/
+[Ll]og/
+pihole/dnsmasq.d

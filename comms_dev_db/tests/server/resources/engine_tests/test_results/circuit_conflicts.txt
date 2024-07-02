@@ -1,0 +1,204 @@
+CONFLICTS CIRCUIT CONFLICTS
+   conflict fiber_olt(6,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict fiber_patch_panel(4,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict fiber_patch_panel(1,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict fiber_splitter(10,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(589,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(557,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(202,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(201,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(184,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(170,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(169,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(168,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(167,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(166,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(165,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(164,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(163,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(162,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(161,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(160,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(159,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(158,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(157,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(156,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(155,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(154,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(153,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+   conflict mywcom_fiber_segment(73,design/CC4975) update/update
+      master_fields: circuits
+      delta_fields : circuits
+
+MERGE REPORT design/CC4975
+   FeatureChange(fiber_olt(6,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(fiber_patch_panel(4,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(fiber_patch_panel(1,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(fiber_splitter(10,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(589,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(557,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(202,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(201,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(184,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(170,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(169,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(168,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(167,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(166,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(165,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(164,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(163,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(162,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(161,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(160,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(159,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(158,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(157,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(156,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(155,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(154,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(153,design/CC4975),update) fields=circuits
+      merged_fields
+   FeatureChange(mywcom_fiber_segment(73,design/CC4975),update) fields=circuits
+      merged_fields
+
+DATABASE CHANGES: AFTER MERGE
+   update base.fiber_olt(design/CC4975,6) fields=(circuits)
+   update base.fiber_patch_panel(design/CC4975,1) fields=(circuits)
+   update base.fiber_patch_panel(design/CC4975,4) fields=(circuits)
+   update base.fiber_splitter(design/CC4975,10) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,73) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,153) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,154) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,155) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,156) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,157) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,158) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,159) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,160) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,161) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,162) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,163) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,164) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,165) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,166) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,167) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,168) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,169) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,170) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,184) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,201) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,202) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,557) fields=(circuits)
+   update base.mywcom_fiber_segment(design/CC4975,589) fields=(circuits)
+   update delta.fiber_olt(design/CC4975,6,update) fields=(circuits)
+   update delta.fiber_patch_panel(design/CC4975,1,update) fields=(circuits)
+   update delta.fiber_patch_panel(design/CC4975,4,update) fields=(circuits)
+   update delta.fiber_splitter(design/CC4975,10,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,73,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,153,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,154,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,155,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,156,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,157,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,158,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,159,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,160,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,161,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,162,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,163,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,164,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,165,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,166,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,167,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,168,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,169,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,170,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,184,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,201,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,202,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,557,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/CC4975,589,update) fields=(circuits)
+
+CONFLICTS AFTER MERGE
+

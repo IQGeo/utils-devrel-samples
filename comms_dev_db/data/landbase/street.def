@@ -1,0 +1,51 @@
+{
+   "datasource": "myworld",
+   "name": "street",
+   "external_name": "Street",
+   "title": "{display_name}: [name]",
+   "short_description": "[type]",
+   "track_changes": true,
+   "versioned": false,
+   "geom_indexed": true,
+   "editable": true,
+   "fields": [
+      {
+         "name": "id",
+         "external_name": "Id",
+         "type": "integer",
+         "key": true,
+         "generator": "sequence"
+      },
+      {
+         "name": "name",
+         "external_name": "Name",
+         "type": "string(48)"
+      },
+      {
+         "name": "type",
+         "external_name": "Type",
+         "type": "string(30)",
+         "enum": "street_type"
+      },
+      {
+         "name": "width",
+         "external_name": "Width",
+         "type": "integer"
+      },
+      {
+         "name": "geometry",
+         "external_name": "Path",
+         "type": "linestring"
+      }
+   ],
+   "groups": [],
+   "searches": [],
+   "queries": [
+      {
+         "value": "street",
+         "description": "Street",
+         "lang": "en"
+      }
+   ],
+   "filters": []
+}

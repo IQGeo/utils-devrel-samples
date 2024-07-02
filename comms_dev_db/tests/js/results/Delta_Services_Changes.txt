@@ -1,0 +1,162 @@
+
+*** ALL CHANGES
+Set delta to: design/NU23
+delete bb_circuit/1
+update bb_circuit/2
+insert bb_circuit/5000
+update fiber_shelf/14
+update fiber_shelf/15
+insert fiber_shelf/5000
+insert fiber_shelf/5001
+delete mywcom_fiber_connection/323
+delete mywcom_fiber_connection/325
+insert mywcom_fiber_connection/5000
+insert mywcom_fiber_connection/5001
+insert mywcom_fiber_connection/5002
+insert mywcom_fiber_connection/5003
+insert mywcom_fiber_connection/5006
+insert mywcom_fiber_connection/5007
+insert mywcom_fiber_connection/5008
+insert mywcom_fiber_connection/5010
+insert mywcom_fiber_connection/5012
+insert mywcom_fiber_connection/5013
+update mywcom_fiber_segment/338
+update mywcom_fiber_segment/339
+update mywcom_fiber_segment/340
+update mywcom_fiber_segment/341
+update mywcom_fiber_segment/342
+update mywcom_fiber_segment/343
+update mywcom_fiber_segment/344
+update mywcom_fiber_segment/345
+update mywcom_fiber_segment/346
+update mywcom_fiber_segment/347
+update mywcom_fiber_segment/348
+update mywcom_fiber_segment/349
+update mywcom_fiber_segment/350
+update mywcom_fiber_segment/351
+update mywcom_fiber_segment/352
+update mywcom_fiber_segment/353
+update mywcom_fiber_segment/354
+update mywcom_fiber_segment/355
+update mywcom_fiber_segment/356
+update mywcom_fiber_segment/357
+update mywcom_fiber_segment/358
+update mywcom_fiber_segment/359
+update mywcom_fiber_segment/360
+update mywcom_fiber_segment/361
+update mywcom_fiber_segment/362
+update mywcom_fiber_segment/363
+update mywcom_fiber_segment/364
+update mywcom_fiber_segment/365
+update mywcom_fiber_segment/366
+update mywcom_fiber_segment/367
+update mywcom_fiber_segment/368
+update mywcom_fiber_segment/369
+update mywcom_fiber_segment/370
+update mywcom_fiber_segment/382
+update mywcom_fiber_segment/383
+update mywcom_fiber_segment/384
+update mywcom_fiber_segment/385
+update mywcom_fiber_segment/386
+update mywcom_fiber_segment/387
+update mywcom_fiber_segment/388
+update mywcom_fiber_segment/587
+update mywcom_fiber_segment/595
+update mywcom_fiber_segment/598
+
+*** INSERTS AND UPDATES
+Set delta to: design/NU23
+update bb_circuit/2
+insert bb_circuit/5000
+update fiber_shelf/14
+update fiber_shelf/15
+insert fiber_shelf/5000
+insert fiber_shelf/5001
+insert mywcom_fiber_connection/5000
+insert mywcom_fiber_connection/5001
+insert mywcom_fiber_connection/5002
+insert mywcom_fiber_connection/5003
+insert mywcom_fiber_connection/5006
+insert mywcom_fiber_connection/5007
+insert mywcom_fiber_connection/5008
+insert mywcom_fiber_connection/5010
+insert mywcom_fiber_connection/5012
+insert mywcom_fiber_connection/5013
+update mywcom_fiber_segment/338
+update mywcom_fiber_segment/339
+update mywcom_fiber_segment/340
+update mywcom_fiber_segment/341
+update mywcom_fiber_segment/342
+update mywcom_fiber_segment/343
+update mywcom_fiber_segment/344
+update mywcom_fiber_segment/345
+update mywcom_fiber_segment/346
+update mywcom_fiber_segment/347
+update mywcom_fiber_segment/348
+update mywcom_fiber_segment/349
+update mywcom_fiber_segment/350
+update mywcom_fiber_segment/351
+update mywcom_fiber_segment/352
+update mywcom_fiber_segment/353
+update mywcom_fiber_segment/354
+update mywcom_fiber_segment/355
+update mywcom_fiber_segment/356
+update mywcom_fiber_segment/357
+update mywcom_fiber_segment/358
+update mywcom_fiber_segment/359
+update mywcom_fiber_segment/360
+update mywcom_fiber_segment/361
+update mywcom_fiber_segment/362
+update mywcom_fiber_segment/363
+update mywcom_fiber_segment/364
+update mywcom_fiber_segment/365
+update mywcom_fiber_segment/366
+update mywcom_fiber_segment/367
+update mywcom_fiber_segment/368
+update mywcom_fiber_segment/369
+update mywcom_fiber_segment/370
+update mywcom_fiber_segment/382
+update mywcom_fiber_segment/383
+update mywcom_fiber_segment/384
+update mywcom_fiber_segment/385
+update mywcom_fiber_segment/386
+update mywcom_fiber_segment/387
+update mywcom_fiber_segment/388
+update mywcom_fiber_segment/587
+update mywcom_fiber_segment/595
+update mywcom_fiber_segment/598
+
+*** IN BOUNDS
+Set delta to: design/NU23
+delete bb_circuit/1
+update bb_circuit/2
+insert bb_circuit/5000
+update fiber_shelf/14
+update mywcom_fiber_segment/382
+update mywcom_fiber_segment/383
+update mywcom_fiber_segment/384
+update mywcom_fiber_segment/385
+update mywcom_fiber_segment/386
+update mywcom_fiber_segment/387
+update mywcom_fiber_segment/388
+update mywcom_fiber_segment/595
+update mywcom_fiber_segment/598
+
+*** INSERTS IN BOUNDS
+Set delta to: design/NU23
+insert bb_circuit/5000
+
+*** INSERTS AND UPDATES FOR FEATURE_TYPES
+Set delta to: design/NU23
+insert fiber_shelf/5000
+insert fiber_shelf/5001
+insert mywcom_fiber_connection/5000
+insert mywcom_fiber_connection/5001
+insert mywcom_fiber_connection/5002
+insert mywcom_fiber_connection/5003
+insert mywcom_fiber_connection/5006
+insert mywcom_fiber_connection/5007
+insert mywcom_fiber_connection/5008
+insert mywcom_fiber_connection/5010
+insert mywcom_fiber_connection/5012
+insert mywcom_fiber_connection/5013

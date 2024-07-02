@@ -1,0 +1,11 @@
+ {
+    "image": "modules/comms/images/features/conduit.svg",
+    "structure_palette_image": "modules/comms/images/features/conduit_in_structure_palette.svg",
+    "housings": ["ug_route", "conduit"],
+    "palette": true,
+    "continuous": false,
+    "bundle_type": null,
+    "layer": {
+        "line_style": "#ff9900:4:solid:none:none"
+    }
+}

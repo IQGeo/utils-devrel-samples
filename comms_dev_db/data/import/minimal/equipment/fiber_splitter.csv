@@ -1,0 +1,5 @@
+id,name,n_fiber_in_ports,n_fiber_out_ports,root_housing,housing,specification,location,device_id,installation_date,job_id
+fiber_splitter/8000,XX-SPL-6000,1,4,cabinet/8000,cabinet/8000,fiber_splitter_spec/CS-EG4886-000,0101000020E61000006735A3858FEDC03F6C323257541C4A40,252366,2021-06-09,
+fiber_splitter/8001,XX-SPL-6001,1,4,cabinet/8000,cabinet/8000,fiber_splitter_spec/CS-EG4886-000,0101000020E61000006735A3858FEDC03F6C323257541C4A40,252366,2021-06-09,
+fiber_splitter/8002,XX-SPL-6002,1,4,cabinet/8000,cabinet/8000,fiber_splitter_spec/CS-EG4886-000,0101000020E61000006735A3858FEDC03F6C323257541C4A40,252366,2021-06-09,
+fiber_splitter/8003,XX-SPL-6003,1,4,cabinet/8000,cabinet/8000,fiber_splitter_spec/CS-EG4886-000,0101000020E61000006735A3858FEDC03F6C323257541C4A40,252366,2021-06-09,

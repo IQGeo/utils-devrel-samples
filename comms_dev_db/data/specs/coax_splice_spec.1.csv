@@ -1,0 +1,6 @@
+retired,manufacturer_id,name,max_ac_current_bypass,type,model,dc_value,internal?,ports
+false,Unknown,DC-12,15.000,DC,3612,12.000,False,3
+false,Unknown,DC-16,15.000,DC,3616,16.000,False,3
+false,Unknown,DC-8,15.000,DC,3608,8.000,False,3
+false,Unknown,Three Way,15.000,3 Way,3503,8.000,False,3
+false,Unknown,Two Way,15.000,2 Way,3502,4.500,False,3

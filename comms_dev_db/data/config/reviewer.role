@@ -1,0 +1,15 @@
+{
+    "name": "Reviewer",
+    "description": "Example Network Manager reviewer role",
+    "permissions": {
+        "mywcom": [
+            "addPrivateLayers",
+            "createSharedBookmark",
+            "editFeatures",
+            "modifyLayerList",
+            "persistState",
+            "mywcom.bulkMoveFeatures",
+            "mywcom.viewAllDeltas"
+        ]
+    }
+}

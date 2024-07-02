@@ -1,0 +1,50 @@
+FROM iqgeoproddev.azurecr.io/platform-dev_tools:7.1
+
+ENV MYW_HOME=${MYWORLD_HOME}
+ENV IQG_MODULES_DIR="${WEBAPPS}/myworldapp/modules"
+ENV IQG_COMMS_DIR="${IQG_MODULES_DIR}/comms"
+ENV IQG_COMMS_DEV_DB_DIR="${IQG_MODULES_DIR}/comms_dev_db"
+ENV IQG_COMSOF_DIR="${IQG_MODULES_DIR}/comsof"
+ENV PATH="${WEBAPPS}/myworldapp/node_modules/.bin:${PATH}"
+ENV PATH="${IQG_COMMS_DIR}/tools:${PATH}"
+ENV PATH="${IQG_COMSOF_DIR}/tools:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/utils:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/utils/comsof:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/utils/scale_db:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/client:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/server:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/js:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/tools:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/scalability:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/comsof/engine:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/comsof/server:${PATH}"
+ENV PATH="${IQG_COMMS_DEV_DB_DIR}/tests/comsof/client:${PATH}"
+ENV PATH="$IQG_COMMS_DEV_DB_DIR{}/tools:${PATH}"
+ENV MYW_COMMS_BASE_URL="http://localhost"
+ENV MYW_ELECTRON_DATA_ROOT=/opt/iqgeo/data/AppDataRoot
+# To build extracts
+ENV MYW_COMMS_NATIVE_ROOT=${MYW_ELECTRON_DATA_ROOT}
+
+# For native js tests
+USER root
+
+RUN apt-get update \
+    && apt-get install retry -y
+
+RUN pip install slackclient
+
+RUN mkdir -p /opt/iqgeo/data/AppDataRoot/temp/
+RUN chown iqgeo:www-data /opt/iqgeo/data/AppDataRoot/temp
+
+RUN mkdir -p /opt/iqgeo/build/logs
+RUN chown iqgeo:www-data /opt/iqgeo/build
+RUN chown iqgeo:www-data /opt/iqgeo/build/logs
+# add additional entrypoint scripts
+COPY --chown=iqgeo:iqgeo entrypoint.d/* /entrypoint.d/
+USER iqgeo
+
+# For Comsof workspaces
+USER root
+RUN mkdir -p /opt/iqgeo/data/workspaces
+RUN chown iqgeo:www-data /opt/iqgeo/data/workspaces
+USER iqgeo

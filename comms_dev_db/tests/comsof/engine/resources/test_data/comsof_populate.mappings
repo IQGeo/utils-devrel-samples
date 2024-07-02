@@ -1,0 +1,32 @@
+[
+    {
+       "feature_type": "IN_CentralOffice",
+       "src_feature_type": "building",
+       "field_mappings": {
+          "geometries": "[location]"
+       }
+    },
+    {
+       "feature_type": "IN_AccessStructures",
+       "src_feature_type": "manhole",
+       "field_mappings": {
+          "TYPE":       "manhole",   
+          "geometries": "[location]"
+       }
+    },
+    {
+       "feature_type": "IN_AccessStructures",
+       "src_feature_type": "cabinet",
+       "field_mappings": {
+          "TYPE":       "cabinet",   
+          "geometries": "[location]"
+       }
+    },
+    {
+       "feature_type": "IN_PossibleTrenches",
+       "src_feature_type": "ug_route",
+       "field_mappings": {
+          "geometries": "[path]"
+       }
+    }
+]

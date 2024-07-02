@@ -1,0 +1,66 @@
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/cable/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/backboneCircuit/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/fiberToTheHomeCircuit/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/multiplexer/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/opticalLineTerminal/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/opticalNetworkTerminal/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/patchPanel/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/shelf/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/spliceTray/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/splitter/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/undergroundRoute/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/overheadRoute/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/conduit/1
+Response: 201 (201 Created)
+
+
+Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/manhole/1
+Response: 201 (201 Created)
+
+
+
+SUB TEST : Errors
+    Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/ABCD/1
+    Response: 404 (404 Not Found)
+    
+    
+    Request: PUT: /modules/comms/api/v1/resourceInventoryManagement/resource/cable/1
+    Response: 400 (400 Bad Request)
+    
+    

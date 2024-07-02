@@ -1,0 +1,99 @@
+{
+   "comsof.populate_config.osm": {
+      "name": "OSM Buildings",
+      "description": "Populate Comsof input tables from Open Street Map buldings",
+      "process_ops": [
+          "/createDemandPoints",
+          "/streetDoubler",
+          "/createBuildingTrenches",
+          "/moveDemandPoints",
+          "/createTransitions",
+          "/createCrossings"
+      ],
+      "calculate_ops": [
+          "/calculate"
+      ],
+      "mappings": [
+
+         {
+            "feature_type": "IN_Buildings",
+            "src_feature_type": "osm_building",
+            "field_mappings": {
+               "include": "1",
+               "pon_homes": "1",
+               "geometry": "[outline]"
+            }
+         },
+         {
+            "feature_type": "IN_StreetCenterLines",
+            "src_feature_type": "street",
+            "filter": "not [type] in ('cycleway','footway')",
+            "field_mappings": {
+               "gistool_id": "street/[id]",
+               "include": "T",
+               "streetname": "[name]",
+               "geometry": "[geometry]"
+            }
+         },
+ 
+         {
+            "feature_type": "IN_CentralOffice",
+            "src_feature_type": "building",
+            "filter": "[comsof_auto] <> true",
+            "field_mappings": {
+               "gistool_id": "building/[id]",
+               "include": "1",
+               "geometry": "[location]"
+            }
+         },
+         {
+            "feature_type": "IN_AccessStructures",
+            "src_feature_type": "cabinet",
+            "filter": "[comsof_auto] <> true",
+            "field_mappings": {
+               "gistool_id": "cabinet/[id]",
+               "type": "Cabinet",
+               "geometry": "[location]"
+            }
+         },
+         {
+            "feature_type": "IN_AccessStructures",
+            "src_feature_type": "manhole",
+            "filter": "[comsof_auto] <> true",
+            "field_mappings": {
+               "gistool_id": "manhole/[id]",
+               "type": "Manhole",
+               "geometry": "[location]"
+            }
+         },
+         {
+            "feature_type": "IN_Poles",
+            "src_feature_type": "pole",
+            "filter": "[comsof_auto] <> true",
+            "field_mappings": {
+               "gistool_id": "pole/[id]",
+               "existing": "T",
+               "geometry": "[location]"
+            }
+         },
+         {
+            "feature_type": "IN_ExistingPipes",
+            "src_feature_type": "conduit",
+            "filter": "[comsof_auto] <> true",
+            "field_mappings": {
+               "gistool_id": "conduit/[id]",
+               "geometry": "[path]"
+            }
+         },
+         {
+            "feature_type": "IN_ExistingCables",
+            "src_feature_type": "fiber_cable",
+            "filter": "[comsof_auto] <> true",
+            "field_mappings": {
+               "gistool_id": "fiber_cable/[id]",
+               "geometry": "[path]"
+            }
+         }
+      ]
+   }
+}

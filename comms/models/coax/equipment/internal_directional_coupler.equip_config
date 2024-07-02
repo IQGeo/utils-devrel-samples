@@ -1,0 +1,23 @@
+{
+    "image": "modules/comms/images/features/coax_directional_coupler.svg",
+    "housings": [
+        "rack",
+        "slot",
+        "manhole",
+        "cabinet",
+        "splice_closure"
+    ],
+    "function": "splitter",
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/coax_directional_coupler.svg:12:0"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/coax_directional_coupler.svg:12:12:1.5m",
+        "geometry": "offset_geom"
+    },
+    "offset": true
+}

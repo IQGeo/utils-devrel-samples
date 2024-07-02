@@ -1,0 +1,71 @@
+COMMAND: comsof_ws comsof_dev <temp_dir>/ws_tool_initialise_from initialise --from <temp_dir>/test_ws_tool_initialise_from_src --area service_area/SP --overwrite
+Opening database <conn_spec> ...
+Extracting objects overlapping service_area(SP)
+Creating control file
+Extracting data
+Running /cutWorkspace --polygons <temp_dir>/test_ws_tool_initialise_from_src/extract_region.shp
+Populating <temp_dir>/ws_tool_initialise_from
+Copying <temp_dir>/test_ws_tool_initialise_from_src/output/OUT_DuctPiecesToUsedSegments.csv <temp_dir>/ws_tool_initialise_from/output/OUT_DuctPiecesToUsedSegments.csv
+
+Opening database <conn_spec> ...
+feature                        n_recs
+-----------------------------  ------
+IN_CentralOffice                    1
+IN_Crossings                       57
+IN_DropTrenches                    62
+IN_ForcedDistributionClusters       1
+IN_ForcedDistributionPoints         1
+IN_ForcedDistributionRoutes        49
+IN_ForcedDropClusters               4
+IN_ForcedDropPoints                 4
+IN_ForcedDropRoutes               209
+IN_ForcedFeederCableClusters        1
+IN_ForcedFeederClusters             1
+IN_ForcedFeederPoints               1
+IN_ForcedFeederRoutes               7
+IN_PossibleTrenches                78
+IN_StreetCenterLines               24
+OUT_AccessStructures              156
+OUT_Closures                       67
+OUT_DemandPoints                   61
+OUT_DistributionCableEntries       61
+OUT_DistributionCablePieces         4
+OUT_DistributionCables              4
+OUT_DistributionCablesDetail        7
+OUT_DistributionClusters            1
+OUT_DistributionDuct                3
+OUT_DistributionDuctPieces          5
+OUT_DistributionPoints              1
+OUT_DistributionRoutes             49
+OUT_DropCableEntries               61
+OUT_DropCablePieces                61
+OUT_DropCables                     61
+OUT_DropCablesDetail              115
+OUT_DropClusters                    4
+OUT_DropDuct                       61
+OUT_DropDuctPieces                 88
+OUT_DropPoints                      4
+OUT_DropRoutes                    209
+OUT_Edges                         437
+OUT_FeederCableClusters             1
+OUT_FeederCableEntries              2
+OUT_FeederCablePieces               1
+OUT_FeederCables                    1
+OUT_FeederCablesDetail              1
+OUT_FeederClusters                  1
+OUT_FeederDuct                      1
+OUT_FeederDuctPieces                1
+OUT_FeederPoints                    1
+OUT_FeederRoutes                    7
+OUT_Fibers                        190
+OUT_MicroDuctConnectors            28
+OUT_Nodes                         379
+OUT_Splices                       187
+OUT_Splitters                       2
+OUT_UsedSegments                  214
+processed_CentralOffice             1
+processed_DemandPoints             61
+processed_Edges                   437
+processed_Nodes                   379
+
+

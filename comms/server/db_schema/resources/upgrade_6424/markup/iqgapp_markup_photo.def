@@ -1,0 +1,66 @@
+{
+   "datasource": "myworld",
+   "name": "iqgapp_markup_photo",
+   "external_name": "{:markup_photo_external_name}",
+   "title": "{display_name}: [id]",
+   "short_description": null,
+   "track_changes": true,
+   "versioned": false,
+   "geom_indexed": true,
+   "editable": {
+      "insert_from_gui": false,
+      "update_from_gui": true,
+      "delete_from_gui": true
+   },
+   "editor_options": null,
+   "fields": [
+      {
+         "name": "id",
+         "external_name": "{:id_field_name}",
+         "type": "integer",
+         "key": true,
+         "generator": "sequence",
+         "visible": "false"
+      },
+      {
+         "name": "location",
+         "external_name": "{:location_field_name}",
+         "type": "point"
+      },
+      {
+         "name": "referenced_feature",
+         "external_name": "{:markup_photo_referenced_feature_field_name}",
+         "type": "reference",
+         "editor_class": "myw.SelectionReferenceFieldEditor"
+      },
+      {
+         "name": "owner",
+         "external_name": "{:markup_photo_owner_field_name}",
+         "type": "reference",
+         "visible": "false"
+      },
+      {
+         "name": "photos",
+         "external_name": "{:markup_photo_photos_field_name}",
+         "type": "reference_set",
+         "value": "select(iqgapp_markup_photo_item.owner)",
+         "viewer_class": "myw.AttachmentsListViewer",
+         "editor_class": "myw.AttachmentsFieldEditor"
+      }
+   ],
+   "groups": [],
+   "searches": [],
+   "queries": [
+      {
+         "value": "markup photo",
+         "description": "{:markup_photo_external_name}",
+         "lang": "en"
+      }
+   ],
+   "filters": [
+      {
+         "name": "OwnerIsActive",
+         "value": "{activeDelta} =  [owner]"
+      }
+   ]
+}

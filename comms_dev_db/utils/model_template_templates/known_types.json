@@ -1,0 +1,357 @@
+{
+    "Cable Size": {
+        "type": "double",
+        "internal_name": "cable_size",
+        "external_name": "Cable Size"
+    },
+    "Manufacturer": {
+        "type": "string(64)",
+        "internal_name": "manufacturer",
+        "external_name": "Manufacturer"
+    },
+    "Measured Length": {
+        "type": "double",
+        "internal_name": "measured_length",
+        "external_name": "Measured Length"
+    },
+    "Model": {
+        "type": "string(64)",
+        "internal_name": "model",
+        "external_name": "Model"
+    },
+    "Construction Status": {
+        "type": "string(64)",
+        "internal_name": "status",
+        "external_name": "Construction Status"
+    },
+    "Part Number": {
+        "type": "string(64)",
+        "internal_name": "part_number",
+        "external_name": "Part Number"
+    },
+    "Design Frequency": {
+        "type": "double",
+        "internal_name": "frequency",
+        "external_name": "Design Frequency"
+    },
+    "Cost": {
+        "type": "double",
+        "internal_name": "cost",
+        "external_name": "Cost"
+    },
+    "Currency": {
+        "type": "string(3)",
+        "internal_name": "cost_currency",
+        "external_name": "Currency"
+    },
+    "Ports": {
+        "type": "integer",
+        "internal_name": "ports",
+        "external_name": "Ports"
+    },
+    "Faceplate Value": {
+        "type": "integer",
+        "internal_name": "faceplate_value",
+        "external_name": "Faceplate Value"
+    },
+    "Frequency01": {
+        "type": "double",
+        "internal_name": "frequency_1",
+        "external_name": "Frequency 1"
+    },
+    "Frequency02": {
+        "type": "double",
+        "internal_name": "frequency_2",
+        "external_name": "Frequency 2"
+    },
+    "Frequency03": {
+        "type": "double",
+        "internal_name": "frequency_3",
+        "external_name": "Frequency 3"
+    },
+    "Frequency04": {
+        "type": "double",
+        "internal_name": "frequency_4",
+        "external_name": "Frequency 4"
+    },
+    "Power passing?": {
+        "type": "boolean",
+        "internal_name": "power_pass",
+        "external_name": "Power passing"
+    },
+    "Power Port?": {
+        "type": "boolean",
+        "internal_name": "power_port",
+        "external_name": "Power Port"
+    },
+    "Name": {
+        "type": "string(64)",
+        "internal_name": "name",
+        "external_name": "Name"
+    },
+    "Type": {
+        "type": "string(64)",
+        "internal_name": "type",
+        "external_name": "Type"
+    },
+    "Outputs": {
+        "type": "integer",
+        "internal_name": "outputs",
+        "external_name": "Outputs"
+    },
+    "Input Frequency01": {
+        "type": "double",
+        "internal_name": "input_frequency_1",
+        "external_name": "Input Frequency 1"
+    },
+    "Input Frequency02": {
+        "type": "double",
+        "internal_name": "input_frequency_2",
+        "external_name": "Input Frequency 2"
+    },
+    "Input Frequency03": {
+        "type": "double",
+        "internal_name": "input_frequency_3",
+        "external_name": "Input Frequency 3"
+    },
+    "Input Frequency04": {
+        "type": "double",
+        "internal_name": "input_frequency_4",
+        "external_name": "Input Frequency 4"
+    },
+    "Forward Pad": {
+        "type": "string(64)",
+        "internal_name": "forward_pad",
+        "external_name": "Forward Pad"
+    },
+    "Forward Equalizer": {
+        "type": "string(64)",
+        "internal_name": "forward_equalizer",
+        "external_name": "Forward Equalizer"
+    },
+    "Reverse Pad": {
+        "type": "string(64)",
+        "internal_name": "reverse_pad",
+        "external_name": "Reverse Pad"
+    },
+    "Reverse Equalizer": {
+        "type": "string(64)",
+        "internal_name": "reverse_equalizer",
+        "external_name": "Reverse Equalizer"
+    },
+    "Related Power Supply": {
+        "type": "string(64)",
+        "internal_name": "related_power_supply",
+        "external_name": "Related Power Supply"
+    },
+    "Voltage": {
+        "type": "double",
+        "internal_name": "voltage",
+        "external_name": "Voltage"
+    },
+    "Current Draw": {
+        "type": "double",
+        "internal_name": "current_draw",
+        "external_name": "Current Draw"
+    },
+    "Install Technician": {
+        "type": "string(64)",
+        "internal_name": "install_technician",
+        "external_name": "Install Technician"
+    },
+    "Install Date": {
+        "type": "date",
+        "internal_name": "install_date",
+        "external_name": "Install Date"
+    },
+    "Number In Cascade": {
+        "type": "integer",
+        "internal_name": "num_in_cascade",
+        "external_name": "Number In Cascade"
+    },
+    "Distance to Last Active": {
+        "type": "double",
+        "internal_name": "distance_to_last_active",
+        "external_name": "Distance to Last Active"
+    },
+    "Output Frequency01": {
+        "type": "double",
+        "internal_name": "output_frequency_1",
+        "external_name": "Output Frequency 1"
+    },
+    "Output Frequency02": {
+        "type": "double",
+        "internal_name": "output_frequency_2",
+        "external_name": "Output Frequency 2"
+    },
+    "Output Frequency03": {
+        "type": "double",
+        "internal_name": "output_frequency_3",
+        "external_name": "Output Frequency 3"
+    },
+    "Output Frequency04": {
+        "type": "double",
+        "internal_name": "output_frequency_4",
+        "external_name": "Output Frequency 4"
+    },
+    "Related Optical Node": {
+        "type": "string(64)",
+        "internal_name": "related_optical_node",
+        "external_name": "Related Optical Node"
+    },
+    "Number of Coaxial Outputs": {
+        "type": "integer",
+        "internal_name": "num_coax_out",
+        "external_name": "Number of Coaxial Outputs"
+    },
+    "Distance from OLT": {
+        "type": "double",
+        "internal_name": "distance_from_olt",
+        "external_name": "Distance from OLT"
+    },
+    "Coaxial Ports": {
+        "type": "integer",
+        "internal_name": "coaxial_ports",
+        "external_name": "Coaxial Ports"
+    },
+    "Unbalanced?": {
+        "type": "boolean",
+        "internal_name": "unbalanced",
+        "external_name": "Unbalanced"
+    },
+    "Coupler Value": {
+        "type": "string(64)",
+        "internal_name": "coupler_valve",
+        "external_name": "Coupler Value"
+    },
+    "Leader Type": {
+        "type": "string(64)",
+        "internal_name": "leader_type",
+        "external_name": "Leader Type"
+    },
+    "Equalizer Value": {
+        "type": "string(64)",
+        "internal_name": "equalizer_valve",
+        "external_name": "Equalizer Value"
+    },
+    "Related Optical Node Name": {
+        "type": "string(64)",
+        "internal_name": "related_optical_node_name",
+        "external_name": "Related Optical Node Name"
+    },
+    "Services Available": {
+        "type": "boolean",
+        "internal_name": "services_available",
+        "external_name": "Services Available"
+    },
+    "Residential Count": {
+        "type": "integer",
+        "internal_name": "residential_count",
+        "external_name": "Residential Count"
+    },
+    "Commercial Count": {
+        "type": "integer",
+        "internal_name": "commercial_count",
+        "external_name": "Commercial Count"
+    },
+    "MDU Count": {
+        "type": "integer",
+        "internal_name": "mdu_count",
+        "external_name": "MDU Count"
+    },
+    "Potential Residential Count": {
+        "type": "integer",
+        "internal_name": "potential_residential_count",
+        "external_name": "Potential Residential Count"
+    },
+    "Potential Commercial Count": {
+        "type": "integer",
+        "internal_name": "potential_commercial_count",
+        "external_name": "Potential Commercial Count"
+    },
+    "Potential MDU Count": {
+        "type": "integer",
+        "internal_name": "potential_mdu_count",
+        "external_name": "Potential MDU Count"
+    },
+    "Related Power Supply Name": {
+        "type": "string(64)",
+        "internal_name": "related_power_supply_name",
+        "external_name": "Related Power Supply Name"
+    },
+    "Coaxial Input Ports": {
+        "type": "integer",
+        "internal_name": "coaxial_input_ports",
+        "external_name": "Coaxial Input Ports"
+    },
+    "Fiber Input Ports": {
+        "type": "integer",
+        "internal_name": "fiber_input_ports",
+        "external_name": "Fiber Input Ports"
+    },
+    "Plant or External Power?": {
+        "type": "string(64)",
+        "internal_name": "plant_or_external",
+        "external_name": "Plant or External Power"
+    },
+    "Fiber Fed?": {
+        "type": "boolean",
+        "internal_name": "fiber_fed",
+        "external_name": "Fiber Fed"
+    },
+    "Coax Fed?": {
+        "type": "boolean",
+        "internal_name": "coax_fed",
+        "external_name": "Coax Fed"
+    },
+    "Related Node": {
+        "type": "string(64)",
+        "internal_name": "related_node",
+        "external_name": "Related Node"
+    },
+    "Physical Address": {
+        "type": "string(8)",
+        "internal_name": "physical_address",
+        "external_name": "Physical Address"
+    },
+    "Lat / Lon": {
+        "type": "string(8)",
+        "internal_name": "lat_lon",
+        "external_name": "Lat / Lon"
+    },
+    "MAC Address": {
+        "type": "string(8)",
+        "internal_name": "mac_address",
+        "external_name": "MAC Address"
+    },
+    "Mount Type": {
+        "type": "string(64)",
+        "internal_name": "mount_type",
+        "external_name": "Mount Type"
+    },
+    "Indoor?": {
+        "type": "boolean",
+        "internal_name": "indoor",
+        "external_name": "Indoor"
+    },
+    "Outdoor?": {
+        "type": "boolean",
+        "internal_name": "outdoor",
+        "external_name": "Outdoor"
+    },
+    "Labor Cost": {
+        "type": "string()",
+        "internal_name": "labor_costs",
+        "external_name": "Labor Costs"
+    },
+    "Circuit": {
+        "type": "string(64)",
+        "internal_name": "circuit",
+        "external_name": "Circuit"
+    },
+    "Number of Antenna": {
+        "type": "integer",
+        "internal_name": "number_of_antenna",
+        "external_name": "Number of Antenna"
+    }
+}

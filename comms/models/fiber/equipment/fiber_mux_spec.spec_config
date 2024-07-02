@@ -1,0 +1,5 @@
+{
+    "layer": "mywcom_equipment",
+    "ref_feature": "fiber_mux",
+    "field_name": "specification"
+}

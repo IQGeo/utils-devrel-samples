@@ -1,0 +1,191 @@
+Coaxial Cable -- New,cable
+Cable Size,Manufacturer
+Measured Length,Model
+Construction Status,Part Number
+Design Frequency,Design Frequency
+Specification,Cost
+,Currency
+Coaxial Splice -- New,equipment
+Cable Size,Manufacturer
+Construction Status,Model
+Design Frequency,Part Number
+Specification,Design Frequency
+,Cost
+,Currency
+Coaxial Tap -- New,equipment
+Ports,Manufacturer
+Faceplate Value,Model
+Frequency01,Part Number
+Frequency02,Design Frequency
+Frequency03,Cost
+Frequency04,Currency
+Power passing?,
+Construction Status,
+Design Frequency,
+Power Port?,
+Specification,
+Coaxial Amplifier -- New,equipment
+Name,Manufacturer
+Construction Status,Model
+Design Frequency,Part Number
+Type,Design Frequency
+Outputs,Cost
+Input Frequency01,Currency
+Input Frequency02,
+Input Frequency03,
+Input Frequency04,
+Forward Pad,
+Forward Equalizer,
+Reverse Pad,
+Reverse Equalizer,
+Related Power Supply,
+Voltage,
+Current Draw,
+Install Technician,
+Install Date,
+Number In Cascade,
+Distance to Last Active,
+Output Frequency01,
+Output Frequency02,
+Output Frequency03,
+Output Frequency04,
+Related Optical Node,
+Specification,
+Optical Node -- New,equipment
+Name,Manufacturer
+Number of Coaxial Outputs,Model
+Design Frequency,Part Number
+Output Frequency01,Design Frequency
+Output Frequency02,Cost
+Output Frequency03,Currency
+Output Frequency04,
+Related Power Supply,
+Voltage,
+Current Draw,
+Construction Status,
+Install Technician,
+Install Date,
+Type,
+Distance from OLT,
+Specification,
+Optical Node Closure -- New,structure
+Name,Manufacturer
+Coaxial Ports,Model
+Design Frequency,Part Number
+Related Power Supply,Design Frequency
+Construction Status,Cost
+Install Technician,Currency
+Install Date,
+Type,
+Specification,
+2 Way Splitter -- New,equipment
+Construction Status,Manufacturer
+Design Frequency,Model
+Specification,Part Number
+,Design Frequency
+,Cost
+,Currency
+3 Way Splitter -- New,equipment
+Construction Status,Manufacturer
+Design Frequency,Model
+Unbalanced?,Part Number
+Specification,Design Frequency
+,Cost
+,Currency
+Directional Coupler -- New,equipment
+Coupler Value,Manufacturer
+Construction Status,Model
+Design Frequency,Part Number
+Specification,Design Frequency
+,Cost
+,Currency
+Inline Equalizer -- New,equipment
+Equalizer Value,Manufacturer
+Construction Status,Model
+Design Frequency,Part Number
+Specification,Design Frequency
+,Cost
+,Currency
+Internal Splitter -- New,equipment
+Construction Status,Manufacturer
+Design Frequency,Model
+Specification,Part Number
+,Design Frequency
+,Cost
+,Currency
+Internal Directional Coupler -- New,equipment
+Coupler Value,Manufacturer
+Construction Status,Model
+Design Frequency,Part Number
+Specification,Design Frequency
+,Cost
+,Currency
+Node Boundary -- New,circuit
+Related Optical Node Name,
+Services Available,
+Residential Count,
+Commercial Count,
+MDU Count,
+Potential Residential Count,
+Potential Commercial Count,
+Potential MDU Count,
+Construction Status,
+Design Frequency,
+Power Supply Boundary -- New,circuit
+Related Power Supply Name,
+Construction Status,
+Design Frequency,
+Power Block -- New,equipment
+Construction Status,Manufacturer
+Design Frequency,Model
+Specification,Part Number
+,Design Frequency
+,Cost
+,Currency
+Power Inserter -- New,equipment
+Construction Status,Manufacturer
+Design Frequency,Model
+Specification,Part Number
+,Design Frequency
+,Cost
+,Currency
+Power Supply -- New,equipment
+Name,Manufacturer
+Current Draw,Model
+Voltage,Part Number
+Construction Status,Design Frequency
+Install Technician,Cost
+Install Date,Currency
+Design Frequency,
+Specification,
+Coaxial Terminator -- New,equipment
+Construction Status,Manufacturer
+Design Frequency,Model
+Specification,Part Number
+,Design Frequency
+,Cost
+,Currency
+WiFi Unit -- New,structure
+Name,Manufacturer
+Coaxial Input Ports,Model
+Fiber Input Ports,Part Number
+Specification,Design Frequency
+Plant or External Power?,Cost
+Current Draw,Currency
+Voltage,
+Construction Status,
+Install Technician,
+Install Date,
+Fiber Fed?,
+Coax Fed?,
+Related Node,
+Physical Address,
+Lat / Lon,
+MAC Address,
+Mount Type,
+Indoor?,
+Outdoor?,
+Labor Cost,
+Circuit,
+Number of Antenna,
+Specification,

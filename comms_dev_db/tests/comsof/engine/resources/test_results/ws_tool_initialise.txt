@@ -1,0 +1,150 @@
+COMMAND: comsof_ws <database> <temp_dir>/ws_tool_initialise initialise --area service_area/SP --overwrite
+Opening database <conn_spec> ...
+Initialising: <temp_dir>/ws_tool_initialise
+  Template: <templates_dir>/23.2.1.60
+  Rules: <templates_dir>/rules/hybrid.rules
+  Copying <templates_dir>/rules/hybrid.rules <temp_dir>/ws_tool_initialise/input/CalculationInput/Rules.rules
+  Setting coordinate system to: epsg:32631
+  Clearing data
+
+Opening database <conn_spec> ...
+feature                                 n_recs
+--------------------------------------  ------
+IN_AccessStructures                          0
+IN_AerialConnections                         0
+IN_AerialDropConnections                     0
+IN_BOM_SubAreas                              0
+IN_Boundaries                                0
+IN_Buildings                                 0
+IN_CentralOffice                             0
+IN_Crossings                                 0
+IN_DemandPoints                              0
+IN_DropTrenches                              0
+IN_ExistingCables                            0
+IN_ExistingPipes                             0
+IN_FacadeDropLines                           0
+IN_FacadeLines                               0
+IN_ForcedBackBoneCableClusters               0
+IN_ForcedBackBoneCables                      0
+IN_ForcedBackBoneClusters                    0
+IN_ForcedBackBonePoints                      0
+IN_ForcedBackBoneRoutes                      0
+IN_ForcedDistributionCableClusters           0
+IN_ForcedDistributionCables                  0
+IN_ForcedDistributionClusters                0
+IN_ForcedDistributionPoints                  0
+IN_ForcedDistributionRoutes                  0
+IN_ForcedDropClusters                        0
+IN_ForcedDropPoints                          0
+IN_ForcedDropRoutes                          0
+IN_ForcedEquipment                           0
+IN_ForcedFeederCableClusters                 0
+IN_ForcedFeederCables                        0
+IN_ForcedFeederClusters                      0
+IN_ForcedFeederPoints                        0
+IN_ForcedFeederRoutes                        0
+IN_ForcedNonFiberClusters                    0
+IN_ForcedPrimDistributionCableClusters       0
+IN_ForcedPrimDistributionCables              0
+IN_ForcedPrimDistributionClusters            0
+IN_ForcedPrimDistributionPoints              0
+IN_ForcedPrimDistributionRoutes              0
+IN_HomePoints                                0
+IN_NonFiberCables                            0
+IN_NonFiberEquipment                         0
+IN_Poles                                     0
+IN_PolygonBoundaries                         0
+IN_PossibleTrenches                          0
+IN_RollOutPhases                             0
+IN_RulesPolygons                             0
+IN_StreetCenterLines                         0
+IN_Transitions                               0
+OUT_AccessStructures                         0
+OUT_BackBoneCableClusters                    0
+OUT_BackBoneCables                           0
+OUT_BackBoneClusters                         0
+OUT_BackBoneDuct                             0
+OUT_BackBonePoints                           0
+OUT_BackBoneRoutes                           0
+OUT_Closures                                 0
+OUT_CoaxEquipment                            0
+OUT_DemandPoints                             0
+OUT_DistributionCableClusters                0
+OUT_DistributionCableEntries                 0
+OUT_DistributionCablePieces                  0
+OUT_DistributionCableSlack                   0
+OUT_DistributionCables                       0
+OUT_DistributionCablesDetail                 0
+OUT_DistributionClusters                     0
+OUT_DistributionDuct                         0
+OUT_DistributionDuctPieces                   0
+OUT_DistributionPoints                       0
+OUT_DistributionRoutes                       0
+OUT_DropCableEntries                         0
+OUT_DropCablePieces                          0
+OUT_DropCableSlack                           0
+OUT_DropCables                               0
+OUT_DropCablesDetail                         0
+OUT_DropClusters                             0
+OUT_DropDuct                                 0
+OUT_DropDuctPieces                           0
+OUT_DropPoints                               0
+OUT_DropRoutes                               0
+OUT_Edges                                    0
+OUT_FeederCableClusters                      0
+OUT_FeederCableEntries                       0
+OUT_FeederCablePieces                        0
+OUT_FeederCableSlack                         0
+OUT_FeederCables                             0
+OUT_FeederCablesDetail                       0
+OUT_FeederClusters                           0
+OUT_FeederDuct                               0
+OUT_FeederDuctPieces                         0
+OUT_FeederPoints                             0
+OUT_FeederRoutes                             0
+OUT_Fibers                                   0
+OUT_ForcedEquipment                          0
+OUT_MicroDuctConnectors                      0
+OUT_Nodes                                    0
+OUT_PrimDistributionCableClusters            0
+OUT_PrimDistributionCablePieces              0
+OUT_PrimDistributionCables                   0
+OUT_PrimDistributionCablesDetail             0
+OUT_PrimDistributionClusters                 0
+OUT_PrimDistributionDuct                     0
+OUT_PrimDistributionDuctPieces               0
+OUT_PrimDistributionPoints                   0
+OUT_PrimDistributionRoutes                   0
+OUT_ProtectionPipes                          0
+OUT_Splices                                  0
+OUT_Splitters                                0
+OUT_UsedSegments                             0
+processed_BuildingsNotConnected              0
+processed_CentralOffice                      0
+processed_DemandPoints                       0
+processed_Edges                              0
+processed_EdgesNotConnected                  0
+processed_ExistingEquipment                  0
+processed_Nodes                              0
+processed_NodesNotConnected                  0
+processed_Poles                              0
+
+
+COMMAND: comsof_ws <database> <temp_dir>/ws_tool_initialise initialise --area service_area/SP --version=23.2.1.60 --overwrite --coord_system=27700
+Opening database <conn_spec> ...
+Initialising: <temp_dir>/ws_tool_initialise
+  Template: <templates_dir>/23.2.1.60
+  Rules: <templates_dir>/rules/hybrid.rules
+  Copying <templates_dir>/rules/hybrid.rules <temp_dir>/ws_tool_initialise/input/CalculationInput/Rules.rules
+  Setting coordinate system to: epsg:27700
+  Clearing data
+
+Opening database <conn_spec> ...
+file                   prop          val
+---------------------  ------------  -----
+input.gpkg             coord_system  27700
+CalculationInput.gpkg  coord_system  27700
+ProcessedArea.gpkg     coord_system  27700
+output.gpkg            coord_system  27700
+
+

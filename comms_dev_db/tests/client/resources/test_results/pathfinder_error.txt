@@ -1,0 +1,50 @@
+TEST: Pathfinder
+    button: ant-modal-close
+    button: ant-btn css-dev-only-do-not-override-6j9yrn ant-btn-text
+    input: 
+    button: Set
+    input: 
+    button: Set
+    button: include-and-avoid__button hover-cursor
+    button: include-and-avoid__button hover-cursor
+    label: Shortest distance
+    input: on
+    label: Least new connections
+    input: on
+    label: Least amount of existing connections
+    input: on
+    input: 
+    input: 
+    label: ft
+    input: true
+    button (disabled): Generate
+    button (disabled): Cancel
+    select (disabled): 
+    button (disabled): Create
+
+
+TEST: Pathfinder done
+    button: ant-modal-close
+    button: ant-btn css-dev-only-do-not-override-6j9yrn ant-btn-text
+    input: Fiber Shelf: SP-S-018 out:1
+    button: Set
+    input: Cabinet: WH-C-25
+    button: Set
+    button: include-and-avoid__button hover-cursor
+    button: include-and-avoid__button hover-cursor
+    label: Shortest distance
+    input: on
+    label: Least new connections
+    input: on
+    label: Least amount of existing connections
+    input: on
+    input: 
+    input: 
+    label: ft
+    input: true
+    button: Generate
+    button (disabled): Cancel
+    select (disabled): 
+    button (disabled): Create
+
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+# Bash wrapper to myWorld engine tests 
+
+HERE=$(dirname `which $0`)
+
+# Init environment
+source $HERE/../../../../../../Tools/myw_env
+
+# Run command
+python $0.py "$@"

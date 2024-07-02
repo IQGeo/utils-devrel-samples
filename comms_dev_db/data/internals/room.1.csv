@@ -1,0 +1,17 @@
+id,name,root_housing,housing
+1,101,mdu/2,floor/1
+2,102,mdu/2,floor/1
+3,103,mdu/2,floor/1
+4,201,mdu/2,floor/2
+5,202,mdu/2,floor/2
+6,203,mdu/2,floor/2
+7,1001,mdu/3,floor/3
+8,1002,mdu/3,floor/3
+9,1003,mdu/3,floor/3
+10,2001,mdu/3,floor/4
+11,2002,mdu/3,floor/4
+12,2003,mdu/3,floor/4
+13,2004,mdu/3,floor/4
+14,3001,mdu/3,floor/5
+15,3002,mdu/3,floor/5
+

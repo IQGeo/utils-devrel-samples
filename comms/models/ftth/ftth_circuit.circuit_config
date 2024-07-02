@@ -1,0 +1,13 @@
+{
+    "image": "modules/comms/images/features/circuit.svg",
+    "in_equips": [
+        "fiber_olt"
+    ],
+    "out_equips": [
+        "fiber_ont"
+    ],
+    "palette": false,
+    "layer": {
+        "line_style": "#11a7cb:3:arrowed"
+    }
+}

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# script for running overnight tests under control of Jenkins
+
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Setup environment
+source "$here"/../../../../../../Tools/myw_env
+
+# Update source and platform
+"$here"/update_src > "$TMP"/update_src.log 2>&1
+"$here"/update_product >> "$TMP"/update_src.log 2>&1
+
+# Run tests
+python "$here"/comms_dev_db_test_runner.py "$@"

@@ -1,0 +1,8 @@
+{
+   "name": "comsof_licence_project",
+   "description": "Permitted values for 'project' in a Comsof licence request",
+   "values": [
+       "DESIGN Mode",
+       "Development Testing"
+   ]
+}

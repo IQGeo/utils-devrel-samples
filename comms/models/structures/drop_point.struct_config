@@ -1,0 +1,9 @@
+{
+    "image": "modules/comms/images/features/drop_point.svg",
+    "palette": true,
+    "layer": {
+        "min_vis": 20,
+        "point_style": "circle:#e2d3a6:0.5m:#660000",
+        "text_style": "name:#783f04:0.4m:middle:left+0.5:::21"
+    }
+}

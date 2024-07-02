@@ -1,0 +1,2209 @@
+TEST: STRUCTURES - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Structures
+    label: Name Image In Palette
+    label: mywcom_route_junction
+    label: mywcom_route_junction
+    input: 
+    input: false
+    label: building
+    label: building
+    input: modules/comms/images/features/building.svg
+    input: true
+    label: cabinet
+    label: cabinet
+    input: modules/comms/images/features/cabinet.svg
+    input: true
+    label: drop_point
+    label: drop_point
+    input: modules/comms/images/features/drop_point.svg
+    input: true
+    label: manhole
+    label: manhole
+    input: modules/comms/images/features/manhole.svg
+    input: true
+    label: mdu
+    label: mdu
+    input: modules/comms/images/features/mdu.svg
+    input: true
+    label: pole
+    label: pole
+    input: modules/comms/images/features/pole.svg
+    input: true
+    label: wall_box
+    label: wall_box
+    input: modules/comms/images/features/wall_box.svg
+    input: true
+    label: wifi_unit
+    label: wifi_unit
+    input: modules/comms/images/features/building.svg
+    input: true
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: AFTER ADD TO STRUCTURES
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Structures
+    label: Name Image In Palette
+    label: mywcom_route_junction
+    label: mywcom_route_junction
+    input: 
+    input: false
+    label: building
+    label: building
+    input: modules/comms/images/features/building.svg
+    input: true
+    label: cabinet
+    label: cabinet
+    input: modules/comms/images/features/cabinet.svg
+    input: true
+    label: drop_point
+    label: drop_point
+    input: modules/comms/images/features/drop_point.svg
+    input: true
+    label: manhole
+    label: manhole
+    input: modules/comms/images/features/manhole.svg
+    input: true
+    label: mdu
+    label: mdu
+    input: modules/comms/images/features/mdu.svg
+    input: true
+    label: pole
+    label: pole
+    input: modules/comms/images/features/pole.svg
+    input: true
+    label: wall_box
+    label: wall_box
+    input: modules/comms/images/features/wall_box.svg
+    input: true
+    label: wifi_unit
+    label: wifi_unit
+    input: modules/comms/images/features/building.svg
+    input: true
+    label: address
+    label: address
+    input: modules/comms/images/features/route.svg
+    input: true
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: AFTER EDIT STRUCTURE
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Structures
+    label: Name Image In Palette
+    label: mywcom_route_junction
+    label: mywcom_route_junction
+    input: 
+    input: false
+    label: building
+    label: building
+    input: modules/comms/images/features/building.svg
+    input: true
+    label: cabinet
+    label: cabinet
+    input: modules/comms/images/features/cabinet.svg
+    input: true
+    label: drop_point
+    label: drop_point
+    input: modules/comms/images/features/drop_point.svg
+    input: true
+    label: manhole
+    label: manhole
+    input: modules/comms/images/features/manhole.svg
+    input: true
+    label: mdu
+    label: mdu
+    input: modules/comms/images/features/mdu.svg
+    input: true
+    label: pole
+    label: pole
+    input: modules/comms/images/features/pole.svg
+    input: true
+    label: wall_box
+    label: wall_box
+    input: modules/comms/images/features/wall_box.svg
+    input: true
+    label: wifi_unit
+    label: wifi_unit
+    input: modules/comms/images/features/building.svg
+    input: true
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: ROUTES - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Routes
+    label: Name Image In Palette
+    label: oh_route
+    label: oh_route
+    input: modules/comms/images/features/oh_route.svg
+    input: true
+    label: ug_route
+    label: ug_route
+    input: modules/comms/images/features/ug_route.svg
+    input: true
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: EQUIPMENT - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Equipment
+    label: Name Image Function Housings In Palette Technology
+    label: enclosure 2 items mixed
+    input: modules/comms/images/features/floor.svg
+    label: enclosure
+    label: 2 items
+    label: 2 items
+    input: true
+    label: mixed
+    label: enclosure 6 items mixed
+    input: modules/comms/images/features/rack.svg
+    label: enclosure
+    label: 6 items
+    label: 6 items
+    input: true
+    label: mixed
+    label: enclosure 3 items mixed
+    input: modules/comms/images/features/room.svg
+    label: enclosure
+    label: 3 items
+    label: 3 items
+    input: true
+    label: mixed
+    label: enclosure 2 items mixed
+    input: modules/comms/images/features/slot.svg
+    label: enclosure
+    label: 2 items
+    label: 2 items
+    input: true
+    label: mixed
+    label: enclosure 5 items mixed
+    input: modules/comms/images/features/splice_closure.svg
+    label: enclosure
+    label: 5 items
+    label: 5 items
+    input: true
+    label: mixed
+    label: mux 6 items fiber
+    input: modules/comms/images/features/fiber_mux.svg
+    label: mux
+    label: 6 items
+    label: 6 items
+    input: true
+    label: fiber
+    label: terminal 3 items fiber
+    input: modules/comms/images/features/fiber_olt.svg
+    label: terminal
+    label: 3 items
+    label: 3 items
+    input: true
+    label: fiber
+    label: terminal 3 items fiber
+    input: modules/comms/images/features/fiber_ont.svg
+    label: terminal
+    label: 3 items
+    label: 3 items
+    input: true
+    label: fiber
+    label: connector 4 items fiber
+    input: modules/comms/images/features/fiber_patch_panel.svg
+    label: connector
+    label: 4 items
+    label: 4 items
+    input: true
+    label: fiber
+    label: enclosure 1 items mixed
+    input: modules/comms/images/features/shelf.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: mixed
+    label: enclosure 2 items fiber
+    input: modules/comms/images/features/fiber_splice_tray.svg
+    label: enclosure
+    label: 2 items
+    label: 2 items
+    input: true
+    label: fiber
+    label: splitter 6 items fiber
+    input: modules/comms/images/features/fiber_splitter.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: fiber
+    label: enclosure 1 items fiber
+    input: modules/comms/images/features/fiber_tap.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: fiber
+    label: slack 7 items fiber
+    input: modules/comms/images/features/fiber_slack.svg
+    label: slack
+    label: 7 items
+    label: 7 items
+    input: false
+    label: fiber
+    label: splitter 6 items copper
+    input: modules/comms/images/features/copper/copper_bridge_tap.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: splitter 6 items copper
+    input: modules/comms/images/features/copper/copper_build_out.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: connector 6 items copper
+    input: modules/comms/images/features/copper/copper_capacitor.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: enclosure 1 items mixed
+    input: modules/comms/images/features/copper/copper_shelf.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: mixed
+    label: connector 6 items copper
+    input: modules/comms/images/features/copper/copper_load_coil.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: splitter 6 items copper
+    input: modules/comms/images/features/copper/copper_pair_gain.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: connector 6 items copper
+    input: modules/comms/images/features/copper/copper_repeater.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: enclosure 1 items mixed
+    input: modules/comms/images/features/copper/copper_shelf.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: mixed
+    label: enclosure 6 items copper
+    input: modules/comms/images/features/copper/copper_splice_closure.svg
+    label: enclosure
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: terminal 6 items copper
+    input: modules/comms/images/features/copper/copper_terminal.svg
+    label: terminal
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: slack 7 items copper
+    input: modules/comms/images/features/fiber_slack.svg
+    label: slack
+    label: 7 items
+    label: 7 items
+    input: false
+    label: copper
+    label: connector 3 items coax
+    input: modules/comms/images/features/coax_amplifier.svg
+    label: connector
+    label: 3 items
+    label: 3 items
+    input: true
+    label: coax
+    label: enclosure 1 items coax
+    input: modules/comms/images/features/shelf.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: coax
+    label: splitter 3 items coax
+    input: modules/comms/images/features/coax_tap.svg
+    label: splitter
+    label: 3 items
+    label: 3 items
+    input: true
+    label: coax
+    label: terminal 6 items coax
+    input: modules/comms/images/features/coax_terminator.svg
+    label: terminal
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: splitter 6 items coax
+    input: modules/comms/images/features/coax_directional_coupler.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: connector 3 items coax
+    input: modules/comms/images/features/coax_inline_equalizer.svg
+    label: connector
+    label: 3 items
+    label: 3 items
+    input: true
+    label: coax
+    label: splitter 6 items coax
+    input: modules/comms/images/features/coax_directional_coupler.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: splitter 6 items coax
+    input: modules/comms/images/features/coax_splitter.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: slack 7 items coax
+    input: modules/comms/images/features/fiber_slack.svg
+    label: slack
+    label: 7 items
+    label: 7 items
+    input: false
+    label: coax
+    label: connector 6 items mixed
+    input: modules/comms/images/features/coax_optical_node.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: mixed
+    label: enclosure 5 items mixed
+    input: modules/comms/images/features/splice_closure.svg
+    label: enclosure
+    label: 5 items
+    label: 5 items
+    input: true
+    label: mixed
+    label: connector 6 items coax
+    input: modules/comms/images/features/coax_power_block.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: connector 6 items coax
+    input: modules/comms/images/features/coax_power_inserter.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: mux 6 items coax
+    input: modules/comms/images/features/coax_power_supply.svg
+    label: mux
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: splitter 6 items coax
+    input: modules/comms/images/features/coax_splitter.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: splitter 6 items coax
+    input: modules/comms/images/features/coax_splitter.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: AFTER EDIT EQUIPMENT
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Equipment
+    label: Name Image Function Housings In Palette Technology
+    label: floor enclosure 2 items mixed
+    label: floor
+    input: modules/comms/images/features/floor.svg
+    label: enclosure
+    label: 2 items
+    label: 2 items
+    input: true
+    label: mixed
+    label: rack enclosure 6 items mixed
+    label: rack
+    input: modules/comms/images/features/rack.svg
+    label: enclosure
+    label: 6 items
+    label: 6 items
+    input: true
+    label: mixed
+    label: room enclosure 3 items mixed
+    label: room
+    input: modules/comms/images/features/room.svg
+    label: enclosure
+    label: 3 items
+    label: 3 items
+    input: true
+    label: mixed
+    label: slot enclosure 2 items mixed
+    label: slot
+    input: modules/comms/images/features/slot.svg
+    label: enclosure
+    label: 2 items
+    label: 2 items
+    input: true
+    label: mixed
+    label: splice_closure enclosure 5 items mixed
+    label: splice_closure
+    input: modules/comms/images/features/splice_closure.svg
+    label: enclosure
+    label: 5 items
+    label: 5 items
+    input: true
+    label: mixed
+    label: fiber_mux mux 6 items fiber
+    label: fiber_mux
+    input: modules/comms/images/features/fiber_mux.svg
+    label: mux
+    label: 6 items
+    label: 6 items
+    input: true
+    label: fiber
+    label: fiber_olt terminal 3 items fiber
+    label: fiber_olt
+    input: modules/comms/images/features/fiber_olt.svg
+    label: terminal
+    label: 3 items
+    label: 3 items
+    input: true
+    label: fiber
+    label: fiber_ont terminal 3 items fiber
+    label: fiber_ont
+    input: modules/comms/images/features/fiber_ont.svg
+    label: terminal
+    label: 3 items
+    label: 3 items
+    input: true
+    label: fiber
+    label: fiber_patch_panel connector 4 items fiber
+    label: fiber_patch_panel
+    input: modules/comms/images/features/fiber_patch_panel.svg
+    label: connector
+    label: 4 items
+    label: 4 items
+    input: true
+    label: fiber
+    label: fiber_shelf enclosure 1 items mixed
+    label: fiber_shelf
+    input: modules/comms/images/features/shelf.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: mixed
+    label: fiber_splice_tray enclosure 2 items fiber
+    label: fiber_splice_tray
+    input: modules/comms/images/features/fiber_splice_tray.svg
+    label: enclosure
+    label: 2 items
+    label: 2 items
+    input: true
+    label: fiber
+    label: fiber_splitter splitter 6 items fiber
+    label: fiber_splitter
+    input: modules/comms/images/features/fiber_splitter.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: fiber
+    label: fiber_tap enclosure 1 items fiber
+    label: fiber_tap
+    input: modules/comms/images/features/fiber_tap.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: fiber
+    label: mywcom_fiber_slack slack 7 items fiber
+    label: mywcom_fiber_slack
+    input: modules/comms/images/features/fiber_slack.svg
+    label: slack
+    label: 7 items
+    label: 7 items
+    input: false
+    label: fiber
+    label: copper_bridge_tap splitter 6 items copper
+    label: copper_bridge_tap
+    input: modules/comms/images/features/copper/copper_bridge_tap.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: copper_build_out splitter 6 items copper
+    label: copper_build_out
+    input: modules/comms/images/features/copper/copper_build_out.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: copper_capacitor connector 6 items copper
+    label: copper_capacitor
+    input: modules/comms/images/features/copper/copper_capacitor.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: copper_dslam enclosure 1 items mixed
+    label: copper_dslam
+    input: modules/comms/images/features/copper/copper_shelf.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: mixed
+    label: copper_load_coil connector 6 items copper
+    label: copper_load_coil
+    input: modules/comms/images/features/copper/copper_load_coil.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: copper_pair_gain splitter 6 items copper
+    label: copper_pair_gain
+    input: modules/comms/images/features/copper/copper_pair_gain.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: copper_repeater connector 6 items copper
+    label: copper_repeater
+    input: modules/comms/images/features/copper/copper_repeater.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: copper_shelf enclosure 1 items mixed
+    label: copper_shelf
+    input: modules/comms/images/features/copper/copper_shelf.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: mixed
+    label: copper_splice_closure enclosure 6 items copper
+    label: copper_splice_closure
+    input: modules/comms/images/features/copper/copper_splice_closure.svg
+    label: enclosure
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: copper_terminal terminal 6 items copper
+    label: copper_terminal
+    input: modules/comms/images/features/copper/copper_terminal.svg
+    label: terminal
+    label: 6 items
+    label: 6 items
+    input: true
+    label: copper
+    label: mywcom_copper_slack slack 7 items copper
+    label: mywcom_copper_slack
+    input: modules/comms/images/features/fiber_slack.svg
+    label: slack
+    label: 7 items
+    label: 7 items
+    input: false
+    label: copper
+    label: coax_amplifier connector 3 items coax
+    label: coax_amplifier
+    input: modules/comms/images/features/coax_amplifier.svg
+    label: connector
+    label: 3 items
+    label: 3 items
+    input: true
+    label: coax
+    label: coax_shelf enclosure 1 items coax
+    label: coax_shelf
+    input: modules/comms/images/features/shelf.svg
+    label: enclosure
+    label: 1 items
+    label: 1 items
+    input: true
+    label: coax
+    label: coax_tap splitter 3 items coax
+    label: coax_tap
+    input: modules/comms/images/features/coax_tap.svg
+    label: splitter
+    label: 3 items
+    label: 3 items
+    input: true
+    label: coax
+    label: coax_terminator terminal 6 items coax
+    label: coax_terminator
+    input: modules/comms/images/features/coax_terminator.svg
+    label: terminal
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: directional_coupler splitter 6 items coax
+    label: directional_coupler
+    input: modules/comms/images/features/coax_directional_coupler.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: inline_equalizer connector 3 items coax
+    label: inline_equalizer
+    input: modules/comms/images/features/coax_inline_equalizer.svg
+    label: connector
+    label: 3 items
+    label: 3 items
+    input: true
+    label: coax
+    label: internal_directional_coupler splitter 6 items coax
+    label: internal_directional_coupler
+    input: modules/comms/images/features/coax_directional_coupler.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: internal_splitter splitter 6 items coax
+    label: internal_splitter
+    input: modules/comms/images/features/coax_splitter.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: mywcom_coax_slack slack 7 items coax
+    label: mywcom_coax_slack
+    input: modules/comms/images/features/fiber_slack.svg
+    label: slack
+    label: 7 items
+    label: 7 items
+    input: false
+    label: coax
+    label: optical_node connector 6 items mixed
+    label: optical_node
+    input: modules/comms/images/features/coax_optical_node.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: mixed
+    label: optical_node_closure enclosure 5 items mixed
+    label: optical_node_closure
+    input: modules/comms/images/features/splice_closure.svg
+    label: enclosure
+    label: 5 items
+    label: 5 items
+    input: true
+    label: mixed
+    label: power_block connector 6 items coax
+    label: power_block
+    input: modules/comms/images/features/coax_power_block.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: power_inserter connector 6 items coax
+    label: power_inserter
+    input: modules/comms/images/features/coax_power_inserter.svg
+    label: connector
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: power_supply mux 6 items coax
+    label: power_supply
+    input: modules/comms/images/features/coax_power_supply.svg
+    label: mux
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: three_way_splitter splitter 6 items coax
+    label: three_way_splitter
+    input: modules/comms/images/features/coax_splitter.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: two_way_splitter splitter 6 items coax
+    label: two_way_splitter
+    input: modules/comms/images/features/coax_splitter.svg
+    label: splitter
+    label: 6 items
+    label: 6 items
+    input: true
+    label: coax
+    label: address 2 items
+    label: address
+    input: modules/comms/images/features/route.svg
+    label: 2 items
+    label: 2 items
+    input: false
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: CABLES - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Cables
+    label: Name Image Housings In Palette Technology
+    label: fiber_cable 6 items fiber
+    label: fiber_cable
+    input: modules/comms/images/features/fiber_cable.svg
+    label: 6 items
+    label: 6 items
+    input: true
+    label: fiber
+    label: copper_cable 5 items copper
+    label: copper_cable
+    input: modules/comms/images/features/copper/copper_cable.svg
+    label: 5 items
+    label: 5 items
+    input: true
+    label: copper
+    label: coax_cable 5 items coax
+    label: coax_cable
+    input: modules/comms/images/features/fiber_cable.svg
+    label: 5 items
+    label: 5 items
+    input: true
+    label: coax
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: CIRCUITS - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Circuits
+    label: Name Image Served From Terminates On
+    label: ftth_circuit 1 items 1 items
+    label: ftth_circuit
+    input: modules/comms/images/features/circuit.svg
+    label: 1 items
+    label: 1 items
+    label: 1 items
+    label: 1 items
+    label: bb_circuit 1 items 1 items
+    label: bb_circuit
+    input: modules/comms/images/features/circuit.svg
+    label: 1 items
+    label: 1 items
+    label: 1 items
+    label: 1 items
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: SPECS - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Specs
+    label: Feature Type Spec Field
+    label: 1
+    input: cabinet
+    input: specification
+    label: 2
+    input: manhole
+    input: specification
+    label: 3
+    input: pole
+    input: specification
+    label: 4
+    input: wall_box
+    input: specification
+    label: 5
+    input: wifi_unit
+    input: specification
+    label: 6
+    input: conduit
+    input: specification
+    label: 7
+    input: splice_closure
+    input: specification
+    label: 8
+    input: fiber_cable
+    input: specification
+    label: 9
+    input: fiber_mux
+    input: specification
+    label: 10
+    input: fiber_ont
+    input: specification
+    label: 11
+    input: fiber_patch_panel
+    input: specification
+    label: 12
+    input: fiber_splitter
+    input: specification
+    label: 13
+    input: fiber_tap
+    input: specification
+    label: 14
+    input: copper_cable
+    input: specification
+    label: 15
+    input: copper_bridge_tap
+    input: specification
+    label: 16
+    input: copper_build_out
+    input: specification
+    label: 17
+    input: copper_capacitor
+    input: specification
+    label: 18
+    input: copper_dslam
+    input: specification
+    label: 19
+    input: copper_load_coil
+    input: specification
+    label: 20
+    input: copper_pair_gain
+    input: specification
+    label: 21
+    input: copper_repeater
+    input: specification
+    label: 22
+    input: copper_shelf
+    input: specification
+    label: 23
+    input: copper_splice_closure
+    input: specification
+    label: 24
+    input: copper_terminal
+    input: specification
+    label: 25
+    input: coax_cable
+    input: specification
+    label: 26
+    input: coax_amplifier
+    input: specification
+    label: 27
+    input: coax_tap
+    input: specification
+    label: 28
+    input: coax_terminator
+    input: specification
+    label: 29
+    input: directional_coupler
+    input: specification
+    label: 30
+    input: inline_equalizer
+    input: specification
+    label: 31
+    input: internal_directional_coupler
+    input: specification
+    label: 32
+    input: internal_splitter
+    input: specification
+    label: 33
+    input: optical_node_closure
+    input: specification
+    label: 34
+    input: optical_node
+    input: specification
+    label: 35
+    input: power_block
+    input: specification
+    label: 36
+    input: power_inserter
+    input: specification
+    label: 37
+    input: power_supply
+    input: specification
+    label: 38
+    input: three_way_splitter
+    input: specification
+    label: 39
+    input: two_way_splitter
+    input: specification
+    button: Add value
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: FIBER COLOR SCHEMES - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Fiber Color Schemes
+    label: Name Description Colors
+    label: 24 items
+    input: DIN VDE 0888
+    input: DIN VDE 0888 standard color scheme
+    label: 24 items
+    label: 24 items
+    label: 24 items
+    input: TIA-598-C
+    input: TIA-598-C standard color scheme
+    label: 24 items
+    label: 24 items
+    label: 24 items
+    input: FIN2012
+    input: FIN2012 color scheme typically used in Finland
+    label: 24 items
+    label: 24 items
+    label: 5 items
+    input: Copper Tip Colors
+    input: Copper Tip Colors
+    label: 5 items
+    label: 5 items
+    label: 5 items
+    input: Copper Ring Colors
+    input: Copper Ring Colors
+    label: 5 items
+    label: 5 items
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: FIBER COLORS - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Fiber Colors
+    label: Name Color Abbr Label
+    input: blue
+    input: BL
+    input: Blue
+    input: brown
+    input: BN
+    input: Brown
+    input: turquoise
+    input: TQ
+    input: Turquoise
+    input: rose
+    input: RO
+    input: Rose
+    input: slate
+    input: SL
+    input: Slate
+    input: aqua
+    input: A
+    input: Aqua
+    input: grey
+    input: GY
+    input: Grey
+    input: yellow
+    input: YL
+    input: Yellow
+    input: pink
+    input: PK
+    input: Pink
+    input: green
+    input: GN
+    input: Green
+    input: violet
+    input: VT
+    input: Violet
+    input: orange
+    input: OR
+    input: Orange
+    input: black
+    input: BK
+    input: Black
+    input: white
+    input: WT
+    input: White
+    input: transparent
+    input: TR
+    input: Transparent
+    input: red
+    input: RD
+    input: Red
+    button: Add
+    label: Add
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: CABLE PREVIEW STYLES - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Styles
+    label: New Segment
+    label: Deleted Segment
+    label: Unchanged Segment
+    label: Deleted Connection
+    label: disconnects
+    label: disconnects
+    label: disconnects
+    label: Affected Structure
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+  header: Conflicts and Proposed Objects
+    label: Change
+    label: Conflict
+    label: Proposed
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: CABLE PREVIEW STYLES - INSERT STYLE
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Styles
+    label: New Segment
+    label: Deleted Segment
+    label: Unchanged Segment
+    label: Deleted Connection
+    label: disconnects
+    label: disconnects
+    label: disconnects
+    label: Affected Structure
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+  header: Conflicts and Proposed Objects
+    label: Change
+    label: Conflict
+    label: Proposed
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+    button: ant-modal-close
+    label: Colour & transparency
+    label: Width
+    input: 8
+    button: OK
+    label: OK
+    button: Cancel
+    label: Cancel
+
+
+TEST: CABLE PREVIEW STYLES - DELETE STYLE
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Styles
+    label: New Segment
+    label: Deleted Segment
+    label: Unchanged Segment
+    label: Deleted Connection
+    label: disconnects
+    label: disconnects
+    label: disconnects
+    label: Affected Structure
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+  header: Conflicts and Proposed Objects
+    label: Change
+    label: Conflict
+    label: Proposed
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+    button: ant-modal-close
+    label: Colour & transparency
+    label: Width
+    input: 8
+    button: OK
+    label: OK
+    button: Cancel
+    label: Cancel
+
+
+TEST: CABLE PREVIEW STYLES - KEEP STYLE
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Styles
+    label: New Segment
+    label: Deleted Segment
+    label: Unchanged Segment
+    label: Deleted Connection
+    label: disconnects
+    label: disconnects
+    label: disconnects
+    label: Affected Structure
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+  header: Conflicts and Proposed Objects
+    label: Change
+    label: Conflict
+    label: Proposed
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+    button: ant-modal-close
+    label: Colour & transparency
+    label: Width
+    input: 8
+    button: OK
+    label: OK
+    button: Cancel
+    label: Cancel
+
+
+TEST: CABLE PREVIEW STYLES - AFFECTED STRUCTURE TEXT STYLE
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Styles
+    label: New Segment
+    label: Deleted Segment
+    label: Unchanged Segment
+    label: Deleted Connection
+    label: disconnects
+    label: disconnects
+    label: disconnects
+    label: Affected Structure
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+  header: Conflicts and Proposed Objects
+    label: Change
+    label: Conflict
+    label: Proposed
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+    button: ant-modal-close
+    label: Attribute name
+    input: disconnects
+    label: Color
+    label: Text Size
+    input: 10
+    label: Background Color
+    label: Outline width
+    input: 1
+    label: Vertical justification
+    label: top
+    label: Offset
+    input: 0
+    label: Horizontal justification
+    label: left
+    label: Offset
+    input: 0
+    button: OK
+    label: OK
+    button: Cancel
+    label: Cancel
+
+
+TEST: CABLE PREVIEW STYLES - AFFECTED STRUCTURE ICON STYLE
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Styles
+    label: New Segment
+    label: Deleted Segment
+    label: Unchanged Segment
+    label: Deleted Connection
+    label: disconnects
+    label: disconnects
+    label: disconnects
+    label: Affected Structure
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+    label: images/circle-empty2.svg
+  header: Conflicts and Proposed Objects
+    label: Change
+    label: Conflict
+    label: Proposed
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+    button: ant-modal-close
+    label: Location
+    input: images/circle-empty2.svg
+    label: Anchor
+    input: 18
+    input: 18
+    label: Orientation
+    input: 0
+    button: OK
+    label: OK
+    button: Cancel
+    label: Cancel
+
+
+TEST: IMPORT FORMATS - INITIAL VIEW
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Import Formats
+    label: CDIF
+    label: All Layers
+    label: Feeder Network
+    label: All layers (raw)
+    button: New Format
+    label: New Format
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+
+TEST: IMPORT FORMATS - CDIF OPEN
+    list item: Configuration
+    list item: Settings
+    button: rc-tabs-0-more
+    list item: Structures
+    label: Structures
+    label: Structures
+    list item: Routes
+    label: Routes
+    label: Routes
+    list item: Equipment
+    label: Equipment
+    label: Equipment
+    list item: Conduits
+    label: Conduits
+    label: Conduits
+    list item: Cables
+    label: Cables
+    label: Cables
+    list item: Circuits
+    label: Circuits
+    label: Circuits
+    list item: Designs
+    label: Designs
+    label: Designs
+    list item: Specs
+    label: Specs
+    label: Specs
+    list item: Labor Costs
+    label: Labor Costs
+    label: Labor Costs
+    list item: Fiber Color Schemes
+    label: Fiber Color Schemes
+    label: Fiber Color Schemes
+    list item: Fiber Colors
+    label: Fiber Colors
+    label: Fiber Colors
+    list item: Styles
+    label: Styles
+    label: Styles
+    list item: Import Formats
+    label: Import Formats
+    label: Import Formats
+  header: Import Formats
+    label: CDIF
+    label: Name
+    input: CDIF
+    label: Description
+    input: IQGeo Comms Data Interchange Format (no mappings)
+    label: Engine
+    input: cdif
+    label: File Specs
+    input: 
+    label: *.csv
+    label: Mappings
+    label: Comms Feature Type Source Feature Type Filter
+    button: Add
+    label: Add
+    label: All Layers
+    label: Feeder Network
+    label: All layers (raw)
+    button: New Format
+    label: New Format
+    button: Validate
+    label: Validate
+    button: Save
+    label: Save
+    button: Cancel
+    label: Cancel
+    button: Help
+    label: Help
+    label: Built by
+
+

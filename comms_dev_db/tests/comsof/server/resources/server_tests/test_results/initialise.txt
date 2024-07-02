@@ -1,0 +1,20 @@
+Request: POST:/modules/comsof/workspace/1/execute?delta=comsof_design/arbury
+Response: 200 (200 OK)
+{
+   "initialise": {
+      "errors": [],
+      "log": [
+         "[<time>] Initialising: <workspaces>/1/workspace",
+         "[<time>] ... Template: <templates>/23.2.0.2",
+         "[<time>] ... Rules: <templates>/rules/hybrid.rules",
+         "[<time>] ... Setting coordinate system to: epsg:26985",
+         "[<time>] ... Clearing data"
+      ],
+      "warnings": []
+   }
+}
+
+
+DATABASE CHANGES: AFTER INITIALISE
+   update data.comsof_workspace(1) fields=(busy,op_stats,state)
+

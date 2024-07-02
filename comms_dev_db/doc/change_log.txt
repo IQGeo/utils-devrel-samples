@@ -1,0 +1,77 @@
+Network Manager Comms Dev DB - Change Log
+=========================================
+
+- cut: release 5.2.1.0.alpha5
+
+- equipment: Added equipment racks in hub
+- equipment: Added specs on splitter, ..
+
+- cut: release 5.2.1.0.alpha6
+
+- config: administrator role given new right: edit master
+          designer role/user without the edit master right
+
+- cut: release 5.2.1.0.alpha7
+
+- config: Added forward view layers:
+     Design -> Structures
+     Design -> Cables
+
+- config: Removed layer: Notes
+
+- cut: release 5.2.1.0.alpha8
+- cut: release 5.2.1.0.alpha9
+
+- structure: added specs to manhole
+
+- cut: release 5.2.1.0.alpha10
+
+- designs: Added design NB301 (contains conflicts and validation errors for testing)
+- data: Added backbone cables and equipment (for exercising mesh network support)
+- data: Updated some cable specs with different color schemes
+- data: Add slack loops
+
+- cut: release 5.2.1.0.alpha11 
+
+- config: Tweaked layer minimum zoom levels
+- data: Reversed cable BB-FCB-016
+
+- cut: release 5.2.1.0.alpha12
+
+- client: Added example naming scheme configuration to network features & made name fields readonly
+
+- cut: release 5.2.1.0.beta1
+
+- cut: release 5.2.1.0.beta2
+
+- Data validation tool added to toolbar for comms devdb app
+
+- cut: release 5.2.1.0.rc1
+
+- cut: release 5.2.1.0
+
+- cut: release 5.2.1.1.alpha1
+
+- cut: release 5.2.1.1.alpha2
+
+- server: Added standalone script to show how REST API can be used
+
+- cut: release 5.2.1.1.beta1
+
+- cut: release 5.2.1.1.beta2
+
+- cut: release 5.2.1.1.beta3
+
+- cut: release 5.2.1.1.rc1
+
+- cut: release 5.2.1.1
+
+
+- cut: release 6.0.1.2.alpha1
+
+- cut: release 6.0.1.2.alpha2
+
+- design rules: added example rules and example of design rules being run on design state update
+
+- dev_db: added design 335 to include proposed blown fiber
+

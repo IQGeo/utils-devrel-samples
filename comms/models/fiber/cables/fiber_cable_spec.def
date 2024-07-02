@@ -1,0 +1,117 @@
+{
+    "datasource": "myworld",
+    "name": "fiber_cable_spec",
+    "external_name": "{:fiber_cable_spec_external_name}",
+    "title": "[name]",
+    "short_description": "",
+    "track_changes": true,
+    "versioned": false,
+    "editable": {
+        "insert_from_gui": false,
+        "delete_from_gui": false,
+        "update_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)",
+            "key": true
+        },
+        {
+            "name": "model",
+            "external_name": "{:spec_model_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "type",
+            "external_name": "{:fiber_cable_spec_type_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "description",
+            "external_name": "{:spec_description_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "manufacturer",
+            "external_name": "{:spec_manufacturer_field_name}",
+            "type": "string()"
+        },
+        {
+            "name": "fiber_count",
+            "external_name": "{:fiber_cable_spec_fiber_count_name}",
+            "type": "integer",
+            "mandatory": true
+        },
+        {
+            "name": "cost_currency",
+            "external_name": "{:spec_currency_field_name}",
+            "type": "string(3)"
+        },
+        {
+            "name": "item_length",
+            "external_name": "{:fiber_cable_spec_item_length_name}",
+            "type": "double"
+        },
+        {
+            "name": "item_length_unit",
+            "external_name": "{:fiber_cable_spec_item_length_unit_name}",
+            "type": "string(3)"
+        },
+        {
+            "name": "item_cost",
+            "external_name": "{:fiber_cable_spec_cost_name}",
+            "type": "double"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "tick_mark_spacing",
+            "external_name": "{:fiber_cable_spec_tick_mark_spacing_name}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length"
+        },
+        {
+            "name": "cable_structure",
+            "external_name": "{:fiber_cable_spec_cable_structure_name}",
+            "type": "string"
+        },
+        {
+            "name": "retired",
+            "external_name": "{:spec_retired_field_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": false
+        }
+    ],
+    "groups": [
+        {
+            "name": "{:fiber_cable_spec_specs_group_name}",
+            "fields": [
+                "model",
+                "type",
+                "description",
+                "manufacturer",
+                "fiber_count",
+                "item_length",
+                "item_length_unit",
+                "item_cost",
+                "cost_currency",
+                "labor_costs",
+                "tick_mark_spacing",
+                "cable_structure",
+                "retired"
+            ],
+            "expanded": true
+        }
+    ],
+    "searches": [],
+    "queries": [],
+    "filters": []
+}

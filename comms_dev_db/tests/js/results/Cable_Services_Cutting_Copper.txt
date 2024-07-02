@@ -1,0 +1,706 @@
+
+*** CUT COPPER CABLE AND CONNECT
+Set delta to: design/NB217
+id: 2
+type: copper_cable
+myw: {
+	"short_description": "100-19-ASPICF",
+	"title": "Copper Cable: WH-CC-002 (100)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13533454388,
+			52.2234612917
+		],
+		[
+			0.13522167864,
+			52.223422294
+		],
+		[
+			0.13518534601,
+			52.2234097402
+		],
+		[
+			0.13508610427,
+			52.2233846832
+		],
+		[
+			0.13487286866,
+			52.2233563401
+		],
+		[
+			0.13466700912,
+			52.2233468924
+		],
+		[
+			0.13464957476,
+			52.2233423739
+		],
+		[
+			0.1346167177,
+			52.2233292292
+		],
+		[
+			0.13449534774,
+			52.2233481247
+		],
+		[
+			0.13446232186,
+			52.223369074
+		],
+		[
+			0.13436046305,
+			52.2233928986
+		],
+		[
+			0.13423716027,
+			52.2234216525
+		],
+		[
+			0.13409375378,
+			52.2234701233
+		],
+		[
+			0.13398117298,
+			52.2235054494
+		],
+		[
+			0.13393158382,
+			52.2235210586
+		],
+		[
+			0.13382168352,
+			52.2235432401
+		],
+		[
+			0.13374528941,
+			52.2235687077
+		],
+		[
+			0.13370878994,
+			52.2235781554
+		],
+		[
+			0.13368196785,
+			52.2235818523
+		],
+		[
+			0.13365112245,
+			52.2235986938
+		],
+		[
+			0.13362295926,
+			52.2236323768
+		],
+		[
+			0.1336176,
+			52.2236381
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.13533454388,
+				52.2234612917
+			],
+			[
+				0.1346167177,
+				52.2233292292
+			],
+			[
+				0.13449534774,
+				52.2233481247
+			],
+			[
+				0.13360284269,
+				52.2236559959
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"copper_count": 100,
+	"diameter": null,
+	"directed": true,
+	"gauge": 19,
+	"id": 2,
+	"installation_date": null,
+	"labor_costs": null,
+	"measured_length": null,
+	"name": "WH-CC-002",
+	"owner": null,
+	"pressureized": null,
+	"specification": "100-19-ASPICF",
+	"status": null
+}
+displayValues: {
+	"specification": "100-19-ASPICF"
+}
+
+id: 5
+type: mywcom_copper_segment
+myw: {
+	"title": "Copper Cable Segment: 5 (copper_cable/2)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13533454388,
+			52.2234612917
+		],
+		[
+			0.13522167864,
+			52.223422294
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "copper_cable/2",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/17",
+	"id": 5,
+	"in_equipment": "copper_splice_closure/1",
+	"in_segment": null,
+	"in_structure": "manhole/12",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "6",
+	"out_structure": "mywcom_route_junction/40",
+	"out_tick": null,
+	"root_housing": "ug_route/17"
+}
+displayValues: {
+	"cable": "Copper Cable: WH-CC-002 (100)",
+	"circuits": 0,
+	"housing": "Route (Underground): 17",
+	"in_equipment": "Copper Splice Closure: WH-CS-01",
+	"in_structure": "Manhole: WH-M-12",
+	"out_segment": "Copper Cable Segment: 6 (copper_cable/2)",
+	"out_structure": "Route Junction: 40",
+	"root_housing": "Route (Underground): 17"
+}
+
+id: 6
+type: mywcom_copper_segment
+myw: {
+	"title": "Copper Cable Segment: 6 (copper_cable/2)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13522167864,
+			52.223422294
+		],
+		[
+			0.13518534601,
+			52.2234097402
+		],
+		[
+			0.13508610427,
+			52.2233846832
+		],
+		[
+			0.13487286866,
+			52.2233563401
+		],
+		[
+			0.13466700912,
+			52.2233468924
+		],
+		[
+			0.13464957476,
+			52.2233423739
+		],
+		[
+			0.1346167177,
+			52.2233292292
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "copper_cable/2",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/387",
+	"id": 6,
+	"in_equipment": null,
+	"in_segment": "5",
+	"in_structure": "mywcom_route_junction/40",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "7",
+	"out_structure": "manhole/11",
+	"out_tick": null,
+	"root_housing": "ug_route/387"
+}
+displayValues: {
+	"cable": "Copper Cable: WH-CC-002 (100)",
+	"circuits": 0,
+	"housing": "Route (Underground): 387",
+	"in_segment": "Copper Cable Segment: 5 (copper_cable/2)",
+	"in_structure": "Route Junction: 40",
+	"out_segment": "Copper Cable Segment: 7 (copper_cable/2)",
+	"out_structure": "Manhole: WH-M-11",
+	"root_housing": "Route (Underground): 387"
+}
+
+id: 7
+type: mywcom_copper_segment
+myw: {
+	"title": "Copper Cable Segment: 7 (copper_cable/2)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1346167177,
+			52.2233292292
+		],
+		[
+			0.13449534774,
+			52.2233481247
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "copper_cable/2",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/18",
+	"id": 7,
+	"in_equipment": null,
+	"in_segment": "6",
+	"in_structure": "manhole/11",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "8",
+	"out_structure": "manhole/10",
+	"out_tick": null,
+	"root_housing": "ug_route/18"
+}
+displayValues: {
+	"cable": "Copper Cable: WH-CC-002 (100)",
+	"circuits": 0,
+	"housing": "Route (Underground): 18",
+	"in_segment": "Copper Cable Segment: 6 (copper_cable/2)",
+	"in_structure": "Manhole: WH-M-11",
+	"out_segment": "Copper Cable Segment: 8 (copper_cable/2)",
+	"out_structure": "Manhole: WH-M-10",
+	"root_housing": "Route (Underground): 18"
+}
+
+id: 8
+type: mywcom_copper_segment
+myw: {
+	"title": "Copper Cable Segment: 8 (copper_cable/2)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13449534774,
+			52.2233481247
+		],
+		[
+			0.13446232186,
+			52.223369074
+		],
+		[
+			0.13436046305,
+			52.2233928986
+		],
+		[
+			0.13423716027,
+			52.2234216525
+		],
+		[
+			0.13409375378,
+			52.2234701233
+		],
+		[
+			0.13398117298,
+			52.2235054494
+		],
+		[
+			0.13393158382,
+			52.2235210586
+		],
+		[
+			0.13382168352,
+			52.2235432401
+		],
+		[
+			0.13374528941,
+			52.2235687077
+		],
+		[
+			0.13370878994,
+			52.2235781554
+		],
+		[
+			0.13368196785,
+			52.2235818523
+		],
+		[
+			0.13365112245,
+			52.2235986938
+		],
+		[
+			0.13362295926,
+			52.2236323768
+		],
+		[
+			0.1336176,
+			52.2236381
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "copper_cable/2",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/27",
+	"id": 8,
+	"in_equipment": null,
+	"in_segment": "7",
+	"in_structure": "manhole/10",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "manhole/7",
+	"out_tick": null,
+	"root_housing": "ug_route/27"
+}
+displayValues: {
+	"cable": "Copper Cable: WH-CC-002 (100)",
+	"circuits": 0,
+	"housing": "Route (Underground): 27",
+	"in_segment": "Copper Cable Segment: 7 (copper_cable/2)",
+	"in_structure": "Manhole: WH-M-10",
+	"out_structure": "Manhole: WH-M-07",
+	"root_housing": "Route (Underground): 27"
+}
+
+id: 2
+type: copper_cable
+myw: {
+	"short_description": "100-19-ASPICF",
+	"title": "Copper Cable: WH-CC-002 (100)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13533454388,
+			52.2234612917
+		],
+		[
+			0.13522167864,
+			52.223422294
+		],
+		[
+			0.13518534601,
+			52.2234097402
+		],
+		[
+			0.13508610427,
+			52.2233846832
+		],
+		[
+			0.13487286866,
+			52.2233563401
+		],
+		[
+			0.13466700912,
+			52.2233468924
+		],
+		[
+			0.13464957476,
+			52.2233423739
+		],
+		[
+			0.1346167177,
+			52.2233292292
+		],
+		[
+			0.13449534774,
+			52.2233481247
+		],
+		[
+			0.13446232186,
+			52.223369074
+		],
+		[
+			0.13436046305,
+			52.2233928986
+		],
+		[
+			0.13423716027,
+			52.2234216525
+		],
+		[
+			0.13409375378,
+			52.2234701233
+		],
+		[
+			0.13398117298,
+			52.2235054494
+		],
+		[
+			0.13393158382,
+			52.2235210586
+		],
+		[
+			0.13382168352,
+			52.2235432401
+		],
+		[
+			0.13374528941,
+			52.2235687077
+		],
+		[
+			0.13370878994,
+			52.2235781554
+		],
+		[
+			0.13368196785,
+			52.2235818523
+		],
+		[
+			0.13365112245,
+			52.2235986938
+		],
+		[
+			0.13362295926,
+			52.2236323768
+		],
+		[
+			0.1336176,
+			52.2236381
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.13533454388,
+				52.2234612917
+			],
+			[
+				0.1346167177,
+				52.2233292292
+			],
+			[
+				0.13449534774,
+				52.2233481247
+			],
+			[
+				0.13360284269,
+				52.2236559959
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"copper_count": 100,
+	"diameter": null,
+	"directed": true,
+	"gauge": 19,
+	"id": 2,
+	"installation_date": null,
+	"labor_costs": null,
+	"measured_length": null,
+	"name": "WH-CC-002",
+	"owner": null,
+	"pressureized": null,
+	"specification": "100-19-ASPICF",
+	"status": null
+}
+displayValues: {
+	"specification": "100-19-ASPICF"
+}
+
+id: 5
+type: mywcom_copper_segment
+myw: {
+	"title": "Copper Cable Segment: 5 (copper_cable/2)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13533454388,
+			52.2234612917
+		],
+		[
+			0.13522167864,
+			52.223422294
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "copper_cable/2",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/17",
+	"id": 5,
+	"in_equipment": "copper_splice_closure/1",
+	"in_segment": null,
+	"in_structure": "manhole/12",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "6",
+	"out_structure": "mywcom_route_junction/40",
+	"out_tick": null,
+	"root_housing": "ug_route/17"
+}
+displayValues: {
+	"cable": "Copper Cable: WH-CC-002 (100)",
+	"circuits": 0,
+	"housing": "Route (Underground): 17",
+	"in_equipment": "Copper Splice Closure: WH-CS-01",
+	"in_structure": "Manhole: WH-M-12",
+	"out_segment": "Copper Cable Segment: 6 (copper_cable/2)",
+	"out_structure": "Route Junction: 40",
+	"root_housing": "Route (Underground): 17"
+}
+
+id: 6
+type: mywcom_copper_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Copper Cable Segment: 6 (copper_cable/2)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13522167864,
+			52.223422294
+		],
+		[
+			0.13518534601,
+			52.2234097402
+		],
+		[
+			0.13508610427,
+			52.2233846832
+		],
+		[
+			0.13487286866,
+			52.2233563401
+		],
+		[
+			0.13466700912,
+			52.2233468924
+		],
+		[
+			0.13464957476,
+			52.2233423739
+		],
+		[
+			0.1346167177,
+			52.2233292292
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "copper_cable/2",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/387",
+	"id": 6,
+	"in_equipment": null,
+	"in_segment": "5",
+	"in_structure": "mywcom_route_junction/40",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "manhole/11",
+	"out_tick": null,
+	"root_housing": "ug_route/387"
+}
+displayValues: {
+	"cable": "Copper Cable: WH-CC-002 (100)",
+	"circuits": 0,
+	"housing": "Route (Underground): 387",
+	"in_segment": "Copper Cable Segment: 5 (copper_cable/2)",
+	"in_structure": "Route Junction: 40",
+	"out_structure": "Manhole: WH-M-11",
+	"root_housing": "Route (Underground): 387"
+}
+
+DATABASE CHANGES: CUT COPPER CABLE AND CONNECT
+    insert delta.copper_cable(design/NB217,100000,insert)
+    insert delta.copper_cable(design/NB217,2,update)
+    insert delta.mywcom_copper_connection(design/NB217,100000,insert)
+    insert delta.mywcom_copper_segment(design/NB217,6,update)
+    insert delta.mywcom_copper_segment(design/NB217,7,update)
+    insert delta.mywcom_copper_segment(design/NB217,8,update)
+
+VALIDATION ERRORS: CUT COPPER CABLE AND CONNECT
+

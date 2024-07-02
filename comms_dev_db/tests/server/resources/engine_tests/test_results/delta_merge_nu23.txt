@@ -1,0 +1,32 @@
+MERGE REPORT design/NU23
+   FeatureChange(bb_circuit(2,design/NU23),update) fields=
+      master_changes_derived_only
+      segment_paths_changed
+   FeatureChange(bb_circuit(1,design/NU23),rebase)
+      master_changes_derived_only
+   FeatureChange(mywcom_fiber_segment(595,design/NU23),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(388,design/NU23),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(mywcom_fiber_segment(387,design/NU23),update) fields=
+      master_changes_derived_only
+      root_housing moved
+   FeatureChange(bb_circuit(5000,design/NU23),update) fields=path
+      segment_paths_changed
+
+DATABASE CHANGES: AFTER MERGE
+   update base.bb_circuit(design/NU23,1) fields=(path)
+   update base.bb_circuit(design/NU23,2) fields=(path)
+   update base.mywcom_fiber_segment(design/NU23,387) fields=(path)
+   update base.mywcom_fiber_segment(design/NU23,388) fields=(path)
+   update base.mywcom_fiber_segment(design/NU23,595) fields=(path)
+   update delta.bb_circuit(design/NU23,2,update) fields=(path)
+   update delta.bb_circuit(design/NU23,5000,insert) fields=(path)
+   update delta.mywcom_fiber_segment(design/NU23,387,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NU23,388,update) fields=(path)
+   update delta.mywcom_fiber_segment(design/NU23,595,update) fields=(path)
+
+CONFLICTS AFTER MERGE
+

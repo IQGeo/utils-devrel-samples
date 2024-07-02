@@ -1,0 +1,19 @@
+{
+    "name": "mywcom_fiber",
+    "external_name": "{:fiber_network_name}",
+    "description": "{:fiber_network_desc}",
+    "topology": "tree",
+    "directed": true,
+    "engine": "mywcom_fiber_network_engine",
+    "feature_types": {
+        "mywcom_fiber_segment": {
+            "upstream": "fiber_connections",
+            "downstream": "fiber_connections",
+            "length": "length"
+        },
+        "mywcom_fiber_connection": {
+            "upstream": "in_object",
+            "downstream": "out_object"
+        }
+    }
+}

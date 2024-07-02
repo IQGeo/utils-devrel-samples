@@ -1,0 +1,72 @@
+{
+    "datasource": "myworld",
+    "name": "cable_template",
+    "external_name": "Cable Template",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "Id",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "path",
+            "external_name": "Path",
+            "type": "linestring",
+            "mandatory": "true"
+        },
+        {
+            "name": "placement_path",
+            "external_name": "Route",
+            "type": "linestring",
+            "mandatory": "true"
+        },
+        {
+            "name": "name",
+            "external_name": "Name",
+            "type": "string(64)"
+        },
+        {
+            "name": "fiber_count",
+            "external_name": "Fiber Count",
+            "type": "integer"
+        },
+        {
+            "name": "directed",
+            "external_name": "Directed",
+            "type": "boolean"
+        },
+        {
+            "name": "tick_mark_spacing",
+            "external_name": "Tick Mark Spacing",
+            "type": "double"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "Labor Costs",
+            "type": "string()"
+        },
+        {
+            "name": "cable_segments",
+            "external_name": "Segments",
+            "type": "reference_set()",
+            "value": "select(*)"
+        },
+        {
+            "name": "cable_slacks",
+            "external_name": "Slack",
+            "type": "reference_set()",
+            "value": "select(*)"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+MERGE REPORT design/NB335
+   FeatureChange(manhole(38,design/NB335),revert)
+      delta_change_matches_master
+   FeatureChange(fiber_cable(185,design/NB335),rebase)
+      master_changes_derived_only
+   FeatureChange(fiber_cable(13,design/NB335),rebase)
+      master_changes_derived_only
+   FeatureChange(fiber_cable(12),revert)
+      all_changes_in_master
+   FeatureChange(mywcom_fiber_segment(450,design/NB335),rebase)
+      master_changes_derived_only
+   FeatureChange(mywcom_fiber_segment(110,design/NB335),rebase)
+      master_changes_derived_only
+   FeatureChange(mywcom_fiber_segment(107,design/NB335),revert)
+      delta_change_matches_master
+
+DATABASE CHANGES: AFTER MERGE
+   update base.fiber_cable(design/NB335,13) fields=(path)
+   update base.fiber_cable(design/NB335,185) fields=(path)
+   delete base.fiber_cable(design/NB335,12)
+   delete base.manhole(design/NB335,38)
+   update base.mywcom_fiber_segment(design/NB335,110) fields=(path)
+   update base.mywcom_fiber_segment(design/NB335,450) fields=(path)
+   delete base.mywcom_fiber_segment(design/NB335,107)
+   delete delta.fiber_cable(design/NB335,12,update)
+   delete delta.manhole(design/NB335,38,delete)
+   delete delta.mywcom_fiber_segment(design/NB335,107,delete)
+
+CONFLICTS AFTER MERGE
+   conflict manhole(55,design/NB335) update/delete
+   conflict manhole(54,design/NB335) update/update
+      master_fields: specification,labor_costs,location,size_x,size_y,size_z,installation_date
+      delta_fields : specification,labor_costs,location,size_x,size_y,size_z,lockable,installation_date
+   conflict ug_route(399,design/NB335) update/update
+      master_fields: out_structure
+      delta_fields : out_structure
+   conflict ug_route(68,design/NB335) update/update
+      master_fields: path
+      delta_fields : path
+   conflict ug_route(67,design/NB335) update/delete
+   conflict ug_route(66,design/NB335) update/update
+      master_fields: in_structure
+      delta_fields : in_structure
+   conflict mywcom_fiber_segment(117,design/NB335) update/update
+      master_fields: in_structure
+      delta_fields : in_structure
+   conflict mywcom_fiber_segment(116,design/NB335) update/update
+      master_fields: out_structure
+      delta_fields : out_structure
+   conflict mywcom_fiber_segment(106,design/NB335) update/update
+      master_fields: out_structure,out_segment
+      delta_fields : out_structure,out_segment
+

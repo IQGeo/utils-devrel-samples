@@ -1,0 +1,16 @@
+{
+    "image": "modules/comms/images/features/blown_fiber_bundle.svg",
+    "structure_palette_image": "modules/comms/images/features/blown_fiber_tube_in_structure_palette.svg",
+    "housings": ["ug_route", "conduit"],
+    "palette": false,
+    "continuous": true,
+    "bundle_type": null,
+    "layer": {
+        "line_style": "#ffffff:2:solid:none:none",
+        "min_select": 0,
+        "max_select": 0,
+        "min_vis": 0,
+        "max_vis": 0,
+        "layer": "blown_fiber_tubes"
+    }
+}

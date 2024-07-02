@@ -1,0 +1,33 @@
+
+*** MOVE
+Set delta to: design/NB046
+DATABASE CHANGES: MOVE
+    insert delta.fiber_olt(design/NB046,34,update)
+    insert delta.fiber_olt(design/NB046,35,update)
+    insert delta.fiber_olt(design/NB046,36,update)
+    insert delta.fiber_olt(design/NB046,37,update)
+    insert delta.fiber_olt(design/NB046,38,update)
+    insert delta.fiber_olt(design/NB046,39,update)
+    insert delta.fiber_olt(design/NB046,40,update)
+    insert delta.rack(design/NB046,4,update)
+
+VALIDATION ERRORS: MOVE
+
+
+*** COPY
+Set delta to: design/NB046
+DATABASE CHANGES: COPY
+    insert delta.fiber_mux(design/NB046,100000,insert)
+    insert delta.splice_closure(design/NB046,100000,insert)
+
+VALIDATION ERRORS: COPY
+
+
+*** ATTEMPT MOVE
+Set delta to: design/NB046
+Error: equipment_has_circuit
+
+DATABASE CHANGES: ATTEMPT MOVE
+
+VALIDATION ERRORS: ATTEMPT MOVE
+

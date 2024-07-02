@@ -1,0 +1,12 @@
+{
+   "name": "deltas", 
+   "display_name": "{:delta_layer_group_display_name}", 
+   "description": "{:delta_layer_group_display_desc}", 
+   "thumbnail": "", 
+   "exclusive": false, 
+   "layers": [
+      "designs", 
+      "delta_structures", 
+      "delta_cables"
+   ]
+}

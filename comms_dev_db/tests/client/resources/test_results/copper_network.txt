@@ -1,0 +1,34 @@
+DATABASE CHANGES: AFTER ADD COPPER CABLE 1
+   insert data.mywcom_change_detail(5)
+   insert delta.copper_cable(design/NB046,100000,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100000,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100001,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100002,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100003,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100004,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100005,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100006,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100007,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100008,insert)
+
+DATABASE CHANGES: AFTER ADD COPPER CABLE 2
+   insert data.mywcom_change_detail(6)
+   insert delta.copper_cable(design/NB046,100001,insert)
+   insert delta.mywcom_copper_segment(design/NB046,100009,insert)
+
+DATABASE CHANGES: AFTER CONNECT CABLES
+   insert data.mywcom_change_detail(7)
+   insert data.mywcom_change_detail(8)
+   insert delta.copper_splice_closure(design/NB046,100000,insert)
+   insert delta.mywcom_copper_connection(design/NB046,100000,insert)
+
+DATABASE CHANGES: AFTER DSLAM
+   insert data.mywcom_change_detail(10)
+   insert data.mywcom_change_detail(9)
+   insert delta.copper_dslam(design/NB046,100000,insert)
+   insert delta.rack(design/NB046,100000,insert)
+
+DATABASE CHANGES: AFTER CONNECT FIBER -> PORT
+   insert data.mywcom_change_detail(11)
+   insert delta.mywcom_fiber_connection(design/NB046,100000,insert)
+

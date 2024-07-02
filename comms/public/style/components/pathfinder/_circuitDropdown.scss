@@ -1,0 +1,8 @@
+@import './_sharedStyles.scss';
+
+.circuit-dropdown {
+    display: grid;
+    grid-template-columns: max-content 175px;
+    gap: 20px;
+    align-items: center;
+}

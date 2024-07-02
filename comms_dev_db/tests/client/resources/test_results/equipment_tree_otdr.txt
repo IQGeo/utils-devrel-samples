@@ -1,0 +1,94 @@
+TEST: AFTER OTDR DOWNSTREAM TRACE
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: list-export
+    list item: Zoom to all
+    list item: More...
+    label: Patch Panel: WH-ODF-01
+    input: false
+    label: Fiber Cable: WH-FCB-022 (288)
+    input: false
+    label: Fiber Splice: 1
+    input: false
+    label: Fiber Cable: WH-FCB-007 (288)
+    input: false
+    label: Fiber Splice: 9
+    input: false
+    label: Fiber Cable: WH-FCB-021 (144)
+    input: false
+    label: Fiber Splice: 37
+    input: false
+    label: Fiber Cable: RISER-005 (4)
+    input: false
+    label: Fiber Splitter: WH-SPL-007 (8 way)
+    input: false
+    label: Branch: 3 objectsFiber Splitter: WH-SPL-007 (8 way)Fiber Cable: DROP-051 (4)ONT: WH-ONT-050
+    input: false
+    label: Branch: 3 objectsFiber Splitter: WH-SPL-007 (8 way)Fiber Cable: DROP-054 (4)ONT: WH-ONT-053
+    input: false
+    label: Branch: 3 objectsFiber Splitter: WH-SPL-007 (8 way)Fiber Cable: DROP-052 (4)ONT: WH-ONT-051
+    input: false
+    label: Branch: 3 objectsFiber Splitter: WH-SPL-007 (8 way)Fiber Cable: DROP-053 (4)ONT: WH-ONT-052
+    input: false
+    label: Branch: 3 objectsFiber Splitter: WH-SPL-007 (8 way)Fiber Cable: DROP-050 (4)ONT: WH-ONT-049
+    input: false
+    label: Branch: 3 objectsFiber Splitter: WH-SPL-007 (8 way)Fiber Cable: DROP-048 (4)ONT: WH-ONT-047
+    input: false
+    label: Branch: 3 objectsFiber Splitter: WH-SPL-007 (8 way)Fiber Cable: DROP-049 (4)ONT: WH-ONT-048
+    input: false
+    label: Fiber Splitter: WH-SPL-007 (8 way)
+    input: false
+    label: Fiber Cable: DROP-055 (4)
+    input: false
+    label: ONT: WH-ONT-054
+    input: false
+
+
+TEST: AFTER OTDR UPSTREAM TRACE
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: list-export
+    list item: Zoom to all
+    list item: More...
+    label: ONT: WH-ONT-015
+    input: false
+    label: Fiber Cable: DROP-015 (4)
+    input: false
+    label: Fiber Splitter: WH-SPL-004 (8 way)
+    input: false
+    label: Fiber Splitter: WH-SPL-004 (8 way)
+    input: false
+    label: Fiber Cable: RISER-001 (4)
+    input: false
+    label: Fiber Splice: 24
+    input: false
+    label: Fiber Cable: WH-FCB-021 (144)
+    input: false
+    label: Fiber Splice: 9
+    input: false
+    label: Fiber Cable: WH-FCB-007 (288)
+    input: false
+    label: Fiber Splice: 1
+    input: false
+    label: Fiber Cable: WH-FCB-022 (288)
+    input: false
+    label: Patch Panel: WH-ODF-01
+    input: false
+    label: Patch Panel: WH-ODF-01
+    input: false
+    label: Patch Panel: WH-ODF-01E
+    input: false
+    label: Patch Panel: WH-ODF-01E
+    input: false
+    label: Fiber Cable: WH-INT-01 (48)
+    input: false
+    label: OLT: WH-OLT-010
+    input: false
+
+

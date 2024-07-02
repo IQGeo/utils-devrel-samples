@@ -1,0 +1,172 @@
+Request: POST: /modules/comms/upload
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/upload/<upload_id>/import
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/fiber_path/find
+Response: 200 (200 OK)
+{
+   "paths": [
+      {
+         "properties": {
+            "distance": 68.39,
+            "existing_splices": 2,
+            "loss": 0.53,
+            "new_splices": 2
+         },
+         "result": {
+            "features": [
+               "fiber_cable/100000: fiber_cable(100000)    Fiber Cable: XX-FCB-6000 (48)",
+               "fiber_cable/100001: fiber_cable(100001)    Fiber Cable: XX-FCB-6001 (48)",
+               "fiber_cable/100002: fiber_cable(100002)    Fiber Cable: XX-FCB-6002 (4)",
+               "fiber_ont/100001: fiber_ont(100001)    ONT: XX-ONT-6001",
+               "fiber_shelf/100000: fiber_shelf(100000)    Fiber Shelf: XX-S-6000",
+               "manhole/100001: manhole(100001)    Manhole: XX-M-6001",
+               "manhole/100003: manhole(100003)    Manhole: XX-M-6003"
+            ],
+            "metadata": [
+               "ports",
+               "fibers",
+               "from_",
+               "to_",
+               "length",
+               "direction",
+               "individualLoss",
+               "cumulativeLoss",
+               "loc",
+               "dist"
+            ],
+            "metadata_unit_scales": {
+               "cumulativeLoss": {
+                  "scale": "fiber_loss",
+                  "unit": "dB"
+               },
+               "dist": {
+                  "scale": "length",
+                  "unit": "m"
+               },
+               "individualLoss": {
+                  "scale": "fiber_loss",
+                  "unit": "dB"
+               },
+               "length": {
+                  "scale": "length",
+                  "unit": "m"
+               }
+            },
+            "nodes": {
+               "1": {
+                  "cumulativeLoss": 0.0,
+                  "direction": "downstream",
+                  "dist": 0.0,
+                  "feature": "fiber_shelf/100000",
+                  "individualLoss": 0.0,
+                  "parent": 0,
+                  "ports": "out:1"
+               },
+               "2": {
+                  "cumulativeLoss": 0.009895,
+                  "direction": "downstream",
+                  "dist": 19.79421302159222,
+                  "feature": "fiber_cable/100000",
+                  "fibers": "1",
+                  "individualLoss": 0.009895,
+                  "length": "19.79",
+                  "loc": "",
+                  "parent": 1,
+                  "start_coord": [
+                     0.1685928184960417,
+                     52.2351029035936
+                  ],
+                  "stop_coord": [
+                     0.1687414135819175,
+                     52.23522368463199
+                  ]
+               },
+               "3": {
+                  "cumulativeLoss": 0.109895,
+                  "direction": "downstream",
+                  "dist": 19.79421302159222,
+                  "feature": "manhole/100001",
+                  "from_": "1",
+                  "from_pins": "out:1",
+                  "from_ref": "mywcom_fiber_segment/100000",
+                  "individualLoss": 0.1,
+                  "is_new_connection": true,
+                  "parent": 2,
+                  "to_": "1",
+                  "to_pins": "in:1",
+                  "to_ref": "mywcom_fiber_segment/100002"
+               },
+               "4": {
+                  "cumulativeLoss": 0.13128499999999999,
+                  "direction": "downstream",
+                  "dist": 62.5722198992433,
+                  "feature": "fiber_cable/100001",
+                  "fibers": "1",
+                  "individualLoss": 0.02139,
+                  "length": "42.78",
+                  "loc": "",
+                  "parent": 3,
+                  "start_coord": [
+                     0.1687414135819175,
+                     52.23522368463199
+                  ],
+                  "stop_coord": [
+                     0.1693694975398806,
+                     52.235219121738254
+                  ]
+               },
+               "5": {
+                  "cumulativeLoss": 0.231285,
+                  "direction": "downstream",
+                  "dist": 62.5722198992433,
+                  "feature": "manhole/100003",
+                  "from_": "1",
+                  "from_pins": "out:1",
+                  "from_ref": "mywcom_fiber_segment/100004",
+                  "individualLoss": 0.1,
+                  "is_new_connection": true,
+                  "parent": 4,
+                  "to_": "1",
+                  "to_pins": "in:1",
+                  "to_ref": "mywcom_fiber_segment/100003"
+               },
+               "6": {
+                  "cumulativeLoss": 0.234195,
+                  "direction": "downstream",
+                  "dist": 68.39344912353002,
+                  "feature": "fiber_cable/100002",
+                  "fibers": "1",
+                  "individualLoss": 0.0029100000000000003,
+                  "length": "5.82",
+                  "loc": "",
+                  "parent": 5,
+                  "start_coord": [
+                     0.1693694975398806,
+                     52.235219121738254
+                  ],
+                  "stop_coord": [
+                     0.1693759348628026,
+                     52.235271324586876
+                  ]
+               },
+               "7": {
+                  "cumulativeLoss": 0.534195,
+                  "direction": "downstream",
+                  "dist": 68.39344912353002,
+                  "feature": "fiber_ont/100001",
+                  "individualLoss": 0.3,
+                  "parent": 6,
+                  "ports": "in:1"
+               }
+            }
+         }
+      }
+   ]
+}
+
+

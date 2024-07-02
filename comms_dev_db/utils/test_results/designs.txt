@@ -1,0 +1,34 @@
+Opening database <database> ...
+
+  design(CC4827)  details=Supply direct FFTH circuit to 25 George Nuttal Close  status=Designing  boundary=polygon(5)  type=Customer Connection
+  design(CC4970)  details=Supply direct FTTH circuit to 266 Milton Road  status=Designing  boundary=polygon(5)  type=Customer Connection
+  design(CC4975)  details=Supply direct FTTH circuit  status=Designing  boundary=polygon(41)  type=Customer Connection
+  design(CC5462)  details=Supply direct FFTH circuit to 69 Gladeside  status=Awaiting Approval  boundary=polygon(12)  type=Customer Connection
+  design(NB046)  status=Designing  boundary=polygon(10)  type=Network Build
+  design(NB112)  status=New  boundary=polygon(17)  type=Network Build
+  design(NB120)  status=Designing  user_group=admin:Admin Group  boundary=polygon(5)  type=Network Build
+  design(NB217)  status=New  user_group=admin:Admin Group  boundary=polygon(11)  type=Network Build
+  design(NB236)  details=Network Assignment to DSLAM-1  status=Designing  boundary=polygon(66)  type=Network Build
+  design(NB301)  details=Network extension with conflicts  status=Designing  boundary=polygon(9)  type=Network Build
+  design(NB335)  status=Designing  boundary=polygon(6)  type=Network Build
+  design(NMC1753)  status=Designing  boundary=polygon(5)  type=Network Build
+  design(NMC2623)  status=Designing  boundary=polygon(5)  type=Network Build
+  design(NMC2818)  status=Designing  boundary=polygon(5)  type=Network Build
+  design(NMC3205)  status=Designing  boundary=polygon(5)  type=Network Build
+  design(NMC3206)  status=Designing  boundary=polygon(5)  type=Network Build
+  design(NMC3208)  status=Designing  boundary=polygon(5)  type=Network Build
+  design(NU23)  details=SP backbone equipment upgrade  status=Designing  boundary=polygon(7)  type=Network Upgrade
+
+Opening database <database> ...
+
+  comsof_design(arbury)  details=Cambridge test area  status=Designing  boundary=polygon(22)
+  comsof_design(chesterfield)  details=Comsof design with existing infrastructure  status=Designing  boundary=polygon(7)
+  comsof_design(kings_hedges)  details=Design pre-populated with Comsof import  status=Designing  boundary=polygon(23)
+  comsof_design(maryland)  details=Comsof test design  status=Designing  boundary=polygon(8)
+
+Opening database <database> ...
+
+  systest(comsof_errors)  purpose=Owns 'broken' Comsof workspaces use to exercise error handling  boundary=polygon(7)
+  systest(conflicts1)  boundary=polygon(5)
+  systest(verrors1)  purpose=Contains validation errors for testing tree handling of broken data  boundary=polygon(7)
+

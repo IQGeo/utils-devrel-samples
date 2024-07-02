@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Connection.schema.json",
+    "title": "Connection",
+    "definitions": {
+        "Connection": {
+            "$id": "#Connection",
+            "description": "Parent schema for connection objects.",
+            "type": "object",
+            "properties": {
+                "inObject": {
+                    "description": "Object on 'in' side of connection",
+                    "type": "string"
+                },
+                "outObject": {
+                    "description": "Object on 'out' side of connection",
+                    "type": "string"
+                },
+                "inSide": {
+                    "description": "Side of inObject",
+                    "type": "string"
+                },
+                "inLow": {
+                    "description": "Start of strand or port range",
+                    "type": "integer"
+                },
+                "inHigh": {
+                    "description": "End of strand or port range",
+                    "type": "integer"
+                },
+                "outSide": {
+                    "description": "Side of outObject",
+                    "type": "string"
+                },
+                "outLow": {
+                    "description": "Start of strand or port range",
+                    "type": "integer"
+                },
+                "outHigh": {
+                    "description": "End of strand or port range",
+                    "type": "integer"
+                },
+                "splice": {
+                    "description": "True if connects two segments",
+                    "type": "boolean"
+                },
+                "rootHousing": {
+                    "description": "Top level structure in which connection is located",
+                    "type": "string"
+                },
+                "housing": {
+                    "description": "Structure or equip in which connection is housed. For port -> port connections, can be object 1 or 2.",
+                    "type": "string"
+                }
+            },
+            "allOf": [
+                {
+                    "$ref": "./Feature.schema.json"
+                }
+            ]
+        }
+    }
+}

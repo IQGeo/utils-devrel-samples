@@ -1,0 +1,409 @@
+Set delta to: *** master ***
+
+*** STRUCT CONDUIT TREE NO PROPOSED
+{
+	"children": [
+		{
+			"children": [
+				{
+					"cable": "fiber_cable/1: Fiber Cable: WH-FCB-001 (144)",
+					"cable_side": "out",
+					"children": [
+
+					],
+					"circuits": [
+						{
+							"circuit_urn": "ftth_circuit/17",
+							"pins": "PinRange(undefined:1)",
+							"seg_urn": "mywcom_fiber_segment/1"
+						},
+						{
+							"circuit_urn": "ftth_circuit/18",
+							"pins": "PinRange(undefined:2)",
+							"seg_urn": "mywcom_fiber_segment/1"
+						},
+						{
+							"circuit_urn": "ftth_circuit/19",
+							"pins": "PinRange(undefined:3)",
+							"seg_urn": "mywcom_fiber_segment/1"
+						}
+					],
+					"conns": [
+						"Conn(17: mywcom_fiber_segment/1#in:1:24 -> mywcom_fiber_segment/186#out:1:24)"
+					],
+					"feature": "mywcom_fiber_segment/1: Cable Segment: 1 (fiber_cable/1)",
+					"housing": "conduit/10: Conduit: WH-CND-010",
+					"n_connected": 24,
+					"pins": "PinRange(in:1:144)",
+					"side": "out"
+				},
+				{
+					"cable": "fiber_cable/223: Fiber Cable: WH-FCB-223 (16)",
+					"cable_side": "out",
+					"children": [
+
+					],
+					"circuits": [
+
+					],
+					"conns": [
+
+					],
+					"feature": "mywcom_fiber_segment/602: Cable Segment: 602 (fiber_cable/223)",
+					"housing": "conduit/10: Conduit: WH-CND-010",
+					"n_connected": 0,
+					"pins": "PinRange(in:1:16)",
+					"side": "out"
+				}
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/10: Conduit: WH-CND-010",
+			"housing": "cabinet/1: Cabinet: WH-C-01",
+			"passThroughConduit": undefined
+		},
+		{
+			"children": [
+				{
+					"cable": "fiber_cable/3: Fiber Cable: WH-FCB-003 (144)",
+					"cable_side": "out",
+					"children": [
+
+					],
+					"circuits": [
+
+					],
+					"conns": [
+						"Conn(18: mywcom_fiber_segment/33#in:13:24 -> mywcom_fiber_segment/186#out:25:36)"
+					],
+					"feature": "mywcom_fiber_segment/33: Cable Segment: 33 (fiber_cable/3)",
+					"housing": "conduit/11: Conduit: WH-CND-011",
+					"n_connected": 12,
+					"pins": "PinRange(in:1:144)",
+					"side": "out"
+				}
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/11: Conduit: WH-CND-011",
+			"housing": "cabinet/1: Cabinet: WH-C-01",
+			"passThroughConduit": undefined
+		},
+		{
+			"children": [
+				{
+					"cable": "fiber_cable/23: Fiber Cable: WH-FCB-023 (144)",
+					"cable_side": "in",
+					"children": [
+
+					],
+					"circuits": [
+						{
+							"circuit_urn": "ftth_circuit/17",
+							"pins": "PinRange(undefined:1)",
+							"seg_urn": "mywcom_fiber_segment/186"
+						},
+						{
+							"circuit_urn": "ftth_circuit/18",
+							"pins": "PinRange(undefined:2)",
+							"seg_urn": "mywcom_fiber_segment/186"
+						},
+						{
+							"circuit_urn": "ftth_circuit/19",
+							"pins": "PinRange(undefined:3)",
+							"seg_urn": "mywcom_fiber_segment/186"
+						}
+					],
+					"conns": [
+						"Conn(17: mywcom_fiber_segment/186#out:1:24 -> mywcom_fiber_segment/1#in:1:24)",
+						"Conn(18: mywcom_fiber_segment/186#out:25:36 -> mywcom_fiber_segment/33#in:13:24)"
+					],
+					"feature": "mywcom_fiber_segment/186: Cable Segment: 186 (fiber_cable/23)",
+					"housing": "conduit/3: Conduit: WH-CND-003",
+					"n_connected": 36,
+					"pins": "PinRange(in:1:144)",
+					"side": "in"
+				},
+				{
+					"cable": "fiber_cable/223: Fiber Cable: WH-FCB-223 (16)",
+					"cable_side": "in",
+					"children": [
+
+					],
+					"circuits": [
+
+					],
+					"conns": [
+
+					],
+					"feature": "mywcom_fiber_segment/601: Cable Segment: 601 (fiber_cable/223)",
+					"housing": "conduit/3: Conduit: WH-CND-003",
+					"n_connected": 0,
+					"pins": "PinRange(in:1:16)",
+					"side": "in"
+				}
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/3: Conduit: WH-CND-003",
+			"housing": "cabinet/1: Cabinet: WH-C-01",
+			"passThroughConduit": undefined
+		},
+		{
+			"cable": "copper_cable/1: Copper Cable: WH-CC-001 (100)",
+			"cable_side": "in",
+			"children": [
+
+			],
+			"circuits": [
+
+			],
+			"conns": [
+
+			],
+			"feature": "mywcom_copper_segment/2: Copper Cable Segment: 2 (copper_cable/1)",
+			"housing": undefined,
+			"n_connected": 0,
+			"pins": "PinRange(in:1:100)",
+			"side": "in"
+		},
+		{
+			"cable": "copper_cable/7: Copper Cable: WH-CC-007 (100)",
+			"cable_side": "in",
+			"children": [
+
+			],
+			"circuits": [
+
+			],
+			"conns": [
+
+			],
+			"feature": "mywcom_copper_segment/20: Copper Cable Segment: 20 (copper_cable/7)",
+			"housing": undefined,
+			"n_connected": 0,
+			"pins": "PinRange(in:1:100)",
+			"side": "in"
+		},
+		{
+			"cable": "copper_cable/1: Copper Cable: WH-CC-001 (100)",
+			"cable_side": "out",
+			"children": [
+
+			],
+			"circuits": [
+
+			],
+			"conns": [
+
+			],
+			"feature": "mywcom_copper_segment/3: Copper Cable Segment: 3 (copper_cable/1)",
+			"housing": undefined,
+			"n_connected": 0,
+			"pins": "PinRange(in:1:100)",
+			"side": "out"
+		}
+	],
+	"feature": "cabinet/1: Cabinet: WH-C-01"
+}
+
+*** STRUCT CONDUIT TREE WITH PROPOSED
+{
+	"children": [
+		{
+			"children": [
+				{
+					"cable": "fiber_cable/1: Fiber Cable: WH-FCB-001 (144)",
+					"cable_side": "out",
+					"children": [
+
+					],
+					"circuits": [
+						{
+							"circuit_urn": "ftth_circuit/17",
+							"pins": "PinRange(undefined:1)",
+							"seg_urn": "mywcom_fiber_segment/1"
+						},
+						{
+							"circuit_urn": "ftth_circuit/18",
+							"pins": "PinRange(undefined:2)",
+							"seg_urn": "mywcom_fiber_segment/1"
+						},
+						{
+							"circuit_urn": "ftth_circuit/19",
+							"pins": "PinRange(undefined:3)",
+							"seg_urn": "mywcom_fiber_segment/1"
+						}
+					],
+					"conns": [
+						"Conn(17: mywcom_fiber_segment/1#in:1:24 -> mywcom_fiber_segment/186#out:1:24)"
+					],
+					"feature": "mywcom_fiber_segment/1: Cable Segment: 1 (fiber_cable/1)",
+					"housing": "conduit/10: Conduit: WH-CND-010",
+					"n_connected": 24,
+					"pins": "PinRange(in:1:144)",
+					"side": "out"
+				},
+				{
+					"cable": "fiber_cable/223: Fiber Cable: WH-FCB-223 (16)",
+					"cable_side": "out",
+					"children": [
+
+					],
+					"circuits": [
+
+					],
+					"conns": [
+
+					],
+					"feature": "mywcom_fiber_segment/602: Cable Segment: 602 (fiber_cable/223)",
+					"housing": "conduit/10: Conduit: WH-CND-010",
+					"n_connected": 0,
+					"pins": "PinRange(in:1:16)",
+					"side": "out"
+				}
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/10: Conduit: WH-CND-010",
+			"housing": "cabinet/1: Cabinet: WH-C-01",
+			"passThroughConduit": undefined
+		},
+		{
+			"children": [
+				{
+					"cable": "fiber_cable/3: Fiber Cable: WH-FCB-003 (144)",
+					"cable_side": "out",
+					"children": [
+
+					],
+					"circuits": [
+
+					],
+					"conns": [
+						"Conn(18: mywcom_fiber_segment/33#in:13:24 -> mywcom_fiber_segment/186#out:25:36)"
+					],
+					"feature": "mywcom_fiber_segment/33: Cable Segment: 33 (fiber_cable/3)",
+					"housing": "conduit/11: Conduit: WH-CND-011",
+					"n_connected": 12,
+					"pins": "PinRange(in:1:144)",
+					"side": "out"
+				}
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/11: Conduit: WH-CND-011",
+			"housing": "cabinet/1: Cabinet: WH-C-01",
+			"passThroughConduit": undefined
+		},
+		{
+			"children": [
+				{
+					"cable": "fiber_cable/23: Fiber Cable: WH-FCB-023 (144)",
+					"cable_side": "in",
+					"children": [
+
+					],
+					"circuits": [
+						{
+							"circuit_urn": "ftth_circuit/17",
+							"pins": "PinRange(undefined:1)",
+							"seg_urn": "mywcom_fiber_segment/186"
+						},
+						{
+							"circuit_urn": "ftth_circuit/18",
+							"pins": "PinRange(undefined:2)",
+							"seg_urn": "mywcom_fiber_segment/186"
+						},
+						{
+							"circuit_urn": "ftth_circuit/19",
+							"pins": "PinRange(undefined:3)",
+							"seg_urn": "mywcom_fiber_segment/186"
+						}
+					],
+					"conns": [
+						"Conn(17: mywcom_fiber_segment/186#out:1:24 -> mywcom_fiber_segment/1#in:1:24)",
+						"Conn(18: mywcom_fiber_segment/186#out:25:36 -> mywcom_fiber_segment/33#in:13:24)"
+					],
+					"feature": "mywcom_fiber_segment/186: Cable Segment: 186 (fiber_cable/23)",
+					"housing": "conduit/3: Conduit: WH-CND-003",
+					"n_connected": 36,
+					"pins": "PinRange(in:1:144)",
+					"side": "in"
+				},
+				{
+					"cable": "fiber_cable/223: Fiber Cable: WH-FCB-223 (16)",
+					"cable_side": "in",
+					"children": [
+
+					],
+					"circuits": [
+
+					],
+					"conns": [
+
+					],
+					"feature": "mywcom_fiber_segment/601: Cable Segment: 601 (fiber_cable/223)",
+					"housing": "conduit/3: Conduit: WH-CND-003",
+					"n_connected": 0,
+					"pins": "PinRange(in:1:16)",
+					"side": "in"
+				}
+			],
+			"conduitRun": undefined,
+			"feature": "conduit/3: Conduit: WH-CND-003",
+			"housing": "cabinet/1: Cabinet: WH-C-01",
+			"passThroughConduit": undefined
+		},
+		{
+			"cable": "copper_cable/1: Copper Cable: WH-CC-001 (100)",
+			"cable_side": "in",
+			"children": [
+
+			],
+			"circuits": [
+
+			],
+			"conns": [
+
+			],
+			"feature": "mywcom_copper_segment/2: Copper Cable Segment: 2 (copper_cable/1)",
+			"housing": undefined,
+			"n_connected": 0,
+			"pins": "PinRange(in:1:100)",
+			"side": "in"
+		},
+		{
+			"cable": "copper_cable/7: Copper Cable: WH-CC-007 (100)",
+			"cable_side": "in",
+			"children": [
+
+			],
+			"circuits": [
+
+			],
+			"conns": [
+
+			],
+			"feature": "mywcom_copper_segment/20: Copper Cable Segment: 20 (copper_cable/7)",
+			"housing": undefined,
+			"n_connected": 0,
+			"pins": "PinRange(in:1:100)",
+			"side": "in"
+		},
+		{
+			"cable": "copper_cable/1: Copper Cable: WH-CC-001 (100)",
+			"cable_side": "out",
+			"children": [
+
+			],
+			"circuits": [
+
+			],
+			"conns": [
+
+			],
+			"feature": "mywcom_copper_segment/3: Copper Cable Segment: 3 (copper_cable/1)",
+			"housing": undefined,
+			"n_connected": 0,
+			"pins": "PinRange(in:1:100)",
+			"side": "out"
+		}
+	],
+	"feature": "cabinet/1: Cabinet: WH-C-01"
+}

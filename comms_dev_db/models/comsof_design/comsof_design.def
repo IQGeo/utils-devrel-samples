@@ -1,0 +1,52 @@
+{
+   "datasource": "myworld", 
+   "name": "comsof_design",
+   "external_name": "Design (Comsof)",
+   "title": "Comsof Design: [name]", 
+   "track_changes": true, 
+   "editable": {
+      "insert_from_gui": true, 
+      "delete_from_gui": true, 
+      "update_from_gui": true
+   }, 
+   "fields": [
+      {
+         "name": "name", 
+         "type": "string(32)",
+         "key": true
+      }, 
+      {
+         "name": "details", 
+         "type": "string(200)"
+      }, 
+      {
+         "name": "status",
+         "type": "string(20)",
+         "enum": "design_state",
+         "default": "Designing"
+      },
+      {
+         "name": "user_group", 
+         "external_name": "Group", 
+         "type": "string(200)"
+      },
+      {
+         "name": "boundary", 
+         "type": "polygon"
+      }
+   ], 
+   "groups": [], 
+   "searches": [
+      {
+         "value": "[name]", 
+         "description": "{title}"
+      }
+   ], 
+   "queries": [
+      {
+         "value": "comsof design", 
+         "description": "Design (Comsof)"
+      }
+   ], 
+   "filters": []
+}

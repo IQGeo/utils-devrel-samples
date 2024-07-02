@@ -1,0 +1,50 @@
+
+SUB TEST : design/NB46
+
+SUB TEST : design/NB120
+    disconnect Conn(mywcom_fiber_segment/153#in:1:16 -> mywcom_fiber_segment/73#out:145:160)
+    disconnect Conn(mywcom_fiber_segment/153#in:17:32 -> mywcom_fiber_segment/73#out:161:176)
+    disconnect Conn(mywcom_fiber_segment/153#in:33:48 -> mywcom_fiber_segment/73#out:177:192)
+    disconnect Conn(mywcom_fiber_segment/153#in:49:64 -> mywcom_fiber_segment/73#out:193:208)
+    disconnect Conn(mywcom_fiber_segment/153#in:65:80 -> mywcom_fiber_segment/73#out:209:224)
+    disconnect Conn(mywcom_fiber_segment/153#in:81:96 -> mywcom_fiber_segment/73#out:225:240)
+    disconnect Conn(mywcom_fiber_segment/153#in:97:112 -> mywcom_fiber_segment/73#out:241:256)
+    disconnect Conn(mywcom_fiber_segment/153#in:113:126 -> mywcom_fiber_segment/73#out:257:270)
+    disconnect Conn(mywcom_fiber_segment/554#in:1 -> mywcom_fiber_segment/73#out:144)
+    connect    Conn(mywcom_fiber_segment/153#in:1:16 -> mywcom_fiber_segment/4200#out:145:160)
+    connect    Conn(mywcom_fiber_segment/153#in:17:32 -> mywcom_fiber_segment/4200#out:161:176)
+    connect    Conn(mywcom_fiber_segment/153#in:33:48 -> mywcom_fiber_segment/4200#out:177:192)
+    connect    Conn(mywcom_fiber_segment/153#in:49:64 -> mywcom_fiber_segment/4200#out:193:208)
+    connect    Conn(mywcom_fiber_segment/153#in:65:80 -> mywcom_fiber_segment/4200#out:209:224)
+    connect    Conn(mywcom_fiber_segment/153#in:81:96 -> mywcom_fiber_segment/4200#out:225:240)
+    connect    Conn(mywcom_fiber_segment/153#in:97:112 -> mywcom_fiber_segment/4200#out:241:256)
+    connect    Conn(mywcom_fiber_segment/153#in:113:126 -> mywcom_fiber_segment/4200#out:257:270)
+    connect    Conn(mywcom_fiber_segment/4200#out:144 -> mywcom_fiber_segment/554#in:1)
+
+SUB TEST : design/NB301
+    connect    Conn(mywcom_fiber_segment/4800#in:1:8 -> mywcom_fiber_segment/8#out:20:27)
+    connect    Conn(mywcom_fiber_segment/4802#in:1:4 -> mywcom_fiber_segment/8#out:30:33)
+
+SUB TEST : design/NB335
+
+SUB TEST : design/NU23
+    disconnect Conn(fiber_mux/20#in:1 -> mywcom_fiber_segment/480#out:50)
+    disconnect Conn(fiber_mux/20#in:3:4 -> mywcom_fiber_segment/480#out:52:53)
+    disconnect Conn(fiber_mux/20#in:6 -> mywcom_fiber_segment/480#out:55)
+    disconnect Conn(fiber_mux/21#in:1 -> mywcom_fiber_segment/463#in:30)
+    disconnect Conn(fiber_mux/21#in:3 -> mywcom_fiber_segment/463#in:32)
+    disconnect Conn(fiber_mux/21#in:6 -> mywcom_fiber_segment/463#in:35)
+    connect    Conn(fiber_mux/20#in:6:8 -> mywcom_fiber_segment/463#out:35:37)
+    connect    Conn(fiber_mux/20#in:3 -> mywcom_fiber_segment/480#in:56)
+    connect    Conn(fiber_shelf/5000#in:1:2 -> mywcom_fiber_segment/370#out:23:24)
+    connect    Conn(fiber_shelf/5000#out:1:2 -> mywcom_fiber_segment/370#out:15:16)
+    connect    Conn(fiber_shelf/5001#in:1 -> mywcom_fiber_segment/371#in:15)
+    connect    Conn(fiber_shelf/5001#out:1 -> mywcom_fiber_segment/371#in:23)
+
+SUB TEST : design/CC4827
+    connect    Conn(fiber_ont/147#in:1:2 -> mywcom_fiber_segment/431#out:1:2)
+    connect    Conn(mywcom_fiber_segment/429#in:1:2 -> mywcom_fiber_segment/83#out:7:8)
+
+SUB TEST : design/CC5462
+    connect    Conn(fiber_ont/4400#in:1:4 -> mywcom_fiber_segment/4407#out:1:4)
+    connect    Conn(mywcom_fiber_segment/4403#in:1:4 -> mywcom_fiber_segment/83#out:10:13)

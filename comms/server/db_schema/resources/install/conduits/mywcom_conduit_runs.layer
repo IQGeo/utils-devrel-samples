@@ -1,0 +1,24 @@
+{
+    "name": "mywcom_conduit_runs",
+    "display_name": "{:conduit_runs_display_name}",
+    "category": "overlay",
+    "code": "my",
+    "datasource": "myworld",
+    "spec": {
+        "rendering": "vector",
+        "isStatic": false,
+        "extraOptions": null,
+        "nativeAppMode": "switchable",
+        "jsClass": null
+    },
+    "transparency": 0,
+    "min_scale": 15,
+    "max_scale": 22,
+    "feature_types": [
+        {
+            "name": "mywcom_conduit_run",
+            "field_name": "path",
+            "line_style": "#ff9900:3:shortdash:none:none"
+        }
+    ]
+}

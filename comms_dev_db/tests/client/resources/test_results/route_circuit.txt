@@ -1,0 +1,44 @@
+
+SUB TEST : ADD CIRCUIT
+    DATABASE CHANGES: AFTER ADD CIRCUIT
+       insert data.mywcom_change_detail(5)
+       insert delta.fiber_olt(design/NB046,10,update)
+       insert delta.fiber_ont(design/NB046,18,update)
+       insert delta.fiber_patch_panel(design/NB046,1,update)
+       insert delta.fiber_patch_panel(design/NB046,4,update)
+       insert delta.fiber_splitter(design/NB046,2,update)
+       insert delta.ftth_circuit(design/NB046,100000,insert)
+       insert delta.mywcom_fiber_segment(design/NB046,153,update)
+       insert delta.mywcom_fiber_segment(design/NB046,154,update)
+       insert delta.mywcom_fiber_segment(design/NB046,155,update)
+       insert delta.mywcom_fiber_segment(design/NB046,156,update)
+       insert delta.mywcom_fiber_segment(design/NB046,184,update)
+       insert delta.mywcom_fiber_segment(design/NB046,193,update)
+       insert delta.mywcom_fiber_segment(design/NB046,220,update)
+       insert delta.mywcom_fiber_segment(design/NB046,557,update)
+       insert delta.mywcom_fiber_segment(design/NB046,73,update)
+    
+
+SUB TEST : DELETE CIRCUIT
+    DATABASE CHANGES: AFTER DELETE CIRCUIT
+       insert data.mywcom_change_detail(6)
+       insert delta.fiber_olt(design/NB046,25,update)
+       insert delta.fiber_ont(design/NB046,150,update)
+       insert delta.fiber_patch_panel(design/NB046,2,update)
+       insert delta.fiber_patch_panel(design/NB046,5,update)
+       insert delta.ftth_circuit(design/NB046,3,delete)
+       insert delta.mywcom_fiber_segment(design/NB046,189,update)
+       insert delta.mywcom_fiber_segment(design/NB046,190,update)
+       insert delta.mywcom_fiber_segment(design/NB046,394,update)
+       insert delta.mywcom_fiber_segment(design/NB046,395,update)
+       insert delta.mywcom_fiber_segment(design/NB046,396,update)
+       insert delta.mywcom_fiber_segment(design/NB046,560,update)
+       insert delta.mywcom_fiber_segment(design/NB046,57,update)
+       insert delta.mywcom_fiber_segment(design/NB046,58,update)
+       insert delta.mywcom_fiber_segment(design/NB046,59,update)
+       insert delta.mywcom_fiber_segment(design/NB046,62,update)
+       insert delta.mywcom_fiber_segment(design/NB046,63,update)
+       update delta.mywcom_fiber_segment(design/NB046,4000,insert) fields=(circuits)
+       update delta.mywcom_fiber_segment(design/NB046,60,update) fields=(circuits)
+       update delta.mywcom_fiber_segment(design/NB046,61,update) fields=(circuits)
+    

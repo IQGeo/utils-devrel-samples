@@ -1,0 +1,210 @@
+{
+	"mywcom.specs": {},
+
+	"mywcom.structures": {
+		"mywcom_route_junction": {
+			"image": null,
+			"palette": false
+		}
+	},
+
+	"mywcom.routes": {},
+
+	"mywcom.conduits": {},
+
+	"mywcom.equipment": {},
+
+	"mywcom.cables": {},
+        
+	"mywcom.circuits": {},
+
+	"mywcom.previewCableStyles": {
+		"insert": {
+			"color": "#0000FF",
+			"opacity": 0.75,
+			"weight": 8
+		},
+		"keep": {
+			"color": "#8888FF",
+			"opacity": 0.75,
+			"weight": 8
+		},
+		"delete": {
+			"color": "#BBBBBB",
+			"opacity": 0.9,
+			"weight": 8
+		},
+		"affected_structure": {
+			"text": {
+				"vOffset": 0,
+				"fontStyle": "normal",
+				"worldSize": false,
+				"halign": "left",
+				"valign": "top",
+				"hOffset": 0,
+				"fontFamily": "Arial",
+				"fieldName": "disconnects",
+				"bcolor": "#ffffff",
+				"fontColor": "#000000",
+				"fontSize": 10,
+				"border": 1,
+				"zIndexOffset": 2000
+			},
+			"icon": {
+				"iconUrl": "images/circle-empty2.svg",
+				"iconAnchor": [
+					18,
+					18
+				],
+				"orientiation": 0
+			}
+		}
+	},
+
+	"mywcom.stateManager": {
+		"enabled": false
+	},
+	"mywcom.editableStates": [],
+
+	"mywcom.fiberColors": {
+		"blue": {
+			"color": "#0000FF", 
+			"abbr": "BL", 
+			"label": "Blue"
+		}, 
+		"brown": {
+			"color": "#A52A2A", 
+			"abbr": "BN", 
+			"label": "Brown"
+		}, 
+		"turquoise": {
+			"color": "#40E0D0", 
+			"abbr": "TQ", 
+			"label": "Turquoise"
+		}, 
+		"rose": {
+			"color": "#FFE4E1", 
+			"abbr": "RO", 
+			"label": "Rose"
+		}, 
+		"slate": {
+			"color": "#708090", 
+			"abbr": "SL", 
+			"label": "Slate"
+		}, 
+		"aqua": {
+			"color": "#00FFFF", 
+			"abbr": "A", 
+			"label": "Aqua"
+		}, 
+		"grey": {
+			"color": "#808080", 
+			"abbr": "GY", 
+			"label": "Grey"
+		}, 
+		"yellow": {
+			"color": "#FFFF00", 
+			"abbr": "YL", 
+			"label": "Yellow"
+		}, 
+		"pink": {
+			"color": "#FFC0CB", 
+			"abbr": "PK", 
+			"label": "Pink"
+		}, 
+		"green": {
+			"color": "#008000", 
+			"abbr": "GN", 
+			"label": "Green"
+		}, 
+		"violet": {
+			"color": "#EE82EE", 
+			"abbr": "VT", 
+			"label": "Violet"
+		}, 
+		"orange": {
+			"color": "#FFA500", 
+			"abbr": "OR", 
+			"label": "Orange"
+		}, 
+		"black": {
+			"color": "#000000", 
+			"abbr": "BK", 
+			"label": "Black"
+		}, 
+		"white": {
+			"color": "#FFFFFF", 
+			"abbr": "WT", 
+			"label": "White"
+		}, 
+		"transparent": {
+			"color": "#EEEEEE", 
+			"abbr": "TR", 
+			"label": "Transparent"
+		}, 
+		"red": {
+			"color": "#FF0000", 
+			"abbr": "RD", 
+			"label": "Red"
+		}
+   	},
+
+   	"mywcom.fiberColorSchemes": {
+		"DIN VDE 0888": {
+			"engine": "DIN VDE 0888", 
+			"colors": [
+				"red", 
+				"green", 
+				"blue", 
+				"yellow", 
+				"white", 
+				"slate", 
+				"brown", 
+				"violet", 
+				"turquoise", 
+				"black", 
+				"orange", 
+				"pink"
+			], 
+			"description": "DIN VDE 0888 standard color scheme"
+		}, 
+		"TIA-598-C": {
+			"engine": "TIA-598-C", 
+			"colors": [
+				"blue", 
+				"orange", 
+				"green", 
+				"brown", 
+				"slate", 
+				"white", 
+				"red", 
+				"black", 
+				"yellow", 
+				"violet", 
+				"rose", 
+				"aqua"
+			], 
+			"description": "TIA-598-C standard color scheme"
+		}, 
+		"FIN2012": {
+			"engine": "FIN2012", 
+			"colors": [
+				"blue", 
+				"white", 
+				"yellow", 
+				"green", 
+				"grey", 
+				"orange", 
+				"brown", 
+				"turquoise", 
+				"black", 
+				"violet", 
+				"pink", 
+				"red"
+			], 
+			"description": "FIN2012 color scheme typically used in Finland"
+		}
+   	},
+
+	"mywcom.nameManager": {"engine": "myworldapp.modules.comms.server.api.mywcom_name_manager"}
+}

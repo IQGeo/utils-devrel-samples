@@ -1,0 +1,154 @@
+TEST: AFTER EXPAND SPLITTER
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-006 Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Fiber Splitter: WH-SPL-001 (8 way)
+    label: Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: IN (1/1)
+    label: OUT (7/8)
+
+
+TEST: AFTER SELECT SPLICE CLOSURE
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-006 Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Fiber Splitter: WH-SPL-001 (8 way)
+    label: Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: IN (1/1)
+    label: OUT (7/8)
+
+
+TEST: AFTER SINGLE FIBER SHOW TERMINATIONS
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-006 Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) IN (1/1) OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) IN (1/1) OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Fiber Splitter: WH-SPL-001 (8 way) IN (1/1) OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit
+    label: IN (1/1)
+    label: OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit
+    label: 1 -> DROP-001 #1BL : 1 circuit
+    label: 2 -> DROP-002 #1BL : 1 circuit
+    label: 3 -> DROP-003 #1BL : 1 circuit
+    label: 4 -> DROP-004 #1BL : 1 circuit
+    label: 5 -> DROP-005 #1BL : 1 circuit
+    label: 6 -> DROP-006 #1BL
+    label: 7 -> DROP-007 #1BL : 1 circuit
+    label: 8 -> DROP-008 #1BL : 1 circuit
+    label: Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: IN (1/1)
+    label: OUT (7/8)
+
+
+TEST: AFTER FIBER SHEATH SHOW TERMINATIONS
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-006 Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) IN (1/1) OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) IN (1/1) OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Fiber Splitter: WH-SPL-001 (8 way) IN (1/1) OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit
+    label: IN (1/1)
+    label: OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit
+    label: 1 -> DROP-001 #1BL : 1 circuit
+    label: 2 -> DROP-002 #1BL : 1 circuit
+    label: 3 -> DROP-003 #1BL : 1 circuit
+    label: 4 -> DROP-004 #1BL : 1 circuit
+    label: 5 -> DROP-005 #1BL : 1 circuit
+    label: 6 -> DROP-006 #1BL
+    label: 7 -> DROP-007 #1BL : 1 circuit
+    label: 8 -> DROP-008 #1BL : 1 circuit
+    label: Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: IN (1/1)
+    label: OUT (7/8)
+
+
+TEST: AFTER TRACE UPSTREAM
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: list-export
+    list item: Zoom to all
+    list item: More...
+    label: Fiber Splitter: WH-SPL-001 (8 way)
+    input: false
+    label: Fiber Splitter: WH-SPL-001 (8 way)
+    input: false
+    label: Fiber Cable: RISER-001 (4)
+    input: false
+    label: Fiber Splice: 24
+    input: false
+    label: Fiber Cable: WH-FCB-021 (144)
+    input: false
+    label: Fiber Splice: 9
+    input: false
+    label: Fiber Cable: WH-FCB-007 (288)
+    input: false
+    label: Fiber Splice: 1
+    input: false
+    label: Fiber Cable: WH-FCB-022 (288)
+    input: false
+    label: Patch Panel: WH-ODF-01
+    input: false
+    label: Patch Panel: WH-ODF-01
+    input: false
+    label: Patch Panel: WH-ODF-01E
+    input: false
+    label: Patch Panel: WH-ODF-01E
+    input: false
+    label: Fiber Cable: WH-INT-01 (48)
+    input: false
+    label: OLT: WH-OLT-010
+    input: false
+
+
+TEST: AFTER PRESS BACK BUTTON
+  header: Equipment
+  header: feature-plugins-header-options
+    input: 
+    label: Pole: WH-P-006 Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) IN (1/1) OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Splice Closure: WH-SC-012 Fiber Splitter: WH-SPL-001 (8 way) IN (1/1) OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: Fiber Splitter: WH-SPL-001 (8 way) IN (1/1) OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit
+    label: IN (1/1)
+    label: OUT (8/8) 1 -> DROP-001 #1BL : 1 circuit 2 -> DROP-002 #1BL : 1 circuit 3 -> DROP-003 #1BL : 1 circuit 4 -> DROP-004 #1BL : 1 circuit 5 -> DROP-005 #1BL : 1 circuit 6 -> DROP-006 #1BL 7 -> DROP-007 #1BL : 1 circuit 8 -> DROP-008 #1BL : 1 circuit
+    label: 1 -> DROP-001 #1BL : 1 circuit
+    label: 2 -> DROP-002 #1BL : 1 circuit
+    label: 3 -> DROP-003 #1BL : 1 circuit
+    label: 4 -> DROP-004 #1BL : 1 circuit
+    label: 5 -> DROP-005 #1BL : 1 circuit
+    label: 6 -> DROP-006 #1BL
+    label: 7 -> DROP-007 #1BL : 1 circuit
+    label: 8 -> DROP-008 #1BL : 1 circuit
+    label: Fiber Splitter: WH-SPL-004 (8 way) IN (1/1) OUT (7/8)
+    label: IN (1/1)
+    label: OUT (7/8)
+
+
+TEST: AFTER MULTIPLE TRACE DOWNSTEAM
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: list-export
+    list item: Zoom to all
+    list item: More...
+    label: Fiber Splitter: WH-SPL-001 (8 way)
+    input: false
+    label: Branch: 3 objectsFiber Connection: 50Fiber Cable: DROP-004 (4)ONT: WH-ONT-004
+    input: false
+    label: Branch: 3 objectsFiber Connection: 48Fiber Cable: DROP-003 (4)ONT: WH-ONT-003
+    input: false
+    label: Fiber Connection: 52
+    input: false
+    label: Fiber Cable: DROP-005 (4)
+    input: false
+    label: ONT: WH-ONT-005
+    input: false
+
+

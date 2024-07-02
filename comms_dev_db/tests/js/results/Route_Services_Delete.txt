@@ -1,0 +1,34 @@
+
+*** DELETE FAIL: CONDUIT HAS CABLE
+Set delta to: design/NB217
+Error: conduit_has_cable
+
+DATABASE CHANGES: DELETE FAIL: CONDUIT HAS CABLE
+
+VALIDATION ERRORS: DELETE FAIL: CONDUIT HAS CABLE
+
+
+*** DELETE ROUTE JUNCTION
+Set delta to: design/NB217
+DATABASE CHANGES: DELETE ROUTE JUNCTION
+    insert delta.manhole(design/NB217,97,delete)
+    insert delta.mywcom_route_junction(design/NB217,100000,insert)
+    insert delta.ug_route(design/NB217,134,update)
+
+VALIDATION ERRORS: DELETE ROUTE JUNCTION
+
+DATABASE CHANGES: DELETE ROUTE JUNCTION
+    delete delta.mywcom_route_junction(design/NB217,100000,insert)
+    delete delta.ug_route(design/NB217,134,update)
+    insert delta.ug_route(design/NB217,134,delete)
+
+VALIDATION ERRORS: DELETE ROUTE JUNCTION
+
+
+*** DELETE SUCCESS
+Set delta to: design/NB217
+DATABASE CHANGES: DELETE SUCCESS
+    insert delta.ug_route(design/NB217,322,delete)
+
+VALIDATION ERRORS: DELETE SUCCESS
+

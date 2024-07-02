@@ -1,0 +1,375 @@
+
+SUB TEST : UNROUTE CIRCUIT
+    Request: GET: /feature/ftth_circuit/16?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /feature/ftth_circuit/16?delta=design/NB217
+    Response: 201 (201 Created)
+    
+    
+    Request: POST: /modules/comms/circuit/ftth_circuit/16/unroute?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "circuit": {
+          "geometry": null,
+          "id": 16,
+          "myw": {
+             "change_type": "update",
+             "delta": "design/NB217",
+             "feature_type": "ftth_circuit",
+             "short_description": "Direct (New)",
+             "title": "Circuit: WH-FTTH-016"
+          },
+          "properties": {
+             "address": "2618",
+             "customer": "Abdy,OJ",
+             "date": null,
+             "id": 16,
+             "in_feature": null,
+             "in_pins": null,
+             "name": "WH-FTTH-016",
+             "out_feature": "fiber_ont/16",
+             "out_pins": "in:1",
+             "service_type": "Direct",
+             "status": "New"
+          },
+          "type": "Feature"
+       }
+    }
+    
+    
+    DATABASE CHANGES: AFTER UNROUTE CIRCUIT
+       insert delta.ftth_circuit(design/NB217,16,update)
+    
+    VALIDATION ERRORS: AFTER UNROUTE CIRCUIT
+
+SUB TEST : RE-UNROUTE CIRCUIT
+    Request: GET: /feature/ftth_circuit/44?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    Request: PUT: /feature/ftth_circuit/44?delta=design/NB217
+    Response: 201 (201 Created)
+    
+    
+    Request: POST: /modules/comms/circuit/ftth_circuit/44/unroute?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "circuit": {
+          "bbox": [
+             0.1366049051285,
+             52.2233384715684,
+             0.1400662958622,
+             52.2243978356659
+          ],
+          "geometry": {
+             "coordinates": [
+                [
+                   0.1366049051285,
+                   52.2240164428564
+                ],
+                [
+                   0.1366531848907,
+                   52.2240509470256
+                ],
+                [
+                   0.1366344385557,
+                   52.2240861254892
+                ],
+                [
+                   0.1366840302944,
+                   52.2241248844409
+                ],
+                [
+                   0.1367323100567,
+                   52.2241388503833
+                ],
+                [
+                   0.1369066536427,
+                   52.2240566977179
+                ],
+                [
+                   0.136976391077,
+                   52.2240361595278
+                ],
+                [
+                   0.1370474696159,
+                   52.2240361595278
+                ],
+                [
+                   0.1371252536774,
+                   52.2239991907618
+                ],
+                [
+                   0.1373371481895,
+                   52.2238570661077
+                ],
+                [
+                   0.1376147568226,
+                   52.2236475751814
+                ],
+                [
+                   0.1378025114536,
+                   52.2234964124873
+                ],
+                [
+                   0.1378910243511,
+                   52.2234265817212
+                ],
+                [
+                   0.1379500329494,
+                   52.2233756462695
+                ],
+                [
+                   0.1379653233735,
+                   52.2233384715684
+                ],
+                [
+                   0.138112438657,
+                   52.2234101509367
+                ],
+                [
+                   0.1385401189327,
+                   52.2236286798727
+                ],
+                [
+                   0.1390426978469,
+                   52.2238950619052
+                ],
+                [
+                   0.1390565925754,
+                   52.223902610934
+                ],
+                [
+                   0.139362886548,
+                   52.2240690206274
+                ],
+                [
+                   0.1395171135664,
+                   52.2241474764043
+                ],
+                [
+                   0.1399828121066,
+                   52.2243978356659
+                ],
+                [
+                   0.1400046050549,
+                   52.2243947549617
+                ],
+                [
+                   0.1400662958622,
+                   52.2240304088329
+                ]
+             ],
+             "type": "LineString"
+          },
+          "id": 44,
+          "myw": {
+             "change_type": "update",
+             "delta": "design/NB217",
+             "feature_type": "ftth_circuit",
+             "short_description": "PON1 (In Service)",
+             "title": "Circuit: WH-FTTH-044"
+          },
+          "properties": {
+             "address": "3741",
+             "customer": "Bertram,J",
+             "date": null,
+             "id": 44,
+             "in_feature": "fiber_olt/10",
+             "in_pins": "out:3",
+             "name": "WH-FTTH-044",
+             "out_feature": "fiber_ont/37",
+             "out_pins": "in:1",
+             "service_type": "PON1",
+             "status": "In Service"
+          },
+          "type": "Feature"
+       }
+    }
+    
+    
+    DATABASE CHANGES: AFTER RE-ROUTE CIRCUIT
+       insert delta.fiber_olt(design/NB217,10,update)
+       insert delta.fiber_ont(design/NB217,20,update)
+       insert delta.fiber_patch_panel(design/NB217,1,update)
+       insert delta.fiber_patch_panel(design/NB217,4,update)
+       insert delta.fiber_splitter(design/NB217,2,update)
+       insert delta.ftth_circuit(design/NB217,44,update)
+       insert delta.mywcom_fiber_segment(design/NB217,73,update)
+       insert delta.mywcom_fiber_segment(design/NB217,153,update)
+       insert delta.mywcom_fiber_segment(design/NB217,154,update)
+       insert delta.mywcom_fiber_segment(design/NB217,155,update)
+       insert delta.mywcom_fiber_segment(design/NB217,156,update)
+       insert delta.mywcom_fiber_segment(design/NB217,184,update)
+       insert delta.mywcom_fiber_segment(design/NB217,193,update)
+       insert delta.mywcom_fiber_segment(design/NB217,222,update)
+       insert delta.mywcom_fiber_segment(design/NB217,557,update)
+    
+    VALIDATION ERRORS: AFTER RE-ROUTE CIRCUIT
+
+SUB TEST : NULL UNROUTE CIRCUIT
+    Request: POST: /modules/comms/circuit/ftth_circuit/3/unroute?delta=design/NB217
+    Response: 200 (200 OK)
+    {
+       "circuit": {
+          "bbox": [
+             0.136455707252,
+             52.2240164428564,
+             0.1374568417668,
+             52.2247063157682
+          ],
+          "geometry": {
+             "coordinates": [
+                [
+                   0.1366049051285,
+                   52.2240164428564
+                ],
+                [
+                   0.1365579664707,
+                   52.2240476609155
+                ],
+                [
+                   0.1365921646357,
+                   52.2240661452822
+                ],
+                [
+                   0.1365589722991,
+                   52.2240903803291
+                ],
+                [
+                   0.1365425789235,
+                   52.224099619123
+                ],
+                [
+                   0.1365757361054,
+                   52.2241189283759
+                ],
+                [
+                   0.136455707252,
+                   52.2241862934783
+                ],
+                [
+                   0.1364996284246,
+                   52.224211144603
+                ],
+                [
+                   0.1365707069635,
+                   52.224245648621
+                ],
+                [
+                   0.1366786658764,
+                   52.2242953507902
+                ],
+                [
+                   0.1367524266243,
+                   52.2243429990985
+                ],
+                [
+                   0.1368154585361,
+                   52.2243738061672
+                ],
+                [
+                   0.1369670033455,
+                   52.2244641734453
+                ],
+                [
+                   0.1370203122497,
+                   52.2244953911896
+                ],
+                [
+                   0.13706356287,
+                   52.2245040171414
+                ],
+                [
+                   0.1372070610523,
+                   52.2245771322844
+                ],
+                [
+                   0.1373439448174852,
+                   52.22464956656571
+                ],
+                [
+                   0.1373498886824,
+                   52.2246527118563
+                ],
+                [
+                   0.137401828405328,
+                   52.22468048787741
+                ],
+                [
+                   0.1374236494303,
+                   52.2246921446253
+                ],
+                [
+                   0.1374568417668,
+                   52.2247063157682
+                ],
+                [
+                   0.1374236494303,
+                   52.2246921446253
+                ],
+                [
+                   0.137401828405328,
+                   52.22468048787741
+                ],
+                [
+                   0.1373498886824,
+                   52.2246527118563
+                ],
+                [
+                   0.1373439448174852,
+                   52.22464956656571
+                ],
+                [
+                   0.137292891740799,
+                   52.22468269719428
+                ]
+             ],
+             "type": "LineString"
+          },
+          "id": 3,
+          "myw": {
+             "feature_type": "ftth_circuit",
+             "short_description": "Direct (In Service)",
+             "title": "Circuit: WH-FTTH-003"
+          },
+          "properties": {
+             "address": "2600",
+             "customer": "Darcy,M",
+             "date": null,
+             "id": 3,
+             "in_feature": "fiber_olt/25",
+             "in_pins": "out:3",
+             "name": "WH-FTTH-003",
+             "out_feature": "fiber_ont/150",
+             "out_pins": "in:1",
+             "service_type": "Direct",
+             "status": "In Service"
+          },
+          "type": "Feature"
+       }
+    }
+    
+    
+    DATABASE CHANGES: AFTER NULL RE-ROUTE CIRCUIT
+       insert delta.fiber_olt(design/NB217,25,update)
+       insert delta.fiber_ont(design/NB217,150,update)
+       insert delta.fiber_patch_panel(design/NB217,2,update)
+       insert delta.fiber_patch_panel(design/NB217,5,update)
+       insert delta.mywcom_fiber_segment(design/NB217,57,update)
+       insert delta.mywcom_fiber_segment(design/NB217,58,update)
+       insert delta.mywcom_fiber_segment(design/NB217,59,update)
+       insert delta.mywcom_fiber_segment(design/NB217,60,update)
+       insert delta.mywcom_fiber_segment(design/NB217,61,update)
+       insert delta.mywcom_fiber_segment(design/NB217,62,update)
+       insert delta.mywcom_fiber_segment(design/NB217,63,update)
+       insert delta.mywcom_fiber_segment(design/NB217,189,update)
+       insert delta.mywcom_fiber_segment(design/NB217,190,update)
+       insert delta.mywcom_fiber_segment(design/NB217,394,update)
+       insert delta.mywcom_fiber_segment(design/NB217,395,update)
+       insert delta.mywcom_fiber_segment(design/NB217,396,update)
+       insert delta.mywcom_fiber_segment(design/NB217,560,update)
+    
+    VALIDATION ERRORS: AFTER NULL RE-ROUTE CIRCUIT

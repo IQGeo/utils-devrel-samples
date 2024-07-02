@@ -1,0 +1,97 @@
+{
+    "datasource": "myworld",
+    "name": "copper_load_coil",
+    "external_name": "{:copper_load_coil_feature_external_name}",
+    "title": "{display_name}: [name] ([n_copper_ports])",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point",
+            "mandatory": "true"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "specification",
+            "external_name": "{:copper_specification_field_name}",
+            "type": "foreign_key(copper_load_coil_spec)"
+        },
+        {
+            "name": "status",
+            "external_name": "{:copper_status_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "n_copper_ports",
+            "external_name": "{:n_ports_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "owner",
+            "external_name": "{:copper_owner_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "installed",
+            "external_name": "{:copper_installed_field_name}",
+            "type": "date"
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "circuits",
+            "external_name": "{:circuits_field_name}",
+            "type": "reference_set",
+            "read_only": true
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "copper_connections",
+            "type": "reference_set",
+            "value": "select(mywcom_copper_connection.in_object,mywcom_copper_connection.out_object)",
+            "read_only": true
+        },
+        {
+            "name": "directed",
+            "external_name": "{:equipment_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": true
+        }
+    ]
+}

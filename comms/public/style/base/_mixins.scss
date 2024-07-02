@@ -1,0 +1,25 @@
+@mixin text-overflow-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin background-with-image(
+    $imgpath,
+    $repeat: no-repeat,
+    $position: center center,
+    $color: transparent
+) {
+    background: url($imgpath) $repeat $position $color;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-row-centered {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

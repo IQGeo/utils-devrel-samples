@@ -1,0 +1,168 @@
+TEST: Conduit feature editor with spec
+    label: Spec*
+    label: feature-edit-input
+    input (disabled): JDP-54MM-Grey
+    label: Diameter*
+    label: feature-edit-input
+    input (disabled): 54 mm
+    label: Material*
+    label: feature-edit-input
+    input (disabled): PVC (Smooth)
+    label: Owner*
+    label: feature-edit-input
+    input: 
+    label: Installed*
+    label: feature-edit-input
+    input: 
+  header: Path
+    button: Preview
+    button: Cancel
+    button: Save
+
+
+TEST: Conduit Routing Preview
+    label: Spec*
+    label: feature-edit-input
+    input (disabled): JDP-54MM-Grey
+    label: Diameter*
+    label: feature-edit-input
+    input (disabled): 54 mm
+    label: Material*
+    label: feature-edit-input
+    input (disabled): PVC (Smooth)
+    label: Owner*
+    label: feature-edit-input
+    input: 
+    label: Installed*
+    label: feature-edit-input
+    input: 
+  header: Path
+    label: Found path ( 6 conduits)
+    label: ×
+    label: ×
+    button: Preview
+    button: Cancel
+    button: Save
+
+
+DATABASE CHANGES: AFTER ADD CONDUITS
+   insert data.mywcom_change_detail(10)
+   insert data.mywcom_change_detail(5)
+   insert data.mywcom_change_detail(6)
+   insert data.mywcom_change_detail(7)
+   insert data.mywcom_change_detail(8)
+   insert data.mywcom_change_detail(9)
+   insert delta.conduit(design/NB046,100000,insert)
+   insert delta.conduit(design/NB046,100001,insert)
+   insert delta.conduit(design/NB046,100002,insert)
+   insert delta.conduit(design/NB046,100003,insert)
+   insert delta.conduit(design/NB046,100004,insert)
+   insert delta.conduit(design/NB046,100005,insert)
+
+TEST: Blown Fiber Tube Routing Preview
+    label: Name*
+    label: feature-edit-input
+    input: Test
+    label: Diameter*
+    label: feature-edit-input
+    input: 
+    label: Measured Length*
+    label: feature-edit-input
+    input: 
+    label: Bundle Size*
+    label: feature-edit-input
+    input: 4
+    label: Labor Costs*
+    label: feature-edit-input
+    input: 
+    label: Imported*
+    label: feature-edit-input
+    input: false
+  header: Path
+    label: Found path ( 4 tubes)
+    label: ×
+    label: ×
+    button: Preview
+    button: Cancel
+    button: Save
+
+
+DATABASE CHANGES: AFTER ADD BLOWN FIBER TUBES
+   insert data.mywcom_change_detail(11)
+   insert data.mywcom_change_detail(12)
+   insert data.mywcom_change_detail(13)
+   insert data.mywcom_change_detail(14)
+   insert data.mywcom_change_detail(15)
+   insert data.mywcom_change_detail(16)
+   insert data.mywcom_change_detail(17)
+   insert data.mywcom_change_detail(18)
+   insert data.mywcom_change_detail(19)
+   insert data.mywcom_change_detail(20)
+   insert data.mywcom_change_detail(21)
+   insert data.mywcom_change_detail(22)
+   insert data.mywcom_change_detail(23)
+   insert data.mywcom_change_detail(24)
+   insert data.mywcom_change_detail(25)
+   insert data.mywcom_change_detail(26)
+   insert data.mywcom_change_detail(27)
+   insert data.mywcom_change_detail(28)
+   insert data.mywcom_change_detail(29)
+   insert data.mywcom_change_detail(30)
+   insert data.mywcom_change_detail(31)
+   insert data.mywcom_change_detail(32)
+   insert data.mywcom_change_detail(33)
+   insert data.mywcom_change_detail(34)
+   insert data.mywcom_change_detail(35)
+   insert data.mywcom_change_detail(36)
+   insert data.mywcom_change_detail(37)
+   insert data.mywcom_change_detail(38)
+   insert data.mywcom_change_detail(39)
+   insert data.mywcom_change_detail(40)
+   insert data.mywcom_change_detail(41)
+   insert data.mywcom_change_detail(42)
+   insert delta.blown_fiber_bundle(design/NB046,100000,insert)
+   insert delta.blown_fiber_bundle(design/NB046,100001,insert)
+   insert delta.blown_fiber_bundle(design/NB046,100002,insert)
+   insert delta.blown_fiber_bundle(design/NB046,100003,insert)
+   insert delta.blown_fiber_bundle(design/NB046,100004,insert)
+   insert delta.blown_fiber_bundle(design/NB046,100005,insert)
+   insert delta.blown_fiber_bundle(design/NB046,100006,insert)
+   insert delta.blown_fiber_bundle(design/NB046,100007,insert)
+   insert delta.blown_fiber_tube(design/NB046,100000,insert)
+   insert delta.blown_fiber_tube(design/NB046,100001,insert)
+   insert delta.blown_fiber_tube(design/NB046,100002,insert)
+   insert delta.blown_fiber_tube(design/NB046,100003,insert)
+   insert delta.blown_fiber_tube(design/NB046,100004,insert)
+   insert delta.blown_fiber_tube(design/NB046,100005,insert)
+   insert delta.blown_fiber_tube(design/NB046,100006,insert)
+   insert delta.blown_fiber_tube(design/NB046,100007,insert)
+   insert delta.blown_fiber_tube(design/NB046,100008,insert)
+   insert delta.blown_fiber_tube(design/NB046,100009,insert)
+   insert delta.blown_fiber_tube(design/NB046,100010,insert)
+   insert delta.blown_fiber_tube(design/NB046,100011,insert)
+   insert delta.blown_fiber_tube(design/NB046,100012,insert)
+   insert delta.blown_fiber_tube(design/NB046,100013,insert)
+   insert delta.blown_fiber_tube(design/NB046,100014,insert)
+   insert delta.blown_fiber_tube(design/NB046,100015,insert)
+   insert delta.blown_fiber_tube(design/NB046,100016,insert)
+   insert delta.blown_fiber_tube(design/NB046,100017,insert)
+   insert delta.blown_fiber_tube(design/NB046,100018,insert)
+   insert delta.blown_fiber_tube(design/NB046,100019,insert)
+   insert delta.blown_fiber_tube(design/NB046,100020,insert)
+   insert delta.blown_fiber_tube(design/NB046,100021,insert)
+   insert delta.blown_fiber_tube(design/NB046,100022,insert)
+   insert delta.blown_fiber_tube(design/NB046,100023,insert)
+   insert delta.blown_fiber_tube(design/NB046,100024,insert)
+   insert delta.blown_fiber_tube(design/NB046,100025,insert)
+   insert delta.blown_fiber_tube(design/NB046,100026,insert)
+   insert delta.blown_fiber_tube(design/NB046,100027,insert)
+   insert delta.blown_fiber_tube(design/NB046,100028,insert)
+   insert delta.blown_fiber_tube(design/NB046,100029,insert)
+   insert delta.blown_fiber_tube(design/NB046,100030,insert)
+   insert delta.blown_fiber_tube(design/NB046,100031,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100000,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100001,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100002,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100003,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100004,insert)
+

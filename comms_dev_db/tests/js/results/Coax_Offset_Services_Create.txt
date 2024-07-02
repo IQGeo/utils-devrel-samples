@@ -1,0 +1,655 @@
+
+*** CREATE COAX CABLE
+Set delta to: design/NB217
+id: 100000
+type: coax_cable
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Coaxial Cable: WH-ON2-HFC-100000 (1)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13438747761,
+			52.2208423957
+		],
+		[
+			0.13507544622,
+			52.2203350892
+		],
+		[
+			0.13536832375,
+			52.2201270468
+		],
+		[
+			0.13544686236,
+			52.2201349458
+		],
+		[
+			0.135634617,
+			52.2201924578
+		],
+		[
+			0.1359182606,
+			52.2203563664
+		],
+		[
+			0.13606645265,
+			52.2204397583
+		],
+		[
+			0.13626426556,
+			52.220555603
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"offset_geom": {
+		"coordinates": [
+			[
+				0.13438747761,
+				52.2208423957
+			],
+			[
+				0.13440674566,
+				52.220841482
+			],
+			[
+				0.13508179656,
+				52.220343701
+			],
+			[
+				0.13537452018,
+				52.22013577
+			],
+			[
+				0.13544473954,
+				52.2201454863
+			],
+			[
+				0.13563031826,
+				52.2202023317
+			],
+			[
+				0.13591295992,
+				52.2203656614
+			],
+			[
+				0.13606112494,
+				52.2204490381
+			],
+			[
+				0.13624500854,
+				52.2205567254
+			],
+			[
+				0.13626426556,
+				52.220555603
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	},
+	"placement_path": {
+		"coordinates": [
+			[
+				0.13438747761,
+				52.2208423957
+			],
+			[
+				0.13626426556,
+				52.220555603
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"cable_size": null,
+	"coax_count": 1,
+	"comsof_auto": false,
+	"directed": true,
+	"frequency": null,
+	"id": 100000,
+	"labor_costs": null,
+	"measured_length": null,
+	"name": "WH-ON2-HFC-100000",
+	"specification": null,
+	"status": null
+}
+displayValues: {
+
+}
+
+id: 100000
+type: mywcom_coax_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Coaxial Segment: 100000 (coax_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13438747761,
+			52.2208423957
+		],
+		[
+			0.13507544622,
+			52.2203350892
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "coax_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/333",
+	"id": 100000,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/266",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100001",
+	"out_structure": "manhole/265",
+	"out_tick": null,
+	"root_housing": "ug_route/333"
+}
+displayValues: {
+	"cable": "Coaxial Cable: WH-ON2-HFC-100000 (1)",
+	"circuits": 0,
+	"housing": "Route (Underground): 333",
+	"in_structure": "Manhole: WH-M-266",
+	"out_segment": "Coaxial Segment: 100001 (coax_cable/100000)",
+	"out_structure": "Manhole: WH-M-265",
+	"root_housing": "Route (Underground): 333"
+}
+
+id: 100001
+type: mywcom_coax_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Coaxial Segment: 100001 (coax_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13507544622,
+			52.2203350892
+		],
+		[
+			0.13536832375,
+			52.2201270468
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "coax_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/330",
+	"id": 100001,
+	"in_equipment": null,
+	"in_segment": "100000",
+	"in_structure": "manhole/265",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100002",
+	"out_structure": "manhole/263",
+	"out_tick": null,
+	"root_housing": "ug_route/330"
+}
+displayValues: {
+	"cable": "Coaxial Cable: WH-ON2-HFC-100000 (1)",
+	"circuits": 0,
+	"housing": "Route (Underground): 330",
+	"in_segment": "Coaxial Segment: 100000 (coax_cable/100000)",
+	"in_structure": "Manhole: WH-M-265",
+	"out_segment": "Coaxial Segment: 100002 (coax_cable/100000)",
+	"out_structure": "Manhole: WH-M-263",
+	"root_housing": "Route (Underground): 330"
+}
+
+id: 100002
+type: mywcom_coax_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Coaxial Segment: 100002 (coax_cable/100000)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13536832375,
+			52.2201270468
+		],
+		[
+			0.13544686236,
+			52.2201349458
+		],
+		[
+			0.135634617,
+			52.2201924578
+		],
+		[
+			0.1359182606,
+			52.2203563664
+		],
+		[
+			0.13606645265,
+			52.2204397583
+		],
+		[
+			0.13626426556,
+			52.220555603
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "coax_cable/100000",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/334",
+	"id": 100002,
+	"in_equipment": null,
+	"in_segment": "100001",
+	"in_structure": "manhole/263",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "manhole/267",
+	"out_tick": null,
+	"root_housing": "ug_route/334"
+}
+displayValues: {
+	"cable": "Coaxial Cable: WH-ON2-HFC-100000 (1)",
+	"circuits": 0,
+	"housing": "Route (Underground): 334",
+	"in_segment": "Coaxial Segment: 100001 (coax_cable/100000)",
+	"in_structure": "Manhole: WH-M-263",
+	"out_structure": "Manhole: WH-M-267",
+	"root_housing": "Route (Underground): 334"
+}
+
+{
+	"ids": [
+		100000
+	]
+}
+DATABASE CHANGES: CREATE COAX CABLE
+    insert delta.coax_cable(design/NB217,100000,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100000,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100001,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100002,insert)
+
+VALIDATION ERRORS: CREATE COAX CABLE
+
+
+*** CREATE TWO COAX CABLES 
+Set delta to: design/NB217
+id: 100002
+type: coax_cable
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Coaxial Cable: WH-ON2-HFC-100002 (1)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13438747761,
+			52.2208423957
+		],
+		[
+			0.13507544622,
+			52.2203350892
+		],
+		[
+			0.13536832375,
+			52.2201270468
+		],
+		[
+			0.13544686236,
+			52.2201349458
+		],
+		[
+			0.135634617,
+			52.2201924578
+		],
+		[
+			0.1359182606,
+			52.2203563664
+		],
+		[
+			0.13606645265,
+			52.2204397583
+		],
+		[
+			0.13626426556,
+			52.220555603
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"offset_geom": {
+		"coordinates": [
+			[
+				0.13438747761,
+				52.2208423957
+			],
+			[
+				0.13441072204,
+				52.2208468745
+			],
+			[
+				0.13508577293,
+				52.2203490934
+			],
+			[
+				0.13537840019,
+				52.2201412322
+			],
+			[
+				0.1354434103,
+				52.2201520864
+			],
+			[
+				0.13562762653,
+				52.2202085145
+			],
+			[
+				0.1359096408,
+				52.2203714816
+			],
+			[
+				0.13605778889,
+				52.2204548488
+			],
+			[
+				0.13624162272,
+				52.2205625069
+			],
+			[
+				0.13626426556,
+				52.220555603
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	},
+	"placement_path": {
+		"coordinates": [
+			[
+				0.13438747761,
+				52.2208423957
+			],
+			[
+				0.13626426556,
+				52.220555603
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"cable_size": null,
+	"coax_count": 1,
+	"comsof_auto": false,
+	"directed": true,
+	"frequency": null,
+	"id": 100002,
+	"labor_costs": null,
+	"measured_length": null,
+	"name": "WH-ON2-HFC-100002",
+	"specification": null,
+	"status": null
+}
+displayValues: {
+
+}
+
+id: 100006
+type: mywcom_coax_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Coaxial Segment: 100006 (coax_cable/100002)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13438747761,
+			52.2208423957
+		],
+		[
+			0.13507544622,
+			52.2203350892
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "coax_cable/100002",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/333",
+	"id": 100006,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/266",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100007",
+	"out_structure": "manhole/265",
+	"out_tick": null,
+	"root_housing": "ug_route/333"
+}
+displayValues: {
+	"cable": "Coaxial Cable: WH-ON2-HFC-100002 (1)",
+	"circuits": 0,
+	"housing": "Route (Underground): 333",
+	"in_structure": "Manhole: WH-M-266",
+	"out_segment": "Coaxial Segment: 100007 (coax_cable/100002)",
+	"out_structure": "Manhole: WH-M-265",
+	"root_housing": "Route (Underground): 333"
+}
+
+id: 100007
+type: mywcom_coax_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Coaxial Segment: 100007 (coax_cable/100002)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13507544622,
+			52.2203350892
+		],
+		[
+			0.13536832375,
+			52.2201270468
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "coax_cable/100002",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/330",
+	"id": 100007,
+	"in_equipment": null,
+	"in_segment": "100006",
+	"in_structure": "manhole/265",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "100008",
+	"out_structure": "manhole/263",
+	"out_tick": null,
+	"root_housing": "ug_route/330"
+}
+displayValues: {
+	"cable": "Coaxial Cable: WH-ON2-HFC-100002 (1)",
+	"circuits": 0,
+	"housing": "Route (Underground): 330",
+	"in_segment": "Coaxial Segment: 100006 (coax_cable/100002)",
+	"in_structure": "Manhole: WH-M-265",
+	"out_segment": "Coaxial Segment: 100008 (coax_cable/100002)",
+	"out_structure": "Manhole: WH-M-263",
+	"root_housing": "Route (Underground): 330"
+}
+
+id: 100008
+type: mywcom_coax_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB217",
+	"delta_owner_title": "Design: NB217",
+	"title": "Coaxial Segment: 100008 (coax_cable/100002)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13536832375,
+			52.2201270468
+		],
+		[
+			0.13544686236,
+			52.2201349458
+		],
+		[
+			0.135634617,
+			52.2201924578
+		],
+		[
+			0.1359182606,
+			52.2203563664
+		],
+		[
+			0.13606645265,
+			52.2204397583
+		],
+		[
+			0.13626426556,
+			52.220555603
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "coax_cable/100002",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/334",
+	"id": 100008,
+	"in_equipment": null,
+	"in_segment": "100007",
+	"in_structure": "manhole/263",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "manhole/267",
+	"out_tick": null,
+	"root_housing": "ug_route/334"
+}
+displayValues: {
+	"cable": "Coaxial Cable: WH-ON2-HFC-100002 (1)",
+	"circuits": 0,
+	"housing": "Route (Underground): 334",
+	"in_segment": "Coaxial Segment: 100007 (coax_cable/100002)",
+	"in_structure": "Manhole: WH-M-263",
+	"out_structure": "Manhole: WH-M-267",
+	"root_housing": "Route (Underground): 334"
+}
+
+{
+	"ids": [
+		100002,
+		100003
+	]
+}
+DATABASE CHANGES: CREATE TWO COAX CABLES 
+    insert delta.coax_cable(design/NB217,100001,insert)
+    insert delta.coax_cable(design/NB217,100002,insert)
+    insert delta.coax_cable(design/NB217,100003,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100003,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100004,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100005,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100006,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100007,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100008,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100009,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100010,insert)
+    insert delta.mywcom_coax_segment(design/NB217,100011,insert)
+
+VALIDATION ERRORS: CREATE TWO COAX CABLES 
+

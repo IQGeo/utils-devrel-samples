@@ -1,0 +1,231 @@
+TEST: AFTER OPENING IMPORT DIALOG
+  header: Design: NB046
+    label: Network Build (Designing)
+    label: State
+    label: Designing
+    label: Design: NB046
+    button: Close
+    label: Format: CDIF
+    label: CDIF
+    label: Projection: EPSG code (optional)
+    input: 
+    button (disabled): Preview
+    button (disabled): Import
+    button: Close
+
+
+TEST: AFTER PREVIEW IMPORT DIALOG
+    label: BF Bundle: (6)
+    label: BF Bundle: (6)
+    label: BF Bundle: (6)
+    label: BF Tube: XX-BF-6000 : 1
+    label: BF Tube: XX-BF-6000 : 1
+    label: BF Tube: XX-BF-6000 : 1
+    label: BF Tube: XX-BF-6003 : 2
+    label: BF Tube: XX-BF-6003 : 2
+    label: BF Tube: XX-BF-6003 : 2
+    label: BF Tube: XX-BF-6006 : 3
+    label: BF Tube: XX-BF-6006 : 3
+    label: BF Tube: XX-BF-6006 : 3
+    label: BF Tube: XX-BF-6009 : 4
+    label: BF Tube: XX-BF-6009 : 4
+    label: BF Tube: XX-BF-6009 : 4
+    label: BF Tube: XX-BF-6012 : 5
+    label: BF Tube: XX-BF-6012 : 5
+    label: BF Tube: XX-BF-6012 : 5
+    label: BF Tube: XX-BF-6015 : 6
+    label: BF Tube: XX-BF-6015 : 6
+    label: BF Tube: XX-BF-6015 : 6
+    label: Building: Milton Hub
+    label: Cabinet: XX-C-6000
+    label: Cabinet: XX-C-6001
+    label: Conduit:
+    label: Conduit:
+    label: Conduit:
+    label: Conduit:
+    label: Fiber Cable: XX-FCB-6000 (48)
+    label: Fiber Cable: XX-FCB-6001 (4)
+    label: Fiber Cable: BB-FCB-6004 (24)
+    label: Fiber Cable: BB-FCB-6006 (24)
+    label: OLT: XX-OLT-6000
+    label: OLT: XX-OLT-6001
+    label: Patch Panel: XX-ODF-6000
+    label: Fiber Shelf: XX-S-6000
+    label: Fiber Splitter: XX-SPL-6000 (4 way)
+    label: Fiber Splitter: XX-SPL-6001 (4 way)
+    label: Fiber Splitter: XX-SPL-6002 (4 way)
+    label: Fiber Splitter: XX-SPL-6003 (4 way)
+    label: Manhole: XX-M-6000
+    label: Manhole: XX-M-6001
+    label: Manhole: XX-M-6002
+    label: Manhole: XX-M-6003
+    label: Manhole: XX-M-6004
+    label: Conduit Run: -46
+    label: Conduit Run: -47
+    label: Conduit Run: -48
+    label: Conduit Run: -49
+    label: Conduit Run: -50
+    label: Conduit Run: -51
+    label: Conduit Run: -52
+    label: Fiber Splice: -53
+    label: Fiber Splice: -54
+    label: Fiber Connection: -55
+    label: Fiber Connection: -56
+    label: Fiber Connection: -57
+    label: Fiber Connection: -58
+    label: Fiber Connection: -59
+    label: Fiber Connection: -60
+    label: Fiber Connection: -61
+    label: Fiber Connection: -62
+    label: Cable Segment: -63 (fiber_cable/8000)
+    label: Cable Segment: -64 (fiber_cable/8000)
+    label: Cable Segment: -65 (fiber_cable/8000)
+    label: Cable Segment: -66 (fiber_cable/8000)
+    label: Cable Segment: -67 (fiber_cable/8001)
+    label: Cable Segment: -68 (fiber_cable/8001)
+    label: Cable Segment: -69 (fiber_cable/8001)
+    label: Cable Segment: -70 (fiber_cable/8004)
+    label: Cable Segment: -71 (fiber_cable/8004)
+    label: Cable Segment: -72 (fiber_cable/8004)
+    label: Cable Segment: -73 (fiber_cable/8006)
+    label: Cable Segment: -74 (fiber_cable/8006)
+    label: Cable Segment: -75 (fiber_cable/8006)
+    label: Cable Segment: -76 (fiber_cable/8006)
+    label: Cable Segment: -77 (fiber_cable/8006)
+    label: Cable Segment: -78 (fiber_cable/8001)
+    label: Cable Segment: -79 (fiber_cable/8006)
+    label: Cable Segment: -80 (fiber_cable/8004)
+    label: Fiber Slack (32.8 ft)
+    label: Fiber Slack (49.2 ft)
+    label: Fiber Slack (16.4 ft)
+    label: Route Junction: -84
+    label: Route Junction: -85
+    label: Route Junction: -86
+    label: Route Junction: -87
+    label: Rack: Rack1
+    label: Splice Closure: XX-SC-6000
+    label: Route (Underground): -90
+    label: Route (Underground): -91
+    label: Route (Underground): -92
+    label: Route (Underground): -93
+    label: Route (Underground): -94
+    label: Route (Underground): -95
+    label: Route (Underground): -96
+    label: Route (Underground): -97
+    label: Route (Underground): -98
+    label: Route (Underground): -99
+    label: Route (Underground): -100
+    label: Design: NB046
+    button: Close
+    label: Format: CDIF
+    label: CDIF
+    label: Projection: EPSG code (optional)
+    input: 
+    label: Found 100 objects
+    button: Preview
+    button: Import
+    button: Close
+
+
+DATABASE CHANGES: AFTER DATA UPLOAD
+   insert delta.blown_fiber_bundle(design/NB046,100000,insert)
+   insert delta.blown_fiber_bundle(design/NB046,100001,insert)
+   insert delta.blown_fiber_bundle(design/NB046,100002,insert)
+   insert delta.blown_fiber_tube(design/NB046,100000,insert)
+   insert delta.blown_fiber_tube(design/NB046,100001,insert)
+   insert delta.blown_fiber_tube(design/NB046,100002,insert)
+   insert delta.blown_fiber_tube(design/NB046,100003,insert)
+   insert delta.blown_fiber_tube(design/NB046,100004,insert)
+   insert delta.blown_fiber_tube(design/NB046,100005,insert)
+   insert delta.blown_fiber_tube(design/NB046,100006,insert)
+   insert delta.blown_fiber_tube(design/NB046,100007,insert)
+   insert delta.blown_fiber_tube(design/NB046,100008,insert)
+   insert delta.blown_fiber_tube(design/NB046,100009,insert)
+   insert delta.blown_fiber_tube(design/NB046,100010,insert)
+   insert delta.blown_fiber_tube(design/NB046,100011,insert)
+   insert delta.blown_fiber_tube(design/NB046,100012,insert)
+   insert delta.blown_fiber_tube(design/NB046,100013,insert)
+   insert delta.blown_fiber_tube(design/NB046,100014,insert)
+   insert delta.blown_fiber_tube(design/NB046,100015,insert)
+   insert delta.blown_fiber_tube(design/NB046,100016,insert)
+   insert delta.blown_fiber_tube(design/NB046,100017,insert)
+   insert delta.building(design/NB046,100000,insert)
+   insert delta.cabinet(design/NB046,100000,insert)
+   insert delta.cabinet(design/NB046,100001,insert)
+   insert delta.conduit(design/NB046,100000,insert)
+   insert delta.conduit(design/NB046,100001,insert)
+   insert delta.conduit(design/NB046,100002,insert)
+   insert delta.conduit(design/NB046,100003,insert)
+   insert delta.fiber_cable(design/NB046,100000,insert)
+   insert delta.fiber_cable(design/NB046,100001,insert)
+   insert delta.fiber_cable(design/NB046,100002,insert)
+   insert delta.fiber_cable(design/NB046,100003,insert)
+   insert delta.fiber_olt(design/NB046,100000,insert)
+   insert delta.fiber_olt(design/NB046,100001,insert)
+   insert delta.fiber_patch_panel(design/NB046,100000,insert)
+   insert delta.fiber_shelf(design/NB046,100000,insert)
+   insert delta.fiber_splitter(design/NB046,100000,insert)
+   insert delta.fiber_splitter(design/NB046,100001,insert)
+   insert delta.fiber_splitter(design/NB046,100002,insert)
+   insert delta.fiber_splitter(design/NB046,100003,insert)
+   insert delta.manhole(design/NB046,100000,insert)
+   insert delta.manhole(design/NB046,100001,insert)
+   insert delta.manhole(design/NB046,100002,insert)
+   insert delta.manhole(design/NB046,100003,insert)
+   insert delta.manhole(design/NB046,100004,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100000,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100001,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100002,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100003,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100004,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100005,insert)
+   insert delta.mywcom_conduit_run(design/NB046,100006,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100001,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100002,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100003,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100004,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100005,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100006,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100007,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100008,insert)
+   insert delta.mywcom_fiber_connection(design/NB046,100009,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100001,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100002,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100003,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100004,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100005,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100006,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100007,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100008,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100009,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100010,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100011,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100012,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100013,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100014,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100015,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100016,insert)
+   insert delta.mywcom_fiber_segment(design/NB046,100017,insert)
+   insert delta.mywcom_fiber_slack(design/NB046,100000,insert)
+   insert delta.mywcom_fiber_slack(design/NB046,100001,insert)
+   insert delta.mywcom_fiber_slack(design/NB046,100002,insert)
+   insert delta.mywcom_route_junction(design/NB046,100000,insert)
+   insert delta.mywcom_route_junction(design/NB046,100001,insert)
+   insert delta.mywcom_route_junction(design/NB046,100002,insert)
+   insert delta.mywcom_route_junction(design/NB046,100003,insert)
+   insert delta.rack(design/NB046,100000,insert)
+   insert delta.splice_closure(design/NB046,100000,insert)
+   insert delta.ug_route(design/NB046,100000,insert)
+   insert delta.ug_route(design/NB046,100001,insert)
+   insert delta.ug_route(design/NB046,100002,insert)
+   insert delta.ug_route(design/NB046,100003,insert)
+   insert delta.ug_route(design/NB046,100004,insert)
+   insert delta.ug_route(design/NB046,100005,insert)
+   insert delta.ug_route(design/NB046,100006,insert)
+   insert delta.ug_route(design/NB046,100007,insert)
+   insert delta.ug_route(design/NB046,100008,insert)
+   insert delta.ug_route(design/NB046,100009,insert)
+   insert delta.ug_route(design/NB046,100010,insert)
+

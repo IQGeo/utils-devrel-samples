@@ -1,0 +1,266 @@
+
+SUB TEST : ROUTES
+    Request: GET: /modules/comms/route/ug_route/8/contents
+    Response: 200 (200 OK)
+    {
+       "cable_segs": {
+          "count": 3,
+          "features": [
+             "mywcom_fiber_segment(36)    Cable Segment: 36 (fiber_cable/3)",
+             "mywcom_fiber_segment(45)    Cable Segment: 45 (fiber_cable/4)",
+             "mywcom_fiber_segment(59)    Cable Segment: 59 (fiber_cable/6)"
+          ],
+          "limit": null,
+          "next_offset": null,
+          "offset": 0,
+          "previous_offset": null,
+          "type": "MywFeatureCollection",
+          "unlimited_count": null
+       },
+       "cables": {
+          "count": 3,
+          "features": [
+             "fiber_cable(3)    Fiber Cable: WH-FCB-003 (144)",
+             "fiber_cable(4)    Fiber Cable: WH-FCB-004 (144)",
+             "fiber_cable(6)    Fiber Cable: WH-FCB-006 (144)"
+          ],
+          "limit": null,
+          "next_offset": null,
+          "offset": 0,
+          "previous_offset": null,
+          "type": "MywFeatureCollection",
+          "unlimited_count": null
+       },
+       "circuits": [
+          {
+             "circuit_urn": "ftth_circuit/1",
+             "high": 25,
+             "low": 25,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/10",
+             "high": 50,
+             "low": 50,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/14",
+             "high": 60,
+             "low": 60,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/2",
+             "high": 26,
+             "low": 26,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/20",
+             "high": 80,
+             "low": 80,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/21",
+             "high": 79,
+             "low": 79,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/22",
+             "high": 78,
+             "low": 78,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/23",
+             "high": 82,
+             "low": 82,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/24",
+             "high": 83,
+             "low": 83,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/26",
+             "high": 50,
+             "low": 50,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/27",
+             "high": 51,
+             "low": 51,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/28",
+             "high": 54,
+             "low": 54,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/29",
+             "high": 55,
+             "low": 55,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/3",
+             "high": 27,
+             "low": 27,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/4",
+             "high": 28,
+             "low": 28,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/5",
+             "high": 75,
+             "low": 75,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/6",
+             "high": 76,
+             "low": 76,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/7",
+             "high": 77,
+             "low": 77,
+             "seg_urn": "mywcom_fiber_segment/59"
+          },
+          {
+             "circuit_urn": "ftth_circuit/8",
+             "high": 84,
+             "low": 84,
+             "seg_urn": "mywcom_fiber_segment/59"
+          }
+       ],
+       "conduit_runs": {
+          "count": 0,
+          "features": [],
+          "limit": null,
+          "next_offset": null,
+          "offset": 0,
+          "previous_offset": null,
+          "type": "MywFeatureCollection",
+          "unlimited_count": null
+       },
+       "conduits": {
+          "count": 4,
+          "features": [
+             "conduit(71)    Conduit: WH-CND-071",
+             "conduit(72)    Conduit: WH-CND-072",
+             "conduit(73)    Conduit: WH-CND-073",
+             "conduit(74)    Conduit: WH-CND-074"
+          ],
+          "limit": null,
+          "next_offset": null,
+          "offset": 0,
+          "previous_offset": null,
+          "type": "MywFeatureCollection",
+          "unlimited_count": null
+       }
+    }
+    
+    
+    Request: GET: /modules/comms/route/ug_route/355/contents?include_proposed=true
+    Response: 200 (200 OK)
+    {
+       "cable_segs": {
+          "count": 5,
+          "features": [
+             "mywcom_fiber_segment(421)    Cable Segment: 421 (fiber_cable/179)",
+             "mywcom_fiber_segment(425)    Cable Segment: 425 (fiber_cable/180)",
+             "mywcom_fiber_segment(434)    Cable Segment: 434 (fiber_cable/182)",
+             "mywcom_fiber_segment(4405)    Cable Segment: 4405 (fiber_cable/4400)",
+             "mywcom_fiber_segment(98)    Cable Segment: 98 (fiber_cable/11)"
+          ],
+          "limit": null,
+          "next_offset": null,
+          "offset": 0,
+          "previous_offset": null,
+          "type": "MywFeatureCollection",
+          "unlimited_count": null
+       },
+       "cables": {
+          "count": 5,
+          "features": [
+             "fiber_cable(11)    Fiber Cable: WH-FCB-011 (48)",
+             "fiber_cable(179)    Fiber Cable: DROP-145 (8)",
+             "fiber_cable(180)    Fiber Cable: DROP-146 (2)",
+             "fiber_cable(182)    Fiber Cable: DROP-148 (2)",
+             "fiber_cable(4400)    Fiber Cable: DROP-5462 (4)"
+          ],
+          "limit": null,
+          "next_offset": null,
+          "offset": 0,
+          "previous_offset": null,
+          "type": "MywFeatureCollection",
+          "unlimited_count": null
+       },
+       "circuits": [
+          {
+             "circuit_urn": "ftth_circuit/14",
+             "high": 1,
+             "low": 1,
+             "seg_urn": "mywcom_fiber_segment/425"
+          },
+          {
+             "circuit_urn": "ftth_circuit/4400",
+             "delta": "design/CC5462",
+             "high": 2,
+             "low": 1,
+             "seg_urn": "mywcom_fiber_segment/4405"
+          }
+       ],
+       "conduit_runs": {
+          "count": 7,
+          "features": [
+             "mywcom_conduit_run(10)    Conduit Run: 10",
+             "mywcom_conduit_run(12)    Conduit Run: 12",
+             "mywcom_conduit_run(13)    Conduit Run: 13",
+             "mywcom_conduit_run(14)    Conduit Run: 14",
+             "mywcom_conduit_run(50)    Conduit Run: 50",
+             "mywcom_conduit_run(56)    Conduit Run: 56",
+             "mywcom_conduit_run(8)    Conduit Run: 8"
+          ],
+          "limit": null,
+          "next_offset": null,
+          "offset": 0,
+          "previous_offset": null,
+          "type": "MywFeatureCollection",
+          "unlimited_count": null
+       },
+       "conduits": {
+          "count": 7,
+          "features": [
+             "blown_fiber_bundle(10)    BF Bundle: (6)",
+             "blown_fiber_tube(45)    BF Tube: WH-BF-43 : 1",
+             "blown_fiber_tube(50)    BF Tube: WH-BF-48 : 2",
+             "blown_fiber_tube(55)    BF Tube: WH-BF-53 : 3",
+             "blown_fiber_tube(60)    BF Tube: WH-BF-58 : 4",
+             "blown_fiber_tube(65)    BF Tube: WH-BF-63 : 5",
+             "blown_fiber_tube(70)    BF Tube: WH-BF-68 : 6"
+          ],
+          "limit": null,
+          "next_offset": null,
+          "offset": 0,
+          "previous_offset": null,
+          "type": "MywFeatureCollection",
+          "unlimited_count": null
+       }
+    }
+    
+    

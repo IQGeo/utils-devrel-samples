@@ -1,0 +1,59 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_data_block",
+    "external_name": "{:mywcom_data_block_external_name}",
+    "title": "{display_name}: [id]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "geom_indexed": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "editor_options": null,
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "referenced_feature",
+            "external_name": "{:mywcom_data_block_associated_equipment_field_name}",
+            "type": "reference",
+            "mandatory": "true"
+        },
+        {
+            "name": "equipment_properties",
+            "external_name": "equipment_properties",
+            "type": "string",
+            "visible": "false"
+        },
+        {
+            "name": "svg",
+            "external_name": "svg",
+            "type": "string",
+            "visible": "false"
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point",
+            "mandatory": "true"
+        }
+    ],
+    "groups": [],
+    "searches": [],
+    "queries": [
+        {
+            "value": "data block",
+            "description": "Data Block",
+            "lang": "en"
+        }
+    ],
+    "filters": []
+}

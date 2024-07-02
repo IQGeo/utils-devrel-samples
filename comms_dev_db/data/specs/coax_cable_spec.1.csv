@@ -1,0 +1,5 @@
+retired,manufacturer,name,size_type,resistance,model,jacket_type,route_type
+false,Unknown,Connect,0.500,0.000,Connect,Un-Jacketed,Unknown
+false,Unknown,FLEX FEEDER,0.500,5.770,FLEX FEEDER,Un-Jacketed,Indoor
+false,Unknown,P3-500,0.500,1.720,P3-500,Un-Jacketed,Aerial
+false,Unknown,P3-500 CAR,0.500,1.720,P3-500 CAR,Jacket,Any

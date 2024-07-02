@@ -1,0 +1,93 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_fiber_segment",
+    "external_name": "{:mywcom_fiber_segment_feature_external_name}",
+    "title": "{display_name}: [id] ([cable])",
+    "short_description": "{:mywcom_fiber_segment_feature_short_desc}",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {},
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "length",
+            "external_name": "{:mywcom_segment_feature_length_name}",
+            "type": "double",
+            "unit_scale": "length",
+            "unit": "m",
+            "display_unit": "m"
+        },
+        {
+            "name": "cable",
+            "external_name": "{:mywcom_segment_feature_cable_name}",
+            "type": "reference",
+            "mandatory": true,
+            "indexed": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_route_field_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "directed",
+            "external_name": "{:mywcom_segment_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true
+        },
+        {
+            "name": "forward",
+            "type": "boolean",
+            "mandatory": true
+        },
+        {
+            "name": "in_structure",
+            "type": "reference",
+            "mandatory": true,
+            "indexed": true
+        },
+        {
+            "name": "out_structure",
+            "type": "reference",
+            "mandatory": true,
+            "indexed": true
+        },
+        {
+            "name": "in_segment",
+            "type": "foreign_key(mywcom_fiber_segment)"
+        },
+        {
+            "name": "out_segment",
+            "type": "foreign_key(mywcom_fiber_segment)"
+        },
+        {
+            "name": "fiber_connections",
+            "type": "reference_set",
+            "value": "select(mywcom_fiber_connection.in_object,mywcom_fiber_connection.out_object)"
+        },
+        {
+            "name": "circuit_segments",
+            "external_name": "{:mywcom_segment_feature_circuit_segments_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_circuit_segment.cable_segment)"
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+[
+    {
+        "feature_type": "cabinet",
+        "src_feature_type": "OUT_DistributionPoints",
+        "field_mappings": {
+            "location": "[geometry]",
+            "name": "[id]"
+        },
+        "key": 0
+    }
+]

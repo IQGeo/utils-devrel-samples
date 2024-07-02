@@ -1,0 +1,110 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_coax_segment",
+    "external_name": "{:mywcom_coaxial_segment_feature_external_name}",
+    "title": "{display_name}: [id] ([cable])",
+    "short_description": "{:mywcom_coaxial_segment_feature_short_desc}",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {},
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "length",
+            "external_name": "{:mywcom_segment_feature_length_name}",
+            "type": "double",
+            "unit_scale": "length",
+            "unit": "m",
+            "display_unit": "m"
+        },
+        {
+            "name": "cable",
+            "external_name": "{:mywcom_segment_feature_cable_name}",
+            "type": "reference",
+            "mandatory": true,
+            "indexed": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_route_field_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "directed",
+            "external_name": "{:mywcom_segment_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true
+        },
+        {
+            "name": "forward",
+            "type": "boolean",
+            "mandatory": true
+        },
+        {
+            "name": "in_structure",
+            "type": "reference",
+            "mandatory": true,
+            "indexed": true
+        },
+        {
+            "name": "out_structure",
+            "type": "reference",
+            "mandatory": true,
+            "indexed": true
+        },
+        {
+            "name": "in_segment",
+            "type": "foreign_key(mywcom_coax_segment)"
+        },
+        {
+            "name": "out_segment",
+            "type": "foreign_key(mywcom_coax_segment)"
+        },
+        {
+            "name": "coax_connections",
+            "type": "reference_set",
+            "value": "select(mywcom_coax_connection.in_object,mywcom_coax_connection.out_object)"
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring"
+        },
+        {
+            "name": "circuits",
+            "external_name": "Circuits",
+            "type": "reference_set",
+            "read_only": "true"
+        },
+        {
+            "name": "comsof_auto",
+            "external_name": "Imported",
+            "type": "boolean",
+            "default": "false",
+            "indexed": true
+        },
+        {
+            "name": "in_tick",
+            "external_name": "In Tick",
+            "type": "integer"
+        },
+        {
+            "name": "out_tick",
+            "external_name": "Out Tick",
+            "type": "integer"
+        }
+    ]
+}

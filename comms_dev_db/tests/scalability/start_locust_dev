@@ -1,0 +1,18 @@
+#!/bin/bash
+# Bash wrapper to start locust server for use when developing scripts and quick tests
+
+HERE=$(dirname `which $0`)
+
+# Init environment
+source $HERE/../../../../../../Tools/myw_env
+
+HOST=https://engineering-1.sandbox.iqgeo.cloud
+#HOST=https://simple-performance.sandbox.iqgeo.cloud/
+NUSERS=100
+
+export IQGEO_CSV_FILE="$HERE/comms_stats.csv"
+export IQGEO_TEST_TAG=$NUSERS
+#locust -f $HERE/locust/comms_user.py CommsConnectedUser --headless --host $HOST  -u $NUSERS  --reset-stats
+locust -f $HERE/locust/comms_user.py CommsAnywhereUser CommsConnectedUser --headless --host $HOST  -u $NUSERS  --reset-stats
+
+

@@ -1,0 +1,3620 @@
+
+*** design/NB335
+Set delta to: design/NB335
+
+BILL OF MATERIALS REPORT: csv : Design: NB335
+BOMReport.type
+Design: NB335
+BOMReport.date: 6/10/2020
+
+
+BOMReport.category,BOMReport.quantity,BOMReport.material-cost ($),BOMReport.labor-cost ($),BOMReport.material-cost (£),BOMReport.labor-cost (£)
+BOMReport.structures,0,,,,
+BOMReport.routes,2.97,,148.52,,
+BOMReport.conduits,267.79,,,,
+BOMReport.cables,214.23,4.87,71.29,23.56,
+BOMReport.total,,4.87,219.81,23.56,
+
+BOMReport.structures
+
+BOMReport.feature,BOMReport.specification,BOMReport.point_unit_cost,BOMReport.material-cost ($),BOMReport.labor-cost ($),BOMReport.material-cost (£),BOMReport.labor-cost (£)
+Manhole,FPM-CCANN-C2,-,,,,
+,,,,,,
+
+BOMReport.routes
+
+BOMReport.feature,BOMReport.specification,BOMReport.length (ft),BOMReport.material-cost ($),BOMReport.labor-cost ($),BOMReport.material-cost (£),BOMReport.labor-cost (£)
+Route (Underground),-,2.97,,148.52,,
+,,,,148.52,,
+
+BOMReport.conduits
+
+BOMReport.feature,BOMReport.specification,BOMReport.length (ft),BOMReport.material-cost ($),BOMReport.labor-cost ($),BOMReport.material-cost (£),BOMReport.labor-cost (£)
+Blown Fiber Tube,-,267.79,,,,
+,,,,,,
+
+BOMReport.cables
+
+BOMReport.feature,BOMReport.specification,BOMReport.unit_cost,BOMReport.length (ft),BOMReport.material-cost ($),BOMReport.labor-cost ($),BOMReport.material-cost (£),BOMReport.labor-cost (£)
+Fiber Cable,-,,105.24,,,,
+Fiber Cable,NETCONNECT 24 Count OS2,$1.64/ft,2.97,4.87,71.29,,
+Fiber Cable,O-048-CN-5L-F12NS,£0.22/ft,106.01,,,23.56,
+,,,,4.87,71.29,23.56,
+
+BOMReport.ignored_features
+
+BOMReport.category,BOMReport.title,BOMReport.change_type
+BOMReport.structures,Manhole: WH-M-55,BOMReport.delete
+BOMReport.structures,Manhole: WH-M-54,BOMReport.update
+BOMReport.structures,Manhole: WH-M-38,BOMReport.delete
+BOMReport.routes,Route (Underground): 67,BOMReport.delete
+
+
+
+BILL OF MATERIALS REPORT: html : Design: NB335
+<h3>
+BOMReport.type</h3>
+<h1>
+Design: NB335</h1>
+BOMReport.date: 6&#x2F;10&#x2F;2020<br>
+<br>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.category</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.quantity</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost (£)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost (£)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.structures</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+0</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.routes</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+2.97 ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+$148.52</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.conduits</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+267.79 ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.cables</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+214.23 ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+$4.87</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+$71.29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+£23.56</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+<span style="font-weight:bolder">
+BOMReport.total</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+$4.87</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+$219.81</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+£23.56</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+</tr>
+</table>
+<br>
+<h2>
+BOMReport.structures</h2>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.feature</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.specification</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.point_unit_cost</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost (£)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost (£)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+FPM-CCANN-C2</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+</tr>
+</table>
+<br>
+<h2>
+BOMReport.routes</h2>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.feature</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.specification</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.length</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost (£)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost (£)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+2.97 ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+$148.52</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+$148.52</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+</tr>
+</table>
+<br>
+<h2>
+BOMReport.conduits</h2>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.feature</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.specification</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.length</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost (£)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost (£)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Blown Fiber Tube</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+267.79 ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+</tr>
+</table>
+<br>
+<h2>
+BOMReport.cables</h2>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.feature</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.specification</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.unit_cost</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.length</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost ($)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.material-cost (£)</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.labor-cost (£)</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Fiber Cable</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+105.24 ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Fiber Cable</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+NETCONNECT 24 Count OS2</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+$1.64&#x2F;ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+2.97 ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+$4.87</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+$71.29</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Fiber Cable</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+O-048-CN-5L-F12NS</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+£0.22&#x2F;ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+106.01 ft</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+£23.56</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+-</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right;height:19px">
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+$4.87</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+$71.29</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+£23.56</span>
+</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:right">
+<span style="font-weight:bolder">
+-</span>
+</td>
+</tr>
+</table>
+<br>
+<h2>
+BOMReport.ignored_features</h2>
+<table style="padding-left:10px;padding-right:10px;border-collapse:collapse;border:1px solid #f2f2f2">
+<tr style="text-align:left;position:sticky;top:-3px;background-color:#0383bd;color:#ffffff">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.category</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.title</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;text-align:left">
+BOMReport.change_type</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.structures</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-55</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.delete</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.structures</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-54</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.update</td>
+</tr>
+<tr style="">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.structures</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Manhole: WH-M-38</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.delete</td>
+</tr>
+<tr style="background-color:#f2f2f2">
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.routes</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+Route (Underground): 67</td>
+<td style="padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px">
+BOMReport.delete</td>
+</tr>
+</table>
+<br>
+
+
+BILL OF MATERIALS REPORT: pdf : Design: NB335
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 20478
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0 g
+45. 780.8899999999999864 Td
+(BOMReport.type) Tj
+ET
+BT
+/F1 15 Tf
+17.25 TL
+0 g
+45. 761.4900000000000091 Td
+(Design: NB335) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+45. 746.4900000000000091 Td
+(BOMReport.date) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+112.1400000000000006 746.4900000000000091 Td
+(: ) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0 g
+117.1800000000000068 746.4900000000000091 Td
+(6/10/2020) Tj
+ET
+0.95 G
+44.5 734.2899999999999636 m
+551.7799999999999727 734.2899999999999636 l
+S
+44.5 659.4363068576992646 m
+551.7799999999999727 659.4363068576992646 l
+S
+44.5 734.2899999999999636 m
+44.5 659.4363068576992646 l
+S
+551.7799999999999727 734.2899999999999636 m
+551.7799999999999727 659.4363068576992646 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 733.7899999999999636 506.2800000000000296 -15.4627347336208096 re
+f
+0. g
+0.95 g
+45. 706.0273626373626712 505.2800000000000296 -12.2999026290165538 re
+f
+0. g
+0.95 g
+45. 681.427557379329528 505.2800000000000296 -12.2999026290165538 re
+f
+0. g
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+1. g
+47.8114063152037829 722.4900973709834489 Td
+(BOMReport.category) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+1. g
+123.0165252469050046 722.4900973709834489 Td
+(BOMReport.quantity) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+1. g
+191.9662651272777794 722.4900973709834489 Td
+(BOMReport.material-cost \($\)) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+1. g
+286.921513423285603 722.4900973709834489 Td
+(BOMReport.labor-cost \($\)) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+1. g
+372.5288357212407959 722.4900973709834489 Td
+(BOMReport.material-cost \(£\)) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+1. g
+467.4840840172486196 722.4900973709834489 Td
+(BOMReport.labor-cost \(£\)) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+47.8114063152037829 710.1901947419669341 Td
+(BOMReport.structures) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+123.0165252469050046 710.1901947419669341 Td
+(0) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+281.790696898038675 710.1901947419669341 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+367.3980191959939248 710.1901947419669341 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+462.3532674920016916 710.1901947419669341 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+547.9605897899568845 710.1901947419669341 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+47.8114063152037829 697.8902921129503056 Td
+(BOMReport.routes) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+123.0165252469050046 697.8902921129503056 Td
+(2.97 ft) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+281.790696898038675 697.8902921129503056 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+344.5553428849631814 697.8902921129503056 Td
+($148.52) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+462.3532674920016916 697.8902921129503056 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+547.9605897899568845 697.8902921129503056 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+47.8114063152037829 685.5903894839336772 Td
+(BOMReport.conduits) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+123.0165252469050046 685.5903894839336772 Td
+(267.79 ft) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+281.790696898038675 685.5903894839336772 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+367.3980191959939248 685.5903894839336772 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+462.3532674920016916 685.5903894839336772 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+547.9605897899568845 685.5903894839336772 Td
+(-) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+47.8114063152037829 673.2904868549171624 Td
+(BOMReport.cables) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+123.0165252469050046 673.2904868549171624 Td
+(214.23 ft) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+266.6793879538183774 673.2904868549171624 Td
+($4.87) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+348.4210265683683474 673.2904868549171624 Td
+($71.29) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+443.3762748643761711 673.2904868549171624 Td
+(£23.56) Tj
+ET
+BT
+/F1 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+547.9605897899568845 673.2904868549171624 Td
+(-) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+47.8114063152037829 660.9905842259006477 Td
+(BOMReport.total) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+266.6793879538183774 660.9905842259006477 Td
+($4.87) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+344.5553428849631814 660.9905842259006477 Td
+($219.81) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+443.3762748643761711 660.9905842259006477 Td
+(£23.56) Tj
+ET
+BT
+/F2 7.028515788009459 Tf
+8.0827931562108777 TL
+0. g
+547.9605897899568845 660.9905842259006477 Td
+(-) Tj
+ET
+BT
+/F1 13 Tf
+14.9499999999999993 TL
+0. g
+45. 634.477752121296362 Td
+(BOMReport.structures) Tj
+ET
+0.95 G
+44.5 628.7777521212963165 m
+551.7799999999999727 628.7777521212963165 l
+S
+44.5 596.9063352307462083 m
+551.7799999999999727 596.9063352307462083 l
+S
+44.5 628.7777521212963165 m
+44.5 596.9063352307462083 l
+S
+551.7799999999999727 628.7777521212963165 m
+551.7799999999999727 596.9063352307462083 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 628.2777521212963165 506.2800000000000296 -12.9846513257796961 re
+f
+0. g
+0.95 g
+45. 604.9644008772827419 505.2800000000000296 -10.3286999182338501 re
+f
+0. g
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+1. g
+47.3608456955963106 618.9490522030624788 Td
+(BOMReport.feature) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+1. g
+102.9587618268893863 618.9490522030624788 Td
+(BOMReport.specification) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+1. g
+172.6037098469805073 618.9490522030624788 Td
+(BOMReport.point_unit_cost) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+1. g
+249.3902160962504695 618.9490522030624788 Td
+(BOMReport.material-cost \($\)) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+1. g
+329.1277794650158057 618.9490522030624788 Td
+(BOMReport.labor-cost \($\)) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+1. g
+401.0155308959234048 618.9490522030624788 Td
+(BOMReport.material-cost \(£\)) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+1. g
+480.7530942646887411 618.9490522030624788 Td
+(BOMReport.labor-cost \(£\)) Tj
+ET
+BT
+/F1 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+47.3608456955963106 608.6203522848286411 Td
+(Manhole) Tj
+ET
+BT
+/F1 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+102.9587618268893863 608.6203522848286411 Td
+(FPM-CCANN-C2) Tj
+ET
+BT
+/F1 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+245.0816727017871699 608.6203522848286411 Td
+(-) Tj
+ET
+BT
+/F1 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+324.8192360705525061 608.6203522848286411 Td
+(-) Tj
+ET
+BT
+/F1 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+396.7069875014601621 608.6203522848286411 Td
+(-) Tj
+ET
+BT
+/F1 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+476.4445508702254983 608.6203522848286411 Td
+(-) Tj
+ET
+BT
+/F1 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+548.3323023011330406 608.6203522848286411 Td
+(-) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+324.8192360705525061 598.2916523665948034 Td
+(-) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+396.7069875014601621 598.2916523665948034 Td
+(-) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+476.4445508702254983 598.2916523665948034 Td
+(-) Tj
+ET
+BT
+/F2 5.902114238990771 Tf
+6.7874313748393869 TL
+0. g
+548.3323023011330406 598.2916523665948034 Td
+(-) Tj
+ET
+BT
+/F1 13 Tf
+14.9499999999999993 TL
+0. g
+45. 572.2857009590489952 Td
+(BOMReport.routes) Tj
+ET
+0.95 G
+44.5 566.5857009590490634 m
+551.7799999999999727 566.5857009590490634 l
+S
+44.5 533.4646521607969589 m
+551.7799999999999727 533.4646521607969589 l
+S
+44.5 566.5857009590490634 m
+44.5 533.4646521607969589 l
+S
+551.7799999999999727 566.5857009590490634 m
+551.7799999999999727 533.4646521607969589 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 566.0857009590490634 506.2799999999999159 -13.4937606215100736 re
+f
+0. g
+0.95 g
+45. 541.858267115883109 505.2799999999999159 -10.7336732216557387 re
+f
+0. g
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+1. g
+47.4534110220927374 556.3520277373933141 Td
+(BOMReport.feature) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+1. g
+109.8313862588006771 556.3520277373933141 Td
+(BOMReport.specification) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+1. g
+182.2070114105365235 556.3520277373933141 Td
+(BOMReport.length) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+1. g
+237.5927652342801366 556.3520277373933141 Td
+(BOMReport.material-cost \($\)) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+1. g
+320.4567225054624373 556.3520277373933141 Td
+(BOMReport.labor-cost \($\)) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+1. g
+395.1630881281863594 556.3520277373933141 Td
+(BOMReport.material-cost \(£\)) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+1. g
+478.027045399368717 556.3520277373933141 Td
+(BOMReport.labor-cost \(£\)) Tj
+ET
+BT
+/F1 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+47.4534110220927374 545.6183545157375647 Td
+(Route \(Underground\)) Tj
+ET
+BT
+/F1 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+109.8313862588006771 545.6183545157375647 Td
+(-) Tj
+ET
+BT
+/F1 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+218.1494828841951517 545.6183545157375647 Td
+(2.97 ft) Tj
+ET
+BT
+/F1 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+315.9792473901432004 545.6183545157375647 Td
+(-) Tj
+ET
+BT
+/F1 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+370.7516484583636043 545.6183545157375647 Td
+($148.52) Tj
+ET
+BT
+/F1 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+473.5495702840494232 545.6183545157375647 Td
+(-) Tj
+ET
+BT
+/F1 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+548.2559359067734022 545.6183545157375647 Td
+(-) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+315.9792473901432004 534.8846812940818154 Td
+(-) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+370.7516484583636043 534.8846812940818154 Td
+($148.52) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+473.5495702840494232 534.8846812940818154 Td
+(-) Tj
+ET
+BT
+/F2 6.133527555231852 Tf
+7.053556688516629 TL
+0. g
+548.2559359067734022 534.8846812940818154 Td
+(-) Tj
+ET
+BT
+/F1 13 Tf
+14.9499999999999993 TL
+0. g
+45. 508.7745938942274506 Td
+(BOMReport.conduits) Tj
+ET
+0.95 G
+44.5 503.074593894227462 m
+551.7799999999999727 503.074593894227462 l
+S
+44.5 469.6492355700819417 m
+551.7799999999999727 469.6492355700819417 l
+S
+44.5 503.074593894227462 m
+44.5 469.6492355700819417 l
+S
+551.7799999999999727 503.074593894227462 m
+551.7799999999999727 469.6492355700819417 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 502.574593894227462 506.2799999999999727 -13.6177385765037364 re
+f
+0. g
+0.95 g
+45. 478.1245632682321229 505.2799999999999727 -10.832292049491608 re
+f
+0. g
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+1. g
+47.4759524684552261 492.7423018447358345 Td
+(BOMReport.feature) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+1. g
+105.7846331005757605 492.7423018447358345 Td
+(BOMReport.specification) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+1. g
+178.8252309200048842 492.7423018447358345 Td
+(BOMReport.length) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+1. g
+234.7198578953815797 492.7423018447358345 Td
+(BOMReport.material-cost \($\)) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+1. g
+318.3451525174567678 492.7423018447358345 Td
+(BOMReport.labor-cost \($\)) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+1. g
+393.737905181918336 492.7423018447358345 Td
+(BOMReport.material-cost \(£\)) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+1. g
+477.3631998039935525 492.7423018447358345 Td
+(BOMReport.labor-cost \(£\)) Tj
+ET
+BT
+/F1 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+47.4759524684552261 481.910009795244207 Td
+(Blown Fiber Tube) Tj
+ET
+BT
+/F1 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+105.7846331005757605 481.910009795244207 Td
+(-) Tj
+ET
+BT
+/F1 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+208.2890652946220484 481.910009795244207 Td
+(267.79 ft) Tj
+ET
+BT
+/F1 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+313.826539262526012 481.910009795244207 Td
+(-) Tj
+ET
+BT
+/F1 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+389.2192919269875802 481.910009795244207 Td
+(-) Tj
+ET
+BT
+/F1 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+472.8445865490627966 481.910009795244207 Td
+(-) Tj
+ET
+BT
+/F1 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+548.2373392135243648 481.910009795244207 Td
+(-) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+313.826539262526012 471.0777177457525795 Td
+(-) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+389.2192919269875802 471.0777177457525795 Td
+(-) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+472.8445865490627966 471.0777177457525795 Td
+(-) Tj
+ET
+BT
+/F2 6.189881171138062 Tf
+7.1183633468087706 TL
+0. g
+548.2373392135243648 471.0777177457525795 Td
+(-) Tj
+ET
+BT
+/F1 13 Tf
+14.9499999999999993 TL
+0. g
+45. 444.9422712187404159 Td
+(BOMReport.cables) Tj
+ET
+0.95 G
+44.5 439.2422712187404272 m
+551.7800000000000864 439.2422712187404272 l
+S
+44.5 391.6248209857882898 m
+551.7800000000000864 391.6248209857882898 l
+S
+44.5 439.2422712187404272 m
+44.5 391.6248209857882898 l
+S
+551.7800000000000864 439.2422712187404272 m
+551.7800000000000864 391.6248209857882898 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 438.7422712187404272 506.2800000000000864 -11.7706056755612014 re
+f
+0. g
+0.95 g
+45. 417.6086837558009961 505.2800000000000864 -9.3629817873782279 re
+f
+0. g
+0.95 g
+45. 398.8827201810445899 505.2800000000000864 -9.3629817873782279 re
+f
+0. g
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+1. g
+47.1401101228293129 430.3792894313622241 Td
+(BOMReport.feature) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+1. g
+97.53970351545955 430.3792894313622241 Td
+(BOMReport.specification) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+1. g
+174.048640406607376 430.3792894313622241 Td
+(BOMReport.unit_cost) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+1. g
+229.2099788225328325 430.3792894313622241 Td
+(BOMReport.length) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+1. g
+277.5229648454044877 430.3792894313622241 Td
+(BOMReport.material-cost \($\)) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+1. g
+349.8051842439644474 430.3792894313622241 Td
+(BOMReport.labor-cost \($\)) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+1. g
+414.9715374841169364 430.3792894313622241 Td
+(BOMReport.material-cost \(£\)) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+1. g
+487.2537568826768961 430.3792894313622241 Td
+(BOMReport.labor-cost \(£\)) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+47.1401101228293129 421.0163076439840211 Td
+(Fiber Cable) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+97.53970351545955 421.0163076439840211 Td
+(-) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+254.6772892842016347 421.0163076439840211 Td
+(105.24 ft) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+345.8994832698009532 421.0163076439840211 Td
+(-) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+411.0658365099534421 421.0163076439840211 Td
+(-) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+483.3480559085134018 421.0163076439840211 Td
+(-) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+548.5144091486658908 421.0163076439840211 Td
+(-) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+47.1401101228293129 411.653325856605818 Td
+(Fiber Cable) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+97.53970351545955 411.653325856605818 Td
+(NETCONNECT 24 Count OS2) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+209.3069546802202581 411.653325856605818 Td
+($1.64/ft) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+260.5625921219822203 411.653325856605818 Td
+(2.97 ft) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+334.3963913595933946 411.653325856605818 Td
+($4.87) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+396.6200931808556334 411.653325856605818 Td
+($71.29) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+483.3480559085134018 411.653325856605818 Td
+(-) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+548.5144091486658908 411.653325856605818 Td
+(-) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+47.1401101228293129 402.2903440692276149 Td
+(Fiber Cable) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+97.53970351545955 402.2903440692276149 Td
+(O-048-CN-5L-F12NS) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+209.3069546802202581 402.2903440692276149 Td
+(£0.22/ft) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+254.6772892842016347 402.2903440692276149 Td
+(106.01 ft) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+345.8994832698009532 402.2903440692276149 Td
+(-) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+411.0658365099534421 402.2903440692276149 Td
+(-) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+468.9023125794155931 402.2903440692276149 Td
+(£23.56) Tj
+ET
+BT
+/F1 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+548.5144091486658908 402.2903440692276149 Td
+(-) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+334.3963913595933946 392.9273622818494118 Td
+($4.87) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+396.6200931808556334 392.9273622818494118 Td
+($71.29) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+468.9023125794155931 392.9273622818494118 Td
+(£23.56) Tj
+ET
+BT
+/F2 5.350275307073273 Tf
+6.1528166031342639 TL
+0. g
+548.5144091486658908 392.9273622818494118 Td
+(-) Tj
+ET
+BT
+/F1 13 Tf
+14.9499999999999993 TL
+0. g
+45. 367.169738393666421 Td
+(BOMReport.ignored_features) Tj
+ET
+0.95 G
+44.5 361.4697383936664323 m
+357.3600000000000136 361.4697383936664323 l
+S
+44.5 281.3697383936664664 m
+357.3600000000000136 281.3697383936664664 l
+S
+44.5 361.4697383936664323 m
+44.5 281.3697383936664664 l
+S
+357.3600000000000136 361.4697383936664323 m
+357.3600000000000136 281.3697383936664664 l
+S
+0. G
+0.01 0.51 0.74 rg
+45. 360.9697383936664323 311.8600000000000136 -19.7999999999999972 re
+f
+0. g
+0.95 g
+45. 325.419738393666421 310.8600000000000136 -15.75 re
+f
+0. g
+0.95 g
+45. 293.919738393666421 310.8600000000000136 -15.75 re
+f
+0. g
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+48.6000000000000014 346.2197383936664323 Td
+(BOMReport.category) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+144.9000000000000057 346.2197383936664323 Td
+(BOMReport.title) Tj
+ET
+BT
+/F2 9 Tf
+10.3499999999999996 TL
+1. g
+251.3700000000000045 346.2197383936664323 Td
+(BOMReport.change_type) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 330.4697383936664892 Td
+(BOMReport.structures) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+144.9000000000000057 330.4697383936664892 Td
+(Manhole: WH-M-55) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+251.3700000000000045 330.4697383936664892 Td
+(BOMReport.delete) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 314.7197383936664892 Td
+(BOMReport.structures) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+144.9000000000000057 314.7197383936664892 Td
+(Manhole: WH-M-54) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+251.3700000000000045 314.7197383936664892 Td
+(BOMReport.update) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 298.9697383936664892 Td
+(BOMReport.structures) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+144.9000000000000057 298.9697383936664892 Td
+(Manhole: WH-M-38) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+251.3700000000000045 298.9697383936664892 Td
+(BOMReport.delete) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+48.6000000000000014 283.2197383936664892 Td
+(BOMReport.routes) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+144.9000000000000057 283.2197383936664892 Td
+(Route \(Underground\): 67) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+251.3700000000000045 283.2197383936664892 Td
+(BOMReport.delete) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 2.3.1)
+/CreationDate <date>
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000020683 00000 n 
+0000022500 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000020740 00000 n 
+0000020865 00000 n 
+0000020995 00000 n 
+0000021128 00000 n 
+0000021265 00000 n 
+0000021388 00000 n 
+0000021517 00000 n 
+0000021649 00000 n 
+0000021785 00000 n 
+0000021913 00000 n 
+0000022040 00000 n 
+0000022169 00000 n 
+0000022302 00000 n 
+0000022404 00000 n 
+0000022748 00000 n 
+0000022834 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID <id>
+>>
+startxref
+22938
+%%EOF
+
+BILL OF MATERIALS REPORT: xlsx : Design: NB335
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 13
+			},
+			"text": "BOMReport.type"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 17
+			},
+			"text": "Design: NB335"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.date"
+		},
+		{
+			"font": {
+
+			},
+			"text": ": "
+		},
+		{
+			"font": {
+
+			},
+			"text": "6/10/2020"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.category"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.quantity"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.structures"
+		}
+	]
+}
+0
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.routes"
+		}
+	]
+}
+2.97
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+148.52
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.conduits"
+		}
+	]
+}
+267.79
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.cables"
+		}
+	]
+}
+214.23
+4.87
+71.29
+23.56
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true
+			},
+			"text": "BOMReport.total"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+4.87
+219.81
+23.56
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "BOMReport.structures"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.feature"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.specification"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.point_unit_cost"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "FPM-CCANN-C2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": "-"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "BOMReport.routes"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.feature"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.specification"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.length (ft)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Route (Underground)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "-"
+		}
+	]
+}
+2.97
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+148.52
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+148.52
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "BOMReport.conduits"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.feature"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.specification"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.length (ft)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Blown Fiber Tube"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "-"
+		}
+	]
+}
+267.79
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "BOMReport.cables"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.feature"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.specification"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.unit_cost"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.length (ft)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost ($)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.material-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.labor-cost (£)"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Fiber Cable"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "-"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+105.24
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Fiber Cable"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "NETCONNECT 24 Count OS2"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": "$1.64/ft"
+		}
+	]
+}
+2.97
+4.87
+71.29
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Fiber Cable"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "O-048-CN-5L-F12NS"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": "£0.22/ft"
+		}
+	]
+}
+106.01
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+23.56
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				}
+			},
+			"text": ""
+		}
+	]
+}
+4.87
+71.29
+23.56
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "right"
+				},
+				"bold": true
+			},
+			"text": ""
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"bold": true,
+				"size": 15
+			},
+			"text": "BOMReport.ignored_features"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.category"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.title"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+				"alignment": {
+					"horizontal": "left"
+				},
+				"bold": true
+			},
+			"text": "BOMReport.change_type"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.structures"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-55"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.delete"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.structures"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-54"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.update"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.structures"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Manhole: WH-M-38"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.delete"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.routes"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "Route (Underground): 67"
+		}
+	]
+}
+{
+	"richText": [
+		{
+			"font": {
+
+			},
+			"text": "BOMReport.delete"
+		}
+	]
+}
+
+*** design/NB301
+Set delta to: design/NB301
+
+BILL OF MATERIALS REPORT: csv : Design: NB301
+BOMReport.type
+Design: NB301
+BOMReport.date: 6/10/2020
+
+
+BOMReport.category,BOMReport.quantity,BOMReport.material-cost ($),BOMReport.labor-cost ($)
+BOMReport.structures,2,130.00,200.00
+BOMReport.equipment,1,62.00,
+BOMReport.routes,174.65,,6385.75
+BOMReport.conduits,174.65,,
+BOMReport.cables,498.73,,
+BOMReport.total,,192.00,6585.75
+
+BOMReport.structures
+
+BOMReport.feature,BOMReport.specification,BOMReport.point_unit_cost,BOMReport.quantity,BOMReport.material-cost ($),BOMReport.labor-cost ($)
+Manhole,FPM-CCANN-J4,$65.00,2,130.00,200.00
+,,,,130.00,200.00
+
+BOMReport.equipment
+
+BOMReport.feature,BOMReport.specification,BOMReport.point_unit_cost,BOMReport.quantity,BOMReport.material-cost ($),BOMReport.labor-cost ($)
+Splice Closure,CS-FOSC450-D6-6-36-1-N0V,$62.00,1,62.00,
+,,,,62.00,
+
+BOMReport.routes
+
+BOMReport.feature,BOMReport.specification,BOMReport.length (ft),BOMReport.material-cost ($),BOMReport.labor-cost ($)
+Route (Underground),-,174.65,,6385.75
+,,,,6385.75
+
+BOMReport.conduits
+
+BOMReport.feature,BOMReport.specification,BOMReport.length (ft),BOMReport.material-cost ($),BOMReport.labor-cost ($)
+Conduit,-,174.65,,
+,,,,
+
+BOMReport.cables
+
+BOMReport.feature,BOMReport.specification,BOMReport.length (ft),BOMReport.material-cost ($),BOMReport.labor-cost ($)
+Fiber Cable,-,498.73,,
+,,,,
+
+

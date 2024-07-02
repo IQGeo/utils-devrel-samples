@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Feature.schema.json",
+    "title": "Feature",
+    "definitions": {
+        "Feature": {
+            "$id": "#Feature",
+            "description": "Feature describes the common set of attributes shared by all IQGeo features.",
+            "type": "object",
+            "properties": {},
+            "allOf": [
+                {
+                    "$ref": "https://github.com/tmforum-rand/schemas/blob/candidates/Resource/Resource.schema.json"
+                }
+            ]
+        }
+    }
+}

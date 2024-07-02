@@ -1,0 +1,1027 @@
+Request: GET: /modules/comms/validate?bounds=0.1326835,52.2232582,0.1339281,52.2239351&delta=design/NB301
+Response: 200 (200 OK)
+{
+   "errors": {
+      "conduit/60": {
+         "path": {
+            "data": {
+               "_ref": "housing",
+               "n_coords": 5,
+               "n_expected": 3
+            },
+            "feature": {
+               "bbox": [
+                  0.1334522,
+                  52.2235447,
+                  0.1336176,
+                  52.2236381
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.1336176,
+                        52.2236381
+                     ],
+                     [
+                        0.1335876,
+                        52.2236144
+                     ],
+                     [
+                        0.1334522,
+                        52.2235447
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 60,
+               "myw": {
+                  "feature_type": "conduit",
+                  "title": "Conduit: WH-CND-060"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "diameter": 110.0,
+                  "housing": "ug_route/88",
+                  "id": 60,
+                  "in_structure": "manhole/7",
+                  "installation_date": "1998-01-25",
+                  "labor_costs": null,
+                  "length": 18.26,
+                  "material": "PE (Corrugated)",
+                  "name": "WH-CND-060",
+                  "out_structure": "manhole/75",
+                  "owner": "Acme Co",
+                  "root_housing": "ug_route/88",
+                  "specification": "JDP-110MM-Green"
+               },
+               "type": "Feature"
+            },
+            "field": "path",
+            "ref_feature": {
+               "bbox": [
+                  0.1334150880575,
+                  52.2235524824053,
+                  0.1336028426886,
+                  52.2236559959141
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.1336028426886,
+                        52.2236559959141
+                     ],
+                     [
+                        0.1335840672255,
+                        52.2236352521549
+                     ],
+                     [
+                        0.1335518807173,
+                        52.223616356841
+                     ],
+                     [
+                        0.1335029304028,
+                        52.2235937646074
+                     ],
+                     [
+                        0.1334150880575,
+                        52.2235524824053
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 88,
+               "myw": {
+                  "change_type": "update",
+                  "delta": "design/NB301",
+                  "feature_type": "ug_route",
+                  "title": "Route (Underground): 88"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "cover_type": "Brick",
+                  "id": 88,
+                  "in_structure": "manhole/7",
+                  "labor_costs": "cherry_picker,trench_dig",
+                  "length": 18.26,
+                  "out_structure": "manhole/75"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_size_mismatch"
+         }
+      },
+      "mywcom_fiber_segment/4800": {
+         "path": {
+            "data": {
+               "_ref": "housing",
+               "n_coords": 3,
+               "n_expected": 5
+            },
+            "feature": {
+               "bbox": [
+                  0.1334150880575,
+                  52.2235524824053,
+                  0.1336028426886,
+                  52.2236559959141
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.1336028426886,
+                        52.2236559959141
+                     ],
+                     [
+                        0.1335840672255,
+                        52.2236352521549
+                     ],
+                     [
+                        0.1335518807173,
+                        52.223616356841
+                     ],
+                     [
+                        0.1335029304028,
+                        52.2235937646074
+                     ],
+                     [
+                        0.1334150880575,
+                        52.2235524824053
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 4800,
+               "myw": {
+                  "change_type": "insert",
+                  "delta": "design/NB301",
+                  "feature_type": "mywcom_fiber_segment",
+                  "title": "Cable Segment: 4800 (fiber_cable/4800)"
+               },
+               "properties": {
+                  "cable": "fiber_cable/4800",
+                  "circuits": [],
+                  "comsof_auto": null,
+                  "directed": true,
+                  "forward": true,
+                  "housing": "conduit/60",
+                  "id": 4800,
+                  "in_equipment": null,
+                  "in_segment": null,
+                  "in_structure": "manhole/7",
+                  "in_tick": null,
+                  "length": null,
+                  "out_equipment": null,
+                  "out_segment": "4804",
+                  "out_structure": "manhole/75",
+                  "out_tick": null,
+                  "root_housing": "ug_route/88"
+               },
+               "type": "Feature"
+            },
+            "field": "path",
+            "ref_feature": {
+               "bbox": [
+                  0.1334522,
+                  52.2235447,
+                  0.1336176,
+                  52.2236381
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.1336176,
+                        52.2236381
+                     ],
+                     [
+                        0.1335876,
+                        52.2236144
+                     ],
+                     [
+                        0.1334522,
+                        52.2235447
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 60,
+               "myw": {
+                  "feature_type": "conduit",
+                  "title": "Conduit: WH-CND-060"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "diameter": 110.0,
+                  "housing": "ug_route/88",
+                  "id": 60,
+                  "in_structure": "manhole/7",
+                  "installation_date": "1998-01-25",
+                  "labor_costs": null,
+                  "length": 18.26,
+                  "material": "PE (Corrugated)",
+                  "name": "WH-CND-060",
+                  "out_structure": "manhole/75",
+                  "owner": "Acme Co",
+                  "root_housing": "ug_route/88",
+                  "specification": "JDP-110MM-Green"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_size_mismatch"
+         }
+      },
+      "mywcom_fiber_slack/4800": {
+         "location": {
+            "data": {
+               "_coord": [
+                  0.1334150880575,
+                  52.2235524824053
+               ],
+               "_expected_coord": [
+                  0.1334522,
+                  52.2235447
+               ],
+               "_ref": "housing",
+               "ref_side": null
+            },
+            "feature": {
+               "bbox": [
+                  0.1334150880575,
+                  52.2235524824053,
+                  0.1334150880575,
+                  52.2235524824053
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1334150880575,
+                     52.2235524824053
+                  ],
+                  "type": "Point"
+               },
+               "id": 4800,
+               "myw": {
+                  "change_type": "insert",
+                  "delta": "design/NB301",
+                  "feature_type": "mywcom_fiber_slack",
+                  "title": "Fiber Slack"
+               },
+               "properties": {
+                  "cable": "fiber_cable/4800",
+                  "circuits": [],
+                  "comsof_auto": null,
+                  "housing": "manhole/75",
+                  "id": 4800,
+                  "job_id": null,
+                  "length": 13.0,
+                  "root_housing": "manhole/75",
+                  "storage": null
+               },
+               "type": "Feature"
+            },
+            "field": "location",
+            "ref_feature": {
+               "bbox": [
+                  0.1334522,
+                  52.2235447,
+                  0.1334522,
+                  52.2235447
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1334522,
+                     52.2235447
+                  ],
+                  "type": "Point"
+               },
+               "id": 75,
+               "myw": {
+                  "feature_type": "manhole",
+                  "title": "Manhole: WH-M-75"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "id": 75,
+                  "installation_date": null,
+                  "labor_costs": "level_ground",
+                  "lockable": null,
+                  "myw_orientation_location": 0.0,
+                  "name": "WH-M-75",
+                  "powered": null,
+                  "size_x": 440.0,
+                  "size_y": 910.0,
+                  "size_z": 800.0,
+                  "specification": "FPM-CCANN-J4"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_mismatch_at"
+         }
+      },
+      "splice_closure/4800": {
+         "location": {
+            "data": {
+               "_coord": [
+                  0.1336028426886,
+                  52.2236559959141
+               ],
+               "_expected_coord": [
+                  0.1336176,
+                  52.2236381
+               ],
+               "_ref": "housing",
+               "ref_side": null
+            },
+            "feature": {
+               "bbox": [
+                  0.1336028426886,
+                  52.2236559959141,
+                  0.1336028426886,
+                  52.2236559959141
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1336028426886,
+                     52.2236559959141
+                  ],
+                  "type": "Point"
+               },
+               "id": 4800,
+               "myw": {
+                  "change_type": "insert",
+                  "delta": "design/NB301",
+                  "feature_type": "splice_closure",
+                  "title": "Splice Closure: WH-SC-D301:1"
+               },
+               "properties": {
+                  "circuits": [],
+                  "comsof_auto": null,
+                  "housing": "manhole/7",
+                  "id": 4800,
+                  "installation_date": null,
+                  "job_id": null,
+                  "labor_costs": null,
+                  "name": "WH-SC-D301:1",
+                  "root_housing": "manhole/7",
+                  "specification": "CS-FOSC450-D6-6-36-1-N0V"
+               },
+               "type": "Feature"
+            },
+            "field": "location",
+            "ref_feature": {
+               "bbox": [
+                  0.1336176,
+                  52.2236381,
+                  0.1336176,
+                  52.2236381
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1336176,
+                     52.2236381
+                  ],
+                  "type": "Point"
+               },
+               "id": 7,
+               "myw": {
+                  "feature_type": "manhole",
+                  "title": "Manhole: WH-M-07"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "id": 7,
+                  "installation_date": "2002-09-20",
+                  "labor_costs": "hole_dig",
+                  "lockable": null,
+                  "myw_orientation_location": 337.490184094651,
+                  "name": "WH-M-07",
+                  "powered": null,
+                  "size_x": 850.0,
+                  "size_y": 1300.0,
+                  "size_z": 900.0,
+                  "specification": "FPM-CCANN-MCX"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_mismatch_at"
+         }
+      },
+      "ug_route/4800": {
+         "path": {
+            "data": {
+               "_coord": [
+                  0.1334150880575,
+                  52.2235524824053
+               ],
+               "_expected_coord": [
+                  0.1334522,
+                  52.2235447
+               ],
+               "_ref": "out_structure",
+               "ref_side": null
+            },
+            "feature": {
+               "bbox": [
+                  0.13309121,
+                  52.2235021,
+                  0.1334150880575,
+                  52.223558
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.13309121,
+                        52.2235021
+                     ],
+                     [
+                        0.133177,
+                        52.223544
+                     ],
+                     [
+                        0.1333259,
+                        52.223558
+                     ],
+                     [
+                        0.1334150880575,
+                        52.2235524824053
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 4800,
+               "myw": {
+                  "change_type": "insert",
+                  "delta": "design/NB301",
+                  "feature_type": "ug_route",
+                  "title": "Route (Underground): 4800"
+               },
+               "properties": {
+                  "comsof_auto": null,
+                  "cover_type": "Brick",
+                  "id": 4800,
+                  "in_structure": "manhole/4800",
+                  "labor_costs": "cherry_picker",
+                  "length": null,
+                  "out_structure": "manhole/75"
+               },
+               "type": "Feature"
+            },
+            "field": "path",
+            "ref_feature": {
+               "bbox": [
+                  0.1334522,
+                  52.2235447,
+                  0.1334522,
+                  52.2235447
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1334522,
+                     52.2235447
+                  ],
+                  "type": "Point"
+               },
+               "id": 75,
+               "myw": {
+                  "feature_type": "manhole",
+                  "title": "Manhole: WH-M-75"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "id": 75,
+                  "installation_date": null,
+                  "labor_costs": "level_ground",
+                  "lockable": null,
+                  "myw_orientation_location": 0.0,
+                  "name": "WH-M-75",
+                  "powered": null,
+                  "size_x": 440.0,
+                  "size_y": 910.0,
+                  "size_z": 800.0,
+                  "specification": "FPM-CCANN-J4"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_mismatch_at"
+         }
+      },
+      "ug_route/4801": {
+         "path": {
+            "data": {
+               "_coord": [
+                  0.1334150880575,
+                  52.2235524824053
+               ],
+               "_expected_coord": [
+                  0.1334522,
+                  52.2235447
+               ],
+               "_ref": "in_structure",
+               "ref_side": null
+            },
+            "feature": {
+               "bbox": [
+                  0.13329237,
+                  52.2233353,
+                  0.13346403,
+                  52.2235524824053
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.1334150880575,
+                        52.2235524824053
+                     ],
+                     [
+                        0.13346403,
+                        52.223507
+                     ],
+                     [
+                        0.13343185,
+                        52.223431
+                     ],
+                     [
+                        0.13335943,
+                        52.223361
+                     ],
+                     [
+                        0.13329237,
+                        52.2233353
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 4801,
+               "myw": {
+                  "change_type": "insert",
+                  "delta": "design/NB301",
+                  "feature_type": "ug_route",
+                  "title": "Route (Underground): 4801"
+               },
+               "properties": {
+                  "comsof_auto": null,
+                  "cover_type": "Brick",
+                  "id": 4801,
+                  "in_structure": "manhole/75",
+                  "labor_costs": "cherry_picker,trench_dig",
+                  "length": null,
+                  "out_structure": "manhole/4801"
+               },
+               "type": "Feature"
+            },
+            "field": "path",
+            "ref_feature": {
+               "bbox": [
+                  0.1334522,
+                  52.2235447,
+                  0.1334522,
+                  52.2235447
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1334522,
+                     52.2235447
+                  ],
+                  "type": "Point"
+               },
+               "id": 75,
+               "myw": {
+                  "feature_type": "manhole",
+                  "title": "Manhole: WH-M-75"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "id": 75,
+                  "installation_date": null,
+                  "labor_costs": "level_ground",
+                  "lockable": null,
+                  "myw_orientation_location": 0.0,
+                  "name": "WH-M-75",
+                  "powered": null,
+                  "size_x": 440.0,
+                  "size_y": 910.0,
+                  "size_z": 800.0,
+                  "specification": "FPM-CCANN-J4"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_mismatch_at"
+         }
+      },
+      "ug_route/88": {
+         "path": {
+            "data": {
+               "_coord": [
+                  0.1334150880575,
+                  52.2235524824053
+               ],
+               "_expected_coord": [
+                  0.1334522,
+                  52.2235447
+               ],
+               "_ref": "out_structure",
+               "ref_side": null
+            },
+            "feature": {
+               "bbox": [
+                  0.1334150880575,
+                  52.2235524824053,
+                  0.1336028426886,
+                  52.2236559959141
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.1336028426886,
+                        52.2236559959141
+                     ],
+                     [
+                        0.1335840672255,
+                        52.2236352521549
+                     ],
+                     [
+                        0.1335518807173,
+                        52.223616356841
+                     ],
+                     [
+                        0.1335029304028,
+                        52.2235937646074
+                     ],
+                     [
+                        0.1334150880575,
+                        52.2235524824053
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 88,
+               "myw": {
+                  "change_type": "update",
+                  "delta": "design/NB301",
+                  "feature_type": "ug_route",
+                  "title": "Route (Underground): 88"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "cover_type": "Brick",
+                  "id": 88,
+                  "in_structure": "manhole/7",
+                  "labor_costs": "cherry_picker,trench_dig",
+                  "length": 18.26,
+                  "out_structure": "manhole/75"
+               },
+               "type": "Feature"
+            },
+            "field": "path",
+            "ref_feature": {
+               "bbox": [
+                  0.1334522,
+                  52.2235447,
+                  0.1334522,
+                  52.2235447
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1334522,
+                     52.2235447
+                  ],
+                  "type": "Point"
+               },
+               "id": 75,
+               "myw": {
+                  "feature_type": "manhole",
+                  "title": "Manhole: WH-M-75"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "id": 75,
+                  "installation_date": null,
+                  "labor_costs": "level_ground",
+                  "lockable": null,
+                  "myw_orientation_location": 0.0,
+                  "name": "WH-M-75",
+                  "powered": null,
+                  "size_x": 440.0,
+                  "size_y": 910.0,
+                  "size_z": 800.0,
+                  "specification": "FPM-CCANN-J4"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_mismatch_at"
+         }
+      }
+   }
+}
+
+
+Request: GET: /modules/comms/validate?bounds=0.1326835,52.2232582,0.1339281,52.2239351&categories=routes,connections&delta=design/NB301
+Response: 200 (200 OK)
+{
+   "errors": {
+      "ug_route/4800": {
+         "path": {
+            "data": {
+               "_coord": [
+                  0.1334150880575,
+                  52.2235524824053
+               ],
+               "_expected_coord": [
+                  0.1334522,
+                  52.2235447
+               ],
+               "_ref": "out_structure",
+               "ref_side": null
+            },
+            "feature": {
+               "bbox": [
+                  0.13309121,
+                  52.2235021,
+                  0.1334150880575,
+                  52.223558
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.13309121,
+                        52.2235021
+                     ],
+                     [
+                        0.133177,
+                        52.223544
+                     ],
+                     [
+                        0.1333259,
+                        52.223558
+                     ],
+                     [
+                        0.1334150880575,
+                        52.2235524824053
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 4800,
+               "myw": {
+                  "change_type": "insert",
+                  "delta": "design/NB301",
+                  "feature_type": "ug_route",
+                  "title": "Route (Underground): 4800"
+               },
+               "properties": {
+                  "comsof_auto": null,
+                  "cover_type": "Brick",
+                  "id": 4800,
+                  "in_structure": "manhole/4800",
+                  "labor_costs": "cherry_picker",
+                  "length": null,
+                  "out_structure": "manhole/75"
+               },
+               "type": "Feature"
+            },
+            "field": "path",
+            "ref_feature": {
+               "bbox": [
+                  0.1334522,
+                  52.2235447,
+                  0.1334522,
+                  52.2235447
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1334522,
+                     52.2235447
+                  ],
+                  "type": "Point"
+               },
+               "id": 75,
+               "myw": {
+                  "feature_type": "manhole",
+                  "title": "Manhole: WH-M-75"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "id": 75,
+                  "installation_date": null,
+                  "labor_costs": "level_ground",
+                  "lockable": null,
+                  "myw_orientation_location": 0.0,
+                  "name": "WH-M-75",
+                  "powered": null,
+                  "size_x": 440.0,
+                  "size_y": 910.0,
+                  "size_z": 800.0,
+                  "specification": "FPM-CCANN-J4"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_mismatch_at"
+         }
+      },
+      "ug_route/4801": {
+         "path": {
+            "data": {
+               "_coord": [
+                  0.1334150880575,
+                  52.2235524824053
+               ],
+               "_expected_coord": [
+                  0.1334522,
+                  52.2235447
+               ],
+               "_ref": "in_structure",
+               "ref_side": null
+            },
+            "feature": {
+               "bbox": [
+                  0.13329237,
+                  52.2233353,
+                  0.13346403,
+                  52.2235524824053
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.1334150880575,
+                        52.2235524824053
+                     ],
+                     [
+                        0.13346403,
+                        52.223507
+                     ],
+                     [
+                        0.13343185,
+                        52.223431
+                     ],
+                     [
+                        0.13335943,
+                        52.223361
+                     ],
+                     [
+                        0.13329237,
+                        52.2233353
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 4801,
+               "myw": {
+                  "change_type": "insert",
+                  "delta": "design/NB301",
+                  "feature_type": "ug_route",
+                  "title": "Route (Underground): 4801"
+               },
+               "properties": {
+                  "comsof_auto": null,
+                  "cover_type": "Brick",
+                  "id": 4801,
+                  "in_structure": "manhole/75",
+                  "labor_costs": "cherry_picker,trench_dig",
+                  "length": null,
+                  "out_structure": "manhole/4801"
+               },
+               "type": "Feature"
+            },
+            "field": "path",
+            "ref_feature": {
+               "bbox": [
+                  0.1334522,
+                  52.2235447,
+                  0.1334522,
+                  52.2235447
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1334522,
+                     52.2235447
+                  ],
+                  "type": "Point"
+               },
+               "id": 75,
+               "myw": {
+                  "feature_type": "manhole",
+                  "title": "Manhole: WH-M-75"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "id": 75,
+                  "installation_date": null,
+                  "labor_costs": "level_ground",
+                  "lockable": null,
+                  "myw_orientation_location": 0.0,
+                  "name": "WH-M-75",
+                  "powered": null,
+                  "size_x": 440.0,
+                  "size_y": 910.0,
+                  "size_z": 800.0,
+                  "specification": "FPM-CCANN-J4"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_mismatch_at"
+         }
+      },
+      "ug_route/88": {
+         "path": {
+            "data": {
+               "_coord": [
+                  0.1334150880575,
+                  52.2235524824053
+               ],
+               "_expected_coord": [
+                  0.1334522,
+                  52.2235447
+               ],
+               "_ref": "out_structure",
+               "ref_side": null
+            },
+            "feature": {
+               "bbox": [
+                  0.1334150880575,
+                  52.2235524824053,
+                  0.1336028426886,
+                  52.2236559959141
+               ],
+               "geometry": {
+                  "coordinates": [
+                     [
+                        0.1336028426886,
+                        52.2236559959141
+                     ],
+                     [
+                        0.1335840672255,
+                        52.2236352521549
+                     ],
+                     [
+                        0.1335518807173,
+                        52.223616356841
+                     ],
+                     [
+                        0.1335029304028,
+                        52.2235937646074
+                     ],
+                     [
+                        0.1334150880575,
+                        52.2235524824053
+                     ]
+                  ],
+                  "type": "LineString"
+               },
+               "id": 88,
+               "myw": {
+                  "change_type": "update",
+                  "delta": "design/NB301",
+                  "feature_type": "ug_route",
+                  "title": "Route (Underground): 88"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "cover_type": "Brick",
+                  "id": 88,
+                  "in_structure": "manhole/7",
+                  "labor_costs": "cherry_picker,trench_dig",
+                  "length": 18.26,
+                  "out_structure": "manhole/75"
+               },
+               "type": "Feature"
+            },
+            "field": "path",
+            "ref_feature": {
+               "bbox": [
+                  0.1334522,
+                  52.2235447,
+                  0.1334522,
+                  52.2235447
+               ],
+               "geometry": {
+                  "coordinates": [
+                     0.1334522,
+                     52.2235447
+                  ],
+                  "type": "Point"
+               },
+               "id": 75,
+               "myw": {
+                  "feature_type": "manhole",
+                  "title": "Manhole: WH-M-75"
+               },
+               "properties": {
+                  "comsof_auto": false,
+                  "id": 75,
+                  "installation_date": null,
+                  "labor_costs": "level_ground",
+                  "lockable": null,
+                  "myw_orientation_location": 0.0,
+                  "name": "WH-M-75",
+                  "powered": null,
+                  "size_x": 440.0,
+                  "size_y": 910.0,
+                  "size_z": 800.0,
+                  "specification": "FPM-CCANN-J4"
+               },
+               "type": "Feature"
+            },
+            "type": "geom_mismatch_at"
+         }
+      }
+   }
+}
+
+

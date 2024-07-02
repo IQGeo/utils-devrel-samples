@@ -1,0 +1,16 @@
+{
+    "name": "blown_fiber_tubes",
+    "display_name": "{:blown_fiber_tubes_layer_display_name}",
+    "category": "overlay",
+    "code": "bft",
+    "datasource": "myworld",
+    "spec": {
+        "rendering": "vector",
+        "isStatic": false,
+        "nativeAppMode": "switchable"
+    },
+    "transparency": 0,
+    "min_scale": 15,
+    "max_scale": 22,
+    "feature_types": []
+}

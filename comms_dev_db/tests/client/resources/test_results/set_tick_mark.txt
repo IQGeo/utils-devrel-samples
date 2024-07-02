@@ -1,0 +1,59 @@
+TEST: AFTER SET INVALID TICK MARK
+  header: Manhole: WH-M-45
+    label: Name
+    label: WH-M-45
+    label: Spec
+    label: FPM-CCANN-J4
+    label: Length
+    label: 17 in
+    label: Width
+    label: 36 in
+    label: Depth
+    label: 31 in
+    label: Installed
+    label: 19/01/1998
+    label: Routes
+    label: Items
+    label: Shortest to Hub
+    label: Items
+    label: Labor Costs
+    label: Items
+  header: Equipment
+  header: feature-plugins-header-options
+  header: Cables
+  header: feature-plugins-header-options
+    label: Set Tick Mark
+    button: Close
+    label: Tick mark: Setting tick mark to 750 would overlap next tick mark
+    input: 750
+    button: OK
+    button: Cancel
+
+
+TEST: AFTER SET VALID TICK MARK
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: Fiber Cable: WH-FCB-008 (24) IN (0/24) @165 OUT (0/24) @165
+    label: IN (0/24) @165
+    label: OUT (0/24) @165
+
+
+DATABASE CHANGES: AFTER SET TICK MARK
+   insert delta.mywcom_fiber_segment(design/NB046,74,update)
+   insert delta.mywcom_fiber_segment(design/NB046,75,update)
+
+TEST: AFTER SET FROM CONDUIT TREE
+  header: Cables
+  header: feature-plugins-header-options
+    input: 
+    label: BF Tube: WH-BF-195
+    label: Conduit: WH-CND-069 WH-FCB-008 : IN (0/24) @180
+    label: WH-FCB-008 : IN (0/24) @180
+    label: Conduit: WH-CND-070
+
+
+DATABASE CHANGES: AFTER SET FROM CONDUIT TREE
+   update delta.mywcom_fiber_segment(design/NB046,74,update) fields=(length,out_tick)
+   update delta.mywcom_fiber_segment(design/NB046,75,update) fields=(in_tick,length)
+

@@ -1,0 +1,2167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FiberConfiguration>
+  <baseLayer>
+    <customerSelection>PON_AND_P2P</customerSelection>
+    <fttX>FTTH</fttX>
+    <cableDefinitions class="list">
+      <InBuildingCableDefinition>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.0</materialCost>
+          <labourCost>0.0</labourCost>
+        </cost>
+        <layer>Drop</layer>
+      </InBuildingCableDefinition>
+      <InBuildingCableDefinition>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.0</materialCost>
+          <labourCost>0.0</labourCost>
+        </cost>
+        <layer>Distribution</layer>
+      </InBuildingCableDefinition>
+    </cableDefinitions>
+    <ductDefinitions class="list">
+      <InBuildingDuctDefinition>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.0</materialCost>
+          <labourCost>0.0</labourCost>
+        </cost>
+        <layer>Drop</layer>
+        <type>HORIZONTAL_INDOOR</type>
+      </InBuildingDuctDefinition>
+      <InBuildingDuctDefinition>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.0</materialCost>
+          <labourCost>0.0</labourCost>
+        </cost>
+        <layer>Drop</layer>
+        <type>VERTICAL_INDOOR</type>
+      </InBuildingDuctDefinition>
+      <InBuildingDuctDefinition>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.0</materialCost>
+          <labourCost>0.0</labourCost>
+        </cost>
+        <layer>Distribution</layer>
+        <type>HORIZONTAL_INDOOR</type>
+      </InBuildingDuctDefinition>
+      <InBuildingDuctDefinition>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.0</materialCost>
+          <labourCost>0.0</labourCost>
+        </cost>
+        <layer>Distribution</layer>
+        <type>VERTICAL_INDOOR</type>
+      </InBuildingDuctDefinition>
+    </ductDefinitions>
+    <equipmentRules class="list">
+      <RuleBuildingBottomFibers>
+        <fiberType>p2p_spare</fiberType>
+        <fibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </fibersPerDemandType>
+      </RuleBuildingBottomFibers>
+      <RuleBuildingBottomFibers>
+        <fiberType>p2p</fiberType>
+        <fibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </fibersPerDemandType>
+      </RuleBuildingBottomFibers>
+      <RuleBuildingBottomFibers>
+        <fiberType>pon_spare</fiberType>
+        <fibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </fibersPerDemandType>
+      </RuleBuildingBottomFibers>
+      <RuleBuildingBottomFibers>
+        <fiberType>pon</fiberType>
+        <fibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </fibersPerDemandType>
+      </RuleBuildingBottomFibers>
+      <RuleHomeBottomFibers>
+        <ponActiveHomeFibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">1</defaultValue>
+        </ponActiveHomeFibersPerDemandType>
+        <ponSpareHomeFibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </ponSpareHomeFibersPerDemandType>
+        <p2pActiveHomeFibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">2</defaultValue>
+        </p2pActiveHomeFibersPerDemandType>
+        <p2pSpareHomeFibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </p2pSpareHomeFibersPerDemandType>
+      </RuleHomeBottomFibers>
+      <RuleAggregateHomeBottomFibers>
+        <ponActiveHomeFibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </ponActiveHomeFibersPerDemandType>
+        <ponSpareHomeFibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </ponSpareHomeFibersPerDemandType>
+        <p2pActiveHomeFibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </p2pActiveHomeFibersPerDemandType>
+        <p2pSpareHomeFibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </p2pSpareHomeFibersPerDemandType>
+      </RuleAggregateHomeBottomFibers>
+      <RuleSplittersPlusTopFibers>
+        <splitterMap class="map">
+          <entry>
+            <FiberType>pon</FiberType>
+            <list>
+              <Pair>
+                <first class="int">1</first>
+                <second class="SplitterDescription">
+                  <splitterType identifier="1:1">Splitter</splitterType>
+                  <outgoingFiberType>pon_stdSplitterScheme</outgoingFiberType>
+                </second>
+              </Pair>
+            </list>
+          </entry>
+          <entry>
+            <FiberType>pon_spare</FiberType>
+            <list>
+              <Pair>
+                <first class="int">1</first>
+                <second class="SplitterDescription">
+                  <splitterType identifier="1:1">Splitter</splitterType>
+                  <outgoingFiberType>pon_stdSplitterScheme_spare</outgoingFiberType>
+                </second>
+              </Pair>
+            </list>
+          </entry>
+        </splitterMap>
+        <connectSpareFibersLowerLayerToTopLayer>true</connectSpareFibersLowerLayerToTopLayer>
+        <attemptToSeparateFibersPerHome>false</attemptToSeparateFibersPerHome>
+      </RuleSplittersPlusTopFibers>
+      <RuleSpliceIncomingSplitterFibers/>
+      <RuleSpliceIncomingSplitterFibers/>
+      <RuleGeneralDemandEquipment/>
+      <RuleForcedEquipment>
+        <aerialEquipment class="list">
+          <EquipmentSubType>Building</EquipmentSubType>
+        </aerialEquipment>
+        <buriedEquipment class="list">
+          <EquipmentSubType>Building</EquipmentSubType>
+        </buriedEquipment>
+      </RuleForcedEquipment>
+      <RuleScalingEquipmentToDemand>
+        <equipmentType>CPE_PON</equipmentType>
+        <equipmentTypeToScaleTo>PON_HOME</equipmentTypeToScaleTo>
+        <scalingFactor>1.0</scalingFactor>
+        <rounding>NO</rounding>
+      </RuleScalingEquipmentToDemand>
+      <RuleScalingEquipmentToDemand>
+        <equipmentType>CPE_P2P</equipmentType>
+        <equipmentTypeToScaleTo>P2P_HOME</equipmentTypeToScaleTo>
+        <scalingFactor>1.0</scalingFactor>
+        <rounding>NO</rounding>
+      </RuleScalingEquipmentToDemand>
+      <RuleActivationEquipment/>
+    </equipmentRules>
+    <spareDuctToDemandPointConfig>
+      <configureSpareDuctsToDemandPoints>false</configureSpareDuctsToDemandPoints>
+      <spareDuctsToDemandPointsUpTo/>
+      <spareDuctsToDemandPointsAbove/>
+      <spareDuctLengthThreshold>1000.0</spareDuctLengthThreshold>
+      <amountDuctsUpToThreshold>1</amountDuctsUpToThreshold>
+      <amountDuctsAboveThreshold>2</amountDuctsAboveThreshold>
+      <placeSpareDuctsInExistingPipes>false</placeSpareDuctsInExistingPipes>
+    </spareDuctToDemandPointConfig>
+    <placeProtectionPipes>false</placeProtectionPipes>
+    <layerStrategy class="DemandStrategy"/>
+    <costElementsAsHP class="set"/>
+    <layerName>Demand</layerName>
+    <layerLocked>false</layerLocked>
+  </baseLayer>
+  <FiberLayerConfiguration>
+    <layerName>Drop</layerName>
+    <layerLocked>false</layerLocked>
+    <layerInvisible>false</layerInvisible>
+    <clusterTarget class="ClusterTarget">CableCount</clusterTarget>
+    <clusterTargets class="map">
+      <entry>
+        <ClusterTarget>CableCount</ClusterTarget>
+        <int>-1</int>
+      </entry>
+    </clusterTargets>
+    <polygonType>CONCAVE</polygonType>
+    <edgeTypesToAvoid class="set">
+      <EdgeType>EXISTINGCABLE</EdgeType>
+      <EdgeType>COPPER</EdgeType>
+      <EdgeType>COAX</EdgeType>
+    </edgeTypesToAvoid>
+    <costElementsAsHA class="set">
+      <EquipmentType>Splice</EquipmentType>
+      <GeneralCostType>ducts</GeneralCostType>
+      <GeneralCostType>trenching</GeneralCostType>
+      <EquipmentType>Splitter</EquipmentType>
+      <GeneralCostType>cables</GeneralCostType>
+    </costElementsAsHA>
+    <availableDucts class="list">
+      <SimpleDuctDefinition>
+        <capacityToBeUsed>2</capacityToBeUsed>
+        <extraReservedCapacity>0</extraReservedCapacity>
+        <ductType>BLOWN_FIBER</ductType>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.09144018288036576</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+        <identifier></identifier>
+      </SimpleDuctDefinition>
+    </availableDucts>
+    <placeDuctsInExistingPipes>true</placeDuctsInExistingPipes>
+    <trySharedDuctAlgorithm>true</trySharedDuctAlgorithm>
+    <crossingEquipment class="list"/>
+    <placeCrossingEquipmentOnBothSides>true</placeCrossingEquipmentOnBothSides>
+    <drumLengthReachedEquipmentType>ManHole</drumLengthReachedEquipmentType>
+    <allAvailableCables class="list">
+      <FiberCableDefinition>
+        <fiberBundleCount>1</fiberBundleCount>
+        <fiberBundleSize>2</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.14139361612056559</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>1</fiberBundleCount>
+        <fiberBundleSize>4</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.16086698840064348</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>1</fiberBundleCount>
+        <fiberBundleSize>2</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.28278723224113117</materialCost>
+          <labourCost>0.6096012192024384</labourCost>
+        </cost>
+        <cableType>AERIAL_STRICT</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>1</fiberBundleCount>
+        <fiberBundleSize>4</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.32173397680128696</materialCost>
+          <labourCost>0.6096012192024384</labourCost>
+        </cost>
+        <cableType>AERIAL_STRICT</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+    </allAvailableCables>
+    <layerStrategy class="DropStrategy">
+      <manualClusterElements>
+        <forcedClustersName>IN_ForcedDropClusters</forcedClustersName>
+        <forcedCentroidsName>IN_ForcedDropPoints</forcedCentroidsName>
+        <forcedRoutesName>IN_ForcedDropRoutes</forcedRoutesName>
+      </manualClusterElements>
+      <clusterTarget class="ClusterTarget">TotalFiberCount</clusterTarget>
+      <buriedClusterOption>VANGOGH_CLUSTERING</buriedClusterOption>
+      <aerialClusterOption>SIMPLE_POLE_CLUSTERING</aerialClusterOption>
+      <buriedClusterSize>24</buriedClusterSize>
+      <aerialClusterSize>16</aerialClusterSize>
+      <cutOffDistance unit="FOOT_US">492.125</cutOffDistance>
+      <forbiddenEdgesForBuried class="NetworkPredicates.None"/>
+      <forbiddenEdgesForFacade class="NetworkPredicates.None"/>
+      <forbiddenEdgesForAerial class="NetworkPredicates.Not">
+        <innerPredicate class="EdgePredicates.IsAerialEdge"/>
+      </forbiddenEdgesForAerial>
+      <preferredCentroidLocation class="AggregatedLocation">
+        <locations>
+          <EnumLocation>
+            <types enum-type="LocationType">TRENCH,FACADE,DROP_PIPE</types>
+          </EnumLocation>
+          <ExistingEquipmentLocation>
+            <equipmentLocations>
+              <EquipmentSubType>Pole</EquipmentSubType>
+            </equipmentLocations>
+          </ExistingEquipmentLocation>
+        </locations>
+      </preferredCentroidLocation>
+      <preferredCentroidAffinity class="StandardCentroidAffinity">HIGH</preferredCentroidAffinity>
+    </layerStrategy>
+    <equipmentRules class="list">
+      <RuleSplittersPlusTopFibers>
+        <splitterMap class="map">
+          <entry>
+            <FiberType>pon_stdSplitterScheme</FiberType>
+            <list>
+              <Pair>
+                <first class="int">1</first>
+                <second class="SplitterDescription">
+                  <splitterType identifier="1:1">Splitter</splitterType>
+                  <outgoingFiberType>pon_stdSplitterScheme</outgoingFiberType>
+                </second>
+              </Pair>
+            </list>
+          </entry>
+          <entry>
+            <FiberType>pon_stdSplitterScheme_spare</FiberType>
+            <list>
+              <Pair>
+                <first class="int">1</first>
+                <second class="SplitterDescription">
+                  <splitterType identifier="1:1">Splitter</splitterType>
+                  <outgoingFiberType>pon_stdSplitterScheme_spare</outgoingFiberType>
+                </second>
+              </Pair>
+            </list>
+          </entry>
+        </splitterMap>
+        <connectSpareFibersLowerLayerToTopLayer>true</connectSpareFibersLowerLayerToTopLayer>
+        <attemptToSeparateFibersPerHome>false</attemptToSeparateFibersPerHome>
+      </RuleSplittersPlusTopFibers>
+      <RuleSpliceIncomingSplitterFibers/>
+      <RuleForcedEquipment>
+        <aerialEquipment class="list">
+          <EquipmentSubType>Closure</EquipmentSubType>
+        </aerialEquipment>
+        <buriedEquipment class="list">
+          <EquipmentSubType>Closure</EquipmentSubType>
+          <EquipmentSubType>DropBox</EquipmentSubType>
+        </buriedEquipment>
+      </RuleForcedEquipment>
+    </equipmentRules>
+    <cableRules class="list"/>
+    <bottomFiberRules class="list">
+      <FiberRuleSpliceNonFiller/>
+      <FiberRulePlaceConnectors/>
+      <FiberRuleSpliceDarkFibers/>
+    </bottomFiberRules>
+    <topFiberRules class="list"/>
+    <transitionRules class="list">
+      <TransitionRuleAccessChamberAtBuriedNode>
+        <otherTerminations>
+          <TransitionTermination>EXISTING_PIPE</TransitionTermination>
+        </otherTerminations>
+        <nodeWithAdjacentEdgesPredicateToPlaceAccessChambers class="NodePredicates.HasOfIncidentEdges">
+          <edgeCountRange>
+            <lowerBound class="Guava.Collections.Cut$BelowValue">
+              <endpoint class="int">1</endpoint>
+            </lowerBound>
+            <upperBound class="Guava.Collections.Cut$AboveAll"/>
+          </edgeCountRange>
+          <edgePredicate class="EdgePredicates.IsType">
+            <edgeTypes class="set">
+              <EdgeType>EXISTINGPIPE</EdgeType>
+            </edgeTypes>
+          </edgePredicate>
+        </nodeWithAdjacentEdgesPredicateToPlaceAccessChambers>
+      </TransitionRuleAccessChamberAtBuriedNode>
+    </transitionRules>
+    <ductRules class="list">
+      <DuctRuleMicroDuctConnectorsAndTapering/>
+    </ductRules>
+    <preCabledDrumLength>300.0</preCabledDrumLength>
+    <preCabledDrumLengthReachedEquipmentType>ManHole</preCabledDrumLengthReachedEquipmentType>
+    <ductClasses class="list"/>
+    <spareDuctConfiguration>
+      <configureSpareDuctConfiguration>false</configureSpareDuctConfiguration>
+      <maxLayerSpan>1000.0</maxLayerSpan>
+      <amountLayerDuctsUpTo>1</amountLayerDuctsUpTo>
+      <amountLayerDuctsAbove>2</amountLayerDuctsAbove>
+      <ductDefinitionsUpTo/>
+      <ductDefinitionsAbove/>
+      <placeSpareDuctsInExistingPipe>false</placeSpareDuctsInExistingPipe>
+    </spareDuctConfiguration>
+    <spareDuctCapacity>0</spareDuctCapacity>
+    <spliceBundlesToUpperLayer>false</spliceBundlesToUpperLayer>
+    <terminateFutureCableDemand>false</terminateFutureCableDemand>
+    <usePreCabledDucts>false</usePreCabledDucts>
+    <lenientCableLengthConstraints/>
+  </FiberLayerConfiguration>
+  <FiberLayerConfiguration>
+    <layerName>Distribution</layerName>
+    <layerLocked>false</layerLocked>
+    <layerInvisible>false</layerInvisible>
+    <clusterTarget class="ClusterTarget">TotalFiberCount</clusterTarget>
+    <clusterTargets class="map">
+      <entry>
+        <ClusterTarget>TotalFiberCount</ClusterTarget>
+        <int>432</int>
+      </entry>
+    </clusterTargets>
+    <polygonType>CONCAVE</polygonType>
+    <edgeTypesToAvoid class="set">
+      <EdgeType>AERIALDROP</EdgeType>
+      <EdgeType>CUSTOMERDROP</EdgeType>
+      <EdgeType>EXISTINGCABLE</EdgeType>
+      <EdgeType>COPPER</EdgeType>
+      <EdgeType>COAX</EdgeType>
+    </edgeTypesToAvoid>
+    <costElementsAsHA class="set">
+      <EquipmentType>Splitter</EquipmentType>
+    </costElementsAsHA>
+    <availableDucts class="list">
+      <SimpleDuctDefinition>
+        <capacityToBeUsed>10</capacityToBeUsed>
+        <extraReservedCapacity>2</extraReservedCapacity>
+        <ductType>BLOWN_FIBER</ductType>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.762001524003048</materialCost>
+          <labourCost>0.381000762001524</labourCost>
+        </cost>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+        <identifier></identifier>
+      </SimpleDuctDefinition>
+      <SimpleDuctDefinition>
+        <capacityToBeUsed>20</capacityToBeUsed>
+        <extraReservedCapacity>4</extraReservedCapacity>
+        <ductType>BLOWN_FIBER</ductType>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>1.2192024384048767</materialCost>
+          <labourCost>0.4572009144018288</labourCost>
+        </cost>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+        <identifier></identifier>
+      </SimpleDuctDefinition>
+    </availableDucts>
+    <placeDuctsInExistingPipes>true</placeDuctsInExistingPipes>
+    <trySharedDuctAlgorithm>true</trySharedDuctAlgorithm>
+    <crossingEquipment class="list"/>
+    <placeCrossingEquipmentOnBothSides>true</placeCrossingEquipmentOnBothSides>
+    <drumLengthReachedEquipmentType>ManHole</drumLengthReachedEquipmentType>
+    <allAvailableCables class="list">
+      <FiberCableDefinition>
+        <fiberBundleCount>2</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.1524003048006096</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>4</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.3048006096012192</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>6</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.6096012192024384</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>12</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.9144018288036576</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>18</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>1.2192024384048767</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+    </allAvailableCables>
+    <layerStrategy class="DistributionStrategy">
+      <blowEquipmentElements>
+        <maxBlowDistance>500.0</maxBlowDistance>
+        <blowEquipmentTypes class="list">
+          <EquipmentType>Cabinet</EquipmentType>
+          <EquipmentType>ManHole</EquipmentType>
+          <EquipmentType>HandHole</EquipmentType>
+          <EquipmentType>Pedestal</EquipmentType>
+        </blowEquipmentTypes>
+        <blowEquipmentTypeToAdd>HandHole</blowEquipmentTypeToAdd>
+      </blowEquipmentElements>
+      <manualClusterElements>
+        <forcedClustersName>IN_ForcedDistributionClusters</forcedClustersName>
+        <forcedCentroidsName>IN_ForcedDistributionPoints</forcedCentroidsName>
+        <forcedRoutesName>IN_ForcedDistributionRoutes</forcedRoutesName>
+      </manualClusterElements>
+      <forcedCableClustersName>IN_ForcedDistributionCableClusters</forcedCableClustersName>
+      <cutoffDistance unit="FOOT_US">3280.833</cutoffDistance>
+      <doConnectedClusterImprover>false</doConnectedClusterImprover>
+      <clusterConnectorType>STAR</clusterConnectorType>
+      <optimisationStrength>WEAK</optimisationStrength>
+      <preferredCentroidLocation class="AggregatedLocation">
+        <locations>
+          <EnumLocation>
+            <types enum-type="LocationType">TRENCH</types>
+          </EnumLocation>
+          <ExistingEquipmentLocation>
+            <equipmentLocations/>
+          </ExistingEquipmentLocation>
+        </locations>
+      </preferredCentroidLocation>
+      <preferredCentroidAffinity class="StandardCentroidAffinity">STANDARD</preferredCentroidAffinity>
+      <useSharedCableForAerial>false</useSharedCableForAerial>
+      <useSharedCableForBuried>false</useSharedCableForBuried>
+      <bundleAssignmentType>COMPLETE_BUNDLES</bundleAssignmentType>
+      <windowCutOption>INDIVIDUAL_CUT</windowCutOption>
+      <spliceUnusedFibers>false</spliceUnusedFibers>
+      <reverseFiberOrder>false</reverseFiberOrder>
+      <sharedCableOptimisationCriterion class="LimitedCables">
+        <cableLimitPerRoute>2</cableLimitPerRoute>
+      </sharedCableOptimisationCriterion>
+      <branchEquipmentOptions>
+        <preferredEquipment>
+          <EquipmentSubType>Closure</EquipmentSubType>
+          <EquipmentSubType>HandHole</EquipmentSubType>
+        </preferredEquipment>
+        <reusableTypes class="ListOf">
+          <EquipmentType>ManHole</EquipmentType>
+          <EquipmentType>HandHole</EquipmentType>
+          <EquipmentType>Cabinet</EquipmentType>
+          <EquipmentType>Closure</EquipmentType>
+          <EquipmentType>Pedestal</EquipmentType>
+        </reusableTypes>
+        <nonReusableSubTypes/>
+      </branchEquipmentOptions>
+    </layerStrategy>
+    <equipmentRules class="list">
+      <RuleSplittersPlusTopFibers>
+        <splitterMap class="map">
+          <entry>
+            <FiberType>pon_stdSplitterScheme</FiberType>
+            <list>
+              <Pair>
+                <first class="int">1</first>
+                <second class="SplitterDescription">
+                  <splitterType identifier="1:32">Splitter</splitterType>
+                  <outgoingFiberType>pon_stdSplitterScheme</outgoingFiberType>
+                </second>
+              </Pair>
+            </list>
+          </entry>
+          <entry>
+            <FiberType>pon_stdSplitterScheme_spare</FiberType>
+            <list>
+              <Pair>
+                <first class="int">1</first>
+                <second class="SplitterDescription">
+                  <splitterType identifier="1:32">Splitter</splitterType>
+                  <outgoingFiberType>pon_stdSplitterScheme_spare</outgoingFiberType>
+                </second>
+              </Pair>
+            </list>
+          </entry>
+        </splitterMap>
+        <connectSpareFibersLowerLayerToTopLayer>true</connectSpareFibersLowerLayerToTopLayer>
+        <attemptToSeparateFibersPerHome>false</attemptToSeparateFibersPerHome>
+      </RuleSplittersPlusTopFibers>
+      <RuleSpliceIncomingSplitterFibers/>
+      <RuleForcedEquipment>
+        <aerialEquipment class="list">
+          <EquipmentSubType>Closure</EquipmentSubType>
+        </aerialEquipment>
+        <buriedEquipment class="list">
+          <EquipmentSubType>Cabinet</EquipmentSubType>
+        </buriedEquipment>
+      </RuleForcedEquipment>
+    </equipmentRules>
+    <cableRules class="list"/>
+    <bottomFiberRules class="list">
+      <FiberRuleSpliceNonFiller/>
+      <FiberRulePlaceConnectors/>
+      <FiberRuleSpliceDarkFibers/>
+    </bottomFiberRules>
+    <topFiberRules class="list"/>
+    <transitionRules class="list">
+      <TransitionRuleAccessChamberAtBuriedNode>
+        <otherTerminations>
+          <TransitionTermination>EXISTING_PIPE</TransitionTermination>
+        </otherTerminations>
+        <nodeWithAdjacentEdgesPredicateToPlaceAccessChambers class="NodePredicates.HasOfIncidentEdges">
+          <edgeCountRange>
+            <lowerBound class="Guava.Collections.Cut$BelowValue">
+              <endpoint class="int">1</endpoint>
+            </lowerBound>
+            <upperBound class="Guava.Collections.Cut$AboveAll"/>
+          </edgeCountRange>
+          <edgePredicate class="EdgePredicates.IsType">
+            <edgeTypes class="set">
+              <EdgeType>EXISTINGPIPE</EdgeType>
+            </edgeTypes>
+          </edgePredicate>
+        </nodeWithAdjacentEdgesPredicateToPlaceAccessChambers>
+      </TransitionRuleAccessChamberAtBuriedNode>
+    </transitionRules>
+    <ductRules class="list">
+      <DuctRuleMicroDuctConnectorsAndTapering/>
+    </ductRules>
+    <preCabledDrumLength>300.0</preCabledDrumLength>
+    <preCabledDrumLengthReachedEquipmentType>ManHole</preCabledDrumLengthReachedEquipmentType>
+    <ductClasses class="list"/>
+    <spareDuctConfiguration>
+      <configureSpareDuctConfiguration>false</configureSpareDuctConfiguration>
+      <maxLayerSpan>1000.0</maxLayerSpan>
+      <amountLayerDuctsUpTo>1</amountLayerDuctsUpTo>
+      <amountLayerDuctsAbove>2</amountLayerDuctsAbove>
+      <ductDefinitionsUpTo/>
+      <ductDefinitionsAbove/>
+      <placeSpareDuctsInExistingPipe>false</placeSpareDuctsInExistingPipe>
+    </spareDuctConfiguration>
+    <spareDuctCapacity>0</spareDuctCapacity>
+    <spliceBundlesToUpperLayer>false</spliceBundlesToUpperLayer>
+    <terminateFutureCableDemand>false</terminateFutureCableDemand>
+    <usePreCabledDucts>false</usePreCabledDucts>
+    <lenientCableLengthConstraints/>
+  </FiberLayerConfiguration>
+  <FiberLayerConfiguration>
+    <layerName>Feeder</layerName>
+    <layerLocked>false</layerLocked>
+    <layerInvisible>false</layerInvisible>
+    <clusterTarget class="ClusterTarget">AllTogether</clusterTarget>
+    <clusterTargets class="map">
+      <entry>
+        <ClusterTarget>AllTogether</ClusterTarget>
+        <int>10000</int>
+      </entry>
+    </clusterTargets>
+    <polygonType>CONCAVE</polygonType>
+    <edgeTypesToAvoid class="set">
+      <EdgeType>AERIALDROP</EdgeType>
+      <EdgeType>CUSTOMERDROP</EdgeType>
+      <EdgeType>EXISTINGCABLE</EdgeType>
+      <EdgeType>COPPER</EdgeType>
+      <EdgeType>COAX</EdgeType>
+    </edgeTypesToAvoid>
+    <costElementsAsHA class="set">
+      <EquipmentType>OLTCard_PON</EquipmentType>
+      <EquipmentType>Splitter</EquipmentType>
+      <EquipmentType>OLTCard_P2P</EquipmentType>
+      <EquipmentType>OLTShelf</EquipmentType>
+    </costElementsAsHA>
+    <availableDucts class="list">
+      <SimpleDuctDefinition>
+        <capacityToBeUsed>2</capacityToBeUsed>
+        <extraReservedCapacity>1</extraReservedCapacity>
+        <ductType>BLOWN_FIBER</ductType>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.4572009144018288</materialCost>
+          <labourCost>0.381000762001524</labourCost>
+        </cost>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+        <identifier></identifier>
+      </SimpleDuctDefinition>
+      <SimpleDuctDefinition>
+        <capacityToBeUsed>6</capacityToBeUsed>
+        <extraReservedCapacity>1</extraReservedCapacity>
+        <ductType>BLOWN_FIBER</ductType>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.9144018288036576</materialCost>
+          <labourCost>0.381000762001524</labourCost>
+        </cost>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+        <identifier></identifier>
+      </SimpleDuctDefinition>
+    </availableDucts>
+    <placeDuctsInExistingPipes>true</placeDuctsInExistingPipes>
+    <trySharedDuctAlgorithm>true</trySharedDuctAlgorithm>
+    <crossingEquipment class="list"/>
+    <placeCrossingEquipmentOnBothSides>true</placeCrossingEquipmentOnBothSides>
+    <drumLengthReachedEquipmentType>ManHole</drumLengthReachedEquipmentType>
+    <allAvailableCables class="list">
+      <FiberCableDefinition>
+        <fiberBundleCount>24</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>1.2192024384048767</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>36</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>1.8288036576073152</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>48</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>2.4384048768097535</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>72</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>3.0</materialCost>
+          <labourCost>0.3</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+      <FiberCableDefinition>
+        <fiberBundleCount>144</fiberBundleCount>
+        <fiberBundleSize>12</fiberBundleSize>
+        <reservedFibersPerBundle>0</reservedFibersPerBundle>
+        <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>3.5</materialCost>
+          <labourCost>0.3</labourCost>
+        </cost>
+        <cableType>UNDERGROUND</cableType>
+        <identifier></identifier>
+        <maxDrumLength unit="FOOT_US">Infinity</maxDrumLength>
+        <outerDiameter unit="INCH">0.0</outerDiameter>
+      </FiberCableDefinition>
+    </allAvailableCables>
+    <layerStrategy class="SharedCableStrategy">
+      <manualClusterElements>
+        <forcedClustersName>IN_ForcedFeederClusters</forcedClustersName>
+        <forcedCentroidsName>IN_ForcedFeederPoints</forcedCentroidsName>
+        <forcedRoutesName>IN_ForcedFeederRoutes</forcedRoutesName>
+      </manualClusterElements>
+      <forcedCableClustersName>IN_ForcedFeederCableClusters</forcedCableClustersName>
+      <blowEquipmentElements>
+        <maxBlowDistance>500.0</maxBlowDistance>
+        <blowEquipmentTypes class="list">
+          <EquipmentType>Cabinet</EquipmentType>
+          <EquipmentType>ManHole</EquipmentType>
+          <EquipmentType>HandHole</EquipmentType>
+          <EquipmentType>Pedestal</EquipmentType>
+        </blowEquipmentTypes>
+        <blowEquipmentTypeToAdd>HandHole</blowEquipmentTypeToAdd>
+      </blowEquipmentElements>
+      <branchEquipmentOptions>
+        <preferredEquipment>
+          <EquipmentSubType>Closure</EquipmentSubType>
+          <EquipmentSubType>ManHole</EquipmentSubType>
+        </preferredEquipment>
+        <reusableTypes class="ListOf">
+          <EquipmentType>ManHole</EquipmentType>
+          <EquipmentType>HandHole</EquipmentType>
+          <EquipmentType>Cabinet</EquipmentType>
+          <EquipmentType>Closure</EquipmentType>
+          <EquipmentType>Pedestal</EquipmentType>
+        </reusableTypes>
+        <nonReusableSubTypes/>
+      </branchEquipmentOptions>
+      <existingEquipmentTypeOfCentroid>CentralOffice</existingEquipmentTypeOfCentroid>
+      <bundleAssignmentType>SHARE_BUNDLES</bundleAssignmentType>
+      <windowCutOption>INDIVIDUAL_CUT</windowCutOption>
+      <spliceUnusedFibers>false</spliceUnusedFibers>
+      <reverseFiberOrder>false</reverseFiberOrder>
+      <optimisationCriterion class="CostOptimised"/>
+      <cutOffDistance>5000.0</cutOffDistance>
+    </layerStrategy>
+    <equipmentRules class="list">
+      <RuleSplittersPlusTopFibers>
+        <splitterMap class="map">
+          <entry>
+            <FiberType>pon_stdSplitterScheme</FiberType>
+            <list>
+              <Pair>
+                <first class="int">1</first>
+                <second class="SplitterDescription">
+                  <splitterType identifier="1:1">Splitter</splitterType>
+                  <outgoingFiberType>pon_stdSplitterScheme</outgoingFiberType>
+                </second>
+              </Pair>
+            </list>
+          </entry>
+          <entry>
+            <FiberType>pon_stdSplitterScheme_spare</FiberType>
+            <list>
+              <Pair>
+                <first class="int">1</first>
+                <second class="SplitterDescription">
+                  <splitterType identifier="1:1">Splitter</splitterType>
+                  <outgoingFiberType>pon_stdSplitterScheme_spare</outgoingFiberType>
+                </second>
+              </Pair>
+            </list>
+          </entry>
+        </splitterMap>
+        <connectSpareFibersLowerLayerToTopLayer>true</connectSpareFibersLowerLayerToTopLayer>
+        <attemptToSeparateFibersPerHome>false</attemptToSeparateFibersPerHome>
+      </RuleSplittersPlusTopFibers>
+      <RuleSpliceIncomingSplitterFibers/>
+      <RuleSpliceActiveEquipment>
+        <patchCable class="FiberCableDefinition">
+          <fiberBundleCount>2147483647</fiberBundleCount>
+          <fiberBundleSize>1</fiberBundleSize>
+          <reservedFibersPerBundle>0</reservedFibersPerBundle>
+          <extraReservedFibersPerCable>0</extraReservedFibersPerCable>
+          <cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </cost>
+          <cableType>UNDERGROUND</cableType>
+          <identifier>patch-cable</identifier>
+          <maxDrumLength>1.7976931348623157E308</maxDrumLength>
+          <outerDiameter>0.0</outerDiameter>
+        </patchCable>
+        <fiberRules>
+          <FiberRuleSpliceNonFiller/>
+          <FiberRulePlaceConnectors/>
+          <FiberRuleSpliceDarkFibers/>
+        </fiberRules>
+      </RuleSpliceActiveEquipment>
+      <RuleCentralOfficeEquipment>
+        <OLTCard__P2P__Size>16</OLTCard__P2P__Size>
+        <OLTCard__PON__Size>8</OLTCard__PON__Size>
+        <OLTShelf__Size>16</OLTShelf__Size>
+        <ODF__Size>1000</ODF__Size>
+        <placeODFWithCapacityForSpareFibers>true</placeODFWithCapacityForSpareFibers>
+        <placeSizedCentralOffice>false</placeSizedCentralOffice>
+        <sizedCentralOffices class="list"/>
+      </RuleCentralOfficeEquipment>
+      <RuleForcedEquipment>
+        <aerialEquipment class="list"/>
+        <buriedEquipment class="list">
+          <EquipmentSubType>CentralOffice</EquipmentSubType>
+        </buriedEquipment>
+      </RuleForcedEquipment>
+    </equipmentRules>
+    <cableRules class="list"/>
+    <bottomFiberRules class="list">
+      <FiberRuleSpliceNonFiller/>
+      <FiberRulePlaceConnectors/>
+      <FiberRuleSpliceDarkFibers/>
+    </bottomFiberRules>
+    <topFiberRules class="list"/>
+    <transitionRules class="list">
+      <TransitionRuleAccessChamberAtBuriedNode>
+        <otherTerminations>
+          <TransitionTermination>EXISTING_PIPE</TransitionTermination>
+        </otherTerminations>
+        <nodeWithAdjacentEdgesPredicateToPlaceAccessChambers class="NodePredicates.HasOfIncidentEdges">
+          <edgeCountRange>
+            <lowerBound class="Guava.Collections.Cut$BelowValue">
+              <endpoint class="int">1</endpoint>
+            </lowerBound>
+            <upperBound class="Guava.Collections.Cut$AboveAll"/>
+          </edgeCountRange>
+          <edgePredicate class="EdgePredicates.IsType">
+            <edgeTypes class="set">
+              <EdgeType>EXISTINGPIPE</EdgeType>
+            </edgeTypes>
+          </edgePredicate>
+        </nodeWithAdjacentEdgesPredicateToPlaceAccessChambers>
+      </TransitionRuleAccessChamberAtBuriedNode>
+    </transitionRules>
+    <ductRules class="list">
+      <DuctRuleMicroDuctConnectorsAndTapering/>
+    </ductRules>
+    <preCabledDrumLength>300.0</preCabledDrumLength>
+    <preCabledDrumLengthReachedEquipmentType>ManHole</preCabledDrumLengthReachedEquipmentType>
+    <ductClasses class="list"/>
+    <spareDuctConfiguration>
+      <configureSpareDuctConfiguration>false</configureSpareDuctConfiguration>
+      <maxLayerSpan>1000.0</maxLayerSpan>
+      <amountLayerDuctsUpTo>1</amountLayerDuctsUpTo>
+      <amountLayerDuctsAbove>2</amountLayerDuctsAbove>
+      <ductDefinitionsUpTo/>
+      <ductDefinitionsAbove/>
+      <placeSpareDuctsInExistingPipe>false</placeSpareDuctsInExistingPipe>
+    </spareDuctConfiguration>
+    <spareDuctCapacity>0</spareDuctCapacity>
+    <spliceBundlesToUpperLayer>false</spliceBundlesToUpperLayer>
+    <terminateFutureCableDemand>false</terminateFutureCableDemand>
+    <usePreCabledDucts>false</usePreCabledDucts>
+    <lenientCableLengthConstraints/>
+  </FiberLayerConfiguration>
+  <costs>
+    <costPenalties class="list">
+      <CrossingCostPenalty>
+        <penalty>5.0</penalty>
+      </CrossingCostPenalty>
+    </costPenalties>
+    <equipmentCostMap>
+      <innermap>
+        <entry>
+          <EquipmentSubType>CPE_FTTdp</EquipmentSubType>
+          <Cost>
+            <materialCost>60.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Cabinet</EquipmentSubType>
+          <Cost>
+            <materialCost>1750.0</materialCost>
+            <labourCost>1100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>PrimaryCabinet</EquipmentSubType>
+          <Cost>
+            <materialCost>2000.0</materialCost>
+            <labourCost>1100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Closure</EquipmentSubType>
+          <Cost>
+            <materialCost>150.0</materialCost>
+            <labourCost>100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>DuctTaperLocation</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>ODF</EquipmentSubType>
+          <Cost>
+            <materialCost>2000.0</materialCost>
+            <labourCost>1000.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>MicroDuctConnector</EquipmentSubType>
+          <Cost>
+            <materialCost>2.5</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Pedestal</EquipmentSubType>
+          <Cost>
+            <materialCost>100.0</materialCost>
+            <labourCost>100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>DuctBranchLocation</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="1:64">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>275.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="2:32">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>175.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Antenna</EquipmentSubType>
+          <Cost>
+            <materialCost>2500.0</materialCost>
+            <labourCost>10000.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="2:16">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>125.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>HDD</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>1.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>OLTShelf</EquipmentSubType>
+          <Cost>
+            <materialCost>1000.0</materialCost>
+            <labourCost>500.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>DropBox</EquipmentSubType>
+          <Cost>
+            <materialCost>100.0</materialCost>
+            <labourCost>100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>CPE_P2P</EquipmentSubType>
+          <Cost>
+            <materialCost>20.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="2:128">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>350.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="2:2">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>40.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="1:4">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>50.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="2:4">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>50.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>ManHole</EquipmentSubType>
+          <Cost>
+            <materialCost>500.0</materialCost>
+            <labourCost>500.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="1:8">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>80.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>OLTCard_P2P</EquipmentSubType>
+          <Cost>
+            <materialCost>2000.0</materialCost>
+            <labourCost>200.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="2:8">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>80.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Connector</EquipmentSubType>
+          <Cost>
+            <materialCost>5.0</materialCost>
+            <labourCost>5.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="1:128">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>350.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="1:32">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>175.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>HandHole</EquipmentSubType>
+          <Cost>
+            <materialCost>100.0</materialCost>
+            <labourCost>100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="2:64">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>275.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>CostForTurning</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Pole</EquipmentSubType>
+          <Cost>
+            <materialCost>300.0</materialCost>
+            <labourCost>200.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Splice</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>5.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>OLTCard_PON</EquipmentSubType>
+          <Cost>
+            <materialCost>7000.0</materialCost>
+            <labourCost>200.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>VDD</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>1.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="1:16">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>125.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>FTTB_BuildingEquipment</EquipmentSubType>
+          <Cost>
+            <materialCost>100.0</materialCost>
+            <labourCost>100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>FloorBox</EquipmentSubType>
+          <Cost>
+            <materialCost>50.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Aerial_DropBox</EquipmentSubType>
+          <Cost>
+            <materialCost>100.0</materialCost>
+            <labourCost>100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>CentralOffice</EquipmentSubType>
+          <Cost>
+            <materialCost>25000.0</materialCost>
+            <labourCost>10000.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>CPE_PON</EquipmentSubType>
+          <Cost>
+            <materialCost>70.0</materialCost>
+            <labourCost>40.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="1:1">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="1:2">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>40.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+      </innermap>
+      <defaultValue class="Cost">
+        <materialCost>0.0</materialCost>
+        <labourCost>1.0</labourCost>
+      </defaultValue>
+    </equipmentCostMap>
+    <existingEquipmentCostMap>
+      <innermap>
+        <entry>
+          <EquipmentSubType>CPE_FTTdp</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Cabinet</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>PrimaryCabinet</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Closure</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>DuctTaperLocation</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>ODF</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>MicroDuctConnector</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Pedestal</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>DuctBranchLocation</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Antenna</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>5000.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>HDD</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>OLTShelf</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>PrimaryCentralOffice</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>100.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>DropBox</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>CPE_P2P</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>ManHole</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>OLTCard_P2P</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Connector</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>BackBoneEquipment</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>5000.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType identifier="1:32">Splitter</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>HandHole</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Pole</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>50.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Splice</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>OLTCard_PON</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>VDD</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>FTTB_BuildingEquipment</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>FloorBox</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>Aerial_DropBox</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>CentralOffice</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>5000.0</labourCost>
+          </Cost>
+        </entry>
+        <entry>
+          <EquipmentSubType>CPE_PON</EquipmentSubType>
+          <Cost>
+            <materialCost>0.0</materialCost>
+            <labourCost>0.0</labourCost>
+          </Cost>
+        </entry>
+      </innermap>
+      <defaultValue class="Cost">
+        <materialCost>0.0</materialCost>
+        <labourCost>1.0</labourCost>
+      </defaultValue>
+    </existingEquipmentCostMap>
+    <equipmentDefinitionMap class="Guava.Collections.ArrayListMultimap">
+      <EquipmentType>ProtectionPipe</EquipmentType>
+      <int>1</int>
+      <ProtectionPipeDefinition>
+        <cost distanceUnit="FOOT_US">
+          <materialCost>0.3048006096012192</materialCost>
+          <labourCost>0.3048006096012192</labourCost>
+        </cost>
+        <innerDiameter unit="INCH">0.0</innerDiameter>
+        <identifier></identifier>
+      </ProtectionPipeDefinition>
+    </equipmentDefinitionMap>
+    <edgeCostMap>
+      <defaultCrossingValue>
+        <fixedCost>
+          <materialCost>0.0</materialCost>
+          <labourCost>0.0</labourCost>
+        </fixedCost>
+        <variableCost distanceUnit="FOOT_US">
+          <materialCost>0.0</materialCost>
+          <labourCost>15.24003048006096</labourCost>
+        </variableCost>
+      </defaultCrossingValue>
+      <innermap class="map">
+        <entry>
+          <EdgeClassifier>
+            <edgeType>AERIAL</edgeType>
+            <aerialType>POLE</aerialType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>0.030480060960121923</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>AERIAL</edgeType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.1</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>AERIAL</edgeType>
+            <crossing>true</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>0.060960121920243845</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>EXISTINGPIPE</edgeType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>0.030480060960121923</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>AERIALDROP</edgeType>
+            <aerialType>POLE</aerialType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>0.030480060960121923</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>EXISTINGCABLE</edgeType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>0.030480060960121923</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>AERIALDROP</edgeType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.1</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>AERIAL</edgeType>
+            <aerialType>FACADE</aerialType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>0.030480060960121923</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>AERIALDROP</edgeType>
+            <aerialType>FACADE</aerialType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>0.030480060960121923</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>CUSTOMERDROP</edgeType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>6.096012192024384</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>AERIAL</edgeType>
+            <aerialType>SPAN</aerialType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>0.030480060960121923</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>BURIED</edgeType>
+            <crossing>true</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>15.24003048006096</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <EdgeClassifier>
+            <edgeType>BURIED</edgeType>
+            <crossing>false</crossing>
+          </EdgeClassifier>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+      </innermap>
+      <defaultValue class="EdgeCost">
+        <fixedCost>
+          <materialCost>0.0</materialCost>
+          <labourCost>0.0</labourCost>
+        </fixedCost>
+        <variableCost distanceUnit="FOOT_US">
+          <materialCost>0.0</materialCost>
+          <labourCost>12.192024384048768</labourCost>
+        </variableCost>
+      </defaultValue>
+    </edgeCostMap>
+    <trenchingEdgeCostPerSubType>
+      <inner/>
+    </trenchingEdgeCostPerSubType>
+    <crossingEdgeCostPerSubType>
+      <inner/>
+    </crossingEdgeCostPerSubType>
+    <costPerTransitionSubType>
+      <inner>
+        <entry>
+          <string>Existing Pipe to Trench Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Pole to Trench Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Structure to Existing Cable Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Pole to Existing Cable Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Drawn Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Existing Pipe to Existing Pipe Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Structure to Existing Pipe Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Existing Pipe to Buried Lead-In Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Structure to Trench Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Facade to Pole Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Facade to Existing Pipe Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+        <entry>
+          <string>Facade to Trench Transition</string>
+          <EdgeCost>
+            <fixedCost>
+              <materialCost>0.0</materialCost>
+              <labourCost>0.0</labourCost>
+            </fixedCost>
+            <variableCost distanceUnit="FOOT_US">
+              <materialCost>0.0</materialCost>
+              <labourCost>12.192024384048768</labourCost>
+            </variableCost>
+          </EdgeCost>
+        </entry>
+      </inner>
+    </costPerTransitionSubType>
+    <costScalingPerSubtype class="DefaultMap">
+      <innermap/>
+      <defaultValue class="double">1.0</defaultValue>
+    </costScalingPerSubtype>
+    <currency>USD</currency>
+    <angleForTurning>90.0</angleForTurning>
+  </costs>
+  <opticalLosses>
+    <lossPerDistance>
+      <value>1.524003048006096E-4</value>
+      <distanceUnit>FOOT_US</distanceUnit>
+    </lossPerDistance>
+    <equipmentLossesMap class="map">
+      <entry>
+        <EquipmentSubType identifier="2:2">Splitter</EquipmentSubType>
+        <double>3.6</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="1:4">Splitter</EquipmentSubType>
+        <double>6.8</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="2:4">Splitter</EquipmentSubType>
+        <double>6.8</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="1:8">Splitter</EquipmentSubType>
+        <double>10.3</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="2:8">Splitter</EquipmentSubType>
+        <double>10.3</double>
+      </entry>
+      <entry>
+        <EquipmentSubType>Connector</EquipmentSubType>
+        <double>0.3</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="1:128">Splitter</EquipmentSubType>
+        <double>24.3</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="1:32">Splitter</EquipmentSubType>
+        <double>16.8</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="1:64">Splitter</EquipmentSubType>
+        <double>20.1</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="2:32">Splitter</EquipmentSubType>
+        <double>16.8</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="2:64">Splitter</EquipmentSubType>
+        <double>20.1</double>
+      </entry>
+      <entry>
+        <EquipmentSubType>Splice</EquipmentSubType>
+        <double>0.3</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="1:16">Splitter</EquipmentSubType>
+        <double>13.5</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="2:16">Splitter</EquipmentSubType>
+        <double>13.5</double>
+      </entry>
+      <entry>
+        <EquipmentSubType>Cable</EquipmentSubType>
+        <double>1.524003048006096E-4</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="1:1">Splitter</EquipmentSubType>
+        <double>0.0</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="2:128">Splitter</EquipmentSubType>
+        <double>24.3</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="1:2">Splitter</EquipmentSubType>
+        <double>3.6</double>
+      </entry>
+      <entry>
+        <EquipmentSubType identifier="2:1">Splitter</EquipmentSubType>
+        <double>0.0</double>
+      </entry>
+    </equipmentLossesMap>
+    <topLayer>Feeder</topLayer>
+    <maximumOpticalBudget>1.7976931348623157E308</maximumOpticalBudget>
+  </opticalLosses>
+  <demandCategoryConfiguration>
+    <demandCategoryMap class="Guava.Collections.HashMultimap">
+      <string></string>
+      <int>1</int>
+      <DemandCategory>
+        <categoryIdentifier></categoryIdentifier>
+        <maxHomes>2147483647</maxHomes>
+        <layerName>Demand</layerName>
+      </DemandCategory>
+    </demandCategoryMap>
+    <equipmentRules class="list">
+      <RuleBuildingBottomFibers>
+        <fiberType>pon_stdSplitterScheme_spare</fiberType>
+        <fibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </fibersPerDemandType>
+      </RuleBuildingBottomFibers>
+      <RuleBuildingBottomFibers>
+        <fiberType>pon_stdSplitterScheme</fiberType>
+        <fibersPerDemandType>
+          <innermap/>
+          <defaultValue class="int">0</defaultValue>
+        </fibersPerDemandType>
+      </RuleBuildingBottomFibers>
+      <RuleGeneralDemandEquipment/>
+    </equipmentRules>
+    <activationDefinitionMap class="Guava.Collections.ArrayListMultimap">
+      <DemandCategory>
+        <categoryIdentifier></categoryIdentifier>
+        <maxHomes>2147483647</maxHomes>
+        <layerName>Demand</layerName>
+      </DemandCategory>
+      <int>2</int>
+      <DemandCategoryActivationDefinition>
+        <activationType>BUILDING</activationType>
+        <demandType></demandType>
+        <cost>
+          <materialCost>0.0</materialCost>
+          <labourCost>50.0</labourCost>
+        </cost>
+      </DemandCategoryActivationDefinition>
+      <DemandCategoryActivationDefinition>
+        <activationType>HOME</activationType>
+        <demandType></demandType>
+        <cost>
+          <materialCost>30.0</materialCost>
+          <labourCost>100.0</labourCost>
+        </cost>
+      </DemandCategoryActivationDefinition>
+    </activationDefinitionMap>
+    <equipmentToPlaceForCategory class="Guava.Collections.HashMultimap"/>
+  </demandCategoryConfiguration>
+  <aggregatePointConfiguration>
+    <aggregateEquipmentPerLayer>
+      <LayerName>Distribution</LayerName>
+      <int>2</int>
+      <EquipmentSubType>Cabinet</EquipmentSubType>
+      <EquipmentSubType>Antenna</EquipmentSubType>
+    </aggregateEquipmentPerLayer>
+    <equipmentRules class="Guava.Collections.RegularImmutableList">
+      <RuleAggregatePointFibers>
+        <equipmentSubType>Antenna</equipmentSubType>
+        <fiberCountPerFiberType class="enum-map" enum-type="FiberType">
+          <entry>
+            <FiberType>p2p</FiberType>
+            <int>0</int>
+          </entry>
+          <entry>
+            <FiberType>p2p_spare</FiberType>
+            <int>0</int>
+          </entry>
+          <entry>
+            <FiberType>pon_stdSplitterScheme</FiberType>
+            <int>0</int>
+          </entry>
+          <entry>
+            <FiberType>pon_stdSplitterScheme_spare</FiberType>
+            <int>0</int>
+          </entry>
+        </fiberCountPerFiberType>
+      </RuleAggregatePointFibers>
+      <RuleAggregatePointFibers>
+        <equipmentSubType>Cabinet</equipmentSubType>
+        <fiberCountPerFiberType class="enum-map" enum-type="FiberType">
+          <entry>
+            <FiberType>p2p</FiberType>
+            <int>0</int>
+          </entry>
+          <entry>
+            <FiberType>p2p_spare</FiberType>
+            <int>0</int>
+          </entry>
+          <entry>
+            <FiberType>pon_stdSplitterScheme</FiberType>
+            <int>0</int>
+          </entry>
+          <entry>
+            <FiberType>pon_stdSplitterScheme_spare</FiberType>
+            <int>0</int>
+          </entry>
+        </fiberCountPerFiberType>
+      </RuleAggregatePointFibers>
+    </equipmentRules>
+  </aggregatePointConfiguration>
+  <equipmentConfiguration>
+    <closureConstraints class="map">
+      <entry>
+        <EquipmentSubType>Closure</EquipmentSubType>
+        <list/>
+      </entry>
+    </closureConstraints>
+    <closureDeploymentType class="map"/>
+    <containerConstraints class="map">
+      <entry>
+        <EquipmentSubType>Cabinet</EquipmentSubType>
+        <list/>
+      </entry>
+      <entry>
+        <EquipmentSubType>PrimaryCabinet</EquipmentSubType>
+        <list/>
+      </entry>
+      <entry>
+        <EquipmentSubType>ManHole</EquipmentSubType>
+        <list/>
+      </entry>
+      <entry>
+        <EquipmentSubType>Aerial_DropBox</EquipmentSubType>
+        <list/>
+      </entry>
+      <entry>
+        <EquipmentSubType>Pedestal</EquipmentSubType>
+        <list/>
+      </entry>
+      <entry>
+        <EquipmentSubType>HandHole</EquipmentSubType>
+        <list/>
+      </entry>
+      <entry>
+        <EquipmentSubType>DropBox</EquipmentSubType>
+        <list/>
+      </entry>
+    </containerConstraints>
+    <coaxEquipmentConfiguration>
+      <coaxCableDefinitions class="list"/>
+      <coaxTapDefinitions class="list"/>
+      <coaxSplitterDefinitions class="list"/>
+      <generalDefinitions class="list"/>
+    </coaxEquipmentConfiguration>
+  </equipmentConfiguration>
+  <labelingConfiguration>
+    <labelingMap enum-type="LayerName"/>
+  </labelingConfiguration>
+  <idConfiguration>
+    <startValues class="linked-hash-map"/>
+  </idConfiguration>
+  <colorConfiguration>
+    <fiberColorScheme class="ColorSchemeEnum">NO_COLOR</fiberColorScheme>
+    <microDuctColorScheme class="ColorSchemeEnum">NO_COLOR</microDuctColorScheme>
+  </colorConfiguration>
+  <version>22.2.1.39 - SA_DESIGNER</version>
+  <identifier>1102592380</identifier>
+  <configName>Rules</configName>
+  <configDescription>Standard Rules - Generated by Comsof Fiber</configDescription>
+</FiberConfiguration>

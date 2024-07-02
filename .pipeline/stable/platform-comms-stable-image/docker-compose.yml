@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  postgis_comms:
+    image: iqgeoproddev.azurecr.io/postgis:12-3.3
+    container_name: postgis_comms
+    restart: always
+    environment:
+      PGDATA: /opt/iqgeo/data/pgdata
+      POSTGRES_PASSWORD: iqgeo
+      POSTGRES_USER: iqgeo
+    volumes:
+      - pgdata_comms:/opt/iqgeo/data/pgdata
+  comms:
+    build:
+      context: ../../../../
+      dockerfile: myworld-product-network-manager-comms/.pipeline/pre-release/platform-comms-pre-release-image/dockerfile
+    image: platform-comms:local
+    container_name: comms
+    restart: always
+    depends_on:
+      - postgis_comms
+    environment:
+      DEBUG: "true"
+      WSGI_PROCESSES: 2
+      WSGI_THREADS: 4
+      PGHOST: postgis_comms
+      PGPORT: 5432
+      PGUSER: iqgeo
+      PGPASSWORD: iqgeo
+      MYW_DB_NAME: comms_dev_db
+      MYW_DB_HOST: postgis_comms
+      MYW_DB_PORT: 5432
+      MYW_DB_USERNAME: iqgeo
+      MYW_DB_PASSWORD: iqgeo
+    ports:
+      - 80:80
+volumes:
+  pgdata_comms:

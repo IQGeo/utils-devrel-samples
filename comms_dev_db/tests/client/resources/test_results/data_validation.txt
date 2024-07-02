@@ -1,0 +1,96 @@
+TEST: DIALOG BEFORE VALIDATING
+    button: ant-modal-close
+    input: true
+    label: Routes
+    input: true
+    label: Conduits
+    input: true
+    label: Conduit Runs
+    input: true
+    label: Equipment
+    input: true
+    label: Cables
+    input: true
+    label: Segments
+    input: true
+    label: Connections
+    input: true
+    label: Circuits
+    input: true
+    label: Line Of Counts
+    input: true
+    label: Other
+    input: true
+    input: true
+    label: Cable specs
+    input: false
+    label: Pole spacing
+    input: false
+    label: Conduit capacity
+    input: false
+    input: 100
+    button: Start
+    button (disabled): Stop
+
+
+TEST: DIALOG AFTER VALIDATING
+    button: ant-modal-close
+    input: true
+    label: Routes3
+    input: true
+    label: Conduits1
+    input: true
+    label: Conduit Runs
+    input: true
+    label: Equipment2
+    input: true
+    label: Cables
+    input: true
+    label: Segments1
+    input: true
+    label: Connections
+    input: true
+    label: Circuits
+    input: true
+    label: Line Of Counts
+    input: true
+    label: Other
+    input: true
+    input: true
+    label: Cable specs
+    input: false
+    label: Pole spacing
+    input: false
+    label: Conduit capacity
+    input: false
+    input: 100
+    label: 7 warnings found
+    button: Start
+    button (disabled): Stop
+
+
+TEST: ERRORS
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: Route (Underground): 88 Integrity: Path does not match Manhole: WH-M-75
+    label: Route (Underground): 88
+    label: Route (Underground): 4800 Integrity: Path does not match Manhole: WH-M-75
+    label: Route (Underground): 4800
+    label: Route (Underground): 4801 Integrity: Path does not match Manhole: WH-M-75
+    label: Route (Underground): 4801
+    label: Conduit: WH-CND-060 Integrity: Path does not match Route (Underground): 88
+    label: Conduit: WH-CND-060
+    label: Fiber Slack (42.7 ft) Integrity: Location does not match Manhole: WH-M-75
+    label: Fiber Slack (42.7 ft)
+    label: Splice Closure: WH-SC-D301:1 Integrity: Location does not match Manhole: WH-M-07
+    label: Splice Closure: WH-SC-D301:1
+    label: Cable Segment: 4800 (fiber_cable/4800) Integrity: Path does not match Conduit: WH-CND-060
+    label: Cable Segment: 4800 (fiber_cable/4800)
+
+

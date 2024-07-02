@@ -1,0 +1,125 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_fiber_connection",
+    "external_name": "{:mywcom_fiber_connection_feature_external_name}",
+    "title": "{display_name}: [id]",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": false,
+        "delete_from_gui": false,
+        "update_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "in_object",
+            "external_name": "{:mywcom_connection_feature_in_object_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "out_object",
+            "external_name": "{:mywcom_connection_feature_out_object_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "in_side",
+            "external_name": "{:mywcom_connection_feature_in_side_name}",
+            "type": "string(16)",
+            "mandatory": true
+        },
+        {
+            "name": "in_low",
+            "external_name": "{:mywcom_connection_feature_in_low_name}",
+            "type": "integer",
+            "mandatory": true
+        },
+        {
+            "name": "in_high",
+            "external_name": "{:mywcom_connection_feature_in_high_name}",
+            "type": "integer",
+            "mandatory": true
+        },
+        {
+            "name": "out_side",
+            "external_name": "{:mywcom_connection_feature_out_side_name}",
+            "type": "string(16)",
+            "mandatory": true
+        },
+        {
+            "name": "out_low",
+            "external_name": "{:mywcom_connection_feature_out_low_name}",
+            "type": "integer",
+            "mandatory": true
+        },
+        {
+            "name": "out_high",
+            "external_name": "{:mywcom_connection_feature_out_high_name}",
+            "type": "integer",
+            "mandatory": true
+        },
+        {
+            "name": "splice",
+            "external_name": "{:mywcom_connection_feature_splice_name}",
+            "type": "boolean",
+            "indexed": true
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point"
+        }
+    ],
+    "groups": [
+        {
+            "name": "{:mywcom_fiber_connection_feature_properties_group_name}",
+            "fields": [
+                "id",
+                "housing",
+                "in_object",
+                "in_side",
+                "in_low",
+                "in_high",
+                "out_object",
+                "out_side",
+                "out_low",
+                "out_high",
+                "splice"
+            ],
+            "expanded": true
+        }
+    ],
+    "searches": [],
+    "queries": [
+        {
+            "value": "{:mywcom_fiber_connection_feature_query_value_1}",
+            "description": "{:mywcom_fiber_connection_feature_query_desc_1}"
+        },
+        {
+            "value": "{:mywcom_fiber_connection_feature_query_value_2}",
+            "description": "{:mywcom_fiber_connection_feature_query_desc_2}",
+            "filter": "[splice] = TRUE"
+        }
+    ],
+    "filters": []
+}

@@ -1,0 +1,7 @@
+{
+    "image": "modules/comms/images/features/oh_route.svg",
+    "palette": true,
+    "layer": {
+        "line_style": "#008000:1:dot:none:none"
+    }
+}

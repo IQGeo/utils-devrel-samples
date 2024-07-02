@@ -1,0 +1,56 @@
+{
+   "name": "iqgapp_markup_layer",
+   "display_name": "{:markup_layer_display_name}",
+   "category": "overlay",
+   "code": "re",
+   "datasource": "myworld",
+   "spec": {
+      "rendering": "vector",
+      "tileType": "raster",
+      "isStatic": false,
+      "nativeAppMode": "switchable",
+      "render_order_point_offset": 0,
+      "jsClass": "myw.MarkupVectorLayer",
+      "extraOptions": null
+   },
+   "transparency": 0,
+   "min_scale": 0,
+   "max_scale": 22,
+   "render_order": 0,
+   "feature_types": [
+      {
+         "name": "iqgapp_markup_line",
+         "field_name": "route",
+         "filter": "OwnerIsActive",
+         "line_style": "green:2:solid"
+      },
+      {
+         "name": "iqgapp_markup_photo",
+         "field_name": "location",
+         "filter": "OwnerIsActive",
+         "point_style": "modules\\comms\\images\\features\\photo.svg:20:22:5m"
+      },
+      {
+         "name": "iqgapp_markup_photo_item"
+      },
+      {
+         "name": "iqgapp_markup_point",
+         "field_name": "location",
+         "filter": "OwnerIsActive",
+         "point_style": "circle:green:4:green"
+      },
+      {
+         "name": "iqgapp_markup_polygon",
+         "field_name": "boundary",
+         "filter": "OwnerIsActive",
+         "line_style": "green:2:solid",
+         "fill_style": "green:40"
+      },
+      {
+         "name": "iqgapp_markup_text",
+         "field_name": "location",
+         "filter": "OwnerIsActive",
+         "point_style": "circle:green:4:green"
+      }
+   ]
+}

@@ -1,0 +1,27 @@
+{
+   "name": "designs", 
+   "display_name": "{:designs_layer_display_name}", 
+   "category": "overlay", 
+   "code": "dn", 
+   "datasource": "myworld", 
+   "spec": {
+      "isStatic": false, 
+      "extraOptions": {}, 
+      "nativeAppVector": null, 
+      "nativeAppMode": "switchable", 
+      "rendering": "vector", 
+      "jsClass": ""
+   }, 
+   "transparency": 0, 
+   "min_scale": 10, 
+   "max_scale": 22, 
+   "feature_types": [
+      {
+         "name": "design", 
+         "field_name": "boundary", 
+         "line_style": "#351c75:2:solid", 
+         "fill_style": "#351c75:34", 
+         "text_style": "name:#351c75:4m:middle:centre:"
+      }
+   ]
+}

@@ -1,0 +1,211 @@
+{
+    "datasource": "myworld",
+    "name": "coax_amplifier",
+    "external_name": "{:coax_amplifier_field_name}",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "root_housing",
+            "external_name": "{:housing_structure_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "housing",
+            "external_name": "{:housing_field_name}",
+            "type": "reference",
+            "indexed": true,
+            "read_only": true
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "n_coax_in_ports",
+            "external_name": "{:n_in_ports_field_name}",
+            "type": "integer",
+            "default": 1
+        },
+        {
+            "name": "n_coax_out_ports",
+            "external_name": "{:n_out_ports_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "coax_connections",
+            "type": "reference_set",
+            "value": "select(mywcom_coax_connection.in_object,mywcom_coax_connection.out_object)",
+            "read_only": true
+        },
+        {
+            "name": "status",
+            "external_name": "{:coax_construction_status_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "frequency",
+            "external_name": "{:coax_design_frequency_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "type",
+            "external_name": "{:fiber_cable_spec_type_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "outputs",
+            "external_name": "{:coax_outputs_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "input_frequency_1",
+            "external_name": "{:coax_input_frequency_1_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "input_frequency_2",
+            "external_name": "{:coax_input_frequency_2_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "input_frequency_3",
+            "external_name": "{:coax_input_frequency_3_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "input_frequency_4",
+            "external_name": "{:coax_input_frequency_4_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "forward_pad",
+            "external_name": "{:coax_forward_pad_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "forward_equalizer",
+            "external_name": "{:coax_forward_equalizer_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "reverse_pad",
+            "external_name": "{:coax_reverse_pad_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "reverse_equalizer",
+            "external_name": "{:coax_reverse_equalizer_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "related_power_supply",
+            "external_name": "{:coax_related_power_supply_field_name}",
+            "type": "reference"
+        },
+        {
+            "name": "voltage",
+            "external_name": "{:coax_voltage_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "current_draw",
+            "external_name": "{:coax_current_draw_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "install_technician",
+            "external_name": "{:coax_install_technician_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "install_date",
+            "external_name": "{:coax_install_date_field_name}",
+            "type": "date"
+        },
+        {
+            "name": "num_in_cascade",
+            "external_name": "{:coax_number_in_cascade_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "distance_to_last_active",
+            "external_name": "{:coax_distance_to_last_active_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "output_frequency_1",
+            "external_name": "{:coax_output_frequency_1_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "output_frequency_2",
+            "external_name": "{:coax_output_frequency_2_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "output_frequency_3",
+            "external_name": "{:coax_output_frequency_3_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "output_frequency_4",
+            "external_name": "{:coax_output_frequency_4_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "related_optical_node",
+            "external_name": "{:coax_related_optical_node_field_name}",
+            "type": "reference"
+        },
+        {
+            "name": "specification",
+            "external_name": "{:wall_box_feature_specification_name}",
+            "type": "foreign_key(coax_amplifier_spec)"
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point",
+            "mandatory": "true"
+        },
+        {
+            "name": "offset_geom",
+            "external_name": "{:offset_field_name}",
+            "type": "point"
+        },
+        {
+            "name": "myw_orientation_offset_geom",
+            "type": "double"
+        },
+        {
+            "name": "directed",
+            "external_name": "{:equipment_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": true
+        }
+    ]
+}

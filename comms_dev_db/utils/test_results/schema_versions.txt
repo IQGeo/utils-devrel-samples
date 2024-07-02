@@ -1,0 +1,7 @@
+Opening database <database> ...
+component          version
+-----------------  -------
+iqg_comsof_schema   703012
+myw_comms_schema    713201
+myw_schema           71004
+

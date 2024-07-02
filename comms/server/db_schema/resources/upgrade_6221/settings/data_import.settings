@@ -1,0 +1,10 @@
+{
+    "mywcom.import_config.cdif": {
+        "name"       : "{:cdif_import_config_name}",
+        "description": "{:cdif_import_config_desc}",
+        "engine"     : "cdif",
+        "options"    : {},
+        "file_specs" : ["*.csv"],
+        "mappings"   : []
+    }
+}

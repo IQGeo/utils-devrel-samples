@@ -1,0 +1,1111 @@
+
+SUB TEST : trace out : mywcom_routes from manhole/WH-M-01 both
+    AStarTraceNode( 0.000m,manhole/1,2 )   Manhole: WH-M-01
+    Path:
+       AStarTraceNode( 17.120m,ug_route/21,1 )   Route (Underground): 21
+       AStarTraceNode( 17.120m,manhole/2,2 )   Manhole: WH-M-02
+       Path:
+          AStarTraceNode( 31.580m,ug_route/19,1 )   Route (Underground): 19
+          AStarTraceNode( 31.580m,manhole/12,2 )   Manhole: WH-M-12
+          Path:
+             AStarTraceNode( 140.010m,ug_route/379,0 )   Route (Underground): 379
+          Path:
+             AStarTraceNode( 40.850m,ug_route/17,1 )   Route (Underground): 17
+             AStarTraceNode( 40.850m,mywcom_route_junction/40,2 )   Route Junction: 40
+             Path:
+                AStarTraceNode( 42.580m,ug_route/278,1 )   Route (Underground): 278
+                AStarTraceNode( 42.580m,cabinet/7,0 )   Cabinet: WH-C-07
+             Path:
+                AStarTraceNode( 86.040m,ug_route/387,1 )   Route (Underground): 387
+                AStarTraceNode( 86.040m,manhole/11,3 )   Manhole: WH-M-11
+                Path:
+                   AStarTraceNode( 100.890m,ug_route/322,1 )   Route (Underground): 322
+                   AStarTraceNode( 100.890m,mdu/4,0 )   MDU: Laburnum
+                Path:
+                   AStarTraceNode( 145.940m,ug_route/24,1 )   Route (Underground): 24
+                   AStarTraceNode( 145.940m,manhole/8,1 )   Manhole: WH-M-08
+                   AStarTraceNode( 152.970m,ug_route/22,1 )   Route (Underground): 22
+                   AStarTraceNode( 152.970m,manhole/9,0 )   Manhole: WH-M-09
+                Path:
+                   AStarTraceNode( 95.000m,ug_route/18,1 )   Route (Underground): 18
+                   AStarTraceNode( 95.000m,manhole/10,2 )   Manhole: WH-M-10
+                   Path:
+                      AStarTraceNode( 170.160m,ug_route/27,1 )   Route (Underground): 27
+                      AStarTraceNode( 170.160m,manhole/7,2 )   Manhole: WH-M-07
+                      Path:
+                         AStarTraceNode( 188.420m,ug_route/88,1 )   Route (Underground): 88
+                         AStarTraceNode( 188.420m,manhole/75,0 )   Manhole: WH-M-75
+                      Path:
+                         AStarTraceNode( 242.530m,ug_route/37,1 )   Route (Underground): 37
+                         AStarTraceNode( 242.530m,manhole/6,1 )   Manhole: WH-M-06
+                         AStarTraceNode( 279.040m,ug_route/249,1 )   Route (Underground): 249
+                         AStarTraceNode( 279.040m,manhole/278,0 )   Manhole: WH-M-278
+                   Path:
+                      AStarTraceNode( 171.620m,ug_route/23,0 )   Route (Underground): 23
+       Path:
+          AStarTraceNode( 99.920m,ug_route/25,1 )   Route (Underground): 25
+          AStarTraceNode( 99.920m,manhole/41,1 )   Manhole: WH-M-41
+          AStarTraceNode( 111.470m,ug_route/28,1 )   Route (Underground): 28
+          AStarTraceNode( 111.470m,manhole/3,1 )   Manhole: WH-M-03
+          AStarTraceNode( 154.610m,ug_route/29,1 )   Route (Underground): 29
+          AStarTraceNode( 154.610m,mywcom_route_junction/41,2 )   Route Junction: 41
+          Path:
+             AStarTraceNode( 155.680m,ug_route/279,1 )   Route (Underground): 279
+             AStarTraceNode( 155.680m,cabinet/4,0 )   Cabinet: WH-C-04
+          Path:
+             AStarTraceNode( 165.260m,ug_route/388,1 )   Route (Underground): 388
+             AStarTraceNode( 165.260m,manhole/13,1 )   Manhole: WH-M-13
+             AStarTraceNode( 168.600m,ug_route/30,1 )   Route (Underground): 30
+             AStarTraceNode( 168.600m,mywcom_route_junction/4,2 )   Route Junction: 4
+             Path:
+                AStarTraceNode( 180.110m,ug_route/31,1 )   Route (Underground): 31
+                AStarTraceNode( 180.110m,mywcom_route_junction/5,2 )   Route Junction: 5
+                Path:
+                   AStarTraceNode( 192.380m,ug_route/360,1 )   Route (Underground): 360
+                   AStarTraceNode( 192.380m,manhole/4,1 )   Manhole: WH-M-04
+                   AStarTraceNode( 237.500m,ug_route/39,1 )   Route (Underground): 39
+                   AStarTraceNode( 237.500m,manhole/5,1 )   Manhole: WH-M-05
+                   AStarTraceNode( 254.500m,ug_route/38,0 )   Route (Underground): 38
+                Path:
+                   AStarTraceNode( 201.630m,ug_route/33,1 )   Route (Underground): 33
+                   AStarTraceNode( 201.630m,manhole/14,1 )   Manhole: WH-M-14
+                   AStarTraceNode( 240.240m,ug_route/60,1 )   Route (Underground): 60
+                   AStarTraceNode( 240.240m,manhole/58,1 )   Manhole: WH-M-58
+                   AStarTraceNode( 271.670m,ug_route/63,1 )   Route (Underground): 63
+                   AStarTraceNode( 271.670m,manhole/49,1 )   Manhole: WH-M-49
+                   AStarTraceNode( 314.360m,ug_route/113,0 )   Route (Underground): 113
+             Path:
+                AStarTraceNode( 187.960m,ug_route/53,1 )   Route (Underground): 53
+                AStarTraceNode( 187.960m,manhole/15,1 )   Manhole: WH-M-15
+                AStarTraceNode( 216.190m,ug_route/32,1 )   Route (Underground): 32
+                AStarTraceNode( 216.190m,manhole/17,2 )   Manhole: WH-M-17
+                Path:
+                   AStarTraceNode( 222.700m,ug_route/61,1 )   Route (Underground): 61
+                   AStarTraceNode( 222.700m,manhole/16,3 )   Manhole: WH-M-16
+                   Path:
+                      AStarTraceNode( 224.540m,ug_route/280,1 )   Route (Underground): 280
+                      AStarTraceNode( 224.540m,cabinet/5,0 )   Cabinet: WH-C-05
+                   Path:
+                      AStarTraceNode( 264.850m,ug_route/64,1 )   Route (Underground): 64
+                      AStarTraceNode( 264.850m,manhole/20,2 )   Manhole: WH-M-20
+                      Path:
+                         AStarTraceNode( 276.480m,ug_route/321,1 )   Route (Underground): 321
+                         AStarTraceNode( 276.480m,mdu/1,0 )   MDU: Blackthorn
+                      Path:
+                         AStarTraceNode( 282.760m,ug_route/65,1 )   Route (Underground): 65
+                         AStarTraceNode( 282.760m,manhole/21,0 )   Manhole: WH-M-21
+                   Path:
+                      AStarTraceNode( 283.540m,ug_route/62,1 )   Route (Underground): 62
+                      AStarTraceNode( 283.540m,manhole/57,0 )   Manhole: WH-M-57
+                Path:
+                   AStarTraceNode( 242.200m,ug_route/34,1 )   Route (Underground): 34
+                   AStarTraceNode( 242.200m,manhole/18,1 )   Manhole: WH-M-18
+                   AStarTraceNode( 260.840m,ug_route/35,1 )   Route (Underground): 35
+                   AStarTraceNode( 260.840m,manhole/19,1 )   Manhole: WH-M-19
+                   AStarTraceNode( 299.110m,ug_route/36,1 )   Route (Underground): 36
+                   AStarTraceNode( 299.110m,manhole/22,0 )   Manhole: WH-M-22
+    Path:
+       AStarTraceNode( 62.940m,ug_route/380,1 )   Route (Underground): 380
+       AStarTraceNode( 62.940m,mywcom_route_junction/33,2 )   Route Junction: 33
+       Path:
+          AStarTraceNode( 64.700m,ug_route/268,1 )   Route (Underground): 268
+          AStarTraceNode( 64.700m,manhole/42,1 )   Manhole: WH-M-42
+          AStarTraceNode( 158.520m,ug_route/26,1 )   Route (Underground): 26
+          AStarTraceNode( 158.520m,mywcom_route_junction/3,1 )   Route Junction: 3
+          AStarTraceNode( 204.070m,ug_route/56,1 )   Route (Underground): 56
+          AStarTraceNode( 204.070m,manhole/44,2 )   Manhole: WH-M-44
+          Path:
+             AStarTraceNode( 211.490m,ug_route/57,1 )   Route (Underground): 57
+             AStarTraceNode( 211.490m,manhole/45,1 )   Manhole: WH-M-45
+             AStarTraceNode( 270.280m,ug_route/58,1 )   Route (Underground): 58
+             AStarTraceNode( 270.280m,manhole/46,0 )   Manhole: WH-M-46
+          Path:
+             AStarTraceNode( 284.200m,ug_route/59,1 )   Route (Underground): 59
+             AStarTraceNode( 284.200m,manhole/47,0 )   Manhole: WH-M-47
+       Path:
+          AStarTraceNode( 92.640m,ug_route/378,1 )   Route (Underground): 378
+          AStarTraceNode( 92.640m,mywcom_route_junction/31,2 )   Route Junction: 31
+          Path:
+             AStarTraceNode( 108.010m,ug_route/20,1 )   Route (Underground): 20
+             AStarTraceNode( 108.010m,manhole/35,2 )   Manhole: WH-M-35
+             Path:
+                AStarTraceNode( 119.650m,ug_route/8,1 )   Route (Underground): 8
+                AStarTraceNode( 119.650m,manhole/34,2 )   Manhole: WH-M-34
+                Path:
+                   AStarTraceNode( 122.920m,ug_route/52,1 )   Route (Underground): 52
+                   AStarTraceNode( 122.920m,mywcom_route_junction/2,2 )   Route Junction: 2
+                   Path:
+                      AStarTraceNode( 124.510m,ug_route/267,1 )   Route (Underground): 267
+                      AStarTraceNode( 124.510m,cabinet/2,1 )   Cabinet: WH-C-02
+                      AStarTraceNode( 131.470m,ug_route/273,1 )   Route (Underground): 273
+                      AStarTraceNode( 131.470m,mywcom_route_junction/37,1 )   Route Junction: 37
+                      AStarTraceNode( 136.430m,ug_route/1,1 )   Route (Underground): 1
+                      AStarTraceNode( 136.430m,building/1,1 )   Building: Woodhead Hub
+                      AStarTraceNode( 151.810m,ug_route/6,1 )   Route (Underground): 6
+                      AStarTraceNode( 151.810m,manhole/32,1 )   Manhole: WH-M-32
+                      AStarTraceNode( 287.260m,ug_route/7,0 )   Route (Underground): 7
+                   Path:
+                      AStarTraceNode( 128.700m,ug_route/16,1 )   Route (Underground): 16
+                      AStarTraceNode( 128.700m,mywcom_route_junction/32,1 )   Route Junction: 32
+                      AStarTraceNode( 130.260m,ug_route/266,1 )   Route (Underground): 266
+                      AStarTraceNode( 130.260m,cabinet/1,1 )   Cabinet: WH-C-01
+                      AStarTraceNode( 136.740m,ug_route/384,0 )   Route (Underground): 384
+                Path:
+                   AStarTraceNode( 126.600m,ug_route/2,1 )   Route (Underground): 2
+                   AStarTraceNode( 126.600m,manhole/33,1 )   Manhole: WH-M-33
+                   AStarTraceNode( 194.940m,ug_route/3,1 )   Route (Underground): 3
+                   AStarTraceNode( 194.940m,manhole/27,1 )   Manhole: WH-M-27
+                   AStarTraceNode( 273.410m,ug_route/4,1 )   Route (Underground): 4
+                   AStarTraceNode( 273.410m,manhole/28,2 )   Manhole: WH-M-28
+                   Path:
+                      AStarTraceNode( 286.850m,ug_route/5,1 )   Route (Underground): 5
+                      AStarTraceNode( 286.850m,manhole/29,1 )   Manhole: WH-M-29
+                      AStarTraceNode( 615.450m,ug_route/46,1 )   Route (Underground): 46
+                      AStarTraceNode( 615.450m,manhole/43,1 )   Manhole: WH-M-43
+                      AStarTraceNode( 657.360m,ug_route/248,1 )   Route (Underground): 248
+                      AStarTraceNode( 657.360m,manhole/262,1 )   Manhole: WH-M-262
+                      AStarTraceNode( 692.310m,ug_route/332,1 )   Route (Underground): 332
+                      AStarTraceNode( 692.310m,manhole/266,2 )   Manhole: WH-M-266
+                      Path:
+                         AStarTraceNode( 746.590m,ug_route/329,1 )   Route (Underground): 329
+                         AStarTraceNode( 746.590m,manhole/257,1 )   Manhole: WH-M-257
+                         AStarTraceNode( 790.230m,ug_route/325,1 )   Route (Underground): 325
+                         AStarTraceNode( 790.230m,manhole/255,2 )   Manhole: WH-M-255
+                         Path:
+                            AStarTraceNode( 828.520m,ug_route/337,1 )   Route (Underground): 337
+                            AStarTraceNode( 828.520m,manhole/270,1 )   Manhole: WH-M-270
+                            AStarTraceNode( 870.340m,ug_route/339,1 )   Route (Underground): 339
+                            AStarTraceNode( 870.340m,manhole/271,1 )   Manhole: WH-M-271
+                            AStarTraceNode( 904.080m,ug_route/338,1 )   Route (Underground): 338
+                            AStarTraceNode( 904.080m,manhole/261,1 )   Manhole: WH-M-261
+                            AStarTraceNode( 940.910m,ug_route/340,1 )   Route (Underground): 340
+                            AStarTraceNode( 940.910m,manhole/272,1 )   Manhole: WH-M-272
+                            AStarTraceNode( 994.010m,ug_route/341,1 )   Route (Underground): 341
+                            AStarTraceNode( 994.010m,manhole/273,1 )   Manhole: WH-M-273
+                            AStarTraceNode( 1029.310m,ug_route/343,1 )   Route (Underground): 343
+                            AStarTraceNode( 1029.310m,manhole/274,2 )   Manhole: WH-M-274
+                            Path:
+                               AStarTraceNode( 1059.750m,ug_route/344,1 )   Route (Underground): 344
+                               AStarTraceNode( 1059.750m,manhole/275,1 )   Manhole: WH-M-275
+                               AStarTraceNode( 1095.120m,ug_route/342,1 )   Route (Underground): 342
+                               AStarTraceNode( 1095.120m,manhole/276,0 )   Manhole: WH-M-276
+                            Path:
+                               AStarTraceNode( 1070.190m,ug_route/346,1 )   Route (Underground): 346
+                               AStarTraceNode( 1070.190m,manhole/277,1 )   Manhole: WH-M-277
+                               AStarTraceNode( 1137.260m,ug_route/345,1 )   Route (Underground): 345
+                               AStarTraceNode( 1137.260m,manhole/256,0 )   Manhole: WH-M-256
+                         Path:
+                            AStarTraceNode( 828.860m,ug_route/326,1 )   Route (Underground): 326
+                            AStarTraceNode( 828.860m,manhole/258,1 )   Manhole: WH-M-258
+                            AStarTraceNode( 868.270m,ug_route/328,1 )   Route (Underground): 328
+                            AStarTraceNode( 868.270m,manhole/260,1 )   Manhole: WH-M-260
+                            AStarTraceNode( 913.780m,ug_route/327,1 )   Route (Underground): 327
+                            AStarTraceNode( 913.780m,manhole/259,0 )   Manhole: WH-M-259
+                      Path:
+                         AStarTraceNode( 769.310m,ug_route/333,1 )   Route (Underground): 333
+                         AStarTraceNode( 769.310m,manhole/265,2 )   Manhole: WH-M-265
+                         Path:
+                            AStarTraceNode( 801.390m,ug_route/330,1 )   Route (Underground): 330
+                            AStarTraceNode( 801.390m,manhole/263,1 )   Manhole: WH-M-263
+                            AStarTraceNode( 883.950m,ug_route/334,1 )   Route (Underground): 334
+                            AStarTraceNode( 883.950m,manhole/267,2 )   Manhole: WH-M-267
+                            Path:
+                               AStarTraceNode( 925.800m,ug_route/335,1 )   Route (Underground): 335
+                               AStarTraceNode( 925.800m,manhole/268,0 )   Manhole: WH-M-268
+                            Path:
+                               AStarTraceNode( 928.000m,ug_route/336,1 )   Route (Underground): 336
+                               AStarTraceNode( 928.000m,manhole/269,0 )   Manhole: WH-M-269
+                         Path:
+                            AStarTraceNode( 820.080m,ug_route/331,1 )   Route (Underground): 331
+                            AStarTraceNode( 820.080m,manhole/264,0 )   Manhole: WH-M-264
+                   Path:
+                      AStarTraceNode( 360.780m,ug_route/40,1 )   Route (Underground): 40
+                      AStarTraceNode( 360.780m,manhole/244,1 )   Manhole: WH-M-244
+                      AStarTraceNode( 362.110m,ug_route/41,1 )   Route (Underground): 41
+                      AStarTraceNode( 362.110m,mywcom_route_junction/46,2 )   Route Junction: 46
+                      Path:
+                         AStarTraceNode( 363.900m,ug_route/287,1 )   Route (Underground): 287
+                         AStarTraceNode( 363.900m,pole/6,15 )   Pole: WH-P-006
+                         Path:
+                            AStarTraceNode( 381.080m,oh_route/3,1 )   Route (Overhead): 3
+                            AStarTraceNode( 381.080m,wall_box/3,0 )   Wall Box: WH-0003
+                         Path:
+                            AStarTraceNode( 387.610m,oh_route/2,1 )   Route (Overhead): 2
+                            AStarTraceNode( 387.610m,wall_box/2,0 )   Wall Box: WH-0002
+                         Path:
+                            AStarTraceNode( 388.210m,oh_route/4,1 )   Route (Overhead): 4
+                            AStarTraceNode( 388.210m,wall_box/4,0 )   Wall Box: WH-0004
+                         Path:
+                            AStarTraceNode( 389.660m,oh_route/1,1 )   Route (Overhead): 1
+                            AStarTraceNode( 389.660m,wall_box/1,0 )   Wall Box: WH-0001
+                         Path:
+                            AStarTraceNode( 395.920m,oh_route/10,1 )   Route (Overhead): 10
+                            AStarTraceNode( 395.920m,wall_box/10,0 )   Wall Box: WH-0010
+                         Path:
+                            AStarTraceNode( 396.560m,oh_route/11,1 )   Route (Overhead): 11
+                            AStarTraceNode( 396.560m,wall_box/11,0 )   Wall Box: WH-0011
+                         Path:
+                            AStarTraceNode( 398.330m,oh_route/9,1 )   Route (Overhead): 9
+                            AStarTraceNode( 398.330m,wall_box/9,0 )   Wall Box: WH-0009
+                         Path:
+                            AStarTraceNode( 401.260m,oh_route/8,1 )   Route (Overhead): 8
+                            AStarTraceNode( 401.260m,wall_box/8,0 )   Wall Box: WH-0008
+                         Path:
+                            AStarTraceNode( 401.320m,oh_route/12,1 )   Route (Overhead): 12
+                            AStarTraceNode( 401.320m,wall_box/12,0 )   Wall Box: WH-0012
+                         Path:
+                            AStarTraceNode( 404.550m,oh_route/5,1 )   Route (Overhead): 5
+                            AStarTraceNode( 404.550m,wall_box/5,0 )   Wall Box: WH-0005
+                         Path:
+                            AStarTraceNode( 405.120m,oh_route/13,1 )   Route (Overhead): 13
+                            AStarTraceNode( 405.120m,wall_box/13,0 )   Wall Box: WH-0013
+                         Path:
+                            AStarTraceNode( 407.500m,oh_route/6,1 )   Route (Overhead): 6
+                            AStarTraceNode( 407.500m,wall_box/6,0 )   Wall Box: WH-0006
+                         Path:
+                            AStarTraceNode( 408.020m,oh_route/7,1 )   Route (Overhead): 7
+                            AStarTraceNode( 408.020m,wall_box/7,0 )   Wall Box: WH-0007
+                         Path:
+                            AStarTraceNode( 415.360m,oh_route/14,1 )   Route (Overhead): 14
+                            AStarTraceNode( 415.360m,wall_box/14,0 )   Wall Box: WH-0014
+                         Path:
+                            AStarTraceNode( 420.910m,oh_route/15,1 )   Route (Overhead): 15
+                            AStarTraceNode( 420.910m,wall_box/15,0 )   Wall Box: WH-0015
+                      Path:
+                         AStarTraceNode( 450.040m,ug_route/393,1 )   Route (Underground): 393
+                         AStarTraceNode( 450.040m,manhole/245,2 )   Manhole: WH-M-245
+                         Path:
+                            AStarTraceNode( 451.640m,ug_route/286,1 )   Route (Underground): 286
+                            AStarTraceNode( 451.640m,pole/4,13 )   Pole: WH-P-004
+                            Path:
+                               AStarTraceNode( 472.180m,oh_route/18,1 )   Route (Overhead): 18
+                               AStarTraceNode( 472.180m,wall_box/18,0 )   Wall Box: WH-0018
+                            Path:
+                               AStarTraceNode( 479.130m,oh_route/28,1 )   Route (Overhead): 28
+                               AStarTraceNode( 479.130m,wall_box/28,0 )   Wall Box: WH-0028
+                            Path:
+                               AStarTraceNode( 480.160m,oh_route/17,1 )   Route (Overhead): 17
+                               AStarTraceNode( 480.160m,wall_box/17,0 )   Wall Box: WH-0017
+                            Path:
+                               AStarTraceNode( 486.030m,oh_route/23,1 )   Route (Overhead): 23
+                               AStarTraceNode( 486.030m,wall_box/23,0 )   Wall Box: WH-0023
+                            Path:
+                               AStarTraceNode( 486.380m,oh_route/22,1 )   Route (Overhead): 22
+                               AStarTraceNode( 486.380m,wall_box/22,0 )   Wall Box: WH-0022
+                            Path:
+                               AStarTraceNode( 488.010m,oh_route/21,1 )   Route (Overhead): 21
+                               AStarTraceNode( 488.010m,wall_box/21,0 )   Wall Box: WH-0021
+                            Path:
+                               AStarTraceNode( 488.220m,oh_route/24,1 )   Route (Overhead): 24
+                               AStarTraceNode( 488.220m,wall_box/24,0 )   Wall Box: WH-0024
+                            Path:
+                               AStarTraceNode( 490.820m,oh_route/16,1 )   Route (Overhead): 16
+                               AStarTraceNode( 490.820m,wall_box/16,0 )   Wall Box: WH-0016
+                            Path:
+                               AStarTraceNode( 492.920m,oh_route/25,1 )   Route (Overhead): 25
+                               AStarTraceNode( 492.920m,wall_box/25,0 )   Wall Box: WH-0025
+                            Path:
+                               AStarTraceNode( 494.410m,oh_route/20,1 )   Route (Overhead): 20
+                               AStarTraceNode( 494.410m,wall_box/20,0 )   Wall Box: WH-0020
+                            Path:
+                               AStarTraceNode( 497.520m,oh_route/26,1 )   Route (Overhead): 26
+                               AStarTraceNode( 497.520m,wall_box/26,0 )   Wall Box: WH-0026
+                            Path:
+                               AStarTraceNode( 498.890m,oh_route/19,1 )   Route (Overhead): 19
+                               AStarTraceNode( 498.890m,wall_box/19,0 )   Wall Box: WH-0019
+                            Path:
+                               AStarTraceNode( 499.350m,oh_route/27,1 )   Route (Overhead): 27
+                               AStarTraceNode( 499.350m,wall_box/27,0 )   Wall Box: WH-0027
+                         Path:
+                            AStarTraceNode( 488.560m,ug_route/42,1 )   Route (Underground): 42
+                            AStarTraceNode( 488.560m,manhole/252,2 )   Manhole: WH-M-252
+                            Path:
+                               AStarTraceNode( 508.490m,ug_route/45,1 )   Route (Underground): 45
+                               AStarTraceNode( 508.490m,manhole/30,1 )   Manhole: WH-M-30
+                               AStarTraceNode( 523.960m,ug_route/135,1 )   Route (Underground): 135
+                               AStarTraceNode( 523.960m,mywcom_route_junction/34,2 )   Route Junction: 34
+                               Path:
+                                  AStarTraceNode( 525.330m,ug_route/269,1 )   Route (Underground): 269
+                                  AStarTraceNode( 525.330m,cabinet/32,0 )   Cabinet: WH-C-32
+                               Path:
+                                  AStarTraceNode( 527.290m,ug_route/381,1 )   Route (Underground): 381
+                                  AStarTraceNode( 527.290m,manhole/116,1 )   Manhole: WH-M-116
+                                  AStarTraceNode( 576.950m,ug_route/139,1 )   Route (Underground): 139
+                                  AStarTraceNode( 576.950m,mywcom_route_junction/22,2 )   Route Junction: 22
+                                  Path:
+                                     AStarTraceNode( 589.740m,ug_route/140,1 )   Route (Underground): 140
+                                     AStarTraceNode( 589.740m,manhole/117,1 )   Manhole: XX-M-117
+                                     AStarTraceNode( 640.240m,ug_route/136,1 )   Route (Underground): 136
+                                     AStarTraceNode( 640.240m,manhole/118,1 )   Manhole: XX-M-118
+                                     AStarTraceNode( 659.660m,ug_route/137,1 )   Route (Underground): 137
+                                     AStarTraceNode( 659.660m,manhole/114,2 )   Manhole: XX-M-114
+                                     Path:
+                                        AStarTraceNode( 671.420m,ug_route/142,1 )   Route (Underground): 142
+                                        AStarTraceNode( 671.420m,manhole/115,0 )   Manhole: XX-M-115
+                                     Path:
+                                        AStarTraceNode( 697.940m,ug_route/141,1 )   Route (Underground): 141
+                                        AStarTraceNode( 697.940m,manhole/121,1 )   Manhole: XX-M-121
+                                        AStarTraceNode( 742.810m,ug_route/402,0 )   Route (Underground): 402
+                                  Path:
+                                     AStarTraceNode( 684.550m,ug_route/373,1 )   Route (Underground): 373
+                                     AStarTraceNode( 684.550m,manhole/119,2 )   Manhole: XX-M-119
+                                     Path:
+                                        AStarTraceNode( 707.320m,ug_route/401,0 )   Route (Underground): 401
+                                     Path:
+                                        AStarTraceNode( 757.840m,ug_route/138,1 )   Route (Underground): 138
+                                        AStarTraceNode( 757.840m,manhole/120,0 )   Manhole: XX-M-120
+                            Path:
+                               AStarTraceNode( 548.720m,ug_route/348,1 )   Route (Underground): 348
+                               AStarTraceNode( 548.720m,manhole/246,1 )   Manhole: WH-M-246
+                               AStarTraceNode( 550.450m,ug_route/43,1 )   Route (Underground): 43
+                               AStarTraceNode( 550.450m,mywcom_route_junction/45,2 )   Route Junction: 45
+                               Path:
+                                  AStarTraceNode( 552.010m,ug_route/285,1 )   Route (Underground): 285
+                                  AStarTraceNode( 552.010m,pole/5,11 )   Pole: WH-P-005
+                                  Path:
+                                     AStarTraceNode( 571.290m,oh_route/39,1 )   Route (Overhead): 39
+                                     AStarTraceNode( 571.290m,wall_box/37,0 )   Wall Box: WH-0037
+                                  Path:
+                                     AStarTraceNode( 576.980m,oh_route/38,1 )   Route (Overhead): 38
+                                     AStarTraceNode( 576.980m,wall_box/36,0 )   Wall Box: WH-0036
+                                  Path:
+                                     AStarTraceNode( 583.840m,oh_route/43,1 )   Route (Overhead): 43
+                                     AStarTraceNode( 583.840m,wall_box/41,0 )   Wall Box: WH-0041
+                                  Path:
+                                     AStarTraceNode( 587.120m,oh_route/40,1 )   Route (Overhead): 40
+                                     AStarTraceNode( 587.120m,wall_box/38,0 )   Wall Box: WH-0038
+                                  Path:
+                                     AStarTraceNode( 587.240m,oh_route/44,1 )   Route (Overhead): 44
+                                     AStarTraceNode( 587.240m,wall_box/42,0 )   Wall Box: WH-0042
+                                  Path:
+                                     AStarTraceNode( 590.660m,oh_route/42,1 )   Route (Overhead): 42
+                                     AStarTraceNode( 590.660m,wall_box/40,0 )   Wall Box: WH-0040
+                                  Path:
+                                     AStarTraceNode( 591.380m,oh_route/37,1 )   Route (Overhead): 37
+                                     AStarTraceNode( 591.380m,wall_box/35,0 )   Wall Box: WH-0035
+                                  Path:
+                                     AStarTraceNode( 599.460m,oh_route/45,1 )   Route (Overhead): 45
+                                     AStarTraceNode( 599.460m,wall_box/43,0 )   Wall Box: WH-0043
+                                  Path:
+                                     AStarTraceNode( 599.910m,oh_route/46,1 )   Route (Overhead): 46
+                                     AStarTraceNode( 599.910m,wall_box/44,0 )   Wall Box: WH-0044
+                                  Path:
+                                     AStarTraceNode( 603.300m,oh_route/41,1 )   Route (Overhead): 41
+                                     AStarTraceNode( 603.300m,wall_box/39,0 )   Wall Box: WH-0039
+                                  Path:
+                                     AStarTraceNode( 605.030m,oh_route/36,1 )   Route (Overhead): 36
+                                     AStarTraceNode( 605.030m,wall_box/34,0 )   Wall Box: WH-0034
+                               Path:
+                                  AStarTraceNode( 602.390m,ug_route/392,1 )   Route (Underground): 392
+                                  AStarTraceNode( 602.390m,mywcom_route_junction/15,1 )   Route Junction: 15
+                                  AStarTraceNode( 651.960m,ug_route/367,1 )   Route (Underground): 367
+                                  AStarTraceNode( 651.960m,mywcom_route_junction/44,2 )   Route Junction: 44
+                                  Path:
+                                     AStarTraceNode( 652.650m,ug_route/284,1 )   Route (Underground): 284
+                                     AStarTraceNode( 652.650m,pole/7,8 )   Pole: WH-P-007
+                                     Path:
+                                        AStarTraceNode( 669.330m,oh_route/47,1 )   Route (Overhead): 47
+                                        AStarTraceNode( 669.330m,wall_box/45,0 )   Wall Box: WH-0045
+                                     Path:
+                                        AStarTraceNode( 686.990m,oh_route/48,1 )   Route (Overhead): 48
+                                        AStarTraceNode( 686.990m,wall_box/46,0 )   Wall Box: WH-0046
+                                     Path:
+                                        AStarTraceNode( 688.390m,oh_route/31,1 )   Route (Overhead): 31
+                                        AStarTraceNode( 688.390m,wall_box/30,0 )   Wall Box: WH-0030
+                                     Path:
+                                        AStarTraceNode( 688.390m,oh_route/32,0 )   Route (Overhead): 32
+                                     Path:
+                                        AStarTraceNode( 689.410m,oh_route/33,1 )   Route (Overhead): 33
+                                        AStarTraceNode( 689.410m,wall_box/31,0 )   Wall Box: WH-0031
+                                     Path:
+                                        AStarTraceNode( 696.540m,oh_route/34,1 )   Route (Overhead): 34
+                                        AStarTraceNode( 696.540m,wall_box/32,0 )   Wall Box: WH-0032
+                                     Path:
+                                        AStarTraceNode( 697.560m,oh_route/30,1 )   Route (Overhead): 30
+                                        AStarTraceNode( 697.560m,wall_box/29,0 )   Wall Box: WH-0029
+                                     Path:
+                                        AStarTraceNode( 708.500m,oh_route/35,1 )   Route (Overhead): 35
+                                        AStarTraceNode( 708.500m,wall_box/33,0 )   Wall Box: WH-0033
+                                  Path:
+                                     AStarTraceNode( 661.930m,ug_route/391,1 )   Route (Underground): 391
+                                     AStarTraceNode( 661.930m,manhole/247,1 )   Manhole: WH-M-247
+                                     AStarTraceNode( 725.180m,ug_route/44,1 )   Route (Underground): 44
+                                     AStarTraceNode( 725.180m,mywcom_route_junction/43,2 )   Route Junction: 43
+                                     Path:
+                                        AStarTraceNode( 727.020m,ug_route/283,1 )   Route (Underground): 283
+                                        AStarTraceNode( 727.020m,pole/9,9 )   Pole: WH-P-009
+                                        Path:
+                                           AStarTraceNode( 743.830m,oh_route/50,1 )   Route (Overhead): 50
+                                           AStarTraceNode( 743.830m,wall_box/48,0 )   Wall Box: WH-0048
+                                        Path:
+                                           AStarTraceNode( 751.480m,oh_route/49,1 )   Route (Overhead): 49
+                                           AStarTraceNode( 751.480m,wall_box/47,0 )   Wall Box: WH-0047
+                                        Path:
+                                           AStarTraceNode( 754.200m,oh_route/51,1 )   Route (Overhead): 51
+                                           AStarTraceNode( 754.200m,wall_box/49,0 )   Wall Box: WH-0049
+                                        Path:
+                                           AStarTraceNode( 765.500m,oh_route/54,1 )   Route (Overhead): 54
+                                           AStarTraceNode( 765.500m,wall_box/52,0 )   Wall Box: WH-0052
+                                        Path:
+                                           AStarTraceNode( 767.690m,oh_route/53,1 )   Route (Overhead): 53
+                                           AStarTraceNode( 767.690m,wall_box/51,0 )   Wall Box: WH-0051
+                                        Path:
+                                           AStarTraceNode( 773.630m,oh_route/55,1 )   Route (Overhead): 55
+                                           AStarTraceNode( 773.630m,wall_box/53,0 )   Wall Box: WH-0053
+                                        Path:
+                                           AStarTraceNode( 774.990m,oh_route/52,1 )   Route (Overhead): 52
+                                           AStarTraceNode( 774.990m,wall_box/50,0 )   Wall Box: WH-0050
+                                        Path:
+                                           AStarTraceNode( 785.840m,oh_route/56,1 )   Route (Overhead): 56
+                                           AStarTraceNode( 785.840m,wall_box/54,0 )   Wall Box: WH-0054
+                                        Path:
+                                           AStarTraceNode( 799.240m,oh_route/57,1 )   Route (Overhead): 57
+                                           AStarTraceNode( 799.240m,wall_box/55,0 )   Wall Box: WH-0055
+                                     Path:
+                                        AStarTraceNode( 737.270m,ug_route/390,1 )   Route (Underground): 390
+                                        AStarTraceNode( 737.270m,manhole/248,1 )   Manhole: WH-M-248
+                                        AStarTraceNode( 779.370m,ug_route/47,1 )   Route (Underground): 47
+                                        AStarTraceNode( 779.370m,manhole/91,2 )   Manhole: WH-M-91
+                                        Path:
+                                           AStarTraceNode( 793.280m,ug_route/347,1 )   Route (Underground): 347
+                                           AStarTraceNode( 793.280m,mywcom_route_junction/16,2 )   Route Junction: 16
+                                           Path:
+                                              AStarTraceNode( 818.540m,ug_route/368,1 )   Route (Underground): 368
+                                              AStarTraceNode( 818.540m,mywcom_route_junction/17,2 )   Route Junction: 17
+                                              Path:
+                                                 AStarTraceNode( 826.480m,ug_route/369,1 )   Route (Underground): 369
+                                                 AStarTraceNode( 826.480m,manhole/249,2 )   Manhole: WH-M-249
+                                                 Path:
+                                                    AStarTraceNode( 829.820m,ug_route/282,1 )   Route (Underground): 282
+                                                    AStarTraceNode( 829.820m,pole/8,8 )   Pole: WH-P-008
+                                                    Path:
+                                                       AStarTraceNode( 849.310m,oh_route/60,1 )   Route (Overhead): 60
+                                                       AStarTraceNode( 849.310m,wall_box/57,0 )   Wall Box: WH-0057
+                                                    Path:
+                                                       AStarTraceNode( 858.600m,oh_route/58,1 )   Route (Overhead): 58
+                                                       AStarTraceNode( 858.600m,wall_box/56,0 )   Wall Box: WH-0056
+                                                    Path:
+                                                       AStarTraceNode( 860.150m,oh_route/61,1 )   Route (Overhead): 61
+                                                       AStarTraceNode( 860.150m,wall_box/58,0 )   Wall Box: WH-0058
+                                                    Path:
+                                                       AStarTraceNode( 863.960m,oh_route/63,1 )   Route (Overhead): 63
+                                                       AStarTraceNode( 863.960m,wall_box/60,0 )   Wall Box: WH-0060
+                                                    Path:
+                                                       AStarTraceNode( 866.170m,oh_route/65,1 )   Route (Overhead): 65
+                                                       AStarTraceNode( 866.170m,wall_box/62,0 )   Wall Box: WH-0062
+                                                    Path:
+                                                       AStarTraceNode( 868.970m,oh_route/64,1 )   Route (Overhead): 64
+                                                       AStarTraceNode( 868.970m,wall_box/61,0 )   Wall Box: WH-0061
+                                                    Path:
+                                                       AStarTraceNode( 873.260m,oh_route/66,1 )   Route (Overhead): 66
+                                                       AStarTraceNode( 873.260m,wall_box/63,0 )   Wall Box: WH-0063
+                                                    Path:
+                                                       AStarTraceNode( 878.730m,oh_route/62,1 )   Route (Overhead): 62
+                                                       AStarTraceNode( 878.730m,wall_box/59,0 )   Wall Box: WH-0059
+                                                 Path:
+                                                    AStarTraceNode( 893.620m,ug_route/48,1 )   Route (Underground): 48
+                                                    AStarTraceNode( 893.620m,mywcom_route_junction/18,2 )   Route Junction: 18
+                                                    Path:
+                                                       AStarTraceNode( 908.470m,ug_route/370,1 )   Route (Underground): 370
+                                                       AStarTraceNode( 908.470m,manhole/251,1 )   Manhole: WH-M-251
+                                                       AStarTraceNode( 911.270m,ug_route/123,1 )   Route (Underground): 123
+                                                       AStarTraceNode( 911.270m,mywcom_route_junction/42,2 )   Route Junction: 42
+                                                       Path:
+                                                          AStarTraceNode( 911.840m,ug_route/281,1 )   Route (Underground): 281
+                                                          AStarTraceNode( 911.840m,pole/10,10 )   Pole: WH-P-010
+                                                          Path:
+                                                             AStarTraceNode( 926.760m,oh_route/68,1 )   Route (Overhead): 68
+                                                             AStarTraceNode( 926.760m,wall_box/65,0 )   Wall Box: WH-0065
+                                                          Path:
+                                                             AStarTraceNode( 937.900m,oh_route/67,1 )   Route (Overhead): 67
+                                                             AStarTraceNode( 937.900m,wall_box/64,0 )   Wall Box: WH-0064
+                                                          Path:
+                                                             AStarTraceNode( 938.820m,oh_route/69,1 )   Route (Overhead): 69
+                                                             AStarTraceNode( 938.820m,wall_box/66,0 )   Wall Box: WH-0066
+                                                          Path:
+                                                             AStarTraceNode( 949.300m,oh_route/76,1 )   Route (Overhead): 76
+                                                             AStarTraceNode( 949.300m,wall_box/73,0 )   Wall Box: WH-0073
+                                                          Path:
+                                                             AStarTraceNode( 951.430m,oh_route/73,1 )   Route (Overhead): 73
+                                                             AStarTraceNode( 951.430m,wall_box/70,0 )   Wall Box: WH-0070
+                                                          Path:
+                                                             AStarTraceNode( 958.140m,oh_route/74,1 )   Route (Overhead): 74
+                                                             AStarTraceNode( 958.140m,wall_box/71,0 )   Wall Box: WH-0071
+                                                          Path:
+                                                             AStarTraceNode( 959.150m,oh_route/72,1 )   Route (Overhead): 72
+                                                             AStarTraceNode( 959.150m,wall_box/69,0 )   Wall Box: WH-0069
+                                                          Path:
+                                                             AStarTraceNode( 960.260m,oh_route/70,1 )   Route (Overhead): 70
+                                                             AStarTraceNode( 960.260m,wall_box/67,0 )   Wall Box: WH-0067
+                                                          Path:
+                                                             AStarTraceNode( 962.260m,oh_route/75,1 )   Route (Overhead): 75
+                                                             AStarTraceNode( 962.260m,wall_box/72,0 )   Wall Box: WH-0072
+                                                          Path:
+                                                             AStarTraceNode( 967.110m,oh_route/71,1 )   Route (Overhead): 71
+                                                             AStarTraceNode( 967.110m,wall_box/68,0 )   Wall Box: WH-0068
+                                                       Path:
+                                                          AStarTraceNode( 944.000m,ug_route/389,1 )   Route (Underground): 389
+                                                          AStarTraceNode( 944.000m,manhole/96,1 )   Manhole: WH-M-96
+                                                          AStarTraceNode( 963.360m,ug_route/125,1 )   Route (Underground): 125
+                                                          AStarTraceNode( 963.360m,mywcom_route_junction/21,2 )   Route Junction: 21
+                                                          Path:
+                                                             AStarTraceNode( 978.040m,ug_route/134,1 )   Route (Underground): 134
+                                                             AStarTraceNode( 978.040m,manhole/97,0 )   Manhole: WH-M-97
+                                                          Path:
+                                                             AStarTraceNode( 990.280m,ug_route/372,1 )   Route (Underground): 372
+                                                             AStarTraceNode( 990.280m,mywcom_route_junction/6,2 )   Route Junction: 6
+                                                             Path:
+                                                                AStarTraceNode( 1014.900m,ug_route/361,1 )   Route (Underground): 361
+                                                                AStarTraceNode( 1014.900m,manhole/99,1 )   Manhole: WH-M-99
+                                                                AStarTraceNode( 1023.800m,ug_route/126,1 )   Route (Underground): 126
+                                                                AStarTraceNode( 1023.800m,manhole/100,1 )   Manhole: WH-M-100
+                                                                AStarTraceNode( 1027.670m,ug_route/127,1 )   Route (Underground): 127
+                                                                AStarTraceNode( 1027.670m,mywcom_route_junction/20,2 )   Route Junction: 20
+                                                                Path:
+                                                                   AStarTraceNode( 1029.140m,ug_route/128,1 )   Route (Underground): 128
+                                                                   AStarTraceNode( 1029.140m,manhole/101,0 )   Manhole: WH-M-101
+                                                                Path:
+                                                                   AStarTraceNode( 1092.370m,ug_route/371,1 )   Route (Underground): 371
+                                                                   AStarTraceNode( 1092.370m,manhole/102,2 )   Manhole: WH-M-102
+                                                                   Path:
+                                                                      AStarTraceNode( 1100.690m,ug_route/132,1 )   Route (Underground): 132
+                                                                      AStarTraceNode( 1100.690m,manhole/103,2 )   Manhole: WH-M-103
+                                                                      Path:
+                                                                         AStarTraceNode( 1113.700m,ug_route/103,1 )   Route (Underground): 103
+                                                                         AStarTraceNode( 1113.700m,manhole/104,0 )   Manhole: WH-M-104
+                                                                      Path:
+                                                                         AStarTraceNode( 1149.150m,ug_route/131,1 )   Route (Underground): 131
+                                                                         AStarTraceNode( 1149.150m,manhole/31,1 )   Manhole: WH-M-31
+                                                                         AStarTraceNode( 1177.970m,ug_route/222,1 )   Route (Underground): 222
+                                                                         AStarTraceNode( 1177.970m,mywcom_route_junction/26,2 )   Route Junction: 26
+                                                                         Path:
+                                                                            AStarTraceNode( 1197.540m,ug_route/239,1 )   Route (Underground): 239
+                                                                            AStarTraceNode( 1197.540m,manhole/122,0 )   Manhole: WH-M-122
+                                                                         Path:
+                                                                            AStarTraceNode( 1215.880m,ug_route/374,1 )   Route (Underground): 374
+                                                                            AStarTraceNode( 1215.880m,manhole/123,1 )   Manhole: WH-M-123
+                                                                            AStarTraceNode( 1282.460m,ug_route/223,1 )   Route (Underground): 223
+                                                                            AStarTraceNode( 1282.460m,manhole/124,2 )   Manhole: WH-M-124
+                                                                            Path:
+                                                                               AStarTraceNode( 1297.200m,ug_route/224,1 )   Route (Underground): 224
+                                                                               AStarTraceNode( 1297.200m,manhole/125,1 )   Manhole: XX-M-125
+                                                                               AStarTraceNode( 1340.260m,ug_route/238,1 )   Route (Underground): 238
+                                                                               AStarTraceNode( 1340.260m,manhole/127,2 )   Manhole: SP-M-127
+                                                                               Path:
+                                                                                  AStarTraceNode( 1354.340m,ug_route/288,1 )   Route (Underground): 288
+                                                                                  AStarTraceNode( 1354.340m,building/2,0 )   Building: Science Park Hub
+                                                                               Path:
+                                                                                  AStarTraceNode( 1362.670m,ug_route/225,1 )   Route (Underground): 225
+                                                                                  AStarTraceNode( 1362.670m,manhole/129,1 )   Manhole: SP-M-129
+                                                                                  AStarTraceNode( 1367.780m,ug_route/226,1 )   Route (Underground): 226
+                                                                                  AStarTraceNode( 1367.780m,manhole/128,1 )   Manhole: SP-M-128
+                                                                                  AStarTraceNode( 1385.880m,ug_route/250,1 )   Route (Underground): 250
+                                                                                  AStarTraceNode( 1385.880m,mywcom_route_junction/29,1 )   Route Junction: 29
+                                                                                  AStarTraceNode( 1454.800m,ug_route/260,1 )   Route (Underground): 260
+                                                                                  AStarTraceNode( 1454.800m,manhole/218,1 )   Manhole: XX-M-218
+                                                                                  AStarTraceNode( 1466.110m,ug_route/230,1 )   Route (Underground): 230
+                                                                                  AStarTraceNode( 1466.110m,manhole/217,1 )   Manhole: XX-M-217
+                                                                                  AStarTraceNode( 1486.140m,ug_route/231,1 )   Route (Underground): 231
+                                                                                  AStarTraceNode( 1486.140m,manhole/220,1 )   Manhole: XX-M-220
+                                                                                  AStarTraceNode( 1504.030m,ug_route/232,1 )   Route (Underground): 232
+                                                                                  AStarTraceNode( 1504.030m,manhole/221,1 )   Manhole: XX-M-221
+                                                                                  AStarTraceNode( 1587.150m,ug_route/233,1 )   Route (Underground): 233
+                                                                                  AStarTraceNode( 1587.150m,manhole/225,0 )   Manhole: XX-M-225
+                                                                            Path:
+                                                                               AStarTraceNode( 1337.390m,ug_route/240,1 )   Route (Underground): 240
+                                                                               AStarTraceNode( 1337.390m,manhole/126,0 )   Manhole: XX-M-126
+                                                                   Path:
+                                                                      AStarTraceNode( 1343.980m,ug_route/130,1 )   Route (Underground): 130
+                                                                      AStarTraceNode( 1343.980m,manhole/113,1 )   Manhole: WH-M-113
+                                                                      AStarTraceNode( 1420.670m,ug_route/116,1 )   Route (Underground): 116
+                                                                      AStarTraceNode( 1420.670m,manhole/105,1 )   Manhole: WH-M-105
+                                                                      AStarTraceNode( 1497.390m,ug_route/115,1 )   Route (Underground): 115
+                                                                      AStarTraceNode( 1497.390m,manhole/112,1 )   Manhole: WH-M-112
+                                                                      AStarTraceNode( 1547.030m,ug_route/114,1 )   Route (Underground): 114
+                                                                      AStarTraceNode( 1547.030m,manhole/106,1 )   Manhole: WH-M-106
+                                                                      AStarTraceNode( 1574.340m,ug_route/107,1 )   Route (Underground): 107
+                                                                      AStarTraceNode( 1574.340m,manhole/107,0 )   Manhole: WH-M-107
+                                                             Path:
+                                                                AStarTraceNode( 1042.870m,ug_route/50,1 )   Route (Underground): 50
+                                                                AStarTraceNode( 1042.870m,pole/12,1 )   Pole: WH-P-012
+                                                                AStarTraceNode( 1080.330m,ug_route/51,1 )   Route (Underground): 51
+                                                                AStarTraceNode( 1080.330m,pole/13,4 )   Pole: WH-P-013
+                                                                Path:
+                                                                   AStarTraceNode( 1092.910m,oh_route/78,1 )   Route (Overhead): 78
+                                                                   AStarTraceNode( 1092.910m,wall_box/75,0 )   Wall Box: WH-0075
+                                                                Path:
+                                                                   AStarTraceNode( 1093.350m,oh_route/77,1 )   Route (Overhead): 77
+                                                                   AStarTraceNode( 1093.350m,wall_box/74,0 )   Wall Box: WH-0074
+                                                                Path:
+                                                                   AStarTraceNode( 1100.380m,oh_route/79,1 )   Route (Overhead): 79
+                                                                   AStarTraceNode( 1100.380m,wall_box/76,0 )   Wall Box: WH-0076
+                                                                Path:
+                                                                   AStarTraceNode( 1143.950m,ug_route/257,1 )   Route (Underground): 257
+                                                                   AStarTraceNode( 1143.950m,pole/14,16 )   Pole: WH-P-014
+                                                                   Path:
+                                                                      AStarTraceNode( 1161.720m,oh_route/80,1 )   Route (Overhead): 80
+                                                                      AStarTraceNode( 1161.720m,wall_box/77,0 )   Wall Box: WH-0077
+                                                                   Path:
+                                                                      AStarTraceNode( 1166.200m,oh_route/84,1 )   Route (Overhead): 84
+                                                                      AStarTraceNode( 1166.200m,wall_box/81,0 )   Wall Box: WH-0081
+                                                                   Path:
+                                                                      AStarTraceNode( 1167.410m,oh_route/86,1 )   Route (Overhead): 86
+                                                                      AStarTraceNode( 1167.410m,wall_box/83,0 )   Wall Box: WH-0083
+                                                                   Path:
+                                                                      AStarTraceNode( 1168.230m,oh_route/81,1 )   Route (Overhead): 81
+                                                                      AStarTraceNode( 1168.230m,wall_box/78,0 )   Wall Box: WH-0078
+                                                                   Path:
+                                                                      AStarTraceNode( 1168.850m,oh_route/88,1 )   Route (Overhead): 88
+                                                                      AStarTraceNode( 1168.850m,wall_box/85,0 )   Wall Box: WH-0085
+                                                                   Path:
+                                                                      AStarTraceNode( 1172.090m,oh_route/87,1 )   Route (Overhead): 87
+                                                                      AStarTraceNode( 1172.090m,wall_box/84,0 )   Wall Box: WH-0084
+                                                                   Path:
+                                                                      AStarTraceNode( 1174.730m,oh_route/89,1 )   Route (Overhead): 89
+                                                                      AStarTraceNode( 1174.730m,wall_box/86,0 )   Wall Box: WH-0086
+                                                                   Path:
+                                                                      AStarTraceNode( 1179.930m,oh_route/85,1 )   Route (Overhead): 85
+                                                                      AStarTraceNode( 1179.930m,wall_box/82,0 )   Wall Box: WH-0082
+                                                                   Path:
+                                                                      AStarTraceNode( 1180.680m,oh_route/82,1 )   Route (Overhead): 82
+                                                                      AStarTraceNode( 1180.680m,wall_box/79,0 )   Wall Box: WH-0079
+                                                                   Path:
+                                                                      AStarTraceNode( 1185.040m,oh_route/90,1 )   Route (Overhead): 90
+                                                                      AStarTraceNode( 1185.040m,wall_box/87,0 )   Wall Box: WH-0087
+                                                                   Path:
+                                                                      AStarTraceNode( 1186.330m,oh_route/92,1 )   Route (Overhead): 92
+                                                                      AStarTraceNode( 1186.330m,wall_box/89,0 )   Wall Box: WH-0089
+                                                                   Path:
+                                                                      AStarTraceNode( 1191.500m,oh_route/91,1 )   Route (Overhead): 91
+                                                                      AStarTraceNode( 1191.500m,wall_box/88,0 )   Wall Box: WH-0088
+                                                                   Path:
+                                                                      AStarTraceNode( 1193.000m,oh_route/93,1 )   Route (Overhead): 93
+                                                                      AStarTraceNode( 1193.000m,wall_box/90,0 )   Wall Box: WH-0090
+                                                                   Path:
+                                                                      AStarTraceNode( 1194.970m,oh_route/83,1 )   Route (Overhead): 83
+                                                                      AStarTraceNode( 1194.970m,wall_box/80,0 )   Wall Box: WH-0080
+                                                                   Path:
+                                                                      AStarTraceNode( 1206.980m,oh_route/94,1 )   Route (Overhead): 94
+                                                                      AStarTraceNode( 1206.980m,wall_box/91,0 )   Wall Box: WH-0091
+                                                                   Path:
+                                                                      AStarTraceNode( 1242.650m,ug_route/259,1 )   Route (Underground): 259
+                                                                      AStarTraceNode( 1242.650m,pole/16,19 )   Pole: WH-P-016
+                                                                      Path:
+                                                                         AStarTraceNode( 1258.570m,oh_route/103,1 )   Route (Overhead): 103
+                                                                         AStarTraceNode( 1258.570m,wall_box/100,0 )   Wall Box: WH-0100
+                                                                      Path:
+                                                                         AStarTraceNode( 1259.730m,oh_route/104,1 )   Route (Overhead): 104
+                                                                         AStarTraceNode( 1259.730m,wall_box/101,0 )   Wall Box: WH-0101
+                                                                      Path:
+                                                                         AStarTraceNode( 1260.220m,oh_route/105,1 )   Route (Overhead): 105
+                                                                         AStarTraceNode( 1260.220m,wall_box/102,0 )   Wall Box: WH-0102
+                                                                      Path:
+                                                                         AStarTraceNode( 1263.470m,oh_route/106,1 )   Route (Overhead): 106
+                                                                         AStarTraceNode( 1263.470m,wall_box/103,0 )   Wall Box: WH-0103
+                                                                      Path:
+                                                                         AStarTraceNode( 1265.590m,oh_route/99,1 )   Route (Overhead): 99
+                                                                         AStarTraceNode( 1265.590m,wall_box/96,0 )   Wall Box: WH-0096
+                                                                      Path:
+                                                                         AStarTraceNode( 1269.610m,oh_route/107,1 )   Route (Overhead): 107
+                                                                         AStarTraceNode( 1269.610m,wall_box/104,0 )   Wall Box: WH-0104
+                                                                      Path:
+                                                                         AStarTraceNode( 1269.760m,oh_route/110,1 )   Route (Overhead): 110
+                                                                         AStarTraceNode( 1269.760m,wall_box/107,0 )   Wall Box: WH-0107
+                                                                      Path:
+                                                                         AStarTraceNode( 1270.990m,oh_route/100,1 )   Route (Overhead): 100
+                                                                         AStarTraceNode( 1270.990m,wall_box/97,0 )   Wall Box: WH-0097
+                                                                      Path:
+                                                                         AStarTraceNode( 1271.180m,oh_route/98,1 )   Route (Overhead): 98
+                                                                         AStarTraceNode( 1271.180m,wall_box/95,0 )   Wall Box: WH-0095
+                                                                      Path:
+                                                                         AStarTraceNode( 1273.450m,oh_route/97,1 )   Route (Overhead): 97
+                                                                         AStarTraceNode( 1273.450m,wall_box/94,0 )   Wall Box: WH-0094
+                                                                      Path:
+                                                                         AStarTraceNode( 1275.970m,oh_route/101,1 )   Route (Overhead): 101
+                                                                         AStarTraceNode( 1275.970m,wall_box/98,0 )   Wall Box: WH-0098
+                                                                      Path:
+                                                                         AStarTraceNode( 1276.730m,oh_route/108,1 )   Route (Overhead): 108
+                                                                         AStarTraceNode( 1276.730m,wall_box/105,0 )   Wall Box: WH-0105
+                                                                      Path:
+                                                                         AStarTraceNode( 1277.830m,oh_route/96,1 )   Route (Overhead): 96
+                                                                         AStarTraceNode( 1277.830m,wall_box/93,0 )   Wall Box: WH-0093
+                                                                      Path:
+                                                                         AStarTraceNode( 1278.610m,oh_route/111,1 )   Route (Overhead): 111
+                                                                         AStarTraceNode( 1278.610m,wall_box/108,0 )   Wall Box: WH-0108
+                                                                      Path:
+                                                                         AStarTraceNode( 1283.930m,oh_route/109,1 )   Route (Overhead): 109
+                                                                         AStarTraceNode( 1283.930m,wall_box/106,0 )   Wall Box: WH-0106
+                                                                      Path:
+                                                                         AStarTraceNode( 1284.820m,oh_route/112,1 )   Route (Overhead): 112
+                                                                         AStarTraceNode( 1284.820m,wall_box/109,0 )   Wall Box: WH-0109
+                                                                      Path:
+                                                                         AStarTraceNode( 1285.960m,oh_route/95,1 )   Route (Overhead): 95
+                                                                         AStarTraceNode( 1285.960m,wall_box/92,0 )   Wall Box: WH-0092
+                                                                      Path:
+                                                                         AStarTraceNode( 1285.990m,oh_route/102,1 )   Route (Overhead): 102
+                                                                         AStarTraceNode( 1285.990m,wall_box/99,0 )   Wall Box: WH-0099
+                                                                      Path:
+                                                                         AStarTraceNode( 1290.390m,ug_route/255,1 )   Route (Underground): 255
+                                                                         AStarTraceNode( 1290.390m,manhole/111,1 )   Manhole: WH-M-111
+                                                                         AStarTraceNode( 1321.920m,ug_route/104,1 )   Route (Underground): 104
+                                                                         AStarTraceNode( 1321.920m,manhole/110,1 )   Manhole: WH-M-110
+                                                                         AStarTraceNode( 1339.450m,ug_route/106,1 )   Route (Underground): 106
+                                                                         AStarTraceNode( 1339.450m,pole/18,11 )   Pole: WH-P-018
+                                                                         Path:
+                                                                            AStarTraceNode( 1354.640m,oh_route/118,1 )   Route (Overhead): 118
+                                                                            AStarTraceNode( 1354.640m,wall_box/114,0 )   Wall Box: WH-0114
+                                                                         Path:
+                                                                            AStarTraceNode( 1356.130m,oh_route/117,1 )   Route (Overhead): 117
+                                                                            AStarTraceNode( 1356.130m,wall_box/113,0 )   Wall Box: WH-0113
+                                                                         Path:
+                                                                            AStarTraceNode( 1358.760m,oh_route/119,1 )   Route (Overhead): 119
+                                                                            AStarTraceNode( 1358.760m,wall_box/115,0 )   Wall Box: WH-0115
+                                                                         Path:
+                                                                            AStarTraceNode( 1360.130m,oh_route/116,1 )   Route (Overhead): 116
+                                                                            AStarTraceNode( 1360.130m,wall_box/112,0 )   Wall Box: WH-0112
+                                                                         Path:
+                                                                            AStarTraceNode( 1364.000m,oh_route/120,1 )   Route (Overhead): 120
+                                                                            AStarTraceNode( 1364.000m,wall_box/116,0 )   Wall Box: WH-0116
+                                                                         Path:
+                                                                            AStarTraceNode( 1366.620m,oh_route/113,1 )   Route (Overhead): 113
+                                                                            AStarTraceNode( 1366.620m,pole/17,0 )   Pole: WH-P-017
+                                                                         Path:
+                                                                            AStarTraceNode( 1366.840m,oh_route/114,1 )   Route (Overhead): 114
+                                                                            AStarTraceNode( 1366.840m,wall_box/110,0 )   Wall Box: WH-0110
+                                                                         Path:
+                                                                            AStarTraceNode( 1370.820m,oh_route/115,1 )   Route (Overhead): 115
+                                                                            AStarTraceNode( 1370.820m,wall_box/111,0 )   Wall Box: WH-0111
+                                                                         Path:
+                                                                            AStarTraceNode( 1373.950m,oh_route/121,1 )   Route (Overhead): 121
+                                                                            AStarTraceNode( 1373.950m,wall_box/117,0 )   Wall Box: WH-0117
+                                                                         Path:
+                                                                            AStarTraceNode( 1378.740m,oh_route/122,1 )   Route (Overhead): 122
+                                                                            AStarTraceNode( 1378.740m,wall_box/118,0 )   Wall Box: WH-0118
+                                                                         Path:
+                                                                            AStarTraceNode( 1446.630m,ug_route/105,1 )   Route (Underground): 105
+                                                                            AStarTraceNode( 1446.630m,manhole/109,1 )   Manhole: WH-M-109
+                                                                            AStarTraceNode( 1499.930m,ug_route/121,1 )   Route (Underground): 121
+                                                                            AStarTraceNode( 1499.930m,mywcom_route_junction/19,2 )   Route Junction: 19
+                                                                            Path:
+                                                                               AStarTraceNode( 1508.300m,ug_route/133,1 )   Route (Underground): 133
+                                                                               AStarTraceNode( 1508.300m,manhole/108,0 )   Manhole: WH-M-108
+                                                                            Path:
+                                                                               AStarTraceNode( 1602.240m,ug_route/262,0 )   Route (Underground): 262
+                                                    Path:
+                                                       AStarTraceNode( 912.060m,ug_route/101,1 )   Route (Underground): 101
+                                                       AStarTraceNode( 912.060m,manhole/94,0 )   Manhole: WH-M-94
+                                              Path:
+                                                 AStarTraceNode( 834.940m,ug_route/100,1 )   Route (Underground): 100
+                                                 AStarTraceNode( 834.940m,manhole/93,0 )   Manhole: WH-M-93
+                                           Path:
+                                              AStarTraceNode( 887.910m,ug_route/99,0 )   Route (Underground): 99
+                                        Path:
+                                           AStarTraceNode( 872.350m,ug_route/93,1 )   Route (Underground): 93
+                                           AStarTraceNode( 872.350m,manhole/84,2 )   Manhole: WH-M-84
+                                           Path:
+                                              AStarTraceNode( 881.440m,ug_route/111,1 )   Route (Underground): 111
+                                              AStarTraceNode( 881.440m,manhole/83,1 )   Manhole: WH-M-83
+                                              AStarTraceNode( 950.790m,ug_route/98,1 )   Route (Underground): 98
+                                              AStarTraceNode( 950.790m,manhole/90,1 )   Manhole: WH-M-90
+                                              AStarTraceNode( 1165.660m,ug_route/112,1 )   Route (Underground): 112
+                                              AStarTraceNode( 1165.660m,manhole/89,0 )   Manhole: WH-M-89
+                                           Path:
+                                              AStarTraceNode( 944.000m,ug_route/94,1 )   Route (Underground): 94
+                                              AStarTraceNode( 944.000m,manhole/86,2 )   Manhole: WH-M-86
+                                              Path:
+                                                 AStarTraceNode( 947.800m,ug_route/272,1 )   Route (Underground): 272
+                                                 AStarTraceNode( 947.800m,pole/23,0 )   Pole: WH-P-023
+                                              Path:
+                                                 AStarTraceNode( 952.720m,ug_route/95,1 )   Route (Underground): 95
+                                                 AStarTraceNode( 952.720m,mywcom_route_junction/36,2 )   Route Junction: 36
+                                                 Path:
+                                                    AStarTraceNode( 1028.430m,ug_route/383,1 )   Route (Underground): 383
+                                                    AStarTraceNode( 1028.430m,manhole/87,1 )   Manhole: WH-M-87
+                                                    AStarTraceNode( 1097.960m,ug_route/96,1 )   Route (Underground): 96
+                                                    AStarTraceNode( 1097.960m,manhole/88,1 )   Manhole: WH-M-88
+                                                    AStarTraceNode( 1182.390m,ug_route/97,0 )   Route (Underground): 97
+                                                 Path:
+                                                    AStarTraceNode( 956.000m,ug_route/271,1 )   Route (Underground): 271
+                                                    AStarTraceNode( 956.000m,cabinet/15,0 )   Cabinet: WH-C-15
+             Path:
+                AStarTraceNode( 162.270m,ug_route/9,1 )   Route (Underground): 9
+                AStarTraceNode( 162.270m,manhole/23,1 )   Manhole: WH-M-23
+                AStarTraceNode( 191.810m,ug_route/10,1 )   Route (Underground): 10
+                AStarTraceNode( 191.810m,mywcom_route_junction/47,2 )   Route Junction: 47
+                Path:
+                   AStarTraceNode( 197.130m,ug_route/301,1 )   Route (Underground): 301
+                   AStarTraceNode( 197.130m,wall_box/150,0 )   Wall Box: WH-0150
+                Path:
+                   AStarTraceNode( 197.300m,ug_route/394,1 )   Route (Underground): 394
+                   AStarTraceNode( 197.300m,mywcom_route_junction/48,2 )   Route Junction: 48
+                   Path:
+                      AStarTraceNode( 202.260m,ug_route/395,1 )   Route (Underground): 395
+                      AStarTraceNode( 202.260m,manhole/24,1 )   Manhole: WH-M-24
+                      AStarTraceNode( 225.290m,ug_route/11,1 )   Route (Underground): 11
+                      AStarTraceNode( 225.290m,mywcom_route_junction/49,2 )   Route Junction: 49
+                      Path:
+                         AStarTraceNode( 229.550m,ug_route/303,1 )   Route (Underground): 303
+                         AStarTraceNode( 229.550m,wall_box/133,0 )   Wall Box: WH-0133
+                      Path:
+                         AStarTraceNode( 236.830m,ug_route/396,1 )   Route (Underground): 396
+                         AStarTraceNode( 236.830m,manhole/26,1 )   Manhole: WH-M-26
+                         AStarTraceNode( 247.040m,ug_route/397,1 )   Route (Underground): 397
+                         AStarTraceNode( 247.040m,mywcom_route_junction/50,2 )   Route Junction: 50
+                         Path:
+                            AStarTraceNode( 250.690m,ug_route/304,1 )   Route (Underground): 304
+                            AStarTraceNode( 250.690m,wall_box/149,0 )   Wall Box: WH-0149
+                         Path:
+                            AStarTraceNode( 257.640m,ug_route/12,1 )   Route (Underground): 12
+                            AStarTraceNode( 257.640m,manhole/36,2 )   Manhole: WH-M-36
+                            Path:
+                               AStarTraceNode( 277.940m,ug_route/13,1 )   Route (Underground): 13
+                               AStarTraceNode( 277.940m,mywcom_route_junction/1,2 )   Route Junction: 1
+                               Path:
+                                  AStarTraceNode( 293.210m,ug_route/54,1 )   Route (Underground): 54
+                                  AStarTraceNode( 293.210m,manhole/37,1 )   Manhole: WH-M-37
+                                  AStarTraceNode( 320.770m,ug_route/69,1 )   Route (Underground): 69
+                                  AStarTraceNode( 320.770m,manhole/59,1 )   Manhole: WH-M-59
+                                  AStarTraceNode( 434.140m,ug_route/70,1 )   Route (Underground): 70
+                                  AStarTraceNode( 434.140m,mywcom_route_junction/11,2 )   Route Junction: 11
+                                  Path:
+                                     AStarTraceNode( 445.020m,ug_route/72,1 )   Route (Underground): 72
+                                     AStarTraceNode( 445.020m,manhole/61,2 )   Manhole: WH-M-61
+                                     Path:
+                                        AStarTraceNode( 535.580m,ug_route/110,1 )   Route (Underground): 110
+                                        AStarTraceNode( 535.580m,manhole/78,1 )   Manhole: WH-M-78
+                                        AStarTraceNode( 537.430m,ug_route/382,1 )   Route (Underground): 382
+                                        AStarTraceNode( 537.430m,mywcom_route_junction/35,2 )   Route Junction: 35
+                                        Path:
+                                           AStarTraceNode( 539.300m,ug_route/270,1 )   Route (Underground): 270
+                                           AStarTraceNode( 539.300m,cabinet/12,0 )   Cabinet: WH-C-12
+                                        Path:
+                                           AStarTraceNode( 571.920m,ug_route/92,1 )   Route (Underground): 92
+                                           AStarTraceNode( 571.920m,manhole/82,1 )   Manhole: WH-M-82
+                                           AStarTraceNode( 589.300m,ug_route/91,1 )   Route (Underground): 91
+                                           AStarTraceNode( 589.300m,manhole/81,1 )   Manhole: WH-M-81
+                                           AStarTraceNode( 626.000m,ug_route/90,0 )   Route (Underground): 90
+                                     Path:
+                                        AStarTraceNode( 556.160m,ug_route/87,1 )   Route (Underground): 87
+                                        AStarTraceNode( 556.160m,manhole/60,0 )   Manhole: WH-M-60
+                                  Path:
+                                     AStarTraceNode( 465.770m,ug_route/364,1 )   Route (Underground): 364
+                                     AStarTraceNode( 465.770m,mywcom_route_junction/9,2 )   Route Junction: 9
+                                     Path:
+                                        AStarTraceNode( 476.390m,ug_route/73,1 )   Route (Underground): 73
+                                        AStarTraceNode( 476.390m,manhole/62,1 )   Manhole: WH-M-62
+                                        AStarTraceNode( 499.840m,ug_route/74,1 )   Route (Underground): 74
+                                        AStarTraceNode( 499.840m,manhole/63,1 )   Manhole: WH-M-63
+                                        AStarTraceNode( 505.627m,ug_route/50002,1 )   Route (Underground): 50002
+                                        AStarTraceNode( 505.627m,manhole/50000,1 )   Manhole: WH-M-50000
+                                        AStarTraceNode( 524.870m,ug_route/385,1 )   Route (Underground): 385
+                                        AStarTraceNode( 524.870m,mywcom_route_junction/38,2 )   Route Junction: 38
+                                        Path:
+                                           AStarTraceNode( 526.060m,ug_route/274,1 )   Route (Underground): 274
+                                           AStarTraceNode( 526.060m,cabinet/9,0 )   Cabinet: WH-C-09
+                                        Path:
+                                           AStarTraceNode( 607.320m,ug_route/84,1 )   Route (Underground): 84
+                                           AStarTraceNode( 607.320m,manhole/69,1 )   Manhole: WH-M-69
+                                           AStarTraceNode( 620.410m,ug_route/263,1 )   Route (Underground): 263
+                                           AStarTraceNode( 620.410m,mywcom_route_junction/14,2 )   Route Junction: 14
+                                           Path:
+                                              AStarTraceNode( 626.030m,ug_route/386,1 )   Route (Underground): 386
+                                              AStarTraceNode( 626.030m,mywcom_route_junction/39,2 )   Route Junction: 39
+                                              Path:
+                                                 AStarTraceNode( 628.270m,ug_route/275,1 )   Route (Underground): 275
+                                                 AStarTraceNode( 628.270m,cabinet/10,0 )   Cabinet: WH-C-10
+                                              Path:
+                                                 AStarTraceNode( 632.170m,ug_route/82,1 )   Route (Underground): 82
+                                                 AStarTraceNode( 632.170m,manhole/71,1 )   Manhole: WH-M-71
+                                                 AStarTraceNode( 670.620m,ug_route/77,1 )   Route (Underground): 77
+                                                 AStarTraceNode( 670.620m,manhole/72,1 )   Manhole: WH-M-72
+                                                 AStarTraceNode( 724.550m,ug_route/76,1 )   Route (Underground): 76
+                                                 AStarTraceNode( 724.550m,manhole/73,1 )   Manhole: WH-M-73
+                                                 AStarTraceNode( 735.150m,ug_route/75,1 )   Route (Underground): 75
+                                                 AStarTraceNode( 735.150m,manhole/74,0 )   Manhole: WH-M-74
+                                           Path:
+                                              AStarTraceNode( 627.970m,ug_route/83,1 )   Route (Underground): 83
+                                              AStarTraceNode( 627.970m,manhole/70,0 )   Manhole: WH-M-70
+                                     Path:
+                                        AStarTraceNode( 529.220m,ug_route/254,1 )   Route (Underground): 254
+                                        AStarTraceNode( 529.220m,manhole/66,1 )   Manhole: WH-M-66
+                                        AStarTraceNode( 551.420m,ug_route/71,1 )   Route (Underground): 71
+                                        AStarTraceNode( 551.420m,mywcom_route_junction/10,2 )   Route Junction: 10
+                                        Path:
+                                           AStarTraceNode( 563.090m,ug_route/261,1 )   Route (Underground): 261
+                                           AStarTraceNode( 563.090m,manhole/64,0 )   Manhole: WH-M-64
+                                        Path:
+                                           AStarTraceNode( 594.940m,ug_route/85,1 )   Route (Underground): 85
+                                           AStarTraceNode( 594.940m,manhole/65,0 )   Manhole: WH-M-65
+                               Path:
+                                  AStarTraceNode( 326.160m,ug_route/15,1 )   Route (Underground): 15
+                                  AStarTraceNode( 326.160m,mywcom_route_junction/8,2 )   Route Junction: 8
+                                  Path:
+                                     AStarTraceNode( 335.790m,ug_route/68,1 )   Route (Underground): 68
+                                     AStarTraceNode( 335.790m,manhole/54,0 )   Manhole: WH-M-54
+                                  Path:
+                                     AStarTraceNode( 336.840m,ug_route/363,1 )   Route (Underground): 363
+                                     AStarTraceNode( 336.840m,mywcom_route_junction/7,2 )   Route Junction: 7
+                                     Path:
+                                        AStarTraceNode( 343.280m,ug_route/362,1 )   Route (Underground): 362
+                                        AStarTraceNode( 343.280m,mywcom_route_junction/51,2 )   Route Junction: 51
+                                        Path:
+                                           AStarTraceNode( 349.250m,ug_route/312,1 )   Route (Underground): 312
+                                           AStarTraceNode( 349.250m,mdu/5,0 )   MDU: Gladeside Park
+                                        Path:
+                                           AStarTraceNode( 372.400m,ug_route/398,1 )   Route (Underground): 398
+                                           AStarTraceNode( 372.400m,mywcom_route_junction/52,2 )   Route Junction: 52
+                                           Path:
+                                              AStarTraceNode( 376.730m,ug_route/313,1 )   Route (Underground): 313
+                                              AStarTraceNode( 376.730m,wall_box/144,0 )   Wall Box: WH-0144
+                                           Path:
+                                              AStarTraceNode( 378.800m,ug_route/399,1 )   Route (Underground): 399
+                                              AStarTraceNode( 378.800m,mywcom_route_junction/50001,1 )   Route Junction: 50001
+                                              AStarTraceNode( 390.970m,ug_route/66,1 )   Route (Underground): 66
+                                              AStarTraceNode( 390.970m,manhole/56,0 )   Manhole: WH-M-56
+                                     Path:
+                                        AStarTraceNode( 346.740m,ug_route/67,1 )   Route (Underground): 67
+                                        AStarTraceNode( 346.740m,manhole/55,0 )   Manhole: WH-M-55
+                            Path:
+                               AStarTraceNode( 296.860m,ug_route/14,1 )   Route (Underground): 14
+                               AStarTraceNode( 296.860m,drop_point/1,2 )   Drop Point: WH-DP-001
+                               Path:
+                                  AStarTraceNode( 302.000m,ug_route/305,1 )   Route (Underground): 305
+                                  AStarTraceNode( 302.000m,wall_box/134,0 )   Wall Box: WH-0134
+                               Path:
+                                  AStarTraceNode( 303.170m,ug_route/351,1 )   Route (Underground): 351
+                                  AStarTraceNode( 303.170m,manhole/253,2 )   Manhole: WH-M-253
+                                  Path:
+                                     AStarTraceNode( 323.690m,ug_route/349,1 )   Route (Underground): 349
+                                     AStarTraceNode( 323.690m,drop_point/2,2 )   Drop Point: WH-DP-002
+                                     Path:
+                                        AStarTraceNode( 328.050m,ug_route/311,1 )   Route (Underground): 311
+                                        AStarTraceNode( 328.050m,mdu/2,0 )   MDU: Alice Bell
+                                     Path:
+                                        AStarTraceNode( 355.600m,ug_route/352,1 )   Route (Underground): 352
+                                        AStarTraceNode( 355.600m,drop_point/3,2 )   Drop Point: WH-DP-003
+                                        Path:
+                                           AStarTraceNode( 363.700m,ug_route/314,1 )   Route (Underground): 314
+                                           AStarTraceNode( 363.700m,mdu/3,0 )   MDU: Gladeside
+                                        Path:
+                                           AStarTraceNode( 366.220m,ug_route/353,1 )   Route (Underground): 353
+                                           AStarTraceNode( 366.220m,mywcom_route_junction/12,2 )   Route Junction: 12
+                                           Path:
+                                              AStarTraceNode( 372.260m,ug_route/365,1 )   Route (Underground): 365
+                                              AStarTraceNode( 372.260m,mywcom_route_junction/13,2 )   Route Junction: 13
+                                              Path:
+                                                 AStarTraceNode( 383.240m,ug_route/366,1 )   Route (Underground): 366
+                                                 AStarTraceNode( 383.240m,manhole/39,2 )   Manhole: WH-M-39
+                                                 Path:
+                                                    AStarTraceNode( 386.050m,ug_route/276,1 )   Route (Underground): 276
+                                                    AStarTraceNode( 386.050m,cabinet/11,0 )   Cabinet: WH-C-11
+                                                 Path:
+                                                    AStarTraceNode( 405.430m,ug_route/79,1 )   Route (Underground): 79
+                                                    AStarTraceNode( 405.430m,mywcom_route_junction/54,2 )   Route Junction: 54
+                                                    Path:
+                                                       AStarTraceNode( 409.630m,ug_route/319,1 )   Route (Underground): 319
+                                                       AStarTraceNode( 409.630m,wall_box/147,0 )   Wall Box: WH-0147
+                                                    Path:
+                                                       AStarTraceNode( 434.290m,ug_route/400,1 )   Route (Underground): 400
+                                                       AStarTraceNode( 434.290m,manhole/48,1 )   Manhole: WH-M-48
+                                                       AStarTraceNode( 604.710m,ug_route/89,1 )   Route (Underground): 89
+                                                       AStarTraceNode( 604.710m,manhole/76,0 )   Manhole: WH-M-76
+                                              Path:
+                                                 AStarTraceNode( 396.140m,ug_route/355,1 )   Route (Underground): 355
+                                                 AStarTraceNode( 396.140m,drop_point/5,2 )   Drop Point: WH-DP-005
+                                                 Path:
+                                                    AStarTraceNode( 403.900m,ug_route/315,1 )   Route (Underground): 315
+                                                    AStarTraceNode( 403.900m,wall_box/145,0 )   Wall Box: WH-0145
+                                                 Path:
+                                                    AStarTraceNode( 418.030m,ug_route/354,1 )   Route (Underground): 354
+                                                    AStarTraceNode( 418.030m,drop_point/4,2 )   Drop Point: WH-DP-004
+                                                    Path:
+                                                       AStarTraceNode( 423.860m,ug_route/318,1 )   Route (Underground): 318
+                                                       AStarTraceNode( 423.860m,mywcom_route_junction/53,2 )   Route Junction: 53
+                                                       Path:
+                                                          AStarTraceNode( 430.040m,ug_route/317,1 )   Route (Underground): 317
+                                                          AStarTraceNode( 430.040m,wall_box/148,0 )   Wall Box: WH-0148
+                                                       Path:
+                                                          AStarTraceNode( 430.110m,ug_route/316,1 )   Route (Underground): 316
+                                                          AStarTraceNode( 430.110m,wall_box/146,0 )   Wall Box: WH-0146
+                                                    Path:
+                                                       AStarTraceNode( 471.478m,ug_route/50001,1 )   Route (Underground): 50001
+                                                       AStarTraceNode( 471.478m,mywcom_route_junction/50000,2 )   Route Junction: 50000
+                                                       Path:
+                                                          AStarTraceNode( 473.460m,ug_route/50000,1 )   Route (Underground): 50000
+                                                          AStarTraceNode( 473.460m,wall_box/50000,0 )   Wall Box: WH-50000
+                                                       Path:
+                                                          AStarTraceNode( 491.050m,ug_route/81,1 )   Route (Underground): 81
+                                                          AStarTraceNode( 491.050m,manhole/52,0 )   Manhole: WH-M-52
+                                           Path:
+                                              AStarTraceNode( 377.200m,ug_route/80,1 )   Route (Underground): 80
+                                              AStarTraceNode( 377.200m,manhole/40,0 )   Manhole: WH-M-40
+                                  Path:
+                                     AStarTraceNode( 330.560m,ug_route/356,1 )   Route (Underground): 356
+                                     AStarTraceNode( 330.560m,drop_point/6,2 )   Drop Point: WH-DP-006
+                                     Path:
+                                        AStarTraceNode( 331.980m,ug_route/306,1 )   Route (Underground): 306
+                                        AStarTraceNode( 331.980m,wall_box/135,0 )   Wall Box: WH-0135
+                                     Path:
+                                        AStarTraceNode( 342.510m,ug_route/350,1 )   Route (Underground): 350
+                                        AStarTraceNode( 342.510m,manhole/254,2 )   Manhole: WH-M-254
+                                        Path:
+                                           AStarTraceNode( 352.070m,ug_route/357,1 )   Route (Underground): 357
+                                           AStarTraceNode( 352.070m,drop_point/7,2 )   Drop Point: WH-DP-007
+                                           Path:
+                                              AStarTraceNode( 353.260m,ug_route/358,1 )   Route (Underground): 358
+                                              AStarTraceNode( 353.260m,drop_point/8,2 )   Drop Point: WH-DP-008
+                                              Path:
+                                                 AStarTraceNode( 363.000m,ug_route/308,1 )   Route (Underground): 308
+                                                 AStarTraceNode( 363.000m,wall_box/142,0 )   Wall Box: WH-0142
+                                              Path:
+                                                 AStarTraceNode( 363.310m,ug_route/359,1 )   Route (Underground): 359
+                                                 AStarTraceNode( 363.310m,drop_point/9,2 )   Drop Point: WH-DP-009
+                                                 Path:
+                                                    AStarTraceNode( 366.370m,ug_route/310,1 )   Route (Underground): 310
+                                                    AStarTraceNode( 366.370m,wall_box/138,0 )   Wall Box: WH-0138
+                                                 Path:
+                                                    AStarTraceNode( 370.280m,ug_route/78,1 )   Route (Underground): 78
+                                                    AStarTraceNode( 370.280m,manhole/53,2 )   Manhole: WH-M-53
+                                                    Path:
+                                                       AStarTraceNode( 381.010m,ug_route/277,1 )   Route (Underground): 277
+                                                       AStarTraceNode( 381.010m,cabinet/8,0 )   Cabinet: WH-C-08
+                                                    Path:
+                                                       AStarTraceNode( 382.830m,ug_route/320,1 )   Route (Underground): 320
+                                                       AStarTraceNode( 382.830m,wall_box/143,0 )   Wall Box: WH-0143
+                                           Path:
+                                              AStarTraceNode( 355.090m,ug_route/309,1 )   Route (Underground): 309
+                                              AStarTraceNode( 355.090m,wall_box/137,0 )   Wall Box: WH-0137
+                                        Path:
+                                           AStarTraceNode( 354.150m,ug_route/307,1 )   Route (Underground): 307
+                                           AStarTraceNode( 354.150m,wall_box/136,0 )   Wall Box: WH-0136
+                   Path:
+                      AStarTraceNode( 202.430m,ug_route/302,1 )   Route (Underground): 302
+                      AStarTraceNode( 202.430m,wall_box/132,0 )   Wall Box: WH-0132
+          Path:
+             AStarTraceNode( 94.980m,ug_route/265,1 )   Route (Underground): 265
+             AStarTraceNode( 94.980m,cabinet/3,0 )   Cabinet: WH-C-03
+    
+
+SUB TEST : delta : mywcom_routes from manhole/WH-M-D20:1 both to feature manhole/WH-M-D20:2
+    AStarTraceNode( 0.000m,manhole/4200,1 )   Manhole: WH-M-D20:1
+    AStarTraceNode( 26.321m,ug_route/4200,1 )   Route (Underground): 4200
+    AStarTraceNode( 26.321m,mywcom_route_junction/4200,1 )   Route Junction: 4200
+    AStarTraceNode( 84.266m,ug_route/7,1 )   Route (Underground): 7
+    AStarTraceNode( 84.266m,manhole/32,1 )   Manhole: WH-M-32
+    AStarTraceNode( 99.646m,ug_route/6,1 )   Route (Underground): 6
+    AStarTraceNode( 99.646m,building/1,1 )   Building: Woodhead Hub
+    AStarTraceNode( 104.606m,ug_route/1,1 )   Route (Underground): 1
+    AStarTraceNode( 104.606m,mywcom_route_junction/37,1 )   Route Junction: 37
+    AStarTraceNode( 111.566m,ug_route/273,1 )   Route (Underground): 273
+    AStarTraceNode( 111.566m,cabinet/2,1 )   Cabinet: WH-C-02
+    AStarTraceNode( 113.156m,ug_route/267,1 )   Route (Underground): 267
+    AStarTraceNode( 113.156m,mywcom_route_junction/2,1 )   Route Junction: 2
+    AStarTraceNode( 116.426m,ug_route/52,1 )   Route (Underground): 52
+    AStarTraceNode( 116.426m,manhole/34,1 )   Manhole: WH-M-34
+    AStarTraceNode( 123.376m,ug_route/2,1 )   Route (Underground): 2
+    AStarTraceNode( 123.376m,manhole/33,1 )   Manhole: WH-M-33
+    AStarTraceNode( 186.396m,ug_route/3,1 )   Route (Underground): 3
+    AStarTraceNode( 186.396m,mywcom_route_junction/4201,1 )   Route Junction: 4201
+    AStarTraceNode( 217.618m,ug_route/4202,1 )   Route (Underground): 4202
+    AStarTraceNode( 217.618m,manhole/4201,0 )   Manhole: WH-M-D20:2
+    

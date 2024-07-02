@@ -1,0 +1,653 @@
+Request: POST: /modules/comms/fiber_path/find
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/fiber_path/create_circuit
+Response: 200 (200 OK)
+{
+   "bbox": [
+      0.1399952173233,
+      52.2328145288195,
+      0.1448285229346,
+      52.2363556962577
+   ],
+   "geometry": {
+      "coordinates": [
+         [
+            0.1416571884668,
+            52.2328145288195
+         ],
+         [
+            0.1417024433613,
+            52.2328831323955
+         ],
+         [
+            0.1415106654167,
+            52.2329365210303
+         ],
+         [
+            0.1412934064865,
+            52.2329915523251
+         ],
+         [
+            0.1412746310234,
+            52.2330137290963
+         ],
+         [
+            0.141199529171,
+            52.2330449408295
+         ],
+         [
+            0.1411056518555,
+            52.2330695816561
+         ],
+         [
+            0.1409634947777,
+            52.2330975079096
+         ],
+         [
+            0.140845477581,
+            52.2331352904599
+         ],
+         [
+            0.1407113671303,
+            52.2331796438476
+         ],
+         [
+            0.1406416296959,
+            52.2332124981802
+         ],
+         [
+            0.140522941947,
+            52.2332732786315
+         ],
+         [
+            0.1404485106468,
+            52.2333012047568
+         ],
+         [
+            0.1403841376305,
+            52.2333537715334
+         ],
+         [
+            0.140309035778,
+            52.2334129090827
+         ],
+         [
+            0.1401722431183,
+            52.2334819027906
+         ],
+         [
+            0.1400783658028,
+            52.2336100336779
+         ],
+         [
+            0.1400300860405,
+            52.2337102383449
+         ],
+         [
+            0.1400086283684,
+            52.2338022293154
+         ],
+         [
+            0.1399952173233,
+            52.2339361086908
+         ],
+         [
+            0.1399978995323,
+            52.234012493675
+         ],
+         [
+            0.1400193572044,
+            52.2341619778874
+         ],
+         [
+            0.1400756835938,
+            52.2342605386312
+         ],
+         [
+            0.14011323452,
+            52.2343393870687
+         ],
+         [
+            0.1402151584625,
+            52.2344576594622
+         ],
+         [
+            0.1402661204338,
+            52.2345200808762
+         ],
+         [
+            0.1403707265854,
+            52.2346104275042
+         ],
+         [
+            0.140472650528,
+            52.2347184325499
+         ],
+         [
+            0.1404404640198,
+            52.2347582670442
+         ],
+         [
+            0.1405397057533,
+            52.2348946075169
+         ],
+         [
+            0.140660405159,
+            52.2350210916773
+         ],
+         [
+            0.1407811045647,
+            52.2351377196097
+         ],
+         [
+            0.1409460604191,
+            52.2352535259154
+         ],
+         [
+            0.1410520076752,
+            52.2352839147541
+         ],
+         [
+            0.1412451267242,
+            52.2354218962465
+         ],
+         [
+            0.1412746310234,
+            52.235471175247
+         ],
+         [
+            0.1413336396217,
+            52.2355352378658
+         ],
+         [
+            0.141376554966,
+            52.2355910872529
+         ],
+         [
+            0.1414811611176,
+            52.235688002199
+         ],
+         [
+            0.1414892077446,
+            52.2357241399214
+         ],
+         [
+            0.1415374875069,
+            52.2357734185863
+         ],
+         [
+            0.1415938138962,
+            52.2358292676737
+         ],
+         [
+            0.141744017601,
+            52.2359179690211
+         ],
+         [
+            0.1418218016624,
+            52.2359672474708
+         ],
+         [
+            0.1419425010681,
+            52.2360280241501
+         ],
+         [
+            0.1420524716377,
+            52.2360658042061
+         ],
+         [
+            0.1421731710434,
+            52.2361027629254
+         ],
+         [
+            0.1422938704491,
+            52.2361298659667
+         ],
+         [
+            0.1423904299736,
+            52.2361512198663
+         ],
+         [
+            0.1425191760063,
+            52.2361742163622
+         ],
+         [
+            0.142647922039,
+            52.2361873572116
+         ],
+         [
+            0.1427257061005,
+            52.2361972128461
+         ],
+         [
+            0.1428061723709,
+            52.2362054258732
+         ],
+         [
+            0.1429644227028,
+            52.2362234945274
+         ],
+         [
+            0.1432621479034,
+            52.2362415631742
+         ],
+         [
+            0.1434445381165,
+            52.2362629170202
+         ],
+         [
+            0.1436054706573,
+            52.2362842708558
+         ],
+         [
+            0.1438656449318,
+            52.2363039820796
+         ],
+         [
+            0.1440319418907,
+            52.2363253358954
+         ],
+         [
+            0.1441419124603,
+            52.2363056246811
+         ],
+         [
+            0.14444231987,
+            52.2362941264688
+         ],
+         [
+            0.1445952057838,
+            52.2362859134581
+         ],
+         [
+            0.144799053669,
+            52.2362678448293
+         ],
+         [
+            0.1448285229346,
+            52.2363556962577
+         ]
+      ],
+      "type": "LineString"
+   },
+   "id": 100000,
+   "myw": {
+      "change_type": "insert",
+      "delta": "design/SP002",
+      "feature_type": "ftth_circuit",
+      "short_description": "Direct ()",
+      "title": "Circuit: C1"
+   },
+   "properties": {
+      "address": null,
+      "customer": null,
+      "date": null,
+      "id": 100000,
+      "in_feature": "fiber_shelf/18",
+      "in_pins": "out:1",
+      "name": "C1",
+      "out_feature": "fiber_shelf/19",
+      "out_pins": "in:1",
+      "service_type": "Direct",
+      "status": null
+   },
+   "type": "Feature"
+}
+
+
+DATABASE CHANGES: AFTER CREATING CIRCUIT 1
+   insert delta.fiber_shelf(design/SP002,18,update)
+   insert delta.fiber_shelf(design/SP002,19,update)
+   insert delta.ftth_circuit(design/SP002,100000,insert)
+   insert delta.mywcom_fiber_connection(design/SP002,100000,insert)
+   insert delta.mywcom_fiber_connection(design/SP002,100001,insert)
+   insert delta.mywcom_fiber_connection(design/SP002,100002,insert)
+   insert delta.mywcom_fiber_segment(design/SP002,499,update)
+   insert delta.mywcom_fiber_segment(design/SP002,500,update)
+   insert delta.mywcom_fiber_segment(design/SP002,501,update)
+   insert delta.mywcom_fiber_segment(design/SP002,502,update)
+   insert delta.mywcom_fiber_segment(design/SP002,503,update)
+   insert delta.mywcom_fiber_segment(design/SP002,504,update)
+   insert delta.mywcom_fiber_segment(design/SP002,505,update)
+   insert delta.mywcom_fiber_segment(design/SP002,506,update)
+   insert delta.mywcom_fiber_segment(design/SP002,507,update)
+   insert delta.mywcom_fiber_segment(design/SP002,508,update)
+   insert delta.mywcom_fiber_segment(design/SP002,509,update)
+   insert delta.mywcom_fiber_segment(design/SP002,510,update)
+   insert delta.mywcom_fiber_segment(design/SP002,511,update)
+   insert delta.mywcom_fiber_segment(design/SP002,512,update)
+   insert delta.mywcom_fiber_segment(design/SP002,513,update)
+   insert delta.mywcom_fiber_segment(design/SP002,514,update)
+   insert delta.mywcom_fiber_segment(design/SP002,515,update)
+   insert delta.mywcom_fiber_segment(design/SP002,516,update)
+   insert delta.splice_closure(design/SP002,100000,insert)
+   insert delta.splice_closure(design/SP002,100001,insert)
+   insert delta.splice_closure(design/SP002,100002,insert)
+
+Request: POST: /modules/comms/fiber_path/find
+Response: 200 (200 OK)
+
+
+Request: POST: /modules/comms/fiber_path/create_circuit
+Response: 200 (200 OK)
+{
+   "bbox": [
+      0.1399952173233,
+      52.2328145288195,
+      0.1448285229346,
+      52.2363556962577
+   ],
+   "geometry": {
+      "coordinates": [
+         [
+            0.1416571884668,
+            52.2328145288195
+         ],
+         [
+            0.1417024433613,
+            52.2328831323955
+         ],
+         [
+            0.1415106654167,
+            52.2329365210303
+         ],
+         [
+            0.1412934064865,
+            52.2329915523251
+         ],
+         [
+            0.1412746310234,
+            52.2330137290963
+         ],
+         [
+            0.141199529171,
+            52.2330449408295
+         ],
+         [
+            0.1411056518555,
+            52.2330695816561
+         ],
+         [
+            0.1409634947777,
+            52.2330975079096
+         ],
+         [
+            0.140845477581,
+            52.2331352904599
+         ],
+         [
+            0.1407113671303,
+            52.2331796438476
+         ],
+         [
+            0.1406416296959,
+            52.2332124981802
+         ],
+         [
+            0.140522941947,
+            52.2332732786315
+         ],
+         [
+            0.1404485106468,
+            52.2333012047568
+         ],
+         [
+            0.1403841376305,
+            52.2333537715334
+         ],
+         [
+            0.140309035778,
+            52.2334129090827
+         ],
+         [
+            0.1401722431183,
+            52.2334819027906
+         ],
+         [
+            0.1400783658028,
+            52.2336100336779
+         ],
+         [
+            0.1400300860405,
+            52.2337102383449
+         ],
+         [
+            0.1400086283684,
+            52.2338022293154
+         ],
+         [
+            0.1399952173233,
+            52.2339361086908
+         ],
+         [
+            0.1399978995323,
+            52.234012493675
+         ],
+         [
+            0.1400193572044,
+            52.2341619778874
+         ],
+         [
+            0.1400756835938,
+            52.2342605386312
+         ],
+         [
+            0.14011323452,
+            52.2343393870687
+         ],
+         [
+            0.1402151584625,
+            52.2344576594622
+         ],
+         [
+            0.1402661204338,
+            52.2345200808762
+         ],
+         [
+            0.1403707265854,
+            52.2346104275042
+         ],
+         [
+            0.140472650528,
+            52.2347184325499
+         ],
+         [
+            0.1404404640198,
+            52.2347582670442
+         ],
+         [
+            0.1405397057533,
+            52.2348946075169
+         ],
+         [
+            0.140660405159,
+            52.2350210916773
+         ],
+         [
+            0.1407811045647,
+            52.2351377196097
+         ],
+         [
+            0.1409460604191,
+            52.2352535259154
+         ],
+         [
+            0.1410520076752,
+            52.2352839147541
+         ],
+         [
+            0.1412451267242,
+            52.2354218962465
+         ],
+         [
+            0.1412746310234,
+            52.235471175247
+         ],
+         [
+            0.1413336396217,
+            52.2355352378658
+         ],
+         [
+            0.141376554966,
+            52.2355910872529
+         ],
+         [
+            0.1414811611176,
+            52.235688002199
+         ],
+         [
+            0.1414892077446,
+            52.2357241399214
+         ],
+         [
+            0.1415374875069,
+            52.2357734185863
+         ],
+         [
+            0.1415938138962,
+            52.2358292676737
+         ],
+         [
+            0.141744017601,
+            52.2359179690211
+         ],
+         [
+            0.1418218016624,
+            52.2359672474708
+         ],
+         [
+            0.1419425010681,
+            52.2360280241501
+         ],
+         [
+            0.1420524716377,
+            52.2360658042061
+         ],
+         [
+            0.1421731710434,
+            52.2361027629254
+         ],
+         [
+            0.1422938704491,
+            52.2361298659667
+         ],
+         [
+            0.1423904299736,
+            52.2361512198663
+         ],
+         [
+            0.1425191760063,
+            52.2361742163622
+         ],
+         [
+            0.142647922039,
+            52.2361873572116
+         ],
+         [
+            0.1427257061005,
+            52.2361972128461
+         ],
+         [
+            0.1428061723709,
+            52.2362054258732
+         ],
+         [
+            0.1429644227028,
+            52.2362234945274
+         ],
+         [
+            0.1432621479034,
+            52.2362415631742
+         ],
+         [
+            0.1434445381165,
+            52.2362629170202
+         ],
+         [
+            0.1436054706573,
+            52.2362842708558
+         ],
+         [
+            0.1438656449318,
+            52.2363039820796
+         ],
+         [
+            0.1440319418907,
+            52.2363253358954
+         ],
+         [
+            0.1441419124603,
+            52.2363056246811
+         ],
+         [
+            0.14444231987,
+            52.2362941264688
+         ],
+         [
+            0.1445952057838,
+            52.2362859134581
+         ],
+         [
+            0.144799053669,
+            52.2362678448293
+         ],
+         [
+            0.1448285229346,
+            52.2363556962577
+         ]
+      ],
+      "type": "LineString"
+   },
+   "id": 100001,
+   "myw": {
+      "change_type": "insert",
+      "delta": "design/SP002",
+      "feature_type": "ftth_circuit",
+      "short_description": "Direct ()",
+      "title": "Circuit: C2"
+   },
+   "properties": {
+      "address": null,
+      "customer": null,
+      "date": null,
+      "id": 100001,
+      "in_feature": "fiber_shelf/18",
+      "in_pins": "out:10",
+      "name": "C2",
+      "out_feature": "fiber_shelf/19",
+      "out_pins": "in:2",
+      "service_type": "Direct",
+      "status": null
+   },
+   "type": "Feature"
+}
+
+
+DATABASE CHANGES: AFTER CREATING CIRCUIT 2
+   update delta.fiber_shelf(design/SP002,18,update) fields=(circuits)
+   update delta.fiber_shelf(design/SP002,19,update) fields=(circuits)
+   insert delta.ftth_circuit(design/SP002,100001,insert)
+   insert delta.mywcom_fiber_connection(design/SP002,100003,insert)
+   insert delta.mywcom_fiber_connection(design/SP002,100004,insert)
+   insert delta.mywcom_fiber_connection(design/SP002,100005,insert)
+   update delta.mywcom_fiber_segment(design/SP002,499,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,500,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,501,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,502,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,503,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,504,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,505,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,506,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,507,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,508,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,509,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,510,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,511,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,512,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,513,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,514,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,515,update) fields=(circuits)
+   update delta.mywcom_fiber_segment(design/SP002,516,update) fields=(circuits)
+

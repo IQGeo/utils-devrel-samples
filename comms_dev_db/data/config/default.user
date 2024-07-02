@@ -1,0 +1,364 @@
+{
+    "username": "default",
+    "email": " ",
+    "password": "b34ed43434bf57ebedb84b4714d5c669",
+    "locked_out": false,
+    "roles": [
+        "Administrator",
+        "Data Editor"
+    ],
+    "state": {
+        "mywcom": {
+            "map": {
+                "center": {
+                    "lat": 52.22404601786024,
+                    "lng": 0.13657137751579287
+                },
+                "basemapName": "Google",
+                "zoom": 19
+            },
+            "layout": {
+                "controlsState": {
+                    "layers": {
+                        "layerList": [
+                            {
+                                "turned_on": true,
+                                "type": "layer",
+                                "layer_name": "mywcom_structures"
+                            },
+                            {
+                                "turned_on": true,
+                                "type": "layer_group",
+                                "layer_name": "mywcom_fiber_group",
+                                "subLayers": [
+                                    {
+                                        "turned_on": true,
+                                        "type": "layer_group_item",
+                                        "layer_name": "mywcom_equipment"
+                                    },
+                                    {
+                                        "turned_on": false,
+                                        "type": "layer_group_item",
+                                        "layer_name": "mywcom_cables"
+                                    }
+                                ]
+                            },
+                            {
+                                "turned_on": true,
+                                "type": "layer_group",
+                                "layer_name": "mywcom_copper_group",
+                                "subLayers": [
+                                    {
+                                        "turned_on": true,
+                                        "type": "layer_group_item",
+                                        "layer_name": "mywcom_copper_equipment"
+                                    },
+                                    {
+                                        "turned_on": false,
+                                        "type": "layer_group_item",
+                                        "layer_name": "mywcom_copper_cables"
+                                    }
+                                ]
+                            },
+                            {
+                                "turned_on": false,
+                                "type": "layer_group",
+                                "layer_name": "mywcom_coax_group",
+                                "subLayers": [
+                                    {
+                                        "turned_on": false,
+                                        "type": "layer_group_item",
+                                        "layer_name": "mywcom_coax_equipment"
+                                    },
+                                    {
+                                        "turned_on": false,
+                                        "type": "layer_group_item",
+                                        "layer_name": "mywcom_coax_cables"
+                                    }
+                                ]
+                            },
+                            {
+                                "turned_on": true,
+                                "type": "layer_group",
+                                "layer_name": "mywcom_coax_offset_group",
+                                "subLayers": [
+                                    {
+                                        "turned_on": true,
+                                        "type": "layer_group_item",
+                                        "layer_name": "mywcom_coax_offset_equipment"
+                                    },
+                                    {
+                                        "turned_on": true,
+                                        "type": "layer_group_item",
+                                        "layer_name": "mywcom_coax_offset_cables"
+                                    }
+                                ]
+                            },
+                            {
+                                "turned_on": false,
+                                "type": "layer",
+                                "layer_name": "mywcom_conduits"
+                            },
+                            {
+                                "turned_on": false,
+                                "type": "layer",
+                                "layer_name": "blown_fiber_tubes"
+                            },
+                            {
+                                "turned_on": true,
+                                "type": "layer",
+                                "layer_name": "Service Areas"
+                            },
+                            {
+                                "turned_on": false,
+                                "type": "layer",
+                                "layer_name": "Addresses"
+                            },
+                            {
+                                "turned_on": false,
+                                "type": "layer_group",
+                                "layer_name": "deltas",
+                                "subLayers": [
+                                    {
+                                        "turned_on": true,
+                                        "type": "layer_group_item",
+                                        "layer_name": "designs"
+                                    },
+                                    {
+                                        "turned_on": false,
+                                        "type": "layer_group_item",
+                                        "layer_name": "delta_structures"
+                                    },
+                                    {
+                                        "turned_on": false,
+                                        "type": "layer_group_item",
+                                        "layer_name": "delta_cables"
+                                    }
+                                ]
+                            },
+                            {
+                                "turned_on": true,
+                                "type": "layer",
+                                "layer_name": "iqgapp_markup_layer"
+                            }
+                        ],
+                        "v": 2
+                    },
+                    "search": {
+                        "recentSearches": []
+                    },
+                    "featureBriefControl": {
+                        "collapsed": true
+                    },
+                    "details": {
+                        "viewersState": {
+                            "collapsed": false,
+                            "attributeDisplayMode": "medium"
+                        }
+                    }
+                },
+                "westClosed": false,
+                "eastClosed": true
+            },
+            "plugins": {
+                "minimap": {
+                    "enabled": false
+                },
+                "mousePositionControl": {
+                    "enabled": false
+                },
+                "zoomLevelControl": {
+                    "enabled": false
+                },
+                "internals": {
+                    "collapsed": false
+                },
+                "measureTool": {
+                    "defaultAreaUnit": "m^2",
+                    "defaultLengthUnit": "m"
+                },
+                "magnifyingGlass": {
+                    "enabled": false
+                },
+                "streetview": {
+                    "collapsed": true
+                },
+                "structureMode": {
+                    "structurePaletteList": [
+                        {
+                            "name": "Manhole",
+                            "feature_type": "manhole",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Cabinet",
+                            "feature_type": "cabinet",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Pole (Wood)",
+                            "feature_type": "pole",
+                            "properties": {
+                                "type": "Wood",
+                                "height": 5
+                            }
+                        },
+                        {
+                            "name": "Pole (Steel)",
+                            "feature_type": "pole",
+                            "properties": {
+                                "type": "Steel"
+                            }
+                        },
+                        {
+                            "name": "Wall Box",
+                            "feature_type": "wall_box",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Overhead Route",
+                            "feature_type": "oh_route",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Underground Route",
+                            "feature_type": "ug_route",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Conduit",
+                            "feature_type": "conduit",
+                            "properties": {}
+                        },
+                        {
+                            "name": "BF Tube (12)",
+                            "feature_type": "blown_fiber_tube",
+                            "properties": {
+                                "bundle_size": 12
+                            }
+                        }
+                    ]
+                },
+                "equipmentMode": {
+                    "equipmentPaletteList": [
+                        {
+                            "name": "Cable (x144)",
+                            "feature_type": "fiber_cable",
+                            "properties": {
+                                "type": "External",
+                                "specification": "D-144-LA-5L-F12NS",
+                                "fiber_count": 144
+                            }
+                        },
+                        {
+                            "name": "Cable (x48)",
+                            "feature_type": "fiber_cable",
+                            "properties": {
+                                "type": "External",
+                                "fiber_count": 48
+                            }
+                        },
+                        {
+                            "name": "Drop Cable (x4)",
+                            "feature_type": "fiber_cable",
+                            "properties": {
+                                "type": "Drop",
+                                "fiber_count": 4
+                            }
+                        },
+                        {
+                            "name": "Patch Panel",
+                            "feature_type": "fiber_patch_panel",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Splice Closure",
+                            "feature_type": "splice_closure",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Splice Tray",
+                            "feature_type": "fiber_splice_tray",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Rack",
+                            "feature_type": "rack",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Fiber Shelf",
+                            "feature_type": "fiber_shelf",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Copper Shelf",
+                            "feature_type": "copper_shelf",
+                            "properties": {}
+                        },
+                        {
+                            "name": "Slot",
+                            "feature_type": "slot",
+                            "properties": {}
+                        },
+                        {
+                            "name": "OLT 8-Way",
+                            "feature_type": "fiber_olt",
+                            "properties": {
+                                "n_fiber_out_ports": 8
+                            }
+                        },
+                        {
+                            "name": "Multiplexer 8-Way",
+                            "feature_type": "fiber_mux",
+                            "properties": {
+                                "n_fiber_in_ports": 8
+                            }
+                        },
+                        {
+                            "name": "Multiplexer 12-Way",
+                            "feature_type": "fiber_mux",
+                            "properties": {
+                                "n_fiber_in_ports": 12
+                            }
+                        },
+                        {
+                            "name": "Splitter 4-Way",
+                            "feature_type": "fiber_splitter",
+                            "properties": {
+                                "n_fiber_out_ports": 4
+                            }
+                        },
+                        {
+                            "name": "Splitter 8-Way",
+                            "feature_type": "fiber_splitter",
+                            "properties": {
+                                "n_fiber_out_ports": 8
+                            }
+                        },
+                        {
+                            "name": "Fiber Tap",
+                            "feature_type": "fiber_tap",
+                            "properties": {}
+                        },
+                        {
+                            "name": "ONT",
+                            "feature_type": "fiber_ont",
+                            "properties": {}
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "bookmarks": {
+        "Home": {
+            "centre": [
+                0.1365727,
+                52.224046
+            ],
+            "zoom": 19,
+            "private": false
+        }
+    }
+}

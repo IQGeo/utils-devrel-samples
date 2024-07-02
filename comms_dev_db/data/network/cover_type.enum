@@ -1,0 +1,11 @@
+{
+   "name": "cover_type", 
+   "description": "Surface material for underground routes", 
+   "values": [
+       "Grass", 
+       "Paving",
+       "Brick",
+       "Tarmac",
+       "Mixed"
+   ]
+}

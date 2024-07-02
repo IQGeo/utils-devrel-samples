@@ -1,0 +1,32 @@
+.modal-container {
+    width: 200px;
+    height: 200px;
+    background: #ff9900;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    align-items: center;
+}
+
+.draggable-modal {
+    &_button-container {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+
+        button {
+            line-height: 0;
+        }
+    }
+
+    &-form {
+        padding: 15px;
+    }
+}
+
+.font-size {
+    &-normal {
+        font-size: 1em !important;
+    }
+}

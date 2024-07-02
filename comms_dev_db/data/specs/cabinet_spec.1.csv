@@ -1,0 +1,6 @@
+name,model,description,manufacturer,type,powered,cost,cost_currency,retired
+CS-A-100451,A-100451,"Hercules Cabinet, Sealed to outside environment, Double wall construction",CommScope,Macro Cell Site Enclosure,TRUE,45,$,FALSE
+CS-A-100586,A-100586,"Komodo Cabinet,  Sealed to outside environment, Double wall construction",CommScope,Micro Cell Site Enclosure,TRUE,60,$,FALSE
+CS-A-100468,A-100468,"Three Phase Meter Cabinet,  Sealed to outside environment, Double wall construction",CommScope,Power Supply Enclosure,TRUE,85,$,FALSE
+CS-A-100324,A-100324,"Mini G Cabinet, Sealed to outside environment, Double wall construction",CommScope,Micro Cell Site Enclosure,TRUE,105,$,FALSE
+CS-A-100455,A-100455,"Single Phase Meter Cabinet,  Sealed to outside environment, Double wall construction",CommScope,Power Supply Enclosure,TRUE,125,$,FALSE

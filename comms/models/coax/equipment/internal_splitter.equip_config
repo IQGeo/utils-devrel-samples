@@ -1,0 +1,23 @@
+{
+    "image": "modules/comms/images/features/coax_splitter.svg",
+    "housings": [
+        "rack",
+        "slot",
+        "manhole",
+        "cabinet",
+        "splice_closure"
+    ],
+    "function": "splitter",
+    "palette": true,
+    "tech": "coax",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/coax_splitter.svg:150:75:24"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/coax_splitter.svg:75:75:1.5m",
+        "geometry": "offset_geom"
+    },
+    "offset": true
+}

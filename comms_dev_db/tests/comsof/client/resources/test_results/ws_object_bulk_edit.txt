@@ -1,0 +1,143 @@
+TEST: AFTER SELECT DEMAND POINTS
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: IN Demand Point: 23
+    label: IN Demand Point: 23
+    label: IN Demand Point: 29
+    label: IN Demand Point: 29
+    label: IN Demand Point: 33
+    label: IN Demand Point: 33
+    label: IN Demand Point: 18
+    label: IN Demand Point: 18
+    label: IN Demand Point: 39
+    label: IN Demand Point: 39
+    label: IN Demand Point: 43
+    label: IN Demand Point: 43
+    label: IN Demand Point: 25
+    label: IN Demand Point: 25
+    label: IN Demand Point: 21
+    label: IN Demand Point: 21
+    label: IN Demand Point: 20
+    label: IN Demand Point: 20
+    label: IN Demand Point: 31
+    label: IN Demand Point: 31
+    label: IN Demand Point: 41
+    label: IN Demand Point: 41
+
+
+TEST: DEMAND POINTS BULK EDITOR
+    label: IN Demand Point: 23
+    label: IN Demand Point: 29
+    label: IN Demand Point: 33
+    label: IN Demand Point: 18
+    label: IN Demand Point: 39
+    label: IN Demand Point: 43
+    label: IN Demand Point: 25
+    label: IN Demand Point: 21
+    label: IN Demand Point: 20
+    label: IN Demand Point: 31
+    label: IN Demand Point: 41
+    label: Bulk Edit - 11 objects
+    button: Close
+    label: Include*
+    label: *
+    label: feature-edit-input
+    input: true
+    label: pon_homes*
+    label: feature-edit-input
+    input: 1
+    label: p2p_homes*
+    label: feature-edit-input
+    input: 
+    label: connection*
+    label: feature-edit-input
+    input: 
+    label: identifier*
+    label: feature-edit-input
+    input: 
+    label: pon_m_rev*
+    label: feature-edit-input
+    input: 
+    label: p2p_m_rev*
+    label: feature-edit-input
+    input: 
+    label: bldg_id*
+    label: feature-edit-input
+    input: 
+    label: streetname*
+    label: feature-edit-input
+    input: 
+    label: gistool_id*
+    label: feature-edit-input
+    input: 
+    button: Cancel
+    button (disabled): Save
+
+
+TEST: AFTER SAVE DEMAND POINTS
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Bulk Edit
+    list item: Show in grid
+    list item: CSV JSON KML KMZ DXF
+    list item: Zoom to all
+    list item: More...
+    label: IN Demand Point: 23
+    label: IN Demand Point: 23
+    label: IN Demand Point: 29
+    label: IN Demand Point: 29
+    label: IN Demand Point: 33
+    label: IN Demand Point: 33
+    label: IN Demand Point: 18
+    label: IN Demand Point: 18
+    label: IN Demand Point: 39
+    label: IN Demand Point: 39
+    label: IN Demand Point: 43
+    label: IN Demand Point: 43
+    label: IN Demand Point: 25
+    label: IN Demand Point: 25
+    label: IN Demand Point: 21
+    label: IN Demand Point: 21
+    label: IN Demand Point: 20
+    label: IN Demand Point: 20
+    label: IN Demand Point: 31
+    label: IN Demand Point: 31
+    label: IN Demand Point: 41
+    label: IN Demand Point: 41
+
+
+TEST: AFTER RE-SELECT DEMAND POINT
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: IN Demand Point: 31
+    label: Id
+    label: 31
+    label: Include
+    label: false
+    label: pon_homes
+    label: 4
+    label: bldg_id
+    label: 12345
+
+

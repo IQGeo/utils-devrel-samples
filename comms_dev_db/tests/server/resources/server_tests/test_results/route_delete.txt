@@ -1,0 +1,38 @@
+Request: DELETE:/modules/comms/feature/ug_route/3?delta=design/NB217
+Response: 502 (502 Bad Gateway)
+
+
+DATABASE CHANGES: DELETE FAIL: CONDUIT HAS CABLE
+
+VALIDATION ERRORS: DELETE FAIL: CONDUIT HAS CABLE
+Request: DELETE:/modules/comms/feature/manhole/97?delta=design/NB217
+Response: 200 (200 OK)
+
+
+Request: DELETE:/modules/comms/feature/ug_route/134?delta=design/NB217
+Response: 200 (200 OK)
+
+
+DATABASE CHANGES: DELETE ROUTE JUNCTION
+   insert delta.manhole(design/NB217,97,delete)
+   insert delta.ug_route(design/NB217,134,delete)
+
+VALIDATION ERRORS: DELETE ROUTE JUNCTION
+Request: DELETE:/modules/comms/feature/ug_route/322?delta=design/NB217
+Response: 200 (200 OK)
+
+
+DATABASE CHANGES: DELETE SUCCESS
+   insert delta.ug_route(design/NB217,322,delete)
+
+VALIDATION ERRORS: DELETE SUCCESS
+Request: DELETE:/modules/comms/feature/ug_route/130?delta=design/NB217
+Response: 200 (200 OK)
+
+
+DATABASE CHANGES: DELETE SUCCESS
+   insert delta.conduit(design/NB217,145,delete)
+   insert delta.conduit(design/NB217,236,delete)
+   insert delta.ug_route(design/NB217,130,delete)
+
+VALIDATION ERRORS: DELETE SUCCESS

@@ -1,0 +1,2 @@
+# Restore latest archive from shared dir
+myw_db ${MYW_COMMS_DEV_DB} restore ${MYW_COMMS_ARCHIVE_DIR}/*.backup

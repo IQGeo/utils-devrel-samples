@@ -1,0 +1,138 @@
+{
+    "datasource": "myworld",
+    "name": "copper_cable",
+    "external_name": "{:copper_copper_cable_field_name}",
+    "title": "{display_name}: [name] ([copper_count])",
+    "track_changes": true,
+    "versioned": true,
+    "geom_indexed": true,
+    "editable": {
+        "insert_from_gui": true,
+        "update_from_gui": true,
+        "delete_from_gui": true
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "specification",
+            "external_name": "{:wall_box_feature_specification_name}",
+            "type": "foreign_key(copper_cable_spec)"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "owner",
+            "external_name": "{:copper_owner_field_name}",
+            "type": "string(32)"
+        },
+        {
+            "name": "status",
+            "external_name": "{:copper_status_field_name}",
+            "type": "string(32)"
+        },
+        {
+            "name": "directed",
+            "external_name": "{:fiber_cable_feature_directed_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": true
+        },
+        {
+            "name": "pressureized",
+            "external_name": "{:copper_pressurized_field_name}",
+            "type": "boolean"
+        },
+        {
+            "name": "measured_length",
+            "external_name": "{:conduit_feature_length_name}",
+            "type": "double",
+            "unit": "m",
+            "display_unit": "ft",
+            "unit_scale": "length",
+            "display_format": "1"
+        },
+        {
+            "name": "calculated_length",
+            "external_name": "{:copper_calculated_length_field_name}",
+            "type": "reference_set()",
+            "value": "method(length)"
+        },
+        {
+            "name": "path",
+            "external_name": "{:path_field_name}",
+            "type": "linestring",
+            "mandatory": "true"
+        },
+        {
+            "name": "placement_path",
+            "external_name": "{:copper_placement_field_name}",
+            "type": "linestring"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "installation_date",
+            "external_name": "{:copper_installed_field_name}",
+            "type": "date"
+        },
+        {
+            "name": "copper_count",
+            "external_name": "{:copper_pair_count_field_name}",
+            "type": "integer"
+        },
+        {
+            "name": "splices",
+            "external_name": "{:fiber_cable_feature_splices_name}",
+            "type": "reference_set",
+            "value": "method(splices)",
+            "read_only": true
+        },
+        {
+            "name": "connections",
+            "external_name": "{:fiber_cable_feature_connections_name}",
+            "type": "reference_set",
+            "value": "method(connections)",
+            "read_only": true
+        },
+        {
+            "name": "cable_slacks",
+            "external_name": "{:fiber_cable_feature_cable_slacks_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_copper_slack.cable)",
+            "read_only": true
+        },
+        {
+            "name": "cable_segments",
+            "external_name": "{:fiber_cable_feature_cable_segments_name}",
+            "type": "reference_set",
+            "value": "select(mywcom_copper_segment.cable)",
+            "read_only": true
+        },
+        {
+            "name": "gauge",
+            "external_name": "{:copper_gauge_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "diameter",
+            "external_name": "{:conduit_spec_diameter_name}",
+            "type": "double",
+            "unit": "mm",
+            "display_unit": "in",
+            "unit_scale": "length",
+            "display_format": "2"
+        }
+    ]
+}

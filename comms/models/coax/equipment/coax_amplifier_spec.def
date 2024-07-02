@@ -1,0 +1,117 @@
+{
+    "datasource": "myworld",
+    "name": "coax_amplifier_spec",
+    "external_name": "{:coax_amplifier_spec_field_name}",
+    "title": "[name]",
+    "short_description": null,
+    "track_changes": true,
+    "versioned": false,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": false,
+        "delete_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "generator": "sequence"
+        },
+        {
+            "name": "name",
+            "external_name": "{:name_field_name}",
+            "type": "string(64)",
+            "key": true
+        },
+        {
+            "name": "cost",
+            "external_name": "{:spec_cost_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "cost_currency",
+            "external_name": "{:spec_currency_field_name}",
+            "type": "string(3)"
+        },
+        {
+            "name": "labor_costs",
+            "external_name": "{:feature_labor_costs_name}",
+            "type": "string()"
+        },
+        {
+            "name": "retired",
+            "external_name": "{:spec_retired_field_name}",
+            "type": "boolean",
+            "mandatory": true,
+            "default": false
+        },
+        {
+            "name": "manufacturer",
+            "external_name": "{:spec_manufacturer_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "model",
+            "external_name": "{:spec_model_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "part_number",
+            "external_name": "{:coax_part_number_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "frequency",
+            "external_name": "{:coax_design_frequency_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "class",
+            "external_name": "{:copper_class_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "max_ac_current_bypass",
+            "external_name": "{:copper_max_ac_bypass_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "min_voltage",
+            "external_name": "{:copper_minimum_voltage_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "interstage_tilt",
+            "external_name": "{:copper_interstage_tilt_field_name}",
+            "type": "double"
+        },
+        {
+            "name": "internal_splitter_type",
+            "external_name": "{:copper_splitter_type_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "output_port_type",
+            "external_name": "{:copper_out_port_type_field_name}",
+            "type": "string(64)"
+        },
+        {
+            "name": "custom_cascade",
+            "external_name": "{:copper_custom_cascade_field_name}",
+            "type": "boolean"
+        },
+        {
+            "name": "n_coax_in_ports",
+            "external_name": "{:n_in_ports_field_name}",
+            "type": "integer",
+            "default": 1
+        },
+        {
+            "name": "n_coax_out_ports",
+            "external_name": "{:n_out_ports_field_name}",
+            "type": "integer"
+        }
+    ],
+    "queries": []
+}

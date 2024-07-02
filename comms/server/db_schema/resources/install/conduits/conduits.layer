@@ -1,0 +1,26 @@
+{
+    "name": "mywcom_conduits",
+    "display_name": "{:conduits_display_name}",
+    "category": "overlay",
+    "code": "mywcom_co",
+    "datasource": "myworld",
+    "spec": {
+        "rendering": "vector",
+        "isStatic": false,
+        "nativeAppMode": "switchable"
+    },
+    "transparency": 0,
+    "min_scale": 15,
+    "max_scale": 22,
+    "feature_types": [
+        {
+            "name": "mywcom_conduit_run",
+            "field_name": "path",
+            "min_vis": 0,
+            "max_vis": 0,
+            "min_select": 0,
+            "max_select": 0,
+            "line_style": "green:2:solid"
+        }
+    ]
+}

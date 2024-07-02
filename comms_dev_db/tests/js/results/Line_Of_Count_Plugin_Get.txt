@@ -1,0 +1,14 @@
+
+*** GET MANY
+Set delta to: design/NB217
+LOC CONFIGS
+mywcom_copper_segment/1
+WH-1 [1 - 100] Active"
+mywcom_copper_segment/2
+WH-1 [1 - 100] Active"
+mywcom_copper_segment/9
+WH-1 [1 - 25] Active"
+mywcom_copper_segment/13
+WH-1 [34 - 100] Active"
+copper_shelf/1
+WH-1 [1 - 100] Active"

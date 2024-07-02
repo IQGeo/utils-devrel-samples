@@ -1,0 +1,4 @@
+id,length,,housing,cable,
+mywcom_fiber_slack/6000,10,,cabinet/8000,fiber_cable/8001,
+mywcom_fiber_slack/6001,15,,manhole/8003,fiber_cable/8006,
+mywcom_fiber_slack/6003,5,,manhole/8003,fiber_cable/8004,

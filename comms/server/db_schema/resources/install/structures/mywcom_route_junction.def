@@ -1,0 +1,49 @@
+{
+    "datasource": "myworld",
+    "name": "mywcom_route_junction",
+    "external_name": "{:mywcom_route_junction_feature_external_name}",
+    "title": "{display_name}: [id]",
+    "short_description": "{:mywcom_route_junction_feature_short_desc}",
+    "track_changes": true,
+    "versioned": true,
+    "editable": {
+        "insert_from_gui": false,
+        "update_from_gui": true,
+        "delete_from_gui": false
+    },
+    "fields": [
+        {
+            "name": "id",
+            "external_name": "{:id_field_name}",
+            "type": "integer",
+            "key": true,
+            "generator": "sequence"
+        },
+        {
+            "name": "routes",
+            "type": "reference_set",
+            "external_name": "{:mywcom_route_junction_feature_routes_name}",
+            "value": "select()"
+        },
+        {
+            "name": "in_fiber_segments",
+            "type": "reference_set",
+            "value": "method(in_fiber_segments)"
+        },
+        {
+            "name": "out_fiber_segments",
+            "type": "reference_set",
+            "value": "method(out_fiber_segments)"
+        },
+        {
+            "name": "cables",
+            "type": "reference_set",
+            "value": "method(cables)"
+        },
+        {
+            "name": "location",
+            "external_name": "{:location_field_name}",
+            "type": "point"
+        }
+    ]
+}

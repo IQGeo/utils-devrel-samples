@@ -1,0 +1,17 @@
+{
+    "image": "modules/comms/images/features/fiber_cable.svg",
+    "housings": [
+        "ug_route",
+        "oh_route",
+        "conduit",
+        "blown_fiber_tube",
+        "building",
+        "mdu"
+    ],
+    "tech" : "fiber",
+    "palette": true,
+    "layer": {
+        "line_style": "#9900ff:2:solid:none:none",
+        "text_style": "name:#9900ff:12:bottom:centre:::17:"
+    }
+}

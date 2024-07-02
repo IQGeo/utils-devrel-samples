@@ -1,0 +1,164 @@
+TEST: WORKSPACE LIST
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Comsof Design: arbury
+    label: Details
+    label: Cambridge test area
+    list item: Open
+    list item: System User
+    list item: Check design
+    list item: Fix conflicts
+    list item: Generate BOM report
+    list item: Redraw Bounds
+    list item: Import data
+    list item: Close
+  header: Workspaces
+    label: Id Name Rules State Busy
+    label: 2 Test Area Hybrid new
+    label: 2
+    label: Test Area
+    label: Hybrid
+    label: new
+    label: 3 Full Area Hybrid new
+    label: 3
+    label: Full Area
+    label: Hybrid
+    label: new
+    label: 7 Feeder Network Hybrid new
+    label: 7
+    label: Feeder Network
+    label: Hybrid
+    label: new
+
+
+TEST: BEFORE SAVE
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+    label: Owner*
+    label: *
+    label: feature-edit-input
+    input (disabled): Comsof Design: arbury
+    button: Edit feature
+    label: Name*
+    label: *
+    label: feature-edit-input
+    input: Test
+    label: Details*
+    label: feature-edit-input
+    input: 
+    label: Project*
+    label: *
+    label: DESIGN Mode
+    input: 
+    label: DESIGN Mode
+    label: Cloud*
+    label: *
+    label: IQGeo Integration
+    input: 
+    label: IQGeo Integration
+    label: Engine*
+    label: *
+    label: Fiber Designer
+    input: 
+    label: Fiber Designer
+    label: Version*
+    label: *
+    label: 23.2.1.60
+    input: 
+    label: 23.2.1.60
+    label: Rules*
+    label: *
+    label: Hybrid
+    input: 
+    label: Hybrid
+    label: Populate From*
+    label: *
+    label: Addresses
+    input: 
+    label: Addresses
+    label: Pre-processing Steps*
+    label: feature-edit-input
+    input (disabled): /streetDoubler /createBuildingTrenches /createTransitions /createCrossings
+    label: Calculation Steps*
+    label: *
+    label: feature-edit-input
+    input (disabled): /calculate
+    label: Import*
+    label: *
+    label: All Layers
+    input: 
+    label: All Layers
+    label: Coord System*
+    label: feature-edit-input
+    input: 
+  header: Boundary
+    button: Cancel
+    button: Save
+
+
+TEST: AFTER SAVE
+    list item: Details
+    list item: Layers
+    list item: Help
+    list item: Go back
+    list item: Go forward
+    list item: Clear selections
+    list item: Current results
+    list item: Edit
+    list item: Get directions to object
+    list item: Zoom to object
+  header: Workspace 9: Test
+    label: new
+    sub-header: Basic
+    label: Owner
+    label: Comsof Design: arbury
+    label: Comsof Design: arbury
+    label: Name
+    label: Test
+    label: State
+    label: new
+    label: Busy
+    label: false
+    sub-header: Options
+    label: Project
+    label: DESIGN Mode
+    label: Cloud
+    label: IQGeo Integration
+    label: Engine
+    label: Fiber Designer
+    label: Version
+    label: 23.2.1.60
+    label: Rules
+    label: hybrid.rules
+    label: hybrid.rules
+    label: Populate From
+    label: Addresses
+    label: Pre-processing Steps
+    label: /streetDoubler /createBuildingTrenches /createTransitions /createCrossings
+    label: Calculation Steps
+    label: /calculate
+    label: Import
+    label: All Layers
+    label: BOM
+    label: BOM.xlsx
+    label: BOM.xlsx
+    button: Open
+    button (disabled): Accept
+
+

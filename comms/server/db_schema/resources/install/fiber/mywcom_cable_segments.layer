@@ -1,0 +1,34 @@
+{
+    "name": "mywcom_cable_segments",
+    "display_name": "{:cable_segments_layer_display_name}",
+    "category": "overlay",
+    "code": "mywcom_cs",
+    "datasource": "myworld",
+    "spec": {
+        "isStatic": false,
+        "extraOptions": {},
+        "nativeAppVector": null,
+        "nativeAppMode": "switchable",
+        "rendering": "vector",
+        "jsClass": ""
+    },
+    "transparency": 0,
+    "min_scale": 16,
+    "max_scale": 22,
+    "feature_types": [
+        {
+            "name": "mywcom_fiber_segment",
+            "field_name": "path",
+            "line_style": "#a64d79:4:shortdash:none:arrow"
+        },
+        {
+            "name": "mywcom_fiber_connection",
+            "field_name": "location",
+            "min_vis": 0,
+            "max_vis": 0,
+            "min_select": 0,
+            "max_select": 0,
+            "point_style": "circle:#38761d:0.5m:#38761d"
+        }
+    ]
+}

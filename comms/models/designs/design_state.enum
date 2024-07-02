@@ -1,0 +1,13 @@
+[
+    {
+        "name": "design_state",
+        "values": [
+            "{:design_state_new}",
+            "{:design_state_designing}",
+            "{:design_state_awaiting_approval}",
+            "{:design_state_approved}",
+            "{:design_state_building}",
+            "{:design_state_complete}"
+        ]
+    }
+]

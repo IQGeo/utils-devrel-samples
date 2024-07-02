@@ -1,0 +1,5 @@
+#!/bin/bash
+# Bash wrapper to python_to_js.py
+
+# Run command
+python $0.py "$@"

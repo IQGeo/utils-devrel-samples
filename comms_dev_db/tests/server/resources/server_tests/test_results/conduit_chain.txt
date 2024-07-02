@@ -1,0 +1,43 @@
+
+SUB TEST : SHOW TUBE PATH
+    Request: GET: /modules/comms/conduit/blown_fiber_tube/100/chain?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "count": 1,
+       "features": [
+          "blown_fiber_tube(100)    BF Tube: WH-BF-97 : 1"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    
+
+SUB TEST : SHOW BUNDLE PATH
+    Request: GET: /modules/comms/conduit/blown_fiber_bundle/17/chain?delta=design/NB046
+    Response: 200 (200 OK)
+    {
+       "count": 8,
+       "features": [
+          "blown_fiber_bundle(17)    BF Bundle: (8)",
+          "blown_fiber_bundle(18)    BF Bundle: (8)",
+          "blown_fiber_bundle(19)    BF Bundle: (8)",
+          "blown_fiber_bundle(20)    BF Bundle: (8)",
+          "blown_fiber_bundle(21)    BF Bundle: (8)",
+          "blown_fiber_bundle(22)    BF Bundle: (8)",
+          "blown_fiber_bundle(23)    BF Bundle: (8)",
+          "blown_fiber_bundle(24)    BF Bundle: (8)"
+       ],
+       "limit": null,
+       "next_offset": null,
+       "offset": 0,
+       "previous_offset": null,
+       "type": "MywFeatureCollection",
+       "unlimited_count": null
+    }
+    
+    

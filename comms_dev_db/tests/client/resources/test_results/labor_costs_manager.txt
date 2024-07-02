@@ -1,0 +1,92 @@
+TEST: Unit Labor Costs
+    label: Labor Costs Manager
+    button: Close
+    list item: Unit labor costs
+    list item: Linear labor costs
+    list item: Show all labor costs report Show labor costs report
+    list item: Add
+    list item: Import
+    list item: Export to csv
+    button: Show/hide columns
+    input: 
+    label: Name Description Cost Currency Length Unit Linear
+    label: hole_dig Dig hole to 2ft 200 $ false
+    label: tree_trim Trimming trees around hole 100 $ false
+    label: fiber_connect 350 $ false
+    label: level_ground 150 $ false
+    label: survey 450 $ false
+    button: Close
+
+
+
+SUB TEST : Filter
+    TEST: Unit Labor Costs
+        label: Labor Costs Manager
+        button: Close
+        list item: Unit labor costs
+        list item: Linear labor costs
+        list item: Show all labor costs report Show labor costs report
+        list item: Add
+        list item: Import
+        list item: Export to csv
+        button: Show/hide columns
+        input: fiber
+        label: Name Description Cost Currency Length Unit Linear
+        label: fiber_connect 350 $ false
+        button: Close
+    
+    
+    DATABASE CHANGES: AFTER FILTER
+    
+
+SUB TEST : Add
+    DATABASE CHANGES: AFTER ADDING A LABOR COST
+       insert data.mywcom_labor_cost(CS-A-1100-TEST)
+    
+    TEST: AFTER ADDING A LABOR COST
+        label: Labor Costs Manager
+        button: Close
+        list item: Unit labor costs
+        list item: Linear labor costs
+        list item: Show all labor costs report Show labor costs report
+        list item: Add
+        list item: Import
+        list item: Export to csv
+        button: Show/hide columns
+        input: 
+        label: Name Description Cost Currency Length Unit Linear
+        label: hole_dig Dig hole to 2ft 200 $ false
+        label: CS-A-1100-TEST Test labor cost false
+        label: tree_trim Trimming trees around hole 100 $ false
+        label: fiber_connect 350 $ false
+        label: level_ground 150 $ false
+        label: survey 450 $ false
+        button: Close
+    
+    
+
+SUB TEST : Edit
+    DATABASE CHANGES: AFTER EDITING A LABOR COST
+       update data.mywcom_labor_cost(hole_dig) fields=(cost)
+    
+    TEST: AFTER EDITING A LABOR COST
+        label: Labor Costs Manager
+        button: Close
+        list item: Unit labor costs
+        list item: Linear labor costs
+        list item: Show all labor costs report Show labor costs report
+        list item: Add
+        list item: Import
+        list item: Export to csv
+        button: Show/hide columns
+        input: 
+        label: Name Description Cost Currency Length Unit Linear
+        label: hole_dig Dig hole to 2ft 100 $ false
+        label: CS-A-1100-TEST Test labor cost false
+        label: tree_trim Trimming trees around hole 100 $ false
+        label: fiber_connect 350 $ false
+        label: level_ground 150 $ false
+        label: survey 450 $ false
+        button: Close
+    
+    

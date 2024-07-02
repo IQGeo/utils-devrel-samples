@@ -1,0 +1,6871 @@
+
+*** design/NB301
+id: 88
+type: ug_route
+myw: {
+	"title": "Route (Underground): 88"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1336176,
+			52.2236381
+		],
+		[
+			0.1335876,
+			52.2236144
+		],
+		[
+			0.1334522,
+			52.2235447
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 88,
+	"in_structure": "manhole/7",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": 18.26,
+	"out_structure": "manhole/75"
+}
+displayValues: {
+
+}
+
+revert
+[
+
+]
+id: 4801
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Route (Underground): 4801"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1334522,
+			52.2235447
+		],
+		[
+			0.13346403,
+			52.223507
+		],
+		[
+			0.13343185,
+			52.223431
+		],
+		[
+			0.13335943,
+			52.223361
+		],
+		[
+			0.13329237,
+			52.2233353
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4801,
+	"in_structure": "manhole/75",
+	"labor_costs": "cherry_picker,trench_dig",
+	"length": null,
+	"out_structure": "manhole/4801"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4800
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Route (Underground): 4800"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13309121,
+			52.2235021
+		],
+		[
+			0.133177,
+			52.223544
+		],
+		[
+			0.1333259,
+			52.223558
+		],
+		[
+			0.1334522,
+			52.2235447
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Brick",
+	"id": 4800,
+	"in_structure": "manhole/4800",
+	"labor_costs": "cherry_picker",
+	"length": null,
+	"out_structure": "manhole/75"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4800
+type: splice_closure
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Splice Closure: WH-SC-D301:1"
+}
+geom: {
+	"coordinates": [
+		0.1336176,
+		52.2236381
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"housing": "manhole/7",
+	"id": 4800,
+	"installation_date": null,
+	"job_id": null,
+	"labor_costs": null,
+	"name": "WH-SC-D301:1",
+	"root_housing": "manhole/7",
+	"specification": "CS-FOSC450-D6-6-36-1-N0V"
+}
+displayValues: {
+
+}
+
+update
+[
+	"location"
+]
+id: 4800
+type: mywcom_fiber_slack
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Fiber Slack"
+}
+geom: {
+	"coordinates": [
+		0.1334522,
+		52.2235447
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/4800",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"housing": "manhole/75",
+	"id": 4800,
+	"job_id": null,
+	"length": 13,
+	"root_housing": "manhole/75",
+	"storage": null
+}
+displayValues: {
+
+}
+
+update
+[
+	"location"
+]
+id: 4801
+type: conduit
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Conduit: WH-CND-4801"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1334522,
+			52.2235447
+		],
+		[
+			0.13346403,
+			52.223507
+		],
+		[
+			0.13343185,
+			52.223431
+		],
+		[
+			0.13335943,
+			52.223361
+		],
+		[
+			0.13329237,
+			52.2233353
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 200,
+	"housing": "ug_route/4801",
+	"id": 4801,
+	"in_structure": "manhole/75",
+	"installation_date": null,
+	"labor_costs": null,
+	"length": null,
+	"material": null,
+	"name": "WH-CND-4801",
+	"out_structure": "manhole/4801",
+	"owner": null,
+	"root_housing": "ug_route/4801",
+	"specification": null
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4800
+type: conduit
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Conduit: WH-CND-4800"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13309121,
+			52.2235021
+		],
+		[
+			0.133177,
+			52.223544
+		],
+		[
+			0.1333259,
+			52.223558
+		],
+		[
+			0.1334522,
+			52.2235447
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 200,
+	"housing": "ug_route/4800",
+	"id": 4800,
+	"in_structure": "manhole/4800",
+	"installation_date": null,
+	"labor_costs": null,
+	"length": null,
+	"material": null,
+	"name": "WH-CND-4800",
+	"out_structure": "manhole/75",
+	"owner": null,
+	"root_housing": "ug_route/4800",
+	"specification": null
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4804
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Cable Segment: 4804 (fiber_cable/4800)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1334522,
+			52.2235447
+		],
+		[
+			0.1334522,
+			52.2235447
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/4800",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": null,
+	"housing": "mywcom_fiber_slack/4800",
+	"id": 4804,
+	"in_equipment": null,
+	"in_segment": "4800",
+	"in_structure": "manhole/75",
+	"in_tick": null,
+	"length": 13,
+	"out_equipment": null,
+	"out_segment": "4801",
+	"out_structure": "manhole/75",
+	"out_tick": null,
+	"root_housing": "manhole/75"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4803
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Cable Segment: 4803 (fiber_cable/4801)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1334522,
+			52.2235447
+		],
+		[
+			0.13346403,
+			52.223507
+		],
+		[
+			0.13343185,
+			52.223431
+		],
+		[
+			0.13335943,
+			52.223361
+		],
+		[
+			0.13329237,
+			52.2233353
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/4801",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/4801",
+	"id": 4803,
+	"in_equipment": null,
+	"in_segment": "4802",
+	"in_structure": "manhole/75",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "manhole/4801",
+	"out_tick": null,
+	"root_housing": "ug_route/4801"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4802
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Cable Segment: 4802 (fiber_cable/4801)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1336176,
+			52.2236381
+		],
+		[
+			0.1335876,
+			52.2236144
+		],
+		[
+			0.1334522,
+			52.2235447
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/4801",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/88",
+	"id": 4802,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/7",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "4803",
+	"out_structure": "manhole/75",
+	"out_tick": null,
+	"root_housing": "ug_route/88"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4801
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Cable Segment: 4801 (fiber_cable/4800)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1334522,
+			52.2235447
+		],
+		[
+			0.1333259,
+			52.223558
+		],
+		[
+			0.133177,
+			52.223544
+		],
+		[
+			0.13309121,
+			52.2235021
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/4800",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "conduit/4800",
+	"id": 4801,
+	"in_equipment": null,
+	"in_segment": "4804",
+	"in_structure": "manhole/75",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "4805",
+	"out_structure": "manhole/4800",
+	"out_tick": null,
+	"root_housing": "ug_route/4800"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4800
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Cable Segment: 4800 (fiber_cable/4800)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1336176,
+			52.2236381
+		],
+		[
+			0.1335876,
+			52.2236144
+		],
+		[
+			0.1334522,
+			52.2235447
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/4800",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/60",
+	"id": 4800,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/7",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "4804",
+	"out_structure": "manhole/75",
+	"out_tick": null,
+	"root_housing": "ug_route/88"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4801
+type: fiber_cable
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Fiber Cable: WH-FCB-NB301:2 (4)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1336176,
+			52.2236381
+		],
+		[
+			0.1335876,
+			52.2236144
+		],
+		[
+			0.1334522,
+			52.2235447
+		],
+		[
+			0.13346403,
+			52.223507
+		],
+		[
+			0.13343185,
+			52.223431
+		],
+		[
+			0.13335943,
+			52.223361
+		],
+		[
+			0.13329237,
+			52.2233353
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.133602842689,
+				52.2236559959
+			],
+			[
+				0.13329237,
+				52.2233353
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": null,
+	"directed": true,
+	"fiber_count": 4,
+	"id": 4801,
+	"installation_date": null,
+	"job_id": null,
+	"labor_costs": null,
+	"name": "WH-FCB-NB301:2",
+	"owner": null,
+	"specification": null,
+	"tick_mark_spacing": null,
+	"type": null
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4800
+type: fiber_cable
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Fiber Cable: WH-FCB-NB301:1 (12)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1336176,
+			52.2236381
+		],
+		[
+			0.1335876,
+			52.2236144
+		],
+		[
+			0.1334522,
+			52.2235447
+		],
+		[
+			0.1333259,
+			52.223558
+		],
+		[
+			0.133177,
+			52.223544
+		],
+		[
+			0.13309121,
+			52.2235021
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.133602842689,
+				52.2236559959
+			],
+			[
+				0.13309121,
+				52.2235021
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": null,
+	"directed": true,
+	"fiber_count": 12,
+	"id": 4800,
+	"installation_date": null,
+	"job_id": null,
+	"labor_costs": null,
+	"name": "WH-FCB-NB301:1",
+	"owner": null,
+	"specification": null,
+	"tick_mark_spacing": null,
+	"type": null
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4801
+type: mywcom_fiber_connection
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Fiber Connection: 4801"
+}
+geom: {
+	"coordinates": [
+		0.1336176,
+		52.2236381
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"housing": "splice_closure/4800",
+	"id": 4801,
+	"in_high": 33,
+	"in_low": 30,
+	"in_object": "mywcom_fiber_segment/8",
+	"in_side": "out",
+	"out_high": 4,
+	"out_low": 1,
+	"out_object": "mywcom_fiber_segment/4802",
+	"out_side": "in",
+	"root_housing": "manhole/7",
+	"splice": true
+}
+displayValues: {
+
+}
+
+update
+[
+	"location"
+]
+id: 4800
+type: mywcom_fiber_connection
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB301",
+	"title": "Fiber Connection: 4800"
+}
+geom: {
+	"coordinates": [
+		0.1336176,
+		52.2236381
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"housing": "splice_closure/4800",
+	"id": 4800,
+	"in_high": 27,
+	"in_low": 20,
+	"in_object": "mywcom_fiber_segment/8",
+	"in_side": "out",
+	"out_high": 8,
+	"out_low": 1,
+	"out_object": "mywcom_fiber_segment/4800",
+	"out_side": "in",
+	"root_housing": "manhole/7",
+	"splice": true
+}
+displayValues: {
+
+}
+
+update
+[
+	"location"
+]
+DATABASE CHANGES: design/NB301
+    delete delta.ug_route(design/NB301,88,update)
+    update delta.conduit(design/NB301,4800,insert) fields=(path)
+    update delta.conduit(design/NB301,4801,insert) fields=(path)
+    update delta.fiber_cable(design/NB301,4800,insert) fields=(path)
+    update delta.fiber_cable(design/NB301,4801,insert) fields=(path)
+    update delta.mywcom_fiber_connection(design/NB301,4800,insert) fields=(location)
+    update delta.mywcom_fiber_connection(design/NB301,4801,insert) fields=(location)
+    update delta.mywcom_fiber_segment(design/NB301,4800,insert) fields=(path)
+    update delta.mywcom_fiber_segment(design/NB301,4801,insert) fields=(path)
+    update delta.mywcom_fiber_segment(design/NB301,4802,insert) fields=(path)
+    update delta.mywcom_fiber_segment(design/NB301,4803,insert) fields=(path)
+    update delta.mywcom_fiber_segment(design/NB301,4804,insert) fields=(path)
+    update delta.mywcom_fiber_slack(design/NB301,4800,insert) fields=(location)
+    update delta.splice_closure(design/NB301,4800,insert) fields=(location)
+    update delta.ug_route(design/NB301,4800,insert) fields=(path)
+    update delta.ug_route(design/NB301,4801,insert) fields=(path)
+
+
+*** design/NB335
+id: 38
+type: manhole
+myw: {
+	"change_type": "delete",
+	"delta": "design/NB335",
+	"title": "Manhole: WH-M-38"
+}
+geom: {
+	"coordinates": [
+		0.137137177617,
+		52.2256816492
+	],
+	"type": "Point",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"id": 38,
+	"installation_date": "2014-05-27",
+	"labor_costs": "hole_dig",
+	"lockable": null,
+	"myw_orientation_location": 318.363907316,
+	"name": "WH-M-38",
+	"powered": null,
+	"size_x": 850,
+	"size_y": 1300,
+	"size_z": 900,
+	"specification": "FPM-CCANN-MCX"
+}
+displayValues: {
+
+}
+
+revert
+[
+
+]
+id: 185
+type: fiber_cable
+myw: {
+	"change_type": "update",
+	"delta": "design/NB335",
+	"short_description": "NETCONNECT 24 Count OS2",
+	"title": "Fiber Cable: WH-FCB-185 (24)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137782459003,
+			52.2254230897
+		],
+		[
+			0.137699246407,
+			52.2254171263
+		],
+		[
+			0.137682821101,
+			52.2253791034
+		],
+		[
+			0.137570152751,
+			52.2254391471
+		],
+		[
+			0.137502170072,
+			52.2254753766
+		],
+		[
+			0.137559771538,
+			52.2255124204
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.137753561139,
+				52.2254446466
+			],
+			[
+				0.137559771538,
+				52.2255124204
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 10.4,
+	"directed": true,
+	"fiber_count": 24,
+	"id": 185,
+	"installation_date": "1998-05-21",
+	"job_id": "24987",
+	"labor_costs": null,
+	"name": "WH-FCB-185",
+	"owner": "Acme Co",
+	"specification": "NETCONNECT 24 Count OS2",
+	"tick_mark_spacing": null,
+	"type": "External"
+}
+displayValues: {
+
+}
+
+rebase
+[
+
+]
+id: 13
+type: fiber_cable
+myw: {
+	"change_type": "update",
+	"delta": "design/NB335",
+	"short_description": "O-048-CN-5L-F12NS",
+	"title": "Fiber Cable: WH-FCB-013 (48)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.138353301575,
+			52.2252524148
+		],
+		[
+			0.138338558852,
+			52.2252359847
+		],
+		[
+			0.138332527738,
+			52.2252195545
+		],
+		[
+			0.138222627437,
+			52.225152191
+		],
+		[
+			0.13812571764,
+			52.2251526018
+		],
+		[
+			0.138018429279,
+			52.2252002492
+		],
+		[
+			0.137682821101,
+			52.2253791034
+		],
+		[
+			0.137699246407,
+			52.2254171263
+		],
+		[
+			0.137782459003,
+			52.2254230897
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.138353301575,
+				52.2252524148
+			],
+			[
+				0.137753561139,
+				52.2254446466
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 12.1,
+	"directed": true,
+	"fiber_count": 48,
+	"id": 13,
+	"installation_date": "2014-09-17",
+	"job_id": "28263",
+	"labor_costs": null,
+	"name": "WH-FCB-013",
+	"owner": "Acme Co",
+	"specification": "O-048-CN-5L-F12NS",
+	"tick_mark_spacing": null,
+	"type": "External"
+}
+displayValues: {
+
+}
+
+rebase
+[
+
+]
+id: 12
+type: fiber_cable
+myw: {
+	"short_description": "O-048-CN-5L-F12NS",
+	"title": "Fiber Cable: WH-FCB-012 (48)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.138353301575,
+			52.2252524148
+		],
+		[
+			0.138338558852,
+			52.2252359847
+		],
+		[
+			0.138332527738,
+			52.2252195545
+		],
+		[
+			0.138222627437,
+			52.225152191
+		],
+		[
+			0.13812571764,
+			52.2251526018
+		],
+		[
+			0.138018429279,
+			52.2252002492
+		],
+		[
+			0.137682821101,
+			52.2253791034
+		],
+		[
+			0.137570152751,
+			52.2254391471
+		],
+		[
+			0.137502170072,
+			52.2254753766
+		],
+		[
+			0.137481987476,
+			52.2254861324
+		],
+		[
+			0.137202811393,
+			52.2256444331
+		],
+		[
+			0.137137177617,
+			52.2256816492
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.138353301575,
+				52.2252524148
+			],
+			[
+				0.137137177617,
+				52.2256816492
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 12.1,
+	"directed": true,
+	"fiber_count": 48,
+	"id": 12,
+	"installation_date": "2002-01-22",
+	"job_id": "27520",
+	"labor_costs": null,
+	"name": "WH-FCB-012",
+	"owner": "Acme Co",
+	"specification": "O-048-CN-5L-F12NS",
+	"tick_mark_spacing": null,
+	"type": "External"
+}
+displayValues: {
+
+}
+
+revert
+[
+
+]
+id: 450
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NB335",
+	"title": "Cable Segment: 450 (fiber_cable/185)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137782459003,
+			52.2254230897
+		],
+		[
+			0.137699246407,
+			52.2254171263
+		],
+		[
+			0.137682821101,
+			52.2253791034
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/185",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/68",
+	"id": 450,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/54",
+	"in_tick": 0,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "451",
+	"out_structure": "mywcom_route_junction/8",
+	"out_tick": null,
+	"root_housing": "ug_route/68"
+}
+displayValues: {
+
+}
+
+rebase
+[
+
+]
+id: 110
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NB335",
+	"title": "Cable Segment: 110 (fiber_cable/13)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137682821101,
+			52.2253791034
+		],
+		[
+			0.137699246407,
+			52.2254171263
+		],
+		[
+			0.137782459003,
+			52.2254230897
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/13",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/68",
+	"id": 110,
+	"in_equipment": null,
+	"in_segment": "109",
+	"in_structure": "mywcom_route_junction/8",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "manhole/54",
+	"out_tick": 14,
+	"root_housing": "ug_route/68"
+}
+displayValues: {
+
+}
+
+rebase
+[
+
+]
+id: 107
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "delete",
+	"delta": "design/NB335",
+	"title": "Cable Segment: 107 (fiber_cable/12)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137137177617,
+			52.2256816492
+		],
+		[
+			0.137103796005,
+			52.2257062941
+		],
+		[
+			0.137119889259,
+			52.225737511
+		],
+		[
+			0.137165486813,
+			52.2257654419
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/12",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "ug_route/66",
+	"id": 107,
+	"in_equipment": null,
+	"in_segment": "106",
+	"in_structure": "manhole/38",
+	"in_tick": 2,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": null,
+	"out_structure": "manhole/56",
+	"out_tick": 0,
+	"root_housing": "ug_route/66"
+}
+displayValues: {
+
+}
+
+revert
+[
+
+]
+DATABASE CHANGES: design/NB335
+    delete delta.fiber_cable(design/NB335,12,update)
+    delete delta.manhole(design/NB335,38,delete)
+    delete delta.mywcom_fiber_segment(design/NB335,107,delete)
+
+
+*** design/NB120
+id: 167
+type: fiber_cable
+myw: {
+	"change_type": "update",
+	"delta": "design/NB120",
+	"short_description": "D-072-LA-8W-F12NS",
+	"title": "Fiber Cable: BB-FCB-017 (72)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137965323374,
+			52.2233384716
+		],
+		[
+			0.137950032949,
+			52.2233756463
+		],
+		[
+			0.137891024351,
+			52.2234265817
+		],
+		[
+			0.137614756823,
+			52.2236475752
+		],
+		[
+			0.137337148189,
+			52.2238570661
+		],
+		[
+			0.13732071,
+			52.223868
+		],
+		[
+			0.137125253677,
+			52.2239991908
+		],
+		[
+			0.137047469616,
+			52.2240361595
+		],
+		[
+			0.136976391077,
+			52.2240361595
+		],
+		[
+			0.136906653643,
+			52.2240566977
+		],
+		[
+			0.136732310057,
+			52.2241388504
+		],
+		[
+			0.136684030294,
+			52.2241248844
+		],
+		[
+			0.136634438556,
+			52.2240861255
+		],
+		[
+			0.136653184891,
+			52.224050947
+		],
+		[
+			0.136604905128,
+			52.2240164429
+		],
+		[
+			0.136557966471,
+			52.2240476609
+		],
+		[
+			0.136592164636,
+			52.2240661453
+		],
+		[
+			0.136558972299,
+			52.2240903803
+		],
+		[
+			0.136542578923,
+			52.2240996191
+		],
+		[
+			0.136575736105,
+			52.2241189284
+		],
+		[
+			0.136650837958,
+			52.2241567186
+		],
+		[
+			0.136694088578,
+			52.2241782836
+		],
+		[
+			0.136796683073,
+			52.2241975894
+		],
+		[
+			0.136849656701,
+			52.2241992325
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.137196332216,
+			52.2240554654
+		],
+		[
+			0.137281492353,
+			52.2240000123
+		],
+		[
+			0.13736092,
+			52.2239459
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		],
+		[
+			0.137660354376,
+			52.2237190487
+		],
+		[
+			0.137887001038,
+			52.2235407755
+		],
+		[
+			0.138027817011,
+			52.2234265817
+		],
+		[
+			0.138077437878,
+			52.2234085079
+		],
+		[
+			0.138112438657,
+			52.2234101509
+		],
+		[
+			0.137965323374,
+			52.2233384716
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.137965323374,
+				52.2233384716
+			],
+			[
+				0.136604905128,
+				52.2240164429
+			],
+			[
+				0.136650837958,
+				52.2241567186
+			],
+			[
+				0.138112438657,
+				52.2234101509
+			],
+			[
+				0.137965323374,
+				52.2233384716
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 11.6,
+	"directed": false,
+	"fiber_count": 72,
+	"id": 167,
+	"installation_date": "2002-05-03",
+	"job_id": "77149",
+	"labor_costs": null,
+	"name": "BB-FCB-017",
+	"owner": "Acme Co",
+	"specification": "D-072-LA-8W-F12NS",
+	"tick_mark_spacing": null,
+	"type": "Backbone"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 5
+type: fiber_cable
+myw: {
+	"change_type": "update",
+	"delta": "design/NB120",
+	"short_description": "D-144-LA-8W-F12NS",
+	"title": "Fiber Cable: WH-FCB-005 (144)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136558972299,
+			52.2240903803
+		],
+		[
+			0.136542578923,
+			52.2240996191
+		],
+		[
+			0.136575736105,
+			52.2241189284
+		],
+		[
+			0.136650837958,
+			52.2241567186
+		],
+		[
+			0.136694088578,
+			52.2241782836
+		],
+		[
+			0.136796683073,
+			52.2241975894
+		],
+		[
+			0.136849656701,
+			52.2241992325
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.137196332216,
+			52.2240554654
+		],
+		[
+			0.137281492353,
+			52.2240000123
+		],
+		[
+			0.13736092,
+			52.2239459
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		],
+		[
+			0.137660354376,
+			52.2237190487
+		],
+		[
+			0.137887001038,
+			52.2235407755
+		],
+		[
+			0.138027817011,
+			52.2234265817
+		],
+		[
+			0.138077437878,
+			52.2234085079
+		],
+		[
+			0.138112438657,
+			52.2234101509
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.136558972299,
+				52.2240903803
+			],
+			[
+				0.136575736105,
+				52.2241189284
+			],
+			[
+				0.138112438657,
+				52.2234101509
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 9.9,
+	"directed": true,
+	"fiber_count": 144,
+	"id": 5,
+	"installation_date": "1998-05-03",
+	"job_id": "22319",
+	"labor_costs": null,
+	"name": "WH-FCB-005",
+	"owner": "Acme Co",
+	"specification": "D-144-LA-8W-F12NS",
+	"tick_mark_spacing": null,
+	"type": "External"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 595
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NB120",
+	"title": "Cable Segment: 595 (fiber_cable/167)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137410573661,
+			52.2239119033
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/167",
+	"circuits": [
+		"bb_circuit/1?fibers=19:19",
+		"bb_circuit/2?fibers=21:22",
+		"bb_circuit/3?fibers=11:12",
+		"bb_circuit/4?fibers=13:14"
+	],
+	"comsof_auto": false,
+	"directed": false,
+	"forward": null,
+	"housing": "mywcom_fiber_slack/15",
+	"id": 595,
+	"in_equipment": null,
+	"in_segment": "4203",
+	"in_structure": "manhole/27",
+	"in_tick": 825,
+	"length": 5,
+	"out_equipment": null,
+	"out_segment": "388",
+	"out_structure": "manhole/27",
+	"out_tick": 842,
+	"root_housing": "manhole/27"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 387
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NB120",
+	"title": "Cable Segment: 387 (fiber_cable/167)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136650837958,
+			52.2241567186
+		],
+		[
+			0.136694088578,
+			52.2241782836
+		],
+		[
+			0.136796683073,
+			52.2241975894
+		],
+		[
+			0.136849656701,
+			52.2241992325
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.137196332216,
+			52.2240554654
+		],
+		[
+			0.137281492353,
+			52.2240000123
+		],
+		[
+			0.13736092,
+			52.2239459
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/167",
+	"circuits": [
+		"bb_circuit/1?fibers=19:19",
+		"bb_circuit/2?fibers=21:22",
+		"bb_circuit/3?fibers=11:12",
+		"bb_circuit/4?fibers=13:14"
+	],
+	"comsof_auto": false,
+	"directed": false,
+	"forward": true,
+	"housing": "conduit/80",
+	"id": 387,
+	"in_equipment": null,
+	"in_segment": "598",
+	"in_structure": "manhole/33",
+	"in_tick": 595,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "4203",
+	"out_structure": "mywcom_route_junction/4201",
+	"out_tick": null,
+	"root_housing": "ug_route/3"
+}
+displayValues: {
+
+}
+
+rebase
+[
+
+]
+id: 73
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NB120",
+	"title": "Cable Segment: 73 (fiber_cable/7)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136684030294,
+			52.2241248844
+		],
+		[
+			0.136732310057,
+			52.2241388504
+		],
+		[
+			0.136906653643,
+			52.2240566977
+		],
+		[
+			0.136976391077,
+			52.2240361595
+		],
+		[
+			0.137047469616,
+			52.2240361595
+		],
+		[
+			0.137125253677,
+			52.2239991908
+		],
+		[
+			0.13732071,
+			52.223868
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/7",
+	"circuits": [
+		"ftth_circuit/30?fibers=145:145",
+		"ftth_circuit/31?fibers=145:145",
+		"ftth_circuit/32?fibers=145:145",
+		"ftth_circuit/33?fibers=145:145",
+		"ftth_circuit/34?fibers=145:145",
+		"ftth_circuit/35?fibers=145:145",
+		"ftth_circuit/36?fibers=145:145",
+		"ftth_circuit/37?fibers=146:146",
+		"ftth_circuit/38?fibers=146:146",
+		"ftth_circuit/39?fibers=146:146",
+		"ftth_circuit/40?fibers=146:146",
+		"ftth_circuit/41?fibers=146:146",
+		"ftth_circuit/42?fibers=147:147",
+		"ftth_circuit/43?fibers=147:147",
+		"ftth_circuit/44?fibers=147:147",
+		"ftth_circuit/45?fibers=147:147",
+		"ftth_circuit/46?fibers=147:147",
+		"ftth_circuit/47?fibers=148:148",
+		"ftth_circuit/48?fibers=148:148",
+		"ftth_circuit/49?fibers=148:148",
+		"ftth_circuit/50?fibers=151:151",
+		"ftth_circuit/51?fibers=149:149",
+		"ftth_circuit/52?fibers=149:149",
+		"ftth_circuit/53?fibers=151:151",
+		"ftth_circuit/54?fibers=149:149",
+		"ftth_circuit/55?fibers=149:149",
+		"ftth_circuit/56?fibers=149:149",
+		"ftth_circuit/57?fibers=150:150",
+		"ftth_circuit/5801?fibers=155:155",
+		"ftth_circuit/58?fibers=150:150",
+		"ftth_circuit/59?fibers=150:150"
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/149",
+	"id": 73,
+	"in_equipment": null,
+	"in_segment": null,
+	"in_structure": "manhole/32",
+	"in_tick": 0,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "4200",
+	"out_structure": "mywcom_route_junction/4200",
+	"out_tick": null,
+	"root_housing": "ug_route/7"
+}
+displayValues: {
+
+}
+
+update
+[
+	"circuits"
+]
+id: 56
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NB120",
+	"title": "Cable Segment: 56 (fiber_cable/5)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137410573661,
+			52.2239119033
+		],
+		[
+			0.137660354376,
+			52.2237190487
+		],
+		[
+			0.137887001038,
+			52.2235407755
+		],
+		[
+			0.138027817011,
+			52.2234265817
+		],
+		[
+			0.138077437878,
+			52.2234085079
+		],
+		[
+			0.138112438657,
+			52.2234101509
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/5",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/81",
+	"id": 56,
+	"in_equipment": null,
+	"in_segment": "4202",
+	"in_structure": "manhole/27",
+	"in_tick": 268,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "586",
+	"out_structure": "manhole/28",
+	"out_tick": 496,
+	"root_housing": "ug_route/4"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 55
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NB120",
+	"title": "Cable Segment: 55 (fiber_cable/5)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136650837958,
+			52.2241567186
+		],
+		[
+			0.136694088578,
+			52.2241782836
+		],
+		[
+			0.136796683073,
+			52.2241975894
+		],
+		[
+			0.136849656701,
+			52.2241992325
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.137196332216,
+			52.2240554654
+		],
+		[
+			0.137281492353,
+			52.2240000123
+		],
+		[
+			0.13736092,
+			52.2239459
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/5",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/79",
+	"id": 55,
+	"in_equipment": null,
+	"in_segment": "54",
+	"in_structure": "manhole/33",
+	"in_tick": 37,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "4202",
+	"out_structure": "mywcom_route_junction/4201",
+	"out_tick": null,
+	"root_housing": "ug_route/3"
+}
+displayValues: {
+
+}
+
+rebase
+[
+
+]
+id: 4203
+type: ug_route
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB120",
+	"title": "Route (Underground): 4203"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13736092,
+			52.2239459
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"cover_type": "Mixed",
+	"id": 4203,
+	"in_structure": "mywcom_route_junction/4201",
+	"labor_costs": "trench_dig",
+	"length": 10.8506,
+	"out_structure": "manhole/27"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4205
+type: conduit
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB120",
+	"title": "Conduit: WH-CND-4205"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13736092,
+			52.2239459
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 110,
+	"housing": "ug_route/4203",
+	"id": 4205,
+	"in_structure": "mywcom_route_junction/4201",
+	"installation_date": "1998-05-06",
+	"labor_costs": null,
+	"length": 10.8506,
+	"material": "PE (Corrugated)",
+	"name": "WH-CND-4205",
+	"out_structure": "manhole/27",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/4203",
+	"specification": "JDP-110MM-Green"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4204
+type: conduit
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB120",
+	"title": "Conduit: WH-CND-4204"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13736092,
+			52.2239459
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 110,
+	"housing": "ug_route/4203",
+	"id": 4204,
+	"in_structure": "mywcom_route_junction/4201",
+	"installation_date": "2006-09-11",
+	"labor_costs": null,
+	"length": 10.8506,
+	"material": "PE (Corrugated)",
+	"name": "WH-CND-4204",
+	"out_structure": "manhole/27",
+	"owner": "Acme Co",
+	"root_housing": "ug_route/4203",
+	"specification": "JDP-110MM-Green"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4203
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB120",
+	"title": "Cable Segment: 4203 (fiber_cable/167)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13736092,
+			52.2239459
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/167",
+	"circuits": [
+		"bb_circuit/1?fibers=19:19",
+		"bb_circuit/2?fibers=21:22",
+		"bb_circuit/3?fibers=11:12",
+		"bb_circuit/4?fibers=13:14"
+	],
+	"comsof_auto": false,
+	"directed": false,
+	"forward": true,
+	"housing": "conduit/4205",
+	"id": 4203,
+	"in_equipment": null,
+	"in_segment": "387",
+	"in_structure": "mywcom_route_junction/4201",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "595",
+	"out_structure": "manhole/27",
+	"out_tick": 825,
+	"root_housing": "ug_route/4203"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 4202
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "insert",
+	"delta": "design/NB120",
+	"title": "Cable Segment: 4202 (fiber_cable/5)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.13736092,
+			52.2239459
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/5",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": true,
+	"housing": "conduit/4204",
+	"id": 4202,
+	"in_equipment": null,
+	"in_segment": "55",
+	"in_structure": "mywcom_route_junction/4201",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "56",
+	"out_structure": "manhole/27",
+	"out_tick": 268,
+	"root_housing": "ug_route/4203"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+DATABASE CHANGES: design/NB120
+    update delta.conduit(design/NB120,4204,insert) fields=(path)
+    update delta.conduit(design/NB120,4205,insert) fields=(path)
+    update delta.fiber_cable(design/NB120,167,update) fields=(path)
+    update delta.fiber_cable(design/NB120,5,update) fields=(path)
+    update delta.mywcom_fiber_segment(design/NB120,4202,insert) fields=(path)
+    update delta.mywcom_fiber_segment(design/NB120,4203,insert) fields=(path)
+    update delta.mywcom_fiber_segment(design/NB120,56,update) fields=(path)
+    update delta.mywcom_fiber_segment(design/NB120,595,update) fields=(path)
+    update delta.mywcom_fiber_segment(design/NB120,73,update) fields=(circuits)
+    update delta.ug_route(design/NB120,4203,insert) fields=(path)
+
+
+*** design/NU23
+id: 2
+type: bb_circuit
+myw: {
+	"change_type": "update",
+	"delta": "design/NU23",
+	"title": "Backbone Circuit: BB-0002"
+}
+geom: {
+	"coordinates": [
+		[
+			0.148416814189,
+			52.229851374
+		],
+		[
+			0.148578286171,
+			52.2297823746
+		],
+		[
+			0.14853939414,
+			52.2297601962
+		],
+		[
+			0.148495137691,
+			52.2297454106
+		],
+		[
+			0.148422718048,
+			52.2297281608
+		],
+		[
+			0.148351639509,
+			52.2297248751
+		],
+		[
+			0.148276537657,
+			52.2297355536
+		],
+		[
+			0.148145109415,
+			52.2295893401
+		],
+		[
+			0.148149132729,
+			52.2295655188
+		],
+		[
+			0.148153156042,
+			52.2295416975
+		],
+		[
+			0.148138403892,
+			52.2295014476
+		],
+		[
+			0.148110240698,
+			52.2294685905
+		],
+		[
+			0.148044526577,
+			52.2294045191
+		],
+		[
+			0.14792650938,
+			52.2293289476
+		],
+		[
+			0.14780446887,
+			52.2292500903
+		],
+		[
+			0.147666335106,
+			52.2291490541
+		],
+		[
+			0.147513449192,
+			52.2290324105
+		],
+		[
+			0.147457122803,
+			52.2289970887
+		],
+		[
+			0.147373974323,
+			52.2289264452
+		],
+		[
+			0.14727473259,
+			52.2288541586
+		],
+		[
+			0.14718052508,
+			52.2287802267
+		],
+		[
+			0.147103071213,
+			52.2287194425
+		],
+		[
+			0.147022604942,
+			52.2286537271
+		],
+		[
+			0.14693275094,
+			52.2285855474
+		],
+		[
+			0.146869719028,
+			52.2285354393
+		],
+		[
+			0.14673024416,
+			52.2284237227
+		],
+		[
+			0.146484486759,
+			52.2282756567
+		],
+		[
+			0.146407136268,
+			52.228222461
+		],
+		[
+			0.146322548389,
+			52.22814443
+		],
+		[
+			0.14623939991,
+			52.228075428
+		],
+		[
+			0.145957767963,
+			52.2278848504
+		],
+		[
+			0.145882666111,
+			52.2278487063
+		],
+		[
+			0.145847797394,
+			52.2278207768
+		],
+		[
+			0.145824998131,
+			52.2278012946
+		],
+		[
+			0.145793482661,
+			52.2277743644
+		],
+		[
+			0.145751237869,
+			52.2277550601
+		],
+		[
+			0.145697593689,
+			52.2277258983
+		],
+		[
+			0.145591646433,
+			52.2276392342
+		],
+		[
+			0.145478834384,
+			52.2275634354
+		],
+		[
+			0.145328789949,
+			52.2274626197
+		],
+		[
+			0.145219209912,
+			52.2273966175
+		],
+		[
+			0.145087391138,
+			52.2273172203
+		],
+		[
+			0.145021006465,
+			52.2272839509
+		],
+		[
+			0.144855380058,
+			52.2271882498
+		],
+		[
+			0.144690632937,
+			52.2270899693
+		],
+		[
+			0.144662596285,
+			52.2270732439
+		],
+		[
+			0.144515685792,
+			52.2269833292
+		],
+		[
+			0.144249200821,
+			52.2268202299
+		],
+		[
+			0.143837008601,
+			52.2265861086
+		],
+		[
+			0.14375820516,
+			52.2265381619
+		],
+		[
+			0.143507570028,
+			52.2263856669
+		],
+		[
+			0.143364399444,
+			52.2263050233
+		],
+		[
+			0.143340602517,
+			52.2262838027
+		],
+		[
+			0.14292607172,
+			52.2260654922
+		],
+		[
+			0.142802782827,
+			52.22599469
+		],
+		[
+			0.142157549425,
+			52.2256241444
+		],
+		[
+			0.142053611582,
+			52.2255671879
+		],
+		[
+			0.141537074224,
+			52.2252841318
+		],
+		[
+			0.141022539538,
+			52.224970207
+		],
+		[
+			0.141005404294,
+			52.2249597525
+		],
+		[
+			0.140361184284,
+			52.2246284771
+		],
+		[
+			0.140161514282,
+			52.2245245551
+		],
+		[
+			0.140135362744,
+			52.2244896406
+		],
+		[
+			0.139982812107,
+			52.2243978357
+		],
+		[
+			0.139517113566,
+			52.2241474764
+		],
+		[
+			0.139362886548,
+			52.2240690206
+		],
+		[
+			0.139056592575,
+			52.2239026109
+		],
+		[
+			0.139042697847,
+			52.2238950619
+		],
+		[
+			0.138540118933,
+			52.2236286799
+		],
+		[
+			0.138112438657,
+			52.2234101509
+		],
+		[
+			0.138077437878,
+			52.2234085079
+		],
+		[
+			0.138027817011,
+			52.2234265817
+		],
+		[
+			0.137887001038,
+			52.2235407755
+		],
+		[
+			0.137660354376,
+			52.2237190487
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		],
+		[
+			0.13734318316,
+			52.2239581143
+		],
+		[
+			0.137281492353,
+			52.2240000123
+		],
+		[
+			0.137196332216,
+			52.2240554654
+		],
+		[
+			0.137040764093,
+			52.22411174
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.136849656701,
+			52.2241992325
+		],
+		[
+			0.136796683073,
+			52.2241975894
+		],
+		[
+			0.136694088578,
+			52.2241782836
+		],
+		[
+			0.136650837958,
+			52.2241567186
+		],
+		[
+			0.136575736105,
+			52.2241189284
+		],
+		[
+			0.136542578923,
+			52.2240996191
+		],
+		[
+			0.136558972299,
+			52.2240903803
+		],
+		[
+			0.136592164636,
+			52.2240661453
+		],
+		[
+			0.136557966471,
+			52.2240476609
+		],
+		[
+			0.136604905128,
+			52.2240164429
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"id": 2,
+	"in_feature": "fiber_shelf/5000",
+	"in_pins": "out:1:2",
+	"name": "BB-0002",
+	"out_feature": "fiber_shelf/14",
+	"out_pins": "in:5:6",
+	"status": "In Service"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 1
+type: bb_circuit
+myw: {
+	"change_type": "delete",
+	"delta": "design/NU23",
+	"title": "Backbone Circuit: BB-0001"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136604905128,
+			52.2240164429
+		],
+		[
+			0.136557966471,
+			52.2240476609
+		],
+		[
+			0.136592164636,
+			52.2240661453
+		],
+		[
+			0.136558972299,
+			52.2240903803
+		],
+		[
+			0.136542578923,
+			52.2240996191
+		],
+		[
+			0.136575736105,
+			52.2241189284
+		],
+		[
+			0.136650837958,
+			52.2241567186
+		],
+		[
+			0.136694088578,
+			52.2241782836
+		],
+		[
+			0.136796683073,
+			52.2241975894
+		],
+		[
+			0.136849656701,
+			52.2241992325
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.137040764093,
+			52.22411174
+		],
+		[
+			0.137196332216,
+			52.2240554654
+		],
+		[
+			0.137281492353,
+			52.2240000123
+		],
+		[
+			0.13734318316,
+			52.2239581143
+		],
+		[
+			0.137459,
+			52.223875
+		],
+		[
+			0.137660354376,
+			52.2237190487
+		],
+		[
+			0.137887001038,
+			52.2235407755
+		],
+		[
+			0.138027817011,
+			52.2234265817
+		],
+		[
+			0.138077437878,
+			52.2234085079
+		],
+		[
+			0.138112438657,
+			52.2234101509
+		],
+		[
+			0.138540118933,
+			52.2236286799
+		],
+		[
+			0.139042697847,
+			52.2238950619
+		],
+		[
+			0.139056592575,
+			52.2239026109
+		],
+		[
+			0.139362886548,
+			52.2240690206
+		],
+		[
+			0.139517113566,
+			52.2241474764
+		],
+		[
+			0.139982812107,
+			52.2243978357
+		],
+		[
+			0.140135362744,
+			52.2244896406
+		],
+		[
+			0.140161514282,
+			52.2245245551
+		],
+		[
+			0.140361184284,
+			52.2246284771
+		],
+		[
+			0.141005404294,
+			52.2249597525
+		],
+		[
+			0.141022539538,
+			52.224970207
+		],
+		[
+			0.141537074224,
+			52.2252841318
+		],
+		[
+			0.142053611582,
+			52.2255671879
+		],
+		[
+			0.142157549425,
+			52.2256241444
+		],
+		[
+			0.142802782827,
+			52.22599469
+		],
+		[
+			0.14292607172,
+			52.2260654922
+		],
+		[
+			0.143340602517,
+			52.2262838027
+		],
+		[
+			0.143364399444,
+			52.2263050233
+		],
+		[
+			0.143507570028,
+			52.2263856669
+		],
+		[
+			0.14375820516,
+			52.2265381619
+		],
+		[
+			0.143837008601,
+			52.2265861086
+		],
+		[
+			0.144249200821,
+			52.2268202299
+		],
+		[
+			0.144515685792,
+			52.2269833292
+		],
+		[
+			0.144662596285,
+			52.2270732439
+		],
+		[
+			0.144690632937,
+			52.2270899693
+		],
+		[
+			0.144855380058,
+			52.2271882498
+		],
+		[
+			0.145021006465,
+			52.2272839509
+		],
+		[
+			0.145087391138,
+			52.2273172203
+		],
+		[
+			0.145219209912,
+			52.2273966175
+		],
+		[
+			0.145328789949,
+			52.2274626197
+		],
+		[
+			0.145478834384,
+			52.2275634354
+		],
+		[
+			0.145591646433,
+			52.2276392342
+		],
+		[
+			0.145697593689,
+			52.2277258983
+		],
+		[
+			0.145751237869,
+			52.2277550601
+		],
+		[
+			0.145793482661,
+			52.2277743644
+		],
+		[
+			0.145824998131,
+			52.2278012946
+		],
+		[
+			0.145847797394,
+			52.2278207768
+		],
+		[
+			0.145882666111,
+			52.2278487063
+		],
+		[
+			0.145957767963,
+			52.2278848504
+		],
+		[
+			0.14623939991,
+			52.228075428
+		],
+		[
+			0.146322548389,
+			52.22814443
+		],
+		[
+			0.146407136268,
+			52.228222461
+		],
+		[
+			0.146484486759,
+			52.2282756567
+		],
+		[
+			0.14673024416,
+			52.2284237227
+		],
+		[
+			0.146869719028,
+			52.2285354393
+		],
+		[
+			0.14693275094,
+			52.2285855474
+		],
+		[
+			0.147022604942,
+			52.2286537271
+		],
+		[
+			0.147103071213,
+			52.2287194425
+		],
+		[
+			0.14718052508,
+			52.2287802267
+		],
+		[
+			0.14727473259,
+			52.2288541586
+		],
+		[
+			0.147373974323,
+			52.2289264452
+		],
+		[
+			0.147457122803,
+			52.2289970887
+		],
+		[
+			0.147513449192,
+			52.2290324105
+		],
+		[
+			0.147666335106,
+			52.2291490541
+		],
+		[
+			0.14780446887,
+			52.2292500903
+		],
+		[
+			0.14792650938,
+			52.2293289476
+		],
+		[
+			0.148044526577,
+			52.2294045191
+		],
+		[
+			0.148110240698,
+			52.2294685905
+		],
+		[
+			0.148138403892,
+			52.2295014476
+		],
+		[
+			0.148153156042,
+			52.2295416975
+		],
+		[
+			0.148149132729,
+			52.2295655188
+		],
+		[
+			0.148145109415,
+			52.2295893401
+		],
+		[
+			0.148276537657,
+			52.2297355536
+		],
+		[
+			0.148351639509,
+			52.2297248751
+		],
+		[
+			0.148422718048,
+			52.2297281608
+		],
+		[
+			0.148495137691,
+			52.2297454106
+		],
+		[
+			0.14853939414,
+			52.2297601962
+		],
+		[
+			0.148578286171,
+			52.2297823746
+		],
+		[
+			0.148416814189,
+			52.229851374
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"id": 1,
+	"in_feature": "fiber_shelf/14",
+	"in_pins": "out:1",
+	"name": "BB-0001",
+	"out_feature": "fiber_shelf/15",
+	"out_pins": "in:12",
+	"status": "In Service"
+}
+displayValues: {
+
+}
+
+rebase
+[
+
+]
+id: 595
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NU23",
+	"title": "Cable Segment: 595 (fiber_cable/167)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137410573661,
+			52.2239119033
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/167",
+	"circuits": [
+		"bb_circuit/2?fibers=15:16",
+		"bb_circuit/3?fibers=11:12",
+		"bb_circuit/4?fibers=13:14",
+		"bb_circuit/5000?fibers=23:24"
+	],
+	"comsof_auto": false,
+	"directed": false,
+	"forward": null,
+	"housing": "mywcom_fiber_slack/15",
+	"id": 595,
+	"in_equipment": null,
+	"in_segment": "387",
+	"in_structure": "manhole/27",
+	"in_tick": 825,
+	"length": 5,
+	"out_equipment": null,
+	"out_segment": "388",
+	"out_structure": "manhole/27",
+	"out_tick": 842,
+	"root_housing": "manhole/27"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 388
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NU23",
+	"title": "Cable Segment: 388 (fiber_cable/167)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.137410573661,
+			52.2239119033
+		],
+		[
+			0.137660354376,
+			52.2237190487
+		],
+		[
+			0.137887001038,
+			52.2235407755
+		],
+		[
+			0.138027817011,
+			52.2234265817
+		],
+		[
+			0.138077437878,
+			52.2234085079
+		],
+		[
+			0.138112438657,
+			52.2234101509
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/167",
+	"circuits": [
+		"bb_circuit/2?fibers=15:16",
+		"bb_circuit/3?fibers=11:12",
+		"bb_circuit/4?fibers=13:14",
+		"bb_circuit/5000?fibers=23:24"
+	],
+	"comsof_auto": false,
+	"directed": false,
+	"forward": true,
+	"housing": "conduit/82",
+	"id": 388,
+	"in_equipment": null,
+	"in_segment": "595",
+	"in_structure": "manhole/27",
+	"in_tick": 842,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "587",
+	"out_structure": "manhole/28",
+	"out_tick": 1070,
+	"root_housing": "ug_route/4"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 387
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/NU23",
+	"title": "Cable Segment: 387 (fiber_cable/167)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136650837958,
+			52.2241567186
+		],
+		[
+			0.136694088578,
+			52.2241782836
+		],
+		[
+			0.136796683073,
+			52.2241975894
+		],
+		[
+			0.136849656701,
+			52.2241992325
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.137040764093,
+			52.22411174
+		],
+		[
+			0.137196332216,
+			52.2240554654
+		],
+		[
+			0.137281492353,
+			52.2240000123
+		],
+		[
+			0.13734318316,
+			52.2239581143
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/167",
+	"circuits": [
+		"bb_circuit/2?fibers=15:16",
+		"bb_circuit/3?fibers=11:12",
+		"bb_circuit/4?fibers=13:14",
+		"bb_circuit/5000?fibers=23:24"
+	],
+	"comsof_auto": false,
+	"directed": false,
+	"forward": true,
+	"housing": "conduit/80",
+	"id": 387,
+	"in_equipment": null,
+	"in_segment": "598",
+	"in_structure": "manhole/33",
+	"in_tick": 595,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "595",
+	"out_structure": "manhole/27",
+	"out_tick": 825,
+	"root_housing": "ug_route/3"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 5000
+type: bb_circuit
+myw: {
+	"change_type": "insert",
+	"delta": "design/NU23",
+	"title": "Backbone Circuit: BB-5000"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136604905128,
+			52.2240164429
+		],
+		[
+			0.136557966471,
+			52.2240476609
+		],
+		[
+			0.136592164636,
+			52.2240661453
+		],
+		[
+			0.136558972299,
+			52.2240903803
+		],
+		[
+			0.136542578923,
+			52.2240996191
+		],
+		[
+			0.136575736105,
+			52.2241189284
+		],
+		[
+			0.136650837958,
+			52.2241567186
+		],
+		[
+			0.136694088578,
+			52.2241782836
+		],
+		[
+			0.136796683073,
+			52.2241975894
+		],
+		[
+			0.136849656701,
+			52.2241992325
+		],
+		[
+			0.13691470027,
+			52.2241561024
+		],
+		[
+			0.137040764093,
+			52.22411174
+		],
+		[
+			0.137196332216,
+			52.2240554654
+		],
+		[
+			0.137281492353,
+			52.2240000123
+		],
+		[
+			0.13734318316,
+			52.2239581143
+		],
+		[
+			0.137410573661,
+			52.2239119033
+		],
+		[
+			0.137660354376,
+			52.2237190487
+		],
+		[
+			0.137887001038,
+			52.2235407755
+		],
+		[
+			0.138027817011,
+			52.2234265817
+		],
+		[
+			0.138077437878,
+			52.2234085079
+		],
+		[
+			0.138112438657,
+			52.2234101509
+		],
+		[
+			0.138540118933,
+			52.2236286799
+		],
+		[
+			0.139042697847,
+			52.2238950619
+		],
+		[
+			0.139056592575,
+			52.2239026109
+		],
+		[
+			0.139362886548,
+			52.2240690206
+		],
+		[
+			0.139517113566,
+			52.2241474764
+		],
+		[
+			0.139982812107,
+			52.2243978357
+		],
+		[
+			0.140135362744,
+			52.2244896406
+		],
+		[
+			0.140161514282,
+			52.2245245551
+		],
+		[
+			0.140361184284,
+			52.2246284771
+		],
+		[
+			0.141005404294,
+			52.2249597525
+		],
+		[
+			0.141022539538,
+			52.224970207
+		],
+		[
+			0.141537074224,
+			52.2252841318
+		],
+		[
+			0.142053611582,
+			52.2255671879
+		],
+		[
+			0.142157549425,
+			52.2256241444
+		],
+		[
+			0.142802782827,
+			52.22599469
+		],
+		[
+			0.14292607172,
+			52.2260654922
+		],
+		[
+			0.143340602517,
+			52.2262838027
+		],
+		[
+			0.143364399444,
+			52.2263050233
+		],
+		[
+			0.143507570028,
+			52.2263856669
+		],
+		[
+			0.14375820516,
+			52.2265381619
+		],
+		[
+			0.143837008601,
+			52.2265861086
+		],
+		[
+			0.144249200821,
+			52.2268202299
+		],
+		[
+			0.144515685792,
+			52.2269833292
+		],
+		[
+			0.144662596285,
+			52.2270732439
+		],
+		[
+			0.144690632937,
+			52.2270899693
+		],
+		[
+			0.144855380058,
+			52.2271882498
+		],
+		[
+			0.145021006465,
+			52.2272839509
+		],
+		[
+			0.145087391138,
+			52.2273172203
+		],
+		[
+			0.145219209912,
+			52.2273966175
+		],
+		[
+			0.145328789949,
+			52.2274626197
+		],
+		[
+			0.145478834384,
+			52.2275634354
+		],
+		[
+			0.145591646433,
+			52.2276392342
+		],
+		[
+			0.145697593689,
+			52.2277258983
+		],
+		[
+			0.145751237869,
+			52.2277550601
+		],
+		[
+			0.145793482661,
+			52.2277743644
+		],
+		[
+			0.145824998131,
+			52.2278012946
+		],
+		[
+			0.145847797394,
+			52.2278207768
+		],
+		[
+			0.145882666111,
+			52.2278487063
+		],
+		[
+			0.145957767963,
+			52.2278848504
+		],
+		[
+			0.14623939991,
+			52.228075428
+		],
+		[
+			0.146322548389,
+			52.22814443
+		],
+		[
+			0.146407136268,
+			52.228222461
+		],
+		[
+			0.146484486759,
+			52.2282756567
+		],
+		[
+			0.14673024416,
+			52.2284237227
+		],
+		[
+			0.146869719028,
+			52.2285354393
+		],
+		[
+			0.14693275094,
+			52.2285855474
+		],
+		[
+			0.147022604942,
+			52.2286537271
+		],
+		[
+			0.147103071213,
+			52.2287194425
+		],
+		[
+			0.14718052508,
+			52.2287802267
+		],
+		[
+			0.14727473259,
+			52.2288541586
+		],
+		[
+			0.147373974323,
+			52.2289264452
+		],
+		[
+			0.147457122803,
+			52.2289970887
+		],
+		[
+			0.147513449192,
+			52.2290324105
+		],
+		[
+			0.147666335106,
+			52.2291490541
+		],
+		[
+			0.14780446887,
+			52.2292500903
+		],
+		[
+			0.14792650938,
+			52.2293289476
+		],
+		[
+			0.148044526577,
+			52.2294045191
+		],
+		[
+			0.148110240698,
+			52.2294685905
+		],
+		[
+			0.148138403892,
+			52.2295014476
+		],
+		[
+			0.148153156042,
+			52.2295416975
+		],
+		[
+			0.148149132729,
+			52.2295655188
+		],
+		[
+			0.148145109415,
+			52.2295893401
+		],
+		[
+			0.148276537657,
+			52.2297355536
+		],
+		[
+			0.148351639509,
+			52.2297248751
+		],
+		[
+			0.148422718048,
+			52.2297281608
+		],
+		[
+			0.148495137691,
+			52.2297454106
+		],
+		[
+			0.14853939414,
+			52.2297601962
+		],
+		[
+			0.148578286171,
+			52.2297823746
+		],
+		[
+			0.148416814189,
+			52.229851374
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"id": 5000,
+	"in_feature": "fiber_shelf/14",
+	"in_pins": "out:5:6",
+	"name": "BB-5000",
+	"out_feature": "fiber_shelf/5000",
+	"out_pins": "in:1:2",
+	"status": "New"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+DATABASE CHANGES: design/NU23
+    update delta.bb_circuit(design/NU23,2,update) fields=(path)
+    update delta.bb_circuit(design/NU23,5000,insert) fields=(path)
+    update delta.mywcom_fiber_segment(design/NU23,387,update) fields=(path)
+    update delta.mywcom_fiber_segment(design/NU23,388,update) fields=(path)
+    update delta.mywcom_fiber_segment(design/NU23,595,update) fields=(path)
+
+
+*** design/CC5462
+id: 12
+type: blown_fiber_bundle
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Bundle: (6)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.1359339,
+			52.2255569
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 6,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/8",
+	"housing": "ug_route/81",
+	"id": 12,
+	"in_conduit": null,
+	"in_structure": "manhole/52",
+	"labor_costs": null,
+	"name": "WH-BF-47",
+	"out_conduit": "blown_fiber_bundle/50000",
+	"out_structure": "mywcom_route_junction/50000",
+	"root_housing": "ug_route/81"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path",
+	"out_structure",
+	"out_conduit"
+]
+id: 11
+type: blown_fiber_bundle
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Bundle: (6)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.1365626,
+			52.2254978
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 6,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/8",
+	"housing": "ug_route/354",
+	"id": 11,
+	"in_conduit": "blown_fiber_bundle/50000",
+	"in_structure": "drop_point/4",
+	"labor_costs": null,
+	"name": "WH-BF-46",
+	"out_conduit": "blown_fiber_bundle/4400",
+	"out_structure": "drop_point/4400",
+	"root_housing": "ug_route/354"
+}
+displayValues: {
+
+}
+
+update
+[
+	"in_conduit"
+]
+id: 72
+type: blown_fiber_tube
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Tube: WH-BF-68 : 6"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.1359339,
+			52.2255569
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 1,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/4401",
+	"diameter": 17,
+	"housing": "blown_fiber_bundle/12",
+	"id": 72,
+	"in_conduit": null,
+	"in_structure": "manhole/52",
+	"labor_costs": null,
+	"length": null,
+	"name": "WH-BF-68 : 6",
+	"out_conduit": "blown_fiber_tube/50005",
+	"out_structure": "mywcom_route_junction/50000",
+	"root_housing": "ug_route/81"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path",
+	"out_structure",
+	"out_conduit"
+]
+id: 71
+type: blown_fiber_tube
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Tube: WH-BF-68 : 6"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.1365626,
+			52.2254978
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 1,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/4401",
+	"diameter": 17,
+	"housing": "blown_fiber_bundle/11",
+	"id": 71,
+	"in_conduit": "blown_fiber_tube/50005",
+	"in_structure": "drop_point/4",
+	"labor_costs": null,
+	"length": null,
+	"name": "WH-BF-68 : 6",
+	"out_conduit": null,
+	"out_structure": "drop_point/4400",
+	"root_housing": "ug_route/354"
+}
+displayValues: {
+
+}
+
+update
+[
+	"in_conduit"
+]
+id: 57
+type: blown_fiber_tube
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Tube: WH-BF-53 : 3"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.1359339,
+			52.2255569
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 1,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/56",
+	"diameter": 17,
+	"housing": "blown_fiber_bundle/12",
+	"id": 57,
+	"in_conduit": null,
+	"in_structure": "manhole/52",
+	"labor_costs": null,
+	"length": null,
+	"name": "WH-BF-53 : 3",
+	"out_conduit": "blown_fiber_tube/50002",
+	"out_structure": "mywcom_route_junction/50000",
+	"root_housing": "ug_route/81"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path",
+	"out_structure",
+	"out_conduit"
+]
+id: 56
+type: blown_fiber_tube
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Tube: WH-BF-53 : 3"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.1365626,
+			52.2254978
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 1,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/56",
+	"diameter": 17,
+	"housing": "blown_fiber_bundle/11",
+	"id": 56,
+	"in_conduit": "blown_fiber_tube/50002",
+	"in_structure": "drop_point/4",
+	"labor_costs": null,
+	"length": null,
+	"name": "WH-BF-53 : 3",
+	"out_conduit": "blown_fiber_tube/4402",
+	"out_structure": "drop_point/4400",
+	"root_housing": "ug_route/354"
+}
+displayValues: {
+
+}
+
+update
+[
+	"in_conduit"
+]
+id: 52
+type: blown_fiber_tube
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Tube: WH-BF-48 : 2"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.1359339,
+			52.2255569
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 1,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/54",
+	"diameter": 17,
+	"housing": "blown_fiber_bundle/12",
+	"id": 52,
+	"in_conduit": null,
+	"in_structure": "manhole/52",
+	"labor_costs": null,
+	"length": null,
+	"name": "WH-BF-48 : 2",
+	"out_conduit": "blown_fiber_tube/50001",
+	"out_structure": "mywcom_route_junction/50000",
+	"root_housing": "ug_route/81"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path",
+	"out_structure",
+	"out_conduit"
+]
+id: 51
+type: blown_fiber_tube
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Tube: WH-BF-48 : 2"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.1365626,
+			52.2254978
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 1,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/54",
+	"diameter": 17,
+	"housing": "blown_fiber_bundle/11",
+	"id": 51,
+	"in_conduit": "blown_fiber_tube/50001",
+	"in_structure": "drop_point/4",
+	"labor_costs": null,
+	"length": null,
+	"name": "WH-BF-48 : 2",
+	"out_conduit": "blown_fiber_tube/4401",
+	"out_structure": "drop_point/4400",
+	"root_housing": "ug_route/354"
+}
+displayValues: {
+
+}
+
+update
+[
+	"in_conduit"
+]
+id: 47
+type: blown_fiber_tube
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Tube: WH-BF-43 : 1"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.1359339,
+			52.2255569
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 1,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/50",
+	"diameter": 17,
+	"housing": "blown_fiber_bundle/12",
+	"id": 47,
+	"in_conduit": null,
+	"in_structure": "manhole/52",
+	"labor_costs": null,
+	"length": null,
+	"name": "WH-BF-43 : 1",
+	"out_conduit": "blown_fiber_tube/50000",
+	"out_structure": "mywcom_route_junction/50000",
+	"root_housing": "ug_route/81"
+}
+displayValues: {
+
+}
+
+update
+[
+	"path",
+	"out_structure",
+	"out_conduit"
+]
+id: 46
+type: blown_fiber_tube
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "BF Tube: WH-BF-43 : 1"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.1365626,
+			52.2254978
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"bundle_size": 1,
+	"comsof_auto": false,
+	"conduit_run": "mywcom_conduit_run/50",
+	"diameter": 17,
+	"housing": "blown_fiber_bundle/11",
+	"id": 46,
+	"in_conduit": "blown_fiber_tube/50000",
+	"in_structure": "drop_point/4",
+	"labor_costs": null,
+	"length": null,
+	"name": "WH-BF-43 : 1",
+	"out_conduit": "blown_fiber_tube/4400",
+	"out_structure": "drop_point/4400",
+	"root_housing": "ug_route/354"
+}
+displayValues: {
+
+}
+
+update
+[
+	"in_conduit"
+]
+id: 11
+type: fiber_cable
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"short_description": "O-048-CN-5L-F12NS",
+	"title": "Fiber Cable: WH-FCB-011 (48)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136764496565,
+			52.2257637989
+		],
+		[
+			0.136796012521,
+			52.225778175
+		],
+		[
+			0.136857032776,
+			52.2257432615
+		],
+		[
+			0.136910721195,
+			52.2257156789
+		],
+		[
+			0.136847645044,
+			52.2256800062
+		],
+		[
+			0.136806070805,
+			52.2256463248
+		],
+		[
+			0.136772543192,
+			52.2256110004
+		],
+		[
+			0.136698782444,
+			52.2255691039
+		],
+		[
+			0.136690144187,
+			52.2255641852
+		],
+		[
+			0.136603564024,
+			52.2255148849
+		],
+		[
+			0.1365626,
+			52.2254978
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136350095272,
+			52.2253776941
+		],
+		[
+			0.136288404465,
+			52.2253440125
+		],
+		[
+			0.136256217957,
+			52.225339905
+		],
+		[
+			0.13616502285,
+			52.2253924812
+		],
+		[
+			0.1359339,
+			52.2255569
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.135739222169,
+			52.2256746665
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+secondary geom: {
+	"placement_path": {
+		"coordinates": [
+			[
+				0.136764496565,
+				52.2257637989
+			],
+			[
+				0.135739222169,
+				52.2256746665
+			]
+		],
+		"type": "LineString",
+		"world_name": "geo",
+		"world_type": "geo"
+	}
+}
+properties: {
+	"comsof_auto": false,
+	"diameter": 12.1,
+	"directed": true,
+	"fiber_count": 48,
+	"id": 11,
+	"installation_date": "2010-05-27",
+	"job_id": "26777",
+	"labor_costs": null,
+	"name": "WH-FCB-011",
+	"owner": "SFB Comms",
+	"specification": "O-048-CN-5L-F12NS",
+	"tick_mark_spacing": null,
+	"type": "External"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 4
+type: mywcom_line_of_count
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"short_description": "101-201 : WH-2 [101-201] Active",
+	"title": "Line of Count: WH-2 Active"
+}
+geom: {
+	"coordinates": [
+		[
+			[
+				0.136690144187,
+				52.2255641852
+			],
+			[
+				0.136603564024,
+				52.2255148849
+			],
+			[
+				0.1365626,
+				52.2254978
+			]
+		],
+		[
+			[
+				0.1365626,
+				52.2254978
+			],
+			[
+				0.136485546827,
+				52.2254655949
+			],
+			[
+				0.136454668252,
+				52.2254455564
+			]
+		],
+		[
+			[
+				0.136690144187,
+				52.2255641852
+			],
+			[
+				0.136603564024,
+				52.2255148849
+			],
+			[
+				0.1365626,
+				52.2254978
+			]
+		],
+		[
+			[
+				0.1365626,
+				52.2254978
+			],
+			[
+				0.136485546827,
+				52.2254655949
+			],
+			[
+				0.136454668252,
+				52.2254455564
+			]
+		],
+		[
+			[
+				0.137628575515,
+				52.2253197416
+			],
+			[
+				0.137612074614,
+				52.2253086878
+			],
+			[
+				0.137578547001,
+				52.2253259394
+			],
+			[
+				0.137543678284,
+				52.2253226534
+			],
+			[
+				0.137464553118,
+				52.2252684341
+			],
+			[
+				0.137373358011,
+				52.2252068212
+			],
+			[
+				0.137354779902,
+				52.2251966049
+			]
+		],
+		[
+			[
+				0.137628575515,
+				52.2253197416
+			],
+			[
+				0.137612074614,
+				52.2253292254
+			],
+			[
+				0.137427002192,
+				52.2254351993
+			],
+			[
+				0.137418787692,
+				52.2254396546
+			]
+		],
+		[
+			[
+				0.139715476846,
+				52.2260911778
+			],
+			[
+				0.13981218974,
+				52.2260192833
+			]
+		],
+		[
+			[
+				0.137418787692,
+				52.2254396546
+			],
+			[
+				0.137298256159,
+				52.2255050269
+			],
+			[
+				0.137150734663,
+				52.2255855339
+			],
+			[
+				0.137086617252,
+				52.2256221465
+			]
+		],
+		[
+			[
+				0.137354779902,
+				52.2251966049
+			],
+			[
+				0.137255340815,
+				52.2251419222
+			],
+			[
+				0.137229488038,
+				52.2251289651
+			]
+		],
+		[
+			[
+				0.13769287972,
+				52.2252827831
+			],
+			[
+				0.137642920017,
+				52.2252511825
+			]
+		],
+		[
+			[
+				0.137354779902,
+				52.2251966049
+			],
+			[
+				0.137367993593,
+				52.2251875158
+			]
+		],
+		[
+			[
+				0.137354779902,
+				52.2251966049
+			],
+			[
+				0.137255340815,
+				52.2251419222
+			],
+			[
+				0.137229488038,
+				52.2251289651
+			]
+		],
+		[
+			[
+				0.137418787692,
+				52.2254396546
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.137086617252,
+				52.2256221465
+			],
+			[
+				0.137071609497,
+				52.2256307163
+			],
+			[
+				0.137023329735,
+				52.2256578258
+			],
+			[
+				0.136975457137,
+				52.2256824205
+			]
+		],
+		[
+			[
+				0.137229488038,
+				52.2251289651
+			],
+			[
+				0.13712607693,
+				52.2250771369
+			]
+		],
+		[
+			[
+				0.137229488038,
+				52.2251289651
+			],
+			[
+				0.137156769633,
+				52.2251751932
+			],
+			[
+				0.137176215649,
+				52.225187105
+			],
+			[
+				0.137156099081,
+				52.2252010707
+			]
+		],
+		[
+			[
+				0.136975457137,
+				52.2256824205
+			],
+			[
+				0.136910721195,
+				52.2257156789
+			]
+		],
+		[
+			[
+				0.137642920017,
+				52.2252511825
+			],
+			[
+				0.137642920017,
+				52.2252511825
+			]
+		],
+		[
+			[
+				0.137367993593,
+				52.2251875158
+			],
+			[
+				0.137367993593,
+				52.2251875158
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.13712607693,
+				52.2250771369
+			],
+			[
+				0.137122571468,
+				52.22507538
+			],
+			[
+				0.13711359342,
+				52.2250703616
+			]
+		],
+		[
+			[
+				0.136910721195,
+				52.2257156789
+			],
+			[
+				0.136857032776,
+				52.2257432615
+			],
+			[
+				0.136796012521,
+				52.225778175
+			]
+		],
+		[
+			[
+				0.137156099081,
+				52.2252010707
+			],
+			[
+				0.137156099081,
+				52.2252010707
+			]
+		],
+		[
+			[
+				0.13711359342,
+				52.2250703616
+			],
+			[
+				0.137015283108,
+				52.2250154099
+			],
+			[
+				0.137009331035,
+				52.2250126681
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.136796012521,
+				52.225778175
+			],
+			[
+				0.136764496565,
+				52.2257637989
+			]
+		],
+		[
+			[
+				0.137009331035,
+				52.2250126681
+			],
+			[
+				0.136931464076,
+				52.2249767989
+			]
+		],
+		[
+			[
+				0.136764496565,
+				52.2257637989
+			],
+			[
+				0.136796012521,
+				52.225778175
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.136764496565,
+				52.2257637989
+			],
+			[
+				0.136796012521,
+				52.225778175
+			]
+		],
+		[
+			[
+				0.136764496565,
+				52.2257637989
+			],
+			[
+				0.136796012521,
+				52.225778175
+			]
+		],
+		[
+			[
+				0.136764496565,
+				52.2257637989
+			],
+			[
+				0.136796012521,
+				52.225778175
+			]
+		],
+		[
+			[
+				0.136931464076,
+				52.2249767989
+			],
+			[
+				0.137009331035,
+				52.2250126681
+			]
+		],
+		[
+			[
+				0.136796012521,
+				52.225778175
+			],
+			[
+				0.136857032776,
+				52.2257432615
+			],
+			[
+				0.136910721195,
+				52.2257156789
+			]
+		],
+		[
+			[
+				0.136796012521,
+				52.225778175
+			],
+			[
+				0.136857032776,
+				52.2257432615
+			],
+			[
+				0.136910721195,
+				52.2257156789
+			]
+		],
+		[
+			[
+				0.136796012521,
+				52.225778175
+			],
+			[
+				0.136857032776,
+				52.2257432615
+			],
+			[
+				0.136910721195,
+				52.2257156789
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137009331035,
+				52.2250126681
+			],
+			[
+				0.137015283108,
+				52.2250154099
+			],
+			[
+				0.13711359342,
+				52.2250703616
+			]
+		],
+		[
+			[
+				0.136910721195,
+				52.2257156789
+			],
+			[
+				0.136975457137,
+				52.2256824205
+			]
+		],
+		[
+			[
+				0.136910721195,
+				52.2257156789
+			],
+			[
+				0.136847645044,
+				52.2256800062
+			],
+			[
+				0.136806070805,
+				52.2256463248
+			],
+			[
+				0.136772543192,
+				52.2256110004
+			],
+			[
+				0.136698782444,
+				52.2255691039
+			],
+			[
+				0.136690144187,
+				52.2255641852
+			]
+		],
+		[
+			[
+				0.136910721195,
+				52.2257156789
+			],
+			[
+				0.136847645044,
+				52.2256800062
+			],
+			[
+				0.136806070805,
+				52.2256463248
+			],
+			[
+				0.136772543192,
+				52.2256110004
+			],
+			[
+				0.136698782444,
+				52.2255691039
+			],
+			[
+				0.136690144187,
+				52.2255641852
+			]
+		],
+		[
+			[
+				0.13711359342,
+				52.2250703616
+			],
+			[
+				0.137122571468,
+				52.22507538
+			],
+			[
+				0.13712607693,
+				52.2250771369
+			]
+		],
+		[
+			[
+				0.136256217957,
+				52.2255937489
+			],
+			[
+				0.136232078075,
+				52.2255888199
+			],
+			[
+				0.136120766401,
+				52.2256717912
+			],
+			[
+				0.136167705059,
+				52.2256997221
+			],
+			[
+				0.136156976223,
+				52.2257145091
+			],
+			[
+				0.13681948185,
+				52.2260726802
+			],
+			[
+				0.13711720705,
+				52.226233692
+			],
+			[
+				0.137146711349,
+				52.2262731234
+			],
+			[
+				0.137119889259,
+				52.2263141977
+			],
+			[
+				0.136739015579,
+				52.2265737864
+			],
+			[
+				0.136658549309,
+				52.2265409271
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.137377381325,
+				52.2254121973
+			],
+			[
+				0.137377381325,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.136975457137,
+				52.2256824205
+			],
+			[
+				0.137023329735,
+				52.2256578258
+			],
+			[
+				0.137071609497,
+				52.2256307163
+			],
+			[
+				0.137086617252,
+				52.2256221465
+			]
+		],
+		[
+			[
+				0.13712607693,
+				52.2250771369
+			],
+			[
+				0.137156099081,
+				52.2250589499
+			]
+		],
+		[
+			[
+				0.137086617252,
+				52.2256221465
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.136454668252,
+				52.2254455564
+			],
+			[
+				0.136517062783,
+				52.2254134295
+			]
+		],
+		[
+			[
+				0.136454668252,
+				52.2254455564
+			],
+			[
+				0.136517062783,
+				52.2254134295
+			]
+		],
+		[
+			[
+				0.137156099081,
+				52.2250589499
+			],
+			[
+				0.137156099081,
+				52.2250589499
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.136517062783,
+				52.2254134295
+			],
+			[
+				0.136543884873,
+				52.2254315026
+			],
+			[
+				0.136579424143,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.136517062783,
+				52.2254134295
+			],
+			[
+				0.136487558484,
+				52.2253957672
+			],
+			[
+				0.136521756649,
+				52.2253776941
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.136579424143,
+				52.2254121973
+			],
+			[
+				0.136579424143,
+				52.2254121973
+			]
+		],
+		[
+			[
+				0.136521756649,
+				52.2253776941
+			],
+			[
+				0.136521756649,
+				52.2253776941
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.136796012521,
+				52.225778175
+			],
+			[
+				0.136693418026,
+				52.225828697
+			],
+			[
+				0.136582106352,
+				52.2257703708
+			],
+			[
+				0.1365358,
+				52.2257432
+			]
+		],
+		[
+			[
+				0.1365358,
+				52.2257432
+			],
+			[
+				0.136474817991,
+				52.2257079371
+			],
+			[
+				0.136308521032,
+				52.2256266089
+			],
+			[
+				0.136256217957,
+				52.2255937489
+			]
+		],
+		[
+			[
+				0.136604905128,
+				52.2240164429
+			],
+			[
+				0.136604905128,
+				52.2240164429
+			]
+		],
+		[
+			[
+				0.136604905128,
+				52.2240164429
+			],
+			[
+				0.136557966471,
+				52.2240476609
+			]
+		],
+		[
+			[
+				0.136557966471,
+				52.2240476609
+			],
+			[
+				0.136592164636,
+				52.2240661453
+			],
+			[
+				0.136558972299,
+				52.2240903803
+			]
+		],
+		[
+			[
+				0.136558972299,
+				52.2240903803
+			],
+			[
+				0.136542578923,
+				52.2240996191
+			]
+		],
+		[
+			[
+				0.136542578923,
+				52.2240996191
+			],
+			[
+				0.136575736105,
+				52.2241189284
+			]
+		],
+		[
+			[
+				0.136575736105,
+				52.2241189284
+			],
+			[
+				0.136455707252,
+				52.2241862935
+			]
+		],
+		[
+			[
+				0.136455707252,
+				52.2241862935
+			],
+			[
+				0.136499628425,
+				52.2242111446
+			],
+			[
+				0.136570706963,
+				52.2242456486
+			],
+			[
+				0.136678665876,
+				52.2242953508
+			],
+			[
+				0.136752426624,
+				52.2243429991
+			],
+			[
+				0.136815458536,
+				52.2243738062
+			],
+			[
+				0.136967003345,
+				52.2244641734
+			],
+			[
+				0.13702031225,
+				52.2244953912
+			]
+		],
+		[
+			[
+				0.13702031225,
+				52.2244953912
+			],
+			[
+				0.13706356287,
+				52.2245040171
+			],
+			[
+				0.137207061052,
+				52.2245771323
+			],
+			[
+				0.137343944817,
+				52.2246495666
+			]
+		],
+		[
+			[
+				0.138016417623,
+				52.2250326616
+			],
+			[
+				0.138023793697,
+				52.225073737
+			],
+			[
+				0.137991607189,
+				52.2251172769
+			],
+			[
+				0.137958079576,
+				52.2251369931
+			],
+			[
+				0.137864202261,
+				52.2251862835
+			],
+			[
+				0.137720704079,
+				52.2252667911
+			],
+			[
+				0.13769287972,
+				52.2252827831
+			]
+		],
+		[
+			[
+				0.137343944817,
+				52.2246495666
+			],
+			[
+				0.137349888682,
+				52.2246527119
+			],
+			[
+				0.137401828405,
+				52.2246804879
+			]
+		],
+		[
+			[
+				0.137401828405,
+				52.2246804879
+			],
+			[
+				0.13742364943,
+				52.2246921446
+			],
+			[
+				0.137456841767,
+				52.2247063158
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.137456841767,
+				52.2247063158
+			],
+			[
+				0.137496069074,
+				52.2247315774
+			],
+			[
+				0.137540996075,
+				52.2247537583
+			],
+			[
+				0.137695059018,
+				52.2248388064
+			]
+		],
+		[
+			[
+				0.137456841767,
+				52.2247063158
+			],
+			[
+				0.13742364943,
+				52.2246921446
+			],
+			[
+				0.137401828405,
+				52.2246804879
+			]
+		],
+		[
+			[
+				0.137456841767,
+				52.2247063158
+			],
+			[
+				0.137496069074,
+				52.2247315774
+			],
+			[
+				0.137540996075,
+				52.2247537583
+			],
+			[
+				0.137695059018,
+				52.2248388064
+			]
+		],
+		[
+			[
+				0.137456841767,
+				52.2247063158
+			],
+			[
+				0.13742364943,
+				52.2246921446
+			],
+			[
+				0.137401828405,
+				52.2246804879
+			]
+		],
+		[
+			[
+				0.137695059018,
+				52.2248388064
+			],
+			[
+				0.137710645795,
+				52.2248474108
+			],
+			[
+				0.137810558081,
+				52.224907792
+			]
+		],
+		[
+			[
+				0.137401828405,
+				52.2246804879
+			],
+			[
+				0.137350894511,
+				52.2247114502
+			]
+		],
+		[
+			[
+				0.137695059018,
+				52.2248388064
+			],
+			[
+				0.137653648853,
+				52.2248650733
+			]
+		],
+		[
+			[
+				0.137401828405,
+				52.2246804879
+			],
+			[
+				0.137349888682,
+				52.2246527119
+			],
+			[
+				0.137343944817,
+				52.2246495666
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.137810558081,
+				52.224907792
+			],
+			[
+				0.137810558081,
+				52.224907792
+			]
+		],
+		[
+			[
+				0.137343944817,
+				52.2246495666
+			],
+			[
+				0.137292891741,
+				52.2246826972
+			]
+		],
+		[
+			[
+				0.137350894511,
+				52.2247114502
+			],
+			[
+				0.137350894511,
+				52.2247114502
+			]
+		],
+		[
+			[
+				0.137653648853,
+				52.2248650733
+			],
+			[
+				0.137653648853,
+				52.2248650733
+			]
+		],
+		[
+			[
+				0.138016417623,
+				52.2250326616
+			],
+			[
+				0.138023793697,
+				52.225073737
+			],
+			[
+				0.137991607189,
+				52.2251172769
+			],
+			[
+				0.137958079576,
+				52.2251369931
+			],
+			[
+				0.137864202261,
+				52.2251862835
+			],
+			[
+				0.137720704079,
+				52.2252667911
+			],
+			[
+				0.13769287972,
+				52.2252827831
+			]
+		],
+		[
+			[
+				0.137810558081,
+				52.224907792
+			],
+			[
+				0.137810558081,
+				52.224907792
+			]
+		],
+		[
+			[
+				0.137810558081,
+				52.224907792
+			],
+			[
+				0.13791463493,
+				52.2249675885
+			]
+		],
+		[
+			[
+				0.137292891741,
+				52.2246826972
+			],
+			[
+				0.137292891741,
+				52.2246826972
+			]
+		],
+		[
+			[
+				0.137810558081,
+				52.224907792
+			],
+			[
+				0.13791463493,
+				52.2249675885
+			]
+		],
+		[
+			[
+				0.13791463493,
+				52.2249675885
+			],
+			[
+				0.137878954411,
+				52.2249899431
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.1370134845,
+				52.225569152
+			],
+			[
+				0.1370134845,
+				52.225569152
+			]
+		],
+		[
+			[
+				0.13791463493,
+				52.2249675885
+			],
+			[
+				0.138005018234,
+				52.2250195174
+			],
+			[
+				0.138016417623,
+				52.2250326616
+			]
+		],
+		[
+			[
+				0.137878954411,
+				52.2249899431
+			],
+			[
+				0.137878954411,
+				52.2249899431
+			]
+		],
+		[
+			[
+				0.138016417623,
+				52.2250326616
+			],
+			[
+				0.138222627437,
+				52.225152191
+			]
+		],
+		[
+			[
+				0.138222627437,
+				52.225152191
+			],
+			[
+				0.138332527738,
+				52.2252195545
+			],
+			[
+				0.138338558852,
+				52.2252359847
+			],
+			[
+				0.138353301575,
+				52.2252524148
+			]
+		],
+		[
+			[
+				0.13769287972,
+				52.2252827831
+			],
+			[
+				0.137628575515,
+				52.2253197416
+			]
+		],
+		[
+			[
+				0.13769287972,
+				52.2252827831
+			],
+			[
+				0.137628575515,
+				52.2253197416
+			]
+		],
+		[
+			[
+				0.138353301575,
+				52.2252524148
+			],
+			[
+				0.138365775347,
+				52.2252856857
+			],
+			[
+				0.138436853886,
+				52.22533169
+			],
+			[
+				0.138498544693,
+				52.2253703006
+			],
+			[
+				0.138536095619,
+				52.2253965887
+			],
+			[
+				0.138586064666,
+				52.2254356101
+			]
+		],
+		[
+			[
+				0.137628575515,
+				52.2253197416
+			],
+			[
+				0.137628575515,
+				52.2253197416
+			]
+		],
+		[
+			[
+				0.137628575515,
+				52.2253197416
+			],
+			[
+				0.137628575515,
+				52.2253197416
+			]
+		],
+		[
+			[
+				0.138586064666,
+				52.2254356101
+			],
+			[
+				0.138713121414,
+				52.2255411729
+			],
+			[
+				0.138773471117,
+				52.2255921059
+			],
+			[
+				0.138870030642,
+				52.2256627548
+			],
+			[
+				0.138922333717,
+				52.2257128661
+			],
+			[
+				0.13899743557,
+				52.2257646204
+			],
+			[
+				0.139073878527,
+				52.2257950157
+			],
+			[
+				0.139157027006,
+				52.2258410194
+			],
+			[
+				0.13918787241,
+				52.2258730577
+			],
+			[
+				0.139253586531,
+				52.2259100249
+			],
+			[
+				0.13932466507,
+				52.225950278
+			],
+			[
+				0.139383673668,
+				52.2259856022
+			],
+			[
+				0.139453411102,
+				52.2260044965
+			],
+			[
+				0.139544606209,
+				52.2260389991
+			],
+			[
+				0.139587521553,
+				52.2260578934
+			],
+			[
+				0.139673352241,
+				52.2260817166
+			],
+			[
+				0.139715476846,
+				52.2260911778
+			]
+		],
+		[
+			[
+				0.137628575515,
+				52.2253197416
+			],
+			[
+				0.137612074614,
+				52.2253292254
+			],
+			[
+				0.137427002192,
+				52.2254351993
+			],
+			[
+				0.137418787692,
+				52.2254396546
+			]
+		],
+		[
+			[
+				0.137628575515,
+				52.2253197416
+			],
+			[
+				0.137612074614,
+				52.2253086878
+			],
+			[
+				0.137578547001,
+				52.2253259394
+			],
+			[
+				0.137543678284,
+				52.2253226534
+			],
+			[
+				0.137464553118,
+				52.2252684341
+			],
+			[
+				0.137373358011,
+				52.2252068212
+			],
+			[
+				0.137354779902,
+				52.2251966049
+			]
+		],
+		[
+			[
+				0.137628575515,
+				52.2253197416
+			],
+			[
+				0.13769287972,
+				52.2252827831
+			]
+		],
+		[
+			[
+				0.137628575515,
+				52.2253197416
+			],
+			[
+				0.137612074614,
+				52.2253086878
+			],
+			[
+				0.137578547001,
+				52.2253259394
+			],
+			[
+				0.137543678284,
+				52.2253226534
+			],
+			[
+				0.137464553118,
+				52.2252684341
+			],
+			[
+				0.137373358011,
+				52.2252068212
+			],
+			[
+				0.137354779902,
+				52.2251966049
+			]
+		]
+	],
+	"type": "MultiLineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"deleted": false,
+	"high_logical": 201,
+	"high_physical": 201,
+	"id": 4,
+	"label": "101-201 : WH-2 [101-201] Active",
+	"low_logical": 101,
+	"low_physical": 101,
+	"name": "WH-2",
+	"origin": [
+		"fiber_patch_panel/2?side=out"
+	],
+	"physical": false,
+	"stale": false,
+	"status": "Active"
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 56
+type: mywcom_conduit_run
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "Conduit Run: 56"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.1359339,
+			52.2255569
+		],
+		[
+			0.13616502285,
+			52.2253924812
+		],
+		[
+			0.136256217957,
+			52.225339905
+		],
+		[
+			0.136288404465,
+			52.2253440125
+		],
+		[
+			0.136350095272,
+			52.2253776941
+		],
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.1365626,
+			52.2254978
+		],
+		[
+			0.136603564024,
+			52.2255148849
+		],
+		[
+			0.136690144187,
+			52.2255641852
+		],
+		[
+			0.136698782444,
+			52.2255691039
+		],
+		[
+			0.136772543192,
+			52.2256110004
+		],
+		[
+			0.136806070805,
+			52.2256463248
+		],
+		[
+			0.136847645044,
+			52.2256800062
+		],
+		[
+			0.136910721195,
+			52.2257156789
+		],
+		[
+			0.136857032776,
+			52.2257432615
+		],
+		[
+			0.136796012521,
+			52.225778175
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"id": 56
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 54
+type: mywcom_conduit_run
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "Conduit Run: 54"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.1359339,
+			52.2255569
+		],
+		[
+			0.13616502285,
+			52.2253924812
+		],
+		[
+			0.136256217957,
+			52.225339905
+		],
+		[
+			0.136288404465,
+			52.2253440125
+		],
+		[
+			0.136350095272,
+			52.2253776941
+		],
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.1365626,
+			52.2254978
+		],
+		[
+			0.136603564024,
+			52.2255148849
+		],
+		[
+			0.136690144187,
+			52.2255641852
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"id": 54
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 50
+type: mywcom_conduit_run
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "Conduit Run: 50"
+}
+geom: {
+	"coordinates": [
+		[
+			0.135739222169,
+			52.2256746665
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.1359339,
+			52.2255569
+		],
+		[
+			0.13616502285,
+			52.2253924812
+		],
+		[
+			0.136256217957,
+			52.225339905
+		],
+		[
+			0.136288404465,
+			52.2253440125
+		],
+		[
+			0.136350095272,
+			52.2253776941
+		],
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.1365626,
+			52.2254978
+		],
+		[
+			0.136603564024,
+			52.2255148849
+		],
+		[
+			0.136690144187,
+			52.2255641852
+		],
+		[
+			0.136698782444,
+			52.2255691039
+		],
+		[
+			0.136772543192,
+			52.2256110004
+		],
+		[
+			0.136806070805,
+			52.2256463248
+		],
+		[
+			0.136847645044,
+			52.2256800062
+		],
+		[
+			0.136910721195,
+			52.2257156789
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"id": 50
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 14
+type: mywcom_conduit_run
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "Conduit Run: 14"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136764496565,
+			52.2257637989
+		],
+		[
+			0.136796012521,
+			52.225778175
+		],
+		[
+			0.136857032776,
+			52.2257432615
+		],
+		[
+			0.136910721195,
+			52.2257156789
+		],
+		[
+			0.136847645044,
+			52.2256800062
+		],
+		[
+			0.136806070805,
+			52.2256463248
+		],
+		[
+			0.136772543192,
+			52.2256110004
+		],
+		[
+			0.136698782444,
+			52.2255691039
+		],
+		[
+			0.136690144187,
+			52.2255641852
+		],
+		[
+			0.136603564024,
+			52.2255148849
+		],
+		[
+			0.1365626,
+			52.2254978
+		],
+		[
+			0.1366501,
+			52.2254471
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"id": 14
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 8
+type: mywcom_conduit_run
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "Conduit Run: 8"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136764496565,
+			52.2257637989
+		],
+		[
+			0.136796012521,
+			52.225778175
+		],
+		[
+			0.136857032776,
+			52.2257432615
+		],
+		[
+			0.136910721195,
+			52.2257156789
+		],
+		[
+			0.136847645044,
+			52.2256800062
+		],
+		[
+			0.136806070805,
+			52.2256463248
+		],
+		[
+			0.136772543192,
+			52.2256110004
+		],
+		[
+			0.136698782444,
+			52.2255691039
+		],
+		[
+			0.136690144187,
+			52.2255641852
+		],
+		[
+			0.136603564024,
+			52.2255148849
+		],
+		[
+			0.1365626,
+			52.2254978
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136350095272,
+			52.2253776941
+		],
+		[
+			0.136288404465,
+			52.2253440125
+		],
+		[
+			0.136256217957,
+			52.225339905
+		],
+		[
+			0.13616502285,
+			52.2253924812
+		],
+		[
+			0.1359339,
+			52.2255569
+		],
+		[
+			0.13592094183,
+			52.2255658179
+		],
+		[
+			0.135739222169,
+			52.2256746665
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"id": 8
+}
+displayValues: {
+
+}
+
+update
+[
+
+]
+id: 99
+type: mywcom_fiber_segment
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "Cable Segment: 99 (fiber_cable/11)"
+}
+geom: {
+	"coordinates": [
+		[
+			0.1365626,
+			52.2254978
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.136454668252,
+			52.2254455564
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"cable": "fiber_cable/11",
+	"circuits": [
+
+	],
+	"comsof_auto": false,
+	"directed": true,
+	"forward": false,
+	"housing": "ug_route/354",
+	"id": 99,
+	"in_equipment": null,
+	"in_segment": "4400",
+	"in_structure": "drop_point/4400",
+	"in_tick": null,
+	"length": null,
+	"out_equipment": null,
+	"out_segment": "50000",
+	"out_structure": "drop_point/4",
+	"out_tick": 11,
+	"root_housing": "ug_route/354"
+}
+displayValues: {
+
+}
+
+update
+[
+	"out_segment"
+]
+id: 4401
+type: mywcom_conduit_run
+myw: {
+	"change_type": "insert",
+	"delta": "design/CC5462",
+	"title": "Conduit Run: 4401"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.1365626,
+			52.2254978
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"id": 4401
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 13
+type: mywcom_conduit_run
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "Conduit Run: 13"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136764496565,
+			52.2257637989
+		],
+		[
+			0.136796012521,
+			52.225778175
+		],
+		[
+			0.136857032776,
+			52.2257432615
+		],
+		[
+			0.136910721195,
+			52.2257156789
+		],
+		[
+			0.136847645044,
+			52.2256800062
+		],
+		[
+			0.136806070805,
+			52.2256463248
+		],
+		[
+			0.136772543192,
+			52.2256110004
+		],
+		[
+			0.136698782444,
+			52.2255691039
+		],
+		[
+			0.136690144187,
+			52.2255641852
+		],
+		[
+			0.136603564024,
+			52.2255148849
+		],
+		[
+			0.1365626,
+			52.2254978
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136517062783,
+			52.2254134295
+		],
+		[
+			0.136487558484,
+			52.2253957672
+		],
+		[
+			0.136521756649,
+			52.2253776941
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"id": 13
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+id: 12
+type: mywcom_conduit_run
+myw: {
+	"change_type": "update",
+	"delta": "design/CC5462",
+	"title": "Conduit Run: 12"
+}
+geom: {
+	"coordinates": [
+		[
+			0.136764496565,
+			52.2257637989
+		],
+		[
+			0.136796012521,
+			52.225778175
+		],
+		[
+			0.136857032776,
+			52.2257432615
+		],
+		[
+			0.136910721195,
+			52.2257156789
+		],
+		[
+			0.136847645044,
+			52.2256800062
+		],
+		[
+			0.136806070805,
+			52.2256463248
+		],
+		[
+			0.136772543192,
+			52.2256110004
+		],
+		[
+			0.136698782444,
+			52.2255691039
+		],
+		[
+			0.136690144187,
+			52.2255641852
+		],
+		[
+			0.136603564024,
+			52.2255148849
+		],
+		[
+			0.1365626,
+			52.2254978
+		],
+		[
+			0.136485546827,
+			52.2254655949
+		],
+		[
+			0.136454668252,
+			52.2254455564
+		],
+		[
+			0.136517062783,
+			52.2254134295
+		],
+		[
+			0.136543884873,
+			52.2254315026
+		],
+		[
+			0.136579424143,
+			52.2254121973
+		]
+	],
+	"type": "LineString",
+	"world_name": "geo",
+	"world_type": "geo"
+}
+properties: {
+	"comsof_auto": false,
+	"id": 12
+}
+displayValues: {
+
+}
+
+update
+[
+	"path"
+]
+DATABASE CHANGES: design/CC5462
+    update delta.blown_fiber_bundle(design/CC5462,11,update) fields=(in_conduit)
+    update delta.blown_fiber_bundle(design/CC5462,12,update) fields=(out_conduit,out_structure,path)
+    update delta.blown_fiber_tube(design/CC5462,46,update) fields=(in_conduit)
+    update delta.blown_fiber_tube(design/CC5462,47,update) fields=(out_conduit,out_structure,path)
+    update delta.blown_fiber_tube(design/CC5462,51,update) fields=(in_conduit)
+    update delta.blown_fiber_tube(design/CC5462,52,update) fields=(out_conduit,out_structure,path)
+    update delta.blown_fiber_tube(design/CC5462,56,update) fields=(in_conduit)
+    update delta.blown_fiber_tube(design/CC5462,57,update) fields=(out_conduit,out_structure,path)
+    update delta.blown_fiber_tube(design/CC5462,71,update) fields=(in_conduit)
+    update delta.blown_fiber_tube(design/CC5462,72,update) fields=(out_conduit,out_structure,path)
+    update delta.fiber_cable(design/CC5462,11,update) fields=(path)
+    update delta.mywcom_conduit_run(design/CC5462,12,update) fields=(path)
+    update delta.mywcom_conduit_run(design/CC5462,13,update) fields=(path)
+    update delta.mywcom_conduit_run(design/CC5462,14,update) fields=(path)
+    update delta.mywcom_conduit_run(design/CC5462,4401,insert) fields=(path)
+    update delta.mywcom_conduit_run(design/CC5462,50,update) fields=(path)
+    update delta.mywcom_conduit_run(design/CC5462,54,update) fields=(path)
+    update delta.mywcom_conduit_run(design/CC5462,56,update) fields=(path)
+    update delta.mywcom_conduit_run(design/CC5462,8,update) fields=(path)
+    update delta.mywcom_fiber_segment(design/CC5462,99,update) fields=(out_segment)
+    update delta.mywcom_line_of_count(design/CC5462,4,update) fields=(route)
+

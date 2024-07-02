@@ -1,0 +1,36 @@
+{
+    "image": "modules/comms/images/features/coax_optical_node.svg",
+    "housings": [
+        "rack",
+        "slot",
+        "manhole",
+        "cabinet",
+        "optical_node_closure"
+    ],
+    "function": "connector",
+    "palette": true,
+    "tech": "mixed",
+    "layer": {
+        "min_select": 0,
+        "max_select": 0,
+        "point_style": "modules/comms/images/features/coax_optical_node.svg:0:12"
+    },
+    "secondary_layer": {
+        "point_style": "modules/comms/images/features/coax_optical_node.svg:25:12:1.5m",
+        "geometry": "offset_geom"
+    },
+    "data_block": {
+        "svg": "modules/comms/images/features/data_block_optical_node.svg:22.5:13.5:22m",
+            "properties": {
+            "fld1": "name",
+            "fld2": "output_frequency_1",
+            "fld3": "output_frequency_2",
+            "fld4": "output_frequency_3",
+            "fld5": "output_frequency_4",
+            "fld6": "n_coax_out_ports",
+            "fld7": "voltage",
+            "fld8": "current_draw"
+        }
+    },
+    "offset": true
+}

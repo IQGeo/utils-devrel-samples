@@ -1,0 +1,87 @@
+
+SUB TEST : DELETE MANHOLE WITH SPLICES : manhole/23
+    Request: DELETE:/modules/comms/feature/manhole/23?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE MANHOLE WITH SPLICES
+       insert delta.manhole(design/NB217,23,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,60,update)
+       insert delta.mywcom_fiber_segment(design/NB217,61,update)
+       insert delta.mywcom_route_junction(design/NB217,100000,insert)
+       insert delta.splice_closure(design/NB217,10,delete)
+       insert delta.ug_route(design/NB217,9,update)
+       insert delta.ug_route(design/NB217,10,update)
+    
+    VALIDATION ERRORS: AFTER DELETE MANHOLE WITH SPLICES
+
+SUB TEST : DELETE CABINET WITH SLACK : cabinet/3
+    Request: DELETE:/modules/comms/feature/cabinet/3?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE CABINET WITH SLACK
+       insert delta.cabinet(design/NB217,3,delete)
+       insert delta.conduit(design/NB217,38,update)
+       insert delta.conduit(design/NB217,39,update)
+       insert delta.mywcom_fiber_segment(design/NB217,38,update)
+       insert delta.mywcom_fiber_segment(design/NB217,39,update)
+       insert delta.mywcom_fiber_segment(design/NB217,585,update)
+       insert delta.mywcom_fiber_slack(design/NB217,5,update)
+       insert delta.mywcom_route_junction(design/NB217,100001,insert)
+       insert delta.ug_route(design/NB217,265,update)
+    
+    VALIDATION ERRORS: AFTER DELETE CABINET WITH SLACK
+
+SUB TEST : ATTEMPT DELETE HUB WITH CIRCUITS : building/1
+    Request: DELETE:/modules/comms/feature/building/1?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    
+    
+    DATABASE CHANGES: AFTER ATTEMPT DELETE HUB WITH CIRCUITS
+    
+    VALIDATION ERRORS: AFTER ATTEMPT DELETE HUB WITH CIRCUITS
+
+SUB TEST : DELETE WALL BOX WITH PROPOSED CIRCUIT : wall_box/147
+    Request: DELETE:/modules/comms/feature/wall_box/147
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE WALL BOX WITH PROPOSED CIRCUIT
+       update data.blown_fiber_tube(170) fields=(in_structure)
+       delete data.fiber_ont(147)
+       update data.mywcom_fiber_segment(431) fields=(out_structure)
+       insert data.mywcom_route_junction(100002)
+       update data.ug_route(319) fields=(in_structure)
+       delete data.wall_box(147)
+    
+    VALIDATION ERRORS: AFTER DELETE WALL BOX WITH PROPOSED CIRCUIT
+
+SUB TEST : ATTEMPT DELETE MANHOLE WITH WITH CIRCUITS : manhole/24
+    Request: DELETE:/modules/comms/feature/manhole/24?delta=design/NB217
+    Response: 502 (502 Bad Gateway)
+    
+    
+    DATABASE CHANGES: AFTER ATTEMPT DELETE MANHOLE WITH WITH CIRCUITS
+    
+    VALIDATION ERRORS: AFTER ATTEMPT DELETE MANHOLE WITH WITH CIRCUITS
+
+SUB TEST : DELETE MDU WITH INTERNAL CABLE : mdu/5
+    Request: DELETE:/modules/comms/feature/mdu/5?delta=design/NB217
+    Response: 200 (200 OK)
+    
+    
+    DATABASE CHANGES: AFTER DELETE MDU WITH INTERNAL CABLE
+       insert delta.fiber_cable(design/NB217,221,delete)
+       insert delta.fiber_ont(design/NB217,141,delete)
+       insert delta.fiber_patch_panel(design/NB217,14,delete)
+       insert delta.mdu(design/NB217,5,delete)
+       insert delta.mywcom_fiber_connection(design/NB217,314,delete)
+       insert delta.mywcom_fiber_connection(design/NB217,315,delete)
+       insert delta.mywcom_fiber_connection(design/NB217,316,delete)
+       insert delta.mywcom_fiber_segment(design/NB217,453,update)
+       insert delta.mywcom_fiber_segment(design/NB217,579,delete)
+       insert delta.mywcom_route_junction(design/NB217,100003,insert)
+       insert delta.ug_route(design/NB217,312,update)
+    
+    VALIDATION ERRORS: AFTER DELETE MDU WITH INTERNAL CABLE

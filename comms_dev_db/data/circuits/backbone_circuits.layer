@@ -1,0 +1,25 @@
+{
+   "name": "bb_circuits",
+   "display_name": "Circuits (Backbone)",
+   "category": "overlay", 
+   "code": "bbc", 
+   "datasource": "myworld", 
+   "spec": {
+      "isStatic": false, 
+      "extraOptions": {}, 
+      "nativeAppVector": null, 
+      "nativeAppMode": "switchable", 
+      "rendering": "vector", 
+      "jsClass": ""
+   }, 
+   "transparency": 0, 
+   "min_scale": 1, 
+   "max_scale": 22, 
+   "feature_types": [
+      {
+         "name": "bb_circuit", 
+         "field_name": "path", 
+         "line_style": "#11a7cb:3:arrowed"
+      }
+   ]
+}
