@@ -56,6 +56,8 @@ services:
             - ../../product-nmt-comsof-integration/comsof:/opt/iqgeo/platform/WebApps/myworldapp/modules/comsof:delegated
             # mount directory from host to container for moving data back and forth
             - ../${IQGCOM_DATA_DIR:-data}:/opt/iqgeo/platform/WebApps/myworldapp/modules/data:delegated
+            - ../custom:/opt/iqgeo/platform/WebApps/myworldapp/modules/custom/:delegated
+
         depends_on:
             - postgis
     selenium-chrome:

@@ -13,6 +13,7 @@
 !pyproject.toml
 !.github
 !.testcontainer
+!custom
 # Devcontainer exclusions
 .devcontainer/.env
 .testcontainer/.env
