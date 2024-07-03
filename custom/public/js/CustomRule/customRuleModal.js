@@ -1,8 +1,10 @@
 import myw from 'myWorld-client';
 import React, { useState, useEffect, Children } from 'react';
-import { DraggableModal, Button, Radio, Input, List } from 'myWorld-client/react';
-import { Cascader } from 'antd';
+import { DraggableModal, Button, Radio, Input } from 'myWorld-client/react';
+import { Avatar, Cascader, List } from 'antd';
 import { ItalicOutlined } from '@ant-design/icons';
+import greenImg from '../../images/green_circle.png';
+import redImg from '../../images/red_circle.png';
 
 export const CustomRuleModal = ({ open }) => {
     const [appRef] = useState(myw.app);
@@ -44,13 +46,7 @@ export const CustomRuleModal = ({ open }) => {
         setIsOpen(false);
     };
 
-    const printFeatureList = () => {
-        // console.log(featuresList);
-        console.log(rule);
-    };
-
     const onFieldSelected = value => {
-        console.log(value);
         const cleanType = features[value[0]].fields[value[1]].type.replace(/\(\d+\)$/, '');
         setRuleType(cleanType);
         setPickedFeature(value[0]);
@@ -61,7 +57,6 @@ export const CustomRuleModal = ({ open }) => {
     };
 
     const onRuleChange = ({ target: { value } }) => {
-        console.log(value);
         setRule(value);
     };
 
@@ -78,8 +73,8 @@ export const CustomRuleModal = ({ open }) => {
 
     const validate = (a, operator, b) => {
         const operators = {
-            '>': (a, b) => a > b,
-            '<': (a, b) => a < b,
+            '>': (a, b) => Number(a) > Number(b),
+            '<': (a, b) => Number(a) < Number(b),
             true: a => a,
             false: a => !a,
             have: (a, b) => a.includes(b),
@@ -96,25 +91,20 @@ export const CustomRuleModal = ({ open }) => {
     const validateRule = () => {
         setResult([]);
         db.getFeatures(pickedFeature).then(result => {
-            console.log(result);
-            console.log(pickedField);
+            appRef.map.zoomTo(result[0]);
             for (const r in result) {
                 if (result[r]?.properties) {
-                    // console.log(result[r].properties[pickedField]);
-                    // console.log(
-                    //     'a = ' +
-                    //         value +
-                    //         ' - b = ' +
-                    //         result[r].properties[pickedField] +
-                    //         ' RESULT = ' +
-                    //         validate(result[r].properties[pickedField], rule, value)
-                    // );
-                    const newResult = {
-                        resultName: result[r].properties.description,
-                        resultValue: result[r].properties[pickedField],
-                        result: validate(result[r].properties[pickedField], rule, value)
-                    };
-                    setResult(prevResult => [...prevResult, newResult]);
+                    if (result[r]?.properties) {
+                        typeof result[r].properties[pickedField] === 'number'
+                            ? (result[r].properties[pickedField] =
+                                  result[r].properties[pickedField].toFixed(2))
+                            : result[r].properties[pickedField];
+                        const newResult = {
+                            resultObj: result[r],
+                            result: validate(result[r].properties[pickedField], rule, value)
+                        };
+                        setResult(prevResult => [...prevResult, newResult]);
+                    }
                 }
             }
         });
@@ -138,6 +128,8 @@ export const CustomRuleModal = ({ open }) => {
                             <Radio value={'>'}>{'>'}</Radio>
                         </Radio.Group>
                         <br />
+                        <br />
+                        Value:
                         <Input
                             placeholder={pickedFeature + ' - ' + pickedField}
                             value={value}
@@ -159,6 +151,9 @@ export const CustomRuleModal = ({ open }) => {
                             <Radio value={'have'}>{'MUST contain'}</Radio>
                             <Radio value={'notHave'}>{'MUST NOT contain'}</Radio>
                         </Radio.Group>
+                        <br />
+                        <br />
+                        String:
                         <Input
                             placeholder={pickedFeature + ' - ' + pickedField}
                             value={value}
@@ -186,20 +181,39 @@ export const CustomRuleModal = ({ open }) => {
     }
 
     function renderResult() {
-        // if (result.length > 0) {
-        //     return <h1>results</h1>;
-        // } else {
-        //     return <h1>no results...</h1>;
-        // }
         if (result.length > 0) {
             console.log(result);
             return (
                 <div>
-                    {result.map((item, index) => (
-                        <h3 key={index}>
-                            {item.resultName} - {item.result.toString()}
-                        </h3>
-                    ))}
+                    <br />
+                    <List
+                        size="small"
+                        bordered
+                        dataSource={result}
+                        header={pickedFeature + ' / ' + pickedField + ' query result'}
+                        renderItem={item => (
+                            <List.Item>
+                                <List.Item.Meta
+                                    onClick={() => appRef.map.zoomTo(item.resultObj)}
+                                    avatar={
+                                        item.result ? (
+                                            <Avatar src={greenImg} />
+                                        ) : (
+                                            <Avatar src={redImg} />
+                                        )
+                                    }
+                                    title={
+                                        item.resultObj.properties.description +
+                                        ' - ' +
+                                        item.resultObj.properties[pickedField]
+                                    }
+                                />
+                                {!item.result ? (
+                                    <Button type="primary">Create WFM Ticket</Button>
+                                ) : null}
+                            </List.Item>
+                        )}
+                    />
                 </div>
             );
         }
