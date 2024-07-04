@@ -1,8 +1,7 @@
 import myw from 'myWorld-client';
-import React, { useState, useEffect, Children } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DraggableModal, Button, Radio, Input } from 'myWorld-client/react';
 import { Avatar, Cascader, List } from 'antd';
-import { ItalicOutlined } from '@ant-design/icons';
 import greenImg from '../../images/green_circle.png';
 import redImg from '../../images/red_circle.png';
 
@@ -182,7 +181,6 @@ export const CustomRuleModal = ({ open }) => {
 
     function renderResult() {
         if (result.length > 0) {
-            console.log(result);
             return (
                 <div>
                     <br />
