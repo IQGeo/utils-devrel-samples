@@ -1,16 +1,19 @@
+import myw from 'myWorld-client';
+import 'main.standard';
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
 import customRulesImage from '../../images/customRule.svg';
-import { CustomRuleModal } from './customRuleModal';
+import { StructureCheckerModal } from './structureCheckerModal';
+import StructureManagerPlugin from '../../../../comms/public/js/api/structureManagerPlugin';
 
-export class CustomRulePlugin extends Plugin {
+export class StructureCheckerPlugin extends StructureManagerPlugin {
     static {
-        this.prototype.messageGroup = 'customRulePlugin';
+        this.prototype.messageGroup = 'structureCheckerPlugin';
 
         this.prototype.buttons = {
             dialog: class extends PluginButton {
                 static {
-                    this.prototype.id = 'cable-capture-button';
+                    this.prototype.id = 'structure-checker-button';
                     this.prototype.titleMsg = 'toolbar_msg';
                     this.prototype.imgSrc = customRulesImage;
                 }
@@ -29,7 +32,7 @@ export class CustomRulePlugin extends Plugin {
     showModal() {
         this.renderRoot = renderReactNode(
             null,
-            CustomRuleModal,
+            StructureCheckerModal,
             {
                 open: true,
                 plugin: this
@@ -37,4 +40,8 @@ export class CustomRulePlugin extends Plugin {
             this.renderRoot
         );
     }
+
+    upperFunc = () => {
+        console.log('upper func?');
+    };
 }

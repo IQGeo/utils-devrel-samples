@@ -135,7 +135,7 @@ export default class StructureManagerPlugin extends Plugin {
         routes.forEach(route => {
             if (!housings.includes(route.type)) inValidRoutes.push(route.getTitle());
         });
-        console.log(inValidRoutes.length);
+
         // ENH could return invalid route info
         return inValidRoutes.length > 0;
     }
