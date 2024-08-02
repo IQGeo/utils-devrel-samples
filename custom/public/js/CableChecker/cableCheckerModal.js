@@ -10,6 +10,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
     const [pickedFunction, setPickedFunction] = useState('');
     const [cables, setCables] = useState([]);
     const [housings, setHousings] = useState([]);
+    const [cabinets, setCabinets] = useState([]);
     const [poles, setPoles] = useState([]);
     const [slacks, setSlacks] = useState([]);
     const [fiberSegments, setFiberSegments] = useState([]);
@@ -89,6 +90,42 @@ export const CableCheckerModal = ({ open, plugin }) => {
                 {
                     value: 'findDownstreamSegsToTick',
                     label: 'findDownstreamSegsToTick'
+                },
+                {
+                    value: 'findUpstreamSegsToTick',
+                    label: 'findUpstreamSegsToTick'
+                },
+                {
+                    value: 'cutCableAt',
+                    label: 'cutCableAt'
+                },
+                {
+                    value: 'isCable',
+                    label: 'isCable'
+                },
+                {
+                    value: 'isInternal',
+                    label: 'isInternal'
+                },
+                {
+                    value: 'rootHousingUrnOf',
+                    label: 'rootHousingUrnOf'
+                },
+                {
+                    value: 'getLength',
+                    label: 'getLength'
+                },
+                {
+                    value: 'segmentTypeForCable',
+                    label: 'segmentTypeForCable'
+                },
+                {
+                    value: 'slackTypeForCable',
+                    label: 'slackTypeForCable'
+                },
+                {
+                    value: 'slackTypeForSegment',
+                    label: 'slackTypeForSegment'
                 }
             ]
         }
@@ -122,6 +159,10 @@ export const CableCheckerModal = ({ open, plugin }) => {
 
         db.getFeatures('myworld/pole').then(result => {
             setPoles(result);
+        });
+
+        db.getFeatures('myworld/cabinet').then(result => {
+            setCabinets(result);
         });
 
         db.getFeatures('myworld/mywcom_fiber_slack').then(result => {
@@ -324,6 +365,119 @@ export const CableCheckerModal = ({ open, plugin }) => {
             );
             console.log(result);
         });
+    };
+
+    const onFindUpstreamSegsToTick = () => {
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_8'));
+
+        const segments = fiberSegments.filter(segment =>
+            segment.properties.cable.includes(cable.getUrn())
+        );
+
+        plugin.findUpstreamSegsToTick(segments[0]).then(result => {
+            console.log(
+                'Finding downstream segments to tick for cable segment ' + segments[0]._myw.title
+            );
+            console.log(result);
+        });
+    };
+
+    const onCutCableAt = () => {
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_9'));
+        const cabinet = cabinets.find(cabinet => cabinet.properties.name.includes('JS_CAB_2'));
+        const segments = fiberSegments.filter(segment =>
+            segment.properties.cable.includes(cable.getUrn())
+        );
+        const housingId = Number(segments[1].properties.housing.split('/')[1]);
+        const housing = housings.find(housing => housing.properties.id === housingId);
+
+        plugin.cutCableAt(cabinet, segments[1], false, undefined).then(result => {
+            console.log(result);
+            appRef.setCurrentFeature(segments[0], { zoomTo: true });
+        });
+    };
+
+    const onIsCable = () => {
+        console.log(housings[0]);
+        console.log(cables[0].properties.name + ' is a cable? ' + plugin.isCable(cables[0]));
+        console.log(housings[0]._myw.title + ' is a cable? ' + plugin.isCable(housings[0]));
+        console.log(poles[0].properties.name + ' is a cable? ' + plugin.isCable(poles[0]));
+    };
+
+    const onIsInternal = () => {
+        const cable1 = cables.find(cable => cable.properties.name.includes('JS_Fiber_10'));
+        const cable2 = cables.find(cable => cable.properties.name.includes('JS_Fiber_11'));
+
+        plugin.isInternal(cable1).then(result => {
+            console.log(cable1.properties.name + ' is internal? ' + result);
+        });
+        plugin.isInternal(cable2).then(result => {
+            console.log(cable1.properties.name + ' is internal? ' + result);
+        });
+    };
+
+    const onRootHousingUrnOf = () => {
+        const cableIndex = Math.floor(Math.random() * cables.length);
+        const segments = fiberSegments.filter(segment =>
+            segment.properties.cable.includes(cables[cableIndex].getUrn())
+        );
+        const segmentIndex = Math.floor(Math.random() * segments.length);
+        console.log(
+            'Calling the function for segment ' +
+                segments[segmentIndex]._myw.title +
+                ' of cable ' +
+                cables[cableIndex]._myw.title
+        );
+        console.log('Housing is ' + plugin.rootHousingUrnOf(segments[segmentIndex]));
+        appRef.setCurrentFeature(segments[segmentIndex], { zoomTo: true });
+    };
+
+    const onGetLength = () => {
+        const cableIndex = Math.floor(Math.random() * cables.length);
+        console.log(
+            'Length of ' +
+                cables[cableIndex]._myw.title +
+                ' is ' +
+                plugin.getLength(cables[cableIndex])
+        );
+        appRef.setCurrentFeature(cables[cableIndex], { zoomTo: true });
+    };
+
+    const onSegmentTypeForCable = () => {
+        const cableIndex = Math.floor(Math.random() * cables.length);
+        console.log(
+            'Segment type for ' +
+                cables[cableIndex]._myw.title +
+                ' is ' +
+                plugin.segmentTypeForCable(cables[cableIndex])
+        );
+        appRef.setCurrentFeature(cables[cableIndex], { zoomTo: true });
+    };
+
+    const onSlackTypeForCable = () => {
+        const cableIndex = Math.floor(Math.random() * cables.length);
+        console.log(
+            'Slack type for ' +
+                cables[cableIndex]._myw.title +
+                ' is ' +
+                plugin.slackTypeForCable(cables[cableIndex])
+        );
+        appRef.setCurrentFeature(cables[cableIndex], { zoomTo: true });
+    };
+
+    const onSlackTypeForSegment = () => {
+        const cableIndex = Math.floor(Math.random() * cables.length);
+        const segments = fiberSegments.filter(segment =>
+            segment.properties.cable.includes(cables[cableIndex].getUrn())
+        );
+        const segmentIndex = Math.floor(Math.random() * segments.length);
+        console.log(
+            'Slack type for ' +
+                segments[segmentIndex]._myw.title +
+                ' is ' +
+                plugin.slackTypeForSegment(segments[segmentIndex])
+        );
+        appRef.setCurrentFeature(segments[segmentIndex], { zoomTo: true });
     };
 
     const onListCables = () => {
@@ -660,7 +814,6 @@ export const CableCheckerModal = ({ open, plugin }) => {
                         </Space>
                     </div>
                 );
-
             case 'findDownstreamSegsToTick':
                 return (
                     <div>
@@ -676,10 +829,192 @@ export const CableCheckerModal = ({ open, plugin }) => {
                                 the first cable segment of JS_Fiber_8, print the return in the
                                 console, and focus the map on the cable segment.
                             </p>
-                            <Checkbox onChange={e => setSide(e.target.checked)}>"in"</Checkbox>
 
                             <Button type="primary" onClick={onFindDownstreamSegsToTick}>
                                 findDownstreamSegsToTick
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'findUpstreamSegsToTick':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                findDownstreamSegsToTick finds all upstream segments to a tick mark.
+                                It receives as parameter the initial cable segment and returns an
+                                Object containing all the found segments and the first tick mark
+                                found.
+                            </p>
+                            <p>
+                                Pressing the button will call findDownstreamSegsToTick, starting on
+                                the first cable segment of JS_Fiber_8, print the return in the
+                                console, and focus the map on the cable segment.
+                            </p>
+
+                            <Button type="primary" onClick={onFindUpstreamSegsToTick}>
+                                findUpstreamSegsToTick
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'cutCableAt':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                cutCableAt cuts a cable at a given position, creating new separate
+                                cables if needed. It receives as parameters structure containing the
+                                cable, the segment to be cut, a boolean representing if the cable
+                                should be cut forward, and the housing (if any) for the new cables.
+                            </p>
+                            <p>
+                                Pressing the button will call cutCableAt for the cable JS_Fiber_9,
+                                print the return in the console, and focus the map on the cable
+                                segment.
+                            </p>
+
+                            <Button type="primary" onClick={onCutCableAt}>
+                                cutCableAt
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'isCable':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                isCable checks if a given feature is a cable. It receives as
+                                parameter the feature to be checked and returns true or false.
+                            </p>
+                            <p>
+                                Pressing the button will call isCable for three features, one cable
+                                and two non-cables, and will print the output in the console.
+                            </p>
+
+                            <Button type="primary" onClick={onIsCable}>
+                                isCable
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'isInternal':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                isInternal checks if a given cable segments are all internal (i.e.:
+                                The segments start and end within the same structure). It receives
+                                as parameter the cable to be checked and returns true or false.
+                            </p>
+                            <p>
+                                Pressing the button will call isCable for two cables: JS_Fiber_10
+                                (not internal) and JS_Fiber_11 (internal), and will print the output
+                                in the console (false and true, respectively).
+                            </p>
+
+                            <Button type="primary" onClick={onIsInternal}>
+                                isInternal
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'rootHousingUrnOf':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                rootHousingUrnOf returns the URN of the root housing of a cable
+                                segment. It receives as parameter the cable.
+                            </p>
+                            <p>
+                                Pressing the button will call rootHousingUrnOf for a random cable,
+                                pick a random segment of it, print the return in the console, and
+                                focus the map on the cable segment.
+                            </p>
+
+                            <Button type="primary" onClick={onRootHousingUrnOf}>
+                                rootHousingUrnOf
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'getLength':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                rootHousingUrnOf returns the URN of the root housing of a cable
+                                segment. It receives as parameter the cable.
+                            </p>
+                            <p>
+                                Pressing the button will call rootHousingUrnOf for a random cable,
+                                pick a random segment of it, print the return in the console, and
+                                focus the map on the cable segment.
+                            </p>
+
+                            <Button type="primary" onClick={onGetLength}>
+                                getLength
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'segmentTypeForCable':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                segmentTypeForCable returns the segment types of a cable. It
+                                receives as parameter the cable.
+                            </p>
+                            <p>
+                                Pressing the button will call segmentTypeForCable for a random
+                                cable, print the return in the console, and focus the map on the
+                                cable.
+                            </p>
+
+                            <Button type="primary" onClick={onSegmentTypeForCable}>
+                                segmentTypeForCable
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'slackTypeForCable':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                slackTypeForCable returns the slack type of a cable. It receives as
+                                parameter the cable.
+                            </p>
+                            <p>
+                                Pressing the button will call slackTypeForCable for a random cable,
+                                print the return in the console, and focus the map on the cable.
+                            </p>
+
+                            <Button type="primary" onClick={onSlackTypeForCable}>
+                                slackTypeForCable
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'slackTypeForSegment':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                slackTypeForSegment returns the slack type of a cable segment. It
+                                receives as parameter the cables segment.
+                            </p>
+                            <p>
+                                Pressing the button will call slackTypeForSegment for a random cable
+                                segment, print the return in the console, and focus the map on the
+                                cable segment.
+                            </p>
+
+                            <Button type="primary" onClick={onSlackTypeForSegment}>
+                                slackTypeForSegment
                             </Button>
                         </Space>
                     </div>

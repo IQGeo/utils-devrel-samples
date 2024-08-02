@@ -1,4 +1,4 @@
-import myw from 'myWorld-client';
+import myw, { Plugin } from 'myWorld-client';
 import React, { useState, useEffect } from 'react';
 import { DraggableModal, Button } from 'myWorld-client/react';
 import { Select, Space } from 'antd';
@@ -79,7 +79,7 @@ export const StructureCheckerModal = ({ open, plugin }) => {
 
     const onStructContent = () => {
         const index = Math.floor(Math.random() * structures.length);
-        pluginProp.structContent(structures[index]).then(result => {
+        plugin.structContent(structures[index]).then(result => {
             console.log(result);
             appRef.setCurrentFeature(structures[index], { zoomTo: true });
         });
@@ -358,10 +358,11 @@ export const StructureCheckerModal = ({ open, plugin }) => {
         >
             <Space direction="vertical" size="middle">
                 <p>
-                    Find structures at point, trace through route network. To check what features
-                    are Structures you can check the myw.config['mywcom.structures'] array.
+                    API containing functions related to structures. To check what features are
+                    Structures, select the "List Structures" options below or check the
+                    myw.config['mywcom.structures'] array. ()
                 </p>
-                <p>Select the function you want to demonstrate at the Dropdown below.</p>
+                <p>Select in the Dropdown below the function you want to demonstrate.</p>
 
                 <Select onChange={value => setPickedFunction(value)} options={menuItems} />
                 {renderFields()}
