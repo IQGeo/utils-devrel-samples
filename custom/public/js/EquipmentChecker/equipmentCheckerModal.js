@@ -2,6 +2,7 @@ import myw from 'myWorld-client';
 import React, { useState, useEffect } from 'react';
 import { DraggableModal, Button } from 'myWorld-client/react';
 import { Select, Space } from 'antd';
+import { MenuItems, EquipmentPluginFunctionDictionary } from './equipmentPluginFunctionDictionary';
 
 export const EquipmentCheckerModal = ({ open, plugin }) => {
     const [appRef] = useState(myw.app);
@@ -9,32 +10,8 @@ export const EquipmentCheckerModal = ({ open, plugin }) => {
     const [pickedFunction, setPickedFunction] = useState('');
     const [rack, setRack] = useState();
     const [fiberShelf, setFiberShelf] = useState();
-    const [cabinets, setCabinets] = useState();
     const [isOpen, setIsOpen] = useState(open);
     const [pluginProp] = useState(plugin);
-
-    const menuItems = [
-        {
-            value: 'listEquipments',
-            label: 'List Equipments'
-        },
-        {
-            value: 'moveAssembly',
-            label: 'moveAssembly'
-        },
-        {
-            value: 'copyAssembly',
-            label: 'copyAssembly'
-        },
-        {
-            value: 'connectionsIn',
-            label: 'connectionsIn'
-        },
-        {
-            value: 'connectionsOf',
-            label: 'connectionsOf'
-        }
-    ];
 
     useEffect(() => {
         const dbFeatures = db.getFeatureTypes();
@@ -53,7 +30,6 @@ export const EquipmentCheckerModal = ({ open, plugin }) => {
 
     const onMoveAssembly = () => {
         const fiberIndex = Math.floor(Math.random() * fiberShelf.length);
-
         const housingId = fiberShelf[fiberIndex].properties.housing.split('/')[1];
         const housingIdNum = parseInt(housingId, 10);
         const originalHousing = rack.find(obj => obj.id === housingIdNum);
@@ -77,7 +53,6 @@ export const EquipmentCheckerModal = ({ open, plugin }) => {
 
     const onCopyAssembly = () => {
         const fiberIndex = Math.floor(Math.random() * fiberShelf.length);
-
         const housingId = fiberShelf[fiberIndex].properties.housing.split('/')[1];
         const housingIdNum = parseInt(housingId, 10);
         const originalHousing = rack.find(obj => obj.id === housingIdNum);
@@ -120,107 +95,27 @@ export const EquipmentCheckerModal = ({ open, plugin }) => {
             .catch(alert);
     };
 
-    const onListEquipments = () => {
+    const onListEquipment = () => {
         console.log(myw.config['mywcom.equipment']);
     };
 
     function renderFields() {
-        switch (pickedFunction) {
-            case 'listEquipments':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                Pressing the button will list all features that are configured as a
-                                equipment in the myw.config['mywcom.equipment'] array.
-                            </p>
-                            <Button type="primary" onClick={onListEquipments}>
-                                List Equipment
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'moveAssembly':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                moveAssembly receives two parameters, the first one is the equipment
-                                to be moved and the second is the new housing. The equipment and all
-                                its children are moved. The only return is the successful
-                                fulfillment of the Promise.
-                            </p>
-                            <p>
-                                Pressing the button will take a fiber shelf and move it to a
-                                different rack. Once the rack is moved a success message will appear
-                                in the console, after that you can search for the fiber shelf on the
-                                map and the Housing will be updated.
-                            </p>
-                            <Button type="primary" onClick={onMoveAssembly}>
-                                moveAssembly
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'copyAssembly':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                copyAssembly receives two parameters, the first one is the equipment
-                                to be copied and the second is the housing that will receive the
-                                copy. The only return is the successful fulfillment of the Promise.
-                            </p>
-                            <p>
-                                Pressing the button will take a fiber shelf and copy it to a
-                                different rack. The new equipment is created with a generic name
-                                finishing with a number starting at 10000. You can rename it by
-                                editing the feature.
-                            </p>
-                            <Button type="primary" onClick={onCopyAssembly}>
-                                copyAssembly
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'connectionsIn':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                connectionsIn receives an equipment or housing and returns an array
-                                containing all connections in the given input.
-                            </p>
-                            <p>
-                                Pressing the button will print on the console the return array for
-                                connectionsIn calls for all the fiber shelves. If a given equipment
-                                or housing has no connections the return will be an empty array.
-                            </p>
-                            <Button type="primary" onClick={onConnectionsIn}>
-                                connectionsIn
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'connectionsOf':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                connectionsOf receives an equipment or housing and returns an array
-                                containing all connections for the given input.
-                            </p>
-                            <p>
-                                Pressing the button will print on the console the return array for
-                                connectionsOf calls for all the fiber shelves. If a given equipment
-                                or housing has no connections the return will be an empty array.
-                            </p>
-                            <Button type="primary" onClick={onConnectionsOf}>
-                                connectionsOf
-                            </Button>
-                        </Space>
-                    </div>
-                );
+        if (pickedFunction && pickedFunction !== '') {
+            return (
+                <div>
+                    <Space direction="vertical" size="small">
+                        {EquipmentPluginFunctionDictionary[pickedFunction].body}
+                        <Button
+                            type="primary"
+                            onClick={eval(
+                                EquipmentPluginFunctionDictionary[pickedFunction].function
+                            )}
+                        >
+                            {pickedFunction}
+                        </Button>
+                    </Space>
+                </div>
+            );
         }
     }
 
@@ -244,7 +139,11 @@ export const EquipmentCheckerModal = ({ open, plugin }) => {
                 </p>
                 <p>Select the function you want to demonstrate at the Dropdown below.</p>
 
-                <Select onChange={value => setPickedFunction(value)} options={menuItems} />
+                <Select
+                    virtual={false}
+                    onChange={value => setPickedFunction(value)}
+                    options={MenuItems}
+                />
                 {renderFields()}
             </Space>
 

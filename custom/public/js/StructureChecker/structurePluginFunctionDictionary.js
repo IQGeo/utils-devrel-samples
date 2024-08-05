@@ -1,6 +1,4 @@
 import React from 'react';
-import { Space } from 'antd';
-import { Button } from 'myWorld-client/react';
 
 export const MenuItems = [
     {
@@ -54,19 +52,6 @@ export const MenuItems = [
 ];
 
 export const StructurePluginFunctionDictionary = {
-    // 'List Structures': (
-    //     <div>
-    //         <Space direction="vertical" size="small">
-    //             <p>
-    //                 Pressing the button will list all features that are configured as a building in
-    //                 the myw.config['mywcom.structures'] array.
-    //             </p>
-    //             <Button type="primary" onClick={onListStructures}>
-    //                 List Structures
-    //             </Button>
-    //         </Space>
-    //     </div>
-    // )
     listStructures: {
         body: (
             <div>
