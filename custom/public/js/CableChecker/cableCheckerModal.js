@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { DraggableModal, Button, Checkbox } from 'myWorld-client/react';
 import { Select, Space } from 'antd';
 import { CodeSandboxCircleFilled } from '@ant-design/icons';
+import CableManagerPlugin from '../../../../comms/public/js/api/cableManagerPlugin';
 
 export const CableCheckerModal = ({ open, plugin }) => {
     const [appRef] = useState(myw.app);
@@ -126,6 +127,26 @@ export const CableCheckerModal = ({ open, plugin }) => {
                 {
                     value: 'slackTypeForSegment',
                     label: 'slackTypeForSegment'
+                },
+                {
+                    value: 'isSegment',
+                    label: 'isSegment'
+                },
+                {
+                    value: 'segmentTypes',
+                    label: 'segmentTypes'
+                },
+                {
+                    value: 'connectionTypes',
+                    label: 'connectionTypes'
+                },
+                {
+                    value: 'slackTypes',
+                    label: 'slackTypes'
+                },
+                {
+                    value: 'pinCountFor',
+                    label: 'pinCountFor'
                 }
             ]
         }
@@ -478,6 +499,42 @@ export const CableCheckerModal = ({ open, plugin }) => {
                 plugin.slackTypeForSegment(segments[segmentIndex])
         );
         appRef.setCurrentFeature(segments[segmentIndex], { zoomTo: true });
+    };
+
+    const onIsSegment = () => {
+        const segment = fiberSegments[Math.floor(Math.random() * fiberSegments.length)];
+        const cable = cables[Math.floor(Math.random() * cables.length)];
+        const cabinet = cabinets[Math.floor(Math.random() * cabinets.length)];
+        console.log(segment._myw.title + ' is a segment? ' + plugin.isSegment(segment.getUrn()));
+        console.log(cable._myw.title + ' is a segment? ' + plugin.isSegment(cable.getUrn()));
+        console.log(cabinet._myw.title + ' is a segment? ' + plugin.isSegment(cabinet.getUrn()));
+    };
+
+    const onSegmentTypes = () => {
+        console.log(CableManagerPlugin.segmentTypes());
+    };
+
+    const onConnectionTypes = () => {
+        console.log(CableManagerPlugin.connectionTypes());
+    };
+
+    const onSlackTypes = () => {
+        console.log(CableManagerPlugin.slackTypes());
+    };
+
+    const onPinCountFor = () => {
+        const segment = fiberSegments[Math.floor(Math.random() * fiberSegments.length)];
+        console.log('number of pins for ' + segment._myw.title + ':');
+        plugin.pinCountFor(segment).then(result => {
+            console.log('undefined: ' + result);
+            appRef.setCurrentFeature(segment, { zoomTo: true });
+        });
+        plugin.pinCountFor(segment, 'in').then(result => {
+            console.log('in : ' + result);
+        });
+        plugin.pinCountFor(segment, 'out').then(result => {
+            console.log('out : ' + result);
+        });
     };
 
     const onListCables = () => {
@@ -1015,6 +1072,102 @@ export const CableCheckerModal = ({ open, plugin }) => {
 
                             <Button type="primary" onClick={onSlackTypeForSegment}>
                                 slackTypeForSegment
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'isSegment':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                isSegment checks if a given feature is a cable segment. It receives
+                                as paramenter the URN of the feature and returns true or false.
+                            </p>
+                            <p>
+                                Pressing the button will call isSegment for three features, one
+                                cable segment and two other features, and print the outputs in the
+                                console (true, false, false)
+                            </p>
+
+                            <Button type="primary" onClick={onIsSegment}>
+                                isSegment
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'segmentTypes':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                segmentTypes returns all features that are cofigured as cable
+                                segments in the array myw.config['mywcom.network_types'].
+                            </p>
+                            <p>
+                                Pressing the button will call segmentTypes and print the output in
+                                the console.
+                            </p>
+
+                            <Button type="primary" onClick={onSegmentTypes}>
+                                segmentTypes
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'connectionTypes':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                connectionTypes returns all features that are cofigured as
+                                connections in the array myw.config['mywcom.network_types'].
+                            </p>
+                            <p>
+                                Pressing the button will call connectionTypes and print the output
+                                in the console.
+                            </p>
+
+                            <Button type="primary" onClick={onConnectionTypes}>
+                                connectionTypes
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'slackTypes':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                slackTypes returns all features that are cofigured as slacks in the
+                                array myw.config['mywcom.network_types'].
+                            </p>
+                            <p>
+                                Pressing the button will call slackTypes and print the output in the
+                                console.
+                            </p>
+
+                            <Button type="primary" onClick={onSlackTypes}>
+                                slackTypes
+                            </Button>
+                        </Space>
+                    </div>
+                );
+            case 'pinCountFor':
+                return (
+                    <div>
+                        <Space direction="vertical" size="small">
+                            <p>
+                                pinCountFor returns the pin count for a feature. It receives as
+                                parameters the feature and an optional side ('in' or 'out').
+                            </p>
+                            <p>
+                                Pressing the button will call slackTypes and print the output in the
+                                console.
+                            </p>
+
+                            <Button type="primary" onClick={onPinCountFor}>
+                                pinCountFor
                             </Button>
                         </Space>
                     </div>
