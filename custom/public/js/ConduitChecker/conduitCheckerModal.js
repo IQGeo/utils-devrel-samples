@@ -2,14 +2,13 @@ import myw from 'myWorld-client';
 import React, { useState, useEffect } from 'react';
 import { DraggableModal, Button } from 'myWorld-client/react';
 import { Select, Space } from 'antd';
-import { merge } from 'jquery';
+import { ConduitPluginFunctionDictionary, MenuItems } from './conduitPluginFunctionDictionary';
 
 export const ConduitCheckerModal = ({ open, plugin }) => {
     const [appRef] = useState(myw.app);
     const [db] = useState(appRef.database);
     const [conduits, setConduits] = useState([]);
     const [housings, setHousings] = useState([]);
-    const [ugRoutes, setUgRoutes] = useState([]);
     const [manholes, setManholes] = useState([]);
     const [cabinets, setCabinets] = useState([]);
     const [blownFiberTubes, setBlownFiberTubes] = useState([]);
@@ -40,12 +39,6 @@ export const ConduitCheckerModal = ({ open, plugin }) => {
     ];
 
     useEffect(() => {
-        // console.log('CONDUITS = ' + myw.config['mywcom.conduits']);
-        // for (const c in myw.config['mywcom.conduits']) {
-        //     console.log(myw.config['mywcom.conduits'][c]);
-        // }
-        const dbFeatures = db.getFeatureTypes();
-        console.log(dbFeatures);
         db.getFeatures('myworld/conduit').then(result => {
             setConduits(result);
         });
@@ -75,12 +68,6 @@ export const ConduitCheckerModal = ({ open, plugin }) => {
 
     const closeWindow = () => {
         setIsOpen(false);
-    };
-
-    const okButton = () => {
-        for (const r in manholes) {
-            console.log(manholes[r]);
-        }
     };
 
     const onDisconnectConduit = () => {
@@ -137,10 +124,7 @@ export const ConduitCheckerModal = ({ open, plugin }) => {
         );
         const housingId = Number(subConduit.properties.housing.split('/')[1]);
         let destinationHousing;
-        console.log(subConduit);
-        console.log(housingId);
         const housing = housings.find(housing => housing.properties.id === housingId);
-        console.log(housing);
         if (housing.properties.name === 'JS_CND_1')
             destinationHousing = housings.find(housing => housing.properties.name === 'JS_CND_5');
         else destinationHousing = housings.find(housing => housing.properties.name === 'JS_CND_1');
@@ -174,110 +158,20 @@ export const ConduitCheckerModal = ({ open, plugin }) => {
     };
 
     function renderFields() {
-        switch (pickedFunction) {
-            case 'listConduits':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                Pressing the button will list all features that are configured as a
-                                conduit in the myw.config['mywcom.conduits'] array.
-                            </p>
-                            <Button type="primary" onClick={onListConduits}>
-                                List Conduits
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'disconnectConduit':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                IMPORTANT: disconnectConduit only works on Continuous conduits
-                                (e.g.: Blown Fiber Tubes)
-                            </p>
-                            <p>
-                                disconnectConduit disconnects the conduit from its housing. The
-                                conduit's housing is stored in the root_housing property of the
-                                conduit.
-                            </p>
-                            <p>
-                                Pressing the button will disconnect conduit JB_BFT_2 in the housing
-                                JS_CAB_2, focus the map on the cabinet and show the cabinet status
-                                on the details.
-                            </p>
-                            <Button type="primary" onClick={onDisconnectConduit}>
-                                disconnectConduit
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'connectConduits':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                IMPORTANT: connectConduits only works on Continuous conduits (e.g.:
-                                Blown Fiber Tubes)
-                            </p>
-                            <p>
-                                connectConduit connects two conduits arriving in a housing. The
-                                conduit's housing is stored in the root_housing property of the
-                                conduit.
-                            </p>
-                            <p>
-                                Pressing the button will connect the two sections of conduit
-                                JB_BFT_2 in the housing JS_CAB_2, focus the map on the cabinet and
-                                show the cabinet status on the details. Trying to connect the
-                                conduits when they are already connected will make the promise throw
-                                an error that will be printed in the console.
-                            </p>
-                            <Button type="primary" onClick={onConnectConduits}>
-                                connectConduits
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'moveInto':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                moveInto moves a cable segment or conduit to a new housing in same
-                                route
-                            </p>
-                            <p>
-                                Pressing the button will move JS_SUBCND_1 between JS_CND_1 to the
-                                conduit JS_CND_5 (i.e.: If it is currently housed into JS_CND_1 it
-                                will move it to JS_CND_5 and vice-versa), focus the map on the
-                                cabinet and show the route the conduit information in the details
-                                tab.
-                            </p>
-                            <Button type="primary" onClick={onMoveInto}>
-                                moveInto
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'isContinuousConduitType':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                isContinuousConduitType will return true if the feature is a
-                                continuous conduit (e.g.: Blown Fiber Tubes).
-                            </p>
-                            <p>
-                                Pressing the button will randomly pick a conduit and check if it is
-                                continuous or not.
-                            </p>
-                            <Button type="primary" onClick={onIsContinuousConduitType}>
-                                isContinuousConduitType
-                            </Button>
-                        </Space>
-                    </div>
-                );
+        if (pickedFunction && pickedFunction !== '') {
+            return (
+                <div>
+                    <Space direction="vertical" size="small">
+                        {ConduitPluginFunctionDictionary[pickedFunction].body}
+                        <Button
+                            type="primary"
+                            onClick={eval(ConduitPluginFunctionDictionary[pickedFunction].function)}
+                        >
+                            {pickedFunction}
+                        </Button>
+                    </Space>
+                </div>
+            );
         }
     }
 
@@ -289,7 +183,7 @@ export const ConduitCheckerModal = ({ open, plugin }) => {
             width={500}
             onCancel={closeWindow}
             footer={[
-                <Button key="ok" onClick={okButton} type="primary">
+                <Button key="ok" onClick={closeWindow} type="primary">
                     Close Window
                 </Button>
             ]}
@@ -301,7 +195,11 @@ export const ConduitCheckerModal = ({ open, plugin }) => {
                 </p>
                 <p>Select the function you want to demonstrate at the Dropdown below.</p>
 
-                <Select onChange={value => setPickedFunction(value)} options={menuItems} />
+                <Select
+                    virtual={false}
+                    onChange={value => setPickedFunction(value)}
+                    options={MenuItems}
+                />
                 {renderFields()}
             </Space>
 
