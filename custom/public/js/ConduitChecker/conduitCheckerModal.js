@@ -9,34 +9,10 @@ export const ConduitCheckerModal = ({ open, plugin }) => {
     const [db] = useState(appRef.database);
     const [conduits, setConduits] = useState([]);
     const [housings, setHousings] = useState([]);
-    const [manholes, setManholes] = useState([]);
     const [cabinets, setCabinets] = useState([]);
     const [blownFiberTubes, setBlownFiberTubes] = useState([]);
     const [pickedFunction, setPickedFunction] = useState('');
     const [isOpen, setIsOpen] = useState(open);
-
-    const menuItems = [
-        {
-            value: 'listConduits',
-            label: 'List Conduits'
-        },
-        {
-            value: 'disconnectConduit',
-            label: 'disconnectConduit'
-        },
-        {
-            value: 'connectConduits',
-            label: 'connectConduits'
-        },
-        {
-            value: 'moveInto',
-            label: 'moveInto'
-        },
-        {
-            value: 'isContinuousConduitType',
-            label: 'isContinuousConduitType'
-        }
-    ];
 
     useEffect(() => {
         db.getFeatures('myworld/conduit').then(result => {

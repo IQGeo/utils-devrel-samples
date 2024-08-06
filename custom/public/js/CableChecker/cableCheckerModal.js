@@ -2,8 +2,10 @@ import myw from 'myWorld-client';
 import React, { useState, useEffect } from 'react';
 import { DraggableModal, Button, Checkbox } from 'myWorld-client/react';
 import { Select, Space } from 'antd';
-import { CodeSandboxCircleFilled } from '@ant-design/icons';
 import CableManagerPlugin from '../../../../comms/public/js/api/cableManagerPlugin';
+import { CablePluginFunctionDictionary, MenuItems } from './cablePluginFunctionDictionary';
+import { functions } from 'underscore';
+import { error } from 'jquery';
 
 export const CableCheckerModal = ({ open, plugin }) => {
     const [appRef] = useState(myw.app);
@@ -206,12 +208,13 @@ export const CableCheckerModal = ({ open, plugin }) => {
 
     const onHighestUsedPinOn = () => {
         const cableIndex = Math.floor(Math.random() * cables.length);
-        console.log('Calling the function for cable ' + cables[cableIndex].properties.name);
 
         plugin
             .highestUsedPinOn(cables[cableIndex])
             .then(result => {
-                console.log(result);
+                console.log(
+                    'Highest used pin on cable ' + cables[cableIndex]._myw.title + ' is ' + result
+                );
             })
             .catch(alert);
     };
@@ -219,6 +222,8 @@ export const CableCheckerModal = ({ open, plugin }) => {
     const onConnectionsFor = () => {
         const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_1'));
         console.log('Checking the connections for cable ' + cable.properties.name);
+        console.log('splice: ' + splice);
+        console.log('sorted: ' + sorted);
         plugin.connectionsFor(cable, splice, sorted).then(result => {
             console.log(result);
         });
@@ -231,15 +236,17 @@ export const CableCheckerModal = ({ open, plugin }) => {
 
         plugin.internalSegments(housings[housingIndex], false).then(result => {
             console.log(result);
+            appRef.setCurrentFeature(housings[housingIndex], { zoomTo: true });
         });
     };
 
-    const onCreateDetachedSegment = () => {
+    const onCreateDetachedInternalSeg = () => {
         const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_1'));
         const pole = poles.find(pole => pole.properties.name.includes('JS_Pole_1'));
         console.log('Creating a detached segment for cable ' + cable.properties.name);
         plugin.createDetachedInternalSeg(pole, cable, pole.getUrn, 10).then(result => {
             console.log(result);
+            appRef.setCurrentFeature(cable, { zoomTo: true });
         });
     };
 
@@ -249,6 +256,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
         console.log('Creating a slack for cable ' + cable.properties.name);
         plugin.createDetachedSlack(cable, pole).then(result => {
             console.log(result);
+            appRef.setCurrentFeature(cable, { zoomTo: true });
         });
     };
 
@@ -277,26 +285,39 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     const onAddSlack = () => {
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_6'));
+
         const segment = fiberSegments.find(segment =>
-            segment.properties.cable.includes('fiber_cable/100005')
+            segment.properties.cable.includes('fiber_cable/' + cable.properties.id)
         );
-        const pole = poles.find(pole => pole.properties.name.includes('JS_Pole_1'));
-        console.log(segment.getUrn());
-        plugin.createDetSlackAtSide(segment, pole, side).then(result => {
-            console.log(result);
-            plugin.addSlack(result.type, result, segment.getUrn(), side).then(result => {
+        const poleId = Number(segment.properties.in_structure.split('/')[1]);
+
+        const pole = poles.find(pole => pole.id == poleId);
+        //     console.log(segment.getUrn());
+        plugin
+            .createDetSlackAtSide(segment, pole, side)
+            .then(result => {
                 console.log(result);
+                plugin
+                    .addSlack(result.type, result, segment.getUrn(), side)
+                    .then(result => {
+                        console.log(result);
+                    })
+                    .catch(error => console.log('ERROR: ' + error));
                 appRef.setCurrentFeature(result, { zoomTo: true });
-            });
-        });
+            })
+            .catch(error => console.log('ERROR: ' + error));
     };
 
     const onTransferConnections = () => {
+        const old_cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_1'));
+        const new_cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_7'));
+
         const old_segment = fiberSegments.find(segment =>
-            segment.properties.cable.includes('fiber_cable/100000')
+            segment.properties.cable.includes('fiber_cable/' + old_cable.properties.id)
         );
         const new_segment = fiberSegments.find(segment =>
-            segment.properties.cable.includes('fiber_cable/100006')
+            segment.properties.cable.includes('fiber_cable/' + new_cable.properties.id)
         );
         plugin
             .transferConnections(old_segment.getUrn(), new_segment.getUrn(), side ? 'in' : 'out')
@@ -306,18 +327,23 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     const onConnectionsOf = () => {
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_1'));
+
         const segment = fiberSegments.find(segment =>
-            segment.properties.cable.includes('fiber_cable/100000')
+            segment.properties.cable.includes('fiber_cable/' + cable.properties.id)
         );
+
         plugin.connectionsOf(segment.getUrn()).then(result => {
             console.log(result);
-            appRef.setCurrentFeature(result, { zoomTo: true });
+            appRef.setCurrentFeature(segment, { zoomTo: true });
         });
     };
 
     const onSegmentContainment = () => {
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_1'));
+
         const segment = fiberSegments.find(segment =>
-            segment.properties.cable.includes('fiber_cable/100000')
+            segment.properties.cable.includes('fiber_cable/' + cable.properties.id)
         );
         plugin.segmentContainment(segment, side ? 'in' : 'out').then(result => {
             console.log(result);
@@ -326,8 +352,10 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     const onSetSegmentContainment = () => {
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_7'));
+
         const segment = fiberSegments.find(segment =>
-            segment.properties.cable.includes('fiber_cable/100006')
+            segment.properties.cable.includes('fiber_cable/' + cable.properties.id)
         );
         const splitter = fiberSplitters.find(splitter =>
             splitter.properties.name.includes('JS_FiberSplitter_1')
@@ -347,7 +375,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     const onSetTickMark = () => {
-        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_8'));
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_4'));
 
         const segments = fiberSegments.filter(segment =>
             segment.properties.cable.includes(cable.getUrn())
@@ -367,13 +395,12 @@ export const CableCheckerModal = ({ open, plugin }) => {
             .setTickMark(segments[0], tick, side ? 'in_tick' : 'out_tick', 1, 'm')
             .then(result => {
                 console.log('Setting the tick for cable segment ' + segments[0]._myw.title);
-                console.log(result);
                 appRef.setCurrentFeature(segments[0], { zoomTo: true });
             });
     };
 
     const onFindDownstreamSegsToTick = () => {
-        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_8'));
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_4'));
 
         const segments = fiberSegments.filter(segment =>
             segment.properties.cable.includes(cable.getUrn())
@@ -389,7 +416,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     const onFindUpstreamSegsToTick = () => {
-        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_8'));
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_4'));
 
         const segments = fiberSegments.filter(segment =>
             segment.properties.cable.includes(cable.getUrn())
@@ -433,7 +460,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
             console.log(cable1.properties.name + ' is internal? ' + result);
         });
         plugin.isInternal(cable2).then(result => {
-            console.log(cable1.properties.name + ' is internal? ' + result);
+            console.log(cable2.properties.name + ' is internal? ' + result);
         });
     };
 
@@ -449,7 +476,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
                 ' of cable ' +
                 cables[cableIndex]._myw.title
         );
-        console.log('Housing is ' + plugin.rootHousingUrnOf(segments[segmentIndex]));
+        console.log('Root Housing is ' + plugin.rootHousingUrnOf(segments[segmentIndex]));
         appRef.setCurrentFeature(segments[segmentIndex], { zoomTo: true });
     };
 
@@ -487,11 +514,16 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     const onSlackTypeForSegment = () => {
-        const cableIndex = Math.floor(Math.random() * cables.length);
-        const segments = fiberSegments.filter(segment =>
-            segment.properties.cable.includes(cables[cableIndex].getUrn())
-        );
-        const segmentIndex = Math.floor(Math.random() * segments.length);
+        let segments = [];
+        let segmentIndex = 0;
+        while (segments.length < 1) {
+            const cableIndex = Math.floor(Math.random() * cables.length);
+            segments = fiberSegments.filter(segment =>
+                segment.properties.cable.includes(cables[cableIndex].getUrn())
+            );
+            segmentIndex = Math.floor(Math.random() * segments.length);
+        }
+
         console.log(
             'Slack type for ' +
                 segments[segmentIndex]._myw.title +
@@ -535,6 +567,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
         plugin.pinCountFor(segment, 'out').then(result => {
             console.log('out : ' + result);
         });
+        appRef.setCurrentFeature(segment, { zoomTo: true });
     };
 
     const onListCables = () => {
@@ -542,636 +575,36 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     function renderFields() {
-        switch (pickedFunction) {
-            case 'listCables':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                Pressing the button will list all features that are configured as a
-                                cable in the myw.config['mywcom.cables'] array.
-                            </p>
-                            <Button type="primary" onClick={onListCables}>
-                                List Equipment
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'highestUsedPinOn':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                highestUsedPinOn function checks if changing the count for a cable
-                                would not invalidate any connections. Returns true if it does not.
-                            </p>
-                            <p>
-                                Pressing the button will select a random cable and call the
-                                highestUsedPinOn function.
-                            </p>
-                            <Button type="primary" onClick={onHighestUsedPinOn}>
-                                highestUsedPinOn
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'connectionsFor':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                connectionsFor function returns all the connections for a cable. The
-                                function receives two additional parameter:
-                                <br />
-                                - splice: boolean, if true, the function will return the splices for
-                                the cable.
-                                <br />- sorted: boolean, if true, the function will return the
-                                connections sorted.
-                            </p>
-                            <p>
-                                {/* Pressing the button will select a random cable and call the
-                                connectionsFor function. You can also set the splice and sorted
-                                parameters using the checkboxes. */}
-                                Pressing the button will show connections for the cable JS_Fiber_1,
-                                as well as focus the map on it and show its details in the Details
-                                tab.
-                            </p>
-                            <Checkbox onChange={e => setSplice(e.target.checked)}>splice</Checkbox>
-                            <Checkbox onChange={e => setSorted(e.target.checked)}>sorted</Checkbox>
-                            <Button type="primary" onClick={onConnectionsFor}>
-                                connectionsFor
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'internalSegments':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>internalSegments returns all cable segments hosted in a housing</p>
-                            <p>
-                                Pressing the button will select a random housing and call the
-                                internalSegments function.
-                            </p>
-                            <Button type="primary" onClick={onInternalSegments}>
-                                highestUsedPinOn
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'createDetachedInternalSeg':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                createDetachedInternalSeg creates a detached cable segment within a
-                                structure. It is important to note that a detached segment, once
-                                create has NOT been inserted in the database yet.
-                            </p>
-                            <p>
-                                Pressing the button will create a new segment of the fiber cable
-                                JS_Fibre_1 within the Pole JS_Pole_1.
-                            </p>
-                            <Button type="primary" onClick={onCreateDetachedSegment}>
-                                createDetachedInternalSeg
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'createDetachedSlack':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                createDetachedSlack creates a detached cable slack within a
-                                structure. It is important to note that a detached segment, once
-                                create has NOT been inserted in the database yet. It receives as
-                                parameters the cable that will receive the slack and its housing
-                                structure.
-                            </p>
-                            <p>
-                                Pressing the button will create a new slack of the fiber cable
-                                JS_Fibre_1 within the Pole JS_Pole_1.
-                            </p>
-                            <Button type="primary" onClick={onCreateDetachedSlack}>
-                                createDetachedSlack
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'splitSlack':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                splitSlack takes an existing slack and split it into two, the
-                                function returns an array containing two elements: The original
-                                slack and the new slack. It receives as parameters the slack to be
-                                split and the length of the new slack.
-                            </p>
-                            <p>
-                                Pressing the button will split the existing slack in cable
-                                JS_Fibre_5 in half. The original length of the slack is 100ft.
-                            </p>
-                            <Button type="primary" onClick={onSplitSlack}>
-                                splitSlack
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'createDetSlackAtSide':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                createDetSlackAtSide works like createDetachedSlack, but the slack
-                                is created already associated to a cable segment. It is important to
-                                note that a detached segment, once create has NOT been inserted in
-                                the database yet. It receives as parameters the cable segment that
-                                will receive the slack, its housing, and a boolean (true if slack
-                                created before existing segment, otherwise false).
-                            </p>
-                            <p>
-                                Pressing the button will create a detached slack associated with the
-                                a cable segment of JS_Fibre_6, focus the map on the cable segment
-                                and show its details in the "Details" tab. The return of the
-                                function is printed in the console.
-                            </p>
-                            <Checkbox onChange={e => setSide(e.target.checked)}>side</Checkbox>
-                            <Button type="primary" onClick={onCreateDetSlackAtSide}>
-                                createDetSlackAtSide
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'addSlack':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                addSlack actually adds the detached slack to the database. It
-                                receives as parameters the feature type (stored in geometry.type
-                                within the Object), the detached Slack to be stored, the URN of the
-                                cable segment, and a boolean flagging if the slack is to be stored
-                                before (true) or after (false) the cable segment.
-                            </p>
-                            <p>
-                                Pressing the button will first call createDetSlackAtSide to create
-                                the slack for cable JS_Fiber_6, then add it to the database, focus
-                                the map on the cable segment and show its details in the "Details"
-                                tab. The return of the function is printed in the console.
-                            </p>
-                            <Checkbox onChange={e => setSide(e.target.checked)}>side</Checkbox>
-                            <Button type="primary" onClick={onAddSlack}>
-                                addSlack
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'transferConnections':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                transferConnections allows you to transfer connectios from one cable
-                                segment to another. It receives as parameters the URN of the old
-                                segment (containing the connections), the URN of the new segment
-                                (that will receive the connections), and a string representing the
-                                connections of which side you want to transfer ("in" or "out"). It
-                                returns an array of updated features. It's important to note that
-                                the changes are NOT pushed into the databse.
-                            </p>
-                            <p>
-                                Pressing the button will transfer the connections from the cable
-                                JS_Fiber_1 to the cable JS_Fiber_7. In the console you can see the
-                                output of the functions and the difference when calling it using
-                                "in" or "out".
-                            </p>
-                            <Checkbox onChange={e => setSide(e.target.checked)}>"in"</Checkbox>
-                            <Button type="primary" onClick={onTransferConnections}>
-                                transferConnections
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'connectionsOf':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                connectionsOf returns an array containing all the connections of a
-                                given feature. It receives as parameters the feature URN, its
-                                housing and the list of splices (to limit the number of results).
-                            </p>
-                            <p>
-                                Pressing the button will query for the connections of the cable
-                                JS_Fiber_1, print the output in the console and focus the map on the
-                                cable.
-                            </p>
-                            <Button type="primary" onClick={onConnectionsOf}>
-                                connectionsOf
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'segmentContainment':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                segmentContainment returns the URN of equipment in which the cable
-                                segment is housed (if any). It receives as parameters the cable
-                                segment and a string representing which side of the segment to check
-                                ("in" or "out").
-                            </p>
-                            <p>
-                                IMPORTANT: Equipment connection need to be manually set for the
-                                cable. Check the "Setting an Enclosure on a cable" page in the
-                                Developer Guide.
-                            </p>
-                            <p>
-                                Pressing the button will query for the connections of the cable
-                                JS_Fiber_1, print the output in the console and focus the map on the
-                                cable.
-                            </p>
-                            <Checkbox onChange={e => setSide(e.target.checked)}>"in"</Checkbox>
-
-                            <Button type="primary" onClick={onSegmentContainment}>
-                                segmentContainment
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'setSegmentContainment':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                setSegmentContainment allows you to set the the equipment in which
-                                the cable segment is housed. It receives as parameters the cable
-                                segment, which side of the segment to set ("in" or "out"), and the
-                                equipment that will house the cable (which can be 'null').
-                            </p>
-                            <p>
-                                Pressing the button will set the housing for the "out" side of a
-                                segment of cable JS_Fiber_7. If the housing is set it will remove it
-                                by setting it to null. The output will be print in the console and
-                                the cable will be focused on the map.
-                            </p>
-                            <Button type="primary" onClick={onSetSegmentContainment}>
-                                setSegmentContainment
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'setTickMark':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                setTickMark allows you to set the tick mark of a cable. It receives
-                                as parameters the cable segment, the new tick mark (as an integer),
-                                if the tick should be in the IN out OUT end of the segment (as an
-                                'in_tick' our 'out_tick' string), the distance between tick marks,
-                                and the distance unit (e.g.: 'm' or 'ft').
-                            </p>
-                            <p>
-                                Pressing the button will alternate the tick of the first cable
-                                segment for JS_Fiber_8 between '123' and '456' within 1m of the
-                                segment, print the return in the console, and focus the map on the
-                                cable segment.
-                            </p>
-                            <Checkbox onChange={e => setSide(e.target.checked)}>"in"</Checkbox>
-
-                            <Button type="primary" onClick={onSetTickMark}>
-                                setTickMark
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'setInTickMark':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                setInTickMark sets the in tick of a cable segment and adjust
-                                measured length of all downstream cable segments to next tick
-                            </p>
-                            <p>
-                                Pressing the button will alternate the tick of the first cable
-                                segment for JS_Fiber_8 between '123' and '456' within 1m of the
-                                segment, print the return in the console, and focus the map on the
-                                cable segment.
-                            </p>
-                            <Checkbox onChange={e => setSide(e.target.checked)}>"in"</Checkbox>
-
-                            <Button type="primary" onClick={onSetInTickMark}>
-                                setInTickMark
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'findDownstreamSegsToTick':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                findDownstreamSegsToTick finds all downstream segments to a tick
-                                mark. It receives as parameter the initial cable segment and returns
-                                an Object containing all the found segments and the first tick mark
-                                found.
-                            </p>
-                            <p>
-                                Pressing the button will call findDownstreamSegsToTick, starting on
-                                the first cable segment of JS_Fiber_8, print the return in the
-                                console, and focus the map on the cable segment.
-                            </p>
-
-                            <Button type="primary" onClick={onFindDownstreamSegsToTick}>
-                                findDownstreamSegsToTick
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'findUpstreamSegsToTick':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                findDownstreamSegsToTick finds all upstream segments to a tick mark.
-                                It receives as parameter the initial cable segment and returns an
-                                Object containing all the found segments and the first tick mark
-                                found.
-                            </p>
-                            <p>
-                                Pressing the button will call findDownstreamSegsToTick, starting on
-                                the first cable segment of JS_Fiber_8, print the return in the
-                                console, and focus the map on the cable segment.
-                            </p>
-
-                            <Button type="primary" onClick={onFindUpstreamSegsToTick}>
-                                findUpstreamSegsToTick
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'cutCableAt':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                cutCableAt cuts a cable at a given position, creating new separate
-                                cables if needed. It receives as parameters structure containing the
-                                cable, the segment to be cut, a boolean representing if the cable
-                                should be cut forward, and the housing (if any) for the new cables.
-                            </p>
-                            <p>
-                                Pressing the button will call cutCableAt for the cable JS_Fiber_9,
-                                print the return in the console, and focus the map on the cable
-                                segment.
-                            </p>
-
-                            <Button type="primary" onClick={onCutCableAt}>
-                                cutCableAt
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'isCable':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                isCable checks if a given feature is a cable. It receives as
-                                parameter the feature to be checked and returns true or false.
-                            </p>
-                            <p>
-                                Pressing the button will call isCable for three features, one cable
-                                and two non-cables, and will print the output in the console.
-                            </p>
-
-                            <Button type="primary" onClick={onIsCable}>
-                                isCable
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'isInternal':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                isInternal checks if a given cable segments are all internal (i.e.:
-                                The segments start and end within the same structure). It receives
-                                as parameter the cable to be checked and returns true or false.
-                            </p>
-                            <p>
-                                Pressing the button will call isCable for two cables: JS_Fiber_10
-                                (not internal) and JS_Fiber_11 (internal), and will print the output
-                                in the console (false and true, respectively).
-                            </p>
-
-                            <Button type="primary" onClick={onIsInternal}>
-                                isInternal
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'rootHousingUrnOf':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                rootHousingUrnOf returns the URN of the root housing of a cable
-                                segment. It receives as parameter the cable.
-                            </p>
-                            <p>
-                                Pressing the button will call rootHousingUrnOf for a random cable,
-                                pick a random segment of it, print the return in the console, and
-                                focus the map on the cable segment.
-                            </p>
-
-                            <Button type="primary" onClick={onRootHousingUrnOf}>
-                                rootHousingUrnOf
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'getLength':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                rootHousingUrnOf returns the URN of the root housing of a cable
-                                segment. It receives as parameter the cable.
-                            </p>
-                            <p>
-                                Pressing the button will call rootHousingUrnOf for a random cable,
-                                pick a random segment of it, print the return in the console, and
-                                focus the map on the cable segment.
-                            </p>
-
-                            <Button type="primary" onClick={onGetLength}>
-                                getLength
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'segmentTypeForCable':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                segmentTypeForCable returns the segment types of a cable. It
-                                receives as parameter the cable.
-                            </p>
-                            <p>
-                                Pressing the button will call segmentTypeForCable for a random
-                                cable, print the return in the console, and focus the map on the
-                                cable.
-                            </p>
-
-                            <Button type="primary" onClick={onSegmentTypeForCable}>
-                                segmentTypeForCable
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'slackTypeForCable':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                slackTypeForCable returns the slack type of a cable. It receives as
-                                parameter the cable.
-                            </p>
-                            <p>
-                                Pressing the button will call slackTypeForCable for a random cable,
-                                print the return in the console, and focus the map on the cable.
-                            </p>
-
-                            <Button type="primary" onClick={onSlackTypeForCable}>
-                                slackTypeForCable
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'slackTypeForSegment':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                slackTypeForSegment returns the slack type of a cable segment. It
-                                receives as parameter the cables segment.
-                            </p>
-                            <p>
-                                Pressing the button will call slackTypeForSegment for a random cable
-                                segment, print the return in the console, and focus the map on the
-                                cable segment.
-                            </p>
-
-                            <Button type="primary" onClick={onSlackTypeForSegment}>
-                                slackTypeForSegment
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'isSegment':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                isSegment checks if a given feature is a cable segment. It receives
-                                as paramenter the URN of the feature and returns true or false.
-                            </p>
-                            <p>
-                                Pressing the button will call isSegment for three features, one
-                                cable segment and two other features, and print the outputs in the
-                                console (true, false, false)
-                            </p>
-
-                            <Button type="primary" onClick={onIsSegment}>
-                                isSegment
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'segmentTypes':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                segmentTypes returns all features that are cofigured as cable
-                                segments in the array myw.config['mywcom.network_types'].
-                            </p>
-                            <p>
-                                Pressing the button will call segmentTypes and print the output in
-                                the console.
-                            </p>
-
-                            <Button type="primary" onClick={onSegmentTypes}>
-                                segmentTypes
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'connectionTypes':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                connectionTypes returns all features that are cofigured as
-                                connections in the array myw.config['mywcom.network_types'].
-                            </p>
-                            <p>
-                                Pressing the button will call connectionTypes and print the output
-                                in the console.
-                            </p>
-
-                            <Button type="primary" onClick={onConnectionTypes}>
-                                connectionTypes
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'slackTypes':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                slackTypes returns all features that are cofigured as slacks in the
-                                array myw.config['mywcom.network_types'].
-                            </p>
-                            <p>
-                                Pressing the button will call slackTypes and print the output in the
-                                console.
-                            </p>
-
-                            <Button type="primary" onClick={onSlackTypes}>
-                                slackTypes
-                            </Button>
-                        </Space>
-                    </div>
-                );
-            case 'pinCountFor':
-                return (
-                    <div>
-                        <Space direction="vertical" size="small">
-                            <p>
-                                pinCountFor returns the pin count for a feature. It receives as
-                                parameters the feature and an optional side ('in' or 'out').
-                            </p>
-                            <p>
-                                Pressing the button will call slackTypes and print the output in the
-                                console.
-                            </p>
-
-                            <Button type="primary" onClick={onPinCountFor}>
-                                pinCountFor
-                            </Button>
-                        </Space>
-                    </div>
-                );
+        if (pickedFunction && pickedFunction !== '') {
+            return (
+                <div>
+                    <Space direction="vertical" size="small">
+                        {CablePluginFunctionDictionary[pickedFunction].body}
+                        {CablePluginFunctionDictionary[pickedFunction].checkbox && (
+                            <>
+                                {CablePluginFunctionDictionary[pickedFunction].checkbox.map(
+                                    item => (
+                                        <Checkbox
+                                            key={item.label}
+                                            onChange={eval(
+                                                'e => set' + item.label + '(e.target.checked)'
+                                            )}
+                                        >
+                                            {item.label}
+                                        </Checkbox>
+                                    )
+                                )}
+                            </>
+                        )}
+                        <Button
+                            type="primary"
+                            onClick={eval(CablePluginFunctionDictionary[pickedFunction].function)}
+                        >
+                            {pickedFunction}
+                        </Button>
+                    </Space>
+                </div>
+            );
         }
     }
 
@@ -1199,7 +632,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
                 <Select
                     virtual={false}
                     onChange={value => setPickedFunction(value)}
-                    options={menuItems}
+                    options={MenuItems}
                 />
                 {renderFields()}
             </Space>
