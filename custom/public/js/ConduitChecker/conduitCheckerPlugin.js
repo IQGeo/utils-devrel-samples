@@ -1,8 +1,7 @@
-import myw from 'myWorld-client';
 import 'main.standard';
-import { Plugin, PluginButton } from 'myWorld-client';
+import { PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customRulesImage from '../../images/customRule.svg';
+import customRulesImage from '../../images/ConduitChecker.svg';
 import { ConduitCheckerModal } from './conduitCheckerModal';
 import ConduitManagerPlugin from '../../../../comms/public/js/api/conduitManagerPlugin';
 
@@ -14,7 +13,7 @@ export class ConduitCheckerPlugin extends ConduitManagerPlugin {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'conduit-checker-button';
-                    this.prototype.titleMsg = 'toolbar_msg';
+                    this.prototype.titleMsg = 'conduit_checker';
                     this.prototype.imgSrc = customRulesImage;
                 }
 

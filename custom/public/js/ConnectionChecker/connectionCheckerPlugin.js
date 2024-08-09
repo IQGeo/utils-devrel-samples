@@ -1,20 +1,19 @@
-import myw from 'myWorld-client';
 import 'main.standard';
-import { Plugin, PluginButton } from 'myWorld-client';
+import { PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customRulesImage from '../../images/structureChecker.svg';
-import { StructureCheckerModal } from './structureCheckerModal';
-import StructureManagerPlugin from '../../../../comms/public/js/api/structureManagerPlugin';
+import customRulesImage from '../../images/customRule.svg';
+import { ConnectionCheckerModal } from './connectionCheckerModal';
+import ConnectionManagerPlugin from '../../../../comms/public/js/api/connectionManagerPlugin';
 
-export class StructureCheckerPlugin extends StructureManagerPlugin {
+export class ConnectionCheckerPlugin extends ConnectionManagerPlugin {
     static {
-        this.prototype.messageGroup = 'structureCheckerPlugin';
+        this.prototype.messageGroup = 'connectionCheckerPlugin';
 
         this.prototype.buttons = {
             dialog: class extends PluginButton {
                 static {
-                    this.prototype.id = 'structure-checker-button';
-                    this.prototype.titleMsg = 'structure_checker';
+                    this.prototype.id = 'connection-checker-button';
+                    this.prototype.titleMsg = 'toolbar_msg';
                     this.prototype.imgSrc = customRulesImage;
                 }
 
@@ -32,7 +31,7 @@ export class StructureCheckerPlugin extends StructureManagerPlugin {
     showModal() {
         this.renderRoot = renderReactNode(
             null,
-            StructureCheckerModal,
+            ConnectionCheckerModal,
             {
                 open: true,
                 plugin: this

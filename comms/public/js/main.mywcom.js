@@ -105,7 +105,6 @@ import LOCManagerPlugin from './line_of_count/locManagerPlugin';
 import AddMarkerPlugin from './plugins/addMarkerPlugin';
 
 import ShowObjectsREST from './ShowObjectsREST';
-import { StructureCheckerPlugin } from './StructureChecker/structureCheckerPlugin';
 
 // Messages
 //myw.localisation.loadModuleLocale('workflow');
@@ -247,9 +246,6 @@ plugins['designRulesManager'] = [DesignRulesManagerPlugin, { rules: [] }];
 // Fiber monitoring system (FMS) integration
 plugins['addMarker'] = AddMarkerPlugin;
 
-plugins['showObjectsRest'] = ShowObjectsREST;
-plugins['structureCheckerPlugin'] = StructureCheckerPlugin;
-
 // Enable record level operations on feature changes and conflicts
 myw.ResultsListControl.prototype.recordOperationsEnabled = false;
 
@@ -271,8 +267,7 @@ desktopToolbarButtons.push(
     'structureMode.toggle',
     'equipmentMode.toggle',
     'markupMode.toggle',
-    'showObjectsRest.dialog',
-    'structureCheckerPlugin.dialog'
+    'showObjectsRest.dialog'
 );
 
 const detailsControl = desktopLayoutDef.controls.tabControl[1].tabs.find(x => x.id === 'details')

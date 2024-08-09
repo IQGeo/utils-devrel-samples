@@ -2,7 +2,7 @@ import myw from 'myWorld-client';
 import 'main.standard';
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customRulesImage from '../../images/customRule.svg';
+import customRulesImage from '../../images/CableChecker.svg';
 import { CableCheckerModal } from './cableCheckerModal';
 import CableManagerPlugin from '../../../../comms/public/js/api/cableManagerPlugin';
 
@@ -14,7 +14,7 @@ export class CableCheckerPlugin extends CableManagerPlugin {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'cable-checker-button';
-                    this.prototype.titleMsg = 'toolbar_msg';
+                    this.prototype.titleMsg = 'cable_checker';
                     this.prototype.imgSrc = customRulesImage;
                 }
 

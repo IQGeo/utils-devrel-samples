@@ -23,137 +23,6 @@ export const CableCheckerModal = ({ open, plugin }) => {
     const [side, setSide] = useState(false);
     const [isOpen, setIsOpen] = useState(open);
 
-    const menuItems = [
-        {
-            label: <span>List Cables</span>,
-            title: 'List Cables',
-            options: [
-                {
-                    value: 'listCables',
-                    label: 'List Cables'
-                }
-            ]
-        },
-        {
-            label: <span>Fuctions</span>,
-            title: 'API Functions',
-            options: [
-                {
-                    value: 'highestUsedPinOn',
-                    label: 'highestUsedPinOn'
-                },
-                {
-                    value: 'connectionsFor',
-                    label: 'connectionsFor'
-                },
-                {
-                    value: 'internalSegments',
-                    label: 'internalSegments'
-                },
-                {
-                    value: 'createDetachedInternalSeg',
-                    label: 'createDetachedInternalSeg'
-                },
-                {
-                    value: 'createDetachedSlack',
-                    label: 'createDetachedSlack'
-                },
-                {
-                    value: 'splitSlack',
-                    label: 'splitSlack'
-                },
-                {
-                    value: 'createDetSlackAtSide',
-                    label: 'createDetSlackAtSide'
-                },
-                {
-                    value: 'addSlack',
-                    label: 'addSlack'
-                },
-                {
-                    value: 'transferConnections',
-                    label: 'transferConnections'
-                },
-                {
-                    value: 'connectionsOf',
-                    label: 'connectionsOf'
-                },
-                {
-                    value: 'segmentContainment',
-                    label: 'segmentContainment'
-                },
-                {
-                    value: 'setSegmentContainment',
-                    label: 'setSegmentContainment'
-                },
-                {
-                    value: 'setTickMark',
-                    label: 'setTickMark'
-                },
-                {
-                    value: 'findDownstreamSegsToTick',
-                    label: 'findDownstreamSegsToTick'
-                },
-                {
-                    value: 'findUpstreamSegsToTick',
-                    label: 'findUpstreamSegsToTick'
-                },
-                {
-                    value: 'cutCableAt',
-                    label: 'cutCableAt'
-                },
-                {
-                    value: 'isCable',
-                    label: 'isCable'
-                },
-                {
-                    value: 'isInternal',
-                    label: 'isInternal'
-                },
-                {
-                    value: 'rootHousingUrnOf',
-                    label: 'rootHousingUrnOf'
-                },
-                {
-                    value: 'getLength',
-                    label: 'getLength'
-                },
-                {
-                    value: 'segmentTypeForCable',
-                    label: 'segmentTypeForCable'
-                },
-                {
-                    value: 'slackTypeForCable',
-                    label: 'slackTypeForCable'
-                },
-                {
-                    value: 'slackTypeForSegment',
-                    label: 'slackTypeForSegment'
-                },
-                {
-                    value: 'isSegment',
-                    label: 'isSegment'
-                },
-                {
-                    value: 'segmentTypes',
-                    label: 'segmentTypes'
-                },
-                {
-                    value: 'connectionTypes',
-                    label: 'connectionTypes'
-                },
-                {
-                    value: 'slackTypes',
-                    label: 'slackTypes'
-                },
-                {
-                    value: 'pinCountFor',
-                    label: 'pinCountFor'
-                }
-            ]
-        }
-    ];
-
     useEffect(() => {
         const dbFeatures = db.getFeatureTypes();
         console.log(dbFeatures);
@@ -202,7 +71,6 @@ export const CableCheckerModal = ({ open, plugin }) => {
     }, []);
 
     const closeWindow = () => {
-        console.log(housings);
         setIsOpen(false);
     };
 
@@ -215,6 +83,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
                 console.log(
                     'Highest used pin on cable ' + cables[cableIndex]._myw.title + ' is ' + result
                 );
+                appRef.setCurrentFeature(cables[cableIndex], { zoomTo: true });
             })
             .catch(alert);
     };
@@ -222,12 +91,10 @@ export const CableCheckerModal = ({ open, plugin }) => {
     const onConnectionsFor = () => {
         const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_1'));
         console.log('Checking the connections for cable ' + cable.properties.name);
-        console.log('splice: ' + splice);
-        console.log('sorted: ' + sorted);
         plugin.connectionsFor(cable, splice, sorted).then(result => {
             console.log(result);
+            appRef.setCurrentFeature(cable, { zoomTo: true });
         });
-        appRef.setCurrentFeature(cable, { zoomTo: true });
     };
 
     const onInternalSegments = () => {
@@ -256,36 +123,37 @@ export const CableCheckerModal = ({ open, plugin }) => {
         console.log('Creating a slack for cable ' + cable.properties.name);
         plugin.createDetachedSlack(cable, pole).then(result => {
             console.log(result);
-            appRef.setCurrentFeature(cable, { zoomTo: true });
+            appRef.setCurrentFeature(pole, { zoomTo: true });
         });
     };
 
     const onSplitSlack = () => {
-        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_5'));
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_2'));
         const slack = slacks.find(slack => slack.properties.cable.includes(cable.getUrn()));
         console.log(
             'Splitting the slack ' + slack.properties.name + ' for cable ' + cable.properties.name
         );
-        console.log(slack);
         plugin.splitSlack(slack, slack.properties.length / 2).then(result => {
             console.log(result);
+            appRef.setCurrentFeature(slack, { zoomTo: true });
         });
-        appRef.setCurrentFeature(slack, { zoomTo: true });
     };
 
     const onCreateDetSlackAtSide = () => {
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_3'));
         const segment = fiberSegments.find(segment =>
-            segment.properties.cable.includes('fiber_cable/100005')
+            segment.properties.cable.includes('fiber_cable/' + cable.properties.id)
         );
         const pole = poles.find(pole => pole.properties.name.includes('JS_Pole_1'));
-        console.log(segment);
+        console.log('Creating a slack for cable ' + cable.properties.name);
         plugin.createDetSlackAtSide(segment, pole, side).then(result => {
             console.log(result);
+            appRef.setCurrentFeature(segment, { zoomTo: true });
         });
     };
 
     const onAddSlack = () => {
-        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_6'));
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_3'));
 
         const segment = fiberSegments.find(segment =>
             segment.properties.cable.includes('fiber_cable/' + cable.properties.id)
@@ -304,14 +172,14 @@ export const CableCheckerModal = ({ open, plugin }) => {
                         console.log(result);
                     })
                     .catch(error => console.log('ERROR: ' + error));
-                appRef.setCurrentFeature(result, { zoomTo: true });
+                appRef.setCurrentFeature(pole, { zoomTo: true });
             })
             .catch(error => console.log('ERROR: ' + error));
     };
 
     const onTransferConnections = () => {
         const old_cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_1'));
-        const new_cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_7'));
+        const new_cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_6'));
 
         const old_segment = fiberSegments.find(segment =>
             segment.properties.cable.includes('fiber_cable/' + old_cable.properties.id)
@@ -352,7 +220,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     const onSetSegmentContainment = () => {
-        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_7'));
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_4'));
 
         const segment = fiberSegments.find(segment =>
             segment.properties.cable.includes('fiber_cable/' + cable.properties.id)
@@ -431,7 +299,7 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     const onCutCableAt = () => {
-        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_9'));
+        const cable = cables.find(cable => cable.properties.name.includes('JS_Fiber_7'));
         const cabinet = cabinets.find(cabinet => cabinet.properties.name.includes('JS_CAB_2'));
         const segments = fiberSegments.filter(segment =>
             segment.properties.cable.includes(cable.getUrn())
@@ -453,8 +321,8 @@ export const CableCheckerModal = ({ open, plugin }) => {
     };
 
     const onIsInternal = () => {
-        const cable1 = cables.find(cable => cable.properties.name.includes('JS_Fiber_10'));
-        const cable2 = cables.find(cable => cable.properties.name.includes('JS_Fiber_11'));
+        const cable1 = cables.find(cable => cable.properties.name.includes('JS_Fiber_1'));
+        const cable2 = cables.find(cable => cable.properties.name.includes('JS_Fiber_8'));
 
         plugin.isInternal(cable1).then(result => {
             console.log(cable1.properties.name + ' is internal? ' + result);

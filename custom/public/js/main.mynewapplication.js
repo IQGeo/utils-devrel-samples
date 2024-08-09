@@ -1,6 +1,6 @@
 import myw from 'myWorld-client';
 // import 'main.standard';
-import '../../../comms/public/js/main.mywcom';
+import '../../../comms_dev_db/public/js/main.mywcom_devdb';
 import './api/commsDsApi';
 import MyLineDrawer from './myLineDrawer';
 
@@ -9,6 +9,10 @@ import { StructureCheckerPlugin } from './StructureChecker/structureCheckerPlugi
 import { EquipmentCheckerPlugin } from './EquipmentChecker/equipmentCheckerPlugin';
 import { ConduitCheckerPlugin } from './ConduitChecker/conduitCheckerPlugin';
 import { CableCheckerPlugin } from './CableChecker/cableCheckerPlugin';
+import { ConnectionCheckerPlugin } from './ConnectionChecker/connectionCheckerPlugin';
+import APIPalettePlugin from './modes/apiPalettePlugin';
+
+myw.localisation.loadModuleLocale('custom');
 
 const desktopLayoutDef = myw.applicationDefinition.layouts.desktop;
 const plugins = myw.applicationDefinition.plugins; //this is the application's list of plugins
@@ -18,10 +22,20 @@ plugins['structureCheckerPlugin'] = StructureCheckerPlugin;
 plugins['equipmentCheckerPlugin'] = EquipmentCheckerPlugin;
 plugins['conduitCheckerPlugin'] = ConduitCheckerPlugin;
 plugins['cableCheckerPlugin'] = CableCheckerPlugin;
+plugins['connectionCheckerPlugin'] = ConnectionCheckerPlugin;
+plugins['apiPalette'] = [
+    APIPalettePlugin,
+    {
+        toolButtons: [
+            'structureCheckerPlugin.dialog',
+            'equipmentCheckerPlugin.dialog',
+            'conduitCheckerPlugin.dialog',
+            'cableCheckerPlugin.dialog',
+            'connectionCheckerPlugin.dialog'
+        ]
+    }
+];
 
 const desktopToolbarButtons = desktopLayoutDef.controls.toolbar[1].buttons; //This is the list of buttons in the application's top toolbar
 desktopToolbarButtons.push('customRulePlugin.dialog');
-desktopToolbarButtons.push('structureCheckerPlugin.dialog');
-desktopToolbarButtons.push('equipmentCheckerPlugin.dialog');
-desktopToolbarButtons.push('conduitCheckerPlugin.dialog');
-desktopToolbarButtons.push('cableCheckerPlugin.dialog');
+desktopToolbarButtons.push('apiPalette.toggle');

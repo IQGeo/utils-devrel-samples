@@ -159,7 +159,8 @@ export const CablePluginFunctionDictionary = {
                 </p>
                 <p>
                     Pressing the button will select a random cable and call the highestUsedPinOn
-                    function.
+                    function. The result of the call will be printed in the console, as well as
+                    focus the map on it and show its details in the Details tab.
                 </p>
             </div>
         ),
@@ -247,9 +248,9 @@ export const CablePluginFunctionDictionary = {
                     receives as parameters the slack to be split and the length of the new slack.
                 </p>
                 <p>
-                    Pressing the button will split the existing slack in cable JS_Fibre_5 in half,
-                    as well as focus the map on the cable and show its details in the Details tab.
-                    The original length of the slack is 100ft.
+                    Pressing the button will split the existing slack in cable JS_Fibre_2 in half,
+                    as well as focus the map on the pole where the cable starts (JS_Pole_1) and show
+                    its details in the Details tab. The original length of the slack is 100ft.
                 </p>
             </div>
         ),
@@ -268,7 +269,7 @@ export const CablePluginFunctionDictionary = {
                 </p>
                 <p>
                     Pressing the button will create a detached slack associated with the a cable
-                    segment of JS_Fibre_6, focus the map on the cable segment and show its details
+                    segment of JS_Fibre_3, focus the map on the cable segment and show its details
                     in the "Details" tab. The return of the function is printed in the console.
                 </p>
             </div>
@@ -289,9 +290,9 @@ export const CablePluginFunctionDictionary = {
                 </p>
                 <p>
                     Pressing the button will first call createDetSlackAtSide to create the slack for
-                    cable JS_Fiber_6, then add it to the database, focus the map on the cable
-                    segment and show its details in the "Details" tab. The return of the function is
-                    printed in the console.
+                    cable JS_Fiber_3, then add it to the database, focus the map on the pole where
+                    the cable starts (JS_Pole_1) and show its details in the "Details" tab. The
+                    return of the function is printed in the console.
                 </p>
             </div>
         ),
@@ -313,7 +314,7 @@ export const CablePluginFunctionDictionary = {
                 </p>
                 <p>
                     Pressing the button will transfer the connections from the cable JS_Fiber_1 to
-                    the cable JS_Fiber_7. In the console you can see the output of the function and
+                    the cable JS_Fiber_6. In the console you can see the output of the function and
                     the difference when calling it using "in" or "out".
                 </p>
             </div>
@@ -373,7 +374,7 @@ export const CablePluginFunctionDictionary = {
                 </p>
                 <p>
                     Pressing the button will set the housing for the "out" side of a segment of
-                    cable JS_Fiber_7. If the housing is set it will remove it by setting it to null.
+                    cable JS_Fiber_4. If the housing is set it will remove it by setting it to null.
                     The output will be print in the console and the cable will be focused on the
                     map.
                 </p>
@@ -388,7 +389,7 @@ export const CablePluginFunctionDictionary = {
                 <p>
                     setTickMark allows you to set the tick mark of a cable. It receives as
                     parameters the cable segment, the new tick mark (as an integer), if the tick
-                    should be in the IN out OUT end of the segment (as an 'in_tick' our 'out_tick'
+                    should be in the IN out OUT end of the segment (as an 'in_tick' or 'out_tick'
                     string), the distance between tick marks, and the distance unit (e.g.: 'm' or
                     'ft').
                 </p>
@@ -449,7 +450,7 @@ export const CablePluginFunctionDictionary = {
                     housing (if any) for the new cables.
                 </p>
                 <p>
-                    Pressing the button will call cutCableAt for the cable JS_Fiber_9, print the
+                    Pressing the button will call cutCableAt for the cable JS_Fiber_7, print the
                     return in the console, and focus the map on the cable segment.
                 </p>
             </div>

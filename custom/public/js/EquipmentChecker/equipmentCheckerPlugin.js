@@ -2,7 +2,7 @@ import myw from 'myWorld-client';
 import 'main.standard';
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customRulesImage from '../../images/customRule.svg';
+import customRulesImage from '../../images/EquipmentChecker.svg';
 import { EquipmentCheckerModal } from './equipmentCheckerModal';
 import EquipmentManagerPlugin from '../../../../comms/public/js/api/equipmentManagerPlugin';
 
@@ -14,7 +14,7 @@ export class EquipmentCheckerPlugin extends EquipmentManagerPlugin {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'equipment-checker-button';
-                    this.prototype.titleMsg = 'toolbar_msg';
+                    this.prototype.titleMsg = 'equipment_checker';
                     this.prototype.imgSrc = customRulesImage;
                 }
 
