@@ -10,6 +10,7 @@ import { EquipmentCheckerPlugin } from './EquipmentChecker/equipmentCheckerPlugi
 import { ConduitCheckerPlugin } from './ConduitChecker/conduitCheckerPlugin';
 import { CableCheckerPlugin } from './CableChecker/cableCheckerPlugin';
 import { ConnectionCheckerPlugin } from './ConnectionChecker/connectionCheckerPlugin';
+import { CustomerConnectionPlugin } from './CustomerConnection/customerConnectionPlugin';
 import APIPalettePlugin from './modes/apiPalettePlugin';
 
 myw.localisation.loadModuleLocale('custom');
@@ -23,6 +24,7 @@ plugins['equipmentCheckerPlugin'] = EquipmentCheckerPlugin;
 plugins['conduitCheckerPlugin'] = ConduitCheckerPlugin;
 plugins['cableCheckerPlugin'] = CableCheckerPlugin;
 plugins['connectionCheckerPlugin'] = ConnectionCheckerPlugin;
+plugins['customerConnectionPlugin'] = CustomerConnectionPlugin;
 plugins['apiPalette'] = [
     APIPalettePlugin,
     {
@@ -31,7 +33,8 @@ plugins['apiPalette'] = [
             'equipmentCheckerPlugin.dialog',
             'conduitCheckerPlugin.dialog',
             'cableCheckerPlugin.dialog',
-            'connectionCheckerPlugin.dialog'
+            'connectionCheckerPlugin.dialog',
+            'customerConnectionPlugin.dialog'
         ]
     }
 ];

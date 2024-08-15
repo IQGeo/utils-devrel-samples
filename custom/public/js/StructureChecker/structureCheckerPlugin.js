@@ -2,7 +2,7 @@ import myw from 'myWorld-client';
 import 'main.standard';
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customRulesImage from '../../images/structureChecker.svg';
+import structureCheckerImage from '../../images/structureChecker.svg';
 import { StructureCheckerModal } from './structureCheckerModal';
 import StructureManagerPlugin from '../../../../comms/public/js/api/structureManagerPlugin';
 
@@ -15,7 +15,7 @@ export class StructureCheckerPlugin extends StructureManagerPlugin {
                 static {
                     this.prototype.id = 'structure-checker-button';
                     this.prototype.titleMsg = 'structure_checker';
-                    this.prototype.imgSrc = customRulesImage;
+                    this.prototype.imgSrc = structureCheckerImage;
                 }
 
                 action() {

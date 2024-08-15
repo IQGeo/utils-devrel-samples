@@ -1,7 +1,7 @@
 import 'main.standard';
 import { PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customRulesImage from '../../images/ConduitChecker.svg';
+import customRulesImage from '../../images/conduitChecker.svg';
 import { ConduitCheckerModal } from './conduitCheckerModal';
 import ConduitManagerPlugin from '../../../../comms/public/js/api/conduitManagerPlugin';
 

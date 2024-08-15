@@ -2,7 +2,7 @@ import myw from 'myWorld-client';
 import 'main.standard';
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customRulesImage from '../../images/CableChecker.svg';
+import customRulesImage from '../../images/cableChecker.svg';
 import { CableCheckerModal } from './cableCheckerModal';
 import CableManagerPlugin from '../../../../comms/public/js/api/cableManagerPlugin';
 
