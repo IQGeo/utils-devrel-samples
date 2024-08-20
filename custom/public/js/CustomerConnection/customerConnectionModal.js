@@ -13,11 +13,12 @@ export const CustomerConnectionModal = ({ open, plugin, builder }) => {
     const [dropCable, setDropCable] = useState('');
     const [feederFiber, setFeederFiber] = useState(1);
     const [disabled, setDisabled] = useState(true);
+    const [alertMessage, setAlertMessage] = useState('');
     const [isAlertVisible, setIsAlertVisible] = React.useState(false);
 
     useEffect(() => {
-        const dbFeatures = db.getFeatureTypes();
-        console.log(dbFeatures);
+        const features = db.getFeatureTypes();
+        console.log(features);
         setOnFunctions();
         updateFeatures();
         updateWallBoxDropCable();
@@ -83,6 +84,15 @@ export const CustomerConnectionModal = ({ open, plugin, builder }) => {
     };
 
     const buildConnection = async () => {
+        // console.log(customer.geometry.coordinates);
+        // const latLng = {
+        //     lat: customer.geometry.coordinates[1],
+        //     lng: customer.geometry.coordinates[0]
+        // };
+        // const existingWallBox = await appRef.database.getFeaturesAround(['wall_box'], latLng, 0);
+        // console.log('EXISTING WALL BOX');
+        // console.log(existingWallBox);
+
         let closure;
         const closures = await builder.findSpliceClosure(pole);
         if (closures.length === 0) {
@@ -100,12 +110,8 @@ export const CustomerConnectionModal = ({ open, plugin, builder }) => {
                 splitters.length + 1,
                 closure
             );
-            console.log('CREATED CONN POINT');
-            console.log(connPoint);
-        } else {
-            console.log('FOUND CONN POINT');
-            console.log(connPoint);
         }
+
         setFeederFiber(feederFiber + 1);
 
         const equipProps = {
@@ -127,10 +133,17 @@ export const CustomerConnectionModal = ({ open, plugin, builder }) => {
 
         setCustomer(null);
 
+        setAlertMessage(
+            (connPoint.splitter.properties.name || 'unnamed splitter') + ' OUT# ' + connPoint.port
+        );
+
+        setWallBox(builder.nextName(wallBox));
+        setDropCable(builder.nextName(dropCable));
+
         setIsAlertVisible(true);
         setTimeout(() => {
             setIsAlertVisible(false);
-        }, 3000);
+        }, 5000);
     };
 
     return (
@@ -158,7 +171,8 @@ export const CustomerConnectionModal = ({ open, plugin, builder }) => {
             <br />
             {isAlertVisible && (
                 <div>
-                    <Alert message="Connection Created Successfully!" type="success" />
+                    {/* <Alert message="Connection Created Successfully!" type="success" /> */}
+                    <Alert message={alertMessage + ' created successfully!'} type="success" />
                 </div>
             )}
         </DraggableModal>

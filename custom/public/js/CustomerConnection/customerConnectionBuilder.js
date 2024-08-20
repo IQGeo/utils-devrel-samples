@@ -1,5 +1,6 @@
 // Copyright: Ubisense Limited 2010-2023
 import myw from 'myWorld-client';
+import { result } from 'underscore';
 
 // Engine to create features that make up a customer connection
 //
@@ -23,12 +24,12 @@ class CustomerConnectionBuilder extends myw.MywClass {
         return this.datasource.comms.equipsIn(struct, 'splice_closure');
     }
 
-    async buildSpliceClosure(struct, spliceClosureNo) {
-        const spliceClosure = await this.addSpliceClosure(struct, spliceClosureNo);
+    async buildSpliceClosure(struct) {
+        const spliceClosure = await this._addSpliceClosure(struct);
         return spliceClosure;
     }
 
-    async addSpliceClosure(struct) {
+    async _addSpliceClosure(struct) {
         const name = (struct.properties.name || struct.getType()) + '-SPLCLS';
 
         const spec = 'CS-FOSC-400B4-S24-4-NNN';
@@ -64,10 +65,31 @@ class CustomerConnectionBuilder extends myw.MywClass {
     // ENH: Pass in splitter, feeder cable etc
     async buildConnection(struct, coord, equipmentProps, connPoint) {
         const connInfo = {};
-
-        // Create structures and equipment
-        connInfo.wallbox = await this.addWallBox(coord, equipmentProps.wallBox);
-        connInfo.ont = await this.addTerminal(connInfo.wallbox);
+        const latLng = {
+            lat: coord[1],
+            lng: coord[0]
+        };
+        const existingWallBox = await this.datasource.getFeaturesAround(
+            ['wall_box', 'fiber_ont'],
+            latLng,
+            0
+        );
+        if (existingWallBox.length > 0) {
+            const wallBox = existingWallBox.find(box => box.getType() === 'wall_box');
+            if (wallBox) {
+                wallBox.followRelationship('equipment').then(result => {
+                    console.log(result);
+                });
+                connInfo.wallbox = wallBox;
+            }
+            const ont = existingWallBox.find(box => box.getType() === 'fiber_ont');
+            if (ont) {
+                connInfo.ont = ont;
+            }
+        } else {
+            connInfo.wallbox = await this.addWallBox(coord, equipmentProps.wallBox);
+            connInfo.ont = await this.addTerminal(connInfo.wallbox);
+        }
         connInfo.route = await this.addRoute(struct, connInfo.wallbox);
         connInfo.drop = await this.addDropCable(
             connInfo.route,
@@ -93,7 +115,7 @@ class CustomerConnectionBuilder extends myw.MywClass {
     // Add fiber terminal in wallbox
     async addTerminal(wallbox) {
         const props = {
-            n_fiber_in_ports: 1, // TODO: Set name?
+            n_fiber_in_ports: 16, // TODO: Set name?
             housing: wallbox.getUrn(),
             root_housing: wallbox.getUrn()
         }; // root housing is also wallbox

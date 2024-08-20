@@ -10,5 +10,11 @@
     },
     "cableCheckerPlugin": {
         "cable_checker": "Cable API"
+    },
+    "connectionCheckerPlugin": {
+        "connection_checker": "Connection API"
+    },
+    "customerConnectionPlugin": {
+        "customer_connection": "Customer Connection"
     }
 }

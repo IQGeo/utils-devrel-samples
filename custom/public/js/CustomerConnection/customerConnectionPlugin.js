@@ -2,7 +2,7 @@ import myw from 'myWorld-client';
 import 'main.standard';
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customerConnectionImage from '../../images/customer_connection.svg';
+import customerConnectionImage from '../../images/customerConnection.svg';
 import { CustomerConnectionModal } from './customerConnectionModal';
 import CustomerConnectionBuilder from './customerConnectionBuilder';
 
@@ -27,8 +27,6 @@ export class CustomerConnectionPlugin extends Plugin {
 
     constructor(owner, options) {
         super(owner, options);
-        console.log('MY OPTIONS');
-        console.log(options);
         this.builder = new CustomerConnectionBuilder(this.app.database);
     }
 

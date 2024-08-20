@@ -1,7 +1,7 @@
 import 'main.standard';
 import { PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customRulesImage from '../../images/customRule.svg';
+import connectionCheckerImage from '../../images/connectionChecker.svg';
 import { ConnectionCheckerModal } from './connectionCheckerModal';
 import ConnectionManagerPlugin from '../../../../comms/public/js/api/connectionManagerPlugin';
 
@@ -13,8 +13,8 @@ export class ConnectionCheckerPlugin extends ConnectionManagerPlugin {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'connection-checker-button';
-                    this.prototype.titleMsg = 'toolbar_msg';
-                    this.prototype.imgSrc = customRulesImage;
+                    this.prototype.titleMsg = 'connection_checker';
+                    this.prototype.imgSrc = connectionCheckerImage;
                 }
 
                 action() {
