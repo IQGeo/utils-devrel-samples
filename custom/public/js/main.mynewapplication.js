@@ -11,6 +11,7 @@ import { ConduitCheckerPlugin } from './ConduitChecker/conduitCheckerPlugin';
 import { CableCheckerPlugin } from './CableChecker/cableCheckerPlugin';
 import { ConnectionCheckerPlugin } from './ConnectionChecker/connectionCheckerPlugin';
 import { CustomerConnectionPlugin } from './CustomerConnection/customerConnectionPlugin';
+import { DisplayCheckerPlugin } from './DisplayChecker/displayCheckerPlugin';
 import APIPalettePlugin from './modes/apiPalettePlugin';
 
 myw.localisation.loadModuleLocale('custom');
@@ -25,6 +26,7 @@ plugins['conduitCheckerPlugin'] = ConduitCheckerPlugin;
 plugins['cableCheckerPlugin'] = CableCheckerPlugin;
 plugins['connectionCheckerPlugin'] = ConnectionCheckerPlugin;
 plugins['customerConnectionPlugin'] = CustomerConnectionPlugin;
+plugins['displayCheckerPlugin'] = DisplayCheckerPlugin;
 plugins['apiPalette'] = [
     APIPalettePlugin,
     {
@@ -34,6 +36,7 @@ plugins['apiPalette'] = [
             'conduitCheckerPlugin.dialog',
             'cableCheckerPlugin.dialog',
             'connectionCheckerPlugin.dialog',
+            'displayCheckerPlugin.dialog',
             'customerConnectionPlugin.dialog'
         ]
     }

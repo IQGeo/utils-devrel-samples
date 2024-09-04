@@ -192,7 +192,10 @@ export const CustomRuleModal = ({ open }) => {
                         renderItem={item => (
                             <List.Item>
                                 <List.Item.Meta
-                                    onClick={() => appRef.map.zoomTo(item.resultObj)}
+                                    onClick={() => {
+                                        appRef.map.zoomTo(item.resultObj);
+                                        appRef.setCurrentFeature(item.resultObj);
+                                    }}
                                     avatar={
                                         item.result ? (
                                             <Avatar src={greenImg} />
@@ -201,7 +204,7 @@ export const CustomRuleModal = ({ open }) => {
                                         )
                                     }
                                     title={
-                                        item.resultObj.properties.description +
+                                        item.resultObj.properties.name +
                                         ' - ' +
                                         item.resultObj.properties[pickedField]
                                     }
