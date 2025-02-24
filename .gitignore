@@ -1,0 +1,22 @@
+# Edit backup files etc
+*.pyc
+*.py.bak
+*~
+.DS_Store
+.env
+node_modules
+#files from platform that should be ignored (show as changed because of www-data ownership)
+/__init__.py
+/jsconfig.json
+/tsconfig.json
+/tsconfig.core.json
+
+# START SECTION Product modules
+/comms
+/comms_dev_db
+/comsof
+/dev_tools
+# END SECTION
+
+# START CUSTOM SECTION
+# END CUSTOM SECTION
