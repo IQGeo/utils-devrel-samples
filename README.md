@@ -18,7 +18,7 @@ This repository is based on the [utils-project-template](https://github.com/IQGe
 
 This repository contains:
 
--   Application configuration files for applications containing the samples. These applications are created based on the original "out-of-the-box" IQGeo applications and currently cover:
+-   Application configuration files for applications containing the samples. These applications are created based on the original "out-of-the-box" IQGeo applications and curretly cover:
 
     -   Platform
     -   Network Manager Telecom (NMT)
