@@ -40,7 +40,7 @@ The tool files are:
 - `customer_connection_modal.js` - The file containing the React code used to render the modal window
 - `customer_connection_builder.js` - The class containing the support functions that call IQGeo APIs
 
-All files are located in the `modules/custom/public/js/Samples/customer_connection` folder
+All files are located in the `modules/custom/public/js/Samples/customer_connection_JavaScript` folder
 
 ## How the tool works
 
@@ -136,7 +136,7 @@ import { Alert } from 'antd';
 - Next are native React classes and four customized IQGeo React classes, including `useLocale`, which allows for the use of localised strings withing the React context
 - The `Alert` class from the Ant Design framework - https://ant.design/components/alert
   
-Next is the declaration of the `CustomerConnectionModal` functional component, which receives as parameter an object containing the arguments described in the `customer_connection_plugin.js` file, and the list of State hooks that will be used throughout the code, as well as the definition of the msg variable, used for localisation.
+Next is the declaration of the `CustomerConnectionModal` functional component, which receives as parameter an object containing the arguments described in the `customer_connection_plugin.js` file, and the list of State hooks that will be used throughout the code, as well as the definition of the `msg` variable, used for localisation.
 
 ```
 export const CustomerConnectionModal = ({ open, plugin, builder }) => {
@@ -197,7 +197,7 @@ Then there are two Effect Hooks and two auxiliary functions
   - In `UpdateFeatures` the code checks what is the current feature selected in the application, and if that feature is either a Pole or an Address, the appropriate State Hook is updated 
 - The second `useEffect` is called when the states `pole`, `customer`, or `dropCable` are updated. If any of these are not set we set the `disabled` state to `true.` This state is used to enable/disable the “Create” button. The button should only be enabled when all parameters needed to create to connection are set.
   
-Next there are three self-explanatory functions
+Next there are two self-explanatory functions
 
 ```    
     const hideIntro = () => {

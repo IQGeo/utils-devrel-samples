@@ -40,7 +40,7 @@ This tool is available in the "DevRel Samples App - NMT" application inside the 
 
 Click the "JS Customer Connection" button on the Palette Menu and a pop-up window will show with a brief description of the tool, click the "OK" button and the tool window will show up (Fig. 2)
 
-![Samples Menu option location](./Customer_Connection_JavaScript_Overview_2.png)
+![The JavaScript Customer Connection Tool window](./Customer_Connection_JavaScript_Overview_2.png)
 
 <p align="center"><i>Fig. 2: The JavaScript Customer Connection Tool window</i></p>
 
@@ -50,6 +50,6 @@ Once you've clicked on both a Pole and an Address the "Create" button will be en
 
 Once a connection is created the Drop Cable Name is automatically incremented (Fig. 3)
 
-![Samples Menu option location](./Customer_Connection_JavaScript_Overview_3.png)
+![The result of running the connection tool](./Customer_Connection_JavaScript_Overview_3.png)
 
 <p align="center"><i>Fig. 3: The result of running the connection tool. You can see the success Alert in the window and the connection established to Address 150a. Two other connections to 146 and 148 have been previously created</i></p>
