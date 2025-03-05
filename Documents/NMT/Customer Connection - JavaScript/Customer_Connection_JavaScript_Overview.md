@@ -32,7 +32,7 @@ The tool allows the user to simply select a Pole and an Address and the tool cre
 
 ## How to use the tool
 
-This tool is available in the "DevRel Samples App - NMT" application inside the "Samples Menu" option, clicking on it will open the Palette Menu to the right side of the map
+This tool is available in the `main.nmt_samples.js` application configuration file inside the "Samples Menu" option, clicking on it will open the Palette Menu to the right side of the map
 
 ![Samples Menu option location](./Customer_Connection_JavaScript_Overview_1.png)
 
