@@ -8,8 +8,8 @@
   - [Tool files](#tool-files)
   - [How the tool works](#how-the-tool-works)
     - [benchmarkTask.py](#benchmarktaskpy)
-    - [customer\_connection\_modal.js](#customer_connection_modaljs)
-    - [customer\_connection\_builder.js](#customer_connection_builderjs)
+    - [lrt_modal.js](#lrt_modaljs)
+    - [lrt_plugin.js](#lrt_pluginjs)
 
 ---
 
@@ -371,3 +371,282 @@ Now that we have created the Structures and Equipment and connected them with a 
   
 &#8291;
 - Finally we return a success message
+  
+&#8291;
+  
+&#8291;
+
+### lrt_modal.js
+
+```
+import myw, { TaskManager } from 'myWorld-client';
+import React, { useState, useEffect, useRef } from 'react';
+import { DraggableModal, Button, Input } from 'myWorld-client/react';
+import { Alert } from 'antd';
+import { useLocale } from 'myWorld-client/react';
+```
+We start by importing from the "myworld" client library, standard React hooks, and UI library elements for use in the modal window.
+&#8291;
+  
+&#8291;
+```
+export const LrtModal = ({ open }) => {
+    const { msg } = useLocale('LRT');
+    const [appRef] = useState(myw.app);
+    const [isOpen, setIsOpen] = useState(open);
+    const [design, setDesign] = useState('');
+    const [coords_x, setCoords_x] = useState('');
+    const [coords_y, setCoords_y] = useState('');
+    const [disabled, setDisabled] = useState(true);
+    const [alertMessage, setAlertMessage] = useState('');
+    const [isAlertVisible, setIsAlertVisible] = React.useState(false);
+    const [showIntro, setShowIntro] = useState(true);
+    const [alertType, setAlertType] = useState('');
+```
+We create the `LrtModal` object by creating a series of objects using React state hooks and setting initial values.
+
+&#8291;
+  
+&#8291;
+```
+    const progressStreamControlsRef = useRef({ close() {} });
+    const [task, setTask] = useState(null);
+    const defaultProgress = {
+        percent: 0,
+        message: '0 / 2000 adresses connected',
+        status: 'Not running'
+    };
+    const [progress, setProgress] = useState(defaultProgress);
+    const [isTaskRunning, setIsTaskRunning] = useState(false);
+
+```
+Here we are setting up objects spefically pertaining to the running the task, setting the initial properties of the progress object, and monitoring the running of the task.
+
+
+&#8291;
+  
+&#8291;
+```
+    useEffect(() => {
+        setOnFunctions();
+        updateFeatures();
+    }, []);
+
+    useEffect(() => {
+        if (design) {
+            setDisabled(false);
+        } else {
+            setDisabled(true);
+        }
+    }, [design]);
+
+
+```
+Next we set up two useEffect hooks to set up two preliminary functions to be run as well as a check that a design is selected.
+
+
+
+&#8291;
+  
+&#8291;
+
+```
+    const hideIntro = () => {
+        setShowIntro(false);
+    };
+
+    const handleCancel = () => {
+        setIsOpen(false);
+    };
+
+```
+Here a couple of variables are declared to control modal window behavior
+
+&#8291;
+  
+&#8291;
+
+```
+    function setOnFunctions() {
+        appRef.on('currentFeature-changed currentFeatureSet-changed', updateFeatures);
+    }
+
+    function updateFeatures() {
+        const feature = appRef.currentFeature;
+        if (!feature || feature.getType() !== 'design') {
+            setDesign('');
+            return;
+        } else {
+            setDesign('design/' + feature.properties.name);
+            setCoords_x(feature.geometry.coordinates[0][0][0]);
+            setCoords_y(feature.geometry.coordinates[0][0][1]);
+        }
+    }
+
+```
+These functions fire when something on the map is selected.  In `updateFeatures` we are checking if the selected map object is a design and if it is we are getting the x and y coordinates of its first vertex.
+
+&#8291;
+  
+&#8291;
+
+```
+    function showAlert(type, message, time) {
+        setAlertMessage(message);
+        setAlertType(type);
+        setIsAlertVisible(true);
+        setTimeout(() => {
+            setIsAlertVisible(false);
+        }, time);
+    }
+
+```
+Here we are setting up some behavior properties for the alert message to be shown in the modal window.
+&#8291;
+  
+&#8291;
+```
+    const onBuildConnectionsLRT = async () => {
+        const params = { design: design, coords_x: coords_x, coords_y: coords_y };
+        console.log('Calling LRT');
+        try {
+            const task = await appRef.system.enqueueTask('lrt_task', params);
+            setTask(task);
+            setIsTaskRunning(true);
+
+            console.log(`Task with id=${task.id} started...`);
+
+            startStreamingProgress(task);
+        } catch (errorInfo) {
+            console.log('Failed:', errorInfo);
+        }
+    };
+
+
+```
+This code block sets up how the Long Running Task is to be called:
+
+- async for asynchronous behavior
+- passing in the design and the x,y coordinates derived above
+- creating the task by calling the `enqueueTask` method
+    - note that we are passing the LRT task name (`lrt_task`) that matches what the task is named with the decorator in the Python script.
+- once the task is running, we log an message with the task.id
+- the function to start the monitoring of progress of the task 
+- if anything goes wrong, an error message is logged.
+
+&#8291;
+  
+&#8291;
+
+```
+    const startStreamingProgress = task => {
+        progressStreamControlsRef.current = appRef.system.streamTaskProgress(task.id, {
+            onProgress: progress => {
+                console.log('Progress:', progress);
+                console.log('Task progress:', task.progress_percentage);
+                console.log('Task progress:', task.progress_percent);
+                setProgress(progress);
+            },
+            onEnd: () => {
+                console.log('Task ended');
+                setIsTaskRunning(false);
+            },
+            onFailure: error => {
+                console.log('Task failed:', error);
+                setIsTaskRunning(false);
+            },
+            onSuccess: result => {
+                const prog = {
+                    percent: 0,
+                    message: '0 / 2000 adresses connected',
+                    status: 'Not running'
+                };
+                setProgress(prog);
+                console.log('Task succeeded:', result);
+                setIsTaskRunning(false);
+                showAlert('success', 'Long Running Task complete successfully!', 5000);
+            }
+        });
+    };
+```
+This block of code manages how progress is reported from the `appRef.system.streamTaskProgress` object for the given task id.  Note the four states that get reported back from the task: `onProgress`, `onEnd`, `onFailure`, and `onSuccess`.
+
+On success we call the `showAlert` function defined earlier and display it for a set period of time.
+
+
+
+&#8291;
+  
+&#8291;
+        
+```
+    return (
+        <DraggableModal
+            wrapClassName="customer-connection-modal"
+            open={isOpen}
+            title={msg('LRT_title')}
+            width={500}
+            onCancel={handleCancel}
+            footer={
+                showIntro
+                    ? [
+                          <Button key="ok" onClick={hideIntro} type="primary">
+                              OK
+                          </Button>
+                      ]
+                    : [
+                          <Button key="cancel" onClick={handleCancel}>
+                              Cancel
+                          </Button>,
+                          <Button
+                              disabled={disabled}
+                              key="create"
+                              onClick={onBuildConnectionsLRT}
+                              type="primary"
+                          >
+                              Create Connections using LRT
+                          </Button>
+                      ]
+            }
+        >
+            {showIntro ? (
+                <div style={{ whiteSpace: 'pre-wrap' }}>{msg('description')}</div>
+            ) : (
+                <div>
+                    Design: <Input value={design ? design : ''} disabled />
+                    <br />
+                    <br />
+                    Task Status = {progress.status}
+                    {isTaskRunning ? (
+                        <div>
+                            <br />
+                            <br />
+                            Task Progress = {progress.message}
+                            <br />
+                            Task Completion % = {progress.percent}%
+                        </div>
+                    ) : null}
+                    {isAlertVisible && (
+                        <div>
+                            <Alert message={alertMessage} type={alertType} />
+                        </div>
+                    )}
+                </div>
+            )}
+        </DraggableModal>
+    );
+};
+```
+Finally the modal window object is returned with these features:
+
+- An initial set of properties 
+- An introductory window with description/instructions etc.
+- Hitting 'OK' displays another window with the selected design, the initial Task Status messages, and a button to kick off the LRT by calling the `onBuildConnectionsLRT` function defined earlier.
+
+&#8291;
+  
+&#8291;
+
+
+### lrt_plugin.js
+
