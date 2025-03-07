@@ -115,9 +115,7 @@ class BenchmarkTask(MywBaseTask, MywcomController):
         self.connection_manager = ConnectionManager(self.networkView(self.design))
 
         self.current_pole = self._createPole()
-        # design_table = self.design.table('design')
-        # design_table_filtered = design_table.filterOn('name', 'BenchmarkDesign')
-        # current_design = next(design_table_filtered.recs())
+
 
         addresses = self.address_table.recs()
         addr_list = list(addresses)

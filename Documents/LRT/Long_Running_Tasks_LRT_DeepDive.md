@@ -249,4 +249,125 @@ The final two auxiliary functions create the cable connections from the Fiber Sp
   
 &#8291;
 &#8291;
+
+Here we start the function that will do the work--in the Long Running Task framework, it must be named `execute`
  
+```
+def execute(self, **kwargs: Any):
+```
+The function takes a number of keyword arguments of different data types, hence the use of `Any`.
+
+  
+  
+&#8291;
+&#8291;
+```
+        self.design = self.db.view(kwargs.get("design"))
+        self.polePosition_x = float(kwargs.get("coords_x"))
+        self.polePosition_y = float(kwargs.get("coords_y"))
+```
+The first line creates a reference to the design in the database. Then we are extracting the x and y coordinates from the first vertex of the design polygon--this will be the location of the first Pole.
+  
+  
+&#8291;
+&#8291;
+```
+        self.pole_table = self.design.table('pole')
+        self.address_table = self.db.view().table('address')
+        self.splice_closure_table = self.design.table('splice_closure')
+        self.fiber_splitter_table = self.design.table('fiber_splitter')
+        self.wall_box_table = self.design.table('wall_box')
+        self.ont_table = self.design.table('fiber_ont')
+        self.route_table = self.design.table('oh_route')
+        self.fiber_table = self.design.table('fiber_cable')
+```
+This section of code sets up references to the design database tables where we will insert the new Structures and Equipment records.  Note that `self.address_table` references the Address records in the main database. 
+  
+&#8291;
+&#8291;
+```
+        self.cable_manager = CableManager(self.networkView(self.design))
+        self.connection_manager = ConnectionManager(self.networkView(self.design))
+
+```
+Theses lines invoke the `CableManager` and `ConnectionManager` Python API classes for use with the current design.
+
+  
+&#8291;
+&#8291;
+```
+        self.current_pole = self._createPole()
+```
+We create the first Pole with this line.
+  
+&#8291;
+&#8291;
+```
+        addresses = self.address_table.recs()
+        addr_list = list(addresses)
+
+```
+With these lines we create a reference to the Address records and then create a list of addresses.
+
+  
+&#8291;
+&#8291;
+Now we are ready to create the 2000 fiber cable connections
+```
+        for i in range(2001):
+
+            addr = random.choice(addr_list)
+            if addr.street_name is not None and addr.street_number is not None:
+                wall_box_name = addr.street_name + " " + addr.street_number + " Wall Box"
+            else:
+                wall_box_name = "Wall Box"
+            addr_coordinates = MywPoint(addr.primaryGeometry().x, addr.primaryGeometry().y)
+
+            wall_box_record = self._createWallBox(wall_box_name, addr_coordinates)
+            wall_box_coordinates = MywPoint(wall_box_record.primaryGeometry().x, wall_box_record.primaryGeometry().y)
+            ont_record = self._createOnt(wall_box_record, wall_box_coordinates)
+
+            route_coords = MywLineString([self.pole_coords, wall_box_coordinates])
+            route_record = self._createRoute(self.current_pole, wall_box_record, route_coords) 
+            cable_record = self._createCable([self.current_pole, wall_box_record])
+            cable_segments = self.cable_manager.orderedSegments(cable_record)
+            splitter_connection_record = self._connectCableToSplitter(cable_segments[0], self.current_fiber_splitter)
+            ont_connection_record = self._connectCableToOnt(cable_segments[0], ont_record)
+            self.cable_name = self._incrementName(self.cable_name)
+            self.current_splitter_pin += 1
+            if (self.current_splitter_pin > 24):
+                self.current_splitter_pin = 1
+                self.current_pole = self._createPole()
+            self.progress(4, f"{i} / 2000 adresses connected", progress_percent=(i/2001) * 100)
+        self.db.commit()
+        return "Operation completed successfully"
+```
+- The range function stops *before* the specified limit, hence we set the bound to 2001
+- we select a random address from the address list
+- if the address has a street name and number, we'll use those to name the Wall Box, otherwise we assign the name as just "Wall Box"
+- extract the x,y coordinates of the address -- we will use them for the Wall Box
+- insert a Wall Box record by calling the `_createWallBox` function
+- extract the Wall Box coordinates so we can use them for the ONT location
+- insert an ONT record by calling the `_createOnt` function
+- create a `route_coords` line from the Pole location to the Wall Box location
+- insert a route record by calling the `_createRoute` function (from the Pole to the Wall Box)
+- insert a cable record by calling the `_createCable` function (from the Pole to the Wall Box)
+- using the current cable record, get an array of ordered cable segments (in this case there is only one segment)
+
+Now that we have created the Structures and Equipment and connected them with a cable, we now create the connections between the cables and equipment.
+- a `splitter_connection_record` is created using the fiber splitter and the first cable segment
+- a `ont_connection_record` is created using the first cable segment--because it is the *only* cable segment-- and the ONT.
+- the `cable_name` is incremented
+- the `current_splitter_pin` is incremented by one--this refers to the fiber splitter
+- recall that when we create fiber splitters, they have 24 pin locations available so when the current splitter_pin count goes over 24 we:
+    - set the splitter count back to one
+    - create a new Pole by calling the `_createPole` function (which creates a new Pole, Wall Box, and Fiber Splitter)
+  
+&#8291;
+- the task `progress` method takes a step integer, a progress message, and a progress percentage
+  
+&#8291;
+- while we have inserted new records for the created structures and equipment, these records have not been committed to the database until the end of the script with the `self.db_commit()` call
+  
+&#8291;
+- Finally we return a success message
