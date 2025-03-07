@@ -93,8 +93,7 @@ export const LrtModal = ({ open }) => {
         progressStreamControlsRef.current = appRef.system.streamTaskProgress(task.id, {
             onProgress: progress => {
                 console.log('Progress:', progress);
-                console.log('Task progress:', task.progress_percentage);
-                console.log('Task progress:', task.progress_percent);
+                console.log('Task progress:', progress.percent);
                 setProgress(progress);
             },
             onEnd: () => {

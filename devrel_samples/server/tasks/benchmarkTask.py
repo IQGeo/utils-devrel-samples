@@ -1,32 +1,25 @@
-import string
-from myworldapp.core.server.tasks.myw_base_task import MywBaseTask, myw_task
-
 import re
+import random
+from typing import Any
+
+from myworldapp.core.server.tasks.myw_base_task import MywBaseTask, myw_task
 from myworldapp.modules.comms.server.controllers.mywcom_controller import MywcomController
 from myworldapp.modules.comms.server.api.manager import *
 from myworldapp.modules.comms.server.api.cable_manager import *
 from myworldapp.modules.comms.server.api.connection_manager import *
 from myworldapp.modules.comms.server.api.pin_range import *
-import random
-from typing import Any
-import time
 
 @myw_task(name='lrt_task', queue='high_priority', timeout=600)
 class BenchmarkTask(MywBaseTask, MywcomController):
     cable_name = "DROP-6000"
     current_splitter_pin = 1
     pole_name = "BenchmarkPole-6000"
-    # polePosition_x = 0.1455069
-    # polePosition_y = 52.2239084
     polePosition_x = 0
     polePosition_y = 0
     current_pole = None
     current_splice_closure = None
     current_fiber_splitter = None
     pole_coords = None
-
-    # # def __init__(self, request):
-    # #     super().__init__(request, "DATA")
 
     # ---------------------------------AUXLILIARY FUNCTIONS---------------------------------
     # Auxiliary function that increments the cable name by 1
@@ -124,9 +117,6 @@ class BenchmarkTask(MywBaseTask, MywcomController):
         self.connection_manager = ConnectionManager(self.networkView(self.design))
 
         self.current_pole = self._createPole()
-        # design_table = self.design.table('design')
-        # design_table_filtered = design_table.filterOn('name', 'BenchmarkDesign')
-        # current_design = next(design_table_filtered.recs())
 
         addresses = self.address_table.recs()
         addr_list = list(addresses)

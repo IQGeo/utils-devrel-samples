@@ -1,17 +1,17 @@
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customerConnectionImage from '../../../images/Customer_Connection_Python_icon.svg';
-import { PythonCustomerConnectionModal } from './python_customer_connection_modal';
+import customerConnectionImage from '../../images/Customer_Connection_LRT_icon.svg';
+import { LrtModal } from './lrt_modal';
 
-export class PythonCustomerConnectionPlugin extends Plugin {
+export class LrtPlugin extends Plugin {
     static {
-        this.prototype.messageGroup = 'pythonCustomerConnectionPlugin';
+        this.prototype.messageGroup = 'LRT';
 
         this.prototype.buttons = {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'customer-connection-button';
-                    this.prototype.titleMsg = 'python_customer_connection';
+                    this.prototype.titleMsg = 'LRT';
                     this.prototype.imgSrc = customerConnectionImage;
                 }
 
@@ -29,11 +29,9 @@ export class PythonCustomerConnectionPlugin extends Plugin {
     showModal() {
         this.renderRoot = renderReactNode(
             null,
-            PythonCustomerConnectionModal,
+            LrtModal,
             {
-                open: true,
-                plugin: this,
-                datasource: this.app.database.getDatasource('myworld')
+                open: true
             },
             this.renderRoot
         );

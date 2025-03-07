@@ -37,11 +37,11 @@ The Python tool not only automates the process, but also allows for bulk changes
 
 The tool files are:
 
-- `python_customer_connection_plugin.js` - The Configuration file for the Plugin. This file is located in the `modules/custom/public/js/Samples/customer_connection_python` folder
+- `python_customer_connection_plugin.js` - The Configuration file for the Plugin. This file is located in the `modules/devrel_samples/public/js/Samples/customer_connection_python` folder
   
-- `python_customer_connection_modal.js` - The file containing the React code used to render the modal window. This file is located in the `modules/custom/public/js/Samples/customer_connection_python` folder
-- `customer_connection_controller.py` - The file containing all the Python logic that will run on the server. This file is located in the `modules/custom/server/controllers` folder
-- `routing.py` - Where the Python code to HTTP address routing is configured. This file is located in the  `modules/custom/server/controllers` folder
+- `python_customer_connection_modal.js` - The file containing the React code used to render the modal window. This file is located in the `modules/devrel_samples/public/js/Samples/customer_connection_python` folder
+- `customer_connection_controller.py` - The file containing all the Python logic that will run on the server. This file is located in the `modules/devrel_samples/server/controllers` folder
+- `routing.py` - Where the Python code to HTTP address routing is configured. This file is located in the  `modules/devrel_samples/server/controllers` folder
 
 
 ## How the tool works

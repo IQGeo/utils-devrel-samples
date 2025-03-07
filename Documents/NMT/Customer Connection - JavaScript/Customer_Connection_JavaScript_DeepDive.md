@@ -40,7 +40,7 @@ The tool files are:
 - `customer_connection_modal.js` - The file containing the React code used to render the modal window
 - `customer_connection_builder.js` - The class containing the support functions that call IQGeo APIs
 
-All files are located in the `modules/custom/public/js/Samples/customer_connection_JavaScript` folder
+All files are located in the `modules/devrel_samples/public/js/Samples/customer_connection_JavaScript` folder
 
 ## How the tool works
 
