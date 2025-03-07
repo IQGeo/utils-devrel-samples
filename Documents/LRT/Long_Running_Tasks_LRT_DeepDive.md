@@ -7,7 +7,7 @@
   - [Tool Description](#tool-description)
   - [Tool files](#tool-files)
   - [How the tool works](#how-the-tool-works)
-    - [customer\_connection\_plugin.js](#customer_connection_pluginjs)
+    - [benchmarkTask.py](#benchmarktaskpy)
     - [customer\_connection\_modal.js](#customer_connection_modaljs)
     - [customer\_connection\_builder.js](#customer_connection_builderjs)
 
@@ -43,16 +43,24 @@ The user is provided feedback on the progress of the 2000 connections being made
 
 The tool files are:
 
-- `benchmarkTask.py` - this is the Python file that includes both the execution logic for creating structures, equipment, and fiber cable connections as well as the logic for invoking the LRT framework and setting task parameters. \s\s 
+- `benchmarkTask.py` - this is the Python file that includes both the execution logic for creating structures, equipment, and fiber cable connections as well as the logic for invoking the LRT framework and setting task parameters. 
     - Long Running Task Python files *must* reside in the `/server/tasks` folder.  In this case it should be in the `/modules/devrel_samples/server/tasks` folder.
+   
+&#8291;
+&#8291;
 
+   
 
 
 - `lrt_modal.js` - The file containing the React code used to render the modal window, including displaying the progress in the execution of the Python script. 
 
 
     - This is found in the `/modules/devrel_samples/public/js/Samples/LRT` folder.
+   
+&#8291;
+&#8291;
 
+   
 - `lrt_plugin.js` - the configuration file for the LRT plugin.  The LrtPlugin class will be then imported into the `main.sampleapp.js` file in a similar way as the other Palette tools. 
 
     - This is found in the `/modules/devrel_samples/public/js/Samples/LRT` folder.
@@ -65,24 +73,23 @@ In this section we will go over the tool source code describing how it works.
 ### benchmarkTask.py
 
 ```
-import string
+import re
+import random
+from typing import Any
+
 from myworldapp.core.server.tasks.myw_base_task import MywBaseTask, myw_task
 
-import re
 from myworldapp.modules.comms.server.controllers.mywcom_controller import MywcomController
 from myworldapp.modules.comms.server.api.manager import *
 from myworldapp.modules.comms.server.api.cable_manager import *
 from myworldapp.modules.comms.server.api.connection_manager import *
 from myworldapp.modules.comms.server.api.pin_range import *
-import random
-from typing import Any
-import time
 
 ```
 
 - As is customary in Python, at the top of our script we begin by importing our libraries:  
 
-    - `string`, `re`, `random`, `typing`, and `time` are standard Python libraries 
+    - `re`, `random`, and `typing`,  are standard Python libraries 
 
     - we import the `MywBaseTask` and `myw_task` in order to work with the Long Running Task framework  
 
@@ -110,6 +117,7 @@ import time
 
 
 ```
+class BenchmarkTask(MywBaseTask, MywcomController):
     cable_name = "DROP-6000"
     current_splitter_pin = 1
     pole_name = "BenchmarkPole-6000"
@@ -121,12 +129,12 @@ import time
     pole_coords = None
 ```
 
-Here we are just setting some initial values for the creation of Structures and Equipment.
+We set up our class `BenchmarkTask` by using the `MywBaseTask` and `MywcomController` imports.  Then we are just setting some initial values for the creation of Structures and Equipment.
   
 &#8291;
 &#8291;
 
-Beginning of auxiliary functions
+Next we have a series of auxiliary functions: 
  
 ```
     def _incrementName(self, name):
@@ -148,19 +156,22 @@ This is the auto-increment function used elsewhere in the samples that uses rege
     def _createPole(self):
         self.pole_coords = MywPoint(self.polePosition_x, self.polePosition_y)
         pole_props = {"name": self.pole_name, "location": self.pole_coords}
+
+        newPole = self.pole_table.insert(pole_props)
+
         self.pole_name = self._incrementName(self.pole_name)
         self.polePosition_x += 0.00001
         self.polePosition_y += 0.00001
-        newPole = self.pole_table.insert(pole_props)
+        
         self.current_splice_closure = self._createSpliceClosure(newPole, self.pole_coords)
         self.current_fiber_splitter = self._createFiberSplitter(newPole, self.pole_coords, self.current_splice_closure)
         return newPole
 
 ```
-This function creates a new Pole.  It starts by taking an initial set of coordinates that are derived elsewhere in the code and creating a geographic point that will represent the initial Pole location and `pole_props` define the initial set of properties. The `newPole` line inserts a new pole using the current properties.  Note how the pole name and coordinates are incremented so the properties are ready for the *next* pole to be created.
+This function creates a new Pole.  It starts by taking an initial set of coordinates that are derived elsewhere in the code and creating a geographic point that will represent the initial Pole location and the `pole_props` define the initial set of properties. The `newPole` line inserts a new pole using the current properties.  After the insert the pole name and coordinates are incremented so the properties are ready for the *next* pole to be created.
 
 &#8291;
-The auxiliary functions for creating a splice closure and fiber splitter are called (see below for more detail).
+The auxiliary functions for creating a splice closure and fiber splitter for the Pole are called (see below for more detail).
 
 &#8291;
 &#8291;
@@ -177,7 +188,7 @@ The auxiliary functions for creating a splice closure and fiber splitter are cal
         return self.fiber_splitter_table.insert(fiber_splitter_props)
 
 ```
-The functions for inserting a Splice Closure and a Fiber Splitter.  They define a set of properties and then  insert those records.  Note the unique identifiers being used for the "housing" and "root_housing" properties that are required so these new pieces of equipment conform with the Containment model.
+The functions for inserting a Splice Closure and a Fiber Splitter.  They define a set of properties and then  insert those records.  
 
 &#8291;
 &#8291;
@@ -233,7 +244,7 @@ The functions for creating a route and a cable.  Note that a route is created be
         return self.connection_manager.connect("fiber", ont, cable_segment, cable_pin_range, ont, ont_pin_range)
 
 ```
-The final two auxiliary functions create the cable connections from the Fiber Splitter on the Pole to the ONT within the Wall Box at the address location. Note how we take care to designate the proper PinRange values to ensure conformity with the Connection model.
+The final two auxiliary functions create the cable connections from the Fiber Splitter on the Pole to the ONT within the Wall Box at the address location. Note how we are keeping track of the pin range on the fiber splitter.
   
   
 &#8291;

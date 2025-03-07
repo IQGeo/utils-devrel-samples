@@ -41,7 +41,7 @@ The user is provided feedback on the progress of the 2000 connections being made
 
 This tool is available in the "DevRel Samples App - LRT" application inside the "Samples Menu" option, clicking on it will open the Palette Menu to the right side of the map
 
-![Samples Menu option location](../NMT/Customer_Connection_JavaScript_Overview_1.png)
+![Samples Menu option location](./Customer_Connection_JavaScript_Overview_1.png)
 
 <p align="center"><i>Fig. 1: "Samples Menu" option location and the Palette menu open to the right side of the map</i></p>
 
@@ -51,7 +51,7 @@ Click the "LRT" button on the Palette Menu and a pop-up window will show with a 
 
 <p align="center"><i>Fig. 2: The Long Running Task Tool window</i></p>
 
-To use the tool create an empty Design polygon and select it.
+To use the tool create an empty Design polygon--with its state set to "Designing"-- and select it.
 
 Clicking the "Create Connections using LRT" button will kick off the task, as connections are made, the Task Status in the modal dialog will be updated so the user can monitor the progress of the task.
 
