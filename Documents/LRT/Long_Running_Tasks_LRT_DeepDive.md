@@ -7,9 +7,9 @@
   - [Tool Description](#tool-description)
   - [Tool files](#tool-files)
   - [How the tool works](#how-the-tool-works)
-    - [customer\_connection\_plugin.js](#customer_connection_pluginjs)
-    - [customer\_connection\_modal.js](#customer_connection_modaljs)
-    - [customer\_connection\_builder.js](#customer_connection_builderjs)
+    - [benchmarkTask.py](#benchmarktaskpy)
+    - [lrt_modal.js](#lrt_modaljs)
+    - [lrt_plugin.js](#lrt_pluginjs)
 
 ---
 
@@ -43,16 +43,24 @@ The user is provided feedback on the progress of the 2000 connections being made
 
 The tool files are:
 
-- `benchmarkTask.py` - this is the Python file that includes both the execution logic for creating structures, equipment, and fiber cable connections as well as the logic for invoking the LRT framework and setting task parameters. \s\s 
+- `benchmarkTask.py` - this is the Python file that includes both the execution logic for creating structures, equipment, and fiber cable connections as well as the logic for invoking the LRT framework and setting task parameters. 
     - Long Running Task Python files *must* reside in the `/server/tasks` folder.  In this case it should be in the `/modules/devrel_samples/server/tasks` folder.
+   
+&#8291;
+&#8291;
 
+   
 
 
 - `lrt_modal.js` - The file containing the React code used to render the modal window, including displaying the progress in the execution of the Python script. 
 
 
     - This is found in the `/modules/devrel_samples/public/js/Samples/LRT` folder.
+   
+&#8291;
+&#8291;
 
+   
 - `lrt_plugin.js` - the configuration file for the LRT plugin.  The LrtPlugin class will be then imported into the `main.sampleapp.js` file in a similar way as the other Palette tools. 
 
     - This is found in the `/modules/devrel_samples/public/js/Samples/LRT` folder.
@@ -65,24 +73,23 @@ In this section we will go over the tool source code describing how it works.
 ### benchmarkTask.py
 
 ```
-import string
+import re
+import random
+from typing import Any
+
 from myworldapp.core.server.tasks.myw_base_task import MywBaseTask, myw_task
 
-import re
 from myworldapp.modules.comms.server.controllers.mywcom_controller import MywcomController
 from myworldapp.modules.comms.server.api.manager import *
 from myworldapp.modules.comms.server.api.cable_manager import *
 from myworldapp.modules.comms.server.api.connection_manager import *
 from myworldapp.modules.comms.server.api.pin_range import *
-import random
-from typing import Any
-import time
 
 ```
 
 - As is customary in Python, at the top of our script we begin by importing our libraries:  
 
-    - `string`, `re`, `random`, `typing`, and `time` are standard Python libraries 
+    - `re`, `random`, and `typing`,  are standard Python libraries 
 
     - we import the `MywBaseTask` and `myw_task` in order to work with the Long Running Task framework  
 
@@ -110,6 +117,7 @@ import time
 
 
 ```
+class BenchmarkTask(MywBaseTask, MywcomController):
     cable_name = "DROP-6000"
     current_splitter_pin = 1
     pole_name = "BenchmarkPole-6000"
@@ -121,12 +129,12 @@ import time
     pole_coords = None
 ```
 
-Here we are just setting some initial values for the creation of Structures and Equipment.
+We set up our class `BenchmarkTask` by using the `MywBaseTask` and `MywcomController` imports.  Then we are just setting some initial values for the creation of Structures and Equipment.
   
 &#8291;
 &#8291;
 
-Beginning of auxiliary functions
+Next we have a series of auxiliary functions: 
  
 ```
     def _incrementName(self, name):
@@ -148,19 +156,22 @@ This is the auto-increment function used elsewhere in the samples that uses rege
     def _createPole(self):
         self.pole_coords = MywPoint(self.polePosition_x, self.polePosition_y)
         pole_props = {"name": self.pole_name, "location": self.pole_coords}
+
+        newPole = self.pole_table.insert(pole_props)
+
         self.pole_name = self._incrementName(self.pole_name)
         self.polePosition_x += 0.00001
         self.polePosition_y += 0.00001
-        newPole = self.pole_table.insert(pole_props)
+        
         self.current_splice_closure = self._createSpliceClosure(newPole, self.pole_coords)
         self.current_fiber_splitter = self._createFiberSplitter(newPole, self.pole_coords, self.current_splice_closure)
         return newPole
 
 ```
-This function creates a new Pole.  It starts by taking an initial set of coordinates that are derived elsewhere in the code and creating a geographic point that will represent the initial Pole location and `pole_props` define the initial set of properties. The `newPole` line inserts a new pole using the current properties.  Note how the pole name and coordinates are incremented so the properties are ready for the *next* pole to be created.
+This function creates a new Pole.  It starts by taking an initial set of coordinates that are derived elsewhere in the code and creating a geographic point that will represent the initial Pole location and the `pole_props` define the initial set of properties. The `newPole` line inserts a new pole using the current properties.  After the insert the pole name and coordinates are incremented so the properties are ready for the *next* pole to be created.
 
 &#8291;
-The auxiliary functions for creating a splice closure and fiber splitter are called (see below for more detail).
+The auxiliary functions for creating a splice closure and fiber splitter for the Pole are called (see below for more detail).
 
 &#8291;
 &#8291;
@@ -177,7 +188,7 @@ The auxiliary functions for creating a splice closure and fiber splitter are cal
         return self.fiber_splitter_table.insert(fiber_splitter_props)
 
 ```
-The functions for inserting a Splice Closure and a Fiber Splitter.  They define a set of properties and then  insert those records.  Note the unique identifiers being used for the "housing" and "root_housing" properties that are required so these new pieces of equipment conform with the Containment model.
+The functions for inserting a Splice Closure and a Fiber Splitter.  They define a set of properties and then  insert those records.  
 
 &#8291;
 &#8291;
@@ -233,9 +244,409 @@ The functions for creating a route and a cable.  Note that a route is created be
         return self.connection_manager.connect("fiber", ont, cable_segment, cable_pin_range, ont, ont_pin_range)
 
 ```
-The final two auxiliary functions create the cable connections from the Fiber Splitter on the Pole to the ONT within the Wall Box at the address location. Note how we take care to designate the proper PinRange values to ensure conformity with the Connection model.
+The final two auxiliary functions create the cable connections from the Fiber Splitter on the Pole to the ONT within the Wall Box at the address location. Note how we are keeping track of the pin range on the fiber splitter.
   
   
 &#8291;
 &#8291;
+
+Here we start the function that will do the work--in the Long Running Task framework, it must be named `execute`
  
+```
+def execute(self, **kwargs: Any):
+```
+The function takes a number of keyword arguments of different data types, hence the use of `Any`.
+
+  
+  
+&#8291;
+&#8291;
+```
+        self.design = self.db.view(kwargs.get("design"))
+        self.polePosition_x = float(kwargs.get("coords_x"))
+        self.polePosition_y = float(kwargs.get("coords_y"))
+```
+The first line creates a reference to the design in the database. Then we are extracting the x and y coordinates from the first vertex of the design polygon--this will be the location of the first Pole.
+  
+  
+&#8291;
+&#8291;
+```
+        self.pole_table = self.design.table('pole')
+        self.address_table = self.db.view().table('address')
+        self.splice_closure_table = self.design.table('splice_closure')
+        self.fiber_splitter_table = self.design.table('fiber_splitter')
+        self.wall_box_table = self.design.table('wall_box')
+        self.ont_table = self.design.table('fiber_ont')
+        self.route_table = self.design.table('oh_route')
+        self.fiber_table = self.design.table('fiber_cable')
+```
+This section of code sets up references to the design database tables where we will insert the new Structures and Equipment records.  Note that `self.address_table` references the Address records in the main database. 
+  
+&#8291;
+&#8291;
+```
+        self.cable_manager = CableManager(self.networkView(self.design))
+        self.connection_manager = ConnectionManager(self.networkView(self.design))
+
+```
+Theses lines invoke the `CableManager` and `ConnectionManager` Python API classes for use with the current design.
+
+  
+&#8291;
+&#8291;
+```
+        self.current_pole = self._createPole()
+```
+We create the first Pole with this line.
+  
+&#8291;
+&#8291;
+```
+        addresses = self.address_table.recs()
+        addr_list = list(addresses)
+
+```
+With these lines we create a reference to the Address records and then create a list of addresses.
+
+  
+&#8291;
+&#8291;
+Now we are ready to create the 2000 fiber cable connections
+```
+        for i in range(2001):
+
+            addr = random.choice(addr_list)
+            if addr.street_name is not None and addr.street_number is not None:
+                wall_box_name = addr.street_name + " " + addr.street_number + " Wall Box"
+            else:
+                wall_box_name = "Wall Box"
+            addr_coordinates = MywPoint(addr.primaryGeometry().x, addr.primaryGeometry().y)
+
+            wall_box_record = self._createWallBox(wall_box_name, addr_coordinates)
+            wall_box_coordinates = MywPoint(wall_box_record.primaryGeometry().x, wall_box_record.primaryGeometry().y)
+            ont_record = self._createOnt(wall_box_record, wall_box_coordinates)
+
+            route_coords = MywLineString([self.pole_coords, wall_box_coordinates])
+            route_record = self._createRoute(self.current_pole, wall_box_record, route_coords) 
+            cable_record = self._createCable([self.current_pole, wall_box_record])
+            cable_segments = self.cable_manager.orderedSegments(cable_record)
+            splitter_connection_record = self._connectCableToSplitter(cable_segments[0], self.current_fiber_splitter)
+            ont_connection_record = self._connectCableToOnt(cable_segments[0], ont_record)
+            self.cable_name = self._incrementName(self.cable_name)
+            self.current_splitter_pin += 1
+            if (self.current_splitter_pin > 24):
+                self.current_splitter_pin = 1
+                self.current_pole = self._createPole()
+            self.progress(4, f"{i} / 2000 adresses connected", progress_percent=(i/2001) * 100)
+        self.db.commit()
+        return "Operation completed successfully"
+```
+- The range function stops *before* the specified limit, hence we set the bound to 2001
+- we select a random address from the address list
+- if the address has a street name and number, we'll use those to name the Wall Box, otherwise we assign the name as just "Wall Box"
+- extract the x,y coordinates of the address -- we will use them for the Wall Box
+- insert a Wall Box record by calling the `_createWallBox` function
+- extract the Wall Box coordinates so we can use them for the ONT location
+- insert an ONT record by calling the `_createOnt` function
+- create a `route_coords` line from the Pole location to the Wall Box location
+- insert a route record by calling the `_createRoute` function (from the Pole to the Wall Box)
+- insert a cable record by calling the `_createCable` function (from the Pole to the Wall Box)
+- using the current cable record, get an array of ordered cable segments (in this case there is only one segment)
+
+Now that we have created the Structures and Equipment and connected them with a cable, we now create the connections between the cables and equipment.
+- a `splitter_connection_record` is created using the fiber splitter and the first cable segment
+- a `ont_connection_record` is created using the first cable segment--because it is the *only* cable segment-- and the ONT.
+- the `cable_name` is incremented
+- the `current_splitter_pin` is incremented by one--this refers to the fiber splitter
+- recall that when we create fiber splitters, they have 24 pin locations available so when the current splitter_pin count goes over 24 we:
+    - set the splitter count back to one
+    - create a new Pole by calling the `_createPole` function (which creates a new Pole, Wall Box, and Fiber Splitter)
+  
+&#8291;
+- the task `progress` method takes a step integer, a progress message, and a progress percentage
+  
+&#8291;
+- while we have inserted new records for the created structures and equipment, these records have not been committed to the database until the end of the script with the `self.db_commit()` call
+  
+&#8291;
+- Finally we return a success message
+  
+&#8291;
+  
+&#8291;
+
+### lrt_modal.js
+
+```
+import myw, { TaskManager } from 'myWorld-client';
+import React, { useState, useEffect, useRef } from 'react';
+import { DraggableModal, Button, Input } from 'myWorld-client/react';
+import { Alert } from 'antd';
+import { useLocale } from 'myWorld-client/react';
+```
+We start by importing from the "myworld" client library, standard React hooks, and UI library elements for use in the modal window.
+&#8291;
+  
+&#8291;
+```
+export const LrtModal = ({ open }) => {
+    const { msg } = useLocale('LRT');
+    const [appRef] = useState(myw.app);
+    const [isOpen, setIsOpen] = useState(open);
+    const [design, setDesign] = useState('');
+    const [coords_x, setCoords_x] = useState('');
+    const [coords_y, setCoords_y] = useState('');
+    const [disabled, setDisabled] = useState(true);
+    const [alertMessage, setAlertMessage] = useState('');
+    const [isAlertVisible, setIsAlertVisible] = React.useState(false);
+    const [showIntro, setShowIntro] = useState(true);
+    const [alertType, setAlertType] = useState('');
+```
+We create the `LrtModal` object by creating a series of objects using React state hooks and setting initial values.
+
+&#8291;
+  
+&#8291;
+```
+    const progressStreamControlsRef = useRef({ close() {} });
+    const [task, setTask] = useState(null);
+    const defaultProgress = {
+        percent: 0,
+        message: '0 / 2000 adresses connected',
+        status: 'Not running'
+    };
+    const [progress, setProgress] = useState(defaultProgress);
+    const [isTaskRunning, setIsTaskRunning] = useState(false);
+
+```
+Here we are setting up objects spefically pertaining to the running the task, setting the initial properties of the progress object, and monitoring the running of the task.
+
+
+&#8291;
+  
+&#8291;
+```
+    useEffect(() => {
+        setOnFunctions();
+        updateFeatures();
+    }, []);
+
+    useEffect(() => {
+        if (design) {
+            setDisabled(false);
+        } else {
+            setDisabled(true);
+        }
+    }, [design]);
+
+
+```
+Next we set up two useEffect hooks to set up two preliminary functions to be run as well as a check that a design is selected.
+
+
+
+&#8291;
+  
+&#8291;
+
+```
+    const hideIntro = () => {
+        setShowIntro(false);
+    };
+
+    const handleCancel = () => {
+        setIsOpen(false);
+    };
+
+```
+Here a couple of variables are declared to control modal window behavior
+
+&#8291;
+  
+&#8291;
+
+```
+    function setOnFunctions() {
+        appRef.on('currentFeature-changed currentFeatureSet-changed', updateFeatures);
+    }
+
+    function updateFeatures() {
+        const feature = appRef.currentFeature;
+        if (!feature || feature.getType() !== 'design') {
+            setDesign('');
+            return;
+        } else {
+            setDesign('design/' + feature.properties.name);
+            setCoords_x(feature.geometry.coordinates[0][0][0]);
+            setCoords_y(feature.geometry.coordinates[0][0][1]);
+        }
+    }
+
+```
+These functions fire when something on the map is selected.  In `updateFeatures` we are checking if the selected map object is a design and if it is we are getting the x and y coordinates of its first vertex.
+
+&#8291;
+  
+&#8291;
+
+```
+    function showAlert(type, message, time) {
+        setAlertMessage(message);
+        setAlertType(type);
+        setIsAlertVisible(true);
+        setTimeout(() => {
+            setIsAlertVisible(false);
+        }, time);
+    }
+
+```
+Here we are setting up some behavior properties for the alert message to be shown in the modal window.
+&#8291;
+  
+&#8291;
+```
+    const onBuildConnectionsLRT = async () => {
+        const params = { design: design, coords_x: coords_x, coords_y: coords_y };
+        console.log('Calling LRT');
+        try {
+            const task = await appRef.system.enqueueTask('lrt_task', params);
+            setTask(task);
+            setIsTaskRunning(true);
+
+            console.log(`Task with id=${task.id} started...`);
+
+            startStreamingProgress(task);
+        } catch (errorInfo) {
+            console.log('Failed:', errorInfo);
+        }
+    };
+
+
+```
+This code block sets up how the Long Running Task is to be called:
+
+- async for asynchronous behavior
+- passing in the design and the x,y coordinates derived above
+- creating the task by calling the `enqueueTask` method
+    - note that we are passing the LRT task name (`lrt_task`) that matches what the task is named with the decorator in the Python script.
+- once the task is running, we log an message with the task.id
+- the function to start the monitoring of progress of the task 
+- if anything goes wrong, an error message is logged.
+
+&#8291;
+  
+&#8291;
+
+```
+    const startStreamingProgress = task => {
+        progressStreamControlsRef.current = appRef.system.streamTaskProgress(task.id, {
+            onProgress: progress => {
+                console.log('Progress:', progress);
+                console.log('Task progress:', task.progress_percentage);
+                console.log('Task progress:', task.progress_percent);
+                setProgress(progress);
+            },
+            onEnd: () => {
+                console.log('Task ended');
+                setIsTaskRunning(false);
+            },
+            onFailure: error => {
+                console.log('Task failed:', error);
+                setIsTaskRunning(false);
+            },
+            onSuccess: result => {
+                const prog = {
+                    percent: 0,
+                    message: '0 / 2000 adresses connected',
+                    status: 'Not running'
+                };
+                setProgress(prog);
+                console.log('Task succeeded:', result);
+                setIsTaskRunning(false);
+                showAlert('success', 'Long Running Task complete successfully!', 5000);
+            }
+        });
+    };
+```
+This block of code manages how progress is reported from the `appRef.system.streamTaskProgress` object for the given task id.  Note the four states that get reported back from the task: `onProgress`, `onEnd`, `onFailure`, and `onSuccess`.
+
+On success we call the `showAlert` function defined earlier and display it for a set period of time.
+
+
+
+&#8291;
+  
+&#8291;
+        
+```
+    return (
+        <DraggableModal
+            wrapClassName="customer-connection-modal"
+            open={isOpen}
+            title={msg('LRT_title')}
+            width={500}
+            onCancel={handleCancel}
+            footer={
+                showIntro
+                    ? [
+                          <Button key="ok" onClick={hideIntro} type="primary">
+                              OK
+                          </Button>
+                      ]
+                    : [
+                          <Button key="cancel" onClick={handleCancel}>
+                              Cancel
+                          </Button>,
+                          <Button
+                              disabled={disabled}
+                              key="create"
+                              onClick={onBuildConnectionsLRT}
+                              type="primary"
+                          >
+                              Create Connections using LRT
+                          </Button>
+                      ]
+            }
+        >
+            {showIntro ? (
+                <div style={{ whiteSpace: 'pre-wrap' }}>{msg('description')}</div>
+            ) : (
+                <div>
+                    Design: <Input value={design ? design : ''} disabled />
+                    <br />
+                    <br />
+                    Task Status = {progress.status}
+                    {isTaskRunning ? (
+                        <div>
+                            <br />
+                            <br />
+                            Task Progress = {progress.message}
+                            <br />
+                            Task Completion % = {progress.percent}%
+                        </div>
+                    ) : null}
+                    {isAlertVisible && (
+                        <div>
+                            <Alert message={alertMessage} type={alertType} />
+                        </div>
+                    )}
+                </div>
+            )}
+        </DraggableModal>
+    );
+};
+```
+Finally the modal window object is returned with these features:
+
+- An initial set of properties 
+- An introductory window with description/instructions etc.
+- Hitting 'OK' displays another window with the selected design, the initial Task Status messages, and a button to kick off the LRT by calling the `onBuildConnectionsLRT` function defined earlier.
+
+&#8291;
+  
+&#8291;
+
+
+### lrt_plugin.js
+

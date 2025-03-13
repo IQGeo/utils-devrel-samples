@@ -21,7 +21,7 @@ export const LrtModal = ({ open }) => {
     const [task, setTask] = useState(null);
     const defaultProgress = {
         percent: 0,
-        message: '0 / 6000 adresses connected',
+        message: '0 / 2000 adresses connected',
         status: 'Not running'
     };
     const [progress, setProgress] = useState(defaultProgress);
@@ -107,7 +107,7 @@ export const LrtModal = ({ open }) => {
             onSuccess: result => {
                 const prog = {
                     percent: 0,
-                    message: '0 / 6000 adresses connected',
+                    message: '0 / 2000 adresses connected',
                     status: 'Not running'
                 };
                 setProgress(prog);

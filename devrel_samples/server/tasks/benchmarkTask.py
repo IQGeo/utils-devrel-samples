@@ -3,11 +3,13 @@ import random
 from typing import Any
 
 from myworldapp.core.server.tasks.myw_base_task import MywBaseTask, myw_task
+
 from myworldapp.modules.comms.server.controllers.mywcom_controller import MywcomController
 from myworldapp.modules.comms.server.api.manager import *
 from myworldapp.modules.comms.server.api.cable_manager import *
 from myworldapp.modules.comms.server.api.connection_manager import *
 from myworldapp.modules.comms.server.api.pin_range import *
+
 
 @myw_task(name='lrt_task', queue='high_priority', timeout=600)
 class BenchmarkTask(MywBaseTask, MywcomController):
@@ -21,8 +23,10 @@ class BenchmarkTask(MywBaseTask, MywcomController):
     current_fiber_splitter = None
     pole_coords = None
 
+
+
     # ---------------------------------AUXLILIARY FUNCTIONS---------------------------------
-    # Auxiliary function that increments the cable name by 1
+
     def _incrementName(self, name):
         match = re.match(r'(.*?)(\d+)$', name)
         if match:
@@ -35,10 +39,13 @@ class BenchmarkTask(MywBaseTask, MywcomController):
     def _createPole(self):
         self.pole_coords = MywPoint(self.polePosition_x, self.polePosition_y)
         pole_props = {"name": self.pole_name, "location": self.pole_coords}
+
+        newPole = self.pole_table.insert(pole_props)
+
         self.pole_name = self._incrementName(self.pole_name)
         self.polePosition_x += 0.00001
         self.polePosition_y += 0.00001
-        newPole = self.pole_table.insert(pole_props)
+
         self.current_splice_closure = self._createSpliceClosure(newPole, self.pole_coords)
         self.current_fiber_splitter = self._createFiberSplitter(newPole, self.pole_coords, self.current_splice_closure)
         return newPole
@@ -90,18 +97,9 @@ class BenchmarkTask(MywBaseTask, MywcomController):
         return self.connection_manager.connect("fiber", ont, cable_segment, cable_pin_range, ont, ont_pin_range)
 
     def execute(self, **kwargs: Any):
-        # seconds = kwargs.get("seconds", 60)
-        # sleep_time = seconds / 10
 
-        # for i in range(0, 100, 10):
-        #     self.progress(4, f"Progress: {i}%", progress_percent=i)
-        #     time.sleep(sleep_time)
 
-        # self.progress(4, f"Progress: 100%", progress_percent=100)
-
-        # return f"Long running task completed after {seconds} seconds"
-
-        #Then I create references to the design as well as all tables that will be used in the operations
+        # I create references to the design as well as all tables that will be used in the operations
         self.design = self.db.view(kwargs.get("design"))
         self.polePosition_x = float(kwargs.get("coords_x"))
         self.polePosition_y = float(kwargs.get("coords_y"))
@@ -117,6 +115,7 @@ class BenchmarkTask(MywBaseTask, MywcomController):
         self.connection_manager = ConnectionManager(self.networkView(self.design))
 
         self.current_pole = self._createPole()
+
 
         addresses = self.address_table.recs()
         addr_list = list(addresses)
