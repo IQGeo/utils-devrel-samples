@@ -1,151 +1,94 @@
-# RESTful APIs - Code Deep Dive
+# WFM/NMT Integration - Code Deep Dive
 
 ## Table of Contents
 
-- [RESTful APIs - Code Deep Dive](#restful-apis---code-deep-dive)
+- [WFM/NMT Integration - Code Deep Dive](#wfmnmt-integration---code-deep-dive)
   - [Table of Contents](#table-of-contents)
   - [Tool Description](#tool-description)
   - [Tool files](#tool-files)
   - [How the tool works](#how-the-tool-works)
-    - [plaform\_REST\_example.py](#plaform_rest_examplepy)
-    - [NMT\_REST\_example.py](#nmt_rest_examplepy)
+    - [fieldValidatorModal.js](#fieldvalidatormodaljs)
 
 ---
 
 ## Tool Description
 
-REST APIs allow developers to build interfaces from other systems to the IQGeo Platform. In the library there are two files: `platform_REST_example.py` and `NMT_REST_example.py`, with examples for the Platform and NMT REST APIs, repectively.
+The integration between the Workflow Manager (WFM) and Network Manager Telecom (NMT), allows users to manipulate WFM tickets from within NMT, making the processing of these tickets easier and more streamlined.
+
+This sample allows the user to query the features database with a rule and create tickets associated with features that break this rule. 
+
+For instance I want to ensure all my fiber cables have more than 24 fibers, if any of the cables have less than 24 fibers a ticket is created with basic information (that can be later edited) to replace this cable.
 
 ## Tool files
 
-- `plaform_REST_example.py` - REST API example for the Platform application
-- `NMT_REST_example.py` - REST API example for the NMT application
+- `fieldValidatorPlugin.js` - The Configuration file for the Plugin
+- `fieldValidatorModal.js` - The file containing the React code used to render the modal window
+- `fieldValidatorFunctions.js` - The class containing the support functions for the Modal code
 
-All files are located in the `modules/custom/public/js/Samples/customer_connection_JavaScript` folder
+All files are located in the `modules/devrel_samples/public/js/Samples/WFM_NMT_Integration` folder
 
 ## How the tool works
 
-In this section we will go over the tool source code describing how it works.
+In this section we will go over the tool source code describing how it works. This tool contains much React code that are not intrinsic to the process of creating a Workflow Manager ticket from within Network Manager Telecom. For sake of brevity and to focus on the functionality itself, this document will focus only in the code that is relevant for this operation itself.
 
-### plaform_REST_example.py
+### fieldValidatorModal.js
 
-The code start with the relevant `import` statements. Make sure your Python environment has the libraries installed
-
-```
-import requests; 
-import json;
-```
-
-- The `requests` library is used to send the HTTP requests to the server
-- The `json` library is used to read the cookies dictionary and REST request response
-
-Next some variables are created
+The file starts with the relevant imports
 
 ```
-login_url   = 'https://example.com/auth'
-select_url  = "https://example.com/select"
-
-session = requests.Session()
-
-uauth = {'user': 'admin','pass': '_mywWorld_',} 
+import wfm from '../../../../workflow_manager/public/js/base/wfm.js';
 ```
 
-- `login_url` and `select_url` are the URLs for the two requests to be sent: Authentication and select, respectively. Make sure to edit the URL to add the address of your development server before continuing
-  
-- `requests.Session()` is called to ensure cookie persistence. The authentication request will return a cookie that needs to be used in the following requests
-- The `uauth` dictionary contain the login and password information to be used in the authentication requests
-  - These are the deafult username and password for the `admin` account when the environment was created. Ehsire that this information is correct for your environment
-  - For production environments due to security concerns it is not recommended to use username and password engine for authentication. IQGeo provides support to several authentication mechanisms, you can find more information about how to set them up in the Platform documentation under `Installation and Configuration > Configuration > Configuring authentication`
+For the integration the only relevant import is `wfm.js`, which define namespace and general util functions
 
-With all information set, the authentication request can be sent
+When the user presses the "OK" button the function `validateRule` is called
 
 ```
-response = session.post(login_url, data=uauth)
-if response.status_code == 200:
-    print(response)
-    print()
-    cookies = response.cookies.get_dict()
-    print(json.dumps(cookies))
-    print()
-else:
-    print("Error:", response2.status_code, response.text)
-
-headers = {
-    'Cookie': 'myworldapp=' + cookies['myworldapp'] + '; csrf_token=' + cookies['csrf_token']
-}
+    const validateRule = async () => {
+        setResult([]);
+        let tempResult = [];
+        db.getFeatures(pickedFeatureType, { bounds: appRef.map.getBounds() }).then(result => {
+            for (const feature in result) {
+                if (result[feature]?.properties) {
+                    const props = result[feature]?.properties;
+                    typeof props[pickedField] === 'number'
+                        ? (props[pickedField] = props[pickedField].toFixed(2))
+                        : props[pickedField];
+                    const newResult = {
+                        resultFeature: result[feature],
+                        result: validate(props[pickedField], pickedRule, inputtedValue)
+                    };
+                    tempResult.push(newResult);
+                }
+            }
+            setResult(tempResult);
+        });
+    };
 ```
 
-- The process starts by sending a POST request to the authentication URL, passing as `data` the `uauth` dictionary created
+- The function starts by resetting the `result` State, emptying the result array in case a validation has already been run
 
-- If the HTTP response code is `200` that means that the authentication was successful and then
-  - The response code is printed in the Terminal
-  - The returned cookies are passed as a Dict to the `cookies` variable and printed in the Terminal
-- If the HTTP response code is not `200` that means that there was an issue with the authentication, the `status_code` and `text` are printed for information
-- The `headers` dict will contain the relevant cookies to be used in the `select` request
+- Then `db.getFeatures` is called, where the database is queried for the selected feature type (stored in the `pickedFeatureType` state)
+- The second parameter of `db.getFeatuers` is an object of the type `queryParameters` that is used to further filter the query. In the tool's case we are only using the `bounds` parameter with the current screen's map bounds (i.e.: The more the user zoom in, the smaller the area will be. The more the user zooms out, the larger the area will be )
+- Since this is an asynchronous function the code waits for a return. It then iterates over the result, validating each feature against the rule defined by the user in the interface, and populating the `tempResult` variable
+- Once the iteration finished, the `result` state is set with the `tempResult` array value
+  - A temporary array is used because it the `result` state is constantly updated the screen will be unnecessarily refreshed every time
 
-Next the variables containing information for the `select` query are created. 
-
-```
-latitude = 52.2087034
-longitude = 0.1382864
-zoom_level = 8
-layer = ["bbc", "mywcom_fc"]
-
-params = {
-    "lat": latitude,
-    "lon": longitude,
-    "zoom": zoom_level,
-    "layers": ",".join(layer), 
-}
-```
-
-You can find more information on the available functions in the Platform documentation in the `Developer Guide > REST API` section. Specifically the `select` request has, as require parameters:
-
-- The Latitude and Longitude where to search for the selected features
-  
-- The zoom level to use
-- A comma-separated list of layer codes to fetch features from
-  - To see what Layers are available go to `Configuration -> Layers` and use the `Code` of the layer in this variable
-  - In this example the request is for Backbone Circuits and Fiber Cables, the results may vary depending on your development environment database, you can change this variable to see different results for different layers
-
-After setting the `select` request data, it can be sent to the server
+If a feature breaks the rule defined by the user next to it in the result list will be shown a "Create WFM Ticket" button, when this button is pressed the `createTicket` function is called
 
 ```
-response2 = requests.get(select_url, params=params, headers=headers)
+    const createTicket = async itemObj => {
+        const ticketObj = createTicketObject(
+            itemObj,
+            pickedRule,
+            pickedField,
+            inputtedValue,
+            pickedFeatureType
+        );
 
-if response2.status_code == 200:
-    data = response2.json()
-    print("Fetched features:", data)
-else:
-    print("Error:", response2.status_code, response.text)
+        const { createTicket } = wfm.redux.tickets;
+        await wfm.store.dispatch(createTicket({ values: ticketObj }));
+    };
 ```
-
-- `select` is a GET request, and the parameters are
-  - The URL
-  - The parameters dict
-  - The headers dict
-
-- As with the authentication request if the HTTP response code is `200` that means that the request was successful and then
-  - The response code is printed in the Terminal
-  - The returned data is printed
-- - If the HTTP response code is not `200` that means that there was an issue with the reqiest, the `status_code` and `text` are printed for information
-
-### NMT_REST_example.py
-
-The NMT REST example is very similar to the [Platform REST API](##plaform_REST_example.py) sample. This section will only cover the different logic in the specific NMT sample.
-
-You can find more information on the functions available in the NMT REST API by checking the relevant page in the NMT documentation under `Developer Guide > Developer API > External REST API > Viewing the API specification`
-
-The ony difference between the NMT sample and the [Platform REST API](##plaform_REST_example.py) sample is the address of the request to be sent to the server after the authentication
-
-```
-getFeature_url  = 'https://example.com/modules/comms/api/v1/resourceInventoryManagement/resource/fiber_cable/174?name=DROP-140&fields=name%2Cspecification'
-```
-
-The base URL for the request is `https://example.com/modules/comms/api/v1/resourceInventoryManagement/resource/fiber_cable`, this request queries NMT for a specific feature type (in the example case, `fiber_cable`), next it is possible to pass additional parameters to the request, in the example the request receives:
-
-- The `id` of a specific object (in the example `174`)
-
-- The `name` of the object
-- The `fields` parameter where you can specify which fields you want to be returned (in the example `name` and `specification`)
-- Ensure that the parameters that you pass to the request exist in your database. You can also check that features and fields are available in the "Configuration" page, under "Features" 
+- `createTicket` starts by calling the `createTicketObject` which returns the object containing all relevant information for the ticket
+- Next the `wfm.redux.tickets.createTicket` is obtained and dispatched to Redux's store for processing, this is where the Workflow Manager ticket is actually created. Once a response is received the pop-up informing the number of the ticket created is shown
