@@ -655,4 +655,76 @@ Finally the modal window object is returned with these features:
 
 
 ### lrt_plugin.js
+  
+&#8291;
+```
+import { Plugin, PluginButton } from 'myWorld-client';
+import { renderReactNode } from 'myWorld-client/react';
+import customerConnectionImage from '../../images/Customer_Connection_LRT_icon.svg';
+import { LrtModal } from './lrt_modal';
+```
+- The first import is for the `Plugin` class. Plugins is how add new functionalities to IQGeo applications. `PluginButton` is the class that creates buttons within the application itself.
+- `renderReactNode` is IQGeo’s render functionalities class, since the samples runs on a React window this class is needed.
+- `CustomerConnectionImage` is the icon image to be used fpr the LRT button.
+- `LrtModal` is the React component created in the `lrt_modal.js` file.
 
+  
+&#8291;
+```
+export class LrtPlugin extends Plugin {
+    static {
+        this.prototype.messageGroup = 'LRT';
+
+        this.prototype.buttons = {
+            dialog: class extends PluginButton {
+                static {
+                    this.prototype.id = 'customer-connection-button';
+                    this.prototype.titleMsg = 'LRT';
+                    this.prototype.imgSrc = customerConnectionImage;
+                }
+
+                action() {
+                    this.owner.showModal();
+                }
+            }
+        };
+    }
+
+    constructor(owner, options) {
+        super(owner, options);
+    }
+
+```
+      
+&#8291;
+- The class extends `Plugin`. As mentioned before, the `Plugin` class is how add new functionalities to IQGeo applications.
+- Next, the static properties of the class are initialized
+  - `this.prototype.messageGroup` is the localization information for this class
+  - `this.prototype.buttons` will contain information on the buttons related to this class. In this example this class only needs one button, and within this object there is
+- `dialog`: Which is a nested class declaration that extends `PluginButton`. This is the class that defines the look and behavior of the interface button when pressed, the behavior is defined by the `action()` function (i.e.: This button will call the function showModal() when pressed)
+- The constructor calls the `super` (i.e.: The `Plugin` class) constructor.
+
+Next comes the `showModal` function, which is the function that is called when the button is pressed.
+
+&#8291;
+```
+      
+
+    showModal() {
+        this.renderRoot = renderReactNode(
+            null,
+            LrtModal,
+            {
+                open: true
+            },
+            this.renderRoot
+        );
+    }
+}
+```
+&#8291;
+- The function calls `renderReactNode`, which is IQGeo’s wrapper for `createRoot`, `React.createRender`, and `root.render`, it receives as parameters:
+  - The DOM node to be used (in this case `null`)
+  - The React component (the `LrtModal` class), which includes:
+- `open`, a Boolean flag that indicates that the modal window is open
+- And finally the `this.renderRoot` itself
