@@ -55,7 +55,7 @@ To use the tool create an empty Design polygon--with its state set to "Designing
 
 Clicking the "Create Connections using LRT" button will kick off the task, as connections are made, the Task Status in the modal dialog will be updated so the user can monitor the progress of the task.
 
-Once all 2000 connections have been made, you will see a Success message in the modal window.  Refreshing the map with a pan or zoom will draw the 2000 new connections.
+Once all 2000 connections have been made, you will see a Success message in the modal window.  Refreshing the map with a pan or zoom will draw the 2000 new connections (as long as the Layers are toggled on in the left-side table of contents).
 (Fig. 3)
 
 ![Samples Menu option location](./LRT_final_modal_c.png)
