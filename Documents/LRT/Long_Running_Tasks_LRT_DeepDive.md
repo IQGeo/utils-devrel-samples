@@ -168,10 +168,14 @@ This is the auto-increment function used elsewhere in the samples that uses rege
         return newPole
 
 ```
-This function creates a new Pole.  It starts by taking an initial set of coordinates that are derived elsewhere in the code and creating a geographic point that will represent the initial Pole location and the `pole_props` define the initial set of properties. The `newPole` line inserts a new pole using the current properties.  After the insert the pole name and coordinates are incremented so the properties are ready for the *next* pole to be created.
+This function creates a new Pole.  It starts by taking an initial set of coordinates that are provided when the task is called (in the Javascript code below) and creating a geographic point that will represent the initial Pole location and the `pole_props` define the initial set of properties. The `newPole` line inserts a new pole using the current properties.  After the insert the pole name and coordinates are incremented so the properties are ready for the *next* pole to be created.
 
+A splice closure is created by calling the `_createSpliceClosure` function by feeding it the `newPole` and the pole coordinates.
 &#8291;
-The auxiliary functions for creating a splice closure and fiber splitter for the Pole are called (see below for more detail).
+
+A fiber splitter is created by calling the `_createFiberSplitter` function by feeding it the `newPole`, the pole coordinates, and the just-created splice closure that houses the fiber splitter.
+
+The `newPole` is returned.
 
 &#8291;
 &#8291;
@@ -266,7 +270,7 @@ The function takes a number of keyword arguments of different data types, hence 
         self.polePosition_x = float(kwargs.get("coords_x"))
         self.polePosition_y = float(kwargs.get("coords_y"))
 ```
-The first line creates a reference to the design in the database. Then we are extracting the x and y coordinates from the first vertex of the design polygon--this will be the location of the first Pole.
+These lines take in the arguments passed from Javascript.  The first line creates a reference to the design in the database. The second and third lines take in x and y coordinates that will be the longitude and latitude of the first pole created.
   
   
 &#8291;
@@ -385,7 +389,7 @@ import { DraggableModal, Button, Input } from 'myWorld-client/react';
 import { Alert } from 'antd';
 import { useLocale } from 'myWorld-client/react';
 ```
-We start by importing from the "myworld" client library, standard React hooks, and UI library elements for use in the modal window.
+We start by importing from the "myworld" client library, standard React hooks, UI library elements for use in the modal window, and a localization class.
 &#8291;
   
 &#8291;
@@ -403,7 +407,7 @@ export const LrtModal = ({ open }) => {
     const [showIntro, setShowIntro] = useState(true);
     const [alertType, setAlertType] = useState('');
 ```
-We create the `LrtModal` object by creating a series of objects using React state hooks and setting initial values.
+We create the `LrtModal` object by creating a localization `msg` object, a reference to the map application itself, and a series of objects using React state hooks and setting initial values.
 
 &#8291;
   
@@ -442,7 +446,7 @@ Here we are setting up objects spefically pertaining to the running the task, se
 
 
 ```
-Next we set up two useEffect hooks to set up two preliminary functions to be run as well as a check that a design is selected.
+Next we set up two useEffect hooks for the `setOnFunctions` and `updateFeatures` functions as well as a check that a design is selected.
 
 
 
@@ -484,7 +488,7 @@ Here a couple of variables are declared to control modal window behavior
     }
 
 ```
-These functions fire when something on the map is selected.  In `updateFeatures` we are checking if the selected map object is a design and if it is we are getting the x and y coordinates of its first vertex.
+These functions fire when something on the map is selected.  In `updateFeatures` we are checking if the selected map object is a design and if it is we are getting the x and y coordinates of its first vertex. The design name and the coordinates will be keyword arguments passed to the Python script.
 
 &#8291;
   
@@ -642,6 +646,8 @@ Finally the modal window object is returned with these features:
 - An initial set of properties 
 - An introductory window with description/instructions etc.
 - Hitting 'OK' displays another window with the selected design, the initial Task Status messages, and a button to kick off the LRT by calling the `onBuildConnectionsLRT` function defined earlier.
+- `showIntro` displays the description message defined in the `devrel_samples.msg` file when first opened.
+-  when the task is kicked off, the modal subsequently displays the progress status, the progress message, and progress percent. When the task is complete, an `alertMessage` indicating success is displayed.
 
 &#8291;
   
