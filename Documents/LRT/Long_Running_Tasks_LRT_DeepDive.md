@@ -168,10 +168,14 @@ This is the auto-increment function used elsewhere in the samples that uses rege
         return newPole
 
 ```
-This function creates a new Pole.  It starts by taking an initial set of coordinates that are derived elsewhere in the code and creating a geographic point that will represent the initial Pole location and the `pole_props` define the initial set of properties. The `newPole` line inserts a new pole using the current properties.  After the insert the pole name and coordinates are incremented so the properties are ready for the *next* pole to be created.
+This function creates a new Pole.  It starts by taking an initial set of coordinates that are provided when the task is called (in the Javascript code below) and creating a geographic point that will represent the initial Pole location and the `pole_props` define the initial set of properties. The `newPole` line inserts a new pole using the current properties.  After the insert the pole name and coordinates are incremented so the properties are ready for the *next* pole to be created.
 
+A splice closure is created by calling the `_createSpliceClosure` function by feeding it the `newPole` and the pole coordinates.
 &#8291;
-The auxiliary functions for creating a splice closure and fiber splitter for the Pole are called (see below for more detail).
+
+A fiber splitter is created by calling the `_createFiberSplitter` function by feeding it the `newPole`, the pole coordinates, and the just-created splice closure that houses the fiber splitter.
+
+The `newPole` is returned.
 
 &#8291;
 &#8291;
@@ -266,7 +270,7 @@ The function takes a number of keyword arguments of different data types, hence 
         self.polePosition_x = float(kwargs.get("coords_x"))
         self.polePosition_y = float(kwargs.get("coords_y"))
 ```
-The first line creates a reference to the design in the database. Then we are extracting the x and y coordinates from the first vertex of the design polygon--this will be the location of the first Pole.
+These lines take in the arguments passed from Javascript.  The first line creates a reference to the design in the database. The second and third lines take in x and y coordinates that will be the longitude and latitude of the first pole created.
   
   
 &#8291;
@@ -385,7 +389,7 @@ import { DraggableModal, Button, Input } from 'myWorld-client/react';
 import { Alert } from 'antd';
 import { useLocale } from 'myWorld-client/react';
 ```
-We start by importing from the "myworld" client library, standard React hooks, and UI library elements for use in the modal window.
+We start by importing from the "myworld" client library, standard React hooks, UI library elements for use in the modal window, and a localization class.
 &#8291;
   
 &#8291;
@@ -403,7 +407,7 @@ export const LrtModal = ({ open }) => {
     const [showIntro, setShowIntro] = useState(true);
     const [alertType, setAlertType] = useState('');
 ```
-We create the `LrtModal` object by creating a series of objects using React state hooks and setting initial values.
+We create the `LrtModal` object by creating a localization `msg` object, a reference to the map application itself, and a series of objects using React state hooks and setting initial values.
 
 &#8291;
   
@@ -442,7 +446,7 @@ Here we are setting up objects spefically pertaining to the running the task, se
 
 
 ```
-Next we set up two useEffect hooks to set up two preliminary functions to be run as well as a check that a design is selected.
+Next we set up two useEffect hooks for the `setOnFunctions` and `updateFeatures` functions as well as a check that a design is selected.
 
 
 
@@ -484,7 +488,7 @@ Here a couple of variables are declared to control modal window behavior
     }
 
 ```
-These functions fire when something on the map is selected.  In `updateFeatures` we are checking if the selected map object is a design and if it is we are getting the x and y coordinates of its first vertex.
+These functions fire when something on the map is selected.  In `updateFeatures` we are checking if the selected map object is a design and if it is we are getting the x and y coordinates of its first vertex. The design name and the coordinates will be keyword arguments passed to the Python script.
 
 &#8291;
   
@@ -642,6 +646,8 @@ Finally the modal window object is returned with these features:
 - An initial set of properties 
 - An introductory window with description/instructions etc.
 - Hitting 'OK' displays another window with the selected design, the initial Task Status messages, and a button to kick off the LRT by calling the `onBuildConnectionsLRT` function defined earlier.
+- `showIntro` displays the description message defined in the `devrel_samples.msg` file when first opened.
+-  when the task is kicked off, the modal subsequently displays the progress status, the progress message, and progress percent. When the task is complete, an `alertMessage` indicating success is displayed.
 
 &#8291;
   
@@ -649,4 +655,76 @@ Finally the modal window object is returned with these features:
 
 
 ### lrt_plugin.js
+  
+&#8291;
+```
+import { Plugin, PluginButton } from 'myWorld-client';
+import { renderReactNode } from 'myWorld-client/react';
+import customerConnectionImage from '../../images/Customer_Connection_LRT_icon.svg';
+import { LrtModal } from './lrt_modal';
+```
+- The first import is for the `Plugin` class. Plugins is how add new functionalities to IQGeo applications. `PluginButton` is the class that creates buttons within the application itself.
+- `renderReactNode` is IQGeo’s render functionalities class, since the samples runs on a React window this class is needed.
+- `CustomerConnectionImage` is the icon image to be used fpr the LRT button.
+- `LrtModal` is the React component created in the `lrt_modal.js` file.
 
+  
+&#8291;
+```
+export class LrtPlugin extends Plugin {
+    static {
+        this.prototype.messageGroup = 'LRT';
+
+        this.prototype.buttons = {
+            dialog: class extends PluginButton {
+                static {
+                    this.prototype.id = 'customer-connection-button';
+                    this.prototype.titleMsg = 'LRT';
+                    this.prototype.imgSrc = customerConnectionImage;
+                }
+
+                action() {
+                    this.owner.showModal();
+                }
+            }
+        };
+    }
+
+    constructor(owner, options) {
+        super(owner, options);
+    }
+
+```
+      
+&#8291;
+- The class extends `Plugin`. As mentioned before, the `Plugin` class is how add new functionalities to IQGeo applications.
+- Next, the static properties of the class are initialized
+  - `this.prototype.messageGroup` is the localization information for this class
+  - `this.prototype.buttons` will contain information on the buttons related to this class. In this example this class only needs one button, and within this object there is
+- `dialog`: Which is a nested class declaration that extends `PluginButton`. This is the class that defines the look and behavior of the interface button when pressed, the behavior is defined by the `action()` function (i.e.: This button will call the function showModal() when pressed)
+- The constructor calls the `super` (i.e.: The `Plugin` class) constructor.
+
+Next comes the `showModal` function, which is the function that is called when the button is pressed.
+
+&#8291;
+```
+      
+
+    showModal() {
+        this.renderRoot = renderReactNode(
+            null,
+            LrtModal,
+            {
+                open: true
+            },
+            this.renderRoot
+        );
+    }
+}
+```
+&#8291;
+- The function calls `renderReactNode`, which is IQGeo’s wrapper for `createRoot`, `React.createRender`, and `root.render`, it receives as parameters:
+  - The DOM node to be used (in this case `null`)
+  - The React component (the `LrtModal` class), which includes:
+- `open`, a Boolean flag that indicates that the modal window is open
+- And finally the `this.renderRoot` itself

@@ -47,7 +47,7 @@ This tool is available in the "DevRel Samples App - LRT" application inside the 
 
 Click the "LRT" button on the Palette Menu and a pop-up window will show with a brief description of the tool, click the "OK" button and the tool window will show up (Fig. 2)
 
-![Samples Menu option location](./LRT_placeholder_B.png)
+![Samples Menu option location](./LRT_final_modal_b.png)
 
 <p align="center"><i>Fig. 2: The Long Running Task Tool window</i></p>
 
@@ -55,10 +55,10 @@ To use the tool create an empty Design polygon--with its state set to "Designing
 
 Clicking the "Create Connections using LRT" button will kick off the task, as connections are made, the Task Status in the modal dialog will be updated so the user can monitor the progress of the task.
 
-Once all 2000 connections have been made, you will see a Success message in the modal window.  Refreshing the map with a pan or zoom will draw the 2000 new connections.
+Once all 2000 connections have been made, you will see a Success message in the modal window.  Refreshing the map with a pan or zoom will draw the 2000 new connections (as long as the Layers are toggled on in the left-side table of contents).
 (Fig. 3)
 
-![Samples Menu option location](./LRT_placeholder_C.png)
+![Samples Menu option location](./LRT_final_modal_c.png)
 
 <p align="center"><i>Fig. 3: The Success message of the completed Long Running Task</i></p>
 
