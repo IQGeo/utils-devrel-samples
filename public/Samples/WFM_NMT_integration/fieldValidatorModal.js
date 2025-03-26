@@ -5,7 +5,6 @@ import { DraggableModal, Button } from 'myWorld-client/react';
 import { Avatar, Cascader, List } from 'antd';
 import greenImg from '../../images/green_circle.png';
 import redImg from '../../images/red_circle.png';
-import wfm from '../../../../workflow_manager/public/js/base/wfm.js';
 import {
     buildFeatureList,
     validate,

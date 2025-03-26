@@ -6,7 +6,7 @@ import { CustomerConnectionPlugin } from '../Samples/customer_connection_javaScr
 import { PythonCustomerConnectionPlugin } from '../Samples/customer_connection_python/python_customer_connection_plugin';
 import { LrtPlugin } from '../Samples/LRT/lrt_plugin';
 
-myw.localisation.loadModuleLocale('devrel_samples');
+myw.localisation.loadModuleLocale('utils-devrel-samples');
 
 const desktopLayoutDef = myw.applicationDefinition.layouts.desktop;
 const desktopToolbarButtons = desktopLayoutDef.controls.toolbar[1].buttons;

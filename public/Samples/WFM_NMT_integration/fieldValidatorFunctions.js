@@ -138,7 +138,7 @@ export const createTicketObject = (itemObj, rule, pickedField, value, pickedFeat
         mywwfm_status: 'Open',
         mywwfm_ticket_details: msg('default_ticket_details'),
         mywwfm_ticket_group: ['admin:Default'],
-        mywwfm_type: 'Trouble Ticket',
+        mywwfm_type: 'Test Ticket',
         mywwfm_type_category: msg('default_category')
     };
     return ticketObj;
