@@ -1,8 +1,8 @@
 import requests
 import json
 
-login_url       = 'https://comms.den1appsqa02.iqgeo.com/auth'
-getFeature_url  = 'https://comms.den1appsqa02.iqgeo.com/modules/comms/api/v1/resourceInventoryManagement/resource/fiber_cable/174?name=DROP-140&fields=name%2Cspecification'
+login_url       = 'http://localhost/auth'
+getFeature_url  = 'http://localhost/modules/comms/api/v1/resourceInventoryManagement/resource/fiber_cable/174?name=DROP-140&fields=name%2Cspecification'
 
 session = requests.Session()
 
