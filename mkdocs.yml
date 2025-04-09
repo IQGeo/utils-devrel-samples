@@ -1,0 +1,9 @@
+site_name: Developer Relations Samples Library
+docs_dir: ./Documents
+theme:
+  name: readthedocs
+  navigation_depth: 3
+markdown_extensions:
+  - toc:
+      baselevel: 1
+      toc_depth: 3
