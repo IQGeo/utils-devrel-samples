@@ -2,7 +2,6 @@ import myw from 'myWorld-client';
 import React, { useState, useEffect } from 'react';
 import { DraggableModal, Button, Input, useLocale } from 'myWorld-client/react';
 import { Alert } from 'antd';
-// import { useLocale } from 'myWorld-client/react';
 
 export const CustomerConnectionModal = ({ open, plugin, builder }) => {
     const { msg } = useLocale('customerConnectionPlugin');

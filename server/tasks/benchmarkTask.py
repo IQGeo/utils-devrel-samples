@@ -97,8 +97,6 @@ class BenchmarkTask(MywBaseTask, MywcomController):
         return self.connection_manager.connect("fiber", ont, cable_segment, cable_pin_range, ont, ont_pin_range)
 
     def execute(self, **kwargs: Any):
-
-
         # I create references to the design as well as all tables that will be used in the operations
         self.design = self.db.view(kwargs.get("design"))
         self.polePosition_x = float(kwargs.get("coords_x"))
