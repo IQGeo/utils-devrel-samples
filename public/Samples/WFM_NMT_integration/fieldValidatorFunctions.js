@@ -84,7 +84,15 @@ export const buildFields = (
     );
 };
 
-export const createTicketObject = (itemObj, rule, pickedField, value, pickedFeature) => {
+export const createTicketObject = (
+    itemObj,
+    rule,
+    pickedField,
+    value,
+    pickedFeature,
+    projId,
+    projName
+) => {
     const { msg } = useLocale('customRuleModal');
     let ruleStr = '';
     switch (rule) {
@@ -120,18 +128,18 @@ export const createTicketObject = (itemObj, rule, pickedField, value, pickedFeat
         value;
 
     const ticketObj = {
-        geometry_type: 'Point',
+        geometry_type: null,
         id: 'Null',
         mywwfm_assigned_username: 'admin',
         // mywwfm_cause: 'Broken Custom Rule',
         mywwfm_cause: msg('cause'),
-        mywwfm_geomety_features: itemObj.geometry.coordinates,
+        geometry: itemObj.geometry,
         mywwfm_indicator: msg('medium'),
         mywwfm_issue: issueStr,
         mywwfm_last_modified_datetime: undefined,
         mywwfm_node: msg('node'),
-        mywwfm_project: 'mywwfm_project/1',
-        mywwfm_project_name: null,
+        mywwfm_project: projId,
+        mywwfm_project_name: projName,
         mywwfm_region: 'South',
         mywwfm_related_feature: null,
         mywwfm_source_system: null,

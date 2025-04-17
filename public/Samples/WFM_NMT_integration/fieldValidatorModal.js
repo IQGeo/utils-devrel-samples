@@ -2,15 +2,16 @@ import myw from 'myWorld-client';
 import React, { useState, useEffect } from 'react';
 import { useLocale } from 'myWorld-client/react';
 import { DraggableModal, Button } from 'myWorld-client/react';
-import { Avatar, Cascader, List } from 'antd';
-import greenImg from '../../images/green_circle.png';
-import redImg from '../../images/red_circle.png';
+import { Avatar, Cascader, List, Select } from 'antd';
+import greenImg from '../../images/green_check.png';
+import redImg from '../../images/red_x.png';
 import {
     buildFeatureList,
     validate,
     createTicketObject,
     buildFields
 } from './fieldValidatorFunctions.js';
+import wfm from 'modules/workflow_manager/js/base/wfm';
 
 export const FieldValidatorModal = ({ open }) => {
     const [appRef] = useState(myw.app);
@@ -25,6 +26,11 @@ export const FieldValidatorModal = ({ open }) => {
     const [pickedFeatureType, setPickedFeatureType] = useState('');
     const [pickedField, setPickedField] = useState('');
     const [result, setResult] = useState([]);
+
+    const [projLoading, setProjLoading] = useState(true); // loading status of db call for projects
+    const [allProjects, setAllProjects] = useState([]); // array that populates the Select widget
+    const [selProject, setSelProject] = useState(''); // selected project id value
+    const [selProjectName, setSelProjectName] = useState(''); // selected project name
 
     useEffect(() => {
         const dbFeatures = db.getFeatureTypes();
@@ -46,7 +52,49 @@ export const FieldValidatorModal = ({ open }) => {
         let featuresListArray = [];
         featuresListArray = buildFeatureList(filteredFeatures);
         setFeaturesList(featuresListArray);
+
+        const listProjects = async () => {
+            let arrProjects = [];
+            db.getFeatures('mywwfm_project').then(result2 => {
+                for (const feature in result2) {
+                    if (result2[feature]?.properties) {
+                        const props = result2[feature]?.properties;
+                        arrProjects.push({
+                            value: props['id'],
+                            label: props['name']
+                        });
+                    }
+                }
+                setAllProjects(arrProjects);
+                setProjLoading(false);
+            });
+        };
+        listProjects();
     }, []);
+
+    // ====end of Effect hook
+
+    // creating the Select widget and populating it with available Projects
+    const renderProject = () => {
+        if (projLoading || allProjects.length < 1) {
+            return null;
+        } else {
+            return (
+                <Select
+                    loading={projLoading}
+                    placeholder="please select a project"
+                    options={allProjects}
+                    key={allProjects.length}
+                    onChange={onProjectSelected}
+                />
+            );
+        }
+    };
+
+    const onProjectSelected = (value, option) => {
+        setSelProject('mywwfm_project/' + value);
+        setSelProjectName(option.label);
+    };
 
     const handleCancel = () => {
         setIsOpen(false);
@@ -100,10 +148,13 @@ export const FieldValidatorModal = ({ open }) => {
             pickedRule,
             pickedField,
             inputtedValue,
-            pickedFeatureType
+            pickedFeatureType,
+            selProject,
+            selProjectName
         );
 
         const { createTicket } = wfm.redux.tickets;
+
         await wfm.store.dispatch(createTicket({ values: ticketObj }));
     };
 
@@ -215,6 +266,11 @@ export const FieldValidatorModal = ({ open }) => {
                 </Button>
             ]}
         >
+            Choose a project:
+            {renderProject()}
+            <br />
+            <br />
+            Choose a network feature:
             <Cascader options={featuresList} onChange={onFieldSelected} />
             {renderFields()}
             {true && result.length > 0 ? renderResult() : null}
