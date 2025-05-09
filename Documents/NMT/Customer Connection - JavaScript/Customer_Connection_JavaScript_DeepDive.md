@@ -40,7 +40,7 @@ The tool files are:
 - `customer_connection_modal.js` - The file containing the React code used to render the modal window
 - `customer_connection_builder.js` - The class containing the support functions that call IQGeo APIs
 
-All files are located in the `modules/devrel_samples/public/js/Samples/customer_connection_JavaScript` folder
+All files are located in the `modules/devrel_samples/public/js/Samples/customer_connection_javaScript` folder
 
 ## How the tool works
 
@@ -56,7 +56,7 @@ import CustomerConnectionBuilder from './customer_connection_builder';
 import customerConnectionImage from '../../../images/Customer_Connection_JavaScript_icon.svg';
 ```
 
-- The first import is for the `Plugin` class. Plugins is how add new functionalities to IQGeo applications. `PluginButton` is the class that creates buttons within the application itself.
+- The first import is for the `Plugin` class. Plugins are how add new functionality to IQGeo applications. `PluginButton` is the class that creates buttons within the application itself.
 - `renderReactNode` is IQGeo’s render functionalities class, since the samples runs on a React window this class is needed.
 - `CustomerConnectionModal` and `CustomerConnectionBuilder` are the sample classes which will be covered later.
 - `CustomerConnectionImage` is the icon image to be used in the button
@@ -133,7 +133,7 @@ import { Alert } from 'antd';
 ```
 
 - `myw` is the a reference to the client. Some native client features will be used later when the user interacts with the map
-- Next are native React classes and four customized IQGeo React classes, including `useLocale`, which allows for the use of localised strings withing the React context
+- Next are native React classes and four customized IQGeo React classes, including `useLocale`, which allows for the use of string localization.
 - The `Alert` class from the Ant Design framework - https://ant.design/components/alert
   
 Next is the declaration of the `CustomerConnectionModal` functional component, which receives as parameter an object containing the arguments described in the `customer_connection_plugin.js` file, and the list of State hooks that will be used throughout the code, as well as the definition of the `msg` variable, used for localisation.
@@ -194,7 +194,7 @@ Then there are two Effect Hooks and two auxiliary functions
 
 - The first `useEffect` hook is called after the initial render of the component, and it calls the two functions `setOnFunctions` and `updateFeatures`
   - In `setOnFunctions` the application (via `appRef.on`) is set to call the function `updateFeatures` whenever `currentFeature` or `currentFeatureSet` is changed, which happens when the user clicks on a feature or select a group of features in the map. When that happens the function `updateFeatures` is called
-  - In `UpdateFeatures` the code checks what is the current feature selected in the application, and if that feature is either a Pole or an Address, the appropriate State Hook is updated 
+  - In `updateFeatures` the code checks the type of the feature selected in the application, and if that feature is either a Pole or an Address, the appropriate State Hook is updated 
 - The second `useEffect` is called when the states `pole`, `customer`, or `dropCable` are updated. If any of these are not set we set the `disabled` state to `true.` This state is used to enable/disable the “Create” button. The button should only be enabled when all parameters needed to create to connection are set.
   
 Next there are two self-explanatory functions
@@ -227,12 +227,7 @@ Next comes the `buildConnection` function that handles the full process of creat
         const splitters = await builder.findEquipmentIn(pole, 'fiber_splitter');
         let connPoint = await builder.findConnectionPoint(splitters);
         if (!connPoint) {
-            connPoint = await builder.buildSplitter(
-                pole,
-                feederFiber,
-                splitters.length + 1,
-                closure
-            );
+            connPoint = await builder.buildSplitter(pole, splitters.length + 1, closure);   
         }
 
         let box = await builder.findWallBox(customer.geometry.coordinates);
@@ -276,7 +271,7 @@ And finally the React `return` statement containing the HTML code to be rendered
         <DraggableModal
             wrapClassName="customer-connection-modal"
             open={isOpen}
-            title={'Connect Customer'}
+            title={msg('title')}
             width={500}
             onCancel={handleCancel}
             footer={
@@ -330,7 +325,7 @@ And finally the React `return` statement containing the HTML code to be rendered
 
 ### customer_connection_builder.js
 
-This class only has one `import` and begins with its constructor function. It also extends the `myw.MywClass` class which provides easier handling of options and mixins as well as localisation methods
+This class only has one `import` and begins with its constructor function. It also extends the `myw.MywClass` class which provides easier handling of options and mixins as well as localization methods
 
 ```
 import myw from 'myWorld-client';
@@ -490,7 +485,7 @@ The next functions in the class handle the search and creation of a Wall Box (if
     }
 ```
 
-- `findWallBox` receive as parameter an array containing the coordinates (in our case, the Address' coordinates)
+- `findWallBox` receive as parameter an array containing the coordinates (in our case, the Address' coordinates - note the coordinate order)
 - It then uses the `getFeaturesAround` function to search for an existing Wall Box in the same coordinates as the Address, `getFeaturesAround` receive as parameters
   - An array with the Features to look for (in our case, only `wall_box`)
   - The latitude and longitude where to search
@@ -499,7 +494,7 @@ The next functions in the class handle the search and creation of a Wall Box (if
   - The coordinates where the Wall Box will be created
   - The properties object. For the Wall Box the only requested field is the `name`
 - The `_buildWallBox` function is similar to the private functions we have seen previously
-  - It starts slightly different, since we only receive the coordinates we have to manually create the Geometry object, defining the `type` as `Point` and passing the coordinates
+  - It starts slightly differently, since we only receive the coordinates we have to manually create the Geometry object, defining the `type` as `Point` and passing the coordinates
   - It then calls the `_insertFeature` function passing as parameters the feature type (`wall_box`), the properties object and the geometry object
 
 After creating the Wall Box, the next functions handle the creation of the ONT within the Wall Box
@@ -531,9 +526,9 @@ After creating the Wall Box, the next functions handle the creation of the ONT w
     }
 ```
 
-The process here is very similar to what is done for the search and creation of the Wall Box, the only difference being the additional detais in the properties Object for the ONT, which contains number of ports and housing information.
+The process here is very similar to what is done for the search and creation of the Wall Box, the only difference being the additional detais in the properties Object for the ONT, which contains the number of ports and housing information.
 
-With the equipment in place the next step is to create the Route
+With the equipment in place the next step is to create the Route:
 
 ```
     async buildRoute(struct, box) {
@@ -546,11 +541,11 @@ With the equipment in place the next step is to create the Route
     }
 ```
 
-- The `buildRoute` function receive as parameters
+- The `buildRoute` function receives as parameters
   - The `struct` representing the origin of the route (in this sample's case, the Pole)
   - The `box` representing the end of the route, the Wall Box at the Address
 - The first Object created contains the properties of the Feature to be created. In the case of a Route the required fields are the start and end of the route (the Pole and Wall Box, respectively)
-- Next the Geometry Object is created, and this one is different from the previous ones because the route is not a Point in the map, but a Line, so the Object `type` is set as `LineString`, and since the route is a line it requires two coordinates: The start and the end of the Line
+- Next the Geometry Object is created, and this one is different from the previous ones because the route is not a Point in the map, but a Line, so the Object `type` is set as `LineString`, and since the route is a line it requires two sets of coordinates: the start and the end of the Line
 - With the objects created the `_insertFeature` function can be called, passing as parameters
   - The feature type (`oh_route`, an overhead route)
   - The Properties Object
@@ -586,7 +581,7 @@ With the Route in place, the Cable can be created
   - `_insertFeature` is called to create the cable in the database
   - Once the cable is inserted, the function `routeCable` needs to be called in order to find the shortest route for `cable` between the points in the array passed as parameter (in our case the `struct` and `wallBox`)
 
-Finally the last function and last part of the process is to update the cable name
+Finally the last function and last part of the process is to update the numerical portion of the cable name
 
 ```
     nextName(name) {
