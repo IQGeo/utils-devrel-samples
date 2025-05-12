@@ -48,5 +48,13 @@
         "bf_tube_rename_title": "BF Tube Rename",
         "description": "This tool renames a group of Blown Fiber (BF) Tubes, inclduing the pre-determined color of each individual fiber to the name.\n\nTo use the tool click on a BF Tube and then click the 'Rename' button and the tool will automatically rename all the fibers within the selected BF Tube.\n\nYou can find the source code in the folder modules/custom/public/js/Samples/bf_tube_rename.",
         "colors": "Blue|Orange|Green|Brown|Gray|White|Red|Black|Yellow|Purple|Pink|Turquoise"
+    },
+    "fiber_count": {
+        "title": "Fiber Count",
+        "description": "Fiber count too small",
+        "cause": "Cause",
+        "fiber_count_of": "Fiber count of ",
+        "is": " is ",
+        "minimum_is": "minimum is "
     }
 }
