@@ -166,4 +166,3 @@ The comprehensive styling yields this result:
 &#8291;
 - Mapbox customers can access Mapbox Studio to create custom styling schemes.
 &#8291;
-
