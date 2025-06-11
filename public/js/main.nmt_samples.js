@@ -1,6 +1,6 @@
 import myw from 'myWorld-client';
-import '../../../comms_dev_db/public/js/main.mywcom_devdb';
-import '../../../comms/public/js/api/commsDsApi';
+import 'modules/comms_dev_db/js/main.mywcom_devdb';
+import 'modules/comms/js/api/commsDsApi';
 import PalettePlugin from './PalettePlugin/palettePlugin';
 import { CustomerConnectionPlugin } from '../Samples/customer_connection_javaScript/customer_connection_plugin';
 import { PythonCustomerConnectionPlugin } from '../Samples/customer_connection_python/python_customer_connection_plugin';
