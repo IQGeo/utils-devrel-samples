@@ -26,3 +26,4 @@ This repository contains:
     -   How to set-up the applications within your development environment
     -   High-level descriptions for each of the samples including what they cover, how they work and the expected outputs
     -   An in-depth analysis of the source code for each of the samples describing the tools and libraries used and how they are used
+    -   The documentation is ready to be served by [MkDocs](https://www.mkdocs.org/), all you need to do is set up MkDocs and run `mkdocs serve` from within the root folder of the repository
