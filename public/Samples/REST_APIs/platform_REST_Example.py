@@ -1,17 +1,16 @@
-import requests; 
-import json;
+import requests
+import json
 
-login_url   = 'https://support6x.us.iqgeo.com/plat/65_patched/auth'
-select_url  = "https://support6x.us.iqgeo.com/plat/65_patched/select"
-# login_url   = 'https://presales-enterprise-poc.us.iqgeo.cloud/echo-broadband/auth'
-# select_url  = "https://presales-enterprise-poc.us.iqgeo.cloud/echo-broadband/select"
-# login_url   = 'http://localhost/auth'
-# select_url  = "http://localhost/select"
+login_url   = 'http://localhost/auth'
+select_url  = "http://localhost/select"
 
 
 session = requests.Session()
 
-uauth = {'user': 'admin','pass': '_mywWorld_',} 
+user = input("Enter username: ")
+password = input("Enter password: ")
+
+uauth = {"user": user, "pass": password}
 
 response = session.post(login_url, data=uauth)
 if response.status_code == 200:
@@ -25,10 +24,10 @@ else:
 
 headers = {'cookie': 'myworldapp=' + cookies['myworldapp'] + '; csrf_token=' + cookies['csrf_token']}
 
-latitude = 52.208
-longitude = 0.13825
-zoom_level = 25
-layer = ["b", "C"]
+latitude = 52.2244
+longitude = 0.14002
+zoom_level = 10
+layer = ["mywcom_st", "dlts"]
 
 params = {
     "lat": latitude,
