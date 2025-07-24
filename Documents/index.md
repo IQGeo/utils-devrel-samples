@@ -4,8 +4,6 @@ Welcome to the Developer Relations Samples Library documentation. Here you will 
 
 This project provides several samples of functionalities for developers wanting to learn more about how to extend IQGeo applications and is hosted in this [repository](https://github.com/JaySantosIQGeo/devrel-sample-library), which is based on the [utils-project-template](https://github.com/IQGeo/utils-project-template) repository. It is assumed that you already have access to a development environment, but if you need to set up your own environment, it should be based in the `utils-project-template` repository, and you can find more information on how to set it up in the `README.md` file of that repo.
 
-\***\*\*\*\*\*** If you need help with the setting up of your environment you can reach the Developer Relations team at example@example.com and we will help you \***\*\*\*\*\***
-
 ## Table of Contents
 
 - [Developer Relations Samples Library](#developer-relations-samples-library)
