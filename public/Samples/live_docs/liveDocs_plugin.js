@@ -1,18 +1,19 @@
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import customRulesImage from '../../images/fieldValidator.svg';
-import { FieldValidatorModal } from './fieldValidatorModal';
+// import liveDocsImage from '../../images/Customer_Connection_JavaScript_icon.svg';
+import { LiveDocsModal } from './liveDocs_modal';
+import liveDocsImage from '../../images/Live_Docs_icon.svg';
 
-export class FieldValidatorPlugin extends Plugin {
+export class LiveDocsPlugin extends Plugin {
     static {
-        this.prototype.messageGroup = 'customRulePlugin';
+        this.prototype.messageGroup = 'LiveDocsPlugin';
 
         this.prototype.buttons = {
             dialog: class extends PluginButton {
                 static {
-                    this.prototype.id = 'cable-capture-button';
-                    this.prototype.titleMsg = 'customRulePluginTitle';
-                    this.prototype.imgSrc = customRulesImage;
+                    this.prototype.id = 'customer-connection-button';
+                    this.prototype.titleMsg = 'LiveDocsTitle';
+                    this.prototype.imgSrc = liveDocsImage;
                 }
 
                 action() {
@@ -29,10 +30,9 @@ export class FieldValidatorPlugin extends Plugin {
     showModal() {
         this.renderRoot = renderReactNode(
             null,
-            FieldValidatorModal,
+            LiveDocsModal,
             {
-                open: true,
-                plugin: this
+                open: true
             },
             this.renderRoot
         );

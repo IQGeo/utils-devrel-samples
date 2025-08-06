@@ -6,6 +6,7 @@ import { CustomerConnectionPlugin } from '../Samples/customer_connection_javaScr
 import { PythonCustomerConnectionPlugin } from '../Samples/customer_connection_python/python_customer_connection_plugin';
 import { LrtPlugin } from '../Samples/LRT/lrt_plugin';
 import { BFTubeRenamePlugin } from '../Samples/bf_tube_rename/bf_tube_rename_plugin';
+import { LiveDocsPlugin } from '../Samples/live_docs/liveDocs_plugin';
 
 import fiberCountRule from '../Samples/design_rules/fiberCountRule';
 
@@ -19,6 +20,7 @@ plugins['customerConnectionPlugin'] = CustomerConnectionPlugin;
 plugins['pythonCustomerConnectionPlugin'] = PythonCustomerConnectionPlugin;
 plugins['lrtPlugin'] = LrtPlugin;
 plugins['bfTubeRenamePlugin'] = BFTubeRenamePlugin;
+plugins['liveDocsPlugin'] = LiveDocsPlugin;
 
 plugins['designRulesManager'][1].rules.push(fiberCountRule);
 
@@ -29,7 +31,8 @@ plugins['palette'] = [
             'customerConnectionPlugin.dialog',
             'pythonCustomerConnectionPlugin.dialog',
             'lrtPlugin.dialog',
-            'bfTubeRenamePlugin.dialog'
+            'bfTubeRenamePlugin.dialog',
+            'liveDocsPlugin.dialog'
         ]
     }
 ];

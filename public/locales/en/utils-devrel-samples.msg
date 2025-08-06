@@ -19,6 +19,9 @@
     "fieldValidatorPlugin": {
         "fieldValidatorPluginTitle": "Field Validator"
     },
+    "customRulePlugin": {
+        "customRulePluginTitle": "WFM/NMT Integration"
+    },
     "customRuleModal": {
         "windowHeader": "Field Validator",
         "rule_title": "Rule:",
@@ -56,5 +59,11 @@
         "fiber_count_of": "Fiber count of ",
         "is": " is ",
         "minimum_is": "minimum is "
+    },
+    "LiveDocsPlugin": {
+        "LiveDocsTitle": "Live Docs",
+        "description": "In this sample, you can view all the function available in the NMT JavaScript API.\n\nTo use the tool, select a class and function in the dropdown and follow the istructions to execute the function.\n\nYou can find the source code in the folder modules/custom/public/js/Samples/live_docs.",
+        "classSelection": "Select the class below to see its available functions.",
+        "classTitle": "Classes"
     }
 }
