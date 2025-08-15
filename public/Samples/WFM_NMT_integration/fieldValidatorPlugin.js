@@ -5,13 +5,13 @@ import { FieldValidatorModal } from './fieldValidatorModal';
 
 export class FieldValidatorPlugin extends Plugin {
     static {
-        this.prototype.messageGroup = 'customRulePlugin';
+        this.prototype.messageGroup = 'fieldValidatorPlugin';
 
         this.prototype.buttons = {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'cable-capture-button';
-                    this.prototype.titleMsg = 'customRulePlugin';
+                    this.prototype.titleMsg = 'fieldValidatorPluginTitle';
                     this.prototype.imgSrc = customRulesImage;
                 }
 

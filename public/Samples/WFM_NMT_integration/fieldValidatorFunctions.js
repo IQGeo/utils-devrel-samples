@@ -139,7 +139,7 @@ export const createTicketObject = (
         mywwfm_last_modified_datetime: undefined,
         mywwfm_node: msg('node'),
         mywwfm_project: projId,
-        mywwfm_project_name: projName,
+        // mywwfm_project_name: projName, - property name not supported in WFM 4.1
         mywwfm_region: 'South',
         mywwfm_related_feature: null,
         mywwfm_source_system: null,
