@@ -10,6 +10,7 @@ export const LiveDocsModal = ({ open, plugin}) => {
     const { msg } = useLocale('LiveDocsPlugin');
     const [showIntro, setShowIntro] = useState(true);
     const [appRef] = useState(myw.app);
+    const [db] = useState(appRef.database);
     const [isOpen, setIsOpen] = useState(open);
     const [pickedClass, setPickedClass] = useState('');
     const [pickedFunction, setPickedFunction] = useState('');
@@ -63,25 +64,6 @@ export const LiveDocsModal = ({ open, plugin}) => {
     }, [pickedFunction, pickedClass, paramValues]);
 
 
-    //  useEffect(() => {
-
-    //     // function listener() {
-    //     //     const feature = appRef.currentFeature;
-    //     //     if (feature && activeParam) {
-    //     //         console.log('Updating paramValues for activeParam:', activeParam, 'with feature:', feature);
-    //     //         setParamValues(prev => ({ ...prev, [activeParam]: feature }));
-    //     //     }
-    //     // }
-    //     appRef.on('currentFeature-changed', listener);
-    //     appRef.on('currentFeatureSet-changed', listener);
-
-    //     return () => {
-    //         appRef.off('currentFeature-changed', listener);
-    //         appRef.off('currentFeatureSet-changed', listener);
-    //     };
-
-    // }, [activeParam]);
-
     useEffect(() => {
         function listener() {
             const feature = appRef.currentFeature;
@@ -112,6 +94,22 @@ export const LiveDocsModal = ({ open, plugin}) => {
             appRef.off('currentFeatureSet-changed', listener);
         };
     }, [activeParam]);
+
+    useEffect(() => {
+        if (pickedFunction) {
+            const paramMeta = getSelectedFunctionParams();
+            paramMeta.forEach(({ name, type }) => {
+                if (type.toLowerCase() === "transaction" && !paramValues[name]) {
+                    try {
+                        const trans = new myw.Transaction(db);
+                        setParamValues(prev => ({ ...prev, [name]: trans }));
+                    } catch (err) {
+                        console.error("Failed to create transaction:", err);
+                    }
+                }
+            });
+        }
+    }, [pickedFunction, paramValues, db]);
 
 
     const handleParamChange = (paramName, value) => {
@@ -295,7 +293,7 @@ export const LiveDocsModal = ({ open, plugin}) => {
                                 />
                             );
                         }
-                        if (type.toLowerCase() === 'array<myworldfeature>') { // work in progress
+                        if (type.toLowerCase() === 'array<myworldfeature>') { 
                             const features = Array.isArray(paramValues[name]) ? paramValues[name] : [];
                             return (   
                                 <Input
@@ -326,17 +324,52 @@ export const LiveDocsModal = ({ open, plugin}) => {
                             );
                         }
                         // TODO - add object type
-                        if (type.toLowerCase() === 'object') {
+                        // if (type.toLowerCase() === 'object') {
+                        //     return (
+                        //         <Input
+                        //             key={name}
+                        //             placeholder={`${name} (enter object)`}
+                        //             value={paramValues[name] || ''}
+                        //             onChange={e => handleParamChange(name, e.target.value)}
+                        //         />
+                        //     );
+                        // }
+                        if (type.toLowerCase() === 'object' || type.toLowerCase() === 'array<object>' || type.toLowerCase() === 'array<geojson>') {
+                            const raw = rawInput[name] ?? JSON.stringify(paramValues[name] || {}, null, 2);
+
+                            return (
+                                <div key={name} className="mb-4">
+                                    <label className="block text-sm font-medium mb-1">{name}</label>
+                                    <Input.TextArea
+                                        placeholder={`Enter JSON for ${name}`}
+                                        value={raw}
+                                        onChange={e => {
+                                            const value = e.target.value;
+                                            setRawInput(prev => ({ ...prev, [name]: value }));
+
+                                            try {
+                                                const parsed = JSON.parse(value);
+                                                handleParamChange(name, parsed);
+                                            } catch (err) {
+                                                console.error("Failed to read object:", err);
+                                            }
+                                        }}
+                                        autoSize={{ minRows: 6, maxRows: 12 }}
+                                    />
+                                </div>
+                            );
+                        }
+
+                        if (type.toLowerCase() === 'transaction') {
                             return (
                                 <Input
                                     key={name}
-                                    placeholder={`${name} (enter object)`}
-                                    value={paramValues[name] || ''}
-                                    onChange={e => handleParamChange(name, e.target.value)}
+                                    placeholder={`${name} (auto-created transaction)`}
+                                    value={paramValues[name] ? '[Transaction Object]' : ''}
+                                    readOnly
                                 />
                             );
                         }
-                        // TODO - add transaction type
                         return (
                             <Input
                                 key={name}

@@ -313,7 +313,6 @@ export const ConduitMenu = [
     }
 ];
 
-
 export const CableMenu = [
     {
         label: <span>List Cables</span>,
@@ -496,7 +495,7 @@ export const CableMenu = [
                 label: 'adjustMeasuredLengths',
                 params: [
                     { name: 'trans', type: 'Transaction' },
-                    { name: 'segs', type: 'Array' },
+                    { name: 'segs', type: 'Array<MyWorldFeature>' },
                     { name: 'tickDist', type: 'Number' },
                 ]   
             },
