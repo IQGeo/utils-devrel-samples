@@ -10,7 +10,10 @@ import { LiveDocsPlugin } from '../Samples/live_docs/liveDocs_plugin';
 
 import fiberCountRule from '../Samples/design_rules/fiberCountRule';
 
+import { MywAddressLabel } from './mywAddressLabel';
+
 myw.localisation.loadModuleLocale('utils-devrel-samples');
+myw.MywAddressLabel = MywAddressLabel;
 
 const desktopLayoutDef = myw.applicationDefinition.layouts.desktop;
 const desktopToolbarButtons = desktopLayoutDef.controls.toolbar[1].buttons;
