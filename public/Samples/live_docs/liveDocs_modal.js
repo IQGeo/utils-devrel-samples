@@ -15,12 +15,9 @@ export const LiveDocsModal = ({ open, plugin}) => {
     const [pickedClass, setPickedClass] = useState('');
     const [pickedFunction, setPickedFunction] = useState('');
     const [paramValues, setParamValues] = useState({});
-    // const [selectedFeature, setSelectedFeature] = useState(null);
     const [activeParam, setActiveParam] = useState(null);
     const [rawInput, setRawInput] = useState({});
 
-
-    
     const ApiFunctionMenus = {
         structureApi: StructureMenu,
         equipmentApi: EquipmentMenu,
@@ -62,7 +59,6 @@ export const LiveDocsModal = ({ open, plugin}) => {
             ({ name }) => paramValues[name] !== undefined && paramValues[name] !== ''
         );
     }, [pickedFunction, pickedClass, paramValues]);
-
 
     useEffect(() => {
         function listener() {
@@ -110,7 +106,6 @@ export const LiveDocsModal = ({ open, plugin}) => {
             });
         }
     }, [pickedFunction, paramValues, db]);
-
 
     const handleParamChange = (paramName, value) => {
         setParamValues(prev => ({ ...prev, [paramName]: value }));
@@ -171,7 +166,6 @@ export const LiveDocsModal = ({ open, plugin}) => {
         }
         return [];
     };
-
 
     return (
         <DraggableModal
