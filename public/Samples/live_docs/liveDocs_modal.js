@@ -3,7 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { DraggableModal, Button, Input } from 'myWorld-client/react';
 import { Alert, Space, Select } from 'antd';
 import { useLocale } from 'myWorld-client/react';
-import { Classes, ConduitMenu, EquipmentMenu, StructureMenu, CableMenu } from './classes_dictionary';
+import { Classes, ConduitMenu, EquipmentMenu, StructureMenu, CableMenu, ConnectionMenu } from './classes_dictionary';
+import { param } from 'jquery';
 
 export const LiveDocsModal = ({ open, plugin}) => {
     const { msg } = useLocale('LiveDocsPlugin');
@@ -15,17 +16,16 @@ export const LiveDocsModal = ({ open, plugin}) => {
     const [paramValues, setParamValues] = useState({});
     // const [selectedFeature, setSelectedFeature] = useState(null);
     const [activeParam, setActiveParam] = useState(null);
+    const [rawInput, setRawInput] = useState({});
 
-    // const [selectedFeatureId, setSelectedFeatureId] = useState(null);
-    // const [disabled, setDisabled] = useState(true);
+
     
-
-
     const ApiFunctionMenus = {
         structureApi: StructureMenu,
         equipmentApi: EquipmentMenu,
         conduitApi: ConduitMenu,
-        cableApi: CableMenu
+        cableApi: CableMenu,
+        connectionApi: ConnectionMenu
         // TODO: Add others
     };
     const apiInstances = {
@@ -33,6 +33,7 @@ export const LiveDocsModal = ({ open, plugin}) => {
         equipmentApi: plugin.equipmentApi,
         conduitApi: plugin.conduitApi,
         cableApi: plugin.cableApi,
+        connectionApi: plugin.connectionApi
         // TODO: Add others
     };
 
@@ -46,33 +47,60 @@ export const LiveDocsModal = ({ open, plugin}) => {
         for (const group of menu) {
             const found = group.options.find(opt => opt.value === pickedFunction);
             if (found && found.params) {
-                // return Object.keys(found.params);
-                // return Object.entries(found.params).map(([type, name]) => ({
-                //     name,
-                //     type
-                // }));
                 return found.params;
             }
-
         }
         return [];
 
     };
 
-    // useEffect(() => {
-    //     setOnFunctions();
-    //     updateFeatures();
-    // }, []);
+    const allParamsFilled = React.useMemo(() => {
+        if (!pickedFunction || !pickedClass) return false;
+        const paramMeta = getSelectedFunctionParams();
+        return paramMeta.every(
+            ({ name }) => paramValues[name] !== undefined && paramValues[name] !== ''
+        );
+    }, [pickedFunction, pickedClass, paramValues]);
 
 
-     useEffect(() => {
+    //  useEffect(() => {
 
+    //     // function listener() {
+    //     //     const feature = appRef.currentFeature;
+    //     //     if (feature && activeParam) {
+    //     //         console.log('Updating paramValues for activeParam:', activeParam, 'with feature:', feature);
+    //     //         setParamValues(prev => ({ ...prev, [activeParam]: feature }));
+    //     //     }
+    //     // }
+    //     appRef.on('currentFeature-changed', listener);
+    //     appRef.on('currentFeatureSet-changed', listener);
+
+    //     return () => {
+    //         appRef.off('currentFeature-changed', listener);
+    //         appRef.off('currentFeatureSet-changed', listener);
+    //     };
+
+    // }, [activeParam]);
+
+    useEffect(() => {
         function listener() {
             const feature = appRef.currentFeature;
-            console.log('Listener triggered, feature:', feature);
             if (feature && activeParam) {
-                console.log('Updating paramValues for activeParam:', activeParam, 'with feature:', feature);
-                setParamValues(prev => ({ ...prev, [activeParam]: feature }));
+                const paramMeta = getSelectedFunctionParams().find(p => p.name === activeParam);
+                const isArrayMywFeature =
+                    paramMeta && paramMeta.type.toLowerCase() === 'array<myworldfeature>';
+
+                setParamValues(prev => {
+                    if (isArrayMywFeature) {
+                        const current = Array.isArray(prev[activeParam]) ? prev[activeParam] : [];
+                        const alreadyExists = current.some(f => f.id === feature.id);
+                        return alreadyExists
+                            ? prev
+                            : { ...prev, [activeParam]: [...current, feature] };
+                    } else {
+                        return { ...prev, [activeParam]: feature };
+                    }
+                });
             }
         }
 
@@ -83,7 +111,6 @@ export const LiveDocsModal = ({ open, plugin}) => {
             appRef.off('currentFeature-changed', listener);
             appRef.off('currentFeatureSet-changed', listener);
         };
-
     }, [activeParam]);
 
 
@@ -99,15 +126,10 @@ export const LiveDocsModal = ({ open, plugin}) => {
         setIsOpen(false);
     };
 
-    // function setOnFunctions() {
-    //     appRef.on('currentFeature-changed currentFeatureSet-changed', updateFeatures);
-    // }
-
     const executeFunction = () => {
         console.log('Executing function:', pickedFunction, 'from class:', pickedClass);
         if (!pickedClass || !pickedFunction) return;
-
-
+        
         const apiInstance = apiInstances[pickedClass];
         if (!apiInstance) {
             console.warn(`No API instance found for ${pickedClass}`);
@@ -115,6 +137,7 @@ export const LiveDocsModal = ({ open, plugin}) => {
         }
 
         const paramMeta = getSelectedFunctionParams();
+
         const params = paramMeta.map(({ name }) => paramValues[name]);
         console.log('Executing function:', pickedFunction, 'with params:', params);
 
@@ -134,6 +157,21 @@ export const LiveDocsModal = ({ open, plugin}) => {
             } else {
                 console.log('Function result:', result);
         }
+    };
+
+    const parseNestedArray = (input) => {
+        if (!input || typeof input !== "string") return [];
+        
+        const safeInput = `[${input}]`;
+        try {
+            const parsed = JSON.parse(safeInput);
+            if (Array.isArray(parsed)) {
+                return parsed;
+            }
+        } catch (err) {
+            console.error("Invalid nested array format:", err);
+        }
+        return [];
     };
 
 
@@ -159,7 +197,7 @@ export const LiveDocsModal = ({ open, plugin}) => {
                               key="execute"
                               onClick={executeFunction}
                               type="primary"
-                              disabled={!pickedFunction}
+                              disabled={!allParamsFilled}
                           >
                               Execute
                           </Button>
@@ -242,8 +280,63 @@ export const LiveDocsModal = ({ open, plugin}) => {
                                 />
                             );
                         }
-                        // TODO - add array types
+                        if (type.toLowerCase() === 'array') {
+                            return (
+                                <Input
+                                    key={name}
+                                    placeholder={`${name} (enter items separated by commas)`}
+                                    value={rawInput[name] ?? (paramValues[name] || []).join(', ')}
+                                    onChange={e => {
+                                        const value = e.target.value;
+                                        setRawInput(prev => ({ ...prev, [name]: value }));
+                                        const arrayValue = value.split(',').map(item => item.trim()).filter(Boolean);
+                                        handleParamChange(name, arrayValue);
+                                    }}
+                                />
+                            );
+                        }
+                        if (type.toLowerCase() === 'array<myworldfeature>') { // work in progress
+                            const features = Array.isArray(paramValues[name]) ? paramValues[name] : [];
+                            return (   
+                                <Input
+                                    key={name}
+                                    placeholder={`${name} (select multiple features on map)`}
+                                    value={features.map(f => f.id).join(', ')}
+                                    readOnly
+                                    onFocus={() => setActiveParam(name)}
+                                />
+                            );
+                        }
+                        if (type.toLowerCase().includes('array<array')){
+                            return (
+                                <Input
+                                    key={name}
+                                    placeholder={`${name} (paste json nested array '[[1,2],[3,4]]')`}
+                                    value={
+                                        Array.isArray(paramValues[name])
+                                            ? paramValues[name].map(a => JSON.stringify(a)).join(', ')
+                                            : ''
+                                    }
+                                    onChange={(e) => {
+                                        const raw = e.target.value;
+                                        const nestedArray = parseNestedArray(raw);
+                                        handleParamChange(name, nestedArray);
+                                    }}
+                                />
+                            );
+                        }
                         // TODO - add object type
+                        if (type.toLowerCase() === 'object') {
+                            return (
+                                <Input
+                                    key={name}
+                                    placeholder={`${name} (enter object)`}
+                                    value={paramValues[name] || ''}
+                                    onChange={e => handleParamChange(name, e.target.value)}
+                                />
+                            );
+                        }
+                        // TODO - add transaction type
                         return (
                             <Input
                                 key={name}

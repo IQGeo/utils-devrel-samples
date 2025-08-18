@@ -81,7 +81,7 @@ export const StructureMenu = [
                 value: 'getStructuresAtCoords',
                 label: 'getStructuresAtCoords',
                 params: [
-                    { name: 'coords', type: 'Array' },
+                    { name: 'coords', type: 'Array<Array<Number>>' },
                     { name: 'featureTypes', type: 'Array' }
                 ]
             },
@@ -114,7 +114,7 @@ export const StructureMenu = [
                 value: 'validateRoutesForConduit',
                 label: 'validateRoutesForConduit',
                 params: [
-                    { name: 'routes', type: 'Array' },
+                    { name: 'routes', type: 'Array<MyWorldFeature>' },
                     { name: 'conduit', type: 'MyWorldFeature' }
                 ]
             },
@@ -601,7 +601,7 @@ export const CableMenu = [
                 value: 'truncateLine',
                 label: 'truncateLine',
                 params: [
-                    { name: 'coords', type: 'Array' },
+                    { name: 'coords', type: 'Array<Array<number>>' },
                     { name: 'startTruncDist', type: 'Number' },
                     { name: 'endTruncDist', type: 'Number' }
                 ]
@@ -635,6 +635,142 @@ export const CableMenu = [
                     { name: 'direction', type: 'String' },
                     { name: 'sourceRanges', type: 'Array' },
                     { name: 'strandInfoToRipple', type: 'Object' }
+                ]
+            }
+        ]
+    }
+];
+
+export const ConnectionMenu = [
+    {
+        label: <span>List Connections</span>,
+        title: 'List Connections',
+        options: [
+            {
+                value: 'listConnections',
+                label: 'List Connections'
+            }
+        ]
+    },
+    {
+        label: <span>Functions</span>,
+        title: 'API Functions',
+        options: [
+            {
+                value: 'freePinsOn',
+                label: 'freePinsOn',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'tech', type: 'String' },
+                    { name: 'side', type: 'String' }
+                ]
+            },
+            {
+                value: 'usedPinsOn',
+                label: 'usedPinsOn',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'tech', type: 'String' },
+                    { name: 'side', type: 'String' }
+                ]
+            },
+            {
+                value: 'highPinUsedOn',
+                label: 'highPinUsedOn',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'tech', type: 'String' },
+                    { name: 'side', type: 'String' }
+                ]
+            },
+            {
+                value: 'pinStateFor',
+                label: 'pinStateFor',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'tech', type: 'String' },
+                    { name: 'side', type: 'String' }
+                ]
+            },
+            {
+                value: 'pinCountFor',
+                label: 'pinCountFor',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'tech', type: 'String' },
+                    { name: 'side', type: 'String' }
+                ]
+            },
+            {
+                value: 'traceOut',
+                label: 'traceOut',
+                params: [
+                    { name: 'tech', type: 'String' },
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'pins', type: 'PinRange' },
+                    { name: 'direction', type: 'String' },
+                    { name: 'maxDist', type: 'Number' }
+                ]
+            },
+            {
+                value: 'connect',
+                label: 'connect',
+                params: [
+                    { name: 'tech', type: 'String' },
+                    { name: 'fromFeature', type: 'MyWorldFeature' },
+                    { name: 'fromPins', type: 'PinRange' },
+                    { name: 'toFeature', type: 'MyWorldFeature' },
+                    { name: 'toPins', type: 'PinRange' },
+                    { name: 'housing', type: 'MyWorldFeature' },
+                    { name: 'ripple', type: 'Boolean' }
+                ]
+            },
+            {
+                value: 'disconnect',
+                label: 'diconnect',
+                params: [
+                    { name: 'tech', type: 'String' },
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'pins', type: 'PinRange' },
+                    { name: 'ripple', type: 'Boolean' }
+                ]
+            },
+            {
+                value: 'moveConns',
+                label: 'moveConns',
+                params: [
+                    { name: 'conns', type: 'Array' },
+                    { name: 'housingUrn', type: 'String' },
+                    { name: 'rootHousingUrn', type: 'String' }
+                ]
+            },
+            {
+                value: 'switchConnSides',
+                label: 'switchConnSides',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'techFor',
+                label: 'techFor',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'side', type: 'String' }
+                ]
+            },
+            {
+                value: 'fixConnectionSegments',
+                label: 'fixConnectionSegments',
+                params: [
+                    { name: 'conn', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'isConnection',
+                label: 'isConnection',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' }
                 ]
             }
         ]

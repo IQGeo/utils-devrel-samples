@@ -7,6 +7,7 @@ import StructureManagerPlugin from '../../../../comms/public/js/api/structureMan
 import EquipmentManagerPlugin from '../../../../comms/public/js/api/equipmentManagerPlugin';
 import CableManagerPlugin from '../../../../comms/public/js/api/cableManagerPlugin';
 import ConduitManagerPlugin from '../../../../comms/public/js/api/conduitManagerPlugin';
+import ConnectionManagerPlugin from '../../../../comms/public/js/api/connectionManagerPlugin';
 
 export class LiveDocsPlugin extends Plugin {
     static {
@@ -33,7 +34,9 @@ export class LiveDocsPlugin extends Plugin {
         this.equipmentApi = new EquipmentManagerPlugin(owner, options);
         this.cableApi = new CableManagerPlugin(owner, options);
         this.conduitApi = new ConduitManagerPlugin(owner, options);
+        this.connectionApi = new ConnectionManagerPlugin(owner, options);
     }
+
 
     showModal() {
         this.renderRoot = renderReactNode(
