@@ -8,6 +8,7 @@ import EquipmentManagerPlugin from '../../../../comms/public/js/api/equipmentMan
 import CableManagerPlugin from '../../../../comms/public/js/api/cableManagerPlugin';
 import ConduitManagerPlugin from '../../../../comms/public/js/api/conduitManagerPlugin';
 import ConnectionManagerPlugin from '../../../../comms/public/js/api/connectionManagerPlugin';
+import CircuitManagerPlugin from '../../../../comms/public/js/api/circuitManagerPlugin';
 
 export class LiveDocsPlugin extends Plugin {
     static {
@@ -35,6 +36,7 @@ export class LiveDocsPlugin extends Plugin {
         this.cableApi = new CableManagerPlugin(owner, options);
         this.conduitApi = new ConduitManagerPlugin(owner, options);
         this.connectionApi = new ConnectionManagerPlugin(owner, options);
+        this.circuitApi = new CircuitManagerPlugin(owner, options);
     }
 
 

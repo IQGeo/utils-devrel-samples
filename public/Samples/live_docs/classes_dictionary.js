@@ -82,23 +82,23 @@ export const StructureMenu = [
                 label: 'getStructuresAtCoords',
                 params: [
                     { name: 'coords', type: 'Array<Array<Number>>' },
-                    { name: 'featureTypes', type: 'Array' }
+                    { name: 'featureTypes', type: 'Array<String>' }
                 ]
             },
             {
                 value: 'getStructureAt',
                 label: 'getStructureAt',
                 params: [
-                    { name: 'coord', type: 'Array' },
-                    { name: 'featureTypes', type: 'Array' }
+                    { name: 'coord', type: 'Array<Number>' },
+                    { name: 'featureTypes', type: 'Array<String>' }
                 ]
             },
             {
                 value: 'getStructuresAt',
                 label: 'getStructuresAt',
                 params: [
-                    { name: 'coord', type: 'Array' },
-                    { name: 'featureTypes', type: 'Array' },
+                    { name: 'coord', type: 'Array<Number>' },
+                    { name: 'featureTypes', type: 'Array<String>' },
                     { name: 'tolerance', type: 'Number' }
                 ]
             },
@@ -230,8 +230,8 @@ export const EquipmentMenu = [
                     { name: 'feature', type: 'MyWorldFeature' },
                     { name: 'direction', type: 'String' },
                     { name: 'side', type: 'String' },
-                    { name: 'sourceRanges', type: 'Array' },
-                    { name: 'portInfoToRipple', type: 'Array' }
+                    { name: 'sourceRanges', type: 'Array<Object>' },
+                    { name: 'portInfoToRipple', type: 'Array<String>' }
                 ]
             }
         ]
@@ -503,9 +503,9 @@ export const CableMenu = [
                 value: 'routeCable',
                 label: 'routeCable',
                 params: [
-                    { name: 'cableJson', type: 'Array' },
-                    { name: 'structures', type: 'Array' },
-                    { name: 'parentFeatures', type: 'Array' }
+                    { name: 'cableJson', type: 'Array<GeoJSON' },
+                    { name: 'structures', type: 'Array<MyWorldFeature>' },
+                    { name: 'parentFeatures', type: 'Array<MyWorldFeature>' }
                 ]
             },
             {
@@ -534,13 +534,17 @@ export const CableMenu = [
             },
             {
                 value: 'rootHousingUrnOf',
-                label: 'rootHousingUrnOf'
-                // TODO:  params: what is the method of input for housing parameter?
+                label: 'rootHousingUrnOf',
+                params: [
+                    { name: 'housing', type: 'MyWorldFeature'}
+                ]
             },
             {
                 value: 'getLength',
-                label: 'getLength'
-                // TODO:  params: what is the method of input for housing parameter?
+                label: 'getLength',
+                params: [
+                    { name: 'feature', type: 'GeoJSON'}
+                ]
             },
             {
                 value: 'segmentTypeForCable',
@@ -738,7 +742,7 @@ export const ConnectionMenu = [
                 value: 'moveConns',
                 label: 'moveConns',
                 params: [
-                    { name: 'conns', type: 'Array' },
+                    { name: 'conns', type: 'Array<String>' },
                     { name: 'housingUrn', type: 'String' },
                     { name: 'rootHousingUrn', type: 'String' }
                 ]
@@ -770,6 +774,78 @@ export const ConnectionMenu = [
                 label: 'isConnection',
                 params: [
                     { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            }
+        ]
+    }
+];
+
+export const CircuitMenu = [
+    {
+        label: <span>List Circuits</span>,
+        title: 'List Circuits',
+        options: [
+            {
+                value: 'listCircuits',
+                label: 'List Circuits'
+            }                       
+
+        ]
+    },
+    {
+        label: <span>Functions</span>,
+        title: 'API Functions',
+        options: [
+            {
+                value: 'traceLogicalCircuit',
+                label: 'traceLogicalCircuit',
+                params: [
+                    { name: 'circuit', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'routeCircuit',  
+                label: 'routeCircuit',  
+                params: [
+                    { name: 'circuit', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'unrouteCircuit',
+                label: 'unrouteCircuit',
+                params: [
+                    { name: 'circuit', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'routeCircuits',
+                label: 'routeCircuits',
+                params: [
+                    { name: 'circuits', type: 'Array<MyWorldFeature>' }
+                ]
+            },
+            {
+                value: 'isCircuitFeature',
+                lable: 'isCircuitFeature',
+                params:[
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+
+            },
+            {
+                value: 'getDetachedCircuitPath',
+                lable: 'getDetachedCircuitPath',
+                params: [
+                    { name: 'featureType', type: 'String' },
+                    { name: 'logicalCircuits', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'updateCircuitStatus',
+                label: 'updateCircuitStatus',
+                params: [
+                    { name: 'circuit', type: 'MyWorldFeature' },
+                    { name: 'status', type: 'String' }
                 ]
             }
         ]

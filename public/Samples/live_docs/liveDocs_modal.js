@@ -3,8 +3,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { DraggableModal, Button, Input } from 'myWorld-client/react';
 import { Alert, Space, Select } from 'antd';
 import { useLocale } from 'myWorld-client/react';
-import { Classes, ConduitMenu, EquipmentMenu, StructureMenu, CableMenu, ConnectionMenu } from './classes_dictionary';
+import { Classes, ConduitMenu, EquipmentMenu, StructureMenu, CableMenu, ConnectionMenu, CircuitMenu } from './classes_dictionary';
 import { param } from 'jquery';
+import PinRange from 'modules/comms/js/api/pinRange';
 
 export const LiveDocsModal = ({ open, plugin}) => {
     const { msg } = useLocale('LiveDocsPlugin');
@@ -23,7 +24,8 @@ export const LiveDocsModal = ({ open, plugin}) => {
         equipmentApi: EquipmentMenu,
         conduitApi: ConduitMenu,
         cableApi: CableMenu,
-        connectionApi: ConnectionMenu
+        connectionApi: ConnectionMenu,
+        circuitApi: CircuitMenu
         // TODO: Add others
     };
     const apiInstances = {
@@ -31,10 +33,10 @@ export const LiveDocsModal = ({ open, plugin}) => {
         equipmentApi: plugin.equipmentApi,
         conduitApi: plugin.conduitApi,
         cableApi: plugin.cableApi,
-        connectionApi: plugin.connectionApi
+        connectionApi: plugin.connectionApi,
+        circuitApi: plugin.circuitApi
         // TODO: Add others
     };
-
 
     const getSelectedFunctionParams = () => {
         if (!pickedClass || !pickedFunction) return [];
@@ -222,156 +224,181 @@ export const LiveDocsModal = ({ open, plugin}) => {
                                 options={ApiFunctionMenus[pickedClass].flatMap(group => group.options)}
                             />
                         )}
-                        
                         {pickedFunction && getSelectedFunctionParams().map(({ name, type }) => {
                             console.log('paramValues', paramValues);
-                        if (type.toLowerCase() === 'myworldfeature') {
-                            return (
-                                <Input
-                                    key={name}
-                                    placeholder={`${name} (select on map)`}
-                                    value={paramValues[name]?.id || ''}
-                                    readOnly
-                                    onFocus={() => setActiveParam(name)}
-                                />
-                            );
-                        }
-                        if (type.toLowerCase() === 'boolean') {
-                            return (
-                                <Select
-                                    key={name}
-                                    value={paramValues[name]}
-                                    onChange={val => handleParamChange(name, val)}
-                                    options={[
-                                        { value: true, label: 'True' },
-                                        { value: false, label: 'False' }
-                                    ]}
-                                    placeholder={`${name} (select on dropdown)`}
-                                    style={{ width: '100%' }}
-                                />
-                            );
-                        }
-                        if (type.toLowerCase() === 'number') {
-                            return (
-                                <Input
-                                    key={name}
-                                    type="number"
-                                    placeholder={`${name} (enter number)`}
-                                    value={paramValues[name] || ''}
-                                    onChange={e => handleParamChange(name, e.target.value)}
-                                />
-                            );
-                        }
-                        if (type.toLowerCase() === 'string') {
-                            return (
-                                <Input
-                                    key={name}
-                                    placeholder={`${name} (enter string)`}
-                                    value={paramValues[name] || ''}
-                                    onChange={e => handleParamChange(name, e.target.value)}
-                                />
-                            );
-                        }
-                        if (type.toLowerCase() === 'array') {
-                            return (
-                                <Input
-                                    key={name}
-                                    placeholder={`${name} (enter items separated by commas)`}
-                                    value={rawInput[name] ?? (paramValues[name] || []).join(', ')}
-                                    onChange={e => {
-                                        const value = e.target.value;
-                                        setRawInput(prev => ({ ...prev, [name]: value }));
-                                        const arrayValue = value.split(',').map(item => item.trim()).filter(Boolean);
-                                        handleParamChange(name, arrayValue);
-                                    }}
-                                />
-                            );
-                        }
-                        if (type.toLowerCase() === 'array<myworldfeature>') { 
-                            const features = Array.isArray(paramValues[name]) ? paramValues[name] : [];
-                            return (   
-                                <Input
-                                    key={name}
-                                    placeholder={`${name} (select multiple features on map)`}
-                                    value={features.map(f => f.id).join(', ')}
-                                    readOnly
-                                    onFocus={() => setActiveParam(name)}
-                                />
-                            );
-                        }
-                        if (type.toLowerCase().includes('array<array')){
-                            return (
-                                <Input
-                                    key={name}
-                                    placeholder={`${name} (paste json nested array '[[1,2],[3,4]]')`}
-                                    value={
-                                        Array.isArray(paramValues[name])
-                                            ? paramValues[name].map(a => JSON.stringify(a)).join(', ')
-                                            : ''
-                                    }
-                                    onChange={(e) => {
-                                        const raw = e.target.value;
-                                        const nestedArray = parseNestedArray(raw);
-                                        handleParamChange(name, nestedArray);
-                                    }}
-                                />
-                            );
-                        }
-                        // TODO - add object type
-                        // if (type.toLowerCase() === 'object') {
-                        //     return (
-                        //         <Input
-                        //             key={name}
-                        //             placeholder={`${name} (enter object)`}
-                        //             value={paramValues[name] || ''}
-                        //             onChange={e => handleParamChange(name, e.target.value)}
-                        //         />
-                        //     );
-                        // }
-                        if (type.toLowerCase() === 'object' || type.toLowerCase() === 'array<object>' || type.toLowerCase() === 'array<geojson>') {
-                            const raw = rawInput[name] ?? JSON.stringify(paramValues[name] || {}, null, 2);
-
-                            return (
-                                <div key={name} className="mb-4">
-                                    <label className="block text-sm font-medium mb-1">{name}</label>
-                                    <Input.TextArea
-                                        placeholder={`Enter JSON for ${name}`}
-                                        value={raw}
+                            if (type.toLowerCase() === 'myworldfeature') {
+                                return (
+                                    <Input
+                                        key={name}
+                                        placeholder={`${name} (select on map)`}
+                                        value={paramValues[name]?.id || ''}
+                                        readOnly
+                                        onFocus={() => setActiveParam(name)}
+                                    />
+                                );
+                            }
+                            if (type.toLowerCase() === 'boolean') {
+                                return (
+                                    <Select
+                                        key={name}
+                                        value={paramValues[name]}
+                                        onChange={val => handleParamChange(name, val)}
+                                        options={[
+                                            { value: true, label: 'True' },
+                                            { value: false, label: 'False' }
+                                        ]}
+                                        placeholder={`${name} (select on dropdown)`}
+                                        style={{ width: '100%' }}
+                                    />
+                                );
+                            }
+                            if (type.toLowerCase() === 'number') {
+                                return (
+                                    <Input
+                                        key={name}
+                                        type="number"
+                                        placeholder={`${name} (enter number)`}
+                                        value={paramValues[name] || ''}
+                                        onChange={e => handleParamChange(name, e.target.value)}
+                                    />
+                                );
+                            }
+                            if (type.toLowerCase() === 'string') {
+                                return (
+                                    <Input
+                                        key={name}
+                                        placeholder={`${name} (enter string)`}
+                                        value={paramValues[name] || ''}
+                                        onChange={e => handleParamChange(name, e.target.value)}
+                                    />
+                                );
+                            }
+                            if (type.toLowerCase() === 'array<string>' || type.toLowerCase() === 'array<number>') {
+                                return (
+                                    <Input
+                                        key={name}
+                                        placeholder={`${name} (enter items separated by commas)`}
+                                        value={rawInput[name] ?? (paramValues[name] || []).join(', ')}
                                         onChange={e => {
                                             const value = e.target.value;
                                             setRawInput(prev => ({ ...prev, [name]: value }));
-
-                                            try {
-                                                const parsed = JSON.parse(value);
-                                                handleParamChange(name, parsed);
-                                            } catch (err) {
-                                                console.error("Failed to read object:", err);
-                                            }
+                                            const arrayValue = value.split(',').map(item => item.trim()).filter(Boolean);
+                                            handleParamChange(name, arrayValue);
                                         }}
-                                        autoSize={{ minRows: 6, maxRows: 12 }}
                                     />
-                                </div>
-                            );
-                        }
+                                );
+                            }
+                            if (type.toLowerCase() === 'array<myworldfeature>') { 
+                                const features = Array.isArray(paramValues[name]) ? paramValues[name] : [];
+                                return (   
+                                    <Input
+                                        key={name}
+                                        placeholder={`${name} (select multiple features on map)`}
+                                        value={features.map(f => f.id).join(', ')}
+                                        readOnly
+                                        onFocus={() => setActiveParam(name)}
+                                    />
+                                );
+                            }
+                            if (type.toLowerCase().includes('array<array')){
+                                return (
+                                    <Input
+                                        key={name}
+                                        placeholder={`${name} (paste json nested array '[[1,2],[3,4]]')`}
+                                        value={
+                                            Array.isArray(paramValues[name])
+                                                ? paramValues[name].map(a => JSON.stringify(a)).join(', ')
+                                                : ''
+                                        }
+                                        onChange={(e) => {
+                                            const raw = e.target.value;
+                                            const nestedArray = parseNestedArray(raw);
+                                            handleParamChange(name, nestedArray);
+                                        }}
+                                    />
+                                );
+                            }
+                            if (type.toLowerCase() === 'object' || type.toLowerCase() === 'array<object>' || type.toLowerCase() === 'array<geojson>') {
+                                const raw = rawInput[name] ?? JSON.stringify(paramValues[name] || {}, null, 2);
 
-                        if (type.toLowerCase() === 'transaction') {
+                                return (
+                                    <div key={name} className="mb-4">
+                                        <label className="block text-sm font-medium mb-1">{name}</label>
+                                        <Input.TextArea
+                                            placeholder={`enter JSON for ${name}`}
+                                            value={raw}
+                                            onChange={e => {
+                                                const value = e.target.value;
+                                                setRawInput(prev => ({ ...prev, [name]: value }));
+
+                                                try {
+                                                    const parsed = JSON.parse(value);
+                                                    handleParamChange(name, parsed);
+                                                } catch (err) {
+                                                    console.error("Failed to read object:", err);
+                                                }
+                                            }}
+                                            autoSize={{ minRows: 6, maxRows: 12 }}
+                                        />
+                                    </div>
+                                );
+                            }
+                            if (type.toLowerCase() === 'transaction') {
+                                return (
+                                    <Input
+                                        key={name}
+                                        placeholder={`${name} (auto-created transaction)`}
+                                        value={paramValues[name] ? '[Transaction Object]' : ''}
+                                        readOnly
+                                    />
+                                );
+                            }
+                            if (type.toLowerCase() === "pinrange") {
+                                const pinRange = paramValues[name] || new PinRange("in", 1, 1);
+
+                                const update = (field, newValue) => {
+                                    const updated = {
+                                        side: pinRange.side,
+                                        low: pinRange.low,
+                                        high: pinRange.high,
+                                        [field]: newValue
+                                    };
+                                    handleParamChange(name, new PinRange(updated.side, updated.low, updated.high));
+                                };
+
+                                return (
+                                    <div key={name} className="flex gap-2 items-center">
+                                        <select
+                                            value={pinRange.side}
+                                            onChange={(e) => update("side", e.target.value)}
+                                        >
+                                            <option value="in">in</option>
+                                            <option value="out">out</option>
+                                        </select>
+
+                                        <input
+                                            type="number"
+                                            value={pinRange.low}
+                                            onChange={(e) => update("low", Number(e.target.value))}
+                                        />
+
+                                        <input
+                                            type="number"
+                                            value={pinRange.high}
+                                            onChange={(e) => update("high", Number(e.target.value))}
+                                        />
+                                    </div>
+                                );
+                            }
+
                             return (
                                 <Input
                                     key={name}
-                                    placeholder={`${name} (auto-created transaction)`}
-                                    value={paramValues[name] ? '[Transaction Object]' : ''}
-                                    readOnly
+                                    placeholder={name}
+                                    value={paramValues[name] || ''}
+                                    onChange={e => handleParamChange(name, e.target.value)}
                                 />
                             );
-                        }
-                        return (
-                            <Input
-                                key={name}
-                                placeholder={name}
-                                value={paramValues[name] || ''}
-                                onChange={e => handleParamChange(name, e.target.value)}
-                            />
-                        );
                     })}
                     </Space>
                 </div>
