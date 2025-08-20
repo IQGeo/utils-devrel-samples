@@ -46,6 +46,8 @@ export const LiveDocsModal = ({ open, plugin }) => {
         // TODO: Add others
     };
 
+    const transactionMessage = "Transaction is automatically created for you. It will be committed after the function execution.";
+
     const getSelectedFunctionParams = () => {
         if (!pickedClass || !pickedFunction) return [];
 
@@ -245,7 +247,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             value={
                                                 paramValues[name]?.properties.name ||
                                                 paramValues[name]?.id ||
-                                                'N/A'
+                                                ''
                                             }
                                             readOnly
                                             onFocus={() => setActiveParam(name)}
@@ -387,12 +389,10 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                 }
                                 if (type.toLowerCase() === 'transaction') {
                                     return (
-                                        <Input
-                                            key={name}
-                                            placeholder={`${name} (auto-created transaction)`}
-                                            value={paramValues[name] ? '[Transaction Object]' : ''}
-                                            readOnly
-                                        />
+                                        <div key={name} className="mb-4">
+                                            <p>{transactionMessage}</p>
+                                        
+                                        </div>
                                     );
                                 }
                                 if (type.toLowerCase() === 'pinrange') {
