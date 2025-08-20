@@ -46,7 +46,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
         // TODO: Add others
     };
 
-    const transactionMessage = "Transaction is automatically created for you. It will be committed after the function execution.";
+    const transactionMessage = "Transaction parameter is automatically created for you. It will be committed after the function execution.";
 
     const getSelectedFunctionParams = () => {
         if (!pickedClass || !pickedFunction) return [];
@@ -132,6 +132,13 @@ export const LiveDocsModal = ({ open, plugin }) => {
 
     const executeFunction = () => {
         console.log('Executing function:', pickedFunction, 'from class:', pickedClass);
+
+        if (pickedFunction.startsWith('list')){
+            const feature = pickedFunction.slice(4);
+            console.log(myw.config[`mywcom.${feature.toLowerCase()}`]);
+            return;
+        }
+
         if (!pickedClass || !pickedFunction) return;
 
         const apiInstance = apiInstances[pickedClass];
