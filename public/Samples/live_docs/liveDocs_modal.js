@@ -10,7 +10,8 @@ import {
     StructureMenu,
     CableMenu,
     ConnectionMenu,
-    CircuitMenu
+    CircuitMenu,
+    StructureDescriptions
 } from './classes_dictionary';
 import { param } from 'jquery';
 import PinRange from 'modules/comms/js/api/pinRange';
@@ -43,6 +44,10 @@ export const LiveDocsModal = ({ open, plugin }) => {
         cableApi: plugin.cableApi,
         connectionApi: plugin.connectionApi,
         circuitApi: plugin.circuitApi
+        // TODO: Add others
+    };
+    const ApiFunctionDictionaries = {
+        structureApi: StructureDescriptions
         // TODO: Add others
     };
 
@@ -184,6 +189,12 @@ export const LiveDocsModal = ({ open, plugin }) => {
         }
         return [];
     };
+    const currentDictionary = pickedClass ? ApiFunctionDictionaries[pickedClass] : null;
+    const currentDescription =
+    pickedFunction && currentDictionary && currentDictionary[pickedFunction]
+        ? currentDictionary[pickedFunction].body
+        : null;
+
 
     return (
         <DraggableModal
@@ -242,6 +253,11 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                     group => group.options
                                 )}
                             />
+                        )}
+                        {currentDescription && (
+                            <div className="mb-4 p-2 border rounded bg-gray-50">
+                                {currentDescription}
+                            </div>
                         )}
                         {pickedFunction &&
                             getSelectedFunctionParams().map(({ name, type }) => {

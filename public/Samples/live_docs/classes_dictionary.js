@@ -3,6 +3,7 @@ import { useLocale } from 'myWorld-client/react';
 import { param } from 'jquery';
 import { MyWorldFeature } from 'myWorld-base';
 import { useParams } from 'react-router-dom';
+import structureDescriptions from './structureDescriptions.json';
 
 const { msg } = useLocale('LiveDocsPlugin');
 const title = msg('classTitle');
@@ -166,6 +167,108 @@ export const StructureMenu = [
         ]
     }
 ];
+
+export const StructureDescriptions = {
+    listStructures: {
+        body: (
+            <div>
+                <p>
+                    Pressing the button will list all features that are configured as a building in
+                    the myw.config['mywcom.structures'] array.
+                </p>
+            </div>
+        ),
+        function: 'onListStructures'
+    },
+
+    structContent: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.structContent}
+                </p>
+            </div>
+        ),
+        function: 'onStructContent'
+    },
+
+    getStructuresAtCoords: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.getStructuresAtCoords}
+                </p>
+            </div>
+        ),
+        function: 'onGetStructuresAtCoords'
+    },
+
+    getStructureAt: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.getStructureAt}
+                </p>
+            </div>
+        ),
+        function: 'onGetStructureAt'
+    },
+
+    getStructuresAt: {
+        body: (
+            <div>
+                <p>{structureDescriptions.getStructuresAt}</p>
+            </div>
+        ),
+        function: 'onGetStructuresAt'
+    },
+
+    routeContent: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.routeContent}
+                </p>
+            </div>
+        ),
+
+        function: 'onRouteContent'
+    },
+
+    validateRoutesForConduit: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.validateRoutesForConduit}
+                </p>
+            </div>
+        ),
+        function: 'onValidateRoutesForConduit'
+    },
+
+    isStructure: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.isStructure}
+                </p>
+            </div>
+        ),
+        function: 'onIsStructure'
+    },
+
+    isRoute: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.isRoute}
+                </p>
+            </div>
+        ),
+        function: 'onIsRoute'
+    }
+};
+
 
 export const EquipmentMenu = [
     {
