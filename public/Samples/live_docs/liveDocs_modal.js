@@ -255,9 +255,10 @@ export const LiveDocsModal = ({ open, plugin }) => {
                             />
                         )}
                         {currentDescription && (
-                            <div className="mb-4 p-2 border rounded bg-gray-50">
-                                {currentDescription}
-                            </div>
+                            <p style={{ whiteSpace: "pre-wrap" }}>
+                            {currentDescription}
+                            </p>
+
                         )}
                         {pickedFunction &&
                             getSelectedFunctionParams().map(({ name, type }) => {
