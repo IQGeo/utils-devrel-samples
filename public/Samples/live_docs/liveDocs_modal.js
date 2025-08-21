@@ -189,12 +189,12 @@ export const LiveDocsModal = ({ open, plugin }) => {
         }
         return [];
     };
+    
     const currentDictionary = pickedClass ? ApiFunctionDictionaries[pickedClass] : null;
     const currentDescription =
     pickedFunction && currentDictionary && currentDictionary[pickedFunction]
         ? currentDictionary[pickedFunction].body
         : null;
-
 
     return (
         <DraggableModal

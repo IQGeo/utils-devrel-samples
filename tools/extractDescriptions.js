@@ -1,13 +1,9 @@
 const fs = require('fs');
 const { parse } = require('comment-parser');
 
-// file path
-// const filePath = './comms/public/js/api/structureManagerPlugin.js';
-
-
 const args = process.argv.slice(2);
-const filePath = args[0];
-const outputPath = args[1] || './functionDescriptions.json';
+const filePath = args[0]; // argument for the input file path
+const outputPath = args[1] || './functionDescriptions.json'; //argument for the output file path, defaults to functionDescriptions.json
 
 if (!fs.existsSync(filePath)) {
   console.error(`Input file not found: ${filePath}`);
