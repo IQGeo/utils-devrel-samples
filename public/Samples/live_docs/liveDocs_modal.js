@@ -7,23 +7,13 @@ import {
     Classes,
     ConduitMenu,
     EquipmentMenu,
-    StructureMenu,
+    StructuresMenu,
     CableMenu,
     ConnectionMenu,
     CircuitMenu,
-    StructureDescriptions
+    StructuresDescriptions
 } from './classes_dictionary';
-import { param } from 'jquery';
 import PinRange from 'modules/comms/js/api/pinRange';
-
-
-/*
-converting to .tsx
-1. add a props interface - live docs modals props
-2. add types to all state variables
-3. export with type annotations
-4. ensure all imports are correct
-*/
 
 
 export const LiveDocsModal = ({ open, plugin }) => {
@@ -39,7 +29,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
     const [rawInput, setRawInput] = useState({});
 
     const ApiFunctionMenus = {
-        structureApi: StructureMenu,
+        structuresApi: StructuresMenu,
         equipmentApi: EquipmentMenu,
         conduitApi: ConduitMenu,
         cableApi: CableMenu,
@@ -48,7 +38,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
         // TODO: Add others
     };
     const apiInstances = {
-        structureApi: plugin.structureApi,
+        structuresApi: plugin.structuresApi,
         equipmentApi: plugin.equipmentApi,
         conduitApi: plugin.conduitApi,
         cableApi: plugin.cableApi,
@@ -57,7 +47,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
         // TODO: Add others
     };
     const ApiFunctionDictionaries = {
-        structureApi: StructureDescriptions
+        structuresApi: StructuresDescriptions
         // TODO: Add others
     };
 
@@ -153,6 +143,25 @@ export const LiveDocsModal = ({ open, plugin }) => {
             console.log(myw.config[`mywcom.${feature.toLowerCase()}`]);
             return;
         }
+        // const feature = pickedClass.slice(0,-3);
+        // console.log ("picked class", feature);
+        // const allowedFeatureTypes = myw.config[`mywcom.${feature.toLowerCase()}`];
+        // console.log("allowed feature", allowedFeatureTypes);
+        const paramMeta = getSelectedFunctionParams();
+
+        // // 3. Validate all MyWorldFeature params
+        // const invalidParam = paramMeta.find(({ name, type }) => {
+        //     if (type.toLowerCase() === 'myworldfeature') {
+        //         const feature = paramValues[name];
+        //         return !feature || !allowedFeatureTypes.includes(feature.getType());
+        //     }
+        //     return false;
+        // });
+
+        // if (invalidParam) {
+        //     alert(`Selected feature type for "${invalidParam.name}" is not allowed for function "${pickedFunction}"`);
+        //     return;
+        // }
 
         if (!pickedClass || !pickedFunction) return;
 
@@ -162,7 +171,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
             return;
         }
 
-        const paramMeta = getSelectedFunctionParams();
+        
 
         const params = paramMeta.map(({ name }) => paramValues[name]);
         console.log('Executing function:', pickedFunction, 'with params:', params);

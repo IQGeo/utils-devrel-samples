@@ -3,7 +3,7 @@ import { useLocale } from 'myWorld-client/react';
 import { param } from 'jquery';
 import { MyWorldFeature } from 'myWorld-base';
 import { useParams } from 'react-router-dom';
-import structureDescriptions from './structureDescriptions.json';
+import structuresDescriptions from './structuresDescriptions.json';
 
 const { msg } = useLocale('LiveDocsPlugin');
 const title = msg('classTitle');
@@ -14,8 +14,8 @@ export const Classes = [
         title: 'API Functions',
         options: [
             {
-                value: 'structureApi',
-                label: 'Structure API'
+                value: 'structuresApi',
+                label: 'Structures API'
             },
             {
                 value: 'equipmentApi',
@@ -53,7 +53,7 @@ export const Classes = [
     }
 ];
 
-export const StructureMenu = [
+export const StructuresMenu = [
     {
         label: <span>List Structures</span>,
         title: 'List Stuctures',
@@ -73,7 +73,7 @@ export const StructureMenu = [
                 label: 'structContent',
                 params: 
                 [
-                    { name: 'structure' , type: 'MyWorldFeature' },
+                    { name: 'structure' , type: 'MyWorldFeature'},
                     { name: 'includeProposed', type: 'Boolean' }
                 ]
                 
@@ -168,7 +168,7 @@ export const StructureMenu = [
     }
 ];
 
-export const StructureDescriptions = {
+export const StructuresDescriptions = {
     listStructures: {
         body: (
             <div>
@@ -185,7 +185,7 @@ export const StructureDescriptions = {
         body: (
             <div>
                 <p>
-                    {structureDescriptions.structContent}
+                    {structuresDescriptions.structContent}
                 </p>
             </div>
         ),
@@ -196,7 +196,7 @@ export const StructureDescriptions = {
         body: (
             <div>
                 <p>
-                    {structureDescriptions.getStructuresAtCoords}
+                    {structuresDescriptions.getStructuresAtCoords}
                 </p>
             </div>
         ),
@@ -207,7 +207,7 @@ export const StructureDescriptions = {
         body: (
             <div>
                 <p>
-                    {structureDescriptions.getStructureAt}
+                    {structuresDescriptions.getStructureAt}
                 </p>
             </div>
         ),
@@ -217,7 +217,7 @@ export const StructureDescriptions = {
     getStructuresAt: {
         body: (
             <div>
-                <p>{structureDescriptions.getStructuresAt}</p>
+                <p>{structuresDescriptions.getStructuresAt}</p>
             </div>
         ),
         function: 'onGetStructuresAt'
@@ -227,7 +227,7 @@ export const StructureDescriptions = {
         body: (
             <div>
                 <p>
-                    {structureDescriptions.routeContent}
+                    {structuresDescriptions.routeContent}
                 </p>
             </div>
         ),
@@ -239,7 +239,7 @@ export const StructureDescriptions = {
         body: (
             <div>
                 <p>
-                    {structureDescriptions.validateRoutesForConduit}
+                    {structuresDescriptions.validateRoutesForConduit}
                 </p>
             </div>
         ),
@@ -250,7 +250,7 @@ export const StructureDescriptions = {
         body: (
             <div>
                 <p>
-                    {structureDescriptions.isStructure}
+                    {structuresDescriptions.isStructure}
                 </p>
             </div>
         ),
@@ -261,7 +261,7 @@ export const StructureDescriptions = {
         body: (
             <div>
                 <p>
-                    {structureDescriptions.isRoute}
+                    {structuresDescriptions.isRoute}
                 </p>
             </div>
         ),

@@ -31,7 +31,7 @@ export class LiveDocsPlugin extends Plugin {
 
     constructor(owner, options) {
         super(owner, options);
-        this.structureApi = new StructureManagerPlugin(owner, options);
+        this.structuresApi = new StructureManagerPlugin(owner, options);
         this.equipmentApi = new EquipmentManagerPlugin(owner, options);
         this.cableApi = new CableManagerPlugin(owner, options);
         this.conduitApi = new ConduitManagerPlugin(owner, options);
