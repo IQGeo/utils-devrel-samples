@@ -269,7 +269,6 @@ export const StructureDescriptions = {
     }
 };
 
-
 export const EquipmentMenu = [
     {
         label: <span>List Equipment</span>,

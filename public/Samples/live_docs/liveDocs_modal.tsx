@@ -1,7 +1,7 @@
 import myw from 'myWorld-client';
 import React, { useState, useEffect, useRef } from 'react';
 import { DraggableModal, Button, Input } from 'myWorld-client/react';
-import { Alert, Space, Select } from 'antd';
+import { Space, Select, InputRef } from 'antd';
 import { useLocale } from 'myWorld-client/react';
 import {
     Classes,
@@ -13,7 +13,6 @@ import {
     CircuitMenu,
     StructureDescriptions
 } from './classes_dictionary';
-import { param } from 'jquery';
 import PinRange from 'modules/comms/js/api/pinRange';
 
 
@@ -25,41 +24,85 @@ converting to .tsx
 4. ensure all imports are correct
 */
 
+interface LiveDocsModalProps {
+  open: boolean;
+  plugin: {
+    structureApi?: any;
+    equipmentApi?: any;
+    conduitApi?: any;
+    cableApi?: any;
+    connectionApi?: any;
+    circuitApi?: any;
+    [key: string]: any; // fallback
+  };
+}
 
-export const LiveDocsModal = ({ open, plugin }) => {
+export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) => {
     const { msg } = useLocale('LiveDocsPlugin');
     const [showIntro, setShowIntro] = useState(true);
     const [appRef] = useState(myw.app);
     const [db] = useState(appRef.database);
     const [isOpen, setIsOpen] = useState(open);
-    const [pickedClass, setPickedClass] = useState('');
-    const [pickedFunction, setPickedFunction] = useState('');
-    const [paramValues, setParamValues] = useState({});
-    const [activeParam, setActiveParam] = useState(null);
-    const [rawInput, setRawInput] = useState({});
+    const [pickedClass, setPickedClass] = useState<string>('');
+    const [pickedFunction, setPickedFunction] = useState<string>('');
+    const [paramValues, setParamValues] = useState<Record<string, any>>({});
+    const [activeParam, setActiveParam] = useState<string | null>(null);
+    const [rawInput, setRawInput] = useState<Record<string, string>>({});
+    const inputRef = useRef<InputRef | null>(null);
 
-    const ApiFunctionMenus = {
-        structureApi: StructureMenu,
-        equipmentApi: EquipmentMenu,
-        conduitApi: ConduitMenu,
-        cableApi: CableMenu,
-        connectionApi: ConnectionMenu,
-        circuitApi: CircuitMenu
-        // TODO: Add others
+    interface ApiParam {
+    name: string;
+    type: string;
+    }
+
+    interface ApiMenuOption {
+    value: string;
+    label: string | React.ReactNode;
+    params?: ApiParam[];
+    }
+
+    interface ApiMenuGroup {
+    label: string | React.ReactNode;
+    options: ApiMenuOption[];
+    }
+
+    type ApiFunctionMenu = ApiMenuGroup[];
+
+    type ApiKey =
+    | "structureApi"
+    | "equipmentApi"
+    | "conduitApi"
+    | "cableApi"
+    | "connectionApi"
+    | "circuitApi";
+
+    // Menus
+    const ApiFunctionMenus: Record<ApiKey, ApiFunctionMenu> = {
+    structureApi: StructureMenu,
+    equipmentApi: EquipmentMenu,
+    conduitApi: ConduitMenu,
+    cableApi: CableMenu,
+    connectionApi: ConnectionMenu,
+    circuitApi: CircuitMenu,
     };
-    const apiInstances = {
-        structureApi: plugin.structureApi,
-        equipmentApi: plugin.equipmentApi,
-        conduitApi: plugin.conduitApi,
-        cableApi: plugin.cableApi,
-        connectionApi: plugin.connectionApi,
-        circuitApi: plugin.circuitApi
-        // TODO: Add others
+
+    // API instances
+    const apiInstances: Record<ApiKey, any> = {
+    structureApi: plugin.structureApi,
+    equipmentApi: plugin.equipmentApi,
+    conduitApi: plugin.conduitApi,
+    cableApi: plugin.cableApi,
+    connectionApi: plugin.connectionApi,
+    circuitApi: plugin.circuitApi,
     };
-    const ApiFunctionDictionaries = {
-        structureApi: StructureDescriptions
-        // TODO: Add others
+
+    // Dictionaries
+    type ApiFunctionDictionary = Record<string, { body: string }>;
+
+    const ApiFunctionDictionaries: Partial<Record<ApiKey, ApiFunctionDictionary>> = {
+    structureApi: StructureDescriptions,
     };
+
 
     const transactionMessage = "Transaction parameter is automatically created for you. It will be committed after the function execution.";
 
@@ -133,7 +176,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
         }
     }, [pickedFunction, paramValues, db]);
 
-    const handleParamChange = (paramName, value) => {
+    const handleParamChange = (paramName: string, value: any) => {
         setParamValues(prev => ({ ...prev, [paramName]: value }));
     };
 
@@ -185,7 +228,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
         }
     };
 
-    const parseNestedArray = input => {
+    const parseNestedArray = (input: string): any[][] => {
         if (!input || typeof input !== 'string') return [];
 
         const safeInput = `[${input}]`;
@@ -309,7 +352,8 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             type="number"
                                             placeholder={`${name} (enter number)`}
                                             value={paramValues[name] || ''}
-                                            onChange={e => handleParamChange(name, e.target.value)}
+                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => 
+                                                handleParamChange(name, e.target.value)}
                                         />
                                     );
                                 }
@@ -319,7 +363,8 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             key={name}
                                             placeholder={`${name} (enter string)`}
                                             value={paramValues[name] || ''}
-                                            onChange={e => handleParamChange(name, e.target.value)}
+                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => 
+                                                handleParamChange(name, e.target.value)}
                                         />
                                     );
                                 }
@@ -335,7 +380,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                                 rawInput[name] ??
                                                 (paramValues[name] || []).join(', ')
                                             }
-                                            onChange={e => {
+                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                                                 const value = e.target.value;
                                                 setRawInput(prev => ({ ...prev, [name]: value }));
                                                 const arrayValue = value
@@ -373,7 +418,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                                           .join(', ')
                                                     : ''
                                             }
-                                            onChange={e => {
+                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                                                 const raw = e.target.value;
                                                 const nestedArray = parseNestedArray(raw);
                                                 handleParamChange(name, nestedArray);
@@ -398,7 +443,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             <Input.TextArea
                                                 placeholder={`enter JSON for ${name}`}
                                                 value={raw}
-                                                onChange={e => {
+                                                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
                                                     const value = e.target.value;
                                                     setRawInput(prev => ({
                                                         ...prev,
@@ -457,7 +502,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             <input
                                                 type="number"
                                                 value={pinRange.low}
-                                                onChange={e =>
+                                                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                                     update('low', Number(e.target.value))
                                                 }
                                             />
@@ -465,7 +510,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             <input
                                                 type="number"
                                                 value={pinRange.high}
-                                                onChange={e =>
+                                                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                                     update('high', Number(e.target.value))
                                                 }
                                             />
@@ -478,7 +523,8 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                         key={name}
                                         placeholder={name}
                                         value={paramValues[name] || ''}
-                                        onChange={e => handleParamChange(name, e.target.value)}
+                                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => 
+                                            handleParamChange(name, e.target.value)}
                                     />
                                 );
                             })}
