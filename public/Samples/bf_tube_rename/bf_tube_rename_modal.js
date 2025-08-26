@@ -42,10 +42,10 @@ export const BFTubeRenameModal = ({ open, plugin, builder }) => {
     };
 
     const renameTubes = async () => {
-        bf_bundle.followRelationship('conduits').then(tubes => {
+        var t = db.transaction();
+        bf_bundle.followRelationship('conduits').then(async tubes => {
             const colors = msg('colors').split('|');
             let color_index = 0;
-            console.log(tubes);
             // Reorder tubes based on the number at the end of tube.properties.name
             tubes.sort((a, b) => {
                 const numA = parseInt(a.properties.name.match(/\d+$/)[0], 10);
@@ -53,22 +53,23 @@ export const BFTubeRenameModal = ({ open, plugin, builder }) => {
                 return numA - numB;
             });
             console.log(tubes);
-            tubes.forEach(async tube => {
-                console.log(tube.properties.name);
+            tubes.forEach(tube => {
                 const tubeColor = colors[color_index];
                 tube.properties.name += ` - ${tubeColor}`;
                 color_index++;
                 if (color_index >= colors.length) {
                     color_index = 0;
                 }
-                await db.updateFeature('blown_fiber_tube', tube.id, tube.asGeoJson());
+                t.addUpdate('blown_fiber_tube', tube);
             });
 
-            setAlertMessage('Tubes renamed successfully!');
-            setIsAlertVisible(true);
-            setTimeout(() => {
-                setIsAlertVisible(false);
-            }, 5000);
+            await t.run().then(result => {
+                setAlertMessage('TRANSACTION Tubes renamed successfully!');
+                setIsAlertVisible(true);
+                setTimeout(() => {
+                    setIsAlertVisible(false);
+                }, 5000);
+            });
         });
     };
 
