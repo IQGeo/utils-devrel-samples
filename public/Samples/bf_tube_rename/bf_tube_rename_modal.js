@@ -63,7 +63,7 @@ export const BFTubeRenameModal = ({ open, plugin, builder }) => {
                 t.addUpdate('blown_fiber_tube', tube);
             });
 
-            await t.run().then(result => {
+            await t.run().then(() => {
                 setAlertMessage('TRANSACTION Tubes renamed successfully!');
                 setIsAlertVisible(true);
                 setTimeout(() => {
