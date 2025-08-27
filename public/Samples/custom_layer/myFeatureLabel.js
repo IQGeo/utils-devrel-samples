@@ -1,7 +1,7 @@
 // Copyright (c) 2010-2025 IQGeo Group Plc. Use subject to conditions at $MYWORLD_HOME/Docs/legal.txt
 import myw from 'myWorld-client';
 
-export class MywAddressLabel extends myw.MywVectorLayer {
+export class MyFeatureLabel extends myw.MywVectorLayer {
     createRepForFeature(feature, ...args) {
         const rep = super.createRepForFeature(feature, ...args);
         if (!rep) return;
@@ -12,8 +12,8 @@ export class MywAddressLabel extends myw.MywVectorLayer {
     }
 
     getLabelTextFor(feature) {
-        return 'XYZ';
+        return `${feature.getTitle()} - ${feature.getProperties().id}`;
     }
 }
 
-export default MywAddressLabel;
+export default MyFeatureLabel;
