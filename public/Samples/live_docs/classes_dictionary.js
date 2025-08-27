@@ -1,0 +1,642 @@
+import React from 'react';
+import { useLocale } from 'myWorld-client/react';
+import { param } from 'jquery';
+import { MyWorldFeature } from 'myWorld-base';
+import { useParams } from 'react-router-dom';
+
+const { msg } = useLocale('LiveDocsPlugin');
+const title = msg('classTitle');
+
+export const Classes = [
+    {
+        label: 'Classes',
+        title: 'API Functions',
+        options: [
+            {
+                value: 'structureApi',
+                label: 'Structure API'
+            },
+            {
+                value: 'equipmentApi',
+                label: 'Equipment API'
+            },
+            {
+                value: 'conduitApi',
+                label: 'Conduit API'
+            },
+            {
+                value: 'cableApi',
+                label: 'Cable API'
+            },
+            {
+                value: 'connectionApi',
+                label: 'Connection API'
+            },
+            {
+                value: 'circuitApi',
+                label: 'Circuit API'
+            },
+            {
+                value: 'displayApi',
+                label: 'Display API'
+            },
+            {
+                value: 'specApi',
+                label: 'Spec API'
+            },
+            {
+                value: 'locApi',
+                label: 'LoC API'
+            }
+        ]
+    }
+];
+
+export const StructureMenu = [
+    {
+        label: <span>List Structures</span>,
+        title: 'List Stuctures',
+        options: [
+            {
+                value: 'listStructures',
+                label: 'List Stuctures'
+            }
+        ]
+    },
+    {
+        label: <span>Functions</span>,
+        title: 'API Functions',
+        options: [
+            {
+                value: 'structContent',
+                label: 'structContent',
+                params: 
+                [
+                    { name: 'structure' , type: 'MyWorldFeature' },
+                    { name: 'includeProposed', type: 'Boolean' }
+                ]
+                
+            },
+            {
+                value: 'getStructuresAtCoords',
+                label: 'getStructuresAtCoords',
+                params: [
+                    { name: 'coords', type: 'Array' },
+                    { name: 'featureTypes', type: 'Array' }
+                ]
+            },
+            {
+                value: 'getStructureAt',
+                label: 'getStructureAt',
+                params: [
+                    { name: 'coord', type: 'Array' },
+                    { name: 'featureTypes', type: 'Array' }
+                ]
+            },
+            {
+                value: 'getStructuresAt',
+                label: 'getStructuresAt',
+                params: [
+                    { name: 'coord', type: 'Array' },
+                    { name: 'featureTypes', type: 'Array' },
+                    { name: 'tolerance', type: 'Number' }
+                ]
+            },
+            {
+                value: 'routeContent',
+                label: 'routeContent',
+                params: [
+                    { name: 'route', type: 'MyWorldFeature' },
+                    { name: 'includeProposed', type: 'Boolean' }
+                ]
+            },
+            {
+                value: 'validateRoutesForConduit',
+                label: 'validateRoutesForConduit',
+                params: [
+                    { name: 'routes', type: 'Array' },
+                    { name: 'conduit', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'isStructure',
+                label: 'isStructure',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'isRoute',
+                label: 'isRoute',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'isConduit',
+                label: 'isConduit',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'fixRouteEnds',
+                label: 'fixRouteEnds',
+                params: [
+                    { name: 'route', type: 'MyWorldFeature' },
+                    { name: 'struct1', type: 'MyWorldFeature' },
+                    { name: 'struct2', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'houseInStructure',
+                label: 'houseInStructure',
+                params: [
+                    { name: 'toStructure', type: 'MyWorldFeature' }               
+                ]
+            },
+            {
+                value: 'transferToStructure',
+                label: 'transferToStructure',
+                params: [
+                    { name: 'toStructure', type: 'MyWorldFeature'},
+                    { name: 'fromStructure', type: 'MyWorldFeature'}
+                ]
+            }
+        ]
+    }
+];
+
+export const EquipmentMenu = [
+    {
+        label: <span>List Equipment</span>,
+        title: 'List Equipment',
+        options: [
+            {
+                value: 'listEquipment',
+                label: 'List Equipment'
+            }
+        ]
+    },
+    {
+        label: <span>Fuctions</span>,
+        title: 'API Functions',
+        options: [
+            {
+                value: 'isEquipment',
+                label: 'isEquipment',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'moveAssembly',
+                label: 'moveAssembly',
+                params: [
+                    { name: 'equipment', type: 'MyWorldFeature' },
+                    { name: 'housing', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'copyAssembly',
+                label: 'copyAssembly',
+                params: [
+                    { name: 'equipment', type: 'MyWorldFeature' },
+                    { name: 'housing', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'connectionsIn',
+                label: 'connectionsIn',
+                params: [
+                    { name: 'housing', type: 'MyWorldFeature' },
+                ]
+            },
+            {
+                value: 'connectionsOf',
+                label: 'connectionsOf',
+                params: [
+                    { name: 'housing', type: 'MyWorldFeature' },
+                ]
+            },
+            {
+                value: 'equipmentWithPortInfo',
+                label: 'equipmentWithPortInfo'
+            },
+            {
+                value: 'ripplePortInfo',   
+                label: 'ripplePortInfo',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'direction', type: 'String' },
+                    { name: 'side', type: 'String' },
+                    { name: 'sourceRanges', type: 'Array' },
+                    { name: 'portInfoToRipple', type: 'Array' }
+                ]
+            }
+        ]
+    }
+];
+
+export const ConduitMenu = [
+    {
+        label: <span>List Conduits</span>,
+        title: 'List Conduits',
+        options: [
+            {
+                value: 'listConduits',
+                label: 'listConduits'
+            }
+        ]
+    },
+    {
+        label: <span>Fuctions</span>,
+        title: 'API Functions',
+        options: [
+            {
+                value: 'disconnectConduit',
+                label: 'disconnectConduit',
+                params: [
+                    { name: 'conduit', type: 'MyWorldFeature' },
+                    { name: 'housing', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'connectConduits',
+                label: 'connectConduits',
+                params: [
+                    { name: 'housing', type: 'MyWorldFeature' },
+                    { name: 'first_conduit', type: 'MyWorldFeature' },
+                    { name: 'second_conduit', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'routeNestedConduits',
+                label: 'routeNestedConduits',
+                params: [
+                    { name: 'conduitJson', type: 'Object' },
+                    { name: 'structures', type: 'Object' },
+                    { name: 'parentConduits', type: 'Object' },
+                    { name: 'transaction', type: 'Transaction' }
+                ]
+            },
+            {
+                value: 'moveInto',
+                label: 'moveInto',
+                params: [
+                    { name: 'housing', type: 'MyWorldFeature' },
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'isContinuousConduitType',
+                label: 'isContinuousConduitType',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'continuousPhysicalConduits',
+                label: 'continuousPhysicalConduits',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'deleteContinuousPhysicalConduits',
+                label: 'deleteContinuousPhysicalConduits',
+                params: [
+                    { name: 'conduit', type: 'MyWorldFeature' }
+                ]
+            }
+        ]
+    }
+];
+
+
+export const CableMenu = [
+    {
+        label: <span>List Cables</span>,
+        title: 'List Cables',
+        options: [
+            {
+                value: 'listCables',
+                label: 'List Cables'
+            }
+        ]
+    },
+    {
+        label: <span>Fuctions</span>,
+        title: 'API Functions',
+        options: [
+            {
+                value: 'highestUsedPinOn',
+                label: 'highestUsedPinOn',
+                params: [
+                    { name: 'cable', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'connectionsFor',
+                label: 'connectionsFor',
+                params: [
+                    { name: 'cable', type: 'MyWorldFeature' },
+                    {name: 'splice', type: 'Boolean' },
+                    { name: 'sorted', type: 'Boolean' }
+                ]
+            },
+            {
+                value: 'internalSegments',
+                label: 'internalSegments',
+                params: [
+                    { name: 'housingFeature', type: 'MyWorldFeature' },
+                    { name: 'root', type: 'Boolean' }
+                ]
+            },
+            {
+                value: 'createDetachedInternalSeg',
+                label: 'createDetachedInternalSeg',
+                params: [
+                    { name: 'struct', type: 'MyWorldFeature' },
+                    { name: 'cable', type: 'MyWorldFeature' },
+                    { name: 'housingUrn', type: 'String' },
+                    { name: 'length', type: 'Number' }
+                ]
+            },
+            {
+                value: 'createDetachedSlack',
+                label: 'createDetachedSlack',
+                params: [
+                    { name: 'cableFeature', type: 'MyWorldFeature' },
+                    { name: 'housingUrn', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'splitSlack',
+                label: 'splitSlack',
+                params: [
+                    { name: 'slack', type: 'MyWorldFeature' },
+                    { name: 'length', type: 'Number' }
+                ]
+            },
+            {
+                value: 'createDetSlackAtSide',
+                label: 'createDetSlackAtSide',
+                params: [
+                    { name: 'seg', type: 'MyWorldFeature' },
+                    { name: 'struct', type: 'MyWorldFeature' },
+                    { name: 'side', type: 'Boolean' }
+                ]
+            },
+            {
+                value: 'addSlack',
+                label: 'addSlack',
+                params: [
+                    { name: 'featureType', type: 'String' },
+                    { name: 'detSlack', type: 'MyWorldFeature' },
+                    { name: 'segUrn', type: 'String' },
+                    { name: 'side', type: 'Boolean' }
+                ]
+            },
+            {
+                value: 'transferConnections',
+                label: 'transferConnections',
+                params: [
+                    { name: 'oldSeg', type: 'String' },
+                    { name: 'newSeg', type: 'String' },
+                    { name: 'side', type: 'String' }
+                ]
+            },
+            {
+                value: 'connectionsOf',
+                label: 'connectionsOf',
+                params: [
+                    { name: 'featureUrn', type: 'MyWorldFeature' },
+                    { name: 'housing_field', type: 'String' },
+                    { name: 'splices', type: 'Boolean' }
+                ]
+            },
+            {
+                value: 'segmentContainment',
+                label: 'segmentContainment',
+                params: [
+                    { name: 'seg', type: 'MyWorldFeature' },
+                    { name: 'side', type: 'String' }
+                ]
+            },
+            {
+                value: 'setSegmentContainment',
+                label: 'setSegmentContainment',
+                params: [
+                    { name: 'seg', type: 'MyWorldFeature' },
+                    { name: 'side', type: 'String' },
+                    { name: 'equip', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'setTickMark',
+                label: 'setTickMark',
+                params: [
+                    { name: 'seg', type: 'MyWorldFeature' },
+                    { name: 'tickMark', type: 'Number' },
+                    { name: 'field', type: 'String' },
+                    { name: 'spacing', type: 'Number' },
+                    { name: 'unit', type: 'String' }
+
+                ]
+            },
+            {
+                value: 'setInTickMark',
+                label: 'setInTickMark',
+                params: [
+                    { name: 'trans', type: 'Transaction' },
+                    { name: 'seg', type: 'MyWorldFeature' },
+                    { name: 'tickMark', type: 'Number' },
+                    { name: 'spacing', type: 'Number' },
+                    { name: 'unit', type: 'String' }
+                ]
+            },
+            {
+                value: 'findDownstreamSegsToTick',
+                label: 'findDownstreamSegsToTick',
+                params: [
+                    { name: 'seg', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'setOutTickMark',
+                label: 'setOutTickMark',
+                params: [
+                    { name: 'trans', type: 'Transaction' },
+                    { name: 'seg', type: 'MyWorldFeature' },
+                    { name: 'tickMark', type: 'Number' },
+                    { name: 'spacing', type: 'Number' },
+                    { name: 'unit', type: 'String' }
+                ]
+            },
+            {
+                value: 'findUpstreamSegsToTick',
+                label: 'findUpstreamSegsToTick',
+                params: [
+                    { name: 'seg', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'computeTickDist',
+                label: 'computeTickDist',
+                params: [
+                    { name: 'segTick', type: 'Number' },
+                    { name: 'tick', type: 'Number' },
+                    { name: 'spacing', type: 'Number' },
+                    { name: 'unit', type: 'String' }
+                ]
+            },
+            {
+                value: 'adjustMeasuredLengths',
+                label: 'adjustMeasuredLengths',
+                params: [
+                    { name: 'trans', type: 'Transaction' },
+                    { name: 'segs', type: 'Array' },
+                    { name: 'tickDist', type: 'Number' },
+                ]   
+            },
+            {
+                value: 'routeCable',
+                label: 'routeCable',
+                params: [
+                    { name: 'cableJson', type: 'Array' },
+                    { name: 'structures', type: 'Array' },
+                    { name: 'parentFeatures', type: 'Array' }
+                ]
+            },
+            {
+                value: 'cutCableAt',
+                label: 'cutCableAt',
+                params: [
+                    { name: 'struct', type: 'MyWorldFeature' },
+                    { name: 'segment', type: 'MyWorldFeature' },
+                    { name: 'forward', type: 'Boolean' },
+                    { name: 'spliceHousing', type: 'MyWorldFeature' }
+                ]   
+            },
+            {
+                value: 'isCable',
+                label: 'isCable',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'isInternal',
+                label: 'isInternal',
+                params: [
+                    { name: 'cable', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'rootHousingUrnOf',
+                label: 'rootHousingUrnOf'
+                // TODO:  params: what is the method of input for housing parameter?
+            },
+            {
+                value: 'getLength',
+                label: 'getLength'
+                // TODO:  params: what is the method of input for housing parameter?
+            },
+            {
+                value: 'segmentTypeForCable',
+                label: 'segmentTypeForCable',
+                params: [
+                    { name: 'cable', type: 'MyWorldFeature' }
+                ]  
+            },
+            {
+                value: 'slackTypeForCable',
+                label: 'slackTypeForCable',
+                params: [
+                    { name: 'cable', type: 'MyWorldFeature' }
+                ]   
+            },
+            {
+                value: 'slackTypeForSegment',
+                label: 'slackTypeForSegment',
+                params: [
+                    { name: 'segment', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'isSegment',
+                label: 'isSegment',
+                params: [
+                    { name: 'urn', type: 'String' }
+                ]
+            },
+            {
+                value: 'segmentTypes',
+                label: 'segmentTypes'
+            },
+            {
+                value: 'connectionTypes',
+                label: 'connectionTypes'
+            },
+            {
+                value: 'slackTypes',
+                label: 'slackTypes'
+            },
+            {
+                value: 'pinCountFor',
+                label: 'pinCountFor',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'side', type: 'String' }
+                ]
+            },
+            {
+                value: 'moveCableOnConnect',
+                label: 'moveCableOnConnect',
+                params: [
+                    { name: 'connRec', type: 'MyWorldFeature' }]
+            },
+            {
+                value: 'truncateLine',
+                label: 'truncateLine',
+                params: [
+                    { name: 'coords', type: 'Array' },
+                    { name: 'startTruncDist', type: 'Number' },
+                    { name: 'endTruncDist', type: 'Number' }
+                ]
+            },
+            {
+                value: 'handleConnect',
+                label: 'handleConnect',
+                params: [
+                    { name: 'event', type: 'Object' }
+                ]
+            },
+            {
+                value: 'fixCableSegmentChain',
+                label: 'fixCableSegmentChain',
+                params: [
+                    { name: 'cable', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'fixCable',
+                label: 'fixCable',
+                params: [
+                    { name: 'cable', type: 'MyWorldFeature' }
+                ]
+            },
+            {
+                value: 'rippleStrandInfo',
+                label: 'rippleStrandInfo',
+                params: [
+                    { name: 'feature', type: 'MyWorldFeature' },
+                    { name: 'direction', type: 'String' },
+                    { name: 'sourceRanges', type: 'Array' },
+                    { name: 'strandInfoToRipple', type: 'Object' }
+                ]
+            }
+        ]
+    }
+];
