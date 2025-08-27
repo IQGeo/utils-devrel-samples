@@ -7,11 +7,11 @@ import {
     Classes,
     ConduitMenu,
     EquipmentMenu,
-    StructuresMenu,
+    StructureMenu,
     CableMenu,
     ConnectionMenu,
     CircuitMenu,
-    StructuresDescriptions
+    StructureDescriptions
 } from './classes_dictionary';
 import PinRange from 'modules/comms/js/api/pinRange';
 
@@ -29,7 +29,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
     const [rawInput, setRawInput] = useState({});
 
     const ApiFunctionMenus = {
-        structuresApi: StructuresMenu,
+        structureApi: StructureMenu,
         equipmentApi: EquipmentMenu,
         conduitApi: ConduitMenu,
         cableApi: CableMenu,
@@ -38,7 +38,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
         // TODO: Add others
     };
     const apiInstances = {
-        structuresApi: plugin.structuresApi,
+        structureApi: plugin.structureApi,
         equipmentApi: plugin.equipmentApi,
         conduitApi: plugin.conduitApi,
         cableApi: plugin.cableApi,
@@ -47,7 +47,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
         // TODO: Add others
     };
     const ApiFunctionDictionaries = {
-        structuresApi: StructuresDescriptions
+        structureApi: StructureDescriptions
         // TODO: Add others
     };
 

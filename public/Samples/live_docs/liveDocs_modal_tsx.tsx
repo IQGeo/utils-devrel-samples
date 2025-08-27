@@ -7,11 +7,11 @@ import {
     Classes,
     ConduitMenu,
     EquipmentMenu,
-    StructuresMenu,
+    StructureMenu,
     CableMenu,
     ConnectionMenu,
     CircuitMenu,
-    StructuresDescriptions
+    StructureDescriptions
 } from './classes_dictionary';
 import PinRange from 'modules/comms/js/api/pinRange';
 
@@ -78,7 +78,7 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
 
     // Menus
     const ApiFunctionMenus: Record<ApiKey, ApiFunctionMenu> = {
-    structuresApi: StructuresMenu,
+    structureApi: StructureMenu,
     equipmentApi: EquipmentMenu,
     conduitApi: ConduitMenu,
     cableApi: CableMenu,
@@ -100,7 +100,7 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
     type ApiFunctionDictionary = Record<string, { body: string }>;
 
     const ApiFunctionDictionaries: Partial<Record<ApiKey, ApiFunctionDictionary>> = {
-    structuresApi: StructuresDescriptions,
+    structureApi: StructureDescriptions,
     };
 
 
