@@ -11,7 +11,12 @@ import {
     CableMenu,
     ConnectionMenu,
     CircuitMenu,
-    StructureDescriptions
+    StructureDescriptions,
+    EquipmentDescriptions,
+    ConduitDescriptions,
+    CableDescriptions,
+    ConnectionDescriptions,
+    CircuitDescriptions
 } from './classes_dictionary';
 import PinRange from 'modules/comms/js/api/pinRange';
 
@@ -47,7 +52,12 @@ export const LiveDocsModal = ({ open, plugin }) => {
         // TODO: Add others
     };
     const ApiFunctionDictionaries = {
-        structureApi: StructureDescriptions
+        structureApi: StructureDescriptions,
+        equipmentApi: EquipmentDescriptions,
+        conduitApi: ConduitDescriptions,
+        cableApi: CableDescriptions,
+        connectionApi: ConnectionDescriptions,
+        circuitApi: CircuitDescriptions
         // TODO: Add others
     };
 
@@ -143,25 +153,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
             console.log(myw.config[`mywcom.${feature.toLowerCase()}`]);
             return;
         }
-        // const feature = pickedClass.slice(0,-3);
-        // console.log ("picked class", feature);
-        // const allowedFeatureTypes = myw.config[`mywcom.${feature.toLowerCase()}`];
-        // console.log("allowed feature", allowedFeatureTypes);
         const paramMeta = getSelectedFunctionParams();
-
-        // // 3. Validate all MyWorldFeature params
-        // const invalidParam = paramMeta.find(({ name, type }) => {
-        //     if (type.toLowerCase() === 'myworldfeature') {
-        //         const feature = paramValues[name];
-        //         return !feature || !allowedFeatureTypes.includes(feature.getType());
-        //     }
-        //     return false;
-        // });
-
-        // if (invalidParam) {
-        //     alert(`Selected feature type for "${invalidParam.name}" is not allowed for function "${pickedFunction}"`);
-        //     return;
-        // }
 
         if (!pickedClass || !pickedFunction) return;
 

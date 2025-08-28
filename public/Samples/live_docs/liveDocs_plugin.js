@@ -1,7 +1,7 @@
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
 // import liveDocsImage from '../../images/Customer_Connection_JavaScript_icon.svg';
-import { LiveDocsModal } from './liveDocs_modal_tsx';
+import { LiveDocsModal } from './liveDocs_modal';
 import liveDocsImage from '../../images/Live_Docs_icon.svg';
 import StructureManagerPlugin from '../../../../comms/public/js/api/structureManagerPlugin';
 import EquipmentManagerPlugin from '../../../../comms/public/js/api/equipmentManagerPlugin';

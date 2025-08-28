@@ -3,7 +3,12 @@ import { useLocale } from 'myWorld-client/react';
 import { param } from 'jquery';
 import { MyWorldFeature } from 'myWorld-base';
 import { useParams } from 'react-router-dom';
-import structureDescriptions from './structureDescriptions.json';
+import structureDescriptions from './function_descriptions/structureDescriptions.json';
+import equipmentDescriptions from './function_descriptions/equipmentDescriptions.json';
+import conduitDescriptions from './function_descriptions/conduitDescriptions.json';
+import cableDescriptions from './function_descriptions/cableDescriptions.json';
+import connectionDescriptions from './function_descriptions/connectionDescriptions.json';
+import circuitDescriptions from './function_descriptions/circuitDescriptions.json';
 
 const { msg } = useLocale('LiveDocsPlugin');
 const title = msg('classTitle');
@@ -266,6 +271,46 @@ export const StructureDescriptions = {
             </div>
         ),
         function: 'onIsRoute'
+    },
+    isConduit: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.isConduit}
+                </p>
+            </div>
+        ),
+        function: 'onIsConduit'
+    },
+    fixRouteEnds: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.fixRouteEnds}
+                </p>
+            </div>
+        ),
+        function: 'onFixRouteEnds'
+    },
+    houseInStructure: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.houseInStructure}
+                </p>
+            </div>
+        ),
+        function: 'onHouseInStructure'
+    },
+    transferToStructure: {
+        body: (
+            <div>
+                <p>
+                    {structureDescriptions.transferToStructure}
+                </p>
+            </div>
+        ),
+        function: 'onTransferToStructure'
     }
 };
 
@@ -339,6 +384,90 @@ export const EquipmentMenu = [
         ]
     }
 ];
+
+export const EquipmentDescriptions = {
+    listEquipment: {
+        body: (
+            <div>
+                <p>
+                    Pressing the button will list all features that are configured as equipment in
+                    the myw.config['mywcom.equipment'] array.
+                </p>
+            </div>
+        ),
+        function: 'onListEquipment'
+    },
+    isEquipment: {
+        body: (
+            <div>
+                <p>
+                    {equipmentDescriptions.isEquipment}
+                </p>
+            </div>
+        ),
+        function: 'onIsEquipment'
+    },
+    moveAssembly: {
+        body: (
+            <div>
+                <p>
+                    {equipmentDescriptions.moveAssembly}
+                </p>
+            </div>
+        ),
+        function: 'onMoveAssembly'
+    },
+    copyAssembly: {
+        body: (
+            <div>
+                <p>
+                    {equipmentDescriptions.copyAssembly}
+                </p>
+            </div>
+        ),
+        function: 'onCopyAssembly'
+    },
+    connectionsIn: {
+        body: (
+            <div>
+                <p>
+                    {equipmentDescriptions.connectionsIn}
+                </p>
+            </div>
+        ),
+        function: 'onConnectionsIn'
+    },
+    connectionsOf: {
+        body: (
+            <div>
+                <p>
+                    {equipmentDescriptions.connectionsOf}
+                </p>
+            </div>
+        ),
+        function: 'onConnectionsOf'
+    },
+    equipmentWithPortInfo: {
+        body: (
+            <div>
+                <p>
+                    {equipmentDescriptions.equipmentWithPortInfo}
+                </p>
+            </div>
+        ),
+        function: 'onEquipmentWithPortInfo'
+    },
+    ripplePortInfo: {
+        body: (
+            <div>
+                <p>
+                    {equipmentDescriptions.ripplePortInfo}
+                </p>
+            </div>
+        ),
+        function: 'onRipplePortInfo'
+    }
+};  
 
 export const ConduitMenu = [
     {
@@ -414,6 +543,90 @@ export const ConduitMenu = [
         ]
     }
 ];
+
+export const ConduitDescriptions = {
+    listConduits: {
+        body: (
+            <div>
+                <p>
+                    Pressing the button will list all features that are configured as equipment in
+                    the myw.config['mywcom.equipment'] array.
+                </p>
+            </div>
+        ),
+        function: 'onListConduits'
+    },
+    disconnectConduit: {
+        body: (
+            <div>
+                <p>
+                    {conduitDescriptions.disconnectConduit}
+                </p>
+            </div>
+        ),
+        function: 'onDisconnectConduit'
+    },
+    connectConduits: {
+        body: (
+            <div>
+                <p>
+                    {conduitDescriptions.connectConduits}
+                </p>
+            </div>
+        ),
+        function: 'onConnectConduits'
+    },
+    routeNestedConduits: {
+        body: (
+            <div>
+                <p>
+                    {conduitDescriptions.routeNestedConduits}
+                </p>
+            </div>
+        ),
+        function: 'onRouteNestedConduits'
+    },
+    moveInto: {
+        body: (
+            <div>
+                <p>
+                    {conduitDescriptions.moveInto}
+                </p>
+            </div>
+        ),
+        function: 'onMoveInto'
+    },
+    isContinuousConduitType: {
+        body: (
+            <div>
+                <p>
+                    {conduitDescriptions.isContinuousConduitType}
+                </p>
+            </div>
+        ),
+        function: 'onIsContinuousConduitType'
+    },  
+    continuousPhysicalConduits: {
+        body: (
+            <div>
+                <p>
+                    {conduitDescriptions.continuousPhysicalConduits}
+                </p>
+            </div>
+        ),
+        function: 'onContinuousPhysicalConduits'
+    },
+    deleteContinuousPhysicalConduits: {
+        body: (
+            <div>
+                <p>
+                    {conduitDescriptions.deleteContinuousPhysicalConduits}
+                </p>
+            </div>
+        ),
+        function: 'onDeleteContinuousPhysicalConduits'
+    }
+};
 
 export const CableMenu = [
     {
@@ -746,6 +959,400 @@ export const CableMenu = [
     }
 ];
 
+export const CableDescriptions = {
+    listCables: {
+        body: (
+            <div>
+                <p>
+                    Pressing the button will list all features that are configured as equipment in
+                    the myw.config['mywcom.equipment'] array.
+                </p>
+            </div>
+        ),
+        function: 'onListCables'
+    },
+    highestUsedPinOn: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.highestUsedPinOn}
+                </p>
+            </div>
+        ),
+        function: 'onHighestUsedPinOn'
+    },
+    connectionsFor: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.connectionsFor}
+                </p>
+            </div>
+        ),
+        function: 'onConnectionsFor'
+    },
+    internalSegments: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.internalSegments}
+                </p>
+            </div>
+        ),
+        function: 'onInternalSegments'
+    },
+    createDetachedInternalSeg: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.createDetachedInternalSeg}
+                </p>
+            </div>
+        ),
+        function: 'onCreateDetachedInternalSeg'
+    },
+    createDetachedSlack: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.createDetachedSlack}
+                </p>
+            </div>
+        ),
+        function: 'onCreateDetachedSlack'
+    },
+    splitSlack: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.splitSlack}
+                </p>
+            </div>
+        ),
+        function: 'onSplitSlack'
+    },
+    createDetSlackAtSide: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.createDetSlackAtSide}
+                </p>
+            </div>
+        ),
+        function: 'onCreateDetSlackAtSide'
+    },
+    addSlack: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.addSlack}
+                </p>
+            </div>
+        ),
+        function: 'onAddSlack'
+    },
+    transferConnections: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.transferConnections}
+                </p>
+            </div>
+        ),
+        function: 'onTransferConnections'
+    },
+    segmentContainment: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.segmentContainment}
+                </p>
+            </div>      
+        ),
+        function: 'onSegmentContainment'
+    },
+    setSegmentContainment: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.setSegmentContainment}
+                </p>
+            </div>
+        ),
+        function: 'onSetSegmentContainment'
+    },
+    setTickMark: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.setTickMark}
+                </p>    
+            </div>
+        ),
+        function: 'onSetTickMark'
+    },
+    setInTickMark: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.setInTickMark}   
+                </p>
+            </div>
+        ),
+        function: 'onSetInTickMark'
+    },
+    findDownstreamSegsToTick: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.findDownstreamSegsToTick}        
+                </p>
+            </div>
+        ),
+        function: 'onFindDownstreamSegsToTick'
+    },
+    setOutTickMark: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.setOutTickMark}
+                </p>        
+            </div>
+        ),
+        function: 'onSetOutTickMark'
+    },
+    findUpstreamSegsToTick: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.findUpstreamSegsToTick}  
+                </p>      
+            </div>
+        ),
+        function: 'onFindUpstreamSegsToTick'
+    },
+    computeTickDist: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.computeTickDist}
+                </p>
+            </div>
+        ),
+        function: 'onComputeTickDist'
+    },
+    adjustMeasuredLengths: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.adjustMeasuredLengths}
+                </p>    
+            </div>
+        ),
+        function: 'onAdjustMeasuredLengths'
+    },
+    routeCable: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.routeCable}
+                </p>
+            </div>
+        ),
+        function: 'onRouteCable'
+    },
+    cutCableAt: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.cutCableAt}  
+                </p>  
+            </div>      
+        ),
+        function: 'onCutCableAt'
+    },
+    isCable: {
+        body: (
+            <div>       
+                <p>
+                    {cableDescriptions.isCable}
+                </p>
+            </div>
+        ),
+        function: 'onIsCable'
+    },
+    isInternal: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.isInternal}
+                </p>
+            </div>
+        ),
+        function: 'onIsInternal'
+    },
+    rootHousingUrnOf: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.rootHousingUrnOf}
+                </p>
+            </div>
+        ),
+        function: 'onRootHousingUrnOf'
+    },
+    getLength: {
+        body: (
+            <div>   
+                <p>
+                    {cableDescriptions.getLength}
+                </p>
+            </div>
+        ),
+        function: 'onGetLength'
+    },
+    segmentTypeForCable: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.segmentTypeForCable}
+                </p>
+            </div>
+        ),
+        function: 'onSegmentTypeForCable'
+    },  
+    slackTypeForCable: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.slackTypeForCable}
+                </p>
+            </div>
+        ),
+        function: 'onSlackTypeForCable'
+    },
+    slackTypeForSegment: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.slackTypeForSegment}
+                </p>
+            </div>
+        ),
+        function: 'onSlackTypeForSegment'
+    },
+    isSegment: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.isSegment}
+                </p>
+            </div>
+        ),
+        function: 'onIsSegment'
+    },
+    segmentTypes: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.segmentTypes}
+                </p>
+            </div>
+        ),
+        function: 'onSegmentTypes'
+    },
+    connectionTypes: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.connectionTypes}
+                </p>
+            </div>
+        ),
+        function: 'onConnectionTypes'
+    },
+    slackTypes: {
+        body: (
+            <div>
+                <p> 
+                    {cableDescriptions.slackTypes}
+                </p>
+            </div>
+        ),
+        function: 'onSlackTypes'
+    },
+    pinCountFor: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.pinCountFor}
+                </p>
+            </div>
+        ),
+        function: 'onPinCountFor'
+    },
+    moveCableOnConnect: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.moveCableOnConnect}
+                </p>
+            </div>
+        ),
+        function: 'onMoveCableOnConnect'
+    },
+    truncateLine: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.truncateLine}
+                </p>
+            </div>
+        ),
+        function: 'onTruncateLine'
+    },
+    handleConnect: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.handleConnect}
+                </p>
+            </div>
+        ),
+        function: 'onHandleConnect'
+    },
+    fixCableSegmentChain: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.fixCableSegmentChain}
+                </p>
+            </div>
+        ),
+        function: 'onFixCableSegmentChain'
+    },
+    fixCable: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.fixCable}
+                </p>
+            </div>
+        ),
+        function: 'onFixCable'
+    },
+    rippleStrandInfo: {
+        body: (
+            <div>
+                <p>
+                    {cableDescriptions.rippleStrandInfo}
+                </p>
+            </div>
+        ),
+        function: 'onRippleStrandInfo'
+    }
+};
+
 export const ConnectionMenu = [
     {
         label: <span>List Connections</span>,
@@ -882,6 +1489,150 @@ export const ConnectionMenu = [
     }
 ];
 
+export const ConnectionDescriptions = {
+    listConnections: {
+        body: (
+            <div>
+                <p>
+                    Pressing the button will list all features that are configured as equipment in
+                    the myw.config['mywcom.equipment'] array.
+                </p>
+            </div>
+        ),
+        function: 'onListConnections'
+    },
+    freePinsOn: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.freePinsOn}
+                </p>
+            </div>
+        ),
+        function: 'onFreePinsOn'
+    },
+    usedPinsOn: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.usedPinsOn}
+                </p>
+            </div>
+        ),
+        function: 'onUsedPinsOn'
+    },
+    highPinUsedOn: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.highPinUsedOn}
+                </p>
+            </div>
+        ),
+        function: 'onHighPinUsedOn'
+    },
+    pinStateFor: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.pinStateFor}
+                </p>
+            </div>
+        ),
+        function: 'onPinStateFor'
+    },
+    pinCountFor: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.pinCountFor}
+                </p>
+            </div>
+        ),
+        function: 'onPinCountFor'
+    },
+    traceOut: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.traceOut}
+                </p>
+            </div>
+        ),
+        function: 'onTraceOut'
+    },
+    connect: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.connect}
+                </p>
+            </div>
+        ),
+        function: 'onConnect'
+    },
+    disconnect: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.disconnect}
+                </p>
+            </div>
+        ),
+        function: 'onDisconnect'
+    },
+    moveConns: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.moveConns}
+                </p>    
+            </div>    
+        ),
+        function: 'onMoveConns'
+    },
+    switchConnSides: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.switchConnSides}
+                </p>
+            </div>
+        ),
+        function: 'onSwitchConnSides'
+    },
+    techFor: {
+        body: (
+            <div>
+                <p> 
+                    {connectionDescriptions.techFor}
+                </p>
+            </div>
+        ),
+        function: 'onTechFor'
+    },
+    fixConnectionSegments: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.fixConnectionSegments}  
+                </p>
+            </div>
+        ),
+        function: 'onFixConnectionSegments'
+    },
+    isConnection: {
+        body: (
+            <div>
+                <p>
+                    {connectionDescriptions.isConnection}
+                </p>
+            </div>
+        ),
+        function: 'onIsConnection'
+    }
+};
+
 export const CircuitMenu = [
     {
         label: <span>List Circuits</span>,
@@ -953,3 +1704,87 @@ export const CircuitMenu = [
         ]
     }
 ];
+
+export const CircuitDescriptions = {
+    listCircuits: {
+        body: (
+            <div>
+                <p>
+                    Pressing the button will list all features that are configured as equipment in
+                    the myw.config['mywcom.equipment'] array.
+                </p>
+            </div>
+        ),
+        function: 'onListCircuits'
+    },
+    traceLogicalCircuit: {
+        body: (
+            <div>
+                <p>
+                    {circuitDescriptions.traceLogicalCircuit}
+                </p>
+            </div>
+        ),
+        function: 'onTraceLogicalCircuit'
+    },
+    routeCircuit: {
+        body: (
+            <div>
+                <p>
+                    {circuitDescriptions.routeCircuit}
+                </p>
+            </div>
+        ),
+        function: 'onRouteCircuit'
+    },
+    unrouteCircuit: {
+        body: (
+            <div>
+                <p>
+                    {circuitDescriptions.unrouteCircuit}
+                </p>
+            </div>
+        ),
+        function: 'onUnrouteCircuit'
+    },
+    routeCircuits: {
+        body: (
+            <div>
+                <p>
+                    {circuitDescriptions.routeCircuits}
+                </p>
+            </div>
+        ),
+        function: 'onRouteCircuits'
+    },
+    isCircuitFeature: {
+        body: (
+            <div>
+                <p>
+                    {circuitDescriptions.isCircuitFeature}
+                </p>
+            </div>
+        ),
+        function: 'onIsCircuitFeature'
+    },
+    getDetachedCircuitPath: {
+        body: (
+            <div>
+                <p>
+                    {circuitDescriptions.getDetachedCircuitPath}
+                </p>
+            </div>
+        ),
+        function: 'onGetDetachedCircuitPath'
+    },
+    updateCircuitStatus: {
+        body: (
+            <div>
+                <p>
+                    {circuitDescriptions.updateCircuitStatus}
+                </p>    
+            </div>    
+        ),
+        function: 'onUpdateCircuitStatus'
+    }
+};
