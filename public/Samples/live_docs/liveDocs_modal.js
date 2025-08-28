@@ -58,7 +58,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
         cableApi: CableDescriptions,
         connectionApi: ConnectionDescriptions,
         circuitApi: CircuitDescriptions
-        // TODO: Add others
     };
 
     const transactionMessage = "Transaction parameter is automatically created for you. It will be committed after the function execution.";
@@ -167,6 +166,20 @@ export const LiveDocsModal = ({ open, plugin }) => {
 
         const params = paramMeta.map(({ name }) => paramValues[name]);
         console.log('Executing function:', pickedFunction, 'with params:', params);
+
+
+        if (pickedFunction.startsWith("is")) {
+            const featureParam = params[0]; 
+            const fn = apiInstance[pickedFunction];
+
+            const isValid = fn.call(apiInstance, featureParam);
+            if (!isValid) {
+                alert(`Invalid feature passed to ${pickedFunction}`);
+                return;
+            }
+            // console.log(`${pickedFunction} validation passed ✅`);
+            return; 
+        }
 
         const fn = apiInstance[pickedFunction];
 

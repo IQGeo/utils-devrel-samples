@@ -11,7 +11,12 @@ import {
     CableMenu,
     ConnectionMenu,
     CircuitMenu,
-    StructureDescriptions
+    StructureDescriptions,
+    EquipmentDescriptions,
+    ConduitDescriptions,
+    CableDescriptions,
+    ConnectionDescriptions,
+    CircuitDescriptions
 } from './classes_dictionary';
 import PinRange from 'modules/comms/js/api/pinRange';
 
@@ -78,29 +83,34 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
 
     // Menus
     const ApiFunctionMenus: Record<ApiKey, ApiFunctionMenu> = {
-    structureApi: StructureMenu,
-    equipmentApi: EquipmentMenu,
-    conduitApi: ConduitMenu,
-    cableApi: CableMenu,
-    connectionApi: ConnectionMenu,
-    circuitApi: CircuitMenu,
+        structureApi: StructureMenu,
+        equipmentApi: EquipmentMenu,
+        conduitApi: ConduitMenu,
+        cableApi: CableMenu,
+        connectionApi: ConnectionMenu,
+        circuitApi: CircuitMenu,
     };
 
     // API instances
     const apiInstances: Record<ApiKey, any> = {
-    structureApi: plugin.structureApi,
-    equipmentApi: plugin.equipmentApi,
-    conduitApi: plugin.conduitApi,
-    cableApi: plugin.cableApi,
-    connectionApi: plugin.connectionApi,
-    circuitApi: plugin.circuitApi,
+        structureApi: plugin.structureApi,
+        equipmentApi: plugin.equipmentApi,
+        conduitApi: plugin.conduitApi,
+        cableApi: plugin.cableApi,
+        connectionApi: plugin.connectionApi,
+        circuitApi: plugin.circuitApi,
     };
 
     // Dictionaries
     type ApiFunctionDictionary = Record<string, { body: string }>;
 
     const ApiFunctionDictionaries: Partial<Record<ApiKey, ApiFunctionDictionary>> = {
-    structureApi: StructureDescriptions,
+        structureApi: StructureDescriptions,
+        equipmentApi: EquipmentDescriptions,
+        conduitApi: ConduitDescriptions,
+        cableApi: CableDescriptions,
+        connectionApi: ConnectionDescriptions,
+        circuitApi: CircuitDescriptions
     };
 
 
