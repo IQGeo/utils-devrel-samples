@@ -177,7 +177,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                 alert(`Invalid feature passed to ${pickedFunction}`);
                 return;
             }
-            // console.log(`${pickedFunction} validation passed ✅`);
+            // console.log(`${pickedFunction} validation passed`);
             return; 
         }
 
