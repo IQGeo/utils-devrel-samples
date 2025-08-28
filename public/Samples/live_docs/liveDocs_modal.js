@@ -162,8 +162,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
             return;
         }
 
-        
-
         const params = paramMeta.map(({ name }) => paramValues[name]);
         console.log('Executing function:', pickedFunction, 'with params:', params);
 
@@ -182,7 +180,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
         }
 
         const fn = apiInstance[pickedFunction];
-
         if (typeof fn !== 'function') {
             console.warn(`${pickedFunction} is not a function on ${pickedClass}`);
             return;
