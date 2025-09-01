@@ -1,8 +1,8 @@
-# RESTful APIs - Code Deep Dive
+# REST APIs - Code Deep Dive
 
 ## Table of Contents
 
-- [RESTful APIs - Code Deep Dive](#restful-apis---code-deep-dive)
+- [REST APIs - Code Deep Dive](#rest-apis---code-deep-dive)
   - [Table of Contents](#table-of-contents)
   - [Tool Description](#tool-description)
   - [Tool files](#tool-files)

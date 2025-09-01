@@ -2,14 +2,14 @@
 
 ## Table of Contents
 
-- [ Long Running Tasks (LRT) - Python/JavaScript - Code Deep Dive](#long-running-tasks-lrt---pythonjavascript---code-deep-dive)
+- [Long Running Tasks (LRT) - Python/Javascript - Code Deep Dive](#long-running-tasks-lrt---pythonjavascript---code-deep-dive)
   - [Table of Contents](#table-of-contents)
   - [Tool Description](#tool-description)
   - [Tool files](#tool-files)
   - [How the tool works](#how-the-tool-works)
     - [benchmarkTask.py](#benchmarktaskpy)
-    - [lrt_modal.js](#lrt_modaljs)
-    - [lrt_plugin.js](#lrt_pluginjs)
+    - [lrt\_modal.js](#lrt_modaljs)
+    - [lrt\_plugin.js](#lrt_pluginjs)
 
 ---
 
@@ -22,19 +22,18 @@ Because of the "long-running" nature of the tasks, the example includes a techni
 Similar to the use cases found elsewhere in the Samples, we are looking to automate the creation of a connection between a Pole and an Address.  But in this case we are creating connections to 2000 random addresses in order to demonstrate the LRT functionality.
 
 Starting with an empty Design polygon, the script creates the necessary Structures and Equipment to create a Fiber connection:
-- Creates a new pole
-  - Adds a Splice Closure to the Pole
-  - Adds a Fiber Splitter to the Splice Closure
 
-    (once the 24 ports on the Fiber Splitter are filled, it creates another Pole)
-- With a random Address
-  - Adds a Wall Box at the Address location
-  - Adds an ONT to the Wall Box housing
-- Creates a Connection
-  - Creates a Route between the Pole and Wall Box at the address
-  - Creates a Cable between the Pole and Wall Box at the address
-  - Connects the Cable to a Pin in the Fiber Splitter
-  - Connects the Cable to a Pin in the ONT
+- Creates a new pole
+    - Adds a Splice Closure to the Pole
+    - Adds a Fiber Splitter to the Splice Closure
+        - Once the 24 ports on the Fiber Splitter are filled, it creates another Pole
+  
+- Within a random Address
+    - Adds a Wall Box at the Address location
+    - Adds an ONT to the Wall Box housing
+    - Creates a Route between the Pole and Wall Box at the address
+    - Connects the Cable to a Pin in the Fiber Splitter
+    - Connects the Cable to a Pin in the ONT
 
 
 The user is provided feedback on the progress of the 2000 connections being made via a message in the modal dialog.

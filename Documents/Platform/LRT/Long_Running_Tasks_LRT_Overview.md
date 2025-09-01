@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Long Running Tasks - Overview](#customer-connection---javascript---overview)
+- [Long Running Tasks (LRT) - Python - Overview](#long-running-tasks-lrt---python---overview)
   - [Table of Contents](#table-of-contents)
   - [Tool Description](#tool-description)
   - [How to use the tool](#how-to-use-the-tool)
@@ -11,8 +11,6 @@
 
 ## Tool Description
 
-
-
 The tool uses the Long Running Task (LRT) framework that is designed to handle high-volume/compute-intensive tasks that if performed with Javascript on the client would degrade the end-user experience (e.g. time-out errors).  The framework combines Python script execution on the server with task queues managed by Python RQ backed by a Redis instance that is already available in the containerized environment.  
 
 Because of the "long-running" nature of the tasks, the example includes a technique for providing useful feedback to the end user about the progress of the task.
@@ -20,26 +18,25 @@ Because of the "long-running" nature of the tasks, the example includes a techni
 Similar to the use cases found elsewhere in the Samples, we are looking to automate the creation of a connection between a Pole and an Address.  But in this case we are creating connections to 2000 random addresses in order to demonstrate the LRT functionality.
 
 Starting with an empty Design polygon, the script creates the necessary Structures and Equipment to create a Fiber connection:
-- Creates a new pole
-  - Adds a Splice Closure to the Pole
-  - Adds a Fiber Splitter to the Splice Closure
 
-    (once the 24 ports on the Fiber Splitter are filled, it creates another Pole)
-- With a random Address
-  - Adds a Wall Box at the Address location
-  - Adds an ONT to the Wall Box housing
-- Creates a Connection
-  - Creates a Route between the Pole and Wall Box at the address
-  - Creates a Cable between the Pole and Wall Box at the address
-  - Connects the Cable to a Pin in the Fiber Splitter
-  - Connects the Cable to a Pin in the ONT
+- Creates a new pole
+    - Adds a Splice Closure to the Pole
+    - Adds a Fiber Splitter to the Splice Closure
+        - Once the 24 ports on the Fiber Splitter are filled, it creates another Pole
+  
+- Within a random Address
+    - Adds a Wall Box at the Address location
+    - Adds an ONT to the Wall Box housing
+    - Creates a Route between the Pole and Wall Box at the address
+    - Connects the Cable to a Pin in the Fiber Splitter
+    - Connects the Cable to a Pin in the ONT
 
 
 The user is provided feedback on the progress of the 2000 connections being made via a message in the modal dialog.
 
 ## How to use the tool
 
-This tool is available in the "DevRel Samples App - LRT" application inside the "Samples Menu" option, clicking on it will open the Palette Menu to the right side of the map
+This tool is available in the "DevRel Samples App - NMT" application inside the "Samples Menu" option, clicking on it will open the Palette Menu to the right side of the map
 
 ![Samples Menu option location](./Customer_Connection_JavaScript_Overview_1.png)
 
