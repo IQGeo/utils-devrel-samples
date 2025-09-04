@@ -40,7 +40,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
         cableApi: CableMenu,
         connectionApi: ConnectionMenu,
         circuitApi: CircuitMenu
-        // TODO: Add others
     };
     const apiInstances = {
         structureApi: plugin.structureApi,
@@ -49,7 +48,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
         cableApi: plugin.cableApi,
         connectionApi: plugin.connectionApi,
         circuitApi: plugin.circuitApi
-        // TODO: Add others
     };
     const ApiFunctionDictionaries = {
         structureApi: StructureDescriptions,
@@ -211,21 +209,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
             console.log('Function result:', result);
         }
     };
-
-    // const parseNestedArray = input => {
-    //     if (!input || typeof input !== 'string') return [];
-
-    //     const safeInput = `[${input}]`;
-    //     try {
-    //         const parsed = JSON.parse(safeInput);
-    //         if (Array.isArray(parsed)) {
-    //             return parsed;
-    //         }
-    //     } catch (err) {
-    //         console.error('Invalid nested array format:', err);
-    //     }
-    //     return [];
-    // };
     
     const currentDictionary = pickedClass ? ApiFunctionDictionaries[pickedClass] : null;
     const currentDescription =
