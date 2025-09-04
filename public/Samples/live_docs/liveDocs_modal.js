@@ -77,13 +77,16 @@ export const LiveDocsModal = ({ open, plugin }) => {
         return [];
     };
 
+
     const allParamsFilled = React.useMemo(() => {
         if (!pickedFunction || !pickedClass) return false;
         const paramMeta = getSelectedFunctionParams();
         return paramMeta.every(
-            ({ name }) => paramValues[name] !== undefined && paramValues[name] !== ''
+            ({ name, optional }) =>
+                optional || (paramValues[name] !== undefined && paramValues[name] !== '')
         );
     }, [pickedFunction, pickedClass, paramValues]);
+
 
     useEffect(() => {
         function listener() {

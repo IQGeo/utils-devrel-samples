@@ -88,7 +88,7 @@ export const StructureMenu = [
                 label: 'getStructuresAtCoords',
                 params: [
                     { name: 'coords', type: 'Array<Array<Number>>' },
-                    { name: 'featureTypes', type: 'Array<String>' }
+                    { name: 'featureTypes', type: 'Array<String>', optional: true  }
                 ]
             },
             {
@@ -96,7 +96,7 @@ export const StructureMenu = [
                 label: 'getStructureAt',
                 params: [
                     { name: 'coord', type: 'Array<Number>' },
-                    { name: 'featureTypes', type: 'Array<String>' }
+                    { name: 'featureTypes', type: 'Array<String>', optional: true  }
                 ]
             },
             {
@@ -104,7 +104,7 @@ export const StructureMenu = [
                 label: 'getStructuresAt',
                 params: [
                     { name: 'coord', type: 'Array<Number>' },
-                    { name: 'featureTypes', type: 'Array<String>' },
+                    { name: 'featureTypes', type: 'Array<String>', optional: true  },
                     { name: 'tolerance', type: 'Number' }
                 ]
             },
