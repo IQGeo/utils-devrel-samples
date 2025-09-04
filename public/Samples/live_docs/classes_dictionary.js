@@ -674,7 +674,7 @@ export const CableMenu = [
                     { name: 'struct', type: 'MyWorldFeature' },
                     { name: 'cable', type: 'MyWorldFeature' },
                     { name: 'housingUrn', type: 'String' },
-                    { name: 'length', type: 'Number' }
+                    { name: 'length', type: 'Number', optional: true }
                 ]
             },
             {
@@ -727,7 +727,7 @@ export const CableMenu = [
                 params: [
                     { name: 'featureUrn', type: 'MyWorldFeature' },
                     { name: 'housing_field', type: 'String' },
-                    { name: 'splices', type: 'Boolean' }
+                    { name: 'splices', type: 'Boolean', optional: true}
                 ]
             },
             {
@@ -830,7 +830,7 @@ export const CableMenu = [
                     { name: 'struct', type: 'MyWorldFeature' },
                     { name: 'segment', type: 'MyWorldFeature' },
                     { name: 'forward', type: 'Boolean' },
-                    { name: 'spliceHousing', type: 'MyWorldFeature' }
+                    { name: 'spliceHousing', type: 'MyWorldFeature', optional: true}
                 ]   
             },
             {
@@ -1434,7 +1434,7 @@ export const ConnectionMenu = [
                     { name: 'toFeature', type: 'MyWorldFeature' },
                     { name: 'toPins', type: 'PinRange' },
                     { name: 'housing', type: 'MyWorldFeature' },
-                    { name: 'ripple', type: 'Boolean' }
+                    { name: 'ripple', type: 'Boolean', optional: true}
                 ]
             },
             {
@@ -1444,7 +1444,7 @@ export const ConnectionMenu = [
                     { name: 'tech', type: 'String' },
                     { name: 'feature', type: 'MyWorldFeature' },
                     { name: 'pins', type: 'PinRange' },
-                    { name: 'ripple', type: 'Boolean' }
+                    { name: 'ripple', type: 'Boolean', optional: true }
                 ]
             },
             {
