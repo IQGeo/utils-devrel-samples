@@ -106,12 +106,10 @@ export const LiveDocsModal = ({ open, plugin }) => {
                     });
                 } 
                 else if (type === 'array<number>') {
-                    // one coordinate pair 
                     const coords = feature.getGeometry().coordinates;
                     setParamValues(prev => ({ ...prev, [activeParam]: [coords[0], coords[1]] }));
                 } 
                 else if (type === 'array<array<number>>') {
-                    // many coordinate pairs
                     const coords = feature.getGeometry().coordinates;
                     setParamValues(prev => {
                         const current = Array.isArray(prev[activeParam]) ? prev[activeParam] : [];
@@ -179,19 +177,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
         const params = paramMeta.map(({ name }) => paramValues[name]);
         console.log('Executing function:', pickedFunction, 'with params:', params);
 
-
-        if (pickedFunction.startsWith("is")) {
-            const featureParam = params[0]; 
-            const fn = apiInstance[pickedFunction];
-
-            const isValid = fn.call(apiInstance, featureParam);
-            if (!isValid) {
-                alert(`Invalid feature passed to ${pickedFunction}`);
-                return;
-            }
-            // console.log(`${pickedFunction} validation passed`);
-            return; 
-        }
 
         const fn = apiInstance[pickedFunction];
         if (typeof fn !== 'function') {
