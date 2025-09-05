@@ -22,7 +22,7 @@ Key features:
 - **Real-Time Execution:** Functions are executed immediately with user-provided inputs, and results are logged in the console.
 - **Support for Complex Types:** Handles nested arrays, objects, GeoJSON, and custom PinRange types.
 
-This tool is intended for those who want a **live, interactive way to explore API functionality** without writing custom scripts.
+This tool is intended for those who want an **interactive way to use API functionality** without writing custom scripts.
 
 ---
 
