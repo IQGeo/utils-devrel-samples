@@ -21,13 +21,7 @@ import {
 import PinRange from 'modules/comms/js/api/pinRange';
 
 
-/*
-converting to .tsx
-1. add a props interface - live docs modals props
-2. add types to all state variables
-3. export with type annotations
-4. ensure all imports are correct
-*/
+
 
 interface LiveDocsModalProps {
   open: boolean;

@@ -1,8 +1,8 @@
-# Live Docs Sample - JavaScript - Overview
+# Live Docs Sample - Overview
 
 ## Table of Contents
 
-- [Live Docs Sample - JavaScript - Overview](#live-docs-sample---javascript---overview)
+- [Live Docs Sample - Overview](#live-docs-sample---overview)
   - [Table of Contents](#table-of-contents)
   - [Tool Description](#tool-description)
   - [How to use the tool](#how-to-use-the-tool)
@@ -39,10 +39,10 @@ This tool is intended for those who want an **interactive way to use API functio
    - Selecting a function dynamically generates input fields for its parameters.
 
    ![Class Selection](./Live_Docs_Overview_1.png)
-   *Fig. 2: Class dropdown menus*
+   <p align="center"><i>Fig. 2: Class dropdown menus<i>
 
    ![Function Selection](./Live_Docs_Overview_2.png)
-    *Fig. 3: Function dropdown menus*
+   <p align="center"><i>Fig. 3: Function dropdown menus<i>
 
 3. **Fill in Parameter Values**
 
@@ -60,7 +60,7 @@ This tool is intended for those who want an **interactive way to use API functio
 
    ![Parameter Input Fields](./Live_Docs_Overview_3.png)
 
-   *Fig. 3: Example of parameter inputs for `validateRoutesForConduit` function.*
+   <p align="center"><i>Fig. 3: Example of parameter inputs for `validateRoutesForConduit` function.<i>
 
 4. **Execute the Function**
 
