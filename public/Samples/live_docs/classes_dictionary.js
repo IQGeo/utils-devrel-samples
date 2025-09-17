@@ -76,19 +76,17 @@ export const StructureMenu = [
             {
                 value: 'structContent',
                 label: 'structContent',
-                params: 
-                [
-                    { name: 'structure' , type: 'MyWorldFeature'},
+                params: [
+                    { name: 'structure', type: 'MyWorldFeature' },
                     { name: 'includeProposed', type: 'Boolean' }
                 ]
-                
             },
             {
                 value: 'getStructuresAtCoords',
                 label: 'getStructuresAtCoords',
                 params: [
                     { name: 'coords', type: 'Array<Array<Number>>' },
-                    { name: 'featureTypes', type: 'Array<String>', optional: true  }
+                    { name: 'featureTypes', type: 'Array<String>', optional: true }
                 ]
             },
             {
@@ -96,7 +94,7 @@ export const StructureMenu = [
                 label: 'getStructureAt',
                 params: [
                     { name: 'coord', type: 'Array<Number>' },
-                    { name: 'featureTypes', type: 'Array<String>', optional: true  }
+                    { name: 'featureTypes', type: 'Array<String>', optional: true }
                 ]
             },
             {
@@ -104,7 +102,7 @@ export const StructureMenu = [
                 label: 'getStructuresAt',
                 params: [
                     { name: 'coord', type: 'Array<Number>' },
-                    { name: 'featureTypes', type: 'Array<String>', optional: true  },
+                    { name: 'featureTypes', type: 'Array<String>', optional: true },
                     { name: 'tolerance', type: 'Number' }
                 ]
             },
@@ -127,23 +125,17 @@ export const StructureMenu = [
             {
                 value: 'isStructure',
                 label: 'isStructure',
-                params: [
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             },
             {
                 value: 'isRoute',
                 label: 'isRoute',
-                params: [
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             },
             {
                 value: 'isConduit',
                 label: 'isConduit',
-                params: [
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             },
             {
                 value: 'fixRouteEnds',
@@ -157,16 +149,14 @@ export const StructureMenu = [
             {
                 value: 'houseInStructure',
                 label: 'houseInStructure',
-                params: [
-                    { name: 'toStructure', type: 'MyWorldFeature' }               
-                ]
+                params: [{ name: 'toStructure', type: 'MyWorldFeature' }]
             },
             {
                 value: 'transferToStructure',
                 label: 'transferToStructure',
                 params: [
-                    { name: 'toStructure', type: 'MyWorldFeature'},
-                    { name: 'fromStructure', type: 'MyWorldFeature'}
+                    { name: 'toStructure', type: 'MyWorldFeature' },
+                    { name: 'fromStructure', type: 'MyWorldFeature' }
                 ]
             }
         ]
@@ -189,9 +179,7 @@ export const StructureDescriptions = {
     structContent: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.structContent}
-                </p>
+                <p>{structureDescriptions.structContent}</p>
             </div>
         ),
         function: 'onStructContent'
@@ -202,6 +190,9 @@ export const StructureDescriptions = {
             <div>
                 <p>
                     {structureDescriptions.getStructuresAtCoords}
+                    <br />
+                    <br />
+                    {structureDescriptions.getStructuresAtCoords_desc}
                 </p>
             </div>
         ),
@@ -211,9 +202,7 @@ export const StructureDescriptions = {
     getStructureAt: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.getStructureAt}
-                </p>
+                <p>{structureDescriptions.getStructureAt}</p>
             </div>
         ),
         function: 'onGetStructureAt'
@@ -231,9 +220,7 @@ export const StructureDescriptions = {
     routeContent: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.routeContent}
-                </p>
+                <p>{structureDescriptions.routeContent}</p>
             </div>
         ),
 
@@ -243,9 +230,7 @@ export const StructureDescriptions = {
     validateRoutesForConduit: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.validateRoutesForConduit}
-                </p>
+                <p>{structureDescriptions.validateRoutesForConduit}</p>
             </div>
         ),
         function: 'onValidateRoutesForConduit'
@@ -254,9 +239,10 @@ export const StructureDescriptions = {
     isStructure: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.isStructure}
-                </p>
+                <p>{structureDescriptions.isStructure}</p>
+                <br />
+                <br />
+                {structureDescriptions.isStructure_desc}
             </div>
         ),
         function: 'onIsStructure'
@@ -265,9 +251,7 @@ export const StructureDescriptions = {
     isRoute: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.isRoute}
-                </p>
+                <p>{structureDescriptions.isRoute}</p>
             </div>
         ),
         function: 'onIsRoute'
@@ -275,9 +259,7 @@ export const StructureDescriptions = {
     isConduit: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.isConduit}
-                </p>
+                <p>{structureDescriptions.isConduit}</p>
             </div>
         ),
         function: 'onIsConduit'
@@ -285,9 +267,7 @@ export const StructureDescriptions = {
     fixRouteEnds: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.fixRouteEnds}
-                </p>
+                <p>{structureDescriptions.fixRouteEnds}</p>
             </div>
         ),
         function: 'onFixRouteEnds'
@@ -295,9 +275,7 @@ export const StructureDescriptions = {
     houseInStructure: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.houseInStructure}
-                </p>
+                <p>{structureDescriptions.houseInStructure}</p>
             </div>
         ),
         function: 'onHouseInStructure'
@@ -305,9 +283,7 @@ export const StructureDescriptions = {
     transferToStructure: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.transferToStructure}
-                </p>
+                <p>{structureDescriptions.transferToStructure}</p>
             </div>
         ),
         function: 'onTransferToStructure'
@@ -332,9 +308,7 @@ export const EquipmentMenu = [
             {
                 value: 'isEquipment',
                 label: 'isEquipment',
-                params: [
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             },
             {
                 value: 'moveAssembly',
@@ -355,23 +329,19 @@ export const EquipmentMenu = [
             {
                 value: 'connectionsIn',
                 label: 'connectionsIn',
-                params: [
-                    { name: 'housing', type: 'MyWorldFeature' },
-                ]
+                params: [{ name: 'housing', type: 'MyWorldFeature' }]
             },
             {
                 value: 'connectionsOf',
                 label: 'connectionsOf',
-                params: [
-                    { name: 'housing', type: 'MyWorldFeature' },
-                ]
+                params: [{ name: 'housing', type: 'MyWorldFeature' }]
             },
             {
                 value: 'equipmentWithPortInfo',
                 label: 'equipmentWithPortInfo'
             },
             {
-                value: 'ripplePortInfo',   
+                value: 'ripplePortInfo',
                 label: 'ripplePortInfo',
                 params: [
                     { name: 'feature', type: 'MyWorldFeature' },
@@ -400,9 +370,7 @@ export const EquipmentDescriptions = {
     isEquipment: {
         body: (
             <div>
-                <p>
-                    {equipmentDescriptions.isEquipment}
-                </p>
+                <p>{equipmentDescriptions.isEquipment}</p>
             </div>
         ),
         function: 'onIsEquipment'
@@ -410,9 +378,7 @@ export const EquipmentDescriptions = {
     moveAssembly: {
         body: (
             <div>
-                <p>
-                    {equipmentDescriptions.moveAssembly}
-                </p>
+                <p>{equipmentDescriptions.moveAssembly}</p>
             </div>
         ),
         function: 'onMoveAssembly'
@@ -420,9 +386,7 @@ export const EquipmentDescriptions = {
     copyAssembly: {
         body: (
             <div>
-                <p>
-                    {equipmentDescriptions.copyAssembly}
-                </p>
+                <p>{equipmentDescriptions.copyAssembly}</p>
             </div>
         ),
         function: 'onCopyAssembly'
@@ -430,9 +394,7 @@ export const EquipmentDescriptions = {
     connectionsIn: {
         body: (
             <div>
-                <p>
-                    {equipmentDescriptions.connectionsIn}
-                </p>
+                <p>{equipmentDescriptions.connectionsIn}</p>
             </div>
         ),
         function: 'onConnectionsIn'
@@ -440,9 +402,7 @@ export const EquipmentDescriptions = {
     connectionsOf: {
         body: (
             <div>
-                <p>
-                    {equipmentDescriptions.connectionsOf}
-                </p>
+                <p>{equipmentDescriptions.connectionsOf}</p>
             </div>
         ),
         function: 'onConnectionsOf'
@@ -450,9 +410,7 @@ export const EquipmentDescriptions = {
     equipmentWithPortInfo: {
         body: (
             <div>
-                <p>
-                    {equipmentDescriptions.equipmentWithPortInfo}
-                </p>
+                <p>{equipmentDescriptions.equipmentWithPortInfo}</p>
             </div>
         ),
         function: 'onEquipmentWithPortInfo'
@@ -460,14 +418,12 @@ export const EquipmentDescriptions = {
     ripplePortInfo: {
         body: (
             <div>
-                <p>
-                    {equipmentDescriptions.ripplePortInfo}
-                </p>
+                <p>{equipmentDescriptions.ripplePortInfo}</p>
             </div>
         ),
         function: 'onRipplePortInfo'
     }
-};  
+};
 
 export const ConduitMenu = [
     {
@@ -522,23 +478,17 @@ export const ConduitMenu = [
             {
                 value: 'isContinuousConduitType',
                 label: 'isContinuousConduitType',
-                params: [
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             },
             {
                 value: 'continuousPhysicalConduits',
                 label: 'continuousPhysicalConduits',
-                params: [
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             },
             {
                 value: 'deleteContinuousPhysicalConduits',
                 label: 'deleteContinuousPhysicalConduits',
-                params: [
-                    { name: 'conduit', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'conduit', type: 'MyWorldFeature' }]
             }
         ]
     }
@@ -559,9 +509,7 @@ export const ConduitDescriptions = {
     disconnectConduit: {
         body: (
             <div>
-                <p>
-                    {conduitDescriptions.disconnectConduit}
-                </p>
+                <p>{conduitDescriptions.disconnectConduit}</p>
             </div>
         ),
         function: 'onDisconnectConduit'
@@ -569,9 +517,7 @@ export const ConduitDescriptions = {
     connectConduits: {
         body: (
             <div>
-                <p>
-                    {conduitDescriptions.connectConduits}
-                </p>
+                <p>{conduitDescriptions.connectConduits}</p>
             </div>
         ),
         function: 'onConnectConduits'
@@ -579,9 +525,7 @@ export const ConduitDescriptions = {
     routeNestedConduits: {
         body: (
             <div>
-                <p>
-                    {conduitDescriptions.routeNestedConduits}
-                </p>
+                <p>{conduitDescriptions.routeNestedConduits}</p>
             </div>
         ),
         function: 'onRouteNestedConduits'
@@ -589,9 +533,7 @@ export const ConduitDescriptions = {
     moveInto: {
         body: (
             <div>
-                <p>
-                    {conduitDescriptions.moveInto}
-                </p>
+                <p>{conduitDescriptions.moveInto}</p>
             </div>
         ),
         function: 'onMoveInto'
@@ -599,19 +541,15 @@ export const ConduitDescriptions = {
     isContinuousConduitType: {
         body: (
             <div>
-                <p>
-                    {conduitDescriptions.isContinuousConduitType}
-                </p>
+                <p>{conduitDescriptions.isContinuousConduitType}</p>
             </div>
         ),
         function: 'onIsContinuousConduitType'
-    },  
+    },
     continuousPhysicalConduits: {
         body: (
             <div>
-                <p>
-                    {conduitDescriptions.continuousPhysicalConduits}
-                </p>
+                <p>{conduitDescriptions.continuousPhysicalConduits}</p>
             </div>
         ),
         function: 'onContinuousPhysicalConduits'
@@ -619,9 +557,7 @@ export const ConduitDescriptions = {
     deleteContinuousPhysicalConduits: {
         body: (
             <div>
-                <p>
-                    {conduitDescriptions.deleteContinuousPhysicalConduits}
-                </p>
+                <p>{conduitDescriptions.deleteContinuousPhysicalConduits}</p>
             </div>
         ),
         function: 'onDeleteContinuousPhysicalConduits'
@@ -646,16 +582,14 @@ export const CableMenu = [
             {
                 value: 'highestUsedPinOn',
                 label: 'highestUsedPinOn',
-                params: [
-                    { name: 'cable', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'cable', type: 'MyWorldFeature' }]
             },
             {
                 value: 'connectionsFor',
                 label: 'connectionsFor',
                 params: [
                     { name: 'cable', type: 'MyWorldFeature' },
-                    {name: 'splice', type: 'Boolean' },
+                    { name: 'splice', type: 'Boolean' },
                     { name: 'sorted', type: 'Boolean' }
                 ]
             },
@@ -727,7 +661,7 @@ export const CableMenu = [
                 params: [
                     { name: 'featureUrn', type: 'MyWorldFeature' },
                     { name: 'housing_field', type: 'String' },
-                    { name: 'splices', type: 'Boolean', optional: true}
+                    { name: 'splices', type: 'Boolean', optional: true }
                 ]
             },
             {
@@ -756,7 +690,6 @@ export const CableMenu = [
                     { name: 'field', type: 'String' },
                     { name: 'spacing', type: 'Number' },
                     { name: 'unit', type: 'String' }
-
                 ]
             },
             {
@@ -773,9 +706,7 @@ export const CableMenu = [
             {
                 value: 'findDownstreamSegsToTick',
                 label: 'findDownstreamSegsToTick',
-                params: [
-                    { name: 'seg', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'seg', type: 'MyWorldFeature' }]
             },
             {
                 value: 'setOutTickMark',
@@ -791,9 +722,7 @@ export const CableMenu = [
             {
                 value: 'findUpstreamSegsToTick',
                 label: 'findUpstreamSegsToTick',
-                params: [
-                    { name: 'seg', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'seg', type: 'MyWorldFeature' }]
             },
             {
                 value: 'computeTickDist',
@@ -811,8 +740,8 @@ export const CableMenu = [
                 params: [
                     { name: 'trans', type: 'Transaction' },
                     { name: 'segs', type: 'Array<MyWorldFeature>' },
-                    { name: 'tickDist', type: 'Number' },
-                ]   
+                    { name: 'tickDist', type: 'Number' }
+                ]
             },
             {
                 value: 'routeCable',
@@ -830,64 +759,48 @@ export const CableMenu = [
                     { name: 'struct', type: 'MyWorldFeature' },
                     { name: 'segment', type: 'MyWorldFeature' },
                     { name: 'forward', type: 'Boolean' },
-                    { name: 'spliceHousing', type: 'MyWorldFeature', optional: true}
-                ]   
+                    { name: 'spliceHousing', type: 'MyWorldFeature', optional: true }
+                ]
             },
             {
                 value: 'isCable',
                 label: 'isCable',
-                params: [
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             },
             {
                 value: 'isInternal',
                 label: 'isInternal',
-                params: [
-                    { name: 'cable', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'cable', type: 'MyWorldFeature' }]
             },
             {
                 value: 'rootHousingUrnOf',
                 label: 'rootHousingUrnOf',
-                params: [
-                    { name: 'housing', type: 'MyWorldFeature'}
-                ]
+                params: [{ name: 'housing', type: 'MyWorldFeature' }]
             },
             {
                 value: 'getLength',
                 label: 'getLength',
-                params: [
-                    { name: 'feature', type: 'GeoJSON'}
-                ]
+                params: [{ name: 'feature', type: 'GeoJSON' }]
             },
             {
                 value: 'segmentTypeForCable',
                 label: 'segmentTypeForCable',
-                params: [
-                    { name: 'cable', type: 'MyWorldFeature' }
-                ]  
+                params: [{ name: 'cable', type: 'MyWorldFeature' }]
             },
             {
                 value: 'slackTypeForCable',
                 label: 'slackTypeForCable',
-                params: [
-                    { name: 'cable', type: 'MyWorldFeature' }
-                ]   
+                params: [{ name: 'cable', type: 'MyWorldFeature' }]
             },
             {
                 value: 'slackTypeForSegment',
                 label: 'slackTypeForSegment',
-                params: [
-                    { name: 'segment', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'segment', type: 'MyWorldFeature' }]
             },
             {
                 value: 'isSegment',
                 label: 'isSegment',
-                params: [
-                    { name: 'urn', type: 'String' }
-                ]
+                params: [{ name: 'urn', type: 'String' }]
             },
             {
                 value: 'segmentTypes',
@@ -912,8 +825,7 @@ export const CableMenu = [
             {
                 value: 'moveCableOnConnect',
                 label: 'moveCableOnConnect',
-                params: [
-                    { name: 'connRec', type: 'MyWorldFeature' }]
+                params: [{ name: 'connRec', type: 'MyWorldFeature' }]
             },
             {
                 value: 'truncateLine',
@@ -927,23 +839,17 @@ export const CableMenu = [
             {
                 value: 'handleConnect',
                 label: 'handleConnect',
-                params: [
-                    { name: 'event', type: 'Object' }
-                ]
+                params: [{ name: 'event', type: 'Object' }]
             },
             {
                 value: 'fixCableSegmentChain',
                 label: 'fixCableSegmentChain',
-                params: [
-                    { name: 'cable', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'cable', type: 'MyWorldFeature' }]
             },
             {
                 value: 'fixCable',
                 label: 'fixCable',
-                params: [
-                    { name: 'cable', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'cable', type: 'MyWorldFeature' }]
             },
             {
                 value: 'rippleStrandInfo',
@@ -974,9 +880,7 @@ export const CableDescriptions = {
     highestUsedPinOn: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.highestUsedPinOn}
-                </p>
+                <p>{cableDescriptions.highestUsedPinOn}</p>
             </div>
         ),
         function: 'onHighestUsedPinOn'
@@ -984,9 +888,7 @@ export const CableDescriptions = {
     connectionsFor: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.connectionsFor}
-                </p>
+                <p>{cableDescriptions.connectionsFor}</p>
             </div>
         ),
         function: 'onConnectionsFor'
@@ -994,9 +896,7 @@ export const CableDescriptions = {
     internalSegments: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.internalSegments}
-                </p>
+                <p>{cableDescriptions.internalSegments}</p>
             </div>
         ),
         function: 'onInternalSegments'
@@ -1004,9 +904,7 @@ export const CableDescriptions = {
     createDetachedInternalSeg: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.createDetachedInternalSeg}
-                </p>
+                <p>{cableDescriptions.createDetachedInternalSeg}</p>
             </div>
         ),
         function: 'onCreateDetachedInternalSeg'
@@ -1014,9 +912,7 @@ export const CableDescriptions = {
     createDetachedSlack: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.createDetachedSlack}
-                </p>
+                <p>{cableDescriptions.createDetachedSlack}</p>
             </div>
         ),
         function: 'onCreateDetachedSlack'
@@ -1024,9 +920,7 @@ export const CableDescriptions = {
     splitSlack: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.splitSlack}
-                </p>
+                <p>{cableDescriptions.splitSlack}</p>
             </div>
         ),
         function: 'onSplitSlack'
@@ -1034,9 +928,7 @@ export const CableDescriptions = {
     createDetSlackAtSide: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.createDetSlackAtSide}
-                </p>
+                <p>{cableDescriptions.createDetSlackAtSide}</p>
             </div>
         ),
         function: 'onCreateDetSlackAtSide'
@@ -1044,9 +936,7 @@ export const CableDescriptions = {
     addSlack: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.addSlack}
-                </p>
+                <p>{cableDescriptions.addSlack}</p>
             </div>
         ),
         function: 'onAddSlack'
@@ -1054,9 +944,7 @@ export const CableDescriptions = {
     transferConnections: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.transferConnections}
-                </p>
+                <p>{cableDescriptions.transferConnections}</p>
             </div>
         ),
         function: 'onTransferConnections'
@@ -1064,19 +952,15 @@ export const CableDescriptions = {
     segmentContainment: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.segmentContainment}
-                </p>
-            </div>      
+                <p>{cableDescriptions.segmentContainment}</p>
+            </div>
         ),
         function: 'onSegmentContainment'
     },
     setSegmentContainment: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.setSegmentContainment}
-                </p>
+                <p>{cableDescriptions.setSegmentContainment}</p>
             </div>
         ),
         function: 'onSetSegmentContainment'
@@ -1084,9 +968,7 @@ export const CableDescriptions = {
     setTickMark: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.setTickMark}
-                </p>    
+                <p>{cableDescriptions.setTickMark}</p>
             </div>
         ),
         function: 'onSetTickMark'
@@ -1094,9 +976,10 @@ export const CableDescriptions = {
     setInTickMark: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.setInTickMark}   
-                </p>
+                <p>{cableDescriptions.setInTickMark}</p>
+                <br />
+                <br />
+                {cableDescriptions.setInTickMark_desc}
             </div>
         ),
         function: 'onSetInTickMark'
@@ -1104,9 +987,7 @@ export const CableDescriptions = {
     findDownstreamSegsToTick: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.findDownstreamSegsToTick}        
-                </p>
+                <p>{cableDescriptions.findDownstreamSegsToTick}</p>
             </div>
         ),
         function: 'onFindDownstreamSegsToTick'
@@ -1114,9 +995,7 @@ export const CableDescriptions = {
     setOutTickMark: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.setOutTickMark}
-                </p>        
+                <p>{cableDescriptions.setOutTickMark}</p>
             </div>
         ),
         function: 'onSetOutTickMark'
@@ -1124,9 +1003,7 @@ export const CableDescriptions = {
     findUpstreamSegsToTick: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.findUpstreamSegsToTick}  
-                </p>      
+                <p>{cableDescriptions.findUpstreamSegsToTick}</p>
             </div>
         ),
         function: 'onFindUpstreamSegsToTick'
@@ -1134,9 +1011,7 @@ export const CableDescriptions = {
     computeTickDist: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.computeTickDist}
-                </p>
+                <p>{cableDescriptions.computeTickDist}</p>
             </div>
         ),
         function: 'onComputeTickDist'
@@ -1144,9 +1019,7 @@ export const CableDescriptions = {
     adjustMeasuredLengths: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.adjustMeasuredLengths}
-                </p>    
+                <p>{cableDescriptions.adjustMeasuredLengths}</p>
             </div>
         ),
         function: 'onAdjustMeasuredLengths'
@@ -1154,9 +1027,7 @@ export const CableDescriptions = {
     routeCable: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.routeCable}
-                </p>
+                <p>{cableDescriptions.routeCable}</p>
             </div>
         ),
         function: 'onRouteCable'
@@ -1164,19 +1035,18 @@ export const CableDescriptions = {
     cutCableAt: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.cutCableAt}  
-                </p>  
-            </div>      
+                <p>{cableDescriptions.cutCableAt}</p>
+            </div>
         ),
         function: 'onCutCableAt'
     },
     isCable: {
         body: (
-            <div>       
-                <p>
-                    {cableDescriptions.isCable}
-                </p>
+            <div>
+                <p>{cableDescriptions.isCable}</p>
+                <br />
+                <br />
+                {cableDescriptions.isCable_desc}
             </div>
         ),
         function: 'onIsCable'
@@ -1184,9 +1054,7 @@ export const CableDescriptions = {
     isInternal: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.isInternal}
-                </p>
+                <p>{cableDescriptions.isInternal}</p>
             </div>
         ),
         function: 'onIsInternal'
@@ -1194,19 +1062,15 @@ export const CableDescriptions = {
     rootHousingUrnOf: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.rootHousingUrnOf}
-                </p>
+                <p>{cableDescriptions.rootHousingUrnOf}</p>
             </div>
         ),
         function: 'onRootHousingUrnOf'
     },
     getLength: {
         body: (
-            <div>   
-                <p>
-                    {cableDescriptions.getLength}
-                </p>
+            <div>
+                <p>{cableDescriptions.getLength}</p>
             </div>
         ),
         function: 'onGetLength'
@@ -1214,19 +1078,15 @@ export const CableDescriptions = {
     segmentTypeForCable: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.segmentTypeForCable}
-                </p>
+                <p>{cableDescriptions.segmentTypeForCable}</p>
             </div>
         ),
         function: 'onSegmentTypeForCable'
-    },  
+    },
     slackTypeForCable: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.slackTypeForCable}
-                </p>
+                <p>{cableDescriptions.slackTypeForCable}</p>
             </div>
         ),
         function: 'onSlackTypeForCable'
@@ -1234,9 +1094,7 @@ export const CableDescriptions = {
     slackTypeForSegment: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.slackTypeForSegment}
-                </p>
+                <p>{cableDescriptions.slackTypeForSegment}</p>
             </div>
         ),
         function: 'onSlackTypeForSegment'
@@ -1244,9 +1102,7 @@ export const CableDescriptions = {
     isSegment: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.isSegment}
-                </p>
+                <p>{cableDescriptions.isSegment}</p>
             </div>
         ),
         function: 'onIsSegment'
@@ -1254,9 +1110,7 @@ export const CableDescriptions = {
     segmentTypes: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.segmentTypes}
-                </p>
+                <p>{cableDescriptions.segmentTypes}</p>
             </div>
         ),
         function: 'onSegmentTypes'
@@ -1264,9 +1118,7 @@ export const CableDescriptions = {
     connectionTypes: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.connectionTypes}
-                </p>
+                <p>{cableDescriptions.connectionTypes}</p>
             </div>
         ),
         function: 'onConnectionTypes'
@@ -1274,9 +1126,7 @@ export const CableDescriptions = {
     slackTypes: {
         body: (
             <div>
-                <p> 
-                    {cableDescriptions.slackTypes}
-                </p>
+                <p>{cableDescriptions.slackTypes}</p>
             </div>
         ),
         function: 'onSlackTypes'
@@ -1284,9 +1134,7 @@ export const CableDescriptions = {
     pinCountFor: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.pinCountFor}
-                </p>
+                <p>{cableDescriptions.pinCountFor}</p>
             </div>
         ),
         function: 'onPinCountFor'
@@ -1294,9 +1142,7 @@ export const CableDescriptions = {
     moveCableOnConnect: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.moveCableOnConnect}
-                </p>
+                <p>{cableDescriptions.moveCableOnConnect}</p>
             </div>
         ),
         function: 'onMoveCableOnConnect'
@@ -1304,9 +1150,7 @@ export const CableDescriptions = {
     truncateLine: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.truncateLine}
-                </p>
+                <p>{cableDescriptions.truncateLine}</p>
             </div>
         ),
         function: 'onTruncateLine'
@@ -1314,9 +1158,7 @@ export const CableDescriptions = {
     handleConnect: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.handleConnect}
-                </p>
+                <p>{cableDescriptions.handleConnect}</p>
             </div>
         ),
         function: 'onHandleConnect'
@@ -1324,9 +1166,7 @@ export const CableDescriptions = {
     fixCableSegmentChain: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.fixCableSegmentChain}
-                </p>
+                <p>{cableDescriptions.fixCableSegmentChain}</p>
             </div>
         ),
         function: 'onFixCableSegmentChain'
@@ -1334,9 +1174,7 @@ export const CableDescriptions = {
     fixCable: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.fixCable}
-                </p>
+                <p>{cableDescriptions.fixCable}</p>
             </div>
         ),
         function: 'onFixCable'
@@ -1344,9 +1182,7 @@ export const CableDescriptions = {
     rippleStrandInfo: {
         body: (
             <div>
-                <p>
-                    {cableDescriptions.rippleStrandInfo}
-                </p>
+                <p>{cableDescriptions.rippleStrandInfo}</p>
             </div>
         ),
         function: 'onRippleStrandInfo'
@@ -1434,7 +1270,7 @@ export const ConnectionMenu = [
                     { name: 'toFeature', type: 'MyWorldFeature' },
                     { name: 'toPins', type: 'PinRange' },
                     { name: 'housing', type: 'MyWorldFeature' },
-                    { name: 'ripple', type: 'Boolean', optional: true}
+                    { name: 'ripple', type: 'Boolean', optional: true }
                 ]
             },
             {
@@ -1459,9 +1295,7 @@ export const ConnectionMenu = [
             {
                 value: 'switchConnSides',
                 label: 'switchConnSides',
-                params: [
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             },
             {
                 value: 'techFor',
@@ -1474,16 +1308,12 @@ export const ConnectionMenu = [
             {
                 value: 'fixConnectionSegments',
                 label: 'fixConnectionSegments',
-                params: [
-                    { name: 'conn', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'conn', type: 'MyWorldFeature' }]
             },
             {
                 value: 'isConnection',
                 label: 'isConnection',
-                params: [
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             }
         ]
     }
@@ -1504,9 +1334,7 @@ export const ConnectionDescriptions = {
     freePinsOn: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.freePinsOn}
-                </p>
+                <p>{connectionDescriptions.freePinsOn}</p>
             </div>
         ),
         function: 'onFreePinsOn'
@@ -1514,9 +1342,7 @@ export const ConnectionDescriptions = {
     usedPinsOn: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.usedPinsOn}
-                </p>
+                <p>{connectionDescriptions.usedPinsOn}</p>
             </div>
         ),
         function: 'onUsedPinsOn'
@@ -1524,9 +1350,7 @@ export const ConnectionDescriptions = {
     highPinUsedOn: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.highPinUsedOn}
-                </p>
+                <p>{connectionDescriptions.highPinUsedOn}</p>
             </div>
         ),
         function: 'onHighPinUsedOn'
@@ -1534,9 +1358,7 @@ export const ConnectionDescriptions = {
     pinStateFor: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.pinStateFor}
-                </p>
+                <p>{connectionDescriptions.pinStateFor}</p>
             </div>
         ),
         function: 'onPinStateFor'
@@ -1544,9 +1366,7 @@ export const ConnectionDescriptions = {
     pinCountFor: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.pinCountFor}
-                </p>
+                <p>{connectionDescriptions.pinCountFor}</p>
             </div>
         ),
         function: 'onPinCountFor'
@@ -1554,9 +1374,7 @@ export const ConnectionDescriptions = {
     traceOut: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.traceOut}
-                </p>
+                <p>{connectionDescriptions.traceOut}</p>
             </div>
         ),
         function: 'onTraceOut'
@@ -1564,9 +1382,7 @@ export const ConnectionDescriptions = {
     connect: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.connect}
-                </p>
+                <p>{connectionDescriptions.connect}</p>
             </div>
         ),
         function: 'onConnect'
@@ -1574,9 +1390,7 @@ export const ConnectionDescriptions = {
     disconnect: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.disconnect}
-                </p>
+                <p>{connectionDescriptions.disconnect}</p>
             </div>
         ),
         function: 'onDisconnect'
@@ -1584,19 +1398,15 @@ export const ConnectionDescriptions = {
     moveConns: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.moveConns}
-                </p>    
-            </div>    
+                <p>{connectionDescriptions.moveConns}</p>
+            </div>
         ),
         function: 'onMoveConns'
     },
     switchConnSides: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.switchConnSides}
-                </p>
+                <p>{connectionDescriptions.switchConnSides}</p>
             </div>
         ),
         function: 'onSwitchConnSides'
@@ -1604,9 +1414,7 @@ export const ConnectionDescriptions = {
     techFor: {
         body: (
             <div>
-                <p> 
-                    {connectionDescriptions.techFor}
-                </p>
+                <p>{connectionDescriptions.techFor}</p>
             </div>
         ),
         function: 'onTechFor'
@@ -1614,9 +1422,7 @@ export const ConnectionDescriptions = {
     fixConnectionSegments: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.fixConnectionSegments}  
-                </p>
+                <p>{connectionDescriptions.fixConnectionSegments}</p>
             </div>
         ),
         function: 'onFixConnectionSegments'
@@ -1624,9 +1430,7 @@ export const ConnectionDescriptions = {
     isConnection: {
         body: (
             <div>
-                <p>
-                    {connectionDescriptions.isConnection}
-                </p>
+                <p>{connectionDescriptions.isConnection}</p>
             </div>
         ),
         function: 'onIsConnection'
@@ -1641,8 +1445,7 @@ export const CircuitMenu = [
             {
                 value: 'listCircuits',
                 label: 'List Circuits'
-            }                       
-
+            }
         ]
     },
     {
@@ -1652,38 +1455,27 @@ export const CircuitMenu = [
             {
                 value: 'traceLogicalCircuit',
                 label: 'traceLogicalCircuit',
-                params: [
-                    { name: 'circuit', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'circuit', type: 'MyWorldFeature' }]
             },
             {
-                value: 'routeCircuit',  
-                label: 'routeCircuit',  
-                params: [
-                    { name: 'circuit', type: 'MyWorldFeature' }
-                ]
+                value: 'routeCircuit',
+                label: 'routeCircuit',
+                params: [{ name: 'circuit', type: 'MyWorldFeature' }]
             },
             {
                 value: 'unrouteCircuit',
                 label: 'unrouteCircuit',
-                params: [
-                    { name: 'circuit', type: 'MyWorldFeature' }
-                ]
+                params: [{ name: 'circuit', type: 'MyWorldFeature' }]
             },
             {
                 value: 'routeCircuits',
                 label: 'routeCircuits',
-                params: [
-                    { name: 'circuits', type: 'Array<MyWorldFeature>' }
-                ]
+                params: [{ name: 'circuits', type: 'Array<MyWorldFeature>' }]
             },
             {
                 value: 'isCircuitFeature',
                 lable: 'isCircuitFeature',
-                params:[
-                    { name: 'feature', type: 'MyWorldFeature' }
-                ]
-
+                params: [{ name: 'feature', type: 'MyWorldFeature' }]
             },
             {
                 value: 'getDetachedCircuitPath',
@@ -1720,9 +1512,7 @@ export const CircuitDescriptions = {
     traceLogicalCircuit: {
         body: (
             <div>
-                <p>
-                    {circuitDescriptions.traceLogicalCircuit}
-                </p>
+                <p>{circuitDescriptions.traceLogicalCircuit}</p>
             </div>
         ),
         function: 'onTraceLogicalCircuit'
@@ -1730,9 +1520,7 @@ export const CircuitDescriptions = {
     routeCircuit: {
         body: (
             <div>
-                <p>
-                    {circuitDescriptions.routeCircuit}
-                </p>
+                <p>{circuitDescriptions.routeCircuit}</p>
             </div>
         ),
         function: 'onRouteCircuit'
@@ -1740,9 +1528,7 @@ export const CircuitDescriptions = {
     unrouteCircuit: {
         body: (
             <div>
-                <p>
-                    {circuitDescriptions.unrouteCircuit}
-                </p>
+                <p>{circuitDescriptions.unrouteCircuit}</p>
             </div>
         ),
         function: 'onUnrouteCircuit'
@@ -1750,9 +1536,7 @@ export const CircuitDescriptions = {
     routeCircuits: {
         body: (
             <div>
-                <p>
-                    {circuitDescriptions.routeCircuits}
-                </p>
+                <p>{circuitDescriptions.routeCircuits}</p>
             </div>
         ),
         function: 'onRouteCircuits'
@@ -1760,9 +1544,7 @@ export const CircuitDescriptions = {
     isCircuitFeature: {
         body: (
             <div>
-                <p>
-                    {circuitDescriptions.isCircuitFeature}
-                </p>
+                <p>{circuitDescriptions.isCircuitFeature}</p>
             </div>
         ),
         function: 'onIsCircuitFeature'
@@ -1770,9 +1552,7 @@ export const CircuitDescriptions = {
     getDetachedCircuitPath: {
         body: (
             <div>
-                <p>
-                    {circuitDescriptions.getDetachedCircuitPath}
-                </p>
+                <p>{circuitDescriptions.getDetachedCircuitPath}</p>
             </div>
         ),
         function: 'onGetDetachedCircuitPath'
@@ -1780,10 +1560,8 @@ export const CircuitDescriptions = {
     updateCircuitStatus: {
         body: (
             <div>
-                <p>
-                    {circuitDescriptions.updateCircuitStatus}
-                </p>    
-            </div>    
+                <p>{circuitDescriptions.updateCircuitStatus}</p>
+            </div>
         ),
         function: 'onUpdateCircuitStatus'
     }
