@@ -70,10 +70,13 @@ export const FieldValidatorModal = ({ open }) => {
                 for (const feature in result2) {
                     if (result2[feature]?.properties) {
                         const props = result2[feature]?.properties;
+                        // do not load Default Project
+                        if (props['name'] !== 'Default Project') {
                         arrProjects.push({
                             value: props['id'],
                             label: props['name']
                         });
+                        }
                     }
                 }
                 setAllProjects(arrProjects);
