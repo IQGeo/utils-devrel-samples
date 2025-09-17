@@ -9,13 +9,14 @@ from utils import (
     iqgeo_interactive_ropc_auth,
     iqgeo_get_request,
     set_auth_cookies,
+    get_all_features,
     BASE_URL
 )
 
 
-def get_all_conduits(design):
-    """Get all conduits in the design"""
-    return iqgeo_get_request(f"{BASE_URL}/feature/conduit", design).get("features", [])
+# def get_all_conduits(design):
+#     """Get all conduits in the design"""
+#     return iqgeo_get_request(f"{BASE_URL}/feature/conduit", design).get("features", [])
 
 
 def get_cable_segments(conduit_id, design):
@@ -68,7 +69,7 @@ def main(token_file, design):
     set_auth_cookies(cookies)
 
     capacity_report = {}
-    conduits = get_all_conduits(design)
+    conduits = get_all_features(feature_type="conduit", design=design)
 
     for conduit in conduits:
         cid = conduit["properties"].get("id")
