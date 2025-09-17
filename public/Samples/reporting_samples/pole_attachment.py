@@ -14,11 +14,6 @@ from utils import (
 )
 
 
-# def get_all_poles(design):
-#     """Get all poles in the design"""
-#     return iqgeo_get_request(f"{BASE_URL}/feature/pole", design).get("features", [])
-
-
 def get_pole_equipment(pole_id, design):
     """Get equipment attached to a specific pole"""
     return iqgeo_get_request(
