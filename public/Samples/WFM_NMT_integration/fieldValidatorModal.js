@@ -125,7 +125,58 @@ export const FieldValidatorModal = ({ open }) => {
     const onProjectSelected = (value, option) => {
         setSelProject('mywwfm_project/' + value);
         setSelProjectName(option.label);
+
+        determineGroups(value);
+        setGroupDisabled(false);
+        setSelGroup(null);
     };
+
+    // group related functions
+
+    const determineGroups = async proj_value => {
+        let selectGroups = [];
+
+        // filter groups by project id passed in after Project is selected
+        const thisProjectGroups = projGroups.filter(function (arr) {
+            return arr.project === proj_value;
+        });
+
+        if (thisProjectGroups.length > 0) {
+            thisProjectGroups.forEach(item => {
+                // const group_name_split = item.group_name.split(':');
+                // const group_label = group_name_split[group_name_split.length - 1];
+                selectGroups.push({
+                    value: item.id,
+                    label: item.group_name
+                });
+            });
+
+            setSelProjGroups(selectGroups);
+
+            setGroupLoading(false);
+        }
+    };
+
+    const renderGroups = () => {
+        return (
+            <Select
+                loading={groupLoading}
+                placeholder="please select a group"
+                options={selProjGroups}
+                key={selProjGroups.id}
+                onChange={onGroupSelected}
+                value={selGroup}
+                disabled={groupDisabled}
+            />
+        );
+    };
+
+    const onGroupSelected = (value, option) => {
+        setSelGroup(value);
+        setSelGroupName(option.label);
+    };
+
+    // -------
 
     const handleCancel = () => {
         setIsOpen(false);
