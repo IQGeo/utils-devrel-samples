@@ -26,11 +26,22 @@ export const FieldValidatorModal = ({ open }) => {
     const [pickedFeatureType, setPickedFeatureType] = useState('');
     const [pickedField, setPickedField] = useState('');
     const [result, setResult] = useState([]);
+        
+    const [showIntro, setShowIntro] = useState(true);
 
+    // project hooks
     const [projLoading, setProjLoading] = useState(true); // loading status of db call for projects
     const [allProjects, setAllProjects] = useState([]); // array that populates the Select widget
     const [selProject, setSelProject] = useState(''); // selected project id value
     const [selProjectName, setSelProjectName] = useState(''); // selected project name
+
+    // group hooks
+    const [projGroups, setProjGroups] = useState([]);
+    const [selProjGroups, setSelProjGroups] = useState([]);
+    const [selGroup, setSelGroup] = useState(null); // group id
+    const [selGroupName, setSelGroupName] = useState(''); // group name
+    const [groupDisabled, setGroupDisabled] = useState(true);
+    const [groupLoading, setGroupLoading] = useState(true);    
 
     useEffect(() => {
         const dbFeatures = db.getFeatureTypes();
