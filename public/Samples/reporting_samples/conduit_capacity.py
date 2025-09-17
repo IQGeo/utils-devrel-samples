@@ -84,7 +84,6 @@ def main(token_file, design):
                 cable_diameters.append(d)
 
         # use the printed values to test
-
         ratio, limit = calc_fill_ratio(conduit_d, cable_diameters)
         if ratio is None:
             status = "No diameter data"
