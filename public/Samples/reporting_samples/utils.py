@@ -9,6 +9,10 @@ LOGIN_URL = f"{BASE_URL}/auth"
 SESSION = requests.Session()
 HEADERS = {}
 
+def get_all_features(feature_type, design):
+    """Get all features of a specific type in the design"""
+    return iqgeo_get_request(f"{BASE_URL}/feature/{feature_type}", design).get("features", [])
+
 
 # Authentication helpers
 def iqgeo_jwt_auth(token_file: Path):

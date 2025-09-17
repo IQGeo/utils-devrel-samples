@@ -9,13 +9,14 @@ from utils import (
     iqgeo_interactive_ropc_auth,
     iqgeo_get_request,
     set_auth_cookies,
+    get_all_features,
     BASE_URL
 )
 
 
-def get_all_poles(design):
-    """Get all poles in the design"""
-    return iqgeo_get_request(f"{BASE_URL}/feature/pole", design).get("features", [])
+# def get_all_poles(design):
+#     """Get all poles in the design"""
+#     return iqgeo_get_request(f"{BASE_URL}/feature/pole", design).get("features", [])
 
 
 def get_pole_equipment(pole_id, design):
@@ -40,7 +41,7 @@ def main(token_file, design):
 
     # custom report section
     attachment_report = {}
-    poles = get_all_poles(design)
+    poles = get_all_features(feature_type="pole", design=design)
 
     for pole in poles:
         pid = pole["properties"].get("id")
