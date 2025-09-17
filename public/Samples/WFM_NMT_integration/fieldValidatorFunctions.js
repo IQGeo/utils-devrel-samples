@@ -91,7 +91,8 @@ export const createTicketObject = (
     value,
     pickedFeature,
     projId,
-    projName
+    projName,
+    groupName
 ) => {
     const { msg } = useLocale('customRuleModal');
     let ruleStr = '';
