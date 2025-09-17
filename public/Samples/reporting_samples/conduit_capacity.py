@@ -14,11 +14,6 @@ from utils import (
 )
 
 
-# def get_all_conduits(design):
-#     """Get all conduits in the design"""
-#     return iqgeo_get_request(f"{BASE_URL}/feature/conduit", design).get("features", [])
-
-
 def get_cable_segments(conduit_id, design):
     """Get cable segments related to a specific conduit"""
     return iqgeo_get_request(

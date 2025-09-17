@@ -9,10 +9,6 @@ LOGIN_URL = f"{BASE_URL}/auth"
 SESSION = requests.Session()
 HEADERS = {}
 
-def get_all_features(feature_type, design):
-    """Get all features of a specific type in the design"""
-    return iqgeo_get_request(f"{BASE_URL}/feature/{feature_type}", design).get("features", [])
-
 
 # Authentication helpers
 def iqgeo_jwt_auth(token_file: Path):
@@ -44,6 +40,13 @@ def iqgeo_interactive_ropc_auth():
     return response.cookies.get_dict()
 
 
+
+def get_all_features(feature_type, design):
+    """Get all features of a specific type in the design"""
+    return iqgeo_get_request(f"{BASE_URL}/feature/{feature_type}", design).get("features", [])
+
+
+
 def iqgeo_get_request(endpoint, design):
     """
     Hit a GET endpoint using the auth cookie for this session.
@@ -56,7 +59,6 @@ def iqgeo_get_request(endpoint, design):
     return r.json()
 
 
-
 def iqgeo_post_request(endpoint, design):
     """
     Hit a POST endpoint using the auth cookie for this session.
@@ -67,6 +69,7 @@ def iqgeo_post_request(endpoint, design):
     r = SESSION.post(endpoint, headers=HEADERS, params=params)
     r.raise_for_status()
     return r.json()
+
 
 def set_auth_cookies(cookies: dict):
     HEADERS["cookie"] = (
