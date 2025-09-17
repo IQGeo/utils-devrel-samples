@@ -182,6 +182,10 @@ export const FieldValidatorModal = ({ open }) => {
         setIsOpen(false);
     };
 
+    const hideIntro = () => {
+        setShowIntro(false);
+    };
+
     const onFieldSelected = value => {
         const cleanType = features[value[0]].fields[value[1]].type.replace(/\(\d+\)$/, '');
         setRuleType(cleanType);
