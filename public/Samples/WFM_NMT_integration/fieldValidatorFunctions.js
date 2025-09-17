@@ -146,7 +146,7 @@ export const createTicketObject = (
         mywwfm_source_system: null,
         mywwfm_status: 'Open',
         mywwfm_ticket_details: msg('default_ticket_details'),
-        mywwfm_ticket_group: ['admin:Default'],
+        mywwfm_ticket_group: [groupName],
         mywwfm_type: 'Test Ticket',
         mywwfm_type_category: msg('default_category')
     };
