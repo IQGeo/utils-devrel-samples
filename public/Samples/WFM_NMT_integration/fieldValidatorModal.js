@@ -84,6 +84,23 @@ export const FieldValidatorModal = ({ open }) => {
             });
         };
         listProjects();
+    
+        // load all Project - Group associations into projGroups state hook
+        const getProjGroupJunction = async () => {
+            let arrGroupsProjects = [];
+            db.getFeatures('mywwfm_project_group_junction').then(result3 => {
+                for (const group in result3) {
+                    if (result3[group]?.properties) {
+                        const props2 = result3[group]?.properties;
+
+                        arrGroupsProjects.push(props2);
+                    }
+                }
+                setProjGroups(arrGroupsProjects);
+            });
+        };
+
+        getProjGroupJunction();
     }, []);
 
     // ====end of Effect hook
