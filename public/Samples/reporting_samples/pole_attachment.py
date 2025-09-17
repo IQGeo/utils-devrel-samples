@@ -28,6 +28,7 @@ def get_pole_routes(pole_id, design):
     ).get("features", [])
 
 
+
 def main(token_file, design):
     """script entrypoint."""
 
@@ -44,8 +45,22 @@ def main(token_file, design):
         equipment = get_pole_equipment(pid, design)
         routes = get_pole_routes(pid, design)
 
-        equip_list = [e["properties"].get("name") for e in equipment if e.get("properties")]
-        route_list = [r["properties"].get("id") for r in routes if r.get("properties")]
+        equip_list = [
+            {
+                "id": e["properties"].get("name"),
+                "root_housing": e["properties"].get("root_housing") 
+            }
+            for e in equipment if e.get("properties")
+        ]
+
+        route_list = [
+            {
+                "id": r["properties"].get("id"),
+                "in_structure": r["properties"].get("in_structure"),
+                "out_structure": r["properties"].get("out_structure")
+            }
+            for r in routes if r.get("properties")
+        ]
 
         attachment_report[f"pole/{pid}"] = {
             "equipment_count": len(equip_list),
