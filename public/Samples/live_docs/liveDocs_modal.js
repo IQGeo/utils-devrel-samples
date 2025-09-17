@@ -266,7 +266,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                         )}
                         {pickedFunction &&
                             getSelectedFunctionParams().map(({ name, type }) => {
-                                console.log('paramValues', paramValues);
+                                // console.log('paramValues', paramValues);
                                 if (type.toLowerCase() === 'myworldfeature') {
                                     return (
                                         <Input
