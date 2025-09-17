@@ -236,7 +236,8 @@ export const FieldValidatorModal = ({ open }) => {
             inputtedValue,
             pickedFeatureType,
             selProject,
-            selProjectName
+            selProjectName,
+            selGroupName
         );
 
         const { createTicket } = wfm.redux.tickets;
