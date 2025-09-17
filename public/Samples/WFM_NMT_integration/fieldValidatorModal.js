@@ -344,23 +344,58 @@ export const FieldValidatorModal = ({ open }) => {
             title={msg('windowHeader')}
             width={500}
             onCancel={handleCancel}
-            footer={[
-                <Button key="cancel" onClick={handleCancel}>
-                    Cancel
-                </Button>,
-                <Button key="ok" onClick={validateRule} type="primary">
-                    OK
-                </Button>
-            ]}
+             footer={
+                showIntro
+                    ? [
+                          <Button key="ok" onClick={hideIntro} type="primary">
+                              Next
+                          </Button>
+                      ]
+                    : [
+                          <Button key="cancel" onClick={handleCancel}>
+                              Cancel
+                          </Button>,
+                          <Button key="ok" onClick={validateRule} type="primary">
+                              OK
+                          </Button>
+                      ]
+            }
         >
-            Choose a project:
-            {renderProject()}
-            <br />
-            <br />
-            Choose a network feature:
-            <Cascader options={featuresList} onChange={onFieldSelected} />
-            {renderFields()}
-            {true && result.length > 0 ? renderResult() : null}
+            {showIntro ? (
+                <div style={{ whiteSpace: 'pre-wrap' }}>
+                    <p>
+                        In this sample we are showing how to create WFM tickets for NMT features
+                        that do not meet user-specified criteria.
+                        <br />
+                        <br />
+                        This expects that a Project has been created and that Project has one or
+                        more groups associated with it.
+                        <br />
+                        <br />
+                        Note that as of Workflow Manager 4.1 there is also a requirement that if a
+                        Project has Milestones associated with it, any ticket associated with that
+                        Project must in turn be associated with a Milestone. That scenario is beyond
+                        the scope of this code sample and we recommend that Projects without
+                        Milestones be used for this scenario.
+                        <br />
+                    </p>
+                </div>
+            ) : (
+                <div>
+                    Choose a project:
+                    {renderProject()}
+                    <br />
+                    <br />
+                    Choose a group associated with project:
+                    {renderGroups()}
+                    <br />
+                    <br />
+                    Choose a network feature:
+                    <Cascader options={featuresList} onChange={onFieldSelected} />
+                    {renderFields()}
+                    {true && result.length > 0 ? renderResult() : null}
+                </div>
+            )}
         </DraggableModal>
     );
 };
