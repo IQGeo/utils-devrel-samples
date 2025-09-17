@@ -56,6 +56,7 @@ def main(token_file, design):
         route_list = [
             {
                 "id": r["properties"].get("id"),
+                # f"route/{r["properties"].get("id")}": r["features"].get("myw").get("feature_type"),
                 "in_structure": r["properties"].get("in_structure"),
                 "out_structure": r["properties"].get("out_structure")
             }
