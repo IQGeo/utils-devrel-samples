@@ -62,7 +62,7 @@
     },
     "LiveDocsPlugin": {
         "LiveDocsTitle": "Live Docs",
-        "description": "In this sample, you can view all the function available in the NMT JavaScript API.\n\nTo use the tool, select a class and function in the dropdown and follow the istructions to execute the function.\n\nYou can find the source code in the folder modules/custom/public/js/Samples/live_docs.",
+        "description": "To use the tool, first select a class and then choose a function from the dropdown menus. The parameter fields will update automatically based on the function you select.\n\nEnter the required values according to the parameter type, or select features on the map where applicable.\n\nOnce all required fields are filled, press Execute to run the function and view the result in your browser's Developer Tools Console window.",
         "classSelection": "Select the class below to see its available functions.",
         "classTitle": "Classes"
     }
