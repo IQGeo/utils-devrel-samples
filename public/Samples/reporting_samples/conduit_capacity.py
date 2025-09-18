@@ -1,29 +1,26 @@
 #! /bin/env python3
 
-import requests
 import argparse
 import json
 from pathlib import Path
 from utils import (
     iqgeo_jwt_auth,
-    iqgeo_interactive_ropc_auth,
     iqgeo_get_request,
     set_auth_cookies,
     get_all_features,
-    BASE_URL
+    BASE_URL,
 )
 
 
 def get_cable_segments(conduit_id, design):
     """Get cable segments related to a specific conduit"""
     return iqgeo_get_request(
-        f"{BASE_URL}/feature/conduit/{conduit_id}/relationship/cable_segments", 
-        design
+        f"{BASE_URL}/feature/conduit/{conduit_id}/relationship/cable_segments", design
     ).get("features", [])
 
 
 def get_cable_diameter(cable_ref, design):
-    """ Get cable diameter from cable properties
+    """Get cable diameter from cable properties
     ref = e.g. fiber_cable/4
     """
     return (
@@ -102,19 +99,18 @@ def main(token_file, design):
 
 
 if __name__ == "__main__":
-    # TODO: import argpase ...
     parser = argparse.ArgumentParser(description="Conduit capacity report")
     parser.add_argument(
         "--token_file",
         type=Path,
         default="token.txt",
-        help="Path to the pre-generated JWT token"
+        help="Path to the pre-generated JWT token",
     )
     parser.add_argument(
         "--design",
         type=str,
         default=None,
-        help="Design ID to use, e.g. design/2FMyDesign"
+        help="Design ID to use, e.g. design/2FMyDesign",
     )
     args = parser.parse_args()
 

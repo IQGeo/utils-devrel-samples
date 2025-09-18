@@ -1,16 +1,14 @@
 #! /bin/env python3
 
-import requests
 import argparse
 import json
 from pathlib import Path
 from utils import (
     iqgeo_jwt_auth,
-    iqgeo_interactive_ropc_auth,
     iqgeo_get_request,
     set_auth_cookies,
     get_all_features,
-    BASE_URL
+    BASE_URL,
 )
 
 
@@ -28,11 +26,10 @@ def get_pole_routes(pole_id, design):
     ).get("features", [])
 
 
-
 def main(token_file, design):
     """script entrypoint."""
 
-    cookies = iqgeo_jwt_auth(token_file) # or iqgeo_interactive_ropc_auth()
+    cookies = iqgeo_jwt_auth(token_file)  # or iqgeo_interactive_ropc_auth()
     set_auth_cookies(cookies)
 
     # custom report section
@@ -48,19 +45,20 @@ def main(token_file, design):
         equip_list = [
             {
                 "id": e["properties"].get("name"),
-                "root_housing": e["properties"].get("root_housing") 
+                "root_housing": e["properties"].get("root_housing"),
             }
-            for e in equipment if e.get("properties")
+            for e in equipment
+            if e.get("properties")
         ]
 
         route_list = [
             {
                 "id": r["properties"].get("id"),
-                # f"route/{r["properties"].get("id")}": r["features"].get("myw").get("feature_type"),
                 "in_structure": r["properties"].get("in_structure"),
-                "out_structure": r["properties"].get("out_structure")
+                "out_structure": r["properties"].get("out_structure"),
             }
-            for r in routes if r.get("properties")
+            for r in routes
+            if r.get("properties")
         ]
 
         attachment_report[f"pole/{pid}"] = {
@@ -74,19 +72,18 @@ def main(token_file, design):
 
 
 if __name__ == "__main__":
-    # TODO: import argpase ...
     parser = argparse.ArgumentParser(description="Conduit capacity report")
     parser.add_argument(
         "--token_file",
         type=Path,
         default="token.txt",
-        help="Path to the pre-generated JWT token"
+        help="Path to the pre-generated JWT token",
     )
     parser.add_argument(
         "--design",
         type=str,
         default=None,
-        help="Design ID to use, e.g. design/2FMyDesign"
+        help="Design ID to use, e.g. design/2FMyDesign",
     )
     args = parser.parse_args()
 
