@@ -188,12 +188,7 @@ export const StructureDescriptions = {
     getStructuresAtCoords: {
         body: (
             <div>
-                <p>
-                    {structureDescriptions.getStructuresAtCoords}
-                    <br />
-                    <br />
-                    {structureDescriptions.getStructuresAtCoords_desc}
-                </p>
+                <p>{structureDescriptions.getStructuresAtCoords}</p>
             </div>
         ),
         function: 'onGetStructuresAtCoords'
@@ -240,9 +235,6 @@ export const StructureDescriptions = {
         body: (
             <div>
                 <p>{structureDescriptions.isStructure}</p>
-                <br />
-                <br />
-                {structureDescriptions.isStructure_desc}
             </div>
         ),
         function: 'onIsStructure'
@@ -977,9 +969,6 @@ export const CableDescriptions = {
         body: (
             <div>
                 <p>{cableDescriptions.setInTickMark}</p>
-                <br />
-                <br />
-                {cableDescriptions.setInTickMark_desc}
             </div>
         ),
         function: 'onSetInTickMark'
@@ -1044,9 +1033,6 @@ export const CableDescriptions = {
         body: (
             <div>
                 <p>{cableDescriptions.isCable}</p>
-                <br />
-                <br />
-                {cableDescriptions.isCable_desc}
             </div>
         ),
         function: 'onIsCable'

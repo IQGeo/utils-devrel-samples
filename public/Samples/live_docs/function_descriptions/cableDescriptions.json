@@ -41,8 +41,5 @@
     "handleConnect": "Async: true\n\nHandles a connection event by moving the cable endpoint and firing update events.\n\nParameters:\n- `event` (Object): The connection event object",
     "fixCableSegmentChain": "Async: true\n\nFixes the segment chain of a cable using its placement geometry.\n\nParameters:\n- `cable` (MywFeature): The cable feature to fix",
     "fixCable": "Async: true\n\nCreates new cable segments based on route and copies segment data; deletes old segments.\n\nParameters:\n- `cable` (MywFeature): The cable feature to fix\n\nReturns:\n- (Promise): resolving after fix completes",
-    "rippleStrandInfo": "Async: true\n\nWrapper for ds.comms.rippleStrandInfo used by the strandInfo dialog.\n\nParameters:\n- `feature` (MywFeature): Feature to ripple strand info on\n- `direction` (string): Direction of ripple\n- `sourceRanges` (Array): Source ranges for ripple\n- `strandInfoToRipple` (Object): Strand info to apply",
-
-    "setInTickMark_desc": "Select a cable segment by clicking on it in the map, set the tickMark, spacing, and unit, then click `Execute`.\nThe function call and its output (the new tick value of the 'in' side of the segment); otherwise 'undefined') will be shown in the browser's development console.",
-    "isCable_desc": "Select a feature by clicking on it in the map then click `Execute`.\nThe function call and its output (true if the selected feature is a Cable, false otherwise) will be shown in the browser's development console."
+    "rippleStrandInfo": "Async: true\n\nWrapper for ds.comms.rippleStrandInfo used by the strandInfo dialog.\n\nParameters:\n- `feature` (MywFeature): Feature to ripple strand info on\n- `direction` (string): Direction of ripple\n- `sourceRanges` (Array): Source ranges for ripple\n- `strandInfoToRipple` (Object): Strand info to apply"
 }
