@@ -28,6 +28,7 @@ This Field Validator tool is available in the `main.wfm_nmt_integration.js` appl
 When clicking the button a modal window will open where the user:
 
 -   selects a project the ticket to which the ticket will be assigned
+-   selects a group that is associated with the selected project
 -   selects a feature
     -   then selects a feature's field to be validated
 

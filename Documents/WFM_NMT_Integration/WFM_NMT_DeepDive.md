@@ -180,10 +180,22 @@ export const FieldValidatorModal = ({ open }) => {
     const [pickedField, setPickedField] = useState('');
     const [result, setResult] = useState([]);
 
+        
+    const [showIntro, setShowIntro] = useState(true);
+
+    // project hooks
     const [projLoading, setProjLoading] = useState(true); // loading status of db call for projects
     const [allProjects, setAllProjects] = useState([]); // array that populates the Select widget
     const [selProject, setSelProject] = useState(''); // selected project id value
     const [selProjectName, setSelProjectName] = useState(''); // selected project name
+
+    // group hooks
+    const [projGroups, setProjGroups] = useState([]);
+    const [selProjGroups, setSelProjGroups] = useState([]);
+    const [selGroup, setSelGroup] = useState(null); // group id
+    const [selGroupName, setSelGroupName] = useState(''); // group name
+    const [groupDisabled, setGroupDisabled] = useState(true);
+    const [groupLoading, setGroupLoading] = useState(true);  
 ```
 
 As the FieldValidatorModal is a lengthy class, we'll take it in pieces. After setting up references to the map application itself, the database, and the localization library, we are setting up a series of self-explanatory variables using state hooks.
@@ -230,6 +242,23 @@ As the FieldValidatorModal is a lengthy class, we'll take it in pieces. After se
             });
         };
         listProjects();
+    
+        // load all Project - Group associations into projGroups state hook
+        const getProjGroupJunction = async () => {
+            let arrGroupsProjects = [];
+            db.getFeatures('mywwfm_project_group_junction').then(result3 => {
+                for (const group in result3) {
+                    if (result3[group]?.properties) {
+                        const props2 = result3[group]?.properties;
+
+                        arrGroupsProjects.push(props2);
+                    }
+                }
+                setProjGroups(arrGroupsProjects);
+            });
+        };
+
+        getProjGroupJunction();
     }, []);
 ```
 
@@ -238,6 +267,8 @@ In this effect hook, we are managing the two sets of data that will populate the
 We begin the process of creating a list of network elements using the database call `db.getFeatureTypes()` returns a wide variety of elements in our application's database--many of which we are not interested in during this exercise. So we take the response object from the database and use `.filter` and `.reduce` to _remove_ all the records that contain any of the listed strings. We set up an empty array and call the `buildFeaturesList` function to create the list of the network elements of interest.
 
 Next we set up the asynchronous `listProjects` function to get a list of WFM projects associated with our application. We parse the result to create an array of `value/label` pairs that will populate the Antd Select widget in the modal. Note that we are also managing a `projLoading` variable so that the application will be aware when the database call and result parsing has been completed.
+
+Finally, we have an asynchronous `getProjGroupJunction` function that pulls an array of objects of all the project/group associations in the database and stores the result in the `projGroups` variable. We will need this later when we populate the Select widget for groups once the user has chosen a project.
 
 &#8291;
 &#8291;
@@ -269,17 +300,92 @@ The `renderProject` component waits until the array of available projects has be
     const onProjectSelected = (value, option) => {
         setSelProject('mywwfm_project/' + value);
         setSelProjectName(option.label);
+    
+        determineGroups(value);
+        setGroupDisabled(false);
+        setSelGroup(null);
     };
 
-    const handleCancel = () => {
-        setIsOpen(false);
+ 
+```
+
+
+-   `onProjectSelected` just updates the project related hooks when the user makes a selection. Now that a project has been selected, the function `determineGroups` is called to calculate which groups are associated with the chosen project. Then, two state hook variables are set to enable the group selector and then reset its value to null.
+
+
+    &#8291;
+    &#8291;
+
+```
+    // group related functions
+
+    const determineGroups = async proj_value => {
+        let selectGroups = [];
+
+        // filter groups by project id passed in after Project is selected
+        const thisProjectGroups = projGroups.filter(function (arr) {
+            return arr.project === proj_value;
+        });
+
+        if (thisProjectGroups.length > 0) {
+            thisProjectGroups.forEach(item => {
+                // const group_name_split = item.group_name.split(':');
+                // const group_label = group_name_split[group_name_split.length - 1];
+                selectGroups.push({
+                    value: item.id,
+                    label: item.group_name
+                });
+            });
+
+            setSelProjGroups(selectGroups);
+
+            setGroupLoading(false);
+        }
+    };
+
+    const renderGroups = () => {
+        return (
+            <Select
+                loading={groupLoading}
+                placeholder="please select a group"
+                options={selProjGroups}
+                key={selProjGroups.id}
+                onChange={onGroupSelected}
+                value={selGroup}
+                disabled={groupDisabled}
+            />
+        );
+    };
+
+    const onGroupSelected = (value, option) => {
+        setSelGroup(value);
+        setSelGroupName(option.label);
     };
 ```
 
-Two basic functions:
+Three functions related to the behavior of the select widget for groups:
+- `determineGroups` is an asynchronous function that takes the id value of the project chosen and filters against the variable holding all of the project/group combinations. The result is reformatted for the selProjGroups variable which will take the filtered value/label pairs that will populate the groups select widget.
+- `renderGroups` configures the select widget for groups with the appropriate properties set.
+- `onGroupSelected` gets fired when the user selects a group and two state hook variables are updated.
 
--   `onProjectSelected` just updates the project related hooks when the user makes a selection.
+
+    &#8291;
+    &#8291;
+
+
+```
+    const handleCancel = () => {
+        setIsOpen(false);
+    };
+
+    const hideIntro = () => {
+        setShowIntro(false);
+    };
+```
+
+
 -   `handleCancel` sets the isOpen hook to false when the Cancel button is pressed.
+-   `hideIntro` hides the intro text that appears when the modal is first opened.
 
     &#8291;
     &#8291;
@@ -359,7 +465,8 @@ If a feature breaks the rule defined by the user next to it in the result list w
             inputtedValue,
             pickedFeatureType,
             selProject,
-            selProjectName
+            selProjectName,
+            selGroupName
         );
 
         const { createTicket } = wfm.redux.tickets;
@@ -482,38 +589,78 @@ The `renderResult` function returns the list of features in the map view and det
 &#8291;
 
 ```
-    return (
+return (
         <DraggableModal
             wrapClassName="custom-rules-modal"
             open={isOpen}
             title={msg('windowHeader')}
             width={500}
             onCancel={handleCancel}
-            footer={[
-                <Button key="cancel" onClick={handleCancel}>
-                    Cancel
-                </Button>,
-                <Button key="ok" onClick={validateRule} type="primary">
-                    OK
-                </Button>
-            ]}
+             footer={
+                showIntro
+                    ? [
+                          <Button key="ok" onClick={hideIntro} type="primary">
+                              Next
+                          </Button>
+                      ]
+                    : [
+                          <Button key="cancel" onClick={handleCancel}>
+                              Cancel
+                          </Button>,
+                          <Button key="ok" onClick={validateRule} type="primary">
+                              OK
+                          </Button>
+                      ]
+            }
         >
-            Choose a project:
-            {renderProject()}
-            <br />
-            <br />
-            Choose a network feature:
-            <Cascader options={featuresList} onChange={onFieldSelected} />
-            {renderFields()}
-            {true && result.length > 0 ? renderResult() : null}
+            {showIntro ? (
+                <div style={{ whiteSpace: 'pre-wrap' }}>
+                    <p>
+                        In this sample we are showing how to create WFM tickets for NMT features
+                        that do not meet user-specified criteria.
+                        <br />
+                        <br />
+                        This expects that a Project has been created and that Project has one or
+                        more groups associated with it.
+                        <br />
+                        <br />
+                        Note that as of Workflow Manager 4.1 there is also a requirement that if a
+                        Project has Milestones associated with it, any ticket associated with that
+                        Project must in turn be associated with a Milestone. That scenario is beyond
+                        the scope of this code sample and we recommend that Projects without
+                        Milestones be used for this scenario.
+                        <br />
+                    </p>
+                </div>
+            ) : (
+                <div>
+                    Choose a project:
+                    {renderProject()}
+                    <br />
+                    <br />
+                    Choose a group associated with project:
+                    {renderGroups()}
+                    <br />
+                    <br />
+                    Choose a network feature:
+                    <Cascader options={featuresList} onChange={onFieldSelected} />
+                    {renderFields()}
+                    {true && result.length > 0 ? renderResult() : null}
+                </div>
+            )}
         </DraggableModal>
     );
 
 ```
 
-Finally, we return the rendering of the modal window itself. After setting up basic properties, we have the footer HTML with two buttons. In the main body of the modal we have:
+Finally, we return the rendering of the modal window itself. After setting up basic properties, we have two sets of content: an "intro" and the main set of interactive GUI elements.  We set up the HTML buttons that will be visible in the footer for the respective scenarios.
+
+On the initial open, the "intro" displays explanatory text and puts a "Next" button at the bottom that the user will press to proceed to the main GUI content.
+
+In the main body of the modal we have:
 
 -   `{renderProject()}` is generating the Select widget with the list of available projects
+-   `{renderGroups()}` is generating the Select widget with the list of groups associated with the chosen project
 -   the `<Cascader>` widget is where the user will choose a network element and an attribute field associated with that network element
 -   `{renderFields()}` will allow the user to input the appropriate criteria to test depending on the data type of the field chosen
 -   `{renderResult()}` is the list of network features in the current map view and whether they pass the testing criteria set up by the user. Note how a list will only render if the source array `result` is not empty.
@@ -562,8 +709,7 @@ export const buildFeatureList = features => {
     return featuresList;
 };
 
-&#8291;
-&#8291;
+
 ```
 
 The Cascader element in the modal window allows the user to select a feature, then select a particular data field of that feature. What this function does is iterates over the incoming list of features and generates an array of data fields associated with each feature. Then an object `featureListItem` is created that uses `fieldsList` array associated with each feature as the `children` property. This array of objects ends up being stored in the `{featuresList}` state hook in the `fieldValidatorModal.js` script.
@@ -661,7 +807,8 @@ export const createTicketObject = (
     value,
     pickedFeature,
     projId,
-    projName
+    projName,
+    groupName
 ) => {
     const { msg } = useLocale('customRuleModal');
     let ruleStr = '';
@@ -709,13 +856,13 @@ export const createTicketObject = (
         mywwfm_last_modified_datetime: undefined,
         mywwfm_node: msg('node'),
         mywwfm_project: projId,
-        mywwfm_project_name: projName,
+        // mywwfm_project_name: projName, - property name not supported in WFM 4.1
         mywwfm_region: 'South',
         mywwfm_related_feature: null,
         mywwfm_source_system: null,
         mywwfm_status: 'Open',
         mywwfm_ticket_details: msg('default_ticket_details'),
-        mywwfm_ticket_group: ['admin:Default'],
+        mywwfm_ticket_group: [groupName],
         mywwfm_type: 'Test Ticket',
         mywwfm_type_category: msg('default_category')
     };
