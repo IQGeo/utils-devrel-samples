@@ -1,0 +1,9 @@
+{
+  "disconnectConduit": "Async: true\n\nDisconnects the conduit at structure.\n\nParameters:\n- `conduit` (MywFeature): Conduit to disconnect\n- `housing` (MywFeature): Structure to disconnect conduit at",
+  "connectConduits": "Async: true\n\nConnects two conduits at a structure.\n\nParameters:\n- `housing` (MywFeature): Structure to connect the conduit to\n- `first_conduit` (MywFeature): First conduit to connect\n- `second_conduit` (Feature): Second conduit to connect",
+  "routeNestedConduits": "Async: true\n\nRoute new conduits for all conduits that are part of the conduit hierarchy.\n\nParameters:\n- `conduitsJson` (Object): Serialized conduit hierarchy\n- `structures` (Object): Serialized structures where conduits are being routed\n- `parentConduits` (Object): Serialzied parent conduits in the hierarchy, used to set housing\n- `transaction` (Transaction): Current update transaction, if not provided a new one will be created\n\nReturns:\n- (): conduits created in a single array",
+  "moveInto": "Async: true\n\nMove conduit to a new housing in the same route\n\nParameters:\n- `housing` (MywFeature): New conduit housing\n- `feature` (MywFeature): Conduit to be moved",
+  "isContinuousConduitType": "Async: false\n\nCheck if the conduit is continuous\n\nParameters:\n- `feature` (MywFeature): Conduit to be checked\n\nReturns:\n- (boolean): if the conduit is continuous, false otherwise",
+  "continuousPhysicalConduits": "Async: true\n\nReturns conduits connected to FEATURE that are in the same run and considered to be the same physical conduit. We do this based on name.\n\nParameters:\n- `feature` (MywFeature): \n\nReturns:\n- (): conduits in the same run AND parent bundle (run)",
+  "deleteContinuousPhysicalConduits": "Async: true\n\n\n\nParameters:\n- `conduit` (MywFeature): Conduit to be deleted\n\nReturns:\n- (): "
+}

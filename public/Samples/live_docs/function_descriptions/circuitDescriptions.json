@@ -1,0 +1,8 @@
+{
+  "traceLogicalCircuit": "Async: true\n\nRuns a trace on a logical circuit returning a trace result that references the features the circuit passes through.\n\nParameters:\n- `circuit` (MywFeature): The circuit to be traced\n\nReturns:\n- (Promise<TraceResult>): containing the trace result",
+  "routeCircuit": "Async: true\n\nSet route for the provided circuit. Updates the features the circuit passes through to reference the circuit, and sets the circuit's geometry\n\nParameters:\n- `circuit` (MywFeature): The circuit to be routed\n\nReturns:\n- (Promise<Object>): result",
+  "unrouteCircuit": "Async: true\n\nUnset the route for the provided circuit\n\nParameters:\n- `circuit` (MywFeature): The circuit to be unrouted\n\nReturns:\n- (Promise<Object>): result",
+  "routeCircuits": "Async: true\n\nRoute multiple circuits\n\nParameters:\n- `circuits` (Array<MywFeature>): The circuits to be routed\n\nReturns:\n- (Promise<Array<Object>>): with individual results for each circuit",
+  "isCircuitFeature": "Async: false\n\nDetermines if feature is a circuit feature\n\nParameters:\n- `feature` (MywFeature): Feature to be checked\n\nReturns:\n- (boolean): if the feature is a circuit",
+  "getDetachedCircuitPath": "Async: true\n\nReturns a detached feature with reference to logical circuit\n\nParameters:\n- `featureType` (string): Type of the feature to be created\n- `logicalCircuit` (MywFeature): Logical circuit to which the detached feature will be related\n\nReturns:\n- (Promise<MywFeature>): for a newly created detached feature"
+}

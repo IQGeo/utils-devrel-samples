@@ -1,7 +1,7 @@
 import myw from 'myWorld-client';
 import React, { useState, useEffect, useRef } from 'react';
 import { DraggableModal, Button, Input } from 'myWorld-client/react';
-import { Alert, Space, Select } from 'antd';
+import { Space, Select, InputRef } from 'antd';
 import { useLocale } from 'myWorld-client/react';
 import {
     Classes,
@@ -21,35 +21,84 @@ import {
 import PinRange from 'modules/comms/js/api/pinRange';
 
 
-export const LiveDocsModal = ({ open, plugin }) => {
+
+
+interface LiveDocsModalProps {
+  open: boolean;
+  plugin: {
+    structureApi?: any;
+    equipmentApi?: any;
+    conduitApi?: any;
+    cableApi?: any;
+    connectionApi?: any;
+    circuitApi?: any;
+    [key: string]: any; // fallback
+  };
+}
+
+export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) => {
     const { msg } = useLocale('LiveDocsPlugin');
     const [showIntro, setShowIntro] = useState(true);
     const [appRef] = useState(myw.app);
     const [db] = useState(appRef.database);
     const [isOpen, setIsOpen] = useState(open);
-    const [pickedClass, setPickedClass] = useState('');
-    const [pickedFunction, setPickedFunction] = useState('');
-    const [paramValues, setParamValues] = useState({});
-    const [activeParam, setActiveParam] = useState(null);
-    const [rawInput, setRawInput] = useState({});
+    const [pickedClass, setPickedClass] = useState<string>('');
+    const [pickedFunction, setPickedFunction] = useState<string>('');
+    const [paramValues, setParamValues] = useState<Record<string, any>>({});
+    const [activeParam, setActiveParam] = useState<string | null>(null);
+    const [rawInput, setRawInput] = useState<Record<string, string>>({});
+    const inputRef = useRef<InputRef | null>(null);
 
-    const ApiFunctionMenus = {
+    interface ApiParam {
+    name: string;
+    type: string;
+    }
+
+    interface ApiMenuOption {
+    value: string;
+    label: string | React.ReactNode;
+    params?: ApiParam[];
+    }
+
+    interface ApiMenuGroup {
+    label: string | React.ReactNode;
+    options: ApiMenuOption[];
+    }
+
+    type ApiFunctionMenu = ApiMenuGroup[];
+
+    type ApiKey =
+    | "structureApi"
+    | "equipmentApi"
+    | "conduitApi"
+    | "cableApi"
+    | "connectionApi"
+    | "circuitApi";
+
+    // Menus
+    const ApiFunctionMenus: Record<ApiKey, ApiFunctionMenu> = {
         structureApi: StructureMenu,
         equipmentApi: EquipmentMenu,
         conduitApi: ConduitMenu,
         cableApi: CableMenu,
         connectionApi: ConnectionMenu,
-        circuitApi: CircuitMenu
+        circuitApi: CircuitMenu,
     };
-    const apiInstances = {
+
+    // API instances
+    const apiInstances: Record<ApiKey, any> = {
         structureApi: plugin.structureApi,
         equipmentApi: plugin.equipmentApi,
         conduitApi: plugin.conduitApi,
         cableApi: plugin.cableApi,
         connectionApi: plugin.connectionApi,
-        circuitApi: plugin.circuitApi
+        circuitApi: plugin.circuitApi,
     };
-    const ApiFunctionDictionaries = {
+
+    // Dictionaries
+    type ApiFunctionDictionary = Record<string, { body: string }>;
+
+    const ApiFunctionDictionaries: Partial<Record<ApiKey, ApiFunctionDictionary>> = {
         structureApi: StructureDescriptions,
         equipmentApi: EquipmentDescriptions,
         conduitApi: ConduitDescriptions,
@@ -57,6 +106,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
         connectionApi: ConnectionDescriptions,
         circuitApi: CircuitDescriptions
     };
+
 
     const transactionMessage = "Transaction parameter is automatically created for you. It will be committed after the function execution.";
 
@@ -75,47 +125,33 @@ export const LiveDocsModal = ({ open, plugin }) => {
         return [];
     };
 
-
     const allParamsFilled = React.useMemo(() => {
         if (!pickedFunction || !pickedClass) return false;
         const paramMeta = getSelectedFunctionParams();
         return paramMeta.every(
-            ({ name, optional }) =>
-                optional || (paramValues[name] !== undefined && paramValues[name] !== '')
+            ({ name }) => paramValues[name] !== undefined && paramValues[name] !== ''
         );
     }, [pickedFunction, pickedClass, paramValues]);
-
 
     useEffect(() => {
         function listener() {
             const feature = appRef.currentFeature;
             if (feature && activeParam) {
                 const paramMeta = getSelectedFunctionParams().find(p => p.name === activeParam);
-                const type = paramMeta.type.toLowerCase();
+                const isArrayMywFeature =
+                    paramMeta && paramMeta.type.toLowerCase() === 'array<myworldfeature>';
 
-                if (type === 'myworldfeature') {
-                    setParamValues(prev => ({ ...prev, [activeParam]: feature }));
-                } 
-                else if (type === 'array<myworldfeature>') {
-                    setParamValues(prev => {
+                setParamValues(prev => {
+                    if (isArrayMywFeature) {
                         const current = Array.isArray(prev[activeParam]) ? prev[activeParam] : [];
                         const alreadyExists = current.some(f => f.id === feature.id);
                         return alreadyExists
                             ? prev
                             : { ...prev, [activeParam]: [...current, feature] };
-                    });
-                } 
-                else if (type === 'array<number>') {
-                    const coords = feature.getGeometry().coordinates;
-                    setParamValues(prev => ({ ...prev, [activeParam]: [coords[0], coords[1]] }));
-                } 
-                else if (type === 'array<array<number>>') {
-                    const coords = feature.getGeometry().coordinates;
-                    setParamValues(prev => {
-                        const current = Array.isArray(prev[activeParam]) ? prev[activeParam] : [];
-                        return { ...prev, [activeParam]: [...current, coords] };
-                    });
-                }
+                    } else {
+                        return { ...prev, [activeParam]: feature };
+                    }
+                });
             }
         }
 
@@ -144,7 +180,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
         }
     }, [pickedFunction, paramValues, db]);
 
-    const handleParamChange = (paramName, value) => {
+    const handleParamChange = (paramName: string, value: any) => {
         setParamValues(prev => ({ ...prev, [paramName]: value }));
     };
 
@@ -164,7 +200,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
             console.log(myw.config[`mywcom.${feature.toLowerCase()}`]);
             return;
         }
-        const paramMeta = getSelectedFunctionParams();
 
         if (!pickedClass || !pickedFunction) return;
 
@@ -174,11 +209,13 @@ export const LiveDocsModal = ({ open, plugin }) => {
             return;
         }
 
+        const paramMeta = getSelectedFunctionParams();
+
         const params = paramMeta.map(({ name }) => paramValues[name]);
         console.log('Executing function:', pickedFunction, 'with params:', params);
 
-
         const fn = apiInstance[pickedFunction];
+
         if (typeof fn !== 'function') {
             console.warn(`${pickedFunction} is not a function on ${pickedClass}`);
             return;
@@ -193,6 +230,21 @@ export const LiveDocsModal = ({ open, plugin }) => {
         } else {
             console.log('Function result:', result);
         }
+    };
+
+    const parseNestedArray = (input: string): any[][] => {
+        if (!input || typeof input !== 'string') return [];
+
+        const safeInput = `[${input}]`;
+        try {
+            const parsed = JSON.parse(safeInput);
+            if (Array.isArray(parsed)) {
+                return parsed;
+            }
+        } catch (err) {
+            console.error('Invalid nested array format:', err);
+        }
+        return [];
     };
     
     const currentDictionary = pickedClass ? ApiFunctionDictionaries[pickedClass] : null;
@@ -266,7 +318,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                         )}
                         {pickedFunction &&
                             getSelectedFunctionParams().map(({ name, type }) => {
-                                // console.log('paramValues', paramValues);
+                                console.log('paramValues', paramValues);
                                 if (type.toLowerCase() === 'myworldfeature') {
                                     return (
                                         <Input
@@ -304,7 +356,8 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             type="number"
                                             placeholder={`${name} (enter number)`}
                                             value={paramValues[name] || ''}
-                                            onChange={e => handleParamChange(name, e.target.value)}
+                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => 
+                                                handleParamChange(name, e.target.value)}
                                         />
                                     );
                                 }
@@ -314,11 +367,15 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             key={name}
                                             placeholder={`${name} (enter string)`}
                                             value={paramValues[name] || ''}
-                                            onChange={e => handleParamChange(name, e.target.value)}
+                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => 
+                                                handleParamChange(name, e.target.value)}
                                         />
                                     );
                                 }
-                                if (type.toLowerCase() === 'array<string>' ) {
+                                if (
+                                    type.toLowerCase() === 'array<string>' ||
+                                    type.toLowerCase() === 'array<number>'
+                                ) {
                                     return (
                                         <Input
                                             key={name}
@@ -327,7 +384,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                                 rawInput[name] ??
                                                 (paramValues[name] || []).join(', ')
                                             }
-                                            onChange={e => {
+                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                                                 const value = e.target.value;
                                                 setRawInput(prev => ({ ...prev, [name]: value }));
                                                 const arrayValue = value
@@ -336,31 +393,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                                     .filter(Boolean);
                                                 handleParamChange(name, arrayValue);
                                             }}
-                                        />
-                                    );
-                                }
-                                if (type.toLowerCase() === 'array<number>')
-                                {
-                                    const coords = paramValues[name] || [];
-                                    return (
-                                        <Input
-                                            key={name}
-                                            placeholder={`${name} (click feature to get [x, y])`}
-                                            value={coords.join(', ')}
-                                            readOnly
-                                            onFocus={() => setActiveParam(name)}
-                                        />
-                                    );
-                                }
-                                if (type.toLowerCase() === 'array<array<number>>'){
-                                    const coordsArray = Array.isArray(paramValues[name]) ? paramValues[name] : [];
-                                    return (
-                                        <Input
-                                            key={name}
-                                            placeholder={`${name} (click multiple features to collect [[x,y], [x,y], ...])`}
-                                            value={coordsArray.map(c => `[${c[0]}, ${c[1]}]`).join('; ')}
-                                            readOnly
-                                            onFocus={() => setActiveParam(name)}
                                         />
                                     );
                                 }
@@ -375,6 +407,26 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             value={features.map(f => f.id).join(', ')}
                                             readOnly
                                             onFocus={() => setActiveParam(name)}
+                                        />
+                                    );
+                                }
+                                if (type.toLowerCase().includes('array<array')) {
+                                    return (
+                                        <Input
+                                            key={name}
+                                            placeholder={`${name} (paste json nested array '[[1,2],[3,4]]')`}
+                                            value={
+                                                Array.isArray(paramValues[name])
+                                                    ? paramValues[name]
+                                                          .map(a => JSON.stringify(a))
+                                                          .join(', ')
+                                                    : ''
+                                            }
+                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                                                const raw = e.target.value;
+                                                const nestedArray = parseNestedArray(raw);
+                                                handleParamChange(name, nestedArray);
+                                            }}
                                         />
                                     );
                                 }
@@ -395,7 +447,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             <Input.TextArea
                                                 placeholder={`enter JSON for ${name}`}
                                                 value={raw}
-                                                onChange={e => {
+                                                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
                                                     const value = e.target.value;
                                                     setRawInput(prev => ({
                                                         ...prev,
@@ -454,7 +506,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             <input
                                                 type="number"
                                                 value={pinRange.low}
-                                                onChange={e =>
+                                                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                                     update('low', Number(e.target.value))
                                                 }
                                             />
@@ -462,7 +514,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                             <input
                                                 type="number"
                                                 value={pinRange.high}
-                                                onChange={e =>
+                                                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                                                     update('high', Number(e.target.value))
                                                 }
                                             />
@@ -475,7 +527,8 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                         key={name}
                                         placeholder={name}
                                         value={paramValues[name] || ''}
-                                        onChange={e => handleParamChange(name, e.target.value)}
+                                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => 
+                                            handleParamChange(name, e.target.value)}
                                     />
                                 );
                             })}
