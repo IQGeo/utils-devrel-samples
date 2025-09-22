@@ -22,3 +22,10 @@ node_modules
 /install
 /native
 # END CUSTOM SECTION
+
+# JWT AUTH SETUP FILES #
+public/cfg.ini
+public/jwt_util.py
+public/private_key.pem
+public/public_key.pem
+public/token.txt
