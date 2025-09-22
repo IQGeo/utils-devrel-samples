@@ -30,9 +30,7 @@ def get_pole_routes(pole_id, design):
 def main(token_file, design):
     """script entrypoint."""
 
-    # cookies = iqgeo_jwt_auth(token_file)  # or iqgeo_interactive_ropc_auth()
-    # set_auth_cookies(cookies)
-    iqgeo_interactive_ropc_auth()
+    iqgeo_jwt_auth(token_file)  
 
     # custom report section
     attachment_report = {}

@@ -57,10 +57,7 @@ def calc_fill_ratio(conduit_diameter, cable_diameters):
 def main(token_file, design):
     """script entrypoint."""
 
-    # cookies = iqgeo_jwt_auth(token_file)
-
-    # set_auth_cookies(cookies)
-    iqgeo_interactive_ropc_auth()
+    iqgeo_jwt_auth(token_file)
 
     capacity_report = {}
     conduits = get_all_features(feature_type="conduit", design=design)

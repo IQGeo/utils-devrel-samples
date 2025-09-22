@@ -1,7 +1,9 @@
 #! /bin/env python3
 
 import json
-from utils import query_spatial, iqgeo_interactive_ropc_auth
+import argparse
+from pathlib import Path
+from utils import query_spatial, iqgeo_jwt_auth
 
 def report_features(feature_type, geometry, tolerance=0):
     """
@@ -13,16 +15,16 @@ def report_features(feature_type, geometry, tolerance=0):
         props = f.get("properties", {})
         print(props)
 
+def main(token_file):
 
-if __name__ == "__main__":
+    iqgeo_jwt_auth(token_file)
 
-    iqgeo_interactive_ropc_auth()
-    # Example 1: Point
+    # Point
     point = {"type": "Point", "coordinates": [0.14208, 52.23095]}
     report_features("pole", point, tolerance=60)
     # report_features("conduit", point, tolerance=60)
 
-    # Example 2: LineString
+    # LineString
     line = {
         "type": "LineString",
         "coordinates": [
@@ -33,7 +35,7 @@ if __name__ == "__main__":
     }
     report_features("pole", line, tolerance=25)
 
-    # Example 3: Polygon
+    # Polygon
     polygon = {
         "type": "Polygon",
         "coordinates": [[
@@ -45,4 +47,24 @@ if __name__ == "__main__":
         ]]
     }
     report_features("pole", polygon, tolerance=10)
+    
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Conduit capacity report")
+    parser.add_argument(
+        "--token_file",
+        type=Path,
+        default="token.txt",
+        help="Path to the pre-generated JWT token",
+    )
+    # parser.add_argument(
+    #     "--design",
+    #     type=str,
+    #     default=None,
+    #     help="Design ID to use, e.g. design/2FMyDesign",
+    # )
+    args = parser.parse_args()
+
+    main(token_file=args.token_file)
+
+   
