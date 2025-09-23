@@ -6,9 +6,7 @@ from pathlib import Path
 from utils import (
     iqgeo_jwt_auth,
     iqgeo_get_request,
-    set_auth_cookies,
     get_all_features,
-    iqgeo_interactive_ropc_auth,
     BASE_URL,
 )
 
@@ -30,7 +28,7 @@ def get_pole_routes(pole_id, design):
 def main(token_file, design):
     """script entrypoint."""
 
-    iqgeo_jwt_auth(token_file)  
+    iqgeo_jwt_auth(token_file)
 
     # custom report section
     attachment_report = {}

@@ -51,7 +51,7 @@ def get_all_features(feature_type, design=None):
     )
 
 
-def iqgeo_get_request(endpoint, params =None, design=None):
+def iqgeo_get_request(endpoint, params=None, design=None):
     """
     Hit a GET endpoint using the auth cookie for this session.
 
@@ -65,7 +65,7 @@ def iqgeo_get_request(endpoint, params =None, design=None):
     return r.json()
 
 
-def iqgeo_post_request(endpoint, params = None, design=None, data=None):
+def iqgeo_post_request(endpoint, params=None, design=None, data=None):
     """
     Hit a POST endpoint using the auth cookie for this session.
 
@@ -77,15 +77,6 @@ def iqgeo_post_request(endpoint, params = None, design=None, data=None):
     r = SESSION.post(endpoint, headers=HEADERS, params=params, json=data)
     r.raise_for_status()
     return r.json()
-
-
-def set_auth_cookies(cookies: dict):
-    if not cookies:
-        raise ValueError("Authentication cookies are missing. Make sure your auth function returns a valid dict.")
-    
-    HEADERS[
-        "cookie"
-    ] = f"myworldapp={cookies['myworldapp']}; csrf_token={cookies['csrf_token']}"
 
 
 def query_spatial(feature_type, geometry, tolerance=0):
@@ -104,7 +95,7 @@ def query_spatial(feature_type, geometry, tolerance=0):
     elif geom_type in ["LineString", "Polygon"]:
         url = f"{BASE_URL}/feature/{feature_type}/get"
         data = {"geometry": geometry, "tolerance": tolerance}
-        print(geometry, tolerance)
+        # print(geometry, tolerance)
         return iqgeo_post_request(url, data=data)
 
     else:

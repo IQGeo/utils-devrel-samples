@@ -5,6 +5,7 @@ import argparse
 from pathlib import Path
 from utils import query_spatial, iqgeo_jwt_auth
 
+
 def report_features(feature_type, geometry, tolerance=0):
     """
     Generic report function: prints properties of features returned by query_spatial.
@@ -15,14 +16,14 @@ def report_features(feature_type, geometry, tolerance=0):
         props = f.get("properties", {})
         print(props)
 
+
 def main(token_file):
 
     iqgeo_jwt_auth(token_file)
 
     # Point
     point = {"type": "Point", "coordinates": [0.14208, 52.23095]}
-    report_features("pole", point, tolerance=60)
-    # report_features("conduit", point, tolerance=60)
+    report_features("manhole", point, tolerance=60)
 
     # LineString
     line = {
@@ -38,16 +39,18 @@ def main(token_file):
     # Polygon
     polygon = {
         "type": "Polygon",
-        "coordinates": [[
-            [0.1400, 52.2300],
-            [0.1450, 52.2300],
-            [0.1450, 52.2350],
-            [0.1400, 52.2350],
-            [0.1400, 52.2300]
-        ]]
+        "coordinates": [
+            [
+                [0.1400, 52.2300],
+                [0.1450, 52.2300],
+                [0.1450, 52.2350],
+                [0.1400, 52.2350],
+                [0.1400, 52.2300],
+            ]
+        ],
     }
     report_features("pole", polygon, tolerance=10)
-    
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Conduit capacity report")
@@ -57,14 +60,6 @@ if __name__ == "__main__":
         default="token.txt",
         help="Path to the pre-generated JWT token",
     )
-    # parser.add_argument(
-    #     "--design",
-    #     type=str,
-    #     default=None,
-    #     help="Design ID to use, e.g. design/2FMyDesign",
-    # )
     args = parser.parse_args()
 
     main(token_file=args.token_file)
-
-   

@@ -6,9 +6,7 @@ from pathlib import Path
 from utils import (
     iqgeo_jwt_auth,
     iqgeo_get_request,
-    set_auth_cookies,
     get_all_features,
-    iqgeo_interactive_ropc_auth,
     BASE_URL,
 )
 
