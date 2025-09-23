@@ -82,7 +82,7 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
         conduitApi: ConduitMenu,
         cableApi: CableMenu,
         connectionApi: ConnectionMenu,
-        circuitApi: CircuitMenu,
+        circuitApi: CircuitMenu
     };
 
     // API instances
@@ -133,25 +133,36 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
         );
     }, [pickedFunction, pickedClass, paramValues]);
 
-    useEffect(() => {
+     useEffect(() => {
         function listener() {
             const feature = appRef.currentFeature;
             if (feature && activeParam) {
                 const paramMeta = getSelectedFunctionParams().find(p => p.name === activeParam);
-                const isArrayMywFeature =
-                    paramMeta && paramMeta.type.toLowerCase() === 'array<myworldfeature>';
+                const type = paramMeta.type.toLowerCase();
 
-                setParamValues(prev => {
-                    if (isArrayMywFeature) {
+                if (type === 'myworldfeature') {
+                    setParamValues(prev => ({ ...prev, [activeParam]: feature }));
+                } 
+                else if (type === 'array<myworldfeature>') {
+                    setParamValues(prev => {
                         const current = Array.isArray(prev[activeParam]) ? prev[activeParam] : [];
                         const alreadyExists = current.some(f => f.id === feature.id);
                         return alreadyExists
                             ? prev
                             : { ...prev, [activeParam]: [...current, feature] };
-                    } else {
-                        return { ...prev, [activeParam]: feature };
-                    }
-                });
+                    });
+                } 
+                else if (type === 'array<number>') {
+                    const coords = feature.getGeometry().coordinates;
+                    setParamValues(prev => ({ ...prev, [activeParam]: [coords[0], coords[1]] }));
+                } 
+                else if (type === 'array<array<number>>') {
+                    const coords = feature.getGeometry().coordinates;
+                    setParamValues(prev => {
+                        const current = Array.isArray(prev[activeParam]) ? prev[activeParam] : [];
+                        return { ...prev, [activeParam]: [...current, coords] };
+                    });
+                }
             }
         }
 
@@ -163,6 +174,7 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
             appRef.off('currentFeatureSet-changed', listener);
         };
     }, [activeParam]);
+
 
     useEffect(() => {
         if (pickedFunction) {
@@ -232,21 +244,7 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
         }
     };
 
-    const parseNestedArray = (input: string): any[][] => {
-        if (!input || typeof input !== 'string') return [];
 
-        const safeInput = `[${input}]`;
-        try {
-            const parsed = JSON.parse(safeInput);
-            if (Array.isArray(parsed)) {
-                return parsed;
-            }
-        } catch (err) {
-            console.error('Invalid nested array format:', err);
-        }
-        return [];
-    };
-    
     const currentDictionary = pickedClass ? ApiFunctionDictionaries[pickedClass] : null;
     const currentDescription =
     pickedFunction && currentDictionary && currentDictionary[pickedFunction]
@@ -318,7 +316,6 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
                         )}
                         {pickedFunction &&
                             getSelectedFunctionParams().map(({ name, type }) => {
-                                console.log('paramValues', paramValues);
                                 if (type.toLowerCase() === 'myworldfeature') {
                                     return (
                                         <Input
@@ -372,10 +369,7 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
                                         />
                                     );
                                 }
-                                if (
-                                    type.toLowerCase() === 'array<string>' ||
-                                    type.toLowerCase() === 'array<number>'
-                                ) {
+                                if (type.toLowerCase() === 'array<string>') {
                                     return (
                                         <Input
                                             key={name}
@@ -396,6 +390,31 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
                                         />
                                     );
                                 }
+                                if (type.toLowerCase() === 'array<number>')
+                                {
+                                    const coords = paramValues[name] || [];
+                                    return (
+                                        <Input
+                                            key={name}
+                                            placeholder={`${name} (click feature to get [x, y])`}
+                                            value={coords.join(', ')}
+                                            readOnly
+                                            onFocus={() => setActiveParam(name)}
+                                        />
+                                    );
+                                }
+                                if (type.toLowerCase() === 'array<array<number>>'){
+                                    const coordsArray = Array.isArray(paramValues[name]) ? paramValues[name] : [];
+                                    return (
+                                        <Input
+                                            key={name}
+                                            placeholder={`${name} (click multiple features to collect [[x,y], [x,y], ...])`}
+                                            value={coordsArray.map(c => `[${c[0]}, ${c[1]}]`).join('; ')}
+                                            readOnly
+                                            onFocus={() => setActiveParam(name)}
+                                        />
+                                    );
+                                }
                                 if (type.toLowerCase() === 'array<myworldfeature>') {
                                     const features = Array.isArray(paramValues[name])
                                         ? paramValues[name]
@@ -407,26 +426,6 @@ export const LiveDocsModal: React.FC<LiveDocsModalProps> = ({ open, plugin }) =>
                                             value={features.map(f => f.id).join(', ')}
                                             readOnly
                                             onFocus={() => setActiveParam(name)}
-                                        />
-                                    );
-                                }
-                                if (type.toLowerCase().includes('array<array')) {
-                                    return (
-                                        <Input
-                                            key={name}
-                                            placeholder={`${name} (paste json nested array '[[1,2],[3,4]]')`}
-                                            value={
-                                                Array.isArray(paramValues[name])
-                                                    ? paramValues[name]
-                                                          .map(a => JSON.stringify(a))
-                                                          .join(', ')
-                                                    : ''
-                                            }
-                                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                                                const raw = e.target.value;
-                                                const nestedArray = parseNestedArray(raw);
-                                                handleParamChange(name, nestedArray);
-                                            }}
                                         />
                                     );
                                 }
