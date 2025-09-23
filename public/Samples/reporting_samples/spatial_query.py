@@ -11,7 +11,7 @@ def report_features(feature_type, geometry, tolerance=0):
     Generic report function: prints properties of features returned by query_spatial.
     """
     results = query_spatial(feature_type, geometry, tolerance)
-    print(f"--- {feature_type.upper()} results ---")
+    print(f"--- {feature_type.upper()} spatial query ---")
     for f in results.get("features", []):
         props = f.get("properties", {})
         print(props)
