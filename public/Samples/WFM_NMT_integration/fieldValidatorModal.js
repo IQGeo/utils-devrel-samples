@@ -26,11 +26,22 @@ export const FieldValidatorModal = ({ open }) => {
     const [pickedFeatureType, setPickedFeatureType] = useState('');
     const [pickedField, setPickedField] = useState('');
     const [result, setResult] = useState([]);
+        
+    const [showIntro, setShowIntro] = useState(true);
 
+    // project hooks
     const [projLoading, setProjLoading] = useState(true); // loading status of db call for projects
     const [allProjects, setAllProjects] = useState([]); // array that populates the Select widget
     const [selProject, setSelProject] = useState(''); // selected project id value
     const [selProjectName, setSelProjectName] = useState(''); // selected project name
+
+    // group hooks
+    const [projGroups, setProjGroups] = useState([]);
+    const [selProjGroups, setSelProjGroups] = useState([]);
+    const [selGroup, setSelGroup] = useState(null); // group id
+    const [selGroupName, setSelGroupName] = useState(''); // group name
+    const [groupDisabled, setGroupDisabled] = useState(true);
+    const [groupLoading, setGroupLoading] = useState(true);    
 
     useEffect(() => {
         const dbFeatures = db.getFeatureTypes();
@@ -59,10 +70,13 @@ export const FieldValidatorModal = ({ open }) => {
                 for (const feature in result2) {
                     if (result2[feature]?.properties) {
                         const props = result2[feature]?.properties;
+                        // do not load Default Project
+                        if (props['name'] !== 'Default Project') {
                         arrProjects.push({
                             value: props['id'],
                             label: props['name']
                         });
+                        }
                     }
                 }
                 setAllProjects(arrProjects);
@@ -70,6 +84,23 @@ export const FieldValidatorModal = ({ open }) => {
             });
         };
         listProjects();
+    
+        // load all Project - Group associations into projGroups state hook
+        const getProjGroupJunction = async () => {
+            let arrGroupsProjects = [];
+            db.getFeatures('mywwfm_project_group_junction').then(result3 => {
+                for (const group in result3) {
+                    if (result3[group]?.properties) {
+                        const props2 = result3[group]?.properties;
+
+                        arrGroupsProjects.push(props2);
+                    }
+                }
+                setProjGroups(arrGroupsProjects);
+            });
+        };
+
+        getProjGroupJunction();
     }, []);
 
     // ====end of Effect hook
@@ -94,10 +125,65 @@ export const FieldValidatorModal = ({ open }) => {
     const onProjectSelected = (value, option) => {
         setSelProject('mywwfm_project/' + value);
         setSelProjectName(option.label);
+
+        determineGroups(value);
+        setGroupDisabled(false);
+        setSelGroup(null);
     };
+
+    // group related functions
+
+    const determineGroups = async proj_value => {
+        let selectGroups = [];
+
+        // filter groups by project id passed in after Project is selected
+        const thisProjectGroups = projGroups.filter(function (arr) {
+            return arr.project === proj_value;
+        });
+
+        if (thisProjectGroups.length > 0) {
+            thisProjectGroups.forEach(item => {
+                // const group_name_split = item.group_name.split(':');
+                // const group_label = group_name_split[group_name_split.length - 1];
+                selectGroups.push({
+                    value: item.id,
+                    label: item.group_name
+                });
+            });
+
+            setSelProjGroups(selectGroups);
+
+            setGroupLoading(false);
+        }
+    };
+
+    const renderGroups = () => {
+        return (
+            <Select
+                loading={groupLoading}
+                placeholder="please select a group"
+                options={selProjGroups}
+                key={selProjGroups.id}
+                onChange={onGroupSelected}
+                value={selGroup}
+                disabled={groupDisabled}
+            />
+        );
+    };
+
+    const onGroupSelected = (value, option) => {
+        setSelGroup(value);
+        setSelGroupName(option.label);
+    };
+
+    // -------
 
     const handleCancel = () => {
         setIsOpen(false);
+    };
+
+    const hideIntro = () => {
+        setShowIntro(false);
     };
 
     const onFieldSelected = value => {
@@ -150,7 +236,8 @@ export const FieldValidatorModal = ({ open }) => {
             inputtedValue,
             pickedFeatureType,
             selProject,
-            selProjectName
+            selProjectName,
+            selGroupName
         );
 
         const { createTicket } = wfm.redux.tickets;
@@ -257,23 +344,58 @@ export const FieldValidatorModal = ({ open }) => {
             title={msg('windowHeader')}
             width={500}
             onCancel={handleCancel}
-            footer={[
-                <Button key="cancel" onClick={handleCancel}>
-                    Cancel
-                </Button>,
-                <Button key="ok" onClick={validateRule} type="primary">
-                    OK
-                </Button>
-            ]}
+             footer={
+                showIntro
+                    ? [
+                          <Button key="ok" onClick={hideIntro} type="primary">
+                              Next
+                          </Button>
+                      ]
+                    : [
+                          <Button key="cancel" onClick={handleCancel}>
+                              Cancel
+                          </Button>,
+                          <Button key="ok" onClick={validateRule} type="primary">
+                              OK
+                          </Button>
+                      ]
+            }
         >
-            Choose a project:
-            {renderProject()}
-            <br />
-            <br />
-            Choose a network feature:
-            <Cascader options={featuresList} onChange={onFieldSelected} />
-            {renderFields()}
-            {true && result.length > 0 ? renderResult() : null}
+            {showIntro ? (
+                <div style={{ whiteSpace: 'pre-wrap' }}>
+                    <p>
+                        In this sample we are showing how to create WFM tickets for NMT features
+                        that do not meet user-specified criteria.
+                        <br />
+                        <br />
+                        This expects that a Project has been created and that Project has one or
+                        more groups associated with it.
+                        <br />
+                        <br />
+                        Note that as of Workflow Manager 4.1 there is also a requirement that if a
+                        Project has Milestones associated with it, any ticket associated with that
+                        Project must in turn be associated with a Milestone. That scenario is beyond
+                        the scope of this code sample and we recommend that Projects without
+                        Milestones be used for this scenario.
+                        <br />
+                    </p>
+                </div>
+            ) : (
+                <div>
+                    Choose a project:
+                    {renderProject()}
+                    <br />
+                    <br />
+                    Choose a group associated with project:
+                    {renderGroups()}
+                    <br />
+                    <br />
+                    Choose a network feature:
+                    <Cascader options={featuresList} onChange={onFieldSelected} />
+                    {renderFields()}
+                    {true && result.length > 0 ? renderResult() : null}
+                </div>
+            )}
         </DraggableModal>
     );
 };
