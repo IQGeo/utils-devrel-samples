@@ -2,102 +2,84 @@
 
 In this document we cover how to add the sample library to your development environment and set up the applications that allow you to use the samples.
 
-********** If you still do not have a development enviroment, contact devrel@iqgeo.com **********
+> If you still do not have a development enviroment, contact the Developer Relations team at the Partner Support Portal at [partnersupport.iqgeo.com](partnersupport.iqgeo.com) and we can help you.
 
 ## Table of Contents
 
 - [How To Setup The Sample Library](#how-to-setup-the-sample-library)
   - [Table of Contents](#table-of-contents)
-  - [How to add the Sample Library to your development environment](#how-to-add-the-sample-library-to-your-development-environment)
-  - [How to add the Sample Applications to the Platform](#how-to-add-the-sample-applications-to-the-platform)
+  - [Adding the Sample Library](#adding-the-sample-library)
+  - [Registering Sample Applications](#registering-sample-applications)
+  - [**Troubleshooting \& Tips**](#troubleshooting--tips)
 
 ---
 
-## How to add the Sample Library to your development environment
+## Adding the Sample Library
 
-To add the sample library to your development environment clone the [Repository](https://github.com/IQGeo/utils-devrel-samples/tree/main) directly into the root directory of your development environment (i.e.: The same level as the `custom` folder).
+To add the sample library to your environment:
 
-Once the repository is cloned you should have a `utils-devrel-sample` within it with the contents of the repository. The next step is to add the Samples Module to your `iqgeorc.jsonc` file, as well as the other modules needed to properly run the samples.
-
-The `modules` section of the `iqgeorc.jsonc` file should look like below
-
-> **Make sure to update the version number to the latest available version of the modules before updating your `iqgeorc.jsonc` file!**
-> 
-> **You can find the latest available version information in the [Modules Dependencies](https://github.com/IQGeo/utils-project-template/wiki/Module-dependencies) page**
-
-```    "modules": [
-        {
-            "name": "comms",
-            "version": "3.3"
-        },
-        {
-            "name": "comsof",
-            "version": "1.5"
-        },
-        {
-            "name": "comms_dev_db",
-            "devOnly": true,
-            "version": "3.2"
-        },
-        {
-            "name": "utils-devrel-samples"
-        },
-        {
-            "name": "groups",
-            "version": "1.0.2"
-        },
-        {
-            "name": "workflow_manager",
-            "version": "4.0"
-        },
-        {
-            "name": "workflow_manager_dev_db",
-            "version": "4.0"
-        },
-        {
-            "name": "dev_tools",
-            "version": "7.2",
-            "dbInit": false
-        }
+1. **Clone the Repository**
+   - Clone the [utils-devrel-samples Repository](https://github.com/IQGeo/utils-devrel-samples/tree/main) directly into the root directory of your development environment (i.e.: at the same level as your custom folder)
+  
+2. **Verify Directory Structure**
+   - Confirm that a `utils-devrel-samples` directory appears at the root, alongside the `custom` folder, containing the repository contents.
+  
+3. **Update the `iqgeorc.jsonc` file**
+    - Add the Samples module and any required dependencies to your iqgeorc.jsonc file under the modules section. It should resemble: 
+    ```
+    //...
+    "modules": [
+    // Other modules...
+    {
+        "name": "utils-devrel-samples"
+    }
     ],
-```
-<p align="center"><i>Modules section of the iqgeorc.jsonc file</i></p>
+    //...
+    ```
 
-After editing the `iqgeorc.jsonc` file, right click on it in the "Explorer" window in VS Code and run the "IQGeo Update Project from .iqgeorc.jsonc" and rebuild the container.
+    > Always use the latest module versions. Refer to the [Modules Dependencies](https://github.com/IQGeo/utils-project-template/wiki/Module-dependencies) page for up-to-date version info.
 
-> You have to clean up your working tree before running the Update Project command!
+4. **Apply Configuration Changes**
+    - Right-click on `iqgeorc.jsonc` in VS Code's "Explorer" panel
+    - Select **“IQGeo: Update Project from .iqgeorc.jsonc”**
+        > **Important**: Ensure your working tree is clean before running the update command
 
-Once the container is rebuilt, you can cofigure the application within the "Configuration" Page.
+5. **Rebuild the Container**
+   - Once the container is rebuilt, configuration options for the sample application will become available on the "Configuration" page
 
-## How to add the Sample Applications to the Platform
+## Registering Sample Applications
 
-In order to use the Samples you need to add the Applications containing the Samples to you Platform.
+To access and use the sample applications on your platform:
 
-Below we will describe how to set one of the applications: `main.nmt_samples.js`, the procedure for the other files are similar with some considerations after the instructions.
+1. **Add Application to Platform**
+   - Navigate to Configurations → Applications → Add New
+   - Enter your preferred Name, Display Name, and Description
+   - In the JavaScript File field, enter: `modules/utils-devrel-samples/js/main.nmt_samples.js`
+   - Enable:
+     - Available Online
+     - Available in Native App
+     - Choose a relevant Basemap or Basemaps
+     - For Overlays, select all except those beginning with `comsof`
+     - Enable Snapping for:
+       - Addresses
+       - mywcom_cables
+       - mywcom_equipment
+       - mywcom_structures
+   - Save the configuration
+> For additional sample application files, repeat these steps and adjust as needed using their respective file names
 
-In the Platform main page:
+2. **Set Application Permissions**
+   - Return to the main page by clicking the IQGeo logo
+   - Go to Configurations → Roles
+   - Select the user group needing access
+   - Find and enable devrel_samples_app
+   - Grant full permissions for the application
+   - Save changes
 
-- Click on Configurations -> Applications -> Add New
-- Set the Name, Display Name, and Description as you want
-- In the JavaScript File field use `modules/utils-devrel-samples/js/main.nmt_samples.js`
-- Tick Available Online and Available in Native App
-- Select the appropriate Basemap(s)
-- In Overlays select all BUT the ones starting with `comsof`
-- Enable Snapping in
-  - Addresses
-  - mywcom_cables
-  - mywcom_equipment
-  - mywcom_structures
-- Click "Save"
+3. **Verify Application Availability**
+   - Upon returning to the main page, the Samples Application icon should appear, indicating successful setup and availability for authorized users
 
-Once the application is configured you must give permissions to the users that will access it
-
-Go back to the main page by clicking in the IQGeo logo on the top right corner:
-
-- Click on Configurations -> Roles
-- Select the user group that will access the application
-- Look for the `devrel_samples_app` and enable it
-- Enable all permissions for the application
-- Click "Save"
-
-Go back to the main page by clicking in the IQGeo logo and you should see the icon for the Samples Application.
+## **Troubleshooting & Tips**
+   - Ensure the correct directory structure before running any platform commands.
+   - Always reference the module dependency page for up-to-date versioning.
+   - For further support, contact the Developer Relations team at the Partner Support Portal at [partnersupport.iqgeo.com](partnersupport.iqgeo.com)

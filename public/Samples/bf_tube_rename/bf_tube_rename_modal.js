@@ -64,7 +64,7 @@ export const BFTubeRenameModal = ({ open, plugin, builder }) => {
             });
 
             await t.run().then(() => {
-                setAlertMessage('TRANSACTION Tubes renamed successfully!');
+                setAlertMessage('Tubes renamed successfully!');
                 setIsAlertVisible(true);
                 setTimeout(() => {
                     setIsAlertVisible(false);
