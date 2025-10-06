@@ -91,7 +91,8 @@ export const createTicketObject = (
     value,
     pickedFeature,
     projId,
-    projName
+    projName,
+    groupName
 ) => {
     const { msg } = useLocale('customRuleModal');
     let ruleStr = '';
@@ -139,13 +140,13 @@ export const createTicketObject = (
         mywwfm_last_modified_datetime: undefined,
         mywwfm_node: msg('node'),
         mywwfm_project: projId,
-        mywwfm_project_name: projName,
+        // mywwfm_project_name: projName, - property name not supported in WFM 4.1
         mywwfm_region: 'South',
         mywwfm_related_feature: null,
         mywwfm_source_system: null,
         mywwfm_status: 'Open',
         mywwfm_ticket_details: msg('default_ticket_details'),
-        mywwfm_ticket_group: ['admin:Default'],
+        mywwfm_ticket_group: [groupName],
         mywwfm_type: 'Test Ticket',
         mywwfm_type_category: msg('default_category')
     };

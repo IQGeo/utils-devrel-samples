@@ -14,9 +14,9 @@ This project provides several samples of functionalities for developers wanting 
 
 ## What's included in the Samples repository?
 
-Inside the repository you will find two folders:
+Inside the repository you will find three folders:
 
-- `Documents`: Within this folder you will find all the documentation on how to set up the samples library in your development environment, as well as documentation for each sample. All the documentation can also be found ********** HERE **********. For each sample you will fine:
+- `Documents`: Within this folder you will find all the documentation on how to set up the samples library in your development environment, as well as documentation for each sample. All the documentation can also be found in the Developer Relations section of help.iqgeo.com. For each sample you will find:
   - An overview on how the sample work and the expected result when using it
   - A deep-dive detailing how the code for each sample work
 - `server`: This folder contains server-related code
