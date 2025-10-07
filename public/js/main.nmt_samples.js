@@ -25,7 +25,7 @@ plugins['pythonCustomerConnectionPlugin'] = PythonCustomerConnectionPlugin;
 plugins['lrtPlugin'] = LrtPlugin;
 plugins['bfTubeRenamePlugin'] = BFTubeRenamePlugin;
 plugins['liveDocsPlugin'] = LiveDocsPlugin;
-plugins['designRulesManager'] = WfmDesignsPlugin;
+plugins['wfmDesignsPlugin'] = WfmDesignsPlugin;
 
 plugins['designRulesManager'][1].rules.push(fiberCountRule);
 
@@ -38,7 +38,7 @@ plugins['palette'] = [
             'lrtPlugin.dialog',
             'bfTubeRenamePlugin.dialog',
             'liveDocsPlugin.dialog',
-            'designRulesManager.dialog'
+            'WfmDesignsPlugin.dialog'
         ]
     }
 ];
