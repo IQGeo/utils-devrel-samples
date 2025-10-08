@@ -27,7 +27,7 @@ export const WfmDesignsModal = ({ open }) => {
 
         const map = {};
         tickets.forEach(ticket => {
-            const designId = ticket.properties.myw_wfm_design;
+            const designId = ticket.properties.mywwfm_design;
             if (!designId) return;
             if (!map[designId]) map[designId] = [];
             map[designId].push(ticket);
