@@ -65,5 +65,9 @@
         "description": "To use the tool, first select a class and then choose a function from the dropdown menus. The parameter fields will update automatically based on the function you select.\n\nEnter the required values according to the parameter type, or select features on the map where applicable.\n\nOnce all required fields are filled, press Execute to run the function and view the result in your browser's Developer Tools Console window.",
         "classSelection": "Select the class below to see its available functions.",
         "classTitle": "Classes"
+    },
+    "wfmDesignsPlugin": {
+        "wfm_designs_title": "WFM Designs",
+        "description": "This tool fetches WFM designs and displays associated tickets from the database.\n\nTo use the tool click on the 'WFM Designs' button in the Samples Menu and a modal will open displaying the designs and their associated tickets.\n\nYou can find the source code in the folder modules/utils-devrel-samples/public/Samples/wfm_design_manager."
     }
 }

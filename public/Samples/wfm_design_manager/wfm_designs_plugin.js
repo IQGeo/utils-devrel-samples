@@ -4,12 +4,12 @@ import { WfmDesignsModal } from './wfm_designs_modal';
 
 export class WfmDesignsPlugin extends Plugin {
     static {
-        // this.prototype.messageGroup = 'wfmDesignsPlugin';
+        this.prototype.messageGroup = 'wfmDesignsPlugin';
 
         this.prototype.buttons = {
             dialog: class extends PluginButton {
                 static {
-                    this.prototype.id = 'wfm-designs-button';
+                    this.prototype.id = 'customer-connection-button';
                     this.prototype.titleMsg = 'wfm_designs_title';
                     // this.prototype.imgSrc = wfmDesignsImage;
                 }

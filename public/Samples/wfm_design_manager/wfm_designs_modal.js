@@ -3,13 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { DraggableModal, Button, useLocale } from 'myWorld-client/react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
-export const WfmDesignsModal = ({ open, plugin }) => {
+export const WfmDesignsModal = ({ open }) => {
     const { msg } = useLocale('wfmDesignsPlugin');
     const appRef = myw.app;
     const db = appRef.database;
 
     const [isOpen, setIsOpen] = useState(open);
-    const [designMap, setDesignMap] = useState<Record<string, any[]>>({});
+    const [designMap, setDesignMap] = useState({});
 
     useEffect(() => {
         fetchDesigns();
@@ -25,7 +25,7 @@ export const WfmDesignsModal = ({ open, plugin }) => {
             outFields: ['name', 'mywwfm_design']
         });
 
-        const map: Record<string, any[]> = {};
+        const map = {};
         tickets.forEach(ticket => {
             const designId = ticket.properties.myw_wfm_design;
             if (!designId) return;
@@ -38,7 +38,7 @@ export const WfmDesignsModal = ({ open, plugin }) => {
 
     return (
         <DraggableModal
-            wrapClassName="wfm-designs-modal"
+            wrapClassName="customer-connection-modal"
             open={isOpen}
             title={msg('wfm_designs_title')}
             width={500}

@@ -38,7 +38,7 @@ plugins['palette'] = [
             'lrtPlugin.dialog',
             'bfTubeRenamePlugin.dialog',
             'liveDocsPlugin.dialog',
-            'WfmDesignsPlugin.dialog'
+            'wfmDesignsPlugin.dialog'
         ]
     }
 ];
