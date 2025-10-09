@@ -66,8 +66,6 @@
         "classSelection": "Select the class below to see its available functions.",
         "classTitle": "Classes"
     },
-    "wfmDesignsPlugin": {
-        "wfm_designs_title": "WFM Designs",
-        "description": "This tool fetches WFM designs and displays associated tickets from the database.\n\nTo use the tool click on the 'WFM Designs' button in the Samples Menu and a modal will open displaying the designs and their associated tickets.\n\nYou can find the source code in the folder modules/utils-devrel-samples/public/Samples/wfm_design_manager."
-    }
+    "restApiPlugin": {
+        "rest_api_title": "REST API PLugin"    }
 }

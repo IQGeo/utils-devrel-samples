@@ -7,7 +7,7 @@ import { PythonCustomerConnectionPlugin } from '../Samples/customer_connection_p
 import { LrtPlugin } from '../Samples/LRT/lrt_plugin';
 import { BFTubeRenamePlugin } from '../Samples/bf_tube_rename/bf_tube_rename_plugin';
 import { LiveDocsPlugin } from '../Samples/live_docs/liveDocs_plugin';
-import { WfmDesignsPlugin } from '../Samples/wfm_design_manager/wfm_designs_plugin';
+import { restApiPlugin } from '../Samples/REST_API_plugin/rest_api_plugin';
 
 import fiberCountRule from '../Samples/design_rules/fiberCountRule';
 
@@ -25,7 +25,7 @@ plugins['pythonCustomerConnectionPlugin'] = PythonCustomerConnectionPlugin;
 plugins['lrtPlugin'] = LrtPlugin;
 plugins['bfTubeRenamePlugin'] = BFTubeRenamePlugin;
 plugins['liveDocsPlugin'] = LiveDocsPlugin;
-plugins['wfmDesignsPlugin'] = WfmDesignsPlugin;
+plugins['restApiPlugin'] = restApiPlugin;
 
 plugins['designRulesManager'][1].rules.push(fiberCountRule);
 
@@ -38,7 +38,7 @@ plugins['palette'] = [
             'lrtPlugin.dialog',
             'bfTubeRenamePlugin.dialog',
             'liveDocsPlugin.dialog',
-            'wfmDesignsPlugin.dialog'
+            'restApiPlugin.dialog'
         ]
     }
 ];

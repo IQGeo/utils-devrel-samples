@@ -1,16 +1,16 @@
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
-import { WfmDesignsModal } from './wfm_designs_modal';
+import { restApiModal } from './rest_api_modal';
 
-export class WfmDesignsPlugin extends Plugin {
+export class restApiPlugin extends Plugin {
     static {
-        this.prototype.messageGroup = 'wfmDesignsPlugin';
+        this.prototype.messageGroup = 'restApiPlugin';
 
         this.prototype.buttons = {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'customer-connection-button';
-                    this.prototype.titleMsg = 'wfm_designs_title';
+                    this.prototype.titleMsg = 'rest_api_title';
                     // this.prototype.imgSrc = wfmDesignsImage;
                 }
 
@@ -28,7 +28,7 @@ export class WfmDesignsPlugin extends Plugin {
     showModal() {
         this.renderRoot = renderReactNode(
             null,
-            WfmDesignsModal,
+            restApiModal,
             {
                 open: true,
                 plugin: this
