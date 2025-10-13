@@ -8,6 +8,7 @@ import { LrtPlugin } from '../Samples/LRT/lrt_plugin';
 import { BFTubeRenamePlugin } from '../Samples/bf_tube_rename/bf_tube_rename_plugin';
 import { LiveDocsPlugin } from '../Samples/live_docs/liveDocs_plugin';
 import { restApiPlugin } from '../Samples/REST_API_plugin/rest_api_plugin';
+import { ConduitCapacityPlugin } from '../Samples/conduit_capacity/conduit_capacity_plugin';
 
 import fiberCountRule from '../Samples/design_rules/fiberCountRule';
 
@@ -26,6 +27,7 @@ plugins['lrtPlugin'] = LrtPlugin;
 plugins['bfTubeRenamePlugin'] = BFTubeRenamePlugin;
 plugins['liveDocsPlugin'] = LiveDocsPlugin;
 plugins['restApiPlugin'] = restApiPlugin;
+plugins['conduitCapacityPlugin'] = ConduitCapacityPlugin;
 
 plugins['designRulesManager'][1].rules.push(fiberCountRule);
 
@@ -38,7 +40,8 @@ plugins['palette'] = [
             'lrtPlugin.dialog',
             'bfTubeRenamePlugin.dialog',
             'liveDocsPlugin.dialog',
-            'restApiPlugin.dialog'
+            'restApiPlugin.dialog',
+            'conduitCapacityPlugin.dialog'
         ]
     }
 ];
