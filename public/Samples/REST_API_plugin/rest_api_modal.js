@@ -6,9 +6,32 @@ export const restApiModal = ({ open }) => {
     const [url, setUrl] = useState('');
     const [method, setMethod] = useState('GET');
     const [payload, setPayload] = useState('');
+    const [header, setHeader] = useState('');
     const [response, setResponse] = useState('');
     const [loading, setLoading] = useState(false);
     const [isOpen, setIsOpen] = useState(open);
+
+     const syntaxHighlight = (json) => {
+        if (typeof json !== 'string') {
+            json = JSON.stringify(json, null, 2);
+        }
+        json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, (match) => {
+            let cls = 'number';
+            if (/^"/.test(match)) {
+                if (/:$/.test(match)) {
+                    cls = 'key';
+                } else {
+                    cls = 'string';
+                }
+            } else if (/true|false/.test(match)) {
+                cls = 'boolean';
+            } else if (/null/.test(match)) {
+                cls = 'null';
+            }
+            return `<span class="${cls}">${match}</span>`;
+        });
+    };
 
     const handleApiCall = async () => {
         setLoading(true);
@@ -19,11 +42,14 @@ export const restApiModal = ({ open }) => {
             if (!fullUrl.startsWith('http')) {
                 fullUrl = `http://localhost${fullUrl.startsWith('/') ? '' : '/'}${fullUrl}`;
             }
-            const options = { method, redirect: 'follow' };
+            const options = { method, redirect: 'follow', credentials: 'include' };
 
             if (['POST', 'PUT', 'PATCH'].includes(method) && payload) {
                 options.body = payload;
-                options.headers = { 'Content-Type': 'application/json' };
+                options.headers = { 'Content-Type': 'application/json'};
+                if (header.trim()) {
+                    options.headers['X-CSRF-Token'] = header.trim();
+                }
             }
             const res = await fetch(fullUrl, options);
             const text = await res.text();
@@ -54,6 +80,8 @@ export const restApiModal = ({ open }) => {
                 onCancel={handleCancel}
             >
         <div className="p-4 flex flex-col space-y-3">
+            <a href="https://docs.iqgeo.com" target="_blank" rel="noopener noreferrer">Link to API Documentation</a><br/>
+
             <label>API URL</label>
             <Input
             value={url}
@@ -79,6 +107,12 @@ export const restApiModal = ({ open }) => {
                 rows={6}
                 placeholder='{"key": "value"}'
                 />
+                <label>Headers (CSRF_Token)</label>
+                <Input
+                value={header}
+                onChange={(e) => setHeader(e.target.value)}
+                placeholder='{"X-CSRF-Token": "token_value"}'
+                />
             </>
             )}
 
@@ -98,9 +132,17 @@ export const restApiModal = ({ open }) => {
                         overflowY: 'auto',
                         fontSize: '12px',
                     }}
-                >
-                    {response || 'No response yet'}
-                </pre>
+                     dangerouslySetInnerHTML={{
+                            __html: response ? syntaxHighlight(response) : 'No response yet'
+                        }}
+                />
+                <style>{`
+                        .string { color: #ce9178; }
+                        .number { color: #b5cea8; }
+                        .boolean { color: #569cd6; }
+                        .null { color: #569cd6; }
+                        .key { color: #9cdcfe; }
+                    `}</style>
             </div>
         </div>
         </DraggableModal>
