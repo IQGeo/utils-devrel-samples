@@ -67,5 +67,11 @@
         "classTitle": "Classes"
     },
     "restApiPlugin": {
-        "rest_api_title": "REST API PLugin"    }
+        "rest_api_title": "REST API PLugin"    
+    },
+    "ConduitCapacityPlugin": {
+        "conduit_capacity_title": "Conduit Capacity",
+        "description": "This tool checks the capacity of conduits in the window bounding box.\n\nTo use the tool zoom to your desired window size bthen click the 'Visualize' button and the tool will automatically check all conduits within the geometry and add a map layer to visualize the capacity.\n\nYou can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/conduit_capacity."
+    }
+    
 }

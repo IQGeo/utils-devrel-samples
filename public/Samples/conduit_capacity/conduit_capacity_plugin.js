@@ -1,16 +1,18 @@
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
 import { ConduitCapacityModal } from './conduit_capacity_modal';
+import ConduitCapacityIcon from '../../images/Conduit_Capacity_icon.svg';
 
 export class ConduitCapacityPlugin extends Plugin {
     static {
-        this.prototype.messageGroup = 'condtuitCapacityPlugin';
+        this.prototype.messageGroup = 'ConduitCapacityPlugin';
 
         this.prototype.buttons = {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'conduit_capacity-button';
                     this.prototype.titleMsg = 'conduit_capacity_title';
+                    this.prototype.imgSrc = ConduitCapacityIcon;
                 }
 
                 action() {
