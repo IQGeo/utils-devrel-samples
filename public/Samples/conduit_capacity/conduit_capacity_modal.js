@@ -105,6 +105,28 @@ export const ConduitCapacityModal = ({ open, builder }) => {
                 <p>To use the tool zoom to your desired window size then click the 'Visualize' button and the tool will automatically check all conduits within the geometry and add a map layer to visualize the capacity.</p>
                 <p>You can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/conduit_capacity.</p>
             </div>
+
+            <div style={{ marginTop: 16, paddingTop: 8, borderTop: '1px solid #eee' }}>
+                <div style={{ fontWeight: 'bold', marginBottom: 4 }}>Color Key</div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{ width: 16, height: 16, backgroundColor: '#a1b3b3ff', borderRadius: 3 }} />
+                    <span>Empty</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{ width: 16, height: 16, backgroundColor: '#2ecc71', borderRadius: 3 }} />
+                    <span>OK</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{ width: 16, height: 16, backgroundColor: '#e74c3c', borderRadius: 3 }} />
+                    <span>Overfull</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{ width: 16, height: 16, backgroundColor: '#f1c40f', borderRadius: 3 }} />
+                    <span>No data</span>
+                </div>
+                </div>
+            </div>
         </DraggableModal>
     );
 };
