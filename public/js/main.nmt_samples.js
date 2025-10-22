@@ -13,6 +13,7 @@ import { ConduitCapacityPlugin } from '../Samples/conduit_capacity/conduit_capac
 import fiberCountRule from '../Samples/design_rules/fiberCountRule';
 
 import { MyFeatureLabel } from '../Samples/custom_layer/MyFeatureLabel';
+import NewConduit from '../../../custom/public/js/newConduit';
 
 myw.localisation.loadModuleLocale('utils-devrel-samples');
 myw.MyFeatureLabel = MyFeatureLabel;

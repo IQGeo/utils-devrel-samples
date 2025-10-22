@@ -2,6 +2,7 @@ import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
 import { ConduitCapacityModal } from './conduit_capacity_modal';
 import ConduitCapacityIcon from '../../images/Conduit_Capacity_icon.svg';
+import ConduitCapacityBuilder from './conduit_capacity_builder';
 
 export class ConduitCapacityPlugin extends Plugin {
     static {
@@ -24,6 +25,7 @@ export class ConduitCapacityPlugin extends Plugin {
 
     constructor(owner, options) {
         super(owner, options);
+        this.builder = new ConduitCapacityBuilder(this.app.database);
     }
 
     showModal() {
@@ -32,7 +34,8 @@ export class ConduitCapacityPlugin extends Plugin {
             ConduitCapacityModal,
             {
                 open: true,
-                plugin: this
+                plugin: this,
+                builder: this.builder
             },
             this.renderRoot
         );

@@ -5,67 +5,33 @@ import myw from 'myWorld-client';
 
 
 /**
- * Makes an API request to the specified URL with the given method and body.
- * 
- * @param {string} url - The endpoint URL to fetch.
- * @param {string} [method='GET'] - The HTTP method to use (e.g., 'GET', 'POST').
- * @param {Object|null} [body=null] - The request body to send (for POST requests).
- * @returns {Promise<Response>} - A promise that resolves to the fetch response.
- */
-async function apiFetch(url, method = 'GET', body = null) {
-    const options = { method, redirect: 'follow' };
-    if (method === 'POST' && body) {
-        options.headers = { 'Content-Type': 'application/json' };
-        options.body = JSON.stringify(body);
-    }
-    return fetch(`http://localhost${url}`, options);
-}
-
-/**
  * A modal component for visualizing conduit capacities on a map.
  * 
  * @param {Object} props - The component props.
  * @param {boolean} props.open - Determines if the modal is open.
  * @returns {JSX.Element} - The rendered modal component.
  */
-export const ConduitCapacityModal = ({ open }) => {
+export const ConduitCapacityModal = ({ open, builder }) => {
     const { msg } = useLocale('ConduitCapacityPlugin');
     const [showIntro, setShowIntro] = useState(true);
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState('');
     const [isOpen, setIsOpen] = useState(open);
     const [overlay, setOverlay] = useState(null);
+    const [appRef] = useState(myw.app);
+    const [db] = useState(appRef.database);
     
-
     const handleVisualize = async () => {
         setLoading(true);
         setStatus('Querying conduits in map window...');
-        const appRef = myw.app;
         const map = appRef.map;
 
         // Get map bounds
         const bounds = map.getBounds();
-        const geometry = {
-            type: 'Polygon',
-            coordinates: [[
-                [bounds.getWest(), bounds.getSouth()],
-                [bounds.getEast(), bounds.getSouth()],
-                [bounds.getEast(), bounds.getNorth()],
-                [bounds.getWest(), bounds.getNorth()],
-                [bounds.getWest(), bounds.getSouth()]
-            ]]
-        };
 
-        // console.log(geometry);
         // Search for conduits in the bounding box
         try {
-            const geometryParam = encodeURIComponent(JSON.stringify(geometry));
-            const resp = await apiFetch(`/feature/conduit/get?geometry=${geometryParam}`, 'POST');
-            console.log(resp);
-            const data = await resp.json();
-            console.log(data);
-            const conduits = data.features || [];
-
+            const conduits = await db.getFeatures('conduit', { bounds });
             setStatus(`Found ${conduits.length} conduits. Calculating capacities...`);
 
             if (overlay) {
@@ -75,10 +41,6 @@ export const ConduitCapacityModal = ({ open }) => {
             const zIndex = 200;
             const newOverlay = new myw.GeoJSONVectorLayer({map, zIndex});
             setOverlay(newOverlay);
-
-            // console.log('Overlay layer created:', newOverlay);
-            // console.log('Map reference:', map);
-
 
             // Define styles
             const lineStyles = {
@@ -91,8 +53,7 @@ export const ConduitCapacityModal = ({ open }) => {
 
             const results = await Promise.all(
                 conduits.map(async (conduit) => {
-                    const { ratio, status } = await evaluateConduitCapacity(conduit);
-                    // console.log('Adding geometry:', conduit.geometry);
+                    const { ratio, status } = await builder.calculateCapacity(conduit);
                     return { conduit, ratio, status };
                 })
             );
@@ -107,7 +68,7 @@ export const ConduitCapacityModal = ({ open }) => {
                         Ratio: ${(ratio * 100).toFixed(1)}%
                     `);
             });
-            setStatus('Visualization complete.');
+            setStatus(`Visualization complete for ${conduits.length} conduits.`);
         } catch (error) {
             console.error(error);
             setStatus(`Error: ${error.message}`);
@@ -120,23 +81,13 @@ export const ConduitCapacityModal = ({ open }) => {
     const handleCancel = () => {
         setIsOpen(false);
     };
-      const hideIntro = () => {
-        setShowIntro(false);
-    };
-
+    
     return (
         <DraggableModal
             open={isOpen}
             title={msg('conduit_capacity_title')}
             onCancel={handleCancel}
             footer={
-                showIntro ? 
-                [
-                    <Button key="ok" onClick={hideIntro} type="primary">
-                        OK
-                    </Button>
-                ]
-                :
                 [
                     <Button key="cancel" onClick={handleCancel}>
                         Cancel
@@ -147,62 +98,13 @@ export const ConduitCapacityModal = ({ open }) => {
                 ]
             }
         >
-            {showIntro ? (
-                <div style={{ whiteSpace: 'pre-wrap' }}>{msg('description')}</div>
-            ) : (
             <div className="p-4 space-y-3">
                 <p>Click 'Visualize' to analyze conduits in the current map window.</p>
                 <p>{status}</p>
+                <p>This tool checks the capacity of conduits in the window bounding box.</p>
+                <p>To use the tool zoom to your desired window size then click the 'Visualize' button and the tool will automatically check all conduits within the geometry and add a map layer to visualize the capacity.</p>
+                <p>You can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/conduit_capacity.</p>
             </div>
-            )}
         </DraggableModal>
     );
 };
-
-// Helper Functions
-
-async function evaluateConduitCapacity(conduit) {
-    const cid = conduit.properties.id;
-    const conduitDiameter = conduit.properties.diameter;
-
-    const segResp = await apiFetch(`/feature/conduit/${cid}/relationship/cable_segments`);
-    const segData = await segResp.json();
-    const segments = segData.features || [];
-
-    const cableRefs = [...new Set(segments.map(s => s.properties.cable).filter(Boolean))];
-    const diameters = [];
-
-    const cableResponses = await Promise.all(
-        cableRefs.map(cref => apiFetch(`/feature/${cref}`))
-    );
-
-    const cablePropsArray = await Promise.all(
-        cableResponses.map(async cableResp => (await cableResp.json()).properties)
-    );
-
-    for (const cableProps of cablePropsArray) {
-        if (cableProps.diameter) diameters.push(cableProps.diameter);
-    }
-
-    const { ratio, limit } = calcFillRatio(conduitDiameter, diameters);
-    let status;
-    if (ratio == null) status = 'No diameter data';
-    else if (ratio === 0) status = 'EMPTY';
-    else if (ratio <= limit) status = 'OK';
-    else status = 'OVERFILL';
-
-    // console.log(`Conduit ${cid}: ratio=${(ratio * 100).toFixed(1)}%, limit=${(limit * 100).toFixed(1)}%, status=${status}`);
-    return { ratio, limit, status };
-}
-
-function calcFillRatio(conduitDiameter, cableDiameters) {
-    if (!conduitDiameter || conduitDiameter === 0) return { ratio: null, limit: null };
-    const ratio = cableDiameters.reduce((a, d) => a + d ** 2, 0) / (conduitDiameter ** 2);
-
-    let limit = 1.0;
-    if (cableDiameters.length === 1) limit = 0.65;
-    else if (cableDiameters.length === 2) limit = 0.31;
-    else if (cableDiameters.length === 3) limit = 0.40;
-
-    return { ratio, limit };
-}
