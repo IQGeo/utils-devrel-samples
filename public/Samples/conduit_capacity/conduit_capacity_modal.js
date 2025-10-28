@@ -13,7 +13,6 @@ import myw from 'myWorld-client';
  */
 export const ConduitCapacityModal = ({ open, builder }) => {
     const { msg } = useLocale('ConduitCapacityPlugin');
-    const [showIntro, setShowIntro] = useState(true);
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState('');
     const [isOpen, setIsOpen] = useState(open);
@@ -99,10 +98,10 @@ export const ConduitCapacityModal = ({ open, builder }) => {
             }
         >
             <div className="p-4 space-y-3">
-                <p>Click 'Visualize' to analyze conduits in the current map window.</p>
+                <p>Click 'Visualize' to map conduit capacity.</p>
                 <p>{status}</p>
                 <p>This tool checks the capacity of conduits in the window bounding box.</p>
-                <p>To use the tool zoom to your desired window size then click the 'Visualize' button and the tool will automatically check all conduits within the geometry and add a map layer to visualize the capacity.</p>
+                <p>To use the tool, zoom to your desired window size, then click the 'Visualize' button. The tool will check all conduits within the geometry and add a map layer to visualize the capacity.</p>
                 <p>You can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/conduit_capacity.</p>
             </div>
 

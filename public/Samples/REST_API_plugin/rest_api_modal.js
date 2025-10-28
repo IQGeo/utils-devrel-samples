@@ -6,7 +6,6 @@ export const restApiModal = ({ open }) => {
     const [url, setUrl] = useState('');
     const [method, setMethod] = useState('GET');
     const [payload, setPayload] = useState('');
-    const [header, setHeader] = useState('');
     const [response, setResponse] = useState('');
     const [loading, setLoading] = useState(false);
     const [isOpen, setIsOpen] = useState(open);
@@ -47,7 +46,6 @@ export const restApiModal = ({ open }) => {
             
 
             if (['POST', 'PUT', 'PATCH'].includes(method) && payload) {
-                console.log(header);
                 options.body = payload;
                 options.headers = { 'Content-Type': 'application/json', 'Accept': 'application/json'};
 
@@ -61,36 +59,6 @@ export const restApiModal = ({ open }) => {
                 } else {
                     console.warn('No CSRF token found in cookies');
                 }
-            
-                // if (header.trim()) {
-                //     options.headers['csrf_token'] = header.trim();
-                // }
-                // let csrfToken = header.trim();
-                // if (!csrfToken) {
-                //     const cookies = document.cookie.split(';');
-                //     const csrfCookie = cookies.find(c => c.trim().startsWith('csrf_token='));
-                //     if (csrfCookie) {
-                //         csrfToken = csrfCookie.split('=')[1];
-                //     }
-                // }
-                
-                // if (csrfToken) {
-                //     options.headers['X-CSRF-Token'] = csrfToken;
-                // }
-                // const csrfToken = header.trim();
-                
-                // if (csrfToken) {
-                //     // Set both the header AND the cookie to the same value
-                //     // options.headers['X-CSRF-Token'] = csrfToken;
-                //     // document.cookie = `csrf_token=${csrfToken}; path=/`;
-
-                //     options.headers['X-CSRF-Token'] = `csrf_token=${csrfToken}; path=/`;
-                //     console.log('CSRF token:', csrfToken);
-                //     console.log('Set in header:', 'X-CSRF-Token');
-                //     console.log('Set in cookie: csrf_token');
-                // } else {
-                //     console.warn('No CSRF token provided');
-                // }
             }
             const res = await fetch(fullUrl, options);
             const text = await res.text();
@@ -148,12 +116,6 @@ export const restApiModal = ({ open }) => {
                 rows={6}
                 placeholder='{"key": "value"}'
                 />
-                {/* <label>Headers (CSRF_Token)</label>
-                <Input
-                value={header}
-                onChange={(e) => setHeader(e.target.value)}
-                placeholder='{"X-CSRF-Token": "token_value"}'
-                /> */}
             </>
             )}
 

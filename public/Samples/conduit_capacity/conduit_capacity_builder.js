@@ -1,6 +1,6 @@
 import myw from 'myWorld-client';
 
-class ConduitCapacityBuilder extends myw.MywClass {
+export default class ConduitCapacityBuilder extends myw.MywClass {
     constructor(database) {
         super();
         this.app = myw.app;
@@ -53,10 +53,8 @@ class ConduitCapacityBuilder extends myw.MywClass {
         let limit = 1.0;
         if (cableDiameters.length === 1) limit = 0.65;
         else if (cableDiameters.length === 2) limit = 0.31;
-        else if (cableDiameters.length === 3) limit = 0.40;
+        else limit = 0.40;
 
         return { ratio, limit };
     }
 }
-
-export default ConduitCapacityBuilder;
