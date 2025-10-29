@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { DraggableModal, Button } from 'myWorld-client/react';
-import { useLocale } from 'myWorld-client/react';
+import { DraggableModal, Button, useLocale } from 'myWorld-client/react';
 import myw from 'myWorld-client';
 
 
@@ -129,3 +128,4 @@ export const ConduitCapacityModal = ({ open, builder }) => {
         </DraggableModal>
     );
 };
+

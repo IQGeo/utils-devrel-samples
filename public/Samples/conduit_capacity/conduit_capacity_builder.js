@@ -33,7 +33,6 @@ export default class ConduitCapacityBuilder extends myw.MywClass {
         for (const cable of cableFeatures.filter(Boolean)) {
             if (cable.properties?.diameter) diameters.push(cable.properties.diameter);
         }
-
         const { ratio, limit } = this.calcFillRatio(diameter, diameters);
 
         let status;
