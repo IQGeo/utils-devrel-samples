@@ -1,4 +1,4 @@
-import { Plugin, PluginButton } from 'myWorld-client';
+import myw, { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
 import customerConnectionImage from '../../images/Customer_Connection_LRT_icon.svg';
 import { LrtModal } from './lrt_modal';
