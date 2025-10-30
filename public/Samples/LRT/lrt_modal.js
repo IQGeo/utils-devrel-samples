@@ -16,6 +16,10 @@ export const LrtModal = ({ open }) => {
     const [isAlertVisible, setIsAlertVisible] = React.useState(false);
     const [showIntro, setShowIntro] = useState(true);
     const [alertType, setAlertType] = useState('');
+    const [pole, setPole] = useState('');
+    const [pole_lat, setPoleLat] = useState('');
+    const [pole_lng, setPoleLng] = useState('');
+    const [poleId, setPoleId] = useState('');
 
     const progressStreamControlsRef = useRef({ close() {} });
     const [task, setTask] = useState(null);
@@ -33,12 +37,12 @@ export const LrtModal = ({ open }) => {
     }, []);
 
     useEffect(() => {
-        if (design) {
+        if (pole) {
             setDisabled(false);
         } else {
             setDisabled(true);
         }
-    }, [design]);
+    }, [pole]);
 
     const hideIntro = () => {
         setShowIntro(false);
@@ -54,13 +58,23 @@ export const LrtModal = ({ open }) => {
 
     function updateFeatures() {
         const feature = appRef.currentFeature;
-        if (!feature || feature.getType() !== 'design') {
-            setDesign('');
+        if (!feature) {
+            setPole(null);
             return;
-        } else {
-            setDesign('design/' + feature.properties.name);
-            setCoords_x(feature.geometry.coordinates[0][0][0]);
-            setCoords_y(feature.geometry.coordinates[0][0][1]);
+        }
+
+        if (feature.getType() === 'pole') {
+            if (feature._myw.delta !== undefined) {
+                setPole(feature);
+                setPoleLng(feature.geometry.coordinates[0]);
+                setPoleLat(feature.geometry.coordinates[1]);
+                setDesign(feature._myw.delta);
+                setPoleId(feature.id);
+                setDesignId(feature._myw.delta);
+            } else {
+                showAlert('error', 'This pole must be part of a design!');
+                setPole(null);
+            }
         }
     }
 
@@ -73,11 +87,11 @@ export const LrtModal = ({ open }) => {
         }, time);
     }
 
-    const onBuildConnectionsLRT = async () => {
-        const params = { design: design, coords_x: coords_x, coords_y: coords_y };
+    const callLRT = async () => {
+        const params = { design: design, lng: pole_lng, lat: pole_lat, pole_id: poleId };
         console.log('Calling LRT');
         try {
-            const task = await appRef.system.enqueueTask('lrt_task', params);
+            const task = await appRef.system.enqueueTask('customer_connection_task', params);
             setTask(task);
             setIsTaskRunning(true);
 
@@ -136,12 +150,7 @@ export const LrtModal = ({ open }) => {
                           <Button key="cancel" onClick={handleCancel}>
                               Cancel
                           </Button>,
-                          <Button
-                              disabled={disabled}
-                              key="create"
-                              onClick={onBuildConnectionsLRT}
-                              type="primary"
-                          >
+                          <Button disabled={disabled} key="create" onClick={callLRT} type="primary">
                               Create Connections using LRT
                           </Button>
                       ]
@@ -151,7 +160,7 @@ export const LrtModal = ({ open }) => {
                 <div style={{ whiteSpace: 'pre-wrap' }}>{msg('description')}</div>
             ) : (
                 <div>
-                    Design: <Input value={design ? design : ''} disabled />
+                    Design: <Input value={pole ? pole._myw.title : ''} disabled />
                     <br />
                     <br />
                     Task Status = {progress.status}

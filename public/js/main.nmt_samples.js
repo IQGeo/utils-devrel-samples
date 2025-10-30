@@ -12,7 +12,7 @@ import fiberCountRule from '../Samples/design_rules/fiberCountRule';
 
 import { MyFeatureLabel } from '../Samples/custom_layer/MyFeatureLabel';
 
-myw.localisation.loadModuleLocale('utils-devrel-samples');
+myw.localisation.loadModuleLocale('utils_devrel_samples');
 myw.MyFeatureLabel = MyFeatureLabel;
 
 const desktopLayoutDef = myw.applicationDefinition.layouts.desktop;
