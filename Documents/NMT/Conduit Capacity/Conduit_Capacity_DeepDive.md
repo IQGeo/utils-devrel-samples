@@ -170,6 +170,17 @@ export const ConduitCapacityModal = ({ open, builder }) => {
     const [appRef] = useState(myw.app);
     const [db] = useState(appRef.database);
 ```
+- This component receives two parameters:
+    - `open` which is a boolean that determines whether the modal is displayed
+    - `builder` an instance of the helper class (`ConduitCapacityBuilder`) that performs the data retrieval and calculations
+- Several state variables are defined:
+    - `loading` tracks whether the tool is currently running
+    - `status` stores the latest status message displayed to the user
+    - `isOpen` determines if the modal window is visible
+    - `overlay` stores the map overlay reference that displays capacity visualization
+    - `appRef` a reference to the current IQGeo app instance
+    - `db` a reference to the application’s active database connection
+
 Then, there is the `handleVisualize` function which is called when the user clicks the 'Vizualize' button on the modal.
 
 ```    
@@ -231,12 +242,166 @@ Then, there is the `handleVisualize` function which is called when the user clic
 
     };
 ```
-- This function creates the temporary map layer which overlays current map layers, in order to show the conduit heat map.
+- This function creates the temporary map layer which overlays current map layers, in order to show the conduit heat map
 - The function starts by setting the loading and status as 'Querying' to show that the conduits within the map frame are being grabbed via API
 - The bounds of the window are get the the `bounds` variable to pass through the API, thus only getting the conduits within the bounds
 - Then, using the JS API `getFeatures`, we are grabbing the list on conduits and printing the lenghth of the list on the modal
 - Using the `overlay` state hook, if there was a previous map set, that will then be cleared everytime the `handleVisualize` function is called
 - In order to create a new overlay, we must set the `zIndex` which is used to set the thickness of the new layer lines. Then by calling the `GeoJSONVectorLayer` with the map and `zIndex`, we set a new overlay.
 - Then, the lineStyles dictionary is defined with the colors of the lines to correspond the fill ratios of the conduits
-- 
+    - Green = low usage
+    - Yellow = moderate usage 
+    - Red = full
+- The `calculateCapacity` function is called from the builder class, passing in each conduit individually to query necessary fiber segments and determine its ratio
+- Then, for each of the results, the `addGeom` function is called to add the lines to the map with the proper color. As well as a tool tip to shoe exact values
+- Lastly, the `catch` error and `setLoading` values are set if the requests fail.
 
+Next, the modal’s JSX structure handles rendering the window and controls:
+
+```
+return (
+        <DraggableModal
+            open={isOpen}
+            title={msg('conduit_capacity_title')}
+            onCancel={handleCancel}
+            footer={
+                [
+                    <Button key="cancel" onClick={handleCancel}>
+                        Cancel
+                    </Button>,
+                    <Button key="visualize" onClick={handleVisualize} type="primary" disabled={loading}>
+                        {loading ? 'Loading...' : 'Visualize'}
+                    </Button>
+                ]
+            }
+        >
+            <div className="p-4 space-y-3">
+                <p>Click 'Visualize' to map conduit capacity.</p>
+                <p>{status}</p>
+                <p>This tool checks the capacity of conduits in the window bounding box.</p>
+                <p>To use the tool, zoom to your desired window size, then click the 'Visualize' button. The tool will check all conduits within the geometry and add a map layer to visualize the capacity.</p>
+                <p>You can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/conduit_capacity.</p>
+            </div>
+
+            <div style={{ marginTop: 16, paddingTop: 8, borderTop: '1px solid #eee' }}>
+                <div style={{ fontWeight: 'bold', marginBottom: 4 }}>Color Key</div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{ width: 16, height: 16, backgroundColor: '#a1b3b3ff', borderRadius: 3 }} />
+                    <span>Empty</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{ width: 16, height: 16, backgroundColor: '#2ecc71', borderRadius: 3 }} />
+                    <span>OK</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{ width: 16, height: 16, backgroundColor: '#e74c3c', borderRadius: 3 }} />
+                    <span>Overfull</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{ width: 16, height: 16, backgroundColor: '#f1c40f', borderRadius: 3 }} />
+                    <span>No data</span>
+                </div>
+                </div>
+            </div>
+        </DraggableModal>
+    );
+};
+```
+- The modal displays two buttons:
+    - 'Close' to close the window
+    - 'Visualize' to start the conduit capacity visualization process
+- When the tool is running, the modal shows the status text dynamically updated
+- Lastly, a color key is rendered to show what each color on the temporary map indicates
+
+
+### conduit_capacity_builder.js
+
+This file defines the `ConduitCapacityBuilder` class — the backend logic that powers the Conduit Capacity visualization tool.
+It’s responsible for fetching related cable data, calculating how full each conduit is, and determining whether it is empty, within safe limits, or overfilled.
+
+```
+import myw from 'myWorld-client';
+
+export default class ConduitCapacityBuilder extends myw.MywClass {
+    constructor(database) {
+        super();
+        this.app = myw.app;
+        this.database = database;
+        this.datasource = database.getDatasource('myworld');
+    }
+```
+- The ConduitCapacityBuilder class extends the core MywClass from the IQGeo client SDK.
+- Its constructor sets up three key properties:
+    - `app` reference to the main IQGeo app instance
+    - `database` reference to the active database connection used for feature queries
+    - `datasource` handle for the "myworld" datasource, used to access feature relationships
+
+```
+async calculateCapacity(conduit) {
+        const diameter = conduit.properties.diameter;
+
+        const segData = await this.datasource.getRelationship(conduit, 'cable_segments');
+        const segments = segData || [];
+        const cableRefs = [...new Set(
+            segments.map(s => s.properties.cable).filter(Boolean)
+        )];
+
+        const diameters = [];
+        const cableFeatures = await Promise.all(
+            cableRefs.map(async cref => {
+                const id = cref.split('/').pop();
+                try {
+                    return await this.database.getFeature('fiber_cable', id);
+                } catch (err) {
+                    console.warn(`Failed to get cable ${cref}:`, err);
+                    return null;
+                }
+            })
+        );
+
+        for (const cable of cableFeatures.filter(Boolean)) {
+            if (cable.properties?.diameter) diameters.push(cable.properties.diameter);
+        }
+        const { ratio, limit } = this.calcFillRatio(diameter, diameters);
+
+        let status;
+        if (ratio == null) status = 'No diameter data';
+        else if (ratio === 0) status = 'EMPTY';
+        else if (ratio <= limit) status = 'OK';
+        else status = 'OVERFILL';
+        return { ratio, limit, status };
+    }
+```
+- This asynchronous method performs the main capacity calculation for a single conduit feature
+    - Retrieves the diameter of the conduit
+    - Fetches all related `cable_segments` using the `getRelationship` API
+    - Extracts unique cable references from those segment relationships
+- Next, the code loads the related cable features and collects their diameters
+    - Each cable reference read using `getFeature`
+    - The `Promise.all` ensures all database calls run in parallel, improving performance
+    - Only cables with valid diameter values are included in the calculation
+- Finally, the method computes the fill ratio by calling the `calcFillRatio` method passing in the diameter
+
+```
+calcFillRatio(conduitDiameter, cableDiameters) {
+        if (!conduitDiameter || conduitDiameter === 0) {
+            return { ratio: null, limit: null };
+        }
+        const ratio = cableDiameters.reduce((a, d) => a + d ** 2, 0) / (conduitDiameter ** 2);
+
+        let limit = 1.0;
+        if (cableDiameters.length === 1) limit = 0.65;
+        else if (cableDiameters.length === 2) limit = 0.31;
+        else limit = 0.40;
+
+        return { ratio, limit };
+    }
+}
+```
+- This helper function uses a simplified geometric fill model based on circular cross-section areas
+    - The ratio is computed as a sum of the squared cable diameters divided by the square of the conduit diameter
+    - The limit value (maximum allowed ratio) varies depending on the number of cables:
+        - 1 cable → limit = 0.65
+        - 2 cables → limit = 0.31
+        - 3+ cables → limit = 0.40
