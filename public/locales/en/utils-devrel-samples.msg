@@ -65,5 +65,13 @@
         "description": "To use the tool, first select a class and then choose a function from the dropdown menus. The parameter fields will update automatically based on the function you select.\n\nEnter the required values according to the parameter type, or select features on the map where applicable.\n\nOnce all required fields are filled, press Execute to run the function and view the result in your browser's Developer Tools Console window.",
         "classSelection": "Select the class below to see its available functions.",
         "classTitle": "Classes"
+    },
+    "restApiPlugin": {
+        "rest_api_title": "REST API PLugin"    
+    },
+    "ConduitCapacityPlugin": {
+        "conduit_capacity_title": "Conduit Capacity",
+        "description": "This tool checks the capacity of conduits in the window bounding box.\n\nTo use the tool zoom to your desired window size bthen click the 'Visualize' button and the tool will automatically check all conduits within the geometry and add a map layer to visualize the capacity.\n\nYou can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/conduit_capacity."
     }
+    
 }
