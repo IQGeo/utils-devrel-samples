@@ -9,8 +9,6 @@ export const LrtModal = ({ open }) => {
     const [appRef] = useState(myw.app);
     const [isOpen, setIsOpen] = useState(open);
     const [design, setDesign] = useState('');
-    const [coords_x, setCoords_x] = useState('');
-    const [coords_y, setCoords_y] = useState('');
     const [disabled, setDisabled] = useState(true);
     const [alertMessage, setAlertMessage] = useState('');
     const [isAlertVisible, setIsAlertVisible] = React.useState(false);
@@ -70,7 +68,6 @@ export const LrtModal = ({ open }) => {
                 setPoleLat(feature.geometry.coordinates[1]);
                 setDesign(feature._myw.delta);
                 setPoleId(feature.id);
-                setDesignId(feature._myw.delta);
             } else {
                 showAlert('error', 'This pole must be part of a design!');
                 setPole(null);
@@ -160,7 +157,7 @@ export const LrtModal = ({ open }) => {
                 <div style={{ whiteSpace: 'pre-wrap' }}>{msg('description')}</div>
             ) : (
                 <div>
-                    Design: <Input value={pole ? pole._myw.title : ''} disabled />
+                    Pole: <Input value={pole ? pole._myw.title : ''} disabled />
                     <br />
                     <br />
                     Task Status = {progress.status}
