@@ -5,7 +5,7 @@ import 'modules/workflow_manager/js/main.wfm';
 import { FieldValidatorPlugin } from '../Samples/WFM_NMT_integration/fieldValidatorPlugin';
 import { MilestoneMapPlugin } from '../Samples/WFM_NMT_map_widget/milestoneMapPlugin';
 
-myw.localisation.loadModuleLocale('utils-devrel-samples');
+myw.localisation.loadModuleLocale('utils_devrel_samples');
 
 const desktopLayoutDef = myw.applicationDefinition.layouts.desktop;
 const plugins = myw.applicationDefinition.plugins; //this is the application's list of plugins
