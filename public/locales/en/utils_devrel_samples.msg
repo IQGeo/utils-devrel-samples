@@ -19,6 +19,12 @@
     "fieldValidatorPlugin": {
         "fieldValidatorPluginTitle": "Field Validator"
     },
+        "mapWidgetPlugin": {
+        "mapWidgetPluginTitle": "Map Widget"
+    },
+    "mapWidgetModal": {
+        "windowHeader": "Milestone Maps Widget"
+    },
     "customRulePlugin": {
         "customRulePluginTitle": "WFM/NMT Integration"
     },
