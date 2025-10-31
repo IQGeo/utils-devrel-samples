@@ -9,6 +9,7 @@
   - [How the tool works](#how-the-tool-works)
     - [python\_customer\_connection\_plugin.js](#python_customer_connection_pluginjs)
     - [python\_customer\_connection\_modal.js](#python_customer_connection_modaljs)
+    - [connection\_helper.py](#connection_helperpy)
     - [customer\_connection\_controller.py](#customer_connection_controllerpy)
     - [routing.py](#routingpy)
 
@@ -38,8 +39,8 @@ The Python tool not only automates the process, but also allows for bulk changes
 The tool files are:
 
 - `python_customer_connection_plugin.js` - The Configuration file for the Plugin. This file is located in the `modules/devrel_samples/public/js/Samples/customer_connection_python` folder
-  
 - `python_customer_connection_modal.js` - The file containing the React code used to render the modal window. This file is located in the `modules/devrel_samples/public/js/Samples/customer_connection_python` folder
+- `conection_helper.py` - The file containing helper functions that are shared between different python samples. This document focus on the functions used by this sample
 - `customer_connection_controller.py` - The file containing all the Python logic that will run on the server. This file is located in the `modules/devrel_samples/server/controllers` folder
 - `routing.py` - Where the Python code to HTTP address routing is configured. This file is located in the  `modules/devrel_samples/server/controllers` folder
 
@@ -53,8 +54,8 @@ In this section we will go over the tool source code describing how it works.
 ```
 import { Plugin, PluginButton } from 'myWorld-client';
 import { renderReactNode } from 'myWorld-client/react';
+import customerConnectionImage from '../../images/Customer_Connection_Python_icon.svg';
 import { PythonCustomerConnectionModal } from './python_customer_connection_modal';
-import customerConnectionImage from '../../../images/Customer_Connection_Python_icon.svg';
 ```
 
 - The first import is for the `Plugin` class. Plugins is how add new functionalities to IQGeo applications. `PluginButton` is the class that creates buttons within the application itself.
@@ -86,7 +87,6 @@ export class PythonCustomerConnectionPlugin extends Plugin {
 
     constructor(owner, options) {
         super(owner, options);
-    }
     }
 ```
 
@@ -303,126 +303,27 @@ And finally the React `return` statement containing the HTML code to be rendered
 - Once `showIntro` is set to `false` the main interface is shown with the Pole field, as well as a button that calls the `callController` function and has its `disabled` parameter connected to the `disabled` State Hook. Note that the Pole Name field have the `disabled` parameter, this is because this field is only changed when the user clicks on a Pole within a Design, triggering the `updateFeatures` function
 - And at the bottom there is the Alert that is shown only when the `isAlertVisible` state is set to `true`, and will inform the user if the pole selected is not within a design or when the connections were created successfully
 
-### customer_connection_controller.py
+### connection_helper.py
 
 Starting with the `import` statements
 
 ```
 import re
-from pyramid.view import view_config
-from myworldapp.modules.comms.server.controllers.mywcom_controller import MywcomController
-from myworldapp.modules.comms.server.api.manager import *
-from myworldapp.modules.comms.server.api.cable_manager import *
-from myworldapp.modules.comms.server.api.connection_manager import *
-from myworldapp.modules.comms.server.api.pin_range import *
+from myworldapp.modules.comms.server.api.manager import MywPoint, MywLineString
+from myworldapp.modules.comms.server.api.pin_range import PinRange
+from myworldapp.modules.comms.server.api.network_view import NetworkView
 ```
 
 - `re` is a regular expression library
-  
-- `pyramid` is the web application library used to create the route between this Python file and a web address to be accessed by users
-- `Mywcomcontroller` is the base class of the class that will be created in this file
-- The next four imports are NMT APIs that will be used in the logic to be created
+- - The next three imports are NMT APIs that will be used in the logic to be created
 
-Next the class is created, as well as the class constructor and two variables
+Next the class is created, as well as the class constructor, which is called from the file `customer_connection_controller.py`
 
 ```
-class CustomerConnectionController(MywcomController):
-    cable_name = "DROP-6000"
-    current_splitter_pin = 1
-
-    def __init__(self, request):
-        super().__init__(request, "DATA")
-```
-
-- As mentioned before the class extends `MywcomController`
-  
-- `cable_name` is the variable containing the name of the cables to be created between the Pole and the Address
-- `current_splitter_pin` stores the next available pin in the Pole's Fiber Splitter
-- The constructor simply calls the constructor of `MywcomController`
-
-Next there is a series of internal auxiliary functions that are used in the connection logic
-
-```
-    def _createSpliceClosure(self, pole, pole_coords):
-        splice_closure_props = {"name": "Splice Closure", "specification": "CS-FOSC-400B4-S24-4-NNN", "housing": pole._urn(), "root_housing": pole._urn(), "location": pole_coords}
-        return self.splice_closure_table.insert(splice_closure_props)
-
-    def _createFiberSplitter(self, pole, pole_coords, splice_closure_record):
-        fiber_splitter_props = {"name": "Fiber Splitter", "n_fiber_in_ports": 1, "n_fiber_out_ports": 64, "housing": splice_closure_record._urn(), "root_housing": pole._urn(), "location": pole_coords}
-        return self.fiber_splitter_table.insert(fiber_splitter_props)
-    
-    def _createWallBox(self, name, coord):
-        wall_box_props = {"name": name, "location": coord}
-        return self.wall_box_table.insert(wall_box_props)
-
-    def _createOnt(self, wall_box, coord):
-        ont_props = {"name": "ONT", "n_fiber_in_ports": 64, "housing": wall_box._urn(), "root_housing": wall_box._urn(), "location": coord}
-        return self.ont_table.insert(ont_props)
-    
-    def _createRoute(self, pole, wall_box, coords):
-        route_props = {"in_structure": pole._urn(), "out_structure": wall_box._urn(), "length": coords.geoLength(), "path": coords}
-        return self.route_table.insert(route_props)
-
-    def _createCable(self, structs):
-        cable_props = {"name": self.cable_name, "fiber_count": 16, "directed": True}
-        cable_record = self.fiber_table.insert(cable_props)
-        routes = self.cable_manager.findPath(structs)
-        self.cable_manager.route(cable_record, *routes)
-        return cable_record
-
-    def _connectCableToSplitter(self, cable_segment, fiber_splitter):
-        fiber_splitter_pin_range = PinRange ("out", self.current_splitter_pin, self.current_splitter_pin)
-        cable_pin_range = PinRange("in", 1, 1)
-        return self.connection_manager.connect("fiber", fiber_splitter, fiber_splitter, fiber_splitter_pin_range, cable_segment, cable_pin_range)
-
-    def _connectCableToOnt(self, cable_segment, ont):
-        ont_pin_range = PinRange("in", 1, 1)
-        cable_pin_range = PinRange("out", 1, 1)
-        return self.connection_manager.connect("fiber", ont, cable_segment, cable_pin_range, ont, ont_pin_range)
-    
-    def _incrementCableName(self):
-        match = re.match(r'(.*?)(\d+)$', self.cable_name)
-        if match:
-            text_part, num_part = match.groups()
-            incremented_num = str(int(num_part) + 1)
-            padded_num = incremented_num.zfill(len(num_part))
-            self.cable_name = text_part + padded_num
-```
-
-- `_createSpliceClosure` receives as parameters the Pole where the Splice Closure will be created and its coordinates, and returns the object created
-  
-- `_createFiberSplitter` receives as parameters the Pole, its coordinates, and the Splice Closure that will house the Fiber Splitter to be created, and returns the object created
-- `_createWallBox` receives as parameters the name of the Wall Box to be created and the coordinates where it will be created (which are the Address' coordinates), and returns the object created
-- `_createOnt` receives as parameters the Wall Box that will house the ONT and the coordinates where it will be created, and returns the object created
-- `_createRoute` receives as parameters the Pole (where the route begins), the Wall Box (where the route ends) and the route coordinates, and returns the route created
-  - In the previous functions the coordinates where always one point in the world where the Object would be created, but the route is a line, so the `coords` variable actually is an array with two points: The start (Pole) and end (Wall Box) of the route
-- `_createCable` receive as parameters an array with the structures (in this case the Pole and the Wall Box) where the cable will begin and end, and returns the object created
-  - The previous functions received the structures separately and this one receives it as an array because these are used in the `findPath` function, which receives the same array, so this function receives the array just to simplify its logic
-  - After creating the cable, we must call `findPath` which will look for the shortest paths between the the structures. In this case there will only be a single route between the two (the one created by `_createRoute`)
-  - With the route information, the function `route` is created, this is where the route is actually built in the database
-- `_connectCableToSplitter` receives as parameters the cable segment to be connected and the fiber splitter where it will be connected, and returns the connection created
-  - The pin used in the cable is always 1, since the cable in the "in" side will always only connect to the Fiber Splitter
-  - The pin used in the fiber splitter is the pin stored in the `self.current_splitter_pin` variable
-- `_connectCableToOnt` receives as parameters the cable segment to be connected and the ONT
-  - For both cable and ONT the pin used it "1" because both the cable in the "out" side and the ONT will only connect with each other
-  - `_incrementCableName` will increment the trailing number (if any) of the `self.cable_name` variable once a cable is created (e.g.: cable `DROP-6000` is created, the `self.cable_name` variable is incremented to `DROP-6001`)
-
-Finally we have the function that will be called from the user via HTTP GET
-
-```
-    @view_config(route_name='customer_connection_controller.buildConnections', request_method='GET', renderer='json')
-    def buildConnections(self):
-        self.current_user.assertAuthorized(self.request)
-```
-
-- Before creating the function itself the `view_config` decorator must be added. This marks the function below to be user as a service
-  
-- To ensure that the user is authenticated and has permission to run this service, the first thing the function calls should always be the `self.current_user.assertAuthorized` function.
-
-Next are references to all database tables will be used 
-
-```
-        self.design = self.db.view("design/" + self.request.matchdict['design_id'])
+class ConnectionHelper:
+    def __init__(self, db, design):
+        self.db = db
+        self.design = self.db.view("design/" + design)
         self.pole_table = self.design.table('pole')
         self.address_table = self.db.view().table('address')
         self.splice_closure_table = self.design.table('splice_closure')
@@ -432,85 +333,378 @@ Next are references to all database tables will be used
         self.route_table = self.design.table('oh_route')
         self.fiber_table = self.design.table('fiber_cable')
 
-        self.cable_manager = CableManager(self.networkView(self.design))
-        self.connection_manager = ConnectionManager(self.networkView(self.design))
+        self.current_splitter_pin = 1
+        self.cable_name = "DROP-6000"
+
+        self.network_view = NetworkView(self.db.view("design/" + design))
 ```
 
-- The first reference is for the Design that is passed as parameter, where all Objects will be created
-  - The design ID is passed as parameter to the service, and is read using the `self.request.matchdict` function, and the ID `design_id` is defined in the `routing.py` file
-  
+- The first reference is for the Database
+- The first reference is for the Design that is passed as parameter by the client
 - One important difference to note is that the `self.address_table` used is from the master database (`self.db.view()`) whereas all other tables are from the design. That is because all Objects we are going to create are going to be created in the Design, but the Addresses already exist in the master table
-- Instances of `self.cable_manager` and `self.connection_manager` are created using the design as reference because, again, all Objects will be created in the Design
+- Next, variables for the next available Fiber Splitter pin and next Cable name 
+- An instance of `NetworkView` is created, this contains references to the Cable and Connection APIs that are used later in the process
 
-Then the function obtains the information needed to start the connection process
+Next there is a series of internal auxiliary functions that are used in the connection logic
 
 ```
-        pole_table_filtered = self.pole_table.filterOn('id', self.request.matchdict['pole_id'])
-        filtered_poles = pole_table_filtered.recs(limit = 1)
-        pole = next(filtered_poles)
+def create_splice_closure(self, pole, pole_coords = None):
+    """
+    Creates a new splice closure in the given pole
+
+    Args:
+        pole: The pole object to which the splice closure will be attached
+        pole_coords (optional): The pole coordinates (as a MywPoint object). If not provided, the pole coordinates are used
+
+    Returns:
+        The newly created splice closure
+
+    This function creates the splice closure properties object and inserts a new record into the splice_closure_table. 
+    It also stores the created record in self.current_splice_closure for later use.
+    """
+    if pole_coords is None:
         pole_coords = MywPoint(pole.primaryGeometry().x, pole.primaryGeometry().y)
+    splice_closure_props = {"name": "Splice Closure", "specification": "CS-FOSC-400B4-S24-4-NNN", "housing": pole._urn(), "root_housing": pole._urn(), "location": pole_coords}
+    self.current_splice_closure = self.splice_closure_table.insert(splice_closure_props)
+    return self.current_splice_closure
 
-        address_predicate = self.address_table.field('location').geomWithinDist(pole_coords, 50)
-        near_addressses = self.address_table.filter(address_predicate)
+def create_fiber_splitter(self, pole, splice_closure_record, pole_coords = None):
+    """
+    Creates a new fiber splitter in the given pole and closure
+
+    Args:
+        pole: The pole object to which the fiber splitter will be attached
+        splice_closure_record: The splice closure object to which the fiber splitter will be attached
+        pole_coords (optional): The pole coordinates (as a MywPoint object). If not provided, the pole coordinates are used
+
+    Returns:
+        The newly created fiber splitter
+
+    This function creates the fiber splitter properties object and inserts a new record into the fiber_splitter_table
+    The housing is set to the splice closure, and the root housing is set to the pole
+    """
+    if pole_coords is None:
+        pole_coords = MywPoint(pole.primaryGeometry().x, pole.primaryGeometry().y)
+    fiber_splitter_props = {"name": "Fiber Splitter", "n_fiber_in_ports": 1, "n_fiber_out_ports": 64, "housing": splice_closure_record._urn(), "root_housing": pole._urn(), "location": pole_coords}
+    self.current_fiber_splitter = self.fiber_splitter_table.insert(fiber_splitter_props)
+    return self.current_fiber_splitter
+
+def create_wall_box(self, addr):
+    """
+    Creates a new wall box using the provided address information
+
+    Args:
+        addr: The address where the wall box will be created
+
+    Returns:
+        The newly created wall box
+
+    The function creates a wall box name based on the address's street name and number,
+    then it creates the wall box properties object and inserts a new record into the Wall Box table
+    """
+    if addr.street_name is not None and addr.street_number is not None:
+         wall_box_name = addr.street_name + " " + addr.street_number + " Wall Box"
+    else:
+        wall_box_name = "Wall Box"
+    addr_coordinates = MywPoint(addr.primaryGeometry().x, addr.primaryGeometry().y)
+    wall_box_props = {"name": wall_box_name, "location": addr_coordinates}
+    return self.wall_box_table.insert(wall_box_props)
+
+def create_ont(self, wall_box):
+    """
+    Creates a new ONT
+
+    Args:
+        wall_box: The wall box to which the ONT will be associated.
+
+    Returns:
+        The newly created ONT
+
+    The function creates a ONT properties object and inserts a new record into the ONT table
+    """
+    wall_box_coordinates = MywPoint(wall_box.primaryGeometry().x, wall_box.primaryGeometry().y)
+    ont_props = {"name": "ONT", "n_fiber_in_ports": 64, "housing": wall_box._urn(), "root_housing": wall_box._urn(), "location": wall_box_coordinates}
+    return self.ont_table.insert(ont_props)
+
+def create_route(self, pole, wall_box):
+    """
+    Creates a route between a pole and a wall box
+
+    Args:
+        pole: The pole where the route starts
+        wall_box: The wall box where the route ends
+
+    Returns:
+        The newly created route
+
+    The route is defined as a line string between the coordinates of the pole and the wall box
+    The function creates a route properties object and inserts a new record into the route table
+    """
+    pole_coords = MywPoint(pole.primaryGeometry().x, pole.primaryGeometry().y)
+    wall_box_coordinates = MywPoint(wall_box.primaryGeometry().x, wall_box.primaryGeometry().y)
+    route_coords = MywLineString([pole_coords, wall_box_coordinates])
+    route_props = {"in_structure": pole._urn(), "out_structure": wall_box._urn(), "length": route_coords.geoLength(), "path": route_coords}
+    return self.route_table.insert(route_props)
+
+def create_cable(self, structs):
+    """
+    Creates and routes a cable record between the given structures
+
+    Args:
+        structs (list): A list of structures used to determine the cable route
+
+    Returns:
+        The newly created cable
+
+    This function creates a cable properties object, then calls the findPath function which associates the cable
+    to a route between the given structs and inserts a new record into the fiber_cable table
+    """
+    cable_props = {"name": self.cable_name, "fiber_count": 16, "directed": True}
+    cable_record = self.fiber_table.insert(cable_props)
+    # routes = self.cable_manager.findPath(structs)
+    # self.cable_manager.route(cable_record, *routes)
+    routes = self.network_view.cable_mgr.findPath(structs)
+    self.network_view.cable_mgr.route(cable_record, *routes)
+    return cable_record
+
+def connect_cable_to_splitter(self, cable_segment, fiber_splitter):
+    """
+    Connects a cable segment to a fiber splitter
+
+    Args:
+        cable_segment: The cable segment to be connected to the splitter
+        fiber_splitter: The fiber splitter to which the cable segment will be connected
+
+    Returns:
+        The result of the connection_manager.connect operation, which represents the established connection
+
+    The function first create the PinRange objects with the information about the range of pins to be used for the connection,
+    the object contains, in order:
+        - The side of the equipment ("in" or "out") where the connection will be created
+        - The starting pin number
+        - The ending pin number
+
+    In our case we'll always use one pin for our connections. Then the connect function from the Connection API is called, with the paremeters:
+        - The type of connection ("fiber" in this case)
+        - Where the connection is housed (fiber splitter)
+        - Where the connection starts (fiber splitter)
+        - The pin range on the fiber splitter side
+        - Where the connection ends (cable segment)
+        - The pin range on the cable segment side
+    """
+    fiber_splitter_pin_range = PinRange ("out", self.current_splitter_pin, self.current_splitter_pin)
+    cable_pin_range = PinRange("in", 1, 1)
+    # return self.connection_manager.connect("fiber", fiber_splitter, fiber_splitter, fiber_splitter_pin_range, cable_segment, cable_pin_range)
+    return self.network_view.connection_mgr.connect("fiber", fiber_splitter, fiber_splitter, fiber_splitter_pin_range, cable_segment, cable_pin_range)
+
+def connect_cable_to_ont(self, cable_segment, ont):
+    """
+    Connects a cable segment to a ONT
+
+    Args:
+        cable_segment: The cable segment to be connected to the ONT
+        ont: The ONT to which the cable segment will be connected
+
+    Returns:
+        The result of the connection_manager.connect operation, which represents the established connection
+
+    The function first create the PinRange objects with the information about the range of pins to be used for the connection,
+    the object contains, in order:
+        - The side of the equipment ("in" or "out") where the connection will be created
+        - The starting pin number
+        - The ending pin number
+        
+    In our case we'll always use one pin for our connections. Then the connect function from the Connection API is called, with the paremeters:
+        - The type of connection ("fiber" in this case)
+        - Where the connection is housed (ONT)
+        - Where the connection starts (cable segment)
+        - The pin range on the cable segment side
+        - Where the connection ends (ONT)
+        - The pin range on the ONT side
+    """
+    
+    ont_pin_range = PinRange("in", 1, 1)
+    cable_pin_range = PinRange("out", 1, 1)
+    # return self.connection_manager.connect("fiber", ont, cable_segment, cable_pin_range, ont, ont_pin_range)
+    return self.network_view.connection_mgr.connect("fiber", ont, cable_segment, cable_pin_range, ont, ont_pin_range)
+
+@staticmethod
+def _increment_name(name):
+    """
+    Increments the trailing integer in a given string name by 1, used to increment the cables and poles names
+    Args:
+        The input string potentially ending with a number
+    Returns:
+        The modified string with the trailing number incremented, or the original string if no trailing number exists
+    Example:
+        _incrementName("DROP-6000") -> "DROP-6001"
+    """
+
+    match = re.match(r'(.*?)(\d+)$', name)
+    if match:
+        text_part, num_part = match.groups()
+        incremented_num = str(int(num_part) + 1)
+        padded_num = incremented_num.zfill(len(num_part))
+        name = text_part + padded_num
+    return name
+
+def increment_cable_name(self, cable_name):
+    self.cable_name = self._increment_name(cable_name)
+
+def get_pole(self, id):
+    """
+    Retrieves a pole record by its ID, updates the instance's longitude and latitude attributes
+    with the pole's coordinates, and returns the pole object
+    Args:
+        The unique identifier of the pole to retrieve
+    Returns:
+        The pole record corresponding to the given ID
+    """
+
+    pole_table_filtered = self.pole_table.filterOn('id', id)
+    filtered_pole = pole_table_filtered.recs(limit = 1)
+    pole = next(filtered_pole)
+    self.polePosition_lng = pole.primaryGeometry().x
+    self.polePosition_lat = pole.primaryGeometry().y 
+    return pole
+
+def get_near_addresses(self, pole):
+    """
+    Finds and returns addresses located within a 50-meter radius of the given pole
+    Args:
+        pole: The pole used as the center point for the search
+    Returns:
+        A filtered collection of addresses from the address_table that are within 50 meters
+        of the pole
+    """
+
+    pole_coords = MywPoint(pole.primaryGeometry().x, pole.primaryGeometry().y)
+    address_predicate = self.address_table.field('location').geomWithinDist(pole_coords, 50)
+    near_addressses = self.address_table.filter(address_predicate)
+    return near_addressses
+
+def increment_cable_name(self, cable_name):
+    self.cable_name = self._increment_name(cable_name)
+
 ```
 
-- First a query is performed in the `self.pole_table` via the `filterOn` function, looking for the Poles where the `id` field equals the ID passed in the `pole_id` parameter of the GET function, with that the `pole` variable is set to the first record returned
-  - In fact, the `filterOn` function will return a single record since it queries the table using the unique ID
+- `createSpliceClosure` receives as parameters the Pole where the Splice Closure will be created and its coordinates, and returns the object created
+- `createFiberSplitter` receives as parameters the Pole, its coordinates, and the Splice Closure that will house the Fiber Splitter to be created, and returns the object created
+- `createWallBox` receives as parameters the name of the Wall Box to be created and the coordinates where it will be created (which are the Address' coordinates), and returns the object created
+- `createOnt` receives as parameters the Wall Box that will house the ONT and the coordinates where it will be created, and returns the object created
+- `createRoute` receives as parameters the Pole (where the route begins), the Wall Box (where the route ends) and the route coordinates, and returns the route created
+  - In the previous functions the coordinates where always one point in the world where the Object would be created, but the route is a line, so the `coords` variable actually is an array with two points: The start (Pole) and end (Wall Box) of the route
+- `createCable` receive as parameters an array with the structures (in this case the Pole and the Wall Box) where the cable will begin and end, and returns the object created
+  - The previous functions received the structures separately and this one receives it as an array because these are used in the `findPath` function, which receives the same array, so this function receives the array just to simplify its logic
+  - After creating the cable, we must call `findPath` which will look for the shortest paths between the the structures. In this case there will only be a single route between the two (the one created by `createRoute`)
+  - With the route information, the function `route` is created, this is where the route is actually built in the database
+- `connectCableToSplitter` receives as parameters the cable segment to be connected and the fiber splitter where it will be connected, and returns the connection created
+  - The pin used in the cable is always 1, since the cable in the "in" side will always only connect to the Fiber Splitter
+  - The pin used in the fiber splitter is the pin stored in the `self.current_splitter_pin` variable
+- `connectCableToOnt` receives as parameters the cable segment to be connected and the ONT
+  - For both cable and ONT the pin used it "1" because both the cable in the "out" side and the ONT will only connect with each other
+- `_increment_name` is an internal function that increments the trailing number (if any) of a string. This will be used to increment the name of the cables to be created (e.g.: cable `DROP-6000` is created, the `self.cable_name` variable is incremented to `DROP-6001`)
+- `increment_cable_name` calls the internal `_increment_name` function to update the cable name
+- `get_pole` will return the Pole Object based on the ID that is passed by the client to the server
+  - A query is performed in the `self.pole_table` via the `filterOn` function, looking for the Poles where the `id` field equals the ID passed in the `pole_id` parameter of the GET function, with the first record is returned (In fact, the `filterOn` function will return a single record since it queries the table using the unique ID)
+  - `get_near_addresses` returns all addresses with 50 meters of the pole that was passed as parameter
+    - The `pole_coords` variable is set, created as a `MywPoint` object
+    - The `address_predicate` is the Predicate that will be used to filter the Address table and is built using
+      - The `location` field of the table
+      - The addresses that are within 50 meters from the `pole_coords`
+    - Then the `filter` function is called in the `address_table` passing the Predicate created as parameter
 
-- With the `pole` variable set, the `pole_coords` is created as a `MywPoint` object
-- The `address_predicate` is the Predicate that will be used to filter the Address table and is built using
-  - The `location` field of the table
-  - The addresses that are within 50 meters from the `pole_coords`
-- Then the `filter` function is called in the `address_table` passing the Predicate created as parameter
+### customer_connection_controller.py
 
-With all the information needed the process starts in earnest
+Starting with the `import` statements
 
 ```
-        splice_closure_record = self._createSpliceClosure(pole, pole_coords)
-        fiber_splitter_record = self._createFiberSplitter(pole, pole_coords, splice_closure_record)
+from pyramid.view import view_config
+from myworldapp.modules.comms.server.controllers.mywcom_controller import MywcomController
+from myworldapp.modules.utils_devrel_samples.server.connection_helper import ConnectionHelper
 ```
 
-- The Splice Closure is created by calling `self._createSpliceClosure`, and the Splice closure is stored in a variable to be used later
-- The Fiber Splitter is created by calling `self._createFiberSplitter`, and the Fiber Splitter is stored in a variable to be used later
+- `pyramid` is the web application library used to create the route between this Python file and a web address to be accessed by users
+- `Mywcomcontroller` is the base class of the class that will be created in this file
+- `ConnectionHelper` is the class created in the `connection_helper.py` file (see above)
 
-The Splice Closure and Fiber Splitter need to be created only once in the Pole, but from now on all Objects created must be created once for each connection, so the code iterates over the list `near_addresses` created earlier
+Next the class is created, as well as the class constructor
 
 ```
+class CustomerConnectionController(MywcomController):
+
+    def __init__(self, request):
+        super().__init__(request, "DATA")
+```
+
+And then we have the function that will be called from the user via HTTP GET
+
+```
+    @view_config(route_name='customer_connection_controller.buildConnections', request_method='GET', renderer='json')
+    def buildConnections(self):
+        """
+        Controller code to connect customer addresses to a network
+
+        Returns:
+            dict: A dictionary indicating the operation status, e.g., {"status": "success"}.
+        """
+        # Asserts that the current user is authorized to perform the operation
+        self.current_user.assertAuthorized(self.request)
+```
+
+- Before creating the function itself the `view_config` decorator must be added. This marks the function below to be used as a service
+  
+- To ensure that the user is authenticated and has permission to run this service, the first thing the function calls should always be the `self.current_user.assertAuthorized` function.
+
+Next I instantiate the `ConnectionHelper` class and call all the functions that were described above
+
+```
+        # Initializes the ConnectionHelper with the design ID from the request
+        connection_helper = ConnectionHelper(self.db, self.request.matchdict['design_id'])
+
+        # Retrieves the pole using the pole ID from the request
+        pole = connection_helper.get_pole(self.request.matchdict['pole_id'])
+
+        # Retrieves all addresses within a 50m radius of the pole
+        near_addressses = connection_helper.get_near_addresses(pole)
+
+        # Creates a splice closure and fiber splitter at the pole
+        splice_closure_record = connection_helper.create_splice_closure(pole)
+        fiber_splitter_record = connection_helper.create_fiber_splitter(pole, splice_closure_record)
+
         for addr in near_addressses:
-            if addr.street_name is not None and addr.street_number is not None:
-                wall_box_name = addr.street_name + " " + addr.street_number + " Wall Box"
-            else:
-                wall_box_name = "Wall Box"
-            addr_coordinates = MywPoint(addr.primaryGeometry().x, addr.primaryGeometry().y)
-            wall_box_record = self._createWallBox(wall_box_name, addr_coordinates)
-            wall_box_coordinates = MywPoint(wall_box_record.primaryGeometry().x, wall_box_record.primaryGeometry().y)
-            ont_record = self._createOnt(wall_box_record, wall_box_coordinates)
+            # Creates a wall box and an ONT at the address
+            wall_box_record = connection_helper.create_wall_box(addr)
+            ont_record = connection_helper.create_ont(wall_box_record)
 
-            route_coords = MywLineString([pole_coords, wall_box_coordinates])
-            route_record = self._createRoute(pole, wall_box_record, route_coords) 
-            cable_record = self._createCable([pole, wall_box_record])
+            # Creates a route and a cable between the pole and the wall box
+            connection_helper.create_route(pole, wall_box_record)
+            cable_record = connection_helper.create_cable([pole, wall_box_record])
 
-            cable_segments = self.cable_manager.orderedSegments(cable_record)
-            splitter_connection_record = self._connectCableToSplitter(cable_segments[0], fiber_splitter_record)
-            ont_connection_record = self._connectCableToOnt(cable_segments[0], ont_record)
+            # Retrieves the ordered cable segments
+            cable_segments = connection_helper.network_view.cable_mgr.orderedSegments(cable_record)
 
-            self._incrementCableName()
-            self.current_splitter_pin += 1
+            # Connects the cable to the fiber splitter and the ONT
+            connection_helper.connect_cable_to_splitter(cable_segments[0], fiber_splitter_record)
+            connection_helper.connect_cable_to_ont(cable_segments[0], ont_record)
+
+            # Increments the cable name and splitter pin for the next iteration
+            connection_helper.increment_cable_name(connection_helper.cable_name)
+            connection_helper.current_splitter_pin += 1
 ```
 
-- First I set the name of the Wall Box to be used, if the current Adress being connected has a `street_name` and `street_number` set, those are used in setting the name. Otherwise a generic "Wall Box" name is used.
-
-- Another `MywPoint` is created, this time with the Address coordinates
-- Then the Wall Box is created, as well as the `wall_box_coordinates` `MywPoint` variable, and the the ONT
-- One point to note here is the creating of the `route_coords` variable, which ,as mentioned befire, is a `MywLineString` type that receives as perameters the `pole_coords` and `wall_box_coords` (the beginning and end of the route, respectively)
-- After the remaining auxiliary functions are called, the `self.current_splitter_pin` variable is incremented so the next available pin in the Fiber Splitter is used
+- To the constructor of the `ConnectionHelper` class I pass as parameters a reference to the database (obtained from the `MywcomController` class) and a reference to the Design ID passed as parameter
+  - To obtain the parameters that are defined in the `routing.py` file and passed by the client use the function `self.request.matchdict`
 
 Once the `for` loop is finished the operation is almost complete
 
 ```
-        self.db.commit()
-        print("OPERATION COMPLETE")
-        return {"status": "success"}
+# Commits all changes to the database
+connection_helper.db.commit()
+
+# Prints a completion message in the server log and returns a success status object
+print("OPERATION COMPLETE")
+return {"status": "success"}
 ```
 
 - The last step is calling the `db.commit()` function, which actually commit the changes created in the Design to Database

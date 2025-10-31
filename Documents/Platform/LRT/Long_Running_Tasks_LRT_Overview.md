@@ -38,24 +38,24 @@ The user is provided feedback on the progress of the 2000 connections being made
 
 This tool is available in the "DevRel Samples App - NMT" application inside the "Samples Menu" option, clicking on it will open the Palette Menu to the right side of the map
 
-![Samples Menu option location](./Customer_Connection_JavaScript_Overview_1.png)
+![Samples Menu option location](./LRT_1.png)
 
 <p align="center"><i>Fig. 1: "Samples Menu" option location and the Palette menu open to the right side of the map</i></p>
 
 Click the "LRT" button on the Palette Menu and a pop-up window will show with a brief description of the tool, click the "OK" button and the tool window will show up (Fig. 2)
 
-![Samples Menu option location](./LRT_final_modal_b.png)
+![Samples Menu option location](./LRT_2.png)
 
 <p align="center"><i>Fig. 2: The Long Running Task Tool window</i></p>
 
-To use the tool create an empty Design polygon--with its state set to "Designing"-- and select it.
+To use the tool create an empty Design polygon--with its state set to "Designing"-- and select it. Next create a Pole within the Design
 
 Clicking the "Create Connections using LRT" button will kick off the task, as connections are made, the Task Status in the modal dialog will be updated so the user can monitor the progress of the task.
 
 Once all 2000 connections have been made, you will see a Success message in the modal window.  Refreshing the map with a pan or zoom will draw the 2000 new connections (as long as the Layers are toggled on in the left-side table of contents).
 (Fig. 3)
 
-![Samples Menu option location](./LRT_final_modal_c.png)
+![Samples Menu option location](./LRT_3.png)
 
 <p align="center"><i>Fig. 3: The Success message of the completed Long Running Task</i></p>
 
