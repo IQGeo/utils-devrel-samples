@@ -32,7 +32,9 @@ When clicking the button a modal window will open where the user:
 Once a milestone is chosen, the following happens on the map
 
 -   A search of a Milestone's "immediate children" milestones is executed
--   The tickets of both the parent milestone and the immediate children's milestones are mapped, along with a polygon bouding those tickets
+-   The tickets of both the parent milestone and the immediate children's milestones are mapped, along with a polygon bouding those tickets given the following conditions:
+    -   the ticket's geometry type is a Point
+    -   if three or more points are displayed, the bounding polygon is displayed as well
 -   a time slider is presented to the user with the full date range of the milestones
 
 In Fig. 2 below you can see a milestone selected
