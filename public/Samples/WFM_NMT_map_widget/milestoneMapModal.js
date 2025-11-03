@@ -85,11 +85,12 @@ export const MilestoneMapModal = ({ open }) => {
 
         const listProjects = async () => {
             let arrProjects = [];
+
             db.getFeatures('mywwfm_project')
-                .then(result2 => {
-                    for (const feature in result2) {
-                        if (result2[feature]?.properties) {
-                            const props = result2[feature]?.properties;
+                .then(result => {
+                    for (const feature in result) {
+                        if (result[feature]?.properties) {
+                            const props = result[feature]?.properties;
                             // do not load Default Project
                             // if (props['name'] !== 'Default Project') {
                             arrProjects.push({
@@ -100,11 +101,17 @@ export const MilestoneMapModal = ({ open }) => {
                             });
                         }
                     }
-                    setAllProjects(arrProjects);
+                    if (arrProjects.length === 0) {
+                        setAlertMessage('No projects found.');
+                        return;
+                    } else {
+                        setAllProjects(arrProjects);
+                    }
                 })
                 .catch(error => {
-                    console.error('Failed to load projects:', error);
+                    console.error('Failed to load Projects table:', error);
                     setAllProjects([]);
+                    return;
                 })
                 .finally(() => {
                     setProjLoading(false);
@@ -116,32 +123,40 @@ export const MilestoneMapModal = ({ open }) => {
         const getProjGroupJunction = async () => {
             let arrGroupsProjects = [];
             db.getFeatures('mywwfm_project_group_junction')
-                .then(result3 => {
-                    for (const group in result3) {
-                        if (result3[group]?.properties) {
-                            const props2 = result3[group]?.properties;
+                .then(result => {
+                    for (const group in result) {
+                        if (result[group]?.properties) {
+                            const props2 = result[group]?.properties;
 
                             arrGroupsProjects.push(props2);
                         }
                     }
-                    setProjGroups(arrGroupsProjects);
+
+                    if (arrGroupsProjects.length === 0) {
+                        setAlertMessage('No Project/Group associations found.');
+
+                        return;
+                    } else {
+                        setProjGroups(arrGroupsProjects);
+                    }
                 })
                 .catch(error => {
                     console.error('Failed to load project-group junction data:', error);
                     setProjGroups([]);
+                    return;
                 });
         };
 
         getProjGroupJunction();
 
-        // load all Milestones -- optimize later
+        // load all Milestones
         const listMilestones = async () => {
             let arrMilestones = [];
             db.getFeatures('mywwfm_milestone')
-                .then(result4 => {
-                    for (const feature in result4) {
-                        if (result4[feature]?.properties) {
-                            const props = result4[feature]?.properties;
+                .then(result => {
+                    for (const feature in result) {
+                        if (result[feature]?.properties) {
+                            const props = result[feature]?.properties;
 
                             arrMilestones.push({
                                 milestone_id: props['id'],
@@ -155,11 +170,18 @@ export const MilestoneMapModal = ({ open }) => {
                             });
                         }
                     }
-                    setAllMilestones(arrMilestones);
+
+                    if (arrMilestones.length === 0) {
+                        setAlertMessage('No Milestone records found.');
+                        return;
+                    } else {
+                        setAllMilestones(arrMilestones);
+                    }
                 })
                 .catch(error => {
-                    console.error('Failed to load milestone data:', error);
+                    console.error('Failed to load Milestone table data:', error);
                     setAllMilestones([]);
+                    return;
                 });
         };
         listMilestones();
@@ -168,10 +190,10 @@ export const MilestoneMapModal = ({ open }) => {
         const getGroupMilestoneJunction = async () => {
             let arrGroupsMilestones = [];
             db.getFeatures('mywwfm_milestone_group_junction')
-                .then(result5 => {
-                    for (const feature in result5) {
-                        if (result5[feature]?.properties) {
-                            const props = result5[feature]?.properties;
+                .then(result => {
+                    for (const feature in result) {
+                        if (result[feature]?.properties) {
+                            const props = result[feature]?.properties;
 
                             arrGroupsMilestones.push({
                                 junction_id: props['id'],
@@ -180,11 +202,18 @@ export const MilestoneMapModal = ({ open }) => {
                             });
                         }
                     }
-                    setGroupMilestones(arrGroupsMilestones);
+                    if (arrGroupsMilestones.length === 0) {
+                        setAlertMessage('No Milestone-Group Junction records found.');
+                        console.log('no milestone group junction records found');
+                        return;
+                    } else {
+                        setGroupMilestones(arrGroupsMilestones);
+                    }
                 })
                 .catch(error => {
                     console.error('Failed to load milestone-group junction data:', error);
                     setGroupMilestones([]);
+                    return;
                 });
         };
 
@@ -206,7 +235,7 @@ export const MilestoneMapModal = ({ open }) => {
     useEffect(() => {
         // we want to call the filter for the milestone tickets
         // based on the new Slider date range
-        if (beginTime && endTime) {
+        if (beginTime && endTime && milestoneTickets) {
             filterTickets({ beginTime, endTime });
         }
     }, [beginTime, endTime]);
@@ -219,10 +248,24 @@ export const MilestoneMapModal = ({ open }) => {
         if (pointsLayer) {
             pointsLayer.clear();
         }
-        if (filteredTickets.length > 0) {
-            mapTickets(filteredTickets);
+        if (milestoneTickets.length > 0) {
+            if (filteredTickets.length > 0) {
+                mapTickets(filteredTickets);
+            } else {
+                setAlertMessage('No tickets meet date range criteria.');
+            }
         }
     }, [filteredTickets]);
+
+    useEffect(() => {
+        // when the alert message changes
+        // we want to display it
+        if (alertMessage.length > 0) {
+            setIsAlertVisible(true);
+        } else {
+            setIsAlertVisible(false);
+        }
+    }, [alertMessage]);
 
     const getTickets = async idArray => {
         await retrieveMilestoneTickets(idArray);
@@ -251,28 +294,35 @@ export const MilestoneMapModal = ({ open }) => {
                     }
                 }
             } catch (error) {
-                console.error('Failed to load tickets for milestone ${item.id}:', error);
+                console.error(`Failed to load tickets for milestone ${item.id}:`, error);
+                setMilestoneTickets([]);
+                return;
             }
         }
-
-        setMilestoneTickets(arrTickets);
+        if (arrTickets.length === 0) {
+            setMilestoneTickets([]);
+            setAlertMessage('No tickets found for selected milestone(s).');
+        } else {
+            setMilestoneTickets(arrTickets);
+        }
     };
 
     const filterTickets = ({ beginTime, endTime }) => {
         const sliderBegin = dayjs(beginTime);
         const sliderEnd = dayjs(endTime);
 
-        const filtered = milestoneTickets.filter(ticket => {
-            const milestoneStart = dayjs(ticket.properties.milestone_start);
-            const milestoneEnd = dayjs(ticket.properties.milestone_end);
+        if (milestoneTickets.length > 0) {
+            const filtered = milestoneTickets.filter(ticket => {
+                const milestoneStart = dayjs(ticket.properties.milestone_start);
+                const milestoneEnd = dayjs(ticket.properties.milestone_end);
 
-            return (
-                (milestoneStart.isAfter(sliderBegin) || milestoneStart.isSame(sliderBegin)) &&
-                (milestoneEnd.isBefore(sliderEnd) || milestoneEnd.isSame(sliderEnd))
-            );
-        });
-
-        setFilteredTickets(filtered);
+                return (
+                    (milestoneStart.isAfter(sliderBegin) || milestoneStart.isSame(sliderBegin)) &&
+                    (milestoneEnd.isBefore(sliderEnd) || milestoneEnd.isSame(sliderEnd))
+                );
+            });
+            setFilteredTickets(filtered);
+        }
     };
 
     const mapTickets = inputTickets => {
@@ -287,23 +337,27 @@ export const MilestoneMapModal = ({ open }) => {
             if (inputTickets[feature]?.geometry) {
                 const thisObject = inputTickets[feature];
                 const thisGeometry = thisObject.geometry;
+                const thisGeometryType = thisGeometry.type;
+                const theseCoordinates = thisGeometry.coordinates;
 
-                const tooltipText =
-                    thisObject.properties.id + '<br>' + thisObject.properties.mywwfm_status;
+                // for this demo we are only mapping Point geometries and verifying coordinates are supplied
+                if (thisGeometryType === 'Point' && theseCoordinates.length > 1) {
+                    const tooltipText =
+                        thisObject.properties.id + '<br>' + thisObject.properties.mywwfm_status;
 
-                pointsLayer.addMywGeoms(thisGeometry, tooltipText);
+                    pointsLayer.addMywGeoms(thisGeometry, tooltipText);
 
-                geomTicketsQty += 1;
+                    geomTicketsQty += 1;
 
-                if (thisGeometry) {
                     geoJSONFeatures.push(thisObject.asGeoJson());
                 }
             }
         }
 
-        // if we have at least one valid geometry, plot on map
-        if (geomTicketsQty > 0) {
+        if (geomTicketsQty > 2) {
+            // We need a minimum of 3 ticket point geometries to create a polygon
             // make array of GeoJSON features into a proper Feature Collection
+            // NOTE: we need at least three point geometries to create a hull polygon
             const turfFeatureCollection = turf.featureCollection(geoJSONFeatures);
 
             // create a convex hull using the Turf feature collection
@@ -315,19 +369,22 @@ export const MilestoneMapModal = ({ open }) => {
             //plot on map
             hullLayer.addGeoJSONCollection(ticketConvexHull);
             hullLayer.show();
+        }
 
+        // if we have at least one valid geometry, we can plot ticket points
+        if (geomTicketsQty > 0) {
             //plot points
             pointsLayer.show();
-
             setAlertMessage(
                 allTicketsQty.toString() +
-                    ' tickets ' +
-                    ' / ' +
+                    ' tickets  / ' +
                     geomTicketsQty.toString() +
-                    ' ticket geoms'
+                    ' ticket Point geoms'
             );
         } else {
-            setAlertMessage('No tickets in date range');
+            setAlertMessage(
+                allTicketsQty.toString() + ' tickets, but no tickets with Point geometry'
+            );
         }
         setIsAlertVisible(true);
     };
@@ -350,9 +407,13 @@ export const MilestoneMapModal = ({ open }) => {
                 });
             });
 
-            setSelProjGroups(selectGroups);
-
-            setGroupLoading(false);
+            if (selectGroups.length > 0) {
+                setSelProjGroups(selectGroups);
+                setGroupLoading(false);
+            } else {
+                setAlertMessage('No groups found for this project.');
+                setSelProjGroups([]);
+            }
         }
     };
 
@@ -391,8 +452,16 @@ export const MilestoneMapModal = ({ open }) => {
                 });
             }
         });
-        setSelGroupMilestones(arrSelMilestones);
-        setMilestoneLoading(false);
+
+        if (arrSelMilestones.length > 0) {
+            setSelGroupMilestones(arrSelMilestones);
+            setMilestoneLoading(false);
+            setMilestoneDisabled(false);
+        } else {
+            setAlertMessage('No milestones found for chosen Project and Group.');
+            setSelGroupMilestones([]);
+            setMilestoneDisabled(true);
+        }
         return joinedMilestoneArray;
     };
 
@@ -538,16 +607,16 @@ export const MilestoneMapModal = ({ open }) => {
     };
 
     const onGroupSelected = (value, option) => {
+        setAlertMessage('');
         setSelMilestone(null);
         setMilestoneDisabled(true);
         determineMilestones(option.label);
         setSelGroup(value);
-        setMilestoneDisabled(false);
-        setIsAlertVisible(false);
         setSliderVisible(false);
     };
 
     const onMilestoneSelected = (value, option) => {
+        setAlertMessage('');
         setSliderVisible(false);
         setSelMilestone(value);
         depthSearchMilestones(value);
