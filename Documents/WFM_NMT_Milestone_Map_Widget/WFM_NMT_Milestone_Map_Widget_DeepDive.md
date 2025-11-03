@@ -22,7 +22,7 @@
 
 This tool is built in an environment with Workflow Manager (WFM) integrated with Network Manager Telecom (NMT), but can easily be re-used in environments where WFM is integrated with other Network Managers (e.g. Electric, Gas, et al).
 
-This sample enables to user to map tickets associated with specific WFM Milestones associated with a user-selected Project and Group. The tool includes a time slider to permit visualizing tickets that fall within the user-selected range of their milestones' planned beginning and end dates
+This sample enables to user to map tickets associated with specific WFM Milestones associated with a user-selected Project and Group. The tool includes a time slider to permit visualizing tickets that fall within the user-selected range of their milestones' planned beginning and end dates.
 
 &#8291;
 &#8291;
@@ -35,7 +35,7 @@ This sample enables to user to map tickets associated with specific WFM Mileston
 -   `timeRangeSlider.js` - The file containing the Slider component
 -   `milestoneMapFunctions.js` - The class containing the support functions for the Modal code
 
-All files are located in the `modules/utils_devrel_samples/public/js/Samples/WFM_NMT_Milestone_Map_Widget` folder
+All files are located in the `modules/utils-devrel-samples/public/js/Samples/WFM_NMT_Milestone_Map_Widget` folder
 
 &#8291;
 &#8291;
@@ -240,20 +240,21 @@ Next, we have state hooks that will help us track the four types of WFM data tha
 &#8291;
 
 ```
- useEffect(() => {
+    useEffect(() => {
         // we are pulling the data from the four tables we need when the modal window opens -
         // -- Projects - mywwfm_project
-        // -- Project/Group Crosswalk - mywwfm_project_group_junction - provides Group info
+        // -- Project/Group Association - mywwfm_project_group_junction - provides Group info
         // -- Milestones - mywwfm_milestones
-        // -- Group/Milestone Crosswalk - mywwfm_milestone_group_junction
+        // -- Group/Milestone Association - mywwfm_milestone_group_junction
 
         const listProjects = async () => {
             let arrProjects = [];
+
             db.getFeatures('mywwfm_project')
-                .then(result2 => {
-                    for (const feature in result2) {
-                        if (result2[feature]?.properties) {
-                            const props = result2[feature]?.properties;
+                .then(result => {
+                    for (const feature in result) {
+                        if (result[feature]?.properties) {
+                            const props = result[feature]?.properties;
                             // do not load Default Project
                             // if (props['name'] !== 'Default Project') {
                             arrProjects.push({
@@ -264,11 +265,17 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                             });
                         }
                     }
-                    setAllProjects(arrProjects);
+                    if (arrProjects.length === 0) {
+                        setAlertMessage('No projects found.');
+                        return;
+                    } else {
+                        setAllProjects(arrProjects);
+                    }
                 })
                 .catch(error => {
-                    console.error('Failed to load projects:', error);
+                    console.error('Failed to load Projects table:', error);
                     setAllProjects([]);
+                    return;
                 })
                 .finally(() => {
                     setProjLoading(false);
@@ -280,32 +287,40 @@ Next, we have state hooks that will help us track the four types of WFM data tha
         const getProjGroupJunction = async () => {
             let arrGroupsProjects = [];
             db.getFeatures('mywwfm_project_group_junction')
-                .then(result3 => {
-                    for (const group in result3) {
-                        if (result3[group]?.properties) {
-                            const props2 = result3[group]?.properties;
+                .then(result => {
+                    for (const group in result) {
+                        if (result[group]?.properties) {
+                            const props2 = result[group]?.properties;
 
                             arrGroupsProjects.push(props2);
                         }
                     }
-                    setProjGroups(arrGroupsProjects);
+
+                    if (arrGroupsProjects.length === 0) {
+                        setAlertMessage('No Project/Group associations found.');
+
+                        return;
+                    } else {
+                        setProjGroups(arrGroupsProjects);
+                    }
                 })
                 .catch(error => {
                     console.error('Failed to load project-group junction data:', error);
                     setProjGroups([]);
+                    return;
                 });
         };
 
         getProjGroupJunction();
 
-        // load all Milestones -- optimize later
+        // load all Milestones
         const listMilestones = async () => {
             let arrMilestones = [];
             db.getFeatures('mywwfm_milestone')
-                .then(result4 => {
-                    for (const feature in result4) {
-                        if (result4[feature]?.properties) {
-                            const props = result4[feature]?.properties;
+                .then(result => {
+                    for (const feature in result) {
+                        if (result[feature]?.properties) {
+                            const props = result[feature]?.properties;
 
                             arrMilestones.push({
                                 milestone_id: props['id'],
@@ -319,11 +334,18 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                             });
                         }
                     }
-                    setAllMilestones(arrMilestones);
+
+                    if (arrMilestones.length === 0) {
+                        setAlertMessage('No Milestone records found.');
+                        return;
+                    } else {
+                        setAllMilestones(arrMilestones);
+                    }
                 })
                 .catch(error => {
-                    console.error('Failed to load milestone data:', error);
+                    console.error('Failed to load Milestone table data:', error);
                     setAllMilestones([]);
+                    return;
                 });
         };
         listMilestones();
@@ -332,10 +354,10 @@ Next, we have state hooks that will help us track the four types of WFM data tha
         const getGroupMilestoneJunction = async () => {
             let arrGroupsMilestones = [];
             db.getFeatures('mywwfm_milestone_group_junction')
-                .then(result5 => {
-                    for (const feature in result5) {
-                        if (result5[feature]?.properties) {
-                            const props = result5[feature]?.properties;
+                .then(result => {
+                    for (const feature in result) {
+                        if (result[feature]?.properties) {
+                            const props = result[feature]?.properties;
 
                             arrGroupsMilestones.push({
                                 junction_id: props['id'],
@@ -344,11 +366,18 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                             });
                         }
                     }
-                    setGroupMilestones(arrGroupsMilestones);
+                    if (arrGroupsMilestones.length === 0) {
+                        setAlertMessage('No Milestone-Group Junction records found.');
+                        console.log('no milestone group junction records found');
+                        return;
+                    } else {
+                        setGroupMilestones(arrGroupsMilestones);
+                    }
                 })
                 .catch(error => {
                     console.error('Failed to load milestone-group junction data:', error);
                     setGroupMilestones([]);
+                    return;
                 });
         };
 
@@ -398,6 +427,7 @@ This effect fires when either the beginning time or end time is changed by the u
 &#8291;
 
 ```
+
     useEffect(() => {
         if (hullLayer) {
             hullLayer.clear();
@@ -405,14 +435,38 @@ This effect fires when either the beginning time or end time is changed by the u
         if (pointsLayer) {
             pointsLayer.clear();
         }
-        if (filteredTickets.length > 0) {
-            mapTickets(filteredTickets);
+        if (milestoneTickets.length > 0) {
+            if (filteredTickets.length > 0) {
+                mapTickets(filteredTickets);
+            } else {
+                setAlertMessage('No tickets meet date range criteria.');
+            }
         }
     }, [filteredTickets]);
 
 ```
 
-This effect fires when the filteredTickets state hook is updated, which indicates that the existing temporary map layers should be cleared and the `mapTickets` function fired to map the updated set of tickets.
+This effect fires when the filteredTickets state hook is updated, which indicates that the existing temporary map layers should be cleared and the `mapTickets` function fired to map the updated set of tickets. Note that before sending the `filteredTickets` off to be mapped we are checking to make sure there is at least one ticket in the array and if not, the appropriate alert message is sent to the user.
+
+&#8291;
+&#8291;
+&#8291;
+
+```
+    useEffect(() => {
+        // when the alert message changes
+        // we want to display it
+        if (alertMessage.length > 0) {
+            setIsAlertVisible(true);
+        } else {
+            setIsAlertVisible(false);
+        }
+    }, [alertMessage]);
+
+
+```
+
+The next effect is fired when the `alertMessage` changes. If the alert message has text, it is displayed to the user; if it is zero-length, the alert is hidden.
 
 &#8291;
 &#8291;
@@ -446,17 +500,25 @@ This effect fires when the filteredTickets state hook is updated, which indicate
                     }
                 }
             } catch (error) {
-                console.error('Failed to load tickets for milestone ${item.id}:', error);
+                console.error(`Failed to load tickets for milestone ${item.id}:`, error);
+                setMilestoneTickets([]);
+                return;
             }
         }
-
-        setMilestoneTickets(arrTickets);
+        if (arrTickets.length === 0) {
+            setMilestoneTickets([]);
+            setAlertMessage('No tickets found for selected milestone(s).');
+        } else {
+            setMilestoneTickets(arrTickets);
+        }
     };
 ```
 
 -   We have that `getTickets` function to asynchronously call the `retrieveMilestoneTickets` to retrieve ticket data once we have an array of milestones that we iterate through to make database calls to pull tickets based on the id of the milestone.
 
 -   Once we have ticket features, we iterate through them and tack on the start time and end time data from the milestone to which they belong and set those properties as `milestone_start` and `milestone_end`.
+
+-   We add a check to ensure there are actually tickets retrieved associated with the milestone. If none are found, the appropriate alert is sent to the user.
 
 &#8291;
 &#8291;
@@ -502,23 +564,27 @@ This effect fires when the filteredTickets state hook is updated, which indicate
             if (inputTickets[feature]?.geometry) {
                 const thisObject = inputTickets[feature];
                 const thisGeometry = thisObject.geometry;
+                const thisGeometryType = thisGeometry.type;
+                const theseCoordinates = thisGeometry.coordinates;
 
-                const tooltipText =
-                    thisObject.properties.id + '<br>' + thisObject.properties.mywwfm_status;
+                // for this demo we are only mapping Point geometries and verifying coordinates are supplied
+                if (thisGeometryType === 'Point' && theseCoordinates.length > 1) {
+                    const tooltipText =
+                        thisObject.properties.id + '<br>' + thisObject.properties.mywwfm_status;
 
-                pointsLayer.addMywGeoms(thisGeometry, tooltipText);
+                    pointsLayer.addMywGeoms(thisGeometry, tooltipText);
 
-                geomTicketsQty += 1;
+                    geomTicketsQty += 1;
 
-                if (thisGeometry) {
                     geoJSONFeatures.push(thisObject.asGeoJson());
                 }
             }
         }
 
-        // if we have at least one valid geometry, plot on map
-        if (geomTicketsQty > 0) {
+        if (geomTicketsQty > 2) {
+            // We need a minimum of 3 ticket point geometries to create a polygon
             // make array of GeoJSON features into a proper Feature Collection
+            // NOTE: we need at least three point geometries to create a hull polygon
             const turfFeatureCollection = turf.featureCollection(geoJSONFeatures);
 
             // create a convex hull using the Turf feature collection
@@ -530,19 +596,22 @@ This effect fires when the filteredTickets state hook is updated, which indicate
             //plot on map
             hullLayer.addGeoJSONCollection(ticketConvexHull);
             hullLayer.show();
+        }
 
+        // if we have at least one valid geometry, we can plot ticket points
+        if (geomTicketsQty > 0) {
             //plot points
             pointsLayer.show();
-
             setAlertMessage(
                 allTicketsQty.toString() +
-                    ' tickets ' +
-                    ' / ' +
+                    ' tickets  / ' +
                     geomTicketsQty.toString() +
-                    ' ticket geoms'
+                    ' ticket Point geoms'
             );
         } else {
-            setAlertMessage('No tickets in date range');
+            setAlertMessage(
+                allTicketsQty.toString() + ' tickets, but no tickets with Point geometry'
+            );
         }
         setIsAlertVisible(true);
     };
@@ -550,17 +619,25 @@ This effect fires when the filteredTickets state hook is updated, which indicate
 
 The `mapTickets` function is called to create the two temporary map layers: a Point layer representing the individual tickets fed into the function and a Polygon layer which represents the hull encompassing all of the point features.
 
--   If the selected milestone changes, the tickets associated with that milestone are mapped.
+-   If the selected milestone changes, the tickets associated with that milestone with Point geometries are mapped.
 -   If the user changes the begin or end date using the Slider, the filtered tickets are fed to the function to be mapped.
 -   Not all tickets have geometry, so we have to make sure we only attempt to map valid geometries, while keeping a count of all tickets `allTicketsQty` and a separate count of tickets with geometry `geomTicketsQty` and include that information in the alert message.
--   To create the ticket Points layer, we using the geometry property of the MyWorld ticket feature object. In addition we are creating a tooltip by combining the text of the ticket ID and the ticket status. For each ticket with geometry, we call `.addMywGeoms` method from the `MapTicketsLayer` class feeding in the geometry and the tooltip text.
--   To create the hull polygon, we are using a different technique altogether using the Turf library.
-    -   We convert the ticket's MyWorld feature to a GeoJSON feature using the `.asGeoJson()` method.
-    -   We take this array of GeoJSON features and create a proper GeoJSON feature collection using Turf's `.featureCollection` function.
+-   To create the ticket Points layer, we using the geometry property of the MyWorld ticket feature object.
+
+    -   We inspect the geometry to ensure it has a geometry type of 'Point'.
+    -   We then check that coordinates are present.
+    -   If both conditions are met:
+        -   We create a tooltip text string using the feature's ID and status properties.
+        -   We add the geometry to the Point layer by calling call `.addMywGeoms` method from the `MapTicketsLayer` class feeding in the geometry and the tooltip text.
+        -   We increment the count of valid point geometries.
+        -   We convert the ticket's MyWorld feature to a GeoJSON feature using the `.asGeoJson()` method and add it to the array of GeoJSON point features.
+
+-   If there three or more point features, we create a bounding hull polygon for the points using the Turf library directly:
+    -   We take the array of GeoJSON features and create a proper GeoJSON feature collection using Turf's `.featureCollection` function.
     -   A convex hull polygon is created using Turf's `convex` function.
-    -   the hull layer is fed into the `.addGeoJSONCollection` method of the `MapTicketsLayer` class.
+    -   The hull layer is fed into the `.addGeoJSONCollection` method of the `MapTicketsLayer` class.
 -   We `.show` both layers by calling the method from the `MapTicketsLayer` class.
--   The alert message with the ticket counts is shown.
+-   The alert message with the ticket counts is shown, while also handling the scenario where no valid Point geometries are found.
 
 &#8291;
 &#8291;
@@ -583,15 +660,19 @@ The `mapTickets` function is called to create the two temporary map layers: a Po
                 });
             });
 
-            setSelProjGroups(selectGroups);
-
-            setGroupLoading(false);
+            if (selectGroups.length > 0) {
+                setSelProjGroups(selectGroups);
+                setGroupLoading(false);
+            } else {
+                setAlertMessage('No groups found for this project.');
+                setSelProjGroups([]);
+            }
         }
     };
 
 ```
 
-The `determineGroups` function takes in the ID of the chosen project and filters the records in the projGroups state hooks to create an array of groups associated with the chosen project that feeds the Groups drop-down selector in the modal window. Note we're setting `setGroupLoading(false)` when done to make the selector available for user interaction.
+The `determineGroups` function takes in the ID of the chosen project and filters the records in the projGroups state hooks to create an array of groups associated with the chosen project that feeds the Groups drop-down selector in the modal window. Note we're setting `setGroupLoading(false)` when done to make the selector available for user interaction. If no Groups are found for the chosen Project, we alert the user appropriately.
 
 &#8291;
 &#8291;
@@ -633,11 +714,18 @@ The `determineGroups` function takes in the ID of the chosen project and filters
                 });
             }
         });
-        setSelGroupMilestones(arrSelMilestones);
-        setMilestoneLoading(false);
+
+        if (arrSelMilestones.length > 0) {
+            setSelGroupMilestones(arrSelMilestones);
+            setMilestoneLoading(false);
+            setMilestoneDisabled(false);
+        } else {
+            setAlertMessage('No milestones found for chosen Project and Group.');
+            setSelGroupMilestones([]);
+            setMilestoneDisabled(true);
+        }
         return joinedMilestoneArray;
     };
-
 ```
 
 The `determineMilestones` function performs two filters and a join in order to create an array of parent milestones that will feed the selector element for Milestones.
@@ -647,6 +735,7 @@ The `determineMilestones` function performs two filters and a join in order to c
 -   Then we "join" the array of Milestones filtered by Groups with the Milestones filtered by Milestones to get a single set of milestones associated with the chosen Project and Group with no duplicates.
 -   We send this array of milestones to the `sortMilestones` function will be explained below.
 -   Finally, we iterate through the milestones and choose only those with a null parent_id to populate the selector dropdown.
+    -   If no Milestones are found, we alert the user.
 
 &#8291;
 &#8291;
@@ -849,22 +938,21 @@ The `generateDailyMarks` functions creates tick marks on the slider that represe
     };
 
     const onGroupSelected = (value, option) => {
+        setAlertMessage('');
         setSelMilestone(null);
         setMilestoneDisabled(true);
         determineMilestones(option.label);
         setSelGroup(value);
-        setMilestoneDisabled(false);
-        setIsAlertVisible(false);
         setSliderVisible(false);
     };
 
     const onMilestoneSelected = (value, option) => {
+        setAlertMessage('');
         setSliderVisible(false);
         setSelMilestone(value);
         depthSearchMilestones(value);
         getTimestamps(value);
     };
-
 
 ```
 
