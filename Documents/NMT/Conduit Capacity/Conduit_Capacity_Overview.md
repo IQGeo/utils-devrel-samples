@@ -5,6 +5,7 @@
 - [Conduit Capacity - Overview](#rest-apis---overview)
   - [Table of Contents](#table-of-contents)
   - [Tool Description](#tool-description)
+  - [Custom Calculated Field: Capacity Percentage](#custom-calculated-field)
   - [How to use the tool](#how-to-use-the-tool)
 
 ---
@@ -29,6 +30,23 @@ The tool highlights conduits using the following color scheme:
 | **EMPTY** | Gray (`#a1b3b3ff`) | No cables found inside the conduit |
 | **OVERFILL** | Red (`#e74c3c`) | Conduit is overfilled beyond capacity |
 | **No data** | Yellow (`#f1c40f`) | Missing diameter information for conduit or cables |
+
+---
+
+## Custom Calculated Field
+
+As part of this sample, an optional custom calculated field can be configured in the application to display the fill ratio for an individual conduit directly within the `Details` panel for a feature. This field uses a custom JavaScript function (included in the sample) to compute the capacity percentage for a single conduit based on its related cable diameters. Once configured, the field appears on the feature details tab (as shown below) and updates dynamically whenever the feature is viewed:
+
+Example:
+
+![Conduit Capacity map output](./Conduit_capacity_overview_2.png)
+
+
+This per-feature field is separate from the map-based visualization and allows users to quickly review the capacity of a single conduit without running the full map tool.
+
+The function itself lives in the modules/custom directory and can be added through the application’s Calculated Fields configuration. Additional implementation details and a step-by-step guide for enabling this field are provided in the Deep Dive documentation.
+
+This field is optional, but it demonstrates how the capacity calculation logic can be embedded directly into the model layer and reused outside of the map visualization workflow.
 
 ---
 
