@@ -4,6 +4,8 @@
 - [Conduit Capacity - JavaScript - Code Deep Dive](#conduit-capacity---javascript---code-deep-dive)
   - [Table of Contents](#table-of-contents)
   - [Tool Description](#tool-description)
+  - [Custom Calculated Field: Capacity Percentage](#custom-calculated-field)
+    - [new\Conduit.js](#newConduitjs)
   - [How to use the tool](#how-to-use-the-tool)
   - [File Walkthroughs](#file-walkthroughs)
     - [conduit\_capacity\_plugin.js](#conduit_capacity_pluginjs)
@@ -32,6 +34,66 @@ The tool highlights conduits using the following color scheme:
 | **EMPTY** | Gray (`#a1b3b3ff`) | No cables found inside the conduit |
 | **OVERFILL** | Red (`#e74c3c`) | Conduit is overfilled beyond capacity |
 | **No data** | Yellow (`#f1c40f`) | Missing diameter information for conduit or cables |
+
+---
+
+## Custom Calculated Field
+
+In addition to the visualization tool, conduits in the `Details` panel display a calculated field showing the capacity percentage. This value is computed using a custom JavaScript function registered in the application’s custom/js/conduit_capacity directory. This function is invoked by the calculated field definition in the data model and runs whenever a conduit feature is viewed.
+
+In order to configure this custom method, navigate to `Configuration -> Features -> conduit -> Calculated Fields` within the application. Select `Add Field` at the bottom of the current list of calculated fields. Fill in the values as seen in the image below:
+
+![Adding custom calculated field](./Conduit_Capacity_DeepDive_1.png)
+
+Then, within your `custom/public/js` directory, you will see the `newConduit.js` file. This is the custom method that will be called from within the application when a conduit is shown on the map. 
+
+In order to import this file into the `main.nmt_samples.js`, add the following line to the top with all the other imports:
+
+`import NewConduit from '../Samples/conduit_capacity/newConduit';`
+
+### newConduit.js
+
+Here is a walkthrough of the `newConduit.js` file which is an extension of the `conduit.js` comms feature. 
+
+```
+import myw from 'myWorld-client';
+import Conduit from 'modules/comms/js/models/conduit';
+```
+
+- `myw` is the a reference to the client. Some native client features will be used later when the user interacts with the map
+- `Conduit` imports the main conduit feature to extend from
+
+```
+export default class NewConduit extends Conduit {
+
+    async capacity_summary() {
+        const diameter = this.properties.diameter;
+        if (!diameter) return null;
+
+        const cables = await this.cables();
+        if (!cables || cables.length === 0) return 0;
+
+        const cableDiameters = cables
+            .map(c => c.properties?.diameter)
+            .filter(Boolean);
+
+        if (cableDiameters.length === 0) return 0;
+
+        const ratio = cableDiameters.reduce((sum, d) => sum + d ** 2, 0) / (diameter ** 2);
+        console.log(ratio);
+        return (ratio * 100).toFixed(1);
+    }
+}
+
+myw.featureModels['conduit'] = NewConduit;
+```
+- The `NewConduit` method is extending from the base `Conduit` class 
+- The `capacity_summary` custom method is calculating the capacity of the conduit. This is the method name that was set in the new calculated field for the conduit feature.
+    - First, the diameter of the conduit is set to the `diameter` variable
+    - Then, all the cables associated with that conduit is set to the list of `cables` variable
+    - Using the `.map` function, each cable from the list of `cables` is queried to set a list of `cableDiameters`
+    - Lastly, the ratio is calculated using the conduti fill ratio equation, which is then returned at the end
+
 
 ---
 

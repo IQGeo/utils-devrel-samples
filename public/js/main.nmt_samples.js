@@ -13,6 +13,8 @@ import fiberCountRule from '../Samples/design_rules/fiberCountRule';
 
 import { MyFeatureLabel } from '../Samples/custom_layer/MyFeatureLabel';
 
+import NewConduit from '../Samples/conduit_capacity/newConduit';
+
 myw.localisation.loadModuleLocale('utils_devrel_samples');
 myw.MyFeatureLabel = MyFeatureLabel;
 
