@@ -13,7 +13,7 @@
 
 This tool is built in an environment with Workflow Manager (WFM) integrated with Network Manager Telecom (NMT), but can easily be re-used in environments where WFM is integrated with other Network Managers (e.g. Electric, Gas, et al).
 
-This sample enables to user to map tickets associated with specific WFM Milestones associated with a user-selected Project and Group. The tool includes a time slider to permit visualizing tickets that fall within the user-selected range of their milestones' planned beginning and end dates
+This sample enables the user to create a temporary map layer of tickets of WFM Milestones associated with a user-selected Project and Group. The tool includes an interactive time slider to enable visualizing tickets that fall within the user-selected range of their milestones' planned beginning and end dates.
 
 ## How to use the tool
 
@@ -31,13 +31,13 @@ When clicking the button a modal window will open where the user:
 
 Once a milestone is chosen, the following happens on the map
 
--   A search of a Milestone's "immediate children" milestones is executed
--   The tickets of both the parent milestone and the immediate children's milestones are mapped, along with a polygon bouding those tickets given the following conditions:
+-   A search of a Milestone's "descendant" milestones is executed
+-   The tickets of both the parent milestone and the descendant's milestones are mapped given the following conditions:
     -   the ticket's geometry type is a Point
     -   if three or more points are displayed, the bounding polygon is displayed as well
 -   a time slider is presented to the user with the full date range of the milestones
 
-In Fig. 2 below you can see a milestone selected
+In Fig. 2 below you can see a milestone and its info displayed on mouse over
 
 ![Milestone Map Widget with Tickets Displayed](./WFM_NMT_Milestone_Map_Widget_2.png)
 
@@ -60,4 +60,6 @@ The user can then adjust the time slider and the tickets displayed will be filte
 Notes:
 
 -   Mousing over a ticket displays the ticket ID and ticket status.
--   Both the ticket points and the bounding polygon are temporary map layers which are removed when the modal window is closed.
+-   Ticket points on map color-coded according to their status
+-   If the application has a configured map layer of WFM tickets, the temporary ticket points can be "selected" (the user is actually selecting from the configured ticket layer, not our temporary ticket layer). Pressing the "Check Selectability" button indicates whether the ticket layer is available and currently checked on.
+-   Both the ticket points and the bounding polygon are <b>temporary</b> map layers which are removed when the modal window is closed.
