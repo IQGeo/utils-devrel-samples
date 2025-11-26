@@ -4,6 +4,8 @@ import { useLocale } from 'myWorld-client/react';
 import { DraggableModal, Button } from 'myWorld-client/react';
 import { Select, Alert } from 'antd';
 
+import ticketLegend from '../../images/ticket_legend_sm.png';
+
 import TimeRangeSlider from './timeRangeSlider.js';
 import dayjs from 'dayjs';
 
@@ -25,7 +27,13 @@ export const MilestoneMapModal = ({ open }) => {
 
     // alert message
     const [alertMessage, setAlertMessage] = useState('');
+    const [alertType, setAlertType] = useState('success');
     const [isAlertVisible, setIsAlertVisible] = useState(false);
+
+    // selectable message alert
+    const [selectableMessage, setSelectableMessage] = useState('');
+    const [selectableType, setSelectableType] = useState('success');
+    const [isSelectableAlertVisible, setIsSelectableAlertVisible] = useState(false);
 
     // slider hooks
     const [sliderVisible, setSliderVisible] = useState(false);
@@ -102,6 +110,7 @@ export const MilestoneMapModal = ({ open }) => {
                         }
                     }
                     if (arrProjects.length === 0) {
+                        setAlertType('warning');
                         setAlertMessage('No projects found.');
                         return;
                     } else {
@@ -109,6 +118,8 @@ export const MilestoneMapModal = ({ open }) => {
                     }
                 })
                 .catch(error => {
+                    setAlertType('error');
+                    setAlertMessage('Failed to load Projects table data.');
                     console.error('Failed to load Projects table:', error);
                     setAllProjects([]);
                     return;
@@ -133,6 +144,7 @@ export const MilestoneMapModal = ({ open }) => {
                     }
 
                     if (arrGroupsProjects.length === 0) {
+                        setAlertType('warning');
                         setAlertMessage('No Project/Group associations found.');
 
                         return;
@@ -141,6 +153,8 @@ export const MilestoneMapModal = ({ open }) => {
                     }
                 })
                 .catch(error => {
+                    setAlertType('error');
+                    setAlertMessage('Failed to load project-group junction data.');
                     console.error('Failed to load project-group junction data:', error);
                     setProjGroups([]);
                     return;
@@ -172,6 +186,7 @@ export const MilestoneMapModal = ({ open }) => {
                     }
 
                     if (arrMilestones.length === 0) {
+                        setAlertType('warning');
                         setAlertMessage('No Milestone records found.');
                         return;
                     } else {
@@ -179,6 +194,8 @@ export const MilestoneMapModal = ({ open }) => {
                     }
                 })
                 .catch(error => {
+                    setAlertType('error');
+                    setAlertMessage('Failed to load Milestone table data.');
                     console.error('Failed to load Milestone table data:', error);
                     setAllMilestones([]);
                     return;
@@ -203,6 +220,7 @@ export const MilestoneMapModal = ({ open }) => {
                         }
                     }
                     if (arrGroupsMilestones.length === 0) {
+                        setAlertType('warning');
                         setAlertMessage('No Milestone-Group Junction records found.');
                         console.log('no milestone group junction records found');
                         return;
@@ -211,6 +229,8 @@ export const MilestoneMapModal = ({ open }) => {
                     }
                 })
                 .catch(error => {
+                    setAlertType('error');
+                    setAlertMessage('Failed to load milestone-group junction data.');
                     console.error('Failed to load milestone-group junction data:', error);
                     setGroupMilestones([]);
                     return;
@@ -252,6 +272,7 @@ export const MilestoneMapModal = ({ open }) => {
             if (filteredTickets.length > 0) {
                 mapTickets(filteredTickets);
             } else {
+                setAlertType('info');
                 setAlertMessage('No tickets meet date range criteria.');
             }
         }
@@ -294,6 +315,8 @@ export const MilestoneMapModal = ({ open }) => {
                     }
                 }
             } catch (error) {
+                setAlertType('error');
+                setAlertMessage('Failed to load tickets for milestone.');
                 console.error(`Failed to load tickets for milestone ${item.id}:`, error);
                 setMilestoneTickets([]);
                 return;
@@ -301,6 +324,7 @@ export const MilestoneMapModal = ({ open }) => {
         }
         if (arrTickets.length === 0) {
             setMilestoneTickets([]);
+            setAlertType('info');
             setAlertMessage('No tickets found for selected milestone(s).');
         } else {
             setMilestoneTickets(arrTickets);
@@ -316,9 +340,13 @@ export const MilestoneMapModal = ({ open }) => {
                 const milestoneStart = dayjs(ticket.properties.milestone_start);
                 const milestoneEnd = dayjs(ticket.properties.milestone_end);
 
+                // test whether the date range of the milestone overlaps with the
+                // date range of the slider
                 return (
-                    (milestoneStart.isAfter(sliderBegin) || milestoneStart.isSame(sliderBegin)) &&
-                    (milestoneEnd.isBefore(sliderEnd) || milestoneEnd.isSame(sliderEnd))
+                    ((milestoneStart.isBefore(sliderBegin) || milestoneStart.isSame(sliderBegin)) &&
+                        (milestoneEnd.isAfter(sliderEnd) || milestoneEnd.isSame(sliderEnd))) ||
+                    ((milestoneStart.isAfter(sliderBegin) || milestoneStart.isSame(sliderBegin)) &&
+                        (milestoneEnd.isBefore(sliderEnd) || milestoneEnd.isSame(sliderEnd)))
                 );
             });
             setFilteredTickets(filtered);
@@ -332,6 +360,7 @@ export const MilestoneMapModal = ({ open }) => {
         const allTicketsQty = inputTickets.length; // total number of input tickets
         let geomTicketsQty = 0; // track number of tickets with geometry
         let geoJSONFeatures = []; // same array of features, but in GeoJSON format
+        let turfFeatureCollection = [];
 
         for (const feature in inputTickets) {
             if (inputTickets[feature]?.geometry) {
@@ -342,29 +371,24 @@ export const MilestoneMapModal = ({ open }) => {
 
                 // for this demo we are only mapping Point geometries and verifying coordinates are supplied
                 if (thisGeometryType === 'Point' && theseCoordinates.length > 1) {
-                    const tooltipText =
-                        thisObject.properties.id + '<br>' + thisObject.properties.mywwfm_status;
+                    const ticketId = thisObject.properties.id;
+                    const ticketStatus = thisObject.properties.mywwfm_status;
 
-                    pointsLayer.addMywGeoms(thisGeometry, tooltipText);
+                    pointsLayer.addMywGeoms(thisGeometry, ticketId, ticketStatus);
 
                     geomTicketsQty += 1;
 
                     geoJSONFeatures.push(thisObject.asGeoJson());
+
+                    turfFeatureCollection = turf.featureCollection(geoJSONFeatures);
                 }
             }
         }
 
         if (geomTicketsQty > 2) {
-            // We need a minimum of 3 ticket point geometries to create a polygon
-            // make array of GeoJSON features into a proper Feature Collection
             // NOTE: we need at least three point geometries to create a hull polygon
-            const turfFeatureCollection = turf.featureCollection(geoJSONFeatures);
-
             // create a convex hull using the Turf feature collection
             const ticketConvexHull = turf.convex(turfFeatureCollection);
-
-            // calculate bounding box coordinates using Turf.js
-            const hullBBOX = turf.bbox(ticketConvexHull);
 
             //plot on map
             hullLayer.addGeoJSONCollection(ticketConvexHull);
@@ -375,6 +399,7 @@ export const MilestoneMapModal = ({ open }) => {
         if (geomTicketsQty > 0) {
             //plot points
             pointsLayer.show();
+            setAlertType('success');
             setAlertMessage(
                 allTicketsQty.toString() +
                     ' tickets  / ' +
@@ -382,11 +407,26 @@ export const MilestoneMapModal = ({ open }) => {
                     ' ticket Point geoms'
             );
         } else {
+            setAlertType('info');
             setAlertMessage(
                 allTicketsQty.toString() + ' tickets, but no tickets with Point geometry'
             );
         }
         setIsAlertVisible(true);
+
+        // Calculate bounding box; move map to new set of tickets
+
+        // calculate bounding box coordinates using Turf.js
+        const hullBBOX = turf.bbox(turfFeatureCollection);
+
+        // create a myWorld bounding box
+        const mywBBOX = myw.latLngBounds(
+            myw.latLng(hullBBOX[1], hullBBOX[0]),
+            myw.latLng(hullBBOX[3], hullBBOX[2])
+        );
+
+        const maxMapZoom = { maxZoom: 13 };
+        myw.app.map.fitBounds(mywBBOX, maxMapZoom);
     };
 
     // group related functions
@@ -411,6 +451,7 @@ export const MilestoneMapModal = ({ open }) => {
                 setSelProjGroups(selectGroups);
                 setGroupLoading(false);
             } else {
+                setAlertType('warning');
                 setAlertMessage('No groups found for this project.');
                 setSelProjGroups([]);
             }
@@ -438,13 +479,16 @@ export const MilestoneMapModal = ({ open }) => {
                 ...item
             }));
 
-        // sort joinedArray
-        setProjGroupMilestones(sortMilestones(joinedMilestoneArray));
+        // sort joinedArray - by parent_id and then prior_sibling_id with nulls first
+        const sortedMilestones = sortMilestones(joinedMilestoneArray);
+
+        setProjGroupMilestones(sortedMilestones);
 
         let arrSelMilestones = [];
 
         // only put top-level Milestones in the dropdown
-        joinedMilestoneArray.forEach(item => {
+
+        sortedMilestones.forEach(item => {
             if (item.parent_id === null) {
                 arrSelMilestones.push({
                     value: item.milestone_id,
@@ -458,6 +502,7 @@ export const MilestoneMapModal = ({ open }) => {
             setMilestoneLoading(false);
             setMilestoneDisabled(false);
         } else {
+            setAlertType('warning');
             setAlertMessage('No milestones found for chosen Project and Group.');
             setSelGroupMilestones([]);
             setMilestoneDisabled(true);
@@ -465,39 +510,80 @@ export const MilestoneMapModal = ({ open }) => {
         return joinedMilestoneArray;
     };
 
-    const depthSearchMilestones = async parent_id => {
-        // the array of Milestones objects with id, planned start date, planned end date
-        let arrSubMilestones = [];
+    // =================
 
-        // get the planned start and end time of the parent milestone
-        // (which will span the date ranges of the child milestones)
-        const parentMilestone = allMilestones.filter(function (arr) {
-            return arr.milestone_id === parent_id;
-        });
-        setBeginTime(parentMilestone[0].planned_start_datetime);
-        setEndTime(parentMilestone[0].planned_end_datetime);
+    const selectableTest = async () => {
+        const ticketLayerId = 'Ticket Clusters'; // the tickets Layer name defined in the Configuration
+        const ticketLayer = myw.app.map.layerManager.getLayer(ticketLayerId);
+        if (ticketLayer == null) {
+            setSelectableMessage('No Layer with ID= "' + ticketLayerId + '" found - check Config');
+            setSelectableType('error');
+            setIsSelectableAlertVisible(true);
+            setTimeout(() => {
+                setIsSelectableAlertVisible(false);
+            }, 4000);
+        } else {
+            const ticketCode = ticketLayer.layerDef.code;
+            const ticketDisplayName = ticketLayer.layerDef.display_name;
 
-        // push top-level milestone to array
-        arrSubMilestones.push({
-            id: parentMilestone[0].milestone_id,
-            startTime: parentMilestone[0].planned_start_datetime,
-            endTime: parentMilestone[0].planned_end_datetime
+            const layersOn = myw.app.map.layerManager.getCurrentLayerIds(); // returns array of layer codes
+            if (layersOn.includes(ticketCode)) {
+                setSelectableMessage('Tickets are selectable');
+                setSelectableType('success');
+                setIsSelectableAlertVisible(true);
+                setTimeout(() => {
+                    setIsSelectableAlertVisible(false);
+                }, 4000);
+            } else {
+                setSelectableMessage(
+                    'Tickets are not selectable. The layer "' +
+                        ticketDisplayName +
+                        '" needs to be checked on.'
+                );
+                setSelectableType('warning');
+                setIsSelectableAlertVisible(true);
+                setTimeout(() => {
+                    setIsSelectableAlertVisible(false);
+                }, 4000);
+            }
+        }
+    };
+
+    const depthSearchMilestones = async parentId => {
+        const result = [];
+        // populate the parent first in the result array
+        const original_parent = allMilestones.filter(item => item.milestone_id === parentId);
+        result.push({
+            id: original_parent[0].milestone_id,
+            startTime: original_parent[0].planned_start_datetime,
+            endTime: original_parent[0].planned_end_datetime
         });
 
-        // retrieve child milestones
-        const firstLevelSub = projGroupMilestones.filter(function (arr) {
-            const topMilestoneId = parent_id.toString(); // project id is stored as a string in the milestones table
-            return arr.parent_id === topMilestoneId;
-        });
-        firstLevelSub.forEach(item => {
-            arrSubMilestones.push({
-                id: item.milestone_id,
-                startTime: item.planned_start_datetime,
-                endTime: item.planned_end_datetime
+        // start time and end time of parent milestone *should* encompass date ranges
+        // of all descendant milestones
+        setBeginTime(original_parent[0].planned_start_datetime);
+        setEndTime(original_parent[0].planned_end_datetime);
+
+        // start searching descendants
+        function searchRecursive(currentParentId) {
+            // Find all direct children
+            const children = allMilestones.filter(
+                item => item.parent_id === currentParentId.toString()
+            );
+
+            // Add children to result and search their descendants
+            children.forEach(child => {
+                result.push({
+                    id: child.milestone_id,
+                    startTime: child.planned_start_datetime,
+                    endTime: child.planned_end_datetime
+                });
+                searchRecursive(child.milestone_id);
             });
-        });
+        }
 
-        getTickets(arrSubMilestones);
+        searchRecursive(parentId);
+        getTickets(result);
     };
 
     const getTimestamps = chosen_milestone_id => {
@@ -548,7 +634,7 @@ export const MilestoneMapModal = ({ open }) => {
         return (
             <Select
                 loading={milestoneLoading}
-                placeholder="please select a Milestone"
+                placeholder="please select a Parent Milestone"
                 options={selGroupMilestones}
                 onChange={onMilestoneSelected}
                 value={selMilestone}
@@ -574,6 +660,31 @@ export const MilestoneMapModal = ({ open }) => {
                 onChange={handleTimeRangeChange}
                 marks={marks}
             />
+        );
+    };
+
+    const renderSelectableLegend = () => {
+        return (
+            <div>
+                <span>
+                    <Button key="ok" onClick={selectableTest} type="primary">
+                        Check Selectability
+                    </Button>
+                </span>
+                <span>
+                    {' '}
+                    {isSelectableAlertVisible && (
+                        <div>
+                            <Alert message={selectableMessage} type={selectableType} />
+                        </div>
+                    )}
+                </span>
+                <br />
+                <br />
+                <span>
+                    <img src={ticketLegend} alt="Ticket Legend" />
+                </span>
+            </div>
         );
     };
 
@@ -607,6 +718,7 @@ export const MilestoneMapModal = ({ open }) => {
     };
 
     const onGroupSelected = (value, option) => {
+        setAlertType('');
         setAlertMessage('');
         setSelMilestone(null);
         setMilestoneDisabled(true);
@@ -616,6 +728,7 @@ export const MilestoneMapModal = ({ open }) => {
     };
 
     const onMilestoneSelected = (value, option) => {
+        setAlertType('');
         setAlertMessage('');
         setSliderVisible(false);
         setSelMilestone(value);
@@ -662,8 +775,8 @@ export const MilestoneMapModal = ({ open }) => {
             {showIntro ? (
                 <div style={{ whiteSpace: 'pre-wrap' }}>
                     <p>
-                        In this sample we are showing how to create a map of tickets associated with
-                        a Milestone
+                        In this sample we are showing how to create a temporary map layer of tickets
+                        associated with a Milestone and all of its descendant milestones.
                     </p>
                 </div>
             ) : (
@@ -682,12 +795,14 @@ export const MilestoneMapModal = ({ open }) => {
                     <br />
                     {isAlertVisible && (
                         <div>
-                            <Alert message={alertMessage} type="success" />
+                            <Alert message={alertMessage} type={alertType} />
                         </div>
                     )}
                     <br />
                     {sliderVisible && renderSlider()}
                     <br />
+                    <br />
+                    {sliderVisible && renderSelectableLegend()}
                 </div>
             )}
         </DraggableModal>
