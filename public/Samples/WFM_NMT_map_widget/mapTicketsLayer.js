@@ -4,22 +4,35 @@ class MapTicketsLayer {
     constructor(app) {
         this.app = myw.app;
 
-        this.layer = new GeoJSONVectorLayer({ zindex: 100 });
-
-        this.lineStyle = new LineStyle({ width: 4, color: '#efa316dd' });
+        this.layer = new GeoJSONVectorLayer({ zindex: 1000 });
 
         this.polygonStyle = new FillStyle({
             color: '#ff77ff',
-            opacity: 0.35
+            opacity: 0.45
         });
-
-        this.pointStyle = new SymbolStyle({
-            symbol: 'circle',
-            size: '20',
-            sizeUnit: 'px',
-            borderColor: '#ffe91fff',
-            color: '#9c66e6ff'
-        });
+        this.pointStyles = {
+            Open: new SymbolStyle({
+                symbol: 'circle',
+                size: '20',
+                sizeUnit: 'px',
+                borderColor: '#0c6404ff',
+                color: '#7ada96ff'
+            }),
+            Closed: new SymbolStyle({
+                symbol: 'circle',
+                size: '20',
+                sizeUnit: 'px',
+                borderColor: '#121212ff',
+                color: '#abaaaeff'
+            }),
+            DEFAULT: new SymbolStyle({
+                symbol: 'circle',
+                size: '20',
+                sizeUnit: 'px',
+                borderColor: '#ffe91fff',
+                color: '#8633f4ff'
+            })
+        };
     }
 
     show() {
@@ -36,8 +49,12 @@ class MapTicketsLayer {
         this.layer.clear();
     }
 
-    addMywGeoms(mywGeom, tooltipText) {
-        const map_feature = this.layer.addGeom(mywGeom, this.pointStyle);
+    addMywGeoms(mywGeom, ticket_id, ticket_status) {
+        // assign point style based on ticket status
+        const currentPointStyle = this.pointStyles[ticket_status] || this.pointStyles['DEFAULT'];
+        const tooltipText = ticket_id + '<br>' + ticket_status;
+
+        const map_feature = this.layer.addGeom(mywGeom, currentPointStyle);
         map_feature.bindTooltip(tooltipText);
     }
 
