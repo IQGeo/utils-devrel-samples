@@ -22,7 +22,7 @@
 
 This tool is built in an environment with Workflow Manager (WFM) integrated with Network Manager Telecom (NMT), but can easily be re-used in environments where WFM is integrated with other Network Managers (e.g. Electric, Gas, et al).
 
-This sample enables to user to map tickets associated with specific WFM Milestones associated with a user-selected Project and Group. The tool includes a time slider to permit visualizing tickets that fall within the user-selected range of their milestones' planned beginning and end dates.
+This sample enables the user to create a temporary map layer of tickets of WFM Milestones associated with a user-selected Project and Group. The tool includes an interactive time slider to enable visualizing tickets that fall within the user-selected range of their milestones' planned beginning and end dates.
 
 &#8291;
 &#8291;
@@ -144,6 +144,8 @@ import { useLocale } from 'myWorld-client/react';
 import { DraggableModal, Button } from 'myWorld-client/react';
 import { Select, Alert } from 'antd';
 
+import ticketLegend from '../../images/ticket_legend_sm.png';
+
 import TimeRangeSlider from './timeRangeSlider.js';
 import dayjs from 'dayjs';
 
@@ -155,7 +157,7 @@ import { sortMilestones } from './milestoneMapFunctions.js';
 
 A series of import statements begins the script. The familiar `myw`library as well as `React`. Note that we are importing state and effect hooks for React as well.
 
-Localization will be done via the `useLocale` import, while some UI elements are being imported from both the `myWorld-client` library as well as the third-party `Antd` library.
+Localization will be done via the `useLocale` import, while some UI elements are being imported from both the `myWorld-client` library as well as the third-party `Antd` library. The legend graphic is imported from the project's images folder.
 
 The Slider component to be used is imported from `timeRangeSlider.js` - a more complete description of that script is below. The `dayjs` library is imported to help with working with timestamps.
 
@@ -189,7 +191,13 @@ As the MilestoneMapModal is a lengthy class, we'll take it in pieces. After sett
 ```
     // alert message
     const [alertMessage, setAlertMessage] = useState('');
+    const [alertType, setAlertType] = useState('success');
     const [isAlertVisible, setIsAlertVisible] = useState(false);
+
+    // selectable message alert
+    const [selectableMessage, setSelectableMessage] = useState('');
+    const [selectableType, setSelectableType] = useState('success');
+    const [isSelectableAlertVisible, setIsSelectableAlertVisible] = useState(false);
 
     // slider hooks
     const [sliderVisible, setSliderVisible] = useState(false);
@@ -200,7 +208,7 @@ As the MilestoneMapModal is a lengthy class, we'll take it in pieces. After sett
     const [sliderMaxTime, setSliderMaxTime] = useState(null);
 ```
 
-More state hooks related to our alert message as well as the variables pertinent to our Slider component
+More state hooks related to both our alert message as well as the message associated with the "Check Selectability" message. In additon, we set up the variables pertinent to our Slider component
 
 &#8291;
 &#8291;
@@ -266,6 +274,7 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                         }
                     }
                     if (arrProjects.length === 0) {
+                        setAlertType('warning');
                         setAlertMessage('No projects found.');
                         return;
                     } else {
@@ -273,6 +282,8 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                     }
                 })
                 .catch(error => {
+                    setAlertType('error');
+                    setAlertMessage('Failed to load Projects table data.');
                     console.error('Failed to load Projects table:', error);
                     setAllProjects([]);
                     return;
@@ -297,6 +308,7 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                     }
 
                     if (arrGroupsProjects.length === 0) {
+                        setAlertType('warning');
                         setAlertMessage('No Project/Group associations found.');
 
                         return;
@@ -305,6 +317,8 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                     }
                 })
                 .catch(error => {
+                    setAlertType('error');
+                    setAlertMessage('Failed to load project-group junction data.');
                     console.error('Failed to load project-group junction data:', error);
                     setProjGroups([]);
                     return;
@@ -336,6 +350,7 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                     }
 
                     if (arrMilestones.length === 0) {
+                        setAlertType('warning');
                         setAlertMessage('No Milestone records found.');
                         return;
                     } else {
@@ -343,6 +358,8 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                     }
                 })
                 .catch(error => {
+                    setAlertType('error');
+                    setAlertMessage('Failed to load Milestone table data.');
                     console.error('Failed to load Milestone table data:', error);
                     setAllMilestones([]);
                     return;
@@ -367,6 +384,7 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                         }
                     }
                     if (arrGroupsMilestones.length === 0) {
+                        setAlertType('warning');
                         setAlertMessage('No Milestone-Group Junction records found.');
                         console.log('no milestone group junction records found');
                         return;
@@ -375,6 +393,8 @@ Next, we have state hooks that will help us track the four types of WFM data tha
                     }
                 })
                 .catch(error => {
+                    setAlertType('error');
+                    setAlertMessage('Failed to load milestone-group junction data.');
                     console.error('Failed to load milestone-group junction data:', error);
                     setGroupMilestones([]);
                     return;
@@ -439,6 +459,7 @@ This effect fires when either the beginning time or end time is changed by the u
             if (filteredTickets.length > 0) {
                 mapTickets(filteredTickets);
             } else {
+                setAlertType('info');
                 setAlertMessage('No tickets meet date range criteria.');
             }
         }
@@ -500,6 +521,8 @@ The next effect is fired when the `alertMessage` changes. If the alert message h
                     }
                 }
             } catch (error) {
+                etAlertType('error');
+                setAlertMessage('Failed to load tickets for milestone.');
                 console.error(`Failed to load tickets for milestone ${item.id}:`, error);
                 setMilestoneTickets([]);
                 return;
@@ -507,6 +530,7 @@ The next effect is fired when the `alertMessage` changes. If the alert message h
         }
         if (arrTickets.length === 0) {
             setMilestoneTickets([]);
+            setAlertType('info');
             setAlertMessage('No tickets found for selected milestone(s).');
         } else {
             setMilestoneTickets(arrTickets);
@@ -534,8 +558,10 @@ The next effect is fired when the `alertMessage` changes. If the alert message h
             const milestoneEnd = dayjs(ticket.properties.milestone_end);
 
             return (
-                (milestoneStart.isAfter(sliderBegin) || milestoneStart.isSame(sliderBegin)) &&
-                (milestoneEnd.isBefore(sliderEnd) || milestoneEnd.isSame(sliderEnd))
+                ((milestoneStart.isBefore(sliderBegin) || milestoneStart.isSame(sliderBegin)) &&
+                    (milestoneEnd.isAfter(sliderEnd) || milestoneEnd.isSame(sliderEnd))) ||
+                ((milestoneStart.isAfter(sliderBegin) || milestoneStart.isSame(sliderBegin)) &&
+                    (milestoneEnd.isBefore(sliderEnd) || milestoneEnd.isSame(sliderEnd)))
             );
         });
 
@@ -559,6 +585,7 @@ The next effect is fired when the `alertMessage` changes. If the alert message h
         const allTicketsQty = inputTickets.length; // total number of input tickets
         let geomTicketsQty = 0; // track number of tickets with geometry
         let geoJSONFeatures = []; // same array of features, but in GeoJSON format
+        let turfFeatureCollection = [];
 
         for (const feature in inputTickets) {
             if (inputTickets[feature]?.geometry) {
@@ -569,29 +596,24 @@ The next effect is fired when the `alertMessage` changes. If the alert message h
 
                 // for this demo we are only mapping Point geometries and verifying coordinates are supplied
                 if (thisGeometryType === 'Point' && theseCoordinates.length > 1) {
-                    const tooltipText =
-                        thisObject.properties.id + '<br>' + thisObject.properties.mywwfm_status;
+                    const ticketId = thisObject.properties.id;
+                    const ticketStatus = thisObject.properties.mywwfm_status;
 
-                    pointsLayer.addMywGeoms(thisGeometry, tooltipText);
+                    pointsLayer.addMywGeoms(thisGeometry, ticketId, ticketStatus);
 
                     geomTicketsQty += 1;
 
                     geoJSONFeatures.push(thisObject.asGeoJson());
+
+                    turfFeatureCollection = turf.featureCollection(geoJSONFeatures);
                 }
             }
         }
 
         if (geomTicketsQty > 2) {
-            // We need a minimum of 3 ticket point geometries to create a polygon
-            // make array of GeoJSON features into a proper Feature Collection
             // NOTE: we need at least three point geometries to create a hull polygon
-            const turfFeatureCollection = turf.featureCollection(geoJSONFeatures);
-
             // create a convex hull using the Turf feature collection
             const ticketConvexHull = turf.convex(turfFeatureCollection);
-
-            // calculate bounding box coordinates using Turf.js
-            const hullBBOX = turf.bbox(ticketConvexHull);
 
             //plot on map
             hullLayer.addGeoJSONCollection(ticketConvexHull);
@@ -602,6 +624,7 @@ The next effect is fired when the `alertMessage` changes. If the alert message h
         if (geomTicketsQty > 0) {
             //plot points
             pointsLayer.show();
+            setAlertType('success');
             setAlertMessage(
                 allTicketsQty.toString() +
                     ' tickets  / ' +
@@ -609,15 +632,30 @@ The next effect is fired when the `alertMessage` changes. If the alert message h
                     ' ticket Point geoms'
             );
         } else {
+            setAlertType('info');
             setAlertMessage(
                 allTicketsQty.toString() + ' tickets, but no tickets with Point geometry'
             );
         }
         setIsAlertVisible(true);
+
+        // Calculate bounding box; move map to new set of tickets
+
+        // calculate bounding box coordinates using Turf.js
+        const hullBBOX = turf.bbox(turfFeatureCollection);
+
+        // create a myWorld bounding box
+        const mywBBOX = myw.latLngBounds(
+            myw.latLng(hullBBOX[1], hullBBOX[0]),
+            myw.latLng(hullBBOX[3], hullBBOX[2])
+        );
+
+        const maxMapZoom = { maxZoom: 13 };
+        myw.app.map.fitBounds(mywBBOX, maxMapZoom);
     };
 ```
 
-The `mapTickets` function is called to create the two temporary map layers: a Point layer representing the individual tickets fed into the function and a Polygon layer which represents the hull encompassing all of the point features.
+The `mapTickets` function is called to create the two temporary map layers: a Point layer representing the individual tickets fed into the function and a Polygon layer which represents the hull encompassing all of the point features. We will be working with geometries using both the standard `myw` library as well as the Turf.js library - which have smany similarities but also subtle differences (e.g. coordinate order).
 
 -   If the selected milestone changes, the tickets associated with that milestone with Point geometries are mapped.
 -   If the user changes the begin or end date using the Slider, the filtered tickets are fed to the function to be mapped.
@@ -627,17 +665,23 @@ The `mapTickets` function is called to create the two temporary map layers: a Po
     -   We inspect the geometry to ensure it has a geometry type of 'Point'.
     -   We then check that coordinates are present.
     -   If both conditions are met:
-        -   We create a tooltip text string using the feature's ID and status properties.
-        -   We add the geometry to the Point layer by calling call `.addMywGeoms` method from the `MapTicketsLayer` class feeding in the geometry and the tooltip text.
+        -   We create variables of for ID and status properties.
+        -   We add the geometry to the Point layer by calling call `.addMywGeoms` method from the `MapTicketsLayer` class feeding in the geometry, ID, and status.
         -   We increment the count of valid point geometries.
         -   We convert the ticket's MyWorld feature to a GeoJSON feature using the `.asGeoJson()` method and add it to the array of GeoJSON point features.
+        -   We create a `turfFeatureCollection` from the array of GeoJSON features.
 
 -   If there three or more point features, we create a bounding hull polygon for the points using the Turf library directly:
-    -   We take the array of GeoJSON features and create a proper GeoJSON feature collection using Turf's `.featureCollection` function.
-    -   A convex hull polygon is created using Turf's `convex` function.
+
+    -   A convex hull polygon is created using Turf's `convex` function and feed it the `turfFeatureCollection`
     -   The hull layer is fed into the `.addGeoJSONCollection` method of the `MapTicketsLayer` class.
--   We `.show` both layers by calling the method from the `MapTicketsLayer` class.
--   The alert message with the ticket counts is shown, while also handling the scenario where no valid Point geometries are found.
+    -   We `.show` the hull layer by calling the method from the `MapTicketsLayer` class.
+
+-   We then map our ticket features using the `.show` method.
+    -   The alert message with the ticket counts is shown, while also handling the scenario where no valid Point geometries are found.
+    -   We then calculate a Turf.js bounding box using our `turfFeatureCollection` array.
+    -   Then we create a `myw` bounds object using the coordinates of the Turf.js bounding box.
+    -   We use the map's `fitBounds` method to "zoom to" the extent of the `myw` bounds object.
 
 &#8291;
 &#8291;
@@ -664,6 +708,7 @@ The `mapTickets` function is called to create the two temporary map layers: a Po
                 setSelProjGroups(selectGroups);
                 setGroupLoading(false);
             } else {
+                setAlertType('warning');
                 setAlertMessage('No groups found for this project.');
                 setSelProjGroups([]);
             }
@@ -700,13 +745,15 @@ The `determineGroups` function takes in the ID of the chosen project and filters
                 ...item
             }));
 
-        // sort joinedArray
-        setProjGroupMilestones(sortMilestones(joinedMilestoneArray));
+        // sort joinedArray - by parent_id and then prior_sibling_id with nulls first
+        const sortedMilestones = sortMilestones(joinedMilestoneArray);
+
+        setProjGroupMilestones(sortedMilestones);
 
         let arrSelMilestones = [];
 
         // only put top-level Milestones in the dropdown
-        joinedMilestoneArray.forEach(item => {
+        sortedMilestones.forEach(item => {
             if (item.parent_id === null) {
                 arrSelMilestones.push({
                     value: item.milestone_id,
@@ -720,6 +767,7 @@ The `determineGroups` function takes in the ID of the chosen project and filters
             setMilestoneLoading(false);
             setMilestoneDisabled(false);
         } else {
+            setAlertType('warning');
             setAlertMessage('No milestones found for chosen Project and Group.');
             setSelGroupMilestones([]);
             setMilestoneDisabled(true);
@@ -742,45 +790,100 @@ The `determineMilestones` function performs two filters and a join in order to c
 &#8291;
 
 ```
-    const depthSearchMilestones = async parent_id => {
-        // the array of Milestones objects with id, planned start date, planned end date
-        let arrSubMilestones = [];
+    const selectableTest = async () => {
+        const ticketLayerId = 'Ticket Clusters'; // the tickets Layer name defined in the Configuration
+        const ticketLayer = myw.app.map.layerManager.getLayer(ticketLayerId);
+        if (ticketLayer == null) {
+            setSelectableMessage('No Layer with ID= "' + ticketLayerId + '" found - check Config');
+            setSelectableType('error');
+            setIsSelectableAlertVisible(true);
+            setTimeout(() => {
+                setIsSelectableAlertVisible(false);
+            }, 4000);
+        } else {
+            const ticketCode = ticketLayer.layerDef.code;
+            const ticketDisplayName = ticketLayer.layerDef.display_name;
 
-        // get the planned start and end time of the parent milestone
-        // (which will span the date ranges of the child milestones)
-        const parentMilestone = allMilestones.filter(function (arr) {
-            return arr.milestone_id === parent_id;
-        });
-        setBeginTime(parentMilestone[0].planned_start_datetime);
-        setEndTime(parentMilestone[0].planned_end_datetime);
+            const layersOn = myw.app.map.layerManager.getCurrentLayerIds(); // returns array of layer codes
+            if (layersOn.includes(ticketCode)) {
+                setSelectableMessage('Tickets are selectable');
+                setSelectableType('success');
+                setIsSelectableAlertVisible(true);
+                setTimeout(() => {
+                    setIsSelectableAlertVisible(false);
+                }, 4000);
+            } else {
+                setSelectableMessage(
+                    'Tickets are not selectable. The layer "' +
+                        ticketDisplayName +
+                        '" needs to be checked on.'
+                );
+                setSelectableType('warning');
+                setIsSelectableAlertVisible(true);
+                setTimeout(() => {
+                    setIsSelectableAlertVisible(false);
+                }, 4000);
+            }
+        }
+    };
 
-        // push top-level milestone to array
-        arrSubMilestones.push({
-            id: parentMilestone[0].milestone_id,
-            startTime: parentMilestone[0].planned_start_datetime,
-            endTime: parentMilestone[0].planned_end_datetime
+
+```
+
+The `selectableTest` function determines if the map has been configured with a WFM Tickets layer and if that layer is currently toggled on. If so, the user can click on the temporary layer ticket points, and the underlying tickets of the pre-configured layer will be "selected". If the layer is toggled off, the user will be notified.
+
+The key is that the `ticketLayerId` be set to the proper name of the WFM Tickets layer found in the Configuration. In this demonstration, the layer is named "Ticket Clusters"--but each application setup may name their layers differently.
+
+We then use the `layerManager` object to verify that the Tickets layer is part of the current map. If not, then the user is notified.
+
+If the layer is part of the map, we set up variables for the layer code and the layer display name. Then we call the `.getCurrentLayerIds` method to determine which layers are toggled on and if the array includes the layer code for the Tickets layer. If so, the user is informed that the points on the temporary layer are "selectable". If the Tickets layer is currently toggled off, the user is informed as well using the display name of the layer.
+
+&#8291;
+&#8291;
+&#8291;
+
+```
+    const depthSearchMilestones = async parentId => {
+        const result = [];
+        // populate the parent first in the result array
+        const original_parent = allMilestones.filter(item => item.milestone_id === parentId);
+        result.push({
+            id: original_parent[0].milestone_id,
+            startTime: original_parent[0].planned_start_datetime,
+            endTime: original_parent[0].planned_end_datetime
         });
 
-        // retrieve child milestones
-        const firstLevelSub = projGroupMilestones.filter(function (arr) {
-            const topMilestoneId = parent_id.toString(); // project id is stored as a string in the milestones table
-            return arr.parent_id === topMilestoneId;
-        });
-        firstLevelSub.forEach(item => {
-            arrSubMilestones.push({
-                id: item.milestone_id,
-                startTime: item.planned_start_datetime,
-                endTime: item.planned_end_datetime
+        // start time and end time of parent milestone *should* encompass date ranges
+        // of all descendant milestones
+        setBeginTime(original_parent[0].planned_start_datetime);
+        setEndTime(original_parent[0].planned_end_datetime);
+
+        // start searching descendants
+        function searchRecursive(currentParentId) {
+            // Find all direct children
+            const children = allMilestones.filter(
+                item => item.parent_id === currentParentId.toString()
+            );
+
+            // Add children to result and search their descendants
+            children.forEach(child => {
+                result.push({
+                    id: child.milestone_id,
+                    startTime: child.planned_start_datetime,
+                    endTime: child.planned_end_datetime
+                });
+                searchRecursive(child.milestone_id);
             });
-        });
+        }
 
-        getTickets(arrSubMilestones);
+        searchRecursive(parentId);
+        getTickets(result);
     };
 ```
 
-A milestone can have multiple levels or "generations" of child milestones. For Version 1, we are only doing a search of one level of child milestones. For each milestone, we add its ID to an array along with its `planned_start_datetime` and `planned_end_datetime`.
+A milestone can have multiple levels or "generations" of child milestones. We have set up a recursive depth search that takes a milestone ID and looks for that value in the `parent_id` property of the `allMilestones` object. For each milestone that meets this condition, we add its ID to an array along with its `planned_start_datetime` and `planned_end_datetime`. Note that while the ID has a numeric data type, the `parent_id` data type is a string, hence our use of the `.toString()` function when testing equivalence.
 
-Once we have an array of parent and child milestones, we send it to the `getTickets` function.
+Once we have a `result` array of parent and descendant milestones, we send it to the `getTickets` function.
 
 &#8291;
 &#8291;
@@ -898,6 +1001,40 @@ Note that we are tracking two sets of dates so when `beginTime` and `endTime` ch
 &#8291;
 
 ```
+    const renderSelectableLegend = () => {
+        return (
+            <div>
+                <span>
+                    <Button key="ok" onClick={selectableTest} type="primary">
+                        Check Selectability
+                    </Button>
+                </span>
+                <span>
+                    {' '}
+                    {isSelectableAlertVisible && (
+                        <div>
+                            <Alert message={selectableMessage} type={selectableType} />
+                        </div>
+                    )}
+                </span>
+                <br />
+                <br />
+                <span>
+                    <img src={ticketLegend} alt="Ticket Legend" />
+                </span>
+            </div>
+        );
+    };
+
+```
+
+The `renderSelectableLegend` function renders the button/message elements associated with the "selectability" functionality described above in the description of the `selectableTest` function. In addition, we are rendering an image of the map legend describing the point symbology.
+
+&#8291;
+&#8291;
+&#8291;
+
+```
     const generateDailyMarks = (startTime, endTime) => {
         const marks = {};
         const startDate = dayjs(startTime).startOf('day');
@@ -938,6 +1075,7 @@ The `generateDailyMarks` functions creates tick marks on the slider that represe
     };
 
     const onGroupSelected = (value, option) => {
+        setAlertType('');
         setAlertMessage('');
         setSelMilestone(null);
         setMilestoneDisabled(true);
@@ -947,6 +1085,7 @@ The `generateDailyMarks` functions creates tick marks on the slider that represe
     };
 
     const onMilestoneSelected = (value, option) => {
+        setAlertType('');
         setAlertMessage('');
         setSliderVisible(false);
         setSelMilestone(value);
@@ -1019,8 +1158,8 @@ The `generateDailyMarks` functions creates tick marks on the slider that represe
             {showIntro ? (
                 <div style={{ whiteSpace: 'pre-wrap' }}>
                     <p>
-                        In this sample we are showing how to create a map of tickets associated with
-                        a Milestone
+                        In this sample we are showing how to create a temporary map layer of tickets associated with
+                        a Milestone and all of its descendant milestones.
                     </p>
                 </div>
             ) : (
@@ -1045,6 +1184,8 @@ The `generateDailyMarks` functions creates tick marks on the slider that represe
                     <br />
                     {sliderVisible && renderSlider()}
                     <br />
+                    <br />
+                    {sliderVisible && renderSelectableLegend()}
                 </div>
             )}
         </DraggableModal>
@@ -1060,6 +1201,7 @@ Finally, we return the rendering of the modal window itself. After setting up ba
 -   `{renderMilestone()}` is generating the Select widget with the list of available Milestones given the selected Project and selected Group.
 -   an Alert message whose visibility is controlled by the `isAlertVisible` state hook.
 -   `renderSlider()` whose visibility is controlled by the `sliderVisible` state hook.
+-   `renderSelectableLegend()` whose visibility is also controlled by the `slideVisible` state hook.
 
     &#8291;
     &#8291;
@@ -1091,29 +1233,47 @@ class MapTicketsLayer {
     constructor(app) {
         this.app = myw.app;
 
-        this.layer = new GeoJSONVectorLayer({ zindex: 100 });
-
-        this.lineStyle = new LineStyle({ width: 4, color: '#efa316dd' });
+        this.layer = new GeoJSONVectorLayer({ zindex: 1000 });
 
         this.polygonStyle = new FillStyle({
             color: '#ff77ff',
-            opacity: 0.35
+            opacity: 0.45
         });
-
-        this.pointStyle = new SymbolStyle({
-            symbol: 'circle',
-            size: '20',
-            sizeUnit: 'px',
-            borderColor: '#ffe91fff',
-            color: '#9c66e6ff'
-        });
+        this.pointStyles = {
+            Open: new SymbolStyle({
+                symbol: 'circle',
+                size: '20',
+                sizeUnit: 'px',
+                borderColor: '#0c6404ff',
+                color: '#7ada96ff'
+            }),
+            Closed: new SymbolStyle({
+                symbol: 'circle',
+                size: '20',
+                sizeUnit: 'px',
+                borderColor: '#121212ff',
+                color: '#abaaaeff'
+            }),
+            DEFAULT: new SymbolStyle({
+                symbol: 'circle',
+                size: '20',
+                sizeUnit: 'px',
+                borderColor: '#ffe91fff',
+                color: '#8633f4ff'
+            })
+        };
     }
-
 ```
 
-The constructor instantiates a new copy of the `GeoJSONVectorLayer` class and assigns a z-value of 100 to ensure the temporary map layers will be displayed over top of the normal map layers.
+The constructor instantiates a new copy of the `GeoJSONVectorLayer` class and assigns a z-value of 1000 to ensure the temporary map layers will be displayed over top of the normal map layers.
 
-Custom styling properties are declared that will define how are layers will be displayed.
+Custom styling properties for a polygon feature are declared, and will be subsequently applied below to the hull polygon.
+
+We are also setting up a `pointStyles` object with three distinct styles, one of which we will assign based on each ticket's status:
+
+-   Open
+-   Closed
+-   and everything else with a status that is neither 'Open' or 'Closed', designated here as 'DEFAULT'.
 
 &#8291;
 &#8291;
@@ -1140,26 +1300,38 @@ Custom styling properties are declared that will define how are layers will be d
 &#8291;
 &#8291;
 
--   `show()`, `hide()`, and `clear()` functions control the display of the temporary layer on the map
+-   `show()`, `hide()`, and `clear()` functions control the display of a temporary layer on the map.
 
 &#8291;
 &#8291;
 &#8291;
 
 ```
-    addMywGeoms(mywGeom, tooltipText) {
-        const map_feature = this.layer.addGeom(mywGeom, this.pointStyle);
+    addMywGeoms(mywGeom, ticket_id, ticket_status) {
+        // assign point style based on ticket status
+        const currentPointStyle = this.pointStyles[ticket_status] || this.pointStyles['DEFAULT'];
+        const tooltipText = ticket_id + '<br>' + ticket_status;
+
+        const map_feature = this.layer.addGeom(mywGeom, currentPointStyle);
         map_feature.bindTooltip(tooltipText);
     }
 
+```
+
+The `addMywGeoms` shows how to add a MyWorld geometry to the temporary layer and apply custom styling based on a property value of `ticket_status`. In addition we are creating a tool tip that will show the ticket ID and ticket status on mouseover. The `.addGeom` method adds the myWorld ticket geometry and its style to the temporary point layer and the `.bindTooltip` method associates the tooltip text with the newly added `map_feature`.
+
+&#8291;
+&#8291;
+&#8291;
+
+```
     addGeoJSONCollection(geoJSONCollection) {
         this.layer.addGeoJSON(geoJSONCollection, this.polygonStyle);
     }
 
 ```
 
--   `addMywGeoms` adds a MyWorld geometry and its tooltip text to a map layer
--   by contrast, the `addGeoJSONCollection` takes a collection of features in the GeoJSON format and adds them to the map.
+By contrast, the `addGeoJSONCollection` takes a collection of features in the GeoJSON format and adds them to a temporary map layer. In this case we are feeding in a geoJSONCollection representing the hull polygon and using the `polygonStyle` created in the constructor.
 
 &#8291;
 &#8291;
