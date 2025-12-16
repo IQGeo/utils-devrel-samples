@@ -43,8 +43,6 @@ export const restApiModal = ({ open }) => {
             }
             const options = { method, redirect: 'follow', credentials: 'include' };
 
-            
-
             if (['POST', 'PUT', 'PATCH'].includes(method) && payload) {
                 options.body = payload;
                 options.headers = { 'Content-Type': 'application/json', 'Accept': 'application/json'};
