@@ -43,7 +43,7 @@ In addition to the visualization tool, conduits in the `Details` panel display a
 
 In order to configure this custom method, navigate to `Configuration -> Features -> conduit -> Calculated Fields` within the application. Select `Add Field` at the bottom of the current list of calculated fields. Fill in the values as seen in the image below:
 
-![Adding custom calculated field](./Conduit_Capacity_DeepDive_1.png)
+![Adding custom calculated field](./Conduit_capacity_DeepDive_1.png)
 
 Then, within your `custom/public/js` directory, you will see the `newConduit.js` file. This is the custom method that will be called from within the application when a conduit is shown on the map. 
 
