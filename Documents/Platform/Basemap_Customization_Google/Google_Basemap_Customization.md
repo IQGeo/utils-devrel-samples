@@ -74,7 +74,7 @@ Consider the following [styling JSON](mapstyle_google.json) for Google Maps that
 &#8291;
 &#8291;
 
-In the *Configuration --> Layers* window choose 'Google' layer.  In the **Datasource Config** section, there will be a section labeled `google.maps.Map Options`
+In the *Configuration --> Layers* window choose the 'Google' layer.  In the **Datasource Config** section, there will be a section labeled `google.maps.Map Options`
 - set up a parameter named `styles`
 - in the Value input, paste in the JSON above 
 
@@ -124,7 +124,7 @@ Below, we have taken the JSON above and created a file named `mapstyle_google.js
 &#8291;
 &#8291;
 
-In the main Javascript page of the custom application, add the following two lines near the top of your script:
+In the custom application's configuration file, add the following two lines near the top of your script:
 
 &#8291;
 
