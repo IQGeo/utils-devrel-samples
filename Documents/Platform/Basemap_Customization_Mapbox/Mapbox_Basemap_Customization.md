@@ -71,7 +71,7 @@ While not likely useful, it is possible to paste Mapbox styling JSON directly in
 
 &#8291;
 
-In the Configuration window for the Mapbox layer, a parameter named `mapboxStyles` is set and the above JSON is pasted in for the value.
+In the *Configuration --> Layers* window choose the layer referencing the Mapbox datasource and in the **Datasource Config** section, add a parameter named `mapboxStyles` and set its value to the JSON listed above.
 
 
 &#8291;
@@ -120,7 +120,7 @@ Below we have put the large chunk of styling JSON into a document named `mapstyl
 &#8291;
 &#8291;
 
-In the main Javascript page of the custom application, add the following two lines near the top of your script:
+In the custom application's configuration file, add the following two lines near the top of your script:
 
 &#8291;
 
