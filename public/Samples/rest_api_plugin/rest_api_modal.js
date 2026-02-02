@@ -65,7 +65,7 @@ export const restApiModal = ({ open, plugin }) => {
         const feature = appRef.currentFeature;
         if (feature) {
             setSelectedFeature(feature);
-            setUrl(`/feature/${feature.type}/${feature.id}`);
+            setUrl(`{{hostname}}/feature/${feature.type}/${feature.id}`);
         } else {
             setIsPickingFeature(true);
         }
@@ -77,8 +77,8 @@ export const restApiModal = ({ open, plugin }) => {
 
         try {
             let fullUrl = url.trim();
-            if (!fullUrl.startsWith('http')) {
-                fullUrl = `http://localhost${fullUrl.startsWith('/') ? '' : '/'}${fullUrl}`;
+            if (!fullUrl.startsWith('http://')) {
+                fullUrl = `http://${fullUrl}`;
             }
 
             if (fullUrl.includes('/config/')) {
@@ -210,7 +210,7 @@ export const restApiModal = ({ open, plugin }) => {
                     <Input
                         value={url}
                         onChange={(e) => setUrl(e.target.value)}
-                        placeholder="http://localhost/feature/pole"
+                        placeholder="http://{{hostname}}/feature/pole"
                         style={{ flex: 1 }}
                     />
                     <Button 
