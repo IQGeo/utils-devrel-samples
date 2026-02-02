@@ -80,6 +80,13 @@ export const restApiModal = ({ open, plugin }) => {
             if (!fullUrl.startsWith('http')) {
                 fullUrl = `http://localhost${fullUrl.startsWith('/') ? '' : '/'}${fullUrl}`;
             }
+
+            if (fullUrl.includes('/config/')) {
+                setResponse('Error: Access to /config/ endpoints is blocked');
+                setLoading(false);
+                return;
+            }
+
             const options = { method, redirect: 'follow', credentials: 'include' };
 
             if (['POST', 'PUT', 'PATCH'].includes(method) && payload) {
