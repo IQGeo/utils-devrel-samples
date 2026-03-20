@@ -25,4 +25,7 @@ Once a feature type is selected the Advanced configuration parameter is automati
 ![The custom.feature Advanced configuration parameter showing the selected Feature](./Custom_Settings_Tab_2.png)
 <p align="center"><i>Fig. 2: The custom.feature Advanced configuration parameter showing the selected Feature</i></p>
 
-After setting the parameter the sample is available in the "DevRel Samples App - NMT" application inside the "Samples Menu" option click on the "Custom Settings Tab" and the currently selected Feature (which was saved in the Advanced configuration parameter) is displayed in the development console.
+After setting the parameter the sample is available in the "DevRel Samples App - NMT" application inside the "Samples Menu" option click on the "Custom Settings Tab" and the currently selected Feature (which was saved in the Advanced configuration parameter) is displayed in the development console (Fig. 3).
+
+![After pressing the button the output on the Development Console of the browser shows the saved Configuration](./Custom_Settings_Tab_3.png)
+<p align="center"><i>Fig. 3: After pressing the button the output on the Development Console of the browser shows the saved Configuration</i></p>
