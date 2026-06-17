@@ -80,6 +80,24 @@ export const MilestoneMapModal = ({ open }) => {
         }
 
         if (milestoneTickets.length > 0) {
+            // If the milestone itself had no date fields populated, fall back to
+            // deriving the date range from the tickets' created datetimes.
+            if (!beginTime || !endTime) {
+                const dates = milestoneTickets
+                    .map(t => t.properties?.mywwfm_created_datetime)
+                    .filter(Boolean)
+                    .map(d => dayjs(d).valueOf())
+                    .filter(v => !isNaN(v));
+
+                if (dates.length > 0) {
+                    const minDate = dayjs(Math.min(...dates));
+                    const maxDate = dayjs(Math.max(...dates));
+                    setBeginTime(minDate.toISOString());
+                    setEndTime(maxDate.toISOString());
+                    setSliderMinTime(minDate.subtract(3, 'days').valueOf());
+                    setSliderMaxTime(maxDate.add(3, 'days').valueOf());
+                }
+            }
             mapTickets(milestoneTickets);
         }
     }, [milestoneTickets]);
@@ -339,6 +357,17 @@ export const MilestoneMapModal = ({ open }) => {
             const filtered = milestoneTickets.filter(ticket => {
                 const milestoneStart = dayjs(ticket.properties.milestone_start);
                 const milestoneEnd = dayjs(ticket.properties.milestone_end);
+
+                // When the milestone has no planned/expected/actual dates, fall back to
+                // filtering by the ticket's own created datetime.
+                if (!milestoneStart.isValid() || !milestoneEnd.isValid()) {
+                    const createdAt = dayjs(ticket.properties.mywwfm_created_datetime);
+                    if (!createdAt.isValid()) return true; // no date at all — always show
+                    return (
+                        (createdAt.isAfter(sliderBegin) || createdAt.isSame(sliderBegin)) &&
+                        (createdAt.isBefore(sliderEnd) || createdAt.isSame(sliderEnd))
+                    );
+                }
 
                 // test whether the date range of the milestone overlaps with the
                 // date range of the slider
