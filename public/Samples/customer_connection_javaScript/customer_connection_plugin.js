@@ -12,7 +12,7 @@ export class CustomerConnectionPlugin extends Plugin {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'customer-connection-button';
-                    this.prototype.titleMsg = 'customer_connection';
+                    this.prototype.titleMsg = 'title';
                     this.prototype.imgSrc = customerConnectionImage;
                 }
 

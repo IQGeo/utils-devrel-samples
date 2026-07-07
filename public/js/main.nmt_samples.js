@@ -17,7 +17,7 @@ import { MyFeatureLabel } from '../Samples/custom_layer/MyFeatureLabel';
 
 import NewConduit from '../Samples/conduit_capacity/newConduit';
 
-myw.localisation.loadModuleLocale('utils_devrel_samples');
+myw.localisation.loadModuleLocale('utils-devrel-samples');
 myw.MyFeatureLabel = MyFeatureLabel;
 
 const desktopLayoutDef = myw.applicationDefinition.layouts.desktop;

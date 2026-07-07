@@ -83,7 +83,7 @@ export const PythonCustomerConnectionModal = ({ open, datasource }) => {
         <DraggableModal
             wrapClassName="customer-connection-modal"
             open={isOpen}
-            title={'Python Connect Customer'}
+            title={msg('title')}
             width={500}
             onCancel={handleCancel}
             footer={

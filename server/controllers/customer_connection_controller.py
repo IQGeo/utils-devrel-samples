@@ -1,6 +1,6 @@
 from pyramid.view import view_config
 from myworldapp.modules.comms.server.controllers.mywcom_controller import MywcomController
-from myworldapp.modules.utils_devrel_samples.server.connection_helper import ConnectionHelper
+from ..connection_helper import ConnectionHelper
 
 class CustomerConnectionController(MywcomController):
 

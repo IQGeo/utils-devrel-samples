@@ -77,7 +77,7 @@ export const BFTubeRenameModal = ({ open, plugin, builder }) => {
         <DraggableModal
             wrapClassName="customer-connection-modal"
             open={isOpen}
-            title={msg('bf_tube_rename_title')}
+            title={msg('title')}
             width={500}
             onCancel={handleCancel}
             footer={

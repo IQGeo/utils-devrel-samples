@@ -133,7 +133,7 @@ export const LrtModal = ({ open }) => {
         <DraggableModal
             wrapClassName="customer-connection-modal"
             open={isOpen}
-            title={msg('LRT_title')}
+            title={msg('title')}
             width={500}
             onCancel={handleCancel}
             footer={

@@ -11,7 +11,7 @@ export class BFTubeRenamePlugin extends Plugin {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'bf-tube-rename-button';
-                    this.prototype.titleMsg = 'bf_tube_rename_title';
+                    this.prototype.titleMsg = 'title';
                     this.prototype.imgSrc = bfTubeRenameImage;
                 }
 

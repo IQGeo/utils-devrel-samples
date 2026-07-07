@@ -2,7 +2,7 @@ import random
 from typing import Any
 
 from myworldapp.core.server.tasks.myw_base_task import MywBaseTask, myw_task
-from myworldapp.modules.utils_devrel_samples.server.connection_helper import ConnectionHelper
+from ..connection_helper import ConnectionHelper
 
 @myw_task(name='customer_connection_task',
           queue='high_priority',
