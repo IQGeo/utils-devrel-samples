@@ -12,7 +12,7 @@ export class ConduitCapacityPlugin extends Plugin {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'conduit_capacity-button';
-                    this.prototype.titleMsg = 'conduit_capacity_title';
+                    this.prototype.titleMsg = 'title';
                     this.prototype.imgSrc = ConduitCapacityIcon;
                 }
 
@@ -41,4 +41,3 @@ export class ConduitCapacityPlugin extends Plugin {
         );
     }
 }
-

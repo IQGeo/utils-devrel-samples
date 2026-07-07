@@ -3,25 +3,34 @@
         "button_title": "DevRel Samples Palette"
     },
     "LRT": {
-        "LRT": "Long Running Task (LRT)"
+        "title": "Customer Connection - Long Running Task (LRT)",
+        "description": "The Long Running Task (LRT) framework is built on top of Python RQ, and is used for defining tasks that are extensive, in terms of time and processing. These tasks are executed by workers operating on one or more machines.\n\nTo use the tool click on a design and then click on the 'Create Connections using LRT' button and the tool will connect 2000 random selected addresses to Poles that will be automatically created. You can follow the progress of the task in the interface and in the browser's Developer Console.\n\nYou can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/LRT."
     },
     "bfTubeRenamePlugin": {
-        "bf_tube_rename_title": "BF Tube Rename"
+        "title": "BF Tube Rename",
+        "description": "This tool renames a group of Blown Fiber (BF) Tubes, inclduing the pre-determined color of each individual fiber to the name.\n\nTo use the tool click on a BF Tube and then click the 'Rename' button and the tool will automatically rename all the fibers within the selected BF Tube.\n\nYou can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/bf_tube_rename.",
+        "colors": "Blue|Orange|Green|Brown|Gray|White|Red|Black|Yellow|Purple|Pink|Turquoise"
     },
     "ConduitCapacityPlugin": {
-        "conduit_capacity_title": "Conduit Capacity"
+        "title": "Conduit Capacity",
+        "description": "This tool checks the capacity of conduits in the window bounding box.\n\nTo use the tool zoom to your desired window size bthen click the 'Visualize' button and the tool will automatically check all conduits within the geometry and add a map layer to visualize the capacity.\n\nYou can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/conduit_capacity."
     },
     "customerConnectionPlugin": {
-        "customer_connection": "Customer Connection (JS)"
+        "title": "Customer Connection - JavaScript",
+        "description": "This tool streamline the connection process of a customer to a pole.\n\nTo use the tool click on a pole and on an address and then click the 'Connect' button and the tool will automatically create the underlying equipment (if needed), the route, the cable, and connect the cable to the fiber splitter and terminal.\n\nYou can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/customer_connection_javaScript."
     },
     "pythonCustomerConnectionPlugin": {
-        "python_customer_connection": "Customer Connection (Python)"
+        "title": "Customer Connection - Python",
+        "description": "This tool connects several Adresses to a pole in one single call a REST service associated with a Python Controller.\n\nTo use the tool click on a pole and on an address and then click the 'Connect' button and the tool will automatically create the underlying equipment (if needed), the route, the cable, and connect the cable to the fiber splitter and terminal.\n\nYou can find the source code in the folder modules/utils-devrel-samples/public/js/Samples/PythonCustomerConnection."
     },
     "LiveDocsPlugin": {
-        "LiveDocsTitle": "Live Documentation"
+        "title": "Live Documentation",
+        "description": "To use the tool, first select a class and then choose a function from the dropdown menus. The parameter fields will update automatically based on the function you select.\n\nEnter the required values according to the parameter type, or select features on the map where applicable.\n\nOnce all required fields are filled, press Execute to run the function and view the result in your browser's Developer Tools Console window.",
+        "classSelection": "Select the class below to see its available functions.",
+        "classTitle": "Classes"
     },
     "restApiPlugin": {
-        "rest_api_title": "REST API"
+        "title": "REST API Visualizer"
     },
     "customTabPlugin": {
         "custom_tab_title": "Custom Tab Info"

@@ -20,7 +20,6 @@ import {
 } from './classes_dictionary';
 import PinRange from 'modules/comms/js/api/pinRange';
 
-
 export const LiveDocsModal = ({ open, plugin }) => {
     const { msg } = useLocale('LiveDocsPlugin');
     const [showIntro, setShowIntro] = useState(true);
@@ -58,7 +57,8 @@ export const LiveDocsModal = ({ open, plugin }) => {
         circuitApi: CircuitDescriptions
     };
 
-    const transactionMessage = "Transaction parameter is automatically created for you. It will be committed after the function execution.";
+    const transactionMessage =
+        'Transaction parameter is automatically created for you. It will be committed after the function execution.';
 
     const getSelectedFunctionParams = () => {
         if (!pickedClass || !pickedFunction) return [];
@@ -75,7 +75,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
         return [];
     };
 
-
     const allParamsFilled = React.useMemo(() => {
         if (!pickedFunction || !pickedClass) return false;
         const paramMeta = getSelectedFunctionParams();
@@ -84,7 +83,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
                 optional || (paramValues[name] !== undefined && paramValues[name] !== '')
         );
     }, [pickedFunction, pickedClass, paramValues]);
-
 
     useEffect(() => {
         function listener() {
@@ -95,8 +93,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
 
                 if (type === 'myworldfeature') {
                     setParamValues(prev => ({ ...prev, [activeParam]: feature }));
-                } 
-                else if (type === 'array<myworldfeature>') {
+                } else if (type === 'array<myworldfeature>') {
                     setParamValues(prev => {
                         const current = Array.isArray(prev[activeParam]) ? prev[activeParam] : [];
                         const alreadyExists = current.some(f => f.id === feature.id);
@@ -104,12 +101,10 @@ export const LiveDocsModal = ({ open, plugin }) => {
                             ? prev
                             : { ...prev, [activeParam]: [...current, feature] };
                     });
-                } 
-                else if (type === 'array<number>') {
+                } else if (type === 'array<number>') {
                     const coords = feature.getGeometry().coordinates;
                     setParamValues(prev => ({ ...prev, [activeParam]: [coords[0], coords[1]] }));
-                } 
-                else if (type === 'array<array<number>>') {
+                } else if (type === 'array<array<number>>') {
                     const coords = feature.getGeometry().coordinates;
                     setParamValues(prev => {
                         const current = Array.isArray(prev[activeParam]) ? prev[activeParam] : [];
@@ -159,7 +154,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
     const executeFunction = () => {
         console.log('Executing function:', pickedFunction, 'from class:', pickedClass);
 
-        if (pickedFunction.startsWith('list')){
+        if (pickedFunction.startsWith('list')) {
             const feature = pickedFunction.slice(4);
             console.log(myw.config[`mywcom.${feature.toLowerCase()}`]);
             return;
@@ -177,7 +172,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
         const params = paramMeta.map(({ name }) => paramValues[name]);
         console.log('Executing function:', pickedFunction, 'with params:', params);
 
-
         const fn = apiInstance[pickedFunction];
         if (typeof fn !== 'function') {
             console.warn(`${pickedFunction} is not a function on ${pickedClass}`);
@@ -194,18 +188,18 @@ export const LiveDocsModal = ({ open, plugin }) => {
             console.log('Function result:', result);
         }
     };
-    
+
     const currentDictionary = pickedClass ? ApiFunctionDictionaries[pickedClass] : null;
     const currentDescription =
-    pickedFunction && currentDictionary && currentDictionary[pickedFunction]
-        ? currentDictionary[pickedFunction].body
-        : null;
+        pickedFunction && currentDictionary && currentDictionary[pickedFunction]
+            ? currentDictionary[pickedFunction].body
+            : null;
 
     return (
         <DraggableModal
             wrapClassName="customer-connection-modal"
             open={isOpen}
-            title={msg('LiveDocsTitle')}
+            title={msg('title')}
             width={500}
             onCancel={handleCancel}
             footer={
@@ -260,9 +254,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                             />
                         )}
                         {currentDescription && (
-                            <p style={{ whiteSpace: "pre-wrap" }}>
-                            {currentDescription}
-                            </p>
+                            <p style={{ whiteSpace: 'pre-wrap' }}>{currentDescription}</p>
                         )}
                         {pickedFunction &&
                             getSelectedFunctionParams().map(({ name, type }) => {
@@ -317,7 +309,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                         />
                                     );
                                 }
-                                if (type.toLowerCase() === 'array<string>' ) {
+                                if (type.toLowerCase() === 'array<string>') {
                                     return (
                                         <Input
                                             key={name}
@@ -338,8 +330,7 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                         />
                                     );
                                 }
-                                if (type.toLowerCase() === 'array<number>')
-                                {
+                                if (type.toLowerCase() === 'array<number>') {
                                     const coords = paramValues[name] || [];
                                     return (
                                         <Input
@@ -351,13 +342,17 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                         />
                                     );
                                 }
-                                if (type.toLowerCase() === 'array<array<number>>'){
-                                    const coordsArray = Array.isArray(paramValues[name]) ? paramValues[name] : [];
+                                if (type.toLowerCase() === 'array<array<number>>') {
+                                    const coordsArray = Array.isArray(paramValues[name])
+                                        ? paramValues[name]
+                                        : [];
                                     return (
                                         <Input
                                             key={name}
                                             placeholder={`${name} (click multiple features to collect [[x,y], [x,y], ...])`}
-                                            value={coordsArray.map(c => `[${c[0]}, ${c[1]}]`).join('; ')}
+                                            value={coordsArray
+                                                .map(c => `[${c[0]}, ${c[1]}]`)
+                                                .join('; ')}
                                             readOnly
                                             onFocus={() => setActiveParam(name)}
                                         />
@@ -420,7 +415,6 @@ export const LiveDocsModal = ({ open, plugin }) => {
                                     return (
                                         <div key={name} className="mb-4">
                                             <p>{transactionMessage}</p>
-                                        
                                         </div>
                                     );
                                 }

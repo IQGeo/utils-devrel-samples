@@ -2,8 +2,10 @@ import myw from 'myWorld-client';
 import React, { useState, useEffect } from 'react';
 import { DraggableModal, Button, Input } from 'myWorld-client/react';
 import { Select } from 'antd';
+import { useLocale } from 'myWorld-client/react';
 
 export const restApiModal = ({ open, plugin }) => {
+    const { msg } = useLocale('restApiPlugin');
     const [url, setUrl] = useState('');
     const [method, setMethod] = useState('GET');
     const [payload, setPayload] = useState('');
@@ -39,26 +41,29 @@ export const restApiModal = ({ open, plugin }) => {
         };
     }, [isPickingFeature, appRef]);
 
-    const syntaxHighlight = (json) => {
+    const syntaxHighlight = json => {
         if (typeof json !== 'string') {
             json = JSON.stringify(json, null, 2);
         }
         json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-        return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, (match) => {
-            let cls = 'number';
-            if (/^"/.test(match)) {
-                if (/:$/.test(match)) {
-                    cls = 'key';
-                } else {
-                    cls = 'string';
+        return json.replace(
+            /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
+            match => {
+                let cls = 'number';
+                if (/^"/.test(match)) {
+                    if (/:$/.test(match)) {
+                        cls = 'key';
+                    } else {
+                        cls = 'string';
+                    }
+                } else if (/true|false/.test(match)) {
+                    cls = 'boolean';
+                } else if (/null/.test(match)) {
+                    cls = 'null';
                 }
-            } else if (/true|false/.test(match)) {
-                cls = 'boolean';
-            } else if (/null/.test(match)) {
-                cls = 'null';
+                return `<span class="${cls}">${match}</span>`;
             }
-            return `<span class="${cls}">${match}</span>`;
-        });
+        );
     };
 
     const handleUseSelectedFeature = () => {
@@ -91,7 +96,10 @@ export const restApiModal = ({ open, plugin }) => {
 
             if (['POST', 'PUT', 'PATCH'].includes(method) && payload) {
                 options.body = payload;
-                options.headers = { 'Content-Type': 'application/json', 'Accept': 'application/json'};
+                options.headers = {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                };
 
                 const cookies = document.cookie.split(';');
                 const csrfCookie = cookies.find(c => c.trim().startsWith('csrf_token='));
@@ -104,30 +112,32 @@ export const restApiModal = ({ open, plugin }) => {
                     console.warn('No CSRF token found in cookies');
                 }
             }
-            
+
             const res = await fetch(fullUrl, options);
             const text = await res.text();
             let formatted = text;
             let json = null;
-            
+
             try {
                 json = JSON.parse(text);
                 formatted = JSON.stringify(json, null, 2);
             } catch (err) {
                 // Leave as plain text if not JSON
             }
-            
+
             setResponse(`${res.status} ${res.statusText}\n\n${formatted}`);
-            
-            if (json && json.type === 'MywFeatureCollection' && Array.isArray(json.features) && json.features.length > 0) {
+
+            if (
+                json &&
+                json.type === 'MywFeatureCollection' &&
+                Array.isArray(json.features) &&
+                json.features.length > 0
+            ) {
                 setResponseFeatures(json.features);
                 setCurrentFeatureIndex(0);
 
                 await loadFeatureFromResponse(json.features[0]);
-            }
-
-            else if (json && Array.isArray(json) && json.length > 0) {
-
+            } else if (json && Array.isArray(json) && json.length > 0) {
                 const hasIds = json.every(item => item && (item.id || item.feature_id));
                 if (hasIds) {
                     setResponseFeatures(json);
@@ -142,7 +152,6 @@ export const restApiModal = ({ open, plugin }) => {
                 setCurrentFeatureIndex(0);
                 await loadFeatureFromResponse(json);
             } else {
-
                 setResponseFeatures([]);
                 setCurrentFeatureIndex(0);
             }
@@ -157,10 +166,9 @@ export const restApiModal = ({ open, plugin }) => {
         setIsOpen(false);
     };
 
-    const loadFeatureFromResponse = async (featureData) => {
+    const loadFeatureFromResponse = async featureData => {
         const featureId = featureData.id;
         const featureType = featureData.myw?.feature_type;
-
 
         // Try to show the feature on the map
         try {
@@ -190,45 +198,43 @@ export const restApiModal = ({ open, plugin }) => {
         }
     };
 
-
     const getFeatureDisplayName = () => {
         if (!selectedFeature) return '';
         return selectedFeature.properties?.name || selectedFeature.id || '';
     };
     return (
-        <DraggableModal
-            open={isOpen}
-            title="REST API Caller"
-            width={700}
-            onCancel={handleCancel}
-        >
+        <DraggableModal open={isOpen} title={msg('title')} width={700} onCancel={handleCancel}>
             <div className="p-4 flex flex-col space-y-3">
-                <a href="https://docs.iqgeo.com" target="_blank" rel="noopener noreferrer">Link to API Documentation</a><br/>
+                <a href="https://docs.iqgeo.com" target="_blank" rel="noopener noreferrer">
+                    Link to API Documentation
+                </a>
+                <br />
 
                 <label>API URL</label>
                 <div className="flex gap-2">
                     <Input
                         value={url}
-                        onChange={(e) => setUrl(e.target.value)}
+                        onChange={e => setUrl(e.target.value)}
                         placeholder="http://{{hostname}}/feature/pole"
                         style={{ flex: 1 }}
                     />
-                    <Button 
+                    <Button
                         onClick={handleUseSelectedFeature}
-                        type={isPickingFeature ? "primary" : "default"}
+                        type={isPickingFeature ? 'primary' : 'default'}
                     >
                         {isPickingFeature ? 'Click feature on map...' : 'Use Selected Feature'}
                     </Button>
                 </div>
-                
+
                 {selectedFeature && !isPickingFeature && (
                     <div className="text-sm" style={{ color: '#666', marginTop: '4px' }}>
-                        Selected Feature: <strong>{getFeatureDisplayName()}</strong> (ID: {selectedFeature.id})
+                        Selected Feature: <strong>{getFeatureDisplayName()}</strong> (ID:{' '}
+                        {selectedFeature.id})
                     </div>
                 )}
 
                 <label>Method</label>
-                <Select value={method} onChange={(value) => setMethod(value)}>
+                <Select value={method} onChange={value => setMethod(value)}>
                     <Select.Option value="GET">GET</Select.Option>
                     <Select.Option value="POST">POST</Select.Option>
                     <Select.Option value="PUT">PUT</Select.Option>
@@ -241,7 +247,7 @@ export const restApiModal = ({ open, plugin }) => {
                         <label>Payload (JSON)</label>
                         <Input.TextArea
                             value={payload}
-                            onChange={(e) => setPayload(e.target.value)}
+                            onChange={e => setPayload(e.target.value)}
                             rows={6}
                             placeholder='{"key": "value"}'
                         />
@@ -255,24 +261,28 @@ export const restApiModal = ({ open, plugin }) => {
                 <div className="flex flex-col gap-1 mt-2">
                     <label>Response</label>
                     {responseFeatures.length > 0 && (
-                        <div className="flex items-center gap-2 mb-2" style={{
-                            background: '#f0f0f0',
-                            padding: '8px',
-                            borderRadius: '4px',
-                            justifyContent: 'space-between'
-                        }}>
+                        <div
+                            className="flex items-center gap-2 mb-2"
+                            style={{
+                                background: '#f0f0f0',
+                                padding: '8px',
+                                borderRadius: '4px',
+                                justifyContent: 'space-between'
+                            }}
+                        >
                             <span style={{ fontSize: '12px', color: '#666' }}>
-                                Showing feature {currentFeatureIndex + 1} of {responseFeatures.length}
+                                Showing feature {currentFeatureIndex + 1} of{' '}
+                                {responseFeatures.length}
                             </span>
                             <div className="flex gap-2">
-                                <Button 
+                                <Button
                                     size="small"
                                     onClick={handlePreviousFeature}
                                     disabled={currentFeatureIndex === 0}
                                 >
                                     ← Previous
                                 </Button>
-                                <Button 
+                                <Button
                                     size="small"
                                     onClick={handleNextFeature}
                                     disabled={currentFeatureIndex === responseFeatures.length - 1}
@@ -290,7 +300,7 @@ export const restApiModal = ({ open, plugin }) => {
                             borderRadius: '6px',
                             height: '250px',
                             overflowY: 'auto',
-                            fontSize: '12px',
+                            fontSize: '12px'
                         }}
                         dangerouslySetInnerHTML={{
                             __html: response ? syntaxHighlight(response) : 'No response yet'

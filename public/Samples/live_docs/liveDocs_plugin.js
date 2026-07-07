@@ -18,7 +18,7 @@ export class LiveDocsPlugin extends Plugin {
             dialog: class extends PluginButton {
                 static {
                     this.prototype.id = 'customer-connection-button';
-                    this.prototype.titleMsg = 'LiveDocsTitle';
+                    this.prototype.titleMsg = 'title';
                     this.prototype.imgSrc = liveDocsImage;
                 }
 
@@ -38,7 +38,6 @@ export class LiveDocsPlugin extends Plugin {
         this.connectionApi = new ConnectionManagerPlugin(owner, options);
         this.circuitApi = new CircuitManagerPlugin(owner, options);
     }
-
 
     showModal() {
         this.renderRoot = renderReactNode(
